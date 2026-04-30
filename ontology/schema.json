@@ -1,0 +1,105 @@
+{
+  "version": "1.0.0",
+  "description": "OSINT 온톨로지 스키마 — config/osint-config.json의 seed로부터 초기화되고, 매일 파이프라인 실행 시 자동 확장된다. 도메인: 위성영상으로 관측 가능한 지구상 이벤트 (Earth Observation Events).",
+  "last_updated": "2026-04-30",
+  "classes": [
+    {
+      "id": "Entity",
+      "label": "엔티티",
+      "description": "최상위 클래스",
+      "subclasses": [
+        {
+          "id": "Event",
+          "label": "이벤트",
+          "description": "위성영상으로 관측된 지구상 이벤트 (재해/인간활동/기후/농업/국방/인도주의)",
+          "properties": [
+            "name", "event_type", "domain", "phenomenon",
+            "observation_date", "start_date", "end_date",
+            "lat", "lon", "country", "region", "area_km2",
+            "severity", "satellites_used", "sensors_used", "data_products",
+            "before_after_available", "confidence", "source_url", "analyst_org"
+          ]
+        },
+        {
+          "id": "Satellite",
+          "label": "위성",
+          "description": "지구관측 위성 플랫폼",
+          "properties": [
+            "name", "operator", "country", "orbit_type",
+            "altitude_km", "revisit_days", "resolution_m",
+            "sensor_types", "mission_status", "launch_date"
+          ]
+        },
+        {
+          "id": "Sensor",
+          "label": "센서",
+          "description": "위성 탑재 관측 센서 (광학/SAR/열적외/초분광/미량가스 등)",
+          "properties": ["name", "sensor_type", "bands", "swath_km", "resolution_m", "carried_by"]
+        },
+        {
+          "id": "DataProduct",
+          "label": "데이터제품",
+          "description": "특정 처리 수준의 위성 데이터 제품 (Sentinel-2 L2A 등)",
+          "properties": ["name", "level", "provider", "format", "license"]
+        },
+        {
+          "id": "Location",
+          "label": "지역",
+          "description": "이벤트 발생 지리적 위치",
+          "properties": ["name", "country", "region", "admin_level", "lat", "lon", "area_km2"]
+        },
+        {
+          "id": "Country",
+          "label": "국가",
+          "description": "이벤트 발생 국가",
+          "properties": ["name", "iso_code", "region"]
+        },
+        {
+          "id": "Organization",
+          "label": "기관",
+          "description": "위성 운영·분석·보도 기관 (우주기관/상업/UN/NGO/연구/매체)",
+          "properties": ["name", "org_type", "country", "website"]
+        },
+        {
+          "id": "Phenomenon",
+          "label": "관측현상",
+          "description": "위성으로 관측 가능한 현상 유형",
+          "properties": ["name", "category", "observable_signature"]
+        },
+        {
+          "id": "Domain",
+          "label": "도메인",
+          "description": "이벤트가 속한 응용 도메인 (Disaster/HumanActivity/Climate/AgriMarine/Defense/Humanitarian)",
+          "properties": ["name", "label"]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    { "id": "observedBy", "label": "관측위성", "domain": "Event", "range": "Satellite" },
+    { "id": "usesSensor", "label": "사용센서", "domain": "Event", "range": "Sensor" },
+    { "id": "usesDataProduct", "label": "사용데이터", "domain": "Event", "range": "DataProduct" },
+    { "id": "locatedIn", "label": "발생지역", "domain": "Event", "range": "Location" },
+    { "id": "inCountry", "label": "국가", "domain": "Event", "range": "Country" },
+    { "id": "analyzedBy", "label": "분석기관", "domain": "Event", "range": "Organization" },
+    { "id": "reportedBy", "label": "보도", "domain": "Event", "range": "Organization" },
+    { "id": "manifests", "label": "관측현상", "domain": "Event", "range": "Phenomenon" },
+    { "id": "inDomain", "label": "도메인", "domain": "Event", "range": "Domain" },
+    { "id": "triggeredBy", "label": "유발", "domain": "Event", "range": "Event" },
+    { "id": "partOfSeries", "label": "시리즈일부", "domain": "Event", "range": "Event" },
+    { "id": "supersedes", "label": "대체", "domain": "Event", "range": "Event" },
+    { "id": "carriesSensor", "label": "탑재센서", "domain": "Satellite", "range": "Sensor" },
+    { "id": "operatedBy", "label": "운영", "domain": "Satellite", "range": "Organization" },
+    { "id": "produces", "label": "제공제품", "domain": "Satellite", "range": "DataProduct" },
+    { "id": "nearby", "label": "근접지역", "domain": "Location", "range": "Location" }
+  ],
+  "changelog": [
+    {
+      "date": "2026-04-30",
+      "action": "initialize",
+      "target": "all",
+      "reason": "config/osint-config.json의 seed_classes 및 seed_relations로부터 초기화 — 위성영상 관측 이벤트 도메인",
+      "source_ids": []
+    }
+  ]
+}

@@ -1,0 +1,638 @@
+{
+  "project": {
+    "name": "onto-osint-earth_observation_event",
+    "topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+    "description": "지구상에서 위성영상으로 관측 가능한 모든 이벤트(자연재해·인간활동·기후·농업·해양·국방·환경)를 매일 OSINT로 수집·구조화하여 일일 보고서를 생성한다. NASA·ESA·NOAA·USGS·KARI·JAXA·상업위성 사업자(Planet/Maxar/BlackSky/ICEYE/Capella)·분석 기관(UNOSAT/CEMS/GFW/ClimateTRACE/Bellingcat/CSIS) 출처를 종합한다.",
+    "goals": [
+      "전 지구 위성 관측 이벤트의 일별 신규/지속/후속 정보를 추적",
+      "자연재해·인간활동·기후환경·농업해양·국방·인도주의 6개 도메인 균형 커버",
+      "위성·센서·기관·지역 단위 트리플 기반 지식그래프 누적",
+      "다중 위성 교차검증된 고신뢰 이벤트 식별",
+      "한반도(KOMPSAT 우선 관측) 및 주변 해역 이벤트 GeoFocus 가산",
+      "SAR/광학/열적외/초분광/온실가스 센서 종류별 특성을 추론에 반영"
+    ],
+    "scope": {
+      "include": [
+        "satellite imagery", "Earth observation", "Sentinel-1", "Sentinel-2", "Sentinel-3", "Sentinel-5P",
+        "Landsat", "MODIS", "VIIRS", "Planet", "PlanetScope", "SkySat", "Maxar", "WorldView", "GeoEye",
+        "BlackSky", "ICEYE", "Capella", "KOMPSAT", "Arirang", "CAS500", "ALOS", "GaoFen", "Pleiades",
+        "Himawari", "GOES", "TerraSAR-X", "RADARSAT", "MethaneSAT", "EMIT", "GHGSat",
+        "wildfire", "산불", "flood", "홍수", "typhoon", "hurricane", "태풍", "허리케인",
+        "earthquake", "지진", "volcanic eruption", "화산", "landslide", "산사태",
+        "drought", "가뭄", "snowstorm", "폭설", "algal bloom", "적조",
+        "deforestation", "삼림벌채", "urban expansion", "도시확장", "construction", "건설",
+        "mining", "광산", "농경지", "agricultural change",
+        "oil spill", "원유 유출", "industrial accident", "산업사고",
+        "military buildup", "군사 시설", "naval activity", "해상 선박",
+        "glacier retreat", "빙하", "sea level", "해수면", "permafrost", "영구동토",
+        "methane plume", "메탄 플룸", "CO2 emission", "온실가스", "air pollution", "대기오염",
+        "NDVI", "식생지수", "land subsidence", "지반침하",
+        "refugee camp", "난민캠프", "humanitarian crisis", "인도주의",
+        "DPRK satellite", "북한 위성영상", "DMZ", "한반도", "동해", "서해", "남해",
+        "before and after satellite", "위성 전후 비교", "SAR change detection", "변화탐지",
+        "Copernicus EMS", "Disaster Charter", "FIRMS", "UNOSAT", "GFW",
+        "Bellingcat satellite", "AllSource", "CSIS Beyond Parallel", "SkyTruth"
+      ],
+      "exclude": [
+        "satellite stock price", "위성 주가",
+        "rocket launch business news only", "단순 발사 사업 뉴스",
+        "executive appointment", "임원 인사",
+        "marketing campaign", "마케팅 캠페인",
+        "investor relations", "IR",
+        "consumer GPS", "자동차 내비",
+        "satellite TV broadcast", "위성방송 편성",
+        "fictional movie plot", "픽션 영화",
+        "horoscope", "운세"
+      ]
+    },
+    "report_language": "ko",
+    "lookback_days": 14,
+    "schedule_cron": "0 23 * * *",
+    "schedule_description": "KST 08:00 매일 (전날 공개된 위성영상 분석 + 향후 예정 관측 캠페인)",
+    "geo_focus": {
+      "scope": "global",
+      "label": "전 지구",
+      "rationale": "지구관측 이벤트는 글로벌 — 그러나 한반도(KOMPSAT 우선 관측)와 주변 해역은 가산점",
+      "priority_regions": [
+        { "id": "geo-korea", "name": "한반도", "boost": 0.10, "rationale": "KOMPSAT/CAS500 한반도 우선 관측 + 한국어 보고 우선순위" },
+        { "id": "geo-east-sea", "name": "동해 / East Sea", "boost": 0.05, "rationale": "한국 EEZ" },
+        { "id": "geo-yellow-sea", "name": "서해 / Yellow Sea", "boost": 0.05, "rationale": "한중 인접 해역 + 어선 활동 모니터링" },
+        { "id": "geo-south-china-sea", "name": "남중국해", "boost": 0.05, "rationale": "분쟁 해역 — Maxar/Planet 자주 분석 보도" },
+        { "id": "geo-amazon", "name": "아마존", "boost": 0.05, "rationale": "GFW 삼림 손실 핵심 모니터링" },
+        { "id": "geo-arctic", "name": "북극", "boost": 0.05, "rationale": "기후 변화 핵심 신호" }
+      ],
+      "include_in_report": true
+    },
+    "domain_categories": [
+      {
+        "id": "dom-disaster",
+        "name": "Disaster",
+        "label": "자연재해",
+        "phenomena": ["wildfire", "flood", "typhoon", "earthquake", "volcanic_eruption", "landslide", "drought", "snowstorm", "algal_bloom"]
+      },
+      {
+        "id": "dom-human",
+        "name": "HumanActivity",
+        "label": "인간활동",
+        "phenomena": ["deforestation", "urban_expansion", "construction", "mining", "agricultural_change", "oil_spill", "military_buildup", "maritime_shipping", "industrial_accident", "dam_change"]
+      },
+      {
+        "id": "dom-climate",
+        "name": "ClimateEnvironment",
+        "label": "기후·환경",
+        "phenomena": ["glacier_retreat", "sea_level_change", "permafrost_thaw", "methane_plume", "co2_plume", "air_pollution", "land_subsidence", "light_pollution"]
+      },
+      {
+        "id": "dom-agri-marine",
+        "name": "AgricultureMaritime",
+        "label": "농업·해양",
+        "phenomena": ["ndvi_change", "crop_yield", "fishing_activity", "aquaculture_change", "marine_debris", "current_anomaly"]
+      },
+      {
+        "id": "dom-defense",
+        "name": "Defense",
+        "label": "국방·안보",
+        "phenomena": ["military_buildup", "naval_movement", "missile_test_site", "border_activity", "air_base_change"]
+      },
+      {
+        "id": "dom-humanitarian",
+        "name": "Humanitarian",
+        "label": "인도주의",
+        "phenomena": ["refugee_camp", "displacement", "infrastructure_damage", "famine_indicator"]
+      }
+    ]
+  },
+  "search": {
+    "min_searches": 18,
+    "engines": [
+      {
+        "id": "google",
+        "name": "Google",
+        "engine": "google",
+        "languages": ["ko", "en"],
+        "enabled": true
+      },
+      {
+        "id": "naver",
+        "name": "Naver",
+        "engine": "naver",
+        "languages": ["ko"],
+        "enabled": true
+      },
+      {
+        "id": "duckduckgo",
+        "name": "DuckDuckGo",
+        "engine": "duckduckgo",
+        "languages": ["en"],
+        "enabled": true
+      }
+    ],
+    "custom_sites": [
+      {
+        "id": "nasa-eo",
+        "name": "NASA Earth Observatory",
+        "url": "https://earthobservatory.nasa.gov",
+        "section": "Image of the Day / Natural Hazards",
+        "notes": "NASA의 일별 위성영상 해설 — 모든 카테고리 1차 출처"
+      },
+      {
+        "id": "esa-copernicus",
+        "name": "ESA Copernicus / Sentinel",
+        "url": "https://www.esa.int/Applications/Observing_the_Earth",
+        "section": "Sentinel News & EO Highlights",
+        "notes": "유럽 Copernicus·Sentinel 시리즈 EO 결과"
+      },
+      {
+        "id": "cems",
+        "name": "Copernicus Emergency Management Service",
+        "url": "https://emergency.copernicus.eu",
+        "section": "Activations / Rapid Mapping",
+        "notes": "재난 발생 시 활성화되는 EU 위성영상 매핑 서비스"
+      },
+      {
+        "id": "noaa-nesdis",
+        "name": "NOAA / NESDIS",
+        "url": "https://www.nesdis.noaa.gov",
+        "section": "News / Imagery",
+        "notes": "기상·해양·기후 위성 분석 (GOES, JPSS, Himawari 협력)"
+      },
+      {
+        "id": "usgs-hazards",
+        "name": "USGS Natural Hazards",
+        "url": "https://www.usgs.gov/programs/natural-hazards",
+        "section": "Hazards updates with Landsat",
+        "notes": "Landsat 활용 토지 변화·산불·화산"
+      },
+      {
+        "id": "kari",
+        "name": "한국항공우주연구원 (KARI)",
+        "url": "https://www.kari.re.kr",
+        "section": "보도자료·KOMPSAT 관측 결과",
+        "notes": "KOMPSAT-2/3/3A/5/6 + CAS500 한반도 관측 1차 출처"
+      },
+      {
+        "id": "jaxa-eorc",
+        "name": "JAXA Earth Observation Research Center",
+        "url": "https://www.eorc.jaxa.jp",
+        "section": "ALOS-2 / GCOM Highlights",
+        "notes": "일본 SAR·기후 위성 분석"
+      },
+      {
+        "id": "firms",
+        "name": "NASA FIRMS (Fire Information)",
+        "url": "https://firms.modaps.eosdis.nasa.gov",
+        "section": "Active Fire Map",
+        "notes": "MODIS/VIIRS 기반 전 지구 화재 활성 — 산불 모니터링 표준"
+      },
+      {
+        "id": "planet-pulse",
+        "name": "Planet Pulse",
+        "url": "https://www.planet.com/pulse/",
+        "section": "Stories / Insights",
+        "notes": "Planet 상업 EO 분석 콘텐츠"
+      },
+      {
+        "id": "maxar-news",
+        "name": "Maxar News & Resources",
+        "url": "https://www.maxar.com/news",
+        "section": "News / Earth Intelligence",
+        "notes": "고해상도 영상 분석 (재해·국방·인프라)"
+      },
+      {
+        "id": "sentinel-hub",
+        "name": "Sentinel Hub Stories",
+        "url": "https://www.sentinel-hub.com/explore/education",
+        "section": "Stories / Use Cases",
+        "notes": "Copernicus 활용 사례"
+      },
+      {
+        "id": "unosat",
+        "name": "UNOSAT (UN Satellite Centre)",
+        "url": "https://unosat.org",
+        "section": "Maps / Reports",
+        "notes": "UN 위성영상 인도주의·재해 분석"
+      },
+      {
+        "id": "disaster-charter",
+        "name": "International Charter Space and Major Disasters",
+        "url": "https://disasterscharter.org",
+        "section": "Activations",
+        "notes": "국제 재해 위성영상 협조 — 활성화 발생 시 강력한 신호"
+      },
+      {
+        "id": "gfw",
+        "name": "Global Forest Watch",
+        "url": "https://www.globalforestwatch.org",
+        "section": "Forest Loss Alerts",
+        "notes": "삼림 벌채·손실 위성 모니터링"
+      },
+      {
+        "id": "climate-trace",
+        "name": "Climate TRACE",
+        "url": "https://climatetrace.org",
+        "section": "Emissions inventory",
+        "notes": "위성·AI 기반 온실가스 배출 추적"
+      },
+      {
+        "id": "skytruth",
+        "name": "SkyTruth",
+        "url": "https://skytruth.org",
+        "section": "Investigations",
+        "notes": "환경·해양 오염 OSINT (오일 스필 등)"
+      },
+      {
+        "id": "bellingcat",
+        "name": "Bellingcat",
+        "url": "https://www.bellingcat.com",
+        "section": "Articles with satellite imagery",
+        "notes": "분쟁·국방 OSINT — 위성영상 활용 분석"
+      },
+      {
+        "id": "csis-bp",
+        "name": "CSIS Beyond Parallel",
+        "url": "https://beyondparallel.csis.org",
+        "section": "Satellite analyses",
+        "notes": "한반도 군사·인프라 위성 분석"
+      },
+      {
+        "id": "allsource",
+        "name": "AllSource Analysis",
+        "url": "https://allsourceanalysis.com",
+        "section": "Reports / Briefs",
+        "notes": "상업 OSINT 분석 — 군사·인프라"
+      },
+      {
+        "id": "warzone",
+        "name": "The War Zone",
+        "url": "https://www.twz.com",
+        "section": "Articles with satellite/SAR imagery",
+        "notes": "군사 OSINT 매체 — 자주 위성·SAR 영상 활용"
+      }
+    ],
+    "keywords": {
+      "ko": [
+        "위성영상", "위성사진", "지구관측",
+        "위성영상 산불", "위성영상 홍수", "위성영상 태풍", "위성영상 지진",
+        "위성영상 화산", "위성영상 가뭄", "위성영상 적조",
+        "위성영상 삼림벌채", "위성영상 도시확장", "위성영상 광산",
+        "위성영상 원유 유출", "위성영상 산업사고",
+        "위성영상 군사", "위성영상 북한", "위성영상 미사일",
+        "위성영상 빙하", "위성영상 메탄", "위성영상 대기오염",
+        "위성 NDVI 식생", "위성 작황",
+        "Sentinel 위성 한국", "Landsat 한국", "KOMPSAT 관측", "아리랑 위성",
+        "CAS500 차세대중형위성", "다목적실용위성",
+        "한반도 위성 분석", "동해 어선 위성", "서해 어업 위성",
+        "전후 위성 비교", "위성 변화탐지", "SAR 변화탐지",
+        "Copernicus 위성", "ESA 위성영상", "NASA 위성영상", "JAXA 위성"
+      ],
+      "en": [
+        "satellite imagery wildfire", "satellite imagery flood", "satellite imagery typhoon",
+        "satellite imagery earthquake damage", "satellite imagery volcano eruption",
+        "satellite imagery deforestation", "satellite imagery urban expansion",
+        "satellite imagery mining", "satellite imagery oil spill",
+        "satellite imagery military buildup", "Maxar imagery defense",
+        "satellite imagery glacier retreat", "satellite imagery methane plume",
+        "satellite imagery sea level", "satellite imagery air pollution",
+        "Sentinel-1 SAR change detection", "Sentinel-2 NDVI",
+        "Sentinel-5P methane", "Landsat 9 thermal", "MODIS active fire",
+        "Planet PlanetScope daily", "Maxar WorldView analysis",
+        "ICEYE SAR daily", "Capella Space SAR",
+        "Copernicus EMS activation", "Disaster Charter activation",
+        "UNOSAT satellite analysis", "CSIS Beyond Parallel North Korea",
+        "Bellingcat satellite imagery", "GFW deforestation alert"
+      ]
+    }
+  },
+  "ontology": {
+    "seed_classes": [
+      {
+        "id": "Entity",
+        "label": "엔티티",
+        "description": "최상위 클래스",
+        "subclasses": [
+          {
+            "id": "Event",
+            "label": "이벤트",
+            "description": "위성영상으로 관측된 지구상 이벤트",
+            "properties": [
+              "name",
+              "event_type",
+              "domain",
+              "phenomenon",
+              "observation_date",
+              "start_date",
+              "end_date",
+              "lat",
+              "lon",
+              "country",
+              "region",
+              "area_km2",
+              "severity",
+              "satellites_used",
+              "sensors_used",
+              "data_products",
+              "before_after_available",
+              "confidence",
+              "kid_friendly_score",
+              "source_url",
+              "analyst_org"
+            ]
+          },
+          {
+            "id": "Satellite",
+            "label": "위성",
+            "description": "지구관측 위성 플랫폼",
+            "properties": [
+              "name",
+              "operator",
+              "country",
+              "orbit_type",
+              "altitude_km",
+              "revisit_days",
+              "resolution_m",
+              "sensor_types",
+              "mission_status",
+              "launch_date"
+            ]
+          },
+          {
+            "id": "Sensor",
+            "label": "센서",
+            "description": "위성 탑재 관측 센서",
+            "properties": [
+              "name",
+              "sensor_type",
+              "bands",
+              "swath_km",
+              "resolution_m",
+              "carried_by"
+            ],
+            "sensor_type_enum": [
+              "optical_pan", "optical_multispectral", "optical_hyperspectral",
+              "thermal_infrared", "SAR", "lidar",
+              "atmospheric_sounder", "trace_gas", "ocean_color"
+            ]
+          },
+          {
+            "id": "DataProduct",
+            "label": "데이터제품",
+            "description": "특정 처리 수준의 위성 데이터 제품 (Sentinel-2 L2A 등)",
+            "properties": ["name", "level", "provider", "format", "license"]
+          },
+          {
+            "id": "Location",
+            "label": "지역",
+            "description": "이벤트 발생 지리적 위치",
+            "properties": ["name", "country", "region", "admin_level", "lat", "lon", "area_km2"]
+          },
+          {
+            "id": "Country",
+            "label": "국가",
+            "description": "이벤트 발생 국가",
+            "properties": ["name", "iso_code", "region"]
+          },
+          {
+            "id": "Organization",
+            "label": "기관",
+            "description": "위성 운영·분석·보도 기관",
+            "properties": ["name", "org_type", "country", "website"],
+            "org_type_enum": [
+              "space_agency", "commercial_imagery", "defense_intel",
+              "ngo", "research", "media", "un_body", "weather_agency",
+              "industry_consortium"
+            ]
+          },
+          {
+            "id": "Phenomenon",
+            "label": "관측현상",
+            "description": "위성으로 관측 가능한 현상 유형",
+            "properties": ["name", "category", "observable_signature"]
+          },
+          {
+            "id": "Domain",
+            "label": "도메인",
+            "description": "이벤트가 속한 응용 도메인",
+            "properties": ["name", "label"]
+          }
+        ]
+      }
+    ],
+    "seed_relations": [
+      { "id": "observedBy", "label": "관측위성", "domain": "Event", "range": "Satellite" },
+      { "id": "usesSensor", "label": "사용센서", "domain": "Event", "range": "Sensor" },
+      { "id": "usesDataProduct", "label": "사용데이터", "domain": "Event", "range": "DataProduct" },
+      { "id": "locatedIn", "label": "발생지역", "domain": "Event", "range": "Location" },
+      { "id": "inCountry", "label": "국가", "domain": "Event", "range": "Country" },
+      { "id": "analyzedBy", "label": "분석기관", "domain": "Event", "range": "Organization" },
+      { "id": "reportedBy", "label": "보도", "domain": "Event", "range": "Organization" },
+      { "id": "manifests", "label": "관측현상", "domain": "Event", "range": "Phenomenon" },
+      { "id": "inDomain", "label": "도메인", "domain": "Event", "range": "Domain" },
+      { "id": "triggeredBy", "label": "유발", "domain": "Event", "range": "Event" },
+      { "id": "partOfSeries", "label": "시리즈일부", "domain": "Event", "range": "Event" },
+      { "id": "supersedes", "label": "대체", "domain": "Event", "range": "Event" },
+      { "id": "carriesSensor", "label": "탑재센서", "domain": "Satellite", "range": "Sensor" },
+      { "id": "operatedBy", "label": "운영", "domain": "Satellite", "range": "Organization" },
+      { "id": "produces", "label": "제공제품", "domain": "Satellite", "range": "DataProduct" },
+      { "id": "nearby", "label": "근접지역", "domain": "Location", "range": "Location" }
+    ],
+    "reasoning_rules": [
+      {
+        "id": "multi_satellite_confirmation",
+        "description": "동일 이벤트가 2개 이상 독립 위성/센서로 확인되면 신뢰도 가산",
+        "pattern": "(?e observedBy ?s1) AND (?e observedBy ?s2) AND (?s1 != ?s2) AND (?s1 operatedBy ?o1) AND (?s2 operatedBy ?o2) AND (?o1 != ?o2) => (?e multiSatBoost +0.20)"
+      },
+      {
+        "id": "cascading_disaster",
+        "description": "같은 지역에서 시간차로 발생한 재해는 triggeredBy 추정",
+        "pattern": "(?e1 inDomain dom-disaster) AND (?e2 inDomain dom-disaster) AND (?e1 locatedIn ?loc) AND (?e2 locatedIn ?loc) AND (?e2.start_date - ?e1.start_date in [0, 7days]) AND (?e1.phenomenon in {typhoon,earthquake,volcano}) AND (?e2.phenomenon in {flood,landslide,tsunami}) => (?e2 triggeredBy ?e1)"
+      },
+      {
+        "id": "temporal_progression",
+        "description": "같은 위치 시계열 관측은 partOfSeries",
+        "pattern": "(?e1 locatedIn ?loc) AND (?e2 locatedIn ?loc) AND (?e1.phenomenon == ?e2.phenomenon) AND (?e2.observation_date > ?e1.observation_date) => (?e2 partOfSeries ?e1)"
+      },
+      {
+        "id": "sensor_capability_match_sar",
+        "description": "SAR 센서로 관측된 구름 잦은 지역 이벤트는 신뢰도 가산 (광학으로는 보기 어려움)",
+        "pattern": "(?e usesSensor ?s) AND (?s sensor_type SAR) AND (?e cloudy_region true) => (?e sarBoost +0.10)"
+      },
+      {
+        "id": "sensor_capability_match_tirs",
+        "description": "열적외 센서로 관측된 화재·화산 이벤트는 신뢰도 가산",
+        "pattern": "(?e usesSensor ?s) AND (?s sensor_type thermal_infrared) AND (?e.phenomenon in {wildfire,volcanic_eruption,industrial_accident}) => (?e thermalBoost +0.10)"
+      },
+      {
+        "id": "sensor_capability_match_tracegas",
+        "description": "초분광/대기 센서로 관측된 메탄·CO₂·NOx 플룸 이벤트는 신뢰도 가산",
+        "pattern": "(?e usesSensor ?s) AND (?s sensor_type trace_gas) AND (?e.phenomenon in {methane_plume,co2_plume,air_pollution}) => (?e tracegasBoost +0.15)"
+      },
+      {
+        "id": "sensor_capability_match_hires",
+        "description": "고해상도 광학(≤1m)으로 관측된 인공구조물·차량 이벤트는 신뢰도 가산",
+        "pattern": "(?e usesSensor ?s) AND (?s.resolution_m <= 1.0) AND (?e.phenomenon in {military_buildup,construction,industrial_accident}) => (?e hiResBoost +0.15)"
+      },
+      {
+        "id": "official_source_trust",
+        "description": "정부 우주기관·UN·재해기구 발표는 신뢰도 가산",
+        "pattern": "(?e analyzedBy ?o) AND (?o.org_type in {space_agency,un_body,weather_agency}) => (?e officialBoost +0.15)"
+      },
+      {
+        "id": "commercial_imagery_trust",
+        "description": "상업 위성 사업자 직접 분석은 가산 (단 보도자료성은 cap)",
+        "pattern": "(?e analyzedBy ?o) AND (?o.org_type commercial_imagery) AND (?e.is_press_release == false) => (?e commercialBoost +0.10)"
+      },
+      {
+        "id": "korea_geo_focus",
+        "description": "한반도·한국 EEZ 이벤트는 우선순위 가산",
+        "pattern": "(?e inCountry ?c) AND (?c.iso_code in {KR,KP}) => (?e koreaBoost +0.10)"
+      },
+      {
+        "id": "disaster_severity_priority",
+        "description": "인명·인프라 피해 동반 자연재해는 보고서 1순위",
+        "pattern": "(?e inDomain dom-disaster) AND (?e.severity high) => (?e priorityBoost +0.20)"
+      },
+      {
+        "id": "before_after_credibility",
+        "description": "전후 비교 영상이 있는 이벤트는 신뢰도 가산",
+        "pattern": "(?e before_after_available true) => (?e baCredibilityBoost +0.10)"
+      }
+    ],
+    "max_new_classes_per_day": 3,
+    "max_new_relations_per_day": 5,
+    "confidence_threshold": 0.7,
+    "seed_instances": {
+      "Domain": [
+        { "id": "dom-disaster", "name": "Disaster", "label": "자연재해" },
+        { "id": "dom-human", "name": "HumanActivity", "label": "인간활동" },
+        { "id": "dom-climate", "name": "ClimateEnvironment", "label": "기후·환경" },
+        { "id": "dom-agri-marine", "name": "AgricultureMaritime", "label": "농업·해양" },
+        { "id": "dom-defense", "name": "Defense", "label": "국방·안보" },
+        { "id": "dom-humanitarian", "name": "Humanitarian", "label": "인도주의" }
+      ],
+      "Phenomenon": [
+        { "id": "phen-wildfire", "name": "wildfire", "category": "Disaster", "observable_signature": "thermal hotspots, smoke plume, burn scar (NBR)" },
+        { "id": "phen-flood", "name": "flood", "category": "Disaster", "observable_signature": "water extent change (SAR), spectral water indices" },
+        { "id": "phen-typhoon", "name": "typhoon", "category": "Disaster", "observable_signature": "spiral cloud structure (geostationary)" },
+        { "id": "phen-earthquake", "name": "earthquake_damage", "category": "Disaster", "observable_signature": "InSAR coseismic deformation, building damage" },
+        { "id": "phen-volcano", "name": "volcanic_eruption", "category": "Disaster", "observable_signature": "thermal anomaly, ash plume, SO2 emission" },
+        { "id": "phen-landslide", "name": "landslide", "category": "Disaster", "observable_signature": "scarp + deposit visible in optical/SAR" },
+        { "id": "phen-drought", "name": "drought", "category": "Disaster", "observable_signature": "NDVI deficit, soil moisture decrease" },
+        { "id": "phen-snowstorm", "name": "snowstorm", "category": "Disaster", "observable_signature": "snow cover (NDSI)" },
+        { "id": "phen-algal", "name": "algal_bloom", "category": "Disaster", "observable_signature": "ocean color anomaly (chlorophyll)" },
+        { "id": "phen-defor", "name": "deforestation", "category": "HumanActivity", "observable_signature": "loss in forest mask, tropical hotspot" },
+        { "id": "phen-urban", "name": "urban_expansion", "category": "HumanActivity", "observable_signature": "impervious surface increase" },
+        { "id": "phen-construction", "name": "construction", "category": "HumanActivity", "observable_signature": "newly cleared land + structural progress" },
+        { "id": "phen-mining", "name": "mining", "category": "HumanActivity", "observable_signature": "open-pit expansion, tailings ponds" },
+        { "id": "phen-oilspill", "name": "oil_spill", "category": "HumanActivity", "observable_signature": "SAR sea surface dampening (low backscatter)" },
+        { "id": "phen-military", "name": "military_buildup", "category": "Defense", "observable_signature": "vehicle arrays, equipment, base expansion (hi-res optical)" },
+        { "id": "phen-naval", "name": "naval_movement", "category": "Defense", "observable_signature": "ship detection (SAR/AIS gap)" },
+        { "id": "phen-glacier", "name": "glacier_retreat", "category": "ClimateEnvironment", "observable_signature": "terminus retreat, calving" },
+        { "id": "phen-sealevel", "name": "sea_level_change", "category": "ClimateEnvironment", "observable_signature": "altimetry trend (Sentinel-3, Jason)" },
+        { "id": "phen-permafrost", "name": "permafrost_thaw", "category": "ClimateEnvironment", "observable_signature": "thermokarst formation, surface deformation (InSAR)" },
+        { "id": "phen-methane", "name": "methane_plume", "category": "ClimateEnvironment", "observable_signature": "S5P TROPOMI / MethaneSAT XCH4 anomaly" },
+        { "id": "phen-air-pol", "name": "air_pollution", "category": "ClimateEnvironment", "observable_signature": "S5P NO2/SO2/aerosol" },
+        { "id": "phen-ndvi", "name": "ndvi_change", "category": "AgricultureMaritime", "observable_signature": "vegetation index time series" },
+        { "id": "phen-crop", "name": "crop_yield", "category": "AgricultureMaritime", "observable_signature": "phenology + biomass estimation" },
+        { "id": "phen-fishing", "name": "fishing_activity", "category": "AgricultureMaritime", "observable_signature": "VIIRS night light boats / SAR ships" },
+        { "id": "phen-refugee", "name": "refugee_camp", "category": "Humanitarian", "observable_signature": "tent array, road expansion" }
+      ],
+      "Country": [
+        { "id": "co-kr", "name": "대한민국", "iso_code": "KR", "region": "동아시아" },
+        { "id": "co-kp", "name": "조선민주주의인민공화국", "iso_code": "KP", "region": "동아시아" },
+        { "id": "co-jp", "name": "일본", "iso_code": "JP", "region": "동아시아" },
+        { "id": "co-cn", "name": "중국", "iso_code": "CN", "region": "동아시아" },
+        { "id": "co-us", "name": "미국", "iso_code": "US", "region": "북미" },
+        { "id": "co-ru", "name": "러시아", "iso_code": "RU", "region": "동유럽/북아시아" },
+        { "id": "co-ua", "name": "우크라이나", "iso_code": "UA", "region": "동유럽" },
+        { "id": "co-br", "name": "브라질", "iso_code": "BR", "region": "남미" },
+        { "id": "co-id", "name": "인도네시아", "iso_code": "ID", "region": "동남아시아" },
+        { "id": "co-au", "name": "호주", "iso_code": "AU", "region": "오세아니아" }
+      ],
+      "Satellite": [
+        { "id": "sat-sentinel1a", "name": "Sentinel-1A", "operator": "ESA", "orbit_type": "SSO", "resolution_m": 5, "sensor_types": ["SAR"], "mission_status": "operational" },
+        { "id": "sat-sentinel1c", "name": "Sentinel-1C", "operator": "ESA", "orbit_type": "SSO", "resolution_m": 5, "sensor_types": ["SAR"], "mission_status": "operational" },
+        { "id": "sat-sentinel2a", "name": "Sentinel-2A", "operator": "ESA", "orbit_type": "SSO", "resolution_m": 10, "sensor_types": ["optical_multispectral"], "mission_status": "operational" },
+        { "id": "sat-sentinel2b", "name": "Sentinel-2B", "operator": "ESA", "orbit_type": "SSO", "resolution_m": 10, "sensor_types": ["optical_multispectral"], "mission_status": "operational" },
+        { "id": "sat-sentinel3", "name": "Sentinel-3A/B", "operator": "ESA", "orbit_type": "SSO", "resolution_m": 300, "sensor_types": ["ocean_color", "thermal_infrared"], "mission_status": "operational" },
+        { "id": "sat-sentinel5p", "name": "Sentinel-5P", "operator": "ESA", "orbit_type": "SSO", "resolution_m": 3500, "sensor_types": ["trace_gas"], "mission_status": "operational" },
+        { "id": "sat-landsat8", "name": "Landsat 8", "operator": "USGS/NASA", "orbit_type": "SSO", "resolution_m": 30, "sensor_types": ["optical_multispectral", "thermal_infrared"], "mission_status": "operational" },
+        { "id": "sat-landsat9", "name": "Landsat 9", "operator": "USGS/NASA", "orbit_type": "SSO", "resolution_m": 30, "sensor_types": ["optical_multispectral", "thermal_infrared"], "mission_status": "operational" },
+        { "id": "sat-modis-terra", "name": "MODIS (Terra)", "operator": "NASA", "orbit_type": "SSO", "resolution_m": 250, "sensor_types": ["optical_multispectral", "thermal_infrared"], "mission_status": "operational" },
+        { "id": "sat-viirs-jpss", "name": "VIIRS (Suomi-NPP/JPSS)", "operator": "NOAA/NASA", "orbit_type": "SSO", "resolution_m": 375, "sensor_types": ["optical_multispectral", "thermal_infrared"], "mission_status": "operational" },
+        { "id": "sat-himawari9", "name": "Himawari-9", "operator": "JMA/JAXA", "orbit_type": "GEO", "resolution_m": 500, "sensor_types": ["optical_multispectral", "thermal_infrared"], "mission_status": "operational" },
+        { "id": "sat-goes18", "name": "GOES-18", "operator": "NOAA", "orbit_type": "GEO", "resolution_m": 500, "sensor_types": ["optical_multispectral", "thermal_infrared"], "mission_status": "operational" },
+        { "id": "sat-planetscope", "name": "PlanetScope (Doves)", "operator": "Planet", "orbit_type": "SSO", "resolution_m": 3, "sensor_types": ["optical_multispectral"], "mission_status": "operational" },
+        { "id": "sat-skysat", "name": "SkySat", "operator": "Planet", "orbit_type": "SSO", "resolution_m": 0.5, "sensor_types": ["optical_pan", "optical_multispectral"], "mission_status": "operational" },
+        { "id": "sat-worldview3", "name": "WorldView-3", "operator": "Maxar", "orbit_type": "SSO", "resolution_m": 0.31, "sensor_types": ["optical_pan", "optical_multispectral"], "mission_status": "operational" },
+        { "id": "sat-blacksky", "name": "BlackSky Global", "operator": "BlackSky", "orbit_type": "SSO", "resolution_m": 1.0, "sensor_types": ["optical_pan"], "mission_status": "operational" },
+        { "id": "sat-iceye", "name": "ICEYE constellation", "operator": "ICEYE", "orbit_type": "SSO", "resolution_m": 0.5, "sensor_types": ["SAR"], "mission_status": "operational" },
+        { "id": "sat-capella", "name": "Capella Space", "operator": "Capella", "orbit_type": "SSO", "resolution_m": 0.5, "sensor_types": ["SAR"], "mission_status": "operational" },
+        { "id": "sat-kompsat3a", "name": "KOMPSAT-3A (아리랑3A)", "operator": "KARI", "country": "KR", "orbit_type": "SSO", "resolution_m": 0.55, "sensor_types": ["optical_pan", "optical_multispectral", "thermal_infrared"], "mission_status": "operational" },
+        { "id": "sat-kompsat5", "name": "KOMPSAT-5 (아리랑5)", "operator": "KARI", "country": "KR", "orbit_type": "SSO", "resolution_m": 1.0, "sensor_types": ["SAR"], "mission_status": "operational" },
+        { "id": "sat-cas500-1", "name": "CAS500-1 (차세대중형위성 1호)", "operator": "KARI", "country": "KR", "orbit_type": "SSO", "resolution_m": 0.5, "sensor_types": ["optical_pan", "optical_multispectral"], "mission_status": "operational" },
+        { "id": "sat-alos2", "name": "ALOS-2", "operator": "JAXA", "country": "JP", "orbit_type": "SSO", "resolution_m": 3.0, "sensor_types": ["SAR"], "mission_status": "operational" },
+        { "id": "sat-gaofen", "name": "GaoFen series", "operator": "CNSA", "country": "CN", "orbit_type": "SSO", "resolution_m": 0.5, "sensor_types": ["optical_pan", "optical_multispectral", "SAR"], "mission_status": "operational" },
+        { "id": "sat-methanesat", "name": "MethaneSAT", "operator": "EDF", "orbit_type": "SSO", "resolution_m": 100, "sensor_types": ["trace_gas"], "mission_status": "operational" }
+      ],
+      "Sensor": [
+        { "id": "sensor-msi", "name": "MSI (Sentinel-2 Multispectral Instrument)", "sensor_type": "optical_multispectral", "carried_by": "Sentinel-2A/2B", "resolution_m": 10 },
+        { "id": "sensor-oli", "name": "OLI (Landsat Operational Land Imager)", "sensor_type": "optical_multispectral", "carried_by": "Landsat 8/9", "resolution_m": 30 },
+        { "id": "sensor-tirs", "name": "TIRS (Thermal Infrared Sensor)", "sensor_type": "thermal_infrared", "carried_by": "Landsat 8/9", "resolution_m": 100 },
+        { "id": "sensor-tropomi", "name": "TROPOMI", "sensor_type": "trace_gas", "carried_by": "Sentinel-5P", "resolution_m": 3500 },
+        { "id": "sensor-modis", "name": "MODIS", "sensor_type": "optical_multispectral", "carried_by": "Terra/Aqua", "resolution_m": 250 },
+        { "id": "sensor-viirs", "name": "VIIRS", "sensor_type": "optical_multispectral", "carried_by": "Suomi-NPP/JPSS", "resolution_m": 375 },
+        { "id": "sensor-c-sar", "name": "C-band SAR", "sensor_type": "SAR", "carried_by": "Sentinel-1", "resolution_m": 5 },
+        { "id": "sensor-x-sar", "name": "X-band SAR", "sensor_type": "SAR", "carried_by": "ICEYE/Capella/KOMPSAT-5", "resolution_m": 0.5 }
+      ],
+      "Organization": [
+        { "id": "org-nasa", "name": "NASA", "org_type": "space_agency", "country": "US" },
+        { "id": "org-esa", "name": "ESA (European Space Agency)", "org_type": "space_agency", "country": "EU" },
+        { "id": "org-noaa", "name": "NOAA", "org_type": "weather_agency", "country": "US" },
+        { "id": "org-usgs", "name": "USGS", "org_type": "space_agency", "country": "US" },
+        { "id": "org-kari", "name": "KARI (한국항공우주연구원)", "org_type": "space_agency", "country": "KR" },
+        { "id": "org-jaxa", "name": "JAXA", "org_type": "space_agency", "country": "JP" },
+        { "id": "org-cnsa", "name": "CNSA", "org_type": "space_agency", "country": "CN" },
+        { "id": "org-isro", "name": "ISRO", "org_type": "space_agency", "country": "IN" },
+        { "id": "org-cems", "name": "Copernicus Emergency Management Service", "org_type": "un_body", "country": "EU" },
+        { "id": "org-unosat", "name": "UNOSAT", "org_type": "un_body", "country": "INTL" },
+        { "id": "org-charter", "name": "International Disaster Charter", "org_type": "un_body", "country": "INTL" },
+        { "id": "org-planet", "name": "Planet Labs", "org_type": "commercial_imagery", "country": "US" },
+        { "id": "org-maxar", "name": "Maxar Technologies", "org_type": "commercial_imagery", "country": "US" },
+        { "id": "org-blacksky", "name": "BlackSky", "org_type": "commercial_imagery", "country": "US" },
+        { "id": "org-iceye", "name": "ICEYE", "org_type": "commercial_imagery", "country": "FI" },
+        { "id": "org-capella", "name": "Capella Space", "org_type": "commercial_imagery", "country": "US" },
+        { "id": "org-gfw", "name": "Global Forest Watch", "org_type": "ngo", "country": "INTL" },
+        { "id": "org-skytruth", "name": "SkyTruth", "org_type": "ngo", "country": "US" },
+        { "id": "org-climatetrace", "name": "Climate TRACE", "org_type": "ngo", "country": "INTL" },
+        { "id": "org-bellingcat", "name": "Bellingcat", "org_type": "ngo", "country": "NL" },
+        { "id": "org-csis-bp", "name": "CSIS Beyond Parallel", "org_type": "research", "country": "US" },
+        { "id": "org-allsource", "name": "AllSource Analysis", "org_type": "commercial_imagery", "country": "US" },
+        { "id": "org-warzone", "name": "The War Zone", "org_type": "media", "country": "US" }
+      ]
+    }
+  },
+  "report": {
+    "format": "markdown",
+    "include_kg_visualization": true,
+    "kg_visualization_format": "mermaid",
+    "max_kg_nodes": 30,
+    "wiki_publish": true,
+    "empty_report_message": "금일 위성영상 관측 신규 이벤트 특이사항 없음",
+    "sections": [
+      "오늘의 핵심 (Top 5 by 신뢰도·영향규모)",
+      "다중 위성 교차검증 이벤트",
+      "한반도 GeoFocus (KOMPSAT 우선 + 동·서·남해)",
+      "자연재해 (Disaster)",
+      "인간활동 (Human Activity)",
+      "기후·환경 (Climate & Environment)",
+      "농업·해양 (Agriculture & Maritime)",
+      "국방·안보 (Defense — OSINT 한정)",
+      "인도주의 (Humanitarian)",
+      "센서·플랫폼별 묶음 (Sentinel/Landsat/MODIS/Planet/Maxar/KOMPSAT)",
+      "전후 비교(before/after) 영상 보유 이벤트",
+      "미검증 의혹 (위성 출처 미확인)",
+      "지식그래프 시각화",
+      "출처 목록"
+    ]
+  }
+}
