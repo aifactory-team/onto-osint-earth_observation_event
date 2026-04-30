@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "description": "위성영상 관측 이벤트 누적 지식그래프 — 첫 실행(2026-04-30) 이후 매일 신규/추론 트리플 병합",
+  "last_updated": "2026-04-30",
+  "snapshots_merged": ["2026-04-30"],
+  "triples": "ontology/kg/2026-04-30.json#new_triples + #inferred_triples",
+  "stats": {
+    "total_explicit_triples": 116,
+    "total_inferred_triples": 45,
+    "total_unique_subjects": 26,
+    "total_unique_predicates": 12,
+    "total_unique_objects": 60
+  },
+  "note": "첫 실행이므로 누적 KG는 2026-04-30 일별 KG와 동일 — 다음 일자부터 병합 시작."
+}

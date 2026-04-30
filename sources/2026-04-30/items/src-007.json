@@ -1,0 +1,27 @@
+{
+  "id": "src-007",
+  "title": "China Restricts Access and Expands Reach in the South China Sea (Antelope Reef)",
+  "url": "https://www.fdd.org/analysis/2026/04/16/china-restricts-access-and-expands-reach-in-the-south-china-sea/",
+  "snippet": "FDD analysis April 16, 2026 — Beijing constructing large airbase on Antelope Reef in Paracel Islands; activity reported January 2026, visible in ESA Sentinel-2 since October 2025. Dredging at multiple lagoon points; expanding land around existing outpost. AMTI March 2026 reports ~6.11 km² reclaimed land using Vantor commercial imagery.",
+  "source_name": "Foundation for Defense of Democracies",
+  "language": "en",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "First run; no prior sources exist.",
+  "entities": [
+    {"id": "temp-0006", "type": "Event", "name": "남중국해 Antelope Reef 인공섬 확장 및 군사 비행장 건설", "properties": {"phenomenon": "military_buildup", "domain": "Defense", "country": "CN", "region": "Paracel Islands, South China Sea", "lat": 16.4, "lon": 111.6, "area_km2": 6.11, "observation_date": "2026-04-16", "severity": "high", "before_after_available": true, "satellite_unverified": false}},
+    {"id": "temp-loc-005", "type": "Location", "name": "Antelope Reef, Paracel Islands", "properties": {"country": "CN", "region": "Paracel Islands / 남중국해", "lat": 16.4, "lon": 111.6}}
+  ],
+  "relations": [
+    {"subject": "temp-0006", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "temp-0006", "predicate": "observedBy", "object": "sat-sentinel2b"},
+    {"subject": "temp-0006", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "temp-0006", "predicate": "locatedIn", "object": "temp-loc-005"},
+    {"subject": "temp-0006", "predicate": "inCountry", "object": "co-cn"},
+    {"subject": "temp-0006", "predicate": "manifests", "object": "phen-military"},
+    {"subject": "temp-0006", "predicate": "manifests", "object": "phen-construction"},
+    {"subject": "temp-0006", "predicate": "inDomain", "object": "dom-defense"}
+  ]
+}

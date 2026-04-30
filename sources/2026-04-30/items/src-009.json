@@ -1,0 +1,27 @@
+{
+  "id": "src-009",
+  "title": "UNOSAT Gaza Strip Comprehensive Damage Assessment (Jan-Feb 2026 imagery)",
+  "url": "https://unosat.org/products/4130",
+  "snippet": "UNOSAT damage assessment based on imagery collected 26 Jan and 5 Feb 2026; identified more than 1,500 structures destroyed or moderately to severely damaged in three camps in Gaza Strip. Reported via OCHA Apr 17 2026 Humanitarian Situation Report.",
+  "source_name": "UNOSAT (UNITAR) / OCHA",
+  "language": "en",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "First run; no prior sources exist.",
+  "entities": [
+    {"id": "temp-0008", "type": "Event", "name": "가자지구 종합 피해 평가 (Gaza Strip Comprehensive Damage Assessment Jan-Feb 2026)", "properties": {"phenomenon": "infrastructure_damage", "domain": "Humanitarian", "country": "PS", "region": "Gaza Strip", "lat": 31.5, "lon": 34.45, "observation_date": "2026-02-05", "severity": "high", "before_after_available": true, "satellite_unverified": false}},
+    {"id": "temp-co-ps", "type": "Country", "name": "팔레스타인", "properties": {"iso_code": "PS", "region": "서아시아"}},
+    {"id": "temp-loc-006", "type": "Location", "name": "Three refugee camps, Gaza Strip", "properties": {"country": "PS", "region": "Gaza", "lat": 31.5, "lon": 34.45}}
+  ],
+  "relations": [
+    {"subject": "temp-0008", "predicate": "observedBy", "object": "sat-worldview3"},
+    {"subject": "temp-0008", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "temp-0008", "predicate": "locatedIn", "object": "temp-loc-006"},
+    {"subject": "temp-0008", "predicate": "inCountry", "object": "temp-co-ps"},
+    {"subject": "temp-0008", "predicate": "analyzedBy", "object": "org-unosat"},
+    {"subject": "temp-0008", "predicate": "manifests", "object": "phen-refugee"},
+    {"subject": "temp-0008", "predicate": "inDomain", "object": "dom-humanitarian"}
+  ]
+}

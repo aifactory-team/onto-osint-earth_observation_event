@@ -1,0 +1,23 @@
+{
+  "id": "src-020",
+  "title": "SkyTruth Cerulean — near-real-time global oil slick detection",
+  "url": "https://www.skylight.global/news/skytruth-integration",
+  "snippet": "SkyTruth's Cerulean ML model scans Sentinel-1 SAR daily for oil slicks; updated for near-real-time detection within hours of capture. Integrated into Skylight platform for marine monitoring; correlates with AIS vessel data to identify likely polluters. Used in 2026 to expose Russia's shadow fleet.",
+  "source_name": "SkyTruth / Skylight",
+  "language": "en",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "First run; no prior sources exist.",
+  "entities": [
+    {"id": "temp-0019", "type": "Event", "name": "전 지구 해상 오일 슬릭 자동 탐지 (Cerulean SAR + AIS)", "properties": {"phenomenon": "oil_spill", "domain": "HumanActivity", "country": "INTL", "region": "Global oceans", "lat": 0.0, "lon": 0.0, "observation_date": "2026-04-30", "severity": "medium", "satellite_unverified": false}}
+  ],
+  "relations": [
+    {"subject": "temp-0019", "predicate": "observedBy", "object": "sat-sentinel1a"},
+    {"subject": "temp-0019", "predicate": "usesSensor", "object": "sensor-c-sar"},
+    {"subject": "temp-0019", "predicate": "analyzedBy", "object": "org-skytruth"},
+    {"subject": "temp-0019", "predicate": "manifests", "object": "phen-oilspill"},
+    {"subject": "temp-0019", "predicate": "inDomain", "object": "dom-human"}
+  ]
+}

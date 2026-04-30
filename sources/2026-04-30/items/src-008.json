@@ -1,0 +1,25 @@
+{
+  "id": "src-008",
+  "title": "Bellingcat — Iran Conflict Damage Proxy Map (Sentinel-1 SAR PWTT)",
+  "url": "https://www.bellingcat.com/resources/2026/04/07/tool-damage-assessment-destruction-sentinel-satellite-imagery-iran-us-gulf/",
+  "snippet": "Bellingcat April 7, 2026 — New tool conducts a Pixel-Wise T-Test (PWTT) on Sentinel-1 SAR imagery across Iran and the Gulf to detect damage by comparing reference and inference periods. Updated 1-2 times per week as new Sentinel-1 data arrives.",
+  "source_name": "Bellingcat",
+  "language": "en",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "First run; no prior sources exist.",
+  "entities": [
+    {"id": "temp-0007", "type": "Event", "name": "이란/걸프 분쟁 피해 SAR 변화탐지 분석 (Iran Conflict Damage Proxy Map)", "properties": {"phenomenon": "infrastructure_damage", "domain": "Humanitarian", "country": "IR", "region": "Iran/Gulf", "lat": 32.4, "lon": 53.7, "observation_date": "2026-04-07", "severity": "high", "before_after_available": true, "satellite_unverified": false}},
+    {"id": "temp-co-ir", "type": "Country", "name": "이란", "properties": {"iso_code": "IR", "region": "서아시아"}}
+  ],
+  "relations": [
+    {"subject": "temp-0007", "predicate": "observedBy", "object": "sat-sentinel1a"},
+    {"subject": "temp-0007", "predicate": "observedBy", "object": "sat-sentinel1c"},
+    {"subject": "temp-0007", "predicate": "usesSensor", "object": "sensor-c-sar"},
+    {"subject": "temp-0007", "predicate": "inCountry", "object": "temp-co-ir"},
+    {"subject": "temp-0007", "predicate": "analyzedBy", "object": "org-bellingcat"},
+    {"subject": "temp-0007", "predicate": "inDomain", "object": "dom-humanitarian"}
+  ]
+}

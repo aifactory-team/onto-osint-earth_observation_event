@@ -1,0 +1,28 @@
+{
+  "id": "src-004",
+  "title": "Réunion Island Lava Reaches the Sea — Piton de la Fournaise eruption",
+  "url": "https://science.nasa.gov/earth/earth-observatory/reunion-island-lava-reaches-the-sea/",
+  "snippet": "NASA Earth Observatory — The Landsat 9 TIRS captured a thermal image of lava flows from Piton de la Fournaise on March 28, 2026. Eruption began February 13, 2026, lasted longer with greater volume than recent eruptions; lava reached Indian Ocean by March 16, producing acidic laze plumes.",
+  "source_name": "NASA Earth Observatory",
+  "language": "en",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "First run; no prior sources exist.",
+  "entities": [
+    {"id": "temp-0003", "type": "Event", "name": "피톤 드 라 푸르네즈 화산 분출 (Piton de la Fournaise eruption)", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "FR", "region": "Réunion", "lat": -21.244, "lon": 55.708, "observation_date": "2026-03-28", "start_date": "2026-02-13", "end_date": "2026-04-12", "severity": "high", "before_after_available": true, "satellite_unverified": false}},
+    {"id": "temp-loc-003", "type": "Location", "name": "Enclos Fouqué caldera, Piton de la Fournaise, Réunion Island", "properties": {"country": "FR", "region": "Réunion", "lat": -21.244, "lon": 55.708}},
+    {"id": "temp-co-fr", "type": "Country", "name": "프랑스", "properties": {"iso_code": "FR", "region": "서유럽"}}
+  ],
+  "relations": [
+    {"subject": "temp-0003", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "temp-0003", "predicate": "usesSensor", "object": "sensor-tirs"},
+    {"subject": "temp-0003", "predicate": "locatedIn", "object": "temp-loc-003"},
+    {"subject": "temp-0003", "predicate": "inCountry", "object": "temp-co-fr"},
+    {"subject": "temp-0003", "predicate": "analyzedBy", "object": "org-nasa"},
+    {"subject": "temp-0003", "predicate": "analyzedBy", "object": "org-usgs"},
+    {"subject": "temp-0003", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "temp-0003", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

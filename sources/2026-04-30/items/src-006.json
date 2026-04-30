@@ -1,0 +1,24 @@
+{
+  "id": "src-006",
+  "title": "Tropical Rainforest Loss Drops 36% in 2025, but Fires Threaten Global Progress",
+  "url": "https://www.wri.org/news/release-tropical-rainforest-loss-drops-36-2025-fires-threaten-global-progress",
+  "snippet": "GFW/UMD GLAD Lab data released April 29, 2026 — World lost 4.3M ha tropical primary rainforest in 2025 (Denmark size); fires accounted for 42% of 25.5M ha total tree cover loss. Loss still 46% higher than a decade ago. El Niño risk for 2026 fires.",
+  "source_name": "World Resources Institute / Global Forest Watch",
+  "language": "en",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "First run; major April 29 GFW data release.",
+  "entities": [
+    {"id": "temp-0005", "type": "Event", "name": "2025년 전 지구 열대 원시림 손실 4.3M ha (GFW/UMD 분석)", "properties": {"phenomenon": "deforestation", "domain": "HumanActivity", "country": "INTL", "region": "Tropical belt", "lat": 0.0, "lon": -60.0, "observation_date": "2026-04-29", "area_km2": 43000, "severity": "high", "satellite_unverified": false}}
+  ],
+  "relations": [
+    {"subject": "temp-0005", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "temp-0005", "predicate": "observedBy", "object": "sat-modis-terra"},
+    {"subject": "temp-0005", "predicate": "usesSensor", "object": "sensor-modis"},
+    {"subject": "temp-0005", "predicate": "analyzedBy", "object": "org-gfw"},
+    {"subject": "temp-0005", "predicate": "manifests", "object": "phen-defor"},
+    {"subject": "temp-0005", "predicate": "inDomain", "object": "dom-human"}
+  ]
+}

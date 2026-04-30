@@ -1,0 +1,24 @@
+{
+  "id": "src-019",
+  "title": "Sentinel-1 Global Flood Monitoring service — automatic CEMS pipeline",
+  "url": "https://www.sciencedirect.com/science/article/pii/S0034425725005127",
+  "snippet": "Remote Sensing of Environment 2025-2026 — GFM service launched 2021 under CEMS, processes all Sentinel-1 VV-polarisation land images in near-real time; flood maps within 5 hours of acquisition. Continued operational service through April 2026.",
+  "source_name": "Remote Sensing of Environment",
+  "language": "en",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "First run; no prior sources exist.",
+  "entities": [
+    {"id": "temp-0018", "type": "Event", "name": "Copernicus EMS GFM Sentinel-1 자동 홍수 매핑 운영 (April 2026)", "properties": {"phenomenon": "flood", "domain": "Disaster", "country": "INTL", "region": "Global", "lat": 0.0, "lon": 0.0, "observation_date": "2026-04-30", "severity": "medium", "satellite_unverified": false}}
+  ],
+  "relations": [
+    {"subject": "temp-0018", "predicate": "observedBy", "object": "sat-sentinel1a"},
+    {"subject": "temp-0018", "predicate": "observedBy", "object": "sat-sentinel1c"},
+    {"subject": "temp-0018", "predicate": "usesSensor", "object": "sensor-c-sar"},
+    {"subject": "temp-0018", "predicate": "analyzedBy", "object": "org-cems"},
+    {"subject": "temp-0018", "predicate": "manifests", "object": "phen-flood"},
+    {"subject": "temp-0018", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

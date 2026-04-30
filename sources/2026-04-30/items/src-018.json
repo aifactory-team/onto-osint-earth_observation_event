@@ -1,0 +1,25 @@
+{
+  "id": "src-018",
+  "title": "ICEYE Flood Insights — Sri Lanka partnership after Cyclone Ditwah",
+  "url": "https://www.iceye.com/",
+  "snippet": "ICEYE 50+ SAR satellite constellation with 4x daily revisits provides flood extent updated every 6 hours. New Sri Lanka reseller partnership with Geo-Info Mapping commercializes Flood Rapid Impact nationwide following Cyclone Ditwah deployment.",
+  "source_name": "ICEYE",
+  "language": "en",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "First run; no prior sources exist.",
+  "entities": [
+    {"id": "temp-0017", "type": "Event", "name": "스리랑카 사이클론 디트와 SAR 홍수 매핑 (ICEYE)", "properties": {"phenomenon": "flood", "domain": "Disaster", "country": "LK", "region": "Sri Lanka", "lat": 7.87, "lon": 80.77, "observation_date": "2026-03-30", "severity": "high", "before_after_available": true, "satellite_unverified": false, "is_press_release": true}},
+    {"id": "temp-co-lk", "type": "Country", "name": "스리랑카", "properties": {"iso_code": "LK", "region": "남아시아"}}
+  ],
+  "relations": [
+    {"subject": "temp-0017", "predicate": "observedBy", "object": "sat-iceye"},
+    {"subject": "temp-0017", "predicate": "usesSensor", "object": "sensor-x-sar"},
+    {"subject": "temp-0017", "predicate": "inCountry", "object": "temp-co-lk"},
+    {"subject": "temp-0017", "predicate": "analyzedBy", "object": "org-iceye"},
+    {"subject": "temp-0017", "predicate": "manifests", "object": "phen-flood"},
+    {"subject": "temp-0017", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

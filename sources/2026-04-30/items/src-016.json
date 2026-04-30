@@ -1,0 +1,24 @@
+{
+  "id": "src-016",
+  "title": "한반도 정밀 관측할 아리랑 7호 — 2026 상반기 영상 제공 시작",
+  "url": "https://www.newsspace.kr/news/article.html?no=9589",
+  "snippet": "NewsSpace — KOMPSAT-7(아리랑 7호) 0.3m 해상도 광학 위성, 2025-12-02 발사 후 2026 상반기 한반도 관측 영상 제공 시작 예정. KOMPSAT-7A는 2026년 11월 발사 예정. KOMPSAT-6 SAR(0.5m, 2026 11월) 함께 한반도 정밀 관측 체계 구축.",
+  "source_name": "NewsSpace",
+  "language": "ko",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "First run; KOMPSAT 신규 위성 운용 정보 — 한반도 GeoFocus.",
+  "entities": [
+    {"id": "temp-0015", "type": "Event", "name": "KOMPSAT-7 한반도 정밀 관측 운용 시작 (2026 상반기)", "properties": {"phenomenon": "ndvi_change", "domain": "AgricultureMaritime", "country": "KR", "region": "한반도", "lat": 36.5, "lon": 127.8, "observation_date": "2026-04-30", "severity": "low", "satellite_unverified": false}},
+    {"id": "temp-sat-kompsat7", "type": "Satellite", "name": "KOMPSAT-7 (아리랑 7호)", "properties": {"operator": "KARI", "country": "KR", "orbit_type": "SSO", "resolution_m": 0.3, "sensor_types": ["optical_pan", "optical_multispectral"], "mission_status": "operational", "launch_date": "2025-12-02"}},
+    {"id": "temp-sat-kompsat6", "type": "Satellite", "name": "KOMPSAT-6 (아리랑 6호)", "properties": {"operator": "KARI", "country": "KR", "orbit_type": "SSO", "resolution_m": 0.5, "sensor_types": ["SAR"], "mission_status": "planned", "launch_date": "2026-11"}}
+  ],
+  "relations": [
+    {"subject": "temp-0015", "predicate": "observedBy", "object": "temp-sat-kompsat7"},
+    {"subject": "temp-0015", "predicate": "inCountry", "object": "co-kr"},
+    {"subject": "temp-0015", "predicate": "analyzedBy", "object": "org-kari"},
+    {"subject": "temp-0015", "predicate": "inDomain", "object": "dom-agri-marine"}
+  ]
+}

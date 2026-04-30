@@ -1,0 +1,22 @@
+{
+  "id": "src-002",
+  "title": "Satellite imagery reveals increased activity at North Korean nuclear complex",
+  "url": "https://www.rfa.org/english/korea/2026/04/28/north-korea-satellite-yongbyon-nuclear/",
+  "snippet": "RFA April 28, 2026 — High-resolution images from March to April show the Yongbyon facility being well-maintained; vehicles seen on April 15. Consistent water discharge from 5 MW reactor throughout 2026; occasional steam from Radiochemistry Lab; new high-rise residential buildings erected.",
+  "source_name": "Radio Free Asia",
+  "language": "en",
+  "discovered_date": "2026-04-30",
+  "tag": "update",
+  "related_report": null,
+  "related_item": "src-001",
+  "tag_reason": "Provides additional April 15-28 observations of the same Yongbyon complex; cross-reinforces src-001 with multi-week temporal monitoring.",
+  "entities": [
+    {"id": "temp-0001", "type": "Event", "name": "영변 우라늄 농축 신규 건물 완공 관측 (Yongbyon UEP completion)", "properties": {"phenomenon": "military_buildup", "domain": "Defense", "country": "KP", "lat": 39.8, "lon": 125.7, "observation_date": "2026-04-28", "severity": "high"}}
+  ],
+  "relations": [
+    {"subject": "temp-0001", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "temp-0001", "predicate": "reportedBy", "object": "org-warzone"},
+    {"subject": "temp-0001", "predicate": "inCountry", "object": "co-kp"},
+    {"subject": "temp-0001", "predicate": "manifests", "object": "phen-military"}
+  ]
+}

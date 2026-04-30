@@ -1,0 +1,23 @@
+{
+  "id": "src-017",
+  "title": "Maxar restores Ukraine's access to high-resolution satellite imagery",
+  "url": "https://kyivindependent.com/maxar-technologies-restores-ukraines-access-to-high-resolution-satellite-imagery/",
+  "snippet": "Kyiv Independent — Maxar restored Ukraine's access to GEGD service in March 2026 after intermittent restrictions. Maxar has been one of Ukraine's most critical suppliers of very high resolution imagery (30-50 cm optical), exposing troop movements, war crimes, and supporting defense operations.",
+  "source_name": "Kyiv Independent",
+  "language": "en",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "First run; no prior sources exist.",
+  "entities": [
+    {"id": "temp-0016", "type": "Event", "name": "Maxar 우크라이나 위성영상 GEGD 접근 재개 (2026년 3월)", "properties": {"phenomenon": "military_buildup", "domain": "Defense", "country": "UA", "region": "Ukraine", "lat": 49.0, "lon": 32.0, "observation_date": "2026-03-12", "severity": "medium", "before_after_available": true, "satellite_unverified": false, "is_press_release": true}}
+  ],
+  "relations": [
+    {"subject": "temp-0016", "predicate": "observedBy", "object": "sat-worldview3"},
+    {"subject": "temp-0016", "predicate": "inCountry", "object": "co-ua"},
+    {"subject": "temp-0016", "predicate": "analyzedBy", "object": "org-maxar"},
+    {"subject": "temp-0016", "predicate": "manifests", "object": "phen-military"},
+    {"subject": "temp-0016", "predicate": "inDomain", "object": "dom-defense"}
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "src-010",
+  "title": "Antarctica's Hektoria Glacier — fastest collapse ever recorded",
+  "url": "https://www.sciencedaily.com/releases/2026/02/260226042454.htm",
+  "snippet": "ScienceDaily Feb 26 2026 — Hektoria Glacier (Antarctic Peninsula) retreated 8.2±0.2 km in two months (Nov-Dec 2022), fastest ever observed. Multi-satellite + seismic data captured chain reaction; buoyancy-driven calving from flat underwater ice plain. New satellite reanalysis published in Nature Geoscience early 2026.",
+  "source_name": "ScienceDaily / Nature Geoscience",
+  "language": "en",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "First run; no prior sources exist.",
+  "entities": [
+    {"id": "temp-0009", "type": "Event", "name": "헥토리아 빙하 붕괴 — 최단기 역대 최고 후퇴 (Hektoria glacier rapid retreat)", "properties": {"phenomenon": "glacier_retreat", "domain": "ClimateEnvironment", "country": "AQ", "region": "Antarctic Peninsula", "lat": -65.0, "lon": -62.0, "observation_date": "2026-02-26", "area_km2": 298, "severity": "high", "before_after_available": true, "satellite_unverified": false}},
+    {"id": "temp-loc-007", "type": "Location", "name": "Hektoria Glacier, Antarctic Peninsula", "properties": {"country": "AQ", "region": "Antarctica", "lat": -65.0, "lon": -62.0}},
+    {"id": "temp-co-aq", "type": "Country", "name": "남극", "properties": {"iso_code": "AQ", "region": "남극"}}
+  ],
+  "relations": [
+    {"subject": "temp-0009", "predicate": "observedBy", "object": "sat-sentinel1a"},
+    {"subject": "temp-0009", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "temp-0009", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "temp-0009", "predicate": "locatedIn", "object": "temp-loc-007"},
+    {"subject": "temp-0009", "predicate": "inCountry", "object": "temp-co-aq"},
+    {"subject": "temp-0009", "predicate": "manifests", "object": "phen-glacier"},
+    {"subject": "temp-0009", "predicate": "inDomain", "object": "dom-climate"}
+  ]
+}

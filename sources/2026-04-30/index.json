@@ -1,0 +1,29 @@
+{
+  "date": "2026-04-30",
+  "total": 20,
+  "new": 19,
+  "reported": 0,
+  "update": 1,
+  "items": [
+    {"id": "src-001", "title": "Suspected Uranium Enrichment Building at Yongbyon Complete", "url": "https://beyondparallel.csis.org/suspected-uranium-enrichment-building-at-yongbyon-complete/", "tag": "new", "related_report": null, "entity_count": 2},
+    {"id": "src-002", "title": "Satellite imagery reveals increased activity at North Korean nuclear complex", "url": "https://www.rfa.org/english/korea/2026/04/28/north-korea-satellite-yongbyon-nuclear/", "tag": "update", "related_report": null, "entity_count": 1},
+    {"id": "src-003", "title": "Villages Bordering Sohae Satellite Launching Station Razed", "url": "https://www.38north.org/2026/04/villages-bordering-sohae-satellite-launching-station-razed/", "tag": "new", "related_report": null, "entity_count": 2},
+    {"id": "src-004", "title": "Réunion Island Lava Reaches the Sea — Piton de la Fournaise eruption", "url": "https://science.nasa.gov/earth/earth-observatory/reunion-island-lava-reaches-the-sea/", "tag": "new", "related_report": null, "entity_count": 3},
+    {"id": "src-005", "title": "Kilauea InSAR image of Episode 44 deformation (April 1-9, 2026)", "url": "https://www.usgs.gov/media/images/april-15-2026-insar-image-kilauea-deformation-associated-episode-44-ongoing-summit", "tag": "new", "related_report": null, "entity_count": 3},
+    {"id": "src-006", "title": "Tropical Rainforest Loss Drops 36% in 2025, but Fires Threaten Global Progress", "url": "https://www.wri.org/news/release-tropical-rainforest-loss-drops-36-2025-fires-threaten-global-progress", "tag": "new", "related_report": null, "entity_count": 1},
+    {"id": "src-007", "title": "China Restricts Access and Expands Reach in the South China Sea (Antelope Reef)", "url": "https://www.fdd.org/analysis/2026/04/16/china-restricts-access-and-expands-reach-in-the-south-china-sea/", "tag": "new", "related_report": null, "entity_count": 2},
+    {"id": "src-008", "title": "Bellingcat — Iran Conflict Damage Proxy Map (Sentinel-1 SAR PWTT)", "url": "https://www.bellingcat.com/resources/2026/04/07/tool-damage-assessment-destruction-sentinel-satellite-imagery-iran-us-gulf/", "tag": "new", "related_report": null, "entity_count": 2},
+    {"id": "src-009", "title": "UNOSAT Gaza Strip Comprehensive Damage Assessment", "url": "https://unosat.org/products/4130", "tag": "new", "related_report": null, "entity_count": 3},
+    {"id": "src-010", "title": "Antarctica's Hektoria Glacier — fastest collapse ever recorded", "url": "https://www.sciencedaily.com/releases/2026/02/260226042454.htm", "tag": "new", "related_report": null, "entity_count": 3},
+    {"id": "src-011", "title": "Climate TRACE March 2026 release tracks global emissions through Jan 2026", "url": "https://climatetrace.org/", "tag": "new", "related_report": null, "entity_count": 1},
+    {"id": "src-012", "title": "Sentinel-5P TROPOMI methane trends — Harvard analysis April 2026", "url": "https://cen.acs.org/environment/atmospheric-chemistry/Satellite-data-reveal-rising-methane/104/web/2026/04", "tag": "new", "related_report": null, "entity_count": 2},
+    {"id": "src-013", "title": "Typhoon Sinlaku — first April super typhoon since 2022", "url": "https://en.wikipedia.org/wiki/2026_Pacific_typhoon_season", "tag": "new", "related_report": null, "entity_count": 2},
+    {"id": "src-014", "title": "Severe Tropical Cyclone Vaianu (Apr 5-12, 2026) — South Pacific", "url": "https://zoom.earth/storms/vaianu-2026/", "tag": "new", "related_report": null, "entity_count": 2},
+    {"id": "src-015", "title": "한반도 4월 26일 전국 산불 동시 발생 — 건조특보", "url": "https://v.daum.net/v/20260426173831552", "tag": "new", "related_report": null, "entity_count": 1},
+    {"id": "src-016", "title": "한반도 정밀 관측할 아리랑 7호 — 2026 상반기 영상 제공 시작", "url": "https://www.newsspace.kr/news/article.html?no=9589", "tag": "new", "related_report": null, "entity_count": 3},
+    {"id": "src-017", "title": "Maxar restores Ukraine's access to high-resolution satellite imagery", "url": "https://kyivindependent.com/maxar-technologies-restores-ukraines-access-to-high-resolution-satellite-imagery/", "tag": "new", "related_report": null, "entity_count": 1},
+    {"id": "src-018", "title": "ICEYE Flood Insights — Sri Lanka partnership after Cyclone Ditwah", "url": "https://www.iceye.com/", "tag": "new", "related_report": null, "entity_count": 2},
+    {"id": "src-019", "title": "Sentinel-1 Global Flood Monitoring service — automatic CEMS pipeline", "url": "https://www.sciencedirect.com/science/article/pii/S0034425725005127", "tag": "new", "related_report": null, "entity_count": 1},
+    {"id": "src-020", "title": "SkyTruth Cerulean — near-real-time global oil slick detection", "url": "https://www.skylight.global/news/skytruth-integration", "tag": "new", "related_report": null, "entity_count": 1}
+  ]
+}

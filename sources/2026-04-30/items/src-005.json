@@ -1,0 +1,27 @@
+{
+  "id": "src-005",
+  "title": "Kilauea InSAR image of Episode 44 deformation (April 1-9, 2026)",
+  "url": "https://www.usgs.gov/media/images/april-15-2026-insar-image-kilauea-deformation-associated-episode-44-ongoing-summit",
+  "snippet": "USGS HVO — COSMO-SkyMed Second Generation (CSG) interferogram covering April 1-9, 2026 over Kīlauea summit; each color fringe = 1.55 cm range change. South rim of crater moved upward up to 12.5 cm. Episode 44 fountaining 8.5 hours April 9 with 240m fountain heights.",
+  "source_name": "USGS Hawaiian Volcano Observatory",
+  "language": "en",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "First run; no prior sources exist.",
+  "entities": [
+    {"id": "temp-0004", "type": "Event", "name": "킬라우에아 화산 Episode 44 분출 + InSAR 변형 관측 (Kilauea Episode 44)", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "US", "region": "Hawaii", "lat": 19.421, "lon": -155.287, "observation_date": "2026-04-15", "start_date": "2026-04-09", "severity": "high", "before_after_available": true, "satellite_unverified": false}},
+    {"id": "temp-sat-csg", "type": "Satellite", "name": "COSMO-SkyMed Second Generation (CSG)", "properties": {"operator": "ASI/Italy", "country": "IT", "orbit_type": "SSO", "resolution_m": 0.35, "sensor_types": ["SAR"], "mission_status": "operational"}},
+    {"id": "temp-loc-004", "type": "Location", "name": "Kīlauea summit, Halemaʻumaʻu crater, Hawaii", "properties": {"country": "US", "region": "Hawaii", "lat": 19.421, "lon": -155.287}}
+  ],
+  "relations": [
+    {"subject": "temp-0004", "predicate": "observedBy", "object": "temp-sat-csg"},
+    {"subject": "temp-0004", "predicate": "usesSensor", "object": "sensor-x-sar"},
+    {"subject": "temp-0004", "predicate": "locatedIn", "object": "temp-loc-004"},
+    {"subject": "temp-0004", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "temp-0004", "predicate": "analyzedBy", "object": "org-usgs"},
+    {"subject": "temp-0004", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "temp-0004", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

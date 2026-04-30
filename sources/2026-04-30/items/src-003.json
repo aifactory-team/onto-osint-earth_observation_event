@@ -1,0 +1,26 @@
+{
+  "id": "src-003",
+  "title": "Villages Bordering Sohae Satellite Launching Station Razed",
+  "url": "https://www.38north.org/2026/04/villages-bordering-sohae-satellite-launching-station-razed/",
+  "snippet": "38 North April 2026 — Satellite imagery reveals North Korea demolished two small communities bordering the Sohae Satellite Launching Station in March, razing several hundred buildings. April 2026 imagery confirms upgrade and expansion works at the facility are complete.",
+  "source_name": "38 North",
+  "language": "en",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "First run; no prior sources exist.",
+  "entities": [
+    {"id": "temp-0002", "type": "Event", "name": "소해 위성발사장 인근 마을 철거·시설 확장 (Sohae villages razed and facility expansion)", "properties": {"phenomenon": "military_buildup", "domain": "Defense", "country": "KP", "lat": 39.66, "lon": 124.71, "observation_date": "2026-04-15", "severity": "medium", "before_after_available": true, "satellite_unverified": false}},
+    {"id": "temp-loc-002", "type": "Location", "name": "소해 위성발사장 (Sohae Satellite Launching Station)", "properties": {"country": "KP", "region": "평안북도 철산군", "admin_level": "county", "lat": 39.66, "lon": 124.71}}
+  ],
+  "relations": [
+    {"subject": "temp-0002", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "temp-0002", "predicate": "observedBy", "object": "sat-worldview3"},
+    {"subject": "temp-0002", "predicate": "locatedIn", "object": "temp-loc-002"},
+    {"subject": "temp-0002", "predicate": "inCountry", "object": "co-kp"},
+    {"subject": "temp-0002", "predicate": "manifests", "object": "phen-military"},
+    {"subject": "temp-0002", "predicate": "manifests", "object": "phen-construction"},
+    {"subject": "temp-0002", "predicate": "inDomain", "object": "dom-defense"}
+  ]
+}

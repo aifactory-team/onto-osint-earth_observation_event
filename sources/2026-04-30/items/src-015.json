@@ -1,0 +1,21 @@
+{
+  "id": "src-015",
+  "title": "한반도 4월 26일 전국 산불 동시 발생 — 건조특보",
+  "url": "https://v.daum.net/v/20260426173831552",
+  "snippet": "다음뉴스 2026-04-26 — 4월 마지막 일요일 전국 곳곳 건조특보로 산불 10건 동시 발생/진화중. 산림청 4월 19일까지를 대형 산불 특별 대책 기간으로 운영. 위성 출처 미확인 — 일반 보도만 인용.",
+  "source_name": "다음뉴스",
+  "language": "ko",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "First run; 한반도 GeoFocus 후보지만 위성 출처 미확인 → 미검증 의혹 섹션으로 분리.",
+  "entities": [
+    {"id": "temp-0014", "type": "Event", "name": "한반도 전국 산불 동시 발생 (2026-04-26)", "properties": {"phenomenon": "wildfire", "domain": "Disaster", "country": "KR", "region": "전국", "lat": 36.5, "lon": 127.8, "observation_date": "2026-04-26", "severity": "medium", "before_after_available": false, "satellite_unverified": true}}
+  ],
+  "relations": [
+    {"subject": "temp-0014", "predicate": "inCountry", "object": "co-kr"},
+    {"subject": "temp-0014", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "temp-0014", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

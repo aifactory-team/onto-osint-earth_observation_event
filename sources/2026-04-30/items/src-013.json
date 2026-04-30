@@ -1,0 +1,26 @@
+{
+  "id": "src-013",
+  "title": "Typhoon Sinlaku — first April super typhoon since 2022",
+  "url": "https://en.wikipedia.org/wiki/2026_Pacific_typhoon_season",
+  "snippet": "Typhoon Sinlaku formed near Chuuk April 8, 2026 — first April tropical cyclone since Sanvu 2023, first April typhoon since Malakas 2022. Reached typhoon status April 10, super typhoon status April 12; satellite imagery showed rapidly consolidating storm with expanding central dense overcast (CDO).",
+  "source_name": "JMA / JTWC / Wikipedia",
+  "language": "en",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "First run; no prior sources exist.",
+  "entities": [
+    {"id": "temp-0012", "type": "Event", "name": "태풍 신라쿠 (Typhoon Sinlaku 2026) — 4월 슈퍼태풍", "properties": {"phenomenon": "typhoon", "domain": "Disaster", "country": "FM", "region": "Western Pacific (near Chuuk)", "lat": 7.4, "lon": 151.8, "observation_date": "2026-04-12", "start_date": "2026-04-08", "severity": "high", "before_after_available": false, "satellite_unverified": false}},
+    {"id": "temp-co-fm", "type": "Country", "name": "마이크로네시아 연방", "properties": {"iso_code": "FM", "region": "오세아니아"}}
+  ],
+  "relations": [
+    {"subject": "temp-0012", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "temp-0012", "predicate": "observedBy", "object": "sat-goes18"},
+    {"subject": "temp-0012", "predicate": "inCountry", "object": "temp-co-fm"},
+    {"subject": "temp-0012", "predicate": "analyzedBy", "object": "org-jaxa"},
+    {"subject": "temp-0012", "predicate": "analyzedBy", "object": "org-noaa"},
+    {"subject": "temp-0012", "predicate": "manifests", "object": "phen-typhoon"},
+    {"subject": "temp-0012", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

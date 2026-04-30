@@ -1,0 +1,25 @@
+{
+  "id": "src-012",
+  "title": "Sentinel-5P TROPOMI methane trends — Harvard analysis April 2026",
+  "url": "https://cen.acs.org/environment/atmospheric-chemistry/Satellite-data-reveal-rising-methane/104/web/2026/04",
+  "snippet": "C&EN April 2026 — Harvard team blended Sentinel-5P TROPOMI and Japanese GOSAT measurements via ML to track methane emissions year-by-year 2019-2024. Atmospheric methane has been climbing steadily since 2019. Real progress in oil/gas/rice methane reduction offset by livestock and waste increases.",
+  "source_name": "Chemical & Engineering News",
+  "language": "en",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "First run; no prior sources exist.",
+  "entities": [
+    {"id": "temp-0011", "type": "Event", "name": "전 지구 메탄 배출 증가 추세 분석 (TROPOMI+GOSAT 2019-2024)", "properties": {"phenomenon": "methane_plume", "domain": "ClimateEnvironment", "country": "INTL", "region": "Global", "lat": 0.0, "lon": 0.0, "observation_date": "2026-04-15", "severity": "medium", "satellite_unverified": false}},
+    {"id": "temp-sat-gosat", "type": "Satellite", "name": "GOSAT", "properties": {"operator": "JAXA", "country": "JP", "orbit_type": "SSO", "resolution_m": 10000, "sensor_types": ["trace_gas"], "mission_status": "operational"}}
+  ],
+  "relations": [
+    {"subject": "temp-0011", "predicate": "observedBy", "object": "sat-sentinel5p"},
+    {"subject": "temp-0011", "predicate": "observedBy", "object": "temp-sat-gosat"},
+    {"subject": "temp-0011", "predicate": "usesSensor", "object": "sensor-tropomi"},
+    {"subject": "temp-0011", "predicate": "analyzedBy", "object": "org-nasa"},
+    {"subject": "temp-0011", "predicate": "manifests", "object": "phen-methane"},
+    {"subject": "temp-0011", "predicate": "inDomain", "object": "dom-climate"}
+  ]
+}

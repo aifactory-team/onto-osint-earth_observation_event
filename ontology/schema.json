@@ -100,6 +100,13 @@
       "target": "all",
       "reason": "config/osint-config.json의 seed_classes 및 seed_relations로부터 초기화 — 위성영상 관측 이벤트 도메인",
       "source_ids": []
+    },
+    {
+      "date": "2026-04-30",
+      "action": "add_phenomenon",
+      "target": "phen-infra-damage",
+      "reason": "Bellingcat Iran SAR PWTT 분석 + UNOSAT 가자 피해 평가에서 군사·인도주의 인프라 파괴 이벤트가 별도 분류 필요. 'infrastructure_damage' Phenomenon이 Humanitarian 도메인에서 SAR 변화탐지 시그니처로 빈번히 출현. 2건 이상의 소스에서 확인됨.",
+      "source_ids": ["src-008", "src-009"]
     }
   ]
 }

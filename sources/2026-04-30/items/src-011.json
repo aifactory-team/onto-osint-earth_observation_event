@@ -1,0 +1,23 @@
+{
+  "id": "src-011",
+  "title": "Climate TRACE March 2026 release tracks global emissions through Jan 2026",
+  "url": "https://climatetrace.org/",
+  "snippet": "Climate TRACE Release 5.5.0 (March 2026) — Monthly emissions data through January 2026 across 745M sources, 300+ satellites, 11000+ sensors. Plumes tool visualizes daily PM2.5 from 9560 industrial/power facilities in 2572 cities. 2025 review: oil/gas sector emissions reached new highs.",
+  "source_name": "Climate TRACE",
+  "language": "en",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "First run; no prior sources exist.",
+  "entities": [
+    {"id": "temp-0010", "type": "Event", "name": "Climate TRACE 글로벌 배출 추적 (Mar 2026 release v5.5.0)", "properties": {"phenomenon": "air_pollution", "domain": "ClimateEnvironment", "country": "INTL", "region": "Global", "lat": 0.0, "lon": 0.0, "observation_date": "2026-03-15", "severity": "medium", "satellite_unverified": false}}
+  ],
+  "relations": [
+    {"subject": "temp-0010", "predicate": "observedBy", "object": "sat-sentinel5p"},
+    {"subject": "temp-0010", "predicate": "usesSensor", "object": "sensor-tropomi"},
+    {"subject": "temp-0010", "predicate": "analyzedBy", "object": "org-climatetrace"},
+    {"subject": "temp-0010", "predicate": "manifests", "object": "phen-air-pol"},
+    {"subject": "temp-0010", "predicate": "inDomain", "object": "dom-climate"}
+  ]
+}

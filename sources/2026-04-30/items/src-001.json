@@ -1,0 +1,26 @@
+{
+  "id": "src-001",
+  "title": "Suspected Uranium Enrichment Building at Yongbyon Complete",
+  "url": "https://beyondparallel.csis.org/suspected-uranium-enrichment-building-at-yongbyon-complete/",
+  "snippet": "Published April 13, 2026. Recent satellite imagery shows the completion of a building at Yongbyon, widely believed to be a new uranium enrichment plant. The building is 480m NNE of the Radiochemistry Laboratory; dimensions and features similar to Kangson enrichment plant per IAEA Director Grossi. Construction began mid-Dec 2024, externally complete by early June 2025.",
+  "source_name": "CSIS Beyond Parallel",
+  "language": "en",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "First run; no prior sources exist.",
+  "entities": [
+    {"id": "temp-0001", "type": "Event", "name": "영변 우라늄 농축 신규 건물 완공 관측 (Yongbyon UEP completion)", "properties": {"phenomenon": "military_buildup", "domain": "Defense", "country": "KP", "lat": 39.8, "lon": 125.7, "observation_date": "2026-04-13", "severity": "high", "before_after_available": true, "satellite_unverified": false, "is_press_release": false}},
+    {"id": "temp-loc-001", "type": "Location", "name": "영변 핵단지 (Yongbyon Nuclear Complex)", "properties": {"country": "KP", "region": "평안북도", "admin_level": "county", "lat": 39.8, "lon": 125.7}}
+  ],
+  "relations": [
+    {"subject": "temp-0001", "predicate": "observedBy", "object": "sat-worldview3"},
+    {"subject": "temp-0001", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "temp-0001", "predicate": "locatedIn", "object": "temp-loc-001"},
+    {"subject": "temp-0001", "predicate": "inCountry", "object": "co-kp"},
+    {"subject": "temp-0001", "predicate": "analyzedBy", "object": "org-csis-bp"},
+    {"subject": "temp-0001", "predicate": "manifests", "object": "phen-military"},
+    {"subject": "temp-0001", "predicate": "inDomain", "object": "dom-defense"}
+  ]
+}
