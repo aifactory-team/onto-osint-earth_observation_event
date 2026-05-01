@@ -1,0 +1,24 @@
+{
+  "id": "src-030",
+  "title": "Antelope Reef could now be the largest island in the South China Sea — AMTI/CSIS",
+  "url": "https://amti.csis.org/antelope-reef-could-now-be-the-largest-island-in-the-south-china-sea/",
+  "snippet": "CSIS Asia Maritime Transparency Initiative — Updated satellite imagery assessment shows Antelope Reef land reclamation has made it potentially the largest island in the South China Sea. High-resolution commercial satellite imagery documents continued dredging and construction activity since initial reporting.",
+  "source_name": "CSIS AMTI",
+  "language": "en",
+  "discovered_date": "2026-04-30",
+  "tag": "update",
+  "related_report": null,
+  "related_item": "src-007",
+  "tag_reason": "Update to existing Antelope Reef event (src-007/ent-evt-006); AMTI/CSIS provides updated assessment showing further expansion.",
+  "entities": [
+    {"id": "temp-0006", "type": "Event", "name": "남중국해 Antelope Reef 인공섬 확장 — 최대 섬 평가 (AMTI update)", "properties": {"phenomenon": "military_buildup", "domain": "Defense", "country": "CN", "region": "Paracel Islands", "lat": 16.4, "lon": 111.6, "observation_date": "2026-04-30", "severity": "high", "before_after_available": true}}
+  ],
+  "relations": [
+    {"subject": "temp-0006", "predicate": "observedBy", "object": "sat-worldview3"},
+    {"subject": "temp-0006", "predicate": "analyzedBy", "object": "org-csis-amti"},
+    {"subject": "temp-0006", "predicate": "locatedIn", "object": "temp-loc-005"},
+    {"subject": "temp-0006", "predicate": "inCountry", "object": "co-cn"},
+    {"subject": "temp-0006", "predicate": "manifests", "object": "phen-military"},
+    {"subject": "temp-0006", "predicate": "inDomain", "object": "dom-defense"}
+  ]
+}

@@ -107,6 +107,27 @@
       "target": "phen-infra-damage",
       "reason": "Bellingcat Iran SAR PWTT 분석 + UNOSAT 가자 피해 평가에서 군사·인도주의 인프라 파괴 이벤트가 별도 분류 필요. 'infrastructure_damage' Phenomenon이 Humanitarian 도메인에서 SAR 변화탐지 시그니처로 빈번히 출현. 2건 이상의 소스에서 확인됨.",
       "source_ids": ["src-008", "src-009"]
+    },
+    {
+      "date": "2026-04-30",
+      "action": "add_satellite",
+      "target": "sat-sentinel1d",
+      "reason": "Sentinel-1D (ESA, SAR C-band, SSO, 5m 해상도) 2025년 11월 발사, 2026-04-17 운영 개시. ent-evt-026 (하와이 홍수) SAR 홍수 매핑에 사용 확인. Sentinel-1 콘스텔레이션 완성(A/C/D)으로 재방문 주기 단축.",
+      "source_ids": ["src-027"]
+    },
+    {
+      "date": "2026-04-30",
+      "action": "add_country",
+      "target": "co-is, co-lb",
+      "reason": "아이슬란드(IS) — Svartsengi 화산 활동 이벤트(ent-evt-027). 레바논(LB) — 인프라 파괴 위성 관측 이벤트(ent-evt-028). 기존 국가 인스턴스에 없던 2개국 추가.",
+      "source_ids": ["src-028", "src-029"]
+    },
+    {
+      "date": "2026-04-30",
+      "action": "first_event_reference",
+      "target": "phen-naval",
+      "reason": "phen-naval (naval_movement)은 스키마 초기화 시 정의되었으나 이벤트 참조 0건이었음. ent-evt-022 (북한 최현급 호위함 건조)에서 첫 이벤트 매핑 발생. mention_count 0→1.",
+      "source_ids": ["src-023"]
     }
   ]
 }

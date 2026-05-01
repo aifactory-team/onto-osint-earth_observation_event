@@ -1,0 +1,22 @@
+{
+  "id": "src-031",
+  "title": "Sentinel-1D user data opening from 17 April 2026 — three-satellite SAR constellation",
+  "url": "https://sentinels.copernicus.eu/-/sentinel-1d-user-data-opening-from-17-april-2026",
+  "snippet": "ESA Copernicus — Sentinel-1D satellite user data opened from 17 April 2026, completing the three-satellite Sentinel-1 SAR constellation (Sentinel-1A, 1C, 1D). Enhanced revisit time enables more frequent SAR monitoring for disasters, ice, deformation, and maritime surveillance worldwide.",
+  "source_name": "ESA Copernicus Sentinels",
+  "language": "en",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "New infrastructure event; Sentinel-1D data opening completes three-satellite SAR constellation — significant for global EO monitoring capability.",
+  "entities": [
+    {"id": "temp-0028", "type": "Event", "name": "Sentinel-1D 사용자 데이터 개방 (3기 SAR 위성군 완성)", "properties": {"phenomenon": "satellite_infrastructure", "domain": "Infrastructure", "country": "INTL", "lat": 0.0, "lon": 0.0, "observation_date": "2026-04-17", "severity": "medium", "satellite_unverified": false}},
+    {"id": "temp-sat-s1d", "type": "Satellite", "name": "Sentinel-1D", "properties": {"operator": "ESA", "country": "EU", "orbit_type": "SSO", "resolution_m": 5.0, "sensor_types": ["SAR"], "mission_status": "operational", "launch_date": "2025"}}
+  ],
+  "relations": [
+    {"subject": "temp-0028", "predicate": "observedBy", "object": "temp-sat-s1d"},
+    {"subject": "temp-0028", "predicate": "analyzedBy", "object": "org-esa"},
+    {"subject": "temp-0028", "predicate": "inDomain", "object": "dom-infrastructure"}
+  ]
+}

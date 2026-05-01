@@ -5,11 +5,11 @@
   "snapshots_merged": ["2026-04-30"],
   "triples": "ontology/kg/2026-04-30.json#new_triples + #inferred_triples",
   "stats": {
-    "total_explicit_triples": 116,
-    "total_inferred_triples": 45,
-    "total_unique_subjects": 26,
-    "total_unique_predicates": 12,
-    "total_unique_objects": 60
+    "total_explicit_triples": 170,
+    "total_inferred_triples": 70,
+    "total_unique_subjects": 35,
+    "total_unique_predicates": 13,
+    "total_unique_objects": 78
   },
-  "note": "첫 실행이므로 누적 KG는 2026-04-30 일별 KG와 동일 — 다음 일자부터 병합 시작."
+  "note": "2차 수집 사이클(2026-04-30) 보충분 병합 완료 — ent-evt-020~028, 신규 국가(IS/LB), Sentinel-1D, 신규 위치 6건 반영."
 }

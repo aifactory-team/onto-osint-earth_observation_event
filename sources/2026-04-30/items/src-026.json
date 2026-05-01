@@ -1,0 +1,26 @@
+{
+  "id": "src-026",
+  "title": "Smith Glacier 42km retreat — West Antarctica weak spot identified",
+  "url": "https://dailygalaxy.com/2026/03/antarctic-glacier-42km-retreat-weak-spot/",
+  "snippet": "Daily Galaxy March 2026 — Smith Glacier in West Antarctica has retreated 42 km, identified as a critical weak spot in the West Antarctic Ice Sheet. Multi-satellite analysis including Sentinel-1 SAR, ICESat-2, and CryoSat-2 altimetry reveals accelerating ice mass loss and grounding line retreat.",
+  "source_name": "Daily Galaxy",
+  "language": "en",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "New event; major glacier retreat in West Antarctica confirmed by multi-satellite observation.",
+  "entities": [
+    {"id": "temp-0024", "type": "Event", "name": "스미스 빙하 42km 후퇴 — 서남극 취약 지점 (Smith Glacier retreat)", "properties": {"phenomenon": "glacier_retreat", "domain": "ClimateEnvironment", "country": "AQ", "region": "West Antarctica", "lat": -75.0, "lon": -110.0, "observation_date": "2026-03-15", "severity": "high", "before_after_available": true, "satellite_unverified": false}},
+    {"id": "temp-loc-011", "type": "Location", "name": "Smith Glacier, West Antarctica", "properties": {"country": "AQ", "region": "West Antarctica", "lat": -75.0, "lon": -110.0}}
+  ],
+  "relations": [
+    {"subject": "temp-0024", "predicate": "observedBy", "object": "sat-sentinel1a"},
+    {"subject": "temp-0024", "predicate": "observedBy", "object": "sat-icesat2"},
+    {"subject": "temp-0024", "predicate": "observedBy", "object": "sat-cryosat2"},
+    {"subject": "temp-0024", "predicate": "locatedIn", "object": "temp-loc-011"},
+    {"subject": "temp-0024", "predicate": "inCountry", "object": "temp-co-aq"},
+    {"subject": "temp-0024", "predicate": "manifests", "object": "phen-glacier"},
+    {"subject": "temp-0024", "predicate": "inDomain", "object": "dom-climate"}
+  ]
+}

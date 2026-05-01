@@ -1,0 +1,21 @@
+{
+  "id": "src-025",
+  "title": "South Korea deploys 5-satellite reconnaissance system",
+  "url": "https://www.upi.com/Top_News/World-News/2026/04/28/five-satellite-reconnaissance-system/2781777406216/",
+  "snippet": "UPI April 28, 2026 — South Korea has completed deployment of its five-satellite reconnaissance system, comprising SAR and electro-optical satellites. System enables near-real-time surveillance of Korean Peninsula with multiple daily revisit capability. Part of ROK military space capability buildup.",
+  "source_name": "UPI",
+  "language": "en",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "New event; South Korea 5-satellite military reconnaissance constellation deployment — Korea GeoFocus.",
+  "entities": [
+    {"id": "temp-0023", "type": "Event", "name": "한국 5기 정찰위성 체계 운용 개시 (5-satellite recon system)", "properties": {"phenomenon": "military_buildup", "domain": "Defense", "country": "KR", "lat": 36.5, "lon": 127.0, "observation_date": "2026-04-28", "severity": "medium", "before_after_available": false, "satellite_unverified": false}}
+  ],
+  "relations": [
+    {"subject": "temp-0023", "predicate": "inCountry", "object": "co-kr"},
+    {"subject": "temp-0023", "predicate": "manifests", "object": "phen-military"},
+    {"subject": "temp-0023", "predicate": "inDomain", "object": "dom-defense"}
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "src-023",
+  "title": "North Korea Choe Hyun-class warship construction observed via satellite",
+  "url": "https://www.upi.com/Top_News/World-News/2026/04/02/satellite-image-warship/6471775166721/",
+  "snippet": "UPI April 2, 2026 — Satellite imagery reveals construction of a Choe Hyun-class warship at a North Korean naval shipyard. Imagery shows hull assembly and fitting activity at Nampho/west coast shipyard. Part of DPRK naval modernization program.",
+  "source_name": "UPI",
+  "language": "en",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "New event; satellite-observed naval construction activity in North Korea.",
+  "entities": [
+    {"id": "temp-0021", "type": "Event", "name": "북한 최현급 군함 건조 관측 (Choe Hyun-class warship)", "properties": {"phenomenon": "naval_movement", "domain": "Defense", "country": "KP", "lat": 39.0, "lon": 125.7, "observation_date": "2026-04-02", "severity": "medium", "before_after_available": false, "satellite_unverified": false}},
+    {"id": "temp-loc-009", "type": "Location", "name": "북한 서해안 조선소 (DPRK west coast shipyard)", "properties": {"country": "KP", "region": "평안남도", "lat": 39.0, "lon": 125.7}}
+  ],
+  "relations": [
+    {"subject": "temp-0021", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "temp-0021", "predicate": "locatedIn", "object": "temp-loc-009"},
+    {"subject": "temp-0021", "predicate": "inCountry", "object": "co-kp"},
+    {"subject": "temp-0021", "predicate": "manifests", "object": "phen-military"},
+    {"subject": "temp-0021", "predicate": "inDomain", "object": "dom-defense"}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "src-027",
+  "title": "Hawaii Floods March 2026 — NASA Disasters activation with SAR imagery",
+  "url": "https://appliedsciences.nasa.gov/what-we-do/disasters/disasters-activations/hawaii-floods-march-2026",
+  "snippet": "NASA Applied Sciences Disasters Program activation — Kona Low weather system caused severe flooding across Hawaii in March 2026. SAR imagery used for flood extent mapping; before/after comparison available. Multiple islands affected with significant infrastructure damage.",
+  "source_name": "NASA Applied Sciences",
+  "language": "en",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "New event; NASA disaster activation for Hawaii floods with SAR-based flood mapping and before/after imagery.",
+  "entities": [
+    {"id": "temp-0025", "type": "Event", "name": "하와이 홍수 2026년 3월 (코나 로우 기상계통)", "properties": {"phenomenon": "flood", "domain": "Disaster", "country": "US", "region": "Hawaii", "lat": 21.5, "lon": -158.0, "observation_date": "2026-03-15", "severity": "high", "before_after_available": true, "satellite_unverified": false}},
+    {"id": "temp-loc-012", "type": "Location", "name": "Hawaii, USA (multiple islands)", "properties": {"country": "US", "region": "Hawaii", "lat": 21.5, "lon": -158.0}}
+  ],
+  "relations": [
+    {"subject": "temp-0025", "predicate": "observedBy", "object": "sat-sentinel1a"},
+    {"subject": "temp-0025", "predicate": "usesSensor", "object": "sensor-c-sar"},
+    {"subject": "temp-0025", "predicate": "locatedIn", "object": "temp-loc-012"},
+    {"subject": "temp-0025", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "temp-0025", "predicate": "analyzedBy", "object": "org-nasa"},
+    {"subject": "temp-0025", "predicate": "manifests", "object": "phen-flood"},
+    {"subject": "temp-0025", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

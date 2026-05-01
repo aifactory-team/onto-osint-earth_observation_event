@@ -1,0 +1,23 @@
+{
+  "id": "src-032",
+  "title": "나라스페이스 나르샤 메탄 감시 위성 2026 발사 예정",
+  "url": "https://www.edaily.co.kr/News/Read?newsId=02145126645353472",
+  "snippet": "이데일리 — 나라스페이스테크놀로지의 초분광 메탄 감시 위성 '나르샤(Narsha)' 2026년 발사 예정. 메탄·온실가스 배출원 추적 목적. 한국 민간 위성 기업의 환경 모니터링 위성 개발 — GHG 위성 데이터 상업화.",
+  "source_name": "이데일리",
+  "language": "ko",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "New Korea GeoFocus context; Korean commercial methane monitoring satellite development — relevant to ClimateEnvironment domain capability.",
+  "entities": [
+    {"id": "temp-0029", "type": "Event", "name": "나라스페이스 나르샤 메탄 감시 위성 발사 예정 (2026)", "properties": {"phenomenon": "methane_plume", "domain": "ClimateEnvironment", "country": "KR", "lat": 36.5, "lon": 127.0, "observation_date": "2026-04-30", "severity": "low", "satellite_unverified": false}},
+    {"id": "temp-sat-narsha", "type": "Satellite", "name": "나르샤 (Narsha)", "properties": {"operator": "나라스페이스테크놀로지", "country": "KR", "orbit_type": "SSO", "sensor_types": ["hyperspectral", "trace_gas"], "mission_status": "planned", "launch_date": "2026"}}
+  ],
+  "relations": [
+    {"subject": "temp-0029", "predicate": "observedBy", "object": "temp-sat-narsha"},
+    {"subject": "temp-0029", "predicate": "inCountry", "object": "co-kr"},
+    {"subject": "temp-0029", "predicate": "manifests", "object": "phen-methane"},
+    {"subject": "temp-0029", "predicate": "inDomain", "object": "dom-climate"}
+  ]
+}

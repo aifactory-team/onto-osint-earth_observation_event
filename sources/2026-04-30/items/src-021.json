@@ -1,0 +1,28 @@
+{
+  "id": "src-021",
+  "title": "Wildland Fires in Georgia — Landsat 8 & VIIRS/NOAA-21 imagery",
+  "url": "https://www.earthdata.nasa.gov/news/worldview-image-archive/wildland-fires-georgia",
+  "snippet": "NASA Earthdata Worldview — Wildland fires in Brantley and Clinch counties, Georgia burned 50,000+ acres. Landsat 8 OLI natural-color and false-color imagery show burn scars and active fire fronts. VIIRS on NOAA-21 provides thermal anomaly detections confirming active hotspots.",
+  "source_name": "NASA Earthdata",
+  "language": "en",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "New event; large wildfire in Georgia US confirmed by Landsat 8 and VIIRS/NOAA-21 satellite imagery.",
+  "entities": [
+    {"id": "temp-0020", "type": "Event", "name": "조지아주 대형 산불 (Brantley/Clinch counties, 50,000+ acres)", "properties": {"phenomenon": "wildfire", "domain": "Disaster", "country": "US", "region": "Georgia", "lat": 31.2, "lon": -82.0, "observation_date": "2026-04-30", "severity": "high", "before_after_available": false, "satellite_unverified": false}},
+    {"id": "temp-loc-008", "type": "Location", "name": "Brantley/Clinch counties, Georgia, USA", "properties": {"country": "US", "region": "Georgia", "lat": 31.2, "lon": -82.0}}
+  ],
+  "relations": [
+    {"subject": "temp-0020", "predicate": "observedBy", "object": "sat-landsat8"},
+    {"subject": "temp-0020", "predicate": "observedBy", "object": "sat-noaa21"},
+    {"subject": "temp-0020", "predicate": "usesSensor", "object": "sensor-oli"},
+    {"subject": "temp-0020", "predicate": "usesSensor", "object": "sensor-viirs"},
+    {"subject": "temp-0020", "predicate": "locatedIn", "object": "temp-loc-008"},
+    {"subject": "temp-0020", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "temp-0020", "predicate": "analyzedBy", "object": "org-nasa"},
+    {"subject": "temp-0020", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "temp-0020", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

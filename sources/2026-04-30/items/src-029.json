@@ -1,0 +1,25 @@
+{
+  "id": "src-029",
+  "title": "Lebanon destruction satellite analysis — CNN investigation",
+  "url": "https://www.cnn.com/2026/04/24/middleeast/lebanon-destruction-israel-gaza-model-intl-cmd",
+  "snippet": "CNN April 24, 2026 — Satellite imagery analysis of destruction in Lebanon from Israeli military operations. High-resolution before/after imagery shows significant infrastructure damage across southern Lebanon. Comparison to Gaza destruction model; damage assessment based on commercial satellite imagery.",
+  "source_name": "CNN",
+  "language": "en",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "New event; satellite-based destruction assessment of Lebanon infrastructure damage.",
+  "entities": [
+    {"id": "temp-0027", "type": "Event", "name": "레바논 파괴 위성영상 분석 (이스라엘 군사작전 피해)", "properties": {"phenomenon": "infrastructure_damage", "domain": "Humanitarian", "country": "LB", "region": "Southern Lebanon", "lat": 33.9, "lon": 35.5, "observation_date": "2026-04-24", "severity": "high", "before_after_available": true, "satellite_unverified": false}},
+    {"id": "temp-loc-014", "type": "Location", "name": "Southern Lebanon", "properties": {"country": "LB", "region": "South Lebanon Governorate", "lat": 33.9, "lon": 35.5}},
+    {"id": "temp-co-lb", "type": "Country", "name": "레바논", "properties": {"iso_code": "LB", "region": "서아시아"}}
+  ],
+  "relations": [
+    {"subject": "temp-0027", "predicate": "observedBy", "object": "sat-worldview3"},
+    {"subject": "temp-0027", "predicate": "locatedIn", "object": "temp-loc-014"},
+    {"subject": "temp-0027", "predicate": "inCountry", "object": "temp-co-lb"},
+    {"subject": "temp-0027", "predicate": "manifests", "object": "phen-infrastructure"},
+    {"subject": "temp-0027", "predicate": "inDomain", "object": "dom-humanitarian"}
+  ]
+}

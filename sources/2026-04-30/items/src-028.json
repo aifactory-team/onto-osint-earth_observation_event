@@ -1,0 +1,26 @@
+{
+  "id": "src-028",
+  "title": "Svartsengi Iceland magma accumulation — InSAR March-April 2026",
+  "url": "https://en.vedur.is/about-imo/news/earthquake-in-brennisteinsfjoll-faster-subsidence-in-krysuvik-and-continued-magma-accumulation-at-svartsengi",
+  "snippet": "Icelandic Met Office — Continued magma accumulation detected at Svartsengi magma chamber via InSAR deformation monitoring (March-April 2026). Earthquake activity in Brennisteinsfjöll, faster subsidence in Krýsuvík. Sentinel-1 InSAR interferograms show ongoing uplift pattern consistent with magma intrusion.",
+  "source_name": "Icelandic Meteorological Office (Veðurstofa Íslands)",
+  "language": "en",
+  "discovered_date": "2026-04-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "New event; InSAR-detected magma accumulation at Svartsengi, Iceland — active volcanic monitoring.",
+  "entities": [
+    {"id": "temp-0026", "type": "Event", "name": "아이슬란드 Svartsengi 마그마 축적 (InSAR 관측)", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "IS", "region": "Reykjanes Peninsula", "lat": 63.86, "lon": -22.43, "observation_date": "2026-04-28", "severity": "medium", "before_after_available": true, "satellite_unverified": false}},
+    {"id": "temp-loc-013", "type": "Location", "name": "Svartsengi, Reykjanes Peninsula, Iceland", "properties": {"country": "IS", "region": "Reykjanes", "lat": 63.86, "lon": -22.43}},
+    {"id": "temp-co-is", "type": "Country", "name": "아이슬란드", "properties": {"iso_code": "IS", "region": "북유럽"}}
+  ],
+  "relations": [
+    {"subject": "temp-0026", "predicate": "observedBy", "object": "sat-sentinel1a"},
+    {"subject": "temp-0026", "predicate": "usesSensor", "object": "sensor-c-sar"},
+    {"subject": "temp-0026", "predicate": "locatedIn", "object": "temp-loc-013"},
+    {"subject": "temp-0026", "predicate": "inCountry", "object": "temp-co-is"},
+    {"subject": "temp-0026", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "temp-0026", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}
