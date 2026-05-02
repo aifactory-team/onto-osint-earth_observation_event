@@ -1,0 +1,20 @@
+{
+  "id": "src-024",
+  "title": "Sheveluch volcano lava dome growth continues — thermal anomaly in satellite (KVERT)",
+  "url": "https://volcano.si.edu/showreport.cfm?wvar=GVP.WVAR20260226-300270",
+  "snippet": "KVERT: Sheveluch 화산 용암돔 성장 지속. 일일 열이상 위성 관측. 새 용암 블록 북쪽 돔에서 성장. Aviation Color Code Orange 유지.",
+  "source_name": "Smithsonian/GVP via KVERT",
+  "language": "en",
+  "discovered_date": "2026-05-02",
+  "tag": "update",
+  "related_report": "2026-05-01/src-003",
+  "related_item": "ent-evt-030",
+  "tag_reason": "후속 업데이트 — 시벨루치 화산 용암돔 성장 지속 상태 확인. 위성 열이상 관측 정보.",
+  "entities": [
+    {"id": "ent-evt-030", "type": "Event", "name": "Shiveluch 화산 분출 (Kamchatka) — 업데이트", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "RU", "lat": 56.65, "lon": 161.36, "observation_date": "2026-05-01", "severity": "high"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-030", "predicate": "locatedIn", "object": "ent-loc-015"},
+    {"subject": "ent-evt-030", "predicate": "manifests", "object": "phen-volcano"}
+  ]
+}

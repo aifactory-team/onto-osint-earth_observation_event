@@ -1,0 +1,94 @@
+{
+  "date": "2026-05-02",
+  "collected_at": "2026-05-02T23:00:00Z",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 18,
+  "total_results": 87,
+  "expanded_keywords": [
+    "Kilauea episode 46", "Georgia wildfire Landsat", "CAS500-2 CAS500-4 launch",
+    "Tropical Cyclone Maila PNG landslide", "Sheveluch Kamchatka eruption",
+    "Mayon Philippines Landsat", "MizarVision satellite OSINT",
+    "KOMPSAT-7 한반도", "Niscemi Sicily landslide VHR",
+    "DIST-ALERT GFW deforestation", "Sentinel-5P methane",
+    "Antarctic glacier retreat satellite", "UNOSAT damage assessment"
+  ],
+  "searches": [
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery wildfire May 2026", "language": "en", "timestamp": "2026-05-02T23:00:00Z", "result_count": 10, "results": [
+      {"title": "NOAA Launches Wildfire Data Portal", "url": "https://www.nesdis.noaa.gov/news/noaa-launches-wildfire-data-portal-expanding-public-access-satellite-fire-information", "snippet": "NOAA launches operational wildfire data portal using NGFS satellite system", "source_name": "NESDIS/NOAA"},
+      {"title": "NOAA Seeks Commercial Wildfire Imagery", "url": "https://www.nesdis.noaa.gov/news/noaa-seeks-commercial-wildfire-imagery", "snippet": "NOAA seeks commercial satellite wildfire imagery for enhanced detection", "source_name": "NESDIS/NOAA"},
+      {"title": "Fire Map - NASA FIRMS", "url": "https://firms.modaps.eosdis.nasa.gov/map/", "snippet": "MODIS/VIIRS global active fire detection map", "source_name": "NASA FIRMS"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery flood May 2026", "language": "en", "timestamp": "2026-05-02T23:01:00Z", "result_count": 10, "results": [
+      {"title": "Mapping global floods with 10 years of satellite radar data", "url": "https://www.nature.com/articles/s41467-025-60973-1", "snippet": "Nature study: 10-year SAR flood mapping from Sentinel-1", "source_name": "Nature Communications"},
+      {"title": "NASA Enhances Global Flood Products", "url": "https://www.earthdata.nasa.gov/news/blog/nasa-enhances-global-flood-products-smarter-detection-flooding-release-23-year-archive", "snippet": "NASA MODIS 23-year flood archive release April 2026", "source_name": "NASA Earthdata"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery volcano eruption May 2026", "language": "en", "timestamp": "2026-05-02T23:02:00Z", "result_count": 10, "results": [
+      {"title": "USGS: Satellite imagery showing changes to Kīlauea summit region (Apr 30)", "url": "https://www.usgs.gov/observatories/hvo/news/photo-video-chronology-april-30-2026-satellite-imagery-showing-changes", "snippet": "Satellite imagery of Kilauea summit before/after tephra deposits from episodic eruptions", "source_name": "USGS HVO"},
+      {"title": "USGS Volcano Notice — May 2 Kilauea Advisory", "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-HVO-2026-05-02T15:56:11+00:00", "snippet": "Episode 45 recap; Episode 46 forecast May 5-8; ADVISORY level; 11 µrad tilt", "source_name": "USGS HVO"},
+      {"title": "1 May 2026 – Global Volcano News", "url": "https://volcanoearth.wordpress.com/2026/05/01/1-may-2026/", "snippet": "Global volcanic activity summary: Mayon Alert 3, Sheveluch Orange, multiple active volcanoes", "source_name": "Volcano Earth"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Copernicus EMS activation May 2026", "language": "en", "timestamp": "2026-05-02T23:03:00Z", "result_count": 10, "results": [
+      {"title": "Copernicus EMS Activations", "url": "https://mapping.emergency.copernicus.eu/activations/", "snippet": "Copernicus EMS activation list; situational reporting May 1 2026", "source_name": "Copernicus EMS"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery deforestation oil spill 2026", "language": "en", "timestamp": "2026-05-02T23:04:00Z", "result_count": 10, "results": [
+      {"title": "Faster Detection of Forest Loss", "url": "https://science.nasa.gov/earth/earth-observatory/faster-detection-of-forest-loss/", "snippet": "New multi-satellite system detects forest clearing 100 days earlier", "source_name": "NASA Earth Observatory"},
+      {"title": "Venezuela: Oil, mining and the risks of foreign investment", "url": "https://globalwitness.org/en/campaigns/fossil-fuels/ecocide-in-venezuela-oil-mining-and-the-risks-of-foreign-investment/", "snippet": "504 oil slick detections in Lake Maracaibo since Jan 2025 — Sentinel-1 SAR", "source_name": "Global Witness"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery military buildup OSINT May 2026", "language": "en", "timestamp": "2026-05-02T23:05:00Z", "result_count": 10, "results": [
+      {"title": "MizarVision publishes AI-processed satellite imagery of US military assets", "url": "https://defence-industry.eu/mizarvision-publishes-ai-processed-satellite-imagery-of-u-s-military-assets-raising-intelligence-and-security-concerns/", "snippet": "Chinese AI startup MizarVision mapping US military assets via satellite OSINT", "source_name": "Defence Industry EU"},
+      {"title": "The Glass Battlefield: Commercial Imagery and the Iran-Israel Conflict", "url": "https://www.meforum.org/military-and-strategic-programs/g2-briefings/the-glass-battlefield-commercial-imagery-and-the-new-strategic-realities-of-the-iran-israel-conflict", "snippet": "Commercial satellite imagery changing strategic realities of Middle East conflict", "source_name": "Middle East Forum"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Sentinel-5P methane plume satellite 2026", "language": "en", "timestamp": "2026-05-02T23:06:00Z", "result_count": 10, "results": [
+      {"title": "Satellite data reveal rising methane levels", "url": "https://cen.acs.org/environment/atmospheric-chemistry/Satellite-data-reveal-rising-methane/104/web/2026/04", "snippet": "Harvard TROPOMI+GOSAT methane trend analysis 2019-2024", "source_name": "C&EN/ACS"},
+      {"title": "ESA — Trio of Sentinel satellites map methane super-emitters", "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Trio_of_Sentinel_satellites_map_methane_super-emitters", "snippet": "Sentinel-3 + Sentinel-5P + Sentinel-2 tiered methane detection system", "source_name": "ESA"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "위성영상 산불 홍수 2026년 5월", "language": "ko", "timestamp": "2026-05-02T23:07:00Z", "result_count": 10, "results": [
+      {"title": "국토위성 영상으로 대형 산불 피해지역 신속 복구 지원", "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148941842", "snippet": "국토위성영상 0.5m 해상도 산불 피해지역 복구 지원", "source_name": "정책브리핑"},
+      {"title": "위성사진으로 본 산불, 기후위기는 어떻게 피해를 키웠나?", "url": "https://www.greenpeace.org/korea/update/33909/blog-ce-korea-worst-wildfire-2025/", "snippet": "2025년 대한민국 최악의 산불 위성사진 분석", "source_name": "Greenpeace Korea"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "KOMPSAT CAS500 위성 한반도 관측 2026", "language": "ko", "timestamp": "2026-05-02T23:08:00Z", "result_count": 10, "results": [
+      {"title": "CAS500-2 & CAS500-4 launch May 3 — Falcon 9", "url": "https://keyt.com/vandenberg-space-base/2026/05/01/falcon-9-launch-of-south-koreas-cas500-2-scheduled-for-early-sunday-morning/", "snippet": "CAS500-2/4 발사 5월 3일 0659 UTC, Vandenberg SFB", "source_name": "News Channel 3-12"},
+      {"title": "SpaceX launching 45 satellites — CAS500-2 mission", "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-falcon-9-launch-cas500-2-mission-45-satellites", "snippet": "45 payloads aboard Falcon 9 for CAS500-2 mission; AEISS-C 0.5m resolution", "source_name": "Space.com"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "NASA Earth Observatory satellite image May 2026", "language": "en", "timestamp": "2026-05-02T23:09:00Z", "result_count": 10, "results": [
+      {"title": "Cyclone Rains Spur Papua New Guinea Landslides", "url": "https://science.nasa.gov/earth/earth-observatory/cyclone-rains-spur-papua-new-guinea-landslides/", "snippet": "Landsat 9 Apr 20 image of Maila-triggered landslides in East New Britain", "source_name": "NASA Earth Observatory"},
+      {"title": "Fires Rage in Georgia", "url": "https://science.nasa.gov/earth/earth-observatory/fires-rage-in-georgia/", "snippet": "Landsat 8 OLI false-color image of 50,000+ acre Georgia fires, 120+ homes destroyed", "source_name": "NASA Earth Observatory"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Kilauea volcano eruption May 2026 episode 46 satellite", "language": "en", "timestamp": "2026-05-02T23:10:00Z", "result_count": 10, "results": [
+      {"title": "Exciting Kilauea Lava Update: Episode 46 expected in May!", "url": "https://hawaiivolcanoexpeditions.com/blog/lava-update-the-latest-eruptions-on-the-big-island/", "snippet": "Episode 46 forecast May 5-8 based on tilt data; 900ft fountains in Ep.45", "source_name": "Hawaii Volcano Expeditions"},
+      {"title": "Kilauea Episode 46 expected between May 3-7", "url": "https://spectrumlocalnews.com/hi/hawaii/news/2026/04/29/kilauea-46th-episode-forecast-window", "snippet": "USGS HVO forecast window for next eruption episode", "source_name": "Spectrum Local News"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Georgia wildfire satellite imagery May 2026 Okefenokee", "language": "en", "timestamp": "2026-05-02T23:11:00Z", "result_count": 10, "results": [
+      {"title": "Fires Rage in Georgia — NASA Earth Observatory", "url": "https://science.nasa.gov/earth/earth-observatory/fires-rage-in-georgia/", "snippet": "Landsat 8 bands 7-5-4 false color; 50,000+ acres burned; 120+ homes destroyed", "source_name": "NASA Earth Observatory"},
+      {"title": "2026 Georgia wildfires — Wikipedia", "url": "https://en.wikipedia.org/wiki/2026_Georgia_wildfires", "snippet": "Worst drought in two decades; Pineland Road + Highway 82 fires merged", "source_name": "Wikipedia"},
+      {"title": "Satellite images reveal destruction of Georgia wildfires", "url": "https://www.newsweek.com/satellite-images-destruction-georgia-wildfires-11898158", "snippet": "120+ homes destroyed; satellite before/after imagery", "source_name": "Newsweek"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "glacier retreat Antarctic satellite 2026", "language": "en", "timestamp": "2026-05-02T23:12:00Z", "result_count": 10, "results": [
+      {"title": "ESA — Antarctica retreat study signals future ice loss", "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-1/Antarctica_retreat_study_signals_future_ice_loss", "snippet": "30-year grounding line retreat study; Sentinel-1 SAR; 12,800 km² ice loss; Smith Glacier 42km retreat", "source_name": "ESA"},
+      {"title": "Antarctica has lost 10 times Greater Los Angeles in ice over 30 years", "url": "https://news.uci.edu/2026/03/02/antarctica-has-lost-10-times-the-size-of-greater-los-angeles-in-ice-over-30-years/", "snippet": "UC Irvine study: massive Antarctic ice loss over 30 years from satellite data", "source_name": "UC Irvine News"},
+      {"title": "Antarctica undergoes Greenlandification as ice melt accelerates", "url": "https://phys.org/news/2026-03-antarctica-greenlandification-ice.html", "snippet": "Antarctic ice melt acceleration study 2026", "source_name": "Phys.org"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "UNOSAT satellite damage assessment humanitarian 2026", "language": "en", "timestamp": "2026-05-02T23:13:00Z", "result_count": 10, "results": [
+      {"title": "UNOSAT Gaza Governorate Comprehensive Damage Assessment", "url": "https://unosat.org/products/4205", "snippet": "81% structures damaged as of Oct 2025; continuing updates 2026", "source_name": "UNOSAT"},
+      {"title": "UNOSAT latest reports — state of art in satellite analysis", "url": "https://unitar.org/about/news-stories/news/unosat-latest-reports-show-state-art-satellite-analysis", "snippet": "West Bank camps damage assessment Feb 2026", "source_name": "UNITAR"},
+      {"title": "AI from Google Research and UN boosts humanitarian disaster response", "url": "https://www.unglobalpulse.org/ai-from-google-research-and-un-boosts-humanitarian-disaster-response-wider-coverage-faster-damage-assessments/", "snippet": "UNOSAT+Google AI for faster satellite damage assessment", "source_name": "UN Global Pulse"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "CAS500-2 CAS500-4 launch May 3 2026 Falcon 9 SpaceX", "language": "en", "timestamp": "2026-05-02T23:14:00Z", "result_count": 10, "results": [
+      {"title": "Falcon 9 launch of CAS500-2 scheduled for early Sunday morning", "url": "https://keyt.com/vandenberg-space-base/2026/05/01/falcon-9-launch-of-south-koreas-cas500-2-scheduled-for-early-sunday-morning/", "snippet": "May 3, 2026 06:59 UTC from SLC-4E Vandenberg SFB", "source_name": "KEYT"},
+      {"title": "SpaceX CAS500-2 Mission page", "url": "https://www.spacex.com/launches/cas500-2", "snippet": "Official SpaceX CAS500-2 mission page", "source_name": "SpaceX"},
+      {"title": "VSFB to support midnight launch and landing May 2-3", "url": "https://www.vandenberg.spaceforce.mil/News/Article-Display/Article/4476202/vsfb-to-support-midnight-launch-and-landing-may-2-3/", "snippet": "Vandenberg SFB support for CAS500-2 Falcon 9 launch", "source_name": "Vandenberg SFB"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "North Korea satellite imagery military 2026 CSIS 38North", "language": "en", "timestamp": "2026-05-02T23:15:00Z", "result_count": 10, "results": [
+      {"title": "Villages Bordering Sohae Satellite Launching Station Razed", "url": "https://www.38north.org/2026/04/villages-bordering-sohae-satellite-launching-station-razed/", "snippet": "Sohae launch station expansion, village demolition, satellite imagery Feb-Apr 2026", "source_name": "38 North"},
+      {"title": "New Fabrication Buildings at Kusong Facility", "url": "https://www.38north.org/2026/03/new-fabrication-buildings-at-kusong-facility/", "snippet": "North Korea drone program expansion at Kusong — satellite analysis", "source_name": "38 North"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Tropical Cyclone Maila landslide Papua New Guinea satellite May 2026", "language": "en", "timestamp": "2026-05-02T23:16:00Z", "result_count": 10, "results": [
+      {"title": "Cyclone Rains Spur Papua New Guinea Landslides", "url": "https://science.nasa.gov/earth/earth-observatory/cyclone-rains-spur-papua-new-guinea-landslides/", "snippet": "Landsat 9 OLI Apr 20, 2026: landslide scars in Baining Mountains after TC Maila; 25+ dead", "source_name": "NASA Earth Observatory"},
+      {"title": "Cyclone Maila in Papua New Guinea — Charter Activation", "url": "https://disasterscharter.org/activations/flood-in-papua-new-guinea-activation-1027-", "snippet": "International Disaster Charter activated for PNG flooding from Maila", "source_name": "Disaster Charter"},
+      {"title": "Tropical Cyclone Maila triggers deadly landslides", "url": "https://watchers.news/2026/04/13/tropical-cyclone-maila-deadly-landslides-severe-flooding-bougainville-eastern-papua-new-guinea-april-2026/", "snippet": "25+ dead; Category 4 AU scale; strongest cyclone in PNG history", "source_name": "The Watchers"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Niscemi Sicily landslide satellite imagery 2026 VHR", "language": "en", "timestamp": "2026-05-02T23:17:00Z", "result_count": 10, "results": [
+      {"title": "VHR Satellite Images Show Damage After Niscemi Landslide", "url": "https://www.euspaceimaging.com/blog/2026/02/06/satellite-images-niscemi-landslide/", "snippet": "European Space Imaging VHR before/after comparison Sep 2025 vs Feb 2026; 4km hillside collapse", "source_name": "European Space Imaging"}
+    ]}
+  ]
+}

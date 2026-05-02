@@ -1,0 +1,28 @@
+{
+  "id": "src-001",
+  "title": "Cyclone Rains Spur Papua New Guinea Landslides — NASA Earth Observatory (Landsat 9)",
+  "url": "https://science.nasa.gov/earth/earth-observatory/cyclone-rains-spur-papua-new-guinea-landslides/",
+  "snippet": "Heavy rains from Tropical Cyclone Maila triggered deadly landslides in the Baining Mountains of East New Britain, Papua New Guinea. Landsat 9 OLI captured before/after imagery showing fresh landslide scars cutting through dense tropical forest. At least 25 people killed. Disaster Charter activated. NASA LHASA model identified elevated slope failure risk.",
+  "source_name": "NASA Earth Observatory",
+  "language": "en",
+  "discovered_date": "2026-05-02",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규 이벤트 — TC Maila 관련 파푸아뉴기니 산사태 위성영상. 이전 14일 소스에 동일 이벤트 없음.",
+  "entities": [
+    {"id": "temp-evt-037", "type": "Event", "name": "파푸아뉴기니 바이닝산맥 산사태 (TC Maila)", "properties": {"phenomenon": "landslide", "domain": "Disaster", "country": "PG", "lat": -4.48, "lon": 151.81, "observation_date": "2026-04-20", "start_date": "2026-04-09", "severity": "high", "before_after_available": true, "satellites_used": ["Landsat 9"], "sensors_used": ["OLI"], "deaths": 25}},
+    {"id": "temp-evt-038", "type": "Event", "name": "열대사이클론 마일라 (TC Maila) — PNG 홍수", "properties": {"phenomenon": "flood", "domain": "Disaster", "country": "PG", "lat": -5.0, "lon": 152.0, "observation_date": "2026-04-09", "severity": "high", "satellites_used": ["GPM"], "before_after_available": false}},
+    {"id": "temp-loc-017", "type": "Location", "name": "Baining Mountains, East New Britain, PNG", "properties": {"country": "PG", "region": "East New Britain", "lat": -4.48, "lon": 151.81}}
+  ],
+  "relations": [
+    {"subject": "temp-evt-037", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "temp-evt-037", "predicate": "usesSensor", "object": "sensor-oli"},
+    {"subject": "temp-evt-037", "predicate": "locatedIn", "object": "temp-loc-017"},
+    {"subject": "temp-evt-037", "predicate": "manifests", "object": "phen-landslide"},
+    {"subject": "temp-evt-037", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "temp-evt-037", "predicate": "analyzedBy", "object": "org-nasa"},
+    {"subject": "temp-evt-038", "predicate": "triggeredBy", "object": "temp-evt-037"},
+    {"subject": "temp-evt-037", "predicate": "reportedBy", "object": "org-charter"}
+  ]
+}

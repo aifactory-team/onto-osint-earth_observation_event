@@ -1,0 +1,26 @@
+{
+  "id": "src-007",
+  "title": "1 May 2026 Global Volcano News — Mayon Alert 3, Sheveluch Orange, 30+ active",
+  "url": "https://volcanoearth.wordpress.com/2026/05/01/1-may-2026/",
+  "snippet": "Global volcanic activity summary: Mayon (PH) Alert 3 with SO₂ 2,147t/day, lava effusion on 3 gullies; Sheveluch (RU) Orange, new lava dome; Sabancaya (PE) ash 1700m; Fuego (GT) explosions 2-5/hr; Merapi (ID) lava avalanches 1,900m; Great Sitkin (AK) slow dome growth; Satsuma Iwo Jima (JP) thermal anomaly.",
+  "source_name": "Volcano Earth / aggregated from PHIVOLCS, KVERT, IG-EPN, INSIVUMEH, BPPTKG, USGS",
+  "language": "en",
+  "discovered_date": "2026-05-02",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규 — 2026-05-01 기준 전 세계 30+ 활화산 종합 활동 현황. 위성 열이상·화산재 탐지 포함.",
+  "entities": [
+    {"id": "temp-evt-039", "type": "Event", "name": "Sabancaya 화산 분출 (Peru, 2026-05-01)", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "PE", "lat": -15.78, "lon": -71.85, "observation_date": "2026-05-01", "severity": "medium", "satellites_used": ["Sentinel-2A"], "thermal_anomaly_mw": 1}},
+    {"id": "temp-evt-040", "type": "Event", "name": "Fuego 화산 폭발 (Guatemala, 2026-05-01)", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "GT", "lat": 14.473, "lon": -90.880, "observation_date": "2026-05-01", "severity": "medium", "ash_column_m": 4800}},
+    {"id": "temp-evt-041", "type": "Event", "name": "Merapi 용암 사태 (Indonesia, 2026-05-01)", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "ID", "lat": -7.54, "lon": 110.45, "observation_date": "2026-05-01", "severity": "medium", "lava_avalanche_m": 1900}}
+  ],
+  "relations": [
+    {"subject": "temp-evt-039", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "temp-evt-039", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "temp-evt-040", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "temp-evt-040", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "temp-evt-041", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "temp-evt-041", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

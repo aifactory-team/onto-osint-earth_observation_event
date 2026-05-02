@@ -1,0 +1,22 @@
+{
+  "id": "src-006",
+  "title": "Kīlauea volcano May 2 advisory — Episode 46 forecast May 5-8 (USGS HVO)",
+  "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-HVO-2026-05-02T15:56:11+00:00",
+  "snippet": "USGS HVO Advisory: Kilauea eruption paused. Episode 45 (Apr 23) produced 900ft lava fountains over 8.5h. 11.0 µrad inflationary tilt since. 25 earthquakes <M2.0. Episode 46 forecast May 5-8. SO₂ 1,000-5,000 t/day. Webcam glow from both vents.",
+  "source_name": "USGS HVO",
+  "language": "en",
+  "discovered_date": "2026-05-02",
+  "tag": "update",
+  "related_report": "2026-05-01/src-005",
+  "related_item": "ent-evt-021",
+  "tag_reason": "후속 업데이트 — 킬라우에아 에피소드 45 후 경과. 에피소드 46 예측 창 May 5-8 신규 정보.",
+  "entities": [
+    {"id": "ent-evt-021", "type": "Event", "name": "Kilauea Episode 45/46 분출 (Hawaii) — 업데이트", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "US", "lat": 19.421, "lon": -155.287, "observation_date": "2026-05-02", "severity": "high", "before_after_available": true, "so2_tonnes_day": "1000-5000", "tilt_microrad": 11.0}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-021", "predicate": "locatedIn", "object": "ent-loc-004"},
+    {"subject": "ent-evt-021", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-021", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "ent-evt-021", "predicate": "analyzedBy", "object": "org-usgs"}
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "src-015",
+  "title": "VHR Satellite Images Show Damage After Niscemi Sicily Landslide",
+  "url": "https://www.euspaceimaging.com/blog/2026/02/06/satellite-images-niscemi-landslide/",
+  "snippet": "European Space Imaging의 VHR 위성영상(WorldView-3급 추정)으로 시칠리아 Niscemi 대규모 산사태 전후 비교. 2025년 9월 vs 2026년 2월 아카이브 비교. 사이클론 해리 300mm 강우로 4km 규모 산사태. 1,500명 대피. 15억 유로 피해. NDVI 분석으로 식생 피해·불안정 지역 식별.",
+  "source_name": "European Space Imaging",
+  "language": "en",
+  "discovered_date": "2026-05-02",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규 — 이탈리아 시칠리아 Niscemi 산사태 VHR 전후 비교 위성영상 분석. 이전 14일 소스에 없음.",
+  "entities": [
+    {"id": "temp-evt-044", "type": "Event", "name": "시칠리아 Niscemi 대규모 산사태 (Cyclone Harry, 2026-01)", "properties": {"phenomenon": "landslide", "domain": "Disaster", "country": "IT", "lat": 37.15, "lon": 14.39, "observation_date": "2026-02-06", "start_date": "2026-01-26", "severity": "high", "before_after_available": true, "evacuated": 1500, "damage_eur": 1500000000}},
+    {"id": "temp-loc-018", "type": "Location", "name": "Niscemi, Sicily, Italy", "properties": {"country": "IT", "region": "Sicily", "lat": 37.15, "lon": 14.39}}
+  ],
+  "relations": [
+    {"subject": "temp-evt-044", "predicate": "observedBy", "object": "sat-worldview3"},
+    {"subject": "temp-evt-044", "predicate": "locatedIn", "object": "temp-loc-018"},
+    {"subject": "temp-evt-044", "predicate": "manifests", "object": "phen-landslide"},
+    {"subject": "temp-evt-044", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

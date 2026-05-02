@@ -1,0 +1,23 @@
+{
+  "id": "src-008",
+  "title": "CAS500-2/CAS500-4 launch May 3 06:59 UTC — Falcon 9 from Vandenberg SFB",
+  "url": "https://keyt.com/vandenberg-space-base/2026/05/01/falcon-9-launch-of-south-koreas-cas500-2-scheduled-for-early-sunday-morning/",
+  "snippet": "한국 KARI의 CAS500-2(0.5m 팬크로/2m 컬러)와 CAS500-4(5m 광대역 120km 스와스)가 2026년 5월 3일 06:59 UTC에 SpaceX Falcon 9으로 Vandenberg SLC-4E에서 발사 예정. 총 45개 페이로드 탑재. 한반도 농업·산림·재해 관측 역량 대폭 강화.",
+  "source_name": "KEYT News Channel 3-12",
+  "language": "en",
+  "discovered_date": "2026-05-02",
+  "tag": "update",
+  "related_report": "2026-05-01/src-015",
+  "related_item": "ent-evt-032",
+  "tag_reason": "후속 업데이트 — CAS500-2/4 발사일 확정(5월 3일) 및 발사 시각(06:59 UTC) 신규 정보.",
+  "entities": [
+    {"id": "ent-evt-032", "type": "Event", "name": "CAS500-2/4 발사 (2026-05-03 확정, Falcon 9)", "properties": {"phenomenon": "construction", "domain": "AgricultureMaritime", "country": "KR", "lat": 34.7, "lon": -120.6, "observation_date": "2026-05-03", "severity": "medium"}},
+    {"id": "sat-cas500-2", "type": "Satellite", "name": "CAS500-2 (차세대중형위성 2호)", "properties": {"operator": "KARI", "country": "KR", "resolution_m": 0.5}},
+    {"id": "sat-cas500-4", "type": "Satellite", "name": "CAS500-4 (차세대중형위성 4호)", "properties": {"operator": "KARI", "country": "KR", "resolution_m": 5.0, "swath_km": 120}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-032", "predicate": "inDomain", "object": "dom-agri-marine"},
+    {"subject": "sat-cas500-2", "predicate": "operatedBy", "object": "org-kari"},
+    {"subject": "sat-cas500-4", "predicate": "operatedBy", "object": "org-kari"}
+  ]
+}

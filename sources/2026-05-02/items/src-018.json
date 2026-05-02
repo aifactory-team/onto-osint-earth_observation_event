@@ -1,0 +1,26 @@
+{
+  "id": "src-018",
+  "title": "ESA — Trio of Sentinel satellites map methane super-emitters",
+  "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Trio_of_Sentinel_satellites_map_methane_super-emitters",
+  "snippet": "ESA가 Sentinel-3(광역 스크리닝) + Sentinel-5P TROPOMI(중해상도 확인) + Sentinel-2(고해상도 포인트 소스 정밀측정) 3단계 tiered 접근으로 메탄 초대량 배출원을 체계적으로 매핑. SRON 자동 플룸 탐지 ML 알고리즘.",
+  "source_name": "ESA",
+  "language": "en",
+  "discovered_date": "2026-05-02",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규 — ESA Sentinel 3종 위성 결합 메탄 초대량 배출원 매핑 시스템. 기존 메탄 보도와 관련되나 다중 위성 티어드 접근은 새로운 기술적 발전.",
+  "entities": [
+    {"id": "temp-evt-046", "type": "Event", "name": "ESA Sentinel 3종 위성 메탄 초대량 배출원 매핑 시스템", "properties": {"phenomenon": "methane_plume", "domain": "ClimateEnvironment", "country": "INTL", "lat": 0.0, "lon": 0.0, "observation_date": "2026-04", "severity": "medium", "satellites_used": ["Sentinel-3A/B", "Sentinel-5P", "Sentinel-2A"], "sensors_used": ["TROPOMI", "MSI"]}}
+  ],
+  "relations": [
+    {"subject": "temp-evt-046", "predicate": "observedBy", "object": "sat-sentinel5p"},
+    {"subject": "temp-evt-046", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "temp-evt-046", "predicate": "observedBy", "object": "sat-sentinel3"},
+    {"subject": "temp-evt-046", "predicate": "usesSensor", "object": "sensor-tropomi"},
+    {"subject": "temp-evt-046", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "temp-evt-046", "predicate": "manifests", "object": "phen-methane"},
+    {"subject": "temp-evt-046", "predicate": "inDomain", "object": "dom-climate"},
+    {"subject": "temp-evt-046", "predicate": "analyzedBy", "object": "org-esa"}
+  ]
+}

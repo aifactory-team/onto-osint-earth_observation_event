@@ -1,0 +1,21 @@
+{
+  "id": "src-023",
+  "title": "Mayon volcano Alert Level 3 — SO₂ 2,147 t/day, lava effusion 3+ gullies (PHIVOLCS May 1)",
+  "url": "https://volcanoearth.wordpress.com/2026/05/01/1-may-2026/",
+  "snippet": "PHIVOLCS: Mayon Alert Level 3 유지. SO₂ 2,147 t/day. 3개 골짜기에서 용암 유출. 39 화산 지진. 분화구 야간 적열. Landsat 8 2월 관측 영상 참조.",
+  "source_name": "Volcano Earth / PHIVOLCS",
+  "language": "en",
+  "discovered_date": "2026-05-02",
+  "tag": "update",
+  "related_report": "2026-05-01/src-001",
+  "related_item": "ent-evt-029",
+  "tag_reason": "후속 업데이트 — 마욘 화산 PHIVOLCS 5월 1일 상태 보고. SO₂ 배출량·용암 유출 지속 상태 업데이트.",
+  "entities": [
+    {"id": "ent-evt-029", "type": "Event", "name": "Mayon 화산 분출 (Philippines, 2026-01~) — 업데이트", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "PH", "lat": 13.257, "lon": 123.685, "observation_date": "2026-05-01", "severity": "high", "so2_tons_per_day": 2147}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-029", "predicate": "locatedIn", "object": "ent-loc-014"},
+    {"subject": "ent-evt-029", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-029", "predicate": "analyzedBy", "object": "org-phivolcs"}
+  ]
+}

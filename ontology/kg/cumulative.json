@@ -1,15 +1,15 @@
 {
   "version": "1.1.0",
   "description": "위성영상 관측 이벤트 누적 지식그래프 — 첫 실행(2026-04-30) 이후 매일 신규/추론 트리플 병합",
-  "last_updated": "2026-05-01",
-  "snapshots_merged": ["2026-04-30", "2026-05-01"],
-  "triples": "ontology/kg/2026-04-30.json + ontology/kg/2026-05-01.json (new_triples + inferred_triples)",
+  "last_updated": "2026-05-02",
+  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02"],
+  "triples": "ontology/kg/2026-04-30.json + ontology/kg/2026-05-01.json + ontology/kg/2026-05-02.json (new_triples + inferred_triples)",
   "stats": {
-    "total_explicit_triples": 205,
-    "total_inferred_triples": 85,
-    "total_unique_subjects": 47,
-    "total_unique_predicates": 14,
-    "total_unique_objects": 90
+    "total_explicit_triples": 236,
+    "total_inferred_triples": 101,
+    "total_unique_subjects": 59,
+    "total_unique_predicates": 16,
+    "total_unique_objects": 102
   },
-  "note": "2026-05-01 병합 완료 — ent-evt-029~036 신규 이벤트 8건, 업데이트 4건(ent-evt-020/021/022/019). 신규 국가(PH/VE), 신규 위성(CAS500-2/4), 신규 기관(MizarVision/Vantor/PHIVOLCS/GlobalWitness), 신규 위치 2건(Mayon/Shiveluch). 추론 15건(multiSat 1건, sensor_match 5건, official 3건, koreaBoost 2건, temporal 1건, baCredibility 2건, priority 1건)."
+  "note": "2026-05-02 병합 완료 — ent-evt-037~046 신규 이벤트 10건, 업데이트 5건(ent-evt-020/021/029/030/032). 신규 국가(PG/PE/GT), 신규 위치 2건(Baining Mts/Niscemi). phen-landslide 첫 이벤트 매핑(0→2). 추론 16건(multiSat 4건, sensor_match 3건, official 3건, baCredibility 3건, cascading 1건, temporal 1건, priority 1건)."
 }

@@ -1,0 +1,25 @@
+{
+  "id": "src-011",
+  "title": "ESA — Antarctica retreat study signals future ice loss (Sentinel-1 SAR 30-year grounding line)",
+  "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-1/Antarctica_retreat_study_signals_future_ice_loss",
+  "snippet": "ESA/Copernicus Sentinel-1 SAR 기반 30년간(1996-2025) 남극 접지선(grounding line) 후퇴 종합 연구. 남극 전체 12,800km² 얼음 손실(벨기에 절반 규모). Smith Glacier 42km, Pine Island 33km, Thwaites 26km 후퇴. Amundsen Sea 연안이 가장 취약. 해수면 상승 기여도 산정.",
+  "source_name": "ESA",
+  "language": "en",
+  "discovered_date": "2026-05-02",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규 — ESA Sentinel-1 SAR 기반 30년 남극 접지선 종합 연구. 기존 ent-evt-025 (Smith Glacier)와 관련되나, 이번 연구는 남극 전체 규모의 종합 분석으로 신규 분류.",
+  "entities": [
+    {"id": "temp-evt-042", "type": "Event", "name": "남극 30년 접지선 후퇴 종합 연구 (ESA Sentinel-1 SAR)", "properties": {"phenomenon": "glacier_retreat", "domain": "ClimateEnvironment", "country": "AQ", "lat": -75.0, "lon": -106.0, "observation_date": "2026-03-01", "severity": "high", "area_km2": 12800, "satellites_used": ["Sentinel-1A", "Sentinel-1C"], "sensors_used": ["C-band SAR"], "before_after_available": true}}
+  ],
+  "relations": [
+    {"subject": "temp-evt-042", "predicate": "observedBy", "object": "sat-sentinel1a"},
+    {"subject": "temp-evt-042", "predicate": "observedBy", "object": "sat-sentinel1c"},
+    {"subject": "temp-evt-042", "predicate": "usesSensor", "object": "sensor-c-sar"},
+    {"subject": "temp-evt-042", "predicate": "manifests", "object": "phen-glacier"},
+    {"subject": "temp-evt-042", "predicate": "inDomain", "object": "dom-climate"},
+    {"subject": "temp-evt-042", "predicate": "analyzedBy", "object": "org-esa"},
+    {"subject": "temp-evt-042", "predicate": "partOfSeries", "object": "ent-evt-025"}
+  ]
+}

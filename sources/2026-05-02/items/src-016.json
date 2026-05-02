@@ -1,0 +1,24 @@
+{
+  "id": "src-016",
+  "title": "Faster Detection of Forest Loss — NASA EO multi-satellite system",
+  "url": "https://science.nasa.gov/earth/earth-observatory/faster-detection-of-forest-loss/",
+  "snippet": "NASA가 다중 지구관측 위성(Landsat + Sentinel-2 + MODIS) 데이터를 결합하여 산림 벌채를 기존 방법 대비 100일 앞서 탐지하는 새로운 시스템 개발. 열대림 보호 조기경보 역량 대폭 강화.",
+  "source_name": "NASA Earth Observatory",
+  "language": "en",
+  "discovered_date": "2026-05-02",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규 — NASA의 다중위성 조기 산림벌채 탐지 시스템. 기존 GFW DIST-ALERT와 관련되나 독립적 연구.",
+  "entities": [
+    {"id": "temp-evt-045", "type": "Event", "name": "NASA 다중위성 조기 산림벌채 탐지 시스템 (2026)", "properties": {"phenomenon": "deforestation", "domain": "HumanActivity", "country": "INTL", "lat": 0.0, "lon": -60.0, "observation_date": "2026-05", "severity": "medium", "satellites_used": ["Landsat 9", "Sentinel-2A", "MODIS (Terra)"], "sensors_used": ["OLI", "MSI", "MODIS"]}}
+  ],
+  "relations": [
+    {"subject": "temp-evt-045", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "temp-evt-045", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "temp-evt-045", "predicate": "observedBy", "object": "sat-modis-terra"},
+    {"subject": "temp-evt-045", "predicate": "manifests", "object": "phen-defor"},
+    {"subject": "temp-evt-045", "predicate": "inDomain", "object": "dom-human"},
+    {"subject": "temp-evt-045", "predicate": "analyzedBy", "object": "org-nasa"}
+  ]
+}

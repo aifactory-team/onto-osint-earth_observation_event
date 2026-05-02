@@ -149,6 +149,20 @@
       "target": "org-mizarvision, org-vantor, org-phivolcs, org-globalwitness",
       "reason": "MizarVision — 중국 지오공간 AI 스타트업, 미군 기지 위성영상 분석 공개(ent-evt-031). Vantor — 구 Maxar Intelligence, 0.3m 고해상도 영상 제공(ent-evt-031 출처). PHIVOLCS — 필리핀 화산지진연구소(ent-evt-029). Global Witness — 환경 NGO(ent-evt-034).",
       "source_ids": ["src-001", "src-011", "src-021"]
+    },
+    {
+      "date": "2026-05-02",
+      "action": "add_country",
+      "target": "co-pg, co-pe, co-gt",
+      "reason": "파푸아뉴기니(PG) — TC Maila 산사태/홍수(ent-evt-037/038, Landsat 9 관측, Disaster Charter 발동). 페루(PE) — Sabancaya 화산 분출(ent-evt-039, Sentinel-2 열이상). 과테말라(GT) — Fuego 화산 폭발(ent-evt-040, 4,800m 화산재). 기존 국가 인스턴스에 없던 3개국 추가.",
+      "source_ids": ["src-001", "src-007"]
+    },
+    {
+      "date": "2026-05-02",
+      "action": "first_event_reference",
+      "target": "phen-landslide",
+      "reason": "phen-landslide (landslide)는 스키마 초기화 시 정의되었으나 이벤트 참조 0건이었음. ent-evt-037 (PNG 바이닝산맥 산사태) 및 ent-evt-044 (Niscemi 시칠리아 산사태)에서 첫 이벤트 매핑 발생. mention_count 0→2.",
+      "source_ids": ["src-001", "src-015"]
     }
   ]
 }

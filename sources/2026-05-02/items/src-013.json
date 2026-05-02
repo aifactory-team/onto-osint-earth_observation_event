@@ -1,0 +1,23 @@
+{
+  "id": "src-013",
+  "title": "The Glass Battlefield — commercial satellite imagery and Iran-Israel conflict",
+  "url": "https://www.meforum.org/military-and-strategic-programs/g2-briefings/the-glass-battlefield-commercial-imagery-and-the-new-strategic-realities-of-the-iran-israel-conflict",
+  "snippet": "상업 위성영상(Planet daily scan + Maxar high-res tasking)이 전략적 기습 종말 초래. 대규모 재래식 작전의 사전 탐지 불가피. MizarVision 등 AI OSINT가 국가 정보기관 역량 수준의 분석을 소수 인력으로 수행하는 시대. 이란-이스라엘 분쟁에서 상업 위성의 역할 분석.",
+  "source_name": "Middle East Forum",
+  "language": "en",
+  "discovered_date": "2026-05-02",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규 — 상업 위성영상의 군사 전략적 의미 종합 분석. MizarVision(ent-evt-031)과 관련되나 보다 포괄적 분석 기사.",
+  "entities": [
+    {"id": "temp-evt-043", "type": "Event", "name": "상업 위성영상의 군사 전략 변화 — 이란-이스라엘 분쟁 사례 분석", "properties": {"phenomenon": "military_buildup", "domain": "Defense", "country": "INTL", "lat": 32.0, "lon": 51.0, "observation_date": "2026-04", "severity": "medium", "satellites_used": ["PlanetScope (Doves)", "WorldView-3"]}}
+  ],
+  "relations": [
+    {"subject": "temp-evt-043", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "temp-evt-043", "predicate": "observedBy", "object": "sat-worldview3"},
+    {"subject": "temp-evt-043", "predicate": "manifests", "object": "phen-military"},
+    {"subject": "temp-evt-043", "predicate": "inDomain", "object": "dom-defense"},
+    {"subject": "temp-evt-043", "predicate": "partOfSeries", "object": "ent-evt-031"}
+  ]
+}
