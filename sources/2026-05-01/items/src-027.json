@@ -1,0 +1,60 @@
+{
+  "id": "src-027",
+  "title": "Global satellite survey reveals uncertainty in landfill methane emissions — Nature",
+  "url": "https://www.nature.com/articles/s41586-025-09683-8",
+  "snippet": "A Nature study presents the first comprehensive global satellite survey of methane emissions from landfills using Sentinel-5P TROPOMI data. The research reveals significant uncertainties in current landfill methane emission inventories, with satellite-observed emissions often 2-3x higher than reported. The study maps methane plumes from hundreds of landfill sites across 40+ countries, highlighting major discrepancies between reported and observed emissions. Findings have critical implications for national greenhouse gas inventories and climate policy under the Global Methane Pledge.",
+  "source_name": "Nature",
+  "language": "en",
+  "discovered_date": "2026-05-01",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "New peer-reviewed global landfill methane survey using Sentinel-5P TROPOMI. Directly relevant to Climate & Environment domain and methane plume monitoring category.",
+  "entities": [
+    {
+      "id": "temp-evt-027",
+      "type": "Event",
+      "name": "전 세계 매립지 메탄 배출 위성 조사 (global landfill methane satellite survey)",
+      "properties": {
+        "phenomenon": "methane_plume",
+        "domain": "ClimateEnvironment",
+        "country": "INTL",
+        "lat": 0.0,
+        "lon": 0.0,
+        "observation_date": "2026-04",
+        "severity": "high",
+        "before_after_available": false,
+        "satellite_unverified": false,
+        "is_press_release": false,
+        "countries_covered": "40+",
+        "emission_discrepancy": "2-3x higher than reported"
+      }
+    },
+    {
+      "id": "sat-sentinel5p",
+      "type": "Satellite",
+      "name": "Sentinel-5P",
+      "properties": {
+        "operator": "ESA",
+        "orbit": "SSO",
+        "mission": "atmospheric_monitoring"
+      }
+    },
+    {
+      "id": "sensor-tropomi",
+      "type": "Sensor",
+      "name": "TROPOMI",
+      "properties": {
+        "type": "hyperspectral_spectrometer",
+        "platform": "Sentinel-5P",
+        "target_species": ["CH4", "CO2", "NO2", "O3", "SO2"]
+      }
+    }
+  ],
+  "relations": [
+    {"subject": "temp-evt-027", "predicate": "observedBy", "object": "sat-sentinel5p"},
+    {"subject": "temp-evt-027", "predicate": "usesSensor", "object": "sensor-tropomi"},
+    {"subject": "temp-evt-027", "predicate": "manifests", "object": "phen-methane-plume"},
+    {"subject": "temp-evt-027", "predicate": "inDomain", "object": "dom-climate-environment"}
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "src-018",
+  "title": "GFW DIST-ALERT — global vegetation disturbance alerts (Landsat + Sentinel-2)",
+  "url": "https://www.globalforestwatch.org/blog/data-and-tools/global-vegetation-disturbance-alerts/",
+  "snippet": "Global Forest Watch announces DIST-ALERT, a new data product providing global vegetation disturbance alerts using combined Landsat 8/9 and Sentinel-2A/B imagery. The system detects deforestation, degradation, and other vegetation loss events with improved temporal frequency and spatial resolution compared to previous GLAD alerts. Available through the GFW platform for near-real-time forest monitoring worldwide.",
+  "source_name": "Global Forest Watch",
+  "language": "en",
+  "discovered_date": "2026-05-01",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "New data product relevant to deforestation and vegetation monitoring domain. DIST-ALERT fuses Landsat and Sentinel-2 for improved forest disturbance detection.",
+  "entities": [
+    {
+      "id": "dp-dist-alert",
+      "type": "DataProduct",
+      "name": "DIST-ALERT (Global Vegetation Disturbance Alerts)",
+      "properties": {
+        "producer": "GFW/WRI",
+        "type": "vegetation_disturbance_alert",
+        "coverage": "global",
+        "update_frequency": "near-real-time"
+      }
+    },
+    {
+      "id": "sat-landsat8",
+      "type": "Satellite",
+      "name": "Landsat 8",
+      "properties": {
+        "operator": "NASA/USGS",
+        "orbit": "SSO"
+      }
+    },
+    {
+      "id": "sat-landsat9",
+      "type": "Satellite",
+      "name": "Landsat 9",
+      "properties": {
+        "operator": "NASA/USGS",
+        "orbit": "SSO"
+      }
+    },
+    {
+      "id": "sat-sentinel2a",
+      "type": "Satellite",
+      "name": "Sentinel-2A",
+      "properties": {
+        "operator": "ESA",
+        "orbit": "SSO"
+      }
+    },
+    {
+      "id": "sat-sentinel2b",
+      "type": "Satellite",
+      "name": "Sentinel-2B",
+      "properties": {
+        "operator": "ESA",
+        "orbit": "SSO"
+      }
+    },
+    {
+      "id": "org-gfw",
+      "type": "Organization",
+      "name": "Global Forest Watch (WRI)",
+      "properties": {
+        "type": "research_ngo",
+        "country": "US"
+      }
+    }
+  ],
+  "relations": [
+    {"subject": "dp-dist-alert", "predicate": "usesData", "object": "sat-landsat8"},
+    {"subject": "dp-dist-alert", "predicate": "usesData", "object": "sat-landsat9"},
+    {"subject": "dp-dist-alert", "predicate": "usesData", "object": "sat-sentinel2a"},
+    {"subject": "dp-dist-alert", "predicate": "usesData", "object": "sat-sentinel2b"},
+    {"subject": "dp-dist-alert", "predicate": "producedBy", "object": "org-gfw"}
+  ]
+}

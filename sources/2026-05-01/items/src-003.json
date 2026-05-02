@@ -1,0 +1,82 @@
+{
+  "id": "src-003",
+  "title": "Shiveluch Volcano ash plume to 48,000 ft observed in satellite imagery",
+  "url": "https://www.volcanodiscovery.com/shiveluch/news/299123/vaac-advisory-2026-113.html",
+  "snippet": "VAAC Tokyo advisory reports Shiveluch volcano on Kamchatka Peninsula produced an ash plume reaching 48,000 ft (FL480) on April 2, 2026. Himawari-9 geostationary satellite imagery confirmed the ash cloud extent and drift direction. Aviation color code raised to Red. JMA and VAAC Tokyo issued multiple advisories.",
+  "source_name": "VolcanoDiscovery / VAAC Tokyo",
+  "language": "en",
+  "discovered_date": "2026-05-01",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "New volcanic event not previously tracked. Significant ash plume height (48,000 ft) with satellite confirmation from Himawari-9.",
+  "entities": [
+    {
+      "id": "temp-evt-003",
+      "type": "Event",
+      "name": "시벨루치 화산 분출 (Shiveluch eruption Apr 2)",
+      "properties": {
+        "phenomenon": "volcanic_eruption",
+        "domain": "Disaster",
+        "country": "RU",
+        "lat": 56.65,
+        "lon": 161.36,
+        "observation_date": "2026-04-02",
+        "severity": "high",
+        "before_after_available": false,
+        "satellite_unverified": false,
+        "is_press_release": false,
+        "ash_plume_height_ft": 48000
+      }
+    },
+    {
+      "id": "temp-loc-003",
+      "type": "Location",
+      "name": "시벨루치 화산 (Shiveluch, Kamchatka)",
+      "properties": {
+        "country": "RU",
+        "region": "Kamchatka Krai",
+        "admin_level": "region",
+        "lat": 56.65,
+        "lon": 161.36
+      }
+    },
+    {
+      "id": "sat-himawari9",
+      "type": "Satellite",
+      "name": "Himawari-9",
+      "properties": {
+        "operator": "JMA",
+        "orbit": "GEO",
+        "type": "geostationary_meteorological"
+      }
+    },
+    {
+      "id": "org-vaac-tokyo",
+      "type": "Organization",
+      "name": "VAAC Tokyo",
+      "properties": {
+        "type": "aviation_advisory",
+        "country": "JP"
+      }
+    },
+    {
+      "id": "org-jma",
+      "type": "Organization",
+      "name": "JMA (Japan Meteorological Agency)",
+      "properties": {
+        "type": "government_agency",
+        "country": "JP"
+      }
+    }
+  ],
+  "relations": [
+    {"subject": "temp-evt-003", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "temp-evt-003", "predicate": "manifests", "object": "phen-volcanic-eruption"},
+    {"subject": "temp-evt-003", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "temp-evt-003", "predicate": "inCountry", "object": "co-ru"},
+    {"subject": "temp-evt-003", "predicate": "locatedIn", "object": "temp-loc-003"},
+    {"subject": "temp-evt-003", "predicate": "analyzedBy", "object": "org-vaac-tokyo"},
+    {"subject": "temp-evt-003", "predicate": "analyzedBy", "object": "org-jma"}
+  ]
+}

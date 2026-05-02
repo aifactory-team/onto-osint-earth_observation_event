@@ -1,0 +1,69 @@
+{
+  "id": "src-014",
+  "title": "Nowhere to hide: Iran war spotlights challenges of space-based remote sensing",
+  "url": "https://breakingdefense.com/2026/04/nowhere-to-hide-iran-war-spotlights-military-challenges-posed-by-space-based-remote-sensing/",
+  "snippet": "Breaking Defense analysis of how the ongoing Iran conflict has highlighted the military challenges posed by ubiquitous commercial satellite imagery. Planet and Maxar/Vantor data are being used by multiple parties to track military movements in near-real-time. Discusses implications for operational security, camouflage, and the changing nature of battlefield intelligence when sub-meter resolution imagery is commercially available.",
+  "source_name": "Breaking Defense",
+  "language": "en",
+  "discovered_date": "2026-05-01",
+  "tag": "new",
+  "related_report": null,
+  "related_item": "src-011",
+  "tag_reason": "New analysis piece on commercial satellite imagery military implications. Complements src-011 MizarVision report with broader strategic context.",
+  "entities": [
+    {
+      "id": "temp-evt-014",
+      "type": "Event",
+      "name": "상업 위성영상 군사 활용 논란 (commercial imagery military implications)",
+      "properties": {
+        "phenomenon": "military_buildup",
+        "domain": "Defense",
+        "country": "INTL",
+        "lat": 32.0,
+        "lon": 53.0,
+        "observation_date": "2026-04",
+        "severity": "medium",
+        "before_after_available": false,
+        "satellite_unverified": false,
+        "is_press_release": false
+      }
+    },
+    {
+      "id": "temp-loc-014",
+      "type": "Location",
+      "name": "이란 및 중동 (Iran / Middle East theater)",
+      "properties": {
+        "country": "IR",
+        "region": "Middle East",
+        "admin_level": "country",
+        "lat": 32.0,
+        "lon": 53.0
+      }
+    },
+    {
+      "id": "org-planet",
+      "type": "Organization",
+      "name": "Planet Labs",
+      "properties": {
+        "type": "commercial_satellite",
+        "country": "US"
+      }
+    },
+    {
+      "id": "org-vantor",
+      "type": "Organization",
+      "name": "Maxar / Vantor",
+      "properties": {
+        "type": "commercial_satellite",
+        "country": "US"
+      }
+    }
+  ],
+  "relations": [
+    {"subject": "temp-evt-014", "predicate": "manifests", "object": "phen-military-buildup"},
+    {"subject": "temp-evt-014", "predicate": "inDomain", "object": "dom-defense"},
+    {"subject": "temp-evt-014", "predicate": "locatedIn", "object": "temp-loc-014"},
+    {"subject": "temp-evt-014", "predicate": "involvesSatOperator", "object": "org-planet"},
+    {"subject": "temp-evt-014", "predicate": "involvesSatOperator", "object": "org-vantor"}
+  ]
+}

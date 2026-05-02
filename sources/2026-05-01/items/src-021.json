@@ -1,0 +1,95 @@
+{
+  "id": "src-021",
+  "title": "Venezuela Lake Maracaibo 504 oil slick detections (Jan 2025–Mar 2026)",
+  "url": "https://globalwitness.org/en/campaigns/fossil-fuels/ecocide-in-venezuela-oil-mining-and-the-risks-of-foreign-investment/",
+  "snippet": "Global Witness report documents 504 oil slick detections in Lake Maracaibo, Venezuela between January 2025 and March 2026, using SkyTruth Cerulean data derived from Sentinel-1A C-band SAR imagery. The report labels the situation an 'ecocide' driven by aging PDVSA infrastructure, chronic pipeline leaks, and lack of maintenance. Lake Maracaibo, one of the world's oldest and largest lakes, faces severe ecological damage. The report also highlights risks to foreign investors considering partnerships with Venezuela's oil sector.",
+  "source_name": "Global Witness",
+  "language": "en",
+  "discovered_date": "2026-05-01",
+  "tag": "new",
+  "related_report": null,
+  "related_item": "src-020",
+  "tag_reason": "New large-scale oil pollution event in Venezuela documented with SAR satellite data. 504 detections over 15 months represents a severe chronic spill scenario.",
+  "entities": [
+    {
+      "id": "temp-evt-021",
+      "type": "Event",
+      "name": "베네수엘라 마라카이보 호수 유류 오염 (Venezuela Lake Maracaibo oil pollution)",
+      "properties": {
+        "phenomenon": "oil_spill",
+        "domain": "HumanActivity",
+        "country": "VE",
+        "lat": 9.8,
+        "lon": -71.5,
+        "observation_date": "2025-01",
+        "date_range": "2025-01 to 2026-03",
+        "severity": "high",
+        "before_after_available": false,
+        "satellite_unverified": false,
+        "is_press_release": false,
+        "detection_count": 504,
+        "cause": "aging_infrastructure_pipeline_leaks"
+      }
+    },
+    {
+      "id": "temp-loc-021",
+      "type": "Location",
+      "name": "마라카이보 호수 (Lake Maracaibo, Venezuela)",
+      "properties": {
+        "country": "VE",
+        "region": "Zulia",
+        "admin_level": "state",
+        "lat": 9.8,
+        "lon": -71.5
+      }
+    },
+    {
+      "id": "sat-sentinel1a",
+      "type": "Satellite",
+      "name": "Sentinel-1A",
+      "properties": {
+        "operator": "ESA",
+        "orbit": "SSO",
+        "sensor_type": "C-band SAR"
+      }
+    },
+    {
+      "id": "sensor-cband-sar",
+      "type": "Sensor",
+      "name": "C-band SAR",
+      "properties": {
+        "type": "SAR",
+        "platform": "Sentinel-1A",
+        "band": "C-band"
+      }
+    },
+    {
+      "id": "org-skytruth",
+      "type": "Organization",
+      "name": "SkyTruth",
+      "properties": {
+        "type": "environmental_ngo",
+        "country": "US"
+      }
+    },
+    {
+      "id": "org-globalwitness",
+      "type": "Organization",
+      "name": "Global Witness",
+      "properties": {
+        "type": "investigative_ngo",
+        "country": "GB"
+      }
+    }
+  ],
+  "relations": [
+    {"subject": "temp-evt-021", "predicate": "observedBy", "object": "sat-sentinel1a"},
+    {"subject": "temp-evt-021", "predicate": "usesSensor", "object": "sensor-cband-sar"},
+    {"subject": "temp-evt-021", "predicate": "manifests", "object": "phen-oil-spill"},
+    {"subject": "temp-evt-021", "predicate": "inDomain", "object": "dom-human-activity"},
+    {"subject": "temp-evt-021", "predicate": "inCountry", "object": "co-ve"},
+    {"subject": "temp-evt-021", "predicate": "locatedIn", "object": "temp-loc-021"},
+    {"subject": "temp-evt-021", "predicate": "analyzedBy", "object": "org-skytruth"},
+    {"subject": "temp-evt-021", "predicate": "analyzedBy", "object": "org-globalwitness"}
+  ]
+}

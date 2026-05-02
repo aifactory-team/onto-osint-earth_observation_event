@@ -1,0 +1,116 @@
+{
+  "id": "src-008",
+  "title": "Fires Rage in Georgia — NASA Earth Observatory",
+  "url": "https://science.nasa.gov/earth/earth-observatory/fires-rage-in-georgia/",
+  "snippet": "NASA Earth Observatory reports on historic wildfires in Georgia, USA. Two major fires — Pineland Road and Highway 82 — have burned over 50,000 acres (~200 km²) since April 18, 2026, destroying 120+ homes, the most in Georgia's recorded history. Extreme drought conditions fueled rapid spread. Landsat 8 OLI and VIIRS on NOAA-21 captured before/after imagery showing burn scars and active fire fronts.",
+  "source_name": "NASA Earth Observatory",
+  "language": "en",
+  "discovered_date": "2026-05-01",
+  "tag": "update",
+  "related_report": "2026-04-30/ent-evt-020",
+  "related_item": null,
+  "tag_reason": "Update to Georgia wildfire event (ent-evt-020). NASA Earth Observatory feature with Landsat 8 and VIIRS imagery confirms expanded damage assessment.",
+  "entities": [
+    {
+      "id": "temp-evt-008",
+      "type": "Event",
+      "name": "조지아 대형 산불 (Georgia wildfires Apr 2026)",
+      "properties": {
+        "phenomenon": "wildfire",
+        "domain": "Disaster",
+        "country": "US",
+        "lat": 31.2,
+        "lon": -82.3,
+        "observation_date": "2026-04-18",
+        "date_range": "2026-04-18 to ongoing",
+        "severity": "high",
+        "before_after_available": true,
+        "satellite_unverified": false,
+        "is_press_release": false,
+        "area_acres": 50000,
+        "area_km2": 200,
+        "homes_destroyed": 120,
+        "fire_names": ["Pineland Road", "Highway 82"],
+        "cause": "extreme_drought"
+      }
+    },
+    {
+      "id": "temp-loc-008",
+      "type": "Location",
+      "name": "조지아주 남부 (Southern Georgia, USA)",
+      "properties": {
+        "country": "US",
+        "region": "Georgia",
+        "admin_level": "state",
+        "lat": 31.2,
+        "lon": -82.3
+      }
+    },
+    {
+      "id": "sat-landsat8",
+      "type": "Satellite",
+      "name": "Landsat 8",
+      "properties": {
+        "operator": "NASA/USGS",
+        "orbit": "SSO"
+      }
+    },
+    {
+      "id": "sat-noaa21",
+      "type": "Satellite",
+      "name": "NOAA-21 (JPSS-2)",
+      "properties": {
+        "operator": "NOAA",
+        "orbit": "SSO"
+      }
+    },
+    {
+      "id": "sensor-oli",
+      "type": "Sensor",
+      "name": "OLI (Operational Land Imager)",
+      "properties": {
+        "type": "multispectral",
+        "platform": "Landsat 8"
+      }
+    },
+    {
+      "id": "sensor-viirs",
+      "type": "Sensor",
+      "name": "VIIRS",
+      "properties": {
+        "type": "multispectral_radiometer",
+        "platform": "NOAA-21"
+      }
+    },
+    {
+      "id": "org-nasa",
+      "type": "Organization",
+      "name": "NASA",
+      "properties": {
+        "type": "space_agency",
+        "country": "US"
+      }
+    },
+    {
+      "id": "org-noaa",
+      "type": "Organization",
+      "name": "NOAA",
+      "properties": {
+        "type": "government_agency",
+        "country": "US"
+      }
+    }
+  ],
+  "relations": [
+    {"subject": "temp-evt-008", "predicate": "observedBy", "object": "sat-landsat8"},
+    {"subject": "temp-evt-008", "predicate": "observedBy", "object": "sat-noaa21"},
+    {"subject": "temp-evt-008", "predicate": "usesSensor", "object": "sensor-oli"},
+    {"subject": "temp-evt-008", "predicate": "usesSensor", "object": "sensor-viirs"},
+    {"subject": "temp-evt-008", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "temp-evt-008", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "temp-evt-008", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "temp-evt-008", "predicate": "locatedIn", "object": "temp-loc-008"},
+    {"subject": "temp-evt-008", "predicate": "analyzedBy", "object": "org-nasa"},
+    {"subject": "temp-evt-008", "predicate": "analyzedBy", "object": "org-noaa"}
+  ]
+}

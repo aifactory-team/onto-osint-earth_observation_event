@@ -1,0 +1,36 @@
+{
+  "id": "src-022",
+  "title": "UNDP-UNITAR framework — satellite imagery analysis 30% faster crisis response",
+  "url": "https://www.undp.org/news/satellite-imagery-guides-faster-recovery-crisis-zones",
+  "snippet": "UNDP and UNITAR announce a joint framework for satellite imagery analysis that achieves 30% faster crisis response times. The framework standardizes how satellite data from multiple providers is processed, analyzed, and disseminated to field teams during humanitarian emergencies. Integrates Sentinel-2, Planet, and Maxar imagery with AI-assisted damage assessment to accelerate post-disaster recovery planning. Piloted in recent disaster responses across South and Southeast Asia.",
+  "source_name": "UNDP",
+  "language": "en",
+  "discovered_date": "2026-05-01",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "New humanitarian satellite analysis framework. Cross-cutting relevance to disaster response and crisis management domains.",
+  "entities": [
+    {
+      "id": "org-undp",
+      "type": "Organization",
+      "name": "UNDP (United Nations Development Programme)",
+      "properties": {
+        "type": "international_organization",
+        "country": "INTL"
+      }
+    },
+    {
+      "id": "org-unitar",
+      "type": "Organization",
+      "name": "UNITAR (United Nations Institute for Training and Research)",
+      "properties": {
+        "type": "international_organization",
+        "country": "INTL"
+      }
+    }
+  ],
+  "relations": [
+    {"subject": "org-undp", "predicate": "collaboratesWith", "object": "org-unitar"}
+  ]
+}

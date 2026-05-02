@@ -1,0 +1,73 @@
+{
+  "id": "src-011",
+  "title": "MizarVision publishes AI-processed satellite imagery of US military assets",
+  "url": "https://defence-industry.eu/mizarvision-publishes-ai-processed-satellite-imagery-of-u-s-military-assets-raising-intelligence-and-security-concerns/",
+  "snippet": "Shanghai-based AI startup MizarVision is publishing near-real-time annotated satellite imagery of US military assets globally. The company uses Vantor (formerly Maxar) 0.3m resolution commercial satellite data processed with AI object detection to identify and classify military hardware, bases, and deployments. Reports indicate Iran's IRGC has been using MizarVision data for strike planning during the ongoing conflict. Raises major OSINT security concerns about commercial satellite intelligence proliferation.",
+  "source_name": "Defence Industry EU",
+  "language": "en",
+  "discovered_date": "2026-05-01",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "New defense/OSINT event. First coverage of MizarVision's AI satellite imagery operation and its military intelligence implications.",
+  "entities": [
+    {
+      "id": "temp-evt-011",
+      "type": "Event",
+      "name": "MizarVision 위성영상 AI 군사자산 추적 (MizarVision OSINT military tracking)",
+      "properties": {
+        "phenomenon": "military_buildup",
+        "domain": "Defense",
+        "country": "INTL",
+        "lat": 30.0,
+        "lon": 47.0,
+        "observation_date": "2026-02",
+        "date_range": "2026-02 to ongoing",
+        "severity": "high",
+        "before_after_available": false,
+        "satellite_unverified": false,
+        "is_press_release": false,
+        "resolution_m": 0.3,
+        "involved_countries": ["CN", "US", "IR"]
+      }
+    },
+    {
+      "id": "temp-loc-011",
+      "type": "Location",
+      "name": "중동 전역 (Middle East — multiple locations)",
+      "properties": {
+        "country": "INTL",
+        "region": "Middle East",
+        "admin_level": "region",
+        "lat": 30.0,
+        "lon": 47.0
+      }
+    },
+    {
+      "id": "org-mizarvision",
+      "type": "Organization",
+      "name": "MizarVision",
+      "properties": {
+        "type": "commercial_ai",
+        "country": "CN",
+        "city": "Shanghai"
+      }
+    },
+    {
+      "id": "org-vantor",
+      "type": "Organization",
+      "name": "Vantor (formerly Maxar)",
+      "properties": {
+        "type": "commercial_satellite",
+        "country": "US"
+      }
+    }
+  ],
+  "relations": [
+    {"subject": "temp-evt-011", "predicate": "manifests", "object": "phen-military-buildup"},
+    {"subject": "temp-evt-011", "predicate": "inDomain", "object": "dom-defense"},
+    {"subject": "temp-evt-011", "predicate": "locatedIn", "object": "temp-loc-011"},
+    {"subject": "temp-evt-011", "predicate": "analyzedBy", "object": "org-mizarvision"},
+    {"subject": "temp-evt-011", "predicate": "dataProvidedBy", "object": "org-vantor"}
+  ]
+}

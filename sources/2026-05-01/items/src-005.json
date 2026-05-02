@@ -1,0 +1,61 @@
+{
+  "id": "src-005",
+  "title": "USGS: Satellite imagery showing changes to Kīlauea summit region (Apr 30)",
+  "url": "https://www.usgs.gov/observatories/hvo/news/photo-video-chronology-april-30-2026-satellite-imagery-showing-changes",
+  "snippet": "USGS Hawaii Volcano Observatory published satellite imagery from April 22 showing tephra deposits on KMC (Kilauea Military Camp) rooftops from Episode 45. Ongoing monitoring of Kilauea summit deformation. Episode 46 forecast for May 5-9 based on tiltmeter patterns and magma supply rate models. Before/after imagery comparing pre- and post-Episode 45 conditions.",
+  "source_name": "USGS HVO",
+  "language": "en",
+  "discovered_date": "2026-05-01",
+  "tag": "update",
+  "related_report": "2026-04-30/ent-evt-021",
+  "related_item": null,
+  "tag_reason": "Update to previously tracked Kilauea eruption (ent-evt-021). New satellite imagery from Apr 22 and Episode 46 forecast added.",
+  "entities": [
+    {
+      "id": "temp-evt-005",
+      "type": "Event",
+      "name": "킬라우에아 에피소드 45+ (Kilauea Episode 45+)",
+      "properties": {
+        "phenomenon": "volcanic_eruption",
+        "domain": "Disaster",
+        "country": "US",
+        "lat": 19.421,
+        "lon": -155.287,
+        "observation_date": "2026-04-23",
+        "severity": "high",
+        "before_after_available": true,
+        "satellite_unverified": false,
+        "is_press_release": false,
+        "episode_46_forecast": "2026-05-05 to 2026-05-09"
+      }
+    },
+    {
+      "id": "temp-loc-005",
+      "type": "Location",
+      "name": "킬라우에아 정상 (Kīlauea summit, Hawai'i)",
+      "properties": {
+        "country": "US",
+        "region": "Hawaii",
+        "admin_level": "county",
+        "lat": 19.421,
+        "lon": -155.287
+      }
+    },
+    {
+      "id": "org-usgs",
+      "type": "Organization",
+      "name": "USGS",
+      "properties": {
+        "type": "government_agency",
+        "country": "US"
+      }
+    }
+  ],
+  "relations": [
+    {"subject": "temp-evt-005", "predicate": "manifests", "object": "phen-volcanic-eruption"},
+    {"subject": "temp-evt-005", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "temp-evt-005", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "temp-evt-005", "predicate": "locatedIn", "object": "temp-loc-005"},
+    {"subject": "temp-evt-005", "predicate": "analyzedBy", "object": "org-usgs"}
+  ]
+}

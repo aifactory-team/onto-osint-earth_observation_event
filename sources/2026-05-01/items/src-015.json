@@ -1,0 +1,72 @@
+{
+  "id": "src-015",
+  "title": "CAS500-2 & CAS500-4 launch May 3 on Falcon 9 — Korea EO satellites",
+  "url": "https://nextspaceflight.com/launches/details/8213/",
+  "snippet": "South Korea's CAS500-2 and CAS500-4 Earth observation satellites are scheduled for launch on May 3, 2026 aboard a SpaceX Falcon 9 from Vandenberg Space Force Base. CAS500-2 provides 0.5m panchromatic / 2m multispectral high-resolution imagery. CAS500-4 carries a wide-area EO camera with 5m resolution and 120km swath width, optimized for agriculture, forestry, and land-use monitoring. Both satellites enter Sun-synchronous orbits operated by KARI.",
+  "source_name": "Next Spaceflight",
+  "language": "en",
+  "discovered_date": "2026-05-01",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "New Korean EO satellite launch. CAS500 series directly relevant to KOMPSAT/CAS monitoring priorities and Korea GeoFocus.",
+  "entities": [
+    {
+      "id": "sat-cas500-2",
+      "type": "Satellite",
+      "name": "CAS500-2 (차세대중형위성 2호)",
+      "properties": {
+        "operator": "KARI",
+        "country": "KR",
+        "orbit": "SSO",
+        "resolution_pan": "0.5m",
+        "resolution_ms": "2m",
+        "launch_date": "2026-05-03",
+        "launch_vehicle": "Falcon 9",
+        "launch_site": "Vandenberg SFB"
+      }
+    },
+    {
+      "id": "sat-cas500-4",
+      "type": "Satellite",
+      "name": "CAS500-4 (차세대중형위성 4호)",
+      "properties": {
+        "operator": "KARI",
+        "country": "KR",
+        "orbit": "SSO",
+        "resolution": "5m",
+        "swath_km": 120,
+        "mission": "wide-area EO for agriculture/forest/land-use",
+        "launch_date": "2026-05-03",
+        "launch_vehicle": "Falcon 9",
+        "launch_site": "Vandenberg SFB"
+      }
+    },
+    {
+      "id": "org-kari",
+      "type": "Organization",
+      "name": "KARI (한국항공우주연구원)",
+      "properties": {
+        "type": "space_agency",
+        "country": "KR"
+      }
+    },
+    {
+      "id": "org-spacex",
+      "type": "Organization",
+      "name": "SpaceX",
+      "properties": {
+        "type": "launch_provider",
+        "country": "US"
+      }
+    }
+  ],
+  "relations": [
+    {"subject": "sat-cas500-2", "predicate": "operatedBy", "object": "org-kari"},
+    {"subject": "sat-cas500-4", "predicate": "operatedBy", "object": "org-kari"},
+    {"subject": "sat-cas500-2", "predicate": "launchedBy", "object": "org-spacex"},
+    {"subject": "sat-cas500-4", "predicate": "launchedBy", "object": "org-spacex"},
+    {"subject": "sat-cas500-2", "predicate": "inCountry", "object": "co-kr"},
+    {"subject": "sat-cas500-4", "predicate": "inCountry", "object": "co-kr"}
+  ]
+}

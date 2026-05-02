@@ -1,0 +1,102 @@
+{
+  "id": "src-001",
+  "title": "Eruption at Mayon — Landsat 8 captures Philippines volcano",
+  "url": "https://science.nasa.gov/earth/earth-observatory/eruption-at-mayon/",
+  "snippet": "NASA Earth Observatory reports on the ongoing eruption at Mayon Volcano in the Philippines, captured by Landsat 8 OLI and TIRS sensors. The eruption, ongoing since January 2026, shows active lava flows and pyroclastic activity. PHIVOLCS maintains high alert level. Before/after imagery available comparing pre-eruption and current states.",
+  "source_name": "NASA Earth Observatory",
+  "language": "en",
+  "discovered_date": "2026-05-01",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "New event not covered in previous reports. NASA Earth Observatory feature on Mayon eruption with Landsat 8 imagery.",
+  "entities": [
+    {
+      "id": "temp-evt-001",
+      "type": "Event",
+      "name": "마욘 화산 분출 (Mayon volcano eruption)",
+      "properties": {
+        "phenomenon": "volcanic_eruption",
+        "domain": "Disaster",
+        "country": "PH",
+        "lat": 13.257,
+        "lon": 123.685,
+        "observation_date": "2026-01",
+        "date_range": "2026-01 to ongoing",
+        "severity": "high",
+        "before_after_available": true,
+        "satellite_unverified": false,
+        "is_press_release": false
+      }
+    },
+    {
+      "id": "temp-loc-001",
+      "type": "Location",
+      "name": "마욘 화산 (Mayon Volcano, Albay)",
+      "properties": {
+        "country": "PH",
+        "region": "Bicol Region",
+        "admin_level": "province",
+        "lat": 13.257,
+        "lon": 123.685
+      }
+    },
+    {
+      "id": "sat-landsat8",
+      "type": "Satellite",
+      "name": "Landsat 8",
+      "properties": {
+        "operator": "NASA/USGS",
+        "orbit": "SSO",
+        "resolution": "30m MS / 15m pan / 100m thermal"
+      }
+    },
+    {
+      "id": "sensor-oli",
+      "type": "Sensor",
+      "name": "OLI (Operational Land Imager)",
+      "properties": {
+        "type": "multispectral",
+        "platform": "Landsat 8"
+      }
+    },
+    {
+      "id": "sensor-tirs",
+      "type": "Sensor",
+      "name": "TIRS (Thermal Infrared Sensor)",
+      "properties": {
+        "type": "thermal_infrared",
+        "platform": "Landsat 8"
+      }
+    },
+    {
+      "id": "org-nasa",
+      "type": "Organization",
+      "name": "NASA",
+      "properties": {
+        "type": "space_agency",
+        "country": "US"
+      }
+    },
+    {
+      "id": "org-phivolcs",
+      "type": "Organization",
+      "name": "PHIVOLCS",
+      "properties": {
+        "type": "government_agency",
+        "country": "PH"
+      }
+    }
+  ],
+  "relations": [
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-landsat8"},
+    {"subject": "temp-evt-001", "predicate": "usesSensor", "object": "sensor-oli"},
+    {"subject": "temp-evt-001", "predicate": "usesSensor", "object": "sensor-tirs"},
+    {"subject": "temp-evt-001", "predicate": "manifests", "object": "phen-volcanic-eruption"},
+    {"subject": "temp-evt-001", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "temp-evt-001", "predicate": "inCountry", "object": "co-ph"},
+    {"subject": "temp-evt-001", "predicate": "locatedIn", "object": "temp-loc-001"},
+    {"subject": "temp-evt-001", "predicate": "analyzedBy", "object": "org-nasa"},
+    {"subject": "temp-evt-001", "predicate": "monitoredBy", "object": "org-phivolcs"}
+  ]
+}

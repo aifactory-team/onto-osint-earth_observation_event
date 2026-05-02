@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "description": "OSINT 온톨로지 스키마 — config/osint-config.json의 seed로부터 초기화되고, 매일 파이프라인 실행 시 자동 확장된다. 도메인: 위성영상으로 관측 가능한 지구상 이벤트 (Earth Observation Events).",
-  "last_updated": "2026-04-30",
+  "last_updated": "2026-05-01",
   "classes": [
     {
       "id": "Entity",
@@ -128,6 +128,27 @@
       "target": "phen-naval",
       "reason": "phen-naval (naval_movement)은 스키마 초기화 시 정의되었으나 이벤트 참조 0건이었음. ent-evt-022 (북한 최현급 호위함 건조)에서 첫 이벤트 매핑 발생. mention_count 0→1.",
       "source_ids": ["src-023"]
+    },
+    {
+      "date": "2026-05-01",
+      "action": "add_country",
+      "target": "co-ph, co-ve",
+      "reason": "필리핀(PH) — Mayon 화산 분출 이벤트(ent-evt-029, Landsat 8 관측). 베네수엘라(VE) — Lake Maracaibo 원유 유출 504건 슬릭(ent-evt-034, Sentinel-1 SAR). 기존 국가 인스턴스에 없던 2개국 추가.",
+      "source_ids": ["src-001", "src-021"]
+    },
+    {
+      "date": "2026-05-01",
+      "action": "add_satellite",
+      "target": "sat-cas500-2, sat-cas500-4",
+      "reason": "CAS500-2 (0.5m 광학, KARI) + CAS500-4 (5m 광대역 120km, 농업·산림 전용) — 2026-05-03 Falcon 9 발사 예정. KARI 차세대중형위성 시리즈 확장. ent-evt-032에서 참조.",
+      "source_ids": ["src-015"]
+    },
+    {
+      "date": "2026-05-01",
+      "action": "add_organization",
+      "target": "org-mizarvision, org-vantor, org-phivolcs, org-globalwitness",
+      "reason": "MizarVision — 중국 지오공간 AI 스타트업, 미군 기지 위성영상 분석 공개(ent-evt-031). Vantor — 구 Maxar Intelligence, 0.3m 고해상도 영상 제공(ent-evt-031 출처). PHIVOLCS — 필리핀 화산지진연구소(ent-evt-029). Global Witness — 환경 NGO(ent-evt-034).",
+      "source_ids": ["src-001", "src-011", "src-021"]
     }
   ]
 }

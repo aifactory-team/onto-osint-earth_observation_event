@@ -1,0 +1,49 @@
+{
+  "id": "src-024",
+  "title": "SAR interferometric coherence for change detection via openEO (Copernicus)",
+  "url": "https://dataspace.copernicus.eu/news/2026-4-9-land-deformation-change-detection-interferometric-sar-coherence-openeo",
+  "snippet": "Copernicus Data Space Ecosystem introduces SAR interferometric coherence processing for land deformation and change detection via the openEO platform. The service leverages Sentinel-1 SAR data to compute coherence maps that reveal ground deformation, subsidence, and structural changes. Available as a standardized openEO workflow, enabling researchers and analysts to detect infrastructure damage, landslides, and seismic deformation with consistent, reproducible processing across the Copernicus archive.",
+  "source_name": "Copernicus Data Space Ecosystem",
+  "language": "en",
+  "discovered_date": "2026-05-01",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "New SAR processing capability on Copernicus platform. Directly relevant to ground deformation, subsidence, and disaster damage assessment via InSAR coherence.",
+  "entities": [
+    {
+      "id": "dp-sar-coherence-openeo",
+      "type": "DataProduct",
+      "name": "SAR Interferometric Coherence (openEO / Copernicus)",
+      "properties": {
+        "producer": "Copernicus Data Space Ecosystem",
+        "type": "InSAR_coherence",
+        "platform": "openEO",
+        "source_satellite": "Sentinel-1"
+      }
+    },
+    {
+      "id": "sat-sentinel1",
+      "type": "Satellite",
+      "name": "Sentinel-1",
+      "properties": {
+        "operator": "ESA",
+        "orbit": "SSO",
+        "sensor_type": "C-band SAR"
+      }
+    },
+    {
+      "id": "org-copernicus",
+      "type": "Organization",
+      "name": "Copernicus Data Space Ecosystem (ESA/EU)",
+      "properties": {
+        "type": "data_platform",
+        "country": "EU"
+      }
+    }
+  ],
+  "relations": [
+    {"subject": "dp-sar-coherence-openeo", "predicate": "usesData", "object": "sat-sentinel1"},
+    {"subject": "dp-sar-coherence-openeo", "predicate": "producedBy", "object": "org-copernicus"}
+  ]
+}

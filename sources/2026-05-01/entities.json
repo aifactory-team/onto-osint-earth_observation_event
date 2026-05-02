@@ -1,0 +1,1041 @@
+{
+  "date": "2026-05-01",
+  "entities": [
+    {
+      "temp_id": "temp-029",
+      "matched_id": null,
+      "type": "Event",
+      "name": "마욘 화산 분출 (Mayon Volcano, 필리핀)",
+      "properties": {
+        "phenomenon": "volcanic_eruption",
+        "domain": "Disaster",
+        "country": "PH",
+        "lat": 13.257,
+        "lon": 123.685,
+        "observation_date": "2026-02-26",
+        "start_date": "2026-01",
+        "severity": "high",
+        "before_after_available": true,
+        "so2_emission_avg_tons_per_day": 2466,
+        "so2_emission_peak_tons_per_day": 7633,
+        "so2_peak_date": "2026-03-06",
+        "satellites_used": ["Landsat 8"],
+        "sensors_used": ["OLI", "TIRS"]
+      },
+      "source_ids": ["src-001"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-030",
+      "matched_id": null,
+      "type": "Event",
+      "name": "쉬벨루치 화산 분출 (Shiveluch Volcano, 캄차카)",
+      "properties": {
+        "phenomenon": "volcanic_eruption",
+        "domain": "Disaster",
+        "country": "RU",
+        "lat": 56.65,
+        "lon": 161.36,
+        "observation_date": "2026-04-02",
+        "severity": "high",
+        "before_after_available": false,
+        "ash_plume_ft": 48000,
+        "ash_plume_m": 14600,
+        "satellites_used": ["Himawari-9"],
+        "sensors_used": ["AHI"]
+      },
+      "source_ids": ["src-003"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-031",
+      "matched_id": null,
+      "type": "Event",
+      "name": "MizarVision AI 군사 OSINT — 미군 기지 위성 추적",
+      "properties": {
+        "phenomenon": "military_buildup",
+        "domain": "Defense",
+        "country": "INTL",
+        "region": "Middle East",
+        "lat": 30.0,
+        "lon": 47.0,
+        "observation_date": "2026-02",
+        "severity": "high",
+        "description": "중국 AI 스타트업 MizarVision, 상업 위성(Vantor/Maxar ~0.3m)으로 미군 자산 위치 공개. 이란 IRGC의 타격 계획에 활용 보도",
+        "satellites_used": ["WorldView-3"],
+        "sensors_used": ["optical_pan"]
+      },
+      "source_ids": ["src-011", "src-014"],
+      "mention_count": 4
+    },
+    {
+      "temp_id": "temp-032",
+      "matched_id": null,
+      "type": "Event",
+      "name": "CAS500-2 & CAS500-4 발사 (2026-05-03 예정)",
+      "properties": {
+        "phenomenon": "construction",
+        "domain": "HumanActivity",
+        "country": "KR",
+        "lat": 34.7,
+        "lon": -120.6,
+        "region": "Vandenberg SFB, California",
+        "observation_date": "2026-05-03",
+        "severity": "medium",
+        "description": "CAS500-2: 0.5m pan / 2m MS, CAS500-4: 5m 광역(120km swath, 농업/산림)",
+        "satellites_used": [],
+        "sensors_used": []
+      },
+      "source_ids": ["src-015"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-033",
+      "matched_id": null,
+      "type": "Event",
+      "name": "GFW DIST-ALERT 전 지구 식생 교란 탐지 시스템 출시",
+      "properties": {
+        "phenomenon": "deforestation",
+        "domain": "HumanActivity",
+        "secondary_domain": "AgricultureMaritime",
+        "country": "INTL",
+        "lat": 0.0,
+        "lon": 0.0,
+        "observation_date": "2026-01",
+        "severity": "medium",
+        "description": "Landsat + Sentinel-2 통합 데이터 기반 전 지구 식생 교란 탐지. 산림뿐 아니라 농경지·초지 등 전체 식생 커버",
+        "satellites_used": ["Landsat 8", "Landsat 9", "Sentinel-2A", "Sentinel-2B"],
+        "sensors_used": ["OLI", "MSI"]
+      },
+      "source_ids": ["src-018", "src-019"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-034",
+      "matched_id": null,
+      "type": "Event",
+      "name": "베네수엘라 마라카이보 호수 원유 오염 (504건 탐지)",
+      "properties": {
+        "phenomenon": "oil_spill",
+        "domain": "HumanActivity",
+        "country": "VE",
+        "lat": 9.8,
+        "lon": -71.5,
+        "observation_date": "2026-03",
+        "start_date": "2025-01",
+        "severity": "high",
+        "oil_slick_detections": 504,
+        "detection_period": "2025-01 to 2026-03",
+        "satellites_used": ["Sentinel-1A"],
+        "sensors_used": ["C-band SAR"]
+      },
+      "source_ids": ["src-021"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-035",
+      "matched_id": null,
+      "type": "Event",
+      "name": "전 지구 매립지 메탄 배출 위성 조사 (Nature)",
+      "properties": {
+        "phenomenon": "methane_plume",
+        "domain": "ClimateEnvironment",
+        "country": "INTL",
+        "lat": 0.0,
+        "lon": 0.0,
+        "observation_date": "2026-04",
+        "severity": "medium",
+        "satellite_unverified": false,
+        "satellites_used": ["Sentinel-5P"],
+        "sensors_used": ["TROPOMI"]
+      },
+      "source_ids": ["src-027"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-036",
+      "matched_id": null,
+      "type": "Event",
+      "name": "Copernicus InSAR 코히어런스 변화 탐지 서비스 출시",
+      "properties": {
+        "phenomenon": "ndvi_change",
+        "domain": "AgricultureMaritime",
+        "country": "INTL",
+        "lat": 0.0,
+        "lon": 0.0,
+        "observation_date": "2026-04-09",
+        "severity": "low",
+        "description": "openEO 기반 Sentinel-1 SAR 간섭측정 코히어런스로 토지 변화 탐지 서비스",
+        "satellites_used": ["Sentinel-1A", "Sentinel-1C", "Sentinel-1D"],
+        "sensors_used": ["C-band SAR"]
+      },
+      "source_ids": ["src-024"],
+      "mention_count": 1
+    },
+
+    {
+      "temp_id": "temp-upd-020",
+      "matched_id": "ent-evt-020",
+      "type": "Event",
+      "name": "조지아 남부 산불 업데이트 (120+ 가옥 파괴, 50,000+ 에이커)",
+      "properties": {
+        "phenomenon": "wildfire",
+        "domain": "Disaster",
+        "country": "US",
+        "region": "Georgia",
+        "lat": 31.2,
+        "lon": -82.0,
+        "observation_date": "2026-05-01",
+        "severity": "high",
+        "homes_destroyed": 120,
+        "area_acres": 50000,
+        "update_note": "NASA Earth Observatory 위성 이미지 업데이트, 120+ 가옥 파괴 확인, 50,000 에이커 이상 소실"
+      },
+      "source_ids": ["src-008"],
+      "mention_count": 3
+    },
+    {
+      "temp_id": "temp-upd-021",
+      "matched_id": "ent-evt-021",
+      "type": "Event",
+      "name": "Kilauea Episode 45 업데이트 — 4월 30일 위성영상, Ep 46 예측",
+      "properties": {
+        "phenomenon": "volcanic_eruption",
+        "domain": "Disaster",
+        "country": "US",
+        "region": "Hawaii",
+        "lat": 19.421,
+        "lon": -155.287,
+        "observation_date": "2026-04-30",
+        "severity": "high",
+        "update_note": "USGS 4월 30일 위성영상 정상부 변화 확인. Episode 46 발생 예측 5월 5-9일"
+      },
+      "source_ids": ["src-005", "src-007"],
+      "mention_count": 3
+    },
+    {
+      "temp_id": "temp-upd-022",
+      "matched_id": "ent-evt-022",
+      "type": "Event",
+      "name": "북한 최현급 호위함 업데이트 — IMO 등록, NLL 위협 분석",
+      "properties": {
+        "phenomenon": "naval_movement",
+        "domain": "Defense",
+        "country": "KP",
+        "lat": 39.0,
+        "lon": 125.7,
+        "observation_date": "2026-05-01",
+        "severity": "medium",
+        "update_note": "5000톤급 최현급 구축함 IMO 등록 확인. NLL 위협 분석 추가"
+      },
+      "source_ids": ["src-017"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-upd-019",
+      "matched_id": "ent-evt-019",
+      "type": "Event",
+      "name": "Cerulean 오일 슬릭 탐지 업데이트 — 근실시간 기능",
+      "properties": {
+        "phenomenon": "oil_spill",
+        "domain": "HumanActivity",
+        "country": "INTL",
+        "lat": 0.0,
+        "lon": 0.0,
+        "observation_date": "2026-05-01",
+        "severity": "medium",
+        "update_note": "SkyTruth Cerulean 플랫폼 근실시간(near-real-time) 탐지 기능 업데이트"
+      },
+      "source_ids": ["src-020"],
+      "mention_count": 1
+    },
+
+    {
+      "temp_id": "temp-loc-015",
+      "matched_id": null,
+      "type": "Location",
+      "name": "Mayon Volcano, Albay Province",
+      "properties": {
+        "country": "PH",
+        "region": "Bicol Region, Luzon",
+        "lat": 13.257,
+        "lon": 123.685
+      },
+      "source_ids": ["src-001"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-loc-016",
+      "matched_id": null,
+      "type": "Location",
+      "name": "Shiveluch Volcano, Kamchatka Peninsula",
+      "properties": {
+        "country": "RU",
+        "region": "Kamchatka Krai",
+        "lat": 56.65,
+        "lon": 161.36
+      },
+      "source_ids": ["src-003"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-loc-017",
+      "matched_id": null,
+      "type": "Location",
+      "name": "Middle East US military installations (general area)",
+      "properties": {
+        "country": "INTL",
+        "region": "Middle East",
+        "lat": 30.0,
+        "lon": 47.0
+      },
+      "source_ids": ["src-011"],
+      "mention_count": 4
+    },
+    {
+      "temp_id": "temp-loc-018",
+      "matched_id": null,
+      "type": "Location",
+      "name": "Vandenberg Space Force Base, California",
+      "properties": {
+        "country": "US",
+        "region": "California",
+        "lat": 34.7,
+        "lon": -120.6
+      },
+      "source_ids": ["src-015"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-loc-019",
+      "matched_id": null,
+      "type": "Location",
+      "name": "Lake Maracaibo, Venezuela",
+      "properties": {
+        "country": "VE",
+        "region": "Zulia State",
+        "lat": 9.8,
+        "lon": -71.5
+      },
+      "source_ids": ["src-021"],
+      "mention_count": 1
+    },
+
+    {
+      "temp_id": "temp-co-ph",
+      "matched_id": null,
+      "type": "Country",
+      "name": "필리핀",
+      "properties": {
+        "iso_code": "PH",
+        "region": "동남아시아"
+      },
+      "source_ids": ["src-001"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-co-ve",
+      "matched_id": null,
+      "type": "Country",
+      "name": "베네수엘라",
+      "properties": {
+        "iso_code": "VE",
+        "region": "남미"
+      },
+      "source_ids": ["src-021"],
+      "mention_count": 1
+    },
+
+    {
+      "temp_id": "temp-sat-cas500-2",
+      "matched_id": null,
+      "type": "Satellite",
+      "name": "CAS500-2 (차세대중형위성 2호)",
+      "properties": {
+        "operator": "KARI",
+        "country": "KR",
+        "orbit_type": "SSO",
+        "resolution_m": 0.5,
+        "sensor_types": ["optical_pan", "optical_multispectral"],
+        "mission_status": "planned",
+        "launch_date": "2026-05-03"
+      },
+      "source_ids": ["src-015"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-sat-cas500-4",
+      "matched_id": null,
+      "type": "Satellite",
+      "name": "CAS500-4 (차세대중형위성 4호)",
+      "properties": {
+        "operator": "KARI",
+        "country": "KR",
+        "orbit_type": "SSO",
+        "resolution_m": 5.0,
+        "swath_km": 120,
+        "sensor_types": ["optical_multispectral"],
+        "mission_status": "planned",
+        "launch_date": "2026-05-03",
+        "primary_use": "agriculture, forestry, wide-area monitoring"
+      },
+      "source_ids": ["src-015"],
+      "mention_count": 2
+    },
+
+    {
+      "temp_id": "temp-sensor-ahi",
+      "matched_id": null,
+      "type": "Sensor",
+      "name": "AHI (Advanced Himawari Imager)",
+      "properties": {
+        "sensor_type": "optical_multispectral",
+        "carried_by": "Himawari-8/9",
+        "resolution_m": 500,
+        "bands": 16
+      },
+      "source_ids": ["src-003"],
+      "mention_count": 1
+    },
+
+    {
+      "temp_id": "temp-org-mizarvision",
+      "matched_id": null,
+      "type": "Organization",
+      "name": "MizarVision",
+      "properties": {
+        "org_type": "commercial_imagery",
+        "country": "CN",
+        "description": "중국 AI 스타트업, 상업위성 영상을 AI로 분석·공개"
+      },
+      "source_ids": ["src-011"],
+      "mention_count": 4
+    },
+    {
+      "temp_id": "temp-org-vantor",
+      "matched_id": null,
+      "type": "Organization",
+      "name": "Vantor (Maxar Intelligence)",
+      "properties": {
+        "org_type": "commercial_imagery",
+        "country": "US",
+        "description": "Maxar Intelligence 브랜드, ~0.3m 해상도 상업 위성영상 제공"
+      },
+      "source_ids": ["src-014"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-org-phivolcs",
+      "matched_id": null,
+      "type": "Organization",
+      "name": "PHIVOLCS (Philippine Institute of Volcanology and Seismology)",
+      "properties": {
+        "org_type": "space_agency",
+        "country": "PH"
+      },
+      "source_ids": ["src-001"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-org-globalwitness",
+      "matched_id": null,
+      "type": "Organization",
+      "name": "Global Witness",
+      "properties": {
+        "org_type": "ngo",
+        "country": "INTL"
+      },
+      "source_ids": ["src-021"],
+      "mention_count": 1
+    },
+
+    {
+      "temp_id": "temp-dp-dist-alert",
+      "matched_id": null,
+      "type": "DataProduct",
+      "name": "DIST-ALERT (GFW Vegetation Disturbance Alerts)",
+      "properties": {
+        "provider": "GFW / WRI",
+        "level": "L3 (analysis-ready alerts)",
+        "format": "raster/vector tiles",
+        "license": "CC BY 4.0",
+        "satellites_integrated": ["Landsat 8", "Landsat 9", "Sentinel-2A", "Sentinel-2B"],
+        "sensors_integrated": ["OLI", "MSI"]
+      },
+      "source_ids": ["src-018", "src-019"],
+      "mention_count": 2
+    }
+  ],
+  "relations": [
+    {
+      "subject": "temp-029",
+      "predicate": "observedBy",
+      "object": "sat-landsat8",
+      "source_ids": ["src-001"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-029",
+      "predicate": "usesSensor",
+      "object": "sensor-oli",
+      "source_ids": ["src-001"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-029",
+      "predicate": "usesSensor",
+      "object": "sensor-tirs",
+      "source_ids": ["src-001"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-029",
+      "predicate": "manifests",
+      "object": "phen-volcano",
+      "source_ids": ["src-001"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-029",
+      "predicate": "locatedIn",
+      "object": "temp-loc-015",
+      "source_ids": ["src-001"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-029",
+      "predicate": "inCountry",
+      "object": "temp-co-ph",
+      "source_ids": ["src-001"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-029",
+      "predicate": "analyzedBy",
+      "object": "org-nasa",
+      "source_ids": ["src-001"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-029",
+      "predicate": "analyzedBy",
+      "object": "temp-org-phivolcs",
+      "source_ids": ["src-001"],
+      "confidence": 0.85
+    },
+    {
+      "subject": "temp-029",
+      "predicate": "inDomain",
+      "object": "dom-disaster",
+      "source_ids": ["src-001"],
+      "confidence": 0.95
+    },
+
+    {
+      "subject": "temp-030",
+      "predicate": "observedBy",
+      "object": "sat-himawari9",
+      "source_ids": ["src-003"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-030",
+      "predicate": "usesSensor",
+      "object": "temp-sensor-ahi",
+      "source_ids": ["src-003"],
+      "confidence": 0.9
+    },
+    {
+      "subject": "temp-030",
+      "predicate": "manifests",
+      "object": "phen-volcano",
+      "source_ids": ["src-003"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-030",
+      "predicate": "locatedIn",
+      "object": "temp-loc-016",
+      "source_ids": ["src-003"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-030",
+      "predicate": "inCountry",
+      "object": "co-ru",
+      "source_ids": ["src-003"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-030",
+      "predicate": "inDomain",
+      "object": "dom-disaster",
+      "source_ids": ["src-003"],
+      "confidence": 0.95
+    },
+
+    {
+      "subject": "temp-031",
+      "predicate": "observedBy",
+      "object": "sat-worldview3",
+      "source_ids": ["src-011", "src-014"],
+      "confidence": 0.85
+    },
+    {
+      "subject": "temp-031",
+      "predicate": "analyzedBy",
+      "object": "temp-org-mizarvision",
+      "source_ids": ["src-011"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-031",
+      "predicate": "analyzedBy",
+      "object": "temp-org-vantor",
+      "source_ids": ["src-014"],
+      "confidence": 0.85
+    },
+    {
+      "subject": "temp-031",
+      "predicate": "manifests",
+      "object": "phen-military",
+      "source_ids": ["src-011"],
+      "confidence": 0.9
+    },
+    {
+      "subject": "temp-031",
+      "predicate": "locatedIn",
+      "object": "temp-loc-017",
+      "source_ids": ["src-011"],
+      "confidence": 0.8
+    },
+    {
+      "subject": "temp-031",
+      "predicate": "inDomain",
+      "object": "dom-defense",
+      "source_ids": ["src-011"],
+      "confidence": 0.95
+    },
+
+    {
+      "subject": "temp-032",
+      "predicate": "manifests",
+      "object": "phen-construction",
+      "source_ids": ["src-015"],
+      "confidence": 0.8
+    },
+    {
+      "subject": "temp-032",
+      "predicate": "operatedBy",
+      "object": "org-kari",
+      "source_ids": ["src-015"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-sat-cas500-2",
+      "predicate": "operatedBy",
+      "object": "org-kari",
+      "source_ids": ["src-015"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-sat-cas500-4",
+      "predicate": "operatedBy",
+      "object": "org-kari",
+      "source_ids": ["src-015"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-032",
+      "predicate": "locatedIn",
+      "object": "temp-loc-018",
+      "source_ids": ["src-015"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-032",
+      "predicate": "inCountry",
+      "object": "co-kr",
+      "source_ids": ["src-015"],
+      "confidence": 0.9
+    },
+    {
+      "subject": "temp-032",
+      "predicate": "inDomain",
+      "object": "dom-human",
+      "source_ids": ["src-015"],
+      "confidence": 0.85
+    },
+
+    {
+      "subject": "temp-033",
+      "predicate": "observedBy",
+      "object": "sat-landsat8",
+      "source_ids": ["src-018"],
+      "confidence": 0.9
+    },
+    {
+      "subject": "temp-033",
+      "predicate": "observedBy",
+      "object": "sat-landsat9",
+      "source_ids": ["src-018"],
+      "confidence": 0.9
+    },
+    {
+      "subject": "temp-033",
+      "predicate": "observedBy",
+      "object": "sat-sentinel2a",
+      "source_ids": ["src-018"],
+      "confidence": 0.9
+    },
+    {
+      "subject": "temp-033",
+      "predicate": "observedBy",
+      "object": "sat-sentinel2b",
+      "source_ids": ["src-018"],
+      "confidence": 0.9
+    },
+    {
+      "subject": "temp-033",
+      "predicate": "usesSensor",
+      "object": "sensor-oli",
+      "source_ids": ["src-018"],
+      "confidence": 0.9
+    },
+    {
+      "subject": "temp-033",
+      "predicate": "usesSensor",
+      "object": "sensor-msi",
+      "source_ids": ["src-018"],
+      "confidence": 0.9
+    },
+    {
+      "subject": "temp-033",
+      "predicate": "usesDataProduct",
+      "object": "temp-dp-dist-alert",
+      "source_ids": ["src-018"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-033",
+      "predicate": "manifests",
+      "object": "phen-defor",
+      "source_ids": ["src-018"],
+      "confidence": 0.9
+    },
+    {
+      "subject": "temp-033",
+      "predicate": "manifests",
+      "object": "phen-ndvi",
+      "source_ids": ["src-019"],
+      "confidence": 0.85
+    },
+    {
+      "subject": "temp-033",
+      "predicate": "analyzedBy",
+      "object": "org-gfw",
+      "source_ids": ["src-018"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-033",
+      "predicate": "inDomain",
+      "object": "dom-human",
+      "source_ids": ["src-018"],
+      "confidence": 0.85
+    },
+    {
+      "subject": "temp-033",
+      "predicate": "inDomain",
+      "object": "dom-agri-marine",
+      "source_ids": ["src-019"],
+      "confidence": 0.8
+    },
+
+    {
+      "subject": "temp-034",
+      "predicate": "observedBy",
+      "object": "sat-sentinel1a",
+      "source_ids": ["src-021"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-034",
+      "predicate": "usesSensor",
+      "object": "sensor-c-sar",
+      "source_ids": ["src-021"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-034",
+      "predicate": "manifests",
+      "object": "phen-oilspill",
+      "source_ids": ["src-021"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-034",
+      "predicate": "locatedIn",
+      "object": "temp-loc-019",
+      "source_ids": ["src-021"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-034",
+      "predicate": "inCountry",
+      "object": "temp-co-ve",
+      "source_ids": ["src-021"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-034",
+      "predicate": "analyzedBy",
+      "object": "temp-org-globalwitness",
+      "source_ids": ["src-021"],
+      "confidence": 0.9
+    },
+    {
+      "subject": "temp-034",
+      "predicate": "inDomain",
+      "object": "dom-human",
+      "source_ids": ["src-021"],
+      "confidence": 0.9
+    },
+
+    {
+      "subject": "temp-035",
+      "predicate": "observedBy",
+      "object": "sat-sentinel5p",
+      "source_ids": ["src-027"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-035",
+      "predicate": "usesSensor",
+      "object": "sensor-tropomi",
+      "source_ids": ["src-027"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-035",
+      "predicate": "manifests",
+      "object": "phen-methane",
+      "source_ids": ["src-027"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-035",
+      "predicate": "inDomain",
+      "object": "dom-climate",
+      "source_ids": ["src-027"],
+      "confidence": 0.95
+    },
+
+    {
+      "subject": "temp-036",
+      "predicate": "observedBy",
+      "object": "sat-sentinel1a",
+      "source_ids": ["src-024"],
+      "confidence": 0.9
+    },
+    {
+      "subject": "temp-036",
+      "predicate": "observedBy",
+      "object": "sat-sentinel1c",
+      "source_ids": ["src-024"],
+      "confidence": 0.85
+    },
+    {
+      "subject": "temp-036",
+      "predicate": "observedBy",
+      "object": "sat-sentinel1d",
+      "source_ids": ["src-024"],
+      "confidence": 0.85
+    },
+    {
+      "subject": "temp-036",
+      "predicate": "usesSensor",
+      "object": "sensor-c-sar",
+      "source_ids": ["src-024"],
+      "confidence": 0.9
+    },
+    {
+      "subject": "temp-036",
+      "predicate": "manifests",
+      "object": "phen-ndvi",
+      "source_ids": ["src-024"],
+      "confidence": 0.8
+    },
+    {
+      "subject": "temp-036",
+      "predicate": "analyzedBy",
+      "object": "org-esa",
+      "source_ids": ["src-024"],
+      "confidence": 0.9
+    },
+    {
+      "subject": "temp-036",
+      "predicate": "analyzedBy",
+      "object": "org-cems",
+      "source_ids": ["src-024"],
+      "confidence": 0.85
+    },
+    {
+      "subject": "temp-036",
+      "predicate": "inDomain",
+      "object": "dom-agri-marine",
+      "source_ids": ["src-024"],
+      "confidence": 0.85
+    },
+
+    {
+      "subject": "temp-upd-020",
+      "predicate": "observedBy",
+      "object": "sat-landsat8",
+      "source_ids": ["src-008"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-upd-020",
+      "predicate": "usesSensor",
+      "object": "sensor-oli",
+      "source_ids": ["src-008"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-upd-020",
+      "predicate": "analyzedBy",
+      "object": "org-nasa",
+      "source_ids": ["src-008"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-upd-020",
+      "predicate": "manifests",
+      "object": "phen-wildfire",
+      "source_ids": ["src-008"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-upd-020",
+      "predicate": "inCountry",
+      "object": "co-us",
+      "source_ids": ["src-008"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-upd-020",
+      "predicate": "inDomain",
+      "object": "dom-disaster",
+      "source_ids": ["src-008"],
+      "confidence": 0.95
+    },
+
+    {
+      "subject": "temp-upd-021",
+      "predicate": "observedBy",
+      "object": "sat-cosmoskymed-csg",
+      "source_ids": ["src-005"],
+      "confidence": 0.9
+    },
+    {
+      "subject": "temp-upd-021",
+      "predicate": "analyzedBy",
+      "object": "org-usgs",
+      "source_ids": ["src-005"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-upd-021",
+      "predicate": "manifests",
+      "object": "phen-volcano",
+      "source_ids": ["src-005"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-upd-021",
+      "predicate": "inCountry",
+      "object": "co-us",
+      "source_ids": ["src-005"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-upd-021",
+      "predicate": "locatedIn",
+      "object": "ent-loc-004",
+      "source_ids": ["src-005"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-upd-021",
+      "predicate": "partOfSeries",
+      "object": "ent-evt-004",
+      "source_ids": ["src-005"],
+      "confidence": 0.9
+    },
+    {
+      "subject": "temp-upd-021",
+      "predicate": "inDomain",
+      "object": "dom-disaster",
+      "source_ids": ["src-005"],
+      "confidence": 0.95
+    },
+
+    {
+      "subject": "temp-upd-022",
+      "predicate": "manifests",
+      "object": "phen-naval",
+      "source_ids": ["src-017"],
+      "confidence": 0.9
+    },
+    {
+      "subject": "temp-upd-022",
+      "predicate": "inCountry",
+      "object": "co-kp",
+      "source_ids": ["src-017"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-upd-022",
+      "predicate": "inDomain",
+      "object": "dom-defense",
+      "source_ids": ["src-017"],
+      "confidence": 0.95
+    },
+
+    {
+      "subject": "temp-upd-019",
+      "predicate": "observedBy",
+      "object": "sat-sentinel1a",
+      "source_ids": ["src-020"],
+      "confidence": 0.9
+    },
+    {
+      "subject": "temp-upd-019",
+      "predicate": "analyzedBy",
+      "object": "org-skytruth",
+      "source_ids": ["src-020"],
+      "confidence": 0.9
+    },
+    {
+      "subject": "temp-upd-019",
+      "predicate": "manifests",
+      "object": "phen-oilspill",
+      "source_ids": ["src-020"],
+      "confidence": 0.9
+    },
+    {
+      "subject": "temp-upd-019",
+      "predicate": "inDomain",
+      "object": "dom-human",
+      "source_ids": ["src-020"],
+      "confidence": 0.9
+    }
+  ],
+  "stats": {
+    "total_entities": 27,
+    "new_entities": 23,
+    "matched_entities": 4,
+    "total_relations": 79
+  }
+}

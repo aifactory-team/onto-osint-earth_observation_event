@@ -1,7 +1,7 @@
 {
   "version": "1.1.0",
   "description": "알려진 엔티티 인스턴스 — 파이프라인 실행 시 자동으로 추가/업데이트된다. 도메인: 위성영상 관측 이벤트.",
-  "last_updated": "2026-04-30",
+  "last_updated": "2026-05-01",
   "entities": [
     { "id": "dom-disaster", "type": "Domain", "name": "Disaster", "properties": { "label": "자연재해" }, "first_seen": "2026-04-30", "last_seen": "2026-04-30", "mention_count": 12 },
     { "id": "dom-human", "type": "Domain", "name": "HumanActivity", "properties": { "label": "인간활동" }, "first_seen": "2026-04-30", "last_seen": "2026-04-30", "mention_count": 2 },
@@ -164,7 +164,30 @@
     { "id": "ent-loc-010", "type": "Location", "name": "Brantley/Clinch County, Georgia", "properties": { "country": "US", "region": "Georgia", "lat": 31.2, "lon": -82.3 }, "first_seen": "2026-04-30", "last_seen": "2026-04-30", "mention_count": 1 },
     { "id": "ent-loc-011", "type": "Location", "name": "Oahu, Hawaii", "properties": { "country": "US", "region": "Hawaii", "lat": 21.47, "lon": -157.97 }, "first_seen": "2026-04-30", "last_seen": "2026-04-30", "mention_count": 1 },
     { "id": "ent-loc-012", "type": "Location", "name": "구성시 (Kusong), 평안북도", "properties": { "country": "KP", "region": "평안북도", "lat": 39.98, "lon": 125.25 }, "first_seen": "2026-04-30", "last_seen": "2026-04-30", "mention_count": 1 },
-    { "id": "ent-loc-013", "type": "Location", "name": "Lebanon (레바논 전역)", "properties": { "country": "LB", "region": "Lebanon", "lat": 33.9, "lon": 35.5 }, "first_seen": "2026-04-30", "last_seen": "2026-04-30", "mention_count": 1 }
+    { "id": "ent-loc-013", "type": "Location", "name": "Lebanon (레바논 전역)", "properties": { "country": "LB", "region": "Lebanon", "lat": 33.9, "lon": 35.5 }, "first_seen": "2026-04-30", "last_seen": "2026-04-30", "mention_count": 1 },
+    { "id": "ent-loc-014", "type": "Location", "name": "Mayon Volcano, Albay Province", "properties": { "country": "PH", "region": "Bicol", "lat": 13.257, "lon": 123.685 }, "first_seen": "2026-05-01", "last_seen": "2026-05-01", "mention_count": 2 },
+    { "id": "ent-loc-015", "type": "Location", "name": "Shiveluch Volcano, Kamchatka", "properties": { "country": "RU", "region": "Kamchatka Krai", "lat": 56.65, "lon": 161.36 }, "first_seen": "2026-05-01", "last_seen": "2026-05-01", "mention_count": 2 },
+    { "id": "ent-loc-016", "type": "Location", "name": "Lake Maracaibo, Venezuela", "properties": { "country": "VE", "region": "Zulia", "lat": 9.8, "lon": -71.5 }, "first_seen": "2026-05-01", "last_seen": "2026-05-01", "mention_count": 1 },
+
+    { "id": "co-ph", "type": "Country", "name": "필리핀", "properties": { "iso_code": "PH", "region": "동남아시아" }, "first_seen": "2026-05-01", "last_seen": "2026-05-01", "mention_count": 2 },
+    { "id": "co-ve", "type": "Country", "name": "베네수엘라", "properties": { "iso_code": "VE", "region": "남미" }, "first_seen": "2026-05-01", "last_seen": "2026-05-01", "mention_count": 1 },
+
+    { "id": "sat-cas500-2", "type": "Satellite", "name": "CAS500-2 (차세대중형위성 2호)", "properties": { "operator": "KARI", "country": "KR", "orbit_type": "SSO", "resolution_m": 0.5, "sensor_types": ["optical_pan", "optical_multispectral"], "mission_status": "pre-launch", "launch_date": "2026-05-03" }, "first_seen": "2026-05-01", "last_seen": "2026-05-01", "mention_count": 2 },
+    { "id": "sat-cas500-4", "type": "Satellite", "name": "CAS500-4 (차세대중형위성 4호)", "properties": { "operator": "KARI", "country": "KR", "orbit_type": "SSO", "resolution_m": 5.0, "sensor_types": ["optical_multispectral"], "swath_km": 120, "mission_status": "pre-launch", "launch_date": "2026-05-03", "notes": "wide-area EO for crops/agriculture/forest" }, "first_seen": "2026-05-01", "last_seen": "2026-05-01", "mention_count": 2 },
+
+    { "id": "org-mizarvision", "type": "Organization", "name": "MizarVision (密匝视觉)", "properties": { "org_type": "commercial_imagery", "country": "CN", "notes": "Shanghai-based geospatial AI startup; partial state ownership" }, "first_seen": "2026-05-01", "last_seen": "2026-05-01", "mention_count": 4 },
+    { "id": "org-vantor", "type": "Organization", "name": "Vantor (formerly Maxar Intelligence)", "properties": { "org_type": "commercial_imagery", "country": "US" }, "first_seen": "2026-05-01", "last_seen": "2026-05-01", "mention_count": 3 },
+    { "id": "org-phivolcs", "type": "Organization", "name": "PHIVOLCS", "properties": { "org_type": "space_agency", "country": "PH" }, "first_seen": "2026-05-01", "last_seen": "2026-05-01", "mention_count": 1 },
+    { "id": "org-globalwitness", "type": "Organization", "name": "Global Witness", "properties": { "org_type": "ngo", "country": "INTL" }, "first_seen": "2026-05-01", "last_seen": "2026-05-01", "mention_count": 1 },
+
+    { "id": "ent-evt-029", "type": "Event", "name": "Mayon 화산 분출 (Philippines, 2026-01~)", "properties": { "phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "PH", "lat": 13.257, "lon": 123.685, "observation_date": "2026-02-26", "start_date": "2026-01", "severity": "high", "before_after_available": true, "satellites_used": ["Landsat 8"], "sensors_used": ["OLI", "TIRS"], "so2_tons_per_day": 2466 }, "first_seen": "2026-05-01", "last_seen": "2026-05-01", "mention_count": 2 },
+    { "id": "ent-evt-030", "type": "Event", "name": "Shiveluch 화산 분출 — 48,000ft 화산재 (Kamchatka)", "properties": { "phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "RU", "lat": 56.65, "lon": 161.36, "observation_date": "2026-04-02", "severity": "high", "before_after_available": false, "satellites_used": ["Himawari-9"], "ash_plume_ft": 48000 }, "first_seen": "2026-05-01", "last_seen": "2026-05-01", "mention_count": 2 },
+    { "id": "ent-evt-031", "type": "Event", "name": "MizarVision AI 군사 OSINT — 미국 기지 위성 추적 (중동)", "properties": { "phenomenon": "military_buildup", "domain": "Defense", "country": "INTL", "lat": 30.0, "lon": 47.0, "observation_date": "2026-02", "severity": "high", "satellites_used": ["WorldView-3/Vantor"], "sensors_used": ["optical_pan"] }, "first_seen": "2026-05-01", "last_seen": "2026-05-01", "mention_count": 4 },
+    { "id": "ent-evt-032", "type": "Event", "name": "CAS500-2/4 발사 (2026-05-03 예정, Falcon 9)", "properties": { "phenomenon": "construction", "domain": "AgricultureMaritime", "country": "KR", "lat": 34.7, "lon": -120.6, "observation_date": "2026-05-03", "severity": "medium" }, "first_seen": "2026-05-01", "last_seen": "2026-05-01", "mention_count": 2 },
+    { "id": "ent-evt-033", "type": "Event", "name": "GFW DIST-ALERT 전 지구 식생 교란 경보 시스템 가동", "properties": { "phenomenon": "deforestation", "domain": "HumanActivity", "country": "INTL", "lat": 0.0, "lon": 0.0, "observation_date": "2026-01", "severity": "medium" }, "first_seen": "2026-05-01", "last_seen": "2026-05-01", "mention_count": 2 },
+    { "id": "ent-evt-034", "type": "Event", "name": "베네수엘라 마라카이보 호수 원유 유출 (504건 슬릭)", "properties": { "phenomenon": "oil_spill", "domain": "HumanActivity", "country": "VE", "lat": 9.8, "lon": -71.5, "observation_date": "2026-03", "severity": "high", "satellites_used": ["Sentinel-1A"], "sensors_used": ["C-band SAR"] }, "first_seen": "2026-05-01", "last_seen": "2026-05-01", "mention_count": 1 },
+    { "id": "ent-evt-035", "type": "Event", "name": "전 지구 매립지 메탄 배출 위성 조사 (Nature)", "properties": { "phenomenon": "methane_plume", "domain": "ClimateEnvironment", "country": "INTL", "lat": 0.0, "lon": 0.0, "observation_date": "2026-04", "severity": "medium", "satellites_used": ["Sentinel-5P"], "sensors_used": ["TROPOMI"] }, "first_seen": "2026-05-01", "last_seen": "2026-05-01", "mention_count": 1 },
+    { "id": "ent-evt-036", "type": "Event", "name": "Copernicus InSAR 코히런스 변화탐지 서비스 openEO 출시", "properties": { "phenomenon": "ndvi_change", "domain": "AgricultureMaritime", "country": "INTL", "lat": 0.0, "lon": 0.0, "observation_date": "2026-04-09", "severity": "low" }, "first_seen": "2026-05-01", "last_seen": "2026-05-01", "mention_count": 1 }
   ],
-  "total_count": 155
+  "total_count": 179
 }

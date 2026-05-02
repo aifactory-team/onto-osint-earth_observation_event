@@ -1,0 +1,49 @@
+{
+  "id": "src-020",
+  "title": "SkyTruth Cerulean updated — near-real-time global oil slick detection",
+  "url": "https://skytruth.org/cerulean/",
+  "snippet": "SkyTruth's Cerulean platform has been updated with improved near-real-time global oil slick detection capabilities. The system uses Sentinel-1 SAR imagery to automatically detect and map oil slicks on ocean surfaces worldwide. Updated algorithms improve discrimination between natural seeps and anthropogenic spills. Platform provides open data access for environmental monitoring and enforcement.",
+  "source_name": "SkyTruth",
+  "language": "en",
+  "discovered_date": "2026-05-01",
+  "tag": "update",
+  "related_report": "2026-04-30/ent-evt-019",
+  "related_item": null,
+  "tag_reason": "Update to oil slick monitoring capabilities (ent-evt-019). SkyTruth Cerulean platform improvements enhance detection accuracy.",
+  "entities": [
+    {
+      "id": "dp-cerulean",
+      "type": "DataProduct",
+      "name": "SkyTruth Cerulean",
+      "properties": {
+        "producer": "SkyTruth",
+        "type": "oil_slick_detection",
+        "coverage": "global_oceans",
+        "update_frequency": "near-real-time"
+      }
+    },
+    {
+      "id": "sat-sentinel1",
+      "type": "Satellite",
+      "name": "Sentinel-1",
+      "properties": {
+        "operator": "ESA",
+        "orbit": "SSO",
+        "sensor_type": "C-band SAR"
+      }
+    },
+    {
+      "id": "org-skytruth",
+      "type": "Organization",
+      "name": "SkyTruth",
+      "properties": {
+        "type": "environmental_ngo",
+        "country": "US"
+      }
+    }
+  ],
+  "relations": [
+    {"subject": "dp-cerulean", "predicate": "usesData", "object": "sat-sentinel1"},
+    {"subject": "dp-cerulean", "predicate": "producedBy", "object": "org-skytruth"}
+  ]
+}

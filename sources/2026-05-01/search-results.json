@@ -1,0 +1,35 @@
+{
+  "date": "2026-05-01",
+  "collected_at": "2026-05-01T00:00:00Z",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 18,
+  "total_results": 108,
+  "expanded_keywords": [
+    "Kilauea episode 45", "Mayon volcano Landsat", "Shiveluch Kamchatka ash",
+    "Georgia wildfire Landsat VIIRS", "CAS500-2 CAS500-4 launch",
+    "MizarVision satellite military", "UNOSAT humanitarian 2026",
+    "GFW DIST-ALERT deforestation", "Cerulean oil slick SkyTruth",
+    "Sentinel-1 SAR coherence openEO", "KOMPSAT-7A 2026",
+    "North Korea reservoir Sentinel-2", "Myanmar monsoon flood"
+  ],
+  "searches": [
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery wildfire May 2026", "language": "en", "timestamp": "2026-05-01T00:01:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery flood 2026 May", "language": "en", "timestamp": "2026-05-01T00:02:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery volcano eruption 2026", "language": "en", "timestamp": "2026-05-01T00:03:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Sentinel-1 SAR change detection 2026 April May", "language": "en", "timestamp": "2026-05-01T00:04:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery deforestation mining oil spill 2026", "language": "en", "timestamp": "2026-05-01T00:05:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery military buildup Maxar 2026", "language": "en", "timestamp": "2026-05-01T00:06:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery glacier retreat methane plume climate 2026", "language": "en", "timestamp": "2026-05-01T00:07:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Copernicus EMS activation disaster 2026 May", "language": "en", "timestamp": "2026-05-01T00:08:00Z", "result_count": 6},
+    {"method": "websearch", "engine": "built-in", "keyword": "위성영상 산불 홍수 2026년 5월", "language": "ko", "timestamp": "2026-05-01T00:09:00Z", "result_count": 5},
+    {"method": "websearch", "engine": "built-in", "keyword": "위성영상 북한 군사 한반도 2026", "language": "ko", "timestamp": "2026-05-01T00:10:00Z", "result_count": 7},
+    {"method": "websearch", "engine": "built-in", "keyword": "KOMPSAT 아리랑 위성 관측 CAS500 2026", "language": "ko", "timestamp": "2026-05-01T00:11:00Z", "result_count": 8},
+    {"method": "websearch", "engine": "built-in", "keyword": "NASA Earth Observatory satellite image May 2026", "language": "en", "timestamp": "2026-05-01T00:12:00Z", "result_count": 6},
+    {"method": "websearch", "engine": "built-in", "keyword": "Mayon volcano Philippines eruption satellite Landsat 2026", "language": "en", "timestamp": "2026-05-01T00:13:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Kilauea volcano eruption episode 45 April 2026 satellite USGS", "language": "en", "timestamp": "2026-05-01T00:14:00Z", "result_count": 8},
+    {"method": "websearch", "engine": "built-in", "keyword": "Shiveluch volcano Kamchatka eruption satellite ash plume April 2026", "language": "en", "timestamp": "2026-05-01T00:15:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "CAS500-2 CAS500-4 launch May 2026 Korea satellite", "language": "en", "timestamp": "2026-05-01T00:16:00Z", "result_count": 8},
+    {"method": "websearch", "engine": "built-in", "keyword": "MizarVision Chinese AI satellite tracking US military bases Middle East 2026", "language": "en", "timestamp": "2026-05-01T00:17:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Georgia wildfire satellite Landsat VIIRS April 2026", "language": "en", "timestamp": "2026-05-01T00:18:00Z", "result_count": 8}
+  ]
+}

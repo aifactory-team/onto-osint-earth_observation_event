@@ -1,0 +1,61 @@
+{
+  "id": "src-007",
+  "title": "Kilauea Episode 46 expected May 5-9 — tiltmeter forecast",
+  "url": "https://hawaiivolcanoexpeditions.com/blog/lava-update-the-latest-eruptions-on-the-big-island/",
+  "snippet": "Hawaii Volcano Expeditions summarizes the latest USGS data on Kilauea eruptions. Episode 46 is projected to begin between May 5-9, 2026 based on summit tiltmeter deflation-inflation cycles and magma supply models. Episode 45 ended April 23. Current volcanic alert level remains at WATCH. Visitors advised to check conditions before travel.",
+  "source_name": "Hawaii Volcano Expeditions / USGS",
+  "language": "en",
+  "discovered_date": "2026-05-01",
+  "tag": "update",
+  "related_report": "2026-04-30/ent-evt-021",
+  "related_item": "src-005",
+  "tag_reason": "Supplementary update to Kilauea eruption (ent-evt-021). Provides Episode 46 forecast details corroborating USGS HVO data.",
+  "entities": [
+    {
+      "id": "temp-evt-007",
+      "type": "Event",
+      "name": "킬라우에아 에피소드 46 예보 (Kilauea Episode 46 forecast)",
+      "properties": {
+        "phenomenon": "volcanic_eruption",
+        "domain": "Disaster",
+        "country": "US",
+        "lat": 19.421,
+        "lon": -155.287,
+        "observation_date": "2026-05-01",
+        "forecast_window": "2026-05-05 to 2026-05-09",
+        "severity": "high",
+        "before_after_available": false,
+        "satellite_unverified": true,
+        "is_press_release": false
+      }
+    },
+    {
+      "id": "temp-loc-007",
+      "type": "Location",
+      "name": "킬라우에아 화산 (Kīlauea Volcano, Big Island)",
+      "properties": {
+        "country": "US",
+        "region": "Hawaii",
+        "admin_level": "county",
+        "lat": 19.421,
+        "lon": -155.287
+      }
+    },
+    {
+      "id": "org-usgs",
+      "type": "Organization",
+      "name": "USGS",
+      "properties": {
+        "type": "government_agency",
+        "country": "US"
+      }
+    }
+  ],
+  "relations": [
+    {"subject": "temp-evt-007", "predicate": "manifests", "object": "phen-volcanic-eruption"},
+    {"subject": "temp-evt-007", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "temp-evt-007", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "temp-evt-007", "predicate": "locatedIn", "object": "temp-loc-007"},
+    {"subject": "temp-evt-007", "predicate": "analyzedBy", "object": "org-usgs"}
+  ]
+}

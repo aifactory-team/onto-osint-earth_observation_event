@@ -1,0 +1,39 @@
+{
+  "id": "src-019",
+  "title": "GFW drivers of deforestation alerts — AI-assigned causes across tropics",
+  "url": "https://www.globalforestwatch.org/blog/data-and-tools/drivers-deforestation-alerts/",
+  "snippet": "Global Forest Watch introduces AI-assigned deforestation driver classification for tropical forest loss alerts. The system automatically categorizes detected vegetation disturbances by probable cause — commodity-driven deforestation, shifting agriculture, forestry, wildfire, and urbanization — using machine learning trained on satellite imagery and ground truth data. Provides actionable intelligence for enforcement and policy across tropical regions in Southeast Asia, Amazon basin, and Central Africa.",
+  "source_name": "Global Forest Watch",
+  "language": "en",
+  "discovered_date": "2026-05-01",
+  "tag": "new",
+  "related_report": null,
+  "related_item": "src-018",
+  "tag_reason": "New AI-driven deforestation cause classification system. Complements src-018 DIST-ALERT with driver attribution capability.",
+  "entities": [
+    {
+      "id": "dp-deforestation-drivers",
+      "type": "DataProduct",
+      "name": "GFW Deforestation Drivers (AI-assigned)",
+      "properties": {
+        "producer": "GFW/WRI",
+        "type": "deforestation_driver_classification",
+        "coverage": "tropics",
+        "method": "machine_learning"
+      }
+    },
+    {
+      "id": "org-gfw",
+      "type": "Organization",
+      "name": "Global Forest Watch (WRI)",
+      "properties": {
+        "type": "research_ngo",
+        "country": "US"
+      }
+    }
+  ],
+  "relations": [
+    {"subject": "dp-deforestation-drivers", "predicate": "producedBy", "object": "org-gfw"},
+    {"subject": "dp-deforestation-drivers", "predicate": "relatedTo", "object": "dp-dist-alert"}
+  ]
+}

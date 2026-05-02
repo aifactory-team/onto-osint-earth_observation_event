@@ -159,3 +159,69 @@ config 한도(클래스 3건/일, 관계 5건/일) 내 — 새 클래스 0건, �
 | phen-naval 첫 사용 | ent-evt-022 | 북한 최현급 호위함 건조 — naval_movement Phenomenon 첫 이벤트 참조 |
 
 config 한도 내 — 새 클래스 0건, 기존 Phenomenon (phen-naval) 첫 이벤트 매핑 1건.
+
+---
+
+## 2026-05-01 추론 결과
+
+### multi_satellite_confirmation (다중 위성 교차검증) — 1건 추가
+
+- **추론 #14:** ent-evt-020 (Georgia 산불) — 이전 Landsat 8 (USGS/NASA) + VIIRS/NOAA-21 (NOAA) 교차 검증 확인 강화. NASA Earth Observatory 공식 분석 발표(src-008)로 multiSatBoost 재확인 [confidence 0.95, 확정]
+
+### sensor_capability_match (센서-현상 적합성) — 5건 추가
+
+- **TIRS x volcano:** ent-evt-029 (Mayon 화산 Landsat 8 TIRS) thermalBoost +0.10 [0.93] — 용암 열적외 시그니처 감지
+- **thermal x wildfire:** ent-evt-020 (Georgia 산불 VIIRS thermal) thermalBoost +0.10 [0.92] — 활성 화재 전선 열감지
+- **SAR x oilspill:** ent-evt-034 (Venezuela Sentinel-1 SAR) sarBoost +0.10 [0.85] — 해수면 SAR 후방산란 감소로 유막 탐지
+- **trace_gas x methane:** ent-evt-035 (매립지 메탄 TROPOMI) tracegasBoost +0.15 [0.88] — Sentinel-5P XCH4 컬럼 측정
+- **hi-res x military:** ent-evt-031 (MizarVision WorldView-3/Vantor 0.31m) hiResBoost +0.15 [0.80] — 군사 장비·차량 AI 자동 식별
+
+### official_source_trust — 3건 추가
+
+- ent-evt-029 (Mayon, NASA EO 공식 발표) +0.15 [0.93, 확정]
+- ent-evt-030 (Shiveluch, VAAC Tokyo/JMA 공식 경보) +0.15 [0.85, 확정]
+- ent-evt-020 (Georgia 산불, NASA EO 공식 update 발표) +0.15 [0.95, 확정]
+
+### korea_geo_focus — 2건 추가
+
+- ent-evt-032 (CAS500-2/4 발사, KR 위성) +0.10 [0.95, 확정] — KARI 차세대중형위성
+- ent-evt-022 (북한 최현급 IMO 등록 update, KP) +0.10 [0.90, 확정]
+
+### disaster_severity_priority — 1건 추가
+
+- ent-evt-020 (Georgia 산불, 120+ 주택 파괴 — 조지아주 역대 최다) → priorityBoost +0.20 [0.95, 확정]
+
+### before_after_credibility — 2건 추가
+
+- ent-evt-029 (Mayon 화산 Landsat 8 적외선 전후 비교) +0.10 [0.90]
+- ent-evt-020 (Georgia 산불 Landsat 8 false-color 전후 burn scar) +0.10 [0.90]
+
+### temporal_progression — 1건 추가
+
+- **추론 #15:** ent-evt-021 (Kilauea Ep45) → partOfSeries ent-evt-004 (Ep44) — 같은 위치(Halemaʻumaʻu), 같은 현상(volcanic_eruption), 시계열 진행. Episode 46 예보(May 5-9)로 시리즈 지속 확인 [confidence 0.92, 확정]
+
+### 추론 통계 (2026-05-01)
+
+| 규칙 | 추가 건수 | 누적 건수 | 평균 신뢰도 |
+|------|-----------|-----------|-------------|
+| multi_satellite_confirmation | 1 | 14 | 0.88 |
+| sensor_capability_match | 5 | 25 | 0.88 |
+| official_source_trust | 3 | 11 | 0.92 |
+| korea_geo_focus | 2 | 9 | 0.91 |
+| disaster_severity_priority | 1 | 10 | 0.88 |
+| before_after_credibility | 2 | 16 | 0.88 |
+| temporal_progression | 1 | 1 | 0.92 |
+| **합계** | **15** | **86** | **0.89** |
+
+### 온톨로지 변경 (2026-05-01)
+
+| 변경 유형 | 대상 | 근거 |
+|-----------|------|------|
+| 새 Country | co-ph (필리핀), co-ve (베네수엘라) (2건) | Mayon 화산 + Lake Maracaibo 원유 유출 |
+| 새 Satellite | sat-cas500-2, sat-cas500-4 (2건) | KARI 차세대중형위성 May 3 발사 예정 |
+| 새 Organization | org-mizarvision, org-vantor, org-phivolcs, org-globalwitness (4건) | AI 군사 OSINT + 화산 + 환경 NGO |
+| 새 Event | ent-evt-029 ~ ent-evt-036 (8건) | 신규 이벤트 |
+| 이벤트 업데이트 | ent-evt-019/020/021/022 (4건) | 후속 보도 반영 |
+| 새 Location | ent-loc-014 ~ ent-loc-016 (3건) | Mayon, Shiveluch, Lake Maracaibo |
+
+config 한도 내 — 새 클래스 0건, 새 관계 유형 0건.

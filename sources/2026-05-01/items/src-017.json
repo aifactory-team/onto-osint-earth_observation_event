@@ -1,0 +1,63 @@
+{
+  "id": "src-017",
+  "title": "북한 최현급 구축함 NLL 위협 — 5000톤급 해군 전력 분석",
+  "url": "https://car.withnews.kr/military/north-korea-navy-choe-hyon-destroyer-nll-threat/comment-page-1",
+  "snippet": "위드뉴스 군사 분석에 따르면 북한 최현급(Choe Hyun-class) 구축함의 3번함이 IMO에 등록되었으며, 5000톤급 해군 전력으로서 NLL(북방한계선) 방어에 대한 위협 분석 보고서가 발표됐다. 서해 NLL 인근 해역에서의 해군 활동 증가 가능성 및 이에 따른 위성 감시 필요성을 언급.",
+  "source_name": "위드뉴스",
+  "language": "ko",
+  "discovered_date": "2026-05-01",
+  "tag": "update",
+  "related_report": "2026-04-30/ent-evt-022",
+  "related_item": null,
+  "tag_reason": "Update to North Korea naval activity (ent-evt-022). Third Choe Hyun-class ship IMO registration confirms expanded naval capability near NLL.",
+  "entities": [
+    {
+      "id": "temp-evt-017",
+      "type": "Event",
+      "name": "북한 최현급 구축함 NLL 위협 (North Korea Choe Hyun-class NLL threat)",
+      "properties": {
+        "phenomenon": "naval_movement",
+        "domain": "Defense",
+        "country": "KP",
+        "lat": 39.0,
+        "lon": 125.8,
+        "observation_date": "2026-05-01",
+        "severity": "high",
+        "before_after_available": false,
+        "satellite_unverified": true,
+        "is_press_release": false,
+        "vessel_class": "Choe Hyun (최현급)",
+        "displacement_tons": 5000,
+        "imo_registered_ships": 3
+      }
+    },
+    {
+      "id": "temp-loc-017",
+      "type": "Location",
+      "name": "서해 NLL 인근 (West Sea / NLL area)",
+      "properties": {
+        "country": "KP",
+        "region": "West Sea",
+        "admin_level": "maritime",
+        "lat": 39.0,
+        "lon": 125.8
+      }
+    },
+    {
+      "id": "org-kpn",
+      "type": "Organization",
+      "name": "조선인민군 해군 (Korean People's Navy)",
+      "properties": {
+        "type": "military",
+        "country": "KP"
+      }
+    }
+  ],
+  "relations": [
+    {"subject": "temp-evt-017", "predicate": "manifests", "object": "phen-naval-movement"},
+    {"subject": "temp-evt-017", "predicate": "inDomain", "object": "dom-defense"},
+    {"subject": "temp-evt-017", "predicate": "inCountry", "object": "co-kp"},
+    {"subject": "temp-evt-017", "predicate": "locatedIn", "object": "temp-loc-017"},
+    {"subject": "temp-evt-017", "predicate": "attributedTo", "object": "org-kpn"}
+  ]
+}
