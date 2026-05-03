@@ -1,0 +1,24 @@
+{
+  "id": "src-009",
+  "title": "MethaneSAT first global assessment — oil & gas methane 50% higher than EDGAR/EPA estimates",
+  "url": "https://insideclimatenews.org/news/06022026/methanesat-climate-pollution-global-assessment/",
+  "snippet": "MethaneSAT's first global assessment of oil and gas methane emissions: 50% higher than EDGAR estimates. Survey covers 45 oil/gas producing regions (half of world's onshore production), May 2024-June 2025 measurements. US emissions 4× higher than EPA estimates, 8× industry target. 70% from smaller dispersed sources. MethaneSAT lost contact after ~1 year in orbit but transmitted critical data trove.",
+  "source_name": "Inside Climate News",
+  "language": "en",
+  "discovered_date": "2026-05-03",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규: MethaneSAT 최종 글로벌 평가 결과. 이전 보고서에 MethaneSAT 관련 항목 없음. 위성 직접 관측 데이터 기반.",
+  "entities": [
+    {"id": "temp-evt-053", "type": "Event", "name": "MethaneSAT 글로벌 석유·가스 메탄 배출 평가 — EPA 추정치 4배 초과", "properties": {"phenomenon": "methane_plume", "domain": "ClimateEnvironment", "country": "INTL", "lat": 32.0, "lon": -102.0, "observation_date": "2026-02-06", "severity": "high", "satellites_used": ["MethaneSAT"], "sensors_used": ["trace_gas"]}},
+    {"id": "sat-methanesat", "type": "Satellite", "name": "MethaneSAT"},
+    {"id": "temp-org-edf", "type": "Organization", "name": "Environmental Defense Fund (EDF)", "properties": {"org_type": "ngo", "country": "US"}}
+  ],
+  "relations": [
+    {"subject": "temp-evt-053", "predicate": "observedBy", "object": "sat-methanesat"},
+    {"subject": "temp-evt-053", "predicate": "analyzedBy", "object": "temp-org-edf"},
+    {"subject": "temp-evt-053", "predicate": "manifests", "object": "phen-methane"},
+    {"subject": "temp-evt-053", "predicate": "inDomain", "object": "dom-climate"}
+  ]
+}

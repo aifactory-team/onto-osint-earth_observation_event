@@ -226,6 +226,44 @@ config 한도 내 — 새 클래스 0건, 기존 Phenomenon (phen-naval) 첫 이
 
 config 한도 내 — 새 클래스 0건, 새 관계 유형 0건.
 
+## 2026-05-03 추론 결과
+
+### sensor_capability_match (센서-현상 적합성) — 1건
+
+- **추론 #1:** ent-evt-053 (MethaneSAT 글로벌 메탄 평가) — usesSensor trace_gas + phenomenon methane_plume → tracegasBoost +0.15 [confidence 0.90, 확정]
+
+### official_source_trust (공식 기관 신뢰���) — 2건
+
+- **추론 #2:** ent-evt-052 (조지아 산불) — analyzedBy USGS (space_agency) → officialBoost +0.15 [0.90, 확정]
+- **추론 #3:** ent-evt-050 (Great Sitkin) — analyzedBy USGS (space_agency) → officialBoost +0.15 [0.85, 확정]
+
+### temporal_progression (시계열 진행) — 2건
+
+- **추론 #4:** ent-evt-048 (Kilauea Ep.46 예보) — locatedIn Halemaʻumaʻu + phenomenon volcanic_eruption + observation_date > ent-evt-021 → partOfSeries ent-evt-021 [0.92, 확정]
+- **추론 #5:** ent-evt-049 (Mayon 5/2 분출) — locatedIn Mayon + phenomenon volcanic_eruption + observation_date > ent-evt-029 → partOfSeries ent-evt-029 [0.92, 확정]
+
+### korea_geo_focus (한반도 가산) — 1건
+
+- **추론 #6:** ent-evt-047 (CAS500-2/4 발사) — inCountry KR → koreaBoost +0.10 [0.95, 확정]
+
+### 금일 미적용 규칙
+
+- `multi_satellite_confirmation`: 금일 신규 이벤트 중 2개 이상 독립 위성 교차검증 건 없음. MethaneSAT 단독 관측이나, 기존 TROPOMI/GOSAT 데이터(ent-evt-035)와 교차 가능 — 직접 동일 이벤트가 아니므로 미적용.
+- `cascading_disaster`: 금��� 신규 재해 사슬 없음.
+- `before_after_credibility`: 금일 ���규 before/after 영상 보유 이벤트 없음.
+
+### 온톨로지 변경 요약
+
+| 변경 | 대상 | 근거 |
+|------|------|------|
+| 위성 상태 갱신 | sat-cas500-2/4: pre-launch → operational | 발사 성공 + 첫 교신 확인 |
+| 새 Organization | org-edf, org-inpe, org-amw (3건) | MethaneSAT 운영(EDF), DETER 운영(INPE), 아마존 채굴 탐지(AMW) |
+| phen-mining 첫 매핑 | mention 0→1 (1건) | 아마존 불법 금 채굴 |
+| 새 Event | ent-evt-050 ~ ent-evt-056 (7건) | 신규 이벤트 |
+| 새 Location | ent-loc-019 (Great Sitkin), ent-loc-020 (Krasheninnikov) (2���) | 신규 위치 |
+
+config 한도 내 — 새 클래스 0건, 새 관계 유형 0건.
+
 ## 2026-05-02 추론 결과
 
 ### multi_satellite_confirmation (다중 위성 교차검증) — 4건

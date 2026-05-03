@@ -1,0 +1,25 @@
+{
+  "id": "src-004",
+  "title": "Kīlauea May 3 advisory — Episode 46 forecast window May 4-7 (USGS HVO)",
+  "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-HVO-2026-05-03T16:14:57+00:00",
+  "snippet": "Eruption at Kīlauea summit paused. Consistent bright glow, frequent bursts of flames, intermittent heavy gas emissions from south vent on webcams overnight. Seismic tremor at summit easing slightly. Forecast window for Episode 46: May 4-7. Two eruptive vents (north and south) in Halemaʻumaʻu erupting episodically since Dec 23, 2024.",
+  "source_name": "USGS Hawaiian Volcano Observatory",
+  "language": "en",
+  "discovered_date": "2026-05-03",
+  "tag": "update",
+  "related_report": "2026-05-02/src-006",
+  "related_item": "ent-evt-021",
+  "tag_reason": "후속: Episode 46 예보 창이 May 4-7로 갱신됨. 남쪽 분출구 지속적 발광·가스 배출 관측. 이전 보고 대비 예보 구간 구체화.",
+  "entities": [
+    {"id": "temp-evt-048", "type": "Event", "name": "Kīlauea Episode 46 예보 (May 4-7, 2026)", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "US", "lat": 19.421, "lon": -155.287, "observation_date": "2026-05-03", "severity": "high", "before_after_available": true, "update_of": "ent-evt-021"}},
+    {"id": "org-usgs", "type": "Organization", "name": "USGS"},
+    {"id": "ent-loc-004", "type": "Location", "name": "Kīlauea summit, Halemaʻumaʻu"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-048", "predicate": "analyzedBy", "object": "org-usgs"},
+    {"subject": "temp-evt-048", "predicate": "locatedIn", "object": "ent-loc-004"},
+    {"subject": "temp-evt-048", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "temp-evt-048", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "temp-evt-048", "predicate": "partOfSeries", "object": "ent-evt-021"}
+  ]
+}

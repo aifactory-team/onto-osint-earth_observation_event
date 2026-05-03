@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "description": "OSINT 온톨로지 스키마 — config/osint-config.json의 seed로부터 초기화되고, 매일 파이프라인 실행 시 자동 확장된다. 도메인: 위성영상으로 관측 가능한 지구상 이벤트 (Earth Observation Events).",
-  "last_updated": "2026-05-01",
+  "last_updated": "2026-05-03",
   "classes": [
     {
       "id": "Entity",
@@ -163,6 +163,27 @@
       "target": "phen-landslide",
       "reason": "phen-landslide (landslide)는 스키마 초기화 시 정의되었으나 이벤트 참조 0건이었음. ent-evt-037 (PNG 바이닝산맥 산사태) 및 ent-evt-044 (Niscemi 시칠리아 산사태)에서 첫 이벤트 매핑 발생. mention_count 0→2.",
       "source_ids": ["src-001", "src-015"]
+    },
+    {
+      "date": "2026-05-03",
+      "action": "update_satellite_status",
+      "target": "sat-cas500-2, sat-cas500-4",
+      "reason": "CAS500-2/4 Falcon 9 발사 성공 (2026-05-03 07:00 UTC, Vandenberg SFB). 스발바르 지상국 첫 교신 확인. mission_status: pre-launch → operational.",
+      "source_ids": ["src-001"]
+    },
+    {
+      "date": "2026-05-03",
+      "action": "add_organization",
+      "target": "org-edf, org-inpe, org-amw",
+      "reason": "EDF (Environmental Defense Fund) — MethaneSAT 운영 NGO(ent-evt-053). INPE — 브라질 국립우주연구원, DETER 시스템 운영(ent-evt-055). Amazon Mining Watch — Sentinel-2 AI 기반 아마존 채굴 탐지(ent-evt-054).",
+      "source_ids": ["src-009", "src-011", "src-013"]
+    },
+    {
+      "date": "2026-05-03",
+      "action": "first_event_reference",
+      "target": "phen-mining",
+      "reason": "phen-mining (mining)은 스키마 초기화 시 정의되었으나 이벤트 참조 0건이었음. ent-evt-054 (아마존 불법 금 채굴)에서 첫 이벤트 매핑 발생. mention_count 0→1.",
+      "source_ids": ["src-011"]
     }
   ]
 }

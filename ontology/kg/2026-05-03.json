@@ -1,0 +1,53 @@
+{
+  "date": "2026-05-03",
+  "new_triples": [
+    {"subject": "ent-evt-050", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-006", "date": "2026-05-03", "confidence": 0.80, "type": "explicit"},
+    {"subject": "ent-evt-050", "predicate": "locatedIn", "object": "ent-loc-019", "source_id": "src-006", "date": "2026-05-03", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-050", "predicate": "inCountry", "object": "co-us", "source_id": "src-006", "date": "2026-05-03", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-050", "predicate": "analyzedBy", "object": "org-usgs", "source_id": "src-006", "date": "2026-05-03", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-050", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-006", "date": "2026-05-03", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-051", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-007", "date": "2026-05-03", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-051", "predicate": "locatedIn", "object": "ent-loc-020", "source_id": "src-007", "date": "2026-05-03", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-051", "predicate": "inCountry", "object": "co-ru", "source_id": "src-007", "date": "2026-05-03", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-051", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-007", "date": "2026-05-03", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-053", "predicate": "observedBy", "object": "sat-methanesat", "source_id": "src-009", "date": "2026-05-03", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-053", "predicate": "manifests", "object": "phen-methane", "source_id": "src-009", "date": "2026-05-03", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-053", "predicate": "analyzedBy", "object": "org-edf", "source_id": "src-009", "date": "2026-05-03", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-053", "predicate": "inDomain", "object": "dom-climate", "source_id": "src-009", "date": "2026-05-03", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-054", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-011", "date": "2026-05-03", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-054", "predicate": "usesSensor", "object": "sensor-msi", "source_id": "src-011", "date": "2026-05-03", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-054", "predicate": "manifests", "object": "phen-mining", "source_id": "src-011", "date": "2026-05-03", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-054", "predicate": "inCountry", "object": "co-br", "source_id": "src-011", "date": "2026-05-03", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-054", "predicate": "inDomain", "object": "dom-human", "source_id": "src-011", "date": "2026-05-03", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-055", "predicate": "manifests", "object": "phen-defor", "source_id": "src-013", "date": "2026-05-03", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-055", "predicate": "inCountry", "object": "co-br", "source_id": "src-013", "date": "2026-05-03", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-055", "predicate": "inDomain", "object": "dom-human", "source_id": "src-013", "date": "2026-05-03", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-056", "predicate": "observedBy", "object": "sat-sentinel1a", "source_id": "src-014", "date": "2026-05-03", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-056", "predicate": "usesSensor", "object": "sensor-c-sar", "source_id": "src-014", "date": "2026-05-03", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-056", "predicate": "analyzedBy", "object": "org-skytruth", "source_id": "src-014", "date": "2026-05-03", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-056", "predicate": "manifests", "object": "phen-oilspill", "source_id": "src-014", "date": "2026-05-03", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-056", "predicate": "inDomain", "object": "dom-human", "source_id": "src-014", "date": "2026-05-03", "confidence": 0.90, "type": "explicit"},
+    {"subject": "sat-cas500-2", "predicate": "operatedBy", "object": "org-kari", "source_id": "src-001", "date": "2026-05-03", "confidence": 0.99, "type": "explicit"},
+    {"subject": "sat-cas500-4", "predicate": "operatedBy", "object": "org-kari", "source_id": "src-001", "date": "2026-05-03", "confidence": 0.99, "type": "explicit"}
+  ],
+  "updated_triples": [
+    {"subject": "ent-evt-032", "predicate": "status", "object": "launched_successfully", "source_id": "src-001", "date": "2026-05-03", "confidence": 0.99, "type": "update"},
+    {"subject": "sat-cas500-2", "predicate": "mission_status", "object": "operational", "source_id": "src-001", "date": "2026-05-03", "confidence": 0.95, "type": "update"},
+    {"subject": "sat-cas500-4", "predicate": "mission_status", "object": "operational", "source_id": "src-001", "date": "2026-05-03", "confidence": 0.95, "type": "update"},
+    {"subject": "ent-evt-020", "predicate": "containment", "object": "44%-64%", "source_id": "src-008", "date": "2026-05-03", "confidence": 0.90, "type": "update"},
+    {"subject": "ent-evt-029", "predicate": "latest_eruption", "object": "2026-05-02T07:29Z", "source_id": "src-005", "date": "2026-05-03", "confidence": 0.90, "type": "update"}
+  ],
+  "inferred_triples": [
+    {"subject": "ent-evt-053", "predicate": "tracegasBoost", "object": "+0.15", "rule": "sensor_capability_match_tracegas", "confidence": 0.90, "type": "inferred"},
+    {"subject": "ent-evt-052", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.90, "type": "inferred"},
+    {"subject": "ent-evt-050", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.85, "type": "inferred"},
+    {"subject": "ent-evt-048", "predicate": "partOfSeries", "object": "ent-evt-021", "rule": "temporal_progression", "confidence": 0.92, "type": "inferred"},
+    {"subject": "ent-evt-049", "predicate": "partOfSeries", "object": "ent-evt-029", "rule": "temporal_progression", "confidence": 0.92, "type": "inferred"},
+    {"subject": "ent-evt-047", "predicate": "koreaBoost", "object": "+0.10", "rule": "korea_geo_focus", "confidence": 0.95, "type": "inferred"}
+  ],
+  "stats": {
+    "new_nodes": 9,
+    "new_edges": 28,
+    "inferred_edges": 6
+  }
+}

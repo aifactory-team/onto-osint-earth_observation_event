@@ -1,15 +1,15 @@
 {
   "version": "1.1.0",
   "description": "위성영상 관측 이벤트 누적 지식그래프 — 첫 실행(2026-04-30) 이후 매일 신규/추론 트리플 병합",
-  "last_updated": "2026-05-02",
-  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02"],
-  "triples": "ontology/kg/2026-04-30.json + ontology/kg/2026-05-01.json + ontology/kg/2026-05-02.json (new_triples + inferred_triples)",
+  "last_updated": "2026-05-03",
+  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03"],
+  "triples": "ontology/kg/2026-04-30.json + ontology/kg/2026-05-01.json + ontology/kg/2026-05-02.json + ontology/kg/2026-05-03.json (new_triples + inferred_triples)",
   "stats": {
-    "total_explicit_triples": 236,
-    "total_inferred_triples": 101,
-    "total_unique_subjects": 59,
+    "total_explicit_triples": 264,
+    "total_inferred_triples": 107,
+    "total_unique_subjects": 66,
     "total_unique_predicates": 16,
-    "total_unique_objects": 102
+    "total_unique_objects": 108
   },
-  "note": "2026-05-02 병합 완료 — ent-evt-037~046 신규 이벤트 10건, 업데이트 5건(ent-evt-020/021/029/030/032). 신규 국가(PG/PE/GT), 신규 위치 2건(Baining Mts/Niscemi). phen-landslide 첫 이벤트 매핑(0→2). 추론 16건(multiSat 4건, sensor_match 3건, official 3건, baCredibility 3건, cascading 1건, temporal 1건, priority 1건)."
+  "note": "2026-05-03 병합 완료 — 신규 이벤트 7건(ent-evt-050~056), 업데이트 4건(ent-evt-020/021/029/032). CAS500-2/4 operational 갱신. 신규 Org 3건(EDF/INPE/AMW), 신규 Location 2건(Great Sitkin/Krasheninnikov). phen-mining 첫 이벤트 매핑(0→1). 추론 6건(sensor_match 1건, official 2건, temporal 2건, koreaGeo 1건)."
 }

@@ -1,0 +1,23 @@
+{
+  "id": "src-008",
+  "title": "Georgia wildfires May 3 — Pineland Road 32,575ac 44% contained, Hwy 82 22,532ac 64%",
+  "url": "https://en.wikipedia.org/wiki/2026_Georgia_wildfires",
+  "snippet": "As of May 3, 2026: Pineland Road Fire burned 32,575 acres with 44% containment; Highway 82 Fire burned 22,532 acres with 64% containment. Together 50,000+ acres. Over 120 homes destroyed — most in Georgia history. Extreme drought in U.S. Southeast fueling fires. Landsat 8 false-color imagery (bands 7-5-4) shows charred forests and residential areas.",
+  "source_name": "Wikipedia / Georgia Forestry Commission",
+  "language": "en",
+  "discovered_date": "2026-05-03",
+  "tag": "update",
+  "related_report": "2026-05-02/src-004",
+  "related_item": "ent-evt-020",
+  "tag_reason": "후속: 화재 면적·봉쇄율 갱신 (Pineland Road 44%, Hwy 82 64%). 이전 보고 대비 진화 진전 유의미.",
+  "entities": [
+    {"id": "temp-evt-052", "type": "Event", "name": "조지아 산불 진행 상황 갱신 (2026-05-03)", "properties": {"phenomenon": "wildfire", "domain": "Disaster", "country": "US", "lat": 31.2, "lon": -82.3, "observation_date": "2026-05-03", "severity": "high", "area_km2": 222, "before_after_available": true, "satellites_used": ["Landsat 8"], "sensors_used": ["OLI"], "update_of": "ent-evt-020"}}
+  ],
+  "relations": [
+    {"subject": "temp-evt-052", "predicate": "observedBy", "object": "sat-landsat8"},
+    {"subject": "temp-evt-052", "predicate": "usesSensor", "object": "sensor-oli"},
+    {"subject": "temp-evt-052", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "temp-evt-052", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "temp-evt-052", "predicate": "partOfSeries", "object": "ent-evt-020"}
+  ]
+}

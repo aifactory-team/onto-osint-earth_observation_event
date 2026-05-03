@@ -1,0 +1,25 @@
+{
+  "id": "src-014",
+  "title": "SkyTruth Cerulean near real-time upgrade — 15% detections under 2 hours",
+  "url": "https://skytruth.org/2026/03/near-real-time-coming-to-cerulean/",
+  "snippet": "SkyTruth's Cerulean upgraded to near real-time: 15% of all oil slick detections available in <2 hours, 50% within 4.5 hours, 85% within 12 hours. Uses Sentinel-1 GRD radar imagery + U-Net AI model. Free public online map for global ocean oil pollution monitoring.",
+  "source_name": "SkyTruth",
+  "language": "en",
+  "discovered_date": "2026-05-03",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규: Cerulean 플랫폼 준실시간 업그레이드. 이전 보고서에서 Cerulean 일반 소개만 있었고, NRT 업그레이드 상세는 최초. Sentinel-1 기반.",
+  "entities": [
+    {"id": "temp-evt-056", "type": "Event", "name": "SkyTruth Cerulean 준실시간 유류 오염 탐지 업그레이드", "properties": {"phenomenon": "oil_spill", "domain": "HumanActivity", "country": "INTL", "lat": 0.0, "lon": 0.0, "observation_date": "2026-03", "severity": "medium", "satellites_used": ["Sentinel-1A"], "sensors_used": ["C-band SAR"]}},
+    {"id": "org-skytruth", "type": "Organization", "name": "SkyTruth"},
+    {"id": "sat-sentinel1a", "type": "Satellite", "name": "Sentinel-1A"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-056", "predicate": "observedBy", "object": "sat-sentinel1a"},
+    {"subject": "temp-evt-056", "predicate": "usesSensor", "object": "sensor-c-sar"},
+    {"subject": "temp-evt-056", "predicate": "analyzedBy", "object": "org-skytruth"},
+    {"subject": "temp-evt-056", "predicate": "manifests", "object": "phen-oilspill"},
+    {"subject": "temp-evt-056", "predicate": "inDomain", "object": "dom-human"}
+  ]
+}

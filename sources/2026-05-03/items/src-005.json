@@ -1,0 +1,26 @@
+{
+  "id": "src-005",
+  "title": "Mayon Volcano Ash Advisory May 2 — eruption FL060 EXTD WSW (Himawari-9)",
+  "url": "https://www.volcanodiscovery.com/mayon/news/301257/vaac-advisory-2026-554.html",
+  "snippet": "Tokyo VAAC issued ash advisory at 07:59 UTC based on Himawari-9 satellite data. Eruption at 07:29 UTC on May 2. Volcanic ash not identifiable from satellite data but eruption confirmed. Lava flow lengths: Basud Gully 3.8km (E), Bonga 3.2km (SE), Mi-isi 1.6km (S). SO₂ 2,147 t/day (previous report). Alert Level 3 maintained by PHIVOLCS.",
+  "source_name": "VolcanoDiscovery",
+  "language": "en",
+  "discovered_date": "2026-05-03",
+  "tag": "update",
+  "related_report": "2026-05-02/src-023",
+  "related_item": "ent-evt-029",
+  "tag_reason": "후속: May 2 분출 이벤트 확인 (Himawari-9 위성 감지). 이전 보고 대비 신규 분출 에피소드 추가. VAAC 화산재 권고 발행.",
+  "entities": [
+    {"id": "temp-evt-049", "type": "Event", "name": "Mayon 화산 5월 2일 분출 — Himawari-9 VAAC 권고", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "PH", "lat": 13.257, "lon": 123.685, "observation_date": "2026-05-02", "severity": "high", "satellites_used": ["Himawari-9"], "update_of": "ent-evt-029"}},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "org-phivolcs", "type": "Organization", "name": "PHIVOLCS"},
+    {"id": "ent-loc-014", "type": "Location", "name": "Mayon Volcano, Albay Province"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-049", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "temp-evt-049", "predicate": "analyzedBy", "object": "org-phivolcs"},
+    {"subject": "temp-evt-049", "predicate": "locatedIn", "object": "ent-loc-014"},
+    {"subject": "temp-evt-049", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "temp-evt-049", "predicate": "partOfSeries", "object": "ent-evt-029"}
+  ]
+}

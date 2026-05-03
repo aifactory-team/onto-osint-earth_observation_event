@@ -1,0 +1,27 @@
+{
+  "id": "src-001",
+  "title": "CAS500-2 successfully launched on Falcon 9 — first contact with Svalbard ground station",
+  "url": "https://en.sedaily.com/technology/2026/05/03/breaking-news-falcon-9-rocket-carrying-koreas-cas500-2",
+  "snippet": "SpaceX Falcon 9 launched CAS500-2 on May 3, 2026 at 07:00 UTC from Vandenberg SFB. The 534kg satellite separated ~75 min after liftoff and established first contact with Svalbard ground station. CAS500-2 features 0.5m B/W and 2m color resolution for land/resource management, disaster response. CAS500-4 (5m wide-swath for agriculture) also aboard.",
+  "source_name": "Seoul Economic Daily (English)",
+  "language": "en",
+  "discovered_date": "2026-05-03",
+  "tag": "update",
+  "related_report": "2026-05-02/src-008",
+  "related_item": "ent-evt-032",
+  "tag_reason": "후속: CAS500-2/4 발사 예정→실제 발사 성공 확인. 궤도 진입·첫 교신 성공은 유의미한 새 정보.",
+  "entities": [
+    {"id": "sat-cas500-2", "type": "Satellite", "name": "CAS500-2 (차세대중형위성 2호)", "properties": {"operator": "KARI", "country": "KR", "resolution_m": 0.5, "mission_status": "operational", "launch_date": "2026-05-03"}},
+    {"id": "sat-cas500-4", "type": "Satellite", "name": "CAS500-4 (차세대중형위성 4호)", "properties": {"operator": "KARI", "country": "KR", "resolution_m": 5.0, "mission_status": "operational", "launch_date": "2026-05-03"}},
+    {"id": "org-kari", "type": "Organization", "name": "KARI (한국항공우주연구원)"},
+    {"id": "temp-evt-047", "type": "Event", "name": "CAS500-2/4 Falcon 9 발사 성공 (2026-05-03)", "properties": {"phenomenon": "construction", "domain": "AgricultureMaritime", "country": "KR", "lat": 34.7, "lon": -120.6, "observation_date": "2026-05-03", "severity": "medium"}},
+    {"id": "co-kr", "type": "Country", "name": "대한민국"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-047", "predicate": "observedBy", "object": "sat-cas500-2"},
+    {"subject": "temp-evt-047", "predicate": "analyzedBy", "object": "org-kari"},
+    {"subject": "temp-evt-047", "predicate": "inCountry", "object": "co-kr"},
+    {"subject": "sat-cas500-2", "predicate": "operatedBy", "object": "org-kari"},
+    {"subject": "sat-cas500-4", "predicate": "operatedBy", "object": "org-kari"}
+  ]
+}

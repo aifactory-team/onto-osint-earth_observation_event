@@ -1,0 +1,23 @@
+{
+  "id": "src-007",
+  "title": "Krasheninnikov volcano lava flows ENE/E flanks — daily thermal anomaly in satellite (KVERT)",
+  "url": "https://volcano.si.edu/volcano.cfm?vn=300190",
+  "snippet": "KVERT reports lava flows at Krasheninnikov continued to effuse onto ENE and E flanks of Northern Cone during 22-29 April 2026. A large thermal anomaly identified daily in satellite images. Aviation Color Code Yellow. Effusive eruption activity continues. Located in Kamchatka Peninsula, Russia.",
+  "source_name": "Smithsonian GVP / KVERT",
+  "language": "en",
+  "discovered_date": "2026-05-03",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규: 이전 14일 보고서에 Krasheninnikov 관련 항목 없음. 위성 일별 열이상 관측 확인.",
+  "entities": [
+    {"id": "temp-evt-051", "type": "Event", "name": "Krasheninnikov 화산 용암류 — 위성 일별 열이상 (Kamchatka)", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "RU", "lat": 54.593, "lon": 160.273, "observation_date": "2026-04-29", "severity": "medium", "before_after_available": false}},
+    {"id": "temp-loc-020", "type": "Location", "name": "Krasheninnikov Volcano, Kamchatka", "properties": {"country": "RU", "region": "Kamchatka Krai", "lat": 54.593, "lon": 160.273}}
+  ],
+  "relations": [
+    {"subject": "temp-evt-051", "predicate": "locatedIn", "object": "temp-loc-020"},
+    {"subject": "temp-evt-051", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "temp-evt-051", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "temp-evt-051", "predicate": "inCountry", "object": "co-ru"}
+  ]
+}

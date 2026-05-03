@@ -1,0 +1,33 @@
+{
+  "date": "2026-05-03",
+  "collected_at": "2026-05-03T08:00:00Z",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 18,
+  "total_results": 78,
+  "expanded_keywords": [
+    "CAS500-2 launch", "Kilauea Episode 46", "Mayon volcano", "Georgia wildfire Landsat",
+    "PNG landslide TC Maila", "Antarctica grounding line Sentinel-1", "MethaneSAT oil gas",
+    "MizarVision OSINT", "Amazon mining satellite AI", "Cerulean oil slick", "TROPOMI methane",
+    "DETER deforestation ban Brazil", "Krasheninnikov thermal", "Great Sitkin lava dome"
+  ],
+  "searches": [
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery wildfire flood May 2026", "language": "en", "timestamp": "2026-05-03T08:01:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery volcano eruption May 2026", "language": "en", "timestamp": "2026-05-03T08:01:30Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Sentinel-1 SAR change detection May 2026", "language": "en", "timestamp": "2026-05-03T08:02:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "NASA Earth Observatory May 2026", "language": "en", "timestamp": "2026-05-03T08:02:30Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Copernicus EMS activation May 2026", "language": "en", "timestamp": "2026-05-03T08:03:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "위성영상 산불 홍수 2026년 5월", "language": "ko", "timestamp": "2026-05-03T08:03:30Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Kilauea volcano eruption episode 46 May 2026", "language": "en", "timestamp": "2026-05-03T08:04:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "CAS500-2 launch May 3 2026 Korea satellite", "language": "en", "timestamp": "2026-05-03T08:04:30Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery deforestation mining 2026", "language": "en", "timestamp": "2026-05-03T08:05:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "glacier retreat methane plume satellite 2026", "language": "en", "timestamp": "2026-05-03T08:05:30Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery military buildup OSINT May 2026", "language": "en", "timestamp": "2026-05-03T08:06:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "UNOSAT satellite humanitarian crisis 2026", "language": "en", "timestamp": "2026-05-03T08:06:30Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Georgia wildfire satellite Landsat May 2026", "language": "en", "timestamp": "2026-05-03T08:07:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Mayon volcano eruption May 2 2026 satellite", "language": "en", "timestamp": "2026-05-03T08:07:30Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Amazon illegal gold mining satellite AI 2026", "language": "en", "timestamp": "2026-05-03T08:08:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "위성영상 한반도 KOMPSAT CAS500 2026년 5월", "language": "ko", "timestamp": "2026-05-03T08:08:30Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "MethaneSAT oil gas methane emissions survey 2026", "language": "en", "timestamp": "2026-05-03T08:09:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Brazil satellite deforestation ban DETER system 2026", "language": "en", "timestamp": "2026-05-03T08:09:30Z", "result_count": 10}
+  ]
+}

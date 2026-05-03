@@ -1,0 +1,25 @@
+{
+  "id": "src-006",
+  "title": "Great Sitkin volcano May 3 — lava dome growth, elevated surface temps in satellite",
+  "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-AVO-2026-05-03T19:45:30+00:00",
+  "snippet": "Slow lava effusion continues within the Great Sitkin summit crater. Seismic data recording rockfalls from growing lava dome. Slightly elevated surface temperatures observed in satellite images. Aviation Color Code ORANGE. No significant ash emissions. Minor lava dome growth and rockfalls continuing along east and south sides of lava field.",
+  "source_name": "USGS Alaska Volcano Observatory",
+  "language": "en",
+  "discovered_date": "2026-05-03",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규: 이전 14일 보고서에 Great Sitkin 관련 항목 없음. 위성 열이상 관측 확인.",
+  "entities": [
+    {"id": "temp-evt-050", "type": "Event", "name": "Great Sitkin 화산 용암돔 성장 — 위성 열이상 (Alaska)", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "US", "lat": 52.076, "lon": -176.131, "observation_date": "2026-05-03", "severity": "medium", "before_after_available": false}},
+    {"id": "org-usgs", "type": "Organization", "name": "USGS"},
+    {"id": "temp-loc-019", "type": "Location", "name": "Great Sitkin Island, Alaska", "properties": {"country": "US", "region": "Aleutian Islands", "lat": 52.076, "lon": -176.131}}
+  ],
+  "relations": [
+    {"subject": "temp-evt-050", "predicate": "analyzedBy", "object": "org-usgs"},
+    {"subject": "temp-evt-050", "predicate": "locatedIn", "object": "temp-loc-019"},
+    {"subject": "temp-evt-050", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "temp-evt-050", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "temp-evt-050", "predicate": "inCountry", "object": "co-us"}
+  ]
+}

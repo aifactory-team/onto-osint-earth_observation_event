@@ -1,7 +1,7 @@
 {
   "version": "1.1.0",
   "description": "알려진 엔티티 인스턴스 — 파이프라인 실행 시 자동으로 추가/업데이트된다. 도메인: 위성영상 관측 이벤트.",
-  "last_updated": "2026-05-01",
+  "last_updated": "2026-05-03",
   "entities": [
     { "id": "dom-disaster", "type": "Domain", "name": "Disaster", "properties": { "label": "자연재해" }, "first_seen": "2026-04-30", "last_seen": "2026-04-30", "mention_count": 12 },
     { "id": "dom-human", "type": "Domain", "name": "HumanActivity", "properties": { "label": "인간활동" }, "first_seen": "2026-04-30", "last_seen": "2026-04-30", "mention_count": 2 },
@@ -172,8 +172,8 @@
     { "id": "co-ph", "type": "Country", "name": "필리핀", "properties": { "iso_code": "PH", "region": "동남아시아" }, "first_seen": "2026-05-01", "last_seen": "2026-05-01", "mention_count": 2 },
     { "id": "co-ve", "type": "Country", "name": "베네수엘라", "properties": { "iso_code": "VE", "region": "남미" }, "first_seen": "2026-05-01", "last_seen": "2026-05-01", "mention_count": 1 },
 
-    { "id": "sat-cas500-2", "type": "Satellite", "name": "CAS500-2 (차세대중형위성 2호)", "properties": { "operator": "KARI", "country": "KR", "orbit_type": "SSO", "resolution_m": 0.5, "sensor_types": ["optical_pan", "optical_multispectral"], "mission_status": "pre-launch", "launch_date": "2026-05-03" }, "first_seen": "2026-05-01", "last_seen": "2026-05-01", "mention_count": 2 },
-    { "id": "sat-cas500-4", "type": "Satellite", "name": "CAS500-4 (차세대중형위성 4호)", "properties": { "operator": "KARI", "country": "KR", "orbit_type": "SSO", "resolution_m": 5.0, "sensor_types": ["optical_multispectral"], "swath_km": 120, "mission_status": "pre-launch", "launch_date": "2026-05-03", "notes": "wide-area EO for crops/agriculture/forest" }, "first_seen": "2026-05-01", "last_seen": "2026-05-01", "mention_count": 2 },
+    { "id": "sat-cas500-2", "type": "Satellite", "name": "CAS500-2 (차세대중형위성 2호)", "properties": { "operator": "KARI", "country": "KR", "orbit_type": "SSO", "resolution_m": 0.5, "sensor_types": ["optical_pan", "optical_multispectral"], "mission_status": "operational", "launch_date": "2026-05-03" }, "first_seen": "2026-05-01", "last_seen": "2026-05-03", "mention_count": 6 },
+    { "id": "sat-cas500-4", "type": "Satellite", "name": "CAS500-4 (차세대중형위성 4호)", "properties": { "operator": "KARI", "country": "KR", "orbit_type": "SSO", "resolution_m": 5.0, "sensor_types": ["optical_multispectral"], "swath_km": 120, "mission_status": "operational", "launch_date": "2026-05-03", "notes": "wide-area EO for crops/agriculture/forest" }, "first_seen": "2026-05-01", "last_seen": "2026-05-03", "mention_count": 6 },
 
     { "id": "org-mizarvision", "type": "Organization", "name": "MizarVision (密匝视觉)", "properties": { "org_type": "commercial_imagery", "country": "CN", "notes": "Shanghai-based geospatial AI startup; partial state ownership" }, "first_seen": "2026-05-01", "last_seen": "2026-05-01", "mention_count": 4 },
     { "id": "org-vantor", "type": "Organization", "name": "Vantor (formerly Maxar Intelligence)", "properties": { "org_type": "commercial_imagery", "country": "US" }, "first_seen": "2026-05-01", "last_seen": "2026-05-01", "mention_count": 3 },
@@ -205,7 +205,21 @@
     { "id": "co-gt", "type": "Country", "name": "과테말라", "properties": { "iso_code": "GT", "region": "중미" }, "first_seen": "2026-05-02", "last_seen": "2026-05-02", "mention_count": 1 },
 
     { "id": "ent-loc-017", "type": "Location", "name": "Baining Mountains, East New Britain, PNG", "properties": { "country": "PG", "region": "East New Britain", "lat": -4.48, "lon": 151.81 }, "first_seen": "2026-05-02", "last_seen": "2026-05-02", "mention_count": 1 },
-    { "id": "ent-loc-018", "type": "Location", "name": "Niscemi, Sicily, Italy", "properties": { "country": "IT", "region": "Sicily", "lat": 37.15, "lon": 14.39 }, "first_seen": "2026-05-02", "last_seen": "2026-05-02", "mention_count": 1 }
+    { "id": "ent-loc-018", "type": "Location", "name": "Niscemi, Sicily, Italy", "properties": { "country": "IT", "region": "Sicily", "lat": 37.15, "lon": 14.39 }, "first_seen": "2026-05-02", "last_seen": "2026-05-02", "mention_count": 1 },
+
+    { "id": "ent-evt-050", "type": "Event", "name": "Great Sitkin 화산 용암돔 성장 — 위성 열이상 (Alaska)", "properties": { "phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "US", "lat": 52.076, "lon": -176.131, "observation_date": "2026-05-03", "severity": "medium" }, "first_seen": "2026-05-03", "last_seen": "2026-05-03", "mention_count": 1 },
+    { "id": "ent-evt-051", "type": "Event", "name": "Krasheninnikov 화산 용암류 — 위성 일별 열이상 (Kamchatka)", "properties": { "phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "RU", "lat": 54.593, "lon": 160.273, "observation_date": "2026-04-29", "severity": "medium" }, "first_seen": "2026-05-03", "last_seen": "2026-05-03", "mention_count": 1 },
+    { "id": "ent-evt-053", "type": "Event", "name": "MethaneSAT 글로벌 석유·가스 메탄 배출 평가 — EPA 추정치 4배 초과", "properties": { "phenomenon": "methane_plume", "domain": "ClimateEnvironment", "country": "INTL", "lat": 32.0, "lon": -102.0, "observation_date": "2026-02-06", "severity": "high", "satellites_used": ["MethaneSAT"] }, "first_seen": "2026-05-03", "last_seen": "2026-05-03", "mention_count": 3 },
+    { "id": "ent-evt-054", "type": "Event", "name": "아마존 보호구역 불법 금 채굴 6,000ha — Sentinel-2 AI 탐지", "properties": { "phenomenon": "mining", "domain": "HumanActivity", "country": "BR", "lat": -3.0, "lon": -60.0, "observation_date": "2026-04-24", "severity": "high", "area_km2": 60, "satellites_used": ["Sentinel-2A"] }, "first_seen": "2026-05-03", "last_seen": "2026-05-03", "mention_count": 2 },
+    { "id": "ent-evt-055", "type": "Event", "name": "브라질 DETER 위성 삼림벌채 감시 금지 법안 — 아마존 보전 위협", "properties": { "phenomenon": "deforestation", "domain": "HumanActivity", "country": "BR", "lat": -3.0, "lon": -60.0, "observation_date": "2026-04-30", "severity": "high" }, "first_seen": "2026-05-03", "last_seen": "2026-05-03", "mention_count": 1 },
+    { "id": "ent-evt-056", "type": "Event", "name": "SkyTruth Cerulean 준실시간 유류 오염 탐지 업그레이드", "properties": { "phenomenon": "oil_spill", "domain": "HumanActivity", "country": "INTL", "lat": 0.0, "lon": 0.0, "observation_date": "2026-03", "severity": "medium", "satellites_used": ["Sentinel-1A"] }, "first_seen": "2026-05-03", "last_seen": "2026-05-03", "mention_count": 1 },
+
+    { "id": "ent-loc-019", "type": "Location", "name": "Great Sitkin Island, Alaska", "properties": { "country": "US", "region": "Aleutian Islands", "lat": 52.076, "lon": -176.131 }, "first_seen": "2026-05-03", "last_seen": "2026-05-03", "mention_count": 1 },
+    { "id": "ent-loc-020", "type": "Location", "name": "Krasheninnikov Volcano, Kamchatka", "properties": { "country": "RU", "region": "Kamchatka Krai", "lat": 54.593, "lon": 160.273 }, "first_seen": "2026-05-03", "last_seen": "2026-05-03", "mention_count": 1 },
+
+    { "id": "org-edf", "type": "Organization", "name": "Environmental Defense Fund (EDF)", "properties": { "org_type": "ngo", "country": "US" }, "first_seen": "2026-05-03", "last_seen": "2026-05-03", "mention_count": 3 },
+    { "id": "org-inpe", "type": "Organization", "name": "INPE (Brazilian National Institute for Space Research)", "properties": { "org_type": "space_agency", "country": "BR" }, "first_seen": "2026-05-03", "last_seen": "2026-05-03", "mention_count": 1 },
+    { "id": "org-amw", "type": "Organization", "name": "Amazon Mining Watch / Pulitzer Center", "properties": { "org_type": "ngo", "country": "INTL" }, "first_seen": "2026-05-03", "last_seen": "2026-05-03", "mention_count": 2 }
   ],
-  "total_count": 196
+  "total_count": 207
 }

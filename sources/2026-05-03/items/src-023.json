@@ -1,0 +1,20 @@
+{
+  "id": "src-023",
+  "title": "Earth Index — satellite search engine for deforestation/mining opens to public",
+  "url": "https://news.mongabay.com/short-article/2026/04/a-search-engine-for-the-planet-opens-to-the-public/",
+  "snippet": "Earth Index, a new search engine for satellite imagery, allows users to scan imagery by visual similarity. Users highlight examples (deforestation patches, mining sites) and find comparable patterns elsewhere. Opens to public in April 2026.",
+  "source_name": "Mongabay",
+  "language": "en",
+  "discovered_date": "2026-05-03",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규: Earth Index 위성영상 검색엔진 공개. 이전 보고서에 관련 항목 없음.",
+  "entities": [
+    {"id": "temp-evt-057", "type": "Event", "name": "Earth Index 위성영상 검색엔진 공개 — 삼림벌채·채굴 패턴 탐색", "properties": {"phenomenon": "deforestation", "domain": "HumanActivity", "country": "INTL", "lat": 0.0, "lon": 0.0, "observation_date": "2026-04", "severity": "low"}}
+  ],
+  "relations": [
+    {"subject": "temp-evt-057", "predicate": "manifests", "object": "phen-defor"},
+    {"subject": "temp-evt-057", "predicate": "inDomain", "object": "dom-human"}
+  ]
+}

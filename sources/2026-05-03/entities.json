@@ -1,0 +1,30 @@
+{
+  "date": "2026-05-03",
+  "entities": [
+    {"temp_id": "temp-evt-047", "matched_id": "ent-evt-032", "type": "Event", "name": "CAS500-2/4 Falcon 9 발사 성공 (2026-05-03)", "properties": {"phenomenon": "construction", "domain": "AgricultureMaritime", "country": "KR", "lat": 34.7, "lon": -120.6}, "source_ids": ["src-001", "src-002", "src-003", "src-022"], "mention_count": 4},
+    {"temp_id": "temp-evt-048", "matched_id": "ent-evt-021", "type": "Event", "name": "Kīlauea Episode 46 예보 (May 4-7, 2026)", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "US", "lat": 19.421, "lon": -155.287}, "source_ids": ["src-004"], "mention_count": 1},
+    {"temp_id": "temp-evt-049", "matched_id": "ent-evt-029", "type": "Event", "name": "Mayon 화산 5월 2일 분출 — Himawari-9 VAAC 권고", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "PH", "lat": 13.257, "lon": 123.685}, "source_ids": ["src-005"], "mention_count": 1},
+    {"temp_id": "temp-evt-050", "matched_id": null, "type": "Event", "name": "Great Sitkin 화산 용암돔 성장 — 위성 열이상 (Alaska)", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "US", "lat": 52.076, "lon": -176.131}, "source_ids": ["src-006"], "mention_count": 1},
+    {"temp_id": "temp-evt-051", "matched_id": null, "type": "Event", "name": "Krasheninnikov 화산 용암류 — 위성 일별 열이상 (Kamchatka)", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "RU", "lat": 54.593, "lon": 160.273}, "source_ids": ["src-007"], "mention_count": 1},
+    {"temp_id": "temp-evt-052", "matched_id": "ent-evt-020", "type": "Event", "name": "조지아 산불 진행 상황 갱신 (2026-05-03)", "properties": {"phenomenon": "wildfire", "domain": "Disaster", "country": "US", "lat": 31.2, "lon": -82.3}, "source_ids": ["src-008", "src-020", "src-021"], "mention_count": 3},
+    {"temp_id": "temp-evt-053", "matched_id": null, "type": "Event", "name": "MethaneSAT 글로벌 석유·가스 메탄 배출 평가 — EPA 추정치 4배 초과", "properties": {"phenomenon": "methane_plume", "domain": "ClimateEnvironment", "country": "INTL", "lat": 32.0, "lon": -102.0}, "source_ids": ["src-009", "src-010", "src-025"], "mention_count": 3},
+    {"temp_id": "temp-evt-054", "matched_id": null, "type": "Event", "name": "아마존 보호구역 불법 금 채굴 6,000ha — Sentinel-2 AI 탐지", "properties": {"phenomenon": "mining", "domain": "HumanActivity", "country": "BR", "lat": -3.0, "lon": -60.0}, "source_ids": ["src-011", "src-012"], "mention_count": 2},
+    {"temp_id": "temp-evt-055", "matched_id": null, "type": "Event", "name": "브라질 DETER 위성 삼림벌채 감시 금지 법안 — 아마존 보전 위협", "properties": {"phenomenon": "deforestation", "domain": "HumanActivity", "country": "BR", "lat": -3.0, "lon": -60.0}, "source_ids": ["src-013"], "mention_count": 1},
+    {"temp_id": "temp-evt-056", "matched_id": null, "type": "Event", "name": "SkyTruth Cerulean 준실시간 유류 오염 탐지 업그레이드", "properties": {"phenomenon": "oil_spill", "domain": "HumanActivity", "country": "INTL", "lat": 0.0, "lon": 0.0}, "source_ids": ["src-014"], "mention_count": 1},
+    {"temp_id": "temp-evt-057", "matched_id": null, "type": "Event", "name": "Earth Index 위성영상 검색엔진 공개", "properties": {"phenomenon": "deforestation", "domain": "HumanActivity", "country": "INTL", "lat": 0.0, "lon": 0.0}, "source_ids": ["src-023"], "mention_count": 1}
+  ],
+  "relations": [
+    {"subject": "temp-evt-047", "predicate": "observedBy", "object": "sat-cas500-2", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "temp-evt-049", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-005"], "confidence": 0.90},
+    {"subject": "temp-evt-052", "predicate": "observedBy", "object": "sat-landsat8", "source_ids": ["src-008"], "confidence": 0.95},
+    {"subject": "temp-evt-053", "predicate": "observedBy", "object": "sat-methanesat", "source_ids": ["src-009"], "confidence": 0.95},
+    {"subject": "temp-evt-054", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-011"], "confidence": 0.90},
+    {"subject": "temp-evt-056", "predicate": "observedBy", "object": "sat-sentinel1a", "source_ids": ["src-014"], "confidence": 0.90}
+  ],
+  "stats": {
+    "total_entities": 11,
+    "new_entities": 7,
+    "matched_entities": 4,
+    "total_relations": 6
+  }
+}

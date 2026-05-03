@@ -1,0 +1,24 @@
+{
+  "id": "src-013",
+  "title": "Brazil bill aims to ban satellite tool (DETER) used to slow Amazon deforestation",
+  "url": "https://news.mongabay.com/2026/04/brazil-bill-aims-to-ban-satellite-tool-used-to-slow-amazon-deforestation/",
+  "snippet": "Brazilian agribusiness caucus accelerating bill to ban remote embargoes (satellite-based deforestation enforcement). IBAMA uses INPE's DETER system (near-real-time satellite imagery) to identify illegal deforestation and issue ~4,000 embargoes/year (~500,000ha). Ban could reverse system that halved Amazon deforestation under Lula administration.",
+  "source_name": "Mongabay",
+  "language": "en",
+  "discovered_date": "2026-05-03",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규: 브라질 위성 삼림벌채 감시 시스템 금지 법안. 위성 기반 환경 거버넌스에 대한 중대한 정책 변화. 이전 보고서에 관련 항목 없음.",
+  "entities": [
+    {"id": "temp-evt-055", "type": "Event", "name": "브라질 DETER 위성 삼림벌채 감시 금지 법안 — 아마존 보전 위협", "properties": {"phenomenon": "deforestation", "domain": "HumanActivity", "country": "BR", "lat": -3.0, "lon": -60.0, "observation_date": "2026-04-30", "severity": "high"}},
+    {"id": "temp-org-inpe", "type": "Organization", "name": "INPE (Brazilian National Institute for Space Research)", "properties": {"org_type": "space_agency", "country": "BR"}},
+    {"id": "co-br", "type": "Country", "name": "브라질"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-055", "predicate": "analyzedBy", "object": "temp-org-inpe"},
+    {"subject": "temp-evt-055", "predicate": "manifests", "object": "phen-defor"},
+    {"subject": "temp-evt-055", "predicate": "inDomain", "object": "dom-human"},
+    {"subject": "temp-evt-055", "predicate": "inCountry", "object": "co-br"}
+  ]
+}

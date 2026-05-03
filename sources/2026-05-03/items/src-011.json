@@ -1,0 +1,26 @@
+{
+  "id": "src-011",
+  "title": "Amazon Mining Watch AI tracks illegal gold mining — 6,000ha new scars in protected areas",
+  "url": "https://news.mongabay.com/2026/04/ai-tool-tracks-spread-of-illegal-gold-mining-in-amazon-protected-areas/",
+  "snippet": "Amazon Mining Watch uses Sentinel-2 10m imagery + AI (99.2% accuracy) to detect mining scars. 6,000ha new mining scars in protected areas/Indigenous territories in Q4 2025. Ecuador Indigenous lands: mining deforestation nearly tripled Aug-Dec 2025. Platform now covers entire Amazon basin. Also expanding to Africa (Africa Mining Watch).",
+  "source_name": "Mongabay",
+  "language": "en",
+  "discovered_date": "2026-05-03",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규: Amazon Mining Watch AI 플랫폼의 아마존 전역 불법 채굴 탐지 결과. 이전 보고서에 관련 항목 없음. Sentinel-2 위성 데이터 기반.",
+  "entities": [
+    {"id": "temp-evt-054", "type": "Event", "name": "아마존 보호구역 불법 금 채굴 6,000ha — Sentinel-2 AI 탐지", "properties": {"phenomenon": "mining", "domain": "HumanActivity", "country": "BR", "lat": -3.0, "lon": -60.0, "observation_date": "2026-04-24", "severity": "high", "area_km2": 60, "satellites_used": ["Sentinel-2A"], "sensors_used": ["MSI"]}},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "temp-org-amw", "type": "Organization", "name": "Amazon Mining Watch / Pulitzer Center", "properties": {"org_type": "ngo", "country": "INTL"}}
+  ],
+  "relations": [
+    {"subject": "temp-evt-054", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "temp-evt-054", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "temp-evt-054", "predicate": "analyzedBy", "object": "temp-org-amw"},
+    {"subject": "temp-evt-054", "predicate": "manifests", "object": "phen-mining"},
+    {"subject": "temp-evt-054", "predicate": "inDomain", "object": "dom-human"},
+    {"subject": "temp-evt-054", "predicate": "inCountry", "object": "co-br"}
+  ]
+}
