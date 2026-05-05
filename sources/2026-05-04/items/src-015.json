@@ -1,0 +1,24 @@
+{
+  "id": "src-015",
+  "title": "MethaneSAT Permian Basin — Senate investigation into methane mismatch",
+  "url": "https://insideclimatenews.org/news/19032026/senator-whitehouse-permian-basin-methane-pollution-investigation/",
+  "snippet": "Senator Whitehouse launches investigation into alarming mismatch between reported methane emissions and actual emissions in Permian Basin. MethaneSAT data shows observed methane 410 metric tons/hour vs EPA reported 104 mt/hr — 4× higher. Investigation targets EPA's reliance on industry-reported data.",
+  "source_name": "Inside Climate News",
+  "language": "en",
+  "discovered_date": "2026-05-04",
+  "tag": "new",
+  "related_report": null,
+  "tag_reason": "MethaneSAT 데이터 기반 미 상원 조사 개시는 신규 — 이전 보고서의 MethaneSAT 평가(src-009)와 관련되나 정책적 파급 효과가 새로운 이벤트.",
+  "entities": [
+    {"id": "ent-evt-066", "type": "Event", "name": "MethaneSAT Permian Basin 메탄 격차 — 미 상원 조사 개시", "properties": {"phenomenon": "methane_plume", "lat": 32.0, "lon": -102.0, "country": "US", "severity": "high"}},
+    {"id": "sat-methanesat", "type": "Satellite", "name": "MethaneSAT"},
+    {"id": "org-edf", "type": "Organization", "name": "Environmental Defense Fund (EDF)"},
+    {"id": "co-us", "type": "Country", "name": "미국"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-066", "predicate": "observedBy", "object": "sat-methanesat"},
+    {"subject": "ent-evt-066", "predicate": "manifests", "object": "phen-methane"},
+    {"subject": "ent-evt-066", "predicate": "analyzedBy", "object": "org-edf"},
+    {"subject": "ent-evt-066", "predicate": "inCountry", "object": "co-us"}
+  ]
+}

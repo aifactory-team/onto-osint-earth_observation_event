@@ -1,0 +1,33 @@
+{
+  "date": "2026-05-04",
+  "collected_at": "2026-05-04T23:00:00Z",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 18,
+  "total_results": 112,
+  "expanded_keywords": [
+    "CAS500-2 first images", "Kilauea episode 46", "Georgia wildfire satellite",
+    "MethaneSAT Permian", "Mayon volcano eruption", "KOMPSAT 한반도",
+    "Yongbyon satellite", "Lebanon satellite imagery CNN", "Gaza military sites satellite",
+    "Planet Labs Iran blackout", "Lop Nur expansion satellite"
+  ],
+  "searches": [
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery wildfire May 2026", "language": "en", "timestamp": "2026-05-04T23:00:01Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery flood May 2026", "language": "en", "timestamp": "2026-05-04T23:00:02Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery volcano eruption May 2026", "language": "en", "timestamp": "2026-05-04T23:00:03Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Copernicus EMS activation May 2026", "language": "en", "timestamp": "2026-05-04T23:00:04Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery deforestation mining 2026", "language": "en", "timestamp": "2026-05-04T23:00:05Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery military buildup 2026", "language": "en", "timestamp": "2026-05-04T23:00:06Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Sentinel-5P methane plume satellite detection May 2026", "language": "en", "timestamp": "2026-05-04T23:00:07Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "KOMPSAT 위성영상 한반도 2026년 5월", "language": "ko", "timestamp": "2026-05-04T23:00:08Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "위성영상 산불 홍수 재해 2026년 5월", "language": "ko", "timestamp": "2026-05-04T23:00:09Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery glacier retreat sea level 2026", "language": "en", "timestamp": "2026-05-04T23:00:10Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite NDVI crop agriculture monitoring May 2026", "language": "en", "timestamp": "2026-05-04T23:00:11Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "UNOSAT satellite humanitarian crisis 2026", "language": "en", "timestamp": "2026-05-04T23:00:12Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Kilauea volcano eruption episode 46 May 4 2026", "language": "en", "timestamp": "2026-05-04T23:01:01Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Georgia wildfire satellite May 4 2026", "language": "en", "timestamp": "2026-05-04T23:01:02Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Israel Gaza satellite imagery expansion May 2026", "language": "en", "timestamp": "2026-05-04T23:01:03Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Mayon volcano eruption satellite May 2026", "language": "en", "timestamp": "2026-05-04T23:01:04Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "North Korea satellite imagery DPRK military May 2026", "language": "en", "timestamp": "2026-05-04T23:01:05Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "MethaneSAT oil gas emissions EPA four times higher 2026", "language": "en", "timestamp": "2026-05-04T23:01:06Z", "result_count": 10}
+  ]
+}

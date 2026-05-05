@@ -316,3 +316,64 @@ config 한도 내 — 새 클래스 0건, 새 관계 유형 0건.
 | 새 Location | ent-loc-017 (Baining Mts), ent-loc-018 (Niscemi) (2건) | 신규 위치 |
 
 config 한도 내 — �� 클래스 0건, 새 관��� 유형 0건.
+
+---
+
+## 2026-05-04 추론 결과
+
+### multi_satellite_confirmation (다중 위성 교차검증) — 2건
+
+- **추론 #1:** ent-evt-059 (가자 군사 시설 확장) — observedBy PlanetScope (Planet) AND Sentinel-2A (ESA) → multiSatBoost +0.20 [confidence 0.90, 확정] — 독립 운영자 2개(Planet/ESA) 광학 교차검증
+- **추론 #2:** ent-evt-068 (그린란드 빙하 후퇴) — observedBy Landsat 8 (USGS/NASA) AND Sentinel-2A (ESA) → multiSatBoost +0.20 [0.82, 확정] — 100년 역사적 사진 + 현대 위성 비교
+
+### sensor_capability_match (센서-현상 적합성) — 1건
+
+- **trace_gas × methane:** ent-evt-066 (MethaneSAT Permian Basin) — usesSensor trace_gas + phenomenon methane_plume → tracegasBoost +0.15 [0.95, 확정] — MethaneSAT 전용 메탄 관측 100m 해상도
+
+### official_source_trust (공식 기관 신뢰도) — 2건
+
+- ent-evt-004 (Kīlauea Ep.46 예보) — analyzedBy USGS HVO (space_agency) → officialBoost +0.15 [0.99, 확정]
+- ent-evt-020 (조지아 산불) — analyzedBy NASA EO (space_agency) → officialBoost +0.15 [0.95, 확정]
+
+### korea_geo_focus (한반도 가산) — 1건
+
+- ent-evt-001 (영변 핵단지 활동 증가) — inCountry KP → koreaBoost +0.10 [0.99, 확정]
+
+### temporal_progression (시계열 연결) — 2건
+
+- **추론 #3:** ent-evt-004 update (Kīlauea Ep.46) → partOfSeries ent-evt-021 (Ep.45) — 동일 위치(Halemaʻumaʻu), 동일 현상(volcanic_eruption), 에피소드 연속 [0.95, 확정]
+- **추론 #4:** ent-evt-029 update (Mayon 5/2 PDC) → partOfSeries ent-evt-029 — 2026-01 이후 지속 분출 시계열 [0.90, 확정]
+
+### before_after_credibility (전후 비교 신뢰도) — 3건
+
+- ent-evt-020 (조지아 산불) — Landsat 8 false-color burned area 전후 비교 → baCredibilityBoost +0.10 [0.95, 확정]
+- ent-evt-028 (레바논 파괴) — Airbus 위성 전후 비교 (523건 건물 파괴 정량) → baCredibilityBoost +0.10 [0.95, 확정]
+- ent-evt-068 (그린란드 빙하) — 100년 사진 + 현대 위성 전후 비교 → baCredibilityBoost +0.10 [0.85, 확정]
+
+### 금일 미적용 규칙
+
+- `cascading_disaster`: 금일 신규 재해 사슬 없음.
+- `disaster_severity_priority`: 신규 고위험 재해 이벤트 없음 (Kīlauea/조지아/Mayon 모두 이전 이벤트 업데이트).
+
+### 추론 통계 (2026-05-04)
+
+| 규칙 | 추가 건수 | 누적 건수 | 평균 신뢰도 |
+|------|-----------|-----------|-------------|
+| multi_satellite_confirmation | 2 | 20 | 0.87 |
+| sensor_capability_match | 1 | 27 | 0.89 |
+| official_source_trust | 2 | 15 | 0.93 |
+| korea_geo_focus | 1 | 11 | 0.91 |
+| temporal_progression | 2 | 6 | 0.92 |
+| before_after_credibility | 3 | 22 | 0.89 |
+| **합계** | **11** | **101+** | **0.90** |
+
+### 온톨로지 변경
+
+| 변경 유형 | 대상 | 근거 |
+|----------|------|------|
+| 새 Country | co-sa (사우디아라비아), co-gl (그린란드) (2건) | 미군 집결 + 빙하 후퇴 |
+| 새 Location | ent-loc-021~024 (4건) | Lop Nur, Bint Jbeil, Prince Sultan AB, Permian Basin |
+| 새 Event | ent-evt-059/062/063/064/066/068 (6건) | 신규 이벤트 |
+| 이벤트 업데이트 | ent-evt-001/004/020/028/029 (5건) | 후속 보도 반영 |
+
+config 한도 내 — 새 클래스 0건, 새 관계 유형 0건.

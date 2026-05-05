@@ -1,0 +1,23 @@
+{
+  "id": "src-003",
+  "title": "Georgia wildfires satellite images reveal destruction — Newsweek",
+  "url": "https://www.newsweek.com/satellite-images-destruction-georgia-wildfires-11898158",
+  "snippet": "Satellite images captured by Landsat 8 show charred forests and residential areas. Hwy 82 Fire 22,471ac 75% contained, Pineland Road Fire 32,575ac 44% contained as of May 4. False color imagery shows burned areas gray, vegetated green, and active fire fronts orange.",
+  "source_name": "Newsweek",
+  "language": "en",
+  "discovered_date": "2026-05-04",
+  "tag": "update",
+  "related_report": "2026-05-03/src-008",
+  "tag_reason": "조지아 산불 후속 — containment 수치 업데이트 (Hwy 82: 64%→75%). Newsweek 위성 이미지 분석 추가.",
+  "entities": [
+    {"id": "ent-evt-020", "type": "Event", "name": "조지아 남부 산불 (Brantley/Clinch County)", "properties": {"phenomenon": "wildfire", "lat": 31.2, "lon": -82.3, "country": "US", "severity": "high", "area_acres": 55046}},
+    {"id": "sat-landsat8", "type": "Satellite", "name": "Landsat 8"},
+    {"id": "sensor-oli", "type": "Sensor", "name": "OLI"},
+    {"id": "org-nasa", "type": "Organization", "name": "NASA"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-020", "predicate": "observedBy", "object": "sat-landsat8"},
+    {"subject": "ent-evt-020", "predicate": "usesSensor", "object": "sensor-oli"},
+    {"subject": "ent-evt-020", "predicate": "manifests", "object": "phen-wildfire"}
+  ]
+}

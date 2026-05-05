@@ -1,0 +1,22 @@
+{
+  "id": "src-020",
+  "title": "Satellite data and 100-year-old images reveal quickening Greenland glacier retreat",
+  "url": "https://www.space.com/greenland-glaciers-retreat-rate-doubled",
+  "snippet": "Rate of retreat for Greenland's peripheral glaciers has doubled in last 20 years. Peripheral glaciers represent 4% of Greenland's total ice-covered area but contribute 14% of island's current ice loss. Globally, all glaciers contribute roughly 21% of observed sea level rise over last two decades.",
+  "source_name": "Space.com",
+  "language": "en",
+  "discovered_date": "2026-05-04",
+  "tag": "new",
+  "related_report": null,
+  "tag_reason": "그린란드 주변 빙하 후퇴율 2배 가속 연구는 신규 — 이전 남극 빙하 보도(ent-evt-042)와 다른 지역·연구.",
+  "entities": [
+    {"id": "ent-evt-068", "type": "Event", "name": "그린란드 주변 빙하 후퇴율 20년간 2배 가속", "properties": {"phenomenon": "glacier_retreat", "lat": 72.0, "lon": -40.0, "country": "GL", "severity": "high", "before_after_available": true}},
+    {"id": "sat-landsat8", "type": "Satellite", "name": "Landsat 8"},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-068", "predicate": "observedBy", "object": "sat-landsat8"},
+    {"subject": "ent-evt-068", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-068", "predicate": "manifests", "object": "phen-glacier"}
+  ]
+}

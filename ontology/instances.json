@@ -1,7 +1,7 @@
 {
   "version": "1.1.0",
   "description": "알려진 엔티티 인스턴스 — 파이프라인 실행 시 자동으로 추가/업데이트된다. 도메인: 위성영상 관측 이벤트.",
-  "last_updated": "2026-05-03",
+  "last_updated": "2026-05-04",
   "entities": [
     { "id": "dom-disaster", "type": "Domain", "name": "Disaster", "properties": { "label": "자연재해" }, "first_seen": "2026-04-30", "last_seen": "2026-04-30", "mention_count": 12 },
     { "id": "dom-human", "type": "Domain", "name": "HumanActivity", "properties": { "label": "인간활동" }, "first_seen": "2026-04-30", "last_seen": "2026-04-30", "mention_count": 2 },
@@ -219,7 +219,22 @@
 
     { "id": "org-edf", "type": "Organization", "name": "Environmental Defense Fund (EDF)", "properties": { "org_type": "ngo", "country": "US" }, "first_seen": "2026-05-03", "last_seen": "2026-05-03", "mention_count": 3 },
     { "id": "org-inpe", "type": "Organization", "name": "INPE (Brazilian National Institute for Space Research)", "properties": { "org_type": "space_agency", "country": "BR" }, "first_seen": "2026-05-03", "last_seen": "2026-05-03", "mention_count": 1 },
-    { "id": "org-amw", "type": "Organization", "name": "Amazon Mining Watch / Pulitzer Center", "properties": { "org_type": "ngo", "country": "INTL" }, "first_seen": "2026-05-03", "last_seen": "2026-05-03", "mention_count": 2 }
+    { "id": "org-amw", "type": "Organization", "name": "Amazon Mining Watch / Pulitzer Center", "properties": { "org_type": "ngo", "country": "INTL" }, "first_seen": "2026-05-03", "last_seen": "2026-05-03", "mention_count": 2 },
+
+    { "id": "co-sa", "type": "Country", "name": "사우디아라비아", "properties": { "iso_code": "SA", "region": "서아시아" }, "first_seen": "2026-05-04", "last_seen": "2026-05-04", "mention_count": 1 },
+    { "id": "co-gl", "type": "Country", "name": "그린란드", "properties": { "iso_code": "GL", "region": "북극" }, "first_seen": "2026-05-04", "last_seen": "2026-05-04", "mention_count": 1 },
+
+    { "id": "ent-loc-021", "type": "Location", "name": "Lop Nur Test Base, Xinjiang", "properties": { "country": "CN", "region": "Xinjiang", "lat": 40.0, "lon": 90.0 }, "first_seen": "2026-05-04", "last_seen": "2026-05-04", "mention_count": 1 },
+    { "id": "ent-loc-022", "type": "Location", "name": "Bint Jbeil, Lebanon", "properties": { "country": "LB", "region": "Nabatieh", "lat": 33.12, "lon": 35.43 }, "first_seen": "2026-05-04", "last_seen": "2026-05-04", "mention_count": 1 },
+    { "id": "ent-loc-023", "type": "Location", "name": "Prince Sultan Air Base, Saudi Arabia", "properties": { "country": "SA", "region": "Al-Kharj", "lat": 24.1, "lon": 47.6 }, "first_seen": "2026-05-04", "last_seen": "2026-05-04", "mention_count": 1 },
+    { "id": "ent-loc-024", "type": "Location", "name": "Permian Basin, Texas/New Mexico", "properties": { "country": "US", "region": "Texas/New Mexico", "lat": 32.0, "lon": -102.0 }, "first_seen": "2026-05-04", "last_seen": "2026-05-04", "mention_count": 1 },
+
+    { "id": "ent-evt-059", "type": "Event", "name": "이스라엘 가자 군사 시설 확장 — Planet/Sentinel 다중위성 확인", "properties": { "phenomenon": "military_buildup", "domain": "Defense", "country": "PS", "lat": 31.3, "lon": 34.3, "observation_date": "2026-04-19", "severity": "high", "before_after_available": true, "satellites_used": ["PlanetScope", "Sentinel-2A"] }, "first_seen": "2026-05-04", "last_seen": "2026-05-04", "mention_count": 1 },
+    { "id": "ent-evt-062", "type": "Event", "name": "중국 Lop Nur 군사기지 확장 — 60,000 sq ft 격납고 + J-36 시험", "properties": { "phenomenon": "military_buildup", "domain": "Defense", "country": "CN", "lat": 40.0, "lon": 90.0, "observation_date": "2026-02", "severity": "high", "before_after_available": true }, "first_seen": "2026-05-04", "last_seen": "2026-05-04", "mention_count": 1 },
+    { "id": "ent-evt-063", "type": "Event", "name": "미국 군사력 이란 인근 집결 — 중국 위성 추적 (Prince Sultan AB)", "properties": { "phenomenon": "military_buildup", "domain": "Defense", "country": "SA", "lat": 24.1, "lon": 47.6, "observation_date": "2026-02", "severity": "high", "satellites_used": ["GaoFen series"] }, "first_seen": "2026-05-04", "last_seen": "2026-05-04", "mention_count": 1 },
+    { "id": "ent-evt-064", "type": "Event", "name": "Planet Labs 이란/중동 위성영상 무기한 배포 중단", "properties": { "phenomenon": "military_buildup", "domain": "Defense", "country": "INTL", "lat": 32.0, "lon": 53.0, "observation_date": "2026-04-05", "severity": "medium" }, "first_seen": "2026-05-04", "last_seen": "2026-05-04", "mention_count": 2 },
+    { "id": "ent-evt-066", "type": "Event", "name": "MethaneSAT Permian Basin 메탄 격차 — 미 상원 조사 개시", "properties": { "phenomenon": "methane_plume", "domain": "ClimateEnvironment", "country": "US", "lat": 32.0, "lon": -102.0, "observation_date": "2026-03-19", "severity": "high", "satellites_used": ["MethaneSAT"] }, "first_seen": "2026-05-04", "last_seen": "2026-05-04", "mention_count": 1 },
+    { "id": "ent-evt-068", "type": "Event", "name": "그린란드 주변 빙하 후퇴율 20년간 2배 가속 — 위성 분석", "properties": { "phenomenon": "glacier_retreat", "domain": "ClimateEnvironment", "country": "GL", "lat": 72.0, "lon": -40.0, "observation_date": "2026-05", "severity": "high", "before_after_available": true, "satellites_used": ["Landsat 8", "Sentinel-2A"] }, "first_seen": "2026-05-04", "last_seen": "2026-05-04", "mention_count": 1 }
   ],
-  "total_count": 207
+  "total_count": 220
 }

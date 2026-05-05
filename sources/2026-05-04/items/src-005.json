@@ -1,0 +1,25 @@
+{
+  "id": "src-005",
+  "title": "Satellite images reveal Israel expanding Gaza military sites — Al Jazeera (Planet/Sentinel)",
+  "url": "https://www.aljazeera.com/news/2026/4/19/satellite-images-reveal-israel-expanding-gaza-military-sites",
+  "snippet": "Al Jazeera Digital Investigations Unit examination of Planet Labs and Sentinel Hub satellite imagery reveals Israeli military fortifications expanding at relentless pace across Gaza, particularly in Rafah. In central Gaza, Sentinel imagery from March 15 showed ongoing trench and dirt berm reaching Maghazi camp. In Juhor ad-Dik, new roads link established military sites to newly levelled areas. 48 Israeli military sites identified by Forensic Architecture, 13 built after October ceasefire.",
+  "source_name": "Al Jazeera",
+  "language": "en",
+  "discovered_date": "2026-05-04",
+  "tag": "new",
+  "related_report": null,
+  "tag_reason": "이전 보고서에 가자지구 피해 평가(UNOSAT)는 있었으나, 이스라엘 군사 시설 확장에 대한 Planet/Sentinel 분석은 신규.",
+  "entities": [
+    {"id": "ent-evt-059", "type": "Event", "name": "이스라엘 가자 군사 시설 확장 (Planet/Sentinel 확인)", "properties": {"phenomenon": "military_buildup", "lat": 31.3, "lon": 34.3, "country": "PS", "severity": "high", "before_after_available": true}},
+    {"id": "sat-planetscope", "type": "Satellite", "name": "PlanetScope (Doves)"},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "org-planet", "type": "Organization", "name": "Planet Labs"},
+    {"id": "co-ps", "type": "Country", "name": "팔레스타인"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-059", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "ent-evt-059", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-059", "predicate": "manifests", "object": "phen-military"},
+    {"subject": "ent-evt-059", "predicate": "inCountry", "object": "co-ps"}
+  ]
+}

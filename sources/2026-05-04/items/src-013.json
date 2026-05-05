@@ -1,0 +1,24 @@
+{
+  "id": "src-013",
+  "title": "Satellite imagery reveals increased activity at North Korean Yongbyon nuclear complex — RFA",
+  "url": "https://www.rfa.org/english/korea/2026/04/28/north-korea-satellite-yongbyon-nuclear/",
+  "snippet": "At North Korea's Yongbyon Nuclear Complex, heightened activity observed on satellite imagery. Consistent water discharge from 5 MW reactor throughout 2026 and occasional activity at Radiochemistry Lab (steam generation). Multi-year cycle of increasing nuclear weapons production capacity.",
+  "source_name": "Radio Free Asia",
+  "language": "en",
+  "discovered_date": "2026-05-04",
+  "tag": "update",
+  "related_report": "2026-04-30/ent-evt-001",
+  "tag_reason": "영변 핵단지 활동 후속 — RFA가 2026년 연중 5MW 원자로 가동 지속 및 재처리연구소 활동 확인. 이전 보고서의 신규 건물 완공 관측 후속.",
+  "entities": [
+    {"id": "ent-evt-001", "type": "Event", "name": "영변 핵단지 활동 증가 (5MW 원자로 가동 지속)", "properties": {"phenomenon": "military_buildup", "lat": 39.8, "lon": 125.7, "country": "KP", "severity": "high", "before_after_available": true}},
+    {"id": "co-kp", "type": "Country", "name": "조선민주주의인민공화국"},
+    {"id": "ent-loc-001", "type": "Location", "name": "영변 핵단지"},
+    {"id": "org-rfa", "type": "Organization", "name": "Radio Free Asia"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-001", "predicate": "locatedIn", "object": "ent-loc-001"},
+    {"subject": "ent-evt-001", "predicate": "inCountry", "object": "co-kp"},
+    {"subject": "ent-evt-001", "predicate": "manifests", "object": "phen-military"},
+    {"subject": "ent-evt-001", "predicate": "reportedBy", "object": "org-rfa"}
+  ]
+}

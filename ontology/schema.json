@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "description": "OSINT 온톨로지 스키마 — config/osint-config.json의 seed로부터 초기화되고, 매일 파이프라인 실행 시 자동 확장된다. 도메인: 위성영상으로 관측 가능한 지구상 이벤트 (Earth Observation Events).",
-  "last_updated": "2026-05-03",
+  "last_updated": "2026-05-04",
   "classes": [
     {
       "id": "Entity",
@@ -184,6 +184,20 @@
       "target": "phen-mining",
       "reason": "phen-mining (mining)은 스키마 초기화 시 정의되었으나 이벤트 참조 0건이었음. ent-evt-054 (아마존 불법 금 채굴)에서 첫 이벤트 매핑 발생. mention_count 0→1.",
       "source_ids": ["src-011"]
+    },
+    {
+      "date": "2026-05-04",
+      "action": "add_country",
+      "target": "co-sa, co-gl",
+      "reason": "사우디아라비아(SA) — 미국 군사력 집결 중국 위성 관측(ent-evt-063, Prince Sultan AB). 그린란드(GL) — 주변 빙하 후퇴 2배 가속 연구(ent-evt-068, Landsat+Sentinel-2). 기존 국가 인스턴스에 없던 2개국 추가.",
+      "source_ids": ["src-010", "src-020"]
+    },
+    {
+      "date": "2026-05-04",
+      "action": "add_location",
+      "target": "ent-loc-021, ent-loc-022",
+      "reason": "Lop Nur Test Base (CN, 40.0/90.0) — 중국 군사기지 확장(ent-evt-062). Bint Jbeil (LB, 33.12/35.43) — 레바논 파괴 CNN 분석(ent-evt-028 업데이트).",
+      "source_ids": ["src-009", "src-006"]
     }
   ]
 }

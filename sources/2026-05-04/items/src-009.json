@@ -1,0 +1,21 @@
+{
+  "id": "src-009",
+  "title": "China Lop Nur military expansion — 60,000 sq ft hangar, J-36 testing (satellite imagery)",
+  "url": "https://www.airandspaceforces.com/article/what-satellites-reveal-about-chinas-military-expansion/",
+  "snippet": "Construction activity at Lop Nur base began August 2025. By February 2026, added 60,000 sq ft of hangar space and over 300,000 sq ft of facility space. Construction coincides with 6th-gen J-36 stealth fighter bomber first spotted at the base. Chengdu plant running 5 production lines for J-20, estimated 100-120/year.",
+  "source_name": "Air & Space Forces Magazine",
+  "language": "en",
+  "discovered_date": "2026-05-04",
+  "tag": "new",
+  "related_report": null,
+  "tag_reason": "이전 보고서에 없던 신규 정보 — 중국 Lop Nur 군사기지 위성영상 분석, J-36 시험기 관측.",
+  "entities": [
+    {"id": "ent-evt-062", "type": "Event", "name": "중국 Lop Nur 군사기지 확장 — J-36 시험", "properties": {"phenomenon": "military_buildup", "lat": 40.0, "lon": 90.0, "country": "CN", "severity": "high", "before_after_available": true}},
+    {"id": "co-cn", "type": "Country", "name": "중국"},
+    {"id": "temp-loc-lopnur", "type": "Location", "name": "Lop Nur Test Base, Xinjiang", "properties": {"country": "CN", "lat": 40.0, "lon": 90.0}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-062", "predicate": "manifests", "object": "phen-military"},
+    {"subject": "ent-evt-062", "predicate": "inCountry", "object": "co-cn"}
+  ]
+}

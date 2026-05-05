@@ -1,0 +1,24 @@
+{
+  "id": "src-006",
+  "title": "The Gaza playbook: Satellite images reveal scale of Israeli destruction in Lebanon — CNN (Airbus)",
+  "url": "https://edition.cnn.com/2026/04/24/middleeast/lebanon-destruction-israel-gaza-model-intl-cmd",
+  "snippet": "In the first 10 days of Israel's March offensive, CNN counted 523 buildings destroyed across 22 communities. Hundreds of buildings — mostly homes — flattened or uninhabitable. Satellite imagery from Airbus shows Bint Jbeil center severely damaged. Grey debris patterns suggest burning consistent with demolitions. After April 16 ceasefire announcement, demolitions continued with excavators and armored vehicles visible.",
+  "source_name": "CNN",
+  "language": "en",
+  "discovered_date": "2026-05-04",
+  "tag": "update",
+  "related_report": "2026-04-30/ent-evt-028",
+  "tag_reason": "레바논 인프라 파괴 후속 — CNN이 Airbus 위성영상으로 523건 건물 파괴 정량 분석. 이전 보고서의 일반적 '레바논 인프라 파괴' 대비 구체적 수치 제공.",
+  "entities": [
+    {"id": "ent-evt-028", "type": "Event", "name": "레바논 파괴 규모 위성 분석 — CNN/Airbus", "properties": {"phenomenon": "infrastructure_damage", "lat": 33.1, "lon": 35.4, "country": "LB", "severity": "high", "before_after_available": true, "buildings_destroyed": 523}},
+    {"id": "co-lb", "type": "Country", "name": "레바논"},
+    {"id": "temp-org-airbus", "type": "Organization", "name": "Airbus Defence and Space"},
+    {"id": "temp-org-cnn", "type": "Organization", "name": "CNN"},
+    {"id": "temp-loc-bintjbeil", "type": "Location", "name": "Bint Jbeil, Lebanon", "properties": {"country": "LB", "lat": 33.12, "lon": 35.43}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-028", "predicate": "manifests", "object": "phen-infra-damage"},
+    {"subject": "ent-evt-028", "predicate": "inCountry", "object": "co-lb"},
+    {"subject": "ent-evt-028", "predicate": "reportedBy", "object": "temp-org-cnn"}
+  ]
+}

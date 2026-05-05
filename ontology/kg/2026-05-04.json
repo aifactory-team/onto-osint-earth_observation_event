@@ -1,0 +1,51 @@
+{
+  "date": "2026-05-04",
+  "new_triples": [
+    {"subject": "ent-evt-059", "predicate": "observedBy", "object": "sat-planetscope", "source_id": "src-005", "date": "2026-05-04", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-059", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-005", "date": "2026-05-04", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-059", "predicate": "manifests", "object": "phen-military", "source_id": "src-005", "date": "2026-05-04", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-059", "predicate": "inCountry", "object": "co-ps", "source_id": "src-005", "date": "2026-05-04", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-059", "predicate": "inDomain", "object": "dom-defense", "source_id": "src-005", "date": "2026-05-04", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-062", "predicate": "manifests", "object": "phen-military", "source_id": "src-009", "date": "2026-05-04", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-062", "predicate": "inCountry", "object": "co-cn", "source_id": "src-009", "date": "2026-05-04", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-062", "predicate": "inDomain", "object": "dom-defense", "source_id": "src-009", "date": "2026-05-04", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-063", "predicate": "observedBy", "object": "sat-gaofen", "source_id": "src-010", "date": "2026-05-04", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-063", "predicate": "manifests", "object": "phen-military", "source_id": "src-010", "date": "2026-05-04", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-063", "predicate": "inDomain", "object": "dom-defense", "source_id": "src-010", "date": "2026-05-04", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-064", "predicate": "analyzedBy", "object": "org-planet", "source_id": "src-011", "date": "2026-05-04", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-064", "predicate": "inDomain", "object": "dom-defense", "source_id": "src-011", "date": "2026-05-04", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-066", "predicate": "observedBy", "object": "sat-methanesat", "source_id": "src-015", "date": "2026-05-04", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-066", "predicate": "manifests", "object": "phen-methane", "source_id": "src-015", "date": "2026-05-04", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-066", "predicate": "analyzedBy", "object": "org-edf", "source_id": "src-015", "date": "2026-05-04", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-066", "predicate": "inCountry", "object": "co-us", "source_id": "src-015", "date": "2026-05-04", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-066", "predicate": "inDomain", "object": "dom-climate", "source_id": "src-015", "date": "2026-05-04", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-068", "predicate": "observedBy", "object": "sat-landsat8", "source_id": "src-020", "date": "2026-05-04", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-068", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-020", "date": "2026-05-04", "confidence": 0.80, "type": "explicit"},
+    {"subject": "ent-evt-068", "predicate": "manifests", "object": "phen-glacier", "source_id": "src-020", "date": "2026-05-04", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-068", "predicate": "inDomain", "object": "dom-climate", "source_id": "src-020", "date": "2026-05-04", "confidence": 0.99, "type": "explicit"}
+  ],
+  "updated_triples": [
+    {"subject": "ent-evt-004", "predicate": "analyzedBy", "object": "org-usgs", "source_id": "src-001", "date": "2026-05-04", "confidence": 0.99, "type": "explicit", "note": "Episode 46 forecast update"},
+    {"subject": "ent-evt-020", "predicate": "observedBy", "object": "sat-landsat8", "source_id": "src-003", "date": "2026-05-04", "confidence": 0.95, "type": "explicit", "note": "Newsweek satellite imagery analysis"},
+    {"subject": "ent-evt-028", "predicate": "manifests", "object": "phen-infra-damage", "source_id": "src-006", "date": "2026-05-04", "confidence": 0.95, "type": "explicit", "note": "CNN 523 buildings count"},
+    {"subject": "ent-evt-029", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-007", "date": "2026-05-04", "confidence": 0.90, "type": "explicit", "note": "May 2 PDC VAAC advisory"},
+    {"subject": "ent-evt-001", "predicate": "manifests", "object": "phen-military", "source_id": "src-013", "date": "2026-05-04", "confidence": 0.95, "type": "explicit", "note": "RFA 5MW reactor continued operation"}
+  ],
+  "inferred_triples": [
+    {"subject": "ent-evt-059", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.90, "type": "inferred", "note": "PlanetScope + Sentinel-2A 독립 관측"},
+    {"subject": "ent-evt-068", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.82, "type": "inferred", "note": "Landsat 8 + Sentinel-2A 독립 관측"},
+    {"subject": "ent-evt-004", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.99, "type": "inferred", "note": "USGS space_agency"},
+    {"subject": "ent-evt-020", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred", "note": "NASA space_agency"},
+    {"subject": "ent-evt-001", "predicate": "koreaBoost", "object": "+0.10", "rule": "korea_geo_focus", "confidence": 0.99, "type": "inferred", "note": "KP iso_code"},
+    {"subject": "ent-evt-066", "predicate": "tracegasBoost", "object": "+0.15", "rule": "sensor_capability_match_tracegas", "confidence": 0.95, "type": "inferred", "note": "MethaneSAT trace_gas + methane_plume"},
+    {"subject": "ent-evt-020", "predicate": "baCredibilityBoost", "object": "+0.10", "rule": "before_after_credibility", "confidence": 0.95, "type": "inferred", "note": "Landsat 8 before/after burned area"},
+    {"subject": "ent-evt-028", "predicate": "baCredibilityBoost", "object": "+0.10", "rule": "before_after_credibility", "confidence": 0.95, "type": "inferred", "note": "Airbus before/after"},
+    {"subject": "ent-evt-004", "predicate": "partOfSeries", "object": "ent-evt-021", "rule": "temporal_progression", "confidence": 0.95, "type": "inferred", "note": "Kīlauea Episode 46 partOfSeries Episode 45"},
+    {"subject": "ent-evt-029", "predicate": "partOfSeries", "object": "ent-evt-029", "rule": "temporal_progression", "confidence": 0.90, "type": "inferred", "note": "Mayon 5/2 PDC partOfSeries ongoing eruption"}
+  ],
+  "stats": {
+    "new_nodes": 9,
+    "new_edges": 22,
+    "inferred_edges": 10
+  }
+}

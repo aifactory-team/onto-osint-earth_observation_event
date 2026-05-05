@@ -1,0 +1,154 @@
+{
+  "date": "2026-05-04",
+  "entities": [
+    {
+      "temp_id": "temp-057",
+      "matched_id": "ent-evt-004",
+      "type": "Event",
+      "name": "Kīlauea Episode 46 분출 예보 (May 4-7 window)",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "US", "lat": 19.421, "lon": -155.287, "observation_date": "2026-05-04", "severity": "high", "before_after_available": true, "satellites_used": ["GOES-18", "Landsat 9"], "sensors_used": ["thermal_infrared"]},
+      "source_ids": ["src-001", "src-002"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-058",
+      "matched_id": "ent-evt-020",
+      "type": "Event",
+      "name": "조지아 남부 산불 위성 피해 분석 (Hwy82 75% / Pineland 44%)",
+      "properties": {"phenomenon": "wildfire", "domain": "Disaster", "country": "US", "lat": 31.2, "lon": -82.3, "observation_date": "2026-05-04", "severity": "high", "before_after_available": true, "satellites_used": ["Landsat 8"], "sensors_used": ["OLI", "TIRS"], "area_acres": 55046},
+      "source_ids": ["src-003", "src-004"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-059",
+      "matched_id": null,
+      "type": "Event",
+      "name": "이스라엘 가자 군사 시설 확장 — 위성영상 확인 (Planet/Sentinel)",
+      "properties": {"phenomenon": "military_buildup", "domain": "Defense", "country": "PS", "lat": 31.3, "lon": 34.3, "observation_date": "2026-04-19", "severity": "high", "before_after_available": true, "satellites_used": ["PlanetScope (Doves)", "Sentinel-2A"], "sensors_used": ["optical_multispectral"]},
+      "source_ids": ["src-005"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-060",
+      "matched_id": "ent-evt-028",
+      "type": "Event",
+      "name": "레바논 파괴 규모 위성 분석 — CNN/Airbus (523건 건물 파괴)",
+      "properties": {"phenomenon": "infrastructure_damage", "domain": "Humanitarian", "country": "LB", "lat": 33.1, "lon": 35.4, "observation_date": "2026-04-24", "severity": "high", "before_after_available": true, "satellites_used": ["Airbus Pléiades"], "buildings_destroyed": 523},
+      "source_ids": ["src-006"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-061",
+      "matched_id": "ent-evt-029",
+      "type": "Event",
+      "name": "Mayon 화산 5월 2일 화쇄류 (PDC) + 화산재 FL060",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "PH", "lat": 13.257, "lon": 123.685, "observation_date": "2026-05-02", "severity": "high", "satellites_used": ["Himawari-9"], "sensors_used": ["thermal_infrared"]},
+      "source_ids": ["src-007", "src-008"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-062",
+      "matched_id": null,
+      "type": "Event",
+      "name": "중국 Lop Nur 군사기지 확장 — 60,000 sq ft 격납고 + J-36 시험",
+      "properties": {"phenomenon": "military_buildup", "domain": "Defense", "country": "CN", "lat": 40.0, "lon": 90.0, "observation_date": "2026-02", "severity": "high", "before_after_available": true, "satellites_used": ["commercial satellite imagery"]},
+      "source_ids": ["src-009"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-063",
+      "matched_id": null,
+      "type": "Event",
+      "name": "미국 군사력 이란 인근 집결 — 중국 위성 추적 (Prince Sultan AB)",
+      "properties": {"phenomenon": "military_buildup", "domain": "Defense", "country": "SA", "lat": 24.1, "lon": 47.6, "observation_date": "2026-02", "severity": "high", "satellites_used": ["GaoFen series"], "sensors_used": ["optical_pan"], "aircraft_count": 150, "warships": 12},
+      "source_ids": ["src-010"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-064",
+      "matched_id": null,
+      "type": "Event",
+      "name": "Planet Labs 이란/중동 위성영상 무기한 배포 중단",
+      "properties": {"phenomenon": "military_buildup", "domain": "Defense", "country": "INTL", "lat": 32.0, "lon": 53.0, "observation_date": "2026-04-05", "severity": "medium"},
+      "source_ids": ["src-011", "src-012"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-065",
+      "matched_id": "ent-evt-001",
+      "type": "Event",
+      "name": "영변 핵단지 활동 증가 — 5MW 원자로 가동 지속 (위성 확인)",
+      "properties": {"phenomenon": "military_buildup", "domain": "Defense", "country": "KP", "lat": 39.8, "lon": 125.7, "observation_date": "2026-04-28", "severity": "high", "before_after_available": true},
+      "source_ids": ["src-013"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-066",
+      "matched_id": null,
+      "type": "Event",
+      "name": "MethaneSAT Permian Basin 메탄 격차 — 미 상원 조사 개시",
+      "properties": {"phenomenon": "methane_plume", "domain": "ClimateEnvironment", "country": "US", "lat": 32.0, "lon": -102.0, "observation_date": "2026-03-19", "severity": "high", "satellites_used": ["MethaneSAT"], "sensors_used": ["trace_gas"]},
+      "source_ids": ["src-015"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-067",
+      "matched_id": null,
+      "type": "Event",
+      "name": "미국 서부 AI 산불 조기 탐지 시스템 배치 (Pano AI, 17개 주)",
+      "properties": {"phenomenon": "wildfire", "domain": "Disaster", "country": "US", "lat": 38.0, "lon": -120.0, "observation_date": "2026-05-04", "severity": "medium", "satellite_unverified": true},
+      "source_ids": ["src-017"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-068",
+      "matched_id": null,
+      "type": "Event",
+      "name": "그린란드 주변 빙하 후퇴율 20년간 2배 가속 — 위성 분석",
+      "properties": {"phenomenon": "glacier_retreat", "domain": "ClimateEnvironment", "country": "GL", "lat": 72.0, "lon": -40.0, "observation_date": "2026-05", "severity": "high", "satellites_used": ["Landsat 8", "Landsat 9", "Sentinel-2A"], "before_after_available": true},
+      "source_ids": ["src-020"],
+      "mention_count": 1
+    }
+  ],
+  "relations": [
+    {"subject": "temp-057", "predicate": "observedBy", "object": "sat-goes18", "source_ids": ["src-001"], "confidence": 0.9},
+    {"subject": "temp-057", "predicate": "manifests", "object": "phen-volcano", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "temp-057", "predicate": "locatedIn", "object": "ent-loc-004", "source_ids": ["src-001"], "confidence": 0.99},
+    {"subject": "temp-057", "predicate": "inCountry", "object": "co-us", "source_ids": ["src-001"], "confidence": 0.99},
+    {"subject": "temp-057", "predicate": "analyzedBy", "object": "org-usgs", "source_ids": ["src-001"], "confidence": 0.99},
+    {"subject": "temp-058", "predicate": "observedBy", "object": "sat-landsat8", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "temp-058", "predicate": "usesSensor", "object": "sensor-oli", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "temp-058", "predicate": "usesSensor", "object": "sensor-tirs", "source_ids": ["src-003"], "confidence": 0.90},
+    {"subject": "temp-058", "predicate": "manifests", "object": "phen-wildfire", "source_ids": ["src-003"], "confidence": 0.99},
+    {"subject": "temp-058", "predicate": "inCountry", "object": "co-us", "source_ids": ["src-003"], "confidence": 0.99},
+    {"subject": "temp-058", "predicate": "analyzedBy", "object": "org-nasa", "source_ids": ["src-004"], "confidence": 0.95},
+    {"subject": "temp-059", "predicate": "observedBy", "object": "sat-planetscope", "source_ids": ["src-005"], "confidence": 0.95},
+    {"subject": "temp-059", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-005"], "confidence": 0.90},
+    {"subject": "temp-059", "predicate": "manifests", "object": "phen-military", "source_ids": ["src-005"], "confidence": 0.95},
+    {"subject": "temp-059", "predicate": "inCountry", "object": "co-ps", "source_ids": ["src-005"], "confidence": 0.99},
+    {"subject": "temp-060", "predicate": "manifests", "object": "phen-infra-damage", "source_ids": ["src-006"], "confidence": 0.95},
+    {"subject": "temp-060", "predicate": "inCountry", "object": "co-lb", "source_ids": ["src-006"], "confidence": 0.99},
+    {"subject": "temp-061", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-007"], "confidence": 0.90},
+    {"subject": "temp-061", "predicate": "manifests", "object": "phen-volcano", "source_ids": ["src-007"], "confidence": 0.99},
+    {"subject": "temp-061", "predicate": "inCountry", "object": "co-ph", "source_ids": ["src-007"], "confidence": 0.99},
+    {"subject": "temp-062", "predicate": "manifests", "object": "phen-military", "source_ids": ["src-009"], "confidence": 0.90},
+    {"subject": "temp-062", "predicate": "inCountry", "object": "co-cn", "source_ids": ["src-009"], "confidence": 0.99},
+    {"subject": "temp-063", "predicate": "observedBy", "object": "sat-gaofen", "source_ids": ["src-010"], "confidence": 0.85},
+    {"subject": "temp-063", "predicate": "manifests", "object": "phen-military", "source_ids": ["src-010"], "confidence": 0.95},
+    {"subject": "temp-065", "predicate": "manifests", "object": "phen-military", "source_ids": ["src-013"], "confidence": 0.95},
+    {"subject": "temp-065", "predicate": "inCountry", "object": "co-kp", "source_ids": ["src-013"], "confidence": 0.99},
+    {"subject": "temp-066", "predicate": "observedBy", "object": "sat-methanesat", "source_ids": ["src-015"], "confidence": 0.95},
+    {"subject": "temp-066", "predicate": "usesSensor", "object": "sensor-tropomi", "source_ids": ["src-015"], "confidence": 0.70},
+    {"subject": "temp-066", "predicate": "manifests", "object": "phen-methane", "source_ids": ["src-015"], "confidence": 0.99},
+    {"subject": "temp-066", "predicate": "analyzedBy", "object": "org-edf", "source_ids": ["src-015"], "confidence": 0.95},
+    {"subject": "temp-068", "predicate": "observedBy", "object": "sat-landsat8", "source_ids": ["src-020"], "confidence": 0.85},
+    {"subject": "temp-068", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-020"], "confidence": 0.80},
+    {"subject": "temp-068", "predicate": "manifests", "object": "phen-glacier", "source_ids": ["src-020"], "confidence": 0.95}
+  ],
+  "stats": {
+    "total_entities": 12,
+    "new_entities": 7,
+    "matched_entities": 5,
+    "total_relations": 33
+  }
+}

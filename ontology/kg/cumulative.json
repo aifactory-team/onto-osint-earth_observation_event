@@ -1,15 +1,15 @@
 {
   "version": "1.1.0",
   "description": "위성영상 관측 이벤트 누적 지식그래프 — 첫 실행(2026-04-30) 이후 매일 신규/추론 트리플 병합",
-  "last_updated": "2026-05-03",
-  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03"],
-  "triples": "ontology/kg/2026-04-30.json + ontology/kg/2026-05-01.json + ontology/kg/2026-05-02.json + ontology/kg/2026-05-03.json (new_triples + inferred_triples)",
+  "last_updated": "2026-05-04",
+  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04"],
+  "triples": "ontology/kg/2026-04-30.json + ontology/kg/2026-05-01.json + ontology/kg/2026-05-02.json + ontology/kg/2026-05-03.json + ontology/kg/2026-05-04.json (new_triples + inferred_triples)",
   "stats": {
-    "total_explicit_triples": 264,
-    "total_inferred_triples": 107,
-    "total_unique_subjects": 66,
+    "total_explicit_triples": 286,
+    "total_inferred_triples": 117,
+    "total_unique_subjects": 75,
     "total_unique_predicates": 16,
-    "total_unique_objects": 108
+    "total_unique_objects": 116
   },
-  "note": "2026-05-03 병합 완료 — 신규 이벤트 7건(ent-evt-050~056), 업데이트 4건(ent-evt-020/021/029/032). CAS500-2/4 operational 갱신. 신규 Org 3건(EDF/INPE/AMW), 신규 Location 2건(Great Sitkin/Krasheninnikov). phen-mining 첫 이벤트 매핑(0→1). 추론 6건(sensor_match 1건, official 2건, temporal 2건, koreaGeo 1건)."
+  "note": "2026-05-04 병합 완료 — 신규 이벤트 7건(ent-evt-059~068), 업데이트 5건(ent-evt-001/004/020/028/029). 신규 Country 2건(SA/GL), 신규 Location 2건(Lop Nur/Bint Jbeil). multi_satellite_confirmation 2건(가자 군사 확장 PlanetScope+Sentinel-2, 그린란드 빙하 Landsat+Sentinel-2). MethaneSAT Permian tracegasBoost 적용. Planet Labs 이란 블랙아웃 — EO OSINT 투명성 이슈."
 }

@@ -1,0 +1,21 @@
+{
+  "id": "src-010",
+  "title": "Chinese satellite images show major buildup of US E-3/KC-135 at Saudi airbase",
+  "url": "https://militarywatchmagazine.com/article/chinese-satellite-major-buildup-e3-kc135-iran",
+  "snippet": "Chinese satellite imagery confirmed large buildup of US Air Force support aircraft at Prince Sultan Airbase in Saudi Arabia — 16 KC-135 aerial tankers and 6 E-3 Sentry AWACS. Over 150 aircraft deployed to bases near Iran, approximately 12 warships assembled.",
+  "source_name": "Military Watch Magazine",
+  "language": "en",
+  "discovered_date": "2026-05-04",
+  "tag": "new",
+  "related_report": null,
+  "tag_reason": "이전 MizarVision 관련 보도와 유사하나, Prince Sultan AB 구체적 배치(E-3/KC-135 수량)는 신규 정보.",
+  "entities": [
+    {"id": "ent-evt-063", "type": "Event", "name": "미국 군사력 이란 인근 집결 — 중국 위성 추적", "properties": {"phenomenon": "military_buildup", "lat": 24.1, "lon": 47.6, "country": "SA", "severity": "high"}},
+    {"id": "sat-gaofen", "type": "Satellite", "name": "GaoFen series"},
+    {"id": "temp-co-sa", "type": "Country", "name": "사우디아라비아", "properties": {"iso_code": "SA"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-063", "predicate": "observedBy", "object": "sat-gaofen"},
+    {"subject": "ent-evt-063", "predicate": "manifests", "object": "phen-military"}
+  ]
+}

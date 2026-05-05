@@ -1,0 +1,20 @@
+{
+  "id": "src-011",
+  "title": "Planet Labs indefinite imagery blackout on Iran/Middle East at US request",
+  "url": "https://www.cnbc.com/2026/04/05/satellite-firm-planet-labs-to-indefinitely-withhold-iran-war-images.html",
+  "snippet": "Planet Labs indefinitely suspended distribution of satellite imagery covering Iran and broader Middle East conflict zones following US government request. Restriction retroactive to March 9, 2026. Access granted only case-by-case for mission-critical requirements. Vantor (formerly Maxar) and BlackSky also implemented tighter controls.",
+  "source_name": "CNBC",
+  "language": "en",
+  "discovered_date": "2026-05-04",
+  "tag": "new",
+  "related_report": null,
+  "tag_reason": "상업 위성영상 배포 정책 변화 — 이전 보고서에서 다루지 않은 신규 이슈. 위성 OSINT 투명성에 구조적 영향.",
+  "entities": [
+    {"id": "ent-evt-064", "type": "Event", "name": "Planet Labs 이란/중동 위성영상 무기한 배포 중단", "properties": {"phenomenon": "military_buildup", "lat": 32.0, "lon": 53.0, "country": "INTL", "severity": "medium"}},
+    {"id": "org-planet", "type": "Organization", "name": "Planet Labs"},
+    {"id": "org-vantor", "type": "Organization", "name": "Vantor (formerly Maxar Intelligence)"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-064", "predicate": "analyzedBy", "object": "org-planet"}
+  ]
+}

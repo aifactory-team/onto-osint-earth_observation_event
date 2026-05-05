@@ -1,0 +1,31 @@
+{
+  "date": "2026-05-04",
+  "total": 22,
+  "new": 7,
+  "reported": 10,
+  "update": 5,
+  "items": [
+    {"id": "src-001", "title": "Kīlauea Episode 46 eruption window opens May 4-7 — USGS HVO advisory", "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-HVO-2026-05-04T17:23:57+00:00", "tag": "update", "related_report": "2026-05-03/src-004", "entity_count": 4},
+    {"id": "src-002", "title": "Kīlauea volcano lava eruption window opens — Big Island Video News", "url": "https://www.bigislandvideonews.com/2026/05/04/kilauea-volcano-lava-eruption-window-opens/", "tag": "reported", "related_report": "src-001", "entity_count": 2},
+    {"id": "src-003", "title": "Georgia wildfires satellite images reveal destruction — Newsweek", "url": "https://www.newsweek.com/satellite-images-destruction-georgia-wildfires-11898158", "tag": "update", "related_report": "2026-05-03/src-008", "entity_count": 4},
+    {"id": "src-004", "title": "Fires Rage in Georgia — NASA Earth Observatory (Landsat 8 OLI)", "url": "https://science.nasa.gov/earth/earth-observatory/fires-rage-in-georgia/", "tag": "reported", "related_report": "2026-05-03/src-020", "entity_count": 3},
+    {"id": "src-005", "title": "Satellite images reveal Israel expanding Gaza military sites — Al Jazeera (Planet/Sentinel)", "url": "https://www.aljazeera.com/news/2026/4/19/satellite-images-reveal-israel-expanding-gaza-military-sites", "tag": "new", "related_report": null, "entity_count": 5},
+    {"id": "src-006", "title": "The Gaza playbook: Satellite images reveal scale of Israeli destruction in Lebanon — CNN (Airbus)", "url": "https://edition.cnn.com/2026/04/24/middleeast/lebanon-destruction-israel-gaza-model-intl-cmd", "tag": "update", "related_report": "2026-04-30/ent-evt-028", "entity_count": 5},
+    {"id": "src-007", "title": "Mayon Volcano Ash Advisory May 2 — VAAC eruption FL060 (Himawari-9)", "url": "https://www.volcanodiscovery.com/mayon/news/301257/vaac-advisory-2026-554.html", "tag": "update", "related_report": "2026-05-03/src-005", "entity_count": 4},
+    {"id": "src-008", "title": "Mayon Volcano pyroclastic event May 2 — PDC descended slopes", "url": "https://www.youtube.com/watch?v=AdZ6i6jzjkE", "tag": "reported", "related_report": "src-007", "entity_count": 2},
+    {"id": "src-009", "title": "China Lop Nur military expansion — 60,000 sq ft hangar, J-36 testing (satellite imagery)", "url": "https://www.airandspaceforces.com/article/what-satellites-reveal-about-chinas-military-expansion/", "tag": "new", "related_report": null, "entity_count": 5},
+    {"id": "src-010", "title": "Chinese satellite images show major buildup of US E-3/KC-135 at Saudi airbase", "url": "https://militarywatchmagazine.com/article/chinese-satellite-major-buildup-e3-kc135-iran", "tag": "new", "related_report": null, "entity_count": 4},
+    {"id": "src-011", "title": "Planet Labs indefinite imagery blackout on Iran/Middle East at US request", "url": "https://www.cnbc.com/2026/04/05/satellite-firm-planet-labs-to-indefinitely-withhold-iran-war-images.html", "tag": "new", "related_report": null, "entity_count": 3},
+    {"id": "src-012", "title": "Nowhere to hide: Iran war spotlights military challenges from space-based remote sensing", "url": "https://breakingdefense.com/2026/04/nowhere-to-hide-iran-war-spotlights-military-challenges-posed-by-space-based-remote-sensing/", "tag": "reported", "related_report": "src-011", "entity_count": 2},
+    {"id": "src-013", "title": "Satellite imagery reveals increased activity at North Korean Yongbyon nuclear complex — RFA", "url": "https://www.rfa.org/english/korea/2026/04/28/north-korea-satellite-yongbyon-nuclear/", "tag": "update", "related_report": "2026-04-30/ent-evt-001", "entity_count": 4},
+    {"id": "src-014", "title": "North Korea 9th Party Congress — AI/space/anti-satellite priorities, Sohae expansion", "url": "https://www.38north.org/2026/04/villages-bordering-sohae-satellite-launching-station-razed/", "tag": "reported", "related_report": "2026-04-30/ent-evt-002", "entity_count": 3},
+    {"id": "src-015", "title": "MethaneSAT Permian Basin — Senate investigation into methane mismatch", "url": "https://insideclimatenews.org/news/19032026/senator-whitehouse-permian-basin-methane-pollution-investigation/", "tag": "new", "related_report": null, "entity_count": 4},
+    {"id": "src-016", "title": "MethaneSAT data: US oil & gas methane 4× higher than EPA — EDF/methanesat.org", "url": "https://www.methanesat.org/project-updates/new-data-show-us-oil-and-gas-methane-emissions-over-four-times-higher-epa-estimates", "tag": "reported", "related_report": "2026-05-03/src-009", "entity_count": 2},
+    {"id": "src-017", "title": "States across wildfire-prone Western US using AI for early detection (Pano AI)", "url": "https://www.washingtontimes.com/news/2026/may/4/states-across-wildfire-prone-western-united-states-using-ai-early/", "tag": "new", "related_report": null, "entity_count": 3},
+    {"id": "src-018", "title": "Sabancaya volcano explosion May 3 — 2,000m ash column (Peru)", "url": "https://volcanoearth.wordpress.com/2026/05/03/3-may-2026/", "tag": "reported", "related_report": "2026-05-02/ent-evt-039", "entity_count": 2},
+    {"id": "src-019", "title": "CAS500-2 satellite successfully launched, enters orbit — Korea Times", "url": "https://www.koreatimes.co.kr/business/tech-science/20260503/korea-launches-next-generation-satellite-on-spacex-falcon-9", "tag": "reported", "related_report": "2026-05-03/src-001", "entity_count": 3},
+    {"id": "src-020", "title": "Satellite data and 100-year-old images reveal quickening Greenland glacier retreat", "url": "https://www.space.com/greenland-glaciers-retreat-rate-doubled", "tag": "new", "related_report": null, "entity_count": 3},
+    {"id": "src-021", "title": "NOAA launches Wildfire Data Portal — expanding public satellite fire information", "url": "https://www.nesdis.noaa.gov/news/noaa-launches-wildfire-data-portal-expanding-public-access-satellite-fire-information", "tag": "reported", "related_report": null, "entity_count": 2},
+    {"id": "src-022", "title": "Record grounded glacier retreat in Antarctica — Nature Geoscience (Sentinel-1/ERS/RADARSAT)", "url": "https://www.nature.com/articles/s41561-025-01802-4", "tag": "reported", "related_report": "2026-05-03/src-016", "entity_count": 3}
+  ]
+}

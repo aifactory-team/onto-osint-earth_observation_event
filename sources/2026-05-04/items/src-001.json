@@ -1,0 +1,23 @@
+{
+  "id": "src-001",
+  "title": "Kīlauea Episode 46 eruption window opens May 4-7 — USGS HVO advisory",
+  "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-HVO-2026-05-04T17:23:57+00:00",
+  "snippet": "The forecast window for episode 46 suggests lava fountaining will occur again sometime between Monday May 4 and Thursday May 7. Rapid return of inflationary tilt, strong glow from both Halemaʻumaʻu eruptive vents, heavy gas emissions and occasional flames observed overnight.",
+  "source_name": "USGS Hawaiian Volcano Observatory",
+  "language": "en",
+  "discovered_date": "2026-05-04",
+  "tag": "update",
+  "related_report": "2026-05-03/src-004",
+  "tag_reason": "Kīlauea Episode 45 후속 — Episode 46 예보 창 구체화 (May 4-7). 이전 src-004는 May 4-7 예보였으나 본건은 5/4 당일 USGS 공식 업데이트.",
+  "entities": [
+    {"id": "ent-evt-004", "type": "Event", "name": "Kīlauea Episode 46 분출 예보 (May 4-7)", "properties": {"phenomenon": "volcanic_eruption", "lat": 19.421, "lon": -155.287, "country": "US", "severity": "high"}},
+    {"id": "sat-goes18", "type": "Satellite", "name": "GOES-18"},
+    {"id": "org-usgs", "type": "Organization", "name": "USGS"},
+    {"id": "ent-loc-004", "type": "Location", "name": "Kīlauea summit, Halemaʻumaʻu"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-004", "predicate": "analyzedBy", "object": "org-usgs"},
+    {"subject": "ent-evt-004", "predicate": "locatedIn", "object": "ent-loc-004"},
+    {"subject": "ent-evt-004", "predicate": "manifests", "object": "phen-volcano"}
+  ]
+}
