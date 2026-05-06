@@ -1,0 +1,28 @@
+{
+  "id": "src-008",
+  "title": "Satellite images document massive uncontrolled fire at Dutch military site 't Harde — Misbar",
+  "url": "https://www.misbar.com/en/editorial/2026/05/01/satellite-images-document-massive-uncontrolled-fire-dutch-military-site",
+  "snippet": "Sentinel-2 satellite imagery captured wildfire at 't Harde ASK (Artillerie Schietkamp) military training site in the Netherlands on April 29. Planet Labs imagery confirmed smoke plume extending across 2,200-meter strip. Fire broke out during military exercises in dry heathland. Dutch authorities deployed firefighting helicopters.",
+  "source_name": "Misbar",
+  "language": "en",
+  "discovered_date": "2026-05-05",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "네덜란드 't Harde 군사훈련장 산불 신규 — Sentinel-2 및 Planet 위성영상으로 2,200m 화재 확인. 다중 위성 교차검증.",
+  "entities": [
+    {"id": "ent-evt-072", "type": "Event", "name": "네덜란드 't Harde 군사훈련장 산불 (Sentinel-2/Planet 확인)", "properties": {"phenomenon": "wildfire", "lat": 52.37, "lon": 5.77, "country": "NL", "severity": "medium", "fire_strip_meters": 2200, "before_after_available": true}},
+    {"id": "sat-sentinel2", "type": "Satellite", "name": "Sentinel-2"},
+    {"id": "sat-planetscope", "type": "Satellite", "name": "PlanetScope (Doves)"},
+    {"id": "org-misbar", "type": "Organization", "name": "Misbar"},
+    {"id": "org-planet", "type": "Organization", "name": "Planet Labs"},
+    {"id": "ent-loc-072", "type": "Location", "name": "'t Harde ASK, Gelderland, Netherlands"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-072", "predicate": "observedBy", "object": "sat-sentinel2"},
+    {"subject": "ent-evt-072", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "ent-evt-072", "predicate": "reportedBy", "object": "org-misbar"},
+    {"subject": "ent-evt-072", "predicate": "locatedIn", "object": "ent-loc-072"},
+    {"subject": "ent-evt-072", "predicate": "manifests", "object": "phen-wildfire"}
+  ]
+}

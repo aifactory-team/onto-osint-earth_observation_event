@@ -1,0 +1,27 @@
+{
+  "id": "src-011",
+  "title": "Tracking the US military buildup in the Caribbean — The Conversation (satellite analysis)",
+  "url": "https://stories.theconversation.com/tracking-the-us-military-in-the-caribbean/",
+  "snippet": "Satellite imagery and AIS tracking data reveal unprecedented US military buildup in the Caribbean region: 3 Carrier Strike Groups, F-35 stealth fighters, AC-130 gunships, and Iwo Jima Amphibious Ready Group deployed. Imagery shows naval assets concentrated near Venezuela and surrounding waters. Open-source analysts cross-reference commercial satellite passes with ADS-B/AIS transponder data.",
+  "source_name": "The Conversation",
+  "language": "en",
+  "discovered_date": "2026-05-05",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "미국 카리브해 군사력 집결 신규 — 위성영상 및 AIS 추적으로 3개 CSG 배치 확인. 베네수엘라 인근 해역 집중.",
+  "entities": [
+    {"id": "ent-evt-074", "type": "Event", "name": "미국 카리브해 군사력 전개 (3 CSG, F-35, ARG)", "properties": {"phenomenon": "military_buildup", "lat": 12.0, "lon": -68.0, "country": "VE", "severity": "high", "assets": "3_CSG_F35_AC130_ARG"}},
+    {"id": "sat-commercial-sar", "type": "Satellite", "name": "Commercial SAR/Optical (multi-source)"},
+    {"id": "dp-ais", "type": "DataProduct", "name": "AIS vessel tracking data"},
+    {"id": "org-conversation", "type": "Organization", "name": "The Conversation"},
+    {"id": "ent-loc-074", "type": "Location", "name": "Caribbean Sea, near Venezuela"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-074", "predicate": "observedBy", "object": "sat-commercial-sar"},
+    {"subject": "ent-evt-074", "predicate": "usesDataProduct", "object": "dp-ais"},
+    {"subject": "ent-evt-074", "predicate": "reportedBy", "object": "org-conversation"},
+    {"subject": "ent-evt-074", "predicate": "locatedIn", "object": "ent-loc-074"},
+    {"subject": "ent-evt-074", "predicate": "manifests", "object": "phen-military"}
+  ]
+}

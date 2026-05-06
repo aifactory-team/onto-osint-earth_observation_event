@@ -1,0 +1,27 @@
+{
+  "id": "src-006",
+  "title": "Georgia wildfires update — Hwy82 85% contained, Pineland 50% contained",
+  "url": "https://gatrees.org/current-wildfire-information-and-resources/",
+  "snippet": "Georgia Forestry Commission reports Hwy 82 Fire at 22,471 acres 85% contained and Pineland Road Fire at 32,575 acres 50% contained as of May 5. Investigation determined cause: mylar balloon contacting powerline ignited surrounding vegetation. FIRMS/VIIRS hotspot data shows diminishing active fire fronts.",
+  "source_name": "Georgia Forestry Commission",
+  "language": "en",
+  "discovered_date": "2026-05-05",
+  "tag": "update",
+  "related_report": "2026-05-04/src-003",
+  "related_item": null,
+  "tag_reason": "조지아 산불 후속 — containment 진전 (Hwy82: 75%→85%, Pineland: 44%→50%). 화재 원인 확정(mylar balloon/powerline).",
+  "entities": [
+    {"id": "ent-evt-020", "type": "Event", "name": "조지아 남부 산불 (Brantley/Clinch County) — 진화율 업데이트", "properties": {"phenomenon": "wildfire", "lat": 31.2, "lon": -82.3, "country": "US", "severity": "high", "hwy82_acres": 22471, "hwy82_containment_pct": 85, "pineland_acres": 32575, "pineland_containment_pct": 50, "cause": "mylar_balloon_powerline"}},
+    {"id": "sat-viirs", "type": "Satellite", "name": "Suomi NPP / NOAA-20 (VIIRS)"},
+    {"id": "dp-firms", "type": "DataProduct", "name": "FIRMS Active Fire Data"},
+    {"id": "org-gaforestry", "type": "Organization", "name": "Georgia Forestry Commission"},
+    {"id": "ent-loc-020", "type": "Location", "name": "Brantley/Clinch County, Georgia, US"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-020", "predicate": "observedBy", "object": "sat-viirs"},
+    {"subject": "ent-evt-020", "predicate": "usesDataProduct", "object": "dp-firms"},
+    {"subject": "ent-evt-020", "predicate": "reportedBy", "object": "org-gaforestry"},
+    {"subject": "ent-evt-020", "predicate": "locatedIn", "object": "ent-loc-020"},
+    {"subject": "ent-evt-020", "predicate": "manifests", "object": "phen-wildfire"}
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "src-015",
+  "title": "차세대중형위성 2호(CAS500-2) 활용 스마트 농업 변화 — 한국IT산업뉴스",
+  "url": "https://www.koreaiin.com/news/899944",
+  "snippet": "차세대중형위성 2호(CAS500-2)의 고해상도 다분광 영상을 활용한 스마트 농업 변화 사례 소개. 작물 생육 모니터링, NDVI 기반 작황 예측, 병해충 조기 탐지 등에 위성 데이터 적용. KARI와 농촌진흥청 협력 사업으로 정밀농업 실증 진행 중.",
+  "source_name": "한국IT산업뉴스",
+  "language": "ko",
+  "discovered_date": "2026-05-05",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "CAS500-2 위성 농업 활용 신규 — NDVI 기반 작황 예측 및 병해충 탐지. 농업·환경 카테고리.",
+  "entities": [
+    {"id": "ent-evt-077", "type": "Event", "name": "CAS500-2 스마트 농업 활용 실증", "properties": {"phenomenon": "agriculture_monitoring", "lat": 36.5, "lon": 127.0, "country": "KR", "severity": "low"}},
+    {"id": "sat-cas500-2", "type": "Satellite", "name": "CAS500-2 (차세대중형위성 2호)"},
+    {"id": "sensor-cas500-ms", "type": "Sensor", "name": "CAS500-2 다분광 센서"},
+    {"id": "org-kari", "type": "Organization", "name": "KARI (한국항공우주연구원)"},
+    {"id": "org-rda", "type": "Organization", "name": "농촌진흥청"},
+    {"id": "co-kr", "type": "Country", "name": "대한민국"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-077", "predicate": "observedBy", "object": "sat-cas500-2"},
+    {"subject": "ent-evt-077", "predicate": "usesSensor", "object": "sensor-cas500-ms"},
+    {"subject": "ent-evt-077", "predicate": "managedBy", "object": "org-kari"},
+    {"subject": "ent-evt-077", "predicate": "managedBy", "object": "org-rda"},
+    {"subject": "ent-evt-077", "predicate": "inCountry", "object": "co-kr"},
+    {"subject": "ent-evt-077", "predicate": "manifests", "object": "phen-agriculture"}
+  ]
+}

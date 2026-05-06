@@ -1,0 +1,191 @@
+{
+  "date": "2026-05-05",
+  "entities": [
+    {
+      "temp_id": "temp-070",
+      "matched_id": null,
+      "type": "Event",
+      "name": "Kīlauea Episode 46 분출 — 650ft 용암 분수 (2026-05-05)",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "US", "lat": 19.421, "lon": -155.287, "observation_date": "2026-05-05", "start_date": "2026-05-04", "severity": "high", "before_after_available": true, "update_of": "ent-evt-021"},
+      "source_ids": ["src-001", "src-002", "src-003"],
+      "mention_count": 3
+    },
+    {
+      "temp_id": "temp-071",
+      "matched_id": null,
+      "type": "Event",
+      "name": "Mayon 화산 5월 5일 분출 — VAAC 화산재 경보 (Philippines)",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "PH", "lat": 13.257, "lon": 123.685, "observation_date": "2026-05-05", "severity": "high", "before_after_available": false, "update_of": "ent-evt-029"},
+      "source_ids": ["src-004", "src-005"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-072",
+      "matched_id": null,
+      "type": "Event",
+      "name": "조지아 산불 진화 진전 — Hwy82 85% 봉쇄, Pineland 50% (Landsat 8)",
+      "properties": {"phenomenon": "wildfire", "domain": "Disaster", "country": "US", "lat": 31.2, "lon": -82.3, "observation_date": "2026-05-05", "severity": "high", "before_after_available": true, "update_of": "ent-evt-020"},
+      "source_ids": ["src-006"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-073",
+      "matched_id": null,
+      "type": "Event",
+      "name": "이탈리아 토스카나 Monte Faeta 산불 — 700ha 소실, 3,500명 대피",
+      "properties": {"phenomenon": "wildfire", "domain": "Disaster", "country": "IT", "lat": 43.78, "lon": 10.45, "observation_date": "2026-04-28", "end_date": "2026-05-03", "severity": "high", "before_after_available": false, "satellites_used": ["Sentinel-2A"], "area_km2": 7},
+      "source_ids": ["src-007"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-074",
+      "matched_id": null,
+      "type": "Event",
+      "name": "네덜란드 't Harde 군사사격장 산불 — Sentinel-2/Planet 위성영상 (2026-04-29)",
+      "properties": {"phenomenon": "wildfire", "domain": "Disaster", "country": "NL", "lat": 52.37, "lon": 5.77, "observation_date": "2026-04-29", "severity": "high", "before_after_available": true, "satellites_used": ["Sentinel-2A", "PlanetScope (Doves)"]},
+      "source_ids": ["src-008", "src-009"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-075",
+      "matched_id": null,
+      "type": "Event",
+      "name": "중국 Type 004 핵추진 항공모함 건조 — Dalian 조선소 위성영상 (원자로 구획 확인)",
+      "properties": {"phenomenon": "naval_movement", "domain": "Defense", "country": "CN", "lat": 38.9, "lon": 121.6, "observation_date": "2026-02-17", "severity": "high", "before_after_available": true, "satellites_used": ["SkyFi tasking"]},
+      "source_ids": ["src-010", "src-019"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-076",
+      "matched_id": null,
+      "type": "Event",
+      "name": "미국 카리브해 군사력 집결 — 위성 추적 (3개 항모전단, F-35, AC-130)",
+      "properties": {"phenomenon": "military_buildup", "domain": "Defense", "country": "US", "lat": 12.0, "lon": -68.0, "observation_date": "2026-04", "severity": "high", "satellites_used": ["PlanetScope (Doves)"]},
+      "source_ids": ["src-011", "src-020"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-077",
+      "matched_id": null,
+      "type": "Event",
+      "name": "북한 신포 SLBM 발사 준비 — SI Analytics 위성영상 활동 증가 포착",
+      "properties": {"phenomenon": "military_buildup", "domain": "Defense", "country": "KP", "lat": 39.8, "lon": 128.1, "observation_date": "2026-03-26", "severity": "high", "before_after_available": true},
+      "source_ids": ["src-012"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-078",
+      "matched_id": null,
+      "type": "Event",
+      "name": "한국 425사업 정찰위성 5기 전력화 완료 — 2시간 주기 대북 감시체계 가동",
+      "properties": {"phenomenon": "military_buildup", "domain": "Defense", "country": "KR", "lat": 36.5, "lon": 127.0, "observation_date": "2026-04-30", "severity": "medium", "update_of": "ent-evt-024"},
+      "source_ids": ["src-013"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-079",
+      "matched_id": null,
+      "type": "Event",
+      "name": "CAS500-2 스마트농업 활용 전망 — 작물 생육·병해충·토양수분 위성 분석",
+      "properties": {"phenomenon": "crop_yield", "domain": "AgricultureMaritime", "country": "KR", "lat": 36.5, "lon": 127.0, "observation_date": "2026-05-05", "severity": "low"},
+      "source_ids": ["src-015"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-080",
+      "matched_id": null,
+      "type": "Event",
+      "name": "일본 산리쿠 해역 M7.7 지진 — 쓰나미 경보·위성 피해 평가 미실시",
+      "properties": {"phenomenon": "earthquake_damage", "domain": "Disaster", "country": "JP", "lat": 39.5, "lon": 143.5, "observation_date": "2026-04-20", "severity": "medium", "satellite_unverified": true},
+      "source_ids": ["src-016"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-081",
+      "matched_id": null,
+      "type": "Location",
+      "name": "Monte Faeta, Tuscany (Pisa/Lucca)",
+      "properties": {"country": "IT", "region": "Tuscany", "lat": 43.78, "lon": 10.45},
+      "source_ids": ["src-007"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-082",
+      "matched_id": null,
+      "type": "Location",
+      "name": "'t Harde, Gelderland, Netherlands",
+      "properties": {"country": "NL", "region": "Gelderland", "lat": 52.37, "lon": 5.77},
+      "source_ids": ["src-008"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-083",
+      "matched_id": null,
+      "type": "Location",
+      "name": "Dalian Shipyard, Liaoning, China",
+      "properties": {"country": "CN", "region": "Liaoning", "lat": 38.9, "lon": 121.6},
+      "source_ids": ["src-010"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-084",
+      "matched_id": null,
+      "type": "Location",
+      "name": "Sinpo South Shipyard, North Korea",
+      "properties": {"country": "KP", "region": "함경남도", "lat": 39.8, "lon": 128.1},
+      "source_ids": ["src-012"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-085",
+      "matched_id": null,
+      "type": "Location",
+      "name": "Sanriku offshore, Iwate Prefecture, Japan",
+      "properties": {"country": "JP", "region": "Iwate", "lat": 39.5, "lon": 143.5},
+      "source_ids": ["src-016"],
+      "mention_count": 1
+    }
+  ],
+  "relations": [
+    {"subject": "temp-070", "predicate": "observedBy", "object": "sat-goes18", "source_ids": ["src-001"], "confidence": 0.85},
+    {"subject": "temp-070", "predicate": "manifests", "object": "phen-volcano", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "temp-070", "predicate": "inCountry", "object": "co-us", "source_ids": ["src-001"], "confidence": 1.0},
+    {"subject": "temp-070", "predicate": "inDomain", "object": "dom-disaster", "source_ids": ["src-001"], "confidence": 1.0},
+    {"subject": "temp-070", "predicate": "analyzedBy", "object": "org-usgs", "source_ids": ["src-001"], "confidence": 1.0},
+    {"subject": "temp-070", "predicate": "partOfSeries", "object": "ent-evt-021", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "temp-071", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-004"], "confidence": 0.90},
+    {"subject": "temp-071", "predicate": "manifests", "object": "phen-volcano", "source_ids": ["src-004"], "confidence": 0.95},
+    {"subject": "temp-071", "predicate": "inCountry", "object": "co-ph", "source_ids": ["src-004"], "confidence": 1.0},
+    {"subject": "temp-071", "predicate": "analyzedBy", "object": "org-phivolcs", "source_ids": ["src-005"], "confidence": 0.95},
+    {"subject": "temp-071", "predicate": "partOfSeries", "object": "ent-evt-029", "source_ids": ["src-004"], "confidence": 0.95},
+    {"subject": "temp-072", "predicate": "observedBy", "object": "sat-landsat8", "source_ids": ["src-006"], "confidence": 0.90},
+    {"subject": "temp-072", "predicate": "manifests", "object": "phen-wildfire", "source_ids": ["src-006"], "confidence": 1.0},
+    {"subject": "temp-072", "predicate": "inCountry", "object": "co-us", "source_ids": ["src-006"], "confidence": 1.0},
+    {"subject": "temp-072", "predicate": "analyzedBy", "object": "org-nasa", "source_ids": ["src-006"], "confidence": 0.90},
+    {"subject": "temp-072", "predicate": "partOfSeries", "object": "ent-evt-020", "source_ids": ["src-006"], "confidence": 0.95},
+    {"subject": "temp-073", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-007"], "confidence": 0.70},
+    {"subject": "temp-073", "predicate": "manifests", "object": "phen-wildfire", "source_ids": ["src-007"], "confidence": 1.0},
+    {"subject": "temp-073", "predicate": "inCountry", "object": "co-it", "source_ids": ["src-007"], "confidence": 1.0},
+    {"subject": "temp-074", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-008"], "confidence": 0.90},
+    {"subject": "temp-074", "predicate": "observedBy", "object": "sat-planetscope", "source_ids": ["src-008"], "confidence": 0.90},
+    {"subject": "temp-074", "predicate": "manifests", "object": "phen-wildfire", "source_ids": ["src-008"], "confidence": 1.0},
+    {"subject": "temp-075", "predicate": "manifests", "object": "phen-naval", "source_ids": ["src-010"], "confidence": 0.95},
+    {"subject": "temp-075", "predicate": "inCountry", "object": "co-cn", "source_ids": ["src-010"], "confidence": 1.0},
+    {"subject": "temp-076", "predicate": "manifests", "object": "phen-military", "source_ids": ["src-011"], "confidence": 0.95},
+    {"subject": "temp-076", "predicate": "observedBy", "object": "sat-planetscope", "source_ids": ["src-011"], "confidence": 0.85},
+    {"subject": "temp-077", "predicate": "manifests", "object": "phen-military", "source_ids": ["src-012"], "confidence": 0.90},
+    {"subject": "temp-077", "predicate": "inCountry", "object": "co-kp", "source_ids": ["src-012"], "confidence": 1.0},
+    {"subject": "temp-078", "predicate": "manifests", "object": "phen-military", "source_ids": ["src-013"], "confidence": 0.90},
+    {"subject": "temp-078", "predicate": "inCountry", "object": "co-kr", "source_ids": ["src-013"], "confidence": 1.0},
+    {"subject": "temp-079", "predicate": "manifests", "object": "phen-crop", "source_ids": ["src-015"], "confidence": 0.80},
+    {"subject": "temp-079", "predicate": "inCountry", "object": "co-kr", "source_ids": ["src-015"], "confidence": 1.0},
+    {"subject": "temp-080", "predicate": "manifests", "object": "phen-earthquake", "source_ids": ["src-016"], "confidence": 0.85},
+    {"subject": "temp-080", "predicate": "inCountry", "object": "co-jp", "source_ids": ["src-016"], "confidence": 1.0}
+  ],
+  "stats": {
+    "total_entities": 16,
+    "new_entities": 11,
+    "matched_entities": 5,
+    "total_relations": 34
+  }
+}

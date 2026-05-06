@@ -198,6 +198,27 @@
       "target": "ent-loc-021, ent-loc-022",
       "reason": "Lop Nur Test Base (CN, 40.0/90.0) — 중국 군사기지 확장(ent-evt-062). Bint Jbeil (LB, 33.12/35.43) — 레바논 파괴 CNN 분석(ent-evt-028 업데이트).",
       "source_ids": ["src-009", "src-006"]
+    },
+    {
+      "date": "2026-05-05",
+      "action": "add_country",
+      "target": "co-nl",
+      "reason": "네덜란드(NL) — 't Harde 군사사격장 산불 Sentinel-2/PlanetScope 다중위성 관측(ent-evt-074). 기존 국가 인스턴스에 없던 국가 추가.",
+      "source_ids": ["src-008"]
+    },
+    {
+      "date": "2026-05-05",
+      "action": "add_location",
+      "target": "ent-loc-025, ent-loc-026, ent-loc-027, ent-loc-028, ent-loc-029",
+      "reason": "Monte Faeta Tuscany (IT, 43.78/10.45) — 산불 700ha. 't Harde (NL, 52.37/5.77) — 군사사격장 산불. Dalian Shipyard (CN, 38.9/121.6) — Type 004 항모. Sinpo South Shipyard (KP, 39.8/128.1) — SLBM 준비. Sanriku offshore (JP, 39.5/143.5) — M7.7 지진.",
+      "source_ids": ["src-007", "src-008", "src-010", "src-012", "src-016"]
+    },
+    {
+      "date": "2026-05-05",
+      "action": "add_organization",
+      "target": "org-si-analytics",
+      "reason": "SI Analytics — 한국 위성영상 AI 분석 기업. 북한 신포 조선소 SLBM 준비 위성영상 분석 제공(ent-evt-077).",
+      "source_ids": ["src-012"]
     }
   ]
 }

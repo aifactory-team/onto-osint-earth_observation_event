@@ -1,0 +1,29 @@
+{
+  "id": "src-012",
+  "title": "Imagery shows N.Korea may soon launch new missile submarine — Nasdaq/Reuters (SI Analytics)",
+  "url": "https://www.nasdaq.com/articles/imagery-shows-n.korea-may-soon-launch-new-missile-submarine-think-tank",
+  "snippet": "SI Analytics satellite imagery from March 20 and March 26 shows increased vehicle activity and covers removed from the Hero Kim Gun Ok SLBM submarine at Sinpo South Shipyard, North Korea. The think tank assesses preparations consistent with imminent launch or sea trials. The submarine is believed capable of carrying multiple submarine-launched ballistic missiles.",
+  "source_name": "Nasdaq / Reuters",
+  "language": "en",
+  "discovered_date": "2026-05-05",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "북한 신포 SLBM 잠수함 진수 준비 신규 — SI Analytics 위성영상으로 차량 활동 증가 및 덮개 제거 확인. Hero Kim Gun Ok 잠수함.",
+  "entities": [
+    {"id": "ent-evt-075", "type": "Event", "name": "북한 신포 SLBM 잠수함 진수 준비 (SI Analytics 위성 확인)", "properties": {"phenomenon": "military_buildup", "lat": 39.8, "lon": 128.1, "country": "KP", "severity": "high", "before_after_available": true, "imagery_dates": ["2026-03-20", "2026-03-26"]}},
+    {"id": "sat-si-analytics", "type": "Satellite", "name": "SI Analytics (commercial optical)"},
+    {"id": "org-si-analytics", "type": "Organization", "name": "SI Analytics"},
+    {"id": "org-reuters", "type": "Organization", "name": "Reuters"},
+    {"id": "ent-loc-075", "type": "Location", "name": "Sinpo South Shipyard, South Hamgyong, DPRK"},
+    {"id": "co-kp", "type": "Country", "name": "조선민주주의인민공화국"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-075", "predicate": "observedBy", "object": "sat-si-analytics"},
+    {"subject": "ent-evt-075", "predicate": "analyzedBy", "object": "org-si-analytics"},
+    {"subject": "ent-evt-075", "predicate": "reportedBy", "object": "org-reuters"},
+    {"subject": "ent-evt-075", "predicate": "locatedIn", "object": "ent-loc-075"},
+    {"subject": "ent-evt-075", "predicate": "inCountry", "object": "co-kp"},
+    {"subject": "ent-evt-075", "predicate": "manifests", "object": "phen-military"}
+  ]
+}

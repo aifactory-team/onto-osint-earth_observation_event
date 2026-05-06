@@ -1,0 +1,83 @@
+{
+  "date": "2026-05-05",
+  "collected_at": "2026-05-05T23:00:00Z",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 22,
+  "total_results": 87,
+  "expanded_keywords": ["Kilauea Episode 46", "Mayon VAAC", "Georgia wildfire containment", "Monte Faeta Tuscany", "Netherlands wildfire 't Harde Sentinel-2", "China Type 004 Dalian satellite", "North Korea Sinpo SLBM satellite", "US Caribbean buildup satellite", "CAS500-2 첫 교신", "425 정찰위성 전력화", "Sanriku earthquake M7.7"],
+  "searches": [
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery wildfire flood earthquake May 2026", "language": "en", "timestamp": "2026-05-05T23:00:01Z", "result_count": 10, "results": [
+      {"title": "Satellite images track Grand Canyon wildfires burning across thousands of acres", "url": "https://www.space.com/astronomy/earth/satellite-images-track-grand-canyon-wildfires-burning-across-thousands-of-acres", "snippet": "Satellite images track Grand Canyon wildfires", "source_name": "Space.com"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery volcano eruption May 2026", "language": "en", "timestamp": "2026-05-05T23:00:02Z", "result_count": 10, "results": [
+      {"title": "Mayon Volcano Volcanic Ash Advisory: ERUPTION AT 20260505/0544Z", "url": "https://www.volcanodiscovery.com/mayon/news/301450/vaac-advisory-2026-567.html", "snippet": "VAAC advisory eruption at Mayon May 5 2026", "source_name": "VolcanoDiscovery"},
+      {"title": "Lava fountaining has begun at Kīlauea, marking its 46th eruptive episode", "url": "https://mauinow.com/2026/05/05/lava-fountaining-has-begun-at-kilauea-marking-its-46th-eruptive-episode/", "snippet": "Episode 46 lava fountaining began at summit of Kilauea at 08:17 AM", "source_name": "Maui Now"},
+      {"title": "04 May 2026 – Volcano News", "url": "https://volcanoearth.wordpress.com/2026/05/04/04-may-2026/", "snippet": "Global volcano summary May 4 2026", "source_name": "Volcano News"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery deforestation mining oil spill May 2026", "language": "en", "timestamp": "2026-05-05T23:00:03Z", "result_count": 10, "results": [
+      {"title": "Faster Detection of Forest Loss - NASA Science", "url": "https://science.nasa.gov/earth/earth-observatory/faster-detection-of-forest-loss/", "snippet": "Multi-satellite system for early deforestation detection", "source_name": "NASA"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery military buildup naval activity 2026", "language": "en", "timestamp": "2026-05-05T23:00:04Z", "result_count": 10, "results": [
+      {"title": "Satellite Imagery Reveals China's Nuclear Carrier", "url": "https://skyfi.com/en/blog/defense-satellite-imagery-china-nuclear-carrier", "snippet": "February 2026 satellite capture of Dalian shipyard shows Type 004 hull with reactor compartments", "source_name": "SkyFi"},
+      {"title": "We've tracked the US military build-up in the Caribbean. Here's what it could do", "url": "https://stories.theconversation.com/tracking-the-us-military-in-the-caribbean/", "snippet": "Satellite tracking of US military assets in Caribbean", "source_name": "The Conversation"},
+      {"title": "What Satellites Reveal about China's Military Expansion", "url": "https://www.airandspaceforces.com/article/what-satellites-reveal-about-chinas-military-expansion/", "snippet": "China Lop Nur expansion, 60,000 sq ft hangar, J-36 testing", "source_name": "Air & Space Forces Magazine"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery glacier retreat methane plume climate 2026", "language": "en", "timestamp": "2026-05-05T23:00:05Z", "result_count": 10, "results": [
+      {"title": "Global satellite survey reveals uncertainty in landfill methane emissions", "url": "https://www.nature.com/articles/s41586-025-09683-8", "snippet": "Nature study on landfill methane uncertainty", "source_name": "Nature"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery NDVI agriculture maritime fishing 2026", "language": "en", "timestamp": "2026-05-05T23:00:06Z", "result_count": 10, "results": []},
+    {"method": "websearch", "engine": "built-in", "keyword": "위성영상 산불 홍수 태풍 지진 2026년 5월", "language": "ko", "timestamp": "2026-05-05T23:00:07Z", "result_count": 10, "results": [
+      {"title": "국토위성 영상으로 대형 산불 피해지역 신속 복구 지원", "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148941842", "snippet": "국토위성영상은 산불 등 재난 피해지역 확인 지원", "source_name": "대한민국 정책브리핑"},
+      {"title": "2026년 산리쿠 해역 지진", "url": "https://namu.wiki/w/2026%EB%85%84%20%EC%82%B0%EB%A6%AC%EC%BF%A0%20%ED%95%B4%EC%97%AD%20%EC%A7%80%EC%A7%84", "snippet": "2026년 4월 20일 이와테현 산리쿠 해역 M7.7 지진", "source_name": "나무위키"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "위성영상 군사 북한 한반도 2026년 5월", "language": "ko", "timestamp": "2026-05-05T23:00:08Z", "result_count": 10, "results": [
+      {"title": "북한 신포 SLBM 발사 가능성 — 잠수함 기지에서 또 쐈다", "url": "https://www.reportera.co.kr/military/north-korea-sinpo-slbm-ballistic-missile-launch-april-2026/comment-page-1/", "snippet": "신포발 140km, 4년 만의 SLBM 발사 가능성", "source_name": "리포트에라"},
+      {"title": "군 정찰위성 5기 모두 전력화‥독자적 대북 감시정찰 강화", "url": "https://imnews.imbc.com/news/2026/politics/article/6818571_36911.html", "snippet": "5호기 전력화로 2시간마다 북한 감시", "source_name": "MBC"},
+      {"title": "군 정찰위성 5기 이달 말 전력화… 독자 대북 감시능력 고도화", "url": "https://www.seoul.co.kr/news/politics/diplomacy/2026/04/29/20260429006003", "snippet": "425사업 마지막 5호기 이달 말 전력화", "source_name": "서울신문"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Sentinel-2 Landsat wildfire burn scar May 2026", "language": "en", "timestamp": "2026-05-05T23:00:09Z", "result_count": 10, "results": []},
+    {"method": "websearch", "engine": "built-in", "keyword": "Copernicus EMS activation Disaster Charter May 2026", "language": "en", "timestamp": "2026-05-05T23:00:10Z", "result_count": 10, "results": []},
+    {"method": "websearch", "engine": "built-in", "keyword": "Kilauea eruption May 4 5 2026 Episode 46", "language": "en", "timestamp": "2026-05-05T23:00:11Z", "result_count": 10, "results": [
+      {"title": "Lava fountaining has begun at Kīlauea, marking its 46th eruptive episode", "url": "https://mauinow.com/2026/05/05/lava-fountaining-has-begun-at-kilauea-marking-its-46th-eruptive-episode/", "snippet": "Episode 46 began 08:17 AM, fountains 650 ft", "source_name": "Maui Now"},
+      {"title": "Lava fountains peak at 650 feet for Episode 46 at Kilauea", "url": "https://www.staradvertiser.com/2026/05/05/breaking-news/lava-fountaining-marks-start-of-episode-46-at-kilauea/", "snippet": "North vent 650 feet lava fountains", "source_name": "Honolulu Star-Advertiser"},
+      {"title": "Kīlauea Volcano Alert Level Raised To WATCH As Lava Flows Begin", "url": "https://www.bigislandvideonews.com/2026/05/04/kilauea-volcano-alert-level-raised-to-watch-as-lava-flows-begin/", "snippet": "Precursory lava overflow May 4 1:38 AM HST", "source_name": "Big Island Video News"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Mayon volcano eruption May 5 2026 satellite", "language": "en", "timestamp": "2026-05-05T23:00:12Z", "result_count": 10, "results": [
+      {"title": "Mayon Volcano Volcanic Ash Advisory: ERUPTION AT 20260505/0544Z VA CLD UNKNOWN", "url": "https://www.volcanodiscovery.com/mayon/news/301450/vaac-advisory-2026-567.html", "snippet": "Eruption at 0544Z, VA cloud unknown, Himawari-9", "source_name": "VolcanoDiscovery"},
+      {"title": "Panic in Philippines as Mayon volcano ashfall blankets towns in total darkness", "url": "https://www.scmp.com/news/asia/southeast-asia/article/3352320/panic-philippines-mayon-volcano-ashfall-blankets-towns-total-darkness", "snippet": "Pyroclastic flow May 2, 300 families evacuated, 87 villages ash", "source_name": "SCMP"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Georgia wildfire satellite update May 4 5 2026", "language": "en", "timestamp": "2026-05-05T23:00:13Z", "result_count": 10, "results": [
+      {"title": "Georgia Forestry Commission — Hwy 82 Fire 22,471ac 85% contained, Pineland Road 32,575ac 50%", "url": "https://gatrees.org/current-wildfire-information-and-resources/", "snippet": "May 5 update: containment improving, cause determined as mylar balloon on powerline", "source_name": "Georgia Forestry Commission"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Netherlands wildfire Italy Mount Faeta Tuscany satellite May 2026", "language": "en", "timestamp": "2026-05-05T23:00:14Z", "result_count": 10, "results": [
+      {"title": "Tuscany, flames out of control on Monte Faeta: 800 hectares burnt, 3,000 evacuated", "url": "https://www.euronews.com/my-europe/2026/05/01/tuscany-flames-out-of-control-on-monte-faeta-800-hectares-burnt-3000-evacuated", "snippet": "Monte Faeta fire 700ha, 3500 evacuated, Canadairs + thermal drones", "source_name": "Euronews"},
+      {"title": "Tuscany wildfire displaces 3,000 before being contained", "url": "https://www.florencedailynews.com/2026/05/03/tuscany-wildfire-displaces-3000-before-being-contained/", "snippet": "Fire contained May 3", "source_name": "Florence Daily News"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "North Korea SLBM Sinpo submarine launch May 2026 satellite", "language": "en", "timestamp": "2026-05-05T23:00:15Z", "result_count": 10, "results": [
+      {"title": "Imagery shows N.Korea may soon launch new missile submarine", "url": "https://www.nasdaq.com/articles/imagery-shows-n.korea-may-soon-launch-new-missile-submarine-think-tank", "snippet": "SI Analytics satellite imagery March 20/26 shows increased vehicle activity, security covers removed", "source_name": "Nasdaq/Reuters"},
+      {"title": "North Korea Launches Strategic Cruise Missiles from Submarine", "url": "https://www.csis.org/analysis/north-korea-launches-strategic-cruise-missiles-submarine", "snippet": "North Korea submarine missile launches from Hero Kim Gun Ok", "source_name": "CSIS"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "China Type 004 nuclear carrier Dalian satellite imagery 2026", "language": "en", "timestamp": "2026-05-05T23:00:16Z", "result_count": 10, "results": [
+      {"title": "Satellite Imagery Reveals China's Nuclear Carrier", "url": "https://skyfi.com/en/blog/defense-satellite-imagery-china-nuclear-carrier", "snippet": "Feb 2026 SkyFi imagery shows reactor compartments, 25% complete", "source_name": "SkyFi"},
+      {"title": "Strong Evidence That China's Next Carrier Will Be Nuclear Emerges In Shipyard Photo", "url": "https://www.twz.com/sea/strong-evidence-that-chinas-next-carrier-will-be-nuclear-emerges-in-shipyard-photo", "snippet": "The War Zone analysis of Type 004 nuclear carrier evidence", "source_name": "The War Zone"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "NASA Earth Observatory May 2026 image of the day", "language": "en", "timestamp": "2026-05-05T23:00:17Z", "result_count": 10, "results": []},
+    {"method": "websearch", "engine": "built-in", "keyword": "KOMPSAT CAS500-2 한국 위성 2026년 5월 첫 영상", "language": "ko", "timestamp": "2026-05-05T23:00:18Z", "result_count": 10, "results": [
+      {"title": "'4년 지연' 끝 우주로 간 K-위성…CAS500-2가 연 한국 민간 우주시대", "url": "https://www.newsspace.kr/news/article.html?no=13775", "snippet": "CAS500-2 민간 우주시대 전환점", "source_name": "뉴스페이스"},
+      {"title": "K-위성이 바꾸는 스마트농업의 다섯 가지 변화", "url": "https://www.koreaiin.com/news/899944", "snippet": "CAS500 농업 활용 정밀 관측", "source_name": "한국IT산업뉴스"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "US military Caribbean buildup satellite imagery tracking 2026", "language": "en", "timestamp": "2026-05-05T23:00:19Z", "result_count": 10, "results": [
+      {"title": "Satellite Photo Shows US Beefing Up Military Presence in Caribbean", "url": "https://www.newsweek.com/us-military-presence-increase-venezuela-caribbean-2131051", "snippet": "Satellite photos of US military buildup in Caribbean", "source_name": "Newsweek"},
+      {"title": "Satellite Images Reveal US Military Buildup Near Venezuela", "url": "https://capitalpost.uk/politics/defence-security/us-military-buildup-near-venezuela-revealed-in-satellite-images.html", "snippet": "F-35s, helicopters, AC-130, Iwo Jima ARG", "source_name": "Capital Post"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Japan Sanriku earthquake April 2026 satellite damage assessment", "language": "en", "timestamp": "2026-05-05T23:00:20Z", "result_count": 10, "results": [
+      {"title": "2026 Sanriku earthquake", "url": "https://en.wikipedia.org/wiki/2026_Sanriku_earthquake", "snippet": "M7.7 earthquake April 20, 2026, 100km ENE of Miyako", "source_name": "Wikipedia"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Netherlands wildfire satellite April May 2026", "language": "en", "timestamp": "2026-05-05T23:00:21Z", "result_count": 10, "results": [
+      {"title": "Satellite Images Document Massive, Uncontrolled Fire at Dutch Military Site", "url": "https://www.misbar.com/en/editorial/2026/05/01/satellite-images-document-massive-uncontrolled-fire-dutch-military-site", "snippet": "Sentinel-2 captured wildfire at 't Harde military site April 29", "source_name": "Misbar"},
+      {"title": "Wildfire Smoke Detected Across the Netherlands: Local Events with National Atmospheric Impact", "url": "https://ruisdael-observatory.nl/wildfire-smoke-detected-across-the-netherlands-local-events-with-national-atmospheric-impact/", "snippet": "Smoke detection across Netherlands, reached England", "source_name": "Ruisdael Observatory"},
+      {"title": "Major wildfire near 't Harde remains out of control", "url": "https://nltimes.nl/2026/04/29/major-wildfire-near-t-harde-remains-control-roads-closed-air-traffic-diverted", "snippet": "2200m strip on fire at Artillery Shooting Range", "source_name": "NL Times"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "UNOSAT humanitarian satellite analysis May 2026", "language": "en", "timestamp": "2026-05-05T23:00:22Z", "result_count": 10, "results": []}
+  ]
+}

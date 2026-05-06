@@ -1,0 +1,25 @@
+{
+  "id": "src-016",
+  "title": "2026 Sanriku earthquake — M7.7, 100km ENE of Miyako, Japan",
+  "url": "https://en.wikipedia.org/wiki/2026_Sanriku_earthquake",
+  "snippet": "A magnitude 7.7 earthquake struck on April 20, 2026 approximately 100 km east-northeast of Miyako, Iwate Prefecture, Japan at a depth of 20 km. Tsunami waves under 1 meter recorded along the Sanriku coast. No satellite-based damage assessment has been published as of May 5. Ground-based reports indicate minor structural damage in coastal communities.",
+  "source_name": "Wikipedia",
+  "language": "en",
+  "discovered_date": "2026-05-05",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "일본 산리쿠 M7.7 지진 신규 — 4/20 발생, 쓰나미 <1m. 위성 피해 평가 미발표 상태. satellite_unverified.",
+  "entities": [
+    {"id": "ent-evt-078", "type": "Event", "name": "일본 산리쿠 M7.7 지진 (Apr 20)", "properties": {"phenomenon": "earthquake", "lat": 39.5, "lon": 143.5, "country": "JP", "severity": "high", "magnitude": 7.7, "depth_km": 20, "tsunami_max_m": 1.0, "satellite_unverified": true}},
+    {"id": "co-jp", "type": "Country", "name": "일본"},
+    {"id": "ent-loc-078", "type": "Location", "name": "Sanriku coast, Iwate Prefecture, Japan"},
+    {"id": "org-jma", "type": "Organization", "name": "Japan Meteorological Agency"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-078", "predicate": "locatedIn", "object": "ent-loc-078"},
+    {"subject": "ent-evt-078", "predicate": "inCountry", "object": "co-jp"},
+    {"subject": "ent-evt-078", "predicate": "analyzedBy", "object": "org-jma"},
+    {"subject": "ent-evt-078", "predicate": "manifests", "object": "phen-earthquake"}
+  ]
+}

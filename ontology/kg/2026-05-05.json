@@ -1,0 +1,87 @@
+{
+  "date": "2026-05-05",
+  "new_triples": [
+    {"subject": "ent-evt-073", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-007", "date": "2026-05-05", "confidence": 0.70, "type": "explicit"},
+    {"subject": "ent-evt-073", "predicate": "manifests", "object": "phen-wildfire", "source_id": "src-007", "date": "2026-05-05", "confidence": 1.00, "type": "explicit"},
+    {"subject": "ent-evt-073", "predicate": "inCountry", "object": "co-it", "source_id": "src-007", "date": "2026-05-05", "confidence": 1.00, "type": "explicit"},
+    {"subject": "ent-evt-073", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-007", "date": "2026-05-05", "confidence": 1.00, "type": "explicit"},
+    {"subject": "ent-evt-073", "predicate": "locatedIn", "object": "ent-loc-025", "source_id": "src-007", "date": "2026-05-05", "confidence": 0.95, "type": "explicit"},
+
+    {"subject": "ent-evt-074", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-008", "date": "2026-05-05", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-074", "predicate": "observedBy", "object": "sat-planetscope", "source_id": "src-008", "date": "2026-05-05", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-074", "predicate": "manifests", "object": "phen-wildfire", "source_id": "src-008", "date": "2026-05-05", "confidence": 1.00, "type": "explicit"},
+    {"subject": "ent-evt-074", "predicate": "inCountry", "object": "co-nl", "source_id": "src-008", "date": "2026-05-05", "confidence": 1.00, "type": "explicit"},
+    {"subject": "ent-evt-074", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-008", "date": "2026-05-05", "confidence": 1.00, "type": "explicit"},
+    {"subject": "ent-evt-074", "predicate": "locatedIn", "object": "ent-loc-026", "source_id": "src-008", "date": "2026-05-05", "confidence": 0.95, "type": "explicit"},
+
+    {"subject": "ent-evt-075", "predicate": "manifests", "object": "phen-naval", "source_id": "src-010", "date": "2026-05-05", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-075", "predicate": "inCountry", "object": "co-cn", "source_id": "src-010", "date": "2026-05-05", "confidence": 1.00, "type": "explicit"},
+    {"subject": "ent-evt-075", "predicate": "inDomain", "object": "dom-defense", "source_id": "src-010", "date": "2026-05-05", "confidence": 1.00, "type": "explicit"},
+    {"subject": "ent-evt-075", "predicate": "observedBy", "object": "sat-skyfi", "source_id": "src-010", "date": "2026-05-05", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-075", "predicate": "locatedIn", "object": "ent-loc-027", "source_id": "src-010", "date": "2026-05-05", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-075", "predicate": "analyzedBy", "object": "org-skyfi", "source_id": "src-010", "date": "2026-05-05", "confidence": 0.90, "type": "explicit"},
+
+    {"subject": "ent-evt-076", "predicate": "manifests", "object": "phen-military", "source_id": "src-011", "date": "2026-05-05", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-076", "predicate": "observedBy", "object": "sat-planetscope", "source_id": "src-011", "date": "2026-05-05", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-076", "predicate": "inCountry", "object": "co-us", "source_id": "src-011", "date": "2026-05-05", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-076", "predicate": "inDomain", "object": "dom-defense", "source_id": "src-011", "date": "2026-05-05", "confidence": 1.00, "type": "explicit"},
+
+    {"subject": "ent-evt-077", "predicate": "manifests", "object": "phen-military", "source_id": "src-012", "date": "2026-05-05", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-077", "predicate": "inCountry", "object": "co-kp", "source_id": "src-012", "date": "2026-05-05", "confidence": 1.00, "type": "explicit"},
+    {"subject": "ent-evt-077", "predicate": "inDomain", "object": "dom-defense", "source_id": "src-012", "date": "2026-05-05", "confidence": 1.00, "type": "explicit"},
+    {"subject": "ent-evt-077", "predicate": "analyzedBy", "object": "org-sianalytics", "source_id": "src-012", "date": "2026-05-05", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-077", "predicate": "locatedIn", "object": "ent-loc-028", "source_id": "src-012", "date": "2026-05-05", "confidence": 0.95, "type": "explicit"},
+
+    {"subject": "ent-evt-079", "predicate": "manifests", "object": "phen-crop", "source_id": "src-015", "date": "2026-05-05", "confidence": 0.80, "type": "explicit"},
+    {"subject": "ent-evt-079", "predicate": "inCountry", "object": "co-kr", "source_id": "src-015", "date": "2026-05-05", "confidence": 1.00, "type": "explicit"},
+    {"subject": "ent-evt-079", "predicate": "inDomain", "object": "dom-agri-marine", "source_id": "src-015", "date": "2026-05-05", "confidence": 1.00, "type": "explicit"},
+    {"subject": "ent-evt-079", "predicate": "observedBy", "object": "sat-cas500-2", "source_id": "src-015", "date": "2026-05-05", "confidence": 0.75, "type": "explicit"},
+
+    {"subject": "ent-evt-080", "predicate": "manifests", "object": "phen-earthquake", "source_id": "src-016", "date": "2026-05-05", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-080", "predicate": "inCountry", "object": "co-jp", "source_id": "src-016", "date": "2026-05-05", "confidence": 1.00, "type": "explicit"},
+    {"subject": "ent-evt-080", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-016", "date": "2026-05-05", "confidence": 0.50, "type": "explicit", "note": "satellite_unverified — 위성 피해 평가 미실시, confidence cap 0.5"},
+    {"subject": "ent-evt-080", "predicate": "locatedIn", "object": "ent-loc-029", "source_id": "src-016", "date": "2026-05-05", "confidence": 0.90, "type": "explicit"}
+  ],
+  "updated_triples": [
+    {"subject": "ent-evt-070", "predicate": "observedBy", "object": "sat-goes18", "source_id": "src-001", "date": "2026-05-05", "confidence": 0.85, "type": "explicit", "note": "Episode 46 lava fountaining 650ft — GOES-18 thermal IR monitoring"},
+    {"subject": "ent-evt-070", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-001", "date": "2026-05-05", "confidence": 0.95, "type": "explicit", "note": "Kīlauea Ep46 eruption confirmed"},
+    {"subject": "ent-evt-070", "predicate": "inCountry", "object": "co-us", "source_id": "src-001", "date": "2026-05-05", "confidence": 1.00, "type": "explicit"},
+    {"subject": "ent-evt-070", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-001", "date": "2026-05-05", "confidence": 1.00, "type": "explicit"},
+    {"subject": "ent-evt-070", "predicate": "analyzedBy", "object": "org-usgs", "source_id": "src-001", "date": "2026-05-05", "confidence": 1.00, "type": "explicit", "note": "USGS HVO official report"},
+
+    {"subject": "ent-evt-071", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-004", "date": "2026-05-05", "confidence": 0.90, "type": "explicit", "note": "VAAC Tokyo ash advisory at 0544Z"},
+    {"subject": "ent-evt-071", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-004", "date": "2026-05-05", "confidence": 0.95, "type": "explicit", "note": "Mayon May 5 eruption ongoing"},
+    {"subject": "ent-evt-071", "predicate": "inCountry", "object": "co-ph", "source_id": "src-004", "date": "2026-05-05", "confidence": 1.00, "type": "explicit"},
+    {"subject": "ent-evt-071", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-004", "date": "2026-05-05", "confidence": 1.00, "type": "explicit"},
+    {"subject": "ent-evt-071", "predicate": "analyzedBy", "object": "org-phivolcs", "source_id": "src-005", "date": "2026-05-05", "confidence": 0.95, "type": "explicit"},
+
+    {"subject": "ent-evt-072", "predicate": "observedBy", "object": "sat-landsat8", "source_id": "src-006", "date": "2026-05-05", "confidence": 0.90, "type": "explicit", "note": "Georgia fires containment update — Landsat 8 OLI"},
+    {"subject": "ent-evt-072", "predicate": "manifests", "object": "phen-wildfire", "source_id": "src-006", "date": "2026-05-05", "confidence": 1.00, "type": "explicit"},
+    {"subject": "ent-evt-072", "predicate": "inCountry", "object": "co-us", "source_id": "src-006", "date": "2026-05-05", "confidence": 1.00, "type": "explicit"},
+    {"subject": "ent-evt-072", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-006", "date": "2026-05-05", "confidence": 1.00, "type": "explicit"},
+    {"subject": "ent-evt-072", "predicate": "analyzedBy", "object": "org-nasa", "source_id": "src-006", "date": "2026-05-05", "confidence": 0.90, "type": "explicit"},
+
+    {"subject": "ent-evt-078", "predicate": "manifests", "object": "phen-military", "source_id": "src-013", "date": "2026-05-05", "confidence": 0.90, "type": "explicit", "note": "425 Project 5 recon sats fully operational — 2-hr NK revisit"},
+    {"subject": "ent-evt-078", "predicate": "inCountry", "object": "co-kr", "source_id": "src-013", "date": "2026-05-05", "confidence": 1.00, "type": "explicit"},
+    {"subject": "ent-evt-078", "predicate": "inDomain", "object": "dom-defense", "source_id": "src-013", "date": "2026-05-05", "confidence": 1.00, "type": "explicit"}
+  ],
+  "inferred_triples": [
+    {"subject": "ent-evt-074", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.90, "type": "inferred", "note": "Sentinel-2A (ESA) + PlanetScope (Planet) 독립 관측 — 두 사업자 교차검증"},
+    {"subject": "ent-evt-070", "predicate": "partOfSeries", "object": "ent-evt-021", "rule": "temporal_progression", "confidence": 0.95, "type": "inferred", "note": "Kīlauea Episode 46 → Episode 45 → Episode 44 시간적 연속"},
+    {"subject": "ent-evt-071", "predicate": "partOfSeries", "object": "ent-evt-029", "rule": "temporal_progression", "confidence": 0.95, "type": "inferred", "note": "Mayon 5/5 VAAC 경보 → 5/2 PDC → 2026-01~ 지속 분출 시리즈"},
+    {"subject": "ent-evt-072", "predicate": "partOfSeries", "object": "ent-evt-020", "rule": "temporal_progression", "confidence": 0.95, "type": "inferred", "note": "Georgia wildfire containment 진전 → 5/4 Landsat → 4/30 최초 보도 시리즈"},
+    {"subject": "ent-evt-077", "predicate": "koreaBoost", "object": "+0.10", "rule": "korea_geo_focus", "confidence": 0.99, "type": "inferred", "note": "KP iso_code — 한반도 GeoFocus 가산"},
+    {"subject": "ent-evt-078", "predicate": "koreaBoost", "object": "+0.10", "rule": "korea_geo_focus", "confidence": 0.99, "type": "inferred", "note": "KR iso_code — 한반도 GeoFocus 가산"},
+    {"subject": "ent-evt-079", "predicate": "koreaBoost", "object": "+0.10", "rule": "korea_geo_focus", "confidence": 0.99, "type": "inferred", "note": "KR iso_code — 한반도 GeoFocus 가산 (CAS500 농업 활용)"},
+    {"subject": "ent-evt-070", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.99, "type": "inferred", "note": "USGS = space_agency 공식 기관"},
+    {"subject": "ent-evt-072", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.90, "type": "inferred", "note": "NASA = space_agency 공식 분석"},
+    {"subject": "ent-evt-075", "predicate": "commercialBoost", "object": "+0.10", "rule": "commercial_imagery_provider", "confidence": 0.85, "type": "inferred", "note": "SkyFi = commercial_imagery 사업자 직접 분석"},
+    {"subject": "ent-evt-077", "predicate": "analystBoost", "object": "+0.10", "rule": "analyst_org_trust", "confidence": 0.85, "type": "inferred", "note": "SI Analytics = 위성영상 AI 분석 전문기관"},
+    {"subject": "ent-evt-072", "predicate": "baCredibilityBoost", "object": "+0.10", "rule": "before_after_credibility", "confidence": 0.90, "type": "inferred", "note": "Georgia wildfire Landsat 8 before/after burned area"}
+  ],
+  "stats": {
+    "new_nodes": 13,
+    "new_edges": 35,
+    "inferred_edges": 12
+  }
+}

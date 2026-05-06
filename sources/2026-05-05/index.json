@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-05",
+  "total": 20,
+  "new": 7,
+  "reported": 7,
+  "update": 6,
+  "items": [
+    {"id": "src-001", "title": "Kīlauea Episode 46 begins — 650 ft lava fountains from north vent (USGS HVO)", "url": "https://mauinow.com/2026/05/05/lava-fountaining-has-begun-at-kilauea-marking-its-46th-eruptive-episode/", "tag": "update", "related_report": "2026-05-04/src-001", "entity_count": 4},
+    {"id": "src-002", "title": "Kīlauea alert level escalates from advisory to watch — precursory lava overflow May 4", "url": "https://www.bigislandvideonews.com/2026/05/04/kilauea-volcano-alert-level-raised-to-watch-as-lava-flows-begin/", "tag": "reported", "related_report": "src-001", "entity_count": 2},
+    {"id": "src-003", "title": "Lava fountains peak at 650 feet for Episode 46 at Kilauea", "url": "https://www.staradvertiser.com/2026/05/05/breaking-news/lava-fountaining-marks-start-of-episode-46-at-kilauea/", "tag": "reported", "related_report": "src-001", "entity_count": 2},
+    {"id": "src-004", "title": "Mayon Volcano Ash Advisory May 5 — ERUPTION AT 0544Z (Himawari-9 VAAC Tokyo)", "url": "https://www.volcanodiscovery.com/mayon/news/301450/vaac-advisory-2026-567.html", "tag": "update", "related_report": "2026-05-04/src-007", "entity_count": 4},
+    {"id": "src-005", "title": "Panic in Philippines as Mayon ashfall blankets towns in total darkness — pyroclastic May 2", "url": "https://www.scmp.com/news/asia/southeast-asia/article/3352320/panic-philippines-mayon-volcano-ashfall-blankets-towns-total-darkness", "tag": "reported", "related_report": "src-004", "entity_count": 3},
+    {"id": "src-006", "title": "Georgia wildfires May 5 — Hwy 82 22,471ac 85% contained, Pineland 32,575ac 50%", "url": "https://gatrees.org/current-wildfire-information-and-resources/", "tag": "update", "related_report": "2026-05-04/src-003", "entity_count": 4},
+    {"id": "src-007", "title": "Tuscany Monte Faeta wildfire — 700ha burnt, 3,500 evacuated, contained May 3 (Copernicus imagery)", "url": "https://www.euronews.com/my-europe/2026/05/01/tuscany-flames-out-of-control-on-monte-faeta-800-hectares-burnt-3000-evacuated", "tag": "new", "related_report": null, "entity_count": 5},
+    {"id": "src-008", "title": "Netherlands 't Harde military site wildfire — Sentinel-2/Planet satellite imagery, smoke reached England", "url": "https://www.misbar.com/en/editorial/2026/05/01/satellite-images-document-massive-uncontrolled-fire-dutch-military-site", "tag": "new", "related_report": null, "entity_count": 5},
+    {"id": "src-009", "title": "Netherlands wildfire smoke national atmospheric impact — Ruisdael Observatory analysis", "url": "https://ruisdael-observatory.nl/wildfire-smoke-detected-across-the-netherlands-local-events-with-national-atmospheric-impact/", "tag": "reported", "related_report": "src-008", "entity_count": 2},
+    {"id": "src-010", "title": "China Type 004 nuclear carrier — SkyFi satellite imagery reveals reactor compartments at Dalian", "url": "https://skyfi.com/en/blog/defense-satellite-imagery-china-nuclear-carrier", "tag": "new", "related_report": null, "entity_count": 5},
+    {"id": "src-011", "title": "US military Caribbean buildup — satellite tracking of major assets near Venezuela", "url": "https://stories.theconversation.com/tracking-the-us-military-in-the-caribbean/", "tag": "new", "related_report": null, "entity_count": 4},
+    {"id": "src-012", "title": "North Korea Sinpo SLBM preparations — SI Analytics satellite imagery shows increased activity", "url": "https://www.nasdaq.com/articles/imagery-shows-n.korea-may-soon-launch-new-missile-submarine-think-tank", "tag": "new", "related_report": null, "entity_count": 5},
+    {"id": "src-013", "title": "한국 425사업 정찰위성 5기 전력화 — 2시간마다 북한 감시", "url": "https://imnews.imbc.com/news/2026/politics/article/6818571_36911.html", "tag": "update", "related_report": "2026-05-04/src-013", "entity_count": 3},
+    {"id": "src-014", "title": "CAS500-2 '4년 지연' 끝 우주로 — K-위성 민간 우주시대 전환점", "url": "https://www.newsspace.kr/news/article.html?no=13775", "tag": "reported", "related_report": "2026-05-04/src-019", "entity_count": 3},
+    {"id": "src-015", "title": "K-위성이 바꾸는 스마트농업의 다섯 가지 변화 — CAS500 농업 활용", "url": "https://www.koreaiin.com/news/899944", "tag": "new", "related_report": null, "entity_count": 3},
+    {"id": "src-016", "title": "Japan Sanriku M7.7 earthquake April 20 — minimal satellite damage, tsunami advisory issued", "url": "https://en.wikipedia.org/wiki/2026_Sanriku_earthquake", "tag": "new", "related_report": null, "entity_count": 4},
+    {"id": "src-017", "title": "US military assembles largest force of warships in Middle East in decades", "url": "https://www.militarytimes.com/news/your-military/2026/02/26/us-military-assembles-largest-force-of-warships-aircraft-in-middle-east-in-decades/", "tag": "reported", "related_report": "2026-05-04/src-010", "entity_count": 2},
+    {"id": "src-018", "title": "04 May 2026 Volcano News — global summary of active volcanoes", "url": "https://volcanoearth.wordpress.com/2026/05/04/04-may-2026/", "tag": "update", "related_report": "2026-05-04/src-001", "entity_count": 3},
+    {"id": "src-019", "title": "Strong Evidence China's Next Carrier Will Be Nuclear — The War Zone shipyard photo analysis", "url": "https://www.twz.com/sea/strong-evidence-that-chinas-next-carrier-will-be-nuclear-emerges-in-shipyard-photo", "tag": "reported", "related_report": "src-010", "entity_count": 3},
+    {"id": "src-020", "title": "US military buildup near Venezuela revealed in satellite images", "url": "https://capitalpost.uk/politics/defence-security/us-military-buildup-near-venezuela-revealed-in-satellite-images.html", "tag": "reported", "related_report": "src-011", "entity_count": 2}
+  ]
+}

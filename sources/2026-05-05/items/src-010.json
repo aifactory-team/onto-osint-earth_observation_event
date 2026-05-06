@@ -1,0 +1,29 @@
+{
+  "id": "src-010",
+  "title": "Defense satellite imagery reveals China's Type 004 nuclear carrier construction at Dalian — SkyFi",
+  "url": "https://skyfi.com/en/blog/defense-satellite-imagery-china-nuclear-carrier",
+  "snippet": "February 2026 satellite imagery of Dalian shipyard reveals China's Type 004 aircraft carrier under construction with reactor compartments visible, estimated 25% complete. Analysis by Tom Shugart (CNAS) identifies nuclear propulsion components and flight deck sections. Ship expected to be China's first nuclear-powered carrier.",
+  "source_name": "SkyFi",
+  "language": "en",
+  "discovered_date": "2026-05-05",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "중국 Type 004 핵추진 항공모함 건조 위성영상 분석 신규 — CNAS Tom Shugart 분석, 원자로 격실 식별, 25% 완성.",
+  "entities": [
+    {"id": "ent-evt-073", "type": "Event", "name": "중국 Type 004 핵추진 항모 건조 (대련 조선소 위성 관측)", "properties": {"phenomenon": "military_buildup", "lat": 38.9, "lon": 121.6, "country": "CN", "severity": "high", "completion_pct": 25, "before_after_available": true}},
+    {"id": "sat-skyfi", "type": "Satellite", "name": "SkyFi (commercial high-res)"},
+    {"id": "org-skyfi", "type": "Organization", "name": "SkyFi"},
+    {"id": "org-cnas", "type": "Organization", "name": "CNAS (Center for a New American Security)"},
+    {"id": "ent-loc-073", "type": "Location", "name": "Dalian Shipyard, Liaoning, China"},
+    {"id": "co-cn", "type": "Country", "name": "중화인민공화국"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-073", "predicate": "observedBy", "object": "sat-skyfi"},
+    {"subject": "ent-evt-073", "predicate": "analyzedBy", "object": "org-cnas"},
+    {"subject": "ent-evt-073", "predicate": "reportedBy", "object": "org-skyfi"},
+    {"subject": "ent-evt-073", "predicate": "locatedIn", "object": "ent-loc-073"},
+    {"subject": "ent-evt-073", "predicate": "inCountry", "object": "co-cn"},
+    {"subject": "ent-evt-073", "predicate": "manifests", "object": "phen-military"}
+  ]
+}

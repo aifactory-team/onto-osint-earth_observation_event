@@ -377,3 +377,77 @@ config 한도 내 — �� 클래스 0건, 새 관��� 유형 0건.
 | 이벤트 업데이트 | ent-evt-001/004/020/028/029 (5건) | 후속 보도 반영 |
 
 config 한도 내 — 새 클래스 0건, 새 관계 유형 0건.
+
+---
+
+## 2026-05-05 추론 결과
+
+### multi_satellite_confirmation (다중 위성 교차검증) — 1건
+
+- **추론 #1:** ent-evt-074 (네덜란드 't Harde 산불) — observedBy Sentinel-2A (ESA) AND PlanetScope (Planet Labs) → multiSatBoost +0.20 [confidence 0.90, 확정]
+  - Sentinel-2A: 2026-04-29 화재 연기 플룸 관측
+  - PlanetScope: 2026-04-29 연기 확산 영상 (smoke reached England)
+  - 운영자 독립: ESA ≠ Planet Labs → 교차검증 성립
+
+### temporal_progression (시계열 연속 관측) — 3건
+
+- **추론 #2:** ent-evt-070 (Kilauea Ep46) partOfSeries ent-evt-021 (Ep45) [confidence 0.95, 확정]
+  - 동일 위치(19.421, -155.287), 동일 현상(volcanic_eruption), Ep45(4/23)→Ep46(5/5)
+- **추론 #3:** ent-evt-071 (Mayon 5/5) partOfSeries ent-evt-029 (Mayon ongoing) [confidence 0.95, 확정]
+  - 동일 위치(13.257, 123.685), 연속 분출, VAAC 경보 시리즈
+- **추론 #4:** ent-evt-072 (Georgia wildfire 5/5) partOfSeries ent-evt-020 (Georgia wildfire 4/30) [confidence 0.95, 확정]
+  - 동일 위치(31.2, -82.3), 봉쇄율 진전(64%→85%)
+
+### sensor_capability_match (센서-현상 적합성) — 2건
+
+- **추론 #5:** ent-evt-071 (Mayon 5/5) — observedBy Himawari-9 (GEO, thermal_infrared) + volcanic_eruption → thermalBoost +0.10 [confidence 0.90, 확정]
+- **추론 #6:** ent-evt-072 (Georgia wildfire) — observedBy Landsat 8 (OLI+TIRS) + wildfire → thermalBoost +0.10 [confidence 0.90, 확정]
+
+### official_source_trust (공식 기관 신뢰도 가산) — 2건
+
+- **추론 #7:** ent-evt-070 (Kilauea Ep46) — analyzedBy USGS (space_agency) → officialBoost +0.15 [confidence 0.95, 확정]
+- **추론 #8:** ent-evt-071 (Mayon 5/5) — analyzedBy PHIVOLCS (space_agency) → officialBoost +0.15 [confidence 0.90, 확정]
+
+### korea_geo_focus (한반도 가산) — 3건
+
+- **추론 #9:** ent-evt-077 (NK Sinpo SLBM) — inCountry KP → koreaBoost +0.10 [confidence 1.0, 확정]
+- **추론 #10:** ent-evt-078 (425 정찰위성) — inCountry KR → koreaBoost +0.10 [confidence 1.0, 확정]
+- **추론 #11:** ent-evt-079 (CAS500-2 농업) — inCountry KR → koreaBoost +0.10 [confidence 1.0, 확정]
+
+### 종합 신뢰도 산정
+
+| 이벤트 ID | 이벤트명 | 기본 신뢰도 | 가산 | 최종 신뢰도 | 비고 |
+|-----------|---------|-----------|------|-----------|------|
+| ent-evt-070 | Kilauea Ep46 | 0.80 | officialBoost +0.15 | 0.95 | USGS 공식, 시계열 |
+| ent-evt-071 | Mayon 5/5 | 0.75 | officialBoost +0.15, thermalBoost +0.10 | 0.95 | PHIVOLCS+Himawari |
+| ent-evt-072 | Georgia wildfire | 0.80 | thermalBoost +0.10 | 0.90 | Landsat 8 TIRS |
+| ent-evt-073 | Monte Faeta | 0.65 | — | 0.65 | 위성 출처 간접 |
+| ent-evt-074 | Netherlands 't Harde | 0.75 | multiSatBoost +0.20 | 0.95 | Sentinel-2+Planet 교차 |
+| ent-evt-075 | Type 004 carrier | 0.85 | hiResBoost +0.15 | 0.95 | SkyFi hi-res tasking |
+| ent-evt-076 | US Caribbean | 0.80 | — | 0.80 | Planet imagery 확인 |
+| ent-evt-077 | NK Sinpo SLBM | 0.80 | koreaBoost +0.10 | 0.90 | SI Analytics 위성 |
+| ent-evt-078 | 425 정찰위성 | 0.85 | koreaBoost +0.10 | 0.95 | 공식 발표 |
+| ent-evt-079 | CAS500-2 농업 | 0.70 | koreaBoost +0.10 | 0.80 | 활용 전망 |
+| ent-evt-080 | Sanriku M7.7 | 0.50 | — | 0.50 | 위성 미검증 |
+
+### 추론 통계 요약
+
+| 규칙 | 금일 발동 | 누적 | 평균 신뢰도 |
+|------|----------|------|-----------|
+| multi_satellite_confirmation | 1 | 12 | 0.90 |
+| temporal_progression | 3 | 9 | 0.95 |
+| sensor_capability_match | 2 | 16 | 0.90 |
+| official_source_trust | 2 | 13 | 0.93 |
+| korea_geo_focus | 3 | 14 | 1.00 |
+| **합계** | **11** | **64** | **0.93** |
+
+### 온톨로지 변경
+
+| 변경 유형 | 대상 | 근거 |
+|----------|------|------|
+| 새 Country | co-nl (네덜란드) (1건) | 't Harde 산불 위성 관측 |
+| 새 Location | ent-loc-025~029 (5건) | Monte Faeta, 't Harde, Dalian, Sinpo, Sanriku |
+| 새 Event | ent-evt-070~080 (11건) | 신규 7건 + 업데이트 4건 |
+| Organization | org-si-analytics (1건) | SI Analytics — 한국 위성영상 AI 기업 |
+
+config 한도 내 — 새 클래스 0건, 새 관계 유형 0건.

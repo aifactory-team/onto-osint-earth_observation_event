@@ -1,0 +1,26 @@
+{
+  "id": "src-001",
+  "title": "Lava fountaining has begun at Kīlauea marking its 46th eruptive episode — Maui Now",
+  "url": "https://mauinow.com/2026/05/05/lava-fountaining-has-begun-at-kilauea-marking-its-46th-eruptive-episode/",
+  "snippet": "Kīlauea Episode 46 began at 08:17 AM HST May 5, 2026 with lava fountains reaching 650 feet from the north vent in Halemaʻumaʻu crater. USGS HVO confirmed the eruption within the predicted May 4-7 window. Strong volcanic gas emissions and incandescent lava flows observed.",
+  "source_name": "Maui Now",
+  "language": "en",
+  "discovered_date": "2026-05-05",
+  "tag": "update",
+  "related_report": "2026-05-04/src-001",
+  "related_item": null,
+  "tag_reason": "Kīlauea Episode 46 실제 분출 확인 — 이전 보고서(src-001)의 May 4-7 예보 창 내 분출 시작. 650ft 용암 분수 관측.",
+  "entities": [
+    {"id": "ent-evt-004", "type": "Event", "name": "Kīlauea Episode 46 분출 개시 (May 5 08:17 HST)", "properties": {"phenomenon": "volcanic_eruption", "lat": 19.421, "lon": -155.287, "country": "US", "severity": "high", "fountain_height_ft": 650, "vent": "north_vent"}},
+    {"id": "sat-goes18", "type": "Satellite", "name": "GOES-18"},
+    {"id": "org-usgs", "type": "Organization", "name": "USGS"},
+    {"id": "org-hvo", "type": "Organization", "name": "Hawaiian Volcano Observatory"},
+    {"id": "ent-loc-004", "type": "Location", "name": "Kīlauea summit, Halemaʻumaʻu crater"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-004", "predicate": "observedBy", "object": "sat-goes18"},
+    {"subject": "ent-evt-004", "predicate": "analyzedBy", "object": "org-hvo"},
+    {"subject": "ent-evt-004", "predicate": "locatedIn", "object": "ent-loc-004"},
+    {"subject": "ent-evt-004", "predicate": "manifests", "object": "phen-volcano"}
+  ]
+}

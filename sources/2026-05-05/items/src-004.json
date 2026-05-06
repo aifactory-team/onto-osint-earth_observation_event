@@ -1,0 +1,27 @@
+{
+  "id": "src-004",
+  "title": "Mayon VAAC advisory — eruption at 0544Z May 5, 2026",
+  "url": "https://www.volcanodiscovery.com/mayon/news/301450/vaac-advisory-2026-567.html",
+  "snippet": "Tokyo VAAC issued advisory for Mayon volcano eruption at 0544Z on May 5, 2026. Volcanic ash cloud observed extending from the summit. PHIVOLCS maintains Alert Level 3 (increased tendency towards hazardous eruption). Sentinel-5P SO₂ plume detection pending.",
+  "source_name": "VolcanoDiscovery",
+  "language": "en",
+  "discovered_date": "2026-05-05",
+  "tag": "update",
+  "related_report": "2026-05-04/src-007",
+  "related_item": null,
+  "tag_reason": "마욘 화산 후속 — May 5 0544Z 신규 분출 VAAC 경보. 이전 보고서(src-007) 이후 지속적 활동 확인.",
+  "entities": [
+    {"id": "ent-evt-070", "type": "Event", "name": "마욘 화산 분출 (May 5 0544Z VAAC)", "properties": {"phenomenon": "volcanic_eruption", "lat": 13.257, "lon": 123.685, "country": "PH", "severity": "high", "alert_level": 3}},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "org-tokyovaac", "type": "Organization", "name": "Tokyo VAAC"},
+    {"id": "org-phivolcs", "type": "Organization", "name": "PHIVOLCS"},
+    {"id": "ent-loc-070", "type": "Location", "name": "Mayon Volcano, Albay, Philippines"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-070", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-070", "predicate": "analyzedBy", "object": "org-tokyovaac"},
+    {"subject": "ent-evt-070", "predicate": "analyzedBy", "object": "org-phivolcs"},
+    {"subject": "ent-evt-070", "predicate": "locatedIn", "object": "ent-loc-070"},
+    {"subject": "ent-evt-070", "predicate": "manifests", "object": "phen-volcano"}
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "src-007",
+  "title": "Tuscany flames out of control on Monte Faeta — 800 hectares burnt, 3000 evacuated",
+  "url": "https://www.euronews.com/my-europe/2026/05/01/tuscany-flames-out-of-control-on-monte-faeta-800-hectares-burnt-3000-evacuated",
+  "snippet": "Wildfire on Monte Faeta in Tuscany, Italy has burned approximately 700 hectares with 3,500 people evacuated. Canadair water bombers deployed alongside thermal drones for fire front mapping. Copernicus EMS activation expected. Strong southerly winds hamper containment efforts.",
+  "source_name": "Euronews",
+  "language": "en",
+  "discovered_date": "2026-05-05",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이탈리아 토스카나 Monte Faeta 산불 신규 — 700ha 소실, 3,500명 대피. Copernicus EMS 활성화 및 열화상 드론 관측.",
+  "entities": [
+    {"id": "ent-evt-071", "type": "Event", "name": "Monte Faeta 산불 (Tuscany, Italy)", "properties": {"phenomenon": "wildfire", "lat": 43.78, "lon": 10.45, "country": "IT", "severity": "high", "area_hectares": 700, "evacuated": 3500}},
+    {"id": "sat-sentinel2", "type": "Satellite", "name": "Sentinel-2"},
+    {"id": "dp-cems", "type": "DataProduct", "name": "Copernicus EMS"},
+    {"id": "sensor-thermal-drone", "type": "Sensor", "name": "Thermal imaging drone"},
+    {"id": "org-euronews", "type": "Organization", "name": "Euronews"},
+    {"id": "ent-loc-071", "type": "Location", "name": "Monte Faeta, Tuscany, Italy"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-071", "predicate": "observedBy", "object": "sat-sentinel2"},
+    {"subject": "ent-evt-071", "predicate": "usesDataProduct", "object": "dp-cems"},
+    {"subject": "ent-evt-071", "predicate": "usesSensor", "object": "sensor-thermal-drone"},
+    {"subject": "ent-evt-071", "predicate": "reportedBy", "object": "org-euronews"},
+    {"subject": "ent-evt-071", "predicate": "locatedIn", "object": "ent-loc-071"},
+    {"subject": "ent-evt-071", "predicate": "manifests", "object": "phen-wildfire"}
+  ]
+}
