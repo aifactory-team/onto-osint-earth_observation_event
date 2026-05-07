@@ -1,0 +1,27 @@
+{
+  "id": "src-013",
+  "title": "ESA — Sentinel-5P data used in new methane detection system (MARS)",
+  "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P/Sentinel-5P_data_used_in_new_methane_detection_system",
+  "snippet": "MARS uses Sentinel-5P daily for methane plume detection",
+  "source_name": "ESA",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "new",
+  "related_report": null,
+  "related_item": "evt-mars-methane-system-2026",
+  "tag_reason": "ESA 신규 발표 — MARS 메탄 탐지 시스템 (Sentinel-5P 일별). 이전 14일 인덱스 동일 URL 없음.",
+  "entities": [
+    {"id": "evt-mars-methane-system-2026", "type": "Event", "name": "MARS methane detection system rollout", "properties": {"phenomenon": "methane_plume", "country": null, "observation_date": "2026-05-06", "severity": "low"}},
+    {"id": "org-esa", "matched_id": "org-esa", "type": "Organization"},
+    {"id": "sat-sentinel5p", "matched_id": "sat-sentinel5p", "type": "Satellite"},
+    {"id": "sensor-tropomi", "matched_id": "sensor-tropomi", "type": "Sensor"},
+    {"id": "phen-methane", "matched_id": "phen-methane", "type": "Phenomenon"}
+  ],
+  "relations": [
+    {"subject": "evt-mars-methane-system-2026", "predicate": "analyzedBy", "object": "org-esa"},
+    {"subject": "evt-mars-methane-system-2026", "predicate": "observedBy", "object": "sat-sentinel5p"},
+    {"subject": "evt-mars-methane-system-2026", "predicate": "usesSensor", "object": "sensor-tropomi"},
+    {"subject": "evt-mars-methane-system-2026", "predicate": "manifests", "object": "phen-methane"},
+    {"subject": "evt-mars-methane-system-2026", "predicate": "inDomain", "object": "dom-climate"}
+  ]
+}

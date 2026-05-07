@@ -1,0 +1,25 @@
+{
+  "id": "src-025",
+  "title": "China new high-tech radar installation construction on Cuarteron Reef (Spratlys)",
+  "url": "https://www.naturalnews.com/2026-04-06-china-accelerates-military-expansion-south-china-sea.html",
+  "snippet": "Satellite imagery reveals new high-tech radar installation construction on Cuarteron Reef (Spratlys).",
+  "source_name": "Natural News",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규 — 14일 인덱스에 Cuarteron Reef(Spratlys) 신규 첨단 레이더 시설 보도 없음 (Antelope Reef와는 별개 위치). 출처 신뢰도(Natural News) 한계 → confidence 0.65",
+  "entities": [
+    {"id": "temp-evt-025", "type": "Event", "name": "Cuarteron Reef new high-tech radar installation construction (Spratlys, China)", "properties": {"phenomenon": "military_buildup", "lat": 8.86, "lon": 112.84, "country": "CN", "observation_date": "2026-04", "confidence": 0.65, "satellite_unverified": false}},
+    {"id": "sat-worldview3", "type": "Satellite", "name": "WorldView-3"},
+    {"id": "co-cn", "type": "Country", "name": "중국"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-025", "predicate": "observedBy", "object": "sat-worldview3"},
+    {"subject": "temp-evt-025", "predicate": "manifests", "object": "phen-military"},
+    {"subject": "temp-evt-025", "predicate": "manifests", "object": "phen-construction"},
+    {"subject": "temp-evt-025", "predicate": "inDomain", "object": "dom-defense"},
+    {"subject": "temp-evt-025", "predicate": "inCountry", "object": "co-cn"}
+  ]
+}

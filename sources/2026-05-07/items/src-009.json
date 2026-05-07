@@ -1,0 +1,21 @@
+{
+  "id": "src-009",
+  "title": "Maxar Intelligence unveils first images from WorldView Legion satellites",
+  "url": "https://spacenews.com/maxar-intelligence-unveils-first-images-from-next-generation-worldview-legion-satellites/",
+  "snippet": "First Legion imagery release supports defense/intel pattern-of-life analysis.",
+  "source_name": "SpaceNews",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "reported",
+  "related_report": "src-008",
+  "related_item": "src-008",
+  "tag_reason": "src-008 (Maxar 공식 페이지) 동일 사건의 SpaceNews 보도 — 동일 운영 진입 발표",
+  "entities": [
+    {"id": "temp-evt-008", "type": "Event", "name": "WorldView Legion constellation fully operational"},
+    {"id": "org-maxar", "type": "Organization", "name": "Maxar Technologies"},
+    {"id": "temp-sat-wv-legion", "type": "Satellite", "name": "WorldView Legion (6 satellites)"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-008", "predicate": "reportedBy", "object": "org-maxar"}
+  ]
+}

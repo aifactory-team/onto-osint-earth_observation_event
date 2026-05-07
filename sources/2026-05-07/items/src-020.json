@@ -1,0 +1,28 @@
+{
+  "id": "src-020",
+  "title": "Engine Test Preparations and Modernization at Sohae Satellite Launching Station (CSIS BP)",
+  "url": "https://beyondparallel.csis.org/engine-test-preparations-and-modernization-at-sohae-satellite-launching-station/",
+  "snippet": "Sept 27, 2025 imagery shows preparations for new engine test; horizontal processing building, research facility, and L-shaped pier under construction.",
+  "source_name": "CSIS Beyond Parallel",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규 — 14일 인덱스에 Sohae 엔진시험 준비·수평 처리동·L자형 부두 신규 인프라 구체적 분석 없음 (5/2 src-025·5/4 src-014는 razed villages·9차 당대회 일반). DPRK GeoFocus 군사 인프라 핵심",
+  "entities": [
+    {"id": "temp-evt-020", "type": "Event", "name": "Sohae engine test preparations + modernization (Sept 2025 imagery, DPRK)", "properties": {"phenomenon": "construction", "lat": 39.66, "lon": 124.71, "country": "KP", "observation_date": "2025-09-27", "confidence": 0.92, "korea_focus": true, "infrastructure": "horizontal processing building + L-shaped pier + research facility"}},
+    {"id": "sat-worldview3", "type": "Satellite", "name": "WorldView-3"},
+    {"id": "org-csis-bp", "type": "Organization", "name": "CSIS Beyond Parallel"},
+    {"id": "org-maxar", "type": "Organization", "name": "Maxar Technologies"},
+    {"id": "co-kp", "type": "Country", "name": "조선민주주의인민공화국"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-020", "predicate": "observedBy", "object": "sat-worldview3"},
+    {"subject": "temp-evt-020", "predicate": "analyzedBy", "object": "org-csis-bp"},
+    {"subject": "temp-evt-020", "predicate": "manifests", "object": "phen-military"},
+    {"subject": "temp-evt-020", "predicate": "manifests", "object": "phen-construction"},
+    {"subject": "temp-evt-020", "predicate": "inDomain", "object": "dom-defense"},
+    {"subject": "temp-evt-020", "predicate": "inCountry", "object": "co-kp"}
+  ]
+}

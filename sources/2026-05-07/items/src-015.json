@@ -1,0 +1,31 @@
+{
+  "id": "src-015",
+  "title": "동해 NLL 앞바다에 중국 어선 100척 집결 (2026-05-04, VIIRS·Sentinel-1 검증 가능)",
+  "url": "https://www.g-enews.com/article/General-News/2026/05/202605041507265965de70f162d1_1",
+  "snippet": "2026-05-04 기준 동해 NLL 인근 해상 중국 어선 ~100척 집결 — VIIRS 야간조명·Sentinel-1 선박탐지로 검증 가능.",
+  "source_name": "글로벌이코노믹",
+  "language": "ko",
+  "discovered_date": "2026-05-07",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규 — 14일 인덱스에 동해 NLL 중국 어선 100척 집결(5/4) 보도 없음. 한반도 GeoFocus + VIIRS night-light + Sentinel-1 SAR 교차검증 후보",
+  "entities": [
+    {"id": "temp-evt-015", "type": "Event", "name": "East Sea NLL Chinese fishing fleet ~100 vessels assembly (2026-05-04)", "properties": {"phenomenon": "fishing_activity", "lat": 38.6, "lon": 128.5, "country": "KR", "observation_date": "2026-05-04", "vessel_count": 100, "confidence": 0.70, "korea_focus": true}},
+    {"id": "sat-viirs-jpss", "type": "Satellite", "name": "VIIRS (Suomi-NPP/JPSS)"},
+    {"id": "sat-sentinel1a", "type": "Satellite", "name": "Sentinel-1A"},
+    {"id": "sensor-viirs", "type": "Sensor", "name": "VIIRS"},
+    {"id": "sensor-c-sar", "type": "Sensor", "name": "C-band SAR"},
+    {"id": "co-kr", "type": "Country", "name": "대한민국"},
+    {"id": "co-cn", "type": "Country", "name": "중국"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-015", "predicate": "observedBy", "object": "sat-viirs-jpss"},
+    {"subject": "temp-evt-015", "predicate": "observedBy", "object": "sat-sentinel1a"},
+    {"subject": "temp-evt-015", "predicate": "usesSensor", "object": "sensor-viirs"},
+    {"subject": "temp-evt-015", "predicate": "usesSensor", "object": "sensor-c-sar"},
+    {"subject": "temp-evt-015", "predicate": "manifests", "object": "phen-fishing"},
+    {"subject": "temp-evt-015", "predicate": "inDomain", "object": "dom-agri-marine"},
+    {"subject": "temp-evt-015", "predicate": "inCountry", "object": "co-kr"}
+  ]
+}

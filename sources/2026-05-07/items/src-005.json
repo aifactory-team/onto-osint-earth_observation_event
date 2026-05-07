@@ -1,0 +1,26 @@
+{
+  "id": "src-005",
+  "title": "Mayon Volcano VAAC Advisory 567 — eruption observed 2026-05-05 05:44 UTC (Himawari-9)",
+  "url": "https://www.volcanodiscovery.com/mayon/news/301450/vaac-advisory-2026-567.html",
+  "snippet": "VAAC issued advisory for eruption observed at 2026-05-05 05:44 UTC at Mayon (Philippines); VA cloud unknown — Himawari geostationary monitoring.",
+  "source_name": "VolcanoDiscovery",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "reported",
+  "related_report": "2026-05-05/src-004",
+  "related_item": "2026-05-05/src-004",
+  "tag_reason": "동일 advisory ID 2026-567 (Mayon 5/5 0544Z eruption) — 5/5 보고서에서 이미 update로 등록, 5/7 검색 결과는 같은 advisory 페이지",
+  "entities": [
+    {"id": "temp-evt-005", "type": "Event", "name": "Mayon eruption advisory 2026-567 (05-05 0544Z)", "properties": {"phenomenon": "volcanic_eruption", "lat": 13.2572, "lon": 123.6856, "country": "PH", "observation_date": "2026-05-05T05:44:00Z", "confidence": 0.85}},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "org-vaac-tokyo", "type": "Organization", "name": "VAAC Tokyo"},
+    {"id": "org-phivolcs", "type": "Organization", "name": "PHIVOLCS"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-005", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "temp-evt-005", "predicate": "analyzedBy", "object": "org-vaac-tokyo"},
+    {"subject": "temp-evt-005", "predicate": "analyzedBy", "object": "org-phivolcs"},
+    {"subject": "temp-evt-005", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "temp-evt-005", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

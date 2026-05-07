@@ -1,0 +1,17 @@
+{
+  "id": "src-012",
+  "title": "Disturbance Alerts for All Vegetation Globally Now on GFW",
+  "url": "https://www.globalforestwatch.org/blog/data-and-tools/global-vegetation-disturbance-deforestation-alerts/",
+  "snippet": "DIST-ALERT now covers all vegetation globally including grassland, shrubland, agriculture",
+  "source_name": "Global Forest Watch",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "reported",
+  "related_report": "2026-05-01/src-018",
+  "related_item": null,
+  "tag_reason": "URL 일치 — 2026-05-01 인덱스에 동일 GFW 글로벌 식생 disturbance 보도됨",
+  "entities": [
+    {"id": "org-gfw", "matched_id": "org-gfw", "type": "Organization"}
+  ],
+  "relations": []
+}

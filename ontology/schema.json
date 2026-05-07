@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "description": "OSINT 온톨로지 스키마 — config/osint-config.json의 seed로부터 초기화되고, 매일 파이프라인 실행 시 자동 확장된다. 도메인: 위성영상으로 관측 가능한 지구상 이벤트 (Earth Observation Events).",
-  "last_updated": "2026-05-04",
+  "last_updated": "2026-05-07",
   "classes": [
     {
       "id": "Entity",
@@ -219,6 +219,83 @@
       "target": "org-si-analytics",
       "reason": "SI Analytics — 한국 위성영상 AI 분석 기업. 북한 신포 조선소 SLBM 준비 위성영상 분석 제공(ent-evt-077).",
       "source_ids": ["src-012"]
+    },
+    {
+      "date": "2026-05-06",
+      "action": "add_country",
+      "target": "co-sd",
+      "reason": "수단(SD) — Sudan breadbasket 농경지 황폐화 위성 NDVI 분석(ent-evt-095, Al Jazeera Sentinel-2). 기존 국가 인스턴스에 없던 신규 국가 추가.",
+      "source_ids": ["src-030"]
+    },
+    {
+      "date": "2026-05-06",
+      "action": "add_satellite",
+      "target": "sat-pelican",
+      "reason": "Planet Pelican constellation (Planet Labs, 0.3m, SSO) — Pelican-7/8/9 2026-05-03 추가 발사로 fleet 9기 운용. 기존 PlanetScope/SkySat을 대체할 차세대 광학 콘스텔레이션. ent-evt-094에서 첫 참조.",
+      "source_ids": ["src-029"]
+    },
+    {
+      "date": "2026-05-06",
+      "action": "add_organization",
+      "target": "org-philsa, org-vaac-tokyo, org-amti, org-aljazeera, org-cams, org-nau",
+      "reason": "PhilSA(NICA-DOST Mayon ashfall 매핑), VAAC Tokyo(JMA Himawari ash advisory), CSIS AMTI(Antelope Reef Island Tracker), Al Jazeera Digital Investigations(Sudan NDVI OSINT), CAMS(TROPOMI 메탄 hotspot), NAU(Climate TRACE 도시 CO2 underestimate 연구) — 6개 분석 기관이 본 사이클에서 첫 참조.",
+      "source_ids": ["src-005", "src-006", "src-007", "src-014", "src-025", "src-030", "src-031"]
+    },
+    {
+      "date": "2026-05-06",
+      "action": "add_location",
+      "target": "ent-loc-030~038",
+      "reason": "Halemaʻumaʻu(Kīlauea), Cordoba(CO), Panghyon airbase(KP), Yelabuga SEZ(RU), Tehran metro(IR), 황해북도/개성(KP), Antelope Reef(CN), Pine Island Glacier(AQ), Sudan breadbasket Gezira/Sennar/Khartoum(SD) — 9개 신규 Location.",
+      "source_ids": ["src-001", "src-010", "src-018", "src-019", "src-020", "src-021", "src-025", "src-027", "src-030"]
+    },
+    {
+      "date": "2026-05-06",
+      "action": "add_event_batch",
+      "target": "ent-evt-081~097",
+      "reason": "신규 17건 — Kilauea Ep46 종료(US), Mayon ashfall(PH), Cordoba flood(CO), ESA MARS methane(INTL), Vantor D2D(UA), 영변 UEP 후속(KP), Panghyon UAV(KP), Yelabuga(RU), Tehran 경찰서(IR), DPRK 산불 보도(KP, 미검증), CAS500-1 산불 복구(KR), Antelope Reef 1490 acres(CN), Pine Island 가속(AQ), Pelican 발사(US), Sudan NDVI(SD), Climate TRACE 오차(US), 카리브해 군사 집결(VE).",
+      "source_ids": ["src-001~src-033"]
+    },
+    {
+      "date": "2026-05-07",
+      "action": "add_country",
+      "target": "co-mm, co-tr",
+      "reason": "미얀마(MM) — Myanmar SW monsoon 5/13~18 사전홍수경보(ent-evt-109, Sentinel-1 GFM C-SAR). 튀르키예(TR) — Silivri 매립지 세계 최악 메탄 배출원 8.4 t/h(ent-evt-112, Tanager-1 + EMIT). 기존 국가 인스턴스에 없던 2개국 추가.",
+      "source_ids": ["src-013", "src-016"]
+    },
+    {
+      "date": "2026-05-07",
+      "action": "add_phenomenon",
+      "target": "phen-satops",
+      "reason": "satellite_operations 메타-이벤트 분류. WorldView Legion 운용 진입(105), Sentinel-5P 궤도제어(104), ICEYE rideshare(107), KOMPSAT-7 운영진입(110), CAS500-2 첫 교신(113), Sentinel-1D commissioning 완료(117) — 발사·운용·교신·궤도제어 등 위성 자체 활동을 나타내는 phenomenon. 6건 이벤트 매핑으로 즉시 mention_count 6 달성.",
+      "source_ids": ["src-007", "src-008", "src-011", "src-014", "src-017", "src-021"]
+    },
+    {
+      "date": "2026-05-07",
+      "action": "add_satellite",
+      "target": "sat-wv-legion, sat-tanager1, sat-emit",
+      "reason": "WorldView Legion (Maxar 6위성, 0.30m, 5M km²/일 수집) — fully operational 진입. Tanager-1 (Planet/Carbon Mapper hyperspectral, 메탄·CO2). EMIT (NASA JPL ISS imaging spectrometer 380-2500nm) — UCLA top-25 super-emitter landfill 연구 출처.",
+      "source_ids": ["src-008", "src-009", "src-016"]
+    },
+    {
+      "date": "2026-05-07",
+      "action": "add_organization",
+      "target": "org-kvert, org-unmars, org-pik, org-paf, org-carbonmapper, org-ucla",
+      "reason": "KVERT(러시아 캄차카 화산 모니터링), UN MARS(UNEP IMEO 메탄 알림 시스템), PIK(독일 포츠담 기후영향 연구소 Nature 아마존 임계점), Portuguese Air Force(ICEYE 운용), Carbon Mapper(NGO Tanager-1 운용), UCLA(super-emitter 연구) — 6개 분석 기관이 본 사이클에서 첫 참조.",
+      "source_ids": ["src-002", "src-006", "src-010", "src-011", "src-016"]
+    },
+    {
+      "date": "2026-05-07",
+      "action": "add_location",
+      "target": "ent-loc-039~045",
+      "reason": "Pineland Road GA(US 산불), Krasheninnikov Kamchatka(RU 화산), East Sea NLL Goseong(KR 어선 100척), Silivri Istanbul(TR 매립지 8.4t/h), Hektoria Glacier(AQ 8km 후퇴), Cuarteron Reef(CN Spratlys 레이더), Permian Basin(US 메탄 4xEPA) — 7개 신규 Location.",
+      "source_ids": ["src-001", "src-002", "src-015", "src-016", "src-022", "src-025", "src-026"]
+    },
+    {
+      "date": "2026-05-07",
+      "action": "add_event_batch",
+      "target": "ent-evt-098~124 (evt-114 skip due to PR-only duplicate src-009)",
+      "reason": "신규 26건 — GA Pineland 산불(US), Krasheninnikov 화산(RU), 글로벌 화산 일일요약, Kilauea Ep46 종료(US, ent-evt-081 후속), Mayon VAAC 567(PH, ent-evt-082 후속), UN MARS methane(INTL, ent-evt-084 후속), Sentinel-5P OCM(global), WV-Legion fully op(US, PR cap), Amazon 임계점(BR), ICEYE rideshare(PL), ICEYE deforestation 서비스(global, PR cap), Myanmar 홍수경보(MM 신규국), KOMPSAT-7 운영(KR), NLL 어선(KR), Silivri 매립지(TR 신규국), CAS500-2 첫교신(KR), 영변 UEP(KP, ent-evt-086 supersedes), Sohae 엔진(KP), Sentinel-1D 4-sat live(global, ent-evt-026 supersedes), Hektoria 8km(AQ), GFW 2026(global), Antelope Reef airbase(CN, ent-evt-092 supersedes), Cuarteron radar(CN, single source low-conf), MethaneSAT 글로벌(US Permian), Brazil Apr -67.9% YoY(BR), Cerulean SkyTruth(global).",
+      "source_ids": ["src-001~src-028"]
     }
   ]
 }

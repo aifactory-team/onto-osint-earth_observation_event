@@ -1,0 +1,32 @@
+{
+  "id": "src-016",
+  "title": "UCLA — 세계 최악의 메탄 배출 매립지 25곳 (Carbon Mapper Tanager-1 + NASA EMIT)",
+  "url": "https://www.newsspace.kr/news/article.html?no=13611",
+  "snippet": "Carbon Mapper가 Planet Tanager-1 + NASA EMIT(ISS) 관측으로 2025년 전 세계 700+ 매립지에서 ~3,000개 메탄 플룸 검출. 2026년 초 기준 터키 이스탄불 인근 실리브리 매립지가 시간당 8.4톤으로 최대 — 도시 인근 보건 위협.",
+  "source_name": "뉴스스페이스",
+  "language": "ko",
+  "discovered_date": "2026-05-07",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규 — 14일 인덱스에 UCLA·Carbon Mapper Tanager-1+EMIT 매립지 25곳 (실리브리 8.4t/h 1위) 보도 없음. 5/3 MethaneSAT(석유가스), 5/1 Nature(매립지 일반)와 별개의 도시-매립지 식별 결과",
+  "entities": [
+    {"id": "temp-evt-016", "type": "Event", "name": "UCLA / Carbon Mapper top-25 super-emitter landfills 2025 (Silivri ~8.4 t/h #1)", "properties": {"phenomenon": "methane_plume", "lat": 41.07, "lon": 28.25, "country": "TR", "observation_date": "2026-Q1", "emission_rate_t_per_h": 8.4, "plumes_detected_2025": 3000, "confidence": 0.85}},
+    {"id": "temp-sat-tanager1", "type": "Satellite", "name": "Tanager-1 (Planet/Carbon Mapper)", "properties": {"operator": "Planet/Carbon Mapper", "country": "US", "orbit_type": "SSO", "resolution_m": 30, "sensor_types": ["optical_hyperspectral", "trace_gas"], "mission_status": "operational"}},
+    {"id": "temp-sat-emit", "type": "Satellite", "name": "EMIT (ISS)", "properties": {"operator": "NASA JPL", "country": "US", "orbit_type": "ISS", "resolution_m": 60, "sensor_types": ["optical_hyperspectral", "trace_gas"], "mission_status": "operational"}},
+    {"id": "temp-org-carbonmapper", "type": "Organization", "name": "Carbon Mapper", "properties": {"org_type": "ngo", "country": "US"}},
+    {"id": "temp-org-ucla", "type": "Organization", "name": "UCLA", "properties": {"org_type": "research", "country": "US"}},
+    {"id": "org-planet", "type": "Organization", "name": "Planet Labs"},
+    {"id": "org-nasa", "type": "Organization", "name": "NASA"},
+    {"id": "temp-co-tr", "type": "Country", "name": "튀르키예", "properties": {"iso_code": "TR", "region": "서아시아"}}
+  ],
+  "relations": [
+    {"subject": "temp-evt-016", "predicate": "observedBy", "object": "temp-sat-tanager1"},
+    {"subject": "temp-evt-016", "predicate": "observedBy", "object": "temp-sat-emit"},
+    {"subject": "temp-evt-016", "predicate": "analyzedBy", "object": "temp-org-carbonmapper"},
+    {"subject": "temp-evt-016", "predicate": "analyzedBy", "object": "temp-org-ucla"},
+    {"subject": "temp-evt-016", "predicate": "manifests", "object": "phen-methane"},
+    {"subject": "temp-evt-016", "predicate": "inDomain", "object": "dom-climate"},
+    {"subject": "temp-evt-016", "predicate": "inCountry", "object": "temp-co-tr"}
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "src-014",
+  "title": "한국 독자개발 위성 아리랑 7호 발사 성공 — 0.3m급 초고해상도, 2026 상반기 운영",
+  "url": "https://www.sisajournal.com/news/articleView.html?idxno=354987",
+  "snippet": "아리랑 7호(KOMPSAT-7) 2025-12-02 쿠루 발사 성공; 0.3m급 초고해상도 광학 — 2026 상반기 본격 관측 운영 단계.",
+  "source_name": "시사저널",
+  "language": "ko",
+  "discovered_date": "2026-05-07",
+  "tag": "reported",
+  "related_report": "2026-04-30/src-016",
+  "related_item": "2026-04-30/src-016",
+  "tag_reason": "4/30 src-016 (아리랑 7호 한반도 정밀 관측 2026 상반기 영상 제공)와 동일 사실. KOMPSAT-7 0.3m 광학 운용 진입 — 시사저널 후속 보도이지만 새로운 상태 변화는 없음 → reported",
+  "entities": [
+    {"id": "temp-evt-014", "type": "Event", "name": "KOMPSAT-7 (아리랑 7호) operational entry (2026 H1)", "properties": {"phenomenon": "satellite_operations", "lat": 36.5, "lon": 127.5, "country": "KR", "observation_date": "2026-05", "resolution_m": 0.3, "confidence": 0.82}},
+    {"id": "sat-kompsat7", "type": "Satellite", "name": "KOMPSAT-7 (아리랑 7호)"},
+    {"id": "org-kari", "type": "Organization", "name": "KARI"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-014", "predicate": "observedBy", "object": "sat-kompsat7"},
+    {"subject": "temp-evt-014", "predicate": "analyzedBy", "object": "org-kari"},
+    {"subject": "temp-evt-014", "predicate": "inCountry", "object": "co-kr"},
+    {"subject": "sat-kompsat7", "predicate": "operatedBy", "object": "org-kari"}
+  ]
+}

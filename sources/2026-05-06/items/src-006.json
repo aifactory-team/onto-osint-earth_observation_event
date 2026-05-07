@@ -1,0 +1,31 @@
+{
+  "id": "src-006",
+  "title": "Satellite data show barangays affected by ashfall from Mayon (PhilSA)",
+  "url": "https://philsa.gov.ph/news/satellite-data-show-barangays-affected-by-ashfall-from-mayon/",
+  "snippet": "PhilSA used Sentinel-2 May 3 vs April 28 reference image change detection; map updated May 6",
+  "source_name": "Philippine Space Agency (PhilSA)",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "new",
+  "related_report": null,
+  "related_item": "evt-mayon-2026",
+  "tag_reason": "PhilSA 공식 발표 신규 — Sentinel-2 5/3 vs 4/28 변화탐지 맵 (87 barangays 영향). 이전 14일 인덱스 동일 URL 없음",
+  "entities": [
+    {"id": "evt-mayon-2026", "type": "Event", "name": "Mayon Volcano 2026 eruption (PhilSA imagery)", "properties": {"phenomenon": "volcanic_eruption", "lat": 13.2572, "lon": 123.6856, "country": "PH", "observation_date": "2026-05-03", "before_after_available": true, "area_km2": 85.44, "severity": "high"}},
+    {"id": "org-philsa", "type": "Organization", "name": "Philippine Space Agency (PhilSA)", "properties": {"org_type": "space_agency", "country": "PH"}},
+    {"id": "sat-sentinel2a", "matched_id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sensor-msi", "matched_id": "sensor-msi", "type": "Sensor", "name": "MSI"},
+    {"id": "co-ph", "type": "Country", "name": "Philippines", "properties": {"iso_code": "PH"}},
+    {"id": "loc-albay", "type": "Location", "name": "Albay province"},
+    {"id": "phen-volcano", "matched_id": "phen-volcano", "type": "Phenomenon"}
+  ],
+  "relations": [
+    {"subject": "evt-mayon-2026", "predicate": "analyzedBy", "object": "org-philsa"},
+    {"subject": "evt-mayon-2026", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "evt-mayon-2026", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "evt-mayon-2026", "predicate": "inCountry", "object": "co-ph"},
+    {"subject": "evt-mayon-2026", "predicate": "locatedIn", "object": "loc-albay"},
+    {"subject": "evt-mayon-2026", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "evt-mayon-2026", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

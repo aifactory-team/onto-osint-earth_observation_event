@@ -1,0 +1,30 @@
+{
+  "id": "src-019",
+  "title": "North Korea and Russia Cooperation — Yelabuga UAV expansion w/ DPRK labor (CSIS BP)",
+  "url": "https://beyondparallel.csis.org/north-korea-russia-cooperation/",
+  "snippet": "Yelabuga (Russia) UAV/UCAV manufacturing expansion with potential DPRK labor — satellite analysis",
+  "source_name": "CSIS Beyond Parallel",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "new",
+  "related_report": null,
+  "related_item": "evt-yelabuga-uav-2026",
+  "tag_reason": "CSIS BP 신규 분석 — Yelabuga UAV 시설 확장 + DPRK 노동력 가능성. 이전 14일 인덱스 미언급.",
+  "entities": [
+    {"id": "evt-yelabuga-uav-2026", "type": "Event", "name": "Yelabuga UAV manufacturing expansion 2026", "properties": {"phenomenon": "construction", "lat": 55.76, "lon": 52.06, "country": "RU", "observation_date": "2026-04", "severity": "moderate"}},
+    {"id": "org-csis-bp", "matched_id": "org-csis-bp", "type": "Organization"},
+    {"id": "sat-worldview3", "matched_id": "sat-worldview3", "type": "Satellite"},
+    {"id": "co-ru", "matched_id": "co-ru", "type": "Country"},
+    {"id": "co-kp", "matched_id": "co-kp", "type": "Country"},
+    {"id": "loc-yelabuga", "type": "Location", "name": "Yelabuga, Tatarstan", "properties": {"country": "RU", "lat": 55.76, "lon": 52.06}},
+    {"id": "phen-construction", "matched_id": "phen-construction", "type": "Phenomenon"}
+  ],
+  "relations": [
+    {"subject": "evt-yelabuga-uav-2026", "predicate": "analyzedBy", "object": "org-csis-bp"},
+    {"subject": "evt-yelabuga-uav-2026", "predicate": "observedBy", "object": "sat-worldview3"},
+    {"subject": "evt-yelabuga-uav-2026", "predicate": "inCountry", "object": "co-ru"},
+    {"subject": "evt-yelabuga-uav-2026", "predicate": "locatedIn", "object": "loc-yelabuga"},
+    {"subject": "evt-yelabuga-uav-2026", "predicate": "manifests", "object": "phen-construction"},
+    {"subject": "evt-yelabuga-uav-2026", "predicate": "inDomain", "object": "dom-defense"}
+  ]
+}

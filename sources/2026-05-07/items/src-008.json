@@ -1,0 +1,25 @@
+{
+  "id": "src-008",
+  "title": "WorldView Legion fully operational — six 30cm satellites, ~5M km² daily, 15 revisits (Maxar)",
+  "url": "https://www.maxar.com/worldview-legion",
+  "snippet": "All six WorldView Legion satellites are fully operational; 30 cm multispectral, 15 cm pan-sharpened, ~5M sq km daily area, up to 15 revisits/day.",
+  "source_name": "Maxar Intelligence",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규 — 14일 인덱스에 WorldView Legion 6기 운영 진입 확인 보도 없음. 상업 광학 컨스텔레이션 핵심 변화",
+  "entities": [
+    {"id": "temp-evt-008", "type": "Event", "name": "WorldView Legion constellation fully operational (6 satellites, May 2026)", "properties": {"phenomenon": "satellite_operations", "country": "US", "observation_date": "2026-05", "resolution_m": 0.30, "confidence": 0.78, "is_press_release": true}},
+    {"id": "temp-sat-wv-legion", "type": "Satellite", "name": "WorldView Legion (6 satellites)", "properties": {"operator": "Maxar", "country": "US", "orbit_type": "SSO", "resolution_m": 0.30, "sensor_types": ["optical_pan", "optical_multispectral"], "mission_status": "operational"}},
+    {"id": "org-maxar", "type": "Organization", "name": "Maxar Technologies"},
+    {"id": "org-vantor", "type": "Organization", "name": "Vantor (formerly Maxar Intelligence)"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-008", "predicate": "observedBy", "object": "temp-sat-wv-legion"},
+    {"subject": "temp-evt-008", "predicate": "analyzedBy", "object": "org-maxar"},
+    {"subject": "temp-evt-008", "predicate": "reportedBy", "object": "org-vantor"},
+    {"subject": "temp-sat-wv-legion", "predicate": "operatedBy", "object": "org-maxar"}
+  ]
+}

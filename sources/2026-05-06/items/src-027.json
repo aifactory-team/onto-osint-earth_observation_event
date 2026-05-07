@@ -1,0 +1,29 @@
+{
+  "id": "src-027",
+  "title": "ESA — Sentinel-1 decade of essential data over shifting ice sheets (Pine Island 10.6→12.7 m/day)",
+  "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-1/Sentinel-1_s_decade_of_essential_data_over_shifting_ice_sheets",
+  "snippet": "10-year Sentinel-1 ice velocity record; Pine Island 10.6→12.7 m/day acceleration",
+  "source_name": "ESA",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "new",
+  "related_report": null,
+  "related_item": "evt-pine-island-acceleration-2026",
+  "tag_reason": "ESA 신규 발표 — Sentinel-1 10년 빙하 속도 기록, Pine Island 10.6→12.7 m/day. 이전 14일 인덱스 동일 URL 없음.",
+  "entities": [
+    {"id": "evt-pine-island-acceleration-2026", "type": "Event", "name": "Pine Island Glacier acceleration 2016-2026", "properties": {"phenomenon": "glacier_retreat", "lat": -75.16, "lon": -100.0, "country": "AQ", "observation_date": "2026-05-06", "severity": "high", "before_after_available": true}},
+    {"id": "org-esa", "matched_id": "org-esa", "type": "Organization"},
+    {"id": "sat-sentinel1a", "matched_id": "sat-sentinel1a", "type": "Satellite"},
+    {"id": "sensor-c-sar", "matched_id": "sensor-c-sar", "type": "Sensor"},
+    {"id": "phen-glacier", "matched_id": "phen-glacier", "type": "Phenomenon"},
+    {"id": "loc-pine-island", "type": "Location", "name": "Pine Island Glacier (Antarctica)", "properties": {"country": "AQ", "region": "West Antarctica"}}
+  ],
+  "relations": [
+    {"subject": "evt-pine-island-acceleration-2026", "predicate": "analyzedBy", "object": "org-esa"},
+    {"subject": "evt-pine-island-acceleration-2026", "predicate": "observedBy", "object": "sat-sentinel1a"},
+    {"subject": "evt-pine-island-acceleration-2026", "predicate": "usesSensor", "object": "sensor-c-sar"},
+    {"subject": "evt-pine-island-acceleration-2026", "predicate": "locatedIn", "object": "loc-pine-island"},
+    {"subject": "evt-pine-island-acceleration-2026", "predicate": "manifests", "object": "phen-glacier"},
+    {"subject": "evt-pine-island-acceleration-2026", "predicate": "inDomain", "object": "dom-climate"}
+  ]
+}

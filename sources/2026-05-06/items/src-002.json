@@ -1,0 +1,27 @@
+{
+  "id": "src-002",
+  "title": "Photo & Video Chronology — May 5, 2026 — Kilauea episode 46",
+  "url": "https://www.usgs.gov/observatories/hvo/news/photo-video-chronology-may-5-2026-kilauea-episode-46",
+  "snippet": "USGS HVO photo/video chronology of Episode 46 — fountain ~650 ft, plume to 20,000 ft, ended 5:22 PM HST",
+  "source_name": "USGS HVO",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "update",
+  "related_report": "2026-05-05/src-001",
+  "related_item": "evt-kilauea-ep46",
+  "tag_reason": "Episode 46 종료(5/5 17:22 HST)에 대한 USGS HVO 공식 영상 chronology — 분화 종료 및 thermal/optical 시계열 확정 정보 추가",
+  "entities": [
+    {"id": "evt-kilauea-ep46", "type": "Event", "name": "Kilauea Episode 46", "properties": {"phenomenon": "volcanic_eruption", "lat": 19.4069, "lon": -155.2834, "country": "US", "observation_date": "2026-05-05", "severity": "moderate", "before_after_available": true}},
+    {"id": "org-usgs-hvo", "type": "Organization", "name": "USGS Hawaiian Volcano Observatory", "properties": {"org_type": "space_agency", "country": "US"}, "matched_id": "org-usgs"},
+    {"id": "sat-sentinel2a", "matched_id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sensor-msi", "matched_id": "sensor-msi", "type": "Sensor", "name": "MSI"},
+    {"id": "phen-volcano", "matched_id": "phen-volcano", "type": "Phenomenon", "name": "volcanic_eruption"}
+  ],
+  "relations": [
+    {"subject": "evt-kilauea-ep46", "predicate": "analyzedBy", "object": "org-usgs-hvo"},
+    {"subject": "evt-kilauea-ep46", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "evt-kilauea-ep46", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "evt-kilauea-ep46", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "evt-kilauea-ep46", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

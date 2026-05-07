@@ -1,0 +1,23 @@
+{
+  "id": "src-009",
+  "title": "Guinobatan health office logs respiratory cases amid Mayon ashfall",
+  "url": "https://www.pna.gov.ph/articles/1274327",
+  "snippet": "Health impacts of ashfall in Guinobatan municipality from Mayon eruption",
+  "source_name": "Philippine News Agency",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "new",
+  "related_report": null,
+  "related_item": "evt-mayon-2026",
+  "tag_reason": "Mayon 분화 인도주의 영향 — Guinobatan 호흡기 질환 급증 (위성 출처 미언급, 보조 정보)",
+  "satellite_unverified": true,
+  "entities": [
+    {"id": "evt-mayon-2026", "type": "Event", "name": "Mayon Volcano 2026 eruption", "properties": {"phenomenon": "volcanic_eruption", "lat": 13.2572, "lon": 123.6856, "country": "PH"}},
+    {"id": "loc-guinobatan", "type": "Location", "name": "Guinobatan, Albay", "properties": {"country": "PH", "lat": 13.1872, "lon": 123.6011}},
+    {"id": "co-ph", "type": "Country", "name": "Philippines"}
+  ],
+  "relations": [
+    {"subject": "evt-mayon-2026", "predicate": "locatedIn", "object": "loc-guinobatan"},
+    {"subject": "evt-mayon-2026", "predicate": "inCountry", "object": "co-ph"}
+  ]
+}

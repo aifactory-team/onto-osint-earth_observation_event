@@ -1,0 +1,18 @@
+{
+  "id": "src-017",
+  "title": "Maxar reportedly restores Ukraine's access to high-resolution satellite imagery",
+  "url": "https://kyivindependent.com/maxar-technologies-restores-ukraines-access-to-high-resolution-satellite-imagery/",
+  "snippet": "Maxar/Vantor restored Ukraine high-res satellite access",
+  "source_name": "Kyiv Independent",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "reported",
+  "related_report": "2026-04-30/src-017",
+  "related_item": null,
+  "tag_reason": "URL 일치 — 2026-04-30 인덱스에 동일 보도됨",
+  "entities": [
+    {"id": "org-maxar", "matched_id": "org-maxar", "type": "Organization"},
+    {"id": "co-ua", "matched_id": "co-ua", "type": "Country"}
+  ],
+  "relations": []
+}

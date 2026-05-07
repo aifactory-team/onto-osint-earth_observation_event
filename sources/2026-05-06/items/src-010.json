@@ -1,0 +1,35 @@
+{
+  "id": "src-010",
+  "title": "Flood in Cordoba, Colombia — Copernicus EMS Mapping (EMSR865)",
+  "url": "https://mapping.emergency.copernicus.eu/news/flood-in-cordoba-colombia-emsr865/",
+  "snippet": "EMSR865 Colombia flood mapping using Sentinel-1 SAR and Sentinel-2 optical",
+  "source_name": "Copernicus EMS",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "new",
+  "related_report": null,
+  "related_item": "evt-cordoba-flood-2026",
+  "tag_reason": "신규 Copernicus EMS 활성화 (EMSR865) Colombia Cordoba 홍수 — 이전 14일 인덱스 미언급. Sentinel-1+2 다중 센서 교차검증.",
+  "entities": [
+    {"id": "evt-cordoba-flood-2026", "type": "Event", "name": "Colombia Cordoba flood 2026 (EMSR865)", "properties": {"phenomenon": "flood", "lat": 8.75, "lon": -75.88, "country": "CO", "observation_date": "2026-05-06", "severity": "high"}},
+    {"id": "org-cems", "matched_id": "org-cems", "type": "Organization", "name": "Copernicus EMS"},
+    {"id": "sat-sentinel1a", "matched_id": "sat-sentinel1a", "type": "Satellite"},
+    {"id": "sat-sentinel2a", "matched_id": "sat-sentinel2a", "type": "Satellite"},
+    {"id": "sensor-c-sar", "matched_id": "sensor-c-sar", "type": "Sensor"},
+    {"id": "sensor-msi", "matched_id": "sensor-msi", "type": "Sensor"},
+    {"id": "co-co", "type": "Country", "name": "Colombia", "properties": {"iso_code": "CO"}},
+    {"id": "loc-cordoba", "type": "Location", "name": "Cordoba department", "properties": {"country": "CO"}},
+    {"id": "phen-flood", "matched_id": "phen-flood", "type": "Phenomenon"}
+  ],
+  "relations": [
+    {"subject": "evt-cordoba-flood-2026", "predicate": "analyzedBy", "object": "org-cems"},
+    {"subject": "evt-cordoba-flood-2026", "predicate": "observedBy", "object": "sat-sentinel1a"},
+    {"subject": "evt-cordoba-flood-2026", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "evt-cordoba-flood-2026", "predicate": "usesSensor", "object": "sensor-c-sar"},
+    {"subject": "evt-cordoba-flood-2026", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "evt-cordoba-flood-2026", "predicate": "inCountry", "object": "co-co"},
+    {"subject": "evt-cordoba-flood-2026", "predicate": "locatedIn", "object": "loc-cordoba"},
+    {"subject": "evt-cordoba-flood-2026", "predicate": "manifests", "object": "phen-flood"},
+    {"subject": "evt-cordoba-flood-2026", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

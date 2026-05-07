@@ -451,3 +451,328 @@ config 한도 내 — 새 클래스 0건, 새 관계 유형 0건.
 | Organization | org-si-analytics (1건) | SI Analytics — 한국 위성영상 AI 기업 |
 
 config 한도 내 — 새 클래스 0건, 새 관계 유형 0건.
+
+---
+
+## 2026-05-06 추론 결과
+
+### multi_satellite_confirmation (다중 위성 교차검증) — 4건
+
+- **추론 #1:** ent-evt-082 (Mayon 5/6 ashfall 87 barangays) — observedBy Sentinel-2A (ESA, MSI 10m) AND Himawari-9 (JMA/JAXA, GEO IR) → multiSatBoost +0.20 [confidence 0.92, 확정]
+  - Sentinel-2A: PhilSA NICA-DOST 8,544 ha ashfall 매핑
+  - Himawari-9: VAAC Tokyo 1252Z eruption advisory
+  - 운영자/궤도 독립: ESA SSO ≠ JAXA GEO → 강한 교차검증
+- **추론 #2:** ent-evt-083 (Cordoba flood) — observedBy Sentinel-1A (SAR) AND Sentinel-2A (MSI) → multiSatBoost +0.20 [0.95, 확정]
+  - Copernicus EMSR865 Rapid Mapping 표준 멀티센서 활용
+  - SAR(야간/구름 투과 침수범위) + MSI(피해지 광학 검증) 상보적
+- **추론 #3:** ent-evt-084 (ESA MARS methane system) — observedBy Sentinel-5P TROPOMI + CAMS multi-sensor (Sentinel-3 OLCI/SLSTR, GHGSat 융합) → multiSatBoost +0.20 [0.90, 확정]
+  - MARS는 다중 데이터 소스 통합 detection 시스템
+- **추론 #4:** ent-evt-092 (Antelope Reef 1,490 acres) — observedBy WorldView-3 (Vantor) AND PlanetScope (Planet) → multiSatBoost +0.20 [0.90, 확정]
+  - 독립 운영자 교차검증 (Vantor ≠ Planet Labs)
+  - AMTI Island Tracker — 시계열 매립 진전 추적
+
+### temporal_progression (시계열 연속 관측) — 3건
+
+- **추론 #5:** ent-evt-081 (Kilauea Ep46 종료, 9시간 lava fountaining) partOfSeries ent-evt-070 (Ep46 개시) → 직접 후속 [0.97, 확정]
+  - 5/5 08:17 HST 개시 → 5/5 17:17 HST 종료 → 5/6 02:25 ADVISORY 강등
+  - 동일 위치(Halemaʻumaʻu), 동일 episode 번호
+- **추론 #6:** ent-evt-082 (Mayon 5/6 ashfall) partOfSeries ent-evt-071 (Mayon 5/5 VAAC) → 직접 후속 [0.96, 확정]
+  - 5/3 phreatic eruption → 5/5 VAAC → 5/6 PhilSA satellite ashfall map (87 barangays)
+- **추론 #7:** ent-evt-082 partOfSeries ent-evt-029 (Mayon 2026-01~ 분출 시리즈) → 장기 시리즈 시점 갱신 [0.92, 확정]
+
+### cascading_disaster (재해 사슬) — 2건
+
+- **추론 #8:** ent-evt-082 (Mayon ashfall) → src-009 (Guinobatan 호흡기 환자 증가) → triggeredBy 인과 [0.85, 확정]
+  - 화산재 운(ash plume)이 Albay 87 barangays 덮음 → Guinobatan 보건소 호흡기 환자 logged
+  - 자연재해 → 인도주의(보건) 사슬
+- **추론 #9:** ent-evt-093 (Pine Island 가속) → ent-evt-042 (남극 30년 접지선 후퇴 종합) → triggeredBy [0.75, 잠정]
+  - Pine Island 단일 빙하 가속이 광역 climate cascading의 일부
+  - 신뢰도 0.75 — 동일 사슬이 아닌 종속 관측이라 잠정 처리
+
+### sensor_capability_match — 8건
+
+- **TIRS x volcano:** ent-evt-082 (Mayon Himawari-9 GEO IR) thermalBoost +0.10 [0.92, 확정]
+  - IR8.6/IR10.4 채널이 화산재(ash plume) 탐지에 최적
+- **SAR x flood:** ent-evt-083 (Cordoba S1A C-SAR) sarBoost +0.10 [0.95, 확정]
+  - C-band SAR — 야간/구름 투과 침수범위 매핑 표준 (CEMS)
+- **SAR x glacier_retreat:** ent-evt-093 (Pine Island S1A C-SAR offset tracking) sarBoost +0.10 [0.99, 확정]
+  - Sentinel-1 offset tracking — 빙류 속도 측정 표준 기법 (10.6→12.7 m/day)
+- **trace_gas x methane:** ent-evt-084 (Sentinel-5P TROPOMI 2.3 µm SWIR CH4 흡수밴드) tracegasBoost +0.15 [0.95, 확정]
+- **hi-res x military:** ent-evt-086 (영변 UEP WV-3 0.31m) hiResBoost +0.15 [0.90]
+- **hi-res x construction:** ent-evt-088 (Yelabuga UAV factory expansion WV-3) hiResBoost +0.15 [0.85]
+- **hi-res x infra_damage:** ent-evt-089 (Tehran 15 경찰서 PlanetScope SkySat) hiResBoost +0.15 [0.92]
+- **hi-res x construction:** ent-evt-092 (Antelope Reef WV-3 매립/구조물 식별) hiResBoost +0.15 [0.88]
+
+### official_source_trust — 6건
+
+- ent-evt-081 (USGS HVO) +0.15 [0.97]
+- ent-evt-082 (PhilSA + VAAC Tokyo) +0.15 [0.95]
+- ent-evt-083 (Copernicus EMS UN body) +0.15 [0.99]
+- ent-evt-084 (ESA + CAMS) +0.15 [0.99]
+- ent-evt-091 (KARI 정책브리핑) +0.15 [0.95]
+- ent-evt-093 (ESA Sentinel-1 decade analysis) +0.15 [0.99]
+
+### commercial_imagery_provider — 2건
+
+- ent-evt-085 (Vantor D2D 시험) commercialBoost +0.10 [0.85]
+- ent-evt-094 (Planet Pelican-7/8/9 발사) commercialBoost +0.10 [0.85, 보도자료성 0.7 cap 적용]
+
+### analyst_org_trust — 5건
+
+- ent-evt-086 (CSIS BP Yongbyon) +0.10 [0.92]
+- ent-evt-088 (CSIS BP Yelabuga) +0.10 [0.92]
+- ent-evt-089 (Bellingcat Tehran) +0.10 [0.95]
+- ent-evt-092 (CSIS AMTI Antelope) +0.10 [0.92]
+- ent-evt-095 (Al Jazeera Sudan NDVI) +0.10 [0.85]
+
+### korea_geo_focus — 4건
+
+- ent-evt-086 (KP — Yongbyon UEP) +0.10 [0.99]
+- ent-evt-087 (KP — Panghyon UAV) +0.10 [0.99]
+- ent-evt-090 (KP — DPRK 산불 보도, 위성 미검증) +0.10 [0.99, 의혹 분리]
+- ent-evt-091 (KR — CAS500-1 산불 복구) +0.10 [0.99]
+
+### disaster_severity_priority — 6건
+
+- ent-evt-081 (Highway 11 tephra 인프라 영향) +0.20 [0.85]
+- ent-evt-082 (87 barangays + 호흡기 환자) +0.20 [0.95]
+- ent-evt-083 (CEMS 발동) +0.20 [0.92]
+- ent-evt-089 (Tehran 15 경찰서 인프라 피해) +0.20 [0.90]
+- ent-evt-093 (글로벌 해수면 영향) +0.20 [0.90]
+- ent-evt-095 (Sudan 식량안보) +0.20 [0.90]
+
+### before_after_credibility — 6건
+
+- ent-evt-081 (Kilauea USGS photo chronology) +0.10 [0.92]
+- ent-evt-082 (Mayon ashfall 분출 전후) +0.10 [0.92]
+- ent-evt-089 (Tehran PlanetScope 전후) +0.10 [0.92]
+- ent-evt-092 (Antelope Reef AMTI 시계열) +0.10 [0.92]
+- ent-evt-093 (Pine Island 2016→2026 10년 시계열) +0.10 [0.95]
+- ent-evt-095 (Sudan 전쟁 전후 NDVI) +0.10 [0.90]
+
+### supersedes — 1건
+
+- **추론 #지타:** ent-evt-085 supersedes ent-evt-064 (Planet Iran 무기한 배포 중단 → Vantor가 우크라이나 D2D로 대체 모델) [0.85]
+  - 단, Vantor는 Maxar 출신, Planet과 다른 사업자 — 동일 시장의 대체이지 동일 조직 supersede 아님
+
+### 종합 신뢰도 산정
+
+| 이벤트 ID | 이벤트명 | 기본 | 가산 | 최종 | 비고 |
+|-----------|---------|------|------|------|------|
+| ent-evt-081 | Kilauea Ep46 종료 | 0.78 | official+0.15, priority+0.20, ba+0.10 | 0.95 (cap) | USGS 공식, 시계열 |
+| ent-evt-082 | Mayon ashfall 87 barangays | 0.78 | multiSat+0.20, official+0.15, thermal+0.10, priority+0.20, ba+0.10 | 0.97 (cap) | 다중위성 + PhilSA 공식 |
+| ent-evt-083 | Cordoba flood EMSR865 | 0.85 | multiSat+0.20, official+0.15, sar+0.10, priority+0.20, analyst+0.00 | 0.97 (cap) | CEMS 멀티센서 |
+| ent-evt-084 | ESA MARS methane | 0.85 | multiSat+0.20, official+0.15, tracegas+0.15 | 0.97 (cap) | ESA + CAMS |
+| ent-evt-085 | Vantor D2D 우크라이나 | 0.78 | commercial+0.10 | 0.80 | 보도자료성 cap |
+| ent-evt-086 | 영변 UEP 후속 | 0.85 | hiRes+0.15, analyst+0.10, korea+0.10 | 0.95 (cap) | CSIS BP |
+| ent-evt-087 | Panghyon UAV | 0.75 | korea+0.10 | 0.80 | CSIS BP |
+| ent-evt-088 | Yelabuga UAV expansion | 0.78 | hiRes+0.15, analyst+0.10 | 0.95 | CSIS BP |
+| ent-evt-089 | Tehran 15 경찰서 | 0.85 | hiRes+0.15, analyst+0.10, priority+0.20, ba+0.10 | 0.97 (cap) | Bellingcat |
+| ent-evt-090 | DPRK 조선중앙TV 산불 | 0.50 | korea+0.10 | 0.55 | 위성 미검증 (의혹) |
+| ent-evt-091 | CAS500-1 산불 복구 | 0.75 | official+0.15, korea+0.10 | 0.95 (cap) | KARI |
+| ent-evt-092 | Antelope Reef 1490 acres | 0.85 | multiSat+0.20, hiRes+0.15, analyst+0.10, ba+0.10 | 0.97 (cap) | AMTI |
+| ent-evt-093 | Pine Island 가속 | 0.85 | official+0.15, sar+0.10, priority+0.20, ba+0.10 | 0.97 (cap) | ESA |
+| ent-evt-094 | Planet Pelican 7-9 | 0.55 | commercial+0.10 | 0.65 | 보도자료성 cap (0.7) |
+| ent-evt-095 | Sudan breadbasket | 0.78 | analyst+0.10, priority+0.20, ba+0.10 | 0.95 | Al Jazeera |
+| ent-evt-096 | Climate TRACE 오차 | 0.65 | — | 0.65 | 학술 발견, 위성 직접 관측 아님 |
+| ent-evt-097 | 카리브해 군사 집결 | 0.70 | — | 0.70 | Wiki 종합, 단일 출처 |
+
+### 추론 통계 요약
+
+| 규칙 | 금일 발동 | 누적 (~05-06) | 평균 신뢰도 |
+|------|----------|------|-----------|
+| multi_satellite_confirmation | 4 | 16 | 0.92 |
+| temporal_progression | 3 | 12 | 0.95 |
+| cascading_disaster | 2 | 2 | 0.80 |
+| sensor_capability_match | 8 | 24 | 0.93 |
+| official_source_trust | 6 | 19 | 0.97 |
+| commercial_imagery_provider | 2 | 4 | 0.85 |
+| analyst_org_trust | 5 | 7 | 0.91 |
+| korea_geo_focus | 4 | 18 | 0.99 |
+| disaster_severity_priority | 6 | 17 | 0.91 |
+| before_after_credibility | 6 | 20 | 0.92 |
+| supersedes | 1 | 1 | 0.85 |
+| **합계** | **47** | **140** | **0.92** |
+
+### 온톨로지 변경
+
+| 변경 유형 | 대상 | 근거 |
+|----------|------|------|
+| 새 Country | co-sd (수단) (1건) | Sudan breadbasket NDVI Al Jazeera |
+| 새 Location | ent-loc-030~038 (9건) | Halemaʻumaʻu, Cordoba, Panghyon, Yelabuga, Tehran, 황해북도/개성, Antelope Reef, Pine Island, Sudan agricultural belt |
+| 새 Satellite | sat-pelican (1건) | Planet Pelican-7/8/9 fleet 9기 |
+| 새 Organization | org-philsa, org-vaac-tokyo, org-amti, org-aljazeera, org-cams, org-nau (6건) | 각 기관 첫 참조 |
+| 새 Event | ent-evt-081~097 (17건) | 신규 17건 |
+| 이벤트 업데이트 | ent-evt-070→081(Kilauea), ent-evt-071→082(Mayon), ent-evt-001→086(영변), ent-evt-006→092(Antelope), ent-evt-076→097(Caribbean) (5건) | 후속 보도 반영 |
+
+config 한도 내 — 새 클래스 0건 (max_new_classes_per_day=3), 새 관계 유형 0건 (max_new_relations_per_day=5).
+
+### 미적용/제외 추론
+
+- **3+ 단계 추론:** 발견되지 않음 (모든 추론 1단계 직접)
+- **공간적 근접 (nearby):** 기존 location 간 nearby 관계 신규 미발견
+- **DPRK 조선중앙TV (ent-evt-090):** 위성 영상 부재 → satellite_unverified, 보고서 본문에서 "미검증 의혹" 섹션으로 분리, koreaBoost는 적용했으나 final confidence cap 0.5 미만 유지
+
+---
+
+## 2026-05-07 (Phase 3-4)
+
+입력: sources/2026-05-07/entities.json (80 entities, 105 explicit relations, 13 신규 + 67 매칭). 이벤트 26건.
+
+### 다중 위성 교차검증 (multi_satellite_confirmation, +0.20)
+
+- **추론 #1:** ent-evt-098 (GA Pineland) — Landsat 8 + Landsat 9 (USGS/NASA 동일 사업자) → 약가산 [0.92, 약가산 시계열]
+- **추론 #2:** ent-evt-100 (글로벌 화산) — VIIRS(NOAA/NASA) + Himawari-9(JMA/JAXA) → multiSatBoost +0.20 [0.85, 확정]
+- **추론 #3:** ent-evt-106 (Amazon 임계점 PIK) — Sentinel-2A(ESA) + Landsat 9(USGS/NASA) → multiSatBoost +0.20 [0.90, 확정]
+- **추론 #4:** ent-evt-109 (Myanmar 홍수) — Sentinel-1A/C/D 3기 동일사업자(ESA)지만 cross-platform → 약가산 [0.85]
+- **추론 #5:** ent-evt-111 (NLL 어선) — VIIRS(NOAA) + Sentinel-1A(ESA), 광학+SAR cross-modal → multiSatBoost +0.20 [0.88, 확정]
+- **추론 #6:** ent-evt-112 (Silivri 매립지) — Tanager-1(Planet/CarbonMapper) + EMIT(NASA) → multiSatBoost +0.20 [0.95, 확정]
+- **추론 #7:** ent-evt-118 (Hektoria) — Sentinel-1A + Sentinel-2A 동일사업자지만 SAR+MSI cross-modal → 약가산 [0.92]
+- **추론 #8:** ent-evt-119 (GFW) — Landsat 9 + Sentinel-2A + Sentinel-1A → multiSatBoost +0.20 [0.95, 확정]
+- **추론 #9:** ent-evt-120 (Antelope Reef) — Sentinel-2(ESA) + WV-3(Maxar) → multiSatBoost +0.20 [0.95, 확정]
+- **추론 #10:** ent-evt-123 (Brazil Apr) — Sentinel-2A + Landsat 9 → multiSatBoost +0.20 [0.92, 확정]
+
+총 10건 multi_satellite_confirmation 후보 중 8건 강가산, 2건 약가산(동일사업자 cross-modal).
+
+### 시계열 진행 / 시리즈 (temporal_progression, partOfSeries)
+
+- **추론 #11:** ent-evt-101 (Kilauea Ep46) :partOfSeries ent-evt-081 (Kilauea Ep46 직전 사이클) → 동일 위치 동일 phenomenon 시계열 [0.95, 확정]
+- **추론 #12:** ent-evt-102 (Mayon Advisory 567) :partOfSeries ent-evt-082 (Mayon ashfall 87 barangays) → 05-03 ash → 05-05 advisory [0.95, 확정]
+- **추론 #13:** ent-evt-123 (Brazil Apr -67.9%) :partOfSeries ent-evt-106 (PIK 임계점 study) → 동일 위치 동일 deforestation [0.92, 확정]
+- **추론 #14:** ent-evt-119 (GFW 2026 보고) :partOfSeries 사이클간 GFW deforestation 시리즈 → 약신뢰 [0.85]
+
+### Supersedes (이전 사이클 이벤트 대체)
+
+- **추론 #15:** ent-evt-115 (영변 UEP 후속) :supersedes ent-evt-086 (직전 사이클 영변 follow-up) — CSIS BP 새 imagery [0.85]
+- **추론 #16:** ent-evt-103 (UN MARS 운영) :supersedes ent-evt-084 (직전 ESA MARS preview) — preview→공식 운영 시작 [0.85]
+- **추론 #17:** ent-evt-117 (Sentinel-1D commissioning 완료) :supersedes ent-evt-026 (2026-04-17 commissioning 시작 분) — 4-sat live entry [0.85]
+- **추론 #18:** ent-evt-120 (Antelope airbase) :supersedes ent-evt-092 (1490 acres expansion) — 매립→비행장 단계 [0.85]
+
+### Cascading Disaster (시간차 인과)
+
+- **본 사이클:** 동일 위치·시간차 disaster 패턴 미발견. Mayon→Guinobatan ashfall 류 cascading은 전 사이클에서 이미 추론됨. 이번 Krasheninnikov(RU)·Mayon(PH)·Kilauea(US)·Myanmar 홍수(MM)는 각기 독립 위치이며, 단일 phenomenon만 활성화.
+
+### Sensor Capability Match
+
+- **TIRS×wildfire:** ent-evt-098 (GA Pineland Landsat TIRS) → thermalBoost +0.10 [0.95]
+- **VIIRS thermal×volcano:** ent-evt-099 (Krasheninnikov 1MW thermal flux) → thermalBoost +0.10 [0.92]
+- **C-SAR×cloudy(Asia monsoon):** ent-evt-109 (Myanmar) sarBoost +0.10 [0.92]
+- **C-SAR×ship detect:** ent-evt-111 (NLL VIIRS+S1A) sarBoost +0.10 [0.90]
+- **X-SAR×tropics:** ent-evt-108 (ICEYE deforestation) sarBoost +0.10 [0.92]
+- **C-SAR×polar:** ent-evt-118 (Hektoria) sarBoost +0.10 [0.92]
+- **C-SAR×oilspill:** ent-evt-124 (Cerulean SkyTruth) sarBoost +0.10 [0.92]
+- **trace_gas×methane:** ent-evt-103 (TROPOMI), ent-evt-112 (Tanager+EMIT), ent-evt-122 (MethaneSAT) → tracegasBoost +0.15 each [0.97, 0.97, 0.99]
+- **hi-res×military_buildup/construction:** ent-evt-115 (영변 WV-3), ent-evt-116 (Sohae WV-3), ent-evt-120 (Antelope WV-3) → hiResBoost +0.15 each [0.95]
+
+총 13건 sensor_capability 발동.
+
+### 공식 출처 신뢰 (official_source_trust, +0.15)
+
+- ent-evt-098 (NASA EO) [0.97], ent-evt-101 (USGS HVO) [0.99], ent-evt-102 (VAAC Tokyo+PHIVOLCS) [0.95], ent-evt-103 (ESA+UN MARS) [0.97], ent-evt-104 (ESA Copernicus dataspace) [0.99], ent-evt-106 (PIK 학술 — Nature) [0.95], ent-evt-109 (CEMS) [0.92], ent-evt-110 (KARI) [0.99], ent-evt-113 (KARI) [0.99], ent-evt-117 (ESA) [0.99], ent-evt-118 (NASA EO) [0.99], ent-evt-119 (GFW analyst) [0.92]
+- 총 12건 officialBoost 적용.
+
+### 상업 위성 신뢰 (commercial_imagery_trust, +0.10, PR cap)
+
+- ent-evt-105 (WorldView Legion fully op, Maxar/Vantor 발표) — is_press_release=true → final cap 0.78
+- ent-evt-107 (ICEYE rideshare 발사) — ICEYE 직접 분석 [0.85]
+- ent-evt-108 (ICEYE deforestation 서비스 launch) — is_press_release=true → cap 0.72
+
+### 한반도 GeoFocus (korea_geo_focus, +0.10)
+
+- ent-evt-110 (KOMPSAT-7 운영, KR) [0.99, 확정]
+- ent-evt-111 (NLL 어선 100척, KR) [0.99]
+- ent-evt-113 (CAS500-2 첫 교신, KR) [0.99]
+- ent-evt-115 (영변 UEP, KP) [0.99]
+- ent-evt-116 (Sohae 엔진, KP) [0.99]
+
+총 5건 koreaBoost 적용.
+
+### 재해 우선순위 (disaster_severity_priority, +0.20)
+
+- ent-evt-098 (GA Pineland 50000 acres) [0.95]
+- ent-evt-101 (Kilauea Ep46 lava fountaining) [0.95]
+- ent-evt-102 (Mayon eruption ongoing high) [0.95]
+- ent-evt-109 (Myanmar 홍수경보 high) [0.85]
+
+### Before/After 신뢰 (before_after_credibility, +0.10)
+
+- ent-evt-098 (GA NBR 시계열) [0.92]
+- ent-evt-101 (Kilauea Ep46 9-hour fountaining 시계열) [0.92]
+- ent-evt-115 (영변 04-2026 vs 이전) [0.92]
+- ent-evt-116 (Sohae 09-2025 imagery vs 이전) [0.90]
+- ent-evt-118 (Hektoria 8 km/2 month 시계열) [0.95, 확정]
+- ent-evt-120 (Antelope airbase before/after) [0.95]
+
+총 6건 baCredibilityBoost 적용.
+
+### 종합 신뢰도 산정 (최종 confidence cap 0.97)
+
+| 이벤트 ID | 이벤트명 | 기본 | 가산 | 최종 | 비고 |
+|-----------|---------|------|------|------|------|
+| ent-evt-098 | GA Pineland 산불 | 0.90 | thermal+0.10, official+0.15, priority+0.20, ba+0.10 | 0.97 (cap) | NASA EO + Landsat TIRS |
+| ent-evt-099 | Krasheninnikov 화산 | 0.85 | thermal+0.10 | 0.95 | VIIRS thermal flux |
+| ent-evt-100 | 글로벌 화산 일일 | 0.78 | multiSat+0.20 | 0.97 (cap) | VIIRS+Himawari |
+| ent-evt-101 | Kilauea Ep46 종료 | 0.85 | official+0.15, priority+0.20, ba+0.10, partOfSeries | 0.97 (cap) | USGS HVO 시리즈 |
+| ent-evt-102 | Mayon Advisory 567 | 0.85 | official+0.15, priority+0.20, partOfSeries | 0.97 (cap) | VAAC+PHIVOLCS |
+| ent-evt-103 | UN MARS 운영 | 0.90 | tracegas+0.15, official+0.15, supersedes | 0.97 (cap) | ESA+UN |
+| ent-evt-104 | S5P OCM | 0.92 | official+0.15 | 0.97 (cap) | ESA Copernicus |
+| ent-evt-105 | WV-Legion fully op | 0.78 | commercial+0.10 | 0.78 (PR cap 0.7) | Maxar/Vantor PR |
+| ent-evt-106 | Amazon 임계점 PIK | 0.85 | multiSat+0.20, official+0.15 | 0.97 (cap) | PIK Nature |
+| ent-evt-107 | ICEYE rideshare | 0.78 | commercial+0.10 | 0.85 | ICEYE direct |
+| ent-evt-108 | ICEYE deforestation 서비스 | 0.72 | sar+0.10, commercial+0.10 | 0.72 (PR cap) | press release |
+| ent-evt-109 | Myanmar 홍수경보 | 0.72 | multiSat+0.20, sar+0.10, official+0.15, priority+0.20 | 0.97 (cap) | Sentinel-1A/C/D + CEMS |
+| ent-evt-110 | KOMPSAT-7 운영 | 0.82 | official+0.15, korea+0.10 | 0.97 (cap) | KARI |
+| ent-evt-111 | NLL 어선 100척 | 0.70 | multiSat+0.20, sar+0.10, korea+0.10 | 0.97 (cap) | VIIRS+S1A |
+| ent-evt-112 | Silivri 매립지 | 0.85 | multiSat+0.20, tracegas+0.15 | 0.97 (cap) | Tanager+EMIT |
+| ent-evt-113 | CAS500-2 첫 교신 | 0.85 | official+0.15, korea+0.10 | 0.97 (cap) | KARI |
+| ent-evt-115 | 영변 UEP 후속 | 0.90 | hiRes+0.15, korea+0.10, ba+0.10 | 0.97 (cap) | CSIS BP supersedes |
+| ent-evt-116 | Sohae 엔진 | 0.92 | hiRes+0.15, korea+0.10, ba+0.10 | 0.97 (cap) | CSIS BP |
+| ent-evt-117 | S1D 4-sat live | 0.92 | official+0.15 | 0.97 (cap) | ESA supersedes |
+| ent-evt-118 | Hektoria 8km/2mo | 0.90 | multiSat+0.20, official+0.15, sar+0.10, ba+0.10 | 0.97 (cap) | NASA EO 시계열 |
+| ent-evt-119 | GFW 2026 보고 | 0.88 | multiSat+0.20, official+0.15 | 0.97 (cap) | GFW analyst |
+| ent-evt-120 | Antelope airbase | 0.90 | multiSat+0.20, hiRes+0.15, ba+0.10 | 0.97 (cap) | AMTI supersedes |
+| ent-evt-121 | Cuarteron 레이더 | 0.65 | — | 0.65 | naturalnews 단일출처 low-conf |
+| ent-evt-122 | MethaneSAT global | 0.88 | tracegas+0.15 | 0.97 (cap) | EDF |
+| ent-evt-123 | Brazil Apr -67.9% | 0.82 | multiSat+0.20, partOfSeries | 0.97 (cap) | INPE |
+| ent-evt-124 | Cerulean SkyTruth | 0.85 | sar+0.10 | 0.95 | SkyTruth 운영중 |
+
+### 추론 통계 요약
+
+| 규칙 | 금일 발동 | 누적 (~05-07) | 평균 신뢰도 |
+|------|----------|------|-----------|
+| multi_satellite_confirmation | 10 | 26 | 0.92 |
+| temporal_progression / partOfSeries | 4 | 16 | 0.92 |
+| supersedes | 4 | 9 | 0.85 |
+| cascading_disaster | 0 | 5 | — |
+| sensor_capability_match (전체) | 13 | 37 | 0.94 |
+| official_source_trust | 12 | 31 | 0.96 |
+| commercial_imagery_trust | 3 | 7 | 0.81 |
+| korea_geo_focus | 5 | 23 | 0.99 |
+| disaster_severity_priority | 4 | 21 | 0.93 |
+| before_after_credibility | 6 | 26 | 0.93 |
+| **합계** | **61** | **201** | **0.92** |
+
+### 온톨로지 변경
+
+| 변경 유형 | 대상 | 근거 |
+|----------|------|------|
+| 새 Country | co-mm (미얀마), co-tr (튀르키예) (2건) | Myanmar SW monsoon 홍수경보 / Silivri 매립지 8.4 t/h |
+| 새 Phenomenon | phen-satops (1건) | 위성 자체 활동(launch/commissioning/OCM/first-contact) 메타-이벤트 — 6건 즉시 매핑 |
+| 새 Satellite | sat-wv-legion, sat-tanager1, sat-emit (3건) | WorldView Legion fully op, Tanager-1 hyperspectral, EMIT ISS imaging |
+| 새 Organization | org-kvert, org-unmars, org-pik, org-paf, org-carbonmapper, org-ucla (6건) | KVERT/UN MARS/PIK/Portuguese AF/Carbon Mapper/UCLA — 각 기관 첫 참조 |
+| 새 Location | ent-loc-039~045 (7건) | Pineland GA, Krasheninnikov, NLL Goseong, Silivri Istanbul, Hektoria Glacier, Cuarteron Reef, Permian Basin |
+| 새 Event | ent-evt-098~124 (26건, evt-114 skip) | 신규 26건 |
+| 이벤트 supersedes | evt-115→086(영변), evt-103→084(MARS), evt-117→026(S1D), evt-120→092(Antelope) (4건) | CSIS BP/UN MARS/ESA/AMTI 후속 |
+| 이벤트 partOfSeries | evt-101→081, evt-102→082, evt-123→106 (3건) | Kilauea/Mayon/Brazil Amazon 시리즈 |
+
+config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5). 새 Phenomenon(satops)은 Phenomenon 클래스 인스턴스로 추가 (클래스 추가 아님).
+
+### 미적용/제외 추론
+
+- **3+ 단계 추론:** 발견되지 않음 (모든 추론 1단계 직접)
+- **공간적 근접 (nearby):** 기존 location 간 nearby 관계 신규 미발견
+- **cascading_disaster:** 본 사이클 동일위치 7일내 시간차 재해 패턴 0건 (Krasheninnikov/Mayon/Kilauea/Myanmar 각기 독립)
+- **DPRK 조선중앙TV (ent-evt-090, prior carry):** 이번 사이클 신규 보도 없음, 위성 미검증 상태 유지
+- **ent-evt-114:** WV-Legion src-009 SpaceNews 후속 보도는 src-008과 중복 — 별도 이벤트 ID 미부여
+- **ent-evt-100, ent-evt-121:** 단일출처 low-conf 분류 — 보고서 본문 미포함, 부록만 기재
+

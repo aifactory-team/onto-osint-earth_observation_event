@@ -1,0 +1,23 @@
+{
+  "id": "src-029",
+  "title": "Planet Labs launches three more Pelican satellites (Pelicans 7-9) — fleet now 9",
+  "url": "https://thenextweb.com/news/planet-labs-pelican-satellite-earth-observation",
+  "snippet": "Pelicans 7-9 launched May 3 on SpaceX Falcon 9; fleet now 9 spacecraft; $307.7M FY2026 revenue",
+  "source_name": "The Next Web",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "new",
+  "related_report": null,
+  "related_item": "evt-planet-pelican-2026-may",
+  "tag_reason": "Planet 신규 위성 3기 (Pelican 7-9) 발사 May 3 — 인프라 신규. 이전 14일 인덱스 미언급.",
+  "satellite_unverified": false,
+  "entities": [
+    {"id": "evt-planet-pelican-2026-may", "type": "Event", "name": "Planet Pelican 7-9 launch 2026-05-03", "properties": {"phenomenon": "construction", "country": "US", "observation_date": "2026-05-03", "severity": "low"}},
+    {"id": "org-planet", "matched_id": "org-planet", "type": "Organization"},
+    {"id": "sat-pelican", "type": "Satellite", "name": "Planet Pelican constellation", "properties": {"operator": "Planet", "country": "US", "orbit_type": "SSO", "resolution_m": 0.3, "sensor_types": ["optical_pan", "optical_multispectral"], "mission_status": "operational"}}
+  ],
+  "relations": [
+    {"subject": "sat-pelican", "predicate": "operatedBy", "object": "org-planet"},
+    {"subject": "evt-planet-pelican-2026-may", "predicate": "inDomain", "object": "dom-human"}
+  ]
+}

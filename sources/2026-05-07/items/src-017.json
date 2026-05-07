@@ -1,0 +1,26 @@
+{
+  "id": "src-017",
+  "title": "차세대중형위성 2호 한반도 첫 교신 성공 — 0.5m 광학, 국토·재난·농업 임무",
+  "url": "https://www.newspim.com/news/view/20260503000194",
+  "snippet": "CAS500-2(국토위성 2호) 2026-05-03 발사 약 6시간 18분 만에 대전 KARI 지상국과 한반도 첫 교신 성공. 흑백 0.5m·컬러 2m 광학 — 국토·재난·농업·산림 임무. 2026 하반기 본격 임무 + CAS500-1 트윈 운용.",
+  "source_name": "뉴스핌",
+  "language": "ko",
+  "discovered_date": "2026-05-07",
+  "tag": "reported",
+  "related_report": "2026-05-03/src-002",
+  "related_item": "2026-05-03/src-002",
+  "tag_reason": "5/3 src-002 동일 URL — CAS500-2 한반도 첫 교신",
+  "entities": [
+    {"id": "temp-evt-017", "type": "Event", "name": "CAS500-2 first contact with KARI Daejeon ground station (2026-05-03)", "properties": {"phenomenon": "satellite_operations", "country": "KR", "observation_date": "2026-05-03", "resolution_m": 0.5, "confidence": 0.85, "korea_focus": true}},
+    {"id": "sat-cas500-2", "type": "Satellite", "name": "CAS500-2 (차세대중형위성 2호)"},
+    {"id": "sat-cas500-1", "type": "Satellite", "name": "CAS500-1"},
+    {"id": "org-kari", "type": "Organization", "name": "KARI"},
+    {"id": "co-kr", "type": "Country", "name": "대한민국"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-017", "predicate": "observedBy", "object": "sat-cas500-2"},
+    {"subject": "temp-evt-017", "predicate": "analyzedBy", "object": "org-kari"},
+    {"subject": "temp-evt-017", "predicate": "inCountry", "object": "co-kr"},
+    {"subject": "sat-cas500-2", "predicate": "operatedBy", "object": "org-kari"}
+  ]
+}

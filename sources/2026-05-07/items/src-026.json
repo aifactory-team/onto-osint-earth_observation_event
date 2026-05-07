@@ -1,0 +1,26 @@
+{
+  "id": "src-026",
+  "title": "MethaneSAT first global oil and gas methane assessment — emissions ~50% higher than inventories",
+  "url": "https://insideclimatenews.org/news/06022026/methanesat-climate-pollution-global-assessment/",
+  "snippet": "First global oil-and-gas methane assessment released February 2026; methane emissions ~50% higher than official inventories including US EPA.",
+  "source_name": "Inside Climate News",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "reported",
+  "related_report": "2026-05-03/src-009",
+  "related_item": "2026-05-03/src-009",
+  "tag_reason": "5/3 src-009 동일 URL — MethaneSAT 첫 글로벌 평가, 동일 사건",
+  "entities": [
+    {"id": "temp-evt-026", "type": "Event", "name": "MethaneSAT first global oil & gas methane assessment (Feb 2026)", "properties": {"phenomenon": "methane_plume", "lat": 31.97, "lon": -102.07, "country": "US", "observation_date": "2026-02", "exceed_inventory_pct": 50, "us_exceed_epa_x": 4, "confidence": 0.88}},
+    {"id": "sat-methanesat", "type": "Satellite", "name": "MethaneSAT"},
+    {"id": "org-edf", "type": "Organization", "name": "Environmental Defense Fund (EDF)"},
+    {"id": "co-us", "type": "Country", "name": "미국"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-026", "predicate": "observedBy", "object": "sat-methanesat"},
+    {"subject": "temp-evt-026", "predicate": "analyzedBy", "object": "org-edf"},
+    {"subject": "temp-evt-026", "predicate": "manifests", "object": "phen-methane"},
+    {"subject": "temp-evt-026", "predicate": "inDomain", "object": "dom-climate"},
+    {"subject": "temp-evt-026", "predicate": "inCountry", "object": "co-us"}
+  ]
+}

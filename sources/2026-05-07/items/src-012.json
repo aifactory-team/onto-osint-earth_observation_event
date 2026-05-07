@@ -1,0 +1,26 @@
+{
+  "id": "src-012",
+  "title": "ICEYE launches SAR-Powered Deforestation Monitoring (X-band, cloud-cover independent)",
+  "url": "https://satnews.com/2026/03/03/iceye-launches-sar-powered-deforestation-monitoring-to-counter-tropical-forest-loss/",
+  "snippet": "ICEYE introduces an X-band SAR-based deforestation monitoring service to counter tropical forest loss; cloud-cover independent.",
+  "source_name": "SatNews",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규 — 14일 인덱스에 ICEYE X-band SAR 삼림벌채 모니터링 서비스 신규 출시 동일 보도 없음 (5/6 GFW DIST-ALERT은 다른 서비스)",
+  "entities": [
+    {"id": "temp-evt-012", "type": "Event", "name": "ICEYE SAR deforestation monitoring service launch (Mar 2026)", "properties": {"phenomenon": "deforestation", "country": null, "admin": "global-tropics", "observation_date": "2026-03", "confidence": 0.72, "is_press_release": true}},
+    {"id": "sat-iceye", "type": "Satellite", "name": "ICEYE constellation"},
+    {"id": "sensor-x-sar", "type": "Sensor", "name": "X-band SAR"},
+    {"id": "org-iceye", "type": "Organization", "name": "ICEYE"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-012", "predicate": "observedBy", "object": "sat-iceye"},
+    {"subject": "temp-evt-012", "predicate": "usesSensor", "object": "sensor-x-sar"},
+    {"subject": "temp-evt-012", "predicate": "analyzedBy", "object": "org-iceye"},
+    {"subject": "temp-evt-012", "predicate": "manifests", "object": "phen-defor"},
+    {"subject": "temp-evt-012", "predicate": "inDomain", "object": "dom-human"}
+  ]
+}

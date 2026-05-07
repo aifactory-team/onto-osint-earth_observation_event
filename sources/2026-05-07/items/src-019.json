@@ -1,0 +1,27 @@
+{
+  "id": "src-019",
+  "title": "CSIS Beyond Parallel — Yongbyon UEP construction completion (suspected uranium enrichment)",
+  "url": "https://beyondparallel.csis.org/",
+  "snippet": "Recent imagery shows completion of a building at Yongbyon believed to be a new uranium enrichment plant.",
+  "source_name": "CSIS Beyond Parallel",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "reported",
+  "related_report": "2026-05-06/src-018",
+  "related_item": "2026-05-06/src-018",
+  "tag_reason": "5/6 src-018 (CSIS BP imagery analysis index)에서 Yongbyon UEP 등록됨. 5/7은 BP 메인 페이지로 동일 분석 — 신규 정보 없음 → reported",
+  "entities": [
+    {"id": "temp-evt-019", "type": "Event", "name": "Yongbyon Uranium Enrichment Plant building completion (DPRK)", "properties": {"phenomenon": "construction", "lat": 39.7972, "lon": 125.7553, "country": "KP", "observation_date": "2026-04", "confidence": 0.90, "korea_focus": true}},
+    {"id": "sat-worldview3", "type": "Satellite", "name": "WorldView-3"},
+    {"id": "org-csis-bp", "type": "Organization", "name": "CSIS Beyond Parallel"},
+    {"id": "org-maxar", "type": "Organization", "name": "Maxar Technologies"},
+    {"id": "co-kp", "type": "Country", "name": "조선민주주의인민공화국"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-019", "predicate": "observedBy", "object": "sat-worldview3"},
+    {"subject": "temp-evt-019", "predicate": "analyzedBy", "object": "org-csis-bp"},
+    {"subject": "temp-evt-019", "predicate": "manifests", "object": "phen-construction"},
+    {"subject": "temp-evt-019", "predicate": "inDomain", "object": "dom-defense"},
+    {"subject": "temp-evt-019", "predicate": "inCountry", "object": "co-kp"}
+  ]
+}

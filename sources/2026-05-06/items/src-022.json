@@ -1,0 +1,25 @@
+{
+  "id": "src-022",
+  "title": "국토위성 영상으로 대형 산불 피해지역 신속 복구 지원 — 정책브리핑",
+  "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148941842",
+  "snippet": "국토위성영상 흑백 0.5m 컬러 2m로 산불·지진·홍수 등 재난 피해지역 확인 지원",
+  "source_name": "대한민국 정책브리핑",
+  "language": "ko",
+  "discovered_date": "2026-05-06",
+  "tag": "new",
+  "related_report": null,
+  "related_item": "evt-cas500-1-disaster-support-2026",
+  "tag_reason": "국토교통부 CAS500-1 활용 산불·지진·홍수 피해지역 지원 보도 — 이전 14일 인덱스 미언급",
+  "entities": [
+    {"id": "evt-cas500-1-disaster-support-2026", "type": "Event", "name": "CAS500-1 국토위성 재난 영상 지원 (2026)", "properties": {"phenomenon": "infrastructure_damage", "country": "KR", "observation_date": "2026-05-06"}},
+    {"id": "sat-cas500-1", "matched_id": "sat-cas500-1", "type": "Satellite"},
+    {"id": "org-kari", "matched_id": "org-kari", "type": "Organization"},
+    {"id": "co-kr", "matched_id": "co-kr", "type": "Country"}
+  ],
+  "relations": [
+    {"subject": "evt-cas500-1-disaster-support-2026", "predicate": "observedBy", "object": "sat-cas500-1"},
+    {"subject": "evt-cas500-1-disaster-support-2026", "predicate": "analyzedBy", "object": "org-kari"},
+    {"subject": "evt-cas500-1-disaster-support-2026", "predicate": "inCountry", "object": "co-kr"},
+    {"subject": "evt-cas500-1-disaster-support-2026", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

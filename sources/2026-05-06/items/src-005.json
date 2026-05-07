@@ -1,0 +1,30 @@
+{
+  "id": "src-005",
+  "title": "Mayon Volcano ashfall covers more than 8,500 hectares: Philippine Space Agency",
+  "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/05/06/mayon-volcano-ashfall-covers-more-than-8500-hectares-philippine-space-agency",
+  "snippet": "PhilSA reports 8,500+ ha ashfall coverage using Sentinel-2 change detection (87 villages)",
+  "source_name": "The Star (ASEAN+)",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "update",
+  "related_report": "2026-05-05/src-004",
+  "related_item": "evt-mayon-2026",
+  "tag_reason": "메이온 분화 5월 6일 PhilSA 8,544ha 새 정량 분석 — 후속 영향 평가 (87 barangays)",
+  "entities": [
+    {"id": "evt-mayon-2026", "type": "Event", "name": "Mayon Volcano 2026 eruption (May)", "properties": {"phenomenon": "volcanic_eruption", "lat": 13.2572, "lon": 123.6856, "country": "PH", "observation_date": "2026-05-03", "severity": "high", "area_km2": 85.44, "before_after_available": true}},
+    {"id": "org-philsa", "type": "Organization", "name": "Philippine Space Agency (PhilSA)", "properties": {"org_type": "space_agency", "country": "PH"}},
+    {"id": "sat-sentinel2a", "matched_id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sensor-msi", "matched_id": "sensor-msi", "type": "Sensor", "name": "MSI"},
+    {"id": "loc-albay", "type": "Location", "name": "Albay province", "properties": {"country": "PH"}},
+    {"id": "co-ph", "type": "Country", "name": "Philippines", "properties": {"iso_code": "PH"}}
+  ],
+  "relations": [
+    {"subject": "evt-mayon-2026", "predicate": "analyzedBy", "object": "org-philsa"},
+    {"subject": "evt-mayon-2026", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "evt-mayon-2026", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "evt-mayon-2026", "predicate": "locatedIn", "object": "loc-albay"},
+    {"subject": "evt-mayon-2026", "predicate": "inCountry", "object": "co-ph"},
+    {"subject": "evt-mayon-2026", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "evt-mayon-2026", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

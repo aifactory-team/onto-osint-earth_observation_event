@@ -1,0 +1,28 @@
+{
+  "id": "src-002",
+  "title": "Krasheninnikov volcano effusive eruption continues — VIIRS thermal flux ~1 MW (May 4)",
+  "url": "https://volcanoearth.wordpress.com/2026/05/01/1-may-2026/",
+  "snippet": "Krasheninnikov volcano (Kamchatka): effusive eruption continues with lava flows on the eastern slopes of the Northern Cone; latest VIIRS thermal flux anomaly ~1 MW on May 4, 2026. Sheveluch shows persistent lava dome growth thermal anomaly.",
+  "source_name": "Volcano Earth",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "update",
+  "related_report": "2026-05-03/src-007",
+  "related_item": "2026-05-03/src-007",
+  "tag_reason": "Krasheninnikov 화산 효유성 분출 후속 — 5/3 daily thermal anomaly 보도 이후 VIIRS thermal flux ~1 MW(5/4) 신규 수치 + 동측 사면 용암류 지속 정보",
+  "entities": [
+    {"id": "temp-evt-002", "type": "Event", "name": "Krasheninnikov volcano effusive eruption (Kamchatka, 2026-05)", "properties": {"phenomenon": "volcanic_eruption", "lat": 54.59, "lon": 160.27, "country": "RU", "observation_date": "2026-05-04", "thermal_flux_mw": 1.0, "confidence": 0.85}},
+    {"id": "sat-viirs-jpss", "type": "Satellite", "name": "VIIRS (Suomi-NPP/JPSS)"},
+    {"id": "sensor-viirs", "type": "Sensor", "name": "VIIRS"},
+    {"id": "temp-org-kvert", "type": "Organization", "name": "KVERT (Kamchatka Volcanic Eruption Response Team)", "properties": {"org_type": "research", "country": "RU"}},
+    {"id": "co-ru", "type": "Country", "name": "러시아"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-002", "predicate": "observedBy", "object": "sat-viirs-jpss"},
+    {"subject": "temp-evt-002", "predicate": "usesSensor", "object": "sensor-viirs"},
+    {"subject": "temp-evt-002", "predicate": "analyzedBy", "object": "temp-org-kvert"},
+    {"subject": "temp-evt-002", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "temp-evt-002", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "temp-evt-002", "predicate": "inCountry", "object": "co-ru"}
+  ]
+}

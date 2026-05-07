@@ -1,0 +1,18 @@
+{
+  "id": "src-028",
+  "title": "UNOSAT Gaza Strip Comprehensive Damage Assessment (198,273 affected, 81% damaged)",
+  "url": "https://unosat.org/products/4130",
+  "snippet": "Gaza Comprehensive Damage Assessment (Oct 2025): 198,273 affected structures, 81% damaged",
+  "source_name": "UNOSAT",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "reported",
+  "related_report": "2026-04-30/src-009",
+  "related_item": null,
+  "tag_reason": "URL 일치 — 2026-04-30 인덱스(src-009) 동일 UNOSAT Gaza 보고서",
+  "entities": [
+    {"id": "org-unosat", "matched_id": "org-unosat", "type": "Organization"},
+    {"id": "co-ps", "type": "Country", "name": "Palestine", "properties": {"iso_code": "PS"}}
+  ],
+  "relations": []
+}

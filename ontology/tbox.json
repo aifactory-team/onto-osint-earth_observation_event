@@ -1,0 +1,299 @@
+{
+  "name": "EO-Event Ontology TBox",
+  "version": "1.1.0",
+  "description": "위성영상 관측 이벤트 온톨로지의 Terminological Box (TBox) — 클래스 계층, 데이터 속성, 객체 속성, 열거형, 공리, 추론 규칙. ABox(instances/KG)와 분리된 술어 정의.",
+  "last_updated": "2026-05-07",
+  "source_of_truth": "ontology/schema.json + config/osint-config.json (seed_classes, seed_relations, reasoning_rules)",
+  "namespace": "eo:",
+
+  "classes": [
+    {
+      "id": "Entity",
+      "label": "엔티티",
+      "description": "최상위 클래스 (root)",
+      "superclass": null
+    },
+    {
+      "id": "Event",
+      "label": "이벤트",
+      "description": "위성영상으로 관측된 지구상 이벤트",
+      "superclass": "Entity"
+    },
+    {
+      "id": "Satellite",
+      "label": "위성",
+      "description": "지구관측 위성 플랫폼",
+      "superclass": "Entity"
+    },
+    {
+      "id": "Sensor",
+      "label": "센서",
+      "description": "위성 탑재 관측 센서",
+      "superclass": "Entity"
+    },
+    {
+      "id": "DataProduct",
+      "label": "데이터제품",
+      "description": "특정 처리 수준의 위성 데이터 제품 (예: Sentinel-2 L2A)",
+      "superclass": "Entity"
+    },
+    {
+      "id": "Location",
+      "label": "지역",
+      "description": "이벤트 발생 지리적 위치",
+      "superclass": "Entity"
+    },
+    {
+      "id": "Country",
+      "label": "국가",
+      "description": "ISO 3166 기반 국가",
+      "superclass": "Entity"
+    },
+    {
+      "id": "Organization",
+      "label": "기관",
+      "description": "위성 운영·분석·보도 기관",
+      "superclass": "Entity"
+    },
+    {
+      "id": "Phenomenon",
+      "label": "관측현상",
+      "description": "위성으로 관측 가능한 현상 유형",
+      "superclass": "Entity"
+    },
+    {
+      "id": "Domain",
+      "label": "도메인",
+      "description": "이벤트가 속한 응용 도메인",
+      "superclass": "Entity"
+    }
+  ],
+
+  "data_properties": [
+    { "id": "name", "domain": "Entity", "range": "xsd:string", "functional": true },
+    { "id": "label", "domain": "Entity", "range": "xsd:string", "functional": true },
+    { "id": "description", "domain": "Entity", "range": "xsd:string", "functional": true },
+
+    { "id": "event_type", "domain": "Event", "range": "xsd:string" },
+    { "id": "observation_date", "domain": "Event", "range": "xsd:date" },
+    { "id": "start_date", "domain": "Event", "range": "xsd:date" },
+    { "id": "end_date", "domain": "Event", "range": "xsd:date" },
+    { "id": "lat", "domain": "Event|Location", "range": "xsd:decimal" },
+    { "id": "lon", "domain": "Event|Location", "range": "xsd:decimal" },
+    { "id": "area_km2", "domain": "Event|Location", "range": "xsd:decimal" },
+    { "id": "severity", "domain": "Event", "range": "{low,medium,high,critical}" },
+    { "id": "confidence", "domain": "Event", "range": "xsd:decimal[0..1]" },
+    { "id": "before_after_available", "domain": "Event", "range": "xsd:boolean" },
+    { "id": "satellite_unverified", "domain": "Event", "range": "xsd:boolean" },
+    { "id": "is_press_release", "domain": "Event", "range": "xsd:boolean" },
+    { "id": "korea_focus", "domain": "Event", "range": "xsd:boolean" },
+    { "id": "low_confidence", "domain": "Event", "range": "xsd:boolean" },
+    { "id": "source_url", "domain": "Event", "range": "xsd:anyURI" },
+    { "id": "update_of", "domain": "Event", "range": "Event:id" },
+
+    { "id": "operator", "domain": "Satellite", "range": "xsd:string" },
+    { "id": "orbit_type", "domain": "Satellite", "range": "{SSO,GEO,LEO,HEO,MEO,ISS}" },
+    { "id": "altitude_km", "domain": "Satellite", "range": "xsd:decimal" },
+    { "id": "revisit_days", "domain": "Satellite", "range": "xsd:decimal" },
+    { "id": "resolution_m", "domain": "Satellite|Sensor", "range": "xsd:decimal" },
+    { "id": "mission_status", "domain": "Satellite", "range": "{operational,pre-launch,decommissioned,degraded}" },
+    { "id": "launch_date", "domain": "Satellite", "range": "xsd:date" },
+    { "id": "constellation_size", "domain": "Satellite", "range": "xsd:integer" },
+
+    { "id": "sensor_type", "domain": "Sensor", "range": "SensorTypeEnum" },
+    { "id": "bands", "domain": "Sensor", "range": "xsd:integer" },
+    { "id": "swath_km", "domain": "Sensor", "range": "xsd:decimal" },
+
+    { "id": "level", "domain": "DataProduct", "range": "{L0,L1A,L1B,L1C,L2A,L2B,L3,L4}" },
+    { "id": "format", "domain": "DataProduct", "range": "xsd:string" },
+    { "id": "license", "domain": "DataProduct", "range": "xsd:string" },
+
+    { "id": "iso_code", "domain": "Country", "range": "xsd:string", "pattern": "^[A-Z]{2,3}$" },
+    { "id": "region", "domain": "Country|Location", "range": "xsd:string" },
+    { "id": "admin_level", "domain": "Location", "range": "{country,state,city,district}" },
+
+    { "id": "org_type", "domain": "Organization", "range": "OrgTypeEnum" },
+    { "id": "website", "domain": "Organization", "range": "xsd:anyURI" },
+
+    { "id": "category", "domain": "Phenomenon", "range": "Domain:id" },
+    { "id": "observable_signature", "domain": "Phenomenon", "range": "xsd:string" },
+
+    { "id": "first_seen", "domain": "Entity", "range": "xsd:date" },
+    { "id": "last_seen", "domain": "Entity", "range": "xsd:date" },
+    { "id": "mention_count", "domain": "Entity", "range": "xsd:integer" }
+  ],
+
+  "object_properties": [
+    { "id": "observedBy", "label": "관측위성", "domain": "Event", "range": "Satellite", "inverse": "observes" },
+    { "id": "usesSensor", "label": "사용센서", "domain": "Event", "range": "Sensor" },
+    { "id": "usesDataProduct", "label": "사용데이터", "domain": "Event", "range": "DataProduct" },
+    { "id": "locatedIn", "label": "발생지역", "domain": "Event", "range": "Location" },
+    { "id": "inCountry", "label": "국가", "domain": "Event|Location", "range": "Country" },
+    { "id": "analyzedBy", "label": "분석기관", "domain": "Event", "range": "Organization" },
+    { "id": "reportedBy", "label": "보도", "domain": "Event", "range": "Organization" },
+    { "id": "manifests", "label": "관측현상", "domain": "Event", "range": "Phenomenon" },
+    { "id": "inDomain", "label": "도메인", "domain": "Event|Phenomenon", "range": "Domain" },
+    { "id": "triggeredBy", "label": "유발", "domain": "Event", "range": "Event", "characteristics": ["asymmetric"] },
+    { "id": "partOfSeries", "label": "시리즈일부", "domain": "Event", "range": "Event", "characteristics": ["transitive"] },
+    { "id": "supersedes", "label": "대체", "domain": "Event", "range": "Event", "characteristics": ["asymmetric"] },
+    { "id": "carriesSensor", "label": "탑재센서", "domain": "Satellite", "range": "Sensor" },
+    { "id": "operatedBy", "label": "운영", "domain": "Satellite|Sensor", "range": "Organization", "characteristics": ["functional"] },
+    { "id": "produces", "label": "제공제품", "domain": "Satellite|Organization", "range": "DataProduct" },
+    { "id": "nearby", "label": "근접지역", "domain": "Location", "range": "Location", "characteristics": ["symmetric"] }
+  ],
+
+  "enums": {
+    "SensorTypeEnum": [
+      "optical_pan",
+      "optical_multispectral",
+      "optical_hyperspectral",
+      "thermal_infrared",
+      "SAR",
+      "lidar",
+      "atmospheric_sounder",
+      "trace_gas",
+      "ocean_color"
+    ],
+    "OrgTypeEnum": [
+      "space_agency",
+      "commercial_imagery",
+      "defense_intel",
+      "ngo",
+      "research",
+      "media",
+      "un_body",
+      "weather_agency",
+      "industry_consortium"
+    ],
+    "DomainEnum": [
+      "dom-disaster",
+      "dom-human",
+      "dom-climate",
+      "dom-agri-marine",
+      "dom-defense",
+      "dom-humanitarian"
+    ],
+    "SeverityEnum": ["low", "medium", "high", "critical"]
+  },
+
+  "axioms": {
+    "subclass": [
+      { "sub": "Event", "super": "Entity" },
+      { "sub": "Satellite", "super": "Entity" },
+      { "sub": "Sensor", "super": "Entity" },
+      { "sub": "DataProduct", "super": "Entity" },
+      { "sub": "Location", "super": "Entity" },
+      { "sub": "Country", "super": "Entity" },
+      { "sub": "Organization", "super": "Entity" },
+      { "sub": "Phenomenon", "super": "Entity" },
+      { "sub": "Domain", "super": "Entity" }
+    ],
+    "disjoint": [
+      ["Event", "Satellite", "Sensor", "DataProduct", "Location", "Country", "Organization", "Phenomenon", "Domain"]
+    ],
+    "cardinality": [
+      { "class": "Event", "property": "manifests", "min": 1, "max": null, "note": "이벤트는 최소 1개의 Phenomenon에 매핑" },
+      { "class": "Event", "property": "inDomain", "min": 1, "max": 1, "note": "이벤트는 정확히 1개 Domain" },
+      { "class": "Event", "property": "observedBy|usesDataProduct", "min": 1, "max": null, "note": "위성 출처 검증 — 최소 1개 위성 또는 데이터제품 (CLAUDE.md 최상위 규칙)" },
+      { "class": "Event", "property": "locatedIn|inCountry", "min": 1, "max": null, "note": "이벤트 좌표 의무 — 최소 admin level 또는 lat/lon" },
+      { "class": "Country", "property": "iso_code", "min": 1, "max": 1 }
+    ],
+    "domain_constraints": {
+      "max_new_classes_per_day": 3,
+      "max_new_relations_per_day": 5,
+      "confidence_threshold": 0.7
+    }
+  },
+
+  "reasoning_rules": [
+    {
+      "id": "multi_satellite_confirmation",
+      "head": "?e :multiSatBoost +0.20",
+      "body": "?e :observedBy ?s1 . ?e :observedBy ?s2 . ?s1 :operatedBy ?o1 . ?s2 :operatedBy ?o2 . FILTER (?s1 != ?s2 && ?o1 != ?o2)",
+      "description": "동일 이벤트가 2개 이상 독립 사업자 위성으로 확인되면 신뢰도 가산"
+    },
+    {
+      "id": "cascading_disaster",
+      "head": "?e2 :triggeredBy ?e1",
+      "body": "?e1 :inDomain dom-disaster . ?e2 :inDomain dom-disaster . ?e1 :locatedIn ?loc . ?e2 :locatedIn ?loc . FILTER (?e2.start_date - ?e1.start_date BETWEEN 0 AND 7days) . ?e1 :manifests ?p1 . ?e2 :manifests ?p2 . FILTER (?p1 IN {typhoon,earthquake,volcano} && ?p2 IN {flood,landslide,tsunami})",
+      "description": "시간차 발생한 동일 위치 재해는 인과관계 추정"
+    },
+    {
+      "id": "temporal_progression",
+      "head": "?e2 :partOfSeries ?e1",
+      "body": "?e1 :locatedIn ?loc . ?e2 :locatedIn ?loc . ?e1 :manifests ?p . ?e2 :manifests ?p . FILTER (?e2.observation_date > ?e1.observation_date)",
+      "description": "동일 위치 동일 현상의 시계열 관측은 시리즈 일부"
+    },
+    {
+      "id": "sensor_capability_match_sar",
+      "head": "?e :sarBoost +0.10",
+      "body": "?e :usesSensor ?s . ?s :sensor_type SAR . ?e :cloudy_region true",
+      "description": "SAR 센서로 관측된 구름 잦은 지역 이벤트 가산"
+    },
+    {
+      "id": "sensor_capability_match_tirs",
+      "head": "?e :thermalBoost +0.10",
+      "body": "?e :usesSensor ?s . ?s :sensor_type thermal_infrared . ?e :manifests ?p . FILTER (?p IN {wildfire,volcanic_eruption,industrial_accident})",
+      "description": "열적외 센서 + 화재/화산 매칭 가산"
+    },
+    {
+      "id": "sensor_capability_match_tracegas",
+      "head": "?e :tracegasBoost +0.15",
+      "body": "?e :usesSensor ?s . ?s :sensor_type trace_gas . ?e :manifests ?p . FILTER (?p IN {methane_plume,co2_plume,air_pollution})",
+      "description": "초분광·미량가스 센서 + 대기/온실가스 매칭 가산"
+    },
+    {
+      "id": "sensor_capability_match_hires",
+      "head": "?e :hiResBoost +0.15",
+      "body": "?e :usesSensor ?s . ?s :resolution_m <= 1.0 . ?e :manifests ?p . FILTER (?p IN {military_buildup,construction,industrial_accident})",
+      "description": "고해상도 광학 + 인공구조물·차량 매칭 가산"
+    },
+    {
+      "id": "official_source_trust",
+      "head": "?e :officialBoost +0.15",
+      "body": "?e :analyzedBy ?o . ?o :org_type ?t . FILTER (?t IN {space_agency,un_body,weather_agency})",
+      "description": "정부 우주기관/UN/기상청 공식 발표 가산"
+    },
+    {
+      "id": "commercial_imagery_trust",
+      "head": "?e :commercialBoost +0.10",
+      "body": "?e :analyzedBy ?o . ?o :org_type commercial_imagery . FILTER (?e.is_press_release == false)",
+      "description": "상업 위성 사업자 직접 분석 가산 (보도자료 제외)"
+    },
+    {
+      "id": "korea_geo_focus",
+      "head": "?e :koreaBoost +0.10",
+      "body": "?e :inCountry ?c . ?c :iso_code ?code . FILTER (?code IN {KR,KP})",
+      "description": "한반도 이벤트 GeoFocus 가산"
+    },
+    {
+      "id": "disaster_severity_priority",
+      "head": "?e :priorityBoost +0.20",
+      "body": "?e :inDomain dom-disaster . ?e :severity high",
+      "description": "고심각도 자연재해 우선순위 가산"
+    },
+    {
+      "id": "before_after_credibility",
+      "head": "?e :baCredibilityBoost +0.10",
+      "body": "?e :before_after_available true",
+      "description": "전후 비교 영상 보유 이벤트 신뢰도 가산"
+    }
+  ],
+
+  "stats": {
+    "class_count": 10,
+    "data_property_count": 39,
+    "object_property_count": 16,
+    "enum_count": 4,
+    "axiom_count": 5,
+    "reasoning_rule_count": 12
+  },
+
+  "changelog_2026_05_07": {
+    "added_data_properties": ["korea_focus", "low_confidence", "constellation_size"],
+    "added_enum_values": [{"enum": "OrbitTypeEnum", "value": "ISS"}],
+    "no_new_classes": true,
+    "no_new_relations": true,
+    "note": "스키마 클래스/관계 신규 추가는 본 사이클에 없음 (max_new_classes_per_day=3, max_new_relations_per_day=5 한도 내). 새 phenomenon인 phen-satops는 기존 Phenomenon 클래스의 인스턴스로 ABox 단언만 추가."
+  }
+}

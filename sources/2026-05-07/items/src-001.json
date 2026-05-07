@@ -1,0 +1,31 @@
+{
+  "id": "src-001",
+  "title": "Wildfires Can't Hide from Earth Observing Satellites — Pineland Road & Hwy 82 (Landsat 8/9)",
+  "url": "https://www.earthdata.nasa.gov/news/feature-articles/wildfires-cant-hide-from-earth-observing-satellites",
+  "snippet": "Pineland Road Fire and Highway 82 Fire in Georgia have burned more than 50,000 acres combined since igniting earlier in April; Landsat 8 imagery shows extensive burn scars and active fire fronts.",
+  "source_name": "NASA Earthdata",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "update",
+  "related_report": "2026-05-05/src-006",
+  "related_item": "2026-05-05/src-006",
+  "tag_reason": "Pineland·Hwy82 Georgia 산불 후속 — 5/5 보도(Pineland 32,575ac 50%, Hwy82 22,471ac 85% contained) 이후 NASA Earthdata가 Landsat 8/9 burn scar 및 active front 종합 분석 추가 — 위성·센서 묶음 신규 정보 제공",
+  "entities": [
+    {"id": "temp-evt-001", "type": "Event", "name": "Georgia Pineland Road & Hwy 82 wildfires (Apr-May 2026)", "properties": {"phenomenon": "wildfire", "lat": 31.5, "lon": -82.5, "country": "US", "area_burned_acres": 50000, "observation_date": "2026-05", "confidence": 0.90}},
+    {"id": "sat-landsat8", "type": "Satellite", "name": "Landsat 8"},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9"},
+    {"id": "sensor-oli", "type": "Sensor", "name": "OLI"},
+    {"id": "sensor-tirs", "type": "Sensor", "name": "TIRS"},
+    {"id": "org-nasa", "type": "Organization", "name": "NASA"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-landsat8"},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "temp-evt-001", "predicate": "usesSensor", "object": "sensor-oli"},
+    {"subject": "temp-evt-001", "predicate": "usesSensor", "object": "sensor-tirs"},
+    {"subject": "temp-evt-001", "predicate": "analyzedBy", "object": "org-nasa"},
+    {"subject": "temp-evt-001", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "temp-evt-001", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "temp-evt-001", "predicate": "inCountry", "object": "co-us"}
+  ]
+}

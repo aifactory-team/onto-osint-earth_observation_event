@@ -1,0 +1,21 @@
+{
+  "id": "src-016",
+  "title": "Vantor (formerly Maxar Intelligence) — Tensorglobe AI platform",
+  "url": "https://en.wikipedia.org/wiki/Vantor_(company)",
+  "snippet": "Vantor formerly Maxar Intelligence rebranded October 2025; Tensorglobe AI platform",
+  "source_name": "Wikipedia",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "기관 재브랜딩 정보 — Vantor (Maxar Intelligence rebrand 2025-10). 인스턴스 매핑용 메타데이터.",
+  "satellite_unverified": true,
+  "entities": [
+    {"id": "org-vantor", "type": "Organization", "name": "Vantor", "properties": {"org_type": "commercial_imagery", "country": "US", "former_name": "Maxar Intelligence"}, "matched_id": "org-maxar"},
+    {"id": "sat-worldview3", "matched_id": "sat-worldview3", "type": "Satellite"}
+  ],
+  "relations": [
+    {"subject": "sat-worldview3", "predicate": "operatedBy", "object": "org-vantor"}
+  ]
+}

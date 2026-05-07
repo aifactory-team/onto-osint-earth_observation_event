@@ -1,0 +1,21 @@
+{
+  "id": "src-023",
+  "title": "차세대중형위성 2호, 한반도 첫 교신 성공 (CAS500-2)",
+  "url": "https://www.newspim.com/news/view/20260503000194",
+  "snippet": "CAS500-2 5월 3일 한반도 지상국 첫 교신 성공",
+  "source_name": "뉴스핌",
+  "language": "ko",
+  "discovered_date": "2026-05-06",
+  "tag": "reported",
+  "related_report": "2026-05-03/src-002",
+  "related_item": null,
+  "tag_reason": "URL 일치 — 2026-05-03 인덱스(src-002)에 동일 보도",
+  "entities": [
+    {"id": "sat-cas500-2", "type": "Satellite", "name": "CAS500-2 (차세대중형위성 2호)", "properties": {"operator": "KARI", "country": "KR", "orbit_type": "SSO", "resolution_m": 0.5, "sensor_types": ["optical_pan", "optical_multispectral"], "mission_status": "commissioning", "launch_date": "2026-05-03"}},
+    {"id": "org-kari", "matched_id": "org-kari", "type": "Organization"},
+    {"id": "co-kr", "matched_id": "co-kr", "type": "Country"}
+  ],
+  "relations": [
+    {"subject": "sat-cas500-2", "predicate": "operatedBy", "object": "org-kari"}
+  ]
+}

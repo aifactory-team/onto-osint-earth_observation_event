@@ -1,0 +1,18 @@
+{
+  "id": "src-024",
+  "title": "[우주칼럼] '4년 지연' 끝 우주로 간 K-위성…CAS500-2가 연 한국 민간 우주시대",
+  "url": "https://www.newsspace.kr/news/article.html?no=13775",
+  "snippet": "CAS500-2 4년 지연 끝 발사, 한국 민간 우주시대 전환점",
+  "source_name": "뉴스페이스",
+  "language": "ko",
+  "discovered_date": "2026-05-06",
+  "tag": "reported",
+  "related_report": "2026-05-05/src-014",
+  "related_item": null,
+  "tag_reason": "URL 일치 — 2026-05-05 인덱스(src-014)에 동일 보도",
+  "entities": [
+    {"id": "sat-cas500-2", "type": "Satellite", "name": "CAS500-2", "matched_id": null},
+    {"id": "co-kr", "matched_id": "co-kr", "type": "Country"}
+  ],
+  "relations": []
+}

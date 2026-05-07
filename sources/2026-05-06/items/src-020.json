@@ -1,0 +1,29 @@
+{
+  "id": "src-020",
+  "title": "Bellingcat — Satellite Imagery Reveals Strikes on Iranian Police Stations (PlanetScope)",
+  "url": "https://www.bellingcat.com/news/middle-east/2026/03/04/satellite-imagery-reveals-strikes-on-iranian-police-stations/",
+  "snippet": "PlanetScope March 1 vs March 3 2026 imagery; 15 police stations struck across Tehran",
+  "source_name": "Bellingcat",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "new",
+  "related_report": null,
+  "related_item": "evt-tehran-police-strikes-2026",
+  "tag_reason": "Bellingcat PlanetScope 3/1 vs 3/3 변화탐지 — 테헤란 15개 경찰서 타격. 이전 14일 인덱스 동일 URL 없음.",
+  "entities": [
+    {"id": "evt-tehran-police-strikes-2026", "type": "Event", "name": "Tehran police station strikes 2026", "properties": {"phenomenon": "infrastructure_damage", "lat": 35.6892, "lon": 51.3890, "country": "IR", "observation_date": "2026-03-03", "severity": "high", "before_after_available": true}},
+    {"id": "org-bellingcat", "matched_id": "org-bellingcat", "type": "Organization"},
+    {"id": "sat-planetscope", "matched_id": "sat-planetscope", "type": "Satellite"},
+    {"id": "co-ir", "type": "Country", "name": "Iran", "properties": {"iso_code": "IR"}},
+    {"id": "loc-tehran", "type": "Location", "name": "Tehran", "properties": {"country": "IR", "lat": 35.6892, "lon": 51.3890}},
+    {"id": "phen-infrastructure-damage", "type": "Phenomenon", "name": "infrastructure_damage", "properties": {"category": "Humanitarian"}}
+  ],
+  "relations": [
+    {"subject": "evt-tehran-police-strikes-2026", "predicate": "analyzedBy", "object": "org-bellingcat"},
+    {"subject": "evt-tehran-police-strikes-2026", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "evt-tehran-police-strikes-2026", "predicate": "inCountry", "object": "co-ir"},
+    {"subject": "evt-tehran-police-strikes-2026", "predicate": "locatedIn", "object": "loc-tehran"},
+    {"subject": "evt-tehran-police-strikes-2026", "predicate": "manifests", "object": "phen-infrastructure-damage"},
+    {"subject": "evt-tehran-police-strikes-2026", "predicate": "inDomain", "object": "dom-defense"}
+  ]
+}

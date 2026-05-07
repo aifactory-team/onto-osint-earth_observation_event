@@ -1,0 +1,26 @@
+{
+  "id": "src-003",
+  "title": "3 May 2026 Volcano News — Mayon/Sheveluch ash plume advisories, Kamchatka thermal anomalies (KVERT/VIIRS)",
+  "url": "https://volcanoearth.wordpress.com/2026/05/03/3-may-2026/",
+  "snippet": "KVERT/VIIRS thermal anomalies on multiple Kamchatka volcanoes; ash plume advisories for Mayon and Sheveluch.",
+  "source_name": "Volcano Earth",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "update",
+  "related_report": "2026-05-04/src-018",
+  "related_item": "2026-05-04/src-018",
+  "tag_reason": "5/4 보고된 일일 글로벌 화산 요약의 5/3 자료 — 다중 화산 일일 종합 (Mayon/Sheveluch/Kamchatka) — 5/3·5/4 후속 데이터 묶음",
+  "entities": [
+    {"id": "temp-evt-003", "type": "Event", "name": "Global volcano daily summary 2026-05-03 — multi-volcano thermal/ash anomalies", "properties": {"phenomenon": "volcanic_eruption", "country": null, "admin": "global-volcano", "observation_date": "2026-05-03", "confidence": 0.78}},
+    {"id": "sat-viirs-jpss", "type": "Satellite", "name": "VIIRS (Suomi-NPP/JPSS)"},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "sensor-viirs", "type": "Sensor", "name": "VIIRS"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-003", "predicate": "observedBy", "object": "sat-viirs-jpss"},
+    {"subject": "temp-evt-003", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "temp-evt-003", "predicate": "usesSensor", "object": "sensor-viirs"},
+    {"subject": "temp-evt-003", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "temp-evt-003", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "src-010",
+  "title": "Deforestation may push Amazon degradation threshold below 2C warming — Nature/PIK (Sentinel/Landsat)",
+  "url": "https://phys.org/news/2026-05-deforestation-amazon-degradation-threshold-2c.html",
+  "snippet": "Potsdam Institute Nature study: ~2/3 of Amazon could shift to degraded/savanna at 1.5–1.9°C if deforestation reaches 22–28% of basin; ~17–18% already lost.",
+  "source_name": "Phys.org / Nature",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규 — 14일 인덱스에 PIK Nature Amazon 1.5°C·1.9°C threshold 연구 동일 보도 없음. 5/3 GFW DETER, 5/4 GFW 일반과는 별개",
+  "entities": [
+    {"id": "temp-evt-010", "type": "Event", "name": "Amazon basin degradation threshold study (Potsdam Institute, Nature)", "properties": {"phenomenon": "deforestation", "lat": -3.4653, "lon": -62.2159, "country": "BR", "observation_date": "2026-05", "lost_pct": 17.5, "threshold_pct_low": 22, "threshold_pct_high": 28, "confidence": 0.85}},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9"},
+    {"id": "sensor-msi", "type": "Sensor", "name": "MSI"},
+    {"id": "sensor-oli", "type": "Sensor", "name": "OLI"},
+    {"id": "temp-org-pik", "type": "Organization", "name": "Potsdam Institute for Climate Impact Research (PIK)", "properties": {"org_type": "research", "country": "DE"}}
+  ],
+  "relations": [
+    {"subject": "temp-evt-010", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "temp-evt-010", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "temp-evt-010", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "temp-evt-010", "predicate": "usesSensor", "object": "sensor-oli"},
+    {"subject": "temp-evt-010", "predicate": "analyzedBy", "object": "temp-org-pik"},
+    {"subject": "temp-evt-010", "predicate": "manifests", "object": "phen-defor"},
+    {"subject": "temp-evt-010", "predicate": "inDomain", "object": "dom-human"},
+    {"subject": "temp-evt-010", "predicate": "inCountry", "object": "co-br"}
+  ]
+}

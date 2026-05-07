@@ -1,0 +1,25 @@
+{
+  "id": "src-003",
+  "title": "Kilauea episode 46 ends after 9 hours of lava fountaining, tephra reaches Highway 11",
+  "url": "https://watchers.news/2026/05/06/kilauea-episode-46-lava-fountaining-tephra-reaches-highway-11-hawaii-may-2026/",
+  "snippet": "Episode 46 ends after 9 hours; tephra clasts up to 15 cm fell on Highway 11",
+  "source_name": "The Watchers",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "update",
+  "related_report": "2026-05-05/src-001",
+  "related_item": "evt-kilauea-ep46",
+  "tag_reason": "Episode 46 후속 보도 — tephra 15cm Highway 11 도달 등 새 영향 정보 포함",
+  "satellite_unverified": true,
+  "entities": [
+    {"id": "evt-kilauea-ep46", "type": "Event", "name": "Kilauea Episode 46", "properties": {"phenomenon": "volcanic_eruption", "lat": 19.4069, "lon": -155.2834, "country": "US", "observation_date": "2026-05-06", "severity": "moderate"}},
+    {"id": "loc-highway11", "type": "Location", "name": "Highway 11 (Hawaii)", "properties": {"country": "US", "region": "Hawaii"}},
+    {"id": "co-us", "matched_id": "co-us", "type": "Country", "name": "US"},
+    {"id": "phen-volcano", "matched_id": "phen-volcano", "type": "Phenomenon"}
+  ],
+  "relations": [
+    {"subject": "evt-kilauea-ep46", "predicate": "locatedIn", "object": "loc-highway11"},
+    {"subject": "evt-kilauea-ep46", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "evt-kilauea-ep46", "predicate": "manifests", "object": "phen-volcano"}
+  ]
+}

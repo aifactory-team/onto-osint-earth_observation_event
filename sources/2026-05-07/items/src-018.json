@@ -1,0 +1,21 @@
+{
+  "id": "src-018",
+  "title": "CAS500-2 발사 6시간 만에 한반도와 교신 — 534kg, 본체·탑재체 핵심부품 국내 자립화",
+  "url": "https://www.womennews.co.kr/news/articleView.html?idxno=277039",
+  "snippet": "534kg, 본체·탑재체 핵심부품 국내 기술 자립화 강조.",
+  "source_name": "여성신문",
+  "language": "ko",
+  "discovered_date": "2026-05-07",
+  "tag": "reported",
+  "related_report": "src-017",
+  "related_item": "src-017",
+  "tag_reason": "src-017 (CAS500-2 첫 교신) 동일 사건의 다른 매체 보도",
+  "entities": [
+    {"id": "temp-evt-017", "type": "Event", "name": "CAS500-2 first contact with KARI Daejeon ground station (2026-05-03)"},
+    {"id": "sat-cas500-2", "type": "Satellite", "name": "CAS500-2 (차세대중형위성 2호)"},
+    {"id": "org-kari", "type": "Organization", "name": "KARI"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-017", "predicate": "reportedBy", "object": "org-kari"}
+  ]
+}

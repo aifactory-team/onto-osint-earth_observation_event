@@ -1,0 +1,146 @@
+{
+  "name": "EO-Event Ontology ABox",
+  "version": "1.1.0",
+  "description": "위성영상 관측 이벤트 온톨로지의 Assertional Box (ABox) — 개체에 대한 클래스/데이터속성/객체속성 단언. TBox(스키마)와 분리. instances.json + kg/cumulative.json + kg/YYYY-MM-DD.json 으로부터 도출.",
+  "last_updated": "2026-05-07",
+  "tbox_ref": "ontology/tbox.json",
+  "source_of_truth": {
+    "class_and_data_assertions": "ontology/instances.json",
+    "object_property_assertions": "ontology/kg/2026-04-30.json + 2026-05-01.json + 2026-05-02.json + 2026-05-03.json + 2026-05-04.json + 2026-05-05.json + 2026-05-06.json + 2026-05-07.json (병합본은 ontology/kg/cumulative.json)"
+  },
+  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07"],
+
+  "class_assertion_view": {
+    "description": "각 인스턴스가 어떤 클래스에 속하는지 ABox 단언 — 카운트 요약. 실제 단언은 instances.json의 entities[*].id rdf:type entities[*].type 형식.",
+    "by_class": {
+      "Domain": 6,
+      "Phenomenon": 27,
+      "Country": 28,
+      "Satellite": 28,
+      "Sensor": 8,
+      "Organization": 36,
+      "Location": 45,
+      "Event": 123,
+      "DataProduct": 9
+    },
+    "total_individuals": 290,
+    "delta_from_2026_05_06": {
+      "Country": "+2 (co-mm, co-tr)",
+      "Phenomenon": "+1 (phen-satops)",
+      "Satellite": "+3 (sat-wv-legion, sat-tanager1, sat-emit)",
+      "Organization": "+6 (KVERT, UNMARS, PIK, PAF, CarbonMapper, UCLA)",
+      "Location": "+7 (ent-loc-039~045)",
+      "Event": "+26 (ent-evt-098~124, evt-114 skipped)"
+    }
+  },
+
+  "data_property_assertion_view": {
+    "description": "instances.json[entities][i].properties에 저장된 모든 (개체, 속성, 값) 트리플의 요약. 직접 조회는 instances.json을 사용.",
+    "approximate_assertion_count": 2150,
+    "examples": [
+      { "subject": "ent-evt-098", "property": "name", "value": "Georgia Pineland Road & Hwy 82 wildfires (Apr-May 2026)" },
+      { "subject": "ent-evt-098", "property": "lat", "value": 31.5 },
+      { "subject": "ent-evt-098", "property": "lon", "value": -82.5 },
+      { "subject": "ent-evt-098", "property": "severity", "value": "high" },
+      { "subject": "ent-evt-098", "property": "area_burned_acres", "value": 50000 },
+      { "subject": "ent-evt-115", "property": "supersedes", "value": "ent-evt-086" },
+      { "subject": "ent-evt-117", "property": "supersedes", "value": "ent-evt-026" },
+      { "subject": "ent-evt-120", "property": "supersedes", "value": "ent-evt-092" },
+      { "subject": "sat-wv-legion", "property": "constellation_size", "value": 6 },
+      { "subject": "sat-wv-legion", "property": "resolution_m", "value": 0.30 },
+      { "subject": "co-mm", "property": "iso_code", "value": "MM" },
+      { "subject": "co-tr", "property": "iso_code", "value": "TR" }
+    ]
+  },
+
+  "object_property_assertion_view": {
+    "description": "주체-술어-객체 트리플 단언. 일별 KG 스냅샷에 분산되며 cumulative.json에서 통계 확인.",
+    "stats": {
+      "total_explicit_triples": 579,
+      "total_inferred_triples": 211,
+      "total_unique_subjects": 138,
+      "total_unique_predicates": 18,
+      "total_unique_objects": 178
+    },
+    "predicates_used": [
+      "observedBy",
+      "usesSensor",
+      "usesDataProduct",
+      "locatedIn",
+      "inCountry",
+      "analyzedBy",
+      "reportedBy",
+      "manifests",
+      "inDomain",
+      "triggeredBy",
+      "partOfSeries",
+      "supersedes",
+      "carriesSensor",
+      "operatedBy",
+      "produces",
+      "nearby",
+      "update_of"
+    ],
+    "examples": [
+      { "subject": "ent-evt-118", "predicate": "manifests", "object": "phen-glacier" },
+      { "subject": "ent-evt-118", "predicate": "inCountry", "object": "co-aq" },
+      { "subject": "ent-evt-118", "predicate": "observedBy", "object": "sat-sentinel1a" },
+      { "subject": "ent-evt-118", "predicate": "observedBy", "object": "sat-sentinel2a" },
+      { "subject": "ent-evt-118", "predicate": "analyzedBy", "object": "org-nasa" },
+      { "subject": "ent-evt-118", "predicate": "inDomain", "object": "dom-climate" },
+      { "subject": "ent-evt-117", "predicate": "supersedes", "object": "ent-evt-026" },
+      { "subject": "ent-evt-115", "predicate": "supersedes", "object": "ent-evt-086" },
+      { "subject": "sat-wv-legion", "predicate": "operatedBy", "object": "org-maxar" },
+      { "subject": "sat-tanager1", "predicate": "operatedBy", "object": "org-carbonmapper" },
+      { "subject": "sat-emit", "predicate": "operatedBy", "object": "org-nasa" }
+    ]
+  },
+
+  "inferred_assertions": {
+    "description": "TBox 추론 규칙으로 도출된 단언 — KG 스냅샷의 inferred_triples 섹션에 보존. 매일 갱신.",
+    "by_rule": {
+      "multi_satellite_confirmation": "Mayon S2A+Himawari, Krasheninnikov VIIRS+Himawari, Amazon S2A+L9, Myanmar 3xS1, NLL VIIRS+S1, Silivri Tanager+EMIT, Hektoria S1A+S2A, Antelope WV-3+S2A, GFW L9+S2A+S1, Brazil S2A+L9 — 본 사이클 8건, 누적 24+",
+      "cascading_disaster": "본 사이클 0건 (동일위치 시간차 재해 미발견). 누적 5+",
+      "temporal_progression": "Kilauea Ep46 시리즈, Mayon Advisory 시리즈, Brazil Amazon series — 본 사이클 4건, 누적 16+",
+      "supersedes": "영변 evt-086→115, ESA MARS evt-084→103, S1D evt-026→117, Antelope evt-092→120 — 본 사이클 4건, 누적 9+",
+      "sensor_capability_match_sar": "Myanmar C-SAR, NLL ship detect, Brazil oil slick, ICEYE deforestation, Hektoria 극야 — 본 사이클 5건",
+      "sensor_capability_match_tirs": "GA Pineland TIRS, Krasheninnikov VIIRS thermal — 2건",
+      "sensor_capability_match_tracegas": "UN MARS TROPOMI, Silivri Tanager-1+EMIT, MethaneSAT — 3건",
+      "sensor_capability_match_hires": "영변 WV-3, Sohae WV-3, Antelope WV-3 — 3건",
+      "official_source_trust": "NASA EO, USGS HVO, VAAC Tokyo+PHIVOLCS, ESA, UN MARS, KARI, ESA Copernicus, CEMS, GFW analyst, NASA EO Hektoria — 11건",
+      "commercial_imagery_trust": "Maxar/Vantor (PR cap), ICEYE direct, ICEYE press cap — 3건",
+      "korea_geo_focus": "KOMPSAT-7, NLL, CAS500-2, 영변, Sohae — 5건",
+      "disaster_severity_priority": "GA Pineland, Kilauea Ep46, Mayon advisory, Myanmar flood — 4건",
+      "before_after_credibility": "GA Pineland, Kilauea Ep46, 영변, Sohae, Hektoria — 5건"
+    },
+    "total_inferred_triples_cumulative": 211,
+    "total_inferred_triples_today": 36
+  },
+
+  "data_quality_view": {
+    "satellite_unverified_events": [
+      "ent-evt-090 (DPRK 조선중앙TV 산불 보도, 위성 미검증, 직전 사이클 carry)"
+    ],
+    "press_release_capped_events": [
+      "ent-evt-105 (WorldView Legion 운영 진입, Maxar/Vantor 발표 — 0.7 cap)",
+      "ent-evt-108 (ICEYE deforestation 서비스 launch — 0.7 cap)"
+    ],
+    "low_confidence_events_count": 2,
+    "low_confidence_events": [
+      "ent-evt-100 (글로벌 화산 일일요약 단일 wordpress 출처)",
+      "ent-evt-121 (Cuarteron Reef radar 단일 naturalnews 출처)"
+    ]
+  },
+
+  "consistency_checks": {
+    "all_events_have_phenomenon": "PASS — 모든 ent-evt-* 가 phen-* 매핑 보유",
+    "all_events_have_domain": "PASS — 모든 ent-evt-* 가 dom-* 매핑 보유",
+    "all_events_have_satellite_or_unverified_flag": "PASS — 미보유 시 satellite_unverified=true 명시 (ent-evt-090 carry, ent-evt-101 USGS HVO 직접 체크 — 위성 영상 없음 → 보고서에서 'in-situ measurement' 명시 필요)",
+    "all_events_have_location_info": "PASS — lat/lon 또는 country 보유",
+    "country_iso_code_unique": "PASS",
+    "tbox_class_coverage": "9/9 TBox 클래스 모두 ABox 단언 보유",
+    "supersedes_chain_consistency": "PASS — 4건 supersedes 모두 prior cycle 이벤트 ID 참조 가능"
+  },
+
+  "regeneration_note": "이 파일은 instances.json + kg/*.json 으로부터 매일 파이프라인 Phase 3 종료 후 재생성된다. 단독 편집 금지."
+}

@@ -1,0 +1,30 @@
+{
+  "id": "src-025",
+  "title": "Antelope Reef artificial island ~1,490 acres — AMTI/CSIS Island Tracker (March 2026)",
+  "url": "https://amti.csis.org/island-tracker/china/",
+  "snippet": "AMTI tracker: 20 outposts Paracels, 7 Spratlys; Antelope Reef ~1,490 acres March 2026",
+  "source_name": "CSIS AMTI",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "update",
+  "related_report": "2026-04-30/src-030",
+  "related_item": "evt-antelope-reef-2026",
+  "tag_reason": "Antelope Reef 인공섬 — 4/30 1,490 acres에서 5/6 신규 활주로 계측 등 추가 관측. URL 동일이지만 page 내용 갱신.",
+  "entities": [
+    {"id": "evt-antelope-reef-2026", "type": "Event", "name": "Antelope Reef artificial island expansion 2026", "properties": {"phenomenon": "construction", "lat": 16.46, "lon": 112.55, "country": "CN", "observation_date": "2026-03", "severity": "high", "area_km2": 6.03, "before_after_available": true}},
+    {"id": "org-amti", "type": "Organization", "name": "CSIS AMTI (Asia Maritime Transparency Initiative)", "properties": {"org_type": "research", "country": "US"}, "matched_id": "org-csis-bp"},
+    {"id": "sat-worldview3", "matched_id": "sat-worldview3", "type": "Satellite"},
+    {"id": "sat-planetscope", "matched_id": "sat-planetscope", "type": "Satellite"},
+    {"id": "co-cn", "matched_id": "co-cn", "type": "Country"},
+    {"id": "loc-antelope-reef", "type": "Location", "name": "Antelope Reef (Paracel Islands)", "properties": {"country": "CN", "region": "South China Sea"}}
+  ],
+  "relations": [
+    {"subject": "evt-antelope-reef-2026", "predicate": "analyzedBy", "object": "org-amti"},
+    {"subject": "evt-antelope-reef-2026", "predicate": "observedBy", "object": "sat-worldview3"},
+    {"subject": "evt-antelope-reef-2026", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "evt-antelope-reef-2026", "predicate": "inCountry", "object": "co-cn"},
+    {"subject": "evt-antelope-reef-2026", "predicate": "locatedIn", "object": "loc-antelope-reef"},
+    {"subject": "evt-antelope-reef-2026", "predicate": "manifests", "object": "phen-construction"},
+    {"subject": "evt-antelope-reef-2026", "predicate": "inDomain", "object": "dom-defense"}
+  ]
+}

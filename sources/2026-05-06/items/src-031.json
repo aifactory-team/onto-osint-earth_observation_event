@@ -1,0 +1,25 @@
+{
+  "id": "src-031",
+  "title": "Climate scientist finds large errors in global climate pollution database (Climate TRACE)",
+  "url": "https://phys.org/news/2026-05-climate-scientist-large-errors-global.html",
+  "snippet": "May 2026 NAU study: Climate TRACE underestimates urban vehicle CO2 emissions by ~70%",
+  "source_name": "Phys.org",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "new",
+  "related_report": null,
+  "related_item": "evt-climatetrace-error-2026",
+  "tag_reason": "신규 5월 학술 연구 — Climate TRACE 도시 차량 CO2 ~70% 과소추정. 이전 14일 인덱스 미언급.",
+  "satellite_unverified": true,
+  "entities": [
+    {"id": "evt-climatetrace-error-2026", "type": "Event", "name": "NAU study finds Climate TRACE urban CO2 underestimate 2026", "properties": {"phenomenon": "co2_plume", "country": "US", "observation_date": "2026-05", "severity": "low"}},
+    {"id": "org-climatetrace", "matched_id": "org-climatetrace", "type": "Organization"},
+    {"id": "org-nau", "type": "Organization", "name": "Northern Arizona University", "properties": {"org_type": "research", "country": "US"}},
+    {"id": "phen-co2", "type": "Phenomenon", "name": "co2_plume", "properties": {"category": "ClimateEnvironment"}}
+  ],
+  "relations": [
+    {"subject": "evt-climatetrace-error-2026", "predicate": "analyzedBy", "object": "org-nau"},
+    {"subject": "evt-climatetrace-error-2026", "predicate": "manifests", "object": "phen-co2"},
+    {"subject": "evt-climatetrace-error-2026", "predicate": "inDomain", "object": "dom-climate"}
+  ]
+}

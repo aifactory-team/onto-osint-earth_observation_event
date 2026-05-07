@@ -1,0 +1,29 @@
+{
+  "id": "src-021",
+  "title": "All Four Sentinel-1 Satellites Now Live — Sentinel-1D commissioning complete (early May 2026)",
+  "url": "https://orbitaltoday.com/2026/05/03/all-four-sentinel-1-satellites-are-now-live-and-europes-earth-watch-just-got-stronger/",
+  "snippet": "Sentinel-1D completed in-orbit commissioning and entered full operational service early May 2026; expanded four-satellite SAR fleet provides 24/7 all-weather imagery.",
+  "source_name": "Orbital Today",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "update",
+  "related_report": "2026-04-30/src-031",
+  "related_item": "2026-04-30/src-031",
+  "tag_reason": "후속보도 — 4/30 src-031 (Sentinel-1D user data 4/17 opening)에서 commissioning 시작 보도. 5/7 보도는 commissioning 완료·4기 컨스텔레이션 풀 운용 진입(2026-05) 신규 상태 변화 → update",
+  "entities": [
+    {"id": "temp-evt-021", "type": "Event", "name": "Sentinel-1D commissioning complete — 4-satellite SAR constellation operational (May 2026)", "properties": {"phenomenon": "satellite_operations", "country": null, "admin": "global", "observation_date": "2026-05", "confidence": 0.92}},
+    {"id": "sat-sentinel1a", "type": "Satellite", "name": "Sentinel-1A"},
+    {"id": "sat-sentinel1c", "type": "Satellite", "name": "Sentinel-1C"},
+    {"id": "sat-sentinel1d", "type": "Satellite", "name": "Sentinel-1D"},
+    {"id": "sensor-c-sar", "type": "Sensor", "name": "C-band SAR"},
+    {"id": "org-esa", "type": "Organization", "name": "ESA"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-021", "predicate": "observedBy", "object": "sat-sentinel1a"},
+    {"subject": "temp-evt-021", "predicate": "observedBy", "object": "sat-sentinel1c"},
+    {"subject": "temp-evt-021", "predicate": "observedBy", "object": "sat-sentinel1d"},
+    {"subject": "temp-evt-021", "predicate": "usesSensor", "object": "sensor-c-sar"},
+    {"subject": "temp-evt-021", "predicate": "analyzedBy", "object": "org-esa"},
+    {"subject": "temp-evt-021", "predicate": "inDomain", "object": "dom-climate"}
+  ]
+}

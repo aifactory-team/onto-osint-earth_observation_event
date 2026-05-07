@@ -1,0 +1,20 @@
+{
+  "id": "src-014",
+  "title": "CAMS Methane Hotspot Explorer (TROPOMI)",
+  "url": "https://atmosphere.copernicus.eu/ghg-services/cams-methane-hotspot-explorer",
+  "snippet": "CAMS methane hotspot explorer using TROPOMI",
+  "source_name": "Copernicus Atmosphere",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "CAMS 신규 메탄 핫스팟 익스플로러 — TROPOMI 활용. 이전 14일 인덱스에 동일 URL 없음.",
+  "entities": [
+    {"id": "org-cams", "type": "Organization", "name": "Copernicus Atmosphere Monitoring Service (CAMS)", "properties": {"org_type": "un_body", "country": "EU"}},
+    {"id": "sat-sentinel5p", "matched_id": "sat-sentinel5p", "type": "Satellite"},
+    {"id": "sensor-tropomi", "matched_id": "sensor-tropomi", "type": "Sensor"},
+    {"id": "phen-methane", "matched_id": "phen-methane", "type": "Phenomenon"}
+  ],
+  "relations": []
+}

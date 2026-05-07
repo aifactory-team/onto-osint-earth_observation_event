@@ -1,0 +1,35 @@
+{
+  "id": "src-030",
+  "title": "Satellite imagery reveals how Sudan's war scorched its 'breadbasket' — Al Jazeera (Sentinel-2)",
+  "url": "https://www.aljazeera.com/economy/2026/5/4/satellite-imagery-reveals-how-sudans-war-scorched-its-breadbasket",
+  "snippet": "Al Jazeera digital investigation: Sentinel-2 imagery shows Gezira/Sennar/Khartoum cropland devastation",
+  "source_name": "Al Jazeera",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "new",
+  "related_report": null,
+  "related_item": "evt-sudan-cropland-2026",
+  "tag_reason": "Al Jazeera 신규 디지털 탐사 — Sudan Gezira/Sennar/Khartoum 농경지 황폐화 (Sentinel-2). 이전 14일 인덱스 미언급.",
+  "entities": [
+    {"id": "evt-sudan-cropland-2026", "type": "Event", "name": "Sudan breadbasket cropland devastation 2026", "properties": {"phenomenon": "agricultural_change", "lat": 14.6, "lon": 33.5, "country": "SD", "observation_date": "2026-05-04", "severity": "high", "before_after_available": true}},
+    {"id": "org-aljazeera", "type": "Organization", "name": "Al Jazeera", "properties": {"org_type": "media", "country": "QA"}},
+    {"id": "sat-sentinel2a", "matched_id": "sat-sentinel2a", "type": "Satellite"},
+    {"id": "sensor-msi", "matched_id": "sensor-msi", "type": "Sensor"},
+    {"id": "co-sd", "type": "Country", "name": "Sudan", "properties": {"iso_code": "SD"}},
+    {"id": "loc-gezira", "type": "Location", "name": "Gezira state", "properties": {"country": "SD"}},
+    {"id": "loc-sennar", "type": "Location", "name": "Sennar state", "properties": {"country": "SD"}},
+    {"id": "loc-khartoum", "type": "Location", "name": "Khartoum state", "properties": {"country": "SD"}},
+    {"id": "phen-ndvi", "matched_id": "phen-ndvi", "type": "Phenomenon"}
+  ],
+  "relations": [
+    {"subject": "evt-sudan-cropland-2026", "predicate": "analyzedBy", "object": "org-aljazeera"},
+    {"subject": "evt-sudan-cropland-2026", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "evt-sudan-cropland-2026", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "evt-sudan-cropland-2026", "predicate": "inCountry", "object": "co-sd"},
+    {"subject": "evt-sudan-cropland-2026", "predicate": "locatedIn", "object": "loc-gezira"},
+    {"subject": "evt-sudan-cropland-2026", "predicate": "locatedIn", "object": "loc-sennar"},
+    {"subject": "evt-sudan-cropland-2026", "predicate": "locatedIn", "object": "loc-khartoum"},
+    {"subject": "evt-sudan-cropland-2026", "predicate": "manifests", "object": "phen-ndvi"},
+    {"subject": "evt-sudan-cropland-2026", "predicate": "inDomain", "object": "dom-agri-marine"}
+  ]
+}

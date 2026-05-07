@@ -1,0 +1,20 @@
+{
+  "id": "src-026",
+  "title": "Satellite Photos Show China's Massive Manmade Island in Disputed Waters (Antelope Reef 1500 acres)",
+  "url": "https://www.newsweek.com/satellite-photos-china-manmade-island-disputed-waters-antelope-reef-11733191",
+  "snippet": "Antelope Reef artificial island 1,500 acres reclaimed; long airbase runway",
+  "source_name": "Newsweek",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "reported",
+  "related_report": "src-025",
+  "related_item": "evt-antelope-reef-2026",
+  "tag_reason": "Antelope Reef 동일 이벤트 — Newsweek 보도(언론), AMTI 분석(src-025) 대표 1차 출처에 종속",
+  "entities": [
+    {"id": "evt-antelope-reef-2026", "type": "Event", "name": "Antelope Reef artificial island", "properties": {"lat": 16.46, "lon": 112.55, "country": "CN"}},
+    {"id": "co-cn", "matched_id": "co-cn", "type": "Country"}
+  ],
+  "relations": [
+    {"subject": "evt-antelope-reef-2026", "predicate": "reportedBy", "object": "org-newsweek"}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "src-028",
+  "title": "Cerulean SkyTruth — Sentinel-1 SAR oil slick AI detection (~1,000 images/day, U-Net)",
+  "url": "https://skytruth.org/cerulean",
+  "snippet": "Open-source platform automatically detecting oil slicks from vessels and offshore platforms using AI on Sentinel-1 SAR; ~1,000 images scanned per day.",
+  "source_name": "SkyTruth",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "reported",
+  "related_report": "2026-05-03/src-014",
+  "related_item": "2026-05-03/src-014",
+  "tag_reason": "5/3 src-014 (Cerulean NRT 업그레이드)·5/1 src-020(Cerulean 운영) 동일 시스템 — 5/7 Cerulean 메인 페이지로 동일 운영 정보, 신규 사건 없음",
+  "entities": [
+    {"id": "temp-evt-028", "type": "Event", "name": "Cerulean SkyTruth automated oil slick detection (Sentinel-1 SAR + U-Net)", "properties": {"phenomenon": "oil_spill", "country": null, "admin": "global", "observation_date": "2026", "images_per_day": 1000, "confidence": 0.85}},
+    {"id": "sat-sentinel1a", "type": "Satellite", "name": "Sentinel-1A"},
+    {"id": "sensor-c-sar", "type": "Sensor", "name": "C-band SAR"},
+    {"id": "org-skytruth", "type": "Organization", "name": "SkyTruth"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-028", "predicate": "observedBy", "object": "sat-sentinel1a"},
+    {"subject": "temp-evt-028", "predicate": "usesSensor", "object": "sensor-c-sar"},
+    {"subject": "temp-evt-028", "predicate": "analyzedBy", "object": "org-skytruth"},
+    {"subject": "temp-evt-028", "predicate": "manifests", "object": "phen-oilspill"},
+    {"subject": "temp-evt-028", "predicate": "inDomain", "object": "dom-human"}
+  ]
+}

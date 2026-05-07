@@ -1,0 +1,33 @@
+{
+  "id": "src-018",
+  "title": "Imagery Analysis — CSIS Beyond Parallel (Yongbyon UEP, Panghyon UAVs, Yelabuga DPRK labor)",
+  "url": "https://beyondparallel.csis.org/imagery/",
+  "snippet": "CSIS Beyond Parallel imagery analyses index — Yongbyon UEP completion noted; UAVs at Panghyon airbase; Russia Yelabuga UAV expansion w/ DPRK labor",
+  "source_name": "CSIS Beyond Parallel",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "update",
+  "related_report": "2026-04-30/src-001",
+  "related_item": "evt-yongbyon-uep-2026",
+  "tag_reason": "CSIS BP 5월 종합 imagery 분석 — Yongbyon UEP 완공(2026-04-30 기보고)에 더해 Panghyon UAV·Yelabuga DPRK labor 추가 신규 정보",
+  "entities": [
+    {"id": "evt-yongbyon-uep-2026", "type": "Event", "name": "Yongbyon UEP completion 2026", "properties": {"phenomenon": "military_buildup", "lat": 39.7972, "lon": 125.7553, "country": "KP", "observation_date": "2026-04", "severity": "high"}},
+    {"id": "evt-panghyon-uav-2026", "type": "Event", "name": "Panghyon airbase UAV deployment 2026", "properties": {"phenomenon": "air_base_change", "country": "KP", "observation_date": "2026-04", "severity": "moderate"}},
+    {"id": "org-csis-bp", "matched_id": "org-csis-bp", "type": "Organization"},
+    {"id": "sat-worldview3", "matched_id": "sat-worldview3", "type": "Satellite"},
+    {"id": "co-kp", "matched_id": "co-kp", "type": "Country"},
+    {"id": "loc-yongbyon", "type": "Location", "name": "Yongbyon Nuclear Complex", "properties": {"country": "KP", "lat": 39.7972, "lon": 125.7553}},
+    {"id": "loc-panghyon", "type": "Location", "name": "Panghyon airbase", "properties": {"country": "KP"}}
+  ],
+  "relations": [
+    {"subject": "evt-yongbyon-uep-2026", "predicate": "analyzedBy", "object": "org-csis-bp"},
+    {"subject": "evt-yongbyon-uep-2026", "predicate": "observedBy", "object": "sat-worldview3"},
+    {"subject": "evt-yongbyon-uep-2026", "predicate": "inCountry", "object": "co-kp"},
+    {"subject": "evt-yongbyon-uep-2026", "predicate": "locatedIn", "object": "loc-yongbyon"},
+    {"subject": "evt-yongbyon-uep-2026", "predicate": "inDomain", "object": "dom-defense"},
+    {"subject": "evt-panghyon-uav-2026", "predicate": "analyzedBy", "object": "org-csis-bp"},
+    {"subject": "evt-panghyon-uav-2026", "predicate": "locatedIn", "object": "loc-panghyon"},
+    {"subject": "evt-panghyon-uav-2026", "predicate": "inCountry", "object": "co-kp"},
+    {"subject": "evt-panghyon-uav-2026", "predicate": "inDomain", "object": "dom-defense"}
+  ]
+}

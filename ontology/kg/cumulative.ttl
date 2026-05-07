@@ -1,0 +1,4198 @@
+@prefix : <https://onto-osint.assi/eo-event/> .
+@prefix eo: <https://onto-osint.assi/eo-event/ontology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+# === TBox (Ontology) ===
+<https://onto-osint.assi/eo-event/ontology#> a owl:Ontology ;
+    rdfs:label "Onto-OSINT Earth Observation Event Ontology"@en ;
+    rdfs:comment "OSINT 온톨로지 스키마 — config/osint-config.json의 seed로부터 초기화되고, 매일 파이프라인 실행 시 자동 확장된다. 도메인: 위성영상으로 관측 가능한 지구상 이벤트 (Earth Observation Events)."@ko ;
+    owl:versionInfo "1.0.0" ;
+    dct:modified "2026-05-06"^^xsd:date .
+
+eo:Entity a owl:Class ;
+    rdfs:label "엔티티"@ko ;
+    rdfs:comment "최상위 클래스"@ko .
+
+eo:Event a owl:Class ;
+    rdfs:subClassOf eo:Entity ;
+    rdfs:label "이벤트"@ko ;
+    rdfs:comment "위성영상으로 관측된 지구상 이벤트 (재해/인간활동/기후/농업/국방/인도주의)"@ko .
+
+eo:Satellite a owl:Class ;
+    rdfs:subClassOf eo:Entity ;
+    rdfs:label "위성"@ko ;
+    rdfs:comment "지구관측 위성 플랫폼"@ko .
+
+eo:Sensor a owl:Class ;
+    rdfs:subClassOf eo:Entity ;
+    rdfs:label "센서"@ko ;
+    rdfs:comment "위성 탑재 관측 센서 (광학/SAR/열적외/초분광/미량가스 등)"@ko .
+
+eo:DataProduct a owl:Class ;
+    rdfs:subClassOf eo:Entity ;
+    rdfs:label "데이터제품"@ko ;
+    rdfs:comment "특정 처리 수준의 위성 데이터 제품 (Sentinel-2 L2A 등)"@ko .
+
+eo:Location a owl:Class ;
+    rdfs:subClassOf eo:Entity ;
+    rdfs:label "지역"@ko ;
+    rdfs:comment "이벤트 발생 지리적 위치"@ko .
+
+eo:Country a owl:Class ;
+    rdfs:subClassOf eo:Entity ;
+    rdfs:label "국가"@ko ;
+    rdfs:comment "이벤트 발생 국가"@ko .
+
+eo:Organization a owl:Class ;
+    rdfs:subClassOf eo:Entity ;
+    rdfs:label "기관"@ko ;
+    rdfs:comment "위성 운영·분석·보도 기관 (우주기관/상업/UN/NGO/연구/매체)"@ko .
+
+eo:Phenomenon a owl:Class ;
+    rdfs:subClassOf eo:Entity ;
+    rdfs:label "관측현상"@ko ;
+    rdfs:comment "위성으로 관측 가능한 현상 유형"@ko .
+
+eo:Domain a owl:Class ;
+    rdfs:subClassOf eo:Entity ;
+    rdfs:label "도메인"@ko ;
+    rdfs:comment "이벤트가 속한 응용 도메인 (Disaster/HumanActivity/Climate/AgriMarine/Defense/Humanitarian)"@ko .
+
+eo:observedBy a owl:ObjectProperty ;
+    rdfs:label "관측위성"@ko ;
+    rdfs:domain eo:Event ;
+    rdfs:range eo:Satellite .
+
+eo:usesSensor a owl:ObjectProperty ;
+    rdfs:label "사용센서"@ko ;
+    rdfs:domain eo:Event ;
+    rdfs:range eo:Sensor .
+
+eo:usesDataProduct a owl:ObjectProperty ;
+    rdfs:label "사용데이터"@ko ;
+    rdfs:domain eo:Event ;
+    rdfs:range eo:DataProduct .
+
+eo:locatedIn a owl:ObjectProperty ;
+    rdfs:label "발생지역"@ko ;
+    rdfs:domain eo:Event ;
+    rdfs:range eo:Location .
+
+eo:inCountry a owl:ObjectProperty ;
+    rdfs:label "국가"@ko ;
+    rdfs:domain eo:Event ;
+    rdfs:range eo:Country .
+
+eo:analyzedBy a owl:ObjectProperty ;
+    rdfs:label "분석기관"@ko ;
+    rdfs:domain eo:Event ;
+    rdfs:range eo:Organization .
+
+eo:reportedBy a owl:ObjectProperty ;
+    rdfs:label "보도"@ko ;
+    rdfs:domain eo:Event ;
+    rdfs:range eo:Organization .
+
+eo:manifests a owl:ObjectProperty ;
+    rdfs:label "관측현상"@ko ;
+    rdfs:domain eo:Event ;
+    rdfs:range eo:Phenomenon .
+
+eo:inDomain a owl:ObjectProperty ;
+    rdfs:label "도메인"@ko ;
+    rdfs:domain eo:Event ;
+    rdfs:range eo:Domain .
+
+eo:triggeredBy a owl:ObjectProperty ;
+    rdfs:label "유발"@ko ;
+    rdfs:domain eo:Event ;
+    rdfs:range eo:Event .
+
+eo:partOfSeries a owl:ObjectProperty ;
+    rdfs:label "시리즈일부"@ko ;
+    rdfs:domain eo:Event ;
+    rdfs:range eo:Event .
+
+eo:supersedes a owl:ObjectProperty ;
+    rdfs:label "대체"@ko ;
+    rdfs:domain eo:Event ;
+    rdfs:range eo:Event .
+
+eo:carriesSensor a owl:ObjectProperty ;
+    rdfs:label "탑재센서"@ko ;
+    rdfs:domain eo:Satellite ;
+    rdfs:range eo:Sensor .
+
+eo:operatedBy a owl:ObjectProperty ;
+    rdfs:label "운영"@ko ;
+    rdfs:domain eo:Satellite ;
+    rdfs:range eo:Organization .
+
+eo:produces a owl:ObjectProperty ;
+    rdfs:label "제공제품"@ko ;
+    rdfs:domain eo:Satellite ;
+    rdfs:range eo:DataProduct .
+
+eo:nearby a owl:ObjectProperty ;
+    rdfs:label "근접지역"@ko ;
+    rdfs:domain eo:Location ;
+    rdfs:range eo:Location .
+
+# Datatype properties (auto-declared)
+eo:admin_level a owl:DatatypeProperty ; rdfs:range xsd:string .
+eo:altitude_km a owl:DatatypeProperty ; rdfs:range xsd:decimal .
+eo:area_km2 a owl:DatatypeProperty ; rdfs:range xsd:decimal .
+eo:before_after_available a owl:DatatypeProperty ; rdfs:range xsd:boolean .
+eo:carried_by a owl:DatatypeProperty ; rdfs:range xsd:string .
+eo:category a owl:DatatypeProperty ; rdfs:range xsd:string .
+eo:confidence a owl:DatatypeProperty ; rdfs:range xsd:decimal .
+eo:country a owl:DatatypeProperty ; rdfs:range xsd:string .
+eo:end_date a owl:DatatypeProperty ; rdfs:range xsd:date .
+eo:first_seen a owl:DatatypeProperty ; rdfs:range xsd:date .
+eo:format a owl:DatatypeProperty ; rdfs:range xsd:string .
+eo:iso_code a owl:DatatypeProperty ; rdfs:range xsd:string .
+eo:label a owl:DatatypeProperty ; rdfs:range xsd:string .
+eo:last_seen a owl:DatatypeProperty ; rdfs:range xsd:date .
+eo:lat a owl:DatatypeProperty ; rdfs:range xsd:decimal .
+eo:launch_date a owl:DatatypeProperty ; rdfs:range xsd:date .
+eo:level a owl:DatatypeProperty ; rdfs:range xsd:string .
+eo:license a owl:DatatypeProperty ; rdfs:range xsd:string .
+eo:lon a owl:DatatypeProperty ; rdfs:range xsd:decimal .
+eo:mention_count a owl:DatatypeProperty ; rdfs:range xsd:integer .
+eo:mission_status a owl:DatatypeProperty ; rdfs:range xsd:string .
+eo:name a owl:DatatypeProperty ; rdfs:range xsd:string .
+eo:notes a owl:DatatypeProperty ; rdfs:range xsd:string .
+eo:observable_signature a owl:DatatypeProperty ; rdfs:range xsd:string .
+eo:observation_date a owl:DatatypeProperty ; rdfs:range xsd:date .
+eo:operator a owl:DatatypeProperty ; rdfs:range xsd:string .
+eo:orbit_type a owl:DatatypeProperty ; rdfs:range xsd:string .
+eo:org_type a owl:DatatypeProperty ; rdfs:range xsd:string .
+eo:provider a owl:DatatypeProperty ; rdfs:range xsd:string .
+eo:region a owl:DatatypeProperty ; rdfs:range xsd:string .
+eo:resolution_m a owl:DatatypeProperty ; rdfs:range xsd:decimal .
+eo:revisit_days a owl:DatatypeProperty ; rdfs:range xsd:decimal .
+eo:satellite_unverified a owl:DatatypeProperty ; rdfs:range xsd:boolean .
+eo:sensor_type a owl:DatatypeProperty ; rdfs:range xsd:string .
+eo:severity a owl:DatatypeProperty ; rdfs:range xsd:string .
+eo:start_date a owl:DatatypeProperty ; rdfs:range xsd:date .
+eo:swath_km a owl:DatatypeProperty ; rdfs:range xsd:decimal .
+eo:website a owl:DatatypeProperty ; rdfs:range xsd:anyURI .
+
+# === ABox (Instances) ===
+:dom-disaster a eo:Domain ;
+    rdfs:label "Disaster"@ko ;
+    eo:name "Disaster" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "12"^^xsd:integer ;
+    eo:label "자연재해"@ko .
+
+:dom-human a eo:Domain ;
+    rdfs:label "HumanActivity"@ko ;
+    eo:name "HumanActivity" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    eo:label "인간활동"@ko .
+
+:dom-climate a eo:Domain ;
+    rdfs:label "ClimateEnvironment"@ko ;
+    eo:name "ClimateEnvironment" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "4"^^xsd:integer ;
+    eo:label "기후·환경"@ko .
+
+:dom-agri-marine a eo:Domain ;
+    rdfs:label "AgricultureMaritime"@ko ;
+    eo:name "AgricultureMaritime" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:label "농업·해양"@ko .
+
+:dom-defense a eo:Domain ;
+    rdfs:label "Defense"@ko ;
+    eo:name "Defense" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "7"^^xsd:integer ;
+    eo:label "국방·안보"@ko .
+
+:dom-humanitarian a eo:Domain ;
+    rdfs:label "Humanitarian"@ko ;
+    eo:name "Humanitarian" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "3"^^xsd:integer ;
+    eo:label "인도주의"@ko .
+
+:phen-wildfire a eo:Phenomenon ;
+    rdfs:label "wildfire"@ko ;
+    eo:name "wildfire" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    eo:category "Disaster" ;
+    eo:observable_signature "thermal hotspots, smoke plume, burn scar (NBR)" .
+
+:phen-flood a eo:Phenomenon ;
+    rdfs:label "flood"@ko ;
+    eo:name "flood" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "3"^^xsd:integer ;
+    eo:category "Disaster" ;
+    eo:observable_signature "water extent change (SAR), spectral water indices" .
+
+:phen-typhoon a eo:Phenomenon ;
+    rdfs:label "typhoon"@ko ;
+    eo:name "typhoon" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    eo:category "Disaster" ;
+    eo:observable_signature "spiral cloud structure (geostationary)" .
+
+:phen-earthquake a eo:Phenomenon ;
+    rdfs:label "earthquake_damage"@ko ;
+    eo:name "earthquake_damage" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:category "Disaster" ;
+    eo:observable_signature "InSAR coseismic deformation, building damage" .
+
+:phen-volcano a eo:Phenomenon ;
+    rdfs:label "volcanic_eruption"@ko ;
+    eo:name "volcanic_eruption" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "4"^^xsd:integer ;
+    eo:category "Disaster" ;
+    eo:observable_signature "thermal anomaly, ash plume, SO2 emission" .
+
+:phen-landslide a eo:Phenomenon ;
+    rdfs:label "landslide"@ko ;
+    eo:name "landslide" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:category "Disaster" ;
+    eo:observable_signature "scarp + deposit visible in optical/SAR" .
+
+:phen-drought a eo:Phenomenon ;
+    rdfs:label "drought"@ko ;
+    eo:name "drought" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:category "Disaster" ;
+    eo:observable_signature "NDVI deficit, soil moisture decrease" .
+
+:phen-snowstorm a eo:Phenomenon ;
+    rdfs:label "snowstorm"@ko ;
+    eo:name "snowstorm" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:category "Disaster" ;
+    eo:observable_signature "snow cover (NDSI)" .
+
+:phen-algal a eo:Phenomenon ;
+    rdfs:label "algal_bloom"@ko ;
+    eo:name "algal_bloom" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:category "Disaster" ;
+    eo:observable_signature "ocean color anomaly (chlorophyll)" .
+
+:phen-defor a eo:Phenomenon ;
+    rdfs:label "deforestation"@ko ;
+    eo:name "deforestation" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:category "HumanActivity" ;
+    eo:observable_signature "loss in forest mask" .
+
+:phen-urban a eo:Phenomenon ;
+    rdfs:label "urban_expansion"@ko ;
+    eo:name "urban_expansion" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:category "HumanActivity" ;
+    eo:observable_signature "impervious surface increase" .
+
+:phen-construction a eo:Phenomenon ;
+    rdfs:label "construction"@ko ;
+    eo:name "construction" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "3"^^xsd:integer ;
+    eo:category "HumanActivity" ;
+    eo:observable_signature "newly cleared land + structural progress" .
+
+:phen-mining a eo:Phenomenon ;
+    rdfs:label "mining"@ko ;
+    eo:name "mining" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:category "HumanActivity" ;
+    eo:observable_signature "open-pit expansion, tailings ponds" .
+
+:phen-oilspill a eo:Phenomenon ;
+    rdfs:label "oil_spill"@ko ;
+    eo:name "oil_spill" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:category "HumanActivity" ;
+    eo:observable_signature "SAR sea surface dampening" .
+
+:phen-military a eo:Phenomenon ;
+    rdfs:label "military_buildup"@ko ;
+    eo:name "military_buildup" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "6"^^xsd:integer ;
+    eo:category "Defense" ;
+    eo:observable_signature "vehicle arrays, base expansion (hi-res optical)" .
+
+:phen-naval a eo:Phenomenon ;
+    rdfs:label "naval_movement"@ko ;
+    eo:name "naval_movement" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:category "Defense" ;
+    eo:observable_signature "ship detection (SAR/AIS gap)" .
+
+:phen-glacier a eo:Phenomenon ;
+    rdfs:label "glacier_retreat"@ko ;
+    eo:name "glacier_retreat" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    eo:category "ClimateEnvironment" ;
+    eo:observable_signature "terminus retreat, calving" .
+
+:phen-sealevel a eo:Phenomenon ;
+    rdfs:label "sea_level_change"@ko ;
+    eo:name "sea_level_change" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:category "ClimateEnvironment" ;
+    eo:observable_signature "altimetry trend" .
+
+:phen-permafrost a eo:Phenomenon ;
+    rdfs:label "permafrost_thaw"@ko ;
+    eo:name "permafrost_thaw" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:category "ClimateEnvironment" ;
+    eo:observable_signature "thermokarst formation, InSAR deformation" .
+
+:phen-methane a eo:Phenomenon ;
+    rdfs:label "methane_plume"@ko ;
+    eo:name "methane_plume" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:category "ClimateEnvironment" ;
+    eo:observable_signature "S5P TROPOMI / MethaneSAT XCH4 anomaly" .
+
+:phen-air-pol a eo:Phenomenon ;
+    rdfs:label "air_pollution"@ko ;
+    eo:name "air_pollution" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:category "ClimateEnvironment" ;
+    eo:observable_signature "S5P NO2/SO2/aerosol" .
+
+:phen-ndvi a eo:Phenomenon ;
+    rdfs:label "ndvi_change"@ko ;
+    eo:name "ndvi_change" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:category "AgricultureMaritime" ;
+    eo:observable_signature "vegetation index time series" .
+
+:phen-crop a eo:Phenomenon ;
+    rdfs:label "crop_yield"@ko ;
+    eo:name "crop_yield" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:category "AgricultureMaritime" ;
+    eo:observable_signature "phenology + biomass estimation" .
+
+:phen-fishing a eo:Phenomenon ;
+    rdfs:label "fishing_activity"@ko ;
+    eo:name "fishing_activity" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:category "AgricultureMaritime" ;
+    eo:observable_signature "VIIRS night light boats / SAR ships" .
+
+:phen-refugee a eo:Phenomenon ;
+    rdfs:label "refugee_camp"@ko ;
+    eo:name "refugee_camp" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:category "Humanitarian" ;
+    eo:observable_signature "tent array, road expansion" .
+
+:phen-infra-damage a eo:Phenomenon ;
+    rdfs:label "infrastructure_damage"@ko ;
+    eo:name "infrastructure_damage" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "3"^^xsd:integer ;
+    eo:category "Humanitarian" ;
+    eo:observable_signature "SAR change detection, building footprint loss (PWTT)" .
+
+:co-kr a eo:Country ;
+    rdfs:label "대한민국"@ko ;
+    eo:name "대한민국" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "3"^^xsd:integer ;
+    eo:iso_code "KR" ;
+    eo:region "동아시아" .
+
+:co-kp a eo:Country ;
+    rdfs:label "조선민주주의인민공화국"@ko ;
+    eo:name "조선민주주의인민공화국" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "4"^^xsd:integer ;
+    eo:iso_code "KP" ;
+    eo:region "동아시아" .
+
+:co-jp a eo:Country ;
+    rdfs:label "일본"@ko ;
+    eo:name "일본" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:iso_code "JP" ;
+    eo:region "동아시아" .
+
+:co-cn a eo:Country ;
+    rdfs:label "중국"@ko ;
+    eo:name "중국" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:iso_code "CN" ;
+    eo:region "동아시아" .
+
+:co-us a eo:Country ;
+    rdfs:label "미국"@ko ;
+    eo:name "미국" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "3"^^xsd:integer ;
+    eo:iso_code "US" ;
+    eo:region "북미" .
+
+:co-ru a eo:Country ;
+    rdfs:label "러시아"@ko ;
+    eo:name "러시아" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:iso_code "RU" ;
+    eo:region "동유럽/북아시아" .
+
+:co-ua a eo:Country ;
+    rdfs:label "우크라이나"@ko ;
+    eo:name "우크라이나" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:iso_code "UA" ;
+    eo:region "동유럽" .
+
+:co-br a eo:Country ;
+    rdfs:label "브라질"@ko ;
+    eo:name "브라질" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:iso_code "BR" ;
+    eo:region "남미" .
+
+:co-id a eo:Country ;
+    rdfs:label "인도네시아"@ko ;
+    eo:name "인도네시아" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:iso_code "ID" ;
+    eo:region "동남아시아" .
+
+:co-au a eo:Country ;
+    rdfs:label "호주"@ko ;
+    eo:name "호주" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:iso_code "AU" ;
+    eo:region "오세아니아" .
+
+:co-fr a eo:Country ;
+    rdfs:label "프랑스"@ko ;
+    eo:name "프랑스" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:iso_code "FR" ;
+    eo:region "서유럽" .
+
+:co-ir a eo:Country ;
+    rdfs:label "이란"@ko ;
+    eo:name "이란" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:iso_code "IR" ;
+    eo:region "서아시아" .
+
+:co-ps a eo:Country ;
+    rdfs:label "팔레스타인"@ko ;
+    eo:name "팔레스타인" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:iso_code "PS" ;
+    eo:region "서아시아" .
+
+:co-aq a eo:Country ;
+    rdfs:label "남극"@ko ;
+    eo:name "남극" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    eo:iso_code "AQ" ;
+    eo:region "남극" .
+
+:co-fm a eo:Country ;
+    rdfs:label "마이크로네시아 연방"@ko ;
+    eo:name "마이크로네시아 연방" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:iso_code "FM" ;
+    eo:region "오세아니아" .
+
+:co-to a eo:Country ;
+    rdfs:label "통가"@ko ;
+    eo:name "통가" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:iso_code "TO" ;
+    eo:region "오세아니아" .
+
+:co-lk a eo:Country ;
+    rdfs:label "스리랑카"@ko ;
+    eo:name "스리랑카" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:iso_code "LK" ;
+    eo:region "남아시아" .
+
+:co-it a eo:Country ;
+    rdfs:label "이탈리아"@ko ;
+    eo:name "이탈리아" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:iso_code "IT" ;
+    eo:region "서유럽" .
+
+:co-is a eo:Country ;
+    rdfs:label "아이슬란드"@ko ;
+    eo:name "아이슬란드" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:iso_code "IS" ;
+    eo:region "북유럽" .
+
+:co-lb a eo:Country ;
+    rdfs:label "레바논"@ko ;
+    eo:name "레바논" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:iso_code "LB" ;
+    eo:region "서아시아" .
+
+:sat-sentinel1a a eo:Satellite ;
+    rdfs:label "Sentinel-1A"@ko ;
+    eo:name "Sentinel-1A" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "7"^^xsd:integer ;
+    eo:operator "ESA" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "5.0"^^xsd:decimal ;
+    eo:sensor_types "SAR" ;
+    eo:mission_status "operational" .
+
+:sat-sentinel1c a eo:Satellite ;
+    rdfs:label "Sentinel-1C"@ko ;
+    eo:name "Sentinel-1C" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    eo:operator "ESA" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "5.0"^^xsd:decimal ;
+    eo:sensor_types "SAR" ;
+    eo:mission_status "operational" .
+
+:sat-sentinel1d a eo:Satellite ;
+    rdfs:label "Sentinel-1D"@ko ;
+    eo:name "Sentinel-1D" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:operator "ESA" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "5.0"^^xsd:decimal ;
+    eo:sensor_types "SAR" ;
+    eo:mission_status "operational" ;
+    eo:launch_date "2025-11"^^xsd:gYearMonth .
+
+:sat-sentinel2a a eo:Satellite ;
+    rdfs:label "Sentinel-2A"@ko ;
+    eo:name "Sentinel-2A" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "5"^^xsd:integer ;
+    eo:operator "ESA" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "10.0"^^xsd:decimal ;
+    eo:sensor_types "optical_multispectral" ;
+    eo:mission_status "operational" .
+
+:sat-sentinel2b a eo:Satellite ;
+    rdfs:label "Sentinel-2B"@ko ;
+    eo:name "Sentinel-2B" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:operator "ESA" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "10.0"^^xsd:decimal ;
+    eo:sensor_types "optical_multispectral" ;
+    eo:mission_status "operational" .
+
+:sat-sentinel3 a eo:Satellite ;
+    rdfs:label "Sentinel-3A/B"@ko ;
+    eo:name "Sentinel-3A/B" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:operator "ESA" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "300.0"^^xsd:decimal ;
+    eo:sensor_types "ocean_color", "thermal_infrared" ;
+    eo:mission_status "operational" .
+
+:sat-sentinel5p a eo:Satellite ;
+    rdfs:label "Sentinel-5P"@ko ;
+    eo:name "Sentinel-5P" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    eo:operator "ESA" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "3500.0"^^xsd:decimal ;
+    eo:sensor_types "trace_gas" ;
+    eo:mission_status "operational" .
+
+:sat-landsat8 a eo:Satellite ;
+    rdfs:label "Landsat 8"@ko ;
+    eo:name "Landsat 8" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:operator "USGS/NASA" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "30.0"^^xsd:decimal ;
+    eo:sensor_types "optical_multispectral", "thermal_infrared" ;
+    eo:mission_status "operational" .
+
+:sat-landsat9 a eo:Satellite ;
+    rdfs:label "Landsat 9"@ko ;
+    eo:name "Landsat 9" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "4"^^xsd:integer ;
+    eo:operator "USGS/NASA" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "30.0"^^xsd:decimal ;
+    eo:sensor_types "optical_multispectral", "thermal_infrared" ;
+    eo:mission_status "operational" .
+
+:sat-modis-terra a eo:Satellite ;
+    rdfs:label "MODIS (Terra)"@ko ;
+    eo:name "MODIS (Terra)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:operator "NASA" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "250.0"^^xsd:decimal ;
+    eo:sensor_types "optical_multispectral", "thermal_infrared" ;
+    eo:mission_status "operational" .
+
+:sat-viirs-jpss a eo:Satellite ;
+    rdfs:label "VIIRS (Suomi-NPP/JPSS)"@ko ;
+    eo:name "VIIRS (Suomi-NPP/JPSS)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:operator "NOAA/NASA" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "375.0"^^xsd:decimal ;
+    eo:sensor_types "optical_multispectral", "thermal_infrared" ;
+    eo:mission_status "operational" .
+
+:sat-himawari9 a eo:Satellite ;
+    rdfs:label "Himawari-9"@ko ;
+    eo:name "Himawari-9" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    eo:operator "JMA/JAXA" ;
+    eo:orbit_type "GEO" ;
+    eo:resolution_m "500.0"^^xsd:decimal ;
+    eo:sensor_types "optical_multispectral", "thermal_infrared" ;
+    eo:mission_status "operational" .
+
+:sat-goes18 a eo:Satellite ;
+    rdfs:label "GOES-18"@ko ;
+    eo:name "GOES-18" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    eo:operator "NOAA" ;
+    eo:orbit_type "GEO" ;
+    eo:resolution_m "500.0"^^xsd:decimal ;
+    eo:sensor_types "optical_multispectral", "thermal_infrared" ;
+    eo:mission_status "operational" .
+
+:sat-planetscope a eo:Satellite ;
+    rdfs:label "PlanetScope (Doves)"@ko ;
+    eo:name "PlanetScope (Doves)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "4"^^xsd:integer ;
+    eo:operator "Planet" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "3.0"^^xsd:decimal ;
+    eo:sensor_types "optical_multispectral" ;
+    eo:mission_status "operational" .
+
+:sat-skysat a eo:Satellite ;
+    rdfs:label "SkySat"@ko ;
+    eo:name "SkySat" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:operator "Planet" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "0.5"^^xsd:decimal ;
+    eo:sensor_types "optical_pan", "optical_multispectral" ;
+    eo:mission_status "operational" .
+
+:sat-worldview3 a eo:Satellite ;
+    rdfs:label "WorldView-3"@ko ;
+    eo:name "WorldView-3" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "6"^^xsd:integer ;
+    eo:operator "Maxar" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "0.31"^^xsd:decimal ;
+    eo:sensor_types "optical_pan", "optical_multispectral" ;
+    eo:mission_status "operational" .
+
+:sat-blacksky a eo:Satellite ;
+    rdfs:label "BlackSky Global"@ko ;
+    eo:name "BlackSky Global" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:operator "BlackSky" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "1.0"^^xsd:decimal ;
+    eo:sensor_types "optical_pan" ;
+    eo:mission_status "operational" .
+
+:sat-iceye a eo:Satellite ;
+    rdfs:label "ICEYE constellation"@ko ;
+    eo:name "ICEYE constellation" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:operator "ICEYE" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "0.5"^^xsd:decimal ;
+    eo:sensor_types "SAR" ;
+    eo:mission_status "operational" .
+
+:sat-capella a eo:Satellite ;
+    rdfs:label "Capella Space"@ko ;
+    eo:name "Capella Space" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:operator "Capella" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "0.5"^^xsd:decimal ;
+    eo:sensor_types "SAR" ;
+    eo:mission_status "operational" .
+
+:sat-kompsat3a a eo:Satellite ;
+    rdfs:label "KOMPSAT-3A (아리랑3A)"@ko ;
+    eo:name "KOMPSAT-3A (아리랑3A)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:operator "KARI" ;
+    eo:country "KR" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "0.55"^^xsd:decimal ;
+    eo:sensor_types "optical_pan", "optical_multispectral", "thermal_infrared" ;
+    eo:mission_status "operational" .
+
+:sat-kompsat5 a eo:Satellite ;
+    rdfs:label "KOMPSAT-5 (아리랑5)"@ko ;
+    eo:name "KOMPSAT-5 (아리랑5)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:operator "KARI" ;
+    eo:country "KR" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "1.0"^^xsd:decimal ;
+    eo:sensor_types "SAR" ;
+    eo:mission_status "operational" .
+
+:sat-cas500-1 a eo:Satellite ;
+    rdfs:label "CAS500-1 (차세대중형위성 1호)"@ko ;
+    eo:name "CAS500-1 (차세대중형위성 1호)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:operator "KARI" ;
+    eo:country "KR" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "0.5"^^xsd:decimal ;
+    eo:sensor_types "optical_pan", "optical_multispectral" ;
+    eo:mission_status "operational" .
+
+:sat-alos2 a eo:Satellite ;
+    rdfs:label "ALOS-2"@ko ;
+    eo:name "ALOS-2" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:operator "JAXA" ;
+    eo:country "JP" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "3.0"^^xsd:decimal ;
+    eo:sensor_types "SAR" ;
+    eo:mission_status "operational" .
+
+:sat-gaofen a eo:Satellite ;
+    rdfs:label "GaoFen series"@ko ;
+    eo:name "GaoFen series" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:operator "CNSA" ;
+    eo:country "CN" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "0.5"^^xsd:decimal ;
+    eo:sensor_types "optical_pan", "optical_multispectral", "SAR" ;
+    eo:mission_status "operational" .
+
+:sat-methanesat a eo:Satellite ;
+    rdfs:label "MethaneSAT"@ko ;
+    eo:name "MethaneSAT" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:operator "EDF" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "100.0"^^xsd:decimal ;
+    eo:sensor_types "trace_gas" ;
+    eo:mission_status "operational" .
+
+:sat-cosmoskymed-csg a eo:Satellite ;
+    rdfs:label "COSMO-SkyMed Second Generation (CSG)"@ko ;
+    eo:name "COSMO-SkyMed Second Generation (CSG)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    eo:operator "ASI" ;
+    eo:country "IT" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "0.35"^^xsd:decimal ;
+    eo:sensor_types "SAR" ;
+    eo:mission_status "operational" .
+
+:sat-gosat a eo:Satellite ;
+    rdfs:label "GOSAT"@ko ;
+    eo:name "GOSAT" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:operator "JAXA" ;
+    eo:country "JP" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "10000.0"^^xsd:decimal ;
+    eo:sensor_types "trace_gas" ;
+    eo:mission_status "operational" .
+
+:sat-kompsat7 a eo:Satellite ;
+    rdfs:label "KOMPSAT-7 (아리랑 7호)"@ko ;
+    eo:name "KOMPSAT-7 (아리랑 7호)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:operator "KARI" ;
+    eo:country "KR" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "0.3"^^xsd:decimal ;
+    eo:sensor_types "optical_pan", "optical_multispectral" ;
+    eo:mission_status "operational" ;
+    eo:launch_date "2025-12-02"^^xsd:date .
+
+:sat-kompsat6 a eo:Satellite ;
+    rdfs:label "KOMPSAT-6 (아리랑 6호)"@ko ;
+    eo:name "KOMPSAT-6 (아리랑 6호)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:operator "KARI" ;
+    eo:country "KR" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "0.5"^^xsd:decimal ;
+    eo:sensor_types "SAR" ;
+    eo:mission_status "planned" .
+
+:sensor-msi a eo:Sensor ;
+    rdfs:label "MSI (Sentinel-2 Multispectral Instrument)"@ko ;
+    eo:name "MSI (Sentinel-2 Multispectral Instrument)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    eo:sensor_type "optical_multispectral" ;
+    eo:carried_by "Sentinel-2A/2B" ;
+    eo:resolution_m "10.0"^^xsd:decimal .
+
+:sensor-oli a eo:Sensor ;
+    rdfs:label "OLI (Landsat Operational Land Imager)"@ko ;
+    eo:name "OLI (Landsat Operational Land Imager)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:sensor_type "optical_multispectral" ;
+    eo:carried_by "Landsat 8/9" ;
+    eo:resolution_m "30.0"^^xsd:decimal .
+
+:sensor-tirs a eo:Sensor ;
+    rdfs:label "TIRS (Thermal Infrared Sensor)"@ko ;
+    eo:name "TIRS (Thermal Infrared Sensor)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    eo:sensor_type "thermal_infrared" ;
+    eo:carried_by "Landsat 8/9" ;
+    eo:resolution_m "100.0"^^xsd:decimal .
+
+:sensor-tropomi a eo:Sensor ;
+    rdfs:label "TROPOMI"@ko ;
+    eo:name "TROPOMI" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    eo:sensor_type "trace_gas" ;
+    eo:carried_by "Sentinel-5P" ;
+    eo:resolution_m "3500.0"^^xsd:decimal .
+
+:sensor-modis a eo:Sensor ;
+    rdfs:label "MODIS"@ko ;
+    eo:name "MODIS" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:sensor_type "optical_multispectral" ;
+    eo:carried_by "Terra/Aqua" ;
+    eo:resolution_m "250.0"^^xsd:decimal .
+
+:sensor-viirs a eo:Sensor ;
+    rdfs:label "VIIRS"@ko ;
+    eo:name "VIIRS" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:sensor_type "optical_multispectral" ;
+    eo:carried_by "Suomi-NPP/JPSS" ;
+    eo:resolution_m "375.0"^^xsd:decimal .
+
+:sensor-c-sar a eo:Sensor ;
+    rdfs:label "C-band SAR"@ko ;
+    eo:name "C-band SAR" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "5"^^xsd:integer ;
+    eo:sensor_type "SAR" ;
+    eo:carried_by "Sentinel-1" ;
+    eo:resolution_m "5.0"^^xsd:decimal .
+
+:sensor-x-sar a eo:Sensor ;
+    rdfs:label "X-band SAR"@ko ;
+    eo:name "X-band SAR" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    eo:sensor_type "SAR" ;
+    eo:carried_by "ICEYE/Capella/KOMPSAT-5/CSG" ;
+    eo:resolution_m "0.5"^^xsd:decimal .
+
+:org-nasa a eo:Organization ;
+    rdfs:label "NASA"@ko ;
+    eo:name "NASA" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    eo:org_type "space_agency" ;
+    eo:country "US" .
+
+:org-esa a eo:Organization ;
+    rdfs:label "ESA (European Space Agency)"@ko ;
+    eo:name "ESA (European Space Agency)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:org_type "space_agency" ;
+    eo:country "EU" .
+
+:org-noaa a eo:Organization ;
+    rdfs:label "NOAA"@ko ;
+    eo:name "NOAA" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    eo:org_type "weather_agency" ;
+    eo:country "US" .
+
+:org-usgs a eo:Organization ;
+    rdfs:label "USGS"@ko ;
+    eo:name "USGS" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "3"^^xsd:integer ;
+    eo:org_type "space_agency" ;
+    eo:country "US" .
+
+:org-kari a eo:Organization ;
+    rdfs:label "KARI (한국항공우주연구원)"@ko ;
+    eo:name "KARI (한국항공우주연구원)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:org_type "space_agency" ;
+    eo:country "KR" .
+
+:org-jaxa a eo:Organization ;
+    rdfs:label "JAXA"@ko ;
+    eo:name "JAXA" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:org_type "space_agency" ;
+    eo:country "JP" .
+
+:org-cnsa a eo:Organization ;
+    rdfs:label "CNSA"@ko ;
+    eo:name "CNSA" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:org_type "space_agency" ;
+    eo:country "CN" .
+
+:org-isro a eo:Organization ;
+    rdfs:label "ISRO"@ko ;
+    eo:name "ISRO" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:org_type "space_agency" ;
+    eo:country "IN" .
+
+:org-cems a eo:Organization ;
+    rdfs:label "Copernicus Emergency Management Service"@ko ;
+    eo:name "Copernicus Emergency Management Service" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:org_type "un_body" ;
+    eo:country "EU" .
+
+:org-unosat a eo:Organization ;
+    rdfs:label "UNOSAT"@ko ;
+    eo:name "UNOSAT" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:org_type "un_body" ;
+    eo:country "INTL" .
+
+:org-charter a eo:Organization ;
+    rdfs:label "International Disaster Charter"@ko ;
+    eo:name "International Disaster Charter" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:org_type "un_body" ;
+    eo:country "INTL" .
+
+:org-planet a eo:Organization ;
+    rdfs:label "Planet Labs"@ko ;
+    eo:name "Planet Labs" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:org_type "commercial_imagery" ;
+    eo:country "US" .
+
+:org-maxar a eo:Organization ;
+    rdfs:label "Maxar Technologies"@ko ;
+    eo:name "Maxar Technologies" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    eo:org_type "commercial_imagery" ;
+    eo:country "US" .
+
+:org-blacksky a eo:Organization ;
+    rdfs:label "BlackSky"@ko ;
+    eo:name "BlackSky" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:org_type "commercial_imagery" ;
+    eo:country "US" .
+
+:org-iceye a eo:Organization ;
+    rdfs:label "ICEYE"@ko ;
+    eo:name "ICEYE" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:org_type "commercial_imagery" ;
+    eo:country "FI" .
+
+:org-capella a eo:Organization ;
+    rdfs:label "Capella Space"@ko ;
+    eo:name "Capella Space" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:org_type "commercial_imagery" ;
+    eo:country "US" .
+
+:org-gfw a eo:Organization ;
+    rdfs:label "Global Forest Watch"@ko ;
+    eo:name "Global Forest Watch" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:org_type "ngo" ;
+    eo:country "INTL" .
+
+:org-skytruth a eo:Organization ;
+    rdfs:label "SkyTruth"@ko ;
+    eo:name "SkyTruth" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:org_type "ngo" ;
+    eo:country "US" .
+
+:org-climatetrace a eo:Organization ;
+    rdfs:label "Climate TRACE"@ko ;
+    eo:name "Climate TRACE" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:org_type "ngo" ;
+    eo:country "INTL" .
+
+:org-bellingcat a eo:Organization ;
+    rdfs:label "Bellingcat"@ko ;
+    eo:name "Bellingcat" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:org_type "ngo" ;
+    eo:country "NL" .
+
+:org-csis-bp a eo:Organization ;
+    rdfs:label "CSIS Beyond Parallel"@ko ;
+    eo:name "CSIS Beyond Parallel" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:org_type "research" ;
+    eo:country "US" .
+
+:org-allsource a eo:Organization ;
+    rdfs:label "AllSource Analysis"@ko ;
+    eo:name "AllSource Analysis" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "0"^^xsd:integer ;
+    eo:org_type "commercial_imagery" ;
+    eo:country "US" .
+
+:org-warzone a eo:Organization ;
+    rdfs:label "The War Zone"@ko ;
+    eo:name "The War Zone" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:org_type "media" ;
+    eo:country "US" .
+
+:org-38north a eo:Organization ;
+    rdfs:label "38 North"@ko ;
+    eo:name "38 North" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:org_type "research" ;
+    eo:country "US" .
+
+:org-rfa a eo:Organization ;
+    rdfs:label "Radio Free Asia"@ko ;
+    eo:name "Radio Free Asia" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:org_type "media" ;
+    eo:country "US" .
+
+:ent-evt-001 a eo:Event ;
+    rdfs:label "영변 우라늄 농축 신규 건물 완공 관측 (Yongbyon UEP)"@ko ;
+    eo:name "영변 우라늄 농축 신규 건물 완공 관측 (Yongbyon UEP)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    geo:lat "39.8"^^xsd:decimal ;
+    geo:long "125.7"^^xsd:decimal ;
+    eo:phenomenon "military_buildup" ;
+    eo:domain "Defense" ;
+    eo:country "KP" ;
+    eo:lat "39.8"^^xsd:decimal ;
+    eo:lon "125.7"^^xsd:decimal ;
+    eo:observation_date "2026-04-13"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean .
+
+:ent-evt-002 a eo:Event ;
+    rdfs:label "소해 위성발사장 마을 철거·시설 확장 (Sohae)"@ko ;
+    eo:name "소해 위성발사장 마을 철거·시설 확장 (Sohae)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "39.66"^^xsd:decimal ;
+    geo:long "124.71"^^xsd:decimal ;
+    eo:phenomenon "military_buildup" ;
+    eo:domain "Defense" ;
+    eo:country "KP" ;
+    eo:lat "39.66"^^xsd:decimal ;
+    eo:lon "124.71"^^xsd:decimal ;
+    eo:observation_date "2026-04-15"^^xsd:date ;
+    eo:severity "medium" ;
+    eo:before_after_available "true"^^xsd:boolean .
+
+:ent-evt-003 a eo:Event ;
+    rdfs:label "Piton de la Fournaise 화산 분출 (Réunion)"@ko ;
+    eo:name "Piton de la Fournaise 화산 분출 (Réunion)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "-21.244"^^xsd:decimal ;
+    geo:long "55.708"^^xsd:decimal ;
+    eo:phenomenon "volcanic_eruption" ;
+    eo:domain "Disaster" ;
+    eo:country "FR" ;
+    eo:lat "-21.244"^^xsd:decimal ;
+    eo:lon "55.708"^^xsd:decimal ;
+    eo:observation_date "2026-03-28"^^xsd:date ;
+    eo:start_date "2026-02-13"^^xsd:date ;
+    eo:end_date "2026-04-12"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean .
+
+:ent-evt-004 a eo:Event ;
+    rdfs:label "Kilauea Episode 44 분출 + InSAR 변형 (Hawaii)"@ko ;
+    eo:name "Kilauea Episode 44 분출 + InSAR 변형 (Hawaii)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    geo:lat "19.421"^^xsd:decimal ;
+    geo:long "-155.287"^^xsd:decimal ;
+    eo:phenomenon "volcanic_eruption" ;
+    eo:domain "Disaster" ;
+    eo:country "US" ;
+    eo:lat "19.421"^^xsd:decimal ;
+    eo:lon "-155.287"^^xsd:decimal ;
+    eo:observation_date "2026-04-15"^^xsd:date ;
+    eo:start_date "2026-04-09"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean .
+
+:ent-evt-005 a eo:Event ;
+    rdfs:label "2025 글로벌 열대 원시림 손실 (GFW/UMD)"@ko ;
+    eo:name "2025 글로벌 열대 원시림 손실 (GFW/UMD)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "0.0"^^xsd:decimal ;
+    geo:long "-60.0"^^xsd:decimal ;
+    eo:phenomenon "deforestation" ;
+    eo:domain "HumanActivity" ;
+    eo:country "INTL" ;
+    eo:lat "0.0"^^xsd:decimal ;
+    eo:lon "-60.0"^^xsd:decimal ;
+    eo:observation_date "2026-04-29"^^xsd:date ;
+    eo:area_km2 "43000.0"^^xsd:decimal ;
+    eo:severity "high" .
+
+:ent-evt-006 a eo:Event ;
+    rdfs:label "남중국해 Antelope Reef 인공섬 확장"@ko ;
+    eo:name "남중국해 Antelope Reef 인공섬 확장" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "16.4"^^xsd:decimal ;
+    geo:long "111.6"^^xsd:decimal ;
+    eo:phenomenon "military_buildup" ;
+    eo:domain "Defense" ;
+    eo:country "CN" ;
+    eo:lat "16.4"^^xsd:decimal ;
+    eo:lon "111.6"^^xsd:decimal ;
+    eo:area_km2 "6.11"^^xsd:decimal ;
+    eo:observation_date "2026-04-16"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean .
+
+:ent-evt-007 a eo:Event ;
+    rdfs:label "이란/걸프 분쟁 SAR 변화탐지 (Bellingcat PWTT)"@ko ;
+    eo:name "이란/걸프 분쟁 SAR 변화탐지 (Bellingcat PWTT)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "32.4"^^xsd:decimal ;
+    geo:long "53.7"^^xsd:decimal ;
+    eo:phenomenon "infrastructure_damage" ;
+    eo:domain "Humanitarian" ;
+    eo:country "IR" ;
+    eo:lat "32.4"^^xsd:decimal ;
+    eo:lon "53.7"^^xsd:decimal ;
+    eo:observation_date "2026-04-07"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean .
+
+:ent-evt-008 a eo:Event ;
+    rdfs:label "가자지구 종합 피해 평가 (UNOSAT Jan-Feb 2026)"@ko ;
+    eo:name "가자지구 종합 피해 평가 (UNOSAT Jan-Feb 2026)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "31.5"^^xsd:decimal ;
+    geo:long "34.45"^^xsd:decimal ;
+    eo:phenomenon "infrastructure_damage" ;
+    eo:domain "Humanitarian" ;
+    eo:country "PS" ;
+    eo:lat "31.5"^^xsd:decimal ;
+    eo:lon "34.45"^^xsd:decimal ;
+    eo:observation_date "2026-02-05"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean .
+
+:ent-evt-009 a eo:Event ;
+    rdfs:label "헥토리아 빙하 붕괴 (Antarctic Hektoria)"@ko ;
+    eo:name "헥토리아 빙하 붕괴 (Antarctic Hektoria)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "-65.0"^^xsd:decimal ;
+    geo:long "-62.0"^^xsd:decimal ;
+    eo:phenomenon "glacier_retreat" ;
+    eo:domain "ClimateEnvironment" ;
+    eo:country "AQ" ;
+    eo:lat "-65.0"^^xsd:decimal ;
+    eo:lon "-62.0"^^xsd:decimal ;
+    eo:observation_date "2026-02-26"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean .
+
+:ent-evt-010 a eo:Event ;
+    rdfs:label "Climate TRACE 글로벌 배출 추적 v5.5.0"@ko ;
+    eo:name "Climate TRACE 글로벌 배출 추적 v5.5.0" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "0.0"^^xsd:decimal ;
+    geo:long "0.0"^^xsd:decimal ;
+    eo:phenomenon "air_pollution" ;
+    eo:domain "ClimateEnvironment" ;
+    eo:country "INTL" ;
+    eo:lat "0.0"^^xsd:decimal ;
+    eo:lon "0.0"^^xsd:decimal ;
+    eo:observation_date "2026-03-15"^^xsd:date ;
+    eo:severity "medium" .
+
+:ent-evt-011 a eo:Event ;
+    rdfs:label "전 지구 메탄 증가 추세 (TROPOMI+GOSAT 2019-2024)"@ko ;
+    eo:name "전 지구 메탄 증가 추세 (TROPOMI+GOSAT 2019-2024)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "0.0"^^xsd:decimal ;
+    geo:long "0.0"^^xsd:decimal ;
+    eo:phenomenon "methane_plume" ;
+    eo:domain "ClimateEnvironment" ;
+    eo:country "INTL" ;
+    eo:lat "0.0"^^xsd:decimal ;
+    eo:lon "0.0"^^xsd:decimal ;
+    eo:observation_date "2026-04-15"^^xsd:date ;
+    eo:severity "medium" .
+
+:ent-evt-012 a eo:Event ;
+    rdfs:label "태풍 신라쿠 (Sinlaku 2026) 4월 슈퍼태풍"@ko ;
+    eo:name "태풍 신라쿠 (Sinlaku 2026) 4월 슈퍼태풍" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "7.4"^^xsd:decimal ;
+    geo:long "151.8"^^xsd:decimal ;
+    eo:phenomenon "typhoon" ;
+    eo:domain "Disaster" ;
+    eo:country "FM" ;
+    eo:lat "7.4"^^xsd:decimal ;
+    eo:lon "151.8"^^xsd:decimal ;
+    eo:observation_date "2026-04-12"^^xsd:date ;
+    eo:severity "high" .
+
+:ent-evt-013 a eo:Event ;
+    rdfs:label "남태평양 사이클론 바이아누 (Vaianu 2026)"@ko ;
+    eo:name "남태평양 사이클론 바이아누 (Vaianu 2026)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "-20.0"^^xsd:decimal ;
+    geo:long "-175.0"^^xsd:decimal ;
+    eo:phenomenon "typhoon" ;
+    eo:domain "Disaster" ;
+    eo:country "TO" ;
+    eo:lat "-20.0"^^xsd:decimal ;
+    eo:lon "-175.0"^^xsd:decimal ;
+    eo:observation_date "2026-04-08"^^xsd:date ;
+    eo:severity "high" .
+
+:ent-evt-014 a eo:Event ;
+    rdfs:label "한반도 전국 산불 동시 발생 (2026-04-26)"@ko ;
+    eo:name "한반도 전국 산불 동시 발생 (2026-04-26)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "36.5"^^xsd:decimal ;
+    geo:long "127.8"^^xsd:decimal ;
+    eo:phenomenon "wildfire" ;
+    eo:domain "Disaster" ;
+    eo:country "KR" ;
+    eo:lat "36.5"^^xsd:decimal ;
+    eo:lon "127.8"^^xsd:decimal ;
+    eo:observation_date "2026-04-26"^^xsd:date ;
+    eo:severity "medium" ;
+    eo:satellite_unverified "true"^^xsd:boolean .
+
+:ent-evt-015 a eo:Event ;
+    rdfs:label "KOMPSAT-7 한반도 정밀 관측 운용 시작 (2026 상반기)"@ko ;
+    eo:name "KOMPSAT-7 한반도 정밀 관측 운용 시작 (2026 상반기)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "36.5"^^xsd:decimal ;
+    geo:long "127.8"^^xsd:decimal ;
+    eo:phenomenon "ndvi_change" ;
+    eo:domain "AgricultureMaritime" ;
+    eo:country "KR" ;
+    eo:lat "36.5"^^xsd:decimal ;
+    eo:lon "127.8"^^xsd:decimal ;
+    eo:observation_date "2026-04-30"^^xsd:date ;
+    eo:severity "low" .
+
+:ent-evt-016 a eo:Event ;
+    rdfs:label "Maxar 우크라이나 GEGD 접근 재개 (2026-03)"@ko ;
+    eo:name "Maxar 우크라이나 GEGD 접근 재개 (2026-03)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "49.0"^^xsd:decimal ;
+    geo:long "32.0"^^xsd:decimal ;
+    eo:phenomenon "military_buildup" ;
+    eo:domain "Defense" ;
+    eo:country "UA" ;
+    eo:lat "49.0"^^xsd:decimal ;
+    eo:lon "32.0"^^xsd:decimal ;
+    eo:observation_date "2026-03-12"^^xsd:date ;
+    eo:severity "medium" .
+
+:ent-evt-017 a eo:Event ;
+    rdfs:label "스리랑카 사이클론 디트와 SAR 홍수 매핑 (ICEYE)"@ko ;
+    eo:name "스리랑카 사이클론 디트와 SAR 홍수 매핑 (ICEYE)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "7.87"^^xsd:decimal ;
+    geo:long "80.77"^^xsd:decimal ;
+    eo:phenomenon "flood" ;
+    eo:domain "Disaster" ;
+    eo:country "LK" ;
+    eo:lat "7.87"^^xsd:decimal ;
+    eo:lon "80.77"^^xsd:decimal ;
+    eo:observation_date "2026-03-30"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean .
+
+:ent-evt-018 a eo:Event ;
+    rdfs:label "Copernicus EMS GFM 자동 홍수 매핑 운영 (April 2026)"@ko ;
+    eo:name "Copernicus EMS GFM 자동 홍수 매핑 운영 (April 2026)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "0.0"^^xsd:decimal ;
+    geo:long "0.0"^^xsd:decimal ;
+    eo:phenomenon "flood" ;
+    eo:domain "Disaster" ;
+    eo:country "INTL" ;
+    eo:lat "0.0"^^xsd:decimal ;
+    eo:lon "0.0"^^xsd:decimal ;
+    eo:observation_date "2026-04-30"^^xsd:date ;
+    eo:severity "medium" .
+
+:ent-evt-019 a eo:Event ;
+    rdfs:label "전 지구 해상 오일 슬릭 자동 탐지 (Cerulean)"@ko ;
+    eo:name "전 지구 해상 오일 슬릭 자동 탐지 (Cerulean)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "0.0"^^xsd:decimal ;
+    geo:long "0.0"^^xsd:decimal ;
+    eo:phenomenon "oil_spill" ;
+    eo:domain "HumanActivity" ;
+    eo:country "INTL" ;
+    eo:lat "0.0"^^xsd:decimal ;
+    eo:lon "0.0"^^xsd:decimal ;
+    eo:observation_date "2026-04-30"^^xsd:date ;
+    eo:severity "medium" .
+
+:ent-evt-020 a eo:Event ;
+    rdfs:label "조지아 남부 산불 (Brantley/Clinch County)"@ko ;
+    eo:name "조지아 남부 산불 (Brantley/Clinch County)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "31.2"^^xsd:decimal ;
+    geo:long "-82.3"^^xsd:decimal ;
+    eo:phenomenon "wildfire" ;
+    eo:domain "Disaster" ;
+    eo:country "US" ;
+    eo:lat "31.2"^^xsd:decimal ;
+    eo:lon "-82.3"^^xsd:decimal ;
+    eo:observation_date "2026-04-30"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "false"^^xsd:boolean .
+
+:ent-evt-021 a eo:Event ;
+    rdfs:label "Kilauea Episode 45 분출 (4월 23일, 270m 분수)"@ko ;
+    eo:name "Kilauea Episode 45 분출 (4월 23일, 270m 분수)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "19.421"^^xsd:decimal ;
+    geo:long "-155.287"^^xsd:decimal ;
+    eo:phenomenon "volcanic_eruption" ;
+    eo:domain "Disaster" ;
+    eo:country "US" ;
+    eo:lat "19.421"^^xsd:decimal ;
+    eo:lon "-155.287"^^xsd:decimal ;
+    eo:observation_date "2026-04-23"^^xsd:date ;
+    eo:start_date "2026-04-23"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean ;
+    eo:update_of "ent-evt-004" .
+
+:ent-evt-022 a eo:Event ;
+    rdfs:label "북한 최현급 호위함 건조 관측 (Choe Hyun-class warship)"@ko ;
+    eo:name "북한 최현급 호위함 건조 관측 (Choe Hyun-class warship)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "39.0"^^xsd:decimal ;
+    geo:long "125.8"^^xsd:decimal ;
+    eo:phenomenon "naval_movement" ;
+    eo:domain "Defense" ;
+    eo:country "KP" ;
+    eo:lat "39.0"^^xsd:decimal ;
+    eo:lon "125.8"^^xsd:decimal ;
+    eo:observation_date "2026-04-30"^^xsd:date ;
+    eo:severity "medium" ;
+    eo:before_after_available "true"^^xsd:boolean .
+
+:ent-evt-023 a eo:Event ;
+    rdfs:label "북한 구성 드론 생산시설 관측 (Kusong)"@ko ;
+    eo:name "북한 구성 드론 생산시설 관측 (Kusong)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "39.98"^^xsd:decimal ;
+    geo:long "125.25"^^xsd:decimal ;
+    eo:phenomenon "military_buildup" ;
+    eo:domain "Defense" ;
+    eo:country "KP" ;
+    eo:lat "39.98"^^xsd:decimal ;
+    eo:lon "125.25"^^xsd:decimal ;
+    eo:observation_date "2026-04-30"^^xsd:date ;
+    eo:severity "medium" .
+
+:ent-evt-024 a eo:Event ;
+    rdfs:label "한국 5기 정찰위성 체계 구축 계획"@ko ;
+    eo:name "한국 5기 정찰위성 체계 구축 계획" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "36.5"^^xsd:decimal ;
+    geo:long "127.0"^^xsd:decimal ;
+    eo:phenomenon "military_buildup" ;
+    eo:domain "Defense" ;
+    eo:country "KR" ;
+    eo:lat "36.5"^^xsd:decimal ;
+    eo:lon "127.0"^^xsd:decimal ;
+    eo:observation_date "2026-04-30"^^xsd:date ;
+    eo:severity "medium" .
+
+:ent-evt-025 a eo:Event ;
+    rdfs:label "Smith Glacier 42km 후퇴 관측 (남극)"@ko ;
+    eo:name "Smith Glacier 42km 후퇴 관측 (남극)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "-75.2"^^xsd:decimal ;
+    geo:long "-138.3"^^xsd:decimal ;
+    eo:phenomenon "glacier_retreat" ;
+    eo:domain "ClimateEnvironment" ;
+    eo:country "AQ" ;
+    eo:lat "-75.2"^^xsd:decimal ;
+    eo:lon "-138.3"^^xsd:decimal ;
+    eo:observation_date "2026-04-30"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean .
+
+:ent-evt-026 a eo:Event ;
+    rdfs:label "하와이 오아후 홍수 (2026년 3월)"@ko ;
+    eo:name "하와이 오아후 홍수 (2026년 3월)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "21.47"^^xsd:decimal ;
+    geo:long "-157.97"^^xsd:decimal ;
+    eo:phenomenon "flood" ;
+    eo:domain "Disaster" ;
+    eo:country "US" ;
+    eo:lat "21.47"^^xsd:decimal ;
+    eo:lon "-157.97"^^xsd:decimal ;
+    eo:observation_date "2026-03-10"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean .
+
+:ent-evt-027 a eo:Event ;
+    rdfs:label "Svartsengi 아이슬란드 마그마 활동 관측"@ko ;
+    eo:name "Svartsengi 아이슬란드 마그마 활동 관측" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "63.88"^^xsd:decimal ;
+    geo:long "-22.43"^^xsd:decimal ;
+    eo:phenomenon "volcanic_eruption" ;
+    eo:domain "Disaster" ;
+    eo:country "IS" ;
+    eo:lat "63.88"^^xsd:decimal ;
+    eo:lon "-22.43"^^xsd:decimal ;
+    eo:observation_date "2026-04-30"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean .
+
+:ent-evt-028 a eo:Event ;
+    rdfs:label "레바논 인프라 파괴 위성 관측"@ko ;
+    eo:name "레바논 인프라 파괴 위성 관측" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "33.9"^^xsd:decimal ;
+    geo:long "35.5"^^xsd:decimal ;
+    eo:phenomenon "infrastructure_damage" ;
+    eo:domain "Humanitarian" ;
+    eo:country "LB" ;
+    eo:lat "33.9"^^xsd:decimal ;
+    eo:lon "35.5"^^xsd:decimal ;
+    eo:observation_date "2026-04-30"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean .
+
+:ent-loc-001 a eo:Location ;
+    rdfs:label "영변 핵단지 (Yongbyon Nuclear Complex)"@ko ;
+    eo:name "영변 핵단지 (Yongbyon Nuclear Complex)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    geo:lat "39.8"^^xsd:decimal ;
+    geo:long "125.7"^^xsd:decimal ;
+    eo:country "KP" ;
+    eo:region "평안북도" ;
+    eo:admin_level "county" ;
+    eo:lat "39.8"^^xsd:decimal ;
+    eo:lon "125.7"^^xsd:decimal .
+
+:ent-loc-002 a eo:Location ;
+    rdfs:label "소해 위성발사장 (Sohae)"@ko ;
+    eo:name "소해 위성발사장 (Sohae)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "39.66"^^xsd:decimal ;
+    geo:long "124.71"^^xsd:decimal ;
+    eo:country "KP" ;
+    eo:region "평안북도 철산군" ;
+    eo:lat "39.66"^^xsd:decimal ;
+    eo:lon "124.71"^^xsd:decimal .
+
+:ent-loc-003 a eo:Location ;
+    rdfs:label "Enclos Fouqué caldera, Piton de la Fournaise"@ko ;
+    eo:name "Enclos Fouqué caldera, Piton de la Fournaise" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "-21.244"^^xsd:decimal ;
+    geo:long "55.708"^^xsd:decimal ;
+    eo:country "FR" ;
+    eo:region "Réunion" ;
+    eo:lat "-21.244"^^xsd:decimal ;
+    eo:lon "55.708"^^xsd:decimal .
+
+:ent-loc-004 a eo:Location ;
+    rdfs:label "Kīlauea summit, Halemaʻumaʻu"@ko ;
+    eo:name "Kīlauea summit, Halemaʻumaʻu" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    geo:lat "19.421"^^xsd:decimal ;
+    geo:long "-155.287"^^xsd:decimal ;
+    eo:country "US" ;
+    eo:region "Hawaii" ;
+    eo:lat "19.421"^^xsd:decimal ;
+    eo:lon "-155.287"^^xsd:decimal .
+
+:ent-loc-005 a eo:Location ;
+    rdfs:label "Antelope Reef, Paracel Islands"@ko ;
+    eo:name "Antelope Reef, Paracel Islands" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "16.4"^^xsd:decimal ;
+    geo:long "111.6"^^xsd:decimal ;
+    eo:country "CN" ;
+    eo:region "남중국해" ;
+    eo:lat "16.4"^^xsd:decimal ;
+    eo:lon "111.6"^^xsd:decimal .
+
+:ent-loc-006 a eo:Location ;
+    rdfs:label "Three refugee camps, Gaza Strip"@ko ;
+    eo:name "Three refugee camps, Gaza Strip" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "31.5"^^xsd:decimal ;
+    geo:long "34.45"^^xsd:decimal ;
+    eo:country "PS" ;
+    eo:region "Gaza" ;
+    eo:lat "31.5"^^xsd:decimal ;
+    eo:lon "34.45"^^xsd:decimal .
+
+:ent-loc-007 a eo:Location ;
+    rdfs:label "Hektoria Glacier, Antarctic Peninsula"@ko ;
+    eo:name "Hektoria Glacier, Antarctic Peninsula" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "-65.0"^^xsd:decimal ;
+    geo:long "-62.0"^^xsd:decimal ;
+    eo:country "AQ" ;
+    eo:region "Antarctica" ;
+    eo:lat "-65.0"^^xsd:decimal ;
+    eo:lon "-62.0"^^xsd:decimal .
+
+:ent-loc-008 a eo:Location ;
+    rdfs:label "Smith Glacier, West Antarctica"@ko ;
+    eo:name "Smith Glacier, West Antarctica" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "-75.2"^^xsd:decimal ;
+    geo:long "-138.3"^^xsd:decimal ;
+    eo:country "AQ" ;
+    eo:region "Antarctica" ;
+    eo:lat "-75.2"^^xsd:decimal ;
+    eo:lon "-138.3"^^xsd:decimal .
+
+:ent-loc-009 a eo:Location ;
+    rdfs:label "Svartsengi volcanic system, Reykjanes Peninsula"@ko ;
+    eo:name "Svartsengi volcanic system, Reykjanes Peninsula" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "63.88"^^xsd:decimal ;
+    geo:long "-22.43"^^xsd:decimal ;
+    eo:country "IS" ;
+    eo:region "Reykjanes" ;
+    eo:lat "63.88"^^xsd:decimal ;
+    eo:lon "-22.43"^^xsd:decimal .
+
+:ent-loc-010 a eo:Location ;
+    rdfs:label "Brantley/Clinch County, Georgia"@ko ;
+    eo:name "Brantley/Clinch County, Georgia" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "31.2"^^xsd:decimal ;
+    geo:long "-82.3"^^xsd:decimal ;
+    eo:country "US" ;
+    eo:region "Georgia" ;
+    eo:lat "31.2"^^xsd:decimal ;
+    eo:lon "-82.3"^^xsd:decimal .
+
+:ent-loc-011 a eo:Location ;
+    rdfs:label "Oahu, Hawaii"@ko ;
+    eo:name "Oahu, Hawaii" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "21.47"^^xsd:decimal ;
+    geo:long "-157.97"^^xsd:decimal ;
+    eo:country "US" ;
+    eo:region "Hawaii" ;
+    eo:lat "21.47"^^xsd:decimal ;
+    eo:lon "-157.97"^^xsd:decimal .
+
+:ent-loc-012 a eo:Location ;
+    rdfs:label "구성시 (Kusong), 평안북도"@ko ;
+    eo:name "구성시 (Kusong), 평안북도" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "39.98"^^xsd:decimal ;
+    geo:long "125.25"^^xsd:decimal ;
+    eo:country "KP" ;
+    eo:region "평안북도" ;
+    eo:lat "39.98"^^xsd:decimal ;
+    eo:lon "125.25"^^xsd:decimal .
+
+:ent-loc-013 a eo:Location ;
+    rdfs:label "Lebanon (레바논 전역)"@ko ;
+    eo:name "Lebanon (레바논 전역)" ;
+    eo:first_seen "2026-04-30"^^xsd:date ;
+    eo:last_seen "2026-04-30"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "33.9"^^xsd:decimal ;
+    geo:long "35.5"^^xsd:decimal ;
+    eo:country "LB" ;
+    eo:region "Lebanon" ;
+    eo:lat "33.9"^^xsd:decimal ;
+    eo:lon "35.5"^^xsd:decimal .
+
+:ent-loc-014 a eo:Location ;
+    rdfs:label "Mayon Volcano, Albay Province"@ko ;
+    eo:name "Mayon Volcano, Albay Province" ;
+    eo:first_seen "2026-05-01"^^xsd:date ;
+    eo:last_seen "2026-05-01"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    geo:lat "13.257"^^xsd:decimal ;
+    geo:long "123.685"^^xsd:decimal ;
+    eo:country "PH" ;
+    eo:region "Bicol" ;
+    eo:lat "13.257"^^xsd:decimal ;
+    eo:lon "123.685"^^xsd:decimal .
+
+:ent-loc-015 a eo:Location ;
+    rdfs:label "Shiveluch Volcano, Kamchatka"@ko ;
+    eo:name "Shiveluch Volcano, Kamchatka" ;
+    eo:first_seen "2026-05-01"^^xsd:date ;
+    eo:last_seen "2026-05-01"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    geo:lat "56.65"^^xsd:decimal ;
+    geo:long "161.36"^^xsd:decimal ;
+    eo:country "RU" ;
+    eo:region "Kamchatka Krai" ;
+    eo:lat "56.65"^^xsd:decimal ;
+    eo:lon "161.36"^^xsd:decimal .
+
+:ent-loc-016 a eo:Location ;
+    rdfs:label "Lake Maracaibo, Venezuela"@ko ;
+    eo:name "Lake Maracaibo, Venezuela" ;
+    eo:first_seen "2026-05-01"^^xsd:date ;
+    eo:last_seen "2026-05-01"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "9.8"^^xsd:decimal ;
+    geo:long "-71.5"^^xsd:decimal ;
+    eo:country "VE" ;
+    eo:region "Zulia" ;
+    eo:lat "9.8"^^xsd:decimal ;
+    eo:lon "-71.5"^^xsd:decimal .
+
+:co-ph a eo:Country ;
+    rdfs:label "필리핀"@ko ;
+    eo:name "필리핀" ;
+    eo:first_seen "2026-05-01"^^xsd:date ;
+    eo:last_seen "2026-05-01"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    eo:iso_code "PH" ;
+    eo:region "동남아시아" .
+
+:co-ve a eo:Country ;
+    rdfs:label "베네수엘라"@ko ;
+    eo:name "베네수엘라" ;
+    eo:first_seen "2026-05-01"^^xsd:date ;
+    eo:last_seen "2026-05-01"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:iso_code "VE" ;
+    eo:region "남미" .
+
+:sat-cas500-2 a eo:Satellite ;
+    rdfs:label "CAS500-2 (차세대중형위성 2호)"@ko ;
+    eo:name "CAS500-2 (차세대중형위성 2호)" ;
+    eo:first_seen "2026-05-01"^^xsd:date ;
+    eo:last_seen "2026-05-03"^^xsd:date ;
+    eo:mention_count "6"^^xsd:integer ;
+    eo:operator "KARI" ;
+    eo:country "KR" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "0.5"^^xsd:decimal ;
+    eo:sensor_types "optical_pan", "optical_multispectral" ;
+    eo:mission_status "operational" ;
+    eo:launch_date "2026-05-03"^^xsd:date .
+
+:sat-cas500-4 a eo:Satellite ;
+    rdfs:label "CAS500-4 (차세대중형위성 4호)"@ko ;
+    eo:name "CAS500-4 (차세대중형위성 4호)" ;
+    eo:first_seen "2026-05-01"^^xsd:date ;
+    eo:last_seen "2026-05-03"^^xsd:date ;
+    eo:mention_count "6"^^xsd:integer ;
+    eo:operator "KARI" ;
+    eo:country "KR" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "5.0"^^xsd:decimal ;
+    eo:sensor_types "optical_multispectral" ;
+    eo:swath_km "120.0"^^xsd:decimal ;
+    eo:mission_status "operational" ;
+    eo:launch_date "2026-05-03"^^xsd:date ;
+    eo:notes "wide-area EO for crops/agriculture/forest"@ko .
+
+:org-mizarvision a eo:Organization ;
+    rdfs:label "MizarVision (密匝视觉)"@ko ;
+    eo:name "MizarVision (密匝视觉)" ;
+    eo:first_seen "2026-05-01"^^xsd:date ;
+    eo:last_seen "2026-05-01"^^xsd:date ;
+    eo:mention_count "4"^^xsd:integer ;
+    eo:org_type "commercial_imagery" ;
+    eo:country "CN" ;
+    eo:notes "Shanghai-based geospatial AI startup; partial state ownership"@ko .
+
+:org-vantor a eo:Organization ;
+    rdfs:label "Vantor (formerly Maxar Intelligence)"@ko ;
+    eo:name "Vantor (formerly Maxar Intelligence)" ;
+    eo:first_seen "2026-05-01"^^xsd:date ;
+    eo:last_seen "2026-05-01"^^xsd:date ;
+    eo:mention_count "3"^^xsd:integer ;
+    eo:org_type "commercial_imagery" ;
+    eo:country "US" .
+
+:org-phivolcs a eo:Organization ;
+    rdfs:label "PHIVOLCS"@ko ;
+    eo:name "PHIVOLCS" ;
+    eo:first_seen "2026-05-01"^^xsd:date ;
+    eo:last_seen "2026-05-01"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:org_type "space_agency" ;
+    eo:country "PH" .
+
+:org-globalwitness a eo:Organization ;
+    rdfs:label "Global Witness"@ko ;
+    eo:name "Global Witness" ;
+    eo:first_seen "2026-05-01"^^xsd:date ;
+    eo:last_seen "2026-05-01"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:org_type "ngo" ;
+    eo:country "INTL" .
+
+:ent-evt-029 a eo:Event ;
+    rdfs:label "Mayon 화산 분출 (Philippines, 2026-01~)"@ko ;
+    eo:name "Mayon 화산 분출 (Philippines, 2026-01~)" ;
+    eo:first_seen "2026-05-01"^^xsd:date ;
+    eo:last_seen "2026-05-01"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    geo:lat "13.257"^^xsd:decimal ;
+    geo:long "123.685"^^xsd:decimal ;
+    eo:phenomenon "volcanic_eruption" ;
+    eo:domain "Disaster" ;
+    eo:country "PH" ;
+    eo:lat "13.257"^^xsd:decimal ;
+    eo:lon "123.685"^^xsd:decimal ;
+    eo:observation_date "2026-02-26"^^xsd:date ;
+    eo:start_date "2026-01"^^xsd:gYearMonth ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean ;
+    eo:satellites_used "Landsat 8" ;
+    eo:sensors_used "OLI", "TIRS" ;
+    eo:so2_tons_per_day "2466.0"^^xsd:decimal .
+
+:ent-evt-030 a eo:Event ;
+    rdfs:label "Shiveluch 화산 분출 — 48,000ft 화산재 (Kamchatka)"@ko ;
+    eo:name "Shiveluch 화산 분출 — 48,000ft 화산재 (Kamchatka)" ;
+    eo:first_seen "2026-05-01"^^xsd:date ;
+    eo:last_seen "2026-05-01"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    geo:lat "56.65"^^xsd:decimal ;
+    geo:long "161.36"^^xsd:decimal ;
+    eo:phenomenon "volcanic_eruption" ;
+    eo:domain "Disaster" ;
+    eo:country "RU" ;
+    eo:lat "56.65"^^xsd:decimal ;
+    eo:lon "161.36"^^xsd:decimal ;
+    eo:observation_date "2026-04-02"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "false"^^xsd:boolean ;
+    eo:satellites_used "Himawari-9" ;
+    eo:ash_plume_ft "48000.0"^^xsd:decimal .
+
+:ent-evt-031 a eo:Event ;
+    rdfs:label "MizarVision AI 군사 OSINT — 미국 기지 위성 추적 (중동)"@ko ;
+    eo:name "MizarVision AI 군사 OSINT — 미국 기지 위성 추적 (중동)" ;
+    eo:first_seen "2026-05-01"^^xsd:date ;
+    eo:last_seen "2026-05-01"^^xsd:date ;
+    eo:mention_count "4"^^xsd:integer ;
+    geo:lat "30.0"^^xsd:decimal ;
+    geo:long "47.0"^^xsd:decimal ;
+    eo:phenomenon "military_buildup" ;
+    eo:domain "Defense" ;
+    eo:country "INTL" ;
+    eo:lat "30.0"^^xsd:decimal ;
+    eo:lon "47.0"^^xsd:decimal ;
+    eo:observation_date "2026-02"^^xsd:gYearMonth ;
+    eo:severity "high" ;
+    eo:satellites_used "WorldView-3/Vantor" ;
+    eo:sensors_used "optical_pan" .
+
+:ent-evt-032 a eo:Event ;
+    rdfs:label "CAS500-2/4 발사 (2026-05-03 예정, Falcon 9)"@ko ;
+    eo:name "CAS500-2/4 발사 (2026-05-03 예정, Falcon 9)" ;
+    eo:first_seen "2026-05-01"^^xsd:date ;
+    eo:last_seen "2026-05-01"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    geo:lat "34.7"^^xsd:decimal ;
+    geo:long "-120.6"^^xsd:decimal ;
+    eo:phenomenon "construction" ;
+    eo:domain "AgricultureMaritime" ;
+    eo:country "KR" ;
+    eo:lat "34.7"^^xsd:decimal ;
+    eo:lon "-120.6"^^xsd:decimal ;
+    eo:observation_date "2026-05-03"^^xsd:date ;
+    eo:severity "medium" .
+
+:ent-evt-033 a eo:Event ;
+    rdfs:label "GFW DIST-ALERT 전 지구 식생 교란 경보 시스템 가동"@ko ;
+    eo:name "GFW DIST-ALERT 전 지구 식생 교란 경보 시스템 가동" ;
+    eo:first_seen "2026-05-01"^^xsd:date ;
+    eo:last_seen "2026-05-01"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    geo:lat "0.0"^^xsd:decimal ;
+    geo:long "0.0"^^xsd:decimal ;
+    eo:phenomenon "deforestation" ;
+    eo:domain "HumanActivity" ;
+    eo:country "INTL" ;
+    eo:lat "0.0"^^xsd:decimal ;
+    eo:lon "0.0"^^xsd:decimal ;
+    eo:observation_date "2026-01"^^xsd:gYearMonth ;
+    eo:severity "medium" .
+
+:ent-evt-034 a eo:Event ;
+    rdfs:label "베네수엘라 마라카이보 호수 원유 유출 (504건 슬릭)"@ko ;
+    eo:name "베네수엘라 마라카이보 호수 원유 유출 (504건 슬릭)" ;
+    eo:first_seen "2026-05-01"^^xsd:date ;
+    eo:last_seen "2026-05-01"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "9.8"^^xsd:decimal ;
+    geo:long "-71.5"^^xsd:decimal ;
+    eo:phenomenon "oil_spill" ;
+    eo:domain "HumanActivity" ;
+    eo:country "VE" ;
+    eo:lat "9.8"^^xsd:decimal ;
+    eo:lon "-71.5"^^xsd:decimal ;
+    eo:observation_date "2026-03"^^xsd:gYearMonth ;
+    eo:severity "high" ;
+    eo:satellites_used "Sentinel-1A" ;
+    eo:sensors_used "C-band SAR" .
+
+:ent-evt-035 a eo:Event ;
+    rdfs:label "전 지구 매립지 메탄 배출 위성 조사 (Nature)"@ko ;
+    eo:name "전 지구 매립지 메탄 배출 위성 조사 (Nature)" ;
+    eo:first_seen "2026-05-01"^^xsd:date ;
+    eo:last_seen "2026-05-01"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "0.0"^^xsd:decimal ;
+    geo:long "0.0"^^xsd:decimal ;
+    eo:phenomenon "methane_plume" ;
+    eo:domain "ClimateEnvironment" ;
+    eo:country "INTL" ;
+    eo:lat "0.0"^^xsd:decimal ;
+    eo:lon "0.0"^^xsd:decimal ;
+    eo:observation_date "2026-04"^^xsd:gYearMonth ;
+    eo:severity "medium" ;
+    eo:satellites_used "Sentinel-5P" ;
+    eo:sensors_used "TROPOMI" .
+
+:ent-evt-036 a eo:Event ;
+    rdfs:label "Copernicus InSAR 코히런스 변화탐지 서비스 openEO 출시"@ko ;
+    eo:name "Copernicus InSAR 코히런스 변화탐지 서비스 openEO 출시" ;
+    eo:first_seen "2026-05-01"^^xsd:date ;
+    eo:last_seen "2026-05-01"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "0.0"^^xsd:decimal ;
+    geo:long "0.0"^^xsd:decimal ;
+    eo:phenomenon "ndvi_change" ;
+    eo:domain "AgricultureMaritime" ;
+    eo:country "INTL" ;
+    eo:lat "0.0"^^xsd:decimal ;
+    eo:lon "0.0"^^xsd:decimal ;
+    eo:observation_date "2026-04-09"^^xsd:date ;
+    eo:severity "low" .
+
+:ent-evt-037 a eo:Event ;
+    rdfs:label "파푸아뉴기니 바이닝산맥 산사태 (TC Maila)"@ko ;
+    eo:name "파푸아뉴기니 바이닝산맥 산사태 (TC Maila)" ;
+    eo:first_seen "2026-05-02"^^xsd:date ;
+    eo:last_seen "2026-05-02"^^xsd:date ;
+    eo:mention_count "3"^^xsd:integer ;
+    geo:lat "-4.48"^^xsd:decimal ;
+    geo:long "151.81"^^xsd:decimal ;
+    eo:phenomenon "landslide" ;
+    eo:domain "Disaster" ;
+    eo:country "PG" ;
+    eo:lat "-4.48"^^xsd:decimal ;
+    eo:lon "151.81"^^xsd:decimal ;
+    eo:observation_date "2026-04-20"^^xsd:date ;
+    eo:start_date "2026-04-09"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean ;
+    eo:satellites_used "Landsat 9" ;
+    eo:sensors_used "OLI" ;
+    eo:deaths "25"^^xsd:integer .
+
+:ent-evt-038 a eo:Event ;
+    rdfs:label "열대사이클론 마일라 (TC Maila) — PNG 홍수"@ko ;
+    eo:name "열대사이클론 마일라 (TC Maila) — PNG 홍수" ;
+    eo:first_seen "2026-05-02"^^xsd:date ;
+    eo:last_seen "2026-05-02"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    geo:lat "-5.0"^^xsd:decimal ;
+    geo:long "152.0"^^xsd:decimal ;
+    eo:phenomenon "flood" ;
+    eo:domain "Disaster" ;
+    eo:country "PG" ;
+    eo:lat "-5.0"^^xsd:decimal ;
+    eo:lon "152.0"^^xsd:decimal ;
+    eo:observation_date "2026-04-09"^^xsd:date ;
+    eo:severity "high" .
+
+:ent-evt-039 a eo:Event ;
+    rdfs:label "Sabancaya 화산 분출 (Peru, 2026-05-01)"@ko ;
+    eo:name "Sabancaya 화산 분출 (Peru, 2026-05-01)" ;
+    eo:first_seen "2026-05-02"^^xsd:date ;
+    eo:last_seen "2026-05-02"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "-15.78"^^xsd:decimal ;
+    geo:long "-71.85"^^xsd:decimal ;
+    eo:phenomenon "volcanic_eruption" ;
+    eo:domain "Disaster" ;
+    eo:country "PE" ;
+    eo:lat "-15.78"^^xsd:decimal ;
+    eo:lon "-71.85"^^xsd:decimal ;
+    eo:observation_date "2026-05-01"^^xsd:date ;
+    eo:severity "medium" ;
+    eo:thermal_anomaly_mw "1.0"^^xsd:decimal .
+
+:ent-evt-040 a eo:Event ;
+    rdfs:label "Fuego 화산 폭발 (Guatemala, 2026-05-01)"@ko ;
+    eo:name "Fuego 화산 폭발 (Guatemala, 2026-05-01)" ;
+    eo:first_seen "2026-05-02"^^xsd:date ;
+    eo:last_seen "2026-05-02"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "14.473"^^xsd:decimal ;
+    geo:long "-90.88"^^xsd:decimal ;
+    eo:phenomenon "volcanic_eruption" ;
+    eo:domain "Disaster" ;
+    eo:country "GT" ;
+    eo:lat "14.473"^^xsd:decimal ;
+    eo:lon "-90.88"^^xsd:decimal ;
+    eo:observation_date "2026-05-01"^^xsd:date ;
+    eo:severity "medium" ;
+    eo:ash_column_m "4800.0"^^xsd:decimal .
+
+:ent-evt-041 a eo:Event ;
+    rdfs:label "Merapi 용암 사태 (Indonesia, 2026-05-01)"@ko ;
+    eo:name "Merapi 용암 사태 (Indonesia, 2026-05-01)" ;
+    eo:first_seen "2026-05-02"^^xsd:date ;
+    eo:last_seen "2026-05-02"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "-7.54"^^xsd:decimal ;
+    geo:long "110.45"^^xsd:decimal ;
+    eo:phenomenon "volcanic_eruption" ;
+    eo:domain "Disaster" ;
+    eo:country "ID" ;
+    eo:lat "-7.54"^^xsd:decimal ;
+    eo:lon "110.45"^^xsd:decimal ;
+    eo:observation_date "2026-05-01"^^xsd:date ;
+    eo:severity "medium" ;
+    eo:lava_avalanche_m "1900.0"^^xsd:decimal .
+
+:ent-evt-042 a eo:Event ;
+    rdfs:label "남극 30년 접지선 후퇴 종합 연구 (ESA Sentinel-1 SAR)"@ko ;
+    eo:name "남극 30년 접지선 후퇴 종합 연구 (ESA Sentinel-1 SAR)" ;
+    eo:first_seen "2026-05-02"^^xsd:date ;
+    eo:last_seen "2026-05-02"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    geo:lat "-75.0"^^xsd:decimal ;
+    geo:long "-106.0"^^xsd:decimal ;
+    eo:phenomenon "glacier_retreat" ;
+    eo:domain "ClimateEnvironment" ;
+    eo:country "AQ" ;
+    eo:lat "-75.0"^^xsd:decimal ;
+    eo:lon "-106.0"^^xsd:decimal ;
+    eo:observation_date "2026-03-01"^^xsd:date ;
+    eo:severity "high" ;
+    eo:area_km2 "12800.0"^^xsd:decimal ;
+    eo:before_after_available "true"^^xsd:boolean ;
+    eo:satellites_used "Sentinel-1A", "Sentinel-1C" ;
+    eo:sensors_used "C-band SAR" .
+
+:ent-evt-043 a eo:Event ;
+    rdfs:label "상업 위성영상의 군사 전략 변화 — 이란-이스라엘 분쟁 사례 분석"@ko ;
+    eo:name "상업 위성영상의 군사 전략 변화 — 이란-이스라엘 분쟁 사례 분석" ;
+    eo:first_seen "2026-05-02"^^xsd:date ;
+    eo:last_seen "2026-05-02"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "32.0"^^xsd:decimal ;
+    geo:long "51.0"^^xsd:decimal ;
+    eo:phenomenon "military_buildup" ;
+    eo:domain "Defense" ;
+    eo:country "INTL" ;
+    eo:lat "32.0"^^xsd:decimal ;
+    eo:lon "51.0"^^xsd:decimal ;
+    eo:observation_date "2026-04"^^xsd:gYearMonth ;
+    eo:severity "medium" ;
+    eo:satellites_used "PlanetScope (Doves)", "WorldView-3" .
+
+:ent-evt-044 a eo:Event ;
+    rdfs:label "시칠리아 Niscemi 대규모 산사태 (Cyclone Harry, 2026-01)"@ko ;
+    eo:name "시칠리아 Niscemi 대규모 산사태 (Cyclone Harry, 2026-01)" ;
+    eo:first_seen "2026-05-02"^^xsd:date ;
+    eo:last_seen "2026-05-02"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "37.15"^^xsd:decimal ;
+    geo:long "14.39"^^xsd:decimal ;
+    eo:phenomenon "landslide" ;
+    eo:domain "Disaster" ;
+    eo:country "IT" ;
+    eo:lat "37.15"^^xsd:decimal ;
+    eo:lon "14.39"^^xsd:decimal ;
+    eo:observation_date "2026-02-06"^^xsd:date ;
+    eo:start_date "2026-01-26"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean ;
+    eo:evacuated "1500"^^xsd:integer .
+
+:ent-evt-045 a eo:Event ;
+    rdfs:label "NASA 다중위성 조기 산림벌채 탐지 시스템 (2026)"@ko ;
+    eo:name "NASA 다중위성 조기 산림벌채 탐지 시스템 (2026)" ;
+    eo:first_seen "2026-05-02"^^xsd:date ;
+    eo:last_seen "2026-05-02"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "0.0"^^xsd:decimal ;
+    geo:long "-60.0"^^xsd:decimal ;
+    eo:phenomenon "deforestation" ;
+    eo:domain "HumanActivity" ;
+    eo:country "INTL" ;
+    eo:lat "0.0"^^xsd:decimal ;
+    eo:lon "-60.0"^^xsd:decimal ;
+    eo:observation_date "2026-05"^^xsd:gYearMonth ;
+    eo:severity "medium" ;
+    eo:satellites_used "Landsat 9", "Sentinel-2A", "MODIS (Terra)" .
+
+:ent-evt-046 a eo:Event ;
+    rdfs:label "ESA Sentinel 3종 위성 메탄 초대량 배출원 매핑 시스템"@ko ;
+    eo:name "ESA Sentinel 3종 위성 메탄 초대량 배출원 매핑 시스템" ;
+    eo:first_seen "2026-05-02"^^xsd:date ;
+    eo:last_seen "2026-05-02"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "0.0"^^xsd:decimal ;
+    geo:long "0.0"^^xsd:decimal ;
+    eo:phenomenon "methane_plume" ;
+    eo:domain "ClimateEnvironment" ;
+    eo:country "INTL" ;
+    eo:lat "0.0"^^xsd:decimal ;
+    eo:lon "0.0"^^xsd:decimal ;
+    eo:observation_date "2026-04"^^xsd:gYearMonth ;
+    eo:severity "medium" ;
+    eo:satellites_used "Sentinel-3A/B", "Sentinel-5P", "Sentinel-2A" ;
+    eo:sensors_used "TROPOMI", "MSI" .
+
+:co-pg a eo:Country ;
+    rdfs:label "파푸아뉴기니"@ko ;
+    eo:name "파푸아뉴기니" ;
+    eo:first_seen "2026-05-02"^^xsd:date ;
+    eo:last_seen "2026-05-02"^^xsd:date ;
+    eo:mention_count "3"^^xsd:integer ;
+    eo:iso_code "PG" ;
+    eo:region "오세아니아" .
+
+:co-pe a eo:Country ;
+    rdfs:label "페루"@ko ;
+    eo:name "페루" ;
+    eo:first_seen "2026-05-02"^^xsd:date ;
+    eo:last_seen "2026-05-02"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:iso_code "PE" ;
+    eo:region "남미" .
+
+:co-gt a eo:Country ;
+    rdfs:label "과테말라"@ko ;
+    eo:name "과테말라" ;
+    eo:first_seen "2026-05-02"^^xsd:date ;
+    eo:last_seen "2026-05-02"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:iso_code "GT" ;
+    eo:region "중미" .
+
+:ent-loc-017 a eo:Location ;
+    rdfs:label "Baining Mountains, East New Britain, PNG"@ko ;
+    eo:name "Baining Mountains, East New Britain, PNG" ;
+    eo:first_seen "2026-05-02"^^xsd:date ;
+    eo:last_seen "2026-05-02"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "-4.48"^^xsd:decimal ;
+    geo:long "151.81"^^xsd:decimal ;
+    eo:country "PG" ;
+    eo:region "East New Britain" ;
+    eo:lat "-4.48"^^xsd:decimal ;
+    eo:lon "151.81"^^xsd:decimal .
+
+:ent-loc-018 a eo:Location ;
+    rdfs:label "Niscemi, Sicily, Italy"@ko ;
+    eo:name "Niscemi, Sicily, Italy" ;
+    eo:first_seen "2026-05-02"^^xsd:date ;
+    eo:last_seen "2026-05-02"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "37.15"^^xsd:decimal ;
+    geo:long "14.39"^^xsd:decimal ;
+    eo:country "IT" ;
+    eo:region "Sicily" ;
+    eo:lat "37.15"^^xsd:decimal ;
+    eo:lon "14.39"^^xsd:decimal .
+
+:ent-evt-050 a eo:Event ;
+    rdfs:label "Great Sitkin 화산 용암돔 성장 — 위성 열이상 (Alaska)"@ko ;
+    eo:name "Great Sitkin 화산 용암돔 성장 — 위성 열이상 (Alaska)" ;
+    eo:first_seen "2026-05-03"^^xsd:date ;
+    eo:last_seen "2026-05-03"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "52.076"^^xsd:decimal ;
+    geo:long "-176.131"^^xsd:decimal ;
+    eo:phenomenon "volcanic_eruption" ;
+    eo:domain "Disaster" ;
+    eo:country "US" ;
+    eo:lat "52.076"^^xsd:decimal ;
+    eo:lon "-176.131"^^xsd:decimal ;
+    eo:observation_date "2026-05-03"^^xsd:date ;
+    eo:severity "medium" .
+
+:ent-evt-051 a eo:Event ;
+    rdfs:label "Krasheninnikov 화산 용암류 — 위성 일별 열이상 (Kamchatka)"@ko ;
+    eo:name "Krasheninnikov 화산 용암류 — 위성 일별 열이상 (Kamchatka)" ;
+    eo:first_seen "2026-05-03"^^xsd:date ;
+    eo:last_seen "2026-05-03"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "54.593"^^xsd:decimal ;
+    geo:long "160.273"^^xsd:decimal ;
+    eo:phenomenon "volcanic_eruption" ;
+    eo:domain "Disaster" ;
+    eo:country "RU" ;
+    eo:lat "54.593"^^xsd:decimal ;
+    eo:lon "160.273"^^xsd:decimal ;
+    eo:observation_date "2026-04-29"^^xsd:date ;
+    eo:severity "medium" .
+
+:ent-evt-053 a eo:Event ;
+    rdfs:label "MethaneSAT 글로벌 석유·가스 메탄 배출 평가 — EPA 추정치 4배 초과"@ko ;
+    eo:name "MethaneSAT 글로벌 석유·가스 메탄 배출 평가 — EPA 추정치 4배 초과" ;
+    eo:first_seen "2026-05-03"^^xsd:date ;
+    eo:last_seen "2026-05-03"^^xsd:date ;
+    eo:mention_count "3"^^xsd:integer ;
+    geo:lat "32.0"^^xsd:decimal ;
+    geo:long "-102.0"^^xsd:decimal ;
+    eo:phenomenon "methane_plume" ;
+    eo:domain "ClimateEnvironment" ;
+    eo:country "INTL" ;
+    eo:lat "32.0"^^xsd:decimal ;
+    eo:lon "-102.0"^^xsd:decimal ;
+    eo:observation_date "2026-02-06"^^xsd:date ;
+    eo:severity "high" ;
+    eo:satellites_used "MethaneSAT" .
+
+:ent-evt-054 a eo:Event ;
+    rdfs:label "아마존 보호구역 불법 금 채굴 6,000ha — Sentinel-2 AI 탐지"@ko ;
+    eo:name "아마존 보호구역 불법 금 채굴 6,000ha — Sentinel-2 AI 탐지" ;
+    eo:first_seen "2026-05-03"^^xsd:date ;
+    eo:last_seen "2026-05-03"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    geo:lat "-3.0"^^xsd:decimal ;
+    geo:long "-60.0"^^xsd:decimal ;
+    eo:phenomenon "mining" ;
+    eo:domain "HumanActivity" ;
+    eo:country "BR" ;
+    eo:lat "-3.0"^^xsd:decimal ;
+    eo:lon "-60.0"^^xsd:decimal ;
+    eo:observation_date "2026-04-24"^^xsd:date ;
+    eo:severity "high" ;
+    eo:area_km2 "60.0"^^xsd:decimal ;
+    eo:satellites_used "Sentinel-2A" .
+
+:ent-evt-055 a eo:Event ;
+    rdfs:label "브라질 DETER 위성 삼림벌채 감시 금지 법안 — 아마존 보전 위협"@ko ;
+    eo:name "브라질 DETER 위성 삼림벌채 감시 금지 법안 — 아마존 보전 위협" ;
+    eo:first_seen "2026-05-03"^^xsd:date ;
+    eo:last_seen "2026-05-03"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "-3.0"^^xsd:decimal ;
+    geo:long "-60.0"^^xsd:decimal ;
+    eo:phenomenon "deforestation" ;
+    eo:domain "HumanActivity" ;
+    eo:country "BR" ;
+    eo:lat "-3.0"^^xsd:decimal ;
+    eo:lon "-60.0"^^xsd:decimal ;
+    eo:observation_date "2026-04-30"^^xsd:date ;
+    eo:severity "high" .
+
+:ent-evt-056 a eo:Event ;
+    rdfs:label "SkyTruth Cerulean 준실시간 유류 오염 탐지 업그레이드"@ko ;
+    eo:name "SkyTruth Cerulean 준실시간 유류 오염 탐지 업그레이드" ;
+    eo:first_seen "2026-05-03"^^xsd:date ;
+    eo:last_seen "2026-05-03"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "0.0"^^xsd:decimal ;
+    geo:long "0.0"^^xsd:decimal ;
+    eo:phenomenon "oil_spill" ;
+    eo:domain "HumanActivity" ;
+    eo:country "INTL" ;
+    eo:lat "0.0"^^xsd:decimal ;
+    eo:lon "0.0"^^xsd:decimal ;
+    eo:observation_date "2026-03"^^xsd:gYearMonth ;
+    eo:severity "medium" ;
+    eo:satellites_used "Sentinel-1A" .
+
+:ent-loc-019 a eo:Location ;
+    rdfs:label "Great Sitkin Island, Alaska"@ko ;
+    eo:name "Great Sitkin Island, Alaska" ;
+    eo:first_seen "2026-05-03"^^xsd:date ;
+    eo:last_seen "2026-05-03"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "52.076"^^xsd:decimal ;
+    geo:long "-176.131"^^xsd:decimal ;
+    eo:country "US" ;
+    eo:region "Aleutian Islands" ;
+    eo:lat "52.076"^^xsd:decimal ;
+    eo:lon "-176.131"^^xsd:decimal .
+
+:ent-loc-020 a eo:Location ;
+    rdfs:label "Krasheninnikov Volcano, Kamchatka"@ko ;
+    eo:name "Krasheninnikov Volcano, Kamchatka" ;
+    eo:first_seen "2026-05-03"^^xsd:date ;
+    eo:last_seen "2026-05-03"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "54.593"^^xsd:decimal ;
+    geo:long "160.273"^^xsd:decimal ;
+    eo:country "RU" ;
+    eo:region "Kamchatka Krai" ;
+    eo:lat "54.593"^^xsd:decimal ;
+    eo:lon "160.273"^^xsd:decimal .
+
+:org-edf a eo:Organization ;
+    rdfs:label "Environmental Defense Fund (EDF)"@ko ;
+    eo:name "Environmental Defense Fund (EDF)" ;
+    eo:first_seen "2026-05-03"^^xsd:date ;
+    eo:last_seen "2026-05-03"^^xsd:date ;
+    eo:mention_count "3"^^xsd:integer ;
+    eo:org_type "ngo" ;
+    eo:country "US" .
+
+:org-inpe a eo:Organization ;
+    rdfs:label "INPE (Brazilian National Institute for Space Research)"@ko ;
+    eo:name "INPE (Brazilian National Institute for Space Research)" ;
+    eo:first_seen "2026-05-03"^^xsd:date ;
+    eo:last_seen "2026-05-03"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:org_type "space_agency" ;
+    eo:country "BR" .
+
+:org-amw a eo:Organization ;
+    rdfs:label "Amazon Mining Watch / Pulitzer Center"@ko ;
+    eo:name "Amazon Mining Watch / Pulitzer Center" ;
+    eo:first_seen "2026-05-03"^^xsd:date ;
+    eo:last_seen "2026-05-03"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    eo:org_type "ngo" ;
+    eo:country "INTL" .
+
+:co-sa a eo:Country ;
+    rdfs:label "사우디아라비아"@ko ;
+    eo:name "사우디아라비아" ;
+    eo:first_seen "2026-05-04"^^xsd:date ;
+    eo:last_seen "2026-05-04"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:iso_code "SA" ;
+    eo:region "서아시아" .
+
+:co-gl a eo:Country ;
+    rdfs:label "그린란드"@ko ;
+    eo:name "그린란드" ;
+    eo:first_seen "2026-05-04"^^xsd:date ;
+    eo:last_seen "2026-05-04"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:iso_code "GL" ;
+    eo:region "북극" .
+
+:ent-loc-021 a eo:Location ;
+    rdfs:label "Lop Nur Test Base, Xinjiang"@ko ;
+    eo:name "Lop Nur Test Base, Xinjiang" ;
+    eo:first_seen "2026-05-04"^^xsd:date ;
+    eo:last_seen "2026-05-04"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "40.0"^^xsd:decimal ;
+    geo:long "90.0"^^xsd:decimal ;
+    eo:country "CN" ;
+    eo:region "Xinjiang" ;
+    eo:lat "40.0"^^xsd:decimal ;
+    eo:lon "90.0"^^xsd:decimal .
+
+:ent-loc-022 a eo:Location ;
+    rdfs:label "Bint Jbeil, Lebanon"@ko ;
+    eo:name "Bint Jbeil, Lebanon" ;
+    eo:first_seen "2026-05-04"^^xsd:date ;
+    eo:last_seen "2026-05-04"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "33.12"^^xsd:decimal ;
+    geo:long "35.43"^^xsd:decimal ;
+    eo:country "LB" ;
+    eo:region "Nabatieh" ;
+    eo:lat "33.12"^^xsd:decimal ;
+    eo:lon "35.43"^^xsd:decimal .
+
+:ent-loc-023 a eo:Location ;
+    rdfs:label "Prince Sultan Air Base, Saudi Arabia"@ko ;
+    eo:name "Prince Sultan Air Base, Saudi Arabia" ;
+    eo:first_seen "2026-05-04"^^xsd:date ;
+    eo:last_seen "2026-05-04"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "24.1"^^xsd:decimal ;
+    geo:long "47.6"^^xsd:decimal ;
+    eo:country "SA" ;
+    eo:region "Al-Kharj" ;
+    eo:lat "24.1"^^xsd:decimal ;
+    eo:lon "47.6"^^xsd:decimal .
+
+:ent-loc-024 a eo:Location ;
+    rdfs:label "Permian Basin, Texas/New Mexico"@ko ;
+    eo:name "Permian Basin, Texas/New Mexico" ;
+    eo:first_seen "2026-05-04"^^xsd:date ;
+    eo:last_seen "2026-05-04"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "32.0"^^xsd:decimal ;
+    geo:long "-102.0"^^xsd:decimal ;
+    eo:country "US" ;
+    eo:region "Texas/New Mexico" ;
+    eo:lat "32.0"^^xsd:decimal ;
+    eo:lon "-102.0"^^xsd:decimal .
+
+:ent-evt-059 a eo:Event ;
+    rdfs:label "이스라엘 가자 군사 시설 확장 — Planet/Sentinel 다중위성 확인"@ko ;
+    eo:name "이스라엘 가자 군사 시설 확장 — Planet/Sentinel 다중위성 확인" ;
+    eo:first_seen "2026-05-04"^^xsd:date ;
+    eo:last_seen "2026-05-04"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "31.3"^^xsd:decimal ;
+    geo:long "34.3"^^xsd:decimal ;
+    eo:phenomenon "military_buildup" ;
+    eo:domain "Defense" ;
+    eo:country "PS" ;
+    eo:lat "31.3"^^xsd:decimal ;
+    eo:lon "34.3"^^xsd:decimal ;
+    eo:observation_date "2026-04-19"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean ;
+    eo:satellites_used "PlanetScope", "Sentinel-2A" .
+
+:ent-evt-062 a eo:Event ;
+    rdfs:label "중국 Lop Nur 군사기지 확장 — 60,000 sq ft 격납고 + J-36 시험"@ko ;
+    eo:name "중국 Lop Nur 군사기지 확장 — 60,000 sq ft 격납고 + J-36 시험" ;
+    eo:first_seen "2026-05-04"^^xsd:date ;
+    eo:last_seen "2026-05-04"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "40.0"^^xsd:decimal ;
+    geo:long "90.0"^^xsd:decimal ;
+    eo:phenomenon "military_buildup" ;
+    eo:domain "Defense" ;
+    eo:country "CN" ;
+    eo:lat "40.0"^^xsd:decimal ;
+    eo:lon "90.0"^^xsd:decimal ;
+    eo:observation_date "2026-02"^^xsd:gYearMonth ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean .
+
+:ent-evt-063 a eo:Event ;
+    rdfs:label "미국 군사력 이란 인근 집결 — 중국 위성 추적 (Prince Sultan AB)"@ko ;
+    eo:name "미국 군사력 이란 인근 집결 — 중국 위성 추적 (Prince Sultan AB)" ;
+    eo:first_seen "2026-05-04"^^xsd:date ;
+    eo:last_seen "2026-05-04"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "24.1"^^xsd:decimal ;
+    geo:long "47.6"^^xsd:decimal ;
+    eo:phenomenon "military_buildup" ;
+    eo:domain "Defense" ;
+    eo:country "SA" ;
+    eo:lat "24.1"^^xsd:decimal ;
+    eo:lon "47.6"^^xsd:decimal ;
+    eo:observation_date "2026-02"^^xsd:gYearMonth ;
+    eo:severity "high" ;
+    eo:satellites_used "GaoFen series" .
+
+:ent-evt-064 a eo:Event ;
+    rdfs:label "Planet Labs 이란/중동 위성영상 무기한 배포 중단"@ko ;
+    eo:name "Planet Labs 이란/중동 위성영상 무기한 배포 중단" ;
+    eo:first_seen "2026-05-04"^^xsd:date ;
+    eo:last_seen "2026-05-04"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    geo:lat "32.0"^^xsd:decimal ;
+    geo:long "53.0"^^xsd:decimal ;
+    eo:phenomenon "military_buildup" ;
+    eo:domain "Defense" ;
+    eo:country "INTL" ;
+    eo:lat "32.0"^^xsd:decimal ;
+    eo:lon "53.0"^^xsd:decimal ;
+    eo:observation_date "2026-04-05"^^xsd:date ;
+    eo:severity "medium" .
+
+:ent-evt-066 a eo:Event ;
+    rdfs:label "MethaneSAT Permian Basin 메탄 격차 — 미 상원 조사 개시"@ko ;
+    eo:name "MethaneSAT Permian Basin 메탄 격차 — 미 상원 조사 개시" ;
+    eo:first_seen "2026-05-04"^^xsd:date ;
+    eo:last_seen "2026-05-04"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "32.0"^^xsd:decimal ;
+    geo:long "-102.0"^^xsd:decimal ;
+    eo:phenomenon "methane_plume" ;
+    eo:domain "ClimateEnvironment" ;
+    eo:country "US" ;
+    eo:lat "32.0"^^xsd:decimal ;
+    eo:lon "-102.0"^^xsd:decimal ;
+    eo:observation_date "2026-03-19"^^xsd:date ;
+    eo:severity "high" ;
+    eo:satellites_used "MethaneSAT" .
+
+:ent-evt-068 a eo:Event ;
+    rdfs:label "그린란드 주변 빙하 후퇴율 20년간 2배 가속 — 위성 분석"@ko ;
+    eo:name "그린란드 주변 빙하 후퇴율 20년간 2배 가속 — 위성 분석" ;
+    eo:first_seen "2026-05-04"^^xsd:date ;
+    eo:last_seen "2026-05-04"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "72.0"^^xsd:decimal ;
+    geo:long "-40.0"^^xsd:decimal ;
+    eo:phenomenon "glacier_retreat" ;
+    eo:domain "ClimateEnvironment" ;
+    eo:country "GL" ;
+    eo:lat "72.0"^^xsd:decimal ;
+    eo:lon "-40.0"^^xsd:decimal ;
+    eo:observation_date "2026-05"^^xsd:gYearMonth ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean ;
+    eo:satellites_used "Landsat 8", "Sentinel-2A" .
+
+:co-nl a eo:Country ;
+    rdfs:label "네덜란드"@ko ;
+    eo:name "네덜란드" ;
+    eo:first_seen "2026-05-05"^^xsd:date ;
+    eo:last_seen "2026-05-05"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    eo:iso_code "NL" ;
+    eo:region "서유럽" .
+
+:ent-loc-025 a eo:Location ;
+    rdfs:label "Monte Faeta, Tuscany (Pisa/Lucca)"@ko ;
+    eo:name "Monte Faeta, Tuscany (Pisa/Lucca)" ;
+    eo:first_seen "2026-05-05"^^xsd:date ;
+    eo:last_seen "2026-05-05"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "43.78"^^xsd:decimal ;
+    geo:long "10.45"^^xsd:decimal ;
+    eo:country "IT" ;
+    eo:region "Tuscany" ;
+    eo:lat "43.78"^^xsd:decimal ;
+    eo:lon "10.45"^^xsd:decimal .
+
+:ent-loc-026 a eo:Location ;
+    rdfs:label "'t Harde, Gelderland, Netherlands"@ko ;
+    eo:name "'t Harde, Gelderland, Netherlands" ;
+    eo:first_seen "2026-05-05"^^xsd:date ;
+    eo:last_seen "2026-05-05"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    geo:lat "52.37"^^xsd:decimal ;
+    geo:long "5.77"^^xsd:decimal ;
+    eo:country "NL" ;
+    eo:region "Gelderland" ;
+    eo:lat "52.37"^^xsd:decimal ;
+    eo:lon "5.77"^^xsd:decimal .
+
+:ent-loc-027 a eo:Location ;
+    rdfs:label "Dalian Shipyard, Liaoning, China"@ko ;
+    eo:name "Dalian Shipyard, Liaoning, China" ;
+    eo:first_seen "2026-05-05"^^xsd:date ;
+    eo:last_seen "2026-05-05"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    geo:lat "38.9"^^xsd:decimal ;
+    geo:long "121.6"^^xsd:decimal ;
+    eo:country "CN" ;
+    eo:region "Liaoning" ;
+    eo:lat "38.9"^^xsd:decimal ;
+    eo:lon "121.6"^^xsd:decimal .
+
+:ent-loc-028 a eo:Location ;
+    rdfs:label "Sinpo South Shipyard, North Korea"@ko ;
+    eo:name "Sinpo South Shipyard, North Korea" ;
+    eo:first_seen "2026-05-05"^^xsd:date ;
+    eo:last_seen "2026-05-05"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "39.8"^^xsd:decimal ;
+    geo:long "128.1"^^xsd:decimal ;
+    eo:country "KP" ;
+    eo:region "함경남도" ;
+    eo:lat "39.8"^^xsd:decimal ;
+    eo:lon "128.1"^^xsd:decimal .
+
+:ent-loc-029 a eo:Location ;
+    rdfs:label "Sanriku offshore, Iwate, Japan"@ko ;
+    eo:name "Sanriku offshore, Iwate, Japan" ;
+    eo:first_seen "2026-05-05"^^xsd:date ;
+    eo:last_seen "2026-05-05"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "39.5"^^xsd:decimal ;
+    geo:long "143.5"^^xsd:decimal ;
+    eo:country "JP" ;
+    eo:region "Iwate" ;
+    eo:lat "39.5"^^xsd:decimal ;
+    eo:lon "143.5"^^xsd:decimal .
+
+:org-si-analytics a eo:Organization ;
+    rdfs:label "SI Analytics (한국 위성영상 AI)"@ko ;
+    eo:name "SI Analytics (한국 위성영상 AI)" ;
+    eo:first_seen "2026-05-05"^^xsd:date ;
+    eo:last_seen "2026-05-05"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:org_type "commercial_imagery" ;
+    eo:country "KR" .
+
+:ent-evt-070 a eo:Event ;
+    rdfs:label "Kīlauea Episode 46 분출 — 650ft 용암 분수 (2026-05-05)"@ko ;
+    eo:name "Kīlauea Episode 46 분출 — 650ft 용암 분수 (2026-05-05)" ;
+    eo:first_seen "2026-05-05"^^xsd:date ;
+    eo:last_seen "2026-05-05"^^xsd:date ;
+    eo:mention_count "3"^^xsd:integer ;
+    geo:lat "19.421"^^xsd:decimal ;
+    geo:long "-155.287"^^xsd:decimal ;
+    eo:phenomenon "volcanic_eruption" ;
+    eo:domain "Disaster" ;
+    eo:country "US" ;
+    eo:lat "19.421"^^xsd:decimal ;
+    eo:lon "-155.287"^^xsd:decimal ;
+    eo:observation_date "2026-05-05"^^xsd:date ;
+    eo:start_date "2026-05-04"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean ;
+    eo:update_of "ent-evt-021" .
+
+:ent-evt-071 a eo:Event ;
+    rdfs:label "Mayon 화산 5월 5일 분출 — VAAC 화산재 경보 (Philippines)"@ko ;
+    eo:name "Mayon 화산 5월 5일 분출 — VAAC 화산재 경보 (Philippines)" ;
+    eo:first_seen "2026-05-05"^^xsd:date ;
+    eo:last_seen "2026-05-05"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    geo:lat "13.257"^^xsd:decimal ;
+    geo:long "123.685"^^xsd:decimal ;
+    eo:phenomenon "volcanic_eruption" ;
+    eo:domain "Disaster" ;
+    eo:country "PH" ;
+    eo:lat "13.257"^^xsd:decimal ;
+    eo:lon "123.685"^^xsd:decimal ;
+    eo:observation_date "2026-05-05"^^xsd:date ;
+    eo:severity "high" ;
+    eo:update_of "ent-evt-029" .
+
+:ent-evt-072 a eo:Event ;
+    rdfs:label "조지아 산불 진화 진전 — Hwy82 85% 봉쇄 (Landsat 8)"@ko ;
+    eo:name "조지아 산불 진화 진전 — Hwy82 85% 봉쇄 (Landsat 8)" ;
+    eo:first_seen "2026-05-05"^^xsd:date ;
+    eo:last_seen "2026-05-05"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "31.2"^^xsd:decimal ;
+    geo:long "-82.3"^^xsd:decimal ;
+    eo:phenomenon "wildfire" ;
+    eo:domain "Disaster" ;
+    eo:country "US" ;
+    eo:lat "31.2"^^xsd:decimal ;
+    eo:lon "-82.3"^^xsd:decimal ;
+    eo:observation_date "2026-05-05"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean ;
+    eo:update_of "ent-evt-020" .
+
+:ent-evt-073 a eo:Event ;
+    rdfs:label "이탈리아 토스카나 Monte Faeta 산불 — 700ha 소실, 3,500명 대피"@ko ;
+    eo:name "이탈리아 토스카나 Monte Faeta 산불 — 700ha 소실, 3,500명 대피" ;
+    eo:first_seen "2026-05-05"^^xsd:date ;
+    eo:last_seen "2026-05-05"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "43.78"^^xsd:decimal ;
+    geo:long "10.45"^^xsd:decimal ;
+    eo:phenomenon "wildfire" ;
+    eo:domain "Disaster" ;
+    eo:country "IT" ;
+    eo:lat "43.78"^^xsd:decimal ;
+    eo:lon "10.45"^^xsd:decimal ;
+    eo:observation_date "2026-04-28"^^xsd:date ;
+    eo:end_date "2026-05-03"^^xsd:date ;
+    eo:severity "high" ;
+    eo:area_km2 "7.0"^^xsd:decimal ;
+    eo:satellites_used "Sentinel-2A" .
+
+:ent-evt-074 a eo:Event ;
+    rdfs:label "네덜란드 't Harde 군사사격장 산불 — Sentinel-2/Planet 다중위성 관측"@ko ;
+    eo:name "네덜란드 't Harde 군사사격장 산불 — Sentinel-2/Planet 다중위성 관측" ;
+    eo:first_seen "2026-05-05"^^xsd:date ;
+    eo:last_seen "2026-05-05"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    geo:lat "52.37"^^xsd:decimal ;
+    geo:long "5.77"^^xsd:decimal ;
+    eo:phenomenon "wildfire" ;
+    eo:domain "Disaster" ;
+    eo:country "NL" ;
+    eo:lat "52.37"^^xsd:decimal ;
+    eo:lon "5.77"^^xsd:decimal ;
+    eo:observation_date "2026-04-29"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean ;
+    eo:satellites_used "Sentinel-2A", "PlanetScope (Doves)" .
+
+:ent-evt-075 a eo:Event ;
+    rdfs:label "중국 Type 004 핵추진 항공모함 건조 — Dalian 조선소 위성영상"@ko ;
+    eo:name "중국 Type 004 핵추진 항공모함 건조 — Dalian 조선소 위성영상" ;
+    eo:first_seen "2026-05-05"^^xsd:date ;
+    eo:last_seen "2026-05-05"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    geo:lat "38.9"^^xsd:decimal ;
+    geo:long "121.6"^^xsd:decimal ;
+    eo:phenomenon "naval_movement" ;
+    eo:domain "Defense" ;
+    eo:country "CN" ;
+    eo:lat "38.9"^^xsd:decimal ;
+    eo:lon "121.6"^^xsd:decimal ;
+    eo:observation_date "2026-02-17"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean .
+
+:ent-evt-076 a eo:Event ;
+    rdfs:label "미국 카리브해 군사력 집결 — 위성 추적"@ko ;
+    eo:name "미국 카리브해 군사력 집결 — 위성 추적" ;
+    eo:first_seen "2026-05-05"^^xsd:date ;
+    eo:last_seen "2026-05-05"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    geo:lat "12.0"^^xsd:decimal ;
+    geo:long "-68.0"^^xsd:decimal ;
+    eo:phenomenon "military_buildup" ;
+    eo:domain "Defense" ;
+    eo:country "US" ;
+    eo:lat "12.0"^^xsd:decimal ;
+    eo:lon "-68.0"^^xsd:decimal ;
+    eo:observation_date "2026-04"^^xsd:gYearMonth ;
+    eo:severity "high" ;
+    eo:satellites_used "PlanetScope (Doves)" .
+
+:ent-evt-077 a eo:Event ;
+    rdfs:label "북한 신포 SLBM 발사 준비 — SI Analytics 위성영상"@ko ;
+    eo:name "북한 신포 SLBM 발사 준비 — SI Analytics 위성영상" ;
+    eo:first_seen "2026-05-05"^^xsd:date ;
+    eo:last_seen "2026-05-05"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "39.8"^^xsd:decimal ;
+    geo:long "128.1"^^xsd:decimal ;
+    eo:phenomenon "military_buildup" ;
+    eo:domain "Defense" ;
+    eo:country "KP" ;
+    eo:lat "39.8"^^xsd:decimal ;
+    eo:lon "128.1"^^xsd:decimal ;
+    eo:observation_date "2026-03-26"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean .
+
+:ent-evt-078 a eo:Event ;
+    rdfs:label "한국 425사업 정찰위성 5기 전력화 완료 — 2시간 주기 대북 감시"@ko ;
+    eo:name "한국 425사업 정찰위성 5기 전력화 완료 — 2시간 주기 대북 감시" ;
+    eo:first_seen "2026-05-05"^^xsd:date ;
+    eo:last_seen "2026-05-05"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "36.5"^^xsd:decimal ;
+    geo:long "127.0"^^xsd:decimal ;
+    eo:phenomenon "military_buildup" ;
+    eo:domain "Defense" ;
+    eo:country "KR" ;
+    eo:lat "36.5"^^xsd:decimal ;
+    eo:lon "127.0"^^xsd:decimal ;
+    eo:observation_date "2026-04-30"^^xsd:date ;
+    eo:severity "medium" ;
+    eo:update_of "ent-evt-024" .
+
+:ent-evt-079 a eo:Event ;
+    rdfs:label "CAS500-2 스마트농업 활용 전망 — 작물 생육·병해충 위성 분석"@ko ;
+    eo:name "CAS500-2 스마트농업 활용 전망 — 작물 생육·병해충 위성 분석" ;
+    eo:first_seen "2026-05-05"^^xsd:date ;
+    eo:last_seen "2026-05-05"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "36.5"^^xsd:decimal ;
+    geo:long "127.0"^^xsd:decimal ;
+    eo:phenomenon "crop_yield" ;
+    eo:domain "AgricultureMaritime" ;
+    eo:country "KR" ;
+    eo:lat "36.5"^^xsd:decimal ;
+    eo:lon "127.0"^^xsd:decimal ;
+    eo:observation_date "2026-05-05"^^xsd:date ;
+    eo:severity "low" .
+
+:ent-evt-080 a eo:Event ;
+    rdfs:label "일본 산리쿠 해역 M7.7 지진 — 위성 피해 평가 미실시"@ko ;
+    eo:name "일본 산리쿠 해역 M7.7 지진 — 위성 피해 평가 미실시" ;
+    eo:first_seen "2026-05-05"^^xsd:date ;
+    eo:last_seen "2026-05-05"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "39.5"^^xsd:decimal ;
+    geo:long "143.5"^^xsd:decimal ;
+    eo:phenomenon "earthquake_damage" ;
+    eo:domain "Disaster" ;
+    eo:country "JP" ;
+    eo:lat "39.5"^^xsd:decimal ;
+    eo:lon "143.5"^^xsd:decimal ;
+    eo:observation_date "2026-04-20"^^xsd:date ;
+    eo:severity "medium" ;
+    eo:satellite_unverified "true"^^xsd:boolean .
+
+:co-sd a eo:Country ;
+    rdfs:label "수단"@ko ;
+    eo:name "수단" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:iso_code "SD" ;
+    eo:region "동아프리카" .
+
+:ent-loc-030 a eo:Location ;
+    rdfs:label "Halemaʻumaʻu crater (Kīlauea summit)"@ko ;
+    eo:name "Halemaʻumaʻu crater (Kīlauea summit)" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "19.4069"^^xsd:decimal ;
+    geo:long "-155.2834"^^xsd:decimal ;
+    eo:country "US" ;
+    eo:region "Hawaii" ;
+    eo:lat "19.4069"^^xsd:decimal ;
+    eo:lon "-155.2834"^^xsd:decimal .
+
+:ent-loc-031 a eo:Location ;
+    rdfs:label "Cordoba department, Colombia"@ko ;
+    eo:name "Cordoba department, Colombia" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "8.75"^^xsd:decimal ;
+    geo:long "-75.88"^^xsd:decimal ;
+    eo:country "CO" ;
+    eo:region "Caribbean Colombia" ;
+    eo:lat "8.75"^^xsd:decimal ;
+    eo:lon "-75.88"^^xsd:decimal .
+
+:ent-loc-032 a eo:Location ;
+    rdfs:label "Panghyon airbase, North Korea"@ko ;
+    eo:name "Panghyon airbase, North Korea" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "39.92"^^xsd:decimal ;
+    geo:long "125.2"^^xsd:decimal ;
+    eo:country "KP" ;
+    eo:region "평안북도" ;
+    eo:lat "39.92"^^xsd:decimal ;
+    eo:lon "125.2"^^xsd:decimal .
+
+:ent-loc-033 a eo:Location ;
+    rdfs:label "Yelabuga Special Economic Zone, Tatarstan"@ko ;
+    eo:name "Yelabuga Special Economic Zone, Tatarstan" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "55.76"^^xsd:decimal ;
+    geo:long "52.06"^^xsd:decimal ;
+    eo:country "RU" ;
+    eo:region "Tatarstan" ;
+    eo:lat "55.76"^^xsd:decimal ;
+    eo:lon "52.06"^^xsd:decimal .
+
+:ent-loc-034 a eo:Location ;
+    rdfs:label "Tehran metropolitan area, Iran"@ko ;
+    eo:name "Tehran metropolitan area, Iran" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "35.6892"^^xsd:decimal ;
+    geo:long "51.389"^^xsd:decimal ;
+    eo:country "IR" ;
+    eo:region "Tehran Province" ;
+    eo:lat "35.6892"^^xsd:decimal ;
+    eo:lon "51.389"^^xsd:decimal .
+
+:ent-loc-035 a eo:Location ;
+    rdfs:label "황해북도/개성시 (North Hwanghae / Kaesong)"@ko ;
+    eo:name "황해북도/개성시 (North Hwanghae / Kaesong)" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "38.0"^^xsd:decimal ;
+    geo:long "126.5"^^xsd:decimal ;
+    eo:country "KP" ;
+    eo:region "황해북도" ;
+    eo:lat "38.0"^^xsd:decimal ;
+    eo:lon "126.5"^^xsd:decimal .
+
+:ent-loc-036 a eo:Location ;
+    rdfs:label "Antelope Reef, Paracel Islands (South China Sea)"@ko ;
+    eo:name "Antelope Reef, Paracel Islands (South China Sea)" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "16.46"^^xsd:decimal ;
+    geo:long "112.55"^^xsd:decimal ;
+    eo:country "CN" ;
+    eo:region "Paracel Islands" ;
+    eo:lat "16.46"^^xsd:decimal ;
+    eo:lon "112.55"^^xsd:decimal .
+
+:ent-loc-037 a eo:Location ;
+    rdfs:label "Pine Island Glacier, West Antarctica"@ko ;
+    eo:name "Pine Island Glacier, West Antarctica" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "-75.16"^^xsd:decimal ;
+    geo:long "-100.0"^^xsd:decimal ;
+    eo:country "AQ" ;
+    eo:region "West Antarctica" ;
+    eo:lat "-75.16"^^xsd:decimal ;
+    eo:lon "-100.0"^^xsd:decimal .
+
+:ent-loc-038 a eo:Location ;
+    rdfs:label "Gezira/Sennar/Khartoum agricultural belt, Sudan"@ko ;
+    eo:name "Gezira/Sennar/Khartoum agricultural belt, Sudan" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "14.6"^^xsd:decimal ;
+    geo:long "33.5"^^xsd:decimal ;
+    eo:country "SD" ;
+    eo:region "Sudan breadbasket" ;
+    eo:lat "14.6"^^xsd:decimal ;
+    eo:lon "33.5"^^xsd:decimal .
+
+:sat-pelican a eo:Satellite ;
+    rdfs:label "Planet Pelican constellation"@ko ;
+    eo:name "Planet Pelican constellation" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:operator "Planet Labs" ;
+    eo:country "US" ;
+    eo:orbit_type "SSO" ;
+    eo:resolution_m "0.3"^^xsd:decimal ;
+    eo:sensor_types "optical_pan", "optical_multispectral" ;
+    eo:mission_status "operational" ;
+    eo:fleet_size_2026 "9"^^xsd:integer ;
+    eo:notes "Pelican-7/8/9 launched 2026-05-03; replacing aging SkySat constellation"@ko .
+
+:org-philsa a eo:Organization ;
+    rdfs:label "Philippine Space Agency (PhilSA)"@ko ;
+    eo:name "Philippine Space Agency (PhilSA)" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    eo:org_type "space_agency" ;
+    eo:country "PH" ;
+    eo:notes "NICA-DOST satellite-based ashfall mapping for 87 barangays Mayon 2026-05"@ko .
+
+:org-vaac-tokyo a eo:Organization ;
+    rdfs:label "VAAC Tokyo (Volcanic Ash Advisory Center)"@ko ;
+    eo:name "VAAC Tokyo (Volcanic Ash Advisory Center)" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    eo:org_type "weather_agency" ;
+    eo:country "JP" ;
+    eo:notes "JMA-operated VAAC; Himawari-9 IR ash plume detection"@ko .
+
+:org-amti a eo:Organization ;
+    rdfs:label "CSIS AMTI (Asia Maritime Transparency Initiative)"@ko ;
+    eo:name "CSIS AMTI (Asia Maritime Transparency Initiative)" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:org_type "research" ;
+    eo:country "US" ;
+    eo:notes "Island Tracker — South China Sea reef expansion"@ko .
+
+:org-aljazeera a eo:Organization ;
+    rdfs:label "Al Jazeera Digital Investigations"@ko ;
+    eo:name "Al Jazeera Digital Investigations" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:org_type "media" ;
+    eo:country "QA" ;
+    eo:notes "Investigative OSINT team — Sudan breadbasket Sentinel-2 NDVI analysis"@ko .
+
+:org-cams a eo:Organization ;
+    rdfs:label "Copernicus Atmosphere Monitoring Service (CAMS)"@ko ;
+    eo:name "Copernicus Atmosphere Monitoring Service (CAMS)" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:org_type "un_body" ;
+    eo:country "EU" ;
+    eo:notes "ECMWF-operated; CAMS Methane Hotspot Explorer (TROPOMI based)"@ko .
+
+:org-nau a eo:Organization ;
+    rdfs:label "Northern Arizona University (NAU)"@ko ;
+    eo:name "Northern Arizona University (NAU)" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    eo:org_type "research" ;
+    eo:country "US" ;
+    eo:notes "Climate TRACE urban CO2 ~70% underestimate finding (2026-05)"@ko .
+
+:ent-evt-081 a eo:Event ;
+    rdfs:label "Kīlauea Episode 46 종료 — 9시간 lava fountaining (Highway 11 tephra)"@ko ;
+    eo:name "Kīlauea Episode 46 종료 — 9시간 lava fountaining (Highway 11 tephra)" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "4"^^xsd:integer ;
+    geo:lat "19.4069"^^xsd:decimal ;
+    geo:long "-155.2834"^^xsd:decimal ;
+    eo:phenomenon "volcanic_eruption" ;
+    eo:domain "Disaster" ;
+    eo:country "US" ;
+    eo:lat "19.4069"^^xsd:decimal ;
+    eo:lon "-155.2834"^^xsd:decimal ;
+    eo:observation_date "2026-05-06"^^xsd:date ;
+    eo:start_date "2026-05-05"^^xsd:date ;
+    eo:end_date "2026-05-06"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean ;
+    eo:fountain_height_ft "650.0"^^xsd:decimal ;
+    eo:plume_height_ft "20000.0"^^xsd:decimal ;
+    eo:update_of "ent-evt-070" .
+
+:ent-evt-082 a eo:Event ;
+    rdfs:label "Mayon 화산 재방화 — 87 barangays ashfall, 8,544 ha (PhilSA Sentinel-2 + Himawari-9)"@ko ;
+    eo:name "Mayon 화산 재방화 — 87 barangays ashfall, 8,544 ha (PhilSA Sentinel-2 + Himawari-9)" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "5"^^xsd:integer ;
+    geo:lat "13.2572"^^xsd:decimal ;
+    geo:long "123.6856"^^xsd:decimal ;
+    eo:phenomenon "volcanic_eruption" ;
+    eo:domain "Disaster" ;
+    eo:country "PH" ;
+    eo:lat "13.2572"^^xsd:decimal ;
+    eo:lon "123.6856"^^xsd:decimal ;
+    eo:observation_date "2026-05-06"^^xsd:date ;
+    eo:start_date "2026-05-03"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean ;
+    eo:area_km2 "85.44"^^xsd:decimal ;
+    eo:barangays_affected "87"^^xsd:integer ;
+    eo:satellites_used "Sentinel-2A", "Himawari-9" ;
+    eo:sensors_used "MSI" ;
+    eo:update_of "ent-evt-071" .
+
+:ent-evt-083 a eo:Event ;
+    rdfs:label "Cordoba 홍수 (Colombia) — Copernicus EMSR865 SAR+MSI mapping"@ko ;
+    eo:name "Cordoba 홍수 (Colombia) — Copernicus EMSR865 SAR+MSI mapping" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "8.75"^^xsd:decimal ;
+    geo:long "-75.88"^^xsd:decimal ;
+    eo:phenomenon "flood" ;
+    eo:domain "Disaster" ;
+    eo:country "CO" ;
+    eo:lat "8.75"^^xsd:decimal ;
+    eo:lon "-75.88"^^xsd:decimal ;
+    eo:observation_date "2026-05-06"^^xsd:date ;
+    eo:severity "high" ;
+    eo:satellites_used "Sentinel-1A", "Sentinel-2A" ;
+    eo:sensors_used "C-band SAR", "MSI" .
+
+:ent-evt-084 a eo:Event ;
+    rdfs:label "ESA MARS 메탄 탐지 시스템 + CAMS Methane Hotspot Explorer 출시"@ko ;
+    eo:name "ESA MARS 메탄 탐지 시스템 + CAMS Methane Hotspot Explorer 출시" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    geo:lat "0.0"^^xsd:decimal ;
+    geo:long "0.0"^^xsd:decimal ;
+    eo:phenomenon "methane_plume" ;
+    eo:domain "ClimateEnvironment" ;
+    eo:country "INTL" ;
+    eo:lat "0.0"^^xsd:decimal ;
+    eo:lon "0.0"^^xsd:decimal ;
+    eo:observation_date "2026-05-06"^^xsd:date ;
+    eo:severity "medium" ;
+    eo:satellites_used "Sentinel-5P" ;
+    eo:sensors_used "TROPOMI" .
+
+:ent-evt-085 a eo:Event ;
+    rdfs:label "Vantor 우크라이나 D2D 위성영상 직접배포 시험"@ko ;
+    eo:name "Vantor 우크라이나 D2D 위성영상 직접배포 시험" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    geo:lat "49.0"^^xsd:decimal ;
+    geo:long "32.0"^^xsd:decimal ;
+    eo:phenomenon "military_buildup" ;
+    eo:domain "Defense" ;
+    eo:country "UA" ;
+    eo:lat "49.0"^^xsd:decimal ;
+    eo:lon "32.0"^^xsd:decimal ;
+    eo:observation_date "2026-05-06"^^xsd:date ;
+    eo:severity "medium" ;
+    eo:satellites_used "WorldView-3" .
+
+:ent-evt-086 a eo:Event ;
+    rdfs:label "영변 UEP 완공 후속 관측 (CSIS BP, 2026-04)"@ko ;
+    eo:name "영변 UEP 완공 후속 관측 (CSIS BP, 2026-04)" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "39.7972"^^xsd:decimal ;
+    geo:long "125.7553"^^xsd:decimal ;
+    eo:phenomenon "military_buildup" ;
+    eo:domain "Defense" ;
+    eo:country "KP" ;
+    eo:lat "39.7972"^^xsd:decimal ;
+    eo:lon "125.7553"^^xsd:decimal ;
+    eo:observation_date "2026-04"^^xsd:gYearMonth ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean ;
+    eo:update_of "ent-evt-001" .
+
+:ent-evt-087 a eo:Event ;
+    rdfs:label "Panghyon airbase UAV 배치 (CSIS BP)"@ko ;
+    eo:name "Panghyon airbase UAV 배치 (CSIS BP)" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "39.92"^^xsd:decimal ;
+    geo:long "125.2"^^xsd:decimal ;
+    eo:phenomenon "air_base_change" ;
+    eo:domain "Defense" ;
+    eo:country "KP" ;
+    eo:lat "39.92"^^xsd:decimal ;
+    eo:lon "125.2"^^xsd:decimal ;
+    eo:observation_date "2026-04"^^xsd:gYearMonth ;
+    eo:severity "medium" .
+
+:ent-evt-088 a eo:Event ;
+    rdfs:label "Yelabuga UAV 제조시설 확장 + DPRK 노동력 (CSIS BP)"@ko ;
+    eo:name "Yelabuga UAV 제조시설 확장 + DPRK 노동력 (CSIS BP)" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    geo:lat "55.76"^^xsd:decimal ;
+    geo:long "52.06"^^xsd:decimal ;
+    eo:phenomenon "construction" ;
+    eo:domain "Defense" ;
+    eo:country "RU" ;
+    eo:lat "55.76"^^xsd:decimal ;
+    eo:lon "52.06"^^xsd:decimal ;
+    eo:observation_date "2026-04"^^xsd:gYearMonth ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean .
+
+:ent-evt-089 a eo:Event ;
+    rdfs:label "Tehran 15개 경찰서 표적 타격 (Bellingcat PlanetScope, 2026-03-03)"@ko ;
+    eo:name "Tehran 15개 경찰서 표적 타격 (Bellingcat PlanetScope, 2026-03-03)" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "35.6892"^^xsd:decimal ;
+    geo:long "51.389"^^xsd:decimal ;
+    eo:phenomenon "infrastructure_damage" ;
+    eo:domain "Defense" ;
+    eo:country "IR" ;
+    eo:lat "35.6892"^^xsd:decimal ;
+    eo:lon "51.389"^^xsd:decimal ;
+    eo:observation_date "2026-03-03"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean ;
+    eo:stations_struck "15"^^xsd:integer ;
+    eo:satellites_used "PlanetScope" .
+
+:ent-evt-090 a eo:Event ;
+    rdfs:label "조선중앙TV — 황해북도 사방야계·개성 산불감시·전국치수망 (위성 미검증)"@ko ;
+    eo:name "조선중앙TV — 황해북도 사방야계·개성 산불감시·전국치수망 (위성 미검증)" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "38.0"^^xsd:decimal ;
+    geo:long "126.5"^^xsd:decimal ;
+    eo:phenomenon "wildfire" ;
+    eo:domain "Disaster" ;
+    eo:country "KP" ;
+    eo:lat "38.0"^^xsd:decimal ;
+    eo:lon "126.5"^^xsd:decimal ;
+    eo:observation_date "2026-05-06"^^xsd:date ;
+    eo:severity "low" ;
+    eo:satellite_unverified "true"^^xsd:boolean .
+
+:ent-evt-091 a eo:Event ;
+    rdfs:label "CAS500-1 국토위성 산불 피해지역 신속 복구 영상 지원 (정책브리핑)"@ko ;
+    eo:name "CAS500-1 국토위성 산불 피해지역 신속 복구 영상 지원 (정책브리핑)" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "36.5"^^xsd:decimal ;
+    geo:long "127.0"^^xsd:decimal ;
+    eo:phenomenon "wildfire" ;
+    eo:domain "Disaster" ;
+    eo:country "KR" ;
+    eo:lat "36.5"^^xsd:decimal ;
+    eo:lon "127.0"^^xsd:decimal ;
+    eo:observation_date "2026-05-06"^^xsd:date ;
+    eo:severity "medium" ;
+    eo:satellites_used "CAS500-1" .
+
+:ent-evt-092 a eo:Event ;
+    rdfs:label "Antelope Reef 인공섬 1,490 acres 확장 (AMTI Island Tracker, 2026-03)"@ko ;
+    eo:name "Antelope Reef 인공섬 1,490 acres 확장 (AMTI Island Tracker, 2026-03)" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "2"^^xsd:integer ;
+    geo:lat "16.46"^^xsd:decimal ;
+    geo:long "112.55"^^xsd:decimal ;
+    eo:phenomenon "construction" ;
+    eo:domain "Defense" ;
+    eo:country "CN" ;
+    eo:lat "16.46"^^xsd:decimal ;
+    eo:lon "112.55"^^xsd:decimal ;
+    eo:observation_date "2026-03"^^xsd:gYearMonth ;
+    eo:severity "high" ;
+    eo:area_km2 "6.03"^^xsd:decimal ;
+    eo:area_acres "1490.0"^^xsd:decimal ;
+    eo:before_after_available "true"^^xsd:boolean ;
+    eo:satellites_used "WorldView-3", "PlanetScope (Doves)" ;
+    eo:update_of "ent-evt-006" .
+
+:ent-evt-093 a eo:Event ;
+    rdfs:label "Pine Island Glacier 가속 — 10.6 → 12.7 m/day (Sentinel-1 SAR 10년)"@ko ;
+    eo:name "Pine Island Glacier 가속 — 10.6 → 12.7 m/day (Sentinel-1 SAR 10년)" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "-75.16"^^xsd:decimal ;
+    geo:long "-100.0"^^xsd:decimal ;
+    eo:phenomenon "glacier_retreat" ;
+    eo:domain "ClimateEnvironment" ;
+    eo:country "AQ" ;
+    eo:lat "-75.16"^^xsd:decimal ;
+    eo:lon "-100.0"^^xsd:decimal ;
+    eo:observation_date "2026-05-06"^^xsd:date ;
+    eo:start_date "2016"^^xsd:gYear ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean ;
+    eo:velocity_m_per_day_2016 "10.6"^^xsd:decimal ;
+    eo:velocity_m_per_day_2026 "12.7"^^xsd:decimal ;
+    eo:satellites_used "Sentinel-1A" ;
+    eo:sensors_used "C-band SAR" .
+
+:ent-evt-094 a eo:Event ;
+    rdfs:label "Planet Pelican-7/8/9 발사 — fleet 9기 (2026-05-03)"@ko ;
+    eo:name "Planet Pelican-7/8/9 발사 — fleet 9기 (2026-05-03)" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "0.0"^^xsd:decimal ;
+    geo:long "0.0"^^xsd:decimal ;
+    eo:phenomenon "construction" ;
+    eo:domain "HumanActivity" ;
+    eo:country "US" ;
+    eo:lat "0.0"^^xsd:decimal ;
+    eo:lon "0.0"^^xsd:decimal ;
+    eo:observation_date "2026-05-03"^^xsd:date ;
+    eo:severity "low" .
+
+:ent-evt-095 a eo:Event ;
+    rdfs:label "Sudan breadbasket 농경지 황폐화 — Gezira/Sennar/Khartoum (Sentinel-2 NDVI)"@ko ;
+    eo:name "Sudan breadbasket 농경지 황폐화 — Gezira/Sennar/Khartoum (Sentinel-2 NDVI)" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "14.6"^^xsd:decimal ;
+    geo:long "33.5"^^xsd:decimal ;
+    eo:phenomenon "ndvi_change" ;
+    eo:domain "AgricultureMaritime" ;
+    eo:country "SD" ;
+    eo:lat "14.6"^^xsd:decimal ;
+    eo:lon "33.5"^^xsd:decimal ;
+    eo:observation_date "2026-05-04"^^xsd:date ;
+    eo:severity "high" ;
+    eo:before_after_available "true"^^xsd:boolean ;
+    eo:satellites_used "Sentinel-2A" ;
+    eo:sensors_used "MSI" .
+
+:ent-evt-096 a eo:Event ;
+    rdfs:label "NAU — Climate TRACE 도시 CO2 ~70% 과소 산정 발견"@ko ;
+    eo:name "NAU — Climate TRACE 도시 CO2 ~70% 과소 산정 발견" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "35.2"^^xsd:decimal ;
+    geo:long "-111.6"^^xsd:decimal ;
+    eo:phenomenon "co2_plume" ;
+    eo:domain "ClimateEnvironment" ;
+    eo:country "US" ;
+    eo:lat "35.2"^^xsd:decimal ;
+    eo:lon "-111.6"^^xsd:decimal ;
+    eo:observation_date "2026-05"^^xsd:gYearMonth ;
+    eo:severity "low" .
+
+:ent-evt-097 a eo:Event ;
+    rdfs:label "미국 카리브해 Operation Southern Spear 군사력 집결 (Wiki 종합)"@ko ;
+    eo:name "미국 카리브해 Operation Southern Spear 군사력 집결 (Wiki 종합)" ;
+    eo:first_seen "2026-05-06"^^xsd:date ;
+    eo:last_seen "2026-05-06"^^xsd:date ;
+    eo:mention_count "1"^^xsd:integer ;
+    geo:lat "12.0"^^xsd:decimal ;
+    geo:long "-68.0"^^xsd:decimal ;
+    eo:phenomenon "military_buildup" ;
+    eo:domain "Defense" ;
+    eo:country "VE" ;
+    eo:lat "12.0"^^xsd:decimal ;
+    eo:lon "-68.0"^^xsd:decimal ;
+    eo:observation_date "2026-05"^^xsd:gYearMonth ;
+    eo:severity "high" ;
+    eo:update_of "ent-evt-076" .
+
+# === KG Triples (object property assertions from daily snapshots) ===
+# --- snapshot 2026-04-30 (2026-04-30.json) ---
+:ent-evt-001 eo:observedBy :sat-worldview3 .  # conf=0.9 | src=src-001 | d=2026-04-30
+:ent-evt-001 eo:observedBy :sat-planetscope .  # conf=0.85 | src=src-002 | d=2026-04-30
+:ent-evt-001 eo:locatedIn :ent-loc-001 .  # conf=0.95 | src=src-001 | d=2026-04-30
+:ent-evt-001 eo:inCountry :co-kp .  # conf=0.95 | src=src-001 | d=2026-04-30
+:ent-evt-001 eo:analyzedBy :org-csis-bp .  # conf=0.95 | src=src-001 | d=2026-04-30
+:ent-evt-001 eo:manifests :phen-military .  # conf=0.9 | src=src-001 | d=2026-04-30
+:ent-evt-001 eo:inDomain :dom-defense .  # conf=0.95 | src=src-001 | d=2026-04-30
+:ent-evt-002 eo:observedBy :sat-planetscope .  # conf=0.9 | src=src-003 | d=2026-04-30
+:ent-evt-002 eo:observedBy :sat-worldview3 .  # conf=0.85 | src=src-003 | d=2026-04-30
+:ent-evt-002 eo:locatedIn :ent-loc-002 .  # conf=0.95 | src=src-003 | d=2026-04-30
+:ent-evt-002 eo:inCountry :co-kp .  # conf=0.95 | src=src-003 | d=2026-04-30
+:ent-evt-002 eo:manifests :phen-military .  # conf=0.9 | src=src-003 | d=2026-04-30
+:ent-evt-002 eo:manifests :phen-construction .  # conf=0.85 | src=src-003 | d=2026-04-30
+:ent-evt-002 eo:inDomain :dom-defense .  # conf=0.95 | src=src-003 | d=2026-04-30
+:ent-evt-003 eo:observedBy :sat-landsat9 .  # conf=0.95 | src=src-004 | d=2026-04-30
+:ent-evt-003 eo:usesSensor :sensor-tirs .  # conf=0.95 | src=src-004 | d=2026-04-30
+:ent-evt-003 eo:locatedIn :ent-loc-003 .  # conf=0.95 | src=src-004 | d=2026-04-30
+:ent-evt-003 eo:inCountry :co-fr .  # conf=0.95 | src=src-004 | d=2026-04-30
+:ent-evt-003 eo:analyzedBy :org-nasa .  # conf=0.95 | src=src-004 | d=2026-04-30
+:ent-evt-003 eo:analyzedBy :org-usgs .  # conf=0.9 | src=src-004 | d=2026-04-30
+:ent-evt-003 eo:manifests :phen-volcano .  # conf=0.95 | src=src-004 | d=2026-04-30
+:ent-evt-003 eo:inDomain :dom-disaster .  # conf=0.95 | src=src-004 | d=2026-04-30
+:ent-evt-004 eo:observedBy :sat-cosmoskymed-csg .  # conf=0.95 | src=src-005 | d=2026-04-30
+:ent-evt-004 eo:usesSensor :sensor-x-sar .  # conf=0.9 | src=src-005 | d=2026-04-30
+:ent-evt-004 eo:locatedIn :ent-loc-004 .  # conf=0.95 | src=src-005 | d=2026-04-30
+:ent-evt-004 eo:inCountry :co-us .  # conf=0.95 | src=src-005 | d=2026-04-30
+:ent-evt-004 eo:analyzedBy :org-usgs .  # conf=0.95 | src=src-005 | d=2026-04-30
+:ent-evt-004 eo:manifests :phen-volcano .  # conf=0.95 | src=src-005 | d=2026-04-30
+:ent-evt-004 eo:inDomain :dom-disaster .  # conf=0.95 | src=src-005 | d=2026-04-30
+:ent-evt-005 eo:observedBy :sat-landsat9 .  # conf=0.9 | src=src-006 | d=2026-04-30
+:ent-evt-005 eo:observedBy :sat-modis-terra .  # conf=0.85 | src=src-006 | d=2026-04-30
+:ent-evt-005 eo:usesSensor :sensor-modis .  # conf=0.85 | src=src-006 | d=2026-04-30
+:ent-evt-005 eo:analyzedBy :org-gfw .  # conf=0.95 | src=src-006 | d=2026-04-30
+:ent-evt-005 eo:manifests :phen-defor .  # conf=0.9 | src=src-006 | d=2026-04-30
+:ent-evt-005 eo:inDomain :dom-human .  # conf=0.95 | src=src-006 | d=2026-04-30
+:ent-evt-006 eo:observedBy :sat-sentinel2a .  # conf=0.9 | src=src-007 | d=2026-04-30
+:ent-evt-006 eo:observedBy :sat-sentinel2b .  # conf=0.85 | src=src-007 | d=2026-04-30
+:ent-evt-006 eo:usesSensor :sensor-msi .  # conf=0.85 | src=src-007 | d=2026-04-30
+:ent-evt-006 eo:locatedIn :ent-loc-005 .  # conf=0.95 | src=src-007 | d=2026-04-30
+:ent-evt-006 eo:inCountry :co-cn .  # conf=0.9 | src=src-007 | d=2026-04-30
+:ent-evt-006 eo:manifests :phen-military .  # conf=0.9 | src=src-007 | d=2026-04-30
+:ent-evt-006 eo:manifests :phen-construction .  # conf=0.9 | src=src-007 | d=2026-04-30
+:ent-evt-006 eo:inDomain :dom-defense .  # conf=0.95 | src=src-007 | d=2026-04-30
+:ent-evt-007 eo:observedBy :sat-sentinel1a .  # conf=0.95 | src=src-008 | d=2026-04-30
+:ent-evt-007 eo:observedBy :sat-sentinel1c .  # conf=0.85 | src=src-008 | d=2026-04-30
+:ent-evt-007 eo:usesSensor :sensor-c-sar .  # conf=0.95 | src=src-008 | d=2026-04-30
+:ent-evt-007 eo:inCountry :co-ir .  # conf=0.9 | src=src-008 | d=2026-04-30
+:ent-evt-007 eo:analyzedBy :org-bellingcat .  # conf=0.9 | src=src-008 | d=2026-04-30
+:ent-evt-007 eo:manifests :phen-infra-damage .  # conf=0.85 | src=src-008 | d=2026-04-30
+:ent-evt-007 eo:inDomain :dom-humanitarian .  # conf=0.85 | src=src-008 | d=2026-04-30
+:ent-evt-008 eo:observedBy :sat-worldview3 .  # conf=0.85 | src=src-009 | d=2026-04-30
+:ent-evt-008 eo:observedBy :sat-planetscope .  # conf=0.8 | src=src-009 | d=2026-04-30
+:ent-evt-008 eo:locatedIn :ent-loc-006 .  # conf=0.95 | src=src-009 | d=2026-04-30
+:ent-evt-008 eo:inCountry :co-ps .  # conf=0.95 | src=src-009 | d=2026-04-30
+:ent-evt-008 eo:analyzedBy :org-unosat .  # conf=0.95 | src=src-009 | d=2026-04-30
+:ent-evt-008 eo:manifests :phen-refugee .  # conf=0.9 | src=src-009 | d=2026-04-30
+:ent-evt-008 eo:manifests :phen-infra-damage .  # conf=0.9 | src=src-009 | d=2026-04-30
+:ent-evt-008 eo:inDomain :dom-humanitarian .  # conf=0.95 | src=src-009 | d=2026-04-30
+:ent-evt-009 eo:observedBy :sat-sentinel1a .  # conf=0.9 | src=src-010 | d=2026-04-30
+:ent-evt-009 eo:observedBy :sat-sentinel2a .  # conf=0.85 | src=src-010 | d=2026-04-30
+:ent-evt-009 eo:observedBy :sat-landsat9 .  # conf=0.85 | src=src-010 | d=2026-04-30
+:ent-evt-009 eo:locatedIn :ent-loc-007 .  # conf=0.95 | src=src-010 | d=2026-04-30
+:ent-evt-009 eo:inCountry :co-aq .  # conf=0.9 | src=src-010 | d=2026-04-30
+:ent-evt-009 eo:manifests :phen-glacier .  # conf=0.95 | src=src-010 | d=2026-04-30
+:ent-evt-009 eo:inDomain :dom-climate .  # conf=0.95 | src=src-010 | d=2026-04-30
+:ent-evt-010 eo:observedBy :sat-sentinel5p .  # conf=0.85 | src=src-011 | d=2026-04-30
+:ent-evt-010 eo:usesSensor :sensor-tropomi .  # conf=0.85 | src=src-011 | d=2026-04-30
+:ent-evt-010 eo:analyzedBy :org-climatetrace .  # conf=0.9 | src=src-011 | d=2026-04-30
+:ent-evt-010 eo:manifests :phen-air-pol .  # conf=0.85 | src=src-011 | d=2026-04-30
+:ent-evt-010 eo:inDomain :dom-climate .  # conf=0.9 | src=src-011 | d=2026-04-30
+:ent-evt-011 eo:observedBy :sat-sentinel5p .  # conf=0.95 | src=src-012 | d=2026-04-30
+:ent-evt-011 eo:observedBy :sat-gosat .  # conf=0.85 | src=src-012 | d=2026-04-30
+:ent-evt-011 eo:usesSensor :sensor-tropomi .  # conf=0.95 | src=src-012 | d=2026-04-30
+:ent-evt-011 eo:manifests :phen-methane .  # conf=0.95 | src=src-012 | d=2026-04-30
+:ent-evt-011 eo:inDomain :dom-climate .  # conf=0.95 | src=src-012 | d=2026-04-30
+:ent-evt-012 eo:observedBy :sat-himawari9 .  # conf=0.9 | src=src-013 | d=2026-04-30
+:ent-evt-012 eo:observedBy :sat-goes18 .  # conf=0.85 | src=src-013 | d=2026-04-30
+:ent-evt-012 eo:inCountry :co-fm .  # conf=0.85 | src=src-013 | d=2026-04-30
+:ent-evt-012 eo:analyzedBy :org-jaxa .  # conf=0.85 | src=src-013 | d=2026-04-30
+:ent-evt-012 eo:analyzedBy :org-noaa .  # conf=0.85 | src=src-013 | d=2026-04-30
+:ent-evt-012 eo:manifests :phen-typhoon .  # conf=0.95 | src=src-013 | d=2026-04-30
+:ent-evt-012 eo:inDomain :dom-disaster .  # conf=0.95 | src=src-013 | d=2026-04-30
+:ent-evt-013 eo:observedBy :sat-goes18 .  # conf=0.85 | src=src-014 | d=2026-04-30
+:ent-evt-013 eo:observedBy :sat-himawari9 .  # conf=0.85 | src=src-014 | d=2026-04-30
+:ent-evt-013 eo:inCountry :co-to .  # conf=0.85 | src=src-014 | d=2026-04-30
+:ent-evt-013 eo:manifests :phen-typhoon .  # conf=0.9 | src=src-014 | d=2026-04-30
+:ent-evt-013 eo:inDomain :dom-disaster .  # conf=0.9 | src=src-014 | d=2026-04-30
+:ent-evt-014 eo:inCountry :co-kr .  # conf=0.95 | src=src-015 | d=2026-04-30
+:ent-evt-014 eo:manifests :phen-wildfire .  # conf=0.6 | src=src-015 | d=2026-04-30
+:ent-evt-014 eo:inDomain :dom-disaster .  # conf=0.6 | src=src-015 | d=2026-04-30
+:ent-evt-015 eo:observedBy :sat-kompsat7 .  # conf=0.85 | src=src-016 | d=2026-04-30
+:ent-evt-015 eo:inCountry :co-kr .  # conf=0.95 | src=src-016 | d=2026-04-30
+:ent-evt-015 eo:analyzedBy :org-kari .  # conf=0.9 | src=src-016 | d=2026-04-30
+:ent-evt-015 eo:inDomain :dom-agri-marine .  # conf=0.7 | src=src-016 | d=2026-04-30
+:ent-evt-016 eo:observedBy :sat-worldview3 .  # conf=0.85 | src=src-017 | d=2026-04-30
+:ent-evt-016 eo:inCountry :co-ua .  # conf=0.95 | src=src-017 | d=2026-04-30
+:ent-evt-016 eo:analyzedBy :org-maxar .  # conf=0.85 | src=src-017 | d=2026-04-30
+:ent-evt-016 eo:manifests :phen-military .  # conf=0.85 | src=src-017 | d=2026-04-30
+:ent-evt-016 eo:inDomain :dom-defense .  # conf=0.9 | src=src-017 | d=2026-04-30
+:ent-evt-017 eo:observedBy :sat-iceye .  # conf=0.95 | src=src-018 | d=2026-04-30
+:ent-evt-017 eo:usesSensor :sensor-x-sar .  # conf=0.95 | src=src-018 | d=2026-04-30
+:ent-evt-017 eo:inCountry :co-lk .  # conf=0.95 | src=src-018 | d=2026-04-30
+:ent-evt-017 eo:analyzedBy :org-iceye .  # conf=0.9 | src=src-018 | d=2026-04-30
+:ent-evt-017 eo:manifests :phen-flood .  # conf=0.95 | src=src-018 | d=2026-04-30
+:ent-evt-017 eo:inDomain :dom-disaster .  # conf=0.95 | src=src-018 | d=2026-04-30
+:ent-evt-018 eo:observedBy :sat-sentinel1a .  # conf=0.95 | src=src-019 | d=2026-04-30
+:ent-evt-018 eo:observedBy :sat-sentinel1c .  # conf=0.9 | src=src-019 | d=2026-04-30
+:ent-evt-018 eo:usesSensor :sensor-c-sar .  # conf=0.95 | src=src-019 | d=2026-04-30
+:ent-evt-018 eo:analyzedBy :org-cems .  # conf=0.95 | src=src-019 | d=2026-04-30
+:ent-evt-018 eo:manifests :phen-flood .  # conf=0.95 | src=src-019 | d=2026-04-30
+:ent-evt-018 eo:inDomain :dom-disaster .  # conf=0.95 | src=src-019 | d=2026-04-30
+:ent-evt-019 eo:observedBy :sat-sentinel1a .  # conf=0.9 | src=src-020 | d=2026-04-30
+:ent-evt-019 eo:usesSensor :sensor-c-sar .  # conf=0.9 | src=src-020 | d=2026-04-30
+:ent-evt-019 eo:analyzedBy :org-skytruth .  # conf=0.9 | src=src-020 | d=2026-04-30
+:ent-evt-019 eo:manifests :phen-oilspill .  # conf=0.9 | src=src-020 | d=2026-04-30
+:ent-evt-019 eo:inDomain :dom-human .  # conf=0.9 | src=src-020 | d=2026-04-30
+:ent-evt-020 eo:observedBy :sat-landsat8 .  # conf=0.9 | src=src-021 | d=2026-04-30
+:ent-evt-020 eo:observedBy :sat-viirs-jpss .  # conf=0.85 | src=src-021 | d=2026-04-30
+:ent-evt-020 eo:usesSensor :sensor-oli .  # conf=0.9 | src=src-021 | d=2026-04-30
+:ent-evt-020 eo:usesSensor :sensor-tirs .  # conf=0.9 | src=src-021 | d=2026-04-30
+:ent-evt-020 eo:usesSensor :sensor-viirs .  # conf=0.85 | src=src-021 | d=2026-04-30
+:ent-evt-020 eo:locatedIn :ent-loc-010 .  # conf=0.95 | src=src-021 | d=2026-04-30
+:ent-evt-020 eo:inCountry :co-us .  # conf=0.95 | src=src-021 | d=2026-04-30
+:ent-evt-020 eo:manifests :phen-wildfire .  # conf=0.9 | src=src-021 | d=2026-04-30
+:ent-evt-020 eo:inDomain :dom-disaster .  # conf=0.95 | src=src-021 | d=2026-04-30
+:ent-evt-021 eo:observedBy :sat-cosmoskymed-csg .  # conf=0.9 | src=src-022 | d=2026-04-30
+:ent-evt-021 eo:locatedIn :ent-loc-004 .  # conf=0.95 | src=src-022 | d=2026-04-30
+:ent-evt-021 eo:inCountry :co-us .  # conf=0.95 | src=src-022 | d=2026-04-30
+:ent-evt-021 eo:analyzedBy :org-usgs .  # conf=0.95 | src=src-022 | d=2026-04-30
+:ent-evt-021 eo:manifests :phen-volcano .  # conf=0.95 | src=src-022 | d=2026-04-30
+:ent-evt-021 eo:inDomain :dom-disaster .  # conf=0.95 | src=src-022 | d=2026-04-30
+:ent-evt-021 eo:partOfSeries :ent-evt-004 .  # conf=0.95 | src=src-022 | d=2026-04-30
+:ent-evt-022 eo:observedBy :sat-worldview3 .  # conf=0.85 | src=src-023 | d=2026-04-30
+:ent-evt-022 eo:inCountry :co-kp .  # conf=0.95 | src=src-023 | d=2026-04-30
+:ent-evt-022 eo:manifests :phen-naval .  # conf=0.85 | src=src-023 | d=2026-04-30
+:ent-evt-022 eo:manifests :phen-construction .  # conf=0.85 | src=src-023 | d=2026-04-30
+:ent-evt-022 eo:inDomain :dom-defense .  # conf=0.95 | src=src-023 | d=2026-04-30
+:ent-evt-023 eo:observedBy :sat-planetscope .  # conf=0.85 | src=src-024 | d=2026-04-30
+:ent-evt-023 eo:locatedIn :ent-loc-012 .  # conf=0.95 | src=src-024 | d=2026-04-30
+:ent-evt-023 eo:inCountry :co-kp .  # conf=0.95 | src=src-024 | d=2026-04-30
+:ent-evt-023 eo:manifests :phen-military .  # conf=0.85 | src=src-024 | d=2026-04-30
+:ent-evt-023 eo:inDomain :dom-defense .  # conf=0.95 | src=src-024 | d=2026-04-30
+:ent-evt-024 eo:inCountry :co-kr .  # conf=0.95 | src=src-025 | d=2026-04-30
+:ent-evt-024 eo:manifests :phen-military .  # conf=0.8 | src=src-025 | d=2026-04-30
+:ent-evt-024 eo:inDomain :dom-defense .  # conf=0.9 | src=src-025 | d=2026-04-30
+:ent-evt-025 eo:observedBy :sat-sentinel2a .  # conf=0.9 | src=src-026 | d=2026-04-30
+:ent-evt-025 eo:observedBy :sat-landsat9 .  # conf=0.85 | src=src-026 | d=2026-04-30
+:ent-evt-025 eo:locatedIn :ent-loc-008 .  # conf=0.95 | src=src-026 | d=2026-04-30
+:ent-evt-025 eo:inCountry :co-aq .  # conf=0.95 | src=src-026 | d=2026-04-30
+:ent-evt-025 eo:manifests :phen-glacier .  # conf=0.95 | src=src-026 | d=2026-04-30
+:ent-evt-025 eo:inDomain :dom-climate .  # conf=0.95 | src=src-026 | d=2026-04-30
+:ent-evt-026 eo:observedBy :sat-sentinel1d .  # conf=0.9 | src=src-027 | d=2026-04-30
+:ent-evt-026 eo:usesSensor :sensor-c-sar .  # conf=0.9 | src=src-027 | d=2026-04-30
+:ent-evt-026 eo:locatedIn :ent-loc-011 .  # conf=0.95 | src=src-027 | d=2026-04-30
+:ent-evt-026 eo:inCountry :co-us .  # conf=0.95 | src=src-027 | d=2026-04-30
+:ent-evt-026 eo:manifests :phen-flood .  # conf=0.9 | src=src-027 | d=2026-04-30
+:ent-evt-026 eo:inDomain :dom-disaster .  # conf=0.95 | src=src-027 | d=2026-04-30
+:ent-evt-027 eo:observedBy :sat-sentinel1a .  # conf=0.9 | src=src-028 | d=2026-04-30
+:ent-evt-027 eo:observedBy :sat-sentinel2a .  # conf=0.85 | src=src-028 | d=2026-04-30
+:ent-evt-027 eo:usesSensor :sensor-c-sar .  # conf=0.9 | src=src-028 | d=2026-04-30
+:ent-evt-027 eo:locatedIn :ent-loc-009 .  # conf=0.95 | src=src-028 | d=2026-04-30
+:ent-evt-027 eo:inCountry :co-is .  # conf=0.95 | src=src-028 | d=2026-04-30
+:ent-evt-027 eo:manifests :phen-volcano .  # conf=0.9 | src=src-028 | d=2026-04-30
+:ent-evt-027 eo:inDomain :dom-disaster .  # conf=0.95 | src=src-028 | d=2026-04-30
+:ent-evt-028 eo:observedBy :sat-worldview3 .  # conf=0.85 | src=src-029 | d=2026-04-30
+:ent-evt-028 eo:observedBy :sat-sentinel1a .  # conf=0.85 | src=src-029 | d=2026-04-30
+:ent-evt-028 eo:locatedIn :ent-loc-013 .  # conf=0.95 | src=src-029 | d=2026-04-30
+:ent-evt-028 eo:inCountry :co-lb .  # conf=0.95 | src=src-029 | d=2026-04-30
+:ent-evt-028 eo:manifests :phen-infra-damage .  # conf=0.85 | src=src-029 | d=2026-04-30
+:ent-evt-028 eo:inDomain :dom-humanitarian .  # conf=0.9 | src=src-029 | d=2026-04-30
+
+# --- snapshot 2026-05-01 (2026-05-01.json) ---
+:ent-evt-029 eo:observedBy :sat-landsat8 .  # conf=0.93 | src=src-001 | d=2026-05-01
+:ent-evt-029 eo:usesSensor :sensor-oli .  # conf=0.93 | src=src-001 | d=2026-05-01
+:ent-evt-029 eo:usesSensor :sensor-tirs .  # conf=0.93 | src=src-001 | d=2026-05-01
+:ent-evt-029 eo:manifests :phen-volcano .  # conf=0.95 | src=src-001 | d=2026-05-01
+:ent-evt-029 eo:inDomain :dom-disaster .  # conf=0.95 | src=src-001 | d=2026-05-01
+:ent-evt-029 eo:inCountry :co-ph .  # conf=0.95 | src=src-001 | d=2026-05-01
+:ent-evt-029 eo:locatedIn :ent-loc-014 .  # conf=0.95 | src=src-001 | d=2026-05-01
+:ent-evt-029 eo:analyzedBy :org-nasa .  # conf=0.93 | src=src-001 | d=2026-05-01
+:ent-evt-030 eo:observedBy :sat-himawari9 .  # conf=0.85 | src=src-003 | d=2026-05-01
+:ent-evt-030 eo:manifests :phen-volcano .  # conf=0.9 | src=src-003 | d=2026-05-01
+:ent-evt-030 eo:inDomain :dom-disaster .  # conf=0.9 | src=src-003 | d=2026-05-01
+:ent-evt-030 eo:inCountry :co-ru .  # conf=0.9 | src=src-003 | d=2026-05-01
+:ent-evt-030 eo:locatedIn :ent-loc-015 .  # conf=0.9 | src=src-003 | d=2026-05-01
+:ent-evt-031 eo:manifests :phen-military .  # conf=0.88 | src=src-011 | d=2026-05-01
+:ent-evt-031 eo:inDomain :dom-defense .  # conf=0.88 | src=src-011 | d=2026-05-01
+:ent-evt-031 eo:analyzedBy :org-mizarvision .  # conf=0.85 | src=src-011 | d=2026-05-01
+:ent-evt-031 eo:observedBy :sat-worldview3 .  # conf=0.8 | src=src-011 | d=2026-05-01
+:ent-evt-032 eo:inDomain :dom-agri-marine .  # conf=0.8 | src=src-015 | d=2026-05-01
+:ent-evt-032 eo:inCountry :co-kr .  # conf=0.95 | src=src-015 | d=2026-05-01
+:sat-cas500-2 eo:operatedBy :org-kari .  # conf=0.95 | src=src-015 | d=2026-05-01
+:sat-cas500-4 eo:operatedBy :org-kari .  # conf=0.95 | src=src-015 | d=2026-05-01
+:ent-evt-033 eo:inDomain :dom-human .  # conf=0.85 | src=src-018 | d=2026-05-01
+:ent-evt-033 eo:manifests :phen-defor .  # conf=0.85 | src=src-018 | d=2026-05-01
+:ent-evt-033 eo:analyzedBy :org-gfw .  # conf=0.9 | src=src-018 | d=2026-05-01
+:ent-evt-034 eo:observedBy :sat-sentinel1a .  # conf=0.85 | src=src-021 | d=2026-05-01
+:ent-evt-034 eo:usesSensor :sensor-c-sar .  # conf=0.85 | src=src-021 | d=2026-05-01
+:ent-evt-034 eo:manifests :phen-oilspill .  # conf=0.88 | src=src-021 | d=2026-05-01
+:ent-evt-034 eo:inDomain :dom-human .  # conf=0.88 | src=src-021 | d=2026-05-01
+:ent-evt-034 eo:inCountry :co-ve .  # conf=0.9 | src=src-021 | d=2026-05-01
+:ent-evt-035 eo:observedBy :sat-sentinel5p .  # conf=0.9 | src=src-027 | d=2026-05-01
+:ent-evt-035 eo:usesSensor :sensor-tropomi .  # conf=0.9 | src=src-027 | d=2026-05-01
+:ent-evt-035 eo:manifests :phen-methane .  # conf=0.88 | src=src-027 | d=2026-05-01
+:ent-evt-035 eo:inDomain :dom-climate .  # conf=0.88 | src=src-027 | d=2026-05-01
+:ent-evt-020 eo:severity :high .  # src=src-008 | d=2026-05-01
+:ent-evt-022 eo:naval_movement :IMO_registered .  # src=src-017 | d=2026-05-01
+
+# --- snapshot 2026-05-02 (2026-05-02.json) ---
+:ent-evt-037 eo:observedBy :sat-landsat9 .  # conf=0.95 | src=src-001 | d=2026-05-02
+:ent-evt-037 eo:usesSensor :sensor-oli .  # conf=0.95 | src=src-001 | d=2026-05-02
+:ent-evt-037 eo:locatedIn :ent-loc-017 .  # conf=0.95 | src=src-001 | d=2026-05-02
+:ent-evt-037 eo:inCountry :co-pg .  # conf=0.95 | src=src-001 | d=2026-05-02
+:ent-evt-037 eo:manifests :phen-landslide .  # conf=0.95 | src=src-001 | d=2026-05-02
+:ent-evt-037 eo:inDomain :dom-disaster .  # conf=0.95 | src=src-001 | d=2026-05-02
+:ent-evt-037 eo:analyzedBy :org-nasa .  # conf=0.95 | src=src-001 | d=2026-05-02
+:ent-evt-037 eo:reportedBy :org-charter .  # conf=0.9 | src=src-003 | d=2026-05-02
+:ent-evt-038 eo:manifests :phen-flood .  # conf=0.9 | src=src-001 | d=2026-05-02
+:ent-evt-038 eo:inCountry :co-pg .  # conf=0.9 | src=src-001 | d=2026-05-02
+:ent-evt-042 eo:observedBy :sat-sentinel1a .  # conf=0.95 | src=src-011 | d=2026-05-02
+:ent-evt-042 eo:observedBy :sat-sentinel1c .  # conf=0.95 | src=src-011 | d=2026-05-02
+:ent-evt-042 eo:usesSensor :sensor-c-sar .  # conf=0.95 | src=src-011 | d=2026-05-02
+:ent-evt-042 eo:manifests :phen-glacier .  # conf=0.95 | src=src-011 | d=2026-05-02
+:ent-evt-042 eo:inDomain :dom-climate .  # conf=0.95 | src=src-011 | d=2026-05-02
+:ent-evt-042 eo:analyzedBy :org-esa .  # conf=0.95 | src=src-011 | d=2026-05-02
+:ent-evt-044 eo:observedBy :sat-worldview3 .  # conf=0.8 | src=src-015 | d=2026-05-02
+:ent-evt-044 eo:manifests :phen-landslide .  # conf=0.9 | src=src-015 | d=2026-05-02
+:ent-evt-044 eo:inCountry :co-it .  # conf=0.95 | src=src-015 | d=2026-05-02
+:ent-evt-045 eo:observedBy :sat-landsat9 .  # conf=0.9 | src=src-016 | d=2026-05-02
+:ent-evt-045 eo:observedBy :sat-sentinel2a .  # conf=0.9 | src=src-016 | d=2026-05-02
+:ent-evt-045 eo:observedBy :sat-modis-terra .  # conf=0.85 | src=src-016 | d=2026-05-02
+:ent-evt-045 eo:manifests :phen-defor .  # conf=0.9 | src=src-016 | d=2026-05-02
+:ent-evt-046 eo:observedBy :sat-sentinel5p .  # conf=0.95 | src=src-018 | d=2026-05-02
+:ent-evt-046 eo:observedBy :sat-sentinel2a .  # conf=0.9 | src=src-018 | d=2026-05-02
+:ent-evt-046 eo:observedBy :sat-sentinel3 .  # conf=0.9 | src=src-018 | d=2026-05-02
+:ent-evt-046 eo:usesSensor :sensor-tropomi .  # conf=0.95 | src=src-018 | d=2026-05-02
+:ent-evt-046 eo:manifests :phen-methane .  # conf=0.95 | src=src-018 | d=2026-05-02
+:ent-evt-043 eo:observedBy :sat-planetscope .  # conf=0.85 | src=src-013 | d=2026-05-02
+:ent-evt-043 eo:observedBy :sat-worldview3 .  # conf=0.85 | src=src-013 | d=2026-05-02
+:ent-evt-043 eo:manifests :phen-military .  # conf=0.85 | src=src-013 | d=2026-05-02
+
+# --- snapshot 2026-05-03 (2026-05-03.json) ---
+:ent-evt-050 eo:manifests :phen-volcano .  # conf=0.8 | src=src-006 | d=2026-05-03
+:ent-evt-050 eo:locatedIn :ent-loc-019 .  # conf=0.9 | src=src-006 | d=2026-05-03
+:ent-evt-050 eo:inCountry :co-us .  # conf=0.95 | src=src-006 | d=2026-05-03
+:ent-evt-050 eo:analyzedBy :org-usgs .  # conf=0.95 | src=src-006 | d=2026-05-03
+:ent-evt-050 eo:inDomain :dom-disaster .  # conf=0.95 | src=src-006 | d=2026-05-03
+:ent-evt-051 eo:manifests :phen-volcano .  # conf=0.85 | src=src-007 | d=2026-05-03
+:ent-evt-051 eo:locatedIn :ent-loc-020 .  # conf=0.9 | src=src-007 | d=2026-05-03
+:ent-evt-051 eo:inCountry :co-ru .  # conf=0.95 | src=src-007 | d=2026-05-03
+:ent-evt-051 eo:inDomain :dom-disaster .  # conf=0.9 | src=src-007 | d=2026-05-03
+:ent-evt-053 eo:observedBy :sat-methanesat .  # conf=0.95 | src=src-009 | d=2026-05-03
+:ent-evt-053 eo:manifests :phen-methane .  # conf=0.95 | src=src-009 | d=2026-05-03
+:ent-evt-053 eo:analyzedBy :org-edf .  # conf=0.9 | src=src-009 | d=2026-05-03
+:ent-evt-053 eo:inDomain :dom-climate .  # conf=0.95 | src=src-009 | d=2026-05-03
+:ent-evt-054 eo:observedBy :sat-sentinel2a .  # conf=0.9 | src=src-011 | d=2026-05-03
+:ent-evt-054 eo:usesSensor :sensor-msi .  # conf=0.9 | src=src-011 | d=2026-05-03
+:ent-evt-054 eo:manifests :phen-mining .  # conf=0.9 | src=src-011 | d=2026-05-03
+:ent-evt-054 eo:inCountry :co-br .  # conf=0.95 | src=src-011 | d=2026-05-03
+:ent-evt-054 eo:inDomain :dom-human .  # conf=0.95 | src=src-011 | d=2026-05-03
+:ent-evt-055 eo:manifests :phen-defor .  # conf=0.85 | src=src-013 | d=2026-05-03
+:ent-evt-055 eo:inCountry :co-br .  # conf=0.95 | src=src-013 | d=2026-05-03
+:ent-evt-055 eo:inDomain :dom-human .  # conf=0.95 | src=src-013 | d=2026-05-03
+:ent-evt-056 eo:observedBy :sat-sentinel1a .  # conf=0.9 | src=src-014 | d=2026-05-03
+:ent-evt-056 eo:usesSensor :sensor-c-sar .  # conf=0.9 | src=src-014 | d=2026-05-03
+:ent-evt-056 eo:analyzedBy :org-skytruth .  # conf=0.9 | src=src-014 | d=2026-05-03
+:ent-evt-056 eo:manifests :phen-oilspill .  # conf=0.9 | src=src-014 | d=2026-05-03
+:ent-evt-056 eo:inDomain :dom-human .  # conf=0.9 | src=src-014 | d=2026-05-03
+:ent-evt-032 eo:status :launched_successfully .  # conf=0.99 | src=src-001 | d=2026-05-03
+:sat-cas500-2 eo:mission_status :operational .  # conf=0.95 | src=src-001 | d=2026-05-03
+:sat-cas500-4 eo:mission_status :operational .  # conf=0.95 | src=src-001 | d=2026-05-03
+:ent-evt-020 eo:containment :44_-64_ .  # conf=0.9 | src=src-008 | d=2026-05-03
+:ent-evt-029 eo:latest_eruption :2026-05-02T07_29Z .  # conf=0.9 | src=src-005 | d=2026-05-03
+
+# --- snapshot 2026-05-04 (2026-05-04.json) ---
+:ent-evt-059 eo:observedBy :sat-planetscope .  # conf=0.95 | src=src-005 | d=2026-05-04
+:ent-evt-059 eo:observedBy :sat-sentinel2a .  # conf=0.9 | src=src-005 | d=2026-05-04
+:ent-evt-059 eo:manifests :phen-military .  # conf=0.95 | src=src-005 | d=2026-05-04
+:ent-evt-059 eo:inCountry :co-ps .  # conf=0.99 | src=src-005 | d=2026-05-04
+:ent-evt-059 eo:inDomain :dom-defense .  # conf=0.99 | src=src-005 | d=2026-05-04
+:ent-evt-062 eo:manifests :phen-military .  # conf=0.9 | src=src-009 | d=2026-05-04
+:ent-evt-062 eo:inCountry :co-cn .  # conf=0.99 | src=src-009 | d=2026-05-04
+:ent-evt-062 eo:inDomain :dom-defense .  # conf=0.99 | src=src-009 | d=2026-05-04
+:ent-evt-063 eo:observedBy :sat-gaofen .  # conf=0.85 | src=src-010 | d=2026-05-04
+:ent-evt-063 eo:manifests :phen-military .  # conf=0.95 | src=src-010 | d=2026-05-04
+:ent-evt-063 eo:inDomain :dom-defense .  # conf=0.99 | src=src-010 | d=2026-05-04
+:ent-evt-064 eo:analyzedBy :org-planet .  # conf=0.95 | src=src-011 | d=2026-05-04
+:ent-evt-064 eo:inDomain :dom-defense .  # conf=0.9 | src=src-011 | d=2026-05-04
+:ent-evt-066 eo:observedBy :sat-methanesat .  # conf=0.95 | src=src-015 | d=2026-05-04
+:ent-evt-066 eo:manifests :phen-methane .  # conf=0.99 | src=src-015 | d=2026-05-04
+:ent-evt-066 eo:analyzedBy :org-edf .  # conf=0.95 | src=src-015 | d=2026-05-04
+:ent-evt-066 eo:inCountry :co-us .  # conf=0.99 | src=src-015 | d=2026-05-04
+:ent-evt-066 eo:inDomain :dom-climate .  # conf=0.99 | src=src-015 | d=2026-05-04
+:ent-evt-068 eo:observedBy :sat-landsat8 .  # conf=0.85 | src=src-020 | d=2026-05-04
+:ent-evt-068 eo:observedBy :sat-sentinel2a .  # conf=0.8 | src=src-020 | d=2026-05-04
+:ent-evt-068 eo:manifests :phen-glacier .  # conf=0.95 | src=src-020 | d=2026-05-04
+:ent-evt-068 eo:inDomain :dom-climate .  # conf=0.99 | src=src-020 | d=2026-05-04
+:ent-evt-029 eo:observedBy :sat-himawari9 .  # conf=0.9 | src=src-007 | d=2026-05-04 | note=May 2 PDC VAAC advisory
+
+# --- snapshot 2026-05-05 (2026-05-05.json) ---
+:ent-evt-073 eo:observedBy :sat-sentinel2a .  # conf=0.7 | src=src-007 | d=2026-05-05
+:ent-evt-073 eo:manifests :phen-wildfire .  # conf=1.0 | src=src-007 | d=2026-05-05
+:ent-evt-073 eo:inCountry :co-it .  # conf=1.0 | src=src-007 | d=2026-05-05
+:ent-evt-073 eo:inDomain :dom-disaster .  # conf=1.0 | src=src-007 | d=2026-05-05
+:ent-evt-073 eo:locatedIn :ent-loc-025 .  # conf=0.95 | src=src-007 | d=2026-05-05
+:ent-evt-074 eo:observedBy :sat-sentinel2a .  # conf=0.9 | src=src-008 | d=2026-05-05
+:ent-evt-074 eo:observedBy :sat-planetscope .  # conf=0.9 | src=src-008 | d=2026-05-05
+:ent-evt-074 eo:manifests :phen-wildfire .  # conf=1.0 | src=src-008 | d=2026-05-05
+:ent-evt-074 eo:inCountry :co-nl .  # conf=1.0 | src=src-008 | d=2026-05-05
+:ent-evt-074 eo:inDomain :dom-disaster .  # conf=1.0 | src=src-008 | d=2026-05-05
+:ent-evt-074 eo:locatedIn :ent-loc-026 .  # conf=0.95 | src=src-008 | d=2026-05-05
+:ent-evt-075 eo:manifests :phen-naval .  # conf=0.95 | src=src-010 | d=2026-05-05
+:ent-evt-075 eo:inCountry :co-cn .  # conf=1.0 | src=src-010 | d=2026-05-05
+:ent-evt-075 eo:inDomain :dom-defense .  # conf=1.0 | src=src-010 | d=2026-05-05
+:ent-evt-075 eo:observedBy :sat-skyfi .  # conf=0.85 | src=src-010 | d=2026-05-05
+:ent-evt-075 eo:locatedIn :ent-loc-027 .  # conf=0.95 | src=src-010 | d=2026-05-05
+:ent-evt-075 eo:analyzedBy :org-skyfi .  # conf=0.9 | src=src-010 | d=2026-05-05
+:ent-evt-076 eo:manifests :phen-military .  # conf=0.95 | src=src-011 | d=2026-05-05
+:ent-evt-076 eo:observedBy :sat-planetscope .  # conf=0.85 | src=src-011 | d=2026-05-05
+:ent-evt-076 eo:inCountry :co-us .  # conf=0.9 | src=src-011 | d=2026-05-05
+:ent-evt-076 eo:inDomain :dom-defense .  # conf=1.0 | src=src-011 | d=2026-05-05
+:ent-evt-077 eo:manifests :phen-military .  # conf=0.9 | src=src-012 | d=2026-05-05
+:ent-evt-077 eo:inCountry :co-kp .  # conf=1.0 | src=src-012 | d=2026-05-05
+:ent-evt-077 eo:inDomain :dom-defense .  # conf=1.0 | src=src-012 | d=2026-05-05
+:ent-evt-077 eo:analyzedBy :org-sianalytics .  # conf=0.9 | src=src-012 | d=2026-05-05
+:ent-evt-077 eo:locatedIn :ent-loc-028 .  # conf=0.95 | src=src-012 | d=2026-05-05
+:ent-evt-079 eo:manifests :phen-crop .  # conf=0.8 | src=src-015 | d=2026-05-05
+:ent-evt-079 eo:inCountry :co-kr .  # conf=1.0 | src=src-015 | d=2026-05-05
+:ent-evt-079 eo:inDomain :dom-agri-marine .  # conf=1.0 | src=src-015 | d=2026-05-05
+:ent-evt-079 eo:observedBy :sat-cas500-2 .  # conf=0.75 | src=src-015 | d=2026-05-05
+:ent-evt-080 eo:manifests :phen-earthquake .  # conf=0.85 | src=src-016 | d=2026-05-05
+:ent-evt-080 eo:inCountry :co-jp .  # conf=1.0 | src=src-016 | d=2026-05-05
+:ent-evt-080 eo:inDomain :dom-disaster .  # conf=0.5 | src=src-016 | d=2026-05-05 | note=satellite_unverified — 위성 피해 평가 미실시, confidence cap 0.5
+:ent-evt-080 eo:locatedIn :ent-loc-029 .  # conf=0.9 | src=src-016 | d=2026-05-05
+:ent-evt-070 eo:observedBy :sat-goes18 .  # conf=0.85 | src=src-001 | d=2026-05-05 | note=Episode 46 lava fountaining 650ft — GOES-18 thermal IR monitoring
+:ent-evt-070 eo:manifests :phen-volcano .  # conf=0.95 | src=src-001 | d=2026-05-05 | note=Kīlauea Ep46 eruption confirmed
+:ent-evt-070 eo:inCountry :co-us .  # conf=1.0 | src=src-001 | d=2026-05-05
+:ent-evt-070 eo:inDomain :dom-disaster .  # conf=1.0 | src=src-001 | d=2026-05-05
+:ent-evt-070 eo:analyzedBy :org-usgs .  # conf=1.0 | src=src-001 | d=2026-05-05 | note=USGS HVO official report
+:ent-evt-071 eo:observedBy :sat-himawari9 .  # conf=0.9 | src=src-004 | d=2026-05-05 | note=VAAC Tokyo ash advisory at 0544Z
+:ent-evt-071 eo:manifests :phen-volcano .  # conf=0.95 | src=src-004 | d=2026-05-05 | note=Mayon May 5 eruption ongoing
+:ent-evt-071 eo:inCountry :co-ph .  # conf=1.0 | src=src-004 | d=2026-05-05
+:ent-evt-071 eo:inDomain :dom-disaster .  # conf=1.0 | src=src-004 | d=2026-05-05
+:ent-evt-071 eo:analyzedBy :org-phivolcs .  # conf=0.95 | src=src-005 | d=2026-05-05
+:ent-evt-072 eo:observedBy :sat-landsat8 .  # conf=0.9 | src=src-006 | d=2026-05-05 | note=Georgia fires containment update — Landsat 8 OLI
+:ent-evt-072 eo:manifests :phen-wildfire .  # conf=1.0 | src=src-006 | d=2026-05-05
+:ent-evt-072 eo:inCountry :co-us .  # conf=1.0 | src=src-006 | d=2026-05-05
+:ent-evt-072 eo:inDomain :dom-disaster .  # conf=1.0 | src=src-006 | d=2026-05-05
+:ent-evt-072 eo:analyzedBy :org-nasa .  # conf=0.9 | src=src-006 | d=2026-05-05
+:ent-evt-078 eo:manifests :phen-military .  # conf=0.9 | src=src-013 | d=2026-05-05 | note=425 Project 5 recon sats fully operational — 2-hr NK revisit
+:ent-evt-078 eo:inCountry :co-kr .  # conf=1.0 | src=src-013 | d=2026-05-05
+:ent-evt-078 eo:inDomain :dom-defense .  # conf=1.0 | src=src-013 | d=2026-05-05
+
+# --- snapshot 2026-05-06 (2026-05-06.json) ---
+:ent-evt-081 eo:manifests :phen-volcano .  # conf=1.0 | src=src-001 | d=2026-05-06
+:ent-evt-081 eo:inCountry :co-us .  # conf=1.0 | src=src-001 | d=2026-05-06
+:ent-evt-081 eo:inDomain :dom-disaster .  # conf=1.0 | src=src-001 | d=2026-05-06
+:ent-evt-081 eo:locatedIn :ent-loc-030 .  # conf=0.95 | src=src-001 | d=2026-05-06
+:ent-evt-081 eo:observedBy :sat-sentinel2a .  # conf=0.85 | src=src-002 | d=2026-05-06
+:ent-evt-081 eo:usesSensor :sensor-msi .  # conf=0.8 | src=src-002 | d=2026-05-06
+:ent-evt-081 eo:analyzedBy :org-usgs .  # conf=0.95 | src=src-002 | d=2026-05-06 | note=USGS HVO Photo & Video Chronology
+:ent-evt-082 eo:manifests :phen-volcano .  # conf=1.0 | src=src-005 | d=2026-05-06
+:ent-evt-082 eo:inCountry :co-ph .  # conf=1.0 | src=src-005 | d=2026-05-06
+:ent-evt-082 eo:inDomain :dom-disaster .  # conf=1.0 | src=src-005 | d=2026-05-06
+:ent-evt-082 eo:locatedIn :ent-loc-014 .  # conf=0.99 | src=src-005 | d=2026-05-06
+:ent-evt-082 eo:observedBy :sat-sentinel2a .  # conf=0.95 | src=src-005 | d=2026-05-06
+:ent-evt-082 eo:observedBy :sat-himawari9 .  # conf=0.95 | src=src-007 | d=2026-05-06
+:ent-evt-082 eo:usesSensor :sensor-msi .  # conf=0.92 | src=src-006 | d=2026-05-06
+:ent-evt-082 eo:analyzedBy :org-philsa .  # conf=0.95 | src=src-006 | d=2026-05-06 | note=PhilSA NICA-DOST satellite-based ashfall maps for 87 barangays
+:ent-evt-082 eo:analyzedBy :org-vaac-tokyo .  # conf=0.9 | src=src-007 | d=2026-05-06
+:ent-evt-083 eo:manifests :phen-flood .  # conf=0.99 | src=src-010 | d=2026-05-06
+:ent-evt-083 eo:inCountry :co-co .  # conf=1.0 | src=src-010 | d=2026-05-06
+:ent-evt-083 eo:inDomain :dom-disaster .  # conf=1.0 | src=src-010 | d=2026-05-06
+:ent-evt-083 eo:locatedIn :ent-loc-031 .  # conf=0.99 | src=src-010 | d=2026-05-06
+:ent-evt-083 eo:observedBy :sat-sentinel1a .  # conf=0.95 | src=src-010 | d=2026-05-06
+:ent-evt-083 eo:observedBy :sat-sentinel2a .  # conf=0.92 | src=src-010 | d=2026-05-06
+:ent-evt-083 eo:usesSensor :sensor-c-sar .  # conf=0.95 | src=src-010 | d=2026-05-06
+:ent-evt-083 eo:usesSensor :sensor-msi .  # conf=0.92 | src=src-010 | d=2026-05-06
+:ent-evt-083 eo:analyzedBy :org-cems .  # conf=0.99 | src=src-010 | d=2026-05-06 | note=Copernicus EMS Rapid Mapping EMSR865
+:ent-evt-084 eo:manifests :phen-methane .  # conf=0.95 | src=src-013 | d=2026-05-06
+:ent-evt-084 eo:inDomain :dom-climate .  # conf=1.0 | src=src-013 | d=2026-05-06
+:ent-evt-084 eo:observedBy :sat-sentinel5p .  # conf=0.95 | src=src-013 | d=2026-05-06
+:ent-evt-084 eo:usesSensor :sensor-tropomi .  # conf=0.95 | src=src-013 | d=2026-05-06
+:ent-evt-084 eo:analyzedBy :org-esa .  # conf=0.99 | src=src-013 | d=2026-05-06
+:ent-evt-084 eo:analyzedBy :org-cams .  # conf=0.95 | src=src-014 | d=2026-05-06 | note=CAMS Methane Hotspot Explorer
+:ent-evt-085 eo:manifests :phen-military .  # conf=0.85 | src=src-015 | d=2026-05-06
+:ent-evt-085 eo:inCountry :co-ua .  # conf=0.99 | src=src-015 | d=2026-05-06
+:ent-evt-085 eo:inDomain :dom-defense .  # conf=1.0 | src=src-015 | d=2026-05-06
+:ent-evt-085 eo:observedBy :sat-worldview3 .  # conf=0.85 | src=src-015 | d=2026-05-06
+:ent-evt-085 eo:analyzedBy :org-vantor .  # conf=0.85 | src=src-015 | d=2026-05-06 | note=Vantor (Maxar Intelligence rebrand 2025-10) direct-to-device imagery test
+:ent-evt-086 eo:manifests :phen-military .  # conf=0.92 | src=src-018 | d=2026-05-06
+:ent-evt-086 eo:inCountry :co-kp .  # conf=1.0 | src=src-018 | d=2026-05-06
+:ent-evt-086 eo:inDomain :dom-defense .  # conf=1.0 | src=src-018 | d=2026-05-06
+:ent-evt-086 eo:locatedIn :ent-loc-001 .  # conf=0.99 | src=src-018 | d=2026-05-06
+:ent-evt-086 eo:observedBy :sat-worldview3 .  # conf=0.85 | src=src-018 | d=2026-05-06
+:ent-evt-086 eo:analyzedBy :org-csis-bp .  # conf=0.92 | src=src-018 | d=2026-05-06
+:ent-evt-087 eo:manifests :phen-military .  # conf=0.85 | src=src-018 | d=2026-05-06
+:ent-evt-087 eo:inCountry :co-kp .  # conf=1.0 | src=src-018 | d=2026-05-06
+:ent-evt-087 eo:inDomain :dom-defense .  # conf=1.0 | src=src-018 | d=2026-05-06
+:ent-evt-087 eo:locatedIn :ent-loc-032 .  # conf=0.95 | src=src-018 | d=2026-05-06
+:ent-evt-087 eo:observedBy :sat-worldview3 .  # conf=0.8 | src=src-018 | d=2026-05-06
+:ent-evt-087 eo:analyzedBy :org-csis-bp .  # conf=0.9 | src=src-018 | d=2026-05-06
+:ent-evt-088 eo:manifests :phen-construction .  # conf=0.9 | src=src-019 | d=2026-05-06
+:ent-evt-088 eo:inCountry :co-ru .  # conf=1.0 | src=src-019 | d=2026-05-06
+:ent-evt-088 eo:inDomain :dom-defense .  # conf=1.0 | src=src-019 | d=2026-05-06
+:ent-evt-088 eo:locatedIn :ent-loc-033 .  # conf=0.95 | src=src-019 | d=2026-05-06
+:ent-evt-088 eo:observedBy :sat-worldview3 .  # conf=0.8 | src=src-019 | d=2026-05-06
+:ent-evt-088 eo:analyzedBy :org-csis-bp .  # conf=0.92 | src=src-019 | d=2026-05-06
+:ent-evt-089 eo:manifests :phen-infra-damage .  # conf=0.95 | src=src-020 | d=2026-05-06
+:ent-evt-089 eo:inCountry :co-ir .  # conf=1.0 | src=src-020 | d=2026-05-06
+:ent-evt-089 eo:inDomain :dom-defense .  # conf=1.0 | src=src-020 | d=2026-05-06
+:ent-evt-089 eo:locatedIn :ent-loc-034 .  # conf=0.99 | src=src-020 | d=2026-05-06
+:ent-evt-089 eo:observedBy :sat-planetscope .  # conf=0.95 | src=src-020 | d=2026-05-06
+:ent-evt-089 eo:analyzedBy :org-bellingcat .  # conf=0.95 | src=src-020 | d=2026-05-06
+:ent-evt-090 eo:manifests :phen-wildfire .  # conf=0.55 | src=src-021 | d=2026-05-06 | note=DPRK 산불감시·치수망 보도 — 위성 영상 부재, satellite_unverified
+:ent-evt-090 eo:inCountry :co-kp .  # conf=1.0 | src=src-021 | d=2026-05-06
+:ent-evt-090 eo:inDomain :dom-disaster .  # conf=0.85 | src=src-021 | d=2026-05-06
+:ent-evt-090 eo:locatedIn :ent-loc-035 .  # conf=0.85 | src=src-021 | d=2026-05-06
+:ent-evt-091 eo:manifests :phen-wildfire .  # conf=0.85 | src=src-022 | d=2026-05-06 | note=CAS500-1 산불 피해지 복구 영상 지원
+:ent-evt-091 eo:inCountry :co-kr .  # conf=1.0 | src=src-022 | d=2026-05-06
+:ent-evt-091 eo:inDomain :dom-disaster .  # conf=1.0 | src=src-022 | d=2026-05-06
+:ent-evt-091 eo:observedBy :sat-cas500-1 .  # conf=0.92 | src=src-022 | d=2026-05-06
+:ent-evt-091 eo:analyzedBy :org-kari .  # conf=0.95 | src=src-022 | d=2026-05-06
+:ent-evt-092 eo:manifests :phen-construction .  # conf=0.95 | src=src-025 | d=2026-05-06
+:ent-evt-092 eo:inCountry :co-cn .  # conf=1.0 | src=src-025 | d=2026-05-06
+:ent-evt-092 eo:inDomain :dom-defense .  # conf=1.0 | src=src-025 | d=2026-05-06
+:ent-evt-092 eo:locatedIn :ent-loc-036 .  # conf=0.99 | src=src-025 | d=2026-05-06
+:ent-evt-092 eo:observedBy :sat-worldview3 .  # conf=0.85 | src=src-025 | d=2026-05-06
+:ent-evt-092 eo:observedBy :sat-planetscope .  # conf=0.85 | src=src-025 | d=2026-05-06
+:ent-evt-092 eo:analyzedBy :org-amti .  # conf=0.95 | src=src-025 | d=2026-05-06 | note=CSIS AMTI Island Tracker — 1,490 acres (6.03 km^2)
+:ent-evt-093 eo:manifests :phen-glacier .  # conf=0.99 | src=src-027 | d=2026-05-06
+:ent-evt-093 eo:inCountry :co-aq .  # conf=1.0 | src=src-027 | d=2026-05-06
+:ent-evt-093 eo:inDomain :dom-climate .  # conf=1.0 | src=src-027 | d=2026-05-06
+:ent-evt-093 eo:locatedIn :ent-loc-037 .  # conf=0.99 | src=src-027 | d=2026-05-06
+:ent-evt-093 eo:observedBy :sat-sentinel1a .  # conf=0.99 | src=src-027 | d=2026-05-06
+:ent-evt-093 eo:usesSensor :sensor-c-sar .  # conf=0.99 | src=src-027 | d=2026-05-06
+:ent-evt-093 eo:analyzedBy :org-esa .  # conf=0.99 | src=src-027 | d=2026-05-06 | note=Sentinel-1 decade-of-data — Pine Island velocity 10.6 -> 12.7 m/day
+:ent-evt-094 eo:manifests :phen-construction .  # conf=0.85 | src=src-029 | d=2026-05-06
+:ent-evt-094 eo:inCountry :co-us .  # conf=0.9 | src=src-029 | d=2026-05-06
+:ent-evt-094 eo:inDomain :dom-human .  # conf=0.85 | src=src-029 | d=2026-05-06
+:ent-evt-094 eo:analyzedBy :org-planet .  # conf=0.85 | src=src-029 | d=2026-05-06 | note=Planet Pelican-7/8/9 fleet expansion — 9 satellites operational
+:ent-evt-095 eo:manifests :phen-ndvi .  # conf=0.95 | src=src-030 | d=2026-05-06
+:ent-evt-095 eo:inCountry :co-sd .  # conf=1.0 | src=src-030 | d=2026-05-06
+:ent-evt-095 eo:inDomain :dom-agri-marine .  # conf=1.0 | src=src-030 | d=2026-05-06
+:ent-evt-095 eo:locatedIn :ent-loc-038 .  # conf=0.95 | src=src-030 | d=2026-05-06
+:ent-evt-095 eo:observedBy :sat-sentinel2a .  # conf=0.92 | src=src-030 | d=2026-05-06
+:ent-evt-095 eo:usesSensor :sensor-msi .  # conf=0.92 | src=src-030 | d=2026-05-06
+:ent-evt-095 eo:analyzedBy :org-aljazeera .  # conf=0.85 | src=src-030 | d=2026-05-06
+:ent-evt-096 eo:manifests :phen-co2 .  # conf=0.85 | src=src-031 | d=2026-05-06
+:ent-evt-096 eo:inDomain :dom-climate .  # conf=1.0 | src=src-031 | d=2026-05-06
+:ent-evt-096 eo:analyzedBy :org-nau .  # conf=0.95 | src=src-031 | d=2026-05-06 | note=NAU finds Climate TRACE urban CO2 ~70% underestimate
+:ent-evt-096 eo:analyzedBy :org-climatetrace .  # conf=0.85 | src=src-032 | d=2026-05-06 | note=Climate TRACE Release 5.6.0 (Jan 2026 emissions)
+:ent-evt-097 eo:manifests :phen-military .  # conf=0.92 | src=src-033 | d=2026-05-06
+:ent-evt-097 eo:inCountry :co-ve .  # conf=0.95 | src=src-033 | d=2026-05-06
+:ent-evt-097 eo:inDomain :dom-defense .  # conf=1.0 | src=src-033 | d=2026-05-06
+:sat-pelican eo:operatedBy :org-planet .  # conf=0.99 | src=src-029 | d=2026-05-06
+:sat-worldview3 eo:operatedBy :org-vantor .  # conf=0.99 | src=src-016 | d=2026-05-06 | note=Vantor (formerly Maxar Intelligence) — rebrand 2025-10
+:ent-evt-085 eo:supersedes :ent-evt-064 .  # conf=0.85 | src=src-017 | d=2026-05-06 | note=Vantor restored Ukraine access (after Apr 2026 suspension)
+:sat-cas500-2 eo:missionStatus :commissioning .  # conf=0.95 | src=src-023 | d=2026-05-06 | note=한반도 첫 교신 성공 (2026-05-03), 4-개월 commissioning 단계
+:ent-evt-079 eo:partOfSeries :ent-evt-032 .  # conf=0.9 | src=src-024 | d=2026-05-06 | note=CAS500-2 발사(ent-evt-032) → 농업 활용(ent-evt-079) 시리즈 — 2026-05-05 보고 update
+
+# --- inferred triples (from reasoning) ---
+:ent-evt-001 eo:multiSatBoost :_0.20 .
+:ent-evt-002 eo:multiSatBoost :_0.20 .
+:ent-evt-006 eo:multiSatBoost :_0.20 .
+:ent-evt-008 eo:multiSatBoost :_0.20 .
+:ent-evt-009 eo:multiSatBoost :_0.20 .
+:ent-evt-011 eo:multiSatBoost :_0.20 .
+:ent-evt-012 eo:multiSatBoost :_0.20 .
+:ent-evt-013 eo:multiSatBoost :_0.20 .
+:ent-evt-018 eo:multiSatBoost :_0.20 .
+:ent-evt-003 eo:thermalBoost :_0.10 .
+:ent-evt-004 eo:sarBoost :_0.10 .
+:ent-evt-007 eo:sarBoost :_0.10 .
+:ent-evt-010 eo:tracegasBoost :_0.15 .
+:ent-evt-011 eo:tracegasBoost :_0.15 .
+:ent-evt-017 eo:sarBoost :_0.10 .
+:ent-evt-018 eo:sarBoost :_0.10 .
+:ent-evt-019 eo:sarBoost :_0.10 .
+:ent-evt-001 eo:hiResBoost :_0.15 .
+:ent-evt-002 eo:hiResBoost :_0.15 .
+:ent-evt-006 eo:hiResBoost :_0.15 .
+:ent-evt-008 eo:hiResBoost :_0.15 .
+:ent-evt-001 eo:officialBoost :_0.15 .
+:ent-evt-003 eo:officialBoost :_0.15 .
+:ent-evt-004 eo:officialBoost :_0.15 .
+:ent-evt-008 eo:officialBoost :_0.15 .
+:ent-evt-012 eo:officialBoost :_0.15 .
+:ent-evt-013 eo:officialBoost :_0.15 .
+:ent-evt-018 eo:officialBoost :_0.15 .
+:ent-evt-001 eo:koreaBoost :_0.10 .
+:ent-evt-002 eo:koreaBoost :_0.10 .
+:ent-evt-014 eo:koreaBoost :_0.10 .
+:ent-evt-015 eo:koreaBoost :_0.10 .
+:ent-evt-003 eo:disasterPriorityBoost :_0.20 .
+:ent-evt-009 eo:disasterPriorityBoost :_0.20 .
+:ent-evt-012 eo:disasterPriorityBoost :_0.20 .
+:ent-evt-013 eo:disasterPriorityBoost :_0.20 .
+:ent-evt-017 eo:disasterPriorityBoost :_0.20 .
+:ent-evt-001 eo:baCredibilityBoost :_0.10 .
+:ent-evt-002 eo:baCredibilityBoost :_0.10 .
+:ent-evt-003 eo:baCredibilityBoost :_0.10 .
+:ent-evt-006 eo:baCredibilityBoost :_0.10 .
+:ent-evt-007 eo:baCredibilityBoost :_0.10 .
+:ent-evt-008 eo:baCredibilityBoost :_0.10 .
+:ent-evt-009 eo:baCredibilityBoost :_0.10 .
+:ent-evt-017 eo:baCredibilityBoost :_0.10 .
+:ent-evt-020 eo:multiSatBoost :_0.20 .
+:ent-evt-020 eo:thermalBoost :_0.10 .
+:ent-evt-020 eo:disasterPriorityBoost :_0.20 .
+:ent-evt-021 eo:officialBoost :_0.15 .
+:ent-evt-021 eo:disasterPriorityBoost :_0.20 .
+:ent-evt-021 eo:baCredibilityBoost :_0.10 .
+:ent-evt-022 eo:koreaBoost :_0.10 .
+:ent-evt-022 eo:hiResBoost :_0.15 .
+:ent-evt-022 eo:baCredibilityBoost :_0.10 .
+:ent-evt-023 eo:koreaBoost :_0.10 .
+:ent-evt-024 eo:koreaBoost :_0.10 .
+:ent-evt-025 eo:multiSatBoost :_0.20 .
+:ent-evt-025 eo:baCredibilityBoost :_0.10 .
+:ent-evt-026 eo:sarBoost :_0.10 .
+:ent-evt-026 eo:disasterPriorityBoost :_0.20 .
+:ent-evt-026 eo:baCredibilityBoost :_0.10 .
+:ent-evt-027 eo:multiSatBoost :_0.20 .
+:ent-evt-027 eo:sarBoost :_0.10 .
+:ent-evt-027 eo:thermalBoost :_0.10 .
+:ent-evt-027 eo:disasterPriorityBoost :_0.20 .
+:ent-evt-027 eo:baCredibilityBoost :_0.10 .
+:ent-evt-028 eo:multiSatBoost :_0.20 .
+:ent-evt-028 eo:sarBoost :_0.10 .
+:ent-evt-028 eo:hiResBoost :_0.15 .
+:ent-evt-028 eo:baCredibilityBoost :_0.10 .
+:ent-evt-029 eo:thermalBoost :_0.10 .
+:ent-evt-029 eo:officialBoost :_0.15 .
+:ent-evt-029 eo:baCredibilityBoost :_0.10 .
+:ent-evt-030 eo:officialBoost :_0.15 .
+:ent-evt-020 eo:officialBoost :_0.15 .
+:ent-evt-020 eo:baCredibilityBoost :_0.10 .
+:ent-evt-020 eo:priorityBoost :_0.20 .
+:ent-evt-031 eo:hiResBoost :_0.15 .
+:ent-evt-034 eo:sarBoost :_0.10 .
+:ent-evt-035 eo:tracegasBoost :_0.15 .
+:ent-evt-032 eo:koreaBoost :_0.10 .
+:ent-evt-042 eo:multiSatBoost :_0.20 .
+:ent-evt-045 eo:multiSatBoost :_0.20 .
+:ent-evt-046 eo:multiSatBoost :_0.20 .
+:ent-evt-043 eo:multiSatBoost :_0.20 .
+:ent-evt-042 eo:sarBoost :_0.10 .
+:ent-evt-046 eo:tracegasBoost :_0.15 .
+:ent-evt-043 eo:hiResBoost :_0.15 .
+:ent-evt-037 eo:officialBoost :_0.15 .
+:ent-evt-042 eo:officialBoost :_0.15 .
+:ent-evt-046 eo:officialBoost :_0.15 .
+:ent-evt-037 eo:baCredibilityBoost :_0.10 .
+:ent-evt-044 eo:baCredibilityBoost :_0.10 .
+:ent-evt-042 eo:baCredibilityBoost :_0.10 .
+:ent-evt-038 eo:triggeredBy :ent-evt-037 .
+:ent-evt-042 eo:partOfSeries :ent-evt-025 .
+:ent-evt-053 eo:tracegasBoost :_0.15 .
+:ent-evt-052 eo:officialBoost :_0.15 .
+:ent-evt-050 eo:officialBoost :_0.15 .
+:ent-evt-048 eo:partOfSeries :ent-evt-021 .
+:ent-evt-049 eo:partOfSeries :ent-evt-029 .
+:ent-evt-047 eo:koreaBoost :_0.10 .
+:ent-evt-059 eo:multiSatBoost :_0.20 .
+:ent-evt-068 eo:multiSatBoost :_0.20 .
+:ent-evt-066 eo:tracegasBoost :_0.15 .
+:ent-evt-004 eo:partOfSeries :ent-evt-021 .
+:ent-evt-029 eo:partOfSeries :ent-evt-029 .
+:ent-evt-074 eo:multiSatBoost :_0.20 .
+:ent-evt-070 eo:partOfSeries :ent-evt-021 .
+:ent-evt-071 eo:partOfSeries :ent-evt-029 .
+:ent-evt-072 eo:partOfSeries :ent-evt-020 .
+:ent-evt-077 eo:koreaBoost :_0.10 .
+:ent-evt-078 eo:koreaBoost :_0.10 .
+:ent-evt-079 eo:koreaBoost :_0.10 .
+:ent-evt-070 eo:officialBoost :_0.15 .
+:ent-evt-072 eo:officialBoost :_0.15 .
+:ent-evt-075 eo:commercialBoost :_0.10 .
+:ent-evt-077 eo:analystBoost :_0.10 .
+:ent-evt-072 eo:baCredibilityBoost :_0.10 .
+:ent-evt-082 eo:multiSatBoost :_0.20 .
+:ent-evt-083 eo:multiSatBoost :_0.20 .
+:ent-evt-084 eo:multiSatBoost :_0.20 .
+:ent-evt-092 eo:multiSatBoost :_0.20 .
+:ent-evt-081 eo:partOfSeries :ent-evt-070 .
+:ent-evt-082 eo:partOfSeries :ent-evt-071 .
+:ent-evt-082 eo:partOfSeries :ent-evt-029 .
+:ent-evt-082 eo:triggeredBy :ent-evt-082 .
+:evt-mayon-cascading-respiratory-guinobatan eo:triggeredBy :ent-evt-082 .
+:ent-evt-093 eo:triggeredBy :ent-evt-042 .
+:ent-evt-082 eo:thermalBoost :_0.10 .
+:ent-evt-083 eo:sarBoost :_0.10 .
+:ent-evt-084 eo:tracegasBoost :_0.15 .
+:ent-evt-093 eo:sarBoost :_0.10 .
+:ent-evt-086 eo:hiResBoost :_0.15 .
+:ent-evt-088 eo:hiResBoost :_0.15 .
+:ent-evt-089 eo:hiResBoost :_0.15 .
+:ent-evt-092 eo:hiResBoost :_0.15 .
+:ent-evt-081 eo:officialBoost :_0.15 .
+:ent-evt-082 eo:officialBoost :_0.15 .
+:ent-evt-083 eo:officialBoost :_0.15 .
+:ent-evt-084 eo:officialBoost :_0.15 .
+:ent-evt-091 eo:officialBoost :_0.15 .
+:ent-evt-093 eo:officialBoost :_0.15 .
+:ent-evt-085 eo:commercialBoost :_0.10 .
+:ent-evt-094 eo:commercialBoost :_0.10 .
+:ent-evt-086 eo:analystBoost :_0.10 .
+:ent-evt-088 eo:analystBoost :_0.10 .
+:ent-evt-089 eo:analystBoost :_0.10 .
+:ent-evt-092 eo:analystBoost :_0.10 .
+:ent-evt-095 eo:analystBoost :_0.10 .
+:ent-evt-086 eo:koreaBoost :_0.10 .
+:ent-evt-087 eo:koreaBoost :_0.10 .
+:ent-evt-090 eo:koreaBoost :_0.10 .
+:ent-evt-091 eo:koreaBoost :_0.10 .
+:ent-evt-081 eo:priorityBoost :_0.20 .
+:ent-evt-082 eo:priorityBoost :_0.20 .
+:ent-evt-083 eo:priorityBoost :_0.20 .
+:ent-evt-089 eo:priorityBoost :_0.20 .
+:ent-evt-093 eo:priorityBoost :_0.20 .
+:ent-evt-095 eo:priorityBoost :_0.20 .
+:ent-evt-081 eo:baCredibilityBoost :_0.10 .
+:ent-evt-082 eo:baCredibilityBoost :_0.10 .
+:ent-evt-089 eo:baCredibilityBoost :_0.10 .
+:ent-evt-092 eo:baCredibilityBoost :_0.10 .
+:ent-evt-093 eo:baCredibilityBoost :_0.10 .
+:ent-evt-095 eo:baCredibilityBoost :_0.10 .

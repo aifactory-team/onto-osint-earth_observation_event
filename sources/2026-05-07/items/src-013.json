@@ -1,0 +1,32 @@
+{
+  "id": "src-013",
+  "title": "미얀마 남서몬순 5/13~18 상륙 예고 — 남부 지역 전국적 홍수 경보 (Sentinel-1 GFM 모니터링)",
+  "url": "https://news.myantrade.com/archives/48187",
+  "snippet": "미얀마 기상청은 2026-05-13~05-18 남서 몬순이 미얀마 남부 상륙 예고 — 강 유역 거주자에게 홍수 대피 매뉴얼 숙지 권고. Sentinel-1 GFM 모니터링 대상.",
+  "source_name": "AD Shofar",
+  "language": "ko",
+  "discovered_date": "2026-05-07",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규 — 14일 인덱스에 미얀마 2026 남서몬순 상륙 일정 및 Sentinel-1 GFM 사전 모니터링 보도 없음. 남부 홍수 사전경보 이벤트",
+  "entities": [
+    {"id": "temp-evt-013", "type": "Event", "name": "Myanmar SW monsoon flood pre-warning (2026-05-13~18)", "properties": {"phenomenon": "flood", "lat": 16.85, "lon": 96.20, "country": "MM", "observation_date": "2026-05-13", "confidence": 0.72}},
+    {"id": "sat-sentinel1a", "type": "Satellite", "name": "Sentinel-1A"},
+    {"id": "sat-sentinel1c", "type": "Satellite", "name": "Sentinel-1C"},
+    {"id": "sat-sentinel1d", "type": "Satellite", "name": "Sentinel-1D"},
+    {"id": "sensor-c-sar", "type": "Sensor", "name": "C-band SAR"},
+    {"id": "org-cems", "type": "Organization", "name": "Copernicus EMS"},
+    {"id": "temp-co-mm", "type": "Country", "name": "미얀마", "properties": {"iso_code": "MM", "region": "동남아시아"}}
+  ],
+  "relations": [
+    {"subject": "temp-evt-013", "predicate": "observedBy", "object": "sat-sentinel1a"},
+    {"subject": "temp-evt-013", "predicate": "observedBy", "object": "sat-sentinel1c"},
+    {"subject": "temp-evt-013", "predicate": "observedBy", "object": "sat-sentinel1d"},
+    {"subject": "temp-evt-013", "predicate": "usesSensor", "object": "sensor-c-sar"},
+    {"subject": "temp-evt-013", "predicate": "analyzedBy", "object": "org-cems"},
+    {"subject": "temp-evt-013", "predicate": "manifests", "object": "phen-flood"},
+    {"subject": "temp-evt-013", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "temp-evt-013", "predicate": "inCountry", "object": "temp-co-mm"}
+  ]
+}

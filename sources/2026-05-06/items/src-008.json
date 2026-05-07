@@ -1,0 +1,23 @@
+{
+  "id": "src-008",
+  "title": "Mayon Volcano Volcanic Ash Advisory: ERUPTION AT 20260505/2341Z FL090 EXTD WSW",
+  "url": "https://www.volcanodiscovery.com/mayon/news/301533/vaac-advisory-2026-570.html",
+  "snippet": "Himawari-9 detected May 5 23:41Z eruption; ash extending WSW at FL090",
+  "source_name": "VolcanoDiscovery / VAAC Tokyo",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "reported",
+  "related_report": "2026-05-05/src-004",
+  "related_item": "evt-mayon-2026",
+  "tag_reason": "메이온 5월 5일 23:41Z 분화 — 5/5 src-004(Himawari-9 VAAC 0544Z)와 같은 5월 5일 분화 시리즈, 동일 후속 보도.",
+  "entities": [
+    {"id": "evt-mayon-2026", "type": "Event", "name": "Mayon Volcano 2026 eruption", "properties": {"phenomenon": "volcanic_eruption", "lat": 13.2572, "lon": 123.6856, "country": "PH", "observation_date": "2026-05-05"}},
+    {"id": "sat-himawari9", "matched_id": "sat-himawari9", "type": "Satellite"},
+    {"id": "org-vaac-tokyo", "type": "Organization", "name": "VAAC Tokyo", "properties": {"org_type": "weather_agency"}}
+  ],
+  "relations": [
+    {"subject": "evt-mayon-2026", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "evt-mayon-2026", "predicate": "analyzedBy", "object": "org-vaac-tokyo"},
+    {"subject": "evt-mayon-2026", "predicate": "manifests", "object": "phen-volcano"}
+  ]
+}

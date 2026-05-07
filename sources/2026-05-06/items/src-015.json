@@ -1,0 +1,27 @@
+{
+  "id": "src-015",
+  "title": "Ukrainian forces test direct-to-device satellite imagery for frontline troops (Vantor)",
+  "url": "https://spacenews.com/ukrainian-forces-test-direct-to-device-satellite-imagery-for-frontline-troops/",
+  "snippet": "Vantor direct-to-device imagery 15-min tasking-to-data cycle test in Ukraine",
+  "source_name": "SpaceNews",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "new",
+  "related_report": null,
+  "related_item": "evt-vantor-ukraine-d2d-2026",
+  "tag_reason": "Vantor(전 Maxar Intelligence) 직-to-단말 영상 시험 — 우크라이나 전방 15분 tasking-to-data. 이전 14일 인덱스에 미언급.",
+  "entities": [
+    {"id": "evt-vantor-ukraine-d2d-2026", "type": "Event", "name": "Vantor direct-to-device satellite imagery test in Ukraine 2026", "properties": {"phenomenon": "military_buildup", "country": "UA", "observation_date": "2026-05-06", "severity": "moderate"}},
+    {"id": "org-vantor", "type": "Organization", "name": "Vantor (formerly Maxar Intelligence)", "properties": {"org_type": "commercial_imagery", "country": "US"}, "matched_id": "org-maxar"},
+    {"id": "sat-worldview3", "matched_id": "sat-worldview3", "type": "Satellite"},
+    {"id": "co-ua", "matched_id": "co-ua", "type": "Country"},
+    {"id": "phen-military", "matched_id": "phen-military", "type": "Phenomenon"}
+  ],
+  "relations": [
+    {"subject": "evt-vantor-ukraine-d2d-2026", "predicate": "analyzedBy", "object": "org-vantor"},
+    {"subject": "evt-vantor-ukraine-d2d-2026", "predicate": "observedBy", "object": "sat-worldview3"},
+    {"subject": "evt-vantor-ukraine-d2d-2026", "predicate": "inCountry", "object": "co-ua"},
+    {"subject": "evt-vantor-ukraine-d2d-2026", "predicate": "manifests", "object": "phen-military"},
+    {"subject": "evt-vantor-ukraine-d2d-2026", "predicate": "inDomain", "object": "dom-defense"}
+  ]
+}

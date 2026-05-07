@@ -1,0 +1,25 @@
+{
+  "id": "src-021",
+  "title": "[조선중앙TV 보도 분석] 2026년 5월 6일 — 황해북도 사방야계·개성 산불감시·전국치수망",
+  "url": "https://www.spnews.co.kr/news/articleView.html?idxno=106969",
+  "snippet": "북한 5월 6일 보도: 황해북도 사방야계 공사·개성시 산불감시 강화·1단계 전국치수망계획 진행",
+  "source_name": "서울평양뉴스 (SPN)",
+  "language": "ko",
+  "discovered_date": "2026-05-06",
+  "tag": "new",
+  "related_report": null,
+  "related_item": "evt-dprk-fire-flood-prep-2026",
+  "tag_reason": "북한 5/6 자체 보도 — 산불감시·치수망 등 재해 대비 인프라 활동. 위성 출처 미명시이나 한반도 GeoFocus.",
+  "satellite_unverified": true,
+  "entities": [
+    {"id": "evt-dprk-fire-flood-prep-2026", "type": "Event", "name": "DPRK 산불감시 + 사방야계 + 치수망 (2026-05)", "properties": {"phenomenon": "wildfire", "country": "KP", "observation_date": "2026-05-06", "severity": "low"}},
+    {"id": "co-kp", "matched_id": "co-kp", "type": "Country"},
+    {"id": "loc-kaesong", "type": "Location", "name": "개성시 (Kaesong)", "properties": {"country": "KP", "lat": 37.97, "lon": 126.55}},
+    {"id": "loc-hwangbuk", "type": "Location", "name": "황해북도", "properties": {"country": "KP"}}
+  ],
+  "relations": [
+    {"subject": "evt-dprk-fire-flood-prep-2026", "predicate": "inCountry", "object": "co-kp"},
+    {"subject": "evt-dprk-fire-flood-prep-2026", "predicate": "locatedIn", "object": "loc-kaesong"},
+    {"subject": "evt-dprk-fire-flood-prep-2026", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

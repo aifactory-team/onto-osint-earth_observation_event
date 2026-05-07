@@ -1,0 +1,23 @@
+{
+  "id": "src-033",
+  "title": "United States military buildup in the Caribbean during Operation Southern Spear",
+  "url": "https://en.wikipedia.org/wiki/United_States_military_buildup_in_the_Caribbean_during_Operation_Southern_Spear",
+  "snippet": "Operation Southern Spear ~15,000 personnel; F-35, AC-130, USS Iwo Jima ARG",
+  "source_name": "Wikipedia",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "reported",
+  "related_report": "2026-05-05/src-011",
+  "related_item": null,
+  "tag_reason": "동일 사건 — 2026-05-05 인덱스(src-011) US Caribbean buildup 후속 백과 페이지",
+  "satellite_unverified": true,
+  "entities": [
+    {"id": "evt-us-caribbean-buildup-2026", "type": "Event", "name": "US Operation Southern Spear Caribbean buildup 2026", "properties": {"phenomenon": "military_buildup", "lat": 12.0, "lon": -68.0, "country": "VE", "observation_date": "2026-05", "severity": "high"}},
+    {"id": "co-us", "matched_id": "co-us", "type": "Country"},
+    {"id": "co-ve", "type": "Country", "name": "Venezuela", "properties": {"iso_code": "VE"}}
+  ],
+  "relations": [
+    {"subject": "evt-us-caribbean-buildup-2026", "predicate": "inCountry", "object": "co-ve"},
+    {"subject": "evt-us-caribbean-buildup-2026", "predicate": "manifests", "object": "phen-military"}
+  ]
+}

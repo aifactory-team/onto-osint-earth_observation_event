@@ -1,0 +1,32 @@
+{
+  "id": "src-022",
+  "title": "Record-Setting Retreat of Hektoria Glacier — 8 km in two months, fastest modern retreat",
+  "url": "https://science.nasa.gov/earth/earth-observatory/record-setting-retreat-of-hektoria-glacier/",
+  "snippet": "Antarctica Hektoria Glacier retreated 8 km in two months; satellite + seismic data document fastest modern retreat.",
+  "source_name": "NASA Earth Observatory",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "reported",
+  "related_report": "2026-04-30/src-010",
+  "related_item": "2026-04-30/src-010",
+  "tag_reason": "4/30 src-010 (Hektoria fastest collapse)에서 동일 사건 등록. 5/7 NASA Earth Observatory IoTD 페이지는 동일 사실 — Hektoria 8km/2mo, Sentinel-1/2 + ICESat-2 활용",
+  "entities": [
+    {"id": "temp-evt-022", "type": "Event", "name": "Hektoria Glacier rapid retreat — 8 km in 2 months (Antarctica)", "properties": {"phenomenon": "glacier_retreat", "lat": -65.18, "lon": -61.76, "country": "AQ", "observation_date": "2026", "retreat_km": 8, "confidence": 0.90, "before_after_available": true}},
+    {"id": "sat-sentinel1a", "type": "Satellite", "name": "Sentinel-1A"},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sensor-c-sar", "type": "Sensor", "name": "C-band SAR"},
+    {"id": "sensor-msi", "type": "Sensor", "name": "MSI"},
+    {"id": "org-nasa", "type": "Organization", "name": "NASA"},
+    {"id": "co-aq", "type": "Country", "name": "남극"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-022", "predicate": "observedBy", "object": "sat-sentinel1a"},
+    {"subject": "temp-evt-022", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "temp-evt-022", "predicate": "usesSensor", "object": "sensor-c-sar"},
+    {"subject": "temp-evt-022", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "temp-evt-022", "predicate": "analyzedBy", "object": "org-nasa"},
+    {"subject": "temp-evt-022", "predicate": "manifests", "object": "phen-glacier"},
+    {"subject": "temp-evt-022", "predicate": "inDomain", "object": "dom-climate"},
+    {"subject": "temp-evt-022", "predicate": "inCountry", "object": "co-aq"}
+  ]
+}

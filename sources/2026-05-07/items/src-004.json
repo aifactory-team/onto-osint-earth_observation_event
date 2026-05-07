@@ -1,0 +1,23 @@
+{
+  "id": "src-004",
+  "title": "USGS Volcano Updates — Kilauea Halemaumau Episode 46 ended after 9 hours of fountaining (May 5)",
+  "url": "https://www.usgs.gov/programs/VHP/volcano-updates",
+  "snippet": "USGS HVO reports Kilauea Halemaumau Episode 46 ended abruptly on May 5, 2026 after 9 hours of continuous lava fountaining.",
+  "source_name": "USGS VHP",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "reported",
+  "related_report": "2026-05-06/src-001",
+  "related_item": "2026-05-06/src-001",
+  "tag_reason": "5/6 보고서에서 Kilauea Episode 46 종료 (9시간 분출, 2026-05-05)가 다수 매체로 reported — 동일 이벤트, USGS VHP 페이지는 동일 사실 재서술",
+  "entities": [
+    {"id": "temp-evt-004", "type": "Event", "name": "Kilauea Halemaumau Episode 46 — 9-hour fountaining (2026-05-05)", "properties": {"phenomenon": "volcanic_eruption", "lat": 19.4069, "lon": -155.2834, "country": "US", "observation_date": "2026-05-05", "duration_hours": 9, "confidence": 0.85}},
+    {"id": "org-usgs", "type": "Organization", "name": "USGS"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-004", "predicate": "analyzedBy", "object": "org-usgs"},
+    {"subject": "temp-evt-004", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "temp-evt-004", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "temp-evt-004", "predicate": "inCountry", "object": "co-us"}
+  ]
+}

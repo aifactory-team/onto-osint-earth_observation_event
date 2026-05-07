@@ -1,0 +1,26 @@
+{
+  "id": "src-004",
+  "title": "USGS Volcano Notice — Kilauea WATCH→ADVISORY, ORANGE→YELLOW (May 6 18:12Z)",
+  "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-HVO-2026-05-06T18:12:59+00:00",
+  "snippet": "Alert level dropped from WATCH to ADVISORY; aviation color from ORANGE to YELLOW",
+  "source_name": "USGS HVO",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "update",
+  "related_report": "2026-05-05/src-001",
+  "related_item": "evt-kilauea-ep46",
+  "tag_reason": "Episode 46 종료 후 USGS 공식 알림 (5/6 18:12Z) — alert level 변경 (WATCH→ADVISORY)",
+  "satellite_unverified": true,
+  "entities": [
+    {"id": "evt-kilauea-ep46", "type": "Event", "name": "Kilauea Episode 46", "properties": {"phenomenon": "volcanic_eruption", "lat": 19.4069, "lon": -155.2834, "country": "US", "end_date": "2026-05-06", "severity": "moderate"}},
+    {"id": "org-usgs-hvo", "type": "Organization", "name": "USGS Hawaiian Volcano Observatory", "properties": {"org_type": "space_agency"}, "matched_id": "org-usgs"},
+    {"id": "co-us", "matched_id": "co-us", "type": "Country", "name": "US"},
+    {"id": "phen-volcano", "matched_id": "phen-volcano", "type": "Phenomenon"}
+  ],
+  "relations": [
+    {"subject": "evt-kilauea-ep46", "predicate": "analyzedBy", "object": "org-usgs-hvo"},
+    {"subject": "evt-kilauea-ep46", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "evt-kilauea-ep46", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "evt-kilauea-ep46", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

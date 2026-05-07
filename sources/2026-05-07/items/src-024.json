@@ -1,0 +1,31 @@
+{
+  "id": "src-024",
+  "title": "China militarizing Antelope Reef in Paracels — Sentinel-2 imagery shows large airbase construction",
+  "url": "https://www.defensenews.com/global/asia-pacific/2026/01/27/china-appears-set-on-militarizing-another-reef-in-the-south-china-sea/",
+  "snippet": "Sentinel-2 imagery shows large airbase construction on Antelope Reef in the Paracels since October; dredging across reef lagoon expanding land around existing outpost.",
+  "source_name": "Defense News",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "reported",
+  "related_report": "2026-05-06/src-025",
+  "related_item": "2026-05-06/src-025",
+  "tag_reason": "5/6 src-025 (Antelope Reef AMTI Island Tracker)와 동일 사건. 5/7 Defense News 보도는 Sentinel-2 활용 묘사 — 동일 군사화·매립",
+  "entities": [
+    {"id": "temp-evt-024", "type": "Event", "name": "Antelope Reef airbase construction + reef expansion (Paracels, China)", "properties": {"phenomenon": "military_buildup", "lat": 16.46, "lon": 112.55, "country": "CN", "observation_date": "2025-10/2026-04", "confidence": 0.90}},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sat-worldview3", "type": "Satellite", "name": "WorldView-3"},
+    {"id": "sensor-msi", "type": "Sensor", "name": "MSI"},
+    {"id": "org-amti", "type": "Organization", "name": "CSIS AMTI"},
+    {"id": "co-cn", "type": "Country", "name": "중국"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-024", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "temp-evt-024", "predicate": "observedBy", "object": "sat-worldview3"},
+    {"subject": "temp-evt-024", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "temp-evt-024", "predicate": "analyzedBy", "object": "org-amti"},
+    {"subject": "temp-evt-024", "predicate": "manifests", "object": "phen-military"},
+    {"subject": "temp-evt-024", "predicate": "manifests", "object": "phen-construction"},
+    {"subject": "temp-evt-024", "predicate": "inDomain", "object": "dom-defense"},
+    {"subject": "temp-evt-024", "predicate": "inCountry", "object": "co-cn"}
+  ]
+}

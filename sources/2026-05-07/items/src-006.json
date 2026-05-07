@@ -1,0 +1,28 @@
+{
+  "id": "src-006",
+  "title": "ESA Sentinel-5P data used in new methane detection system (UN MARS, daily TROPOMI XCH4)",
+  "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P/Sentinel-5P_data_used_in_new_methane_detection_system",
+  "snippet": "UN MARS uses Sentinel-5P daily TROPOMI XCH4 to detect large plumes and hot-spots with low latency.",
+  "source_name": "ESA",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "reported",
+  "related_report": "2026-05-06/src-013",
+  "related_item": "2026-05-06/src-013",
+  "tag_reason": "5/6 src-013 동일 ESA URL — UN MARS Sentinel-5P TROPOMI 메탄 탐지 시스템, 동일 보도",
+  "entities": [
+    {"id": "temp-evt-006", "type": "Event", "name": "UN MARS methane detection system (Sentinel-5P TROPOMI daily XCH4)", "properties": {"phenomenon": "methane_plume", "country": null, "admin": "global", "observation_date": "2026-05", "confidence": 0.90}},
+    {"id": "sat-sentinel5p", "type": "Satellite", "name": "Sentinel-5P"},
+    {"id": "sensor-tropomi", "type": "Sensor", "name": "TROPOMI"},
+    {"id": "org-esa", "type": "Organization", "name": "ESA"},
+    {"id": "temp-org-unmars", "type": "Organization", "name": "UN Methane Alert and Response System (MARS)", "properties": {"org_type": "un_body", "country": "INTL"}}
+  ],
+  "relations": [
+    {"subject": "temp-evt-006", "predicate": "observedBy", "object": "sat-sentinel5p"},
+    {"subject": "temp-evt-006", "predicate": "usesSensor", "object": "sensor-tropomi"},
+    {"subject": "temp-evt-006", "predicate": "analyzedBy", "object": "temp-org-unmars"},
+    {"subject": "temp-evt-006", "predicate": "reportedBy", "object": "org-esa"},
+    {"subject": "temp-evt-006", "predicate": "manifests", "object": "phen-methane"},
+    {"subject": "temp-evt-006", "predicate": "inDomain", "object": "dom-climate"}
+  ]
+}

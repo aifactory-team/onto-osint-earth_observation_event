@@ -1,0 +1,32 @@
+{
+  "id": "src-027",
+  "title": "아마존 열대우림 파괴 -67.9% YoY (2026-04, 브라질 PRODES/DETER, Sentinel-2/Landsat)",
+  "url": "https://www.newspenguin.com/news/articleView.html?idxno=14106",
+  "snippet": "브라질 4월 한 달 아마존 벌채 면적 2022-04 대비 -67.9% — Sentinel-2/Landsat 기반 PRODES/DETER 데이터 인용.",
+  "source_name": "뉴스펭귄",
+  "language": "ko",
+  "discovered_date": "2026-05-07",
+  "tag": "update",
+  "related_report": "src-023",
+  "related_item": "src-023",
+  "tag_reason": "src-023 (GFW 2026 보고서 -36% YoY)의 후속 — 브라질 4월 단일 월 -67.9% 추가 수치, INPE PRODES/DETER 출처 (동일 영역, 다른 측정기간) → update",
+  "entities": [
+    {"id": "temp-evt-027", "type": "Event", "name": "Brazil Amazon Apr 2026 deforestation -67.9% YoY (PRODES/DETER)", "properties": {"phenomenon": "deforestation", "lat": -3.4653, "lon": -62.2159, "country": "BR", "observation_date": "2026-04", "yoy_pct": -67.9, "confidence": 0.82}},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9"},
+    {"id": "sensor-msi", "type": "Sensor", "name": "MSI"},
+    {"id": "sensor-oli", "type": "Sensor", "name": "OLI"},
+    {"id": "org-inpe", "type": "Organization", "name": "INPE"},
+    {"id": "co-br", "type": "Country", "name": "브라질"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-027", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "temp-evt-027", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "temp-evt-027", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "temp-evt-027", "predicate": "usesSensor", "object": "sensor-oli"},
+    {"subject": "temp-evt-027", "predicate": "analyzedBy", "object": "org-inpe"},
+    {"subject": "temp-evt-027", "predicate": "manifests", "object": "phen-defor"},
+    {"subject": "temp-evt-027", "predicate": "inDomain", "object": "dom-human"},
+    {"subject": "temp-evt-027", "predicate": "inCountry", "object": "co-br"}
+  ]
+}

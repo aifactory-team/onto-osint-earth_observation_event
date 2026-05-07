@@ -1,0 +1,21 @@
+{
+  "id": "src-011",
+  "title": "Explore GFW's Updated Integrated Disturbance Alerts (DIST-ALERT, Landsat+Sentinel-2)",
+  "url": "https://www.globalforestwatch.org/blog/data-and-tools/integrated-deforestation-alerts/",
+  "snippet": "GFW integrated DIST-ALERT (Landsat+Sentinel-2) 30m resolution",
+  "source_name": "Global Forest Watch",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "update",
+  "related_report": "2026-05-01/src-018",
+  "related_item": null,
+  "tag_reason": "GFW DIST-ALERT 도구 — 5월 신규 업데이트 페이지 (Landsat+Sentinel-2 통합)",
+  "entities": [
+    {"id": "org-gfw", "matched_id": "org-gfw", "type": "Organization", "name": "Global Forest Watch"},
+    {"id": "sat-landsat9", "matched_id": "sat-landsat9", "type": "Satellite"},
+    {"id": "sat-sentinel2a", "matched_id": "sat-sentinel2a", "type": "Satellite"},
+    {"id": "sensor-oli", "matched_id": "sensor-oli", "type": "Sensor"},
+    {"id": "sensor-msi", "matched_id": "sensor-msi", "type": "Sensor"}
+  ],
+  "relations": []
+}

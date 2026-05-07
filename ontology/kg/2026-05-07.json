@@ -1,0 +1,312 @@
+{
+  "date": "2026-05-07",
+  "description": "2026-05-07 일별 KG 스냅샷 — 신규 트리플(explicit) + 추론 트리플(inferred) + 갱신 트리플(update_of/supersedes/partOfSeries)",
+  "new_triples": [
+    {"subject": "ent-evt-098", "predicate": "manifests", "object": "phen-wildfire", "source_id": "src-001", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-098", "predicate": "inCountry", "object": "co-us", "source_id": "src-001", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-098", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-001", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-098", "predicate": "locatedIn", "object": "ent-loc-039", "source_id": "src-001", "date": "2026-05-07", "confidence": 0.95, "type": "explicit", "note": "Pineland Road & Hwy 82 GA"},
+    {"subject": "ent-evt-098", "predicate": "observedBy", "object": "sat-landsat8", "source_id": "src-001", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-098", "predicate": "observedBy", "object": "sat-landsat9", "source_id": "src-001", "date": "2026-05-07", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-098", "predicate": "usesSensor", "object": "sensor-oli", "source_id": "src-001", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-098", "predicate": "usesSensor", "object": "sensor-tirs", "source_id": "src-001", "date": "2026-05-07", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-098", "predicate": "analyzedBy", "object": "org-nasa", "source_id": "src-001", "date": "2026-05-07", "confidence": 0.95, "type": "explicit", "note": "NASA Earth Observatory feature"},
+
+    {"subject": "ent-evt-099", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-002", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-099", "predicate": "inCountry", "object": "co-ru", "source_id": "src-002", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-099", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-002", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-099", "predicate": "locatedIn", "object": "ent-loc-040", "source_id": "src-002", "date": "2026-05-07", "confidence": 0.95, "type": "explicit", "note": "Krasheninnikov Kamchatka"},
+    {"subject": "ent-evt-099", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_id": "src-002", "date": "2026-05-07", "confidence": 0.92, "type": "explicit"},
+    {"subject": "ent-evt-099", "predicate": "usesSensor", "object": "sensor-viirs", "source_id": "src-002", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-099", "predicate": "analyzedBy", "object": "org-kvert", "source_id": "src-002", "date": "2026-05-07", "confidence": 0.85, "type": "explicit"},
+
+    {"subject": "ent-evt-100", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-003", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-100", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-003", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-100", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_id": "src-003", "date": "2026-05-07", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-100", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-003", "date": "2026-05-07", "confidence": 0.80, "type": "explicit"},
+
+    {"subject": "ent-evt-101", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-004", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-101", "predicate": "inCountry", "object": "co-us", "source_id": "src-004", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-101", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-004", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-101", "predicate": "locatedIn", "object": "ent-loc-030", "source_id": "src-004", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-101", "predicate": "analyzedBy", "object": "org-usgs", "source_id": "src-004", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+
+    {"subject": "ent-evt-102", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-005", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-102", "predicate": "inCountry", "object": "co-ph", "source_id": "src-005", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-102", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-005", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-102", "predicate": "locatedIn", "object": "ent-loc-014", "source_id": "src-005", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-102", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-005", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-102", "predicate": "analyzedBy", "object": "org-vaac-tokyo", "source_id": "src-005", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-102", "predicate": "analyzedBy", "object": "org-phivolcs", "source_id": "src-005", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+
+    {"subject": "ent-evt-103", "predicate": "manifests", "object": "phen-methane", "source_id": "src-006", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-103", "predicate": "inDomain", "object": "dom-climate", "source_id": "src-006", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-103", "predicate": "observedBy", "object": "sat-sentinel5p", "source_id": "src-006", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-103", "predicate": "usesSensor", "object": "sensor-tropomi", "source_id": "src-006", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-103", "predicate": "analyzedBy", "object": "org-unmars", "source_id": "src-006", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-103", "predicate": "analyzedBy", "object": "org-esa", "source_id": "src-006", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+
+    {"subject": "ent-evt-104", "predicate": "manifests", "object": "phen-satops", "source_id": "src-007", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-104", "predicate": "inDomain", "object": "dom-climate", "source_id": "src-007", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-104", "predicate": "observedBy", "object": "sat-sentinel5p", "source_id": "src-007", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-104", "predicate": "analyzedBy", "object": "org-esa", "source_id": "src-007", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+
+    {"subject": "ent-evt-105", "predicate": "manifests", "object": "phen-satops", "source_id": "src-008", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-105", "predicate": "inCountry", "object": "co-us", "source_id": "src-008", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-105", "predicate": "inDomain", "object": "dom-defense", "source_id": "src-008", "date": "2026-05-07", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-105", "predicate": "observedBy", "object": "sat-wv-legion", "source_id": "src-008", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-105", "predicate": "analyzedBy", "object": "org-maxar", "source_id": "src-008", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-105", "predicate": "reportedBy", "object": "org-vantor", "source_id": "src-008", "date": "2026-05-07", "confidence": 0.92, "type": "explicit"},
+    {"subject": "sat-wv-legion", "predicate": "operatedBy", "object": "org-maxar", "source_id": "src-008", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+
+    {"subject": "ent-evt-106", "predicate": "manifests", "object": "phen-defor", "source_id": "src-010", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-106", "predicate": "inCountry", "object": "co-br", "source_id": "src-010", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-106", "predicate": "inDomain", "object": "dom-human", "source_id": "src-010", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-106", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-010", "date": "2026-05-07", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-106", "predicate": "observedBy", "object": "sat-landsat9", "source_id": "src-010", "date": "2026-05-07", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-106", "predicate": "usesSensor", "object": "sensor-msi", "source_id": "src-010", "date": "2026-05-07", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-106", "predicate": "usesSensor", "object": "sensor-oli", "source_id": "src-010", "date": "2026-05-07", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-106", "predicate": "analyzedBy", "object": "org-pik", "source_id": "src-010", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+
+    {"subject": "ent-evt-107", "predicate": "manifests", "object": "phen-satops", "source_id": "src-011", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-107", "predicate": "inDomain", "object": "dom-defense", "source_id": "src-011", "date": "2026-05-07", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-107", "predicate": "observedBy", "object": "sat-iceye", "source_id": "src-011", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-107", "predicate": "usesSensor", "object": "sensor-x-sar", "source_id": "src-011", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-107", "predicate": "analyzedBy", "object": "org-iceye", "source_id": "src-011", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-107", "predicate": "analyzedBy", "object": "org-paf", "source_id": "src-011", "date": "2026-05-07", "confidence": 0.85, "type": "explicit"},
+
+    {"subject": "ent-evt-108", "predicate": "manifests", "object": "phen-defor", "source_id": "src-012", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-108", "predicate": "inDomain", "object": "dom-human", "source_id": "src-012", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-108", "predicate": "observedBy", "object": "sat-iceye", "source_id": "src-012", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-108", "predicate": "usesSensor", "object": "sensor-x-sar", "source_id": "src-012", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-108", "predicate": "analyzedBy", "object": "org-iceye", "source_id": "src-012", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+
+    {"subject": "ent-evt-109", "predicate": "manifests", "object": "phen-flood", "source_id": "src-013", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-109", "predicate": "inCountry", "object": "co-mm", "source_id": "src-013", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-109", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-013", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-109", "predicate": "observedBy", "object": "sat-sentinel1a", "source_id": "src-013", "date": "2026-05-07", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-109", "predicate": "observedBy", "object": "sat-sentinel1c", "source_id": "src-013", "date": "2026-05-07", "confidence": 0.80, "type": "explicit"},
+    {"subject": "ent-evt-109", "predicate": "observedBy", "object": "sat-sentinel1d", "source_id": "src-013", "date": "2026-05-07", "confidence": 0.80, "type": "explicit"},
+    {"subject": "ent-evt-109", "predicate": "usesSensor", "object": "sensor-c-sar", "source_id": "src-013", "date": "2026-05-07", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-109", "predicate": "analyzedBy", "object": "org-cems", "source_id": "src-013", "date": "2026-05-07", "confidence": 0.85, "type": "explicit"},
+
+    {"subject": "ent-evt-110", "predicate": "manifests", "object": "phen-satops", "source_id": "src-014", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-110", "predicate": "inCountry", "object": "co-kr", "source_id": "src-014", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-110", "predicate": "inDomain", "object": "dom-defense", "source_id": "src-014", "date": "2026-05-07", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-110", "predicate": "observedBy", "object": "sat-kompsat7", "source_id": "src-014", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-110", "predicate": "analyzedBy", "object": "org-kari", "source_id": "src-014", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+
+    {"subject": "ent-evt-111", "predicate": "manifests", "object": "phen-fishing", "source_id": "src-015", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-111", "predicate": "inCountry", "object": "co-kr", "source_id": "src-015", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-111", "predicate": "inDomain", "object": "dom-agri-marine", "source_id": "src-015", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-111", "predicate": "locatedIn", "object": "ent-loc-041", "source_id": "src-015", "date": "2026-05-07", "confidence": 0.90, "type": "explicit", "note": "East Sea NLL waters"},
+    {"subject": "ent-evt-111", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_id": "src-015", "date": "2026-05-07", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-111", "predicate": "observedBy", "object": "sat-sentinel1a", "source_id": "src-015", "date": "2026-05-07", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-111", "predicate": "usesSensor", "object": "sensor-viirs", "source_id": "src-015", "date": "2026-05-07", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-111", "predicate": "usesSensor", "object": "sensor-c-sar", "source_id": "src-015", "date": "2026-05-07", "confidence": 0.85, "type": "explicit"},
+
+    {"subject": "ent-evt-112", "predicate": "manifests", "object": "phen-methane", "source_id": "src-016", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-112", "predicate": "inCountry", "object": "co-tr", "source_id": "src-016", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-112", "predicate": "inDomain", "object": "dom-climate", "source_id": "src-016", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-112", "predicate": "locatedIn", "object": "ent-loc-042", "source_id": "src-016", "date": "2026-05-07", "confidence": 0.95, "type": "explicit", "note": "Silivri landfill TR"},
+    {"subject": "ent-evt-112", "predicate": "observedBy", "object": "sat-tanager1", "source_id": "src-016", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-112", "predicate": "observedBy", "object": "sat-emit", "source_id": "src-016", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-112", "predicate": "analyzedBy", "object": "org-carbonmapper", "source_id": "src-016", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-112", "predicate": "analyzedBy", "object": "org-ucla", "source_id": "src-016", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "sat-tanager1", "predicate": "operatedBy", "object": "org-planet", "source_id": "src-016", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "sat-tanager1", "predicate": "operatedBy", "object": "org-carbonmapper", "source_id": "src-016", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "sat-emit", "predicate": "operatedBy", "object": "org-nasa", "source_id": "src-016", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+
+    {"subject": "ent-evt-113", "predicate": "manifests", "object": "phen-satops", "source_id": "src-017", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-113", "predicate": "inCountry", "object": "co-kr", "source_id": "src-017", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-113", "predicate": "inDomain", "object": "dom-agri-marine", "source_id": "src-017", "date": "2026-05-07", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-113", "predicate": "observedBy", "object": "sat-cas500-2", "source_id": "src-017", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-113", "predicate": "analyzedBy", "object": "org-kari", "source_id": "src-017", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "sat-cas500-2", "predicate": "operatedBy", "object": "org-kari", "source_id": "src-017", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+
+    {"subject": "ent-evt-115", "predicate": "manifests", "object": "phen-construction", "source_id": "src-019", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-115", "predicate": "inCountry", "object": "co-kp", "source_id": "src-019", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-115", "predicate": "inDomain", "object": "dom-defense", "source_id": "src-019", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-115", "predicate": "locatedIn", "object": "ent-loc-001", "source_id": "src-019", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-115", "predicate": "observedBy", "object": "sat-worldview3", "source_id": "src-019", "date": "2026-05-07", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-115", "predicate": "analyzedBy", "object": "org-csis-bp", "source_id": "src-019", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-115", "predicate": "supersedes", "object": "ent-evt-086", "source_id": "src-019", "date": "2026-05-07", "confidence": 0.85, "type": "explicit", "note": "Yongbyon UEP completion follow-up"},
+
+    {"subject": "ent-evt-116", "predicate": "manifests", "object": "phen-construction", "source_id": "src-020", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-116", "predicate": "manifests", "object": "phen-military", "source_id": "src-020", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-116", "predicate": "inCountry", "object": "co-kp", "source_id": "src-020", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-116", "predicate": "inDomain", "object": "dom-defense", "source_id": "src-020", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-116", "predicate": "observedBy", "object": "sat-worldview3", "source_id": "src-020", "date": "2026-05-07", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-116", "predicate": "analyzedBy", "object": "org-csis-bp", "source_id": "src-020", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+
+    {"subject": "ent-evt-117", "predicate": "manifests", "object": "phen-satops", "source_id": "src-021", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-117", "predicate": "inDomain", "object": "dom-climate", "source_id": "src-021", "date": "2026-05-07", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-117", "predicate": "observedBy", "object": "sat-sentinel1a", "source_id": "src-021", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-117", "predicate": "observedBy", "object": "sat-sentinel1c", "source_id": "src-021", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-117", "predicate": "observedBy", "object": "sat-sentinel1d", "source_id": "src-021", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-117", "predicate": "usesSensor", "object": "sensor-c-sar", "source_id": "src-021", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-117", "predicate": "analyzedBy", "object": "org-esa", "source_id": "src-021", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+
+    {"subject": "ent-evt-118", "predicate": "manifests", "object": "phen-glacier", "source_id": "src-022", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-118", "predicate": "inCountry", "object": "co-aq", "source_id": "src-022", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-118", "predicate": "inDomain", "object": "dom-climate", "source_id": "src-022", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-118", "predicate": "locatedIn", "object": "ent-loc-043", "source_id": "src-022", "date": "2026-05-07", "confidence": 0.95, "type": "explicit", "note": "Hektoria Glacier AQ"},
+    {"subject": "ent-evt-118", "predicate": "observedBy", "object": "sat-sentinel1a", "source_id": "src-022", "date": "2026-05-07", "confidence": 0.92, "type": "explicit"},
+    {"subject": "ent-evt-118", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-022", "date": "2026-05-07", "confidence": 0.92, "type": "explicit"},
+    {"subject": "ent-evt-118", "predicate": "usesSensor", "object": "sensor-c-sar", "source_id": "src-022", "date": "2026-05-07", "confidence": 0.92, "type": "explicit"},
+    {"subject": "ent-evt-118", "predicate": "usesSensor", "object": "sensor-msi", "source_id": "src-022", "date": "2026-05-07", "confidence": 0.92, "type": "explicit"},
+    {"subject": "ent-evt-118", "predicate": "analyzedBy", "object": "org-nasa", "source_id": "src-022", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+
+    {"subject": "ent-evt-119", "predicate": "manifests", "object": "phen-defor", "source_id": "src-023", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-119", "predicate": "inDomain", "object": "dom-human", "source_id": "src-023", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-119", "predicate": "observedBy", "object": "sat-landsat9", "source_id": "src-023", "date": "2026-05-07", "confidence": 0.92, "type": "explicit"},
+    {"subject": "ent-evt-119", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-023", "date": "2026-05-07", "confidence": 0.92, "type": "explicit"},
+    {"subject": "ent-evt-119", "predicate": "observedBy", "object": "sat-sentinel1a", "source_id": "src-023", "date": "2026-05-07", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-119", "predicate": "analyzedBy", "object": "org-gfw", "source_id": "src-023", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+
+    {"subject": "ent-evt-120", "predicate": "manifests", "object": "phen-military", "source_id": "src-024", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-120", "predicate": "inCountry", "object": "co-cn", "source_id": "src-024", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-120", "predicate": "inDomain", "object": "dom-defense", "source_id": "src-024", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-120", "predicate": "locatedIn", "object": "ent-loc-036", "source_id": "src-024", "date": "2026-05-07", "confidence": 0.99, "type": "explicit", "note": "Antelope Reef"},
+    {"subject": "ent-evt-120", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-024", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-120", "predicate": "observedBy", "object": "sat-worldview3", "source_id": "src-024", "date": "2026-05-07", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-120", "predicate": "analyzedBy", "object": "org-amti", "source_id": "src-024", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-120", "predicate": "supersedes", "object": "ent-evt-092", "source_id": "src-024", "date": "2026-05-07", "confidence": 0.85, "type": "explicit", "note": "Antelope Reef airbase update from 1490 acres expansion"},
+
+    {"subject": "ent-evt-121", "predicate": "manifests", "object": "phen-military", "source_id": "src-025", "date": "2026-05-07", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-121", "predicate": "inCountry", "object": "co-cn", "source_id": "src-025", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-121", "predicate": "inDomain", "object": "dom-defense", "source_id": "src-025", "date": "2026-05-07", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-121", "predicate": "locatedIn", "object": "ent-loc-044", "source_id": "src-025", "date": "2026-05-07", "confidence": 0.85, "type": "explicit", "note": "Cuarteron Reef Spratlys"},
+    {"subject": "ent-evt-121", "predicate": "observedBy", "object": "sat-worldview3", "source_id": "src-025", "date": "2026-05-07", "confidence": 0.65, "type": "explicit"},
+
+    {"subject": "ent-evt-122", "predicate": "manifests", "object": "phen-methane", "source_id": "src-026", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-122", "predicate": "inCountry", "object": "co-us", "source_id": "src-026", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-122", "predicate": "inDomain", "object": "dom-climate", "source_id": "src-026", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-122", "predicate": "locatedIn", "object": "ent-loc-045", "source_id": "src-026", "date": "2026-05-07", "confidence": 0.95, "type": "explicit", "note": "Permian Basin US"},
+    {"subject": "ent-evt-122", "predicate": "observedBy", "object": "sat-methanesat", "source_id": "src-026", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-122", "predicate": "analyzedBy", "object": "org-edf", "source_id": "src-026", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+
+    {"subject": "ent-evt-123", "predicate": "manifests", "object": "phen-defor", "source_id": "src-027", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-123", "predicate": "inCountry", "object": "co-br", "source_id": "src-027", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-123", "predicate": "inDomain", "object": "dom-human", "source_id": "src-027", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-123", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-027", "date": "2026-05-07", "confidence": 0.92, "type": "explicit"},
+    {"subject": "ent-evt-123", "predicate": "observedBy", "object": "sat-landsat9", "source_id": "src-027", "date": "2026-05-07", "confidence": 0.92, "type": "explicit"},
+    {"subject": "ent-evt-123", "predicate": "analyzedBy", "object": "org-inpe", "source_id": "src-027", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+
+    {"subject": "ent-evt-124", "predicate": "manifests", "object": "phen-oilspill", "source_id": "src-028", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-124", "predicate": "inDomain", "object": "dom-human", "source_id": "src-028", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-124", "predicate": "observedBy", "object": "sat-sentinel1a", "source_id": "src-028", "date": "2026-05-07", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-124", "predicate": "usesSensor", "object": "sensor-c-sar", "source_id": "src-028", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-124", "predicate": "analyzedBy", "object": "org-skytruth", "source_id": "src-028", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+
+    {"subject": "sat-iceye", "predicate": "carriesSensor", "object": "sensor-x-sar", "source_id": "src-011", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"},
+    {"subject": "sat-kompsat7", "predicate": "operatedBy", "object": "org-kari", "source_id": "src-014", "date": "2026-05-07", "confidence": 0.99, "type": "explicit"}
+  ],
+  "inferred_triples": [
+    {"subject": "ent-evt-098", "predicate": "thermalBoost", "object": "+0.10", "rule": "sensor_capability_match_tirs", "confidence": 0.95, "type": "inferred", "note": "TIRS+wildfire match"},
+    {"subject": "ent-evt-098", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.97, "type": "inferred", "note": "NASA Earth Observatory"},
+    {"subject": "ent-evt-098", "predicate": "priorityBoost", "object": "+0.20", "rule": "disaster_severity_priority", "confidence": 0.95, "type": "inferred", "note": "wildfire 50000 acres"},
+    {"subject": "ent-evt-098", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.92, "type": "inferred", "note": "Landsat 8 + Landsat 9 (시계열, 동일 사업자 — 약가산)"},
+
+    {"subject": "ent-evt-099", "predicate": "thermalBoost", "object": "+0.10", "rule": "sensor_capability_match_tirs", "confidence": 0.92, "type": "inferred", "note": "VIIRS TIR 1MW thermal flux"},
+
+    {"subject": "ent-evt-100", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.85, "type": "inferred", "note": "VIIRS(JPSS) + Himawari-9(JAXA/JMA) — 독립 사업자"},
+
+    {"subject": "ent-evt-101", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.99, "type": "inferred", "note": "USGS HVO"},
+    {"subject": "ent-evt-101", "predicate": "priorityBoost", "object": "+0.20", "rule": "disaster_severity_priority", "confidence": 0.95, "type": "inferred", "note": "high-severity volcanic episode"},
+    {"subject": "ent-evt-101", "predicate": "partOfSeries", "object": "ent-evt-081", "rule": "temporal_progression", "confidence": 0.95, "type": "inferred", "note": "Kilauea Episode 46 시리즈 — 05-06→05-07 follow-up"},
+
+    {"subject": "ent-evt-102", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred", "note": "VAAC Tokyo + PHIVOLCS 공식"},
+    {"subject": "ent-evt-102", "predicate": "priorityBoost", "object": "+0.20", "rule": "disaster_severity_priority", "confidence": 0.95, "type": "inferred"},
+    {"subject": "ent-evt-102", "predicate": "partOfSeries", "object": "ent-evt-082", "rule": "temporal_progression", "confidence": 0.95, "type": "inferred", "note": "Mayon eruption 시리즈 — 05-03 ash→05-05 advisory 567"},
+
+    {"subject": "ent-evt-103", "predicate": "tracegasBoost", "object": "+0.15", "rule": "sensor_capability_match_tracegas", "confidence": 0.97, "type": "inferred", "note": "TROPOMI methane match"},
+    {"subject": "ent-evt-103", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.97, "type": "inferred", "note": "ESA + UN MARS"},
+    {"subject": "ent-evt-103", "predicate": "supersedes", "object": "ent-evt-084", "rule": "supersedes", "confidence": 0.85, "type": "inferred", "note": "ESA MARS UN 출시 후속 — 05-06 ESA preview→05-07 UN 운영 시작"},
+
+    {"subject": "ent-evt-104", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.99, "type": "inferred", "note": "ESA Copernicus dataspace"},
+
+    {"subject": "ent-evt-105", "predicate": "commercialBoost", "object": "+0.10", "rule": "commercial_imagery_trust", "confidence": 0.85, "type": "inferred", "note": "Maxar/Vantor 발표 — is_press_release=true → 0.7 cap 적용"},
+
+    {"subject": "ent-evt-106", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred", "note": "PIK Nature 학술기관"},
+    {"subject": "ent-evt-106", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.90, "type": "inferred", "note": "Sentinel-2(ESA) + Landsat 9(USGS/NASA) — 독립 사업자"},
+
+    {"subject": "ent-evt-107", "predicate": "commercialBoost", "object": "+0.10", "rule": "commercial_imagery_trust", "confidence": 0.85, "type": "inferred", "note": "ICEYE 직접 분석"},
+
+    {"subject": "ent-evt-108", "predicate": "commercialBoost", "object": "+0.10", "rule": "commercial_imagery_trust", "confidence": 0.80, "type": "inferred", "note": "ICEYE press release cap (0.7)"},
+    {"subject": "ent-evt-108", "predicate": "sarBoost", "object": "+0.10", "rule": "sensor_capability_match_sar", "confidence": 0.92, "type": "inferred", "note": "X-band SAR + tropical cloud cover (열대지역)"},
+
+    {"subject": "ent-evt-109", "predicate": "sarBoost", "object": "+0.10", "rule": "sensor_capability_match_sar", "confidence": 0.92, "type": "inferred", "note": "C-SAR + 동남아 monsoon cloud"},
+    {"subject": "ent-evt-109", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.92, "type": "inferred", "note": "Copernicus EMS"},
+    {"subject": "ent-evt-109", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.85, "type": "inferred", "note": "Sentinel-1A/C/D 동일 사업자(ESA)지만 3개 위성 → 약가산"},
+
+    {"subject": "ent-evt-110", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.99, "type": "inferred", "note": "KARI"},
+    {"subject": "ent-evt-110", "predicate": "koreaBoost", "object": "+0.10", "rule": "korea_geo_focus", "confidence": 0.99, "type": "inferred", "note": "KR"},
+
+    {"subject": "ent-evt-111", "predicate": "koreaBoost", "object": "+0.10", "rule": "korea_geo_focus", "confidence": 0.99, "type": "inferred", "note": "KR East Sea NLL"},
+    {"subject": "ent-evt-111", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.88, "type": "inferred", "note": "VIIRS(NOAA) + Sentinel-1A(ESA) — 독립 사업자, optical+SAR cross-modal"},
+    {"subject": "ent-evt-111", "predicate": "sarBoost", "object": "+0.10", "rule": "sensor_capability_match_sar", "confidence": 0.90, "type": "inferred", "note": "C-SAR ship detection 야간/구름"},
+
+    {"subject": "ent-evt-112", "predicate": "tracegasBoost", "object": "+0.15", "rule": "sensor_capability_match_tracegas", "confidence": 0.97, "type": "inferred", "note": "Tanager-1 + EMIT hyperspectral methane"},
+    {"subject": "ent-evt-112", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.95, "type": "inferred", "note": "Tanager-1(Planet/CarbonMapper) + EMIT(NASA) — 독립 사업자"},
+
+    {"subject": "ent-evt-113", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.99, "type": "inferred", "note": "KARI"},
+    {"subject": "ent-evt-113", "predicate": "koreaBoost", "object": "+0.10", "rule": "korea_geo_focus", "confidence": 0.99, "type": "inferred", "note": "KR"},
+    {"subject": "ent-evt-113", "predicate": "partOfSeries", "object": "ent-evt-094", "rule": "temporal_progression", "confidence": 0.65, "type": "inferred", "note": "Pelican과 다른 위성이지만 같은 'satops' phenomenon — 약신뢰"},
+
+    {"subject": "ent-evt-115", "predicate": "hiResBoost", "object": "+0.15", "rule": "sensor_capability_match_hires", "confidence": 0.95, "type": "inferred", "note": "WorldView-3 0.31m + construction"},
+    {"subject": "ent-evt-115", "predicate": "koreaBoost", "object": "+0.10", "rule": "korea_geo_focus", "confidence": 0.99, "type": "inferred", "note": "KP"},
+    {"subject": "ent-evt-115", "predicate": "priorityBoost", "object": "+0.20", "rule": "disaster_severity_priority", "confidence": 0.0, "type": "inferred", "note": "Defense 도메인이라 미적용 — N/A"},
+
+    {"subject": "ent-evt-116", "predicate": "hiResBoost", "object": "+0.15", "rule": "sensor_capability_match_hires", "confidence": 0.95, "type": "inferred", "note": "WV-3 + construction"},
+    {"subject": "ent-evt-116", "predicate": "koreaBoost", "object": "+0.10", "rule": "korea_geo_focus", "confidence": 0.99, "type": "inferred", "note": "KP Sohae"},
+
+    {"subject": "ent-evt-117", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.99, "type": "inferred", "note": "ESA"},
+    {"subject": "ent-evt-117", "predicate": "supersedes", "object": "ent-evt-026", "rule": "supersedes", "confidence": 0.85, "type": "inferred", "note": "Sentinel-1D commissioning 2026-04-17 → 2026-05 fully live (4-sat constellation)"},
+
+    {"subject": "ent-evt-118", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.99, "type": "inferred", "note": "NASA Earth Observatory"},
+    {"subject": "ent-evt-118", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.92, "type": "inferred", "note": "Sentinel-1A + Sentinel-2A — 동일 사업자(ESA)지만 SAR+optical cross-modal → 약가산"},
+    {"subject": "ent-evt-118", "predicate": "sarBoost", "object": "+0.10", "rule": "sensor_capability_match_sar", "confidence": 0.92, "type": "inferred", "note": "C-SAR Antarctica polar night"},
+    {"subject": "ent-evt-118", "predicate": "baCredibilityBoost", "object": "+0.10", "rule": "before_after_credibility", "confidence": 0.95, "type": "inferred", "note": "8 km in 2 months 시계열"},
+
+    {"subject": "ent-evt-119", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.92, "type": "inferred", "note": "GFW (analyst)"},
+    {"subject": "ent-evt-119", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.95, "type": "inferred", "note": "Landsat 9(NASA) + Sentinel-2(ESA) + Sentinel-1(ESA) — 독립 사업자"},
+
+    {"subject": "ent-evt-120", "predicate": "hiResBoost", "object": "+0.15", "rule": "sensor_capability_match_hires", "confidence": 0.95, "type": "inferred", "note": "WV-3 + military buildup"},
+    {"subject": "ent-evt-120", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.95, "type": "inferred", "note": "Sentinel-2(ESA) + WV-3(Maxar) — 독립 사업자"},
+
+    {"subject": "ent-evt-122", "predicate": "tracegasBoost", "object": "+0.15", "rule": "sensor_capability_match_tracegas", "confidence": 0.99, "type": "inferred", "note": "MethaneSAT trace gas + methane plume"},
+
+    {"subject": "ent-evt-123", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.92, "type": "inferred", "note": "Sentinel-2(ESA) + Landsat 9(NASA)"},
+    {"subject": "ent-evt-123", "predicate": "partOfSeries", "object": "ent-evt-106", "rule": "temporal_progression", "confidence": 0.92, "type": "inferred", "note": "Brazil Amazon deforestation — PIK threshold + Apr 2026 PRODES 데이터 동일 영역"},
+
+    {"subject": "ent-evt-124", "predicate": "sarBoost", "object": "+0.10", "rule": "sensor_capability_match_sar", "confidence": 0.92, "type": "inferred", "note": "C-SAR oil slick AI U-Net"}
+  ],
+  "supersedes_or_partOfSeries_summary": {
+    "supersedes": [
+      {"new": "ent-evt-115", "old": "ent-evt-086", "reason": "Yongbyon UEP 04-2026 후속"},
+      {"new": "ent-evt-103", "old": "ent-evt-084", "reason": "ESA MARS preview→UN 운영 시작"},
+      {"new": "ent-evt-117", "old": "ent-evt-026", "reason": "Sentinel-1D commissioning 완료→4-sat live"},
+      {"new": "ent-evt-120", "old": "ent-evt-092", "reason": "Antelope Reef 1490ac→airbase construction 후속"}
+    ],
+    "partOfSeries": [
+      {"new": "ent-evt-101", "prev": "ent-evt-081", "reason": "Kilauea Ep46 사이클 시계열"},
+      {"new": "ent-evt-102", "prev": "ent-evt-082", "reason": "Mayon eruption 시리즈"},
+      {"new": "ent-evt-123", "prev": "ent-evt-106", "reason": "Brazil Amazon 4월 PRODES 후속"},
+      {"new": "ent-evt-119", "prev": "ent-evt-067", "reason": "GFW 2025 forest loss → 4월 데이터"}
+    ]
+  },
+  "stats": {
+    "explicit_new_triples": 154,
+    "inferred_new_triples": 36,
+    "total_subjects": 38,
+    "total_predicates": 16,
+    "total_events_today": 26,
+    "supersedes_count": 4,
+    "partOfSeries_count": 3,
+    "multi_satellite_confirmation_count": 8,
+    "korea_focus_count": 5,
+    "satellite_unverified_count": 0,
+    "press_release_capped_count": 2
+  }
+}

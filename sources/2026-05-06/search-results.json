@@ -1,0 +1,1055 @@
+{
+  "date": "2026-05-06",
+  "collected_at": "2026-05-07T00:00:00Z",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 31,
+  "total_results": 120,
+  "expanded_keywords": [
+    "Kilauea Episode 46 May 5 2026",
+    "Mayon volcano May 6 2026 PhilSA Sentinel-2",
+    "Sentinel-1 SAR ice sheet velocity 2026",
+    "GFW DIST-ALERT integrated alerts May 2026",
+    "Sentinel-5P TROPOMI methane",
+    "Vantor Maxar Tensorglobe Ukraine direct-to-device",
+    "CSIS Beyond Parallel Yongbyon UEP",
+    "Bellingcat PlanetScope Iran police strikes",
+    "Antelope Reef Paracel airbase 1500 acres",
+    "CAS500-2 첫 교신 KARI 5월 3일",
+    "Sudan breadbasket Al Jazeera Sentinel-2 May 4 2026",
+    "Climate TRACE April release 5.6.0 February 2026 data",
+    "US Caribbean Operation Southern Spear",
+    "Mayon ashfall 8544 hectares 87 villages"
+  ],
+  "searches": [
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Kilauea Episode 46 lava fountain May 6 2026 satellite Sentinel",
+      "language": "en",
+      "timestamp": "2026-05-07T00:00:01Z",
+      "result_count": 7,
+      "results": [
+        {
+          "title": "Episode 46 lava fountains end after 9 hours in Halemaumau crater",
+          "url": "https://www.staradvertiser.com/2026/05/05/breaking-news/lava-fountaining-marks-start-of-episode-46-at-kilauea/",
+          "snippet": "Episode 46 lava fountains end after 9 hours in Halemaumau crater",
+          "source_name": "Honolulu Star-Advertiser"
+        },
+        {
+          "title": "Photo & Video Chronology — May 5, 2026 — Kīlauea episode 46",
+          "url": "https://www.usgs.gov/observatories/hvo/news/photo-video-chronology-may-5-2026-kilauea-episode-46",
+          "snippet": "USGS HVO photo/video chronology of Episode 46",
+          "source_name": "USGS HVO"
+        },
+        {
+          "title": "Kīlauea episode 46 ends after 9 hours of lava fountaining, tephra reaches Highway 11",
+          "url": "https://watchers.news/2026/05/06/kilauea-episode-46-lava-fountaining-tephra-reaches-highway-11-hawaii-may-2026/",
+          "snippet": "Episode 46 ends after 9 hours; tephra clasts up to 15 cm fell on Highway 11",
+          "source_name": "The Watchers"
+        },
+        {
+          "title": "UPDATE: Episode 46 lava fountaining ends at summit of Kīlauea, about 9 hours after it began",
+          "url": "https://bigislandnow.com/2026/05/05/update-episode-46-lava-fountaining-ends-at-summit-of-kilauea-about-9-hours-after-it-began/",
+          "snippet": "Episode 46 ended 5:22 PM HST; fountain reached 650 ft",
+          "source_name": "Big Island Now"
+        },
+        {
+          "title": "USGS Volcano Notice - DOI-USGS-HVO-2026-05-06T18:12:59+00:00",
+          "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-HVO-2026-05-06T18:12:59+00:00",
+          "snippet": "Alert level dropped from WATCH to ADVISORY; aviation color from ORANGE to YELLOW",
+          "source_name": "USGS HVO"
+        },
+        {
+          "title": "Kīlauea Eruption Episode 46: Unleashing Molten Lava Fountains, Massive Ash Plumes",
+          "url": "https://www.travelandtourworld.com/news/article/kilauea-eruption-episode-46-unleashing-molten-lava-fountains-massive-ash-plumes-and-the-essential-travel-guide-for-visiting-big-islands-hawaii-volcanoes-national-park/",
+          "snippet": "Episode 46 plume reached 20,000 ft; tephra and Pele's hair to Mountain View",
+          "source_name": "Travel And Tour World"
+        },
+        {
+          "title": "Kīlauea Episode 46: Fountaining Forecast May 4–7",
+          "url": "https://www.hawaii-guide.com/blog/kilauea-episode-46-precursory-activity",
+          "snippet": "Episode 46 forecast May 4-7 fountaining window",
+          "source_name": "Hawaii Guide"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Mayon volcano eruption May 6 2026 Himawari satellite ash plume",
+      "language": "en",
+      "timestamp": "2026-05-07T00:00:02Z",
+      "result_count": 7,
+      "results": [
+        {
+          "title": "Mayon Volcano ashfall covers more than 8,500 hectares: Philippine Space Agency",
+          "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/05/06/mayon-volcano-ashfall-covers-more-than-8500-hectares-philippine-space-agency",
+          "snippet": "PhilSA reports 8,500+ ha covered using Sentinel-2 change detection",
+          "source_name": "The Star (ASEAN+)"
+        },
+        {
+          "title": "Satellite data show barangays affected by ashfall from Mayon",
+          "url": "https://philsa.gov.ph/news/satellite-data-show-barangays-affected-by-ashfall-from-mayon/",
+          "snippet": "PhilSA used Sentinel-2 May 3 vs April 28 reference image change detection; map updated May 6",
+          "source_name": "Philippine Space Agency (PhilSA)"
+        },
+        {
+          "title": "Mayon Volcano Volcanic Ash Advisory: ERUPTION AT 20260506/1252Z",
+          "url": "https://www.volcanodiscovery.com/mayon/news/301638/vaac-advisory-2026-571.html",
+          "snippet": "VAAC Tokyo cites Himawari-9 for May 6 12:52Z eruption; VA cloud unknown",
+          "source_name": "VolcanoDiscovery / VAAC Tokyo"
+        },
+        {
+          "title": "Mayon Volcano Volcanic Ash Advisory: ERUPTION AT 20260505/2341Z FL090 EXTD WSW",
+          "url": "https://www.volcanodiscovery.com/mayon/news/301533/vaac-advisory-2026-570.html",
+          "snippet": "Himawari-9 detected May 5 23:41Z eruption; ash extending WSW",
+          "source_name": "VolcanoDiscovery / VAAC Tokyo"
+        },
+        {
+          "title": "Surprise Volcano Flow Forces Evacuations In Philippines",
+          "url": "https://weather.com/news/trending/video/philippines-evacuations-from-mayon-volcano-ashfall",
+          "snippet": "Pyroclastic flow forces evacuations",
+          "source_name": "Weather.com"
+        },
+        {
+          "title": "DPWH chief sent to Albay to oversee Mayon eruption quick response",
+          "url": "https://pia.gov.ph/news/dpwh-chief-sent-to-albay-to-oversee-mayon-eruption-quick-response/",
+          "snippet": "Albay quick response coordination",
+          "source_name": "Philippine Information Agency"
+        },
+        {
+          "title": "Guinobatan health office logs respiratory cases amid Mayon ashfall",
+          "url": "https://www.pna.gov.ph/articles/1274327",
+          "snippet": "Health impacts of ashfall in Guinobatan",
+          "source_name": "Philippine News Agency"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery wildfire May 6 2026 Sentinel-2 burn scar",
+      "language": "en",
+      "timestamp": "2026-05-07T00:00:03Z",
+      "result_count": 4,
+      "results": [
+        {
+          "title": "Magnifying change: Rapid burn scar mapping with multi-resolution, multi-source satellite imagery",
+          "url": "https://arxiv.org/html/2601.09262",
+          "snippet": "Multi-source rapid burn scar mapping methodology",
+          "source_name": "arXiv"
+        },
+        {
+          "title": "Wildfire impact: How is it monitored & measured? | Copernicus",
+          "url": "https://atmosphere.copernicus.eu/wildfire-impact-how-it-monitored-measured",
+          "snippet": "Copernicus wildfire monitoring methodology",
+          "source_name": "Copernicus Atmosphere"
+        },
+        {
+          "title": "Track forest fires with satellite imagery: The normalized burn ratio and other techniques",
+          "url": "https://up42.com/blog/track-forest-fires-satellite-imagery-normalized-burn-ratio",
+          "snippet": "NBR and burn severity techniques",
+          "source_name": "UP42"
+        },
+        {
+          "title": "Fire Map - NASA | LANCE | FIRMS",
+          "url": "https://firms.modaps.eosdis.nasa.gov/map/",
+          "snippet": "Global active fire map MODIS/VIIRS",
+          "source_name": "NASA FIRMS"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Copernicus EMS activation May 2026 flood SAR rapid mapping",
+      "language": "en",
+      "timestamp": "2026-05-07T00:00:04Z",
+      "result_count": 4,
+      "results": [
+        {
+          "title": "Activations | Copernicus EMS On Demand Mapping",
+          "url": "https://mapping.emergency.copernicus.eu/activations/",
+          "snippet": "Copernicus EMS On Demand Mapping activations list",
+          "source_name": "Copernicus EMS"
+        },
+        {
+          "title": "Flood in Cordoba, Colombia - Copernicus EMS Mapping (EMSR865)",
+          "url": "https://mapping.emergency.copernicus.eu/news/flood-in-cordoba-colombia-emsr865/",
+          "snippet": "EMSR865 Colombia flood mapping using Sentinel-1 and Sentinel-2",
+          "source_name": "Copernicus EMS"
+        },
+        {
+          "title": "Enhanced Flood Modelling and Depth Mapping Capabilities (EXFLOS)",
+          "url": "https://mapping.emergency.copernicus.eu/about/rapid-mapping-manual/detection-methods-damage-assessment/enhanced-flood-modelling-and-depth-mapping-capabilities-exflos/",
+          "snippet": "EXFLOS new product 2025-2027 R&D priorities",
+          "source_name": "Copernicus EMS"
+        },
+        {
+          "title": "Copernicus EMS Rapid Mapping Activation Viewer",
+          "url": "https://rapidmapping.emergency.copernicus.eu/",
+          "snippet": "Copernicus EMS Rapid Mapping Activation Viewer interface",
+          "source_name": "Copernicus EMS"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery flood SAR Sentinel-1 ICEYE May 2026",
+      "language": "en",
+      "timestamp": "2026-05-07T00:00:05Z",
+      "result_count": 3,
+      "results": [
+        {
+          "title": "Mapping global floods with 10 years of satellite radar data",
+          "url": "https://www.nature.com/articles/s41467-025-60973-1",
+          "snippet": "Nature Communications: 10-year global flood SAR dataset",
+          "source_name": "Nature Communications"
+        },
+        {
+          "title": "The fully-automatic Sentinel-1 Global Flood Monitoring service: Scientific challenges and future directions",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0034425725005127",
+          "snippet": "Sentinel-1 GFM Copernicus EMS automated processing review",
+          "source_name": "Remote Sensing of Environment"
+        },
+        {
+          "title": "ICEYE SAR data services",
+          "url": "https://www.iceye.com/sar-data",
+          "snippet": "ICEYE constellation 25cm SAR daily/sub-daily revisit",
+          "source_name": "ICEYE"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "NASA Earth Observatory image of the day May 6 2026",
+      "language": "en",
+      "timestamp": "2026-05-07T00:00:06Z",
+      "result_count": 3,
+      "results": [
+        {
+          "title": "Earth Observatory Image of the Day - NASA Science",
+          "url": "https://science.nasa.gov/gallery/earth-observatory-image-of-the-day/",
+          "snippet": "NASA Earth Observatory Image of the Day moved to science.nasa.gov",
+          "source_name": "NASA Earth Observatory"
+        },
+        {
+          "title": "Earth Observatory - NASA Science",
+          "url": "https://science.nasa.gov/earth/earth-observatory/",
+          "snippet": "NASA Earth Observatory home",
+          "source_name": "NASA"
+        },
+        {
+          "title": "Images - Earth Observatory",
+          "url": "https://earthobservatory.nasa.gov/images",
+          "snippet": "Earth Observatory images archive",
+          "source_name": "NASA Earth Observatory"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery deforestation Amazon GFW DIST-ALERT May 2026",
+      "language": "en",
+      "timestamp": "2026-05-07T00:00:07Z",
+      "result_count": 5,
+      "results": [
+        {
+          "title": "Explore GFW's Updated Integrated Disturbance Alerts",
+          "url": "https://www.globalforestwatch.org/blog/data-and-tools/integrated-deforestation-alerts/",
+          "snippet": "GFW integrated DIST-ALERT (Landsat+Sentinel-2) launched January 2026, 30m resolution",
+          "source_name": "Global Forest Watch"
+        },
+        {
+          "title": "Disturbance Alerts for All Vegetation Globally Now on GFW",
+          "url": "https://www.globalforestwatch.org/blog/data-and-tools/global-vegetation-disturbance-deforestation-alerts/",
+          "snippet": "DIST-ALERT now covers all vegetation globally including grassland, shrubland, agriculture",
+          "source_name": "Global Forest Watch"
+        },
+        {
+          "title": "See What's Driving Deforestation Alerts for the First Time on GFW",
+          "url": "https://www.globalforestwatch.org/blog/data-and-tools/drivers-deforestation-alerts/",
+          "snippet": "AI-driven driver attribution for deforestation alerts in tropical forests",
+          "source_name": "Global Forest Watch"
+        },
+        {
+          "title": "Faster Detection of Forest Loss - NASA Science",
+          "url": "https://science.nasa.gov/earth/earth-observatory/faster-detection-of-forest-loss/",
+          "snippet": "Multi-satellite system for early deforestation detection",
+          "source_name": "NASA Earth Observatory"
+        },
+        {
+          "title": "Brazil bill aims to ban satellite tool used to slow Amazon deforestation",
+          "url": "https://news.mongabay.com/2026/04/brazil-bill-aims-to-ban-satellite-tool-used-to-slow-amazon-deforestation/",
+          "snippet": "Brazil bill threat to DETER/PRODES Amazon satellite enforcement tools",
+          "source_name": "Mongabay"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Sentinel-5P TROPOMI methane plume detection May 2026",
+      "language": "en",
+      "timestamp": "2026-05-07T00:00:08Z",
+      "result_count": 4,
+      "results": [
+        {
+          "title": "ESA - Sentinel-5P data used in new methane detection system",
+          "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P/Sentinel-5P_data_used_in_new_methane_detection_system",
+          "snippet": "MARS uses Sentinel-5P daily for methane plume detection",
+          "source_name": "ESA"
+        },
+        {
+          "title": "CAMS Methane Hotspot Explorer | Copernicus",
+          "url": "https://atmosphere.copernicus.eu/ghg-services/cams-methane-hotspot-explorer",
+          "snippet": "CAMS methane hotspot explorer using TROPOMI",
+          "source_name": "Copernicus Atmosphere"
+        },
+        {
+          "title": "Daily detection and quantification of methane leaks using Sentinel-3",
+          "url": "https://airbornescience.nasa.gov/content/Daily_detection_and_quantification_of_methane_leaks_using_Sentinel-3_a_tiered_satellite",
+          "snippet": "Tiered Sentinel-2/3/5P methane observation strategy",
+          "source_name": "NASA Airborne Science"
+        },
+        {
+          "title": "Sentinel-5P OFFL CH4: Offline Methane | Earth Engine Data Catalog",
+          "url": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_CH4",
+          "snippet": "Sentinel-5P CH4 dataset",
+          "source_name": "Google Earth Engine"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Maxar Vantor satellite imagery Russia Ukraine May 2026",
+      "language": "en",
+      "timestamp": "2026-05-07T00:00:09Z",
+      "result_count": 5,
+      "results": [
+        {
+          "title": "Commercial Spatial Intelligence in Ukraine's War",
+          "url": "https://vantor.com/blog/the-game-changing-role-of-commercial-spatial-intelligence-in-ukraine/",
+          "snippet": "Vantor commercial spatial intelligence supporting Ukraine",
+          "source_name": "Vantor"
+        },
+        {
+          "title": "Ukrainian forces test direct-to-device satellite imagery for frontline troops",
+          "url": "https://spacenews.com/ukrainian-forces-test-direct-to-device-satellite-imagery-for-frontline-troops/",
+          "snippet": "Vantor direct-to-device imagery 15-min tasking-to-data cycle test in Ukraine",
+          "source_name": "SpaceNews"
+        },
+        {
+          "title": "Vantor (company) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Vantor_(company)",
+          "snippet": "Vantor formerly Maxar Intelligence rebranded October 2025; Tensorglobe AI platform",
+          "source_name": "Wikipedia"
+        },
+        {
+          "title": "Geopolitical conflict is remaking the satellite business",
+          "url": "https://www.fastcompany.com/91420453/maxar-vantor-ukraine-russia-intelligence-satellite",
+          "snippet": "Maxar/Vantor role in commercial satellite business and conflict",
+          "source_name": "Fast Company"
+        },
+        {
+          "title": "Maxar reportedly restores Ukraine's access to high-resolution satellite imagery",
+          "url": "https://kyivindependent.com/maxar-technologies-restores-ukraines-access-to-high-resolution-satellite-imagery/",
+          "snippet": "Maxar restored Ukraine high-res satellite access",
+          "source_name": "Kyiv Independent"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery North Korea missile test launch May 2026",
+      "language": "en",
+      "timestamp": "2026-05-07T00:00:10Z",
+      "result_count": 4,
+      "results": [
+        {
+          "title": "Sohae Satellite Launching Station - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sohae_Satellite_Launching_Station",
+          "snippet": "Sohae satellite launch facility profile",
+          "source_name": "Wikipedia"
+        },
+        {
+          "title": "North Korea launches ballistic missiles toward sea",
+          "url": "https://www.npr.org/2026/04/18/nx-s1-5789939/north-korea-ballistic-missiles",
+          "snippet": "DPRK ballistic missile launches April 2026",
+          "source_name": "NPR"
+        },
+        {
+          "title": "North Korea Missile Test Visualization",
+          "url": "https://nagix.github.io/nk-missile-tests/",
+          "snippet": "Interactive visualization of DPRK missile tests 1984-2026",
+          "source_name": "GitHub / nagix"
+        },
+        {
+          "title": "How Experts Comb Satellite Images for Clues on North Korea's Nuclear Tests",
+          "url": "https://spectrum.ieee.org/how-experts-comb-satellite-images-for-clues-on-north-koreas-nuclear-tests",
+          "snippet": "Methodology for satellite imagery analysis of DPRK nuclear sites",
+          "source_name": "IEEE Spectrum"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Bellingcat satellite imagery analysis May 2026",
+      "language": "en",
+      "timestamp": "2026-05-07T00:00:11Z",
+      "result_count": 4,
+      "results": [
+        {
+          "title": "Satellite Imagery - bellingcat",
+          "url": "https://www.bellingcat.com/tag/satellite-imagery/",
+          "snippet": "Bellingcat satellite imagery investigations tag",
+          "source_name": "Bellingcat"
+        },
+        {
+          "title": "Satellite Imagery Reveals Strikes on Iranian Police Stations",
+          "url": "https://www.bellingcat.com/news/middle-east/2026/03/04/satellite-imagery-reveals-strikes-on-iranian-police-stations/",
+          "snippet": "PlanetScope March 1 vs March 3 2026 imagery; 15 police stations struck in Tehran",
+          "source_name": "Bellingcat"
+        },
+        {
+          "title": "Satellite Imagery | Bellingcat's Online Investigation Toolkit",
+          "url": "https://bellingcat.gitbook.io/toolkit/categories/maps-and-satellites/satellite-imagery",
+          "snippet": "Bellingcat OSINT toolkit satellite imagery section",
+          "source_name": "Bellingcat Toolkit"
+        },
+        {
+          "title": "Multispectral Satellite Imagery Explorer",
+          "url": "https://bellingcat-ee.projects.earthengine.app/view/multispectral-satellite-imagery-explorer",
+          "snippet": "Bellingcat GEE multispectral explorer app",
+          "source_name": "Bellingcat / Earth Engine"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "CSIS Beyond Parallel North Korea satellite analysis May 2026",
+      "language": "en",
+      "timestamp": "2026-05-07T00:00:12Z",
+      "result_count": 4,
+      "results": [
+        {
+          "title": "Beyond Parallel - Bringing transparency to Korea",
+          "url": "https://beyondparallel.csis.org/",
+          "snippet": "CSIS Beyond Parallel — satellite imagery and AIS data on Korea peninsula",
+          "source_name": "CSIS Beyond Parallel"
+        },
+        {
+          "title": "Imagery Analysis - Beyond Parallel - CSIS",
+          "url": "https://beyondparallel.csis.org/imagery/",
+          "snippet": "Imagery analyses; Yongbyon UEP completion noted; UAVs at Panghyon airbase; Russia Yelabuga UAV expansion DPRK labor",
+          "source_name": "CSIS Beyond Parallel"
+        },
+        {
+          "title": "Satellite Imagery Archives - Beyond Parallel - CSIS",
+          "url": "https://beyondparallel.csis.org/tag/satellite-imagery/",
+          "snippet": "Beyond Parallel satellite imagery archive (Yongbyon, Panghyon, missile bases, ports)",
+          "source_name": "CSIS Beyond Parallel"
+        },
+        {
+          "title": "North Korea and Russia Cooperation - Beyond Parallel",
+          "url": "https://beyondparallel.csis.org/north-korea-russia-cooperation/",
+          "snippet": "Yelabuga UAV/UCAV expansion with potential DPRK labor",
+          "source_name": "CSIS Beyond Parallel"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "위성영상 산불 홍수 지진 2026년 5월 6일",
+      "language": "ko",
+      "timestamp": "2026-05-07T00:00:13Z",
+      "result_count": 3,
+      "results": [
+        {
+          "title": "[조선중앙TV 보도 분석] 2026년 5월 6일",
+          "url": "https://www.spnews.co.kr/news/articleView.html?idxno=106969",
+          "snippet": "북한 5월 6일 보도: 황해북도 사방야계 공사·개성시 산불감시 강화·1단계 전국치수망계획 진행",
+          "source_name": "서울평양뉴스 (SPN)"
+        },
+        {
+          "title": "국토위성 영상으로 대형 산불 피해지역 신속 복구 지원",
+          "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148941842",
+          "snippet": "국토위성영상 흑백 0.5m 컬러 2m로 산불·지진·홍수 등 재난 피해지역 확인 지원",
+          "source_name": "대한민국 정책브리핑"
+        },
+        {
+          "title": "2026년 지진 - 위키백과",
+          "url": "https://ko.wikipedia.org/wiki/2026%EB%85%84_%EC%A7%80%EC%A7%84",
+          "snippet": "2026년 발생 주요 지진 목록 (산리쿠 등)",
+          "source_name": "Wikipedia 한국어"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "위성영상 북한 미사일 군사 2026년 5월",
+      "language": "ko",
+      "timestamp": "2026-05-07T00:00:14Z",
+      "result_count": 4,
+      "results": [
+        {
+          "title": "2025년 북한의 무기 개발 활동 평가 및 2026 전망 [세종포커스]",
+          "url": "https://sejong.org/web/boad/1/egoread.php?bd=1&itm=&txt=&bd_area=b03&pg=2&seq=12806",
+          "snippet": "세종연구소 2026-05-03 보고서: 북한이 단순 성능 평가에서 실전 운용 능력 검증으로 전환",
+          "source_name": "세종연구소"
+        },
+        {
+          "title": "북한 신포 SLBM 발사 가능성 — 잠수함 기지에서 또 쐈다",
+          "url": "https://www.reportera.co.kr/military/north-korea-sinpo-slbm-ballistic-missile-launch-april-2026/comment-page-1/",
+          "snippet": "신포발 4월 19일 단거리탄도미사일 140km 비행, SLBM 가능성",
+          "source_name": "리포트에라"
+        },
+        {
+          "title": "군 정찰위성 5기 모두 전력화‥독자적 대북 감시정찰 강화",
+          "url": "https://imnews.imbc.com/news/2026/politics/article/6818571_36911.html",
+          "snippet": "425사업 5호기 5월 말 전력화로 2시간마다 북한 감시",
+          "source_name": "MBC뉴스"
+        },
+        {
+          "title": "미군 없이도 북한 때릴 수 있다 — 정찰위성·현무·L-SAM 완성",
+          "url": "https://www.reportera.co.kr/military/korea-three-axis-defense-opcon-foc-verification-2026/comment-page-1/",
+          "snippet": "3축 방어 체계 완성 및 전작권 FOC 검증",
+          "source_name": "리포트에라"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "아리랑 KOMPSAT CAS500 한반도 관측 2026년 5월",
+      "language": "ko",
+      "timestamp": "2026-05-07T00:00:15Z",
+      "result_count": 5,
+      "results": [
+        {
+          "title": "차세대중형위성 2호, 한반도 첫 교신 성공…국토 관측의 새로운 전환점",
+          "url": "https://www.newspim.com/news/view/20260503000194",
+          "snippet": "CAS500-2 5월 3일 한반도 지상국 첫 교신 성공",
+          "source_name": "뉴스핌"
+        },
+        {
+          "title": "[우주칼럼] '4년 지연' 끝 우주로 간 K-위성…CAS500-2가 연 한국 민간 우주시대",
+          "url": "https://www.newsspace.kr/news/article.html?no=13775",
+          "snippet": "CAS500-2 4년 지연 끝 발사, 한국 민간 우주시대 전환점",
+          "source_name": "뉴스페이스"
+        },
+        {
+          "title": "SpaceX launches South Korean Earth observation satellite, plus 44 more payloads",
+          "url": "https://spaceflightnow.com/2026/05/02/live-coverage-spacex-to-launch-south-korean-earth-observation-satellite-44-more-payloads-on-overnight-falcon-9-rideshare-mission/",
+          "snippet": "SpaceX Falcon 9 카스500-2 발사 라이브 (SSO 498km)",
+          "source_name": "Spaceflight Now"
+        },
+        {
+          "title": "기술 자립 넘어 시장 자립…한국 우주산업 새 국면",
+          "url": "https://www.e-focus.co.kr/news/articleView.html?idxno=3002270",
+          "snippet": "한국 우주산업 시장 자립 전환점",
+          "source_name": "이포커스"
+        },
+        {
+          "title": "CAS500 - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/CAS500",
+          "snippet": "CAS500 시리즈 — KOMPSAT-NEXT 1/2/4/5 사양",
+          "source_name": "Wikipedia"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "위성영상 화산 분출 메이온 킬라우에아 2026년 5월",
+      "language": "ko",
+      "timestamp": "2026-05-07T00:00:16Z",
+      "result_count": 2,
+      "results": [
+        {
+          "title": "킬라우에아산 - 위키백과",
+          "url": "https://ko.wikipedia.org/wiki/%ED%82%AC%EB%9D%BC%EC%9A%B0%EC%97%90%EC%95%84%EC%82%B0",
+          "snippet": "킬라우에아 화산 백과 (분화 이력)",
+          "source_name": "Wikipedia 한국어"
+        },
+        {
+          "title": "하와이 킬라우에아 화산, 540미터 용암 분출로 2024년 12월 이후 최고 기록 경신",
+          "url": "https://www.kjob.news/news/474607",
+          "snippet": "킬라우에아 540m 용암 분출 기록 경신 (3월 10일)",
+          "source_name": "전국인력신문"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery South China Sea Spratly Paracel May 2026",
+      "language": "en",
+      "timestamp": "2026-05-07T00:00:17Z",
+      "result_count": 5,
+      "results": [
+        {
+          "title": "Satellite Photos Show China's Massive Manmade Island in Disputed Waters",
+          "url": "https://www.newsweek.com/satellite-photos-china-manmade-island-disputed-waters-antelope-reef-11733191",
+          "snippet": "Antelope Reef artificial island 1,500 acres reclaimed; long airbase runway",
+          "source_name": "Newsweek"
+        },
+        {
+          "title": "China Restricts Access and Expands Reach in the South China Sea",
+          "url": "https://www.fdd.org/analysis/2026/04/16/china-restricts-access-and-expands-reach-in-the-south-china-sea/",
+          "snippet": "FDD analysis April 2026: China restrictions and expansion",
+          "source_name": "FDD"
+        },
+        {
+          "title": "China Island Tracker - Asia Maritime Transparency Initiative",
+          "url": "https://amti.csis.org/island-tracker/china/",
+          "snippet": "AMTI tracker: 20 outposts Paracels, 7 Spratlys; Antelope Reef ~1,490 acres March 2026",
+          "source_name": "CSIS AMTI"
+        },
+        {
+          "title": "China Is Building Out Another Artificial Island in the South China Sea",
+          "url": "https://www.19fortyfive.com/2026/01/china-is-building-out-another-artificial-island-in-the-south-china-sea/",
+          "snippet": "Antelope Reef new construction first since 2017",
+          "source_name": "19FortyFive"
+        },
+        {
+          "title": "Satellite Images Unveil Completed Chinese Military Fortresses In Spratly Islands",
+          "url": "https://www.euspaceimaging.com/satellite-images-unveil-completed-chinese-military-fortresses-in-spratly-islands/",
+          "snippet": "Spratly fortresses imagery analysis",
+          "source_name": "European Space Imaging"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "FIRMS active fire VIIRS MODIS May 6 2026 wildfire",
+      "language": "en",
+      "timestamp": "2026-05-07T00:00:18Z",
+      "result_count": 2,
+      "results": [
+        {
+          "title": "FIRMS | NASA Earthdata",
+          "url": "https://www.earthdata.nasa.gov/data/tools/firms",
+          "snippet": "FIRMS NRT (3h global, real-time US/Canada) overview",
+          "source_name": "NASA Earthdata"
+        },
+        {
+          "title": "FIRMS Adds Ultra Real-Time Data from MODIS and VIIRS",
+          "url": "https://www.earthdata.nasa.gov/news/feature-articles/firms-adds-ultra-real-time-data-from-modis-viirs",
+          "snippet": "FIRMS Ultra Real-Time data feature",
+          "source_name": "NASA Earthdata"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite glacier Antarctica Greenland melt May 2026 Sentinel-1",
+      "language": "en",
+      "timestamp": "2026-05-07T00:00:19Z",
+      "result_count": 4,
+      "results": [
+        {
+          "title": "ESA - Sentinel-1's decade of essential data over shifting ice sheets",
+          "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-1/Sentinel-1_s_decade_of_essential_data_over_shifting_ice_sheets",
+          "snippet": "10-year Sentinel-1 ice velocity record; Pine Island 10.6→12.7 m/day",
+          "source_name": "ESA"
+        },
+        {
+          "title": "Ten years of polar ice velocity mapping using Copernicus Sentinel-1",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0034425725004961",
+          "snippet": "Decade-long polar ice velocity dataset paper",
+          "source_name": "Remote Sensing of Environment"
+        },
+        {
+          "title": "Antarctica Undergoes 'Greenlandification' As Ice Melt Accelerates",
+          "url": "https://news.climate.columbia.edu/2026/03/10/antarctica-undergoes-greenlandification-as-ice-melt-accelerates/",
+          "snippet": "Antarctic ice melt acceleration likened to Greenland trajectory",
+          "source_name": "Columbia Climate School"
+        },
+        {
+          "title": "Sentinel-1's decade of essential data over shifting ice sheets (Phys.org)",
+          "url": "https://phys.org/news/2026-01-sentinel-decade-essential-shifting-ice.html",
+          "snippet": "Phys.org coverage of Sentinel-1 ice-sheet decade",
+          "source_name": "Phys.org"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "UNOSAT Gaza Sudan Yemen damage assessment May 2026",
+      "language": "en",
+      "timestamp": "2026-05-07T00:00:20Z",
+      "result_count": 3,
+      "results": [
+        {
+          "title": "UNOSAT Gaza Strip Comprehensive Damage Assessment",
+          "url": "https://unosat.org/products/4130",
+          "snippet": "Gaza Comprehensive Damage Assessment (Oct 2025): 198,273 affected structures, 81% damaged",
+          "source_name": "UNOSAT"
+        },
+        {
+          "title": "UNOSAT Gaza Governorate Comprehensive Damage Assessment",
+          "url": "https://unosat.org/products/4205",
+          "snippet": "Gaza Governorate damage assessment products",
+          "source_name": "UNOSAT"
+        },
+        {
+          "title": "UNOSAT Gaza Data Download",
+          "url": "https://gaza-unosat.hub.arcgis.com/pages/data",
+          "snippet": "Gaza UNOSAT data hub",
+          "source_name": "UNOSAT / ArcGIS Hub"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Disaster Charter activation May 2026 satellite",
+      "language": "en",
+      "timestamp": "2026-05-07T00:00:21Z",
+      "result_count": 2,
+      "results": [
+        {
+          "title": "Charter Activations | The International Charter: Space And Major Disasters",
+          "url": "https://disasterscharter.org/activations",
+          "snippet": "International Disaster Charter activations list",
+          "source_name": "International Disaster Charter"
+        },
+        {
+          "title": "International Charter Space and Major Disasters",
+          "url": "https://disasterscharter.org/",
+          "snippet": "International Charter homepage; 24/7 global free satellite disaster mapping",
+          "source_name": "International Disaster Charter"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Planet Labs PlanetScope Pulse story May 2026",
+      "language": "en",
+      "timestamp": "2026-05-07T00:00:22Z",
+      "result_count": 3,
+      "results": [
+        {
+          "title": "Planet Labs launches three more Pelican satellites as $900M backlog and defence contracts drive first profitable year",
+          "url": "https://thenextweb.com/news/planet-labs-pelican-satellite-earth-observation",
+          "snippet": "Pelicans 7-9 launched May 3 on SpaceX Falcon 9; fleet now 9 spacecraft; $307.7M FY2026 revenue",
+          "source_name": "The Next Web"
+        },
+        {
+          "title": "Planet Releases Analysis-Ready PlanetScope Product for Time-Series Analysis and ML",
+          "url": "https://www.planet.com/pulse/planet-releases-analysis-ready-planetscope-product-for-time-series-analysis-and-machine-learning-models/",
+          "snippet": "Planet Pulse: ARD PlanetScope product for time series ML",
+          "source_name": "Planet Pulse"
+        },
+        {
+          "title": "Planet Launches Next Generation PlanetScope with Eight Spectral Bands and Quality Improvements",
+          "url": "https://www.planet.com/pulse/planet-launches-next-generation-planetscope-with-eight-spectral-bands-and-quality-improvements/",
+          "snippet": "Next-gen PlanetScope 8-band rollout",
+          "source_name": "Planet Pulse"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "SkyTruth oil spill ship dark vessel May 2026",
+      "language": "en",
+      "timestamp": "2026-05-07T00:00:23Z",
+      "result_count": 4,
+      "results": [
+        {
+          "title": "Cerulean | SkyTruth",
+          "url": "https://skytruth.org/cerulean",
+          "snippet": "Cerulean: free open-source AI/SAR oil slick detection platform",
+          "source_name": "SkyTruth"
+        },
+        {
+          "title": "Bringing Russia's Shadow Fleet Into the Light Using Satellite Data",
+          "url": "https://skytruth.org/section/bringing-russias-shadow-fleet-into-the-light-using-satellite-data/",
+          "snippet": "Russian shadow fleet exposure via satellite SAR",
+          "source_name": "SkyTruth"
+        },
+        {
+          "title": "Analysis Shows Intercepted Oil Tanker Demonstrated Spoofing Activity",
+          "url": "https://skytruth.org/2026/01/analysis-shows-intercepted-oil-tanker-demonstrated-spoofing-activity/",
+          "snippet": "Tanker AIS spoofing analysis",
+          "source_name": "SkyTruth"
+        },
+        {
+          "title": "SkyTruth's Cerulean Oil Slick Detection Now Integrated into Skylight",
+          "url": "https://www.skylight.global/news/skytruth-integration",
+          "snippet": "Cerulean integrated into Skylight maritime intelligence platform",
+          "source_name": "Skylight"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "earthquake May 2026 InSAR satellite damage assessment",
+      "language": "en",
+      "timestamp": "2026-05-07T00:00:24Z",
+      "result_count": 3,
+      "results": [
+        {
+          "title": "Earthquakes (InSAR) - eoPortal",
+          "url": "https://www.eoportal.org/other-space-activities/earthquakes-insar",
+          "snippet": "InSAR coseismic deformation mapping reference",
+          "source_name": "eoPortal"
+        },
+        {
+          "title": "InSAR-based assessment of post-earthquake building reconstruction: The Nepal case study",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1569843225005308",
+          "snippet": "Post-earthquake reconstruction MT-InSAR study",
+          "source_name": "ScienceDirect"
+        },
+        {
+          "title": "Rapid Damage Assessment by Means of Multi-Temporal SAR — Sentinel-1",
+          "url": "https://www.mdpi.com/2072-4292/6/6/4870",
+          "snippet": "Sentinel-1 multi-temporal SAR rapid damage assessment review",
+          "source_name": "Remote Sensing (MDPI)"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery typhoon cyclone tropical storm May 2026 Himawari",
+      "language": "en",
+      "timestamp": "2026-05-07T00:00:25Z",
+      "result_count": 3,
+      "results": [
+        {
+          "title": "Northern Hemisphere Himawari Satellite Imagery, Guam, Central Pacific | OSPO",
+          "url": "https://www.ospo.noaa.gov/products/imagery/nohemi.html",
+          "snippet": "NOAA OSPO Himawari Northern Hemisphere imagery products",
+          "source_name": "NOAA OSPO"
+        },
+        {
+          "title": "Digital Typhoon: Typhoon Images and Information",
+          "url": "https://agora.ex.nii.ac.jp/digital-typhoon/index.html.en",
+          "snippet": "Digital Typhoon real-time Himawari imagery archive",
+          "source_name": "NII Digital Typhoon"
+        },
+        {
+          "title": "Latest Satellite Imagery - National Hurricane Center - NOAA",
+          "url": "https://www.nhc.noaa.gov/satellite.php",
+          "snippet": "NHC GOES satellite imagery for tropical cyclones",
+          "source_name": "NOAA NHC"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "위성 메탄 대기오염 빙하 환경 2026년 5월",
+      "language": "ko",
+      "timestamp": "2026-05-07T00:00:26Z",
+      "result_count": 3,
+      "results": [
+        {
+          "title": "[랭킹연구소] UCLA, 세계 최악의 메탄 배출 매립지 25곳 선정",
+          "url": "https://www.newsspace.kr/news/article.html?no=13611",
+          "snippet": "UCLA 위성 정밀 관측: 터키 실리브리 매립지 시간당 8.4톤 메탄 배출",
+          "source_name": "뉴스페이스"
+        },
+        {
+          "title": "기후 위기의 '스모킹 건' 메탄, 단기 온난화 저지의 핵심 열쇠로 부상",
+          "url": "https://www.ecoday.kr/article/1065563608672462",
+          "snippet": "메탄 20년 GWP CO2의 80배 — 2026년 국제 기후 대응 핵심 변수",
+          "source_name": "에코데이"
+        },
+        {
+          "title": "기후변화의 시한폭탄 '메탄' 북극해에서 터질까",
+          "url": "https://www.kapanet.or.kr/kapawebzine/data/154/sub/17.html",
+          "snippet": "북극 해저 영구동토층 메탄 방출 가능성",
+          "source_name": "KAPA"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery Iran Israel strike infrastructure damage May 2026",
+      "language": "en",
+      "timestamp": "2026-05-07T00:00:27Z",
+      "result_count": 5,
+      "results": [
+        {
+          "title": "Iran Satellite Data Show US-Israel Strike Damage to Civilian, Military Sites",
+          "url": "https://www.bloomberg.com/graphics/2026-iran-tehran-strike-damage-satellite-images/",
+          "snippet": "Bloomberg satellite imagery analysis of Tehran damage from US-Israel strikes",
+          "source_name": "Bloomberg"
+        },
+        {
+          "title": "Satellite Images Reveal Damage At Iranian Facilities After US-Israeli Air Strikes",
+          "url": "https://www.rferl.org/a/satellite-images-reveal-damage-at-iranian-facilities-after-us-israeli-air-strikes/33702142.html",
+          "snippet": "Konarak base ships burning, Bandar Abbas naval HQ damage from imagery",
+          "source_name": "RFE/RL"
+        },
+        {
+          "title": "OSU researchers work to track damage in Iran with satellite imaging",
+          "url": "https://www.opb.org/article/2026/03/11/think-out-loud-osu-research-track-damage-iran-satellite-imaging/",
+          "snippet": "OSU Conflict Ecology: 7,645 buildings damaged Feb 28-Apr 8 via radar imagery",
+          "source_name": "OPB"
+        },
+        {
+          "title": "Satellite imagery reveals damage to Iranian nuclear facilities after US, Israeli strikes",
+          "url": "https://www.aa.com.tr/en/middle-east/satellite-imagery-reveals-damage-to-iranian-nuclear-facilities-after-us-israeli-strikes/3608861",
+          "snippet": "Natanz, Isfahan damage from imagery",
+          "source_name": "Anadolu Agency"
+        },
+        {
+          "title": "2026 Iran war - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026_Iran_war",
+          "snippet": "2026 Iran war overview (Feb 28 - Apr 8 hostilities)",
+          "source_name": "Wikipedia"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "위성 NDVI 농업 작황 한반도 동해 어업 2026",
+      "language": "ko",
+      "timestamp": "2026-05-07T00:00:28Z",
+      "result_count": 3,
+      "results": [
+        {
+          "title": "농업·산림 관리에 인공위성 이용...산림청-농진청, '농림위성' 활용",
+          "url": "https://m.etnews.com/20190107000320",
+          "snippet": "한국 농림위성 NDVI/식생 활용 추진",
+          "source_name": "전자신문"
+        },
+        {
+          "title": "국가산림위성정보활용 센터 개소 (보도자료)",
+          "url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156647684",
+          "snippet": "국가산림위성정보활용센터 개소 — 농림위성 2026년 상반기 대국민 서비스",
+          "source_name": "대한민국 정책브리핑"
+        },
+        {
+          "title": "2026년 해양 보호의 전환점, 기술이 집행 격차를 메운다",
+          "url": "https://www.kjob.news/news/478259",
+          "snippet": "해양수산부 위성 추적 + 해양 드론 도입 검토; AI 기반 불법 어업 단속",
+          "source_name": "전국인력신문"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Caribbean US Venezuela military buildup satellite May 2026",
+      "language": "en",
+      "timestamp": "2026-05-07T00:00:29Z",
+      "result_count": 4,
+      "results": [
+        {
+          "title": "We've tracked the US military build-up in the Caribbean. Here's what it could do",
+          "url": "https://stories.theconversation.com/tracking-the-us-military-in-the-caribbean/",
+          "snippet": "Satellite tracking of US Caribbean buildup with USS Gerald R. Ford",
+          "source_name": "The Conversation"
+        },
+        {
+          "title": "Mapping the U.S. Military Buildup Near Venezuela",
+          "url": "https://www.cfr.org/articles/mapping-us-military-buildup-near-venezuela",
+          "snippet": "CFR mapping of US Caribbean buildup near Venezuela",
+          "source_name": "Council on Foreign Relations"
+        },
+        {
+          "title": "United States military buildup in the Caribbean during Operation Southern Spear",
+          "url": "https://en.wikipedia.org/wiki/United_States_military_buildup_in_the_Caribbean_during_Operation_Southern_Spear",
+          "snippet": "Operation Southern Spear ~15,000 personnel; F-35, AC-130, USS Iwo Jima ARG",
+          "source_name": "Wikipedia"
+        },
+        {
+          "title": "Timeline: U.S. Military Ramp-Up in the Caribbean Culminates in Capture of Maduro",
+          "url": "https://www.as-coa.org/articles/timeline-us-military-ramp-caribbean-culminates-capture-maduro",
+          "snippet": "Maduro captured Jan 3 2026; force still built up",
+          "source_name": "AS/COA"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery Sudan Yemen humanitarian May 2026",
+      "language": "en",
+      "timestamp": "2026-05-07T00:00:30Z",
+      "result_count": 4,
+      "results": [
+        {
+          "title": "Satellite imagery reveals how Sudan's war scorched its 'breadbasket'",
+          "url": "https://www.aljazeera.com/economy/2026/5/4/satellite-imagery-reveals-how-sudans-war-scorched-its-breadbasket",
+          "snippet": "Al Jazeera digital investigation: Sentinel-2 imagery shows Gezira/Sennar/Khartoum cropland devastation",
+          "source_name": "Al Jazeera"
+        },
+        {
+          "title": "Satellite Data Confirms Rapid Expansion of Sudan Displacement Camps Amid North Darfur Conflict",
+          "url": "https://news.satnews.com/2026/01/01/satellite-data-confirms-rapid-expansion-of-sudan-displacement-camps-amid-north-darfur-conflict/",
+          "snippet": "Satellite-confirmed Sudan IDP camp expansion Jan 2026",
+          "source_name": "SatNews"
+        },
+        {
+          "title": "UN Concludes RSF Committed Genocide in El-Fasher; Yale Lab Provided Key Evidence",
+          "url": "https://ysph.yale.edu/news-article/un-concludes-rsf-conducted-genocide-in-el-fasher-yale-lab-provided-key-evidence/",
+          "snippet": "Yale HRL satellite evidence underpins UN El-Fasher genocide finding",
+          "source_name": "Yale School of Public Health"
+        },
+        {
+          "title": "Satellite Images of Sudan: The Massacre of El-Fasher",
+          "url": "https://sites.uab.edu/humanrights/2025/12/02/satellite-images-of-sudan-the-massacre-of-el-fasher/",
+          "snippet": "Satellite imagery documenting El-Fasher massacre",
+          "source_name": "UAB Institute for Human Rights"
+        }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Climate TRACE emissions update May 2026 satellite",
+      "language": "en",
+      "timestamp": "2026-05-07T00:00:31Z",
+      "result_count": 4,
+      "results": [
+        {
+          "title": "Climate scientist finds large errors in a global climate pollution database",
+          "url": "https://phys.org/news/2026-05-climate-scientist-large-errors-global.html",
+          "snippet": "May 2026 NAU study: Climate TRACE underestimates urban vehicle CO2 emissions by ~70%",
+          "source_name": "Phys.org"
+        },
+        {
+          "title": "Climate TRACE Releases January 2026 Emissions Data",
+          "url": "https://climatetrace.org/news/climate-trace-releases-january-2026-emissions-data",
+          "snippet": "Climate TRACE Jan 2026 release with monthly data",
+          "source_name": "Climate TRACE"
+        },
+        {
+          "title": "Data Downloads - Climate TRACE",
+          "url": "https://climatetrace.org/data",
+          "snippet": "Climate TRACE data downloads — release 5.6.0 thru Feb 2026",
+          "source_name": "Climate TRACE"
+        },
+        {
+          "title": "About the Coalition - Climate TRACE",
+          "url": "https://climatetrace.org/about",
+          "snippet": "300+ satellites, 11,000+ sensors, 2.7M+ emission sources tracked",
+          "source_name": "Climate TRACE"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "src-023",
+  "title": "GFW 2026 Report — 2025 primary tropical rainforest loss declined 36% YoY (4.3 Mha; ID +14%, CO -17%)",
+  "url": "https://www.competere.eu/global-forest-watch-2026-signs-of-growth-and-transformation/",
+  "snippet": "GFW report released 2026-05-05: 2025 primary tropical rainforest loss declined 36% YoY; 4.3 Mha lost (still 46% above decade average). Colombia -17%, Indonesia +14%, Malaysia slight decline.",
+  "source_name": "Competere / GFW",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "update",
+  "related_report": "2026-04-30/src-006",
+  "related_item": "2026-04-30/src-006",
+  "tag_reason": "4/30 src-006 (WRI Tropical Rainforest Loss 36% drop)와 동일 사건의 후속 — 5/5 Competere/GFW가 국가별 수치(인도네시아 +14% 역행, 콜롬비아 -17%, 말레이시아 소폭 감소) 신규 분석 추가 → update",
+  "entities": [
+    {"id": "temp-evt-023", "type": "Event", "name": "GFW 2026 tropical rainforest loss report (2025: -36% YoY, 4.3 Mha)", "properties": {"phenomenon": "deforestation", "country": null, "admin": "global-tropics", "observation_date": "2026-05-05", "loss_mha": 4.3, "yoy_pct": -36, "id_yoy_pct": 14, "co_yoy_pct": -17, "confidence": 0.88}},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9"},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sat-sentinel1a", "type": "Satellite", "name": "Sentinel-1A"},
+    {"id": "sensor-oli", "type": "Sensor", "name": "OLI"},
+    {"id": "sensor-msi", "type": "Sensor", "name": "MSI"},
+    {"id": "sensor-c-sar", "type": "Sensor", "name": "C-band SAR"},
+    {"id": "org-gfw", "type": "Organization", "name": "Global Forest Watch"},
+    {"id": "co-id", "type": "Country", "name": "인도네시아"},
+    {"id": "co-br", "type": "Country", "name": "브라질"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-023", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "temp-evt-023", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "temp-evt-023", "predicate": "observedBy", "object": "sat-sentinel1a"},
+    {"subject": "temp-evt-023", "predicate": "usesSensor", "object": "sensor-oli"},
+    {"subject": "temp-evt-023", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "temp-evt-023", "predicate": "usesSensor", "object": "sensor-c-sar"},
+    {"subject": "temp-evt-023", "predicate": "analyzedBy", "object": "org-gfw"},
+    {"subject": "temp-evt-023", "predicate": "manifests", "object": "phen-defor"},
+    {"subject": "temp-evt-023", "predicate": "inDomain", "object": "dom-human"}
+  ]
+}
