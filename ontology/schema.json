@@ -219,6 +219,20 @@
       "target": "org-si-analytics",
       "reason": "SI Analytics — 한국 위성영상 AI 분석 기업. 북한 신포 조선소 SLBM 준비 위성영상 분석 제공(ent-evt-077).",
       "source_ids": ["src-012"]
+    },
+    {
+      "date": "2026-05-06",
+      "action": "add_organization",
+      "target": "org-philsa, org-washpost, org-amazon-conservation, org-oregon-state",
+      "reason": "PhilSA(space_agency, PH) — 마욘 화산재 8,544ha 위성 매핑. Washington Post(media, US) — 이란 미군기지 Copernicus+Planet 교차검증 보도. Amazon Conservation(ngo, US) — Amazon Mining Watch 위성 모니터링 플랫폼. Oregon State Conflict Ecology(research, US) — 이란 민간 피해 7,645동 위성 추산.",
+      "source_ids": ["src-001", "src-004", "src-007", "src-008"]
+    },
+    {
+      "date": "2026-05-06",
+      "action": "add_country",
+      "target": "co-ir, co-ae",
+      "reason": "이란(IR) — 미군기지 타격 피해 위성 검증 228개 구조물(temp-081), 민간 피해 7,645동(temp-084), 핵시설 생존 분석(temp-085). UAE(AE) — 미군기지 소재국으로 타격 대상 포함.",
+      "source_ids": ["src-001", "src-008", "src-021"]
     }
   ]
 }

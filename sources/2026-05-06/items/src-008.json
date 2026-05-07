@@ -1,0 +1,32 @@
+{
+  "id": "src-008",
+  "title": "Iran Satellite Data Show US-Israel Strike Damage to Civilian, Military Sites — 7,645 buildings (Bloomberg)",
+  "url": "https://www.bloomberg.com/graphics/2026-iran-tehran-strike-damage-satellite-images/",
+  "snippet": "Conflict Ecology researchers at Oregon State University estimate at least 7,645 buildings damaged/destroyed across Iran including 60 education and 12 health facilities between Feb 28 and start of truce Apr 8. Includes strikes in Isfahan and Tehran. Satellite imagery analysis.",
+  "source_name": "Bloomberg",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이란 민간·군사 시설 피해 위성 평가 신규 — Oregon State Conflict Ecology 연구진 7,645건물 파괴 추정. 교육 60개소, 보건 12개소 포함. Feb 28-Apr 8 기간. Bloomberg 독점 위성영상 분석.",
+  "entities": [
+    {"id": "ent-evt-085", "type": "Event", "name": "이란 공습 피해 7,645건물 — 위성 평가 (Bloomberg/Oregon State)", "properties": {"phenomenon": "infrastructure_damage", "domain": "Humanitarian", "lat": 32.65, "lon": 51.68, "country": "IR", "severity": "high", "satellites_used": ["Sentinel-2", "Planet"], "confidence": 0.85, "before_after_available": true, "buildings_damaged": 7645, "education_facilities": 60, "health_facilities": 12, "period": "2026-02-28 to 2026-04-08"}},
+    {"id": "org-osu-conflictecology", "type": "Organization", "name": "Oregon State University Conflict Ecology Lab", "properties": {"org_type": "research", "country": "US"}},
+    {"id": "org-bloomberg", "type": "Organization", "name": "Bloomberg", "properties": {"org_type": "media", "country": "US"}},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sat-planetscope", "type": "Satellite", "name": "PlanetScope (Doves)"},
+    {"id": "co-ir", "type": "Country", "name": "이란"},
+    {"id": "ent-loc-031", "type": "Location", "name": "Isfahan, Iran", "properties": {"country": "IR", "lat": 32.65, "lon": 51.68}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-085", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-085", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "ent-evt-085", "predicate": "analyzedBy", "object": "org-osu-conflictecology"},
+    {"subject": "ent-evt-085", "predicate": "reportedBy", "object": "org-bloomberg"},
+    {"subject": "ent-evt-085", "predicate": "manifests", "object": "phen-infra-damage"},
+    {"subject": "ent-evt-085", "predicate": "inDomain", "object": "dom-humanitarian"},
+    {"subject": "ent-evt-085", "predicate": "inCountry", "object": "co-ir"},
+    {"subject": "ent-evt-085", "predicate": "locatedIn", "object": "ent-loc-031"}
+  ]
+}

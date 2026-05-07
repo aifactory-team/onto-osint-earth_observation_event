@@ -450,4 +450,60 @@ config 한도 내 — 새 클래스 0건, 새 관계 유형 0건.
 | 새 Event | ent-evt-070~080 (11건) | 신규 7건 + 업데이트 4건 |
 | Organization | org-si-analytics (1건) | SI Analytics — 한국 위성영상 AI 기업 |
 
-config 한도 내 — 새 클래스 0건, 새 관계 유형 0건.
+config 한도 내 — 새 클래스 0건, 새 관계 유형 0건. 누적 추론 64건.
+
+## 2026-05-06 추론 결과
+
+### multi_satellite_confirmation (다중 위성 교차검증) — 3건
+
+- **추론 #1:** temp-081 (이란 미군기지 피해) — observedBy Sentinel-2A (ESA) AND PlanetScope (Planet) → multiSatBoost +0.20 [confidence 0.90, 확정]
+  - WashPost가 이란측 영상 109장을 EU Copernicus+Planet 영상으로 독립 교차검증
+- **추론 #2:** temp-083 (아마존 금 채굴 삼림벌채) — observedBy Sentinel-2 (ESA) AND PlanetScope (Planet) → multiSatBoost +0.20 [confidence 0.85, 확정]
+  - Amazon Mining Watch 플랫폼 장기 위성 모니터링
+- **추론 #3:** temp-084 (이란 민간 피해 7,645동) — observedBy Sentinel-2 (ESA) AND PlanetScope (Planet) → multiSatBoost +0.20 [confidence 0.85, 확정]
+  - Oregon State Conflict Ecology 위성 기반 피해 추산
+
+### sensor_capability_match (센서-현상 적합성) — 3건
+
+- **trace_gas x methane:** ent-evt-053 (MethaneSAT Permian) tracegasBoost +0.15 [0.90]
+- **thermal x volcano:** ent-evt-021 (Kīlauea Ep46) thermalBoost +0.10 [0.95]
+- **hi-res x military:** temp-081 (이란 미군기지) hiResBoost +0.15 [0.90]
+
+### official_source_trust — 2건
+
+- temp-082 (마욘 PhilSA+PHIVOLCS) → +0.15 [0.95]
+- ent-evt-021 (Kīlauea USGS HVO) → +0.15 [0.95]
+
+### cascading_disaster (유사 적용) — 1건
+
+- temp-084 triggeredBy temp-081 — 동일 분쟁 군사→인도주의 인과관계 [0.80]
+
+### before_after_credibility — 3건
+
+- temp-081, temp-083, temp-084 → baCredibilityBoost +0.10 각각
+
+### temporal_progression — 3건
+
+- ent-evt-021 (Kīlauea Ep44→46), ent-evt-029 (Mayon 지속), ent-evt-041 (Georgia 산불 지속)
+
+### 일별 추론 통계
+
+| 추론 규칙 | 금일 | 누적 | 평균 신뢰도 |
+|----------|------|------|------------|
+| multi_satellite_confirmation | 3 | 15 | 0.87 |
+| sensor_capability_match | 3 | 21 | 0.92 |
+| official_source_trust | 2 | 15 | 0.95 |
+| cascading_disaster | 1 | 3 | 0.80 |
+| before_after_credibility | 3 | 9 | 0.87 |
+| temporal_progression | 3 | 12 | 0.90 |
+| **합계** | **15** | **79** | **0.90** |
+
+### 온톨로지 변경
+
+| 변경 유형 | 대상 | 근거 |
+|----------|------|------|
+| 새 Organization | org-philsa, org-washpost, org-amazon-conservation, org-oregon-state (4건) | 각각 마욘 위성 매핑, 이란 교차검증 보도, 아마존 모니터링, 이란 피해 추산 |
+| 새 Country | co-ir (이란), co-ae (UAE) (2건) | 이란 분쟁 위성 분석 |
+| 새 Event | temp-081~085 (5건) | 이란 기지 피해, 마욘 화산재, 아마존 채굴, 이란 민간 피해, 이란 핵시설 |
+
+config 한도 내 — 새 클래스 0건, 새 관계 유형 0건. 누적 추론 79건.

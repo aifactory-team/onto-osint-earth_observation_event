@@ -1,0 +1,32 @@
+{
+  "id": "src-001",
+  "title": "Iran has hit far more U.S. military assets than reported — 228 structures damaged (WashPost Copernicus+Planet verification)",
+  "url": "https://www.washingtonpost.com/investigations/2026/05/06/iran-us-bases-satellite-images/",
+  "snippet": "Washington Post investigation verified 228 structures or equipment damaged at US military sites across Middle East, using Copernicus and Planet imagery for cross-verification. Damage includes hangars, barracks, fuel depots, aircraft, radar and air defense equipment.",
+  "source_name": "Washington Post",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "워싱턴포스트 독립 조사 — Copernicus Sentinel-2 및 Planet 영상 교차검증으로 미군 기지 228개 구조물 피해 확인. 기존 보도 대비 대폭 상향된 피해 규모 신규 공개.",
+  "entities": [
+    {"id": "ent-evt-081", "type": "Event", "name": "이란 공격 미군 기지 피해 228개 구조물 — 위성 교차검증 (중동)", "properties": {"phenomenon": "military_buildup", "domain": "Defense", "lat": 24.0, "lon": 54.0, "country": "AE", "severity": "high", "satellites_used": ["Sentinel-2", "PlanetScope"], "confidence": 0.90, "before_after_available": true, "satellite_unverified": false, "structures_damaged": 228}},
+    {"id": "org-wapo", "type": "Organization", "name": "Washington Post", "properties": {"org_type": "media", "country": "US"}},
+    {"id": "org-planet", "type": "Organization", "name": "Planet Labs"},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sat-planetscope", "type": "Satellite", "name": "PlanetScope (Doves)"},
+    {"id": "co-us", "type": "Country", "name": "미국"},
+    {"id": "co-ae", "type": "Country", "name": "아랍에미리트", "properties": {"iso_code": "AE", "region": "서아시아"}},
+    {"id": "co-sa", "type": "Country", "name": "사우디아라비아"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-081", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-081", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "ent-evt-081", "predicate": "analyzedBy", "object": "org-wapo"},
+    {"subject": "ent-evt-081", "predicate": "inDomain", "object": "dom-defense"},
+    {"subject": "ent-evt-081", "predicate": "manifests", "object": "phen-military"},
+    {"subject": "ent-evt-081", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "ent-evt-081", "predicate": "inCountry", "object": "co-ae"}
+  ]
+}

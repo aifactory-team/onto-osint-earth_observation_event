@@ -1,0 +1,61 @@
+{
+  "date": "2026-05-06",
+  "new_triples": [
+    {"subject": "temp-081", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-001", "date": "2026-05-06", "confidence": 0.90, "type": "explicit", "note": "Copernicus Sentinel-2A 전후비교 영상 — 이란 미군기지 228개 구조물 피해 확인"},
+    {"subject": "temp-081", "predicate": "observedBy", "object": "sat-planetscope", "source_id": "src-001", "date": "2026-05-06", "confidence": 0.90, "type": "explicit", "note": "PlanetScope 3m 광학 교차검증 — WashPost 독립 분석"},
+    {"subject": "temp-081", "predicate": "analyzedBy", "object": "org-washpost", "source_id": "src-001", "date": "2026-05-06", "confidence": 0.85, "type": "explicit", "note": "Washington Post 탐사보도팀 위성영상 분석"},
+    {"subject": "temp-081", "predicate": "manifests", "object": "phen-military", "source_id": "src-001", "date": "2026-05-06", "confidence": 0.95, "type": "explicit"},
+    {"subject": "temp-081", "predicate": "inDomain", "object": "dom-defense", "source_id": "src-001", "date": "2026-05-06", "confidence": 1.00, "type": "explicit"},
+    {"subject": "temp-081", "predicate": "inCountry", "object": "co-us", "source_id": "src-001", "date": "2026-05-06", "confidence": 1.00, "type": "explicit", "note": "미군기지 소속 — 국가 코드 US (시설 위치는 이란)"},
+
+    {"subject": "temp-082", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-004", "date": "2026-05-06", "confidence": 0.90, "type": "explicit", "note": "Himawari-9 VAAC Tokyo 화산재 자문 연계 관측"},
+    {"subject": "temp-082", "predicate": "analyzedBy", "object": "org-philsa", "source_id": "src-004", "date": "2026-05-06", "confidence": 0.90, "type": "explicit", "note": "PhilSA 위성 화산재 매핑 — 8,544ha 피복 면적 산출"},
+    {"subject": "temp-082", "predicate": "analyzedBy", "object": "org-phivolcs", "source_id": "src-004", "date": "2026-05-06", "confidence": 0.95, "type": "explicit", "note": "PHIVOLCS 화산 경보 체계 공식 분석"},
+    {"subject": "temp-082", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-004", "date": "2026-05-06", "confidence": 1.00, "type": "explicit"},
+    {"subject": "temp-082", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-004", "date": "2026-05-06", "confidence": 1.00, "type": "explicit"},
+    {"subject": "temp-082", "predicate": "inCountry", "object": "co-ph", "source_id": "src-004", "date": "2026-05-06", "confidence": 1.00, "type": "explicit"},
+
+    {"subject": "temp-083", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-007", "date": "2026-05-06", "confidence": 0.90, "type": "explicit", "note": "Sentinel-2A 다분광 영상 — 아마존 금채굴 삼림벌채 496,000ha 추적"},
+    {"subject": "temp-083", "predicate": "observedBy", "object": "sat-planetscope", "source_id": "src-007", "date": "2026-05-06", "confidence": 0.85, "type": "explicit", "note": "PlanetScope 고빈도 모니터링 — Amazon Conservation 연구 데이터"},
+    {"subject": "temp-083", "predicate": "analyzedBy", "object": "org-amazon-conservation", "source_id": "src-007", "date": "2026-05-06", "confidence": 0.85, "type": "explicit", "note": "Amazon Conservation Team 위성 모니터링 연구 (AP 보도)"},
+    {"subject": "temp-083", "predicate": "manifests", "object": "phen-mining", "source_id": "src-007", "date": "2026-05-06", "confidence": 0.95, "type": "explicit"},
+    {"subject": "temp-083", "predicate": "manifests", "object": "phen-defor", "source_id": "src-007", "date": "2026-05-06", "confidence": 0.95, "type": "explicit", "note": "금채굴에 의한 삼림벌채 복합 현상"},
+    {"subject": "temp-083", "predicate": "inDomain", "object": "dom-human", "source_id": "src-007", "date": "2026-05-06", "confidence": 1.00, "type": "explicit"},
+    {"subject": "temp-083", "predicate": "inCountry", "object": "co-br", "source_id": "src-007", "date": "2026-05-06", "confidence": 1.00, "type": "explicit"},
+
+    {"subject": "temp-084", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-008", "date": "2026-05-06", "confidence": 0.90, "type": "explicit", "note": "Sentinel-2A 전후비교 — 이란 민간 피해 7,645동 구조물 평가"},
+    {"subject": "temp-084", "predicate": "observedBy", "object": "sat-planetscope", "source_id": "src-008", "date": "2026-05-06", "confidence": 0.90, "type": "explicit", "note": "PlanetScope 고해상도 민간 인프라 피해 교차검증"},
+    {"subject": "temp-084", "predicate": "analyzedBy", "object": "org-oregon-state", "source_id": "src-008", "date": "2026-05-06", "confidence": 0.80, "type": "explicit", "note": "Oregon State University 연구팀 피해 분석 (Bloomberg 보도)"},
+    {"subject": "temp-084", "predicate": "manifests", "object": "phen-infra-damage", "source_id": "src-008", "date": "2026-05-06", "confidence": 0.95, "type": "explicit", "note": "민간·군사 시설 복합 피해 — 7,645동 건물"},
+    {"subject": "temp-084", "predicate": "inDomain", "object": "dom-humanitarian", "source_id": "src-008", "date": "2026-05-06", "confidence": 1.00, "type": "explicit"},
+
+    {"subject": "temp-085", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-021", "date": "2026-05-06", "confidence": 0.85, "type": "explicit", "note": "Sentinel-2A 영상 — 이란 핵시설 부분 생존 확인 (CNN 조사보도)"},
+    {"subject": "temp-085", "predicate": "manifests", "object": "phen-military", "source_id": "src-021", "date": "2026-05-06", "confidence": 0.90, "type": "explicit", "note": "핵시설 피해 평가 — 군사·전략 도메인"},
+    {"subject": "temp-085", "predicate": "inDomain", "object": "dom-defense", "source_id": "src-021", "date": "2026-05-06", "confidence": 1.00, "type": "explicit"}
+  ],
+  "updated_triples": [
+    {"subject": "ent-evt-021", "predicate": "partOfSeries", "object": "ent-evt-021", "source_id": "src-002", "date": "2026-05-06", "confidence": 0.95, "type": "explicit", "note": "Kīlauea Episode 46 종료 — 9시간 지속, 용암 분수 650ft, 4.6M m³ 용암, 테프라 Highway 11 도달. USGS HVO 공식 종료 보고"},
+    {"subject": "ent-evt-029", "predicate": "partOfSeries", "object": "ent-evt-029", "source_id": "src-003", "date": "2026-05-06", "confidence": 0.95, "type": "explicit", "note": "Mayon 5/6 VAAC Tokyo 1252Z 화산재 자문 — 분출 지속, 용암 Basud 방면 3.8km 전진"},
+    {"subject": "ent-evt-041", "predicate": "partOfSeries", "object": "ent-evt-041", "source_id": "src-005", "date": "2026-05-06", "confidence": 0.95, "type": "explicit", "note": "Georgia 산불 진화 진전 — Hwy82 22,471ac 85%, Pineland 32,575ac 65% 봉쇄율 상승"},
+    {"subject": "ent-evt-053", "predicate": "partOfSeries", "object": "ent-evt-053", "source_id": "src-011", "date": "2026-05-06", "confidence": 0.90, "type": "explicit", "note": "MethaneSAT Permian Basin — NM 1.2% vs TX 3.1% 메탄 강도 비교, 상원 조사 연계"},
+    {"subject": "ent-evt-028", "predicate": "partOfSeries", "object": "ent-evt-028", "source_id": "src-018", "date": "2026-05-06", "confidence": 0.90, "type": "explicit", "note": "UNOSAT Gaza 피해 — 198,273 구조물 영향, 81% 손상 확인, 누적 피해 규모 확대"}
+  ],
+  "inferred_triples": [
+    {"subject": "temp-081", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.90, "type": "inferred", "note": "Copernicus Sentinel-2A (ESA) + PlanetScope (Planet) 독립 관측 — 이란 미군기지 피해 다중위성 교차검증"},
+    {"subject": "temp-083", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.90, "type": "inferred", "note": "Sentinel-2A (ESA) + PlanetScope (Planet) 독립 관측 — 아마존 금채굴 삼림벌채 다중위성 교차검증"},
+    {"subject": "temp-084", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.90, "type": "inferred", "note": "Sentinel-2A (ESA) + PlanetScope (Planet) 독립 관측 — 이란 민간 피해 다중위성 교차검증"},
+    {"subject": "temp-082", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.99, "type": "inferred", "note": "PhilSA (필리핀 우주국) + PHIVOLCS (화산지진연구소) = space_agency 공식 기관 분석"},
+    {"subject": "temp-084", "predicate": "triggeredBy", "object": "temp-081", "rule": "cascading_disaster", "confidence": 0.85, "type": "inferred", "note": "이란 미군기지 공습(temp-081) → 민간 인프라 피해(temp-084) — 동일 지역·동일 시간대 인과 관계"},
+    {"subject": "temp-081", "predicate": "hiResBoost", "object": "+0.15", "rule": "sensor_capability_match_hires", "confidence": 0.85, "type": "inferred", "note": "PlanetScope ≤3m 고해상도 — 군사 시설 구조물 개별 식별 가능"},
+    {"subject": "temp-081", "predicate": "baCredibilityBoost", "object": "+0.10", "rule": "before_after_credibility", "confidence": 0.90, "type": "inferred", "note": "WashPost Copernicus+Planet 전후비교(before/after) 영상 제공"},
+    {"subject": "temp-083", "predicate": "baCredibilityBoost", "object": "+0.10", "rule": "before_after_credibility", "confidence": 0.85, "type": "inferred", "note": "Amazon Conservation 2018~2026 시계열 위성 비교 데이터"},
+    {"subject": "temp-084", "predicate": "baCredibilityBoost", "object": "+0.10", "rule": "before_after_credibility", "confidence": 0.90, "type": "inferred", "note": "Bloomberg Sentinel-2+Planet 전후비교 — 7,645동 피해 전후 대비"},
+    {"subject": "ent-evt-021", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.99, "type": "inferred", "note": "USGS HVO = space_agency 공식 기관 — Kīlauea Ep46 종료 보고"},
+    {"subject": "ent-evt-041", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.90, "type": "inferred", "note": "NASA Earth Observatory 공식 분석 — Georgia 산불 Landsat 8 영상"}
+  ],
+  "stats": {
+    "new_nodes": 8,
+    "new_edges": 32,
+    "inferred_edges": 8
+  }
+}

@@ -1,15 +1,15 @@
 {
   "version": "1.1.0",
   "description": "위성영상 관측 이벤트 누적 지식그래프 — 첫 실행(2026-04-30) 이후 매일 신규/추론 트리플 병합",
-  "last_updated": "2026-05-05",
-  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05"],
-  "triples": "ontology/kg/2026-04-30.json + ontology/kg/2026-05-01.json + ontology/kg/2026-05-02.json + ontology/kg/2026-05-03.json + ontology/kg/2026-05-04.json + ontology/kg/2026-05-05.json (new_triples + inferred_triples)",
+  "last_updated": "2026-05-06",
+  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06"],
+  "triples": "ontology/kg/2026-04-30.json ~ ontology/kg/2026-05-06.json (new_triples + inferred_triples)",
   "stats": {
-    "total_explicit_triples": 320,
-    "total_inferred_triples": 128,
-    "total_unique_subjects": 86,
+    "total_explicit_triples": 352,
+    "total_inferred_triples": 139,
+    "total_unique_subjects": 94,
     "total_unique_predicates": 16,
-    "total_unique_objects": 127
+    "total_unique_objects": 133
   },
-  "note": "2026-05-05 병합 완료 — 신규 이벤트 7건(ent-evt-073~079), 업데이트 4건(ent-evt-070~072/078). 신규 Country 1건(NL), 신규 Location 5건(Monte Faeta/'t Harde/Dalian/Sinpo/Sanriku). 신규 Organization 1건(SI Analytics). multi_satellite_confirmation 1건(네덜란드 't Harde — Sentinel-2+PlanetScope). 시계열 연속관측 3건(Kilauea Ep46/Mayon/Georgia). 한반도 GeoFocus 3건(NK Sinpo SLBM/425위성/CAS500-2). 미검증 의혹 1건(Sanriku M7.7 위성 미확인). 유럽 산불 시즌 개시 신호(이탈리아+네덜란드)."
+  "note": "2026-05-06 병합 완료 — 신규 이벤트 5건(temp-081~085), 업데이트 5건(ent-evt-021/029/041/053/028). 신규 Country 2건(IR/AE). 신규 Organization 4건(PhilSA/Washington Post/Amazon Conservation/Oregon State). multi_satellite_confirmation 3건(이란 미군기지 Copernicus+Planet, 아마존 Sentinel-2+PlanetScope, 이란 민간 피해 Sentinel-2+Planet). 시계열 연속관측 3건(Kilauea Ep46 종료/Mayon VAAC 5/6/Georgia 봉쇄 진전). 핵심 트렌드: 위성 영상의 '공식 발표 검증자' 역할 부상(WashPost 이란 교차검증, MethaneSAT EPA 불일치)."
 }

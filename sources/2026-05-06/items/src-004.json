@@ -1,0 +1,30 @@
+{
+  "id": "src-004",
+  "title": "PhilSA satellite: Mayon ashfall covers 8,544ha in Albay — half the size of Quezon City",
+  "url": "https://www.philstar.com/headlines/2026/05/06/2526082/space-agency-mayon-ashfall-covers-area-half-size-quezon-city",
+  "snippet": "Philippine Space Agency (PhilSA) satellite imagery shows ashfall from Mayon Volcano covering 8,544 hectares in Albay province. Lava flows extended 3.8km (Basud), 3.2km (Bonga), 1.6km (Mi-isi). Pyroclastic flows with 3km run-out distance. VAAC Tokyo advisory May 6 using Himawari-9.",
+  "source_name": "PhilStar",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "PhilSA 위성 분석 신규 — 마욘 화산재 낙진 8,544ha 면적 매핑은 최초 공개. 용암류 3.8km/3.2km/1.6km 연장 및 화쇄류 3km 도달 정량적 데이터.",
+  "entities": [
+    {"id": "ent-evt-083", "type": "Event", "name": "마욘 화산재 8,544ha 매핑 — PhilSA 위성 분석", "properties": {"phenomenon": "volcanic_eruption", "lat": 13.25, "lon": 123.69, "country": "PH", "severity": "high", "area_km2": 85.44, "satellites_used": ["Himawari-9", "PhilSA"], "confidence": 0.95, "satellite_unverified": false, "lava_flow_basud_km": 3.8, "lava_flow_bonga_km": 3.2, "lava_flow_miisi_km": 1.6, "pyroclastic_runout_km": 3.0}},
+    {"id": "org-philsa", "type": "Organization", "name": "PhilSA (Philippine Space Agency)", "properties": {"org_type": "space_agency", "country": "PH"}},
+    {"id": "org-phivolcs", "type": "Organization", "name": "PHIVOLCS"},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "ent-loc-014", "type": "Location", "name": "Mayon Volcano, Albay Province"},
+    {"id": "co-ph", "type": "Country", "name": "필리핀"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-083", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-083", "predicate": "analyzedBy", "object": "org-philsa"},
+    {"subject": "ent-evt-083", "predicate": "analyzedBy", "object": "org-phivolcs"},
+    {"subject": "ent-evt-083", "predicate": "locatedIn", "object": "ent-loc-014"},
+    {"subject": "ent-evt-083", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-083", "predicate": "inCountry", "object": "co-ph"},
+    {"subject": "ent-evt-083", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

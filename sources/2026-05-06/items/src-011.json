@@ -1,0 +1,28 @@
+{
+  "id": "src-011",
+  "title": "MethaneSAT Permian Basin — NM 1.2% vs TX 3.1% methane intensity, Senate investigation",
+  "url": "https://www.methanesat.org/project-updates/methanesat-data-enables-novel-comparison-methane-mitigation-efforts-permian-basin",
+  "snippet": "MethaneSAT data reveals stark cross-border methane intensity difference in Permian Basin: New Mexico 1.2% vs Texas 3.1% loss rate. NM's stricter regulations correlate with lower emissions. Data supports Senate investigation into EPA underreporting. EDF calls for federal adoption of NM-level standards.",
+  "source_name": "MethaneSAT.org (EDF)",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "update",
+  "related_report": "2026-05-04/src-015",
+  "related_item": null,
+  "tag_reason": "MethaneSAT Permian Basin 후속 — NM 1.2% vs TX 3.1% 메탄 강도 주별 비교 데이터 최초 공개. 이전 보고서(src-015) 상원 조사 이후 신규 정량적 비교 결과.",
+  "entities": [
+    {"id": "ent-evt-066", "type": "Event", "name": "MethaneSAT Permian Basin NM/TX 메탄 강도 비교 — 규제 효과 입증", "properties": {"phenomenon": "methane_plume", "domain": "ClimateEnvironment", "lat": 32.0, "lon": -102.0, "country": "US", "severity": "high", "satellites_used": ["MethaneSAT"], "confidence": 0.95, "nm_intensity_pct": 1.2, "tx_intensity_pct": 3.1, "update_of": "ent-evt-053"}},
+    {"id": "sat-methanesat", "type": "Satellite", "name": "MethaneSAT"},
+    {"id": "org-edf", "type": "Organization", "name": "Environmental Defense Fund (EDF)"},
+    {"id": "ent-loc-024", "type": "Location", "name": "Permian Basin, Texas/New Mexico"},
+    {"id": "co-us", "type": "Country", "name": "미국"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-066", "predicate": "observedBy", "object": "sat-methanesat"},
+    {"subject": "ent-evt-066", "predicate": "analyzedBy", "object": "org-edf"},
+    {"subject": "ent-evt-066", "predicate": "locatedIn", "object": "ent-loc-024"},
+    {"subject": "ent-evt-066", "predicate": "manifests", "object": "phen-methane"},
+    {"subject": "ent-evt-066", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "ent-evt-066", "predicate": "inDomain", "object": "dom-climate"}
+  ]
+}

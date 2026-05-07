@@ -1,0 +1,30 @@
+{
+  "id": "src-005",
+  "title": "Georgia wildfires May 5 — Hwy 82 22,471ac 85%, Pineland 32,575ac 65% contained (Landsat 8)",
+  "url": "https://gatrees.org/current-wildfire-information-and-resources/",
+  "snippet": "Georgia Forestry Commission update: Hwy 82 Fire at 22,471 acres 85% contained (no change), Pineland Road Fire at 32,575 acres now 65% contained (up from 50%). FIRMS/VIIRS hotspot data confirms diminishing active fronts. Landsat 8 burn scar analysis shows 55,046 acres total burned area.",
+  "source_name": "Georgia Forestry Commission",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "update",
+  "related_report": "2026-05-05/src-006",
+  "related_item": null,
+  "tag_reason": "조지아 산불 후속 — Pineland containment 진전 50%→65%. Hwy82 변동 없음(85%). FIRMS 열점 감소 확인. 총 소실 면적 55,046에이커.",
+  "entities": [
+    {"id": "ent-evt-072", "type": "Event", "name": "조지아 남부 산불 — Pineland 65% 봉쇄 업데이트", "properties": {"phenomenon": "wildfire", "lat": 31.2, "lon": -82.3, "country": "US", "severity": "high", "hwy82_acres": 22471, "hwy82_containment_pct": 85, "pineland_acres": 32575, "pineland_containment_pct": 65, "satellites_used": ["Landsat 8", "VIIRS"], "confidence": 0.90, "before_after_available": true, "update_of": "ent-evt-020"}},
+    {"id": "sat-landsat8", "type": "Satellite", "name": "Landsat 8"},
+    {"id": "sat-viirs-jpss", "type": "Satellite", "name": "VIIRS (Suomi-NPP/JPSS)"},
+    {"id": "dp-firms", "type": "DataProduct", "name": "FIRMS Active Fire Data"},
+    {"id": "org-gaforestry", "type": "Organization", "name": "Georgia Forestry Commission"},
+    {"id": "ent-loc-010", "type": "Location", "name": "Brantley/Clinch County, Georgia"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-072", "predicate": "observedBy", "object": "sat-landsat8"},
+    {"subject": "ent-evt-072", "predicate": "observedBy", "object": "sat-viirs-jpss"},
+    {"subject": "ent-evt-072", "predicate": "usesDataProduct", "object": "dp-firms"},
+    {"subject": "ent-evt-072", "predicate": "reportedBy", "object": "org-gaforestry"},
+    {"subject": "ent-evt-072", "predicate": "locatedIn", "object": "ent-loc-010"},
+    {"subject": "ent-evt-072", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "ent-evt-072", "predicate": "inCountry", "object": "co-us"}
+  ]
+}

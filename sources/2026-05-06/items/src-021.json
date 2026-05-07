@@ -1,0 +1,30 @@
+{
+  "id": "src-021",
+  "title": "Iran nuclear facilities partial survival — satellite damage assessment (CNN investigation May 5)",
+  "url": "https://www.cnn.com/2026/05/05/politics/video/satellite-images-iran-nuclear-supply-invs",
+  "snippet": "CNN investigation using satellite imagery analysis shows several Iranian nuclear facilities survived US-Israel strikes despite official claims of complete destruction. Satellite before/after comparisons at Isfahan and Natanz reveal intact structures within supposedly destroyed complexes. Supply chain infrastructure partially operational.",
+  "source_name": "CNN",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "CNN 독립 조사 신규 — 이란 핵시설 생존 위성영상 전후비교 분석. Isfahan/Natanz 시설 일부 잔존 확인. 공식 발표와 상충하는 독립 위성검증.",
+  "entities": [
+    {"id": "ent-evt-086", "type": "Event", "name": "이란 핵시설 부분 생존 — CNN 위성 전후비교 분석", "properties": {"phenomenon": "infrastructure_damage", "domain": "Defense", "lat": 32.7, "lon": 51.7, "country": "IR", "severity": "high", "satellites_used": ["Sentinel-2", "Planet"], "confidence": 0.80, "before_after_available": true, "satellite_unverified": false, "facilities_assessed": ["Isfahan", "Natanz"]}},
+    {"id": "org-cnn", "type": "Organization", "name": "CNN", "properties": {"org_type": "media", "country": "US"}},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sat-planetscope", "type": "Satellite", "name": "PlanetScope (Doves)"},
+    {"id": "co-ir", "type": "Country", "name": "이란"},
+    {"id": "ent-loc-032", "type": "Location", "name": "Isfahan & Natanz nuclear complexes, Iran", "properties": {"country": "IR", "lat": 32.7, "lon": 51.7}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-086", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-086", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "ent-evt-086", "predicate": "analyzedBy", "object": "org-cnn"},
+    {"subject": "ent-evt-086", "predicate": "locatedIn", "object": "ent-loc-032"},
+    {"subject": "ent-evt-086", "predicate": "manifests", "object": "phen-infra-damage"},
+    {"subject": "ent-evt-086", "predicate": "inDomain", "object": "dom-defense"},
+    {"subject": "ent-evt-086", "predicate": "inCountry", "object": "co-ir"}
+  ]
+}

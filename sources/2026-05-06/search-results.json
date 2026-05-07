@@ -1,0 +1,236 @@
+{
+  "date": "2026-05-06",
+  "collected_at": "2026-05-06T08:00:00+09:00",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 18,
+  "total_results": 98,
+  "expanded_keywords": [
+    "Kilauea Episode 46", "Mayon volcano eruption", "Georgia wildfire satellite",
+    "Tuscany Monte Faeta wildfire EMSR873", "Netherlands t Harde wildfire Sentinel-2",
+    "Iran US bases satellite damage", "China Type 004 carrier Dalian satellite",
+    "Amazon gold mining deforestation satellite", "MethaneSAT Permian Basin",
+    "Greenland glacier retreat", "CAS500 agriculture", "North Korea Sinpo SLBM",
+    "UNOSAT Gaza damage", "US Caribbean military buildup satellite"
+  ],
+  "searches": [
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery wildfire flood May 2026",
+      "language": "en",
+      "timestamp": "2026-05-06T08:01:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "NOAA Launches Wildfire Data Portal, Expanding Public Access to Satellite Fire Information", "url": "https://www.nesdis.noaa.gov/news/noaa-launches-wildfire-data-portal-expanding-public-access-satellite-fire-information", "snippet": "NGFS tool quickly analyzes satellite data for active fire heat signatures", "source_name": "NOAA NESDIS"},
+        {"title": "FIRMS | NASA Earthdata", "url": "https://www.earthdata.nasa.gov/data/tools/firms", "snippet": "MODIS/VIIRS based fire information for resource management", "source_name": "NASA"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery volcano eruption May 2026",
+      "language": "en",
+      "timestamp": "2026-05-06T08:02:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "Mayon Volcano Volcanic Ash Advisory: ERUPTION AT 20260505/0544Z", "url": "https://www.volcanodiscovery.com/mayon/news/301450/vaac-advisory-2026-567.html", "snippet": "VAAC Tokyo Himawari-9 advisory for Mayon eruption May 5", "source_name": "VolcanoDiscovery"},
+        {"title": "Kīlauea Episode 46 — 650 ft lava fountains, 9 hours (USGS HVO)", "url": "https://www.usgs.gov/observatories/hvo/news/photo-video-chronology-may-5-2026-kilauea-episode-46", "snippet": "Episode 46 ended after 9h of fountaining, tephra reached Highway 11", "source_name": "USGS HVO"},
+        {"title": "Kīlauea episode 46 ends after 9 hours of lava fountaining, tephra reaches Highway 11", "url": "https://watchers.news/2026/05/06/kilauea-episode-46-lava-fountaining-tephra-reaches-highway-11-hawaii-may-2026/", "snippet": "Episode 46 erupted 4.6M m³ lava, covered 60% of Halemaʻumaʻu floor", "source_name": "The Watchers"},
+        {"title": "Mayon Volcano Ash Advisory May 6 — ERUPTION AT 20260506/1252Z", "url": "https://www.volcanodiscovery.com/mayon/news/301638/vaac-advisory-2026-571.html", "snippet": "Continuing eruption at Mayon, VAAC advisory using Himawari-9", "source_name": "VolcanoDiscovery"},
+        {"title": "04 May 2026 Volcano News — global summary", "url": "https://volcanoearth.wordpress.com/2026/05/04/04-may-2026/", "snippet": "30+ active volcanoes globally, Mayon Alert 3, Sheveluch Orange", "source_name": "VolcanoEarth"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery earthquake typhoon May 2026",
+      "language": "en",
+      "timestamp": "2026-05-06T08:03:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "2026 Pacific typhoon season", "url": "https://en.wikipedia.org/wiki/2026_Pacific_typhoon_season", "snippet": "Ongoing season, first named storm Nokaen Jan 15", "source_name": "Wikipedia"},
+        {"title": "List of earthquakes in 2026", "url": "https://en.wikipedia.org/wiki/List_of_earthquakes_in_2026", "snippet": "2026 earthquake catalog including Sanriku M7.7 Apr 20", "source_name": "Wikipedia"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery deforestation mining urban expansion May 2026",
+      "language": "en",
+      "timestamp": "2026-05-06T08:04:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "A gold-fueled mining rush scars Brazil's Amazon, spiking deforestation and mercury risks", "url": "https://www.pbs.org/newshour/world/brazil-gold-mining-rush-brings-deforestation-and-mercury-risks-to-the-amazon", "snippet": "496,000ha cleared for mining across Amazon since 2018, satellite imagery tracking", "source_name": "PBS NewsHour"},
+        {"title": "A gold-fueled mining rush scars Brazil's Amazon", "url": "https://wtop.com/world/2026/05/a-gold-fueled-mining-rush-scars-brazils-amazon-spiking-deforestation-and-mercury-risks/", "snippet": "Study by Amazon Conservation + Instituto Socioambiental, May 5 2026 release", "source_name": "WTOP/AP"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery military buildup naval activity May 2026",
+      "language": "en",
+      "timestamp": "2026-05-06T08:05:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "Iran has hit far more U.S. military assets than reported, satellite images show", "url": "https://www.washingtonpost.com/investigations/2026/05/06/iran-us-bases-satellite-images/", "snippet": "228 structures damaged at US bases, verified via Copernicus+Planet imagery", "source_name": "Washington Post"},
+        {"title": "The US said it decimated Iran's nuclear capabilities. But satellite images show some survived", "url": "https://www.cnn.com/2026/05/05/politics/video/satellite-images-iran-nuclear-supply-invs", "snippet": "Satellite analysis shows nuclear supply chain partially survived strikes", "source_name": "CNN"},
+        {"title": "We've tracked the US military build-up in the Caribbean", "url": "https://stories.theconversation.com/tracking-the-us-military-in-the-caribbean/", "snippet": "Satellite tracking of US naval assets near Venezuela", "source_name": "The Conversation"},
+        {"title": "What Satellites Reveal about China's Military Expansion", "url": "https://www.airandspaceforces.com/article/what-satellites-reveal-about-chinas-military-expansion/", "snippet": "China Lop Nur expansion 60,000 sq ft hangar, J-36 testing", "source_name": "Air & Space Forces Magazine"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery glacier retreat methane plume air pollution 2026",
+      "language": "en",
+      "timestamp": "2026-05-06T08:06:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "Global satellite survey reveals uncertainty in landfill methane emissions", "url": "https://www.nature.com/articles/s41586-025-09683-8", "snippet": "Global landfill methane survey using satellite data", "source_name": "Nature"},
+        {"title": "A new global map uses a fleet of satellites to catch methane leaks", "url": "https://phys.org/news/2025-12-global-fleet-satellites-methane-leaks.html", "snippet": "GHGSat constellation first global facility-level methane estimate", "source_name": "Phys.org"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "위성영상 산불 홍수 지진 2026년 5월",
+      "language": "ko",
+      "timestamp": "2026-05-06T08:07:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "국토위성 영상으로 대형 산불 피해지역 신속 복구 지원", "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148941842", "snippet": "국토위성영상 0.5m 해상도 산불 피해 복구 지원", "source_name": "대한민국 정책브리핑"},
+        {"title": "2026년 산리쿠 해역 지진", "url": "https://namu.wiki/w/2026%EB%85%84%20%EC%82%B0%EB%A6%AC%EC%BF%A0%20%ED%95%B4%EC%97%AD%20%EC%A7%80%EC%A7%84", "snippet": "2026년 4월 20일 이와테현 동쪽 산리쿠 해역 M7.7 지진", "source_name": "나무위키"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "위성영상 북한 군사 한반도 KOMPSAT 2026",
+      "language": "ko",
+      "timestamp": "2026-05-06T08:08:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "KOMPSAT 위성영상 — 컨텍(CONTEC)", "url": "https://kr.contec.kr/gwbbs/gw_page3.php?ti=cate2&me_co=5060", "snippet": "KOMPSAT-2/3/3A/5 지구관측 위성 영상", "source_name": "CONTEC"},
+        {"title": "새 군사정찰위성 배치 속도 내는 北…러시아와 본격 협력하나", "url": "https://www.dailynk.com/20250124-1/", "snippet": "북한 정찰위성 러시아 협력 개발 속도", "source_name": "DailyNK"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Kilauea eruption Episode 46 May 5 6 2026 satellite",
+      "language": "en",
+      "timestamp": "2026-05-06T08:09:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "Kīlauea episode 46 ends after 9 hours of lava fountaining", "url": "https://watchers.news/2026/05/06/kilauea-episode-46-lava-fountaining-tephra-reaches-highway-11-hawaii-may-2026/", "snippet": "650ft fountains, 4.6M m³ lava, tephra reached Highway 11, ended 5:22pm HST May 5", "source_name": "The Watchers"},
+        {"title": "Photo & Video Chronology — May 5, 2026 — Kīlauea episode 46", "url": "https://www.usgs.gov/observatories/hvo/news/photo-video-chronology-may-5-2026-kilauea-episode-46", "snippet": "USGS HVO photo chronology of Episode 46 eruption", "source_name": "USGS"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Mayon volcano eruption May 5 6 2026 satellite imagery",
+      "language": "en",
+      "timestamp": "2026-05-06T08:10:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "Space agency: Mayon ashfall covers area half the size of Quezon City", "url": "https://www.philstar.com/headlines/2026/05/06/2526082/space-agency-mayon-ashfall-covers-area-half-size-quezon-city", "snippet": "PhilSA satellite imagery: 8,544ha ashfall coverage in Albay", "source_name": "PhilStar"},
+        {"title": "Mayon activity update May 5, 2026 — Continuing eruption", "url": "https://www.volcanodiscovery.com/mayon/news/301586/Mayon-Philippines-Volcano-Philippines-activity-update-May-5-2026-Continuing-eruptionCite-this-Report.html", "snippet": "Lava flows 3.8km Basud, 3.2km Bonga, 1.6km Mi-isi, pyroclastic flows 3km", "source_name": "VolcanoDiscovery"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Georgia wildfire satellite imagery May 5 6 2026",
+      "language": "en",
+      "timestamp": "2026-05-06T08:11:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "Fires Rage in Georgia — NASA Earth Observatory (Landsat 8 OLI)", "url": "https://science.nasa.gov/earth/earth-observatory/fires-rage-in-georgia/", "snippet": "Landsat 8 OLI false color bands 7-5-4 burned area imagery", "source_name": "NASA EO"},
+        {"title": "Current Wildfire Information — Georgia Forestry Commission", "url": "https://gatrees.org/current-wildfire-information-and-resources/", "snippet": "Hwy 82 22,471ac 85% contained, Pineland 32,575ac 65%", "source_name": "GA Forestry Commission"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Iran US military satellite images damage May 2026",
+      "language": "en",
+      "timestamp": "2026-05-06T08:12:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "Iran has hit far more U.S. military assets than reported, satellite images show", "url": "https://www.washingtonpost.com/investigations/2026/05/06/iran-us-bases-satellite-images/", "snippet": "228+ structures damaged at US bases, verified via Copernicus+Planet", "source_name": "Washington Post"},
+        {"title": "Satellite imagery suggests far more US sites hit by Iran than reported", "url": "https://www.middleeasteye.net/news/satellite-imagery-suggests-far-more-us-sites-hit-iran-reported", "snippet": "Multiple Middle East bases damaged by Iranian strikes", "source_name": "Middle East Eye"},
+        {"title": "Iran Satellite Data Show US-Israel Strike Damage to Civilian, Military Sites", "url": "https://www.bloomberg.com/graphics/2026-iran-tehran-strike-damage-satellite-images/", "snippet": "7,645 buildings damaged/destroyed in Iran including education/health facilities", "source_name": "Bloomberg"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Amazon deforestation gold mining satellite May 2026",
+      "language": "en",
+      "timestamp": "2026-05-06T08:13:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "Brazil gold mining rush brings deforestation and mercury risks to the Amazon", "url": "https://www.pbs.org/newshour/world/brazil-gold-mining-rush-brings-deforestation-and-mercury-risks-to-the-amazon", "snippet": "496,000ha cleared for mining, Amazon Mining Watch satellite platform", "source_name": "PBS/AP"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Tuscany wildfire Italy Monte Faeta satellite Copernicus May 2026",
+      "language": "en",
+      "timestamp": "2026-05-06T08:14:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "Wildfire in Tuscany, Italy — Copernicus EMS EMSR873", "url": "https://mapping.emergency.copernicus.eu/news/wildfire-in-tuscany-italy-emsr873/", "snippet": "Copernicus EMS Rapid Mapping activation for Tuscany wildfire", "source_name": "Copernicus EMS"},
+        {"title": "Italy — Wildfire (Copernicus EMS EFFIS, CVT, media) ECHO Daily Flash May 4", "url": "https://reliefweb.int/report/italy/italy-wildfire-copernicus-ems-effis-cvt-media-echo-daily-flash-4-may-2026", "snippet": "ECHO Daily Flash report on Italy wildfire with Copernicus monitoring", "source_name": "ReliefWeb"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "China Type 004 aircraft carrier satellite Dalian 2026",
+      "language": "en",
+      "timestamp": "2026-05-06T08:15:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "Satellite Imagery Reveals China's Nuclear Carrier — SkyFi", "url": "https://skyfi.com/en/blog/defense-satellite-imagery-china-nuclear-carrier", "snippet": "SkyFi/Vantor Feb 17 imagery shows reactor compartments at Dalian", "source_name": "SkyFi"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "MethaneSAT Permian Basin methane emissions satellite 2026",
+      "language": "en",
+      "timestamp": "2026-05-06T08:16:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "MethaneSAT data enables novel comparison of methane mitigation in Permian Basin", "url": "https://www.methanesat.org/project-updates/methanesat-data-enables-novel-comparison-methane-mitigation-efforts-permian-basin", "snippet": "NM 1.2% vs TX 3.1% methane intensity, 4× higher than EPA estimates", "source_name": "MethaneSAT"},
+        {"title": "Senator Launches Investigation Into Methane Pollution in the Permian Basin", "url": "https://insideclimatenews.org/news/19032026/senator-whitehouse-permian-basin-methane-pollution-investigation/", "snippet": "Senate investigation into EPA methane mismatch in Permian Basin", "source_name": "Inside Climate News"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "North Korea satellite imagery Sinpo SLBM submarine May 2026",
+      "language": "en",
+      "timestamp": "2026-05-06T08:17:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "Quick Take: North Korea's Sinpo-B Class Submarine Drydocked", "url": "https://www.38north.org/2026/04/quick-take-north-koreas-sinpo-b-class-submarine-drydocked/", "snippet": "Sinpo-B submarine in drydock, repairs/modifications underway", "source_name": "38 North"},
+        {"title": "Imagery shows N.Korea may soon launch new missile submarine", "url": "https://www.nasdaq.com/articles/imagery-shows-n.korea-may-soon-launch-new-missile-submarine-think-tank", "snippet": "Increased vehicle activity at Sinpo test facility Mar 20-26", "source_name": "Nasdaq/Reuters"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "UNOSAT Gaza damage assessment satellite May 2026",
+      "language": "en",
+      "timestamp": "2026-05-06T08:18:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "UNOSAT Gaza Governorate Comprehensive Damage Assessment", "url": "https://unosat.org/products/4205", "snippet": "198,273 affected structures, 81% of all structures damaged", "source_name": "UNOSAT"}
+      ]
+    }
+  ]
+}

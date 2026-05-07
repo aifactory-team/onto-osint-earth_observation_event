@@ -1,0 +1,34 @@
+{
+  "id": "src-007",
+  "title": "Brazil Amazon gold mining rush — 496,000ha cleared since 2018, satellite monitoring (AP/Amazon Conservation study May 5)",
+  "url": "https://www.pbs.org/newshour/world/brazil-gold-mining-rush-brings-deforestation-and-mercury-risks-to-the-amazon",
+  "snippet": "Study by Amazon Conservation + Instituto Socioambiental (released May 5, 2026) found 496,000ha cleared for mining across Amazon since 2018, including 223,000ha in Brazilian Amazon. Amazon Mining Watch uses satellite imagery to track mining. Key areas: Xingu region (Terra do Meio, Altamira NF, Nascentes da Serra do Cachimbo), Kayapó Indigenous land (7,940ha). 80% of mining deforestation carries high risk of being illegal.",
+  "source_name": "PBS NewsHour / AP",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "아마존 금 채굴 대규모 연구 신규 — Amazon Conservation/ISA 공동 연구 496,000ha 삼림벌채 최초 공개. Sentinel-2 및 PlanetScope 위성영상 기반 Amazon Mining Watch 모니터링. 기존 src-054(6,000ha) 대비 훨씬 큰 규모.",
+  "entities": [
+    {"id": "ent-evt-084", "type": "Event", "name": "아마존 금 채굴 삼림벌채 496,000ha — 위성 모니터링 연구", "properties": {"phenomenon": "mining", "domain": "HumanActivity", "lat": -5.0, "lon": -53.0, "country": "BR", "severity": "high", "area_km2": 4960, "satellites_used": ["Sentinel-2", "PlanetScope"], "confidence": 0.85, "before_after_available": true, "illegal_pct": 80, "brazilian_amazon_ha": 223000, "kayapo_ha": 7940}},
+    {"id": "org-amazonconservation", "type": "Organization", "name": "Amazon Conservation", "properties": {"org_type": "ngo", "country": "US"}},
+    {"id": "org-isa", "type": "Organization", "name": "Instituto Socioambiental (ISA)", "properties": {"org_type": "ngo", "country": "BR"}},
+    {"id": "org-amw", "type": "Organization", "name": "Amazon Mining Watch / Pulitzer Center"},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sat-planetscope", "type": "Satellite", "name": "PlanetScope (Doves)"},
+    {"id": "ent-loc-030", "type": "Location", "name": "Xingu region, Pará, Brazil", "properties": {"country": "BR", "region": "Pará", "lat": -5.0, "lon": -53.0}},
+    {"id": "co-br", "type": "Country", "name": "브라질"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-084", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-084", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "ent-evt-084", "predicate": "analyzedBy", "object": "org-amazonconservation"},
+    {"subject": "ent-evt-084", "predicate": "analyzedBy", "object": "org-isa"},
+    {"subject": "ent-evt-084", "predicate": "locatedIn", "object": "ent-loc-030"},
+    {"subject": "ent-evt-084", "predicate": "manifests", "object": "phen-mining"},
+    {"subject": "ent-evt-084", "predicate": "manifests", "object": "phen-defor"},
+    {"subject": "ent-evt-084", "predicate": "inCountry", "object": "co-br"},
+    {"subject": "ent-evt-084", "predicate": "inDomain", "object": "dom-human"}
+  ]
+}

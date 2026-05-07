@@ -1,0 +1,30 @@
+{
+  "id": "src-002",
+  "title": "Kīlauea Episode 46 ends after 9 hours — 650ft lava fountains, 4.6M m³ lava, tephra Highway 11 (USGS HVO)",
+  "url": "https://watchers.news/2026/05/06/kilauea-episode-46-lava-fountaining-tephra-reaches-highway-11-hawaii-may-2026/",
+  "snippet": "Episode 46 erupted 8:17am-5:22pm HST May 5. North vent produced 650ft (200m) lava fountains. 4.6 million m³ lava erupted, covered 60% of Halemaʻumaʻu floor. Volcanic plume reached 20,000ft (6km). Tephra up to 15cm fell on Highway 11.",
+  "source_name": "The Watchers",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "update",
+  "related_report": "2026-05-05/src-001",
+  "related_item": null,
+  "tag_reason": "Kīlauea Episode 46 종료 후속 — 9시간 분출 완료, 총 460만 m³ 용암, 할레마우마우 바닥 60% 피복. 이전 보고서(src-001) 분출 개시 후 종결 정보.",
+  "entities": [
+    {"id": "ent-evt-070", "type": "Event", "name": "Kīlauea Episode 46 분출 종료 (May 5 08:17-17:22 HST)", "properties": {"phenomenon": "volcanic_eruption", "lat": 19.42, "lon": -155.28, "country": "US", "severity": "medium", "satellites_used": ["Landsat 9", "Sentinel-2"], "sensors_used": ["OLI", "TIRS"], "confidence": 0.95, "before_after_available": true, "lava_volume_m3": 4600000, "fountain_height_m": 200, "plume_height_ft": 20000, "tephra_cm": 15}},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9"},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "org-usgs", "type": "Organization", "name": "USGS"},
+    {"id": "org-hvo", "type": "Organization", "name": "Hawaiian Volcano Observatory"},
+    {"id": "ent-loc-004", "type": "Location", "name": "Kīlauea summit, Halemaʻumaʻu"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-070", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "ent-evt-070", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-070", "predicate": "analyzedBy", "object": "org-hvo"},
+    {"subject": "ent-evt-070", "predicate": "locatedIn", "object": "ent-loc-004"},
+    {"subject": "ent-evt-070", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-070", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "ent-evt-070", "predicate": "partOfSeries", "object": "ent-evt-021"}
+  ]
+}

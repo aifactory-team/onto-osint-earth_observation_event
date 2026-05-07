@@ -1,0 +1,29 @@
+{
+  "id": "src-003",
+  "title": "Mayon Volcano Ash Advisory May 6 — ERUPTION AT 1252Z (Himawari-9 VAAC Tokyo)",
+  "url": "https://www.volcanodiscovery.com/mayon/news/301638/vaac-advisory-2026-571.html",
+  "snippet": "Tokyo VAAC issued ash advisory for Mayon eruption at 1252Z May 6, 2026. Himawari-9 satellite detected ash plume extending WSW. PHIVOLCS maintains Alert Level 3. Continuous ashfall reported in Albay province. Aviation color code Red.",
+  "source_name": "VolcanoDiscovery",
+  "language": "en",
+  "discovered_date": "2026-05-06",
+  "tag": "update",
+  "related_report": "2026-05-05/src-004",
+  "related_item": null,
+  "tag_reason": "마욘 화산 후속 — May 6 1252Z 신규 분출 VAAC 경보. 이전 보고서(src-004) May 5 VAAC 이후 지속적 활동 확인. 항공 코드 Red 유지.",
+  "entities": [
+    {"id": "ent-evt-082", "type": "Event", "name": "마욘 화산 May 6 분출 — VAAC 화산재 경보 1252Z", "properties": {"phenomenon": "volcanic_eruption", "lat": 13.257, "lon": 123.685, "country": "PH", "severity": "high", "alert_level": 3, "aviation_color": "Red", "satellites_used": ["Himawari-9"], "confidence": 0.95, "satellite_unverified": false, "update_of": "ent-evt-071"}},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "org-tokyovaac", "type": "Organization", "name": "Tokyo VAAC"},
+    {"id": "org-phivolcs", "type": "Organization", "name": "PHIVOLCS"},
+    {"id": "ent-loc-014", "type": "Location", "name": "Mayon Volcano, Albay Province"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-082", "predicate": "analyzedBy", "object": "org-tokyovaac"},
+    {"subject": "ent-evt-082", "predicate": "analyzedBy", "object": "org-phivolcs"},
+    {"subject": "ent-evt-082", "predicate": "locatedIn", "object": "ent-loc-014"},
+    {"subject": "ent-evt-082", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-082", "predicate": "inCountry", "object": "co-ph"},
+    {"subject": "ent-evt-082", "predicate": "partOfSeries", "object": "ent-evt-029"}
+  ]
+}

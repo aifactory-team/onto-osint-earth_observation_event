@@ -1,7 +1,7 @@
 {
   "version": "1.1.0",
   "description": "알려진 엔티티 인스턴스 — 파이프라인 실행 시 자동으로 추가/업데이트된다. 도메인: 위성영상 관측 이벤트.",
-  "last_updated": "2026-05-04",
+  "last_updated": "2026-05-06",
   "entities": [
     { "id": "dom-disaster", "type": "Domain", "name": "Disaster", "properties": { "label": "자연재해" }, "first_seen": "2026-04-30", "last_seen": "2026-04-30", "mention_count": 12 },
     { "id": "dom-human", "type": "Domain", "name": "HumanActivity", "properties": { "label": "인간활동" }, "first_seen": "2026-04-30", "last_seen": "2026-04-30", "mention_count": 2 },
@@ -256,7 +256,21 @@
     { "id": "ent-evt-077", "type": "Event", "name": "북한 신포 SLBM 발사 준비 — SI Analytics 위성영상", "properties": { "phenomenon": "military_buildup", "domain": "Defense", "country": "KP", "lat": 39.8, "lon": 128.1, "observation_date": "2026-03-26", "severity": "high", "before_after_available": true }, "first_seen": "2026-05-05", "last_seen": "2026-05-05", "mention_count": 1 },
     { "id": "ent-evt-078", "type": "Event", "name": "한국 425사업 정찰위성 5기 전력화 완료 — 2시간 주기 대북 감시", "properties": { "phenomenon": "military_buildup", "domain": "Defense", "country": "KR", "lat": 36.5, "lon": 127.0, "observation_date": "2026-04-30", "severity": "medium", "update_of": "ent-evt-024" }, "first_seen": "2026-05-05", "last_seen": "2026-05-05", "mention_count": 1 },
     { "id": "ent-evt-079", "type": "Event", "name": "CAS500-2 스마트농업 활용 전망 — 작물 생육·병해충 위성 분석", "properties": { "phenomenon": "crop_yield", "domain": "AgricultureMaritime", "country": "KR", "lat": 36.5, "lon": 127.0, "observation_date": "2026-05-05", "severity": "low" }, "first_seen": "2026-05-05", "last_seen": "2026-05-05", "mention_count": 1 },
-    { "id": "ent-evt-080", "type": "Event", "name": "일본 산리쿠 해역 M7.7 지진 — 위성 피해 평가 미실시", "properties": { "phenomenon": "earthquake_damage", "domain": "Disaster", "country": "JP", "lat": 39.5, "lon": 143.5, "observation_date": "2026-04-20", "severity": "medium", "satellite_unverified": true }, "first_seen": "2026-05-05", "last_seen": "2026-05-05", "mention_count": 1 }
+    { "id": "ent-evt-080", "type": "Event", "name": "일본 산리쿠 해역 M7.7 지진 — 위성 피해 평가 미실시", "properties": { "phenomenon": "earthquake_damage", "domain": "Disaster", "country": "JP", "lat": 39.5, "lon": 143.5, "observation_date": "2026-04-20", "severity": "medium", "satellite_unverified": true }, "first_seen": "2026-05-05", "last_seen": "2026-05-05", "mention_count": 1 },
+
+    { "id": "co-ir", "type": "Country", "name": "이란", "properties": { "iso_code": "IR", "region": "서아시아" }, "first_seen": "2026-05-06", "last_seen": "2026-05-06", "mention_count": 3 },
+    { "id": "co-ae", "type": "Country", "name": "아랍에미리트", "properties": { "iso_code": "AE", "region": "서아시아" }, "first_seen": "2026-05-06", "last_seen": "2026-05-06", "mention_count": 1 },
+
+    { "id": "org-philsa", "type": "Organization", "name": "PhilSA (Philippine Space Agency)", "properties": { "org_type": "space_agency", "country": "PH" }, "first_seen": "2026-05-06", "last_seen": "2026-05-06", "mention_count": 1 },
+    { "id": "org-washpost", "type": "Organization", "name": "Washington Post", "properties": { "org_type": "media", "country": "US" }, "first_seen": "2026-05-06", "last_seen": "2026-05-06", "mention_count": 1 },
+    { "id": "org-amazon-conservation", "type": "Organization", "name": "Amazon Conservation", "properties": { "org_type": "ngo", "country": "US" }, "first_seen": "2026-05-06", "last_seen": "2026-05-06", "mention_count": 1 },
+    { "id": "org-oregon-state", "type": "Organization", "name": "Oregon State University Conflict Ecology", "properties": { "org_type": "research", "country": "US" }, "first_seen": "2026-05-06", "last_seen": "2026-05-06", "mention_count": 1 },
+
+    { "id": "ent-evt-081", "type": "Event", "name": "이란 미군기지 타격 피해 228개 구조물 — Copernicus+Planet 교차검증", "properties": { "phenomenon": "military_buildup", "domain": "Defense", "country": "US", "lat": 24.0, "lon": 54.0, "observation_date": "2026-05-06", "severity": "high", "satellites_used": ["Sentinel-2", "PlanetScope"], "before_after_available": true, "confidence": 0.90 }, "first_seen": "2026-05-06", "last_seen": "2026-05-06", "mention_count": 3 },
+    { "id": "ent-evt-082", "type": "Event", "name": "마욘 화산재 8,544ha PhilSA 위성 매핑", "properties": { "phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "PH", "lat": 13.25, "lon": 123.69, "observation_date": "2026-05-06", "severity": "high", "area_km2": 85.44, "satellites_used": ["Himawari-9", "PhilSA"], "confidence": 0.95 }, "first_seen": "2026-05-06", "last_seen": "2026-05-06", "mention_count": 2 },
+    { "id": "ent-evt-083", "type": "Event", "name": "아마존 금 채굴 삼림벌채 496,000ha — 위성 모니터링", "properties": { "phenomenon": "mining", "domain": "HumanActivity", "country": "BR", "lat": -5.0, "lon": -53.0, "observation_date": "2026-05-05", "severity": "high", "area_km2": 4960, "satellites_used": ["Sentinel-2", "PlanetScope"], "before_after_available": true, "confidence": 0.85 }, "first_seen": "2026-05-06", "last_seen": "2026-05-06", "mention_count": 1 },
+    { "id": "ent-evt-084", "type": "Event", "name": "이란 민간 시설 피해 7,645동 위성 평가", "properties": { "phenomenon": "infrastructure_damage", "domain": "Humanitarian", "country": "IR", "lat": 32.65, "lon": 51.68, "observation_date": "2026-05-06", "severity": "high", "satellites_used": ["Sentinel-2", "Planet"], "before_after_available": true, "confidence": 0.85 }, "first_seen": "2026-05-06", "last_seen": "2026-05-06", "mention_count": 1 },
+    { "id": "ent-evt-085", "type": "Event", "name": "이란 핵시설 일부 생존 — CNN 위성 분석", "properties": { "phenomenon": "military_buildup", "domain": "Defense", "country": "IR", "lat": 32.84, "lon": 51.69, "observation_date": "2026-05-05", "severity": "high", "satellites_used": ["Sentinel-2"], "confidence": 0.80 }, "first_seen": "2026-05-06", "last_seen": "2026-05-06", "mention_count": 1 }
   ],
-  "total_count": 241
+  "total_count": 253
 }
