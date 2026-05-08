@@ -776,3 +776,30 @@ config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5)
 - **ent-evt-114:** WV-Legion src-009 SpaceNews 후속 보도는 src-008과 중복 — 별도 이벤트 ID 미부여
 - **ent-evt-100, ent-evt-121:** 단일출처 low-conf 분류 — 보고서 본문 미포함, 부록만 기재
 
+---
+
+## 2026-05-07 Cycle 2 추론
+
+### 다중 위성 교차검증
+- **ent-evt-125 (Pemex Cantarell)**: Sentinel-1A(SAR) + Sentinel-2A(MSI) — ESA 단일 운영자이나 SAR+광학 cross-modal → multiSatBoost +0.20 (약가산)
+- **ent-evt-127 (TS Hagupit)**: Himawari-9(JMA/JAXA) + GOES-18(NOAA) — 독립 운영자 GEO 교차검증 → multiSatBoost +0.20
+
+### 센서 능력 매칭
+- ent-evt-125: SAR(C-band) oil slick dampening signature → sarBoost +0.10
+- ent-evt-128 (Dukono): Himawari-9 thermal IR → thermalBoost +0.10
+- ent-evt-129 (UNEP MARS coal/waste): TROPOMI trace_gas → tracegasBoost +0.15
+
+### supersedes 추론
+- ent-evt-129 supersedes ent-evt-106 (UN MARS oil&gas only → coal+waste 확장)
+
+### 공식 출처 가산
+- ent-evt-128: CVGHM/PVMBG officialBoost +0.15
+- ent-evt-129: UNEP officialBoost +0.15
+- ent-evt-127: JMA/NOAA officialBoost +0.15
+
+### 시계열 partOfSeries
+- ent-evt-082 (Mayon) partOfSeries(ent-evt-029 original) — lava flow 3.8km 진전 업데이트
+
+### 신규 Country
+- co-mx (멕시코), co-kw (쿠웨이트)
+

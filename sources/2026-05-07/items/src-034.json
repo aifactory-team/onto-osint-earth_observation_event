@@ -1,0 +1,25 @@
+{
+  "id": "src-034",
+  "title": "Sweden launches first military surveillance satellite — Planet Labs built, NATO integration",
+  "url": "https://orbitaltoday.com/2026/05/04/sweden-launches-its-first-military-satellite-to-strengthen-natos-space-awareness/",
+  "snippet": "Sweden deployed its first operational reconnaissance and surveillance satellite on May 3, 2026, from Vandenberg SFB via Falcon 9. Manufactured by Planet Labs under commercial-military partnership. LEO high-resolution optical imagery for defence. Part of ~10 satellite programme.",
+  "source_name": "Orbital Today / Defense Post",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 14일 소스에 스웨덴 군사위성 발사 없음. 5/3 발사된 신규 위성 운용 이벤트.",
+  "entities": [
+    {"id": "ent-evt-130", "type": "Event", "name": "스웨덴 최초 군사정찰위성 발사 (Planet Labs 제조, Falcon 9)", "properties": {"phenomenon": "satellite_operations", "lat": 34.7, "lon": -120.6, "country": "SE", "observation_date": "2026-05-03", "severity": "low", "confidence": 0.90}},
+    {"id": "ent-sat-sweden-recon", "type": "Satellite", "name": "Sweden Military Recon Satellite 1", "properties": {"operator": "Swedish Armed Forces", "country": "SE", "orbit_type": "LEO", "sensor_types": ["optical_pan"], "mission_status": "operational"}},
+    {"id": "org-planet", "type": "Organization", "name": "Planet Labs"},
+    {"id": "ent-org-sweden-af", "type": "Organization", "name": "Swedish Armed Forces / Swedish Air Force", "properties": {"org_type": "defense_intel", "country": "SE"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-130", "predicate": "inDomain", "object": "dom-defense"},
+    {"subject": "ent-evt-130", "predicate": "manifests", "object": "phen-satops"},
+    {"subject": "ent-sat-sweden-recon", "predicate": "operatedBy", "object": "ent-org-sweden-af"},
+    {"subject": "ent-evt-130", "predicate": "observedBy", "object": "ent-sat-sweden-recon"}
+  ]
+}

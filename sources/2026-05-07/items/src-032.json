@@ -1,0 +1,26 @@
+{
+  "id": "src-032",
+  "title": "Dukono volcano eruption continues — VAAC Darwin advisory 209, ash FL080, Himawari-9 observation",
+  "url": "https://www.volcanodiscovery.com/dukono/news/301654/vaac-advisory-2026-209.html",
+  "snippet": "CVGHM/PVMBG reported eruptions continued at Dukono with 15 explosions on May 5 and 87 on May 4. Ash plumes to FL080 (2,400m). VAAC Darwin issued advisory 209 based on Himawari-9 satellite imagery showing ash moving SE.",
+  "source_name": "VolcanoDiscovery / VAAC Darwin",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 14일 소스에 Dukono 2026년 5월 분출 없음. Himawari-9 위성 관측 기반 VAAC advisory.",
+  "entities": [
+    {"id": "ent-evt-128", "type": "Event", "name": "Dukono 화산 분출 지속 (인도네시아, VAAC 209)", "properties": {"phenomenon": "volcanic_eruption", "lat": 1.69, "lon": 127.88, "country": "ID", "observation_date": "2026-05-06", "severity": "moderate", "confidence": 0.85}},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "ent-org-cvghm", "type": "Organization", "name": "CVGHM/PVMBG (Indonesia)", "properties": {"org_type": "space_agency", "country": "ID"}},
+    {"id": "ent-loc-049", "type": "Location", "name": "Mount Dukono, Halmahera, North Maluku, Indonesia", "properties": {"lat": 1.69, "lon": 127.88, "country": "ID"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-128", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-128", "predicate": "locatedIn", "object": "ent-loc-049"},
+    {"subject": "ent-evt-128", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-128", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "ent-evt-128", "predicate": "analyzedBy", "object": "ent-org-cvghm"}
+  ]
+}

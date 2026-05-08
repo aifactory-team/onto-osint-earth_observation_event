@@ -1,9 +1,9 @@
 {
   "date": "2026-05-07",
-  "total": 28,
-  "new": 11,
+  "total": 36,
+  "new": 18,
   "reported": 11,
-  "update": 6,
+  "update": 7,
   "items": [
     {"id": "src-001", "title": "Wildfires Can't Hide from Earth Observing Satellites — Pineland Road & Hwy 82 (Landsat 8/9)", "url": "https://www.earthdata.nasa.gov/news/feature-articles/wildfires-cant-hide-from-earth-observing-satellites", "tag": "update", "related_report": "2026-05-05/src-006", "entity_count": 6, "category": "dom-disaster", "confidence": 0.90, "satellites_used": ["sat-landsat8", "sat-landsat9"], "sensors_used": ["sensor-oli", "sensor-tirs"], "lat": 31.5, "lon": -82.5, "country": "US"},
     {"id": "src-002", "title": "Krasheninnikov volcano effusive eruption continues — VIIRS thermal flux ~1 MW (May 4)", "url": "https://volcanoearth.wordpress.com/2026/05/01/1-may-2026/", "tag": "update", "related_report": "2026-05-03/src-007", "entity_count": 6, "category": "dom-disaster", "confidence": 0.85, "satellites_used": ["sat-viirs-jpss"], "sensors_used": ["sensor-viirs"], "lat": 54.59, "lon": 160.27, "country": "RU"},
@@ -32,16 +32,24 @@
     {"id": "src-025", "title": "China new high-tech radar installation construction on Cuarteron Reef (Spratlys)", "url": "https://www.naturalnews.com/2026-04-06-china-accelerates-military-expansion-south-china-sea.html", "tag": "new", "related_report": null, "entity_count": 5, "category": "dom-defense", "confidence": 0.65, "satellites_used": ["sat-worldview3"], "sensors_used": [], "lat": 8.86, "lon": 112.84, "country": "CN"},
     {"id": "src-026", "title": "MethaneSAT first global oil and gas methane assessment — emissions ~50% higher than inventories", "url": "https://insideclimatenews.org/news/06022026/methanesat-climate-pollution-global-assessment/", "tag": "reported", "related_report": "2026-05-03/src-009", "entity_count": 5, "category": "dom-climate", "confidence": 0.88, "satellites_used": ["sat-methanesat"], "sensors_used": [], "lat": 31.97, "lon": -102.07, "country": "US"},
     {"id": "src-027", "title": "아마존 열대우림 파괴 -67.9% YoY (2026-04, 브라질 PRODES/DETER, Sentinel-2/Landsat)", "url": "https://www.newspenguin.com/news/articleView.html?idxno=14106", "tag": "update", "related_report": "src-023", "entity_count": 5, "category": "dom-human", "confidence": 0.82, "satellites_used": ["sat-sentinel2a", "sat-landsat9"], "sensors_used": ["sensor-msi", "sensor-oli"], "lat": -3.4653, "lon": -62.2159, "country": "BR"},
-    {"id": "src-028", "title": "Cerulean SkyTruth — Sentinel-1 SAR oil slick AI detection (~1,000 images/day, U-Net)", "url": "https://skytruth.org/cerulean", "tag": "reported", "related_report": "2026-05-03/src-014", "entity_count": 5, "category": "dom-human", "confidence": 0.85, "satellites_used": ["sat-sentinel1a"], "sensors_used": ["sensor-c-sar"], "lat": null, "lon": null, "country": null, "admin": "global"}
+    {"id": "src-028", "title": "Cerulean SkyTruth — Sentinel-1 SAR oil slick AI detection (~1,000 images/day, U-Net)", "url": "https://skytruth.org/cerulean", "tag": "reported", "related_report": "2026-05-03/src-014", "entity_count": 5, "category": "dom-human", "confidence": 0.85, "satellites_used": ["sat-sentinel1a"], "sensors_used": ["sensor-c-sar"], "lat": null, "lon": null, "country": null, "admin": "global"},
+    {"id": "src-029", "title": "Pemex Cantarell 원유 유출 3개월 지속 — Sentinel-1/2 레이더·광학 위성영상 (TPR)", "url": "https://www.tpr.org/environment/2026-05-07/pemex-linked-gulf-oil-spill-may-still-be-spreading-three-months-later-satellite-images-suggest", "tag": "new", "related_report": null, "entity_count": 6, "category": "dom-human", "confidence": 0.92, "satellites_used": ["sat-sentinel1a", "sat-sentinel2a"], "sensors_used": ["sensor-c-sar", "sensor-msi"], "lat": 19.8, "lon": -92.4, "country": "MX"},
+    {"id": "src-030", "title": "이란 공습 미군 기지 228+ 구조물 피해 — WaPo 위성영상 검증 (Copernicus)", "url": "https://www.washingtonpost.com/investigations/2026/05/06/iran-us-bases-satellite-images/", "tag": "new", "related_report": null, "entity_count": 5, "category": "dom-defense", "confidence": 0.90, "satellites_used": [], "sensors_used": [], "lat": 29.3, "lon": 47.7, "country": "KW"},
+    {"id": "src-031", "title": "열대폭풍 하구핏(Hagupit) 서태평양 형성 — Himawari-9 위성 추적", "url": "https://zoom.earth/storms/hagupit-2026/", "tag": "new", "related_report": null, "entity_count": 5, "category": "dom-disaster", "confidence": 0.85, "satellites_used": ["sat-himawari9", "sat-goes18"], "sensors_used": [], "lat": 7.7, "lon": 142.2, "country": null},
+    {"id": "src-032", "title": "Dukono 화산 분출 지속 — VAAC Darwin 209, Himawari-9 (인도네시아)", "url": "https://www.volcanodiscovery.com/dukono/news/301654/vaac-advisory-2026-209.html", "tag": "new", "related_report": null, "entity_count": 5, "category": "dom-disaster", "confidence": 0.85, "satellites_used": ["sat-himawari9"], "sensors_used": [], "lat": 1.69, "lon": 127.88, "country": "ID"},
+    {"id": "src-033", "title": "UNEP IMEO MARS 석탄·폐기물 메탄 감시 확장 — G7 (23k 위성관측)", "url": "https://www.unep.org/news-and-stories/press-release/satellite-methane-alerts-expanded-coal-and-waste-sectors-unep", "tag": "new", "related_report": null, "entity_count": 5, "category": "dom-climate", "confidence": 0.92, "satellites_used": ["sat-sentinel5p"], "sensors_used": ["sensor-tropomi"], "lat": null, "lon": null, "country": null, "admin": "global"},
+    {"id": "src-034", "title": "스웨덴 최초 군사정찰위성 발사 — Planet Labs 제조, Falcon 9 (5/3)", "url": "https://orbitaltoday.com/2026/05/04/sweden-launches-its-first-military-satellite-to-strengthen-natos-space-awareness/", "tag": "new", "related_report": null, "entity_count": 5, "category": "dom-defense", "confidence": 0.90, "satellites_used": [], "sensors_used": [], "lat": 34.7, "lon": -120.6, "country": "SE"},
+    {"id": "src-035", "title": "Kanlaon 화산 Alert Level 2 — 7 ash emissions, SO2 1,154 t/d (필리핀)", "url": "https://volcanoearth.wordpress.com/2026/05/07/6-may-2026/", "tag": "new", "related_report": null, "entity_count": 4, "category": "dom-disaster", "confidence": 0.82, "satellites_used": [], "sensors_used": [], "lat": 10.41, "lon": 123.13, "country": "PH"},
+    {"id": "src-036", "title": "Mayon Alert Level 3 업데이트 — lava flow Basud 3.8km, SO2 2,184 t/d", "url": "https://volcanoearth.wordpress.com/2026/05/07/6-may-2026/", "tag": "update", "related_report": "2026-05-07/src-005", "entity_count": 3, "category": "dom-disaster", "confidence": 0.92, "satellites_used": [], "sensors_used": [], "lat": 13.26, "lon": 123.69, "country": "PH"}
   ],
   "stats": {
     "by_domain": {
-      "dom-disaster": 6,
-      "dom-human": 5,
-      "dom-climate": 6,
+      "dom-disaster": 9,
+      "dom-human": 6,
+      "dom-climate": 7,
       "dom-agri-marine": 3,
-      "dom-defense": 8,
-      "dom-humanitarian": 0,
+      "dom-defense": 10,
+      "dom-humanitarian": 1,
       "uncategorized_excluded": 0
     },
     "korea_focus_count": 5,

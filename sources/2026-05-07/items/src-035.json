@@ -1,0 +1,24 @@
+{
+  "id": "src-035",
+  "title": "Kanlaon volcano Alert Level 2: 7 ash emissions, SO2 1,154 t/d, edifice inflation (Philippines)",
+  "url": "https://volcanoearth.wordpress.com/2026/05/07/6-may-2026/",
+  "snippet": "PHIVOLCS reports Kanlaon at Alert Level 2 (Increased Unrest): 7 ash emission events, 19 volcanic earthquakes, 6 tremors, plume 800m, SO2 1,154 t/d, edifice inflation detected. Also: Mayon Alert 3 with lava flows at Basud 3.8km, Bonga 3.2km, Mi-isi 1.6km; SO2 2,184 t/d.",
+  "source_name": "VolcanoEarth / PHIVOLCS",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 14일 소스에 Kanlaon 2026-05 활동 없음. Alert Level 2 + 1,154 t/d SO2는 유의미한 신규 EO 이벤트.",
+  "entities": [
+    {"id": "ent-evt-131", "type": "Event", "name": "Kanlaon 화산 Alert Level 2 — 7 ash emissions, SO2 1,154 t/d", "properties": {"phenomenon": "volcanic_eruption", "lat": 10.41, "lon": 123.13, "country": "PH", "observation_date": "2026-05-06", "severity": "moderate", "confidence": 0.82}},
+    {"id": "ent-loc-050", "type": "Location", "name": "Mount Kanlaon, Negros Island, Philippines", "properties": {"lat": 10.41, "lon": 123.13, "country": "PH"}},
+    {"id": "org-philsa", "type": "Organization", "name": "PHIVOLCS"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-131", "predicate": "locatedIn", "object": "ent-loc-050"},
+    {"subject": "ent-evt-131", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-131", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "ent-evt-131", "predicate": "analyzedBy", "object": "org-philsa"}
+  ]
+}

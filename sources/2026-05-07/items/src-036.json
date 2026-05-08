@@ -1,0 +1,21 @@
+{
+  "id": "src-036",
+  "title": "Mayon volcano Alert Level 3 update — lava flows Basud 3.8km, SO2 2,184 t/d, 283 rockfalls (May 6)",
+  "url": "https://volcanoearth.wordpress.com/2026/05/07/6-may-2026/",
+  "snippet": "PHIVOLCS reports Mayon at Alert Level 3 (Intensified Unrest): lava effusion + episodic minor strombolian. Lava flows at Basud (3.8 km), Bonga (3.2 km), Mi-isi (1.6 km) gullies. 11 VQ, 283 rockfalls, 17 PDC signals. SO2 2,184 tonnes/day. Moderate emissions, westward drift.",
+  "source_name": "VolcanoEarth / PHIVOLCS",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "update",
+  "related_report": "2026-05-07/src-005",
+  "related_item": "ent-evt-082",
+  "tag_reason": "기존 Mayon 시리즈(ent-evt-082) 후속: lava flow 전진 거리 + SO2 2,184 t/d 정량 업데이트.",
+  "entities": [
+    {"id": "ent-evt-082", "type": "Event", "name": "Mayon 화산 Alert Level 3 lava flow 업데이트", "properties": {"phenomenon": "volcanic_eruption", "lat": 13.26, "lon": 123.69, "country": "PH", "observation_date": "2026-05-06", "severity": "high", "confidence": 0.92}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-082", "predicate": "locatedIn", "object": "ent-loc-mayon"},
+    {"subject": "ent-evt-082", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-082", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

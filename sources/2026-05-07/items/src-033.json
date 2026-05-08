@@ -1,0 +1,27 @@
+{
+  "id": "src-033",
+  "title": "UNEP IMEO expands satellite methane alerts to coal and waste sectors — G7 Presidency event (May 4)",
+  "url": "https://www.unep.org/news-and-stories/press-release/satellite-methane-alerts-expanded-coal-and-waste-sectors-unep",
+  "snippet": "UNEP International Methane Emissions Observatory (IMEO) announced major expansion of MARS to track emissions from coal mines and waste facilities. 23,000+ satellite observations analyzed, nearly 250 coal mines covered. Unveiled at G7 Presidency event hosted by France, May 4, 2026.",
+  "source_name": "UNEP",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 소스 src-006 (ESA MARS)은 oil&gas 초점. 본 소스는 coal·waste로의 확장 — G7 발표 신규 이벤트.",
+  "entities": [
+    {"id": "ent-evt-129", "type": "Event", "name": "UNEP IMEO MARS 석탄·폐기물 메탄 감시 확장 (G7, 23k 위성관측)", "properties": {"phenomenon": "methane_plume", "lat": null, "lon": null, "country": null, "region": "global", "observation_date": "2026-05-04", "severity": "moderate", "confidence": 0.92}},
+    {"id": "org-unmars", "type": "Organization", "name": "UN MARS / IMEO"},
+    {"id": "sat-sentinel5p", "type": "Satellite", "name": "Sentinel-5P"},
+    {"id": "sensor-tropomi", "type": "Sensor", "name": "TROPOMI"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-129", "predicate": "analyzedBy", "object": "org-unmars"},
+    {"subject": "ent-evt-129", "predicate": "observedBy", "object": "sat-sentinel5p"},
+    {"subject": "ent-evt-129", "predicate": "usesSensor", "object": "sensor-tropomi"},
+    {"subject": "ent-evt-129", "predicate": "manifests", "object": "phen-methane"},
+    {"subject": "ent-evt-129", "predicate": "inDomain", "object": "dom-climate"},
+    {"subject": "ent-evt-129", "predicate": "supersedes", "object": "ent-evt-106"}
+  ]
+}

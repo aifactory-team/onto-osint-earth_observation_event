@@ -296,6 +296,13 @@
       "target": "ent-evt-098~124 (evt-114 skip due to PR-only duplicate src-009)",
       "reason": "신규 26건 — GA Pineland 산불(US), Krasheninnikov 화산(RU), 글로벌 화산 일일요약, Kilauea Ep46 종료(US, ent-evt-081 후속), Mayon VAAC 567(PH, ent-evt-082 후속), UN MARS methane(INTL, ent-evt-084 후속), Sentinel-5P OCM(global), WV-Legion fully op(US, PR cap), Amazon 임계점(BR), ICEYE rideshare(PL), ICEYE deforestation 서비스(global, PR cap), Myanmar 홍수경보(MM 신규국), KOMPSAT-7 운영(KR), NLL 어선(KR), Silivri 매립지(TR 신규국), CAS500-2 첫교신(KR), 영변 UEP(KP, ent-evt-086 supersedes), Sohae 엔진(KP), Sentinel-1D 4-sat live(global, ent-evt-026 supersedes), Hektoria 8km(AQ), GFW 2026(global), Antelope Reef airbase(CN, ent-evt-092 supersedes), Cuarteron radar(CN, single source low-conf), MethaneSAT 글로벌(US Permian), Brazil Apr -67.9% YoY(BR), Cerulean SkyTruth(global).",
       "source_ids": ["src-001~src-028"]
+    },
+    {
+      "date": "2026-05-07",
+      "action": "add_event_batch_c2",
+      "target": "ent-evt-125~131 + evt-082 update",
+      "reason": "Cycle 2 신규 7건 + 업데이트 1건: Pemex Cantarell 유출(MX, S1/S2), Iran-US 기지 피해 228건(WaPo Copernicus), TS Hagupit(서태평양), Dukono 화산(ID, Himawari-9), UNEP MARS coal/waste 확장(G7), Sweden 군사위성(Planet Labs), Kanlaon 화산(PH), Mayon 업데이트.",
+      "source_ids": ["src-029", "src-030", "src-031", "src-032", "src-033", "src-034", "src-035", "src-036"]
     }
   ]
 }

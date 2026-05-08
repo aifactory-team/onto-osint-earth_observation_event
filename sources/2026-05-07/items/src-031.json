@@ -1,0 +1,26 @@
+{
+  "id": "src-031",
+  "title": "Tropical Storm Hagupit forms in western Pacific — first May TC since 2024, heading toward PAR",
+  "url": "https://zoom.earth/storms/hagupit-2026/",
+  "snippet": "Tropical Storm Hagupit formed west-northwest of Chuuk on May 6, 2026, becoming the first tropical cyclone to form in May since Typhoon Ewiniar in 2024. Located 572 km ESE of Yap. Tracking via Himawari-9, GOES-18, Geo-KOMPSAT satellites.",
+  "source_name": "Zoom Earth / PAGASA / JMA",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 14일 소스에 TS Hagupit 없음 — 5/6 형성된 신규 열대성 저기압.",
+  "entities": [
+    {"id": "ent-evt-127", "type": "Event", "name": "열대폭풍 하구핏 (Hagupit) 서태평양 형성", "properties": {"phenomenon": "typhoon", "lat": 7.7, "lon": 142.2, "country": null, "region": "Western Pacific / Micronesia", "observation_date": "2026-05-06", "severity": "moderate", "confidence": 0.85}},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "sat-goes18", "type": "Satellite", "name": "GOES-18"},
+    {"id": "ent-loc-048", "type": "Location", "name": "Western Pacific, ESE of Yap (Micronesia)", "properties": {"lat": 7.7, "lon": 142.2}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-127", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-127", "predicate": "observedBy", "object": "sat-goes18"},
+    {"subject": "ent-evt-127", "predicate": "locatedIn", "object": "ent-loc-048"},
+    {"subject": "ent-evt-127", "predicate": "manifests", "object": "phen-typhoon"},
+    {"subject": "ent-evt-127", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

@@ -101,3 +101,50 @@
 2. **한반도/남중국해 / 메탄 / Amazon 4축** 균형
 3. **9건 follow-up 시계열 진전** — supersedes 4 + partOfSeries 3 + 약결합 2
 4. **Mayon 호흡기 사슬 연속**, Amazon 1.5°C 임계점 강도 진전 (학술→정책 신호)
+
+---
+
+## Cycle 2 분석 (src-029 ~ src-036, 8건)
+
+### C2-0. 개요
+- 입력: src-029~036 (8건), 신규 이벤트 7건 (ent-evt-125~131) + 업데이트 1건 (ent-evt-082)
+- 도메인 분포: Disaster 3 (TS Hagupit, Dukono, Kanlaon), HumanActivity 2 (Pemex Cantarell, Iran-US 기지), Climate 1 (UNEP MARS coal/waste), Defense 1 (Sweden 군사위성)
+- 4개 카테고리 커버: Disaster O / HumanActivity O / Climate O / AgriMarine — 금일 C2 신규 없음 (C1에서 NLL 어선 등 기 커버)
+
+### C2-1. Disaster (자연재해) — 3건
+- **ent-evt-127 (TS Hagupit)** — 서태평양 7.7N/142.2E, Himawari-9 + GOES-18 GEO 다중위성, JMA/NOAA 공식, 0.95+
+- **ent-evt-128 (Dukono 화산)** — 인도네시아 1.69N/127.88E, Himawari-9 thermal IR, CVGHM/PVMBG 공식, 0.90
+- **ent-evt-131 (Kanlaon 화산 Alert Level 2)** — 필리핀 10.41N/123.13E, PHIVOLCS 공식, 0.85
+
+### C2-2. HumanActivity (인간활동) — 2건
+- **ent-evt-125 (Pemex Cantarell 유출)** — 멕시코 19.8N/-92.4W, Sentinel-1(SAR) + Sentinel-2(MSI) cross-modal, 3개월 지속, CEMDA NGO 보고, 0.90
+- **ent-evt-126 (Iran-US 기지 피해 228+)** — 쿠웨이트/바레인 29.3N/47.7E, Copernicus 위성 데이터 검증(WaPo), 0.85
+
+### C2-3. Climate (기후·환경) — 1건
+- **ent-evt-129 (UNEP IMEO MARS coal/waste 확장)** — 글로벌, Sentinel-5P TROPOMI, supersedes ent-evt-106 (oil&gas only → coal+waste), UNEP 공식, 0.95
+
+### C2-4. Defense (국방) — 1건
+- **ent-evt-130 (Sweden 첫 군사위성)** — 스웨덴, Planet Labs 제작, LEO 광학, Swedish Armed Forces 운용, satellite_operations 메타이벤트, 0.80
+
+### C2-5. 업데이트
+- **ent-evt-082 (Mayon)** — lava flow Basud 방향 3.8km 도달, SO2 2,184 t/d, partOfSeries(ent-evt-029), 시계열 진전
+
+### C2-6. 다중 위성 교차검증
+- ent-evt-125: S1A(SAR) + S2A(MSI) cross-modal 약가산 (동일 ESA 운영자)
+- ent-evt-127: Himawari-9(JAXA) + GOES-18(NOAA) 강가산 (독립 운영자 GEO)
+
+### C2-7. 신규 엔티티
+- Country 2건: co-mx (멕시코), co-kw (쿠웨이트)
+- Organization 5건: CEMDA, Pemex, WaPo, CVGHM/PVMBG, Swedish Armed Forces
+- Location 5건: Cantarell, Camp Arifjan/5th Fleet, Western Pacific/Yap, Mount Dukono, Mount Kanlaon
+- Satellite 1건: Sweden Military Recon 1
+
+### C2-8. 추론 통계
+| 규칙 | C2 발동 |
+|------|---------|
+| multi_satellite_confirmation | 2 (강 1 + 약 1) |
+| sensor_capability_match | 3 (SAR 1 + thermal 1 + tracegas 1) |
+| official_source_trust | 3 |
+| supersedes | 1 |
+| partOfSeries | 1 |
+| **합계** | **10** |

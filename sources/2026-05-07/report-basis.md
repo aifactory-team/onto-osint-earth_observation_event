@@ -121,3 +121,64 @@
 - 한반도 이벤트: 5건
 - supersedes 체인: 4건
 - 누적 KG: 790 트리플 (579 explicit + 211 inferred)
+
+---
+
+## Cycle 2 보고서 작성 근거 (src-029 ~ src-036)
+
+### C2-1. 보고서 포함 7건 + 업데이트 1건
+
+#### 자연재해 (Disaster) — 3건
+| Rank | Event ID | 이벤트명 | 위성/센서 | 지역 | Final Conf |
+|------|----------|----------|----------|------|-----------|
+| C2-1 | ent-evt-127 | Tropical Storm Hagupit (서태평양) | Himawari-9 + GOES-18 (multi-GEO) | 7.7N/142.2E, Yap/W. Pacific | **0.95** |
+| C2-2 | ent-evt-128 | Dukono 화산 분출 (인도네시아) | Himawari-9 thermal IR | 1.69N/127.88E, Halmahera, ID | **0.90** |
+| C2-3 | ent-evt-131 | Kanlaon 화산 Alert Level 2 (필리핀) | (PHIVOLCS in-situ + 위성 보조) | 10.41N/123.13E, Negros, PH | **0.85** |
+
+#### 인간활동 (Human Activity) — 2건
+| Rank | Event ID | 이벤트명 | 위성/센서 | 지역 | Final Conf |
+|------|----------|----------|----------|------|-----------|
+| C2-4 | ent-evt-125 | Pemex Cantarell 원유 유출 3개월 지속 | Sentinel-1A (SAR) + Sentinel-2A (MSI) | 19.8N/92.4W, Campeche Bay, MX | **0.90** |
+| C2-5 | ent-evt-126 | Iran-US 기지 피해 228+ 구조물 | Copernicus 위성 검증 (WaPo) | 29.3N/47.7E, Camp Arifjan, KW/BH | **0.85** |
+
+#### 기후·환경 (Climate & Environment) — 1건
+| Rank | Event ID | 이벤트명 | 위성/센서 | 지역 | Final Conf |
+|------|----------|----------|----------|------|-----------|
+| C2-6 | ent-evt-129 | UNEP IMEO MARS coal/waste 확장 (supersedes evt-106) | Sentinel-5P TROPOMI | global | **0.95** |
+
+#### 국방 (Defense) — 1건
+| Rank | Event ID | 이벤트명 | 위성/센서 | 지역 | Final Conf |
+|------|----------|----------|----------|------|-----------|
+| C2-7 | ent-evt-130 | Sweden 첫 군사위성 발사 | Planet Labs 제작, 광학 LEO | SE | **0.80** |
+
+#### 업데이트 (시계열 진전) — 1건
+| Event ID | 이벤트명 | 변경사항 | Final Conf |
+|----------|---------|---------|-----------|
+| ent-evt-082 | Mayon 화산 lava flow 진전 | Basud 방향 3.8km, SO2 2,184 t/d | **0.97** (기존 유지) |
+
+### C2-2. supersedes / partOfSeries
+- ent-evt-129 :supersedes ent-evt-106 (UN MARS oil&gas only → coal+waste sectors 확장)
+- ent-evt-082 :partOfSeries ent-evt-029 (Mayon 2026-01~ 시리즈 — lava flow 3.8km 업데이트)
+
+### C2-3. 신규 엔티티 (instances.json 반영 대상)
+- Country 2: co-mx (Mexico), co-kw (Kuwait)
+- Organization 5: CEMDA (NGO, MX), Pemex (industry, MX), Washington Post (media, US), CVGHM/PVMBG (space_agency, ID), Swedish Armed Forces (defense_intel, SE)
+- Location 5: Cantarell (MX), Camp Arifjan/5th Fleet (KW), Western Pacific/Yap, Mount Dukono (ID), Mount Kanlaon (PH)
+- Satellite 1: Sweden Military Recon 1 (Swedish AF, LEO, optical)
+
+### C2-4. 보고서 구성 가이드 (Cycle 2 추가분)
+1. **자연재해 섹션 추가**: TS Hagupit → Dukono → Kanlaon (재해 우선순위 순)
+2. **인간활동 섹션 추가**: Pemex Cantarell (3개월 SAR 시계열) → Iran-US 기지 피해 (Copernicus 검증)
+3. **기후 섹션 추가**: UNEP MARS coal/waste 확장 (supersedes 기존 oil&gas 항목)
+4. **국방 섹션 추가**: Sweden 첫 군사위성 (sat-ops 메타이벤트)
+5. **Mayon 업데이트**: 기존 Mayon 항목에 lava flow 3.8km + SO2 수치 추가
+6. **다중 위성 교차검증 2건 추가**: Cantarell (SAR+MSI cross-modal) + Hagupit (GEO 독립 운영자)
+
+### C2-5. 사이클 통계 (C1+C2 합산)
+- 총 이벤트: 26 (C1) + 7 (C2) + 1 update = 34건
+- 총 신규 Satellite: 3 (C1) + 1 (C2) = 4건
+- 총 신규 Organization: 6 (C1) + 5 (C2) = 11건
+- 총 신규 Country: 2 (C1) + 2 (C2) = 4건
+- 총 신규 Location: 7 (C1) + 5 (C2) = 12건
+- 총 추론 발동: 61 (C1) + 10 (C2) = 71건
+- 누적 KG 추정: ~830 트리플

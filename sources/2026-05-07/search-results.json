@@ -2,8 +2,8 @@
   "date": "2026-05-07",
   "collected_at": "2026-05-07T08:30:00+09:00",
   "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
-  "search_count": 30,
-  "total_results": 121,
+  "search_count": 48,
+  "total_results": 189,
   "expanded_keywords": [
     "Sentinel-1D commissioning",
     "Sentinel-5P methane CH4",
@@ -485,13 +485,14 @@
     "satellite_platform": 4
   },
   "notes": [
-    "WebSearch 30회 수행 (요청 최소치 18회 초과 달성). en 21회 / ko 9회.",
+    "WebSearch 48회 수행 (cycle 1: 30회 + cycle 2: 18회). en 33회 / ko 15회.",
     "Phase 1은 중복 제거를 1차로만 수행 — Phase 2(추출)에서 URL 기반 dedup 및 위성출처 검증 의무 적용.",
     "Sentinel-5P 5/6 OCM으로 인한 데이터 일시 중단(2026-05-06) → 5/7 메탄 분석은 OFFL 보정 후 결과 사용 권고.",
     "Sentinel-1D 운용 진입(2026-05-03) — 4기 SAR 컨스텔레이션 가동: SAR 변화탐지 카테고리 가산 신호.",
     "CAS500-2 첫 교신(2026-05-03) — 한반도 GeoFocus + KOMPSAT-7 본격 운영기 진입.",
     "동해 NLL 中어선 100척 집결(2026-05-04) — Sentinel-1 SAR / VIIRS night-light 교차검증 후보 이벤트.",
     "Mayon (PH) 5/5 분출, Krasheninnikov 5/4 VIIRS thermal anomaly, Kilauea 5/5 Episode 46 종료 — 화산 카테고리 다중 신호.",
-    "GFW 2026 보고서 5/5 발표 — 2025년 1차 열대우림 손실 -36% YoY, 인도네시아 +14% 역행."
+    "GFW 2026 보고서 5/5 발표 — 2025년 1차 열대우림 손실 -36% YoY, 인도네시아 +14% 역행.",
+    "Cycle 2 (18회 추가): Pemex Cantarell 원유 유출 3개월 위성영상(Sentinel-1/2, TPR 5/7), Iran-US 기지 228건 피해 위성 검증(WaPo 5/6), TS Hagupit 서태평양 형성(5/6, Himawari-9), Dukono 화산(VAAC 209), UNEP MARS coal/waste 확장(G7 5/4), Sweden 군사위성(Planet Labs 5/3), Kanlaon 화산(PH Alert 2), Mayon 업데이트(SO2 2184 t/d)."
   ]
 }

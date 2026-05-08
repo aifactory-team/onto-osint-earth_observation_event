@@ -1,0 +1,25 @@
+{
+  "id": "src-030",
+  "title": "Iran hit more U.S. military targets than reported — satellite imagery shows 228+ structures damaged",
+  "url": "https://www.washingtonpost.com/investigations/2026/05/06/iran-us-bases-satellite-images/",
+  "snippet": "Imagery published by Iranian state-affiliated media and verified by The Post shows damage to at least 228 structures or pieces of equipment at U.S. military sites. Cross-checked against Copernicus data and archived commercial imagery.",
+  "source_name": "The Washington Post",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 14일 소스에 이란-미군 기지 위성피해분석 없음. WaPo 독자 위성영상 검증 OSINT — Copernicus 데이터 교차검증.",
+  "entities": [
+    {"id": "ent-evt-126", "type": "Event", "name": "이란 공습 미군 기지 피해 228건 위성 검증 (WaPo/Copernicus)", "properties": {"phenomenon": "infrastructure_damage", "lat": 29.3, "lon": 47.7, "country": "KW", "observation_date": "2026-05-06", "severity": "high", "before_after_available": true, "confidence": 0.90}},
+    {"id": "ent-org-wapo", "type": "Organization", "name": "The Washington Post", "properties": {"org_type": "media", "country": "US"}},
+    {"id": "ent-loc-047", "type": "Location", "name": "Camp Arifjan / Ali al-Salem AB / 5th Fleet HQ, Kuwait/Bahrain", "properties": {"lat": 29.3, "lon": 47.7, "country": "KW", "admin_level": "multi-base"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-126", "predicate": "locatedIn", "object": "ent-loc-047"},
+    {"subject": "ent-evt-126", "predicate": "manifests", "object": "phen-infra-damage"},
+    {"subject": "ent-evt-126", "predicate": "inDomain", "object": "dom-defense"},
+    {"subject": "ent-evt-126", "predicate": "reportedBy", "object": "ent-org-wapo"},
+    {"subject": "ent-evt-126", "predicate": "analyzedBy", "object": "ent-org-wapo"}
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "src-029",
+  "title": "Pemex-linked Gulf oil spill may still be spreading three months later, satellite images suggest",
+  "url": "https://www.tpr.org/environment/2026-05-07/pemex-linked-gulf-oil-spill-may-still-be-spreading-three-months-later-satellite-images-suggest",
+  "snippet": "Radar imagery from early May shows elongated dark patches near offshore infrastructure in the Cantarell complex, signatures consistent with oil slicks. Three months after the initial leak, the event is not in a final remediation phase and remains active and evolving.",
+  "source_name": "Texas Public Radio (TPR)",
+  "language": "en",
+  "discovered_date": "2026-05-07",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 14일 소스에 Pemex Cantarell 유출 위성 분석 없음. Sentinel-1/2 기반 신규 EO 이벤트.",
+  "entities": [
+    {"id": "ent-evt-125", "type": "Event", "name": "Pemex Cantarell 원유 유출 3개월 지속 (Sentinel-1/2)", "properties": {"phenomenon": "oil_spill", "lat": 19.8, "lon": -92.4, "country": "MX", "observation_date": "2026-05-07", "start_date": "2026-02-06", "severity": "high", "before_after_available": true, "confidence": 0.92}},
+    {"id": "sat-sentinel1a", "type": "Satellite", "name": "Sentinel-1A"},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "ent-org-cemda", "type": "Organization", "name": "CEMDA (Centro Mexicano de Derecho Ambiental)", "properties": {"org_type": "ngo", "country": "MX"}},
+    {"id": "ent-org-pemex", "type": "Organization", "name": "Pemex (Petróleos Mexicanos)", "properties": {"org_type": "industry_consortium", "country": "MX"}},
+    {"id": "ent-loc-046", "type": "Location", "name": "Cantarell complex, Bay of Campeche, Gulf of Mexico", "properties": {"lat": 19.8, "lon": -92.4, "country": "MX"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-125", "predicate": "observedBy", "object": "sat-sentinel1a"},
+    {"subject": "ent-evt-125", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-125", "predicate": "usesSensor", "object": "sensor-c-sar"},
+    {"subject": "ent-evt-125", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "ent-evt-125", "predicate": "locatedIn", "object": "ent-loc-046"},
+    {"subject": "ent-evt-125", "predicate": "manifests", "object": "phen-oilspill"},
+    {"subject": "ent-evt-125", "predicate": "inDomain", "object": "dom-human"},
+    {"subject": "ent-evt-125", "predicate": "reportedBy", "object": "ent-org-cemda"}
+  ]
+}
