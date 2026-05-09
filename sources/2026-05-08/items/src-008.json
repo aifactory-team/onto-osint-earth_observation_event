@@ -1,0 +1,34 @@
+{
+  "id": "src-008",
+  "title": "Amazon 싱구 지역 금광 난개발 49.6만 ha — PlanetScope/Sentinel-2 위성 확인",
+  "url": "https://www.washingtontimes.com/news/2026/may/5/gold-fueled-mining-rush-scarring-brazils-amazon-spiking-deforestation/",
+  "snippet": "브라질 아마존 싱구 지역 3개 보전지역에서 불법 금광 채굴이 삼림벌채를 가속. 총 49.6만 ha 벌채. 카야포 원주민 영토 내 7,940 ha 벌채. PlanetScope 일일 모니터링 + Sentinel-2A(Amazon Mining Watch)로 확인.",
+  "source_name": "Washington Times",
+  "language": "en",
+  "discovered_date": "2026-05-08",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "기존 Amazon 벌채 보도(PIK/GFW)는 전체 유역 규모 — 싱구 지역 금광 특화 위성영상(PlanetScope+Sentinel-2) 분석은 신규.",
+  "entities": [
+    {"id": "ent-evt-205", "type": "Event", "name": "Amazon 싱구 지역 불법 금광 삼림벌채 (496,000 ha)", "properties": {"phenomenon": "deforestation", "lat": -8.0, "lon": -52.0, "country": "BR", "observation_date": "2026-05", "area_cleared_ha": 496000, "kayapo_ha": 7940, "severity": "high", "confidence": 0.88}},
+    {"id": "sat-planetscope", "type": "Satellite", "name": "PlanetScope", "properties": {"operator": "Planet Labs", "resolution_m": 3.7}},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "ent-org-amazon-conservation", "type": "Organization", "name": "Amazon Conservation", "properties": {"org_type": "ngo", "country": "US"}},
+    {"id": "ent-org-isa", "type": "Organization", "name": "ISA (Instituto Socioambiental)", "properties": {"org_type": "ngo", "country": "BR"}},
+    {"id": "ent-loc-056", "type": "Location", "name": "Xingu region, Pará, Brazil", "properties": {"lat": -8.0, "lon": -52.0, "country": "BR"}},
+    {"id": "sensor-msi", "type": "Sensor", "name": "MSI"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-205", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "ent-evt-205", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-205", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "ent-evt-205", "predicate": "analyzedBy", "object": "ent-org-amazon-conservation"},
+    {"subject": "ent-evt-205", "predicate": "analyzedBy", "object": "ent-org-isa"},
+    {"subject": "ent-evt-205", "predicate": "locatedIn", "object": "ent-loc-056"},
+    {"subject": "ent-evt-205", "predicate": "manifests", "object": "phen-defor"},
+    {"subject": "ent-evt-205", "predicate": "manifests", "object": "phen-mining"},
+    {"subject": "ent-evt-205", "predicate": "inDomain", "object": "dom-human"},
+    {"subject": "ent-evt-205", "predicate": "inCountry", "object": "co-br"}
+  ]
+}

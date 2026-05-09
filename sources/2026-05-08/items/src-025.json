@@ -1,0 +1,17 @@
+{
+  "id": "src-025",
+  "title": "Krasheninnikov 화산 분출 지속 — 금일 주요 변동 없음",
+  "url": "https://volcanoearth.wordpress.com/2026/05/01/1-may-2026/",
+  "snippet": "Krasheninnikov 화산(캄차카) 유출 분출 지속. VIIRS 열감지. 금일 주요 변동 없음.",
+  "source_name": "Volcano Earth",
+  "language": "en",
+  "discovered_date": "2026-05-08",
+  "tag": "reported",
+  "related_report": "2026-05-07/src-002",
+  "related_item": "temp-evt-002",
+  "tag_reason": "이전 보도 반복. 금일 주요 변동 없음.",
+  "entities": [
+    {"id": "sat-viirs-jpss", "type": "Satellite", "name": "VIIRS (Suomi-NPP/JPSS)"}
+  ],
+  "relations": []
+}

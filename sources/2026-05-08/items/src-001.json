@@ -1,0 +1,27 @@
+{
+  "id": "src-001",
+  "title": "Sentinel-2A/2C 데이터 생산 중단 — NorthC 데이터센터 화재 (Almere, NL, 2026-05-07)",
+  "url": "https://dataspace.copernicus.eu/news/2026-5-8-copernicus-sentinel-2a-and-sentinel-2c-data-production-interruption-7-may-2026",
+  "snippet": "NorthC 데이터센터 화재(네덜란드 알메르)로 인해 2026-05-07 08:30 UTC 이후 Sentinel-2A 및 Sentinel-2C 데이터 생산이 중단됨. 데이터는 손실되지 않았으며, 복구 후 재발행 예정.",
+  "source_name": "Copernicus Data Space",
+  "language": "en",
+  "discovered_date": "2026-05-08",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 14일 소스에 Sentinel-2A/2C 데이터 중단 관련 보도 없음. NorthC 데이터센터 화재로 인한 신규 위성 운영 이벤트.",
+  "entities": [
+    {"id": "ent-evt-201", "type": "Event", "name": "Sentinel-2A/2C 데이터 생산 중단 (NorthC 화재)", "properties": {"phenomenon": "satellite_operations", "lat": 52.39, "lon": 5.22, "country": "NL", "observation_date": "2026-05-07T08:30:00Z", "severity": "moderate", "confidence": 0.92}},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sat-sentinel2c", "type": "Satellite", "name": "Sentinel-2C"},
+    {"id": "org-esa", "type": "Organization", "name": "ESA"},
+    {"id": "ent-loc-051", "type": "Location", "name": "NorthC Datacenter, Almere, Netherlands", "properties": {"lat": 52.39, "lon": 5.22, "country": "NL"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-201", "predicate": "affects", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-201", "predicate": "affects", "object": "sat-sentinel2c"},
+    {"subject": "ent-evt-201", "predicate": "locatedIn", "object": "ent-loc-051"},
+    {"subject": "ent-evt-201", "predicate": "reportedBy", "object": "org-esa"},
+    {"subject": "ent-evt-201", "predicate": "inDomain", "object": "dom-climate"}
+  ]
+}

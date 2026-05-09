@@ -803,3 +803,129 @@ config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5)
 ### 신규 Country
 - co-mx (멕시코), co-kw (쿠웨이트)
 
+---
+
+## 2026-05-08 추론 결과
+
+입력: sources/2026-05-08/entities.json — 25 sources (11 new, 6 update, 8 reported). 신규 이벤트 6건(ent-evt-201~206), 업데이트 5건(evt-082/126/127/128/temp-001).
+
+### 다중 위성 교차검증 (multi_satellite_confirmation, +0.20) — 5건
+
+- **추론 #1:** ent-evt-127 (TS Hagupit) — Himawari-9(JMA/JAXA, GEO) + GOES-18(NOAA, GEO) → multiSatBoost +0.20 [confidence 0.92, 확정]
+  - 독립 운영자 GEO 교차검증: JMA ≠ NOAA
+- **추론 #2:** ent-evt-082 (Mayon danger zone 8km) — Himawari-9(JMA, GEO) + Sentinel-2A(ESA, SSO) → multiSatBoost +0.20 [0.92, 확정]
+  - 독립 운영자/궤도: JMA GEO ≠ ESA SSO
+- **추론 #3:** ent-evt-205 (Amazon Xingu gold mining) — PlanetScope(Planet) + Sentinel-2A(ESA) → multiSatBoost +0.20 [0.92, 확정]
+  - 독립 운영자: Planet ≠ ESA
+- **추론 #4:** temp-evt-001 (GA Pineland burn scar) — S-NPP VIIRS(NOAA) + Landsat 8(USGS) + Landsat 9(USGS) → multiSatBoost +0.20 [0.95, 확정]
+  - 3위성 교차검증, NOAA ≠ USGS 독립
+- **추론 #5:** ent-evt-126 (Iran-US bases 228+) — PlanetScope(Planet) + Sentinel-2A(ESA) → multiSatBoost +0.20 [0.88, 확정]
+  - Copernicus + Planet 교차검증 Orbital Today 후속
+
+### 시계열 진행 / 시리즈 (temporal_progression, partOfSeries) — 6건
+
+- **추론 #6:** ent-evt-082 (Mayon danger zone 8km) :partOfSeries ent-evt-029 (Mayon original 2026-01~) → 장기 시리즈 [0.97, 확정]
+  - 2026-01 분출 시작 → 05-03 phreatic → 05-05 VAAC 567 → 05-06 87 barangays → 05-08 8km danger zone + lahar risk
+- **추론 #7:** ent-evt-127 (TS Hagupit) :partOfSeries 이전 사이클 (May 7→8) → track 업데이트 [0.95, 확정]
+  - Yap 통과 → PAR entry 예상 May 9 as Caloy
+- **추론 #8:** ent-evt-128 (Dukono) :partOfSeries 이전 사이클 (May 7 VAAC advisory→May 8 deaths) → severity upgrade [0.95, 확정]
+  - VAAC Darwin advisory → 3 hikers killed, ash 10km
+- **추론 #9:** ent-evt-202 (Kilauea Ep47 예보) :partOfSeries ent-evt-101 (Ep46 종료) → 에피소드 시리즈 [0.92, 확정]
+  - 동일 위치(Halemaʻumaʻu), Ep46 05-05 종료 → Ep47 05-12~17 예보
+- **추론 #10:** temp-evt-001 (GA Pineland) :partOfSeries ent-evt-098 (GA fires) → burn scar 시계열 [0.95, 확정]
+  - May 5→7→8 CIRA before/after 추가, 50,000+ ac, 85% contained
+- **추론 #11:** ent-evt-203 (Great Sitkin WATCH) :partOfSeries ent-evt-050 (Great Sitkin 2026-05-03) → alert upgrade [0.85, 확정]
+  - medium→WATCH/ORANGE lava dome growth
+
+### 연쇄 재해 (cascading_disaster) — 1건 잠정
+
+- **추론 #12:** ent-evt-082 (Mayon) :potentialTriggeredBy ent-evt-127 (TS Hagupit/Caloy)
+  - **조건:** Hagupit이 5월 9일 PAR 진입 시 Albay 지역 강우 → Mayon ashfall 퇴적 위 lahar(화산이류) 발생 우려
+  - **근거:** PHIVOLCS 8km danger zone 확대 사유에 "approaching typhoon lahar risk" 명시
+  - **신뢰도:** 0.70 [잠정 — Hagupit 경로 확정 시 재평가]
+  - **유형:** Disaster(typhoon) → Disaster(volcanic lahar) 사슬
+
+### 센서 능력 매칭 (sensor_capability_match) — 3건
+
+- **trace_gas × volcanic SO2:** ent-evt-204 (Shishaldin, Sentinel-5P TROPOMI SO2) → tracegasBoost +0.15 [0.88, 확정]
+- **VIIRS thermal × volcanic:** ent-evt-203 (Great Sitkin, VIIRS thermal) → thermalBoost +0.10 [0.90, 확정]
+- **TIRS+VIIRS thermal × wildfire:** temp-evt-001 (GA Pineland, Landsat TIRS + S-NPP VIIRS) → thermalBoost +0.10 [0.92, 확정]
+
+### 공식 출처 신뢰 (official_source_trust, +0.15) — 7건
+
+- ent-evt-201 (ESA Copernicus 공식) [0.99, 확정]
+- ent-evt-202 (USGS HVO 공식 예보) [0.99, 확정]
+- ent-evt-203 (USGS AVO 공식) [0.99, 확정]
+- ent-evt-204 (USGS AVO 공식) [0.99, 확정]
+- ent-evt-128 (CVGHM/PVMBG + VAAC Darwin) [0.95, 확정]
+- ent-evt-127 (JMA + NOAA + PAGASA) [0.95, 확정]
+- temp-evt-001 (NASA EO + CIRA/RAMMB) [0.95, 확정]
+
+### 재해 우선순위 (disaster_severity_priority, +0.20) — 2건
+
+- ent-evt-128 (Dukono 3 deaths, HIGH severity) [0.95, 확정]
+- ent-evt-082 (Mayon 8km danger zone, evacuations, lahar risk) [0.97, 확정]
+
+### 전후 비교 신뢰 (before_after_credibility, +0.10) — 2건
+
+- temp-evt-001 (GA Pineland CIRA S-NPP before/after burn scar) [0.95, 확정]
+- ent-evt-205 (Amazon Xingu mining PlanetScope+S2A 전후) [0.90, 확정]
+
+### 분석가 신뢰 (analyst_org_trust, +0.10) — 1건
+
+- ent-evt-205 (Amazon Conservation + ISA 독립 NGO 분석) [0.90, 확정]
+
+### 종합 신뢰도 산정 (최종 confidence cap 0.97)
+
+| 이벤트 ID | 이벤트명 | 기본 | 가산 | 최종 | 비고 |
+|-----------|---------|------|------|------|------|
+| ent-evt-201 | Sentinel-2 datacenter fire 장애 | 0.85 | official+0.15 | 0.97 (cap) | ESA 공식 |
+| ent-evt-202 | Kilauea Ep47 예보 | 0.80 | official+0.15, partOfSeries | 0.95 | HVO 공식, 위성 직접 관측 없음 |
+| ent-evt-203 | Great Sitkin WATCH/ORANGE | 0.78 | official+0.15, thermal+0.10, partOfSeries | 0.97 (cap) | AVO + VIIRS |
+| ent-evt-204 | Shishaldin ADVISORY/YELLOW | 0.75 | official+0.15, tracegas+0.15 | 0.95 | AVO + TROPOMI SO2 |
+| ent-evt-205 | Amazon Xingu 496k ha | 0.82 | multiSat+0.20, analyst+0.10, ba+0.10 | 0.97 (cap) | PlanetScope+S2A + Amazon Conservation |
+| ent-evt-206 | Balikatan + PLA Liaoning | 0.75 | — | 0.75 | 단일 위성 출처, defense |
+| ent-evt-128 update | Dukono 3 deaths | 0.78 | official+0.15, priority+0.20 | 0.97 (cap) | CVGHM + VAAC Darwin |
+| ent-evt-127 update | Hagupit/Caloy PAR | 0.80 | multiSat+0.20, official+0.15 | 0.97 (cap) | Himawari-9 + GOES-18 |
+| ent-evt-082 update | Mayon 8km PDC | 0.85 | multiSat+0.20, priority+0.20, partOfSeries | 0.97 (cap) | Himawari-9 + S2A + lahar risk |
+| temp-evt-001 update | GA Pineland burn scar | 0.85 | multiSat+0.20, thermal+0.10, official+0.15, ba+0.10 | 0.97 (cap) | S-NPP + L8/9 + NASA EO |
+| ent-evt-126 update | Iran bases 228+ | 0.78 | multiSat+0.20 | 0.92 | Copernicus + Planet 교차 |
+
+### 추론 통계 요약
+
+| 규칙 | 금일 발동 | 누적 (~05-08) | 평균 신뢰도 |
+|------|----------|------|-----------|
+| multi_satellite_confirmation | 5 | 31 | 0.92 |
+| temporal_progression / partOfSeries | 6 | 22 | 0.93 |
+| cascading_disaster | 1 (잠정) | 6 | 0.70 |
+| sensor_capability_match | 3 | 40 | 0.90 |
+| official_source_trust | 7 | 38 | 0.97 |
+| analyst_org_trust | 1 | 8 | 0.90 |
+| disaster_severity_priority | 2 | 23 | 0.96 |
+| before_after_credibility | 2 | 28 | 0.92 |
+| **합계** | **27** | **196** | **0.92** |
+
+### 금일 한반도 GeoFocus — 0건
+
+금일 사이클에서 한반도/DMZ/동해/남해 관련 위성 관측 이벤트 없음. 보고서에 "금일 한반도 GeoFocus 신규 이벤트 특이사항 없음" 명시.
+
+### 금일 미적용/제외 추론
+
+- **korea_geo_focus:** 한반도 관련 이벤트 0건 — 미적용
+- **commercial_imagery_trust:** PR cap 해당 이벤트 0건
+- **supersedes:** 금일 supersede 관계 없음 (모두 partOfSeries 또는 update)
+- **3+ 단계 추론:** cascading_disaster(Hagupit→Mayon lahar)가 잠정 2단계 추론 — Hagupit 경로 확정 필요
+
+### 온톨로지 변경
+
+| 변경 유형 | 대상 | 근거 |
+|----------|------|------|
+| 새 Country | co-kw (쿠웨이트) (1건) | Iran-US bases Copernicus+Planet 교차검증 상세 지역 |
+| 새 Satellite | sat-sentinel2c (1건) | Sentinel-2C — NorthC datacenter fire 데이터 장애 |
+| 새 Organization | ent-org-hvo/avo/cvghm/vaac-darwin/pagasa/bnpb/amazon-conservation/isa/cira/pla (10건) | 각 기관 첫 참조 |
+| 새 Location | ent-loc-046~050 (5건) | Almere, Dukono, Great Sitkin, Shishaldin, Xingu |
+| 새 Event | ent-evt-201~206 (6건) | 신규 이벤트 |
+| 이벤트 업데이트 | ent-evt-082/126/127/128/temp-001 (5건) | 후속 보도·severity 업그레이드 반영 |
+
+config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5).
+

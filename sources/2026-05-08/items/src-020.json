@@ -1,0 +1,18 @@
+{
+  "id": "src-020",
+  "title": "CAS500-2 커미셔닝 — 금일 신규 없음",
+  "url": "https://www.newspim.com/news/view/20260503000194",
+  "snippet": "CAS500-2 첫 교신 및 커미셔닝 진행 중. 금일 추가 보도 없음.",
+  "source_name": "뉴스핌",
+  "language": "ko",
+  "discovered_date": "2026-05-08",
+  "tag": "reported",
+  "related_report": "2026-05-07/src-017",
+  "related_item": "temp-evt-017",
+  "tag_reason": "이전 보도 반복. 금일 신규 정보 없음.",
+  "entities": [
+    {"id": "sat-cas500-2", "type": "Satellite", "name": "CAS500-2 (차세대중형위성 2호)"},
+    {"id": "org-kari", "type": "Organization", "name": "KARI"}
+  ],
+  "relations": []
+}

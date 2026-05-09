@@ -1,0 +1,30 @@
+{
+  "id": "src-004",
+  "title": "Mayon 화산 화쇄류 지속, 위험구역 6→8km 확대 — Alert Level 3 (PHIVOLCS)",
+  "url": "https://watchers.news/2026/05/08/repeated-lava-collapse-pyroclastic-flows-continue-at-mayon-volcano-philippines/",
+  "snippet": "PHIVOLCS Alert Level 3 유지. 용암류: Basud 3.8km, Bonga 3.2km, Mi-isi 1.6km. 용암 전면 붕괴에 의한 화쇄류(PDC) 반복 발생. 위험구역 6→8km 확대. 화산재 강하 8,544 ha 농경지 피해. 접근 중인 TS Hagupit에 의한 라하르 위험 가중.",
+  "source_name": "The Watchers / PHIVOLCS",
+  "language": "en",
+  "discovered_date": "2026-05-08",
+  "tag": "update",
+  "related_report": "2026-05-07/src-036",
+  "related_item": "ent-evt-082",
+  "tag_reason": "기존 Mayon Alert Level 3 시리즈(ent-evt-082) 후속: 위험구역 6→8km 확대, PDC 반복, 화산재 8,544ha 피해, Hagupit-lahar 이중위험.",
+  "entities": [
+    {"id": "ent-evt-082", "type": "Event", "name": "Mayon 화산 Alert Level 3 — 위험구역 8km 확대, PDC 반복", "properties": {"phenomenon": "volcanic_eruption", "lat": 13.26, "lon": 123.69, "country": "PH", "observation_date": "2026-05-08", "severity": "high", "danger_zone_km": 8, "ashfall_ha": 8544, "lava_flow_basud_km": 3.8, "lava_flow_bonga_km": 3.2, "lava_flow_miisi_km": 1.6, "confidence": 0.92}},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "org-phivolcs", "type": "Organization", "name": "PHIVOLCS"},
+    {"id": "ent-loc-mayon", "type": "Location", "name": "Mount Mayon, Albay, Philippines", "properties": {"lat": 13.26, "lon": 123.69, "country": "PH"}},
+    {"id": "sensor-msi", "type": "Sensor", "name": "MSI"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-082", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "ent-evt-082", "predicate": "analyzedBy", "object": "org-phivolcs"},
+    {"subject": "ent-evt-082", "predicate": "locatedIn", "object": "ent-loc-mayon"},
+    {"subject": "ent-evt-082", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-082", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

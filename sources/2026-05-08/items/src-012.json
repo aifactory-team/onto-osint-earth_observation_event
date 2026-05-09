@@ -1,0 +1,27 @@
+{
+  "id": "src-012",
+  "title": "이란 공습 미군 기지 228+ 피해 — Orbital Today 후속 기사 (Copernicus + Planet 검증)",
+  "url": "https://orbitaltoday.com/2026/05/07/satellite-images-reveal-wider-damage-to-us-bases-in-middle-east-than-previously-reported/",
+  "snippet": "Orbital Today가 WaPo 조사에 대한 후속 보도. Copernicus + Planet 위성영상으로 15개 미군 기지 228+ 구조물 피해 재확인. 상업 위성영상 추가 교차검증 제공.",
+  "source_name": "Orbital Today",
+  "language": "en",
+  "discovered_date": "2026-05-08",
+  "tag": "update",
+  "related_report": "2026-05-07/src-030",
+  "related_item": "ent-evt-126",
+  "tag_reason": "5/7 WaPo 보도(src-030) 후속: Orbital Today가 Copernicus + Planet 교차검증 추가 분석 제공.",
+  "entities": [
+    {"id": "ent-evt-126", "type": "Event", "name": "이란 공습 미군 기지 228+ 피해 위성 검증 (Orbital Today 후속)", "properties": {"phenomenon": "infrastructure_damage", "lat": 29.3, "lon": 47.7, "country": "KW", "observation_date": "2026-05-07", "structures_damaged": 228, "sites_affected": 15, "severity": "high", "confidence": 0.88}},
+    {"id": "sat-planetscope", "type": "Satellite", "name": "PlanetScope"},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "ent-org-orbitaltoday", "type": "Organization", "name": "Orbital Today", "properties": {"org_type": "media", "country": "US"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-126", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "ent-evt-126", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-126", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "ent-evt-126", "predicate": "reportedBy", "object": "ent-org-orbitaltoday"},
+    {"subject": "ent-evt-126", "predicate": "manifests", "object": "phen-infra-damage"},
+    {"subject": "ent-evt-126", "predicate": "inDomain", "object": "dom-defense"}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "src-017",
+  "title": "MethaneSAT 글로벌 평가 — 금일 신규 없음",
+  "url": "https://insideclimatenews.org/news/06022026/methanesat-climate-pollution-global-assessment/",
+  "snippet": "MethaneSAT 글로벌 석유가스 메탄 평가 관련 금일 추가 보도 없음.",
+  "source_name": "Inside Climate News",
+  "language": "en",
+  "discovered_date": "2026-05-08",
+  "tag": "reported",
+  "related_report": "2026-05-07/src-026",
+  "related_item": "temp-evt-026",
+  "tag_reason": "이전 보도 반복. 금일 신규 정보 없음.",
+  "entities": [
+    {"id": "sat-methanesat", "type": "Satellite", "name": "MethaneSAT"},
+    {"id": "org-edf", "type": "Organization", "name": "Environmental Defense Fund (EDF)"}
+  ],
+  "relations": []
+}

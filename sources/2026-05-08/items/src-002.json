@@ -1,0 +1,29 @@
+{
+  "id": "src-002",
+  "title": "Dukono 화산 폭발 등산객 3명 사망 — 화산재 10km, Himawari-9 (인도네시아)",
+  "url": "https://watchers.news/2026/05/08/dukono-eruption-deaths-rescue-operation-north-maluku-indonesia/",
+  "snippet": "인도네시아 할마헤라섬 두코노 화산이 2026-05-07 22:41 UTC (현지 07:41 WIT)에 폭발. 등산객 20명 중 3명 사망, 17명 구조. 화산재 10km 상공까지 상승. Himawari-9 위성으로 화산재 플룸 탐지.",
+  "source_name": "The Watchers",
+  "language": "en",
+  "discovered_date": "2026-05-08",
+  "tag": "update",
+  "related_report": "2026-05-07/src-032",
+  "related_item": "ent-evt-128",
+  "tag_reason": "5/7 Dukono VAAC 209(화산재 FL080) 후속 — 5/8 대규모 폭발(화산재 10km, FL330), 사상자 3명 발생. 심각도 대폭 상향.",
+  "entities": [
+    {"id": "ent-evt-128", "type": "Event", "name": "Dukono 화산 대규모 분출 + 사망 3명 (2026-05-08)", "properties": {"phenomenon": "volcanic_eruption", "lat": 1.69, "lon": 127.88, "country": "ID", "observation_date": "2026-05-07T22:41:00Z", "severity": "high", "deaths": 3, "evacuated": 17, "ash_altitude_km": 10, "confidence": 0.95}},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "ent-org-cvghm", "type": "Organization", "name": "CVGHM/PVMBG (Indonesia)", "properties": {"org_type": "space_agency", "country": "ID"}},
+    {"id": "ent-org-vaac-darwin", "type": "Organization", "name": "VAAC Darwin", "properties": {"org_type": "aviation_safety", "country": "AU"}},
+    {"id": "ent-loc-049", "type": "Location", "name": "Mount Dukono, Halmahera, North Maluku, Indonesia", "properties": {"lat": 1.69, "lon": 127.88, "country": "ID"}},
+    {"id": "ent-org-bnpb", "type": "Organization", "name": "BNPB (Indonesian Disaster Agency)", "properties": {"org_type": "civil_protection", "country": "ID"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-128", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-128", "predicate": "locatedIn", "object": "ent-loc-049"},
+    {"subject": "ent-evt-128", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-128", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "ent-evt-128", "predicate": "analyzedBy", "object": "ent-org-cvghm"},
+    {"subject": "ent-evt-128", "predicate": "analyzedBy", "object": "ent-org-vaac-darwin"}
+  ]
+}

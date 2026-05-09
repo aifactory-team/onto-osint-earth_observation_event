@@ -1,0 +1,18 @@
+{
+  "id": "src-019",
+  "title": "ESA Sentinel-5P MARS 메탄 석탄/폐기물 — 금일 신규 없음",
+  "url": "https://www.unep.org/news-and-stories/press-release/satellite-methane-alerts-expanded-coal-and-waste-sectors-unep",
+  "snippet": "UNEP IMEO MARS 석탄·폐기물 메탄 감시 확장 금일 추가 보도 없음.",
+  "source_name": "UNEP",
+  "language": "en",
+  "discovered_date": "2026-05-08",
+  "tag": "reported",
+  "related_report": "2026-05-07/src-033",
+  "related_item": "temp-evt-033",
+  "tag_reason": "이전 보도 반복. 금일 신규 정보 없음.",
+  "entities": [
+    {"id": "sat-sentinel5p", "type": "Satellite", "name": "Sentinel-5P"},
+    {"id": "sensor-tropomi", "type": "Sensor", "name": "TROPOMI"}
+  ],
+  "relations": []
+}

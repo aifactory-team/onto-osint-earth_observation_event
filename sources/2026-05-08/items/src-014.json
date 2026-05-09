@@ -1,0 +1,20 @@
+{
+  "id": "src-014",
+  "title": "volcanoearth 7 May 2026 화산 종합 — 다중 화산 요약",
+  "url": "https://volcanoearth.wordpress.com/2026/05/07/7-may-2026/",
+  "snippet": "5/7 일자 화산 종합: Mayon, Kanlaon, Dukono, Shishaldin, Krasheninnikov, Kilauea 업데이트. VIIRS/Himawari-9 열감지 기반.",
+  "source_name": "Volcano Earth",
+  "language": "en",
+  "discovered_date": "2026-05-08",
+  "tag": "update",
+  "related_report": "2026-05-07/src-035",
+  "related_item": null,
+  "tag_reason": "5/7 volcanoearth 6-May 포스트(src-035/036)의 후속 일일 요약. 개별 화산은 별도 src에서 상세 추적.",
+  "entities": [
+    {"id": "sat-viirs-jpss", "type": "Satellite", "name": "VIIRS (Suomi-NPP/JPSS)"},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "org-phivolcs", "type": "Organization", "name": "PHIVOLCS"},
+    {"id": "ent-org-cvghm", "type": "Organization", "name": "CVGHM/PVMBG (Indonesia)"}
+  ],
+  "relations": []
+}

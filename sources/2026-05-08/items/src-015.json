@@ -1,0 +1,18 @@
+{
+  "id": "src-015",
+  "title": "CSIS Beyond Parallel — Yongbyon/Sohae 금일 신규 없음",
+  "url": "https://beyondparallel.csis.org/",
+  "snippet": "CSIS Beyond Parallel 사이트에 Yongbyon/Sohae 관련 신규 위성영상 분석 없음.",
+  "source_name": "CSIS Beyond Parallel",
+  "language": "en",
+  "discovered_date": "2026-05-08",
+  "tag": "reported",
+  "related_report": "2026-05-07/src-020",
+  "related_item": "temp-evt-020",
+  "tag_reason": "5/7 src-019/020으로 이미 보도됨. 금일 CSIS BP 신규 분석 없음.",
+  "entities": [
+    {"id": "org-csis-bp", "type": "Organization", "name": "CSIS Beyond Parallel"},
+    {"id": "sat-worldview3", "type": "Satellite", "name": "WorldView-3"}
+  ],
+  "relations": []
+}

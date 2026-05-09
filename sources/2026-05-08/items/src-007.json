@@ -1,0 +1,28 @@
+{
+  "id": "src-007",
+  "title": "Shishaldin 화산 불안정 — 지진·SO2·증기, ADVISORY/YELLOW (USGS AVO)",
+  "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-AVO-2026-05-07T19:22:48+00:00",
+  "snippet": "AVO: Shishaldin 화산 상승된 지진 활동, SO2 배출, 정상 증기 플룸 확인. Alert Level: ADVISORY/YELLOW. 위성 데이터에서 SO2 검출.",
+  "source_name": "USGS AVO",
+  "language": "en",
+  "discovered_date": "2026-05-08",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 14일 소스에 Shishaldin 관련 보도 없음. USGS AVO ADVISORY/YELLOW 공식 advisory 신규 등재.",
+  "entities": [
+    {"id": "ent-evt-204", "type": "Event", "name": "Shishaldin 화산 불안정 — SO2·지진 (ADVISORY/YELLOW)", "properties": {"phenomenon": "volcanic_eruption", "lat": 54.76, "lon": -163.97, "country": "US", "observation_date": "2026-05-07", "alert_level": "ADVISORY/YELLOW", "confidence": 0.78}},
+    {"id": "sat-sentinel5p", "type": "Satellite", "name": "Sentinel-5P"},
+    {"id": "ent-org-avo", "type": "Organization", "name": "USGS Alaska Volcano Observatory (AVO)"},
+    {"id": "ent-loc-055", "type": "Location", "name": "Shishaldin volcano, Unimak Island, Alaska, US", "properties": {"lat": 54.76, "lon": -163.97, "country": "US"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-204", "predicate": "observedBy", "object": "sat-sentinel5p"},
+    {"subject": "ent-evt-204", "predicate": "usesSensor", "object": "sensor-tropomi"},
+    {"subject": "ent-evt-204", "predicate": "analyzedBy", "object": "ent-org-avo"},
+    {"subject": "ent-evt-204", "predicate": "locatedIn", "object": "ent-loc-055"},
+    {"subject": "ent-evt-204", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-204", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "ent-evt-204", "predicate": "inCountry", "object": "co-us"}
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "src-010",
+  "title": "Georgia Pineland/Hwy 82 산불 burn scar — CIRA 위성 라이브러리 S-NPP (50,000+ ac)",
+  "url": "https://satlib.cira.colostate.edu/weather_media/burn-scars-from-the-pineland-road-and-highway-82-fires/",
+  "snippet": "CIRA/RAMMB 위성 영상 라이브러리: S-NPP(Suomi-NPP) 5/4 burn scar 영상 — Pineland Road (32,575ac), Highway 82 (22,420ac, 85% 진화). 합계 50,000+ ac.",
+  "source_name": "CIRA/RAMMB Colorado State",
+  "language": "en",
+  "discovered_date": "2026-05-08",
+  "tag": "update",
+  "related_report": "2026-05-07/src-001",
+  "related_item": "temp-evt-001",
+  "tag_reason": "기존 Georgia 산불 이벤트(temp-evt-001) 후속: CIRA S-NPP burn scar 영상 추가, Hwy82 85% 진화 진행 상황.",
+  "entities": [
+    {"id": "temp-evt-001", "type": "Event", "name": "Georgia Pineland Road & Hwy 82 wildfires — CIRA burn scar (S-NPP/Landsat)", "properties": {"phenomenon": "wildfire", "lat": 31.5, "lon": -82.5, "country": "US", "observation_date": "2026-05-04", "area_burned_acres": 50000, "containment_hwy82_pct": 85, "confidence": 0.90}},
+    {"id": "sat-snpp", "type": "Satellite", "name": "Suomi-NPP (S-NPP)"},
+    {"id": "sat-landsat8", "type": "Satellite", "name": "Landsat 8"},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9"},
+    {"id": "ent-org-cira", "type": "Organization", "name": "CIRA/RAMMB (Colorado State University)", "properties": {"org_type": "research", "country": "US"}}
+  ],
+  "relations": [
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-snpp"},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-landsat8"},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "temp-evt-001", "predicate": "usesSensor", "object": "sensor-viirs"},
+    {"subject": "temp-evt-001", "predicate": "usesSensor", "object": "sensor-oli"},
+    {"subject": "temp-evt-001", "predicate": "usesSensor", "object": "sensor-tirs"},
+    {"subject": "temp-evt-001", "predicate": "analyzedBy", "object": "ent-org-cira"},
+    {"subject": "temp-evt-001", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "temp-evt-001", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "temp-evt-001", "predicate": "inCountry", "object": "co-us"}
+  ]
+}

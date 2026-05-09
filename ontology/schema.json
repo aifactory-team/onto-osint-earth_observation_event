@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "description": "OSINT 온톨로지 스키마 — config/osint-config.json의 seed로부터 초기화되고, 매일 파이프라인 실행 시 자동 확장된다. 도메인: 위성영상으로 관측 가능한 지구상 이벤트 (Earth Observation Events).",
-  "last_updated": "2026-05-07",
+  "last_updated": "2026-05-08",
   "classes": [
     {
       "id": "Entity",
@@ -303,6 +303,41 @@
       "target": "ent-evt-125~131 + evt-082 update",
       "reason": "Cycle 2 신규 7건 + 업데이트 1건: Pemex Cantarell 유출(MX, S1/S2), Iran-US 기지 피해 228건(WaPo Copernicus), TS Hagupit(서태평양), Dukono 화산(ID, Himawari-9), UNEP MARS coal/waste 확장(G7), Sweden 군사위성(Planet Labs), Kanlaon 화산(PH), Mayon 업데이트.",
       "source_ids": ["src-029", "src-030", "src-031", "src-032", "src-033", "src-034", "src-035", "src-036"]
+    },
+    {
+      "date": "2026-05-08",
+      "action": "add_satellite",
+      "target": "sat-sentinel2c",
+      "reason": "Sentinel-2C (ESA, SSO, 10m, optical_multispectral) — NorthC datacenter fire in Almere NL에서 Sentinel-2A/2C 데이터 프로덕션 장애 발생(ent-evt-201). Sentinel-2 콘스텔레이션 3기 체제(A/B/C) 인스턴스 추가.",
+      "source_ids": ["src-001"]
+    },
+    {
+      "date": "2026-05-08",
+      "action": "add_organization",
+      "target": "ent-org-hvo, ent-org-avo, ent-org-cvghm, ent-org-vaac-darwin, ent-org-pagasa, ent-org-bnpb, ent-org-amazon-conservation, ent-org-isa, ent-org-cira, ent-org-pla",
+      "reason": "USGS HVO(Kilauea Ep47 예보, ent-evt-202), USGS AVO(Great Sitkin/Shishaldin, ent-evt-203/204), CVGHM/PVMBG(Dukono 인니, ent-evt-128), VAAC Darwin(Dukono ash advisory), PAGASA(TS Hagupit/Caloy PAR entry, ent-evt-127), BNPB(Dukono 3명 사망), Amazon Conservation(Xingu gold mining 496k ha, ent-evt-205), ISA(Instituto Socioambiental, Xingu 공동분석), CIRA/RAMMB CSU(GA Pineland burn scar, temp-evt-001), PLA Southern Theatre(Liaoning 14함, ent-evt-206) — 10개 기관 첫 참조.",
+      "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009", "src-010", "src-011"]
+    },
+    {
+      "date": "2026-05-08",
+      "action": "add_country",
+      "target": "co-kw",
+      "reason": "쿠웨이트(KW) — Iran-US 기지 228+ 구조물 후속(ent-evt-126 update)에서 Copernicus/Planet 교차검증 상세 지역으로 추가. 기존 국가 인스턴스에 없던 신규 국가.",
+      "source_ids": ["src-011"]
+    },
+    {
+      "date": "2026-05-08",
+      "action": "add_event_batch",
+      "target": "ent-evt-201~206 + updates to evt-082, evt-126, evt-127, evt-128, temp-evt-001",
+      "reason": "신규 6건: Sentinel-2 datacenter fire 장애(201), Kilauea Ep47 예보(202), Great Sitkin slow eruption WATCH/ORANGE(203), Shishaldin unrest ADVISORY/YELLOW(204), Amazon Xingu gold mining 496k ha(205), Balikatan 2026 + PLA Liaoning(206). 업데이트 5건: Mayon 8km PDC(082), Iran-US bases Copernicus(126), Hagupit Caloy PAR(127), Dukono 3 deaths(128), GA Pineland CIRA burn scar(temp-evt-001).",
+      "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009", "src-010", "src-011"]
+    },
+    {
+      "date": "2026-05-08",
+      "action": "add_location",
+      "target": "ent-loc-046~050",
+      "reason": "Almere NL(ent-loc-046, NorthC datacenter fire — Sentinel-2 프로덕션 장애), Dukono Halmahera ID(ent-loc-047, 화산 3명 사망), Great Sitkin AK(ent-loc-048, lava dome WATCH), Shishaldin AK(ent-loc-049, SO2/seismicity ADVISORY), Xingu Indigenous Territory BR(ent-loc-050, 496k ha 금채굴) — 5개 신규 Location.",
+      "source_ids": ["src-001", "src-002", "src-005", "src-006", "src-008"]
     }
   ]
 }

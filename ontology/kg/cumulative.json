@@ -1,15 +1,15 @@
 {
   "version": "1.3.0",
   "description": "위성영상 관측 이벤트 누적 지식그래프 — 첫 실행(2026-04-30) 이후 매일 신규/추론 트리플 병합",
-  "last_updated": "2026-05-07",
-  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07"],
-  "triples": "ontology/kg/2026-04-30.json + ontology/kg/2026-05-01.json + ontology/kg/2026-05-02.json + ontology/kg/2026-05-03.json + ontology/kg/2026-05-04.json + ontology/kg/2026-05-05.json + ontology/kg/2026-05-06.json + ontology/kg/2026-05-07.json (new_triples + updated_triples + inferred_triples)",
+  "last_updated": "2026-05-08",
+  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08"],
+  "triples": "ontology/kg/2026-04-30.json + ontology/kg/2026-05-01.json + ontology/kg/2026-05-02.json + ontology/kg/2026-05-03.json + ontology/kg/2026-05-04.json + ontology/kg/2026-05-05.json + ontology/kg/2026-05-06.json + ontology/kg/2026-05-07.json + ontology/kg/2026-05-08.json (new_triples + updated_triples + inferred_triples)",
   "stats": {
-    "total_explicit_triples": 579,
-    "total_inferred_triples": 211,
-    "total_unique_subjects": 138,
+    "total_explicit_triples": 647,
+    "total_inferred_triples": 242,
+    "total_unique_subjects": 152,
     "total_unique_predicates": 18,
-    "total_unique_objects": 178
+    "total_unique_objects": 193
   },
-  "note": "2026-05-07 병합 완료 — 신규 이벤트 26건(ent-evt-098~124, evt-114는 src-009 PR 보도 dup 제외), 신규 Country 2건(MM,TR), 신규 Location 7건(ent-loc-039~045), 신규 Satellite 3건(sat-wv-legion, sat-tanager1, sat-emit), 신규 Organization 6건(KVERT/UNMARS/PIK/PAF/CarbonMapper/UCLA), 신규 Phenomenon 1건(phen-satops). multi_satellite_confirmation 8건(Mayon S2A+Himawari, Krasheninnikov VIIRS+Himawari, Amazon S2A+L9, Myanmar 3xS1, NLL VIIRS+S1, Silivri Tanager-1+EMIT, Hektoria S1A+S2A, Antelope WV-3+S2A, GFW L9+S2A+S1, Brazil S2A+L9). supersedes 4건(영변 evt-086→115, ESA MARS evt-084→103, S1D evt-026→117, Antelope evt-092→120). partOfSeries 4건(Kilauea, Mayon, Brazil Amazon series, GFW 시리즈). 한반도 GeoFocus 5건(KOMPSAT-7/CAS500-2/NLL/영변/Sohae). PR cap 2건(WV-Legion, ICEYE deforestation service). cascading_disaster 0건(이번 사이클 동일위치 시간차 재해 패턴 미발견). 누적 KG 790 트리플 돌파."
+  "note": "2026-05-08 병합 완료 — 신규 이벤트 6건(ent-evt-201~206), 업데이트 5건(evt-082/126/127/128/temp-001). 신규 Country 1건(KW). 신규 Location 5건(ent-loc-046~050: Almere/Dukono/Great Sitkin/Shishaldin/Xingu). 신규 Satellite 1건(sat-sentinel2c). 신규 Organization 10건(HVO/AVO/CVGHM/VAAC-Darwin/PAGASA/BNPB/Amazon Conservation/ISA/CIRA/PLA). multi_satellite_confirmation 5건(Hagupit Himawari+GOES, Mayon Himawari+S2A, Xingu PlanetScope+S2A, GA fires S-NPP+L8+L9, Iran Copernicus+Planet). partOfSeries 6건(Mayon→029, Hagupit track, Dukono severity, Kilauea Ep46→47, GA fires burn scar, Great Sitkin upgrade). cascading_disaster 잠정 1건(Hagupit→Mayon lahar). 한반도 GeoFocus 0건(금일 한반도 이벤트 없음). 누적 KG 889 트리플."
 }

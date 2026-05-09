@@ -1,0 +1,153 @@
+{
+  "date": "2026-05-08",
+  "description": "2026-05-08 일별 KG 스냅샷 — 신규 트리플(explicit) + 추론 트리플(inferred) + 갱신 트리플(update_of/supersedes/partOfSeries). 25 sources (11 new, 6 update, 8 reported).",
+  "new_triples": [
+    {"subject": "ent-evt-201", "predicate": "manifests", "object": "phen-satops", "source_id": "src-001", "date": "2026-05-08", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-201", "predicate": "inCountry", "object": "co-nl", "source_id": "src-001", "date": "2026-05-08", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-201", "predicate": "inDomain", "object": "dom-climate", "source_id": "src-001", "date": "2026-05-08", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-201", "predicate": "locatedIn", "object": "ent-loc-046", "source_id": "src-001", "date": "2026-05-08", "confidence": 0.95, "type": "explicit", "note": "Almere NorthC datacenter fire"},
+    {"subject": "ent-evt-201", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-001", "date": "2026-05-08", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-201", "predicate": "observedBy", "object": "sat-sentinel2c", "source_id": "src-001", "date": "2026-05-08", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-201", "predicate": "analyzedBy", "object": "org-esa", "source_id": "src-001", "date": "2026-05-08", "confidence": 0.99, "type": "explicit"},
+    {"subject": "sat-sentinel2c", "predicate": "operatedBy", "object": "org-esa", "source_id": "src-001", "date": "2026-05-08", "confidence": 0.99, "type": "explicit"},
+    {"subject": "sat-sentinel2c", "predicate": "carriesSensor", "object": "sensor-msi", "source_id": "src-001", "date": "2026-05-08", "confidence": 0.99, "type": "explicit"},
+
+    {"subject": "ent-evt-202", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-002", "date": "2026-05-08", "confidence": 0.92, "type": "explicit"},
+    {"subject": "ent-evt-202", "predicate": "inCountry", "object": "co-us", "source_id": "src-002", "date": "2026-05-08", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-202", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-002", "date": "2026-05-08", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-202", "predicate": "locatedIn", "object": "ent-loc-030", "source_id": "src-002", "date": "2026-05-08", "confidence": 0.99, "type": "explicit", "note": "Halemaʻumaʻu crater"},
+    {"subject": "ent-evt-202", "predicate": "analyzedBy", "object": "ent-org-hvo", "source_id": "src-002", "date": "2026-05-08", "confidence": 0.99, "type": "explicit"},
+
+    {"subject": "ent-evt-203", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-003", "date": "2026-05-08", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-203", "predicate": "inCountry", "object": "co-us", "source_id": "src-003", "date": "2026-05-08", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-203", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-003", "date": "2026-05-08", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-203", "predicate": "locatedIn", "object": "ent-loc-048", "source_id": "src-003", "date": "2026-05-08", "confidence": 0.99, "type": "explicit", "note": "Great Sitkin AK"},
+    {"subject": "ent-evt-203", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_id": "src-003", "date": "2026-05-08", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-203", "predicate": "analyzedBy", "object": "ent-org-avo", "source_id": "src-003", "date": "2026-05-08", "confidence": 0.99, "type": "explicit"},
+
+    {"subject": "ent-evt-204", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-004", "date": "2026-05-08", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-204", "predicate": "inCountry", "object": "co-us", "source_id": "src-004", "date": "2026-05-08", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-204", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-004", "date": "2026-05-08", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-204", "predicate": "locatedIn", "object": "ent-loc-049", "source_id": "src-004", "date": "2026-05-08", "confidence": 0.99, "type": "explicit", "note": "Shishaldin AK"},
+    {"subject": "ent-evt-204", "predicate": "observedBy", "object": "sat-sentinel5p", "source_id": "src-004", "date": "2026-05-08", "confidence": 0.88, "type": "explicit"},
+    {"subject": "ent-evt-204", "predicate": "usesSensor", "object": "sensor-tropomi", "source_id": "src-004", "date": "2026-05-08", "confidence": 0.88, "type": "explicit"},
+    {"subject": "ent-evt-204", "predicate": "analyzedBy", "object": "ent-org-avo", "source_id": "src-004", "date": "2026-05-08", "confidence": 0.99, "type": "explicit"},
+
+    {"subject": "ent-evt-205", "predicate": "manifests", "object": "phen-mining", "source_id": "src-005", "date": "2026-05-08", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-205", "predicate": "manifests", "object": "phen-defor", "source_id": "src-005", "date": "2026-05-08", "confidence": 0.92, "type": "explicit"},
+    {"subject": "ent-evt-205", "predicate": "inCountry", "object": "co-br", "source_id": "src-005", "date": "2026-05-08", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-205", "predicate": "inDomain", "object": "dom-human", "source_id": "src-005", "date": "2026-05-08", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-205", "predicate": "locatedIn", "object": "ent-loc-050", "source_id": "src-005", "date": "2026-05-08", "confidence": 0.95, "type": "explicit", "note": "Xingu Indigenous Territory BR"},
+    {"subject": "ent-evt-205", "predicate": "observedBy", "object": "sat-planetscope", "source_id": "src-005", "date": "2026-05-08", "confidence": 0.92, "type": "explicit"},
+    {"subject": "ent-evt-205", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-005", "date": "2026-05-08", "confidence": 0.92, "type": "explicit"},
+    {"subject": "ent-evt-205", "predicate": "usesSensor", "object": "sensor-msi", "source_id": "src-005", "date": "2026-05-08", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-205", "predicate": "analyzedBy", "object": "ent-org-amazon-conservation", "source_id": "src-005", "date": "2026-05-08", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-205", "predicate": "analyzedBy", "object": "ent-org-isa", "source_id": "src-005", "date": "2026-05-08", "confidence": 0.90, "type": "explicit"},
+
+    {"subject": "ent-evt-206", "predicate": "manifests", "object": "phen-naval", "source_id": "src-006", "date": "2026-05-08", "confidence": 0.92, "type": "explicit"},
+    {"subject": "ent-evt-206", "predicate": "inCountry", "object": "co-cn", "source_id": "src-006", "date": "2026-05-08", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-206", "predicate": "inDomain", "object": "dom-defense", "source_id": "src-006", "date": "2026-05-08", "confidence": 0.99, "type": "explicit"},
+    {"subject": "ent-evt-206", "predicate": "observedBy", "object": "sat-planetscope", "source_id": "src-006", "date": "2026-05-08", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-206", "predicate": "analyzedBy", "object": "ent-org-pla", "source_id": "src-006", "date": "2026-05-08", "confidence": 0.80, "type": "explicit", "note": "PLA Southern Theatre Command Navy — Liaoning carrier group"}
+  ],
+  "updated_triples": [
+    {"subject": "ent-evt-128", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-007", "date": "2026-05-08", "confidence": 0.99, "type": "update", "note": "Dukono severity HIGH upgrade — 3 hikers killed, ash 10km"},
+    {"subject": "ent-evt-128", "predicate": "inCountry", "object": "co-id", "source_id": "src-007", "date": "2026-05-08", "confidence": 0.99, "type": "update"},
+    {"subject": "ent-evt-128", "predicate": "locatedIn", "object": "ent-loc-047", "source_id": "src-007", "date": "2026-05-08", "confidence": 0.99, "type": "update", "note": "Dukono Halmahera — new location"},
+    {"subject": "ent-evt-128", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-007", "date": "2026-05-08", "confidence": 0.95, "type": "update"},
+    {"subject": "ent-evt-128", "predicate": "analyzedBy", "object": "ent-org-cvghm", "source_id": "src-007", "date": "2026-05-08", "confidence": 0.95, "type": "update"},
+    {"subject": "ent-evt-128", "predicate": "analyzedBy", "object": "ent-org-vaac-darwin", "source_id": "src-007", "date": "2026-05-08", "confidence": 0.90, "type": "update"},
+    {"subject": "ent-evt-128", "predicate": "analyzedBy", "object": "ent-org-bnpb", "source_id": "src-007", "date": "2026-05-08", "confidence": 0.90, "type": "update"},
+
+    {"subject": "ent-evt-127", "predicate": "manifests", "object": "phen-typhoon", "source_id": "src-008", "date": "2026-05-08", "confidence": 0.95, "type": "update", "note": "Hagupit → Caloy PAR entry expected May 9"},
+    {"subject": "ent-evt-127", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-008", "date": "2026-05-08", "confidence": 0.95, "type": "update"},
+    {"subject": "ent-evt-127", "predicate": "observedBy", "object": "sat-goes18", "source_id": "src-008", "date": "2026-05-08", "confidence": 0.85, "type": "update"},
+    {"subject": "ent-evt-127", "predicate": "analyzedBy", "object": "ent-org-pagasa", "source_id": "src-008", "date": "2026-05-08", "confidence": 0.95, "type": "update"},
+
+    {"subject": "ent-evt-082", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-009", "date": "2026-05-08", "confidence": 0.99, "type": "update", "note": "Mayon danger zone 6→8km, PDC continues, lahar risk from Hagupit"},
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-009", "date": "2026-05-08", "confidence": 0.95, "type": "update"},
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-009", "date": "2026-05-08", "confidence": 0.92, "type": "update"},
+
+    {"subject": "temp-evt-001", "predicate": "manifests", "object": "phen-wildfire", "source_id": "src-010", "date": "2026-05-08", "confidence": 0.95, "type": "update", "note": "GA Pineland burn scar — CIRA S-NPP + Landsat 8/9 + NASA EO, 50000+ ac, 85% contained"},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_id": "src-010", "date": "2026-05-08", "confidence": 0.95, "type": "update", "note": "CIRA S-NPP VIIRS before/after"},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-landsat8", "source_id": "src-010", "date": "2026-05-08", "confidence": 0.90, "type": "update"},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-landsat9", "source_id": "src-010", "date": "2026-05-08", "confidence": 0.90, "type": "update"},
+    {"subject": "temp-evt-001", "predicate": "analyzedBy", "object": "ent-org-cira", "source_id": "src-010", "date": "2026-05-08", "confidence": 0.92, "type": "update"},
+    {"subject": "temp-evt-001", "predicate": "analyzedBy", "object": "org-nasa", "source_id": "src-010", "date": "2026-05-08", "confidence": 0.95, "type": "update"},
+
+    {"subject": "ent-evt-126", "predicate": "manifests", "object": "phen-infra-damage", "source_id": "src-011", "date": "2026-05-08", "confidence": 0.92, "type": "update", "note": "Iran-US bases 228+ structures — Orbital Today with Copernicus + Planet verification"},
+    {"subject": "ent-evt-126", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-011", "date": "2026-05-08", "confidence": 0.88, "type": "update"},
+    {"subject": "ent-evt-126", "predicate": "observedBy", "object": "sat-planetscope", "source_id": "src-011", "date": "2026-05-08", "confidence": 0.85, "type": "update"}
+  ],
+  "inferred_triples": [
+    {"subject": "ent-evt-127", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.92, "type": "inferred", "note": "Himawari-9(JMA/JAXA) + GOES-18(NOAA) — 독립 GEO 교차검증"},
+    {"subject": "ent-evt-082", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.92, "type": "inferred", "note": "Himawari-9(JMA) + Sentinel-2A(ESA) — 독립 운영자/궤도 교차검증 (GEO+SSO)"},
+    {"subject": "ent-evt-205", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.92, "type": "inferred", "note": "PlanetScope(Planet) + Sentinel-2A(ESA) — 독립 운영자 교차검증"},
+    {"subject": "temp-evt-001", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.95, "type": "inferred", "note": "S-NPP(NOAA) + Landsat 8(USGS) + Landsat 9(USGS) — 3위성 교차검증"},
+    {"subject": "ent-evt-126", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.88, "type": "inferred", "note": "PlanetScope(Planet) + Sentinel-2A(ESA) — Copernicus + Planet 교차검증"},
+
+    {"subject": "ent-evt-082", "predicate": "partOfSeries", "object": "ent-evt-029", "rule": "temporal_progression", "confidence": 0.97, "type": "inferred", "note": "Mayon eruption 시리즈 — 2026-01→ ongoing, danger zone 6→8km"},
+    {"subject": "ent-evt-127", "predicate": "partOfSeries", "object": "ent-evt-127", "rule": "temporal_progression", "confidence": 0.95, "type": "inferred", "note": "TS Hagupit 시리즈 — May 7→8 track update, Yap→PAR Caloy"},
+    {"subject": "ent-evt-128", "predicate": "partOfSeries", "object": "ent-evt-128", "rule": "temporal_progression", "confidence": 0.95, "type": "inferred", "note": "Dukono update — VAAC advisory→3 deaths severity upgrade"},
+    {"subject": "ent-evt-202", "predicate": "partOfSeries", "object": "ent-evt-101", "rule": "temporal_progression", "confidence": 0.92, "type": "inferred", "note": "Kilauea Ep46→Ep47 forecast — 동일 위치(Halemaʻumaʻu), 동일 phenomenon"},
+    {"subject": "temp-evt-001", "predicate": "partOfSeries", "object": "ent-evt-098", "rule": "temporal_progression", "confidence": 0.95, "type": "inferred", "note": "GA Pineland wildfire 시리즈 — May 5→7→8 burn scar update"},
+
+    {"subject": "ent-evt-082", "predicate": "potentialTriggeredBy", "object": "ent-evt-127", "rule": "cascading_disaster", "confidence": 0.70, "type": "inferred", "note": "Mayon lahar risk IF Hagupit enters PH and brings heavy rain to Albay — 잠정, Hagupit PAR entry expected May 9"},
+
+    {"subject": "ent-evt-204", "predicate": "tracegasBoost", "object": "+0.15", "rule": "sensor_capability_match_tracegas", "confidence": 0.88, "type": "inferred", "note": "TROPOMI SO2 detection → Shishaldin volcanic SO2 match"},
+    {"subject": "ent-evt-203", "predicate": "thermalBoost", "object": "+0.10", "rule": "sensor_capability_match_viirs", "confidence": 0.90, "type": "inferred", "note": "VIIRS thermal → Great Sitkin lava dome thermal match"},
+    {"subject": "temp-evt-001", "predicate": "thermalBoost", "object": "+0.10", "rule": "sensor_capability_match_tirs", "confidence": 0.92, "type": "inferred", "note": "Landsat TIRS + VIIRS thermal → GA wildfire burn scar thermal match"},
+
+    {"subject": "ent-evt-201", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.99, "type": "inferred", "note": "ESA Copernicus 공식 발표"},
+    {"subject": "ent-evt-202", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.99, "type": "inferred", "note": "USGS HVO 공식 예보"},
+    {"subject": "ent-evt-203", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.99, "type": "inferred", "note": "USGS AVO 공식"},
+    {"subject": "ent-evt-204", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.99, "type": "inferred", "note": "USGS AVO 공식"},
+    {"subject": "ent-evt-128", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred", "note": "CVGHM/PVMBG + VAAC Darwin 공식"},
+    {"subject": "ent-evt-127", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred", "note": "JMA + NOAA + PAGASA 공식"},
+    {"subject": "temp-evt-001", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred", "note": "NASA EO + CIRA/RAMMB"},
+
+    {"subject": "ent-evt-128", "predicate": "priorityBoost", "object": "+0.20", "rule": "disaster_severity_priority", "confidence": 0.95, "type": "inferred", "note": "3 deaths → HIGH severity"},
+    {"subject": "ent-evt-082", "predicate": "priorityBoost", "object": "+0.20", "rule": "disaster_severity_priority", "confidence": 0.97, "type": "inferred", "note": "8km danger zone, evacuations, lahar risk → HIGH severity"},
+
+    {"subject": "temp-evt-001", "predicate": "baCredibilityBoost", "object": "+0.10", "rule": "before_after_credibility", "confidence": 0.95, "type": "inferred", "note": "CIRA S-NPP before/after burn scar"},
+    {"subject": "ent-evt-205", "predicate": "baCredibilityBoost", "object": "+0.10", "rule": "before_after_credibility", "confidence": 0.90, "type": "inferred", "note": "Amazon Xingu mining expansion before/after satellite imagery"},
+
+    {"subject": "ent-evt-205", "predicate": "analystBoost", "object": "+0.10", "rule": "analyst_org_trust", "confidence": 0.90, "type": "inferred", "note": "Amazon Conservation + ISA 독립 NGO 분석"},
+
+    {"subject": "ent-evt-203", "predicate": "partOfSeries", "object": "ent-evt-050", "rule": "temporal_progression", "confidence": 0.85, "type": "inferred", "note": "Great Sitkin — 2026-05-03 medium→05-08 WATCH/ORANGE upgrade"}
+  ],
+  "supersedes_or_partOfSeries_summary": {
+    "supersedes": [],
+    "partOfSeries": [
+      {"new": "ent-evt-082 update", "prev": "ent-evt-029", "reason": "Mayon eruption 장기 시리즈 — danger zone 6→8km PDC"},
+      {"new": "ent-evt-127 update", "prev": "ent-evt-127 (May 7)", "reason": "TS Hagupit track update Yap→PAR"},
+      {"new": "ent-evt-128 update", "prev": "ent-evt-128 (May 7)", "reason": "Dukono severity upgrade — 3 deaths"},
+      {"new": "ent-evt-202", "prev": "ent-evt-101", "reason": "Kilauea Ep46→Ep47 forecast"},
+      {"new": "ent-evt-203", "prev": "ent-evt-050", "reason": "Great Sitkin medium→WATCH/ORANGE"},
+      {"new": "temp-evt-001 update", "prev": "ent-evt-098", "reason": "GA Pineland burn scar CIRA update"}
+    ],
+    "cascading_disaster_potential": [
+      {"primary": "ent-evt-127 (TS Hagupit/Caloy)", "secondary": "ent-evt-082 (Mayon lahar)", "condition": "Hagupit PAR entry May 9 brings heavy rain to Albay → lahar triggered", "confidence": 0.70, "status": "potential — 잠정"}
+    ]
+  },
+  "stats": {
+    "explicit_new_triples": 44,
+    "explicit_updated_triples": 24,
+    "inferred_new_triples": 31,
+    "total_subjects": 14,
+    "total_predicates": 16,
+    "total_events_new": 6,
+    "total_events_updated": 5,
+    "multi_satellite_confirmation_count": 5,
+    "partOfSeries_count": 6,
+    "cascading_disaster_potential_count": 1,
+    "sensor_capability_match_count": 3,
+    "official_source_trust_count": 7,
+    "before_after_credibility_count": 2,
+    "analyst_org_trust_count": 1,
+    "disaster_severity_priority_count": 2,
+    "korea_focus_count": 0,
+    "satellite_unverified_count": 0,
+    "press_release_capped_count": 0
+  }
+}

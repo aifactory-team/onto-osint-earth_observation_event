@@ -1,0 +1,17 @@
+{
+  "id": "src-023",
+  "title": "Kanlaon 화산 Alert Level 2 — 금일 주요 변동 없음",
+  "url": "https://volcanoearth.wordpress.com/2026/05/07/6-may-2026/",
+  "snippet": "Kanlaon 화산 Alert Level 2 유지. 금일 주요 변동 없음.",
+  "source_name": "Volcano Earth / PHIVOLCS",
+  "language": "en",
+  "discovered_date": "2026-05-08",
+  "tag": "reported",
+  "related_report": "2026-05-07/src-035",
+  "related_item": null,
+  "tag_reason": "5/7 src-035 Kanlaon Alert Level 2 유지. 금일 변동 없음.",
+  "entities": [
+    {"id": "org-phivolcs", "type": "Organization", "name": "PHIVOLCS"}
+  ],
+  "relations": []
+}

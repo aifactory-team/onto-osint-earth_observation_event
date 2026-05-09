@@ -1,0 +1,18 @@
+{
+  "id": "src-016",
+  "title": "Hektoria Glacier — 금일 신규 없음",
+  "url": "https://science.nasa.gov/earth/earth-observatory/record-setting-retreat-of-hektoria-glacier/",
+  "snippet": "Hektoria Glacier 8km 후퇴 관련 금일 추가 보도 없음.",
+  "source_name": "NASA Earth Observatory",
+  "language": "en",
+  "discovered_date": "2026-05-08",
+  "tag": "reported",
+  "related_report": "2026-05-07/src-022",
+  "related_item": "temp-evt-022",
+  "tag_reason": "이전 보도 반복. 금일 신규 정보 없음.",
+  "entities": [
+    {"id": "org-nasa", "type": "Organization", "name": "NASA"},
+    {"id": "sat-sentinel1a", "type": "Satellite", "name": "Sentinel-1A"}
+  ],
+  "relations": []
+}

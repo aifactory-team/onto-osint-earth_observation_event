@@ -1,0 +1,31 @@
+{
+  "id": "src-011",
+  "title": "NASA Earth Observatory 'Fires Rage in Georgia' — Landsat 8/9 공식 위성영상 기사",
+  "url": "https://science.nasa.gov/earth/earth-observatory/fires-rage-in-georgia/",
+  "snippet": "NASA Earth Observatory 공식 기사: Georgia 산불 Landsat 8/9 위성영상. 광범위한 burn scar 및 활성 화재 전선 영상 공개.",
+  "source_name": "NASA Earth Observatory",
+  "language": "en",
+  "discovered_date": "2026-05-08",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "NASA Earth Observatory 공식 기사 신규 — 이전 보도(Earthdata)와 달리 EO 시리즈 전용 기사. officialBoost +0.15 적용.",
+  "entities": [
+    {"id": "ent-evt-207", "type": "Event", "name": "Georgia Pineland/Hwy 82 wildfires — NASA EO 공식 기사 (Landsat 8/9)", "properties": {"phenomenon": "wildfire", "lat": 31.5, "lon": -82.5, "country": "US", "observation_date": "2026-05-08", "confidence": 0.92}},
+    {"id": "sat-landsat8", "type": "Satellite", "name": "Landsat 8"},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9"},
+    {"id": "org-nasa", "type": "Organization", "name": "NASA"},
+    {"id": "sensor-oli", "type": "Sensor", "name": "OLI"},
+    {"id": "sensor-tirs", "type": "Sensor", "name": "TIRS"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-207", "predicate": "observedBy", "object": "sat-landsat8"},
+    {"subject": "ent-evt-207", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "ent-evt-207", "predicate": "usesSensor", "object": "sensor-oli"},
+    {"subject": "ent-evt-207", "predicate": "usesSensor", "object": "sensor-tirs"},
+    {"subject": "ent-evt-207", "predicate": "analyzedBy", "object": "org-nasa"},
+    {"subject": "ent-evt-207", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "ent-evt-207", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "ent-evt-207", "predicate": "inCountry", "object": "co-us"}
+  ]
+}

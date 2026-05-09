@@ -1,0 +1,28 @@
+{
+  "id": "src-003",
+  "title": "열대폭풍 하구핏 얍주 통과, PAR 진입 예상 — Himawari-9/GOES-18 위성 추적",
+  "url": "https://watchers.news/2026/05/08/tropical-storm-hagupit-moves-through-yap-state-expected-to-enter-par-as-caloy/",
+  "snippet": "TS Hagupit 최대풍속 70 km/h (45 mph), 서쪽 19 km/h 이동 중. 얍주 통과, 5/9 PAR 진입 시 PAGASA 'Caloy' 명명 예정. 48시간 이내 강화 후 약화 전망.",
+  "source_name": "The Watchers",
+  "language": "en",
+  "discovered_date": "2026-05-08",
+  "tag": "update",
+  "related_report": "2026-05-07/src-031",
+  "related_item": "ent-evt-127",
+  "tag_reason": "5/7 TS Hagupit 형성(7.7°N, 142.2°E) 후속 — 5/8 얍주 통과(8.0°N, 138.5°E), PAR 진입 임박, 필리핀 'Caloy' 명명 예정.",
+  "entities": [
+    {"id": "ent-evt-127", "type": "Event", "name": "열대폭풍 하구핏 (Hagupit/Caloy) 얍주 통과 PAR 진입 예상", "properties": {"phenomenon": "typhoon", "lat": 8.0, "lon": 138.5, "region": "Western Pacific / Yap State", "observation_date": "2026-05-08", "max_wind_kmh": 70, "movement_speed_kmh": 19, "severity": "moderate", "confidence": 0.88}},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "sat-goes18", "type": "Satellite", "name": "GOES-18"},
+    {"id": "ent-org-pagasa", "type": "Organization", "name": "PAGASA", "properties": {"org_type": "met_service", "country": "PH"}},
+    {"id": "ent-loc-052", "type": "Location", "name": "Yap State, Micronesia (moving WNW toward PAR)", "properties": {"lat": 8.0, "lon": 138.5}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-127", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-127", "predicate": "observedBy", "object": "sat-goes18"},
+    {"subject": "ent-evt-127", "predicate": "locatedIn", "object": "ent-loc-052"},
+    {"subject": "ent-evt-127", "predicate": "manifests", "object": "phen-typhoon"},
+    {"subject": "ent-evt-127", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "ent-evt-127", "predicate": "analyzedBy", "object": "ent-org-pagasa"}
+  ]
+}

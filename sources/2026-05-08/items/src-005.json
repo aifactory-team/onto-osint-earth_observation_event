@@ -1,0 +1,32 @@
+{
+  "id": "src-005",
+  "title": "Kilauea Episode 47 예측 창 May 12-17 — 급속 팽창, ADVISORY/YELLOW (USGS HVO)",
+  "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-HVO-2026-05-08T18:28:17+00:00",
+  "snippet": "USGS HVO: Episode 46 종료 후 Kilauea 정상부 급속 팽창 지속. 다음 분출(Episode 47) 5/12-17 창 예측. Alert Level: ADVISORY/YELLOW.",
+  "source_name": "USGS HVO",
+  "language": "en",
+  "discovered_date": "2026-05-08",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "Ep46 종료(5/5)는 이미 보도됨. Ep47 예측 창(5/12-17)은 USGS HVO 5/8 공식 advisory로 신규 정보.",
+  "entities": [
+    {"id": "ent-evt-202", "type": "Event", "name": "Kilauea Episode 47 예측 (2026-05-12~17)", "properties": {"phenomenon": "volcanic_eruption", "lat": 19.41, "lon": -155.28, "country": "US", "observation_date": "2026-05-08", "forecast_window": "2026-05-12/2026-05-17", "alert_level": "ADVISORY/YELLOW", "confidence": 0.88}},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9"},
+    {"id": "org-usgs", "type": "Organization", "name": "USGS"},
+    {"id": "ent-org-hvo", "type": "Organization", "name": "USGS Hawaiian Volcano Observatory (HVO)", "properties": {"org_type": "research", "country": "US"}},
+    {"id": "ent-loc-053", "type": "Location", "name": "Kilauea summit, Halemaumau, Hawaii, US", "properties": {"lat": 19.41, "lon": -155.28, "country": "US"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "ent-evt-202", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "ent-evt-202", "predicate": "usesSensor", "object": "sensor-tirs"},
+    {"subject": "ent-evt-202", "predicate": "analyzedBy", "object": "ent-org-hvo"},
+    {"subject": "ent-evt-202", "predicate": "locatedIn", "object": "ent-loc-053"},
+    {"subject": "ent-evt-202", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-202", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "ent-evt-202", "predicate": "inCountry", "object": "co-us"}
+  ]
+}

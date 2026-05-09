@@ -1,0 +1,18 @@
+{
+  "id": "src-018",
+  "title": "GFW 열대우림 손실 보고서 — 금일 신규 없음",
+  "url": "https://www.competere.eu/global-forest-watch-2026-signs-of-growth-and-transformation/",
+  "snippet": "GFW 2026 보고서(2025년 1차 열대우림 손실 -36% YoY) 금일 추가 보도 없음.",
+  "source_name": "Competere / GFW",
+  "language": "en",
+  "discovered_date": "2026-05-08",
+  "tag": "reported",
+  "related_report": "2026-05-07/src-023",
+  "related_item": "temp-evt-023",
+  "tag_reason": "이전 보도 반복. 금일 신규 정보 없음.",
+  "entities": [
+    {"id": "org-gfw", "type": "Organization", "name": "Global Forest Watch"},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9"}
+  ],
+  "relations": []
+}

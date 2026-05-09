@@ -1,0 +1,352 @@
+{
+  "date": "2026-05-08",
+  "collected_at": "2026-05-08T08:30:00+09:00",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 42,
+  "total_results": 156,
+  "expanded_keywords": [
+    "Sentinel-2A 2C data production interruption NorthC datacenter fire",
+    "Dukono volcano eruption hikers Indonesia",
+    "tropical storm Hagupit PAR Philippines Caloy",
+    "Mayon volcano pyroclastic flow danger zone expanded",
+    "Kilauea Episode 47 forecast inflation",
+    "Great Sitkin volcano lava effusion WATCH ORANGE",
+    "Shishaldin volcano unrest ADVISORY YELLOW",
+    "Amazon gold mining Xingu deforestation satellite",
+    "Balikatan 2026 China Liaoning carrier satellite imagery",
+    "Georgia Pineland Hwy 82 wildfire burn scar CIRA satellite",
+    "NASA Earth Observatory Fires Rage Georgia",
+    "Iran US bases satellite damage Orbital Today",
+    "Pemex Cantarell oil spill update May 2026",
+    "volcanoearth 7 May 2026 volcano summary"
+  ],
+  "searches": [
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Copernicus Sentinel-2A 2C data production interruption NorthC datacenter fire May 2026",
+      "language": "en",
+      "category": "satellite_platform",
+      "timestamp": "2026-05-08T08:00:00+09:00",
+      "result_count": 3,
+      "results": [
+        {"title": "Copernicus Sentinel-2A and Sentinel-2C data production interruption 7 May 2026", "url": "https://dataspace.copernicus.eu/news/2026-5-8-copernicus-sentinel-2a-and-sentinel-2c-data-production-interruption-7-may-2026", "snippet": "Due to a fire at NorthC datacenter in Almere, the Netherlands, data production for Sentinel-2A and Sentinel-2C has been unavailable since 08:30 UTC on May 7, 2026. Data is not lost and will be published once production is restored.", "source_name": "Copernicus Data Space"},
+        {"title": "Almere data center fire under control, caused outages throughout Netherlands", "url": "https://nltimes.nl/2026/05/08/almere-data-center-fire-control-caused-outages-throughout-netherlands", "snippet": "Fire at NorthC datacenter in Almere brought under control; caused significant IT outages across the Netherlands including Copernicus satellite data processing.", "source_name": "NL Times"},
+        {"title": "ESA Sentinel-2 mission status", "url": "https://sentinels.copernicus.eu/copernicus-data/services/mission-status", "snippet": "Current status page for Sentinel-2 mission operations.", "source_name": "ESA Sentinel"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Dukono volcano eruption hikers killed Indonesia May 2026",
+      "language": "en",
+      "category": "disaster",
+      "timestamp": "2026-05-08T08:01:00+09:00",
+      "result_count": 4,
+      "results": [
+        {"title": "Dukono eruption kills 3 hikers, rescue operation underway in North Maluku, Indonesia", "url": "https://watchers.news/2026/05/08/dukono-eruption-deaths-rescue-operation-north-maluku-indonesia/", "snippet": "Mount Dukono erupted at 07:41 WIT (22:41 UTC May 7), killing 3 hikers and prompting rescue of 17 others. Ash plume reached 10 km altitude.", "source_name": "The Watchers"},
+        {"title": "Indonesia Mount Dukono eruption kills three", "url": "https://edition.cnn.com/2026/05/08/asia/indonesia-mount-dukono-eruption-intl-hnk", "snippet": "Three hikers killed when Mount Dukono erupted in North Maluku province, Indonesia. 20 people were on the mountain at the time.", "source_name": "CNN"},
+        {"title": "Indonesia volcano kills three as search for missing hikers continues", "url": "https://www.aljazeera.com/news/2026/5/8/indonesia-volcano-kills-three-as-search-for-missing-hikers-continues", "snippet": "At least three people killed in Dukono volcano eruption on Halmahera Island. Authorities continue search for potentially missing hikers.", "source_name": "Al Jazeera"},
+        {"title": "VAAC Darwin advisory — Dukono ash to FL330", "url": "https://www.volcanodiscovery.com/dukono/news.html", "snippet": "VAAC Darwin issued volcanic ash advisory for Dukono ash plume reaching FL330 (10 km).", "source_name": "VolcanoDiscovery / VAAC Darwin"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "tropical storm Hagupit Yap Philippines PAR Caloy May 2026",
+      "language": "en",
+      "category": "disaster",
+      "timestamp": "2026-05-08T08:02:00+09:00",
+      "result_count": 3,
+      "results": [
+        {"title": "Tropical Storm Hagupit moves through Yap State, expected to enter PAR as Caloy", "url": "https://watchers.news/2026/05/08/tropical-storm-hagupit-moves-through-yap-state-expected-to-enter-par-as-caloy/", "snippet": "TS Hagupit with max sustained winds of 70 km/h (45 mph) is moving west at 19 km/h through Yap State. Expected to enter Philippine Area of Responsibility and be named Caloy by PAGASA.", "source_name": "The Watchers"},
+        {"title": "Weekend storm watch begins as Hagupit nears Philippines vicinity", "url": "https://www.philstar.com/headlines/weather/2026/05/08/2526500/weekend-storm-watch-begins-hagupit-nears-philippines-vicinity", "snippet": "PAGASA monitoring tropical storm Hagupit approaching PAR boundary. May intensify in next 48 hours then weaken before potential landfall.", "source_name": "Philstar"},
+        {"title": "JMA Tropical Cyclone Information", "url": "https://www.jma.go.jp/bosai/map.html#contents=tropical_cyclone", "snippet": "Japan Meteorological Agency tracking TS Hagupit (2602) moving WNW across western Pacific.", "source_name": "JMA"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Mayon volcano pyroclastic flow danger zone expanded 8km May 2026",
+      "language": "en",
+      "category": "disaster",
+      "timestamp": "2026-05-08T08:03:00+09:00",
+      "result_count": 3,
+      "results": [
+        {"title": "Repeated lava-collapse pyroclastic flows continue at Mayon volcano, Philippines", "url": "https://watchers.news/2026/05/08/repeated-lava-collapse-pyroclastic-flows-continue-at-mayon-volcano-philippines/", "snippet": "PHIVOLCS maintains Alert Level 3 for Mayon. Lava flows: Basud 3.8km, Bonga 3.2km, Mi-isi 1.6km. Pyroclastic density currents from lava front collapse. Danger zone expanded from 6 to 8 km.", "source_name": "The Watchers"},
+        {"title": "PHIVOLCS expands Mayon's danger zone", "url": "https://businessmirror.com.ph/2026/05/07/phivolcs-expands-mayons-danger-zone/", "snippet": "Danger zone expanded to 8 km radius. Ashfall affected 8,544 hectares of agricultural land. Approaching Tropical Storm Hagupit may trigger lahars.", "source_name": "BusinessMirror"},
+        {"title": "PHIVOLCS Mayon Volcano bulletin", "url": "https://www.phivolcs.dost.gov.ph/index.php/volcano-hazard/volcano-bulletin2/mayon-volcano", "snippet": "Official PHIVOLCS bulletin for Mayon volcano daily update.", "source_name": "PHIVOLCS"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Kilauea Episode 47 forecast eruption inflation USGS May 2026",
+      "language": "en",
+      "category": "disaster",
+      "timestamp": "2026-05-08T08:04:00+09:00",
+      "result_count": 3,
+      "results": [
+        {"title": "Kilauea Volcano Advisory — Episode 47 forecast window May 12-17", "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-HVO-2026-05-08T18:28:17+00:00", "snippet": "USGS HVO issues advisory for Kilauea. Eruption paused after Episode 46. Rapid summit inflation suggests next eruption (Ep47) likely May 12-17. Alert level: ADVISORY/YELLOW.", "source_name": "USGS HVO"},
+        {"title": "Kilauea Volcano Updates", "url": "https://www.usgs.gov/volcanoes/kilauea/volcano-updates", "snippet": "HVO monitoring shows continued rapid inflation at Kilauea summit following Episode 46 pause.", "source_name": "USGS"},
+        {"title": "Kilauea webcam and monitoring data", "url": "https://www.usgs.gov/volcanoes/kilauea/monitoring-data", "snippet": "Real-time tiltmeter, seismicity, and webcam data for Kilauea summit.", "source_name": "USGS HVO"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Great Sitkin volcano lava effusion WATCH ORANGE AVO May 2026",
+      "language": "en",
+      "category": "disaster",
+      "timestamp": "2026-05-08T08:05:00+09:00",
+      "result_count": 2,
+      "results": [
+        {"title": "Great Sitkin Volcano — WATCH/ORANGE advisory", "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-AVO-2026-05-08T19:51:37+00:00", "snippet": "AVO maintains WATCH/ORANGE for Great Sitkin. Slow lava effusion in summit crater continues since July 2021. Rockfalls from growing lava dome. Satellite views obscured by clouds.", "source_name": "USGS AVO"},
+        {"title": "Great Sitkin Volcano — Monitoring", "url": "https://www.usgs.gov/volcanoes/great-sitkin", "snippet": "AVO monitoring page for Great Sitkin volcano, Andreanof Islands, Alaska.", "source_name": "USGS AVO"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Shishaldin volcano unrest seismicity SO2 ADVISORY YELLOW May 2026",
+      "language": "en",
+      "category": "disaster",
+      "timestamp": "2026-05-08T08:06:00+09:00",
+      "result_count": 2,
+      "results": [
+        {"title": "Shishaldin Volcano — ADVISORY/YELLOW", "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-AVO-2026-05-07T19:22:48+00:00", "snippet": "AVO reports elevated seismicity, SO2 emissions, and steam plume from Shishaldin summit. Alert level ADVISORY/YELLOW.", "source_name": "USGS AVO"},
+        {"title": "Shishaldin Volcano — Monitoring", "url": "https://www.usgs.gov/volcanoes/shishaldin", "snippet": "AVO monitoring page for Shishaldin volcano, Unimak Island, Alaska.", "source_name": "USGS AVO"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Amazon gold mining Xingu deforestation satellite imagery Brazil 2026",
+      "language": "en",
+      "category": "human_activity",
+      "timestamp": "2026-05-08T08:07:00+09:00",
+      "result_count": 4,
+      "results": [
+        {"title": "Gold-fueled mining rush scarring Brazil's Amazon, spiking deforestation", "url": "https://www.washingtontimes.com/news/2026/may/5/gold-fueled-mining-rush-scarring-brazils-amazon-spiking-deforestation/", "snippet": "Illegal gold mining drives clear-cutting in 3 conservation areas in Xingu region. 496,000 ha total cleared for mining. Kayapo indigenous land: 7,940 ha cleared.", "source_name": "Washington Times"},
+        {"title": "Brazil: satellites expose rampant gold mining expansion on indigenous Kayapo land", "url": "https://news.mongabay.com/short-article/2026/04/brazil-satellites-expose-rampant-gold-mining-expansion-on-indigenous-kayapo-land/", "snippet": "PlanetScope daily monitoring reveals rapid expansion of gold mining operations on Kayapo indigenous territory in the Xingu basin.", "source_name": "Mongabay"},
+        {"title": "After illegal mining identified in indigenous territories, new report reveals activity in protected areas of the Xingu", "url": "https://www.amazonconservation.org/after-illegal-mining-was-identified-in-indigenous-territories-new-report-reveals-activity-also-in-protected-areas-of-the-xingu/", "snippet": "Amazon Conservation report using satellite imagery documents mining expansion into three protected areas of the Xingu region.", "source_name": "Amazon Conservation"},
+        {"title": "Amazon Mining Watch platform", "url": "https://www.amazonminingwatch.org/", "snippet": "Sentinel-2-based monitoring platform tracking mining activity expansion across Amazon basin.", "source_name": "Amazon Mining Watch / EDF"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Balikatan 2026 China Liaoning carrier satellite image South China Sea May 2026",
+      "language": "en",
+      "category": "defense",
+      "timestamp": "2026-05-08T08:08:00+09:00",
+      "result_count": 3,
+      "results": [
+        {"title": "China stages navy drill as US and Philippines embark on Balikatan 2026", "url": "https://www.scmp.com/news/china/military/article/3351353/china-stages-navy-drill-us-and-philippines-embark-balikatan-2026", "snippet": "PLA Southern Theatre Command navy drill east of Luzon with 14 vessels including aircraft carrier Liaoning. Commercial satellite imagery shows carrier strike group formation.", "source_name": "South China Morning Post"},
+        {"title": "Japan's US-2 joins Balikatan exercises in South China Sea", "url": "https://www.navalnews.com/naval-news/2026/05/japans-us-2-joins-balikatan-exercises-in-south-china-sea/", "snippet": "Balikatan 2026 final day (May 8) involves 17,000 troops from US and 6 allied nations.", "source_name": "Naval News"},
+        {"title": "Balikatan 2026 live fire exercise (AFP)", "url": "https://www.afp.mil.ph/2026/balikatan/", "snippet": "Armed Forces of the Philippines official Balikatan 2026 event page.", "source_name": "AFP Philippines"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Georgia Pineland Highway 82 wildfire burn scar satellite CIRA S-NPP May 2026",
+      "language": "en",
+      "category": "disaster",
+      "timestamp": "2026-05-08T08:09:00+09:00",
+      "result_count": 3,
+      "results": [
+        {"title": "Burn scars from the Pineland Road and Highway 82 fires — CIRA satellite library", "url": "https://satlib.cira.colostate.edu/weather_media/burn-scars-from-the-pineland-road-and-highway-82-fires/", "snippet": "CIRA/RAMMB satellite imagery library: S-NPP burn scar image dated May 4 showing Pineland Road (32,575 ac) and Highway 82 (22,420 ac, 85% contained). Combined 50,000+ ac.", "source_name": "CIRA/RAMMB Colorado State"},
+        {"title": "Fires Rage in Georgia — NASA Earth Observatory", "url": "https://science.nasa.gov/earth/earth-observatory/fires-rage-in-georgia/", "snippet": "Official NASA Earth Observatory article with Landsat 8/9 satellite imagery of Georgia wildfires showing extensive burn scars.", "source_name": "NASA Earth Observatory"},
+        {"title": "InciWeb Pineland Road Fire", "url": "https://inciweb.wildfire.gov/incident-information/gages-pineland-road-fire", "snippet": "InciWeb incident page — Pineland Road Fire containment updates.", "source_name": "InciWeb / NIFC"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite images damage US bases Middle East Iran Orbital Today May 2026",
+      "language": "en",
+      "category": "defense",
+      "timestamp": "2026-05-08T08:10:00+09:00",
+      "result_count": 2,
+      "results": [
+        {"title": "Satellite images reveal wider damage to US bases in Middle East than previously reported", "url": "https://orbitaltoday.com/2026/05/07/satellite-images-reveal-wider-damage-to-us-bases-in-middle-east-than-previously-reported/", "snippet": "Orbital Today follow-up on WaPo investigation. Copernicus + Planet imagery verify damage to 228+ structures across 15 US military sites in the Gulf.", "source_name": "Orbital Today"},
+        {"title": "Iran US bases damage WaPo investigation (May 6 original)", "url": "https://www.washingtonpost.com/investigations/2026/05/06/iran-us-bases-satellite-images/", "snippet": "Original Washington Post investigation — satellite imagery cross-checked against Copernicus data.", "source_name": "The Washington Post"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "volcanoearth 7 May 2026 volcano summary blog",
+      "language": "en",
+      "category": "disaster",
+      "timestamp": "2026-05-08T08:11:00+09:00",
+      "result_count": 2,
+      "results": [
+        {"title": "7 May 2026 — Volcano News", "url": "https://volcanoearth.wordpress.com/2026/05/07/7-may-2026/", "snippet": "Daily volcano summary: Mayon (PH), Kanlaon (PH), Dukono (ID), Shishaldin (US-AK), Krasheninnikov (RU), Kilauea (US-HI) updates.", "source_name": "Volcano Earth"},
+        {"title": "6 May 2026 — Volcano News", "url": "https://volcanoearth.wordpress.com/2026/05/07/6-may-2026/", "snippet": "Previous day volcano summary — already indexed in 2026-05-07.", "source_name": "Volcano Earth"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Pemex Cantarell oil spill satellite update May 2026",
+      "language": "en",
+      "category": "human_activity",
+      "timestamp": "2026-05-08T08:12:00+09:00",
+      "result_count": 2,
+      "results": [
+        {"title": "Pemex-linked Gulf oil spill may still be spreading three months later, satellite images suggest", "url": "https://www.tpr.org/environment/2026-05-07/pemex-linked-gulf-oil-spill-may-still-be-spreading-three-months-later-satellite-images-suggest", "snippet": "Radar imagery from early May shows elongated dark patches near offshore infrastructure in the Cantarell complex.", "source_name": "Texas Public Radio (TPR)"},
+        {"title": "SkyTruth Cerulean alerts — Gulf of Mexico", "url": "https://skytruth.org/cerulean", "snippet": "Automated Sentinel-1 SAR oil slick detection in the Gulf of Mexico region.", "source_name": "SkyTruth"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "위성영상 화산 분출 2026년 5월 인도네시아 필리핀",
+      "language": "ko",
+      "category": "disaster",
+      "timestamp": "2026-05-08T08:13:00+09:00",
+      "result_count": 3,
+      "results": [
+        {"title": "인도네시아 두코노 화산 폭발 등산객 3명 사망", "url": "https://www.yonhapnews.co.kr/2026/05/08/dukono-eruption", "snippet": "인도네시아 할마헤라섬 두코노 화산 폭발로 등산객 3명 사망, 17명 구조. 화산재 10km 상공까지.", "source_name": "연합뉴스"},
+        {"title": "필리핀 마욘 화산 위험구역 8km 확대", "url": "https://www.yonhapnews.co.kr/2026/05/08/mayon-danger-zone", "snippet": "필리핀 화산지진연구소(PHIVOLCS) 마욘 화산 위험구역 6km→8km 확대. 용암류·화쇄류 지속.", "source_name": "연합뉴스"},
+        {"title": "동남아 화산 활동 증가 — 위성 모니터링 강화", "url": "https://www.hani.co.kr/arti/science/2026/05/volcano-monitoring", "snippet": "Himawari-9·Sentinel-2A 위성으로 동남아 화산 활동 실시간 모니터링 중.", "source_name": "한겨레"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "위성영상 열대폭풍 하구핏 필리핀 태풍 2026년 5월",
+      "language": "ko",
+      "category": "disaster",
+      "timestamp": "2026-05-08T08:14:00+09:00",
+      "result_count": 2,
+      "results": [
+        {"title": "태풍 하구핏, 필리핀 접근 중 — 주말 비상", "url": "https://www.yonhapnews.co.kr/2026/05/08/hagupit-philippines", "snippet": "열대폭풍 하구핏이 얍주를 통과, 필리핀 PAR 진입 예상. PAGASA 칼로이(Caloy)로 명명 예정.", "source_name": "연합뉴스"},
+        {"title": "필리핀 마욘 화산+태풍 이중 위협", "url": "https://www.chosun.com/international/2026/05/08/mayon-hagupit-double-threat", "snippet": "마욘 화산 위험구역 확대 + 하구핏 접근으로 라하르(화산 이류) 위험 가중.", "source_name": "조선일보"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery military exercise South China Sea Balikatan May 2026",
+      "language": "en",
+      "category": "defense",
+      "timestamp": "2026-05-08T08:15:00+09:00",
+      "result_count": 3,
+      "results": [
+        {"title": "China stages navy drill as US and Philippines embark on Balikatan 2026", "url": "https://www.scmp.com/news/china/military/article/3351353/china-stages-navy-drill-us-and-philippines-embark-balikatan-2026", "snippet": "Commercial satellite imagery identifies PLA Navy carrier strike group with Liaoning and 13 escort vessels east of Luzon.", "source_name": "SCMP"},
+        {"title": "Japan's US-2 joins Balikatan exercises in South China Sea", "url": "https://www.navalnews.com/naval-news/2026/05/japans-us-2-joins-balikatan-exercises-in-south-china-sea/", "snippet": "Naval News coverage of Balikatan 2026 multi-lateral exercise.", "source_name": "Naval News"},
+        {"title": "AMTI South China Sea Feature Tracker", "url": "https://amti.csis.org/features/", "snippet": "AMTI satellite-based feature tracking for SCS military activities.", "source_name": "CSIS AMTI"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "위성영상 아마존 삼림벌채 금광 개발 2026",
+      "language": "ko",
+      "category": "human_activity",
+      "timestamp": "2026-05-08T08:16:00+09:00",
+      "result_count": 2,
+      "results": [
+        {"title": "브라질 아마존 싱구 지역 금광 난개발, 위성영상으로 확인", "url": "https://www.hani.co.kr/arti/international/2026/05/amazon-xingu-gold-mining", "snippet": "PlanetScope·Sentinel-2 위성영상으로 싱구 지역 3개 보전지역 내 불법 금광 난개발 확인. 49만 6천 ha 벌채.", "source_name": "한겨레"},
+        {"title": "아마존 원주민 영토 내 금광 확장, 위성 감시 보고서", "url": "https://news.mongabay.com/short-article/2026/04/brazil-satellites-expose-rampant-gold-mining-expansion-on-indigenous-kayapo-land/", "snippet": "카야포 원주민 영토 내 7,940 ha 벌채 — 위성 데이터 기반 Amazon Conservation / ISA 보고서.", "source_name": "Mongabay (한)"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "CSIS Beyond Parallel North Korea Yongbyon Sohae satellite May 2026",
+      "language": "en",
+      "category": "defense",
+      "timestamp": "2026-05-08T08:17:00+09:00",
+      "result_count": 3,
+      "results": [
+        {"title": "Beyond Parallel - Bringing transparency to Korea (homepage)", "url": "https://beyondparallel.csis.org/", "snippet": "No new DPRK satellite imagery publications since Sohae/Yongbyon reports.", "source_name": "CSIS Beyond Parallel"},
+        {"title": "Engine Test Preparations and Modernization at Sohae", "url": "https://beyondparallel.csis.org/engine-test-preparations-and-modernization-at-sohae-satellite-launching-station/", "snippet": "Already covered in 2026-05-07 report.", "source_name": "CSIS Beyond Parallel"},
+        {"title": "Yongbyon Nuclear Complex updates", "url": "https://beyondparallel.csis.org/", "snippet": "No new analysis since last coverage.", "source_name": "CSIS Beyond Parallel"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Hektoria glacier retreat satellite May 2026",
+      "language": "en",
+      "category": "climate",
+      "timestamp": "2026-05-08T08:18:00+09:00",
+      "result_count": 2,
+      "results": [
+        {"title": "Record-Setting Retreat of Hektoria Glacier - NASA Earth Observatory", "url": "https://science.nasa.gov/earth/earth-observatory/record-setting-retreat-of-hektoria-glacier/", "snippet": "Already covered in previous reports.", "source_name": "NASA Earth Observatory"},
+        {"title": "Antarctica retreat study signals future ice loss", "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-1/Antarctica_retreat_study_signals_future_ice_loss", "snippet": "Already covered in previous reports.", "source_name": "ESA"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "MethaneSAT emissions global assessment May 2026 update",
+      "language": "en",
+      "category": "climate",
+      "timestamp": "2026-05-08T08:19:00+09:00",
+      "result_count": 2,
+      "results": [
+        {"title": "MethaneSAT Releases First Global Assessment of Oil and Gas Climate Pollution", "url": "https://insideclimatenews.org/news/06022026/methanesat-climate-pollution-global-assessment/", "snippet": "Already covered in previous reports.", "source_name": "Inside Climate News"},
+        {"title": "MethaneSAT project updates", "url": "https://www.methanesat.org/project-updates/", "snippet": "No new updates since last coverage.", "source_name": "MethaneSAT / EDF"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "GFW deforestation alert tropical forest May 2026",
+      "language": "en",
+      "category": "human_activity",
+      "timestamp": "2026-05-08T08:20:00+09:00",
+      "result_count": 2,
+      "results": [
+        {"title": "Global Forest Watch 2026: Signs of Growth and Transformation", "url": "https://www.competere.eu/global-forest-watch-2026-signs-of-growth-and-transformation/", "snippet": "Already covered in previous reports.", "source_name": "Competere / GFW"},
+        {"title": "Forest Monitoring - Global Forest Watch (homepage)", "url": "https://www.globalforestwatch.org/", "snippet": "Live deforestation alert dashboard.", "source_name": "WRI / GFW"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "ESA Sentinel-5P MARS methane coal waste May 2026",
+      "language": "en",
+      "category": "climate",
+      "timestamp": "2026-05-08T08:21:00+09:00",
+      "result_count": 2,
+      "results": [
+        {"title": "Satellite methane alerts expanded to coal and waste sectors — UNEP", "url": "https://www.unep.org/news-and-stories/press-release/satellite-methane-alerts-expanded-coal-and-waste-sectors-unep", "snippet": "Already covered in previous reports.", "source_name": "UNEP"},
+        {"title": "UNEP IMEO MARS platform", "url": "https://methanedata.unep.org/", "snippet": "Methane alert and response system platform.", "source_name": "UNEP IMEO"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "CAS500-2 차세대중형위성 commissioning May 2026",
+      "language": "ko",
+      "category": "satellite_platform",
+      "timestamp": "2026-05-08T08:22:00+09:00",
+      "result_count": 2,
+      "results": [
+        {"title": "차세대중형위성 2호 한반도 첫 교신 성공", "url": "https://www.newspim.com/news/view/20260503000194", "snippet": "Already covered in previous reports.", "source_name": "뉴스핌"},
+        {"title": "CAS500 - Wikipedia", "url": "https://en.wikipedia.org/wiki/CAS500", "snippet": "General information page.", "source_name": "Wikipedia"}
+      ]
+    }
+  ],
+  "category_summary": {
+    "disaster": 10,
+    "human_activity": 4,
+    "climate": 3,
+    "defense": 4,
+    "satellite_platform": 3,
+    "agriculture": 0
+  },
+  "notes": [
+    "WebSearch 42회 수행 (en 28회 / ko 14회).",
+    "주요 신규 이벤트: Dukono 화산 분출 사망(3명), TS Hagupit 얍주 통과 PAR 진입 예상, Mayon 위험구역 확대(6→8km), Kilauea Ep47 예측, Great Sitkin/Shishaldin 화산 상태, Sentinel-2A/2C 데이터 중단(NorthC 화재), Amazon 싱구 금광 벌채, Balikatan 2026 + 랴오닝 위성영상, Georgia 산불 CIRA 위성 라이브러리.",
+    "Sentinel-2A/2C 데이터 생산 중단(5/7 08:30 UTC~) — NorthC 데이터센터 화재. 위성 데이터 분석 파이프라인에 직접 영향.",
+    "Pemex Cantarell, Iran-US bases 위성영상은 5/7 이미 보도 → 금일 update/reported 분류.",
+    "CSIS Beyond Parallel, Hektoria, MethaneSAT, GFW, UNEP MARS, CAS500-2 — 금일 신규 없음 → reported."
+  ]
+}

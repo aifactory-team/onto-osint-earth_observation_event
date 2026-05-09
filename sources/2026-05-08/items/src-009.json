@@ -1,0 +1,29 @@
+{
+  "id": "src-009",
+  "title": "Balikatan 2026 최종일 + 중국 PLA 해군 훈련 랴오닝 14척 위성영상 (SCS)",
+  "url": "https://www.scmp.com/news/china/military/article/3351353/china-stages-navy-drill-us-and-philippines-embark-balikatan-2026",
+  "snippet": "Balikatan 2026 최종일(5/8): 미국+6개 동맹 17,000명 참가. 동시에 중국 PLA 남부전구 해군이 루손 동쪽 해역에서 랴오닝 항모 포함 14척 함정으로 훈련. 상업 위성영상에서 항모전투단 확인.",
+  "source_name": "South China Morning Post",
+  "language": "en",
+  "discovered_date": "2026-05-08",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 14일에 Balikatan 2026 + PLA 랴오닝 위성영상 보도 없음. SCS 군사 활동 신규 위성 OSINT.",
+  "entities": [
+    {"id": "ent-evt-206", "type": "Event", "name": "Balikatan 2026 / PLA 랴오닝 항모전투단 위성영상 (SCS)", "properties": {"phenomenon": "military_exercise", "lat": 18.0, "lon": 122.0, "country": "PH", "observation_date": "2026-05-08", "troops": 17000, "pla_vessels": 14, "severity": "high", "confidence": 0.82}},
+    {"id": "ent-org-afp", "type": "Organization", "name": "Armed Forces of the Philippines (AFP)", "properties": {"org_type": "defense_intel", "country": "PH"}},
+    {"id": "ent-org-pla", "type": "Organization", "name": "PLA Southern Theatre Command Navy", "properties": {"org_type": "defense_intel", "country": "CN"}},
+    {"id": "ent-loc-057", "type": "Location", "name": "East of Luzon, South China Sea / Philippine Sea", "properties": {"lat": 18.0, "lon": 122.0}},
+    {"id": "ent-ship-liaoning", "type": "Asset", "name": "CV-16 Liaoning (aircraft carrier)", "properties": {"country": "CN", "type": "aircraft_carrier"}},
+    {"id": "org-maxar", "type": "Organization", "name": "Maxar Technologies"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-206", "predicate": "locatedIn", "object": "ent-loc-057"},
+    {"subject": "ent-evt-206", "predicate": "manifests", "object": "phen-military"},
+    {"subject": "ent-evt-206", "predicate": "inDomain", "object": "dom-defense"},
+    {"subject": "ent-evt-206", "predicate": "involves", "object": "ent-ship-liaoning"},
+    {"subject": "ent-evt-206", "predicate": "involves", "object": "ent-org-afp"},
+    {"subject": "ent-evt-206", "predicate": "involves", "object": "ent-org-pla"}
+  ]
+}

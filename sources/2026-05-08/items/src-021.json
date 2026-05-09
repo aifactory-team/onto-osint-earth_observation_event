@@ -1,0 +1,18 @@
+{
+  "id": "src-021",
+  "title": "Sentinel-1D 운용 진입 (4기 SAR) — 금일 신규 없음",
+  "url": "https://orbitaltoday.com/2026/05/03/all-four-sentinel-1-satellites-are-now-live-and-europes-earth-watch-just-got-stronger/",
+  "snippet": "Sentinel-1D 운용 진입, 4기 SAR 컨스텔레이션 가동. 금일 추가 보도 없음.",
+  "source_name": "Orbital Today",
+  "language": "en",
+  "discovered_date": "2026-05-08",
+  "tag": "reported",
+  "related_report": "2026-05-07/src-021",
+  "related_item": "temp-evt-021",
+  "tag_reason": "이전 보도 반복. 금일 신규 정보 없음.",
+  "entities": [
+    {"id": "sat-sentinel1d", "type": "Satellite", "name": "Sentinel-1D"},
+    {"id": "org-esa", "type": "Organization", "name": "ESA"}
+  ],
+  "relations": []
+}

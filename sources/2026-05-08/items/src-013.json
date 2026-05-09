@@ -1,0 +1,24 @@
+{
+  "id": "src-013",
+  "title": "Pemex Cantarell 원유 유출 — 5/7 이미 보도, 금일 신규 없음",
+  "url": "https://www.tpr.org/environment/2026-05-07/pemex-linked-gulf-oil-spill-may-still-be-spreading-three-months-later-satellite-images-suggest",
+  "snippet": "Pemex Cantarell 3개월 지속 원유 유출 — Sentinel-1/2 위성영상. 금일 신규 보도 없음.",
+  "source_name": "Texas Public Radio (TPR)",
+  "language": "en",
+  "discovered_date": "2026-05-08",
+  "tag": "reported",
+  "related_report": "2026-05-07/src-029",
+  "related_item": "ent-evt-125",
+  "tag_reason": "5/7 src-029로 이미 보도됨. 금일 추가 위성영상 분석 또는 상태 변화 없음.",
+  "entities": [
+    {"id": "ent-evt-125", "type": "Event", "name": "Pemex Cantarell 원유 유출"},
+    {"id": "sat-sentinel1a", "type": "Satellite", "name": "Sentinel-1A"},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-125", "predicate": "observedBy", "object": "sat-sentinel1a"},
+    {"subject": "ent-evt-125", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-125", "predicate": "manifests", "object": "phen-oilspill"},
+    {"subject": "ent-evt-125", "predicate": "inDomain", "object": "dom-human"}
+  ]
+}
