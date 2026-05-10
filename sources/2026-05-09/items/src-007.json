@@ -1,0 +1,30 @@
+{
+  "id": "src-007",
+  "title": "NASA EO — Shivelyuch 화산 Landsat 9 눈 융해 열이상 관측 (캄차카)",
+  "url": "https://science.nasa.gov/earth/earth-observatory/melting-snow-off-shivelyuch/",
+  "snippet": "Landsat 9 OLI captured snow melting from warm volcanic deposits on Shivelyuch (Shiveluch) flanks, April 23, 2026. Most northerly active volcano on Kamchatka Peninsula. Near-daily satellite detection of thermal anomalies, hot avalanches, ash deposits within horseshoe-shaped caldera.",
+  "source_name": "NASA Earth Observatory",
+  "language": "en",
+  "discovered_date": "2026-05-09",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "NASA EO의 Shivelyuch 화산 Landsat 9 영상 기사. 5/7 발행. 지속적 화산 활동 위성 모니터링.",
+  "before_after_available": false,
+  "satellite_unverified": false,
+  "entities": [
+    {"id": "ent-evt-304", "type": "Event", "name": "Shivelyuch 화산 눈 융해·열이상 — Landsat 9 (2026-04-23)", "properties": {"phenomenon": "volcanic_eruption", "lat": 56.65, "lon": 161.36, "country": "RU", "observation_date": "2026-04-23", "severity": "moderate", "confidence": 0.90}},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9"},
+    {"id": "sensor-oli", "type": "Sensor", "name": "OLI"},
+    {"id": "org-nasa", "type": "Organization", "name": "NASA", "properties": {"org_type": "space_agency", "country": "US"}},
+    {"id": "ent-loc-056", "type": "Location", "name": "Shivelyuch (Shiveluch) volcano, Kamchatka Peninsula, Russia", "properties": {"lat": 56.65, "lon": 161.36, "country": "RU"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-304", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "ent-evt-304", "predicate": "usesSensor", "object": "sensor-oli"},
+    {"subject": "ent-evt-304", "predicate": "analyzedBy", "object": "org-nasa"},
+    {"subject": "ent-evt-304", "predicate": "locatedIn", "object": "ent-loc-056"},
+    {"subject": "ent-evt-304", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-304", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

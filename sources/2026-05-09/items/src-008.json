@@ -1,0 +1,29 @@
+{
+  "id": "src-008",
+  "title": "NASA EO — Peter I Island 본 카르만 와류 Landsat 8 관측 (남극해)",
+  "url": "https://science.nasa.gov/earth/earth-observatory/a-sea-of-spinning-clouds/",
+  "snippet": "Landsat 8 OLI Feb 11 2026: Von Kármán vortex streets on lee side of Peter I Island (68.86°S, Bellingshausen Sea). Ice-cloaked volcanic island 400km off West Antarctic coast. Published May 8 2026.",
+  "source_name": "NASA Earth Observatory",
+  "language": "en",
+  "discovered_date": "2026-05-09",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "NASA EO의 남극해 Peter I Island 대기 현상 Landsat 8 영상 기사. 5/8 발행. 기후·대기 시각화.",
+  "before_after_available": false,
+  "satellite_unverified": false,
+  "entities": [
+    {"id": "ent-evt-305", "type": "Event", "name": "Peter I Island 본 카르만 와류 — Landsat 8 (2026-02-11)", "properties": {"phenomenon": "atmospheric", "lat": -68.86, "lon": -90.58, "country": "AQ", "observation_date": "2026-02-11", "severity": "low", "confidence": 0.92}},
+    {"id": "sat-landsat8", "type": "Satellite", "name": "Landsat 8"},
+    {"id": "sensor-oli", "type": "Sensor", "name": "OLI"},
+    {"id": "org-nasa", "type": "Organization", "name": "NASA", "properties": {"org_type": "space_agency", "country": "US"}},
+    {"id": "ent-loc-057", "type": "Location", "name": "Peter I Island, Bellingshausen Sea, Antarctica", "properties": {"lat": -68.86, "lon": -90.58, "country": "AQ"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-305", "predicate": "observedBy", "object": "sat-landsat8"},
+    {"subject": "ent-evt-305", "predicate": "usesSensor", "object": "sensor-oli"},
+    {"subject": "ent-evt-305", "predicate": "analyzedBy", "object": "org-nasa"},
+    {"subject": "ent-evt-305", "predicate": "locatedIn", "object": "ent-loc-057"},
+    {"subject": "ent-evt-305", "predicate": "inDomain", "object": "dom-climate"}
+  ]
+}

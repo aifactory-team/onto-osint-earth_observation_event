@@ -1,0 +1,30 @@
+{
+  "id": "src-009",
+  "title": "NASA EO — 알래스카 Tracy Arm 산사태-쓰나미 후 지형 변화 위성 분석",
+  "url": "https://science.nasa.gov/earth/earth-observatory/tracy-arms-post-tsunami-landscape/",
+  "snippet": "Published May 6 2026. Alaska Tracy Arm landslide-triggered tsunami (summer 2025). Analysis published in Science journal. Landsat satellite imagery documenting post-event landscape changes.",
+  "source_name": "NASA Earth Observatory",
+  "language": "en",
+  "discovered_date": "2026-05-09",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "NASA EO 알래스카 산사태-쓰나미 위성 분석 기사. 5/6 발행 Science 논문 연계. 재해 후 지형 변화 위성 기록.",
+  "before_after_available": false,
+  "satellite_unverified": false,
+  "entities": [
+    {"id": "ent-evt-306", "type": "Event", "name": "Tracy Arm 산사태-쓰나미 후 지형 변화 (알래스카)", "properties": {"phenomenon": "landslide", "lat": 57.85, "lon": -133.6, "country": "US", "observation_date": "2025-07-01", "publication_date": "2026-05-06", "severity": "high", "confidence": 0.90}},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9"},
+    {"id": "sensor-oli", "type": "Sensor", "name": "OLI"},
+    {"id": "org-nasa", "type": "Organization", "name": "NASA", "properties": {"org_type": "space_agency", "country": "US"}},
+    {"id": "ent-loc-058", "type": "Location", "name": "Tracy Arm, Tongass National Forest, Alaska, US", "properties": {"lat": 57.85, "lon": -133.6, "country": "US"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-306", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "ent-evt-306", "predicate": "usesSensor", "object": "sensor-oli"},
+    {"subject": "ent-evt-306", "predicate": "analyzedBy", "object": "org-nasa"},
+    {"subject": "ent-evt-306", "predicate": "locatedIn", "object": "ent-loc-058"},
+    {"subject": "ent-evt-306", "predicate": "manifests", "object": "phen-landslide"},
+    {"subject": "ent-evt-306", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

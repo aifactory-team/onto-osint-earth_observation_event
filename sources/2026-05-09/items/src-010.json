@@ -1,0 +1,31 @@
+{
+  "id": "src-010",
+  "title": "Georgia Pineland 산불 70% 진화 — 32,000+ ac, 이탄층 지하화재 난항",
+  "url": "https://www.local3news.com/local-news/update-ga-forestry-commission-says-wildfires-still-burning-but-mostly-contained/article_bcbfcf6b-24de-48b8-a7c1-d15adb8a773d.html",
+  "snippet": "Pineland Road Fire 32,000+ acres 70% contained. Deep peat bog underground fire posing unique challenge. 35 smaller structures destroyed, no homes, no serious injuries. Fire started April 18 from welding spark.",
+  "source_name": "Local3 News",
+  "language": "en",
+  "discovered_date": "2026-05-09",
+  "tag": "update",
+  "related_report": "2026-05-08/src-010",
+  "related_item": "temp-evt-001",
+  "tag_reason": "70% 진화율 및 이탄층 지하화재 난항은 유의미한 업데이트. src-010(5/8)의 후속.",
+  "before_after_available": false,
+  "satellite_unverified": false,
+  "entities": [
+    {"id": "temp-evt-001", "type": "Event", "name": "Georgia Pineland Road Fire — 70% 진화, 이탄층 지하화재 (2026-05-09)", "properties": {"phenomenon": "wildfire", "lat": 31.5, "lon": -82.5, "country": "US", "observation_date": "2026-05-09", "area_burned_acres": 32000, "containment_pct": 70, "structures_destroyed": 35, "severity": "moderate", "confidence": 0.90}},
+    {"id": "sat-snpp", "type": "Satellite", "name": "Suomi-NPP (S-NPP)"},
+    {"id": "sat-landsat8", "type": "Satellite", "name": "Landsat 8"},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9"},
+    {"id": "ent-loc-059", "type": "Location", "name": "Pineland Road, Ware/Brantley County, Georgia, US", "properties": {"lat": 31.5, "lon": -82.5, "country": "US"}}
+  ],
+  "relations": [
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-snpp"},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-landsat8"},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "temp-evt-001", "predicate": "locatedIn", "object": "ent-loc-059"},
+    {"subject": "temp-evt-001", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "temp-evt-001", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "temp-evt-001", "predicate": "inCountry", "object": "co-us"}
+  ]
+}

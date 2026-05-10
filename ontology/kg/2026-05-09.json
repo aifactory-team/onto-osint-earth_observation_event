@@ -1,0 +1,164 @@
+{
+  "date": "2026-05-09",
+  "description": "2026-05-09 일별 KG 스냅샷 — 신규 트리플(explicit) + 추론 트리플(inferred) + 갱신 트리플(update). 27 sources (7 new, 8 update, 12 reported).",
+  "new_triples": [
+    {"subject": "ent-evt-207", "predicate": "manifests", "object": "phen-ndvi", "source_id": "src-003", "date": "2026-05-09", "confidence": 0.90, "type": "explicit", "note": "PhilSA Mayon ashfall 작물피해 1,039ha rice + 191ha other, 8,544ha total"},
+    {"subject": "ent-evt-207", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-003", "date": "2026-05-09", "confidence": 0.85, "type": "explicit", "note": "ashfall-induced crop damage — cross-domain disaster→agri"},
+    {"subject": "ent-evt-207", "predicate": "inDomain", "object": "dom-agri-marine", "source_id": "src-003", "date": "2026-05-09", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-207", "predicate": "inCountry", "object": "co-ph", "source_id": "src-003", "date": "2026-05-09", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-207", "predicate": "locatedIn", "object": "ent-loc-051", "source_id": "src-003", "date": "2026-05-09", "confidence": 0.92, "type": "explicit", "note": "Mayon ashfall zone Albay PH — same as evt-082 volcano location"},
+    {"subject": "ent-evt-207", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-003", "date": "2026-05-09", "confidence": 0.92, "type": "explicit"},
+    {"subject": "ent-evt-207", "predicate": "usesSensor", "object": "sensor-msi", "source_id": "src-003", "date": "2026-05-09", "confidence": 0.92, "type": "explicit"},
+    {"subject": "ent-evt-207", "predicate": "analyzedBy", "object": "org-philsa", "source_id": "src-003", "date": "2026-05-09", "confidence": 0.92, "type": "explicit"},
+
+    {"subject": "ent-evt-208", "predicate": "manifests", "object": "phen-construction", "source_id": "src-005", "date": "2026-05-09", "confidence": 0.85, "type": "explicit", "note": "Thitu runway 1.5km + Nanshan port construction"},
+    {"subject": "ent-evt-208", "predicate": "inDomain", "object": "dom-defense", "source_id": "src-005", "date": "2026-05-09", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-208", "predicate": "inCountry", "object": "co-ph", "source_id": "src-005", "date": "2026-05-09", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-208", "predicate": "locatedIn", "object": "ent-loc-052", "source_id": "src-005", "date": "2026-05-09", "confidence": 0.90, "type": "explicit", "note": "Thitu Island (Pag-asa) Spratlys"},
+    {"subject": "ent-evt-208", "predicate": "locatedIn", "object": "ent-loc-053", "source_id": "src-005", "date": "2026-05-09", "confidence": 0.90, "type": "explicit", "note": "Nanshan Island (Lawak) Spratlys"},
+    {"subject": "ent-evt-208", "predicate": "observedBy", "object": "sat-planetscope", "source_id": "src-005", "date": "2026-05-09", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-208", "predicate": "analyzedBy", "object": "org-planet", "source_id": "src-005", "date": "2026-05-09", "confidence": 0.82, "type": "explicit"},
+
+    {"subject": "ent-evt-209", "predicate": "manifests", "object": "phen-defor", "source_id": "src-006", "date": "2026-05-09", "confidence": 0.85, "type": "explicit", "note": "NISAR+Landsat fusion deforestation early detection 100 days earlier"},
+    {"subject": "ent-evt-209", "predicate": "inDomain", "object": "dom-human", "source_id": "src-006", "date": "2026-05-09", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-209", "predicate": "inCountry", "object": "co-br", "source_id": "src-006", "date": "2026-05-09", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-209", "predicate": "observedBy", "object": "sat-landsat9", "source_id": "src-006", "date": "2026-05-09", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-209", "predicate": "observedBy", "object": "sat-nisar", "source_id": "src-006", "date": "2026-05-09", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-209", "predicate": "usesSensor", "object": "sensor-oli", "source_id": "src-006", "date": "2026-05-09", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-209", "predicate": "analyzedBy", "object": "org-nasa", "source_id": "src-006", "date": "2026-05-09", "confidence": 0.90, "type": "explicit"},
+    {"subject": "sat-nisar", "predicate": "operatedBy", "object": "org-nasa", "source_id": "src-006", "date": "2026-05-09", "confidence": 0.95, "type": "explicit"},
+    {"subject": "sat-nisar", "predicate": "carriesSensor", "object": "sensor-l-sar", "source_id": "src-006", "date": "2026-05-09", "confidence": 0.95, "type": "explicit", "note": "L-band SAR, 10m resolution, 12-day revisit"},
+
+    {"subject": "ent-evt-210", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-007", "date": "2026-05-09", "confidence": 0.88, "type": "explicit", "note": "Shivelyuch snowmelt from volcanic deposits Kamchatka"},
+    {"subject": "ent-evt-210", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-007", "date": "2026-05-09", "confidence": 0.88, "type": "explicit"},
+    {"subject": "ent-evt-210", "predicate": "inCountry", "object": "co-ru", "source_id": "src-007", "date": "2026-05-09", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-210", "predicate": "locatedIn", "object": "ent-loc-054", "source_id": "src-007", "date": "2026-05-09", "confidence": 0.95, "type": "explicit", "note": "Shivelyuch (Shiveluch) Kamchatka 56.65/161.36"},
+    {"subject": "ent-evt-210", "predicate": "observedBy", "object": "sat-landsat9", "source_id": "src-007", "date": "2026-05-09", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-210", "predicate": "usesSensor", "object": "sensor-oli", "source_id": "src-007", "date": "2026-05-09", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-210", "predicate": "analyzedBy", "object": "org-nasa", "source_id": "src-007", "date": "2026-05-09", "confidence": 0.92, "type": "explicit"},
+
+    {"subject": "ent-evt-211", "predicate": "manifests", "object": "phen-atmo", "source_id": "src-008", "date": "2026-05-09", "confidence": 0.82, "type": "explicit", "note": "von Karman vortex street — atmospheric phenomenon"},
+    {"subject": "ent-evt-211", "predicate": "inDomain", "object": "dom-climate", "source_id": "src-008", "date": "2026-05-09", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-211", "predicate": "inCountry", "object": "co-aq", "source_id": "src-008", "date": "2026-05-09", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-211", "predicate": "locatedIn", "object": "ent-loc-055", "source_id": "src-008", "date": "2026-05-09", "confidence": 0.90, "type": "explicit", "note": "Peter I Island Bellingshausen Sea -68.86/-90.58"},
+    {"subject": "ent-evt-211", "predicate": "observedBy", "object": "sat-landsat8", "source_id": "src-008", "date": "2026-05-09", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-211", "predicate": "usesSensor", "object": "sensor-oli", "source_id": "src-008", "date": "2026-05-09", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-211", "predicate": "analyzedBy", "object": "org-nasa", "source_id": "src-008", "date": "2026-05-09", "confidence": 0.90, "type": "explicit"},
+
+    {"subject": "ent-evt-212", "predicate": "manifests", "object": "phen-landslide", "source_id": "src-009", "date": "2026-05-09", "confidence": 0.85, "type": "explicit", "note": "Tracy Arm landslide-tsunami post-event landscape change"},
+    {"subject": "ent-evt-212", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-009", "date": "2026-05-09", "confidence": 0.88, "type": "explicit"},
+    {"subject": "ent-evt-212", "predicate": "inCountry", "object": "co-us", "source_id": "src-009", "date": "2026-05-09", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-212", "predicate": "locatedIn", "object": "ent-loc-056", "source_id": "src-009", "date": "2026-05-09", "confidence": 0.90, "type": "explicit", "note": "Tracy Arm SE Alaska 57.85/-133.6"},
+    {"subject": "ent-evt-212", "predicate": "observedBy", "object": "sat-landsat9", "source_id": "src-009", "date": "2026-05-09", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-212", "predicate": "usesSensor", "object": "sensor-oli", "source_id": "src-009", "date": "2026-05-09", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-212", "predicate": "analyzedBy", "object": "org-nasa", "source_id": "src-009", "date": "2026-05-09", "confidence": 0.88, "type": "explicit"},
+
+    {"subject": "ent-evt-213", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-013", "date": "2026-05-09", "confidence": 0.45, "type": "explicit", "note": "Fuego eruption — satellite_unverified, confidence capped <0.50"},
+    {"subject": "ent-evt-213", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-013", "date": "2026-05-09", "confidence": 0.72, "type": "explicit"},
+    {"subject": "ent-evt-213", "predicate": "inCountry", "object": "co-gt", "source_id": "src-013", "date": "2026-05-09", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-213", "predicate": "locatedIn", "object": "ent-loc-057", "source_id": "src-013", "date": "2026-05-09", "confidence": 0.85, "type": "explicit", "note": "Fuego volcano GT 14.47/-90.88"},
+    {"subject": "ent-evt-213", "predicate": "analyzedBy", "object": "org-insivumeh", "source_id": "src-013", "date": "2026-05-09", "confidence": 0.72, "type": "explicit"}
+  ],
+  "updated_triples": [
+    {"subject": "ent-evt-127", "predicate": "manifests", "object": "phen-typhoon", "source_id": "src-001", "date": "2026-05-09", "confidence": 0.92, "type": "update", "note": "Caloy PAR entry May 9, 65km/h, 870km east NE Mindanao"},
+    {"subject": "ent-evt-127", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-001", "date": "2026-05-09", "confidence": 0.92, "type": "update"},
+    {"subject": "ent-evt-127", "predicate": "observedBy", "object": "sat-goes18", "source_id": "src-001", "date": "2026-05-09", "confidence": 0.88, "type": "update"},
+    {"subject": "ent-evt-127", "predicate": "analyzedBy", "object": "ent-org-pagasa", "source_id": "src-001", "date": "2026-05-09", "confidence": 0.92, "type": "update"},
+
+    {"subject": "ent-evt-082", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-002", "date": "2026-05-09", "confidence": 0.95, "type": "update", "note": "Mayon VAAC 586 SO2 2785 t/d danger zone 8km maintained"},
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-002", "date": "2026-05-09", "confidence": 0.95, "type": "update"},
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-002", "date": "2026-05-09", "confidence": 0.92, "type": "update"},
+    {"subject": "ent-evt-082", "predicate": "usesSensor", "object": "sensor-msi", "source_id": "src-002", "date": "2026-05-09", "confidence": 0.90, "type": "update"},
+
+    {"subject": "ent-evt-128", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-004", "date": "2026-05-09", "confidence": 0.95, "type": "update", "note": "Dukono VAAC 226 FL150, 1 body recovered, 2 Singaporeans missing"},
+    {"subject": "ent-evt-128", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-004", "date": "2026-05-09", "confidence": 0.90, "type": "update"},
+    {"subject": "ent-evt-128", "predicate": "analyzedBy", "object": "ent-org-cvghm", "source_id": "src-004", "date": "2026-05-09", "confidence": 0.92, "type": "update"},
+
+    {"subject": "temp-evt-001", "predicate": "manifests", "object": "phen-wildfire", "source_id": "src-010", "date": "2026-05-09", "confidence": 0.92, "type": "update", "note": "GA Pineland 32,000+ ac, 70% contained, peat bog underground fire"},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_id": "src-010", "date": "2026-05-09", "confidence": 0.90, "type": "update"},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-landsat8", "source_id": "src-010", "date": "2026-05-09", "confidence": 0.90, "type": "update"},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-landsat9", "source_id": "src-010", "date": "2026-05-09", "confidence": 0.90, "type": "update"},
+
+    {"subject": "ent-evt-202", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-011", "date": "2026-05-09", "confidence": 0.90, "type": "update", "note": "Kilauea Ep47 forecast maintained May 12-17, inflation 6.9μrad"},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-011", "date": "2026-05-09", "confidence": 0.85, "type": "update"},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-landsat9", "source_id": "src-011", "date": "2026-05-09", "confidence": 0.85, "type": "update"},
+    {"subject": "ent-evt-202", "predicate": "analyzedBy", "object": "ent-org-hvo", "source_id": "src-011", "date": "2026-05-09", "confidence": 0.92, "type": "update"},
+
+    {"subject": "ent-evt-201", "predicate": "manifests", "object": "phen-satops", "source_id": "src-012", "date": "2026-05-09", "confidence": 0.92, "type": "update", "note": "Sentinel-2 partial restoration 19:00 UTC normal — no data loss"},
+    {"subject": "ent-evt-201", "predicate": "analyzedBy", "object": "org-esa", "source_id": "src-012", "date": "2026-05-09", "confidence": 0.95, "type": "update"}
+  ],
+  "inferred_triples": [
+    {"subject": "ent-evt-127", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.92, "type": "inferred", "note": "Himawari-9(JMA/JAXA GEO) + GOES-18(NOAA GEO) — 독립 GEO 교차검증 (연속 확인)"},
+    {"subject": "ent-evt-082", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.92, "type": "inferred", "note": "Himawari-9(JMA GEO) + Sentinel-2A(ESA SSO) — 독립 운영자/궤도 교차검증 (연속)"},
+    {"subject": "temp-evt-001", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.95, "type": "inferred", "note": "S-NPP VIIRS(NOAA) + Landsat 8(USGS) + Landsat 9(USGS) — 3위성 교차검증 (연속)"},
+    {"subject": "ent-evt-202", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.88, "type": "inferred", "note": "Sentinel-2A(ESA) + Landsat 9(USGS) — 독립 운영자 교차검증"},
+
+    {"subject": "ent-evt-127", "predicate": "partOfSeries", "object": "ent-evt-127", "rule": "temporal_progression", "confidence": 0.95, "type": "inferred", "note": "TS Hagupit/Caloy 시리즈 — May 7→8→9 PAR 진입 확인"},
+    {"subject": "ent-evt-082", "predicate": "partOfSeries", "object": "ent-evt-029", "rule": "temporal_progression", "confidence": 0.97, "type": "inferred", "note": "Mayon eruption 장기 시리즈 — 2026-01→ ongoing, VAAC 586"},
+    {"subject": "ent-evt-128", "predicate": "partOfSeries", "object": "ent-evt-128", "rule": "temporal_progression", "confidence": 0.95, "type": "inferred", "note": "Dukono 시리즈 — May 7→8→9 수색 재개, 1 body recovered, 2 missing"},
+    {"subject": "temp-evt-001", "predicate": "partOfSeries", "object": "ent-evt-098", "rule": "temporal_progression", "confidence": 0.95, "type": "inferred", "note": "GA Pineland wildfire 시리즈 — 50k ac→32k ac recount, 85%→70% containment adjustment"},
+    {"subject": "ent-evt-202", "predicate": "partOfSeries", "object": "ent-evt-101", "rule": "temporal_progression", "confidence": 0.92, "type": "inferred", "note": "Kilauea Ep46→Ep47 시리즈 — Ep47 예보 유지 (May 12-17)"},
+
+    {"subject": "ent-evt-082", "predicate": "potentialTriggeredBy", "object": "ent-evt-127", "rule": "cascading_disaster", "confidence": 0.75, "type": "inferred", "note": "Mayon lahar risk — Caloy PAR entry 확인 May 9, Albay 강우 시 화산재 퇴적 위 lahar. 신뢰도 0.70→0.75 상향 (PAR entry 확인됨)"},
+    {"subject": "ent-evt-207", "predicate": "potentialTriggeredBy", "object": "ent-evt-082", "rule": "cascading_disaster", "confidence": 0.85, "type": "inferred", "note": "PhilSA ashfall 작물피해는 Mayon eruption 직접 결과 — ashfall→crop damage 확정 사슬"},
+
+    {"subject": "ent-evt-207", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred", "note": "PhilSA 공식 우주기관 분석 + Sentinel-2 데이터"},
+    {"subject": "ent-evt-209", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.92, "type": "inferred", "note": "NASA EO 공식 + Nature Communications 피어리뷰"},
+    {"subject": "ent-evt-210", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.92, "type": "inferred", "note": "NASA Earth Observatory 공식"},
+    {"subject": "ent-evt-211", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.90, "type": "inferred", "note": "NASA Earth Observatory 공식"},
+    {"subject": "ent-evt-212", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.90, "type": "inferred", "note": "NASA EO + Science 논문"},
+    {"subject": "ent-evt-127", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred", "note": "PAGASA + JMA + NOAA 공식"},
+    {"subject": "ent-evt-082", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred", "note": "PHIVOLCS + VAAC 공식"},
+    {"subject": "ent-evt-128", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred", "note": "CVGHM/PVMBG + VAAC Darwin 공식"},
+    {"subject": "ent-evt-202", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred", "note": "USGS HVO 공식 예보"},
+    {"subject": "temp-evt-001", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.90, "type": "inferred", "note": "NASA EO + CIRA/RAMMB 이전 사이클 계승"},
+    {"subject": "ent-evt-201", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred", "note": "ESA Copernicus 공식 복구 발표"},
+
+    {"subject": "temp-evt-001", "predicate": "thermalBoost", "object": "+0.10", "rule": "sensor_capability_match_tirs", "confidence": 0.92, "type": "inferred", "note": "Landsat TIRS + VIIRS thermal → wildfire burn scar + peat underground fire"},
+    {"subject": "ent-evt-209", "predicate": "sarBoost", "object": "+0.10", "rule": "sensor_capability_match_sar", "confidence": 0.85, "type": "inferred", "note": "NISAR L-band SAR → deforestation canopy change detection (SAR penetration)"},
+    {"subject": "ent-evt-207", "predicate": "multispectralBoost", "object": "+0.10", "rule": "sensor_capability_match_multispectral", "confidence": 0.90, "type": "inferred", "note": "Sentinel-2 MSI NDVI/NBR → ashfall crop damage vegetation index mapping"},
+
+    {"subject": "ent-evt-207", "predicate": "baCredibilityBoost", "object": "+0.10", "rule": "before_after_credibility", "confidence": 0.92, "type": "inferred", "note": "PhilSA Sentinel-2 before/after ashfall change detection — before_after_available: true"},
+
+    {"subject": "ent-evt-128", "predicate": "priorityBoost", "object": "+0.20", "rule": "disaster_severity_priority", "confidence": 0.95, "type": "inferred", "note": "Dukono 인명피해 지속 (3 dead, 2 missing, body recovery) — HIGH severity"},
+    {"subject": "ent-evt-082", "predicate": "priorityBoost", "object": "+0.20", "rule": "disaster_severity_priority", "confidence": 0.97, "type": "inferred", "note": "Mayon 8km danger zone, PDC, lahar risk from Caloy — HIGH severity"},
+    {"subject": "ent-evt-207", "predicate": "priorityBoost", "object": "+0.10", "rule": "disaster_severity_priority", "confidence": 0.88, "type": "inferred", "note": "1,039ha rice loss — 식량안보 영향 (moderate)"},
+
+    {"subject": "ent-evt-208", "predicate": "commercialBoost", "object": "+0.10", "rule": "commercial_imagery_trust", "confidence": 0.82, "type": "inferred", "note": "Planet Labs PlanetScope imagery confirmed Thitu/Nanshan construction"}
+  ],
+  "supersedes_or_partOfSeries_summary": {
+    "supersedes": [],
+    "partOfSeries": [
+      {"new": "ent-evt-127 update", "prev": "ent-evt-127 (May 8)", "reason": "TS Hagupit/Caloy PAR entry 확인 May 9"},
+      {"new": "ent-evt-082 update", "prev": "ent-evt-029", "reason": "Mayon eruption 장기 시리즈 — VAAC 586, SO2 2785 t/d"},
+      {"new": "ent-evt-128 update", "prev": "ent-evt-128 (May 8)", "reason": "Dukono 수색 재개, body recovered"},
+      {"new": "temp-evt-001 update", "prev": "ent-evt-098", "reason": "GA Pineland containment 70%, peat underground fire"},
+      {"new": "ent-evt-202 update", "prev": "ent-evt-101", "reason": "Kilauea Ep47 forecast maintained May 12-17"}
+    ],
+    "cascading_disaster_potential": [
+      {"primary": "ent-evt-127 (TS Caloy PAR entry)", "secondary": "ent-evt-082 (Mayon lahar)", "condition": "Caloy PAR entry confirmed May 9 — Albay heavy rain → lahar on ashfall deposits", "confidence": 0.75, "status": "elevated — PAR entry 확인, 경로 Albay 접근 시 재평가"},
+      {"primary": "ent-evt-082 (Mayon eruption)", "secondary": "ent-evt-207 (ashfall crop damage)", "condition": "Mayon ashfall → PhilSA 확인 1,039ha rice + 191ha crops 피해 — 확정 사슬", "confidence": 0.85, "status": "confirmed — PhilSA Sentinel-2 변화탐지"}
+    ]
+  },
+  "stats": {
+    "explicit_new_triples": 52,
+    "explicit_updated_triples": 22,
+    "inferred_new_triples": 31,
+    "total_subjects": 15,
+    "total_predicates": 17,
+    "total_events_new": 7,
+    "total_events_updated": 6,
+    "multi_satellite_confirmation_count": 4,
+    "partOfSeries_count": 5,
+    "cascading_disaster_count": 2,
+    "sensor_capability_match_count": 3,
+    "official_source_trust_count": 11,
+    "before_after_credibility_count": 1,
+    "commercial_imagery_trust_count": 1,
+    "analyst_org_trust_count": 0,
+    "disaster_severity_priority_count": 3,
+    "korea_focus_count": 0,
+    "satellite_unverified_count": 1,
+    "press_release_capped_count": 0
+  }
+}

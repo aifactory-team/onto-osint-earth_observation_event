@@ -929,3 +929,139 @@ config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5)
 
 config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5).
 
+
+---
+
+## 2026-05-09 추론 결과
+
+입력: sources/2026-05-09/entities.json — 27 sources (7 new, 8 update, 12 reported). 신규 이벤트 7건(ent-evt-207~213), 업데이트 6건(evt-082/127/128/temp-001/202/201).
+
+### 다중 위성 교차검증 (multi_satellite_confirmation, +0.20) — 4건
+
+- **추론 #1:** ent-evt-127 (TS Caloy/Hagupit) — Himawari-9(JMA/JAXA, GEO) + GOES-18(NOAA, GEO) → multiSatBoost +0.20 [confidence 0.92, 확정]
+  - 독립 운영자 GEO 교차검증: JMA ≠ NOAA (연속 확인 3일차)
+- **추론 #2:** ent-evt-082 (Mayon VAAC 586) — Himawari-9(JMA, GEO) + Sentinel-2A(ESA, SSO) → multiSatBoost +0.20 [0.92, 확정]
+  - 독립 운영자/궤도: JMA GEO ≠ ESA SSO (연속 확인)
+- **추론 #3:** temp-evt-001 (GA Pineland 70% contained) — S-NPP VIIRS(NOAA) + Landsat 8(USGS) + Landsat 9(USGS) → multiSatBoost +0.20 [0.95, 확정]
+  - 3위성 교차검증: NOAA ≠ USGS (연속 확인)
+- **추론 #4:** ent-evt-202 (Kilauea Ep47 예보) — Sentinel-2A(ESA) + Landsat 9(USGS) → multiSatBoost +0.20 [0.88, 확정]
+  - 독립 운영자: ESA ≠ USGS
+
+### 시계열 진행 / 시리즈 (temporal_progression, partOfSeries) — 5건
+
+- **추론 #5:** ent-evt-082 (Mayon VAAC 586) :partOfSeries ent-evt-029 (Mayon original 2026-01~) → 장기 시리즈 [0.97, 확정]
+  - 2026-01 분출 시작 → ... → 05-08 8km PDC → 05-09 VAAC 586 SO2 2785 t/d
+- **추론 #6:** ent-evt-127 (TS Caloy PAR entry) :partOfSeries 이전 사이클 → PAR 진입 확인 [0.95, 확정]
+  - May 7 Yap → May 8 PAR entry 예상 → May 9 PAR entry 확인 65km/h
+- **추론 #7:** ent-evt-128 (Dukono 수색 재개) :partOfSeries 이전 사이클 → body recovery 후속 [0.95, 확정]
+  - May 7 VAAC → May 8 3 deaths → May 9 search resumed, 1 body recovered, 2 Singaporeans missing
+- **추론 #8:** temp-evt-001 (GA Pineland 70%) :partOfSeries ent-evt-098 → containment 하향 [0.95, 확정]
+  - May 5 발화 → May 8 85% → May 9 **70%** (이탄층 지하연소 반영)
+- **추론 #9:** ent-evt-202 (Kilauea Ep47) :partOfSeries ent-evt-101 (Ep46) → 예보 유지 [0.92, 확정]
+  - Ep46 May 5 종료 → Ep47 예보 유지 May 12-17, 6.9μrad 팽창
+
+### 연쇄 재해 (cascading_disaster) — 2건 (1건 상향, 1건 확정)
+
+- **추론 #10:** ent-evt-082 (Mayon lahar) :potentialTriggeredBy ent-evt-127 (TS Caloy)
+  - **조건:** Caloy PAR entry May 9 확인됨 → Albay 강우 시 lahar 발생 위험
+  - **변경:** 신뢰도 0.70 → **0.75 상향** (PAR entry 확인됨, 경로 Albay 접근 확인 필요)
+  - **유형:** Disaster(typhoon) → Disaster(volcanic lahar)
+  - **상태:** elevated — PAR entry 확인, 경로·강우량에 따라 재평가
+
+- **추론 #11:** ent-evt-207 (ashfall crop damage) :potentialTriggeredBy ent-evt-082 (Mayon eruption)
+  - **조건:** Mayon 화산재 퇴적 → 벼 1,039ha + 기타 191ha 작물 피해 — PhilSA Sentinel-2 변화탐지
+  - **신뢰도:** 0.85 [**확정** — 위성 before/after 검증]
+  - **유형:** Disaster(volcanic eruption) → AgriMarine(crop damage)
+  - **상태:** confirmed — PhilSA 공식 Sentinel-2 NDVI 변화탐지 근거
+
+### 센서 능력 매칭 (sensor_capability_match) — 3건
+
+- **SAR × deforestation:** ent-evt-209 (NISAR L-band SAR 수관 관통 → 삼림벌채 canopy change) sarBoost +0.10 [0.85, 확정]
+- **TIRS+VIIRS × wildfire:** temp-evt-001 (GA Pineland Landsat TIRS + S-NPP VIIRS thermal) thermalBoost +0.10 [0.92, 확정 — 연속]
+- **multispectral × NDVI:** ent-evt-207 (Sentinel-2 MSI NDVI/NBR ashfall crop damage mapping) multispectralBoost +0.10 [0.90, 확정]
+
+### 공식 출처 신뢰 (official_source_trust, +0.15) — 11건
+
+- ent-evt-207 (PhilSA 공식 우주기관 + Sentinel-2) [0.95, 확정]
+- ent-evt-209 (NASA EO + Nature Communications 피어리뷰) [0.92, 확정]
+- ent-evt-210 (NASA Earth Observatory 공식) [0.92, 확정]
+- ent-evt-211 (NASA Earth Observatory 공식) [0.90, 확정]
+- ent-evt-212 (NASA EO + Science 학술지) [0.90, 확정]
+- ent-evt-127 (PAGASA + JMA + NOAA 공식) [0.95, 확정]
+- ent-evt-082 (PHIVOLCS + VAAC 공식) [0.95, 확정]
+- ent-evt-128 (CVGHM/PVMBG + VAAC Darwin 공식) [0.95, 확정]
+- ent-evt-202 (USGS HVO 공식 예보) [0.95, 확정]
+- temp-evt-001 (NASA EO + CIRA/RAMMB 계승) [0.90, 확정]
+- ent-evt-201 (ESA Copernicus 공식 복구 발표) [0.95, 확정]
+
+### 재해 우선순위 (disaster_severity_priority) — 3건
+
+- ent-evt-128 (Dukono 인명피해 지속, body recovery) +0.20 [0.95, 확정]
+- ent-evt-082 (Mayon 8km + PDC + lahar risk from Caloy) +0.20 [0.97, 확정]
+- ent-evt-207 (1,039ha rice loss — 식량안보 moderate) +0.10 [0.88, 확정]
+
+### 전후 비교 신뢰 (before_after_credibility, +0.10) — 1건
+
+- ent-evt-207 (PhilSA Sentinel-2 ashfall before/after NDVI change detection) [0.92, 확정]
+
+### 상업 위성 신뢰 (commercial_imagery_trust, +0.10) — 1건
+
+- ent-evt-208 (Planet Labs PlanetScope Thitu/Nanshan 건설 확인) [0.82, 확정]
+
+### 종합 신뢰도 산정 (최종 confidence cap 0.97)
+
+| 이벤트 ID | 이벤트명 | 기본 | 가산 | 최종 | 비고 |
+|-----------|---------|------|------|------|------|
+| ent-evt-207 | PhilSA ashfall crop damage | 0.90 | official+0.15, ba+0.10, multispectral+0.10, priority+0.10 | 0.97 (cap) | PhilSA 공식, cross-domain |
+| ent-evt-208 | Thitu/Nanshan construction | 0.85 | commercial+0.10 | 0.85 | Planet Labs 단일 출처 |
+| ent-evt-209 | NISAR deforestation 100d early | 0.85 | official+0.15, sar+0.10 | 0.97 (cap) | NASA + Nature Comms |
+| ent-evt-210 | Shivelyuch snowmelt | 0.88 | official+0.15 | 0.97 (cap) | NASA EO + Landsat 9 |
+| ent-evt-211 | Peter I Island vortex | 0.82 | official+0.15 | 0.92 | NASA EO + Landsat 8 |
+| ent-evt-212 | Tracy Arm landslide-tsunami | 0.85 | official+0.15 | 0.97 (cap) | NASA EO + Science |
+| ent-evt-213 | Fuego eruption | 0.45 | — | 0.45 | satellite_unverified |
+| ent-evt-082 update | Mayon VAAC 586 | 0.85 | multiSat+0.20, priority+0.20, partOfSeries | 0.97 (cap) | cascading 0.75 |
+| ent-evt-127 update | Caloy PAR entry | 0.80 | multiSat+0.20, official+0.15 | 0.97 (cap) | cascading trigger |
+| ent-evt-128 update | Dukono body recovery | 0.78 | official+0.15, priority+0.20 | 0.97 (cap) | severity HIGH |
+| temp-evt-001 update | GA Pineland 70% | 0.85 | multiSat+0.20, thermal+0.10, official+0.15 | 0.97 (cap) | peat underground |
+| ent-evt-202 update | Kilauea Ep47 forecast | 0.80 | multiSat+0.20, official+0.15, partOfSeries | 0.95 | 위성 직접 관측 한정 |
+| ent-evt-201 update | S2 데이터 복구 | 0.85 | official+0.15 | 0.97 (cap) | ESA 공식 |
+
+### 추론 통계 요약
+
+| 규칙 | 금일 발동 | 누적 (~05-09) | 평균 신뢰도 |
+|------|----------|------|-----------|
+| multi_satellite_confirmation | 4 | 35 | 0.92 |
+| temporal_progression / partOfSeries | 5 | 27 | 0.95 |
+| cascading_disaster | 2 (1 상향, 1 확정) | 8 | 0.80 |
+| sensor_capability_match | 3 | 43 | 0.89 |
+| official_source_trust | 11 | 49 | 0.94 |
+| commercial_imagery_trust | 1 | 8 | 0.82 |
+| analyst_org_trust | 0 | 8 | — |
+| disaster_severity_priority | 3 | 26 | 0.93 |
+| before_after_credibility | 1 | 29 | 0.92 |
+| **합계** | **30** | **233** | **0.91** |
+
+### 금일 한반도 GeoFocus — 0건
+
+금일 사이클에서 한반도/DMZ/동해/남해 관련 위성 관측 이벤트 없음. 보고서에 "금일 한반도 GeoFocus 신규 이벤트 특이사항 없음" 명시.
+
+### 금일 미적용/제외 추론
+
+- **korea_geo_focus:** 한반도 관련 이벤트 0건 — 미적용
+- **analyst_org_trust:** 독립 분석기관 신규 분석 없음 (Bellingcat/CSIS/Skytruth 금일 미참조)
+- **supersedes:** 금일 supersede 관계 없음 (모두 partOfSeries 또는 update)
+- **satellite_unverified:** ent-evt-213 (Fuego) — INSIVUMEH 지상 관측만, 위성 검증 불가, conf <0.50 cap 적용
+- **3+ 단계 추론:** cascading_disaster(Mayon→ashfall crop damage→Caloy lahar)가 최대 3단계 — 확정+잠정 혼합
+
+### 온톨로지 변경
+
+| 변경 유형 | 대상 | 근거 |
+|----------|------|------|
+| 새 Satellite | sat-nisar (NASA/ISRO, SSO, L-band SAR, 10m, 12-day, July 2025) (1건) | NISAR+Landsat 삼림벌채 조기탐지 Nature Communications |
+| 새 Location | ent-loc-051 (Mayon ashfall zone PH), ent-loc-052 (Thitu PH), ent-loc-053 (Nanshan PH), ent-loc-054 (Shivelyuch RU), ent-loc-055 (Peter I AQ), ent-loc-056 (Tracy Arm US), ent-loc-057 (Fuego GT) (7건) | 각 신규 이벤트 발생 지역 |
+| 새 Organization | org-insivumeh (Guatemala volcano/seismology institute) (1건) | Fuego 화산 분출 지상 관측 |
+| 새 Phenomenon | phen-atmo (atmospheric dynamics — von Karman vortex) (1건) | Peter I Island Landsat 8 폰카르만 소용돌이 — 기존 phen-air_pollution과 구분되는 대기 유체역학 현상 |
+| 새 Event | ent-evt-207~213 (7건) | 신규 이벤트 |
+| 이벤트 업데이트 | ent-evt-082/127/128/temp-001/202/201 (6건) | 후속 보도·수색·containment·예보·복구 반영 |
+
+config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5). 새 Phenomenon(phen-atmo)은 Phenomenon 클래스 인스턴스로 추가 (클래스 추가 아님).

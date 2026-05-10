@@ -1,0 +1,26 @@
+{
+  "id": "src-013",
+  "title": "Fuego 화산(과테말라) 분출 지속 — 화산재 937m, ashfall 다수 지역 (위성 미검증)",
+  "url": "https://www.volcanodiscovery.com/fuego/news/301927/Fuego-Guatemala-Volcano-Guatemala-activity-update-May-8-2026-Continuing-eruptionCite-this-Report.html",
+  "snippet": "Fuego continuing eruption May 7-8. Explosions with plumes rising 937m above vent. Ashfall in Santa Sofía, El Porvenir, Sangre de Cristo, San Pedro Yepocapa, Pochuta. Incandescent rockfalls, booms, shockwaves.",
+  "source_name": "VolcanoDiscovery / INSIVUMEH",
+  "language": "en",
+  "discovered_date": "2026-05-09",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "Fuego 화산 분출 지속. 위성 영상 직접 언급 없음(satellite_unverified). INSIVUMEH 지상 관측 기반.",
+  "before_after_available": false,
+  "satellite_unverified": true,
+  "entities": [
+    {"id": "ent-evt-307", "type": "Event", "name": "Fuego 화산 분출 지속 (과테말라, 2026-05-07~08)", "properties": {"phenomenon": "volcanic_eruption", "lat": 14.47, "lon": -90.88, "country": "GT", "observation_date": "2026-05-08", "plume_height_m": 937, "severity": "moderate", "confidence": 0.45}},
+    {"id": "ent-org-insivumeh", "type": "Organization", "name": "INSIVUMEH (Guatemala)", "properties": {"org_type": "met_service", "country": "GT"}},
+    {"id": "ent-loc-060", "type": "Location", "name": "Volcán de Fuego, Guatemala", "properties": {"lat": 14.47, "lon": -90.88, "country": "GT"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-307", "predicate": "analyzedBy", "object": "ent-org-insivumeh"},
+    {"subject": "ent-evt-307", "predicate": "locatedIn", "object": "ent-loc-060"},
+    {"subject": "ent-evt-307", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-307", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

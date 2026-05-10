@@ -1,0 +1,31 @@
+{
+  "id": "src-005",
+  "title": "필리핀 스프래틀리 Thitu·Nanshan 기지 건설 — Planet Labs 위성 확인",
+  "url": "https://www.rfa.org/english/southchinasea/2026/05/08/philippines-satellite-spratlys-infrastructure-upgrade/",
+  "snippet": "RFA May 8: Philippines actively upgrading Thitu Island (runway 1.5km extension for F-16 variants) and Nanshan Island (port facility 1B+ pesos). Planet Labs satellite imagery confirms construction ongoing as of May 2026. Runway extension over previously submerged area. New coast guard command base unveiled April 9.",
+  "source_name": "Radio Free Asia",
+  "language": "en",
+  "discovered_date": "2026-05-09",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 보고에 없던 필리핀 스프래틀리 기지 건설 위성 확인. Planet Labs 상업영상으로 진행 확인. 남중국해 군사화 맥락.",
+  "before_after_available": false,
+  "satellite_unverified": false,
+  "entities": [
+    {"id": "ent-evt-302", "type": "Event", "name": "필리핀 스프래틀리 Thitu·Nanshan 기지 건설 (Planet Labs 위성 확인)", "properties": {"phenomenon": "construction", "lat": 11.05, "lon": 114.28, "country": "PH", "observation_date": "2026-05-08", "severity": "moderate", "confidence": 0.85}},
+    {"id": "sat-planetscope", "type": "Satellite", "name": "PlanetScope"},
+    {"id": "ent-org-planet", "type": "Organization", "name": "Planet Labs", "properties": {"org_type": "commercial_satellite", "country": "US"}},
+    {"id": "ent-loc-thitu", "type": "Location", "name": "Thitu Island (Pag-asa), Spratly Islands", "properties": {"lat": 11.05, "lon": 114.28, "country": "PH"}},
+    {"id": "ent-loc-nanshan", "type": "Location", "name": "Nanshan Island (Lawak), Spratly Islands", "properties": {"lat": 10.72, "lon": 115.80, "country": "PH"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-302", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "ent-evt-302", "predicate": "analyzedBy", "object": "ent-org-planet"},
+    {"subject": "ent-evt-302", "predicate": "locatedIn", "object": "ent-loc-thitu"},
+    {"subject": "ent-evt-302", "predicate": "locatedIn", "object": "ent-loc-nanshan"},
+    {"subject": "ent-evt-302", "predicate": "manifests", "object": "phen-construction"},
+    {"subject": "ent-evt-302", "predicate": "inDomain", "object": "dom-defense"},
+    {"subject": "ent-evt-302", "predicate": "inCountry", "object": "co-ph"}
+  ]
+}

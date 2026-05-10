@@ -1,0 +1,30 @@
+{
+  "id": "src-004",
+  "title": "Dukono VAAC 226 — 수색 재개, 시신 수습, 실종 2명 (2026-05-09)",
+  "url": "https://www.volcanodiscovery.com/dukono/news/301922/vaac-advisory-2026-226.html",
+  "snippet": "Dukono VAAC Advisory 226 May 9: ash plume to FL150 (4,600m) moving N. Search operation resumed May 9 morning. Indonesian woman body recovered, confirmed dead. Two Singaporeans (age 30, 27) remain missing. Alert Level II maintained.",
+  "source_name": "VolcanoDiscovery / CNN",
+  "language": "en",
+  "discovered_date": "2026-05-09",
+  "tag": "update",
+  "related_report": "2026-05-08/src-002",
+  "related_item": "ent-evt-128",
+  "tag_reason": "Dukono 수색 재개 및 시신 수습은 5/8 src-002의 중요 후속. VAAC 226 ash plume FL150 지속.",
+  "before_after_available": false,
+  "satellite_unverified": false,
+  "entities": [
+    {"id": "ent-evt-128", "type": "Event", "name": "Dukono 화산 수색 재개 — VAAC 226, 시신 수습, 실종 2명 (2026-05-09)", "properties": {"phenomenon": "volcanic_eruption", "lat": 1.69, "lon": 127.88, "country": "ID", "observation_date": "2026-05-09", "severity": "high", "ash_altitude_fl": 150, "ash_altitude_m": 4600, "missing": 2, "body_recovered": 1, "alert_level": "II", "confidence": 0.93}},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "ent-org-cvghm", "type": "Organization", "name": "CVGHM/PVMBG (Indonesia)", "properties": {"org_type": "space_agency", "country": "ID"}},
+    {"id": "ent-org-bnpb", "type": "Organization", "name": "BNPB (Indonesian Disaster Agency)", "properties": {"org_type": "civil_protection", "country": "ID"}},
+    {"id": "ent-loc-049", "type": "Location", "name": "Mount Dukono, Halmahera, North Maluku, Indonesia", "properties": {"lat": 1.69, "lon": 127.88, "country": "ID"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-128", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-128", "predicate": "analyzedBy", "object": "ent-org-cvghm"},
+    {"subject": "ent-evt-128", "predicate": "analyzedBy", "object": "ent-org-bnpb"},
+    {"subject": "ent-evt-128", "predicate": "locatedIn", "object": "ent-loc-049"},
+    {"subject": "ent-evt-128", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-128", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

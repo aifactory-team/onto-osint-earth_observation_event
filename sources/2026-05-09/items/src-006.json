@@ -1,0 +1,32 @@
+{
+  "id": "src-006",
+  "title": "NASA EO — NISAR+Landsat 융합 삼림벌채 조기탐지 (아마존, 100일 단축)",
+  "url": "https://science.nasa.gov/earth/earth-observatory/faster-detection-of-forest-loss/",
+  "snippet": "NASA-funded scientists pioneered system combining NISAR L-band SAR (launched July 2025) with Landsat optical imagery using Bayesian algorithm. Identifies forest clearing up to 100 days earlier than optical-only. Pilot study in Brazilian Amazon showed 3-month improvement. NISAR scans Earth every 12 days. Published in Nature Communications.",
+  "source_name": "NASA Earth Observatory",
+  "language": "en",
+  "discovered_date": "2026-05-09",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "NISAR+Landsat 융합 삼림벌채 조기탐지 시스템은 신규 NASA EO 기사. 아마존 파일럿. EO 방법론 혁신.",
+  "before_after_available": false,
+  "satellite_unverified": false,
+  "entities": [
+    {"id": "ent-evt-303", "type": "Event", "name": "NISAR+Landsat 융합 삼림벌채 조기탐지 시스템 (아마존 파일럿)", "properties": {"phenomenon": "deforestation", "lat": -3.47, "lon": -62.22, "country": "BR", "observation_date": "2026-05-09", "improvement_days": 100, "confidence": 0.88}},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9"},
+    {"id": "sat-nisar", "type": "Satellite", "name": "NISAR"},
+    {"id": "sensor-oli", "type": "Sensor", "name": "OLI"},
+    {"id": "org-nasa", "type": "Organization", "name": "NASA", "properties": {"org_type": "space_agency", "country": "US"}},
+    {"id": "ent-loc-055", "type": "Location", "name": "Brazilian Amazon", "properties": {"lat": -3.47, "lon": -62.22, "country": "BR"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-303", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "ent-evt-303", "predicate": "observedBy", "object": "sat-nisar"},
+    {"subject": "ent-evt-303", "predicate": "usesSensor", "object": "sensor-oli"},
+    {"subject": "ent-evt-303", "predicate": "analyzedBy", "object": "org-nasa"},
+    {"subject": "ent-evt-303", "predicate": "locatedIn", "object": "ent-loc-055"},
+    {"subject": "ent-evt-303", "predicate": "manifests", "object": "phen-defor"},
+    {"subject": "ent-evt-303", "predicate": "inDomain", "object": "dom-human"}
+  ]
+}

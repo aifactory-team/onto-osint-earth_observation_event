@@ -1,0 +1,89 @@
+{
+  "date": "2026-05-09",
+  "collected_at": "2026-05-09T23:00:00Z",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 22,
+  "total_results": 78,
+  "expanded_keywords": ["Hagupit Caloy PAR", "Mayon VAAC ashfall PhilSA", "Dukono search rescue", "Kilauea Ep47 forecast", "Pineland Road peat bog", "Sentinel-2A 2C NorthC restored", "PhilSA Sentinel-2 crop exposure", "Philippines Spratly Thitu Nanshan Planet Labs", "NASA EO Shivelyuch Landsat 9", "Tracy Arm tsunami landscape", "NISAR forest loss detection", "Fuego Guatemala INSIVUMEH"],
+  "searches": [
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery wildfire flood volcano eruption May 2026", "language": "en", "timestamp": "2026-05-09T23:00:00Z", "result_count": 10, "results": [
+      {"title": "May 2026 eruption of Dukono - Wikipedia", "url": "https://en.wikipedia.org/wiki/May_2026_eruption_of_Dukono", "snippet": "Dukono volcano erupted May 8 killing 3, ash 10km", "source_name": "Wikipedia"},
+      {"title": "USGS Volcano Notice - Great Sitkin WATCH/ORANGE", "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-AVO-2026-05-08T19:51:37+00:00", "snippet": "Slow lava eruption continues in summit crater", "source_name": "USGS AVO"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Sentinel-2 Landsat satellite imagery disaster May 9 2026", "language": "en", "timestamp": "2026-05-09T23:01:00Z", "result_count": 10, "results": [
+      {"title": "Copernicus Sentinel-2A/2C Data Production Interruption on 7 May 2026", "url": "https://dataspace.copernicus.eu/news/2026-5-8-copernicus-sentinel-2a-and-sentinel-2c-data-production-interruption-7-may-2026", "snippet": "Fire at NorthC datacenter Almere impacted S2A/S2C production", "source_name": "Copernicus Data Space"},
+      {"title": "Copernicus Sentinel-2A/2C Temporary Data Delay on 7 May 2026", "url": "https://dataspace.copernicus.eu/news/2026-5-8-copernicus-sentinel-2a-and-sentinel-2c-temporary-data-delay-7-may-2026", "snippet": "Nominal performance restored for data acquired after 19:00 UTC", "source_name": "Copernicus Data Space"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "NASA Earth Observatory May 2026", "language": "en", "timestamp": "2026-05-09T23:02:00Z", "result_count": 10, "results": [
+      {"title": "Melting Snow Off Shivelyuch", "url": "https://science.nasa.gov/earth/earth-observatory/melting-snow-off-shivelyuch/", "snippet": "Landsat 9 OLI April 23 2026 Kamchatka volcano snow melt from volcanic deposits", "source_name": "NASA Earth Observatory"},
+      {"title": "A Sea of Spinning Clouds", "url": "https://science.nasa.gov/earth/earth-observatory/a-sea-of-spinning-clouds/", "snippet": "Peter I Island von Karman vortex streets Landsat 8 OLI Feb 11 2026", "source_name": "NASA Earth Observatory"},
+      {"title": "Tracy Arm's Post-Tsunami Landscape", "url": "https://science.nasa.gov/earth/earth-observatory/tracy-arms-post-tsunami-landscape/", "snippet": "Landslide-triggered tsunami Alaska, published May 6 Science paper", "source_name": "NASA Earth Observatory"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Copernicus EMS activation May 2026", "language": "en", "timestamp": "2026-05-09T23:03:00Z", "result_count": 10, "results": []},
+    {"method": "websearch", "engine": "built-in", "keyword": "tropical storm Hagupit Caloy Philippines May 2026", "language": "en", "timestamp": "2026-05-09T23:04:00Z", "result_count": 10, "results": [
+      {"title": "Tropical Storm Caloy in PAR, but not seen to affect Philippine weather", "url": "https://www.rappler.com/philippines/weather/tropical-storm-caloy-lpa-update-pagasa-forecast-may-9-2026-11pm/", "snippet": "Caloy entered PAR at 6pm May 9, 870km east NE Mindanao, 65 km/h, moving WNW at 20 km/h", "source_name": "Rappler"},
+      {"title": "Tropical Storm Hagupit enters PAR, bearing local name Caloy", "url": "https://newsinfo.inquirer.net/2225841/tropical-storm-hagupit-enters-par-given-local-name-caloy", "snippet": "Hagupit entered PAR Saturday May 9, third tropical cyclone for 2026", "source_name": "Inquirer"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Mayon volcano eruption update May 9 2026", "language": "en", "timestamp": "2026-05-09T23:05:00Z", "result_count": 10, "results": [
+      {"title": "Mayon VAAC Advisory 586 — eruption at 20260509/1138Z FL100", "url": "https://www.volcanodiscovery.com/mayon/news/301965/vaac-advisory-2026-586.html", "snippet": "Mayon eruption FL100 extd WSW reported May 9", "source_name": "VolcanoDiscovery"},
+      {"title": "Philippines: Mayon Volcano - May 2026", "url": "https://reliefweb.int/disaster/vo-2026-000065-phl", "snippet": "ReliefWeb disaster page for Mayon May 2026", "source_name": "ReliefWeb"},
+      {"title": "Mayon eruption affects 1,000 hectares of crops", "url": "https://www.manilatimes.net/2026/05/10/news/national/mayon-eruption-affects-1000-hectares-of-crops/2339986", "snippet": "1039 ha rice + 191 ha other crops affected by pyroclastic ashfall", "source_name": "Manila Times"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Dukono volcano eruption update May 9 2026 satellite", "language": "en", "timestamp": "2026-05-09T23:06:00Z", "result_count": 10, "results": [
+      {"title": "Dukono VAAC Advisory 226 — VA TO FL150 MOV N May 9", "url": "https://www.volcanodiscovery.com/dukono/news/301922/vaac-advisory-2026-226.html", "snippet": "Ash plume to FL150 (4600m) on May 9", "source_name": "VolcanoDiscovery"},
+      {"title": "Mount Dukono: Multiple hikers killed, others rescued (CNN)", "url": "https://www.cnn.com/2026/05/08/asia/indonesia-mount-dukono-eruption-intl-hnk", "snippet": "3 dead 5 injured, search resumed May 9, Indonesian woman body recovered", "source_name": "CNN"},
+      {"title": "8 May 2026 Volcano News", "url": "https://volcanoearth.wordpress.com/2026/05/08/8-may-2026/", "snippet": "Daily volcano summary May 8 2026", "source_name": "volcanoearth"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery deforestation mining oil spill May 2026", "language": "en", "timestamp": "2026-05-09T23:07:00Z", "result_count": 10, "results": [
+      {"title": "Pemex-linked Gulf oil spill may still be spreading — satellite images", "url": "https://www.tpr.org/environment/2026-05-07/pemex-linked-gulf-oil-spill-may-still-be-spreading-three-months-later-satellite-images-suggest", "snippet": "Sentinel-1 radar and Sentinel-2 optical show elongated dark patches near Cantarell complex early May", "source_name": "TPR"},
+      {"title": "Faster Detection of Forest Loss — NASA Science", "url": "https://science.nasa.gov/earth/earth-observatory/faster-detection-of-forest-loss/", "snippet": "NISAR L-band + Landsat fusion detects deforestation 100 days faster", "source_name": "NASA Earth Observatory"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "위성영상 산불 홍수 화산 재해 2026년 5월", "language": "ko", "timestamp": "2026-05-09T23:08:00Z", "result_count": 10, "results": [
+      {"title": "국토위성 영상으로 대형 산불 피해지역 신속 복구 지원", "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148941842", "snippet": "CAS500-1 위성영상 기반 긴급 공간정보 제공", "source_name": "대한민국 정책브리핑"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery military buildup defense OSINT May 2026", "language": "en", "timestamp": "2026-05-09T23:09:00Z", "result_count": 10, "results": [
+      {"title": "MizarVision: Chinese AI Startup Mapping US Military Assets in Real Time", "url": "https://breached.company/mizarvision-chinese-ai-satellite-us-military-tracking-2026/", "snippet": "Chinese AI satellite firm mapping US military positions since Feb 2026", "source_name": "Breached"},
+      {"title": "Nowhere to hide: Iran war spotlights military challenges posed by space-based remote sensing", "url": "https://breakingdefense.com/2026/04/nowhere-to-hide-iran-war-spotlights-military-challenges-posed-by-space-based-remote-sensing/", "snippet": "Commercial satellite imagery changing US military operations", "source_name": "Breaking Defense"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Kilauea volcano update May 9 2026 eruption", "language": "en", "timestamp": "2026-05-09T23:10:00Z", "result_count": 10, "results": [
+      {"title": "Kilauea Volcano Updates — USGS HVO", "url": "https://www.usgs.gov/volcanoes/kilauea/volcano-updates", "snippet": "Eruption paused, summit inflation resumed 6.9 microradians, Ep47 window May 12-17", "source_name": "USGS HVO"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Georgia wildfire Pineland fire update May 9 2026", "language": "en", "timestamp": "2026-05-09T23:11:00Z", "result_count": 10, "results": [
+      {"title": "UPDATE: GA Forestry says wildfires still burning but mostly contained", "url": "https://www.local3news.com/local-news/update-ga-forestry-commission-says-wildfires-still-burning-but-mostly-contained/article_bcbfcf6b-24de-48b8-a7c1-d15adb8a773d.html", "snippet": "Pineland Road 32,000+ ac 70% contained, peat bog deep fire challenge", "source_name": "Local3 News"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "methane satellite MethaneSAT Sentinel-5P TROPOMI plume May 2026", "language": "en", "timestamp": "2026-05-09T23:12:00Z", "result_count": 10, "results": [
+      {"title": "Satellite data reveal rising methane levels — C&EN", "url": "https://cen.acs.org/environment/atmospheric-chemistry/Satellite-data-reveal-rising-methane/104/web/2026/04", "snippet": "Harvard study TROPOMI + GOSAT methane tracking 2019-2024", "source_name": "C&EN"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "KOMPSAT 위성 한반도 관측 2026년 5월", "language": "ko", "timestamp": "2026-05-09T23:13:00Z", "result_count": 10, "results": [
+      {"title": "차세대중형위성 2호, 한반도 첫 교신 성공", "url": "https://www.newspim.com/news/view/20260503000194", "snippet": "CAS500-2 발사 성공 May 3, 스발바르 첫 교신", "source_name": "뉴스핌"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "glacier retreat sea level ice satellite May 2026", "language": "en", "timestamp": "2026-05-09T23:14:00Z", "result_count": 10, "results": [
+      {"title": "Record-Setting Retreat of Hektoria Glacier — NASA Science", "url": "https://science.nasa.gov/earth/earth-observatory/record-setting-retreat-of-hektoria-glacier/", "snippet": "8 km retreat in two months, fastest modern ice retreat", "source_name": "NASA Earth Observatory"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "CSIS Beyond Parallel North Korea satellite imagery May 2026", "language": "en", "timestamp": "2026-05-09T23:15:00Z", "result_count": 10, "results": [
+      {"title": "CSIS Beyond Parallel — Sinpo South Shipyard SLBM test", "url": "https://beyondparallel.csis.org/", "snippet": "Recent satellite imagery of Sinpo secure boat basin since SLBM test May 7", "source_name": "CSIS Beyond Parallel"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "NASA Earth Observatory Shivelyuch Tracy Arm Peter Island May 2026 satellite", "language": "en", "timestamp": "2026-05-09T23:16:00Z", "result_count": 10, "results": [
+      {"title": "Tracy Arm's Post-Tsunami Landscape", "url": "https://science.nasa.gov/earth/earth-observatory/tracy-arms-post-tsunami-landscape/", "snippet": "Published May 6 2026, Science paper on landslide-triggered tsunami 2025", "source_name": "NASA EO"},
+      {"title": "Melting Snow Off Shivelyuch", "url": "https://science.nasa.gov/earth/earth-observatory/melting-snow-off-shivelyuch/", "snippet": "Published May 7 2026, Landsat 9 OLI April 23 volcanic snow melt", "source_name": "NASA EO"},
+      {"title": "A Sea of Spinning Clouds", "url": "https://science.nasa.gov/earth/earth-observatory/a-sea-of-spinning-clouds/", "snippet": "Published May 8 2026, Peter I Island Landsat 8 OLI vortex streets", "source_name": "NASA EO"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "South China Sea satellite military island May 2026", "language": "en", "timestamp": "2026-05-09T23:17:00Z", "result_count": 10, "results": [
+      {"title": "Satellite imagery shows Philippine construction on two islands in disputed Spratlys", "url": "https://www.rfa.org/english/southchinasea/2026/05/08/philippines-satellite-spratlys-infrastructure-upgrade/", "snippet": "Planet Labs imagery confirms Thitu runway extension + Nanshan port ongoing May 2026", "source_name": "Radio Free Asia"},
+      {"title": "Satellite Photo Shows US Aircraft Carrier in Contested Waters", "url": "https://www.newsweek.com/satellite-photo-shows-us-aircraft-carrier-in-contested-waters-10917326", "snippet": "Satellite photo of US carrier in SCS", "source_name": "Newsweek"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "UNOSAT satellite humanitarian crisis refugee May 2026", "language": "en", "timestamp": "2026-05-09T23:18:00Z", "result_count": 10, "results": [
+      {"title": "Middle East crisis puts aid further out of reach for millions", "url": "https://www.globalsecurity.org/military/library/news/2026/05/mil-260501-unnews01.htm", "snippet": "May 1 2026 UN report on Middle East humanitarian impacts", "source_name": "GlobalSecurity/UN"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "PhilSA satellite crop ashfall Mayon Sentinel-2 May 2026", "language": "en", "timestamp": "2026-05-09T23:19:00Z", "result_count": 10, "results": [
+      {"title": "Satellite data show crop areas affected by ashfall from Mayon — PhilSA", "url": "https://philsa.gov.ph/news/satellite-data-show-crop-areas-affected-by-ashfall-from-mayon/", "snippet": "Sentinel-2 change detection 3 May vs 28 April: 1039 ha rice + 191 ha other crops, 8544 ha total ashfall", "source_name": "PhilSA"},
+      {"title": "Satellite data show barangays affected by ashfall from Mayon — PhilSA", "url": "https://philsa.gov.ph/news/satellite-data-show-barangays-affected-by-ashfall-from-mayon/", "snippet": "PhilSA barangay-level ashfall mapping using Sentinel-2", "source_name": "PhilSA"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Philippines Spratly Thitu Nanshan satellite imagery construction May 8 9 2026", "language": "en", "timestamp": "2026-05-09T23:20:00Z", "result_count": 10, "results": [
+      {"title": "Satellite imagery shows Philippine construction on two islands in disputed Spratlys (GlobalSecurity)", "url": "https://www.globalsecurity.org/military/library/news/2026/05/mil-260508-rfa01.htm", "snippet": "Thitu runway 1.5km extension + Nanshan port, Planet Labs confirmed", "source_name": "GlobalSecurity/RFA"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Fuego Guatemala volcano eruption satellite May 8 2026", "language": "en", "timestamp": "2026-05-09T23:21:00Z", "result_count": 10, "results": [
+      {"title": "Fuego activity update May 8 2026 — Continuing eruption", "url": "https://www.volcanodiscovery.com/fuego/news/301927/Fuego-Guatemala-Volcano-Guatemala-activity-update-May-8-2026-Continuing-eruptionCite-this-Report.html", "snippet": "Explosions with plumes 937m above vent, ashfall reported in multiple towns", "source_name": "VolcanoDiscovery"}
+    ]}
+  ]
+}

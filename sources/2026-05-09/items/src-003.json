@@ -1,0 +1,34 @@
+{
+  "id": "src-003",
+  "title": "PhilSA Sentinel-2 변화탐지 — Mayon 화산재 농작물 피해 매핑 (1,039 ha 벼)",
+  "url": "https://philsa.gov.ph/news/satellite-data-show-crop-areas-affected-by-ashfall-from-mayon/",
+  "snippet": "PhilSA produced crop exposure map using Sentinel-2 change detection (3 May vs 28 April 2026). 1,039 ha rice + 191 ha other crops within Estimated Ash Deposit Extent. Total ashfall coverage 8,544 ha (~85.44 sq km), area half the size of Quezon City. Cloud cover limits full mapping.",
+  "source_name": "PhilSA (Philippine Space Agency)",
+  "language": "en",
+  "discovered_date": "2026-05-09",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "PhilSA의 Sentinel-2 변화탐지 기반 Mayon ashfall 작물피해 매핑은 신규 분석. 농업·재해 교차 도메인 이벤트.",
+  "before_after_available": true,
+  "satellite_unverified": false,
+  "entities": [
+    {"id": "ent-evt-301", "type": "Event", "name": "Mayon 화산재 농작물 피해 매핑 — Sentinel-2 변화탐지 (PhilSA)", "properties": {"phenomenon": ["ndvi_change", "volcanic_eruption"], "lat": 13.26, "lon": 123.69, "country": "PH", "observation_date": "2026-05-03", "baseline_date": "2026-04-28", "rice_affected_ha": 1039, "other_crops_ha": 191, "total_ashfall_ha": 8544, "confidence": 0.90}},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sensor-msi", "type": "Sensor", "name": "MSI"},
+    {"id": "ent-org-philsa", "type": "Organization", "name": "PhilSA (Philippine Space Agency)", "properties": {"org_type": "space_agency", "country": "PH"}},
+    {"id": "dp-s2-l2a", "type": "DataProduct", "name": "Sentinel-2 L2A change detection"},
+    {"id": "ent-loc-mayon", "type": "Location", "name": "Mount Mayon ashfall zone, Albay, Philippines", "properties": {"lat": 13.26, "lon": 123.69, "country": "PH"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-301", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-301", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "ent-evt-301", "predicate": "usesDataProduct", "object": "dp-s2-l2a"},
+    {"subject": "ent-evt-301", "predicate": "analyzedBy", "object": "ent-org-philsa"},
+    {"subject": "ent-evt-301", "predicate": "locatedIn", "object": "ent-loc-mayon"},
+    {"subject": "ent-evt-301", "predicate": "manifests", "object": "phen-ndvi"},
+    {"subject": "ent-evt-301", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-301", "predicate": "inDomain", "object": "dom-agri-marine"},
+    {"subject": "ent-evt-301", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

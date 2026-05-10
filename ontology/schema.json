@@ -338,6 +338,34 @@
       "target": "ent-loc-046~050",
       "reason": "Almere NL(ent-loc-046, NorthC datacenter fire — Sentinel-2 프로덕션 장애), Dukono Halmahera ID(ent-loc-047, 화산 3명 사망), Great Sitkin AK(ent-loc-048, lava dome WATCH), Shishaldin AK(ent-loc-049, SO2/seismicity ADVISORY), Xingu Indigenous Territory BR(ent-loc-050, 496k ha 금채굴) — 5개 신규 Location.",
       "source_ids": ["src-001", "src-002", "src-005", "src-006", "src-008"]
+    },
+    {
+      "date": "2026-05-09",
+      "action": "add_satellite",
+      "target": "sat-nisar",
+      "reason": "NISAR (NASA-ISRO SAR, L-band, SSO, 10m, 12일 재방문) — 2025년 7월 발사, 운영 중. NASA EO 'Faster Detection of Forest Loss' 기사에서 Landsat과 융합하여 삼림벌채 100일 조기 탐지 시스템 참조. ent-evt-306 출처.",
+      "source_ids": ["src-006"]
+    },
+    {
+      "date": "2026-05-09",
+      "action": "add_organization",
+      "target": "org-insivumeh",
+      "reason": "INSIVUMEH (Instituto Nacional de Sismología, Vulcanología, Meteorología e Hidrología, Guatemala) — Fuego 화산 분출 지속 보고(ent-evt-313). 위성 미확인 지상 관측 기관.",
+      "source_ids": ["src-013"]
+    },
+    {
+      "date": "2026-05-09",
+      "action": "add_location",
+      "target": "ent-loc-051~055",
+      "reason": "Thitu Island/Pag-asa(PH, 11.05/114.28 — Spratly 활주로 건설), Nanshan Island/Lawak(PH, 10.73/114.35 — Spratly 항만 건설), Shivelyuch Kamchatka(RU, 56.65/161.36 — NASA EO 화산 눈녹음), Peter I Island(AQ, -68.86/-90.58 — NASA EO 폰카르만), Tracy Arm Alaska(US, 57.85/-133.6 — NASA EO 산사태-쓰나미) — 5개 신규 Location.",
+      "source_ids": ["src-005", "src-007", "src-008", "src-009"]
+    },
+    {
+      "date": "2026-05-09",
+      "action": "add_event_batch",
+      "target": "ent-evt-303/305/306/307/308/309 + updates to evt-082, evt-127, evt-128, evt-201, evt-202, temp-evt-001",
+      "reason": "신규 6건: PhilSA Mayon ashfall 작물피해 Sentinel-2 변화탐지(303, cross-domain agri+disaster), 필리핀 스프래틀리 건설 Planet Labs(305), NISAR+Landsat 삼림벌채 조기탐지(306), Shivelyuch 화산 눈녹음 Landsat 9(307), Peter I Island 폰카르만 Landsat 8(308), Tracy Arm 산사태-쓰나미 Landsat(309). 미검증 1건: Fuego 화산 GT(313, satellite_unverified). 업데이트 6건: Mayon VAAC 586 SO2 2785(082), Caloy PAR 진입(127), Dukono 수색 재개 1 시신(128), S2A/2C 부분 복구(201), Kilauea 팽창 6.9μrad(202), GA Pineland 70%(temp-001).",
+      "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009", "src-010", "src-011", "src-012", "src-013"]
     }
   ]
 }

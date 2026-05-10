@@ -1,0 +1,30 @@
+{
+  "id": "src-012",
+  "title": "Sentinel-2A/2C 데이터 생산 부분 복구 — 19:00 UTC 이후 정상, 데이터 손실 없음",
+  "url": "https://dataspace.copernicus.eu/news/2026-5-8-copernicus-sentinel-2a-and-sentinel-2c-data-production-interruption-7-may-2026",
+  "snippet": "NorthC datacenter fire Almere NL. Data production unavailable since 08:30 UTC May 7. Nominal performance restored for data acquired after 19:00 UTC. Data during interruption not lost, will be published once full production resumes. No data loss for customers thanks to backup.",
+  "source_name": "Copernicus Data Space",
+  "language": "en",
+  "discovered_date": "2026-05-09",
+  "tag": "update",
+  "related_report": "2026-05-08/src-001",
+  "related_item": "ent-evt-201",
+  "tag_reason": "부분 복구(19:00 UTC 이후 정상)는 src-001(5/8)의 중요 후속. 데이터 손실 없음 확인.",
+  "before_after_available": false,
+  "satellite_unverified": false,
+  "entities": [
+    {"id": "ent-evt-201", "type": "Event", "name": "Sentinel-2A/2C 데이터 부분 복구 — NorthC 화재 후 (2026-05-09)", "properties": {"phenomenon": "satellite_operations", "lat": 52.39, "lon": 5.22, "country": "NL", "observation_date": "2026-05-09", "restoration_after_utc": "19:00", "data_loss": false, "severity": "low", "confidence": 0.95}},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sat-sentinel2c", "type": "Satellite", "name": "Sentinel-2C"},
+    {"id": "sensor-msi", "type": "Sensor", "name": "MSI"},
+    {"id": "org-esa", "type": "Organization", "name": "ESA"},
+    {"id": "ent-loc-051", "type": "Location", "name": "NorthC Datacenter, Almere, Netherlands", "properties": {"lat": 52.39, "lon": 5.22, "country": "NL"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-201", "predicate": "affects", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-201", "predicate": "affects", "object": "sat-sentinel2c"},
+    {"subject": "ent-evt-201", "predicate": "locatedIn", "object": "ent-loc-051"},
+    {"subject": "ent-evt-201", "predicate": "reportedBy", "object": "org-esa"},
+    {"subject": "ent-evt-201", "predicate": "inDomain", "object": "dom-climate"}
+  ]
+}

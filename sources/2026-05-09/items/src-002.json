@@ -1,0 +1,32 @@
+{
+  "id": "src-002",
+  "title": "Mayon VAAC Advisory 586 — FL100 화산재, SO2 2,785 t/d, PDC 2회 (2026-05-09)",
+  "url": "https://www.volcanodiscovery.com/mayon/news/301965/vaac-advisory-2026-586.html",
+  "snippet": "Mayon eruption at 20260509/1138Z FL100 extd WSW. Lava flow lengths: Basud 3.8km, Bonga 3.2km, Mi-isi 1.6km. SO2 2,785 t/d (May 8). 27 volcanic earthquakes, 318 rockfall events, 2 PDC signals. Danger zone 8km maintained.",
+  "source_name": "VolcanoDiscovery",
+  "language": "en",
+  "discovered_date": "2026-05-09",
+  "tag": "update",
+  "related_report": "2026-05-08/src-004",
+  "related_item": "ent-evt-082",
+  "tag_reason": "Mayon 분출 지속(VAAC 586), SO2 2785 t/d, PDC 2회, 위험구역 8km 유지. 이전 src-004(5/8)의 후속.",
+  "before_after_available": false,
+  "satellite_unverified": false,
+  "entities": [
+    {"id": "ent-evt-082", "type": "Event", "name": "Mayon VAAC 586 — FL100 화산재, PDC 2회 (2026-05-09)", "properties": {"phenomenon": "volcanic_eruption", "lat": 13.26, "lon": 123.69, "country": "PH", "observation_date": "2026-05-09T11:38:00Z", "severity": "high", "so2_tons_per_day": 2785, "volcanic_earthquakes": 27, "rockfall_events": 318, "pdc_signals": 2, "danger_zone_km": 8, "lava_flow_basud_km": 3.8, "lava_flow_bonga_km": 3.2, "lava_flow_miisi_km": 1.6, "confidence": 0.93}},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sensor-msi", "type": "Sensor", "name": "MSI"},
+    {"id": "org-phivolcs", "type": "Organization", "name": "PHIVOLCS"},
+    {"id": "ent-loc-mayon", "type": "Location", "name": "Mount Mayon, Albay, Philippines", "properties": {"lat": 13.26, "lon": 123.69, "country": "PH"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-082", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "ent-evt-082", "predicate": "analyzedBy", "object": "org-phivolcs"},
+    {"subject": "ent-evt-082", "predicate": "locatedIn", "object": "ent-loc-mayon"},
+    {"subject": "ent-evt-082", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-082", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

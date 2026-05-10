@@ -1,0 +1,30 @@
+{
+  "id": "src-011",
+  "title": "Kilauea 분출 일시 중단, 팽창 재개 6.9μrad — Ep47 예측창 5/12-17 유지",
+  "url": "https://www.usgs.gov/volcanoes/kilauea/volcano-updates",
+  "snippet": "Eruption paused since May 5 5:22pm HST. Summit inflation resumed, tiltmeter recording ~6.9 microradians. Ep47 forecast window May 12-17. Aviation Color Code YELLOW. Strong glow from both Halemaʻumaʻu eruptive vents.",
+  "source_name": "USGS HVO",
+  "language": "en",
+  "discovered_date": "2026-05-09",
+  "tag": "update",
+  "related_report": "2026-05-08/src-005",
+  "related_item": "ent-evt-202",
+  "tag_reason": "Kilauea 팽창 재개(6.9μrad) 및 Ep47 예측창 유지는 src-005(5/8)의 후속.",
+  "before_after_available": false,
+  "satellite_unverified": false,
+  "entities": [
+    {"id": "ent-evt-202", "type": "Event", "name": "Kilauea 분출 일시 중단 + Ep47 팽창 재개 (2026-05-09)", "properties": {"phenomenon": "volcanic_eruption", "lat": 19.41, "lon": -155.28, "country": "US", "observation_date": "2026-05-09", "forecast_window": "2026-05-12/2026-05-17", "tiltmeter_microrad": 6.9, "alert_level": "ADVISORY/YELLOW", "eruption_paused_since": "2026-05-05T17:22:00-10:00", "confidence": 0.88}},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9"},
+    {"id": "ent-org-hvo", "type": "Organization", "name": "USGS Hawaiian Volcano Observatory (HVO)", "properties": {"org_type": "research", "country": "US"}},
+    {"id": "ent-loc-053", "type": "Location", "name": "Kilauea summit, Halemaumau, Hawaii, US", "properties": {"lat": 19.41, "lon": -155.28, "country": "US"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "ent-evt-202", "predicate": "analyzedBy", "object": "ent-org-hvo"},
+    {"subject": "ent-evt-202", "predicate": "locatedIn", "object": "ent-loc-053"},
+    {"subject": "ent-evt-202", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-202", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}
