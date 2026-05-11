@@ -1,0 +1,42 @@
+{
+  "date": "2026-05-10",
+  "new_triples": [
+    {"subject": "ent-evt-401", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-010", "date": "2026-05-10", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-401", "predicate": "inDomain", "object": "dom-humanitarian", "source_id": "src-010", "date": "2026-05-10", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-401", "predicate": "inCountry", "object": "co-ph", "source_id": "src-010", "date": "2026-05-10", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-401", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-010", "date": "2026-05-10", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-401", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-010", "date": "2026-05-10", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-401", "predicate": "analyzedBy", "object": "org-ocha", "source_id": "src-010", "date": "2026-05-10", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-401", "predicate": "analyzedBy", "object": "ent-org-philsa", "source_id": "src-010", "date": "2026-05-10", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-401", "predicate": "triggeredBy", "object": "ent-evt-082", "source_id": "src-010", "date": "2026-05-10", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-401", "predicate": "usesSensor", "object": "sensor-msi", "source_id": "src-010", "date": "2026-05-10", "confidence": 0.85, "type": "explicit"}
+  ],
+  "updated_triples": [
+    {"subject": "ent-evt-127", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-001", "date": "2026-05-10", "confidence": 0.85, "type": "explicit", "note": "Caloy TD weakening update"},
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-002", "date": "2026-05-10", "confidence": 0.92, "type": "explicit", "note": "Mayon VAAC 589 day 125"},
+    {"subject": "ent-evt-303", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-003", "date": "2026-05-10", "confidence": 0.90, "type": "explicit", "note": "Mayon crop damage 1039ha confirmed"},
+    {"subject": "ent-evt-128", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-004", "date": "2026-05-10", "confidence": 0.95, "type": "explicit", "note": "Dukono rescue complete, 3 dead"},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-005", "date": "2026-05-10", "confidence": 0.88, "type": "explicit", "note": "Kilauea Ep47 window 5/12-15"},
+    {"subject": "ent-evt-203", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_id": "src-006", "date": "2026-05-10", "confidence": 0.82, "type": "explicit", "note": "Great Sitkin lava dome continues"},
+    {"subject": "ent-evt-204", "predicate": "usesSensor", "object": "sensor-tropomi", "source_id": "src-007", "date": "2026-05-10", "confidence": 0.78, "type": "explicit", "note": "Shishaldin SO2 satellite detected"},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-landsat8", "source_id": "src-008", "date": "2026-05-10", "confidence": 0.88, "type": "explicit", "note": "GA Pineland 70% contained 32575ac"},
+    {"subject": "ent-evt-201", "predicate": "inDomain", "object": "dom-climate", "source_id": "src-009", "date": "2026-05-10", "confidence": 0.92, "type": "explicit", "note": "S2A/2C nominal restored"}
+  ],
+  "inferred_triples": [
+    {"subject": "ent-evt-401", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.85, "type": "inferred", "note": "Mayon humanitarian: Sentinel-2A (ESA) + Himawari-9 (JMA) independent operators"},
+    {"subject": "ent-evt-401", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.85, "type": "inferred", "note": "UN OCHA (un_body) formal disaster registration"},
+    {"subject": "ent-evt-401", "predicate": "cascading_disaster", "object": "ent-evt-082", "rule": "cascading_disaster", "confidence": 0.90, "type": "inferred", "note": "Mayon eruption (disaster) → humanitarian crop damage within same location"},
+    {"subject": "ent-evt-204", "predicate": "tracegasBoost", "object": "+0.15", "rule": "sensor_capability_match_tracegas", "confidence": 0.78, "type": "inferred", "note": "Shishaldin SO2 observed via TROPOMI trace_gas sensor"},
+    {"subject": "ent-evt-082", "predicate": "partOfSeries", "object": "ent-evt-082", "rule": "temporal_progression", "confidence": 0.92, "type": "inferred", "note": "Mayon 125-day continuous eruption, same phenomenon+location, daily updates"},
+    {"subject": "ent-evt-127", "predicate": "partOfSeries", "object": "ent-evt-127", "rule": "temporal_progression", "confidence": 0.85, "type": "inferred", "note": "Caloy lifecycle: TS→TD→remnant low progression"},
+    {"subject": "ent-evt-128", "predicate": "partOfSeries", "object": "ent-evt-128", "rule": "temporal_progression", "confidence": 0.95, "type": "inferred", "note": "Dukono rescue progression: rescue ops → body recovery → closure"},
+    {"subject": "ent-evt-202", "predicate": "partOfSeries", "object": "ent-evt-202", "rule": "temporal_progression", "confidence": 0.88, "type": "inferred", "note": "Kilauea episodic eruption series, Ep46 ended → Ep47 forecast"},
+    {"subject": "temp-evt-001", "predicate": "partOfSeries", "object": "temp-evt-001", "rule": "temporal_progression", "confidence": 0.88, "type": "inferred", "note": "GA Pineland fire ongoing since Apr 19, daily progression"}
+  ],
+  "stats": {
+    "new_nodes": 2,
+    "new_edges": 9,
+    "updated_edges": 9,
+    "inferred_edges": 9
+  }
+}

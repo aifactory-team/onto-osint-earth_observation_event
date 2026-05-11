@@ -1,0 +1,26 @@
+{
+  "id": "src-004",
+  "title": "Dukono 화산 수색 완료 — 싱가포르인 2명 시신 수습, 총 사망 3명 (인도네시아)",
+  "url": "https://www.washingtonpost.com/world/2026/05/10/indonesia-mount-dukono-eruption-hikers-search/174a2542-4c66-11f1-97e7-22c6c29ff0d8_story.html",
+  "snippet": "Bodies of two Singaporean hikers (aged 30 and 27) retrieved from Mount Dukono on May 10. Combined with Indonesian woman retrieved May 9, total death toll is 3. All 20 hikers accounted for (17 rescued, 3 dead). Rescue involving ~100 personnel completed despite ongoing volcanic activity. Hikers had ascended in defiance of safety restrictions. Singapore MFA confirms identities.",
+  "source_name": "Washington Post",
+  "language": "en",
+  "discovered_date": "2026-05-10",
+  "tag": "update",
+  "related_report": "2026-05-09/src-004",
+  "related_item": "ent-evt-128",
+  "tag_reason": "수색 완료 + 싱가포르인 2명 시신 수습으로 사건 종결 — 이전 보고(1명 수습, 2명 수색중) 대비 최종 결과",
+  "entities": [
+    {"id": "ent-evt-128", "type": "Event", "name": "Dukono 화산 폭발 등산객 사망 (2026-05-08)", "properties": {"phenomenon": "volcanic_eruption", "domain": "dom-disaster", "lat": 1.69, "lon": 127.88, "country": "ID", "severity": "high", "observation_date": "2026-05-10", "before_after_available": false, "confidence": 0.95}},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "ent-org-cvghm", "type": "Organization", "name": "CVGHM/PVMBG"},
+    {"id": "ent-org-bnpb", "type": "Organization", "name": "BNPB"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-128", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-128", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-128", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "ent-evt-128", "predicate": "inCountry", "object": "co-id"},
+    {"subject": "ent-evt-128", "predicate": "analyzedBy", "object": "ent-org-cvghm"}
+  ]
+}

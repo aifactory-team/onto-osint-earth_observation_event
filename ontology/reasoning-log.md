@@ -1065,3 +1065,50 @@ config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5)
 | 이벤트 업데이트 | ent-evt-082/127/128/temp-001/202/201 (6건) | 후속 보도·수색·containment·예보·복구 반영 |
 
 config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5). 새 Phenomenon(phen-atmo)은 Phenomenon 클래스 인스턴스로 추가 (클래스 추가 아님).
+
+## 2026-05-10 추론 결과
+
+### multi_satellite_confirmation (다중 위성 교차검증) — 1건
+
+- **추론 #1:** ent-evt-401 (Mayon humanitarian GLIDE) — observedBy Sentinel-2A (ESA) AND Himawari-9 (JMA) → multiSatBoost +0.20 [confidence 0.85, 확정]
+
+### sensor_capability_match (센서-현상 적합성) — 1건
+
+- **tracegasBoost:** ent-evt-204 (Shishaldin SO2) — usesSensor TROPOMI (trace_gas) AND phenomenon volcanic_eruption → tracegasBoost +0.15 [confidence 0.78, 확정]
+
+### cascading_disaster (인과 사슬) — 1건
+
+- **추론 #1:** ent-evt-082 (Mayon 화산 분출, Disaster) → ent-evt-401 (Mayon humanitarian GLIDE 등록) — 같은 위치(Albay PH), 화산 분출이 직접 인과로 작물피해·건강피해·인도주의 위기 초래. triggeredBy 관계 확정. [confidence 0.90, 확정]
+
+### official_source_trust (공식 기관 신뢰도) — 1건
+
+- **추론 #1:** ent-evt-401 — analyzedBy org-ocha (UN OCHA, un_body) → officialBoost +0.15 [confidence 0.85, 확정]
+
+### temporal_progression (시계열 추적) — 5건
+
+- ent-evt-082 (Mayon 125일 연속 분출) — partOfSeries 유지 [0.92]
+- ent-evt-127 (Caloy TS→TD→remnant low) — partOfSeries 유지 [0.85]
+- ent-evt-128 (Dukono rescue 1→3 시신 수습, 완료) — partOfSeries 유지 [0.95]
+- ent-evt-202 (Kilauea Ep46→pause→Ep47 5/12~15) — partOfSeries 유지 [0.88]
+- temp-evt-001 (GA Pineland 4/19→5/10, 32575ac 70%) — partOfSeries 유지 [0.88]
+
+### 금일 추론 요약
+
+| 규칙 | 적용 | 트리플 수 | 비고 |
+|------|------|----------|------|
+| multi_satellite_confirmation | 1건 | 1 | Mayon humanitarian S2A+Himawari |
+| sensor_capability_match_tracegas | 1건 | 1 | Shishaldin TROPOMI SO2 |
+| cascading_disaster | 1건 | 1 | Mayon eruption→humanitarian |
+| official_source_trust | 1건 | 1 | OCHA un_body |
+| temporal_progression | 5건 | 5 | 기존 이벤트 시계열 유지 |
+| **합계** | **9건** | **9 inferred** | |
+
+### 온톨로지 변경 요약
+
+| 변경 유형 | 대상 | 근거 |
+|----------|------|------|
+| 새 Organization | org-ocha (UN OCHA / ReliefWeb, un_body, INTL) (1건) | Mayon GLIDE 등록, 인도주의 도메인 첫 참조 |
+| 새 Event | ent-evt-401 (Mayon humanitarian GLIDE VO-2026-000065-PHL) (1건) | ReliefWeb 정식 재해 등록 |
+| 이벤트 업데이트 | ent-evt-082/127/128/202/203/204/temp-001/201/303 (9건) | 후속 보도·수색완료·TD약화·예보·containment·복구·작물 확인 반영 |
+
+config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5).

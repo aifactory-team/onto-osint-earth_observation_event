@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "description": "OSINT 온톨로지 스키마 — config/osint-config.json의 seed로부터 초기화되고, 매일 파이프라인 실행 시 자동 확장된다. 도메인: 위성영상으로 관측 가능한 지구상 이벤트 (Earth Observation Events).",
-  "last_updated": "2026-05-08",
+  "last_updated": "2026-05-10",
   "classes": [
     {
       "id": "Entity",
@@ -366,6 +366,20 @@
       "target": "ent-evt-303/305/306/307/308/309 + updates to evt-082, evt-127, evt-128, evt-201, evt-202, temp-evt-001",
       "reason": "신규 6건: PhilSA Mayon ashfall 작물피해 Sentinel-2 변화탐지(303, cross-domain agri+disaster), 필리핀 스프래틀리 건설 Planet Labs(305), NISAR+Landsat 삼림벌채 조기탐지(306), Shivelyuch 화산 눈녹음 Landsat 9(307), Peter I Island 폰카르만 Landsat 8(308), Tracy Arm 산사태-쓰나미 Landsat(309). 미검증 1건: Fuego 화산 GT(313, satellite_unverified). 업데이트 6건: Mayon VAAC 586 SO2 2785(082), Caloy PAR 진입(127), Dukono 수색 재개 1 시신(128), S2A/2C 부분 복구(201), Kilauea 팽창 6.9μrad(202), GA Pineland 70%(temp-001).",
       "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009", "src-010", "src-011", "src-012", "src-013"]
+    },
+    {
+      "date": "2026-05-10",
+      "action": "add_organization",
+      "target": "org-ocha",
+      "reason": "UN OCHA / ReliefWeb (un_body, INTL) — Mayon 화산 분출을 GLIDE VO-2026-000065-PHL로 정식 재해 등록. 인도주의 도메인에서 첫 참조.",
+      "source_ids": ["src-010"]
+    },
+    {
+      "date": "2026-05-10",
+      "action": "add_event_batch",
+      "target": "ent-evt-401 + updates to evt-082, evt-127, evt-128, evt-202, evt-203, evt-204, temp-evt-001, evt-201, evt-303",
+      "reason": "신규 1건: Mayon 인도주의 GLIDE 등록(401, ReliefWeb). 업데이트 9건: Mayon VAAC 589 125일째(082), Caloy TD 약화 55km/h(127), Dukono 수색 완료 3명 사망(128), Kilauea Ep47 5/12~15 팽창 10.7μrad(202), Great Sitkin WATCH lava dome(203), Shishaldin ADVISORY SO2(204), GA Pineland 32575ac 70%(temp-001), S2A/2C nominal(201), Mayon 작물 1039ha 확인(303).",
+      "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009", "src-010"]
     }
   ]
 }

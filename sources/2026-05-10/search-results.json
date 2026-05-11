@@ -1,0 +1,38 @@
+{
+  "date": "2026-05-10",
+  "collected_at": "2026-05-10T23:00:00Z",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 20,
+  "total_results": 82,
+  "expanded_keywords": [
+    "Mayon volcano satellite", "Dukono eruption rescue", "Kilauea episode 47",
+    "Great Sitkin lava", "Shishaldin SO2", "tropical storm Caloy Hagupit",
+    "Georgia Pineland Road satellite burn scar", "Pemex Cantarell oil spill Sentinel",
+    "Philippines Spratly construction Planet Labs", "Sentinel-2 NorthC restored",
+    "CSIS Beyond Parallel Yongbyon Sinpo", "Iran US bases satellite damage",
+    "NISAR Landsat deforestation", "PhilSA Mayon crop damage",
+    "MethaneSAT methane", "NASA Earth Observatory image of the day"
+  ],
+  "searches": [
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery wildfire May 2026", "language": "en", "timestamp": "2026-05-10T23:00:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery flood typhoon May 2026", "language": "en", "timestamp": "2026-05-10T23:01:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery volcano eruption May 2026", "language": "en", "timestamp": "2026-05-10T23:01:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "위성영상 산불 홍수 태풍 2026년 5월", "language": "ko", "timestamp": "2026-05-10T23:01:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Sentinel-2 Landsat MODIS active fire flood May 10 2026", "language": "en", "timestamp": "2026-05-10T23:02:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery deforestation mining oil spill May 2026", "language": "en", "timestamp": "2026-05-10T23:02:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery glacier methane plume air pollution May 2026", "language": "en", "timestamp": "2026-05-10T23:03:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery military buildup naval activity May 2026", "language": "en", "timestamp": "2026-05-10T23:03:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "KOMPSAT 위성 관측 한반도 2026년 5월", "language": "ko", "timestamp": "2026-05-10T23:04:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "NASA Earth Observatory May 2026 image of the day", "language": "en", "timestamp": "2026-05-10T23:04:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Copernicus EMS activation Disaster Charter May 2026", "language": "en", "timestamp": "2026-05-10T23:05:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "tropical storm Hagupit Caloy Philippines Mayon volcano May 10 2026", "language": "en", "timestamp": "2026-05-10T23:05:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Mayon volcano eruption satellite update May 9 10 2026", "language": "en", "timestamp": "2026-05-10T23:06:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Kilauea volcano episode 47 eruption forecast May 2026", "language": "en", "timestamp": "2026-05-10T23:06:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Georgia wildfire Pineland Road satellite burn scar May 2026", "language": "en", "timestamp": "2026-05-10T23:07:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "North Korea satellite imagery CSIS Beyond Parallel Yongbyon Sinpo May 2026", "language": "en", "timestamp": "2026-05-10T23:07:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "위성영상 북한 군사 DMZ 동해 서해 2026", "language": "ko", "timestamp": "2026-05-10T23:08:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite NDVI crop agriculture maritime fishing May 2026", "language": "en", "timestamp": "2026-05-10T23:08:00Z", "result_count": 2},
+    {"method": "websearch", "engine": "built-in", "keyword": "Iran US military satellite damage May 10 2026", "language": "en", "timestamp": "2026-05-10T23:09:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Dukono volcano Indonesia eruption rescue May 10 2026", "language": "en", "timestamp": "2026-05-10T23:10:00Z", "result_count": 10}
+  ]
+}

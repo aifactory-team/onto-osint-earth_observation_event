@@ -1,0 +1,31 @@
+{
+  "id": "src-010",
+  "title": "Mayon 화산재 건강피해 + ReliefWeb 재해등록 GLIDE VO-2026-000065-PHL",
+  "url": "https://reliefweb.int/disaster/vo-2026-000065-phl",
+  "snippet": "ReliefWeb has registered the Mayon Volcano eruption as a formal disaster event with GLIDE number VO-2026-000065-PHL. The 125-day continuous effusive eruption has now caused measurable humanitarian impact: 1,039ha rice + 191ha other crops damaged by ashfall, 158km roads affected. Health authorities in Guinobatan report respiratory cases. Alert Level 3 maintained by PHIVOLCS. PhilSA Sentinel-2 satellite data used for crop damage mapping.",
+  "source_name": "ReliefWeb / OCHA",
+  "language": "en",
+  "discovered_date": "2026-05-10",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "ReliefWeb에 정식 재해등록된 것은 금일 처음 확인. GLIDE 번호 부여로 인도주의 차원 공식화됨. 이전 Mayon 화산 관련 보도(재해·농업)와 연계되나 인도주의 차원 신규 항목.",
+  "entities": [
+    {"id": "ent-evt-401", "type": "Event", "name": "Mayon 화산 인도주의 등록 VO-2026-000065-PHL", "properties": {"phenomenon": "volcanic_eruption", "domain": "dom-humanitarian", "lat": 13.26, "lon": 123.69, "country": "PH", "severity": "high", "observation_date": "2026-05-10", "before_after_available": false, "confidence": 0.85}},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "org-ocha", "type": "Organization", "name": "UN OCHA / ReliefWeb"},
+    {"id": "ent-org-philsa", "type": "Organization", "name": "PhilSA"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-401", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-401", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-401", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "ent-evt-401", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-401", "predicate": "inDomain", "object": "dom-humanitarian"},
+    {"subject": "ent-evt-401", "predicate": "inCountry", "object": "co-ph"},
+    {"subject": "ent-evt-401", "predicate": "analyzedBy", "object": "org-ocha"},
+    {"subject": "ent-evt-401", "predicate": "analyzedBy", "object": "ent-org-philsa"},
+    {"subject": "ent-evt-401", "predicate": "triggeredBy", "object": "ent-evt-082"}
+  ]
+}

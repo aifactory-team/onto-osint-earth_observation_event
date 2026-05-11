@@ -1,15 +1,15 @@
 {
   "version": "1.3.0",
   "description": "위성영상 관측 이벤트 누적 지식그래프 — 첫 실행(2026-04-30) 이후 매일 신규/추론 트리플 병합",
-  "last_updated": "2026-05-09",
-  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09"],
+  "last_updated": "2026-05-10",
+  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10"],
   "triples": "ontology/kg/2026-04-30.json + ontology/kg/2026-05-01.json + ontology/kg/2026-05-02.json + ontology/kg/2026-05-03.json + ontology/kg/2026-05-04.json + ontology/kg/2026-05-05.json + ontology/kg/2026-05-06.json + ontology/kg/2026-05-07.json + ontology/kg/2026-05-08.json + ontology/kg/2026-05-09.json (new_triples + updated_triples + inferred_triples)",
   "stats": {
-    "total_explicit_triples": 715,
-    "total_inferred_triples": 258,
-    "total_unique_subjects": 165,
+    "total_explicit_triples": 733,
+    "total_inferred_triples": 267,
+    "total_unique_subjects": 167,
     "total_unique_predicates": 18,
-    "total_unique_objects": 207
+    "total_unique_objects": 208
   },
-  "note": "2026-05-09 병합 완료 — 신규 이벤트 6건(ent-evt-303/305/306/307/308/309), 업데이트 6건(evt-082/127/128/201/202/temp-001). 미검증 1건(Fuego GT). 신규 Satellite 1건(sat-nisar). 신규 Location 5건(Thitu/Nanshan/Shivelyuch/Peter I/Tracy Arm). 신규 Organization 1건(INSIVUMEH). multi_satellite_confirmation 4건(Caloy Himawari+GOES, Mayon Himawari+S2A, GA Pineland S-NPP+L8+L9, Kilauea S2A+L9). partOfSeries 5건(Caloy→127, Mayon→082, Dukono→128, GA→001, Kilauea→202). cascading_disaster 잠정 유지(Caloy→Mayon lahar). before_after 1건(PhilSA Mayon ashfall). 한반도 GeoFocus 0건(금일 한반도 신규 없음). 누적 KG 973 트리플."
+  "note": "2026-05-10 병합 완료 — 신규 이벤트 1건(ent-evt-401 Mayon humanitarian GLIDE), 업데이트 9건(evt-082/127/128/202/203/204/temp-001/201/303). 신규 Organization 1건(org-ocha). multi_satellite_confirmation 1건(evt-401 S2A+Himawari-9). cascading_disaster 1건(evt-082→evt-401). official_source_trust 1건(OCHA). tracegasBoost 1건(Shishaldin TROPOMI). partOfSeries 5건. 한반도 GeoFocus 0건(금일 한반도 신규 없음). 누적 KG 1000 트리플."
 }

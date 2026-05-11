@@ -1,0 +1,26 @@
+{
+  "id": "src-001",
+  "title": "열대저압부 칼로이(하구핏) TD 약화 — 55km/h, 잔여저기압 전환 예상 (PAGASA/Himawari-9)",
+  "url": "https://mb.com.ph/2026/05/10/caloy-may-weaken-into-a-remnant-low-in-the-coming-hours-pagasa",
+  "snippet": "Caloy (international name Hagupit) weakened from tropical storm to tropical depression on Sunday morning May 10, with maximum sustained winds of 55 km/h. Located 770km east of Surigao City, moving NW at 10 km/h. PAGASA forecasts further weakening to remnant low within hours. Trough may bring scattered rain to Eastern Visayas and Caraga starting Sunday night.",
+  "source_name": "Manila Bulletin",
+  "language": "en",
+  "discovered_date": "2026-05-10",
+  "tag": "update",
+  "related_report": "2026-05-09/src-001",
+  "related_item": "ent-evt-127",
+  "tag_reason": "열대폭풍→열대저압부 약화 + 잔여저기압 전환 예상 — 이전 보고 대비 유의미한 상태 변화 (TS→TD)",
+  "entities": [
+    {"id": "ent-evt-127", "type": "Event", "name": "열대폭풍 칼로이/하구핏 (2026-05)", "properties": {"phenomenon": "typhoon", "domain": "dom-disaster", "lat": 8.0, "lon": 134.4, "country": null, "severity": "moderate", "observation_date": "2026-05-10", "before_after_available": false, "confidence": 0.85}},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "sat-goes18", "type": "Satellite", "name": "GOES-18"},
+    {"id": "org-pagasa", "type": "Organization", "name": "PAGASA"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-127", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-127", "predicate": "observedBy", "object": "sat-goes18"},
+    {"subject": "ent-evt-127", "predicate": "manifests", "object": "phen-typhoon"},
+    {"subject": "ent-evt-127", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "ent-evt-127", "predicate": "analyzedBy", "object": "org-pagasa"}
+  ]
+}

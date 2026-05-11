@@ -1,0 +1,128 @@
+{
+  "date": "2026-05-10",
+  "entities": [
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-127",
+      "type": "Event",
+      "name": "열대폭풍 칼로이/하구핏 (TD 약화)",
+      "properties": {"phenomenon": "typhoon", "domain": "dom-disaster", "lat": 8.0, "lon": 134.4, "country": null, "severity": "moderate", "status": "weakening_to_remnant_low"},
+      "source_ids": ["src-001"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-082",
+      "type": "Event",
+      "name": "Mayon 화산 분출 125일째 (VAAC 589)",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "dom-disaster", "lat": 13.26, "lon": 123.69, "country": "PH", "severity": "high", "alert_level": 3},
+      "source_ids": ["src-002", "src-003"],
+      "mention_count": 3
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-303",
+      "type": "Event",
+      "name": "Mayon ashfall 작물피해 1,039ha 벼",
+      "properties": {"phenomenon": "ndvi_change", "domain": "dom-agri-marine", "lat": 13.26, "lon": 123.69, "country": "PH"},
+      "source_ids": ["src-003"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-128",
+      "type": "Event",
+      "name": "Dukono 화산 폭발 사망 3명 (수색 완료)",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "dom-disaster", "lat": 1.69, "lon": 127.88, "country": "ID", "severity": "high", "deaths": 3, "status": "rescue_complete"},
+      "source_ids": ["src-004"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-202",
+      "type": "Event",
+      "name": "Kilauea Ep47 예측 5/12~15 (팽창 10.7μrad)",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "dom-disaster", "lat": 19.41, "lon": -155.28, "country": "US", "tilt_urad": 10.7},
+      "source_ids": ["src-005"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-203",
+      "type": "Event",
+      "name": "Great Sitkin 용암돔 WATCH/ORANGE",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "dom-disaster", "lat": 52.08, "lon": -176.13, "country": "US"},
+      "source_ids": ["src-006"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-204",
+      "type": "Event",
+      "name": "Shishaldin ADVISORY/YELLOW SO2",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "dom-disaster", "lat": 54.76, "lon": -163.97, "country": "US"},
+      "source_ids": ["src-007"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "temp-evt-001",
+      "type": "Event",
+      "name": "Georgia Pineland Road 산불 32,575ac",
+      "properties": {"phenomenon": "wildfire", "domain": "dom-disaster", "lat": 31.5, "lon": -82.5, "country": "US", "area_ac": 32575, "containment_pct": 70},
+      "source_ids": ["src-008"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-201",
+      "type": "Event",
+      "name": "Sentinel-2A/2C 데이터 정상 복구",
+      "properties": {"phenomenon": "satellite_operations", "domain": "dom-climate", "lat": 52.39, "lon": 5.22, "country": "NL", "status": "nominal_restored"},
+      "source_ids": ["src-009"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-evt-401",
+      "matched_id": null,
+      "type": "Event",
+      "name": "Mayon 인도주의 등록 VO-2026-000065-PHL",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "dom-humanitarian", "lat": 13.26, "lon": 123.69, "country": "PH", "glide": "VO-2026-000065-PHL"},
+      "source_ids": ["src-010"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "org-ocha",
+      "type": "Organization",
+      "name": "UN OCHA / ReliefWeb",
+      "properties": {"org_type": "un_body", "country": "INTL"},
+      "source_ids": ["src-010"],
+      "mention_count": 1
+    }
+  ],
+  "relations": [
+    {"subject": "ent-evt-127", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-001"], "confidence": 0.85},
+    {"subject": "ent-evt-127", "predicate": "observedBy", "object": "sat-goes18", "source_ids": ["src-001"], "confidence": 0.85},
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-002"], "confidence": 0.92},
+    {"subject": "ent-evt-082", "predicate": "usesSensor", "object": "sensor-msi", "source_ids": ["src-002", "src-003"], "confidence": 0.92},
+    {"subject": "ent-evt-303", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-003"], "confidence": 0.90},
+    {"subject": "ent-evt-128", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-004"], "confidence": 0.95},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-005"], "confidence": 0.88},
+    {"subject": "ent-evt-202", "predicate": "usesSensor", "object": "sensor-tirs", "source_ids": ["src-005"], "confidence": 0.88},
+    {"subject": "ent-evt-203", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-006"], "confidence": 0.82},
+    {"subject": "ent-evt-204", "predicate": "usesSensor", "object": "sensor-tropomi", "source_ids": ["src-007"], "confidence": 0.78},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-landsat8", "source_ids": ["src-008"], "confidence": 0.88},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-008"], "confidence": 0.88},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-snpp", "source_ids": ["src-008"], "confidence": 0.88},
+    {"subject": "temp-evt-401", "predicate": "triggeredBy", "object": "ent-evt-082", "source_ids": ["src-010"], "confidence": 0.90},
+    {"subject": "temp-evt-401", "predicate": "analyzedBy", "object": "org-ocha", "source_ids": ["src-010"], "confidence": 0.85},
+    {"subject": "temp-evt-401", "predicate": "analyzedBy", "object": "ent-org-philsa", "source_ids": ["src-010"], "confidence": 0.85}
+  ],
+  "stats": {
+    "total_entities": 11,
+    "new_entities": 2,
+    "matched_entities": 9,
+    "total_relations": 16
+  }
+}
