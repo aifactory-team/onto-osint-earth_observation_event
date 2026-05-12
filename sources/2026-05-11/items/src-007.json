@@ -1,0 +1,26 @@
+{
+  "id": "src-007",
+  "title": "Kilauea Ep47 예측 창 5/11~14 → 5/12~15 수렴 — 강한 분화구 발광, 가스 분출 (USGS HVO)",
+  "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-HVO-2026-05-11T18:37:34+00:00",
+  "snippet": "Ep47 forecast window May 12-15. Strong glow and gas flame bursts at south vent. Degassing at both summit vents. Rapid inflationary tilt indicates another fountaining episode likely.",
+  "source_name": "USGS HVO",
+  "language": "en",
+  "discovered_date": "2026-05-11",
+  "tag": "update",
+  "related_report": "2026-05-10/src-005",
+  "related_item": "ent-evt-202",
+  "tag_reason": "Ep47 예측 창 5/12~15로 갱신. 강한 발광·가스 화염 신규 관측.",
+  "entities": [
+    {"id": "ent-evt-202", "type": "Event", "name": "Kilauea Ep47 분출 예측"},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9"},
+    {"id": "ent-org-hvo", "type": "Organization", "name": "USGS HVO"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "ent-evt-202", "predicate": "analyzedBy", "object": "ent-org-hvo"},
+    {"subject": "ent-evt-202", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-202", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

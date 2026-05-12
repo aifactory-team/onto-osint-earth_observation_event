@@ -1,0 +1,26 @@
+{
+  "id": "src-002",
+  "title": "NASA EO 'Color Off the Mid-Atlantic Coast' — MODIS Aqua 미 동부 해안 식물플랑크톤·퇴적물 블룸 (2026-05-03)",
+  "url": "https://science.nasa.gov/earth/earth-observatory/color-off-the-mid-atlantic-coast/",
+  "snippet": "MODIS on Aqua captured brownish blue-green water off NJ/DE/MD/VA coasts on May 3 2026. Colors from phytoplankton blooms and sediment runoff in the Mid-Atlantic Bight shallow coastal zone.",
+  "source_name": "NASA Earth Observatory",
+  "language": "en",
+  "discovered_date": "2026-05-11",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "NASA EO 신규 기사. 이전 소스에 없음.",
+  "entities": [
+    {"id": "temp-evt-502", "type": "Event", "name": "Mid-Atlantic Coast 식물플랑크톤 블룸 2026-05", "properties": {"phenomenon": "algal_bloom", "lat": 38.9, "lon": -74.5, "country": "US", "region": "Mid-Atlantic Bight", "observation_date": "2026-05-03", "before_after_available": false, "confidence": 0.85}},
+    {"id": "sat-modis-terra", "type": "Satellite", "name": "MODIS (Aqua)"},
+    {"id": "org-nasa", "type": "Organization", "name": "NASA"},
+    {"id": "phen-algal", "type": "Phenomenon", "name": "algal_bloom"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-502", "predicate": "observedBy", "object": "sat-modis-terra"},
+    {"subject": "temp-evt-502", "predicate": "analyzedBy", "object": "org-nasa"},
+    {"subject": "temp-evt-502", "predicate": "manifests", "object": "phen-algal"},
+    {"subject": "temp-evt-502", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "temp-evt-502", "predicate": "inDomain", "object": "dom-agri-marine"}
+  ]
+}

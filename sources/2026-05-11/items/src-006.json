@@ -1,0 +1,27 @@
+{
+  "id": "src-006",
+  "title": "Mayon 화산 Day 127 Strombolian — 8:43pm 소규모 스트롬볼리 활동, Alert Level 3 유지 (PHIVOLCS)",
+  "url": "https://www.gmanetwork.com/news/topstories/regions/987255/strombolian-activity-mayon-volcano-eruption/story/",
+  "snippet": "PHIVOLCS recorded minor Strombolian activity at 8:43pm May 11 2026, Day 127 of effusive eruption. Lava flows, PDCs, frequent rockfalls continuing. Alert Level 3 maintained. 6km PDZ enforced.",
+  "source_name": "GMA News",
+  "language": "en",
+  "discovered_date": "2026-05-11",
+  "tag": "update",
+  "related_report": "2026-05-10/src-002",
+  "related_item": "ent-evt-082",
+  "tag_reason": "Mayon Day 127 스트롬볼리 활동 신규 관측. Day 125→127 진행.",
+  "entities": [
+    {"id": "ent-evt-082", "type": "Event", "name": "Mayon 화산 분출 2026"},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sensor-msi", "type": "Sensor", "name": "MSI"},
+    {"id": "ent-org-phivolcs", "type": "Organization", "name": "PHIVOLCS"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-082", "predicate": "analyzedBy", "object": "ent-org-phivolcs"},
+    {"subject": "ent-evt-082", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-082", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

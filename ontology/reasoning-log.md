@@ -1112,3 +1112,36 @@ config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5)
 | 이벤트 업데이트 | ent-evt-082/127/128/202/203/204/temp-001/201/303 (9건) | 후속 보도·수색완료·TD약화·예보·containment·복구·작물 확인 반영 |
 
 config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5).
+
+## 2026-05-11 추론 결과
+
+### 추론 #1: multi_satellite_confirmation (5건)
+- **Florida Everglades Fire (ent-evt-501):** GOES-18(NOAA) + VIIRS(NOAA/NASA) — 정지궤도·극궤도 독립 관측 → multiSatBoost +0.20 | 신뢰도 0.85
+- **Georgia Pineland (temp-evt-001):** VIIRS + Landsat 8 + Landsat 9 — 3중 위성 검증 → multiSatBoost +0.20 | 신뢰도 0.88
+- **Mayon (ent-evt-082):** Himawari-9(JMA) + Sentinel-2A(ESA) — 독립 운영기관 교차 → multiSatBoost +0.20 | 신뢰도 0.92
+- **Kilauea (ent-evt-202):** Sentinel-2A(ESA) + Landsat 9(USGS/NASA) → multiSatBoost +0.20 | 신뢰도 0.88
+- **Caloy/Hagupit (ent-evt-127):** Himawari-9(JMA) + GOES-18(NOAA) — 독립 정지궤도 2기 → multiSatBoost +0.20 | 신뢰도 0.82
+- **상태:** 모두 확정
+
+### 추론 #2: sensor_capability_match_sar
+- **Great Sitkin (ent-evt-203):** C-band SAR(Sentinel-1A) 구름 투과 용암류 성장 관측 — 광학 위성 구름 차단 시 SAR이 유일 관측 수단 → sarBoost +0.10 | 신뢰도 0.88
+- **상태:** 확정
+
+### 추론 #3: sensor_capability_match_tracegas
+- **Shishaldin (ent-evt-204):** TROPOMI(Sentinel-5P) SO2 원격 감지 — 화산 가스 배출 정량 → tracegasBoost +0.15 | 신뢰도 0.85
+- **상태:** 확정
+
+### 추론 #4: official_source_trust (3건)
+- **Barents Sea (ent-evt-503):** NASA EO 공식 분석 → officialBoost +0.15 | 신뢰도 0.95
+- **Mid-Atlantic (ent-evt-502):** NASA EO 공식 분석 → officialBoost +0.15 | 신뢰도 0.95
+- **Kilauea/Great Sitkin/Shishaldin:** USGS HVO/AVO 공식 → officialBoost +0.15 | 기존 적용 유지
+- **상태:** 모두 확정
+
+### 추론 #5: temporal_progression (3건)
+- **Mayon:** Day 125→127, 동일 위치·동일 현상(volcanic_eruption) 시계열 관측 → partOfSeries
+- **Kilauea:** Ep46 종료→Ep47 임박, 동일 분화구 에피소드 시퀀스 → partOfSeries
+- **Georgia Pineland:** 22일 연속 화재, 동일 위치·동일 현상(wildfire) → partOfSeries
+- **상태:** 모두 확정
+
+### 금일 한반도 GeoFocus
+- 한반도 관련 신규 이벤트 없음. korea_geo_focus 가산 0건.

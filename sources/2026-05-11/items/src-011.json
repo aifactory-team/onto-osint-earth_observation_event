@@ -1,0 +1,26 @@
+{
+  "id": "src-011",
+  "title": "칼로이/하구핏 잔여저기압 전환 완료 — PAGASA 경보 해제, 필리핀 직접 피해 미미",
+  "url": "https://mb.com.ph/2026/05/10/caloy-may-weaken-into-a-remnant-low-in-the-coming-hours-pagasa",
+  "snippet": "Caloy/Hagupit weakened to remnant low and dissipating. PAGASA lifted warnings. Minimal direct impact on Philippines. Residual trough may bring scattered rainfall to Eastern Visayas.",
+  "source_name": "Manila Bulletin",
+  "language": "en",
+  "discovered_date": "2026-05-11",
+  "tag": "update",
+  "related_report": "2026-05-10/src-001",
+  "related_item": "ent-evt-127",
+  "tag_reason": "TD→잔여저기압 전환 완료. 이벤트 종결 단계.",
+  "entities": [
+    {"id": "ent-evt-127", "type": "Event", "name": "열대폭풍 칼로이/하구핏 2026"},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "sat-goes18", "type": "Satellite", "name": "GOES-18"},
+    {"id": "ent-org-pagasa", "type": "Organization", "name": "PAGASA"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-127", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-127", "predicate": "observedBy", "object": "sat-goes18"},
+    {"subject": "ent-evt-127", "predicate": "analyzedBy", "object": "ent-org-pagasa"},
+    {"subject": "ent-evt-127", "predicate": "manifests", "object": "phen-typhoon"},
+    {"subject": "ent-evt-127", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

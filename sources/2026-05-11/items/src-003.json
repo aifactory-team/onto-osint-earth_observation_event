@@ -1,0 +1,25 @@
+{
+  "id": "src-003",
+  "title": "NASA EO 'Barents Sea Tied to Low Arctic Sea Ice' — ICESat-2 + Sentinel, 2026년 3월 기록적 저점 14.29M km²",
+  "url": "https://science.nasa.gov/earth/earth-observatory/barents-sea-tied-to-low-arctic-sea-ice/",
+  "snippet": "Arctic sea ice maximum March 15 2026 reached 14.29M km2 tying record low since 1979. Barents Sea open water and thin ice key contributor. ICESat-2 confirmed very thin ice. North Atlantic warm air circulation driving melt.",
+  "source_name": "NASA Earth Observatory",
+  "language": "en",
+  "discovered_date": "2026-05-11",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "NASA EO 신규 기사. 2026년 3월 기록 갱신 분석. 이전 소스에 없음.",
+  "entities": [
+    {"id": "temp-evt-503", "type": "Event", "name": "북극 해빙 최대면적 기록적 저점 2026-03", "properties": {"phenomenon": "sea_level_change", "lat": 76.0, "lon": 40.0, "country": null, "region": "Barents Sea / Arctic", "admin": "Arctic", "observation_date": "2026-03-15", "area_km2": 14290000, "before_after_available": true, "confidence": 0.92}},
+    {"id": "sat-icesat2", "type": "Satellite", "name": "ICESat-2"},
+    {"id": "org-nasa", "type": "Organization", "name": "NASA"},
+    {"id": "phen-sealevel", "type": "Phenomenon", "name": "sea_level_change"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-503", "predicate": "observedBy", "object": "sat-icesat2"},
+    {"subject": "temp-evt-503", "predicate": "analyzedBy", "object": "org-nasa"},
+    {"subject": "temp-evt-503", "predicate": "manifests", "object": "phen-sealevel"},
+    {"subject": "temp-evt-503", "predicate": "inDomain", "object": "dom-climate"}
+  ]
+}

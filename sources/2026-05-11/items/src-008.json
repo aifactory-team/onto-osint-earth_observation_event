@@ -1,0 +1,26 @@
+{
+  "id": "src-008",
+  "title": "Great Sitkin 용암류 동쪽 성장 SAR 확인 — WATCH/ORANGE 유지 (USGS AVO May 11)",
+  "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-AVO-2026-05-11T20:21:35+00:00",
+  "snippet": "Minor lava flow growth to the east observed in satellite radar imagery. Clouds otherwise obscured views. Seismic data recorded rockfalls from growing lava dome.",
+  "source_name": "USGS AVO",
+  "language": "en",
+  "discovered_date": "2026-05-11",
+  "tag": "update",
+  "related_report": "2026-05-10/src-006",
+  "related_item": "ent-evt-203",
+  "tag_reason": "SAR 위성 레이더로 용암류 동쪽 성장 신규 확인. 이전 구름 제한→SAR 관측 전환.",
+  "entities": [
+    {"id": "ent-evt-203", "type": "Event", "name": "Great Sitkin 용암돔 분출"},
+    {"id": "sat-sentinel1a", "type": "Satellite", "name": "Sentinel-1A"},
+    {"id": "sensor-c-sar", "type": "Sensor", "name": "C-band SAR"},
+    {"id": "ent-org-avo", "type": "Organization", "name": "USGS AVO"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-203", "predicate": "observedBy", "object": "sat-sentinel1a"},
+    {"subject": "ent-evt-203", "predicate": "usesSensor", "object": "sensor-c-sar"},
+    {"subject": "ent-evt-203", "predicate": "analyzedBy", "object": "ent-org-avo"},
+    {"subject": "ent-evt-203", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-203", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

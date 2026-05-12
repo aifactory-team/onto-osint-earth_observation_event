@@ -1,0 +1,25 @@
+{
+  "id": "src-005",
+  "title": "NASA EO 'Ahuachapán and Its Restive Neighbors' — Landsat 8 엘살바도르 지열·화산 지형 (2024-11-25 영상)",
+  "url": "https://science.nasa.gov/earth/earth-observatory/ahuachapan-and-its-restive-neighbors/",
+  "snippet": "Landsat 8 OLI image from Nov 25 2024 shows volcanic landscape of western El Salvador. Ahuachapán geothermal power plant (since 1975) leverages 250°C groundwater. No Holocene eruptions but persistent fumaroles, hot springs.",
+  "source_name": "NASA Earth Observatory",
+  "language": "en",
+  "discovered_date": "2026-05-11",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "NASA EO 신규 피처 기사. 관측 영상은 2024-11-25이나 기사 자체는 최근 발행. 이전 소스에 없음.",
+  "entities": [
+    {"id": "temp-evt-505", "type": "Event", "name": "엘살바도르 Ahuachapán 지열·화산 지형 관측", "properties": {"phenomenon": "volcanic_eruption", "lat": 13.95, "lon": -89.8, "country": "SV", "region": "Ahuachapán, El Salvador", "observation_date": "2024-11-25", "severity": "low", "before_after_available": false, "confidence": 0.75}},
+    {"id": "sat-landsat8", "type": "Satellite", "name": "Landsat 8"},
+    {"id": "sensor-oli", "type": "Sensor", "name": "OLI"},
+    {"id": "org-nasa", "type": "Organization", "name": "NASA"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-505", "predicate": "observedBy", "object": "sat-landsat8"},
+    {"subject": "temp-evt-505", "predicate": "usesSensor", "object": "sensor-oli"},
+    {"subject": "temp-evt-505", "predicate": "analyzedBy", "object": "org-nasa"},
+    {"subject": "temp-evt-505", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

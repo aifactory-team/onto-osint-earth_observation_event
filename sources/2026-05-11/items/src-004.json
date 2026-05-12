@@ -1,0 +1,26 @@
+{
+  "id": "src-004",
+  "title": "Ibu 화산 폭발적 분출 지속 — 화산재 FL070 (2,100m), VAAC Darwin, 641건 분출 (인도네시아)",
+  "url": "https://www.volcanodiscovery.com/earthquakes-volcanoes/news/302071/Volcano-earthquake-report-for-Monday-11-May-2026.html",
+  "snippet": "Ibu volcano on Halmahera explosive activity continuing. Ash plume to 7000ft (2100m) moving north. VAAC Darwin advisory. 641 eruptions in 2026 alone. Himawari-9 satellite monitoring.",
+  "source_name": "VolcanoDiscovery",
+  "language": "en",
+  "discovered_date": "2026-05-11",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "Ibu 화산 이전 14일 파이프라인에서 미추적. 신규 등록.",
+  "entities": [
+    {"id": "temp-evt-504", "type": "Event", "name": "Ibu 화산 폭발적 분출 2026-05", "properties": {"phenomenon": "volcanic_eruption", "lat": 1.49, "lon": 127.63, "country": "ID", "region": "Halmahera, North Maluku", "severity": "medium", "observation_date": "2026-05-11", "before_after_available": false, "confidence": 0.78}},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "phen-volcano", "type": "Phenomenon", "name": "volcanic_eruption"},
+    {"id": "ent-org-vaac-darwin", "type": "Organization", "name": "VAAC Darwin"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-504", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "temp-evt-504", "predicate": "analyzedBy", "object": "ent-org-vaac-darwin"},
+    {"subject": "temp-evt-504", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "temp-evt-504", "predicate": "inCountry", "object": "co-id"},
+    {"subject": "temp-evt-504", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

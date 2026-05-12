@@ -1,0 +1,26 @@
+{
+  "id": "src-001",
+  "title": "Florida Everglades Max Road Fire — 11,000ac 50% 진화, 브로워드카운티 에버글레이즈 (GOES/VIIRS 위성 추적)",
+  "url": "https://watchers.news/2026/05/11/large-everglades-wildfire-sends-smoke-toward-pembroke-pines-as-florida-tracks-61-active-fires/",
+  "snippet": "Max Road Fire in western Broward County scorched 11,000 acres and is 50% contained. Florida tracking 61 active fires statewide. CIRA satellite imagery shows fire and smoke plume. Drought conditions and low humidity driving fire spread.",
+  "source_name": "The Watchers",
+  "language": "en",
+  "discovered_date": "2026-05-11",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 14일 소스에 Florida Everglades 산불 관련 항목 없음. 신규 이벤트.",
+  "entities": [
+    {"id": "temp-evt-501", "type": "Event", "name": "Florida Everglades Max Road Fire 2026-05", "properties": {"phenomenon": "wildfire", "lat": 26.0, "lon": -80.45, "country": "US", "region": "Broward County, FL", "area_km2": 44.5, "severity": "medium", "observation_date": "2026-05-11", "before_after_available": false, "confidence": 0.85}},
+    {"id": "sat-goes18", "type": "Satellite", "name": "GOES-18"},
+    {"id": "sat-viirs-jpss", "type": "Satellite", "name": "VIIRS (Suomi-NPP/JPSS)"},
+    {"id": "phen-wildfire", "type": "Phenomenon", "name": "wildfire"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-501", "predicate": "observedBy", "object": "sat-goes18"},
+    {"subject": "temp-evt-501", "predicate": "observedBy", "object": "sat-viirs-jpss"},
+    {"subject": "temp-evt-501", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "temp-evt-501", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "temp-evt-501", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

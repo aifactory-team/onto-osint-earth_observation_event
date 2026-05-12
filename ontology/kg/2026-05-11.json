@@ -1,0 +1,52 @@
+{
+  "date": "2026-05-11",
+  "new_triples": [
+    {"subject": "ent-evt-501", "predicate": "observedBy", "object": "sat-goes18", "source_id": "src-001", "date": "2026-05-11", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-501", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_id": "src-001", "date": "2026-05-11", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-501", "predicate": "manifests", "object": "phen-wildfire", "source_id": "src-001", "date": "2026-05-11", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-501", "predicate": "inCountry", "object": "co-us", "source_id": "src-001", "date": "2026-05-11", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-501", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-001", "date": "2026-05-11", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-501", "predicate": "locatedIn", "object": "ent-loc-056", "source_id": "src-001", "date": "2026-05-11", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-502", "predicate": "observedBy", "object": "sat-modis-terra", "source_id": "src-002", "date": "2026-05-11", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-502", "predicate": "analyzedBy", "object": "org-nasa", "source_id": "src-002", "date": "2026-05-11", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-502", "predicate": "manifests", "object": "phen-algal", "source_id": "src-002", "date": "2026-05-11", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-502", "predicate": "inCountry", "object": "co-us", "source_id": "src-002", "date": "2026-05-11", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-502", "predicate": "inDomain", "object": "dom-agri-marine", "source_id": "src-002", "date": "2026-05-11", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-503", "predicate": "observedBy", "object": "sat-icesat2", "source_id": "src-003", "date": "2026-05-11", "confidence": 0.92, "type": "explicit"},
+    {"subject": "ent-evt-503", "predicate": "analyzedBy", "object": "org-nasa", "source_id": "src-003", "date": "2026-05-11", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-503", "predicate": "manifests", "object": "phen-sealevel", "source_id": "src-003", "date": "2026-05-11", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-503", "predicate": "inDomain", "object": "dom-climate", "source_id": "src-003", "date": "2026-05-11", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-504", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-004", "date": "2026-05-11", "confidence": 0.80, "type": "explicit"},
+    {"subject": "ent-evt-504", "predicate": "analyzedBy", "object": "ent-org-vaac-darwin", "source_id": "src-004", "date": "2026-05-11", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-504", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-004", "date": "2026-05-11", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-504", "predicate": "inCountry", "object": "co-id", "source_id": "src-004", "date": "2026-05-11", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-504", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-004", "date": "2026-05-11", "confidence": 0.95, "type": "explicit"}
+  ],
+  "updated_triples": [
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-006", "date": "2026-05-11", "confidence": 0.92, "type": "explicit", "note": "Day 127 Strombolian update"},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-007", "date": "2026-05-11", "confidence": 0.88, "type": "explicit", "note": "Ep47 window May 12-15"},
+    {"subject": "ent-evt-203", "predicate": "usesSensor", "object": "sensor-c-sar", "source_id": "src-008", "date": "2026-05-11", "confidence": 0.88, "type": "explicit", "note": "SAR lava flow growth east"},
+    {"subject": "ent-evt-204", "predicate": "usesSensor", "object": "sensor-tropomi", "source_id": "src-009", "date": "2026-05-11", "confidence": 0.85, "type": "explicit", "note": "SO2 steam satellite observation"},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_id": "src-010", "date": "2026-05-11", "confidence": 0.88, "type": "explicit", "note": "70-87% contained"},
+    {"subject": "ent-evt-127", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-011", "date": "2026-05-11", "confidence": 0.82, "type": "explicit", "note": "remnant low dissipating"}
+  ],
+  "inferred_triples": [
+    {"subject": "ent-evt-501", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.85, "type": "inferred", "note": "GOES-18 (NOAA) + VIIRS (NOAA/NASA) — independent geostationary + polar orbit"},
+    {"subject": "temp-evt-001", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.88, "type": "inferred", "note": "VIIRS + Landsat 8 + Landsat 9 triple verification"},
+    {"subject": "ent-evt-082", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.92, "type": "inferred", "note": "Himawari-9 (JMA) + Sentinel-2A (ESA) independent operators"},
+    {"subject": "ent-evt-202", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.88, "type": "inferred", "note": "Sentinel-2A (ESA) + Landsat 9 (USGS/NASA)"},
+    {"subject": "ent-evt-127", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.82, "type": "inferred", "note": "Himawari-9 (JMA) + GOES-18 (NOAA)"},
+    {"subject": "ent-evt-203", "predicate": "sarBoost", "object": "+0.10", "rule": "sensor_capability_match_sar", "confidence": 0.88, "type": "inferred", "note": "C-band SAR cloud penetration for lava dome monitoring"},
+    {"subject": "ent-evt-204", "predicate": "tracegasBoost", "object": "+0.15", "rule": "sensor_capability_match_tracegas", "confidence": 0.85, "type": "inferred", "note": "TROPOMI SO2 detection"},
+    {"subject": "ent-evt-503", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred", "note": "NASA official EO analysis"},
+    {"subject": "ent-evt-502", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred", "note": "NASA official EO analysis"},
+    {"subject": "ent-evt-082", "predicate": "partOfSeries", "object": "ent-evt-082", "rule": "temporal_progression", "confidence": 0.95, "type": "inferred", "note": "Day 125→127 continuous eruption"},
+    {"subject": "ent-evt-202", "predicate": "partOfSeries", "object": "ent-evt-202", "rule": "temporal_progression", "confidence": 0.90, "type": "inferred", "note": "Ep46→Ep47 episodic sequence"},
+    {"subject": "temp-evt-001", "predicate": "partOfSeries", "object": "temp-evt-001", "rule": "temporal_progression", "confidence": 0.88, "type": "inferred", "note": "22-day continuous fire"}
+  ],
+  "stats": {
+    "new_nodes": 7,
+    "new_edges": 20,
+    "inferred_edges": 12
+  }
+}

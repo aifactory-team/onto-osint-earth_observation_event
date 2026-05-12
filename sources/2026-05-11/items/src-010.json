@@ -1,0 +1,26 @@
+{
+  "id": "src-010",
+  "title": "Georgia Pineland Road 산불 32,575ac 70~87% 진화 — 이탄층 지하화재 지속, 건조 예보 우려",
+  "url": "https://www.fox5atlanta.com/news/south-georgia-wildfires-nearing-full-containment",
+  "snippet": "Pineland Road Fire 70-87% contained (varying estimates). Deep organic soils smoldering underground. Drier/warmer conditions expected Tue-Thu may challenge containment.",
+  "source_name": "Fox 5 Atlanta",
+  "language": "en",
+  "discovered_date": "2026-05-11",
+  "tag": "update",
+  "related_report": "2026-05-10/src-008",
+  "related_item": "temp-evt-001",
+  "tag_reason": "진화율 70→70~87% 갱신. 기상 전망 신규 정보(건조 예보).",
+  "entities": [
+    {"id": "temp-evt-001", "type": "Event", "name": "Georgia Pineland Road 산불 2026"},
+    {"id": "sat-viirs-jpss", "type": "Satellite", "name": "VIIRS (S-NPP/JPSS)"},
+    {"id": "sat-landsat8", "type": "Satellite", "name": "Landsat 8"},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-viirs-jpss"},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-landsat8"},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "temp-evt-001", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "temp-evt-001", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

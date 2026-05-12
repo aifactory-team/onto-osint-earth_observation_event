@@ -1,0 +1,26 @@
+{
+  "id": "src-009",
+  "title": "Shishaldin SO2·증기 위성 관측 지속 — 지진·인프라사운드 상승, ADVISORY/YELLOW (USGS AVO May 11)",
+  "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-AVO-2026-05-11T20:21:35+00:00",
+  "snippet": "Seismic and infrasound activity elevated. SO2 and steam emissions observed in clear satellite imagery. Webcam shows steam plume.",
+  "source_name": "USGS AVO",
+  "language": "en",
+  "discovered_date": "2026-05-11",
+  "tag": "update",
+  "related_report": "2026-05-10/src-007",
+  "related_item": "ent-evt-204",
+  "tag_reason": "SO2·증기 위성 관측 지속 확인. 지진·인프라사운드 상승 추세.",
+  "entities": [
+    {"id": "ent-evt-204", "type": "Event", "name": "Shishaldin 화산 불안정"},
+    {"id": "sat-sentinel5p", "type": "Satellite", "name": "Sentinel-5P"},
+    {"id": "sensor-tropomi", "type": "Sensor", "name": "TROPOMI"},
+    {"id": "ent-org-avo", "type": "Organization", "name": "USGS AVO"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-204", "predicate": "observedBy", "object": "sat-sentinel5p"},
+    {"subject": "ent-evt-204", "predicate": "usesSensor", "object": "sensor-tropomi"},
+    {"subject": "ent-evt-204", "predicate": "analyzedBy", "object": "ent-org-avo"},
+    {"subject": "ent-evt-204", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-204", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}
