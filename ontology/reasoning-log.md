@@ -1145,3 +1145,46 @@ config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5)
 
 ### 금일 한반도 GeoFocus
 - 한반도 관련 신규 이벤트 없음. korea_geo_focus 가산 0건.
+
+## 2026-05-12 추론 결과
+
+### 추론 #1: multi_satellite_confirmation (6건)
+- **입력:** (ent-evt-501 observedBy sat-goes18), (ent-evt-501 observedBy sat-viirs-jpss) — 독립 궤도 유형(GEO + LEO)
+- **입력:** (ent-evt-202 observedBy sat-sentinel2a), (ent-evt-202 observedBy sat-landsat9) — ESA + USGS/NASA
+- **입력:** (ent-evt-082 observedBy sat-himawari9), (ent-evt-082 observedBy sat-sentinel2a) — JMA + ESA
+- **입력:** (temp-evt-001 observedBy sat-viirs-jpss), (temp-evt-001 observedBy sat-landsat8), (temp-evt-001 observedBy sat-landsat9) — 3중 교차
+- **입력:** (ent-evt-602 observedBy sat-planetscope), (ent-evt-602 observedBy sat-worldview3) — Planet + Maxar
+- **입력:** (ent-evt-092 observedBy sat-sentinel2a), (ent-evt-092 observedBy sat-worldview3) — ESA + Maxar
+- **추론:** 각 이벤트에 multiSatBoost +0.20 적용
+- **신뢰도:** 0.85~0.92
+- **상태:** 확정
+
+### 추론 #2: sensor_capability_match_sar (1건)
+- **입력:** (ent-evt-203 usesSensor sensor-c-sar), 구름 투과 관측
+- **추론:** sarBoost +0.10
+- **신뢰도:** 0.85
+- **상태:** 확정
+
+### 추론 #3: sensor_capability_match_tracegas (2건)
+- **입력:** (ent-evt-601 usesSensor sensor-tropomi), (ent-evt-204 usesSensor sensor-tropomi) — SO2 화산가스 탐지
+- **추론:** 각 이벤트에 tracegasBoost +0.15
+- **신뢰도:** 0.78~0.82
+- **상태:** 확정
+
+### 추론 #4: sensor_capability_match_hires (2건)
+- **입력:** (ent-evt-602 observedBy sat-worldview3, 0.31m), (ent-evt-603 observedBy sat-wv-legion, 0.30m)
+- **추론:** hiResBoost +0.15
+- **신뢰도:** 0.85~0.88
+- **상태:** 확정
+
+### 추론 #5: official_source_trust (2건)
+- **입력:** (ent-evt-601 analyzedBy org-usgs), (ent-evt-202 analyzedBy org-usgs)
+- **추론:** officialBoost +0.15
+- **신뢰도:** 0.82~0.90
+- **상태:** 확정
+
+### 추론 #6: before_after_credibility (2건)
+- **입력:** (ent-evt-602 before_after_available true), (ent-evt-603 before_after_available true)
+- **추론:** baCredibilityBoost +0.10
+- **신뢰도:** 0.85~0.88
+- **상태:** 확정

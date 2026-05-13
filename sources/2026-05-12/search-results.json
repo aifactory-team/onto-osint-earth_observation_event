@@ -1,0 +1,96 @@
+{
+  "date": "2026-05-12",
+  "collected_at": "2026-05-12T23:00:00Z",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 22,
+  "total_results": 78,
+  "expanded_keywords": [
+    "Kilauea Ep47", "Mayon volcano", "Great Sitkin SAR", "Shishaldin TROPOMI",
+    "Florida Everglades wildfire GOES VIIRS", "Georgia Pineland Road fire",
+    "Mt Kupreanof Alaska", "Ibu volcano Halmahera",
+    "Antelope Reef satellite", "CSIS Beyond Parallel North Korea",
+    "Pemex Cantarell oil spill", "Israeli base Iraq satellite",
+    "Ukraine Maxar satellite damage", "KOMPSAT 한반도",
+    "NASA Earth Observatory May 2026", "Copernicus EMS activation",
+    "MethaneSAT methane plume", "Global Forest Watch deforestation"
+  ],
+  "searches": [
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery wildfire May 2026", "language": "en", "timestamp": "2026-05-12T23:00:00Z", "result_count": 10, "results": [
+      {"title": "Fast-Spreading Florida Wildfire Seen in Satellite Imagery", "url": "https://www.yahoo.com/news/videos/fast-spreading-florida-wildfire-seen-105914497.html", "snippet": "CIRA satellite views of Max Road Fire, GOES-East rapid-scan detected heat and smoke plume", "source_name": "Yahoo News/CIRA"},
+      {"title": "Miramar Wildfire 80 Acres; Satellite Shows Smoke Plume", "url": "https://hoodline.com/2026/05/everglades-blaze-sends-smoky-haze-over-west-broward/", "snippet": "GOES-East satellite picked up flaring activity and growing smoke plume over western Broward", "source_name": "Hoodline"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery flood typhoon earthquake May 2026", "language": "en", "timestamp": "2026-05-12T23:01:00Z", "result_count": 10, "results": [
+      {"title": "2026 Pacific typhoon season", "url": "https://en.wikipedia.org/wiki/2026_Pacific_typhoon_season", "snippet": "Hagupit formed May 6 west-northwest of Chuuk, MSI and microwave imagery showed convective clusters", "source_name": "Wikipedia"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery volcano eruption May 2026", "language": "en", "timestamp": "2026-05-12T23:02:00Z", "result_count": 10, "results": [
+      {"title": "USGS AVO Notice May 12", "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-AVO-2026-05-12T20:06:22+00:00", "snippet": "Great Sitkin WATCH/ORANGE, Shishaldin ADVISORY/YELLOW, Kupreanof ADVISORY/YELLOW — SO2 satellite + SAR lava", "source_name": "USGS AVO"},
+      {"title": "Kilauea Volcano Update for Tuesday May 12", "url": "https://www.bigislandvideonews.com/2026/05/12/kilauea-volcano-update-for-tuesday-may-12/", "snippet": "Ep47 fountain forecast 5/12-14, south vent strong glow with flames, paused state", "source_name": "Big Island Video News"},
+      {"title": "Fountaining episode at Kilauea predicted this week", "url": "https://bigislandnow.com/2026/05/12/fountaining-episode-at-kilauea-predicted-to-start-this-week/", "snippet": "HVO predicts Episode 47 onset Tuesday-Wednesday most likely", "source_name": "Big Island Now"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "NASA Earth Observatory May 2026", "language": "en", "timestamp": "2026-05-12T23:03:00Z", "result_count": 10, "results": [
+      {"title": "May 2026 Satellite Puzzler", "url": "https://science.nasa.gov/earth/earth-observatory/may-2026-satellite-puzzler/", "snippet": "Monthly puzzler image challenge", "source_name": "NASA EO"},
+      {"title": "Australia's Cloudy Beauty", "url": "https://science.nasa.gov/earth/earth-observatory/australias-cloudy-beauty/", "snippet": "Terra MODIS captured arch-shaped cloud over Port Phillip Bay May 11 2026, fog in Victorian Alps", "source_name": "NASA EO"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Copernicus EMS activation May 2026", "language": "en", "timestamp": "2026-05-12T23:04:00Z", "result_count": 10, "results": []},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery deforestation mining oil spill May 2026", "language": "en", "timestamp": "2026-05-12T23:05:00Z", "result_count": 10, "results": [
+      {"title": "Pemex-linked Gulf oil spill may still be spreading three months later", "url": "https://www.tpr.org/environment/2026-05-07/pemex-linked-gulf-oil-spill-may-still-be-spreading-three-months-later-satellite-images-suggest", "snippet": "SAR imagery early May shows elongated dark patches near Cantarell complex, 3 months after initial leak", "source_name": "TPR"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery glacier methane climate May 2026", "language": "en", "timestamp": "2026-05-12T23:06:00Z", "result_count": 10, "results": [
+      {"title": "Global satellite survey reveals uncertainty in landfill methane emissions", "url": "https://www.nature.com/articles/s41586-025-09683-8", "snippet": "Nature study on satellite-derived landfill methane uncertainties", "source_name": "Nature"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Sentinel-1 SAR change detection May 2026", "language": "en", "timestamp": "2026-05-12T23:07:00Z", "result_count": 10, "results": []},
+    {"method": "websearch", "engine": "built-in", "keyword": "Kilauea volcano eruption May 12 2026", "language": "en", "timestamp": "2026-05-12T23:08:00Z", "result_count": 10, "results": [
+      {"title": "USGS HVO Notice May 12", "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-HVO-2026-05-12T18:17:36+00:00", "snippet": "Kilauea summit eruption paused, ADVISORY/YELLOW, Ep47 predicted 5/12-14", "source_name": "USGS HVO"},
+      {"title": "Kilauea Volcano Update for Tuesday May 12", "url": "https://www.bigislandvideonews.com/2026/05/12/kilauea-volcano-update-for-tuesday-may-12/", "snippet": "South vent strong consistent glow with large flames, north vent weaker glow with spatter events", "source_name": "BIVN"},
+      {"title": "Fountaining episode predicted this week", "url": "https://bigislandnow.com/2026/05/12/fountaining-episode-at-kilauea-predicted-to-start-this-week/", "snippet": "Tuesday or Wednesday most likely for Ep47 onset", "source_name": "Big Island Now"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Mayon volcano eruption update May 12 2026", "language": "en", "timestamp": "2026-05-12T23:09:00Z", "result_count": 10, "results": [
+      {"title": "FACT CHECK: Viral photo of Mayon Volcano eruption is AI-generated", "url": "https://www.rappler.com/newsbreak/fact-check/viral-mayon-volcano-eruption-ai-generated-albay-bicol-may-2026/", "snippet": "AI-generated Mayon image goes viral, Rappler debunks", "source_name": "Rappler"},
+      {"title": "Restless Mayon Volcano Disrupts Philippines With Massive Ashfall", "url": "https://www.asisonline.org/security-management-magazine/latest-news/today-in-security/2026/may/mayon-volcano-ashfall-eruption/", "snippet": "Alert Level 3, lava effusion Basud/Bonga/Mi-isi, 21 volcanic earthquakes incl 14 tremors", "source_name": "ASIS Online"},
+      {"title": "Philippines: Mayon Volcano - May 2026", "url": "https://reliefweb.int/disaster/vo-2026-000065-phl", "snippet": "GLIDE VO-2026-000065-PHL humanitarian disaster page", "source_name": "ReliefWeb"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Great Sitkin Shishaldin volcano update May 12 2026", "language": "en", "timestamp": "2026-05-12T23:10:00Z", "result_count": 10, "results": [
+      {"title": "USGS AVO Notice May 12", "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-AVO-2026-05-12T20:06:22+00:00", "snippet": "Great Sitkin WATCH/ORANGE lava effusion continues, Shishaldin ADVISORY/YELLOW SO2 persists", "source_name": "USGS AVO"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Florida Everglades wildfire Max Road May 12 2026", "language": "en", "timestamp": "2026-05-12T23:11:00Z", "result_count": 10, "results": [
+      {"title": "Max Road Fire grows to 11,000 acres burned 60% contained", "url": "https://dailydispatch.com/fire-news/wildland/max-road-fire-in-florida-everglades-grows-to-11000-acres-burned-60-contained/", "snippet": "11,300 acres 70% contained as of May 12 10 AM", "source_name": "Daily Dispatch"},
+      {"title": "Why the Everglades is burning from the inside out", "url": "https://abc17news.com/weather/insider-blog/2026/05/12/why-the-everglades-is-burning-from-the-inside-out/", "snippet": "Underground peat fire, water table 12-24 inches below surface, 100% statewide drought", "source_name": "ABC17/CNN Weather"},
+      {"title": "Everglades wildfire scorches 11,000 acres just outside Miami metro", "url": "https://www.foxweather.com/weather-news/everglades-wildfire-miami-metro-broward-county", "snippet": "Broward County Miami metro area impacted by smoke", "source_name": "Fox Weather"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery military buildup OSINT May 2026", "language": "en", "timestamp": "2026-05-12T23:12:00Z", "result_count": 10, "results": [
+      {"title": "Satellite Imagery and Reports Reveal Secret Israeli Military Base in Iraqi Desert", "url": "https://www.thedefensenews.com/news-details/Satellite-Imagery-and-Reports-Reveal-Secret-Israeli-Military-Base-in-Iraqi-Desert/", "snippet": "1.5km improvised airstrip inside a wadi, 180km west of Najaf, constructed Feb 2026 for Operation Roaring Lion", "source_name": "The Defense News"},
+      {"title": "A secret Israeli base in Iraq? What we know", "url": "https://www.aljazeera.com/news/2026/5/12/a-secret-israeli-base-in-iraq-what-we-know", "snippet": "Al Jazeera May 12 explainer — covert IAF/SF facility Al-Anbar governorate revealed via satellite and local reports", "source_name": "Al Jazeera"},
+      {"title": "Blind Spots — Columbia Journalism Review", "url": "https://www.cjr.org/feature/blind-spots-satellite-osint-open-source-middle-east-iran-blackout-planet-labs-vantor-maxar.php", "snippet": "CJR investigation on Planet/Vantor/Maxar Middle East imagery delays", "source_name": "CJR"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "위성영상 산불 홍수 태풍 2026년 5월", "language": "ko", "timestamp": "2026-05-12T23:13:00Z", "result_count": 10, "results": []},
+    {"method": "websearch", "engine": "built-in", "keyword": "위성영상 한반도 KOMPSAT 관측 2026년 5월", "language": "ko", "timestamp": "2026-05-12T23:14:00Z", "result_count": 10, "results": []},
+    {"method": "websearch", "engine": "built-in", "keyword": "Mount Kupreanof volcano Alaska May 2026", "language": "en", "timestamp": "2026-05-12T23:15:00Z", "result_count": 10, "results": [
+      {"title": "Increased seismicity and gas emissions at Kupreanof volcano Alaska", "url": "https://watchers.news/2026/05/09/increased-seismicity-gas-emissions-kupreanof-volcano-alaska-may-2026/", "snippet": "Aviation color code raised YELLOW, SO2 on 8 occasions since Apr 4, 100-1000 t/d, magmatic intrusion <5km depth", "source_name": "The Watchers"},
+      {"title": "USGS AVO Notice May 12", "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-AVO-2026-05-12T20:06:22+00:00", "snippet": "Kupreanof ADVISORY/YELLOW continues — seismic + SO2", "source_name": "USGS AVO"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "NASA Earth Observatory Australia Cloudy Beauty May 2026 Terra MODIS", "language": "en", "timestamp": "2026-05-12T23:16:00Z", "result_count": 10, "results": [
+      {"title": "Australia's Cloudy Beauty", "url": "https://science.nasa.gov/earth/earth-observatory/australias-cloudy-beauty/", "snippet": "Terra MODIS May 11 2026 arch-shaped cloud Port Phillip Bay + autumn fog Victorian Alps", "source_name": "NASA EO"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Israeli military base Iraq satellite imagery 2026", "language": "en", "timestamp": "2026-05-12T23:17:00Z", "result_count": 10, "results": [
+      {"title": "Satellite images reveal possible secret Israeli base in Iraq", "url": "https://www.israelhayom.com/2026/05/10/satellite-images-reveal-possible-secret-israeli-base-in-iraq", "snippet": "Late Feb 2026 imagery shows 1.5km airstrip in wadi, early March imagery shows tents/helicopters/vehicles", "source_name": "Israel Hayom"},
+      {"title": "Analysts appear to locate Israel's secret military base in Iraqi desert", "url": "https://www.timesofisrael.com/liveblog_entry/analysts-appear-to-locate-israels-secret-military-base-in-iraqi-desert/", "snippet": "GEOINT analysts geolocated the base ~180km W of Najaf", "source_name": "Times of Israel"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "UNOSAT satellite analysis humanitarian May 2026", "language": "en", "timestamp": "2026-05-12T23:18:00Z", "result_count": 10, "results": []},
+    {"method": "websearch", "engine": "built-in", "keyword": "Bellingcat satellite CSIS Beyond Parallel North Korea May 2026", "language": "en", "timestamp": "2026-05-12T23:19:00Z", "result_count": 10, "results": [
+      {"title": "Beyond Parallel — Bringing transparency to Korea", "url": "https://beyondparallel.csis.org/", "snippet": "CSIS nonpartisan analytic vehicle for Korean peninsula developments", "source_name": "CSIS Beyond Parallel"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Planet Labs Maxar satellite news May 12 2026", "language": "en", "timestamp": "2026-05-12T23:20:00Z", "result_count": 10, "results": [
+      {"title": "Maxar satellite imagery Ukraine Grande Pettine hotel", "url": "https://news.satnews.com/2022/05/13/maxars-satellite-imagery-brings-to-light-additional-damage-to-the-ukraine-by-russian-attack-forces/", "snippet": "Maxar May 12 imagery shows damage to Grande Pettine hotel, Odesa Black Sea coast (46.379, 30.749)", "source_name": "SatNews"},
+      {"title": "Blind Spots — CJR", "url": "https://www.cjr.org/feature/blind-spots-satellite-osint-open-source-middle-east-iran-blackout-planet-labs-vantor-maxar.php", "snippet": "CJR investigation on satellite OSINT blind spots in Middle East", "source_name": "CJR"},
+      {"title": "Planet Labs launches three more Pelican satellites", "url": "https://thenextweb.com/news/planet-labs-pelican-satellite-earth-observation", "snippet": "Pelican 7/8/9 launched May 3, $900M backlog, first profitable year", "source_name": "The Next Web"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "South China Sea satellite military reef island May 2026", "language": "en", "timestamp": "2026-05-12T23:21:00Z", "result_count": 10, "results": [
+      {"title": "Satellite Photos Show China's Massive Manmade Island — Antelope Reef", "url": "https://www.newsweek.com/satellite-photos-china-manmade-island-disputed-waters-antelope-reef-11733191", "snippet": "1490 acres reclaimed, NW edge suitable for 9000ft airstrip, helipad, 50+ structures", "source_name": "Newsweek"},
+      {"title": "Antelope Reef Could Now Be the Largest Island in the SCS", "url": "https://amti.csis.org/antelope-reef-could-now-be-the-largest-island-in-the-south-china-sea/", "snippet": "AMTI/CSIS analysis — reclamation approaches Mischief Reef 1504ac", "source_name": "CSIS AMTI"},
+      {"title": "China is remaking the South China Sea with return to island-building", "url": "https://www.lowyinstitute.org/the-interpreter/china-remaking-south-china-sea-return-island-building", "snippet": "Vietnam issued rare formal objection over Antelope Reef construction", "source_name": "Lowy Institute"}
+    ]},
+    {"method": "websearch", "engine": "built-in", "keyword": "Ibu volcano Indonesia eruption May 12 2026", "language": "en", "timestamp": "2026-05-12T23:22:00Z", "result_count": 10, "results": [
+      {"title": "Ibu Volcano Volcanic Ash Advisory 12/0813Z", "url": "https://www.volcanodiscovery.com/ibu/news/302174/vaac-advisory-2026-535.html", "snippet": "VA emission report May 12 0813Z, ash to FL070, moving NW at 10kt", "source_name": "VolcanoDiscovery/VAAC Darwin"}
+    ]}
+  ]
+}

@@ -1,15 +1,15 @@
 {
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "위성영상 관측 이벤트 누적 지식그래프 — 첫 실행(2026-04-30) 이후 매일 신규/추론 트리플 병합",
-  "last_updated": "2026-05-11",
-  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11"],
-  "triples": "ontology/kg/2026-04-30.json + ontology/kg/2026-05-01.json + ontology/kg/2026-05-02.json + ontology/kg/2026-05-03.json + ontology/kg/2026-05-04.json + ontology/kg/2026-05-05.json + ontology/kg/2026-05-06.json + ontology/kg/2026-05-07.json + ontology/kg/2026-05-08.json + ontology/kg/2026-05-09.json + ontology/kg/2026-05-10.json + ontology/kg/2026-05-11.json (new_triples + updated_triples + inferred_triples)",
+  "last_updated": "2026-05-12",
+  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12"],
+  "triples": "ontology/kg/2026-04-30.json + ontology/kg/2026-05-01.json + ontology/kg/2026-05-02.json + ontology/kg/2026-05-03.json + ontology/kg/2026-05-04.json + ontology/kg/2026-05-05.json + ontology/kg/2026-05-06.json + ontology/kg/2026-05-07.json + ontology/kg/2026-05-08.json + ontology/kg/2026-05-09.json + ontology/kg/2026-05-10.json + ontology/kg/2026-05-11.json + ontology/kg/2026-05-12.json (new_triples + updated_triples + inferred_triples)",
   "stats": {
-    "total_explicit_triples": 759,
-    "total_inferred_triples": 279,
-    "total_unique_subjects": 174,
+    "total_explicit_triples": 786,
+    "total_inferred_triples": 294,
+    "total_unique_subjects": 180,
     "total_unique_predicates": 18,
-    "total_unique_objects": 215
+    "total_unique_objects": 221
   },
-  "note": "2026-05-11 병합 완료 — 신규 이벤트 5건(evt-501 Florida 산불, evt-502 Mid-Atlantic 블룸, evt-503 북극 해빙 기록, evt-504 Ibu 화산, evt-505 Ahuachapán 피처), 업데이트 6건(evt-082/127/202/203/204/temp-001). 신규 Satellite 1건(sat-icesat2), Country 1건(co-sv). multiSatBoost 5건(Florida/Georgia/Mayon/Kilauea/Caloy). sarBoost 1건(Great Sitkin). tracegasBoost 1건(Shishaldin). officialBoost 2건(NASA EO). partOfSeries 3건. 한반도 GeoFocus 0건. 누적 KG 1038 트리플."
+  "note": "2026-05-12 병합 완료 — 신규 이벤트 3건(evt-601 Mt Kupreanof 화산 SO2, evt-602 이라크 이스라엘 비밀기지 위성공개, evt-603 오데사 호텔 피격 Maxar), 업데이트 8건(evt-501/202/082/203/204/temp-001/504/092). 신규 Country 2건(co-iq, co-il), Location 3건(ent-loc-062~064). multiSatBoost 6건(Florida/Kilauea/Mayon/Georgia/Iraq base/Antelope Reef). sarBoost 1건(Great Sitkin). tracegasBoost 2건(Kupreanof/Shishaldin). hiResBoost 2건(Iraq WV-3/Odesa WV-Legion). officialBoost 2건(USGS AVO/HVO). baCredibilityBoost 2건(Iraq/Odesa before-after). 한반도 GeoFocus 0건. 누적 KG 1080 트리플."
 }

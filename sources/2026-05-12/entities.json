@@ -1,0 +1,51 @@
+{
+  "date": "2026-05-12",
+  "entities": [
+    {"temp_id": "temp-evt-601", "matched_id": null, "type": "Event", "name": "Mount Kupreanof Volcanic Unrest 2026", "properties": {"phenomenon": "volcanic_eruption", "country": "US", "lat": 56.01, "lon": -159.79, "severity": "low", "start_date": "2026-04-04"}, "source_ids": ["src-004"], "mention_count": 1},
+    {"temp_id": "temp-evt-602", "matched_id": null, "type": "Event", "name": "Israeli Covert Base in Iraq Desert", "properties": {"phenomenon": "military_buildup", "country": "IQ", "lat": 31.5, "lon": 43.5, "severity": "high", "start_date": "2026-02-28", "end_date": "2026-03-30", "before_after_available": true}, "source_ids": ["src-009"], "mention_count": 3},
+    {"temp_id": "temp-evt-603", "matched_id": null, "type": "Event", "name": "Odesa Grande Pettine Hotel Damage", "properties": {"phenomenon": "infrastructure_damage", "country": "UA", "lat": 46.38, "lon": 30.75, "severity": "high", "before_after_available": true}, "source_ids": ["src-010"], "mention_count": 1},
+    {"temp_id": "temp-co-iq", "matched_id": null, "type": "Country", "name": "이라크", "properties": {"iso_code": "IQ", "region": "서아시아"}, "source_ids": ["src-009"], "mention_count": 1},
+    {"temp_id": "temp-co-il", "matched_id": null, "type": "Country", "name": "이스라엘", "properties": {"iso_code": "IL", "region": "서아시아"}, "source_ids": ["src-009"], "mention_count": 1},
+    {"temp_id": "temp-loc-062", "matched_id": null, "type": "Location", "name": "Mount Kupreanof, Alaska", "properties": {"country": "US", "region": "Alaska Peninsula", "lat": 56.01, "lon": -159.79}, "source_ids": ["src-004"], "mention_count": 1},
+    {"temp_id": "temp-loc-063", "matched_id": null, "type": "Location", "name": "Al-Anbar Governorate, Iraq", "properties": {"country": "IQ", "region": "Western Iraq", "lat": 31.5, "lon": 43.5}, "source_ids": ["src-009"], "mention_count": 1},
+    {"temp_id": "temp-loc-064", "matched_id": null, "type": "Location", "name": "Odesa, Ukraine", "properties": {"country": "UA", "region": "Southern Ukraine", "lat": 46.38, "lon": 30.75}, "source_ids": ["src-010"], "mention_count": 1},
+    {"temp_id": null, "matched_id": "ent-evt-501", "type": "Event", "name": "Florida Everglades Max Road Fire", "properties": {"phenomenon": "wildfire", "country": "US", "lat": 26.0, "lon": -80.45, "area_km2": 45.7}, "source_ids": ["src-001"], "mention_count": 3},
+    {"temp_id": null, "matched_id": "ent-evt-202", "type": "Event", "name": "Kilauea Ep47 Eruption Forecast", "properties": {"phenomenon": "volcanic_eruption", "country": "US", "lat": 19.41, "lon": -155.28}, "source_ids": ["src-002"], "mention_count": 3},
+    {"temp_id": null, "matched_id": "ent-evt-082", "type": "Event", "name": "Mayon Volcano Eruption 2026", "properties": {"phenomenon": "volcanic_eruption", "country": "PH", "lat": 13.26, "lon": 123.69}, "source_ids": ["src-003"], "mention_count": 2},
+    {"temp_id": null, "matched_id": "ent-evt-203", "type": "Event", "name": "Great Sitkin Lava Eruption", "properties": {"phenomenon": "volcanic_eruption", "country": "US", "lat": 52.08, "lon": -176.13}, "source_ids": ["src-005"], "mention_count": 1},
+    {"temp_id": null, "matched_id": "ent-evt-204", "type": "Event", "name": "Shishaldin Volcanic Unrest", "properties": {"phenomenon": "volcanic_eruption", "country": "US", "lat": 54.76, "lon": -163.97}, "source_ids": ["src-006"], "mention_count": 1},
+    {"temp_id": null, "matched_id": "temp-evt-001", "type": "Event", "name": "Georgia Pineland Road Fire", "properties": {"phenomenon": "wildfire", "country": "US", "lat": 31.5, "lon": -82.5, "area_km2": 131.8}, "source_ids": ["src-007"], "mention_count": 1},
+    {"temp_id": null, "matched_id": "ent-evt-504", "type": "Event", "name": "Ibu Volcano Eruption 2026", "properties": {"phenomenon": "volcanic_eruption", "country": "ID", "lat": 1.49, "lon": 127.63}, "source_ids": ["src-008"], "mention_count": 1},
+    {"temp_id": null, "matched_id": "ent-evt-092", "type": "Event", "name": "Antelope Reef Island Construction", "properties": {"phenomenon": "construction", "country": "CN", "lat": 16.46, "lon": 112.55, "area_km2": 6.03, "before_after_available": true}, "source_ids": ["src-011"], "mention_count": 2}
+  ],
+  "relations": [
+    {"subject": "ent-evt-501", "predicate": "observedBy", "object": "sat-goes18", "source_ids": ["src-001"], "confidence": 0.90},
+    {"subject": "ent-evt-501", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-001"], "confidence": 0.90},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-002"], "confidence": 0.88},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-002"], "confidence": 0.88},
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-003"], "confidence": 0.92},
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-003"], "confidence": 0.92},
+    {"subject": "temp-evt-601", "predicate": "observedBy", "object": "sat-sentinel5p", "source_ids": ["src-004"], "confidence": 0.82},
+    {"subject": "temp-evt-601", "predicate": "usesSensor", "object": "sensor-tropomi", "source_ids": ["src-004"], "confidence": 0.82},
+    {"subject": "ent-evt-203", "predicate": "observedBy", "object": "sat-sentinel1a", "source_ids": ["src-005"], "confidence": 0.85},
+    {"subject": "ent-evt-203", "predicate": "usesSensor", "object": "sensor-c-sar", "source_ids": ["src-005"], "confidence": 0.85},
+    {"subject": "ent-evt-204", "predicate": "observedBy", "object": "sat-sentinel5p", "source_ids": ["src-006"], "confidence": 0.78},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-007"], "confidence": 0.85},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-landsat8", "source_ids": ["src-007"], "confidence": 0.85},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-007"], "confidence": 0.85},
+    {"subject": "ent-evt-504", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-008"], "confidence": 0.80},
+    {"subject": "temp-evt-602", "predicate": "observedBy", "object": "sat-planetscope", "source_ids": ["src-009"], "confidence": 0.85},
+    {"subject": "temp-evt-602", "predicate": "observedBy", "object": "sat-worldview3", "source_ids": ["src-009"], "confidence": 0.85},
+    {"subject": "temp-evt-603", "predicate": "observedBy", "object": "sat-wv-legion", "source_ids": ["src-010"], "confidence": 0.88},
+    {"subject": "temp-evt-603", "predicate": "analyzedBy", "object": "org-maxar", "source_ids": ["src-010"], "confidence": 0.88},
+    {"subject": "ent-evt-092", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-011"], "confidence": 0.92},
+    {"subject": "ent-evt-092", "predicate": "observedBy", "object": "sat-worldview3", "source_ids": ["src-011"], "confidence": 0.92},
+    {"subject": "ent-evt-092", "predicate": "analyzedBy", "object": "org-amti", "source_ids": ["src-011"], "confidence": 0.92}
+  ],
+  "stats": {
+    "total_entities": 16,
+    "new_entities": 8,
+    "matched_entities": 8,
+    "total_relations": 22
+  }
+}

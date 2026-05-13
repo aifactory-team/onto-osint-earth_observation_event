@@ -1,0 +1,56 @@
+{
+  "date": "2026-05-12",
+  "new_triples": [
+    {"subject": "ent-evt-601", "predicate": "observedBy", "object": "sat-sentinel5p", "source_id": "src-004", "date": "2026-05-12", "confidence": 0.82, "type": "explicit"},
+    {"subject": "ent-evt-601", "predicate": "usesSensor", "object": "sensor-tropomi", "source_id": "src-004", "date": "2026-05-12", "confidence": 0.82, "type": "explicit"},
+    {"subject": "ent-evt-601", "predicate": "locatedIn", "object": "ent-loc-062", "source_id": "src-004", "date": "2026-05-12", "confidence": 0.82, "type": "explicit"},
+    {"subject": "ent-evt-601", "predicate": "inCountry", "object": "co-us", "source_id": "src-004", "date": "2026-05-12", "confidence": 0.82, "type": "explicit"},
+    {"subject": "ent-evt-601", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-004", "date": "2026-05-12", "confidence": 0.82, "type": "explicit"},
+    {"subject": "ent-evt-601", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-004", "date": "2026-05-12", "confidence": 0.82, "type": "explicit"},
+    {"subject": "ent-evt-601", "predicate": "analyzedBy", "object": "org-usgs", "source_id": "src-004", "date": "2026-05-12", "confidence": 0.82, "type": "explicit"},
+    {"subject": "ent-evt-602", "predicate": "observedBy", "object": "sat-planetscope", "source_id": "src-009", "date": "2026-05-12", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-602", "predicate": "observedBy", "object": "sat-worldview3", "source_id": "src-009", "date": "2026-05-12", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-602", "predicate": "locatedIn", "object": "ent-loc-063", "source_id": "src-009", "date": "2026-05-12", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-602", "predicate": "inCountry", "object": "co-iq", "source_id": "src-009", "date": "2026-05-12", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-602", "predicate": "manifests", "object": "phen-military", "source_id": "src-009", "date": "2026-05-12", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-602", "predicate": "inDomain", "object": "dom-defense", "source_id": "src-009", "date": "2026-05-12", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-603", "predicate": "observedBy", "object": "sat-wv-legion", "source_id": "src-010", "date": "2026-05-12", "confidence": 0.88, "type": "explicit"},
+    {"subject": "ent-evt-603", "predicate": "analyzedBy", "object": "org-maxar", "source_id": "src-010", "date": "2026-05-12", "confidence": 0.88, "type": "explicit"},
+    {"subject": "ent-evt-603", "predicate": "locatedIn", "object": "ent-loc-064", "source_id": "src-010", "date": "2026-05-12", "confidence": 0.88, "type": "explicit"},
+    {"subject": "ent-evt-603", "predicate": "inCountry", "object": "co-ua", "source_id": "src-010", "date": "2026-05-12", "confidence": 0.88, "type": "explicit"},
+    {"subject": "ent-evt-603", "predicate": "manifests", "object": "phen-infra-damage", "source_id": "src-010", "date": "2026-05-12", "confidence": 0.88, "type": "explicit"},
+    {"subject": "ent-evt-603", "predicate": "inDomain", "object": "dom-humanitarian", "source_id": "src-010", "date": "2026-05-12", "confidence": 0.88, "type": "explicit"}
+  ],
+  "updated_triples": [
+    {"subject": "ent-evt-501", "predicate": "observedBy", "object": "sat-goes18", "source_id": "src-001", "date": "2026-05-12", "confidence": 0.90, "type": "explicit", "note": "containment 50->70%"},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-002", "date": "2026-05-12", "confidence": 0.90, "type": "explicit", "note": "Ep47 window narrowed 5/12-14"},
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-003", "date": "2026-05-12", "confidence": 0.92, "type": "explicit", "note": "Day 128+, 21 quakes"},
+    {"subject": "ent-evt-203", "predicate": "observedBy", "object": "sat-sentinel1a", "source_id": "src-005", "date": "2026-05-12", "confidence": 0.85, "type": "explicit", "note": "SAR lava + rockfalls"},
+    {"subject": "ent-evt-204", "predicate": "observedBy", "object": "sat-sentinel5p", "source_id": "src-006", "date": "2026-05-12", "confidence": 0.78, "type": "explicit", "note": "SO2 persists"},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_id": "src-007", "date": "2026-05-12", "confidence": 0.85, "type": "explicit", "note": "~90% contained, ban lifted"},
+    {"subject": "ent-evt-504", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-008", "date": "2026-05-12", "confidence": 0.80, "type": "explicit", "note": "VAAC 535 FL070"},
+    {"subject": "ent-evt-092", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-011", "date": "2026-05-12", "confidence": 0.92, "type": "explicit", "note": "1490ac, Vietnam protest"}
+  ],
+  "inferred_triples": [
+    {"subject": "ent-evt-501", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.90, "type": "inferred", "note": "GOES-18(NOAA) + VIIRS(NOAA/NASA) independent orbit types"},
+    {"subject": "ent-evt-202", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.90, "type": "inferred", "note": "Sentinel-2A(ESA) + Landsat 9(USGS/NASA)"},
+    {"subject": "ent-evt-082", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.92, "type": "inferred", "note": "Himawari-9(JMA) + Sentinel-2A(ESA)"},
+    {"subject": "temp-evt-001", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.85, "type": "inferred", "note": "VIIRS + Landsat 8 + Landsat 9 triple verification"},
+    {"subject": "ent-evt-602", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.85, "type": "inferred", "note": "PlanetScope(Planet) + WorldView-3(Maxar)"},
+    {"subject": "ent-evt-092", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.92, "type": "inferred", "note": "Sentinel-2A(ESA) + WorldView-3(Maxar)"},
+    {"subject": "ent-evt-203", "predicate": "sarBoost", "object": "+0.10", "rule": "sensor_capability_match_sar", "confidence": 0.85, "type": "inferred", "note": "C-SAR cloud-penetrating observation of lava flow"},
+    {"subject": "ent-evt-601", "predicate": "tracegasBoost", "object": "+0.15", "rule": "sensor_capability_match_tracegas", "confidence": 0.82, "type": "inferred", "note": "TROPOMI SO2 volcanic gas detection"},
+    {"subject": "ent-evt-204", "predicate": "tracegasBoost", "object": "+0.15", "rule": "sensor_capability_match_tracegas", "confidence": 0.78, "type": "inferred", "note": "TROPOMI SO2 volcanic unrest detection"},
+    {"subject": "ent-evt-602", "predicate": "hiResBoost", "object": "+0.15", "rule": "sensor_capability_match_hires", "confidence": 0.85, "type": "inferred", "note": "WorldView-3 0.31m military infrastructure identification"},
+    {"subject": "ent-evt-603", "predicate": "hiResBoost", "object": "+0.15", "rule": "sensor_capability_match_hires", "confidence": 0.88, "type": "inferred", "note": "WorldView Legion 0.30m damage assessment"},
+    {"subject": "ent-evt-601", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.82, "type": "inferred", "note": "USGS AVO official assessment"},
+    {"subject": "ent-evt-202", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.90, "type": "inferred", "note": "USGS HVO official forecast"},
+    {"subject": "ent-evt-602", "predicate": "baCredibilityBoost", "object": "+0.10", "rule": "before_after_credibility", "confidence": 0.85, "type": "inferred", "note": "Before/after imagery available (Feb vs Mar)"},
+    {"subject": "ent-evt-603", "predicate": "baCredibilityBoost", "object": "+0.10", "rule": "before_after_credibility", "confidence": 0.88, "type": "inferred", "note": "Before/after Maxar imagery of hotel"}
+  ],
+  "stats": {
+    "new_nodes": 8,
+    "new_edges": 19,
+    "inferred_edges": 15
+  }
+}

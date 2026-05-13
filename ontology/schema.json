@@ -408,6 +408,27 @@
       "target": "ent-evt-501/502/503/504/505 + updates to evt-082, evt-127, evt-202, evt-203, evt-204, temp-evt-001",
       "reason": "신규 5건: Florida Everglades 산불 11,000ac GOES/VIIRS(501), Mid-Atlantic 식물플랑크톤 MODIS(502), 북극 해빙 최저 ICESat-2(503), Ibu 화산 Himawari-9(504), Ahuachapán 지열 Landsat 8(505, 2024-11 영상 피처기사, 보고서 본문 제외). 업데이트 6건: Mayon 127일 스트롬볼리(082), Caloy 잔여저기압 종결(127), Kilauea Ep47 5/12~15(202), Great Sitkin SAR 용암류 동측(203), Shishaldin SO2 TROPOMI(204), GA Pineland 70~87%(temp-001).",
       "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009", "src-010", "src-011"]
+    },
+    {
+      "date": "2026-05-12",
+      "action": "add_country",
+      "target": "co-iq, co-il",
+      "reason": "이라크(IQ) — Al-Anbar 이스라엘 비밀 군사기지 위성영상(temp-evt-602, PlanetScope/WorldView-3). 이스라엘(IL) — 동일 이벤트 주체국. 기존 국가 인스턴스에 없던 2개국 추가.",
+      "source_ids": ["src-009"]
+    },
+    {
+      "date": "2026-05-12",
+      "action": "add_location",
+      "target": "ent-loc-062~064",
+      "reason": "Mount Kupreanof Alaska(US, 56.01/-159.79 — 화산 불안 ADVISORY/YELLOW), Al-Anbar Iraq(IQ, 31.5/43.5 — 이스라엘 비밀 기지), Odesa Ukraine(UA, 46.38/30.75 — Grande Pettine 호텔 피격) — 3개 신규 Location.",
+      "source_ids": ["src-004", "src-009", "src-010"]
+    },
+    {
+      "date": "2026-05-12",
+      "action": "add_event_batch",
+      "target": "ent-evt-601/602/603 + updates to evt-501, evt-202, evt-082, evt-203, evt-204, temp-evt-001, evt-504, evt-092",
+      "reason": "신규 3건: Mt Kupreanof 화산 불안 SO2 TROPOMI(601), 이라크 이스라엘 비밀기지 위성공개(602, PlanetScope+WV-3), 오데사 호텔 피격 Maxar(603). 업데이트 8건: Everglades 11300ac 70%(501), Kilauea Ep47 5/12-14(202), Mayon Day128+(082), Great Sitkin SAR(203), Shishaldin SO2(204), GA Pineland ~90%(temp-001), Ibu VAAC 535(504), Antelope Reef 1490ac 베트남 항의(092 supersedes prev).",
+      "source_ids": ["src-001~src-011"]
     }
   ]
 }
