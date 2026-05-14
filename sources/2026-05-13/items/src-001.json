@@ -1,0 +1,30 @@
+{
+  "id": "src-001",
+  "title": "Bismarck Sea 해저 화산 분출 — Himawari-9 화산재 FL130, 해수 변색 확인 (PNG, 1972년 이후 최초)",
+  "url": "https://watchers.news/2026/05/13/rare-volcanic-ash-emission-detected-submarine-volcano-central-bismarck-sea-papua-new-guinea-may-2026/",
+  "snippet": "Darwin VAAC reports rare volcanic ash emission from submarine volcano in Bismarck Sea Volcanic Province, Papua New Guinea, since May 11. By May 13 ash rising to ~4km (FL130). Himawari-9 satellite imagery at 04:30 UTC May 12 showed ash and water discoloration. Source at 1,300m below sea level at 3°02′S 147°47′E. First eruption since 1972.",
+  "source_name": "The Watchers",
+  "language": "en",
+  "discovered_date": "2026-05-13",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 14일 소스에 Bismarck Sea 해저 화산 분출 관련 항목 없음. 1972년 이후 최초 분출로 완전 신규 이벤트.",
+  "entities": [
+    {"id": "ent-evt-701", "type": "Event", "name": "Bismarck Sea 해저 화산 분출 2026-05", "properties": {"phenomenon": "volcanic_eruption", "lat": -3.03, "lon": 147.78, "country": "PG", "observation_date": "2026-05-12", "start_date": "2026-05-08", "severity": "medium", "before_after_available": false, "confidence": 0.88}},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9", "properties": {}},
+    {"id": "sensor-ahi", "type": "Sensor", "name": "AHI", "properties": {"sensor_type": "optical_multispectral"}},
+    {"id": "org-vaac-darwin", "type": "Organization", "name": "VAAC Darwin", "properties": {"org_type": "weather_agency"}},
+    {"id": "co-pg", "type": "Country", "name": "파푸아뉴기니", "properties": {"iso_code": "PG"}},
+    {"id": "ent-loc-065", "type": "Location", "name": "Central Bismarck Sea", "properties": {"lat": -3.03, "lon": 147.78, "country": "PG", "admin_level": "offshore"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-701", "predicate": "usesSensor", "object": "sensor-ahi"},
+    {"subject": "ent-evt-701", "predicate": "locatedIn", "object": "ent-loc-065"},
+    {"subject": "ent-evt-701", "predicate": "inCountry", "object": "co-pg"},
+    {"subject": "ent-evt-701", "predicate": "analyzedBy", "object": "org-vaac-darwin"},
+    {"subject": "ent-evt-701", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-701", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

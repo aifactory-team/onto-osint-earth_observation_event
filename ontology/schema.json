@@ -429,6 +429,20 @@
       "target": "ent-evt-601/602/603 + updates to evt-501, evt-202, evt-082, evt-203, evt-204, temp-evt-001, evt-504, evt-092",
       "reason": "신규 3건: Mt Kupreanof 화산 불안 SO2 TROPOMI(601), 이라크 이스라엘 비밀기지 위성공개(602, PlanetScope+WV-3), 오데사 호텔 피격 Maxar(603). 업데이트 8건: Everglades 11300ac 70%(501), Kilauea Ep47 5/12-14(202), Mayon Day128+(082), Great Sitkin SAR(203), Shishaldin SO2(204), GA Pineland ~90%(temp-001), Ibu VAAC 535(504), Antelope Reef 1490ac 베트남 항의(092 supersedes prev).",
       "source_ids": ["src-001~src-011"]
+    },
+    {
+      "date": "2026-05-13",
+      "action": "add_location",
+      "target": "ent-loc-065",
+      "reason": "Central Bismarck Sea (PG, -3.03/147.78) — 해저 화산 분출 위치, 수심 1,300m. 1972년 이후 54년 만의 재활동. Darwin VAAC Advisory 발행, Himawari-9 화산재 FL130 + 해수 변색 확인.",
+      "source_ids": ["src-001", "src-008"]
+    },
+    {
+      "date": "2026-05-13",
+      "action": "add_event_batch",
+      "target": "ent-evt-701 + updates to evt-202, evt-082, evt-501, temp-evt-001, evt-203, evt-204",
+      "reason": "신규 1건: Bismarck Sea 해저 화산 분출(701, Himawari-9, 1972 이후 최초). 업데이트 7건: Kilauea ADVISORY→WATCH/ORANGE Ep47 임박(202), Mayon Day129 스트롬볼리안(082), Everglades 11339ac 70%(501), Pineland 90% 번밴 해제(temp-001), Great Sitkin SAR 용암류(203), Shishaldin SO2 TROPOMI(204). 미검증 지속 1건: Fuego GT(satellite_unverified).",
+      "source_ids": ["src-001~src-008"]
     }
   ]
 }

@@ -1,0 +1,37 @@
+{
+  "date": "2026-05-13",
+  "collected_at": "2026-05-13T23:00:00Z",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 20,
+  "total_results": 78,
+  "expanded_keywords": [
+    "Bismarck Sea submarine volcano", "Kilauea episode 47", "Mayon volcano PHIVOLCS",
+    "Everglades Max Road Fire", "Georgia Pineland Road wildfire", "Great Sitkin SAR",
+    "Shishaldin SO2 TROPOMI", "Kupreanof volcano Alaska", "Ibu volcano VAAC",
+    "Antelope Reef Paracel", "Iraq Israel satellite base", "Pemex Cantarell oil spill",
+    "KOMPSAT 한반도", "CSIS Beyond Parallel", "MethaneSAT", "Sentinel-2 Landsat",
+    "NDVI agriculture satellite", "South China Sea military satellite"
+  ],
+  "searches": [
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery wildfire flood May 2026", "language": "en", "timestamp": "2026-05-13T23:00:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery volcano eruption May 13 2026", "language": "en", "timestamp": "2026-05-13T23:01:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery deforestation mining oil spill May 2026", "language": "en", "timestamp": "2026-05-13T23:01:30Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery military buildup defense OSINT May 2026", "language": "en", "timestamp": "2026-05-13T23:02:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery glacier methane climate change May 2026", "language": "en", "timestamp": "2026-05-13T23:02:30Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "위성영상 산불 홍수 재해 2026년 5월", "language": "ko", "timestamp": "2026-05-13T23:03:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Sentinel-2 Landsat MODIS VIIRS earth observation event May 12 13 2026", "language": "en", "timestamp": "2026-05-13T23:03:30Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "NASA Earth Observatory image of the day May 2026", "language": "en", "timestamp": "2026-05-13T23:04:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Bismarck Sea submarine volcano eruption Papua New Guinea May 2026 satellite", "language": "en", "timestamp": "2026-05-13T23:04:30Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Kilauea volcano eruption May 13 2026 episode 47", "language": "en", "timestamp": "2026-05-13T23:05:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Mayon volcano May 13 2026 eruption update", "language": "en", "timestamp": "2026-05-13T23:05:30Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Everglades wildfire Florida May 13 2026", "language": "en", "timestamp": "2026-05-13T23:06:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Copernicus EMS activation May 2026", "language": "en", "timestamp": "2026-05-13T23:06:30Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "UNOSAT satellite analysis humanitarian May 2026", "language": "en", "timestamp": "2026-05-13T23:07:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "South China Sea satellite imagery military May 13 2026", "language": "en", "timestamp": "2026-05-13T23:07:30Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "위성영상 한반도 북한 KOMPSAT 2026년 5월", "language": "ko", "timestamp": "2026-05-13T23:08:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Georgia Pineland Road wildfire May 13 2026 update", "language": "en", "timestamp": "2026-05-13T23:08:30Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Great Sitkin Shishaldin Kupreanof volcano Alaska May 13 2026", "language": "en", "timestamp": "2026-05-13T23:09:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Pemex oil spill Gulf Mexico satellite May 2026", "language": "en", "timestamp": "2026-05-13T23:09:30Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Antelope Reef China Paracel satellite May 2026 Vietnam", "language": "en", "timestamp": "2026-05-13T23:10:00Z", "result_count": 10}
+  ]
+}

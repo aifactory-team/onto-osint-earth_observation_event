@@ -1188,3 +1188,38 @@ config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5)
 - **추론:** baCredibilityBoost +0.10
 - **신뢰도:** 0.85~0.88
 - **상태:** 확정
+
+---
+
+## 2026-05-13 추론 결과
+
+### multi_satellite_confirmation (다중 위성 교차검증) — 4건
+
+- **추론 #1:** ent-evt-202 (Kilauea Ep47) — observedBy Sentinel-2A (ESA) AND Landsat 9 (USGS/NASA) → multiSatBoost +0.20 [confidence 0.92, 확정]
+- **추론 #2:** ent-evt-082 (Mayon Day 129) — observedBy Himawari-9 (JMA) AND Sentinel-2A (ESA) → multiSatBoost +0.20 [0.92, 확정]
+- **추론 #3:** ent-evt-501 (Everglades Fire) — observedBy GOES-18 (NOAA GEO) AND VIIRS (NOAA/NASA LEO) → multiSatBoost +0.20 [0.90, 확정]
+- **추론 #4:** temp-evt-001 (Pineland Road Fire) — observedBy VIIRS + Landsat 8 + Landsat 9 → multiSatBoost +0.20 [0.85, 확정] (3중 위성)
+
+### official_source_trust (공식 기관 신뢰도) — 3건
+
+- **추론 #5:** ent-evt-202 (Kilauea) — analyzedBy USGS HVO (space_agency) → officialBoost +0.15 [0.92, 확정]
+- **추론 #6:** ent-evt-203 (Great Sitkin) — analyzedBy USGS AVO (space_agency) → officialBoost +0.15 [0.85, 확정]
+- **추론 #7:** ent-evt-701 (Bismarck Sea) — analyzedBy VAAC Darwin (weather_agency) → officialBoost +0.15 [0.85, 확정]
+
+### sensor_capability_match_sar — 1건
+
+- **추론 #8:** ent-evt-203 (Great Sitkin) — usesSensor Sentinel-1A C-SAR, 구름 투과 유일 관측 → sarBoost +0.10 [0.85, 확정]
+
+### sensor_capability_match_tracegas — 1건
+
+- **추론 #9:** ent-evt-204 (Shishaldin) — usesSensor Sentinel-5P TROPOMI, SO2 배출 → tracegasBoost +0.15 [0.78, 확정]
+
+### sensor_capability_match_tirs (열적외 산불) — 2건
+
+- **추론 #10:** ent-evt-501 (Everglades) — usesSensor GOES ABI + VIIRS thermal → thermalBoost +0.10 [0.90, 확정]
+- **추론 #11:** temp-evt-001 (Pineland) — usesSensor Landsat TIRS + VIIRS thermal → thermalBoost +0.10 [0.85, 확정]
+
+### 특이사항
+- 전 세계 7+ 화산 동시 위성 모니터링: Bismarck Sea(신규), Kilauea(WATCH 상향), Mayon(129일째), Great Sitkin(WATCH), Shishaldin(ADVISORY), Kupreanof(ADVISORY), Ibu(VAAC) — 유례없는 동시 화산 활동
+- Bismarck Sea 해저 화산은 1972년 이후 54년 만의 분출로 온톨로지에 신규 Location(ent-loc-065) 추가
+- 한반도 GeoFocus: 금일 해당 없음

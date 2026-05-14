@@ -1,0 +1,27 @@
+{
+  "id": "src-002",
+  "title": "Kilauea Ep47 임박 — ADVISORY→WATCH/ORANGE 상향, 남측 분출구 강한 발광 (USGS HVO May 13)",
+  "url": "https://bigislandnow.com/2026/05/13/alert-level-raised-at-kilauea-as-eruptive-episode-is-imminent-hawaiian-volcano-observatory-reports/",
+  "snippet": "Hawaiian Volcano Observatory raised Kilauea alert level from ADVISORY to WATCH and aviation color code from YELLOW to ORANGE on May 13. Episode 47 of lava fountaining expected between May 13-14. South vent has strong glow with periodic flaming, north vent with several small spatter bursts. Accelerated precursory activity expected before fountaining begins.",
+  "source_name": "Big Island Now",
+  "language": "en",
+  "discovered_date": "2026-05-13",
+  "tag": "update",
+  "related_report": "2026-05-12/src-002",
+  "related_item": "ent-evt-202",
+  "tag_reason": "Kilauea 경보 수준 ADVISORY→WATCH 상향은 유의미한 새 정보. Ep47 분출 임박 판단.",
+  "entities": [
+    {"id": "ent-evt-202", "type": "Event", "name": "Kilauea Ep47 분출 예측", "properties": {"phenomenon": "volcanic_eruption", "lat": 19.41, "lon": -155.28, "country": "US", "observation_date": "2026-05-13", "severity": "high", "confidence": 0.92}},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A", "properties": {}},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9", "properties": {}},
+    {"id": "org-hvo", "type": "Organization", "name": "USGS HVO", "properties": {"org_type": "space_agency"}},
+    {"id": "co-us", "type": "Country", "name": "미국", "properties": {"iso_code": "US"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "ent-evt-202", "predicate": "analyzedBy", "object": "org-hvo"},
+    {"subject": "ent-evt-202", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-202", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

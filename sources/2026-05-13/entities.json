@@ -1,0 +1,104 @@
+{
+  "date": "2026-05-13",
+  "entities": [
+    {
+      "temp_id": "ent-evt-701",
+      "matched_id": null,
+      "type": "Event",
+      "name": "Bismarck Sea 해저 화산 분출 2026-05",
+      "properties": {"phenomenon": "volcanic_eruption", "country": "PG", "lat": -3.03, "lon": 147.78, "start_date": "2026-05-08", "observation_date": "2026-05-12", "severity": "medium", "before_after_available": false},
+      "source_ids": ["src-001", "src-008"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-202",
+      "type": "Event",
+      "name": "Kilauea Ep47 분출 — WATCH/ORANGE",
+      "properties": {"phenomenon": "volcanic_eruption", "country": "US", "lat": 19.41, "lon": -155.28, "observation_date": "2026-05-13", "severity": "high"},
+      "source_ids": ["src-002"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-082",
+      "type": "Event",
+      "name": "Mayon 화산 Day 129",
+      "properties": {"phenomenon": "volcanic_eruption", "country": "PH", "lat": 13.26, "lon": 123.69, "observation_date": "2026-05-13"},
+      "source_ids": ["src-003"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-501",
+      "type": "Event",
+      "name": "Florida Everglades Max Road Fire",
+      "properties": {"phenomenon": "wildfire", "country": "US", "lat": 26.0, "lon": -80.45, "observation_date": "2026-05-13"},
+      "source_ids": ["src-004"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "temp-evt-001",
+      "type": "Event",
+      "name": "Georgia Pineland Road 산불",
+      "properties": {"phenomenon": "wildfire", "country": "US", "lat": 31.5, "lon": -82.5, "observation_date": "2026-05-13"},
+      "source_ids": ["src-005"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-203",
+      "type": "Event",
+      "name": "Great Sitkin SAR 용암류",
+      "properties": {"phenomenon": "volcanic_eruption", "country": "US", "lat": 52.08, "lon": -176.13},
+      "source_ids": ["src-006"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-204",
+      "type": "Event",
+      "name": "Shishaldin SO2",
+      "properties": {"phenomenon": "volcanic_eruption", "country": "US", "lat": 54.76, "lon": -163.97},
+      "source_ids": ["src-007"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "ent-loc-065",
+      "matched_id": null,
+      "type": "Location",
+      "name": "Central Bismarck Sea",
+      "properties": {"lat": -3.03, "lon": 147.78, "country": "PG", "admin_level": "offshore"},
+      "source_ids": ["src-001", "src-008"],
+      "mention_count": 2
+    }
+  ],
+  "relations": [
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-001", "src-008"], "confidence": 0.88},
+    {"subject": "ent-evt-701", "predicate": "usesSensor", "object": "sensor-ahi", "source_ids": ["src-001"], "confidence": 0.88},
+    {"subject": "ent-evt-701", "predicate": "locatedIn", "object": "ent-loc-065", "source_ids": ["src-001", "src-008"], "confidence": 0.90},
+    {"subject": "ent-evt-701", "predicate": "inCountry", "object": "co-pg", "source_ids": ["src-001"], "confidence": 0.90},
+    {"subject": "ent-evt-701", "predicate": "analyzedBy", "object": "org-vaac-darwin", "source_ids": ["src-001"], "confidence": 0.85},
+    {"subject": "ent-evt-701", "predicate": "manifests", "object": "phen-volcano", "source_ids": ["src-001", "src-008"], "confidence": 0.90},
+    {"subject": "ent-evt-701", "predicate": "inDomain", "object": "dom-disaster", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-002"], "confidence": 0.90},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-002"], "confidence": 0.90},
+    {"subject": "ent-evt-202", "predicate": "analyzedBy", "object": "org-hvo", "source_ids": ["src-002"], "confidence": 0.92},
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-003"], "confidence": 0.92},
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-003"], "confidence": 0.92},
+    {"subject": "ent-evt-501", "predicate": "observedBy", "object": "sat-goes18", "source_ids": ["src-004"], "confidence": 0.90},
+    {"subject": "ent-evt-501", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-004"], "confidence": 0.90},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-005"], "confidence": 0.85},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-landsat8", "source_ids": ["src-005"], "confidence": 0.85},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-005"], "confidence": 0.85},
+    {"subject": "ent-evt-203", "predicate": "observedBy", "object": "sat-sentinel1a", "source_ids": ["src-006"], "confidence": 0.85},
+    {"subject": "ent-evt-204", "predicate": "observedBy", "object": "sat-sentinel5p", "source_ids": ["src-007"], "confidence": 0.78}
+  ],
+  "stats": {
+    "total_entities": 8,
+    "new_entities": 2,
+    "matched_entities": 6,
+    "total_relations": 19
+  }
+}

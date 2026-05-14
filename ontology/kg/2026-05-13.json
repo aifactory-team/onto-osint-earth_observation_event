@@ -1,0 +1,46 @@
+{
+  "date": "2026-05-13",
+  "new_triples": [
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-001", "date": "2026-05-13", "confidence": 0.88, "type": "explicit"},
+    {"subject": "ent-evt-701", "predicate": "usesSensor", "object": "sensor-ahi", "source_id": "src-001", "date": "2026-05-13", "confidence": 0.88, "type": "explicit"},
+    {"subject": "ent-evt-701", "predicate": "locatedIn", "object": "ent-loc-065", "source_id": "src-001", "date": "2026-05-13", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-701", "predicate": "inCountry", "object": "co-pg", "source_id": "src-001", "date": "2026-05-13", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-701", "predicate": "analyzedBy", "object": "org-vaac-darwin", "source_id": "src-001", "date": "2026-05-13", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-701", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-001", "date": "2026-05-13", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-701", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-001", "date": "2026-05-13", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-loc-065", "predicate": "inCountry", "object": "co-pg", "source_id": "src-001", "date": "2026-05-13", "confidence": 0.90, "type": "explicit"}
+  ],
+  "updated_triples": [
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-002", "date": "2026-05-13", "confidence": 0.92, "type": "explicit", "note": "alert ADVISORY→WATCH"},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-landsat9", "source_id": "src-002", "date": "2026-05-13", "confidence": 0.92, "type": "explicit"},
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-003", "date": "2026-05-13", "confidence": 0.92, "type": "explicit", "note": "Day 129"},
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-003", "date": "2026-05-13", "confidence": 0.92, "type": "explicit"},
+    {"subject": "ent-evt-501", "predicate": "observedBy", "object": "sat-goes18", "source_id": "src-004", "date": "2026-05-13", "confidence": 0.90, "type": "explicit", "note": "11339ac 70%"},
+    {"subject": "ent-evt-501", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_id": "src-004", "date": "2026-05-13", "confidence": 0.90, "type": "explicit"},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_id": "src-005", "date": "2026-05-13", "confidence": 0.85, "type": "explicit", "note": "90% burn ban lifted"},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-landsat8", "source_id": "src-005", "date": "2026-05-13", "confidence": 0.85, "type": "explicit"},
+    {"subject": "temp-evt-001", "predicate": "observedBy", "object": "sat-landsat9", "source_id": "src-005", "date": "2026-05-13", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-203", "predicate": "observedBy", "object": "sat-sentinel1a", "source_id": "src-006", "date": "2026-05-13", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-204", "predicate": "observedBy", "object": "sat-sentinel5p", "source_id": "src-007", "date": "2026-05-13", "confidence": 0.78, "type": "explicit"}
+  ],
+  "inferred_triples": [
+    {"subject": "ent-evt-202", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.92, "note": "Sentinel-2A (ESA) + Landsat 9 (USGS/NASA)"},
+    {"subject": "ent-evt-082", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.92, "note": "Himawari-9 (JMA) + Sentinel-2A (ESA)"},
+    {"subject": "ent-evt-501", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.90, "note": "GOES-18 (NOAA) + VIIRS (NOAA/NASA)"},
+    {"subject": "temp-evt-001", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.85, "note": "VIIRS + Landsat 8 + Landsat 9 (3중 위성)"},
+    {"subject": "ent-evt-202", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.92, "note": "USGS HVO (space_agency)"},
+    {"subject": "ent-evt-203", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.85, "note": "USGS AVO (space_agency)"},
+    {"subject": "ent-evt-204", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.78, "note": "USGS AVO (space_agency)"},
+    {"subject": "ent-evt-203", "predicate": "sarBoost", "object": "+0.10", "rule": "sensor_capability_match_sar", "confidence": 0.85, "note": "Sentinel-1A C-SAR, 구름 투과 유일한 관측"},
+    {"subject": "ent-evt-204", "predicate": "tracegasBoost", "object": "+0.15", "rule": "sensor_capability_match_tracegas", "confidence": 0.78, "note": "TROPOMI SO2"},
+    {"subject": "ent-evt-501", "predicate": "thermalBoost", "object": "+0.10", "rule": "sensor_capability_match_tirs", "confidence": 0.90, "note": "GOES ABI + VIIRS thermal wildfire"},
+    {"subject": "temp-evt-001", "predicate": "thermalBoost", "object": "+0.10", "rule": "sensor_capability_match_tirs", "confidence": 0.85, "note": "Landsat TIRS + VIIRS thermal wildfire"},
+    {"subject": "ent-evt-701", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.85, "note": "VAAC Darwin (weather_agency)"}
+  ],
+  "stats": {
+    "new_nodes": 2,
+    "new_edges": 8,
+    "updated_edges": 11,
+    "inferred_edges": 12
+  }
+}
