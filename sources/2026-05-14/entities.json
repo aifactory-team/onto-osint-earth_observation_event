@@ -1,0 +1,120 @@
+{
+  "date": "2026-05-14",
+  "entities": [
+    {
+      "temp_id": "ent-evt-801",
+      "matched_id": null,
+      "type": "Event",
+      "name": "Bezymianny 화산 폭발적 분출 — VAAC FL150 (캄차카)",
+      "properties": {"phenomenon": "volcanic_eruption", "country": "RU", "lat": 55.97, "lon": 160.59, "observation_date": "2026-05-13", "severity": "moderate", "confidence": 0.85},
+      "source_ids": ["src-004"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "ent-evt-802",
+      "matched_id": null,
+      "type": "Event",
+      "name": "Bellingcat 남레바논 Yellow Line 마을 파괴 PlanetScope 공개",
+      "properties": {"phenomenon": "infrastructure_damage", "country": "LB", "lat": 33.12, "lon": 35.43, "observation_date": "2026-05-14", "severity": "high", "confidence": 0.88},
+      "source_ids": ["src-003"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "ent-evt-803",
+      "matched_id": null,
+      "type": "Event",
+      "name": "Harvard TROPOMI+GOSAT 융합 글로벌 메탄 2019-2024 증가 원인 분석",
+      "properties": {"phenomenon": "methane_plume", "country": null, "lat": null, "lon": null, "admin": "global", "observation_date": "2026-04", "severity": "moderate", "confidence": 0.85},
+      "source_ids": ["src-005"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-202",
+      "type": "Event",
+      "name": "Kilauea Ep47 전조 오버플로우 개시 — WATCH/ORANGE",
+      "properties": {"phenomenon": "volcanic_eruption", "country": "US", "lat": 19.41, "lon": -155.28, "observation_date": "2026-05-14", "severity": "high", "confidence": 0.95},
+      "source_ids": ["src-001"],
+      "mention_count": 12
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-701",
+      "type": "Event",
+      "name": "Bismarck Sea 해저화산 VAAC #11 — FL140 지속",
+      "properties": {"phenomenon": "volcanic_eruption", "country": "PG", "lat": -3.03, "lon": 147.78, "observation_date": "2026-05-14"},
+      "source_ids": ["src-002"],
+      "mention_count": 8
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-082",
+      "type": "Event",
+      "name": "Mayon 화산 Day 130 스트롬볼리안",
+      "properties": {"phenomenon": "volcanic_eruption", "country": "PH", "lat": 13.26, "lon": 123.69},
+      "source_ids": ["src-006"],
+      "mention_count": 15
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-501",
+      "type": "Event",
+      "name": "Florida Everglades Max Road Fire 이탄층 지속",
+      "properties": {"phenomenon": "wildfire", "country": "US", "lat": 26.0, "lon": -80.45},
+      "source_ids": ["src-007"],
+      "mention_count": 5
+    },
+    {
+      "temp_id": null,
+      "matched_id": "temp-evt-001",
+      "type": "Event",
+      "name": "Georgia Pineland Road Fire mop-up 단계",
+      "properties": {"phenomenon": "wildfire", "country": "US", "lat": 31.5, "lon": -82.5},
+      "source_ids": ["src-008"],
+      "mention_count": 6
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-203",
+      "type": "Event",
+      "name": "Great Sitkin WATCH/ORANGE 용암류 지속",
+      "properties": {"phenomenon": "volcanic_eruption", "country": "US", "lat": 52.08, "lon": -176.13},
+      "source_ids": ["src-009"],
+      "mention_count": 8
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-204",
+      "type": "Event",
+      "name": "Shishaldin ADVISORY/YELLOW SO2 지속",
+      "properties": {"phenomenon": "volcanic_eruption", "country": "US", "lat": 54.76, "lon": -163.97},
+      "source_ids": ["src-010"],
+      "mention_count": 8
+    }
+  ],
+  "relations": [
+    {"subject": "ent-evt-801", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-004"], "confidence": 0.85},
+    {"subject": "ent-evt-801", "predicate": "usesSensor", "object": "sensor-ahi", "source_ids": ["src-004"], "confidence": 0.85},
+    {"subject": "ent-evt-801", "predicate": "inCountry", "object": "co-ru", "source_ids": ["src-004"], "confidence": 0.95},
+    {"subject": "ent-evt-801", "predicate": "manifests", "object": "phen-volcano", "source_ids": ["src-004"], "confidence": 0.95},
+    {"subject": "ent-evt-801", "predicate": "inDomain", "object": "dom-disaster", "source_ids": ["src-004"], "confidence": 0.95},
+    {"subject": "ent-evt-801", "predicate": "analyzedBy", "object": "org-kvert", "source_ids": ["src-004"], "confidence": 0.85},
+    {"subject": "ent-evt-802", "predicate": "observedBy", "object": "sat-planetscope", "source_ids": ["src-003"], "confidence": 0.90},
+    {"subject": "ent-evt-802", "predicate": "inCountry", "object": "co-lb", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "ent-evt-802", "predicate": "manifests", "object": "phen-infra-damage", "source_ids": ["src-003"], "confidence": 0.90},
+    {"subject": "ent-evt-802", "predicate": "inDomain", "object": "dom-humanitarian", "source_ids": ["src-003"], "confidence": 0.90},
+    {"subject": "ent-evt-802", "predicate": "analyzedBy", "object": "org-bellingcat", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "ent-evt-803", "predicate": "observedBy", "object": "sat-sentinel5p", "source_ids": ["src-005"], "confidence": 0.90},
+    {"subject": "ent-evt-803", "predicate": "usesSensor", "object": "sensor-tropomi", "source_ids": ["src-005"], "confidence": 0.90},
+    {"subject": "ent-evt-803", "predicate": "manifests", "object": "phen-methane", "source_ids": ["src-005"], "confidence": 0.85},
+    {"subject": "ent-evt-803", "predicate": "inDomain", "object": "dom-climate", "source_ids": ["src-005"], "confidence": 0.90},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-001"], "confidence": 0.92},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-001"], "confidence": 0.92}
+  ],
+  "stats": {
+    "total_entities": 10,
+    "new_entities": 3,
+    "matched_entities": 7,
+    "total_relations": 17
+  }
+}

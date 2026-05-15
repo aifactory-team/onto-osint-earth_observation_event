@@ -1,0 +1,36 @@
+{
+  "id": "src-001",
+  "title": "Kilauea Ep47 전조 오버플로우 시작 — 남측 분출구 6회 용암 월류, WATCH/ORANGE 유지 (USGS HVO May 14)",
+  "url": "https://www.bigislandvideonews.com/2026/05/14/kilauea-episode-47-precursory-overflows-begin/",
+  "snippet": "Kilauea Episode 47 precursory overflows started at 2:57 AM HST on May 14. Six overflows of 20-30 minutes each from south vent observed. Alert level remains WATCH with aviation color code ORANGE. Lava fountaining episode expected to follow precursory overflow sequence. USGS HVO monitoring ongoing.",
+  "source_name": "Big Island Video News",
+  "language": "en",
+  "discovered_date": "2026-05-14",
+  "tag": "update",
+  "related_report": "2026-05-13/src-002",
+  "related_item": "ent-evt-202",
+  "tag_reason": "Kilauea Ep47 WATCH/ORANGE 유지 상태에서 전조 오버플로우 6회 발생은 분출 임박의 직접적 전조. 2026-05-13/src-002 경보 상향(ADVISORY→WATCH) 대비 단계 진전.",
+  "entities": [
+    {"id": "ent-evt-202", "type": "Event", "name": "Kilauea Ep47 전조 오버플로우", "properties": {"phenomenon": "volcanic_eruption", "lat": 19.41, "lon": -155.28, "country": "US", "observation_date": "2026-05-14", "start_date": "2026-05-14", "severity": "high", "before_after_available": false, "confidence": 0.93}},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A", "properties": {}},
+    {"id": "sensor-msi", "type": "Sensor", "name": "MSI", "properties": {"sensor_type": "optical_multispectral"}},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9", "properties": {}},
+    {"id": "sensor-tirs2", "type": "Sensor", "name": "TIRS-2", "properties": {"sensor_type": "thermal_infrared"}},
+    {"id": "org-hvo", "type": "Organization", "name": "USGS HVO", "properties": {"org_type": "space_agency"}},
+    {"id": "org-bivn", "type": "Organization", "name": "Big Island Video News", "properties": {"org_type": "media"}},
+    {"id": "co-us", "type": "Country", "name": "미국", "properties": {"iso_code": "US"}},
+    {"id": "ent-loc-030", "type": "Location", "name": "Halemaʻumaʻu, Kilauea", "properties": {"lat": 19.41, "lon": -155.28, "country": "US", "admin_level": "volcano"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-202", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "ent-evt-202", "predicate": "usesSensor", "object": "sensor-tirs2"},
+    {"subject": "ent-evt-202", "predicate": "analyzedBy", "object": "org-hvo"},
+    {"subject": "ent-evt-202", "predicate": "reportedBy", "object": "org-bivn"},
+    {"subject": "ent-evt-202", "predicate": "locatedIn", "object": "ent-loc-030"},
+    {"subject": "ent-evt-202", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "ent-evt-202", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-202", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

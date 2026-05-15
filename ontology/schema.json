@@ -443,6 +443,20 @@
       "target": "ent-evt-701 + updates to evt-202, evt-082, evt-501, temp-evt-001, evt-203, evt-204",
       "reason": "신규 1건: Bismarck Sea 해저 화산 분출(701, Himawari-9, 1972 이후 최초). 업데이트 7건: Kilauea ADVISORY→WATCH/ORANGE Ep47 임박(202), Mayon Day129 스트롬볼리안(082), Everglades 11339ac 70%(501), Pineland 90% 번밴 해제(temp-001), Great Sitkin SAR 용암류(203), Shishaldin SO2 TROPOMI(204). 미검증 지속 1건: Fuego GT(satellite_unverified).",
       "source_ids": ["src-001~src-008"]
+    },
+    {
+      "date": "2026-05-14",
+      "action": "add_location",
+      "target": "ent-loc-066",
+      "reason": "Bezymianny Kamchatka (RU, 55.97/160.59) — VAAC Tokyo advisory FL150, 5/13 폭발적 분출. Klyuchevskoy 화산군 구성원. Krasheninnikov 인접이나 별도 마그마 시스템.",
+      "source_ids": ["src-004"]
+    },
+    {
+      "date": "2026-05-14",
+      "action": "add_event_batch",
+      "target": "ent-evt-801/802/803 + updates to evt-202, evt-701, evt-082, evt-501, temp-evt-001, evt-203, evt-204, evt-125",
+      "reason": "신규 3건: Bezymianny FL150 VAAC(801, Himawari-9+VIIRS), Bellingcat 남레바논 PlanetScope 마을 파괴(802, before/after), Harvard TROPOMI+GOSAT 글로벌 메탄 2019-2024(803). 업데이트 8건: Kilauea Ep47 전조 오버플로우 6회(202), Bismarck Sea VAAC #11(701), Mayon Day130(082), Everglades 이탄층 메커니즘(501), Pineland mop-up 단계(temp-001), Great Sitkin SAR(203), Shishaldin SO2(204), Pemex 잔류오염(125). 미검증 지속 1건: Fuego GT(satellite_unverified).",
+      "source_ids": ["src-001~src-015"]
     }
   ]
 }

@@ -1,0 +1,26 @@
+{
+  "id": "src-006",
+  "title": "Mayon 화산 Day 130 — Alert Level 3 지속, VAAC 594",
+  "url": "https://www.volcanodiscovery.com/mayon/news/302104/vaac-advisory-2026-594.html",
+  "snippet": "Continuing Strombolian eruption at Mayon. VAAC Tokyo advisory 594. Lava flows in Basud, Bonga, Mi-isi gullies. Alert Level 3.",
+  "source_name": "VolcanoDiscovery / VAAC Tokyo",
+  "language": "en",
+  "discovered_date": "2026-05-14",
+  "tag": "update",
+  "related_report": "2026-05-13/src-003",
+  "related_item": null,
+  "tag_reason": "Mayon Day 130 업데이트 — 이전 Day 129 대비 1일 경과, VAAC advisory 번호 594 (이전 대비 +5)",
+  "entities": [
+    {"id": "ent-evt-082", "type": "Event", "name": "Mayon 화산 Day 130 스트롬볼리안"},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "co-ph", "type": "Country", "name": "필리핀"},
+    {"id": "phen-volcano", "type": "Phenomenon", "name": "volcanic_eruption"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-082", "predicate": "inCountry", "object": "co-ph"},
+    {"subject": "ent-evt-082", "predicate": "manifests", "object": "phen-volcano"}
+  ]
+}

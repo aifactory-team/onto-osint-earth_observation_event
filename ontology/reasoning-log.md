@@ -1223,3 +1223,44 @@ config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5)
 - 전 세계 7+ 화산 동시 위성 모니터링: Bismarck Sea(신규), Kilauea(WATCH 상향), Mayon(129일째), Great Sitkin(WATCH), Shishaldin(ADVISORY), Kupreanof(ADVISORY), Ibu(VAAC) — 유례없는 동시 화산 활동
 - Bismarck Sea 해저 화산은 1972년 이후 54년 만의 분출로 온톨로지에 신규 Location(ent-loc-065) 추가
 - 한반도 GeoFocus: 금일 해당 없음
+
+---
+
+## 2026-05-14
+
+**입력:** 신규 3건 + 업데이트 8건 = 11건 이벤트
+**적용 규칙:** 12건 추론
+
+### multi_satellite_confirmation — 5건
+
+- **추론 #1:** ent-evt-202 (Kilauea Ep47) — observedBy Sentinel-2A (ESA) + Landsat 9 (USGS/NASA) → multiSatBoost +0.20 [0.95, 확정]
+- **추론 #2:** ent-evt-082 (Mayon Day130) — observedBy Himawari-9 (JMA) + Sentinel-2A (ESA) → multiSatBoost +0.20 [0.92, 확정]
+- **추론 #3:** ent-evt-501 (Everglades) — observedBy GOES-18 (NOAA GEO) + VIIRS (NOAA/NASA LEO) → multiSatBoost +0.20 [0.90, 확정]
+- **추론 #4:** temp-evt-001 (Pineland) — observedBy VIIRS + Landsat 8 + Landsat 9 (3중) → multiSatBoost +0.20 [0.85, 확정]
+- **추론 #5:** ent-evt-801 (Bezymianny) — observedBy Himawari-9 (JMA) + VIIRS (NOAA/NASA) → multiSatBoost +0.20 [0.85, 확정]
+
+### official_source_trust — 3건
+
+- **추론 #6:** ent-evt-202 (Kilauea) — analyzedBy USGS HVO (space_agency) → officialBoost +0.15 [0.95, 확정]
+- **추론 #7:** ent-evt-801 (Bezymianny) — analyzedBy KVERT + VAAC Tokyo (weather_agency) → officialBoost +0.15 [0.85, 확정]
+- **추론 #8:** ent-evt-701 (Bismarck Sea) — analyzedBy VAAC Darwin (weather_agency) → officialBoost +0.15 [0.88, 확정]
+
+### sensor_capability_match_sar — 1건
+
+- **추론 #9:** ent-evt-203 (Great Sitkin) — usesSensor Sentinel-1A C-SAR, 구름 투과 유일 관측 → sarBoost +0.10 [0.85, 확정]
+
+### sensor_capability_match_tracegas — 2건
+
+- **추론 #10:** ent-evt-204 (Shishaldin) — usesSensor Sentinel-5P TROPOMI, SO2 배출 → tracegasBoost +0.15 [0.78, 확정]
+- **추론 #11:** ent-evt-803 (Harvard 메탄) — usesSensor Sentinel-5P TROPOMI, methane_plume → tracegasBoost +0.15 [0.85, 확정]
+
+### before_after_credibility — 1건
+
+- **추론 #12:** ent-evt-802 (남레바논) — PlanetScope 2026-03-02 vs 2026-05-08 before/after → baCredibilityBoost +0.10 [0.88, 확정]
+
+### 특이사항
+- 전 세계 8+ 화산 동시 위성 모니터링: **Bezymianny 추가**로 8기 돌파 — Kilauea(전조 오버플로우), Mayon(Day130), Bismarck Sea(VAAC #11), Bezymianny(FL150), Great Sitkin(WATCH), Shishaldin(ADVISORY), Kupreanof(ADVISORY), Ibu(VAAC)
+- Kilauea Ep47 전조 오버플로우 시작 — 5/14 02:57 HST, 분수 분출 수시간 내 예상
+- Bellingcat 남레바논 PlanetScope before/after 공개 — 인도주의 도메인 신규 이벤트
+- Harvard TROPOMI+GOSAT 융합 글로벌 메탄 분석 — 기후 도메인 중요 연구
+- 한반도 GeoFocus: 금일 해당 없음

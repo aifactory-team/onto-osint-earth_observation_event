@@ -1,0 +1,26 @@
+{
+  "id": "src-005",
+  "title": "Harvard TROPOMI+GOSAT 융합 글로벌 메탄 2019-2024 증가 원인 분석",
+  "url": "https://cen.acs.org/environment/atmospheric-chemistry/Satellite-data-reveal-rising-methane/104/web/2026/04",
+  "snippet": "Blended satellite data from TROPOMI and GOSAT reveal what drove methane's 2019-2024 rise worldwide. Momentum accounts for 59% of increase. Livestock +15%, oil/gas -9%, rice -17%, waste +11%.",
+  "source_name": "C&EN / Harvard",
+  "language": "en",
+  "discovered_date": "2026-05-14",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "Harvard 주도 글로벌 메탄 2019-2024 분석 — TROPOMI+GOSAT 융합 신규 연구. 이전 MethaneSAT 기사(src-019/022)와는 별개의 글로벌 추세 분석.",
+  "entities": [
+    {"id": "ent-evt-803", "type": "Event", "name": "Harvard TROPOMI+GOSAT 글로벌 메탄 2019-2024 분석", "properties": {"phenomenon": "methane_plume", "admin": "global"}},
+    {"id": "sat-sentinel5p", "type": "Satellite", "name": "Sentinel-5P"},
+    {"id": "sensor-tropomi", "type": "Sensor", "name": "TROPOMI"},
+    {"id": "org-esa", "type": "Organization", "name": "ESA"},
+    {"id": "phen-methane", "type": "Phenomenon", "name": "methane_plume"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-803", "predicate": "observedBy", "object": "sat-sentinel5p"},
+    {"subject": "ent-evt-803", "predicate": "usesSensor", "object": "sensor-tropomi"},
+    {"subject": "ent-evt-803", "predicate": "manifests", "object": "phen-methane"},
+    {"subject": "ent-evt-803", "predicate": "inDomain", "object": "dom-climate"}
+  ]
+}

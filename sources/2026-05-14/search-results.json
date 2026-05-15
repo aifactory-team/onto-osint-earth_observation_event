@@ -1,0 +1,35 @@
+{
+  "date": "2026-05-14",
+  "collected_at": "2026-05-14T23:00:00Z",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 18,
+  "total_results": 72,
+  "expanded_keywords": [
+    "Kilauea Episode 47", "Mayon volcano PHIVOLCS", "Bismarck Sea submarine volcano",
+    "Bezymianny Kamchatka VAAC", "Everglades wildfire GOES VIIRS", "Pineland Road fire Georgia",
+    "Great Sitkin SAR", "Shishaldin TROPOMI SO2", "Pemex oil spill Sentinel-1",
+    "Antelope Reef Sentinel-2", "Bellingcat PlanetScope Lebanon", "MethaneSAT methane",
+    "CSIS Beyond Parallel", "Philippines Spratly Planet Labs", "KOMPSAT 한반도",
+    "NISAR deforestation Landsat", "TROPOMI methane urban", "Sentinel-1D Sentinel-2C"
+  ],
+  "searches": [
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery wildfire flood volcano eruption May 2026", "language": "en", "timestamp": "2026-05-14T23:00:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Kilauea volcano eruption episode 47 May 14 2026", "language": "en", "timestamp": "2026-05-14T23:01:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Mayon volcano eruption May 2026 satellite", "language": "en", "timestamp": "2026-05-14T23:01:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Bismarck Sea submarine volcano Papua New Guinea May 2026", "language": "en", "timestamp": "2026-05-14T23:01:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "NASA Earth Observatory May 14 2026", "language": "en", "timestamp": "2026-05-14T23:02:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Everglades wildfire Florida May 14 2026", "language": "en", "timestamp": "2026-05-14T23:02:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery deforestation oil spill mining May 2026", "language": "en", "timestamp": "2026-05-14T23:02:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery glacier methane Arctic climate May 2026", "language": "en", "timestamp": "2026-05-14T23:02:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "위성영상 한반도 북한 군사 KOMPSAT May 2026", "language": "ko", "timestamp": "2026-05-14T23:03:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "CSIS Beyond Parallel North Korea satellite analysis May 2026", "language": "en", "timestamp": "2026-05-14T23:03:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Copernicus EMS activation Disaster Charter May 2026", "language": "en", "timestamp": "2026-05-14T23:03:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Great Sitkin Shishaldin volcano Alaska May 14 2026", "language": "en", "timestamp": "2026-05-14T23:04:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Pemex oil spill Gulf Mexico satellite Sentinel May 2026", "language": "en", "timestamp": "2026-05-14T23:04:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Antelope Reef South China Sea satellite island building 2026", "language": "en", "timestamp": "2026-05-14T23:04:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "volcano eruption update worldwide May 14 2026", "language": "en", "timestamp": "2026-05-14T23:05:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Bellingcat satellite imagery investigation May 2026", "language": "en", "timestamp": "2026-05-14T23:05:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite rising methane April 2026 data", "language": "en", "timestamp": "2026-05-14T23:06:00Z", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "위성영상 산불 홍수 한국 동해 서해 2026년 5월", "language": "ko", "timestamp": "2026-05-14T23:06:00Z", "result_count": 10}
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "src-003",
+  "title": "레바논 남부 대규모 건물 철거 — Bellingcat PlanetScope 전후비교 (Yellow Line 마을, 2026-03~05)",
+  "url": "https://www.bellingcat.com/news/2026/05/14/satellite-imagery-shows-ongoing-demolitions-across-southern-lebanon/",
+  "snippet": "Bellingcat published May 14 investigation documenting ongoing IDF demolitions across southern Lebanon Yellow Line villages using PlanetScope imagery from March 2 and May 8 2026. Villages including Qantara, Aadshit Al-Qusayr, and others show systematic destruction of residential and infrastructure buildings. Before/after satellite comparison confirms large-scale demolition activity.",
+  "source_name": "Bellingcat",
+  "language": "en",
+  "discovered_date": "2026-05-14",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 14일 소스에 레바논 남부 Yellow Line 마을 철거 관련 Bellingcat 조사 없음. PlanetScope 전후비교(3/2→5/8)를 활용한 신규 인도주의/인프라파괴 이벤트.",
+  "entities": [
+    {"id": "ent-evt-801", "type": "Event", "name": "레바논 남부 IDF 건물 철거 2026", "properties": {"phenomenon": "infrastructure_damage", "lat": 33.12, "lon": 35.40, "country": "LB", "observation_date": "2026-05-08", "start_date": "2026-03-02", "severity": "high", "before_after_available": true, "confidence": 0.88}},
+    {"id": "sat-planetscope", "type": "Satellite", "name": "PlanetScope", "properties": {"operator": "Planet Labs", "resolution_m": 3}},
+    {"id": "org-bellingcat", "type": "Organization", "name": "Bellingcat", "properties": {"org_type": "analyst"}},
+    {"id": "co-lb", "type": "Country", "name": "레바논", "properties": {"iso_code": "LB"}},
+    {"id": "co-il", "type": "Country", "name": "이스라엘", "properties": {"iso_code": "IL"}},
+    {"id": "ent-loc-066", "type": "Location", "name": "Qantara, Southern Lebanon", "properties": {"lat": 33.12, "lon": 35.40, "country": "LB", "admin_level": "village"}},
+    {"id": "ent-loc-067", "type": "Location", "name": "Aadshit Al-Qusayr, Southern Lebanon", "properties": {"lat": 33.18, "lon": 35.42, "country": "LB", "admin_level": "village"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-801", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "ent-evt-801", "predicate": "analyzedBy", "object": "org-bellingcat"},
+    {"subject": "ent-evt-801", "predicate": "locatedIn", "object": "ent-loc-066"},
+    {"subject": "ent-evt-801", "predicate": "locatedIn", "object": "ent-loc-067"},
+    {"subject": "ent-evt-801", "predicate": "inCountry", "object": "co-lb"},
+    {"subject": "ent-evt-801", "predicate": "manifests", "object": "phen-infra-damage"},
+    {"subject": "ent-evt-801", "predicate": "inDomain", "object": "dom-humanitarian"}
+  ]
+}

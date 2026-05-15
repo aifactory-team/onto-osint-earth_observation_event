@@ -1,0 +1,27 @@
+{
+  "id": "src-002",
+  "title": "Bismarck Sea 해저화산 VAAC advisory #11 — FL140 (4300m) VA emission 14/1020Z",
+  "url": "https://www.volcanodiscovery.com/centralbismarcksea/news/302361/vaac-advisory-2026-11.html",
+  "snippet": "VA EMISSION OBS AT 14/1020Z to 14000 ft (4300 m). Continuing submarine eruption since May 8.",
+  "source_name": "VolcanoDiscovery / VAAC Darwin",
+  "language": "en",
+  "discovered_date": "2026-05-14",
+  "tag": "update",
+  "related_report": "2026-05-13/src-001",
+  "related_item": "2026-05-13/src-008",
+  "tag_reason": "Bismarck Sea submarine volcano VAAC advisory 11th (이전 보고 대비 새 advisory 번호 및 관측 시각 업데이트)",
+  "entities": [
+    {"id": "ent-evt-701", "type": "Event", "name": "Bismarck Sea 해저화산 분출", "properties": {"phenomenon": "volcanic_eruption", "lat": -3.03, "lon": 147.78, "country": "PG"}},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "sensor-ahi", "type": "Sensor", "name": "AHI"},
+    {"id": "co-pg", "type": "Country", "name": "파푸아뉴기니", "properties": {"iso_code": "PG"}},
+    {"id": "ent-loc-065", "type": "Location", "name": "Central Bismarck Sea", "properties": {"lat": -3.03, "lon": 147.78}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-701", "predicate": "usesSensor", "object": "sensor-ahi"},
+    {"subject": "ent-evt-701", "predicate": "inCountry", "object": "co-pg"},
+    {"subject": "ent-evt-701", "predicate": "locatedIn", "object": "ent-loc-065"},
+    {"subject": "ent-evt-701", "predicate": "manifests", "object": "phen-volcano"}
+  ]
+}
