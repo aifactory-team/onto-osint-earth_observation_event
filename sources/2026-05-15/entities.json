@@ -1,0 +1,148 @@
+{
+  "date": "2026-05-15",
+  "entities": [
+    {
+      "temp_id": "temp-evt-901",
+      "matched_id": "ent-evt-202",
+      "type": "Event",
+      "name": "Kilauea Ep47 분수 분출 9시간 → 종료, WATCH→ADVISORY 하향",
+      "properties": {
+        "phenomenon": "volcanic_eruption",
+        "domain": "dom-disaster",
+        "country": "US",
+        "lat": 19.41,
+        "lon": -155.28,
+        "observation_date": "2026-05-15",
+        "severity": "high",
+        "before_after_available": false,
+        "confidence": 0.95,
+        "peak_effusion_rate": "360-390 yd³/s (275-300 m³/s)",
+        "duration_hours": 9,
+        "ep47_end_time": "2026-05-15T12:27:00-10:00"
+      },
+      "source_ids": ["src-001"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-evt-902",
+      "matched_id": "ent-evt-701",
+      "type": "Event",
+      "name": "Bismarck Sea 해저화산 FL280 대폭 상승 — 연속 VA 방출",
+      "properties": {
+        "phenomenon": "volcanic_eruption",
+        "domain": "dom-disaster",
+        "country": "PG",
+        "lat": -3.03,
+        "lon": 147.78,
+        "observation_date": "2026-05-15",
+        "severity": "high",
+        "confidence": 0.90,
+        "vaac_advisory_number": 15,
+        "flight_level": "FL280",
+        "altitude_m": 8500,
+        "altitude_increase": "FL140→FL280 (doubled)"
+      },
+      "source_ids": ["src-002"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-evt-903",
+      "matched_id": null,
+      "type": "Event",
+      "name": "NASA EO: Aniak 얼음 해빙 — Kuskokwim 강 아이스잼·홍수",
+      "properties": {
+        "phenomenon": "flood",
+        "domain": "dom-disaster",
+        "country": "US",
+        "lat": 61.58,
+        "lon": -159.53,
+        "observation_date": "2026-05-07",
+        "start_date": "2026-05-07",
+        "severity": "medium",
+        "before_after_available": true,
+        "confidence": 0.90,
+        "before_date": "2026-04-21",
+        "after_date": "2026-05-07"
+      },
+      "source_ids": ["src-003"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-evt-904",
+      "matched_id": null,
+      "type": "Event",
+      "name": "Sentinel-2A Extension Campaign 2026년 말 연장 공식 발표",
+      "properties": {
+        "phenomenon": "satellite_operations",
+        "domain": "dom-satops",
+        "country": null,
+        "admin": "global",
+        "lat": null,
+        "lon": null,
+        "observation_date": "2026-05-15",
+        "confidence": 0.95
+      },
+      "source_ids": ["src-004"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-evt-905",
+      "matched_id": null,
+      "type": "Event",
+      "name": "Bellingcat 남레바논 PlanetScope 인터랙티브 맵 공개",
+      "properties": {
+        "phenomenon": "infrastructure_damage",
+        "domain": "dom-humanitarian",
+        "country": "LB",
+        "lat": 33.12,
+        "lon": 35.43,
+        "observation_date": "2026-05-14",
+        "severity": "high",
+        "before_after_available": true,
+        "confidence": 0.90,
+        "before_date": "2026-03-02",
+        "after_date": "2026-05-08"
+      },
+      "source_ids": ["src-011", "src-029"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-loc-067",
+      "matched_id": null,
+      "type": "Location",
+      "name": "Aniak, Alaska",
+      "properties": {
+        "country": "US",
+        "region": "Western Alaska",
+        "lat": 61.58,
+        "lon": -159.53
+      },
+      "source_ids": ["src-003"],
+      "mention_count": 1
+    }
+  ],
+  "relations": [
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "ent-evt-202", "predicate": "usesSensor", "object": "sensor-msi", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "ent-evt-202", "predicate": "usesSensor", "object": "sensor-tirs", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "ent-evt-202", "predicate": "analyzedBy", "object": "ent-org-hvo", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-002"], "confidence": 0.90},
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-002"], "confidence": 0.90},
+    {"subject": "temp-evt-903", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-003"], "confidence": 0.90},
+    {"subject": "temp-evt-903", "predicate": "usesSensor", "object": "sensor-oli", "source_ids": ["src-003"], "confidence": 0.90},
+    {"subject": "temp-evt-903", "predicate": "analyzedBy", "object": "org-nasa", "source_ids": ["src-003"], "confidence": 0.90},
+    {"subject": "temp-evt-903", "predicate": "locatedIn", "object": "temp-loc-067", "source_ids": ["src-003"], "confidence": 0.90},
+    {"subject": "temp-evt-903", "predicate": "inCountry", "object": "co-us", "source_ids": ["src-003"], "confidence": 0.90},
+    {"subject": "temp-evt-903", "predicate": "manifests", "object": "phen-flood", "source_ids": ["src-003"], "confidence": 0.90},
+    {"subject": "temp-evt-905", "predicate": "observedBy", "object": "sat-planetscope", "source_ids": ["src-011", "src-029"], "confidence": 0.90},
+    {"subject": "temp-evt-905", "predicate": "analyzedBy", "object": "org-bellingcat", "source_ids": ["src-011", "src-029"], "confidence": 0.90},
+    {"subject": "temp-evt-905", "predicate": "manifests", "object": "phen-infra-damage", "source_ids": ["src-011"], "confidence": 0.90}
+  ],
+  "stats": {
+    "total_entities": 6,
+    "new_entities": 3,
+    "matched_entities": 3,
+    "total_relations": 16
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "src-001",
+  "title": "Kilauea Ep47 분수 분출 9시간 후 종료 — WATCH→ADVISORY 하향, 피크 360-390 yd³/s",
+  "url": "https://www.usgs.gov/volcanoes/kilauea/volcano-updates",
+  "snippet": "Episode 47 of the ongoing Halemaʻumaʻu eruption ended abruptly at 12:27 AM HST on May 15 after 9 hours of continuous lava fountaining from the north vent. Peak instantaneous effusion rate 360-390 yd³/s (275-300 m³/s) around 5 PM HST, average 270 yd³/s (220 m³/s). Fine ash and Pele's hair fell outside HVNP. Alert dropped WATCH→ADVISORY, Aviation ORANGE→YELLOW.",
+  "source_name": "USGS Hawaiian Volcano Observatory",
+  "language": "en",
+  "discovered_date": "2026-05-15",
+  "tag": "update",
+  "related_report": "2026-05-14/src-001",
+  "related_item": "ent-evt-202",
+  "tag_reason": "Ep47 전조 오버플로우 → 분수 분출 9시간 → 종료. 경계 수준 2단계 하향. 유의미한 신규 정보.",
+  "entities": [
+    {"id": "ent-evt-202", "type": "Event", "name": "Kilauea Ep47", "properties": {"phenomenon": "volcanic_eruption", "lat": 19.41, "lon": -155.28, "country": "US"}},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9"},
+    {"id": "sensor-msi", "type": "Sensor", "name": "MSI"},
+    {"id": "sensor-tirs", "type": "Sensor", "name": "TIRS"},
+    {"id": "ent-org-hvo", "type": "Organization", "name": "USGS HVO"},
+    {"id": "co-us", "type": "Country", "name": "미국"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "ent-evt-202", "predicate": "analyzedBy", "object": "ent-org-hvo"},
+    {"subject": "ent-evt-202", "predicate": "manifests", "object": "phen-volcano"}
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "src-011",
+  "title": "Bellingcat 남레바논 PlanetScope 인터랙티브 맵 공개 — Qantara 450t 폭파 등 대규모 파괴 문서화",
+  "url": "https://www.bellingcat.com/news/2026/05/14/satellite-imagery-shows-ongoing-demolitions-across-southern-lebanon/",
+  "snippet": "Bellingcat published annotated PlanetScope imagery (March 2-May 8 2026) and interactive map showing scale of damage in southern Lebanon. Dozens of towns within IDF 'Yellow Line' heavily damaged or destroyed. Qantara: two large tunnel systems detonated with 450 tonnes of explosives. Over 50 grey-roofed structures built near lagoon entrance.",
+  "source_name": "Bellingcat",
+  "language": "en",
+  "discovered_date": "2026-05-15",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "5/14 Bellingcat 기사 + 5/15 인터랙티브 맵 발표. 전일 보고서 src-003과 동일 기사이나, 인터랙티브 맵(bellingcat.github.io/lebanon-may-2026)은 금일 새로 확인. before/after 위성영상 시계열 제공.",
+  "entities": [
+    {"id": "temp-evt-905", "type": "Event", "name": "남레바논 IDF 마을 파괴 PlanetScope 문서화", "properties": {"phenomenon": "infrastructure_damage", "lat": 33.12, "lon": 35.43, "country": "LB", "before_after_available": true}},
+    {"id": "sat-planetscope", "type": "Satellite", "name": "PlanetScope"},
+    {"id": "org-bellingcat", "type": "Organization", "name": "Bellingcat"},
+    {"id": "co-lb", "type": "Country", "name": "레바논"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-905", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "temp-evt-905", "predicate": "analyzedBy", "object": "org-bellingcat"},
+    {"subject": "temp-evt-905", "predicate": "manifests", "object": "phen-infra-damage"}
+  ]
+}

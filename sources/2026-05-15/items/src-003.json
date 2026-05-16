@@ -1,0 +1,28 @@
+{
+  "id": "src-003",
+  "title": "NASA EO Image of the Day: 'Ice Moves Out of Aniak' — Landsat 9 전후 비교, Kuskokwim 강 얼음 해빙·홍수",
+  "url": "https://science.nasa.gov/earth/earth-observatory/ice-moves-out-of-aniak/",
+  "snippet": "NASA Earth Observatory published before-and-after Landsat 9 OLI images of the Kuskokwim River at Aniak, Alaska. April 21: frozen channel and snow-covered floodplain. May 7: river half-open, debris-laden, breaking up. A 21-mile ice jam formed upstream, ran, and re-clogged downstream. Flood watch issued May 8.",
+  "source_name": "NASA Earth Observatory",
+  "language": "en",
+  "discovered_date": "2026-05-15",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "NASA EO Image of the Day (May 15). 이전 보고서에 미포함된 신규 이벤트. Landsat 9 전후 비교 영상 제공.",
+  "entities": [
+    {"id": "temp-evt-903", "type": "Event", "name": "Aniak Kuskokwim 얼음 해빙·홍수", "properties": {"phenomenon": "flood", "lat": 61.58, "lon": -159.53, "country": "US", "before_after_available": true}},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9"},
+    {"id": "sensor-oli", "type": "Sensor", "name": "OLI"},
+    {"id": "org-nasa", "type": "Organization", "name": "NASA"},
+    {"id": "co-us", "type": "Country", "name": "미국"},
+    {"id": "temp-loc-067", "type": "Location", "name": "Aniak, Alaska", "properties": {"lat": 61.58, "lon": -159.53}}
+  ],
+  "relations": [
+    {"subject": "temp-evt-903", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "temp-evt-903", "predicate": "usesSensor", "object": "sensor-oli"},
+    {"subject": "temp-evt-903", "predicate": "analyzedBy", "object": "org-nasa"},
+    {"subject": "temp-evt-903", "predicate": "locatedIn", "object": "temp-loc-067"},
+    {"subject": "temp-evt-903", "predicate": "manifests", "object": "phen-flood"}
+  ]
+}

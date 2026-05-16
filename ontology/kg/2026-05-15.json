@@ -1,0 +1,42 @@
+{
+  "date": "2026-05-15",
+  "new_triples": [
+    {"subject": "ent-evt-903", "predicate": "observedBy", "object": "sat-landsat9", "source_id": "src-003", "date": "2026-05-15", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-903", "predicate": "usesSensor", "object": "sensor-oli", "source_id": "src-003", "date": "2026-05-15", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-903", "predicate": "analyzedBy", "object": "org-nasa", "source_id": "src-003", "date": "2026-05-15", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-903", "predicate": "locatedIn", "object": "ent-loc-067", "source_id": "src-003", "date": "2026-05-15", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-903", "predicate": "inCountry", "object": "co-us", "source_id": "src-003", "date": "2026-05-15", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-903", "predicate": "manifests", "object": "phen-flood", "source_id": "src-003", "date": "2026-05-15", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-903", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-003", "date": "2026-05-15", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-905", "predicate": "observedBy", "object": "sat-planetscope", "source_id": "src-011", "date": "2026-05-15", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-905", "predicate": "analyzedBy", "object": "org-bellingcat", "source_id": "src-011", "date": "2026-05-15", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-905", "predicate": "manifests", "object": "phen-infra-damage", "source_id": "src-011", "date": "2026-05-15", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-905", "predicate": "inDomain", "object": "dom-humanitarian", "source_id": "src-011", "date": "2026-05-15", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-905", "predicate": "inCountry", "object": "co-lb", "source_id": "src-011", "date": "2026-05-15", "confidence": 0.90, "type": "explicit"}
+  ],
+  "updated_triples": [
+    {"subject": "ent-evt-202", "predicate": "status", "object": "Ep47_completed_ADVISORY", "source_id": "src-001", "date": "2026-05-15", "confidence": 0.95, "type": "explicit", "note": "WATCH→ADVISORY, Ep47 9h fountaining ended"},
+    {"subject": "ent-evt-701", "predicate": "flight_level", "object": "FL280", "source_id": "src-002", "date": "2026-05-15", "confidence": 0.90, "type": "explicit", "note": "FL140→FL280 doubled"},
+    {"subject": "ent-evt-501", "predicate": "containment", "object": "80%", "source_id": "src-007", "date": "2026-05-15", "confidence": 0.90, "type": "explicit"},
+    {"subject": "temp-evt-001", "predicate": "containment", "object": "90%", "source_id": "src-008", "date": "2026-05-15", "confidence": 0.85, "type": "explicit", "note": "burn ban lifted statewide"}
+  ],
+  "inferred_triples": [
+    {"subject": "ent-evt-701", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.90, "type": "inferred", "note": "Himawari-9 (JMA) + VIIRS (NOAA/NASA) — 독립 기관 교차검증"},
+    {"subject": "ent-evt-903", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.90, "type": "inferred", "note": "NASA EO 공식 발행"},
+    {"subject": "ent-evt-903", "predicate": "baCredibilityBoost", "object": "+0.10", "rule": "before_after_credibility", "confidence": 0.90, "type": "inferred", "note": "Landsat 9 before/after 제공"},
+    {"subject": "ent-evt-905", "predicate": "baCredibilityBoost", "object": "+0.10", "rule": "before_after_credibility", "confidence": 0.90, "type": "inferred", "note": "PlanetScope before/after 2026.03.02 vs 2026.05.08"},
+    {"subject": "ent-evt-905", "predicate": "analystBoost", "object": "+0.10", "rule": "analyst_trust", "confidence": 0.90, "type": "inferred", "note": "Bellingcat 독립 분석기관"},
+    {"subject": "ent-evt-202", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.95, "type": "inferred", "note": "Sentinel-2A (ESA) + Landsat 9 (USGS/NASA) — 유지"},
+    {"subject": "ent-evt-202", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred", "note": "USGS HVO 공식 관측"},
+    {"subject": "ent-evt-202", "predicate": "thermalBoost", "object": "+0.10", "rule": "sensor_capability_match_tirs", "confidence": 0.95, "type": "inferred", "note": "TIRS 열적외 센서 화산 관측"},
+    {"subject": "ent-evt-701", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.90, "type": "inferred", "note": "VAAC Darwin 공식 advisory"},
+    {"subject": "ent-evt-701", "predicate": "partOfSeries", "object": "ent-evt-701", "rule": "temporal_progression", "confidence": 0.90, "type": "inferred", "note": "5/8 분출 개시 이래 연속 시리즈"},
+    {"subject": "ent-evt-202", "predicate": "temporal_note", "object": "Ep47_end→monitoring_Ep48", "rule": "temporal_progression", "confidence": 0.85, "type": "inferred", "note": "Ep46→Ep47 패턴으로 Ep48 가능성 잠정"}
+  ],
+  "stats": {
+    "new_nodes": 3,
+    "new_edges": 12,
+    "updated_edges": 4,
+    "inferred_edges": 11
+  }
+}

@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "description": "OSINT 온톨로지 스키마 — config/osint-config.json의 seed로부터 초기화되고, 매일 파이프라인 실행 시 자동 확장된다. 도메인: 위성영상으로 관측 가능한 지구상 이벤트 (Earth Observation Events).",
-  "last_updated": "2026-05-11",
+  "last_updated": "2026-05-15",
   "classes": [
     {
       "id": "Entity",
@@ -457,6 +457,20 @@
       "target": "ent-evt-801/802/803 + updates to evt-202, evt-701, evt-082, evt-501, temp-evt-001, evt-203, evt-204, evt-125",
       "reason": "신규 3건: Bezymianny FL150 VAAC(801, Himawari-9+VIIRS), Bellingcat 남레바논 PlanetScope 마을 파괴(802, before/after), Harvard TROPOMI+GOSAT 글로벌 메탄 2019-2024(803). 업데이트 8건: Kilauea Ep47 전조 오버플로우 6회(202), Bismarck Sea VAAC #11(701), Mayon Day130(082), Everglades 이탄층 메커니즘(501), Pineland mop-up 단계(temp-001), Great Sitkin SAR(203), Shishaldin SO2(204), Pemex 잔류오염(125). 미검증 지속 1건: Fuego GT(satellite_unverified).",
       "source_ids": ["src-001~src-015"]
+    },
+    {
+      "date": "2026-05-15",
+      "action": "add_location",
+      "target": "ent-loc-067",
+      "reason": "Aniak, Alaska (US, 61.58°N, 159.53°W) — NASA EO Image of the Day 'Ice Moves Out of Aniak'. Landsat 9 OLI before/after 비교로 Kuskokwim 강 얼음 해빙·아이스잼·홍수 기록.",
+      "source_ids": ["src-003"]
+    },
+    {
+      "date": "2026-05-15",
+      "action": "add_event_batch",
+      "target": "ent-evt-903/905 + updates to evt-202, evt-701, evt-082, evt-501, temp-evt-001, evt-801, evt-203, evt-204",
+      "reason": "신규 2건: Aniak 얼음해빙·홍수 Landsat 9 before/after(903), Bellingcat 남레바논 PlanetScope 인터랙티브 맵(905, before/after 2026.03~05). 핵심 업데이트: Kilauea Ep47 9h 분수분출→종료 WATCH→ADVISORY(202), Bismarck Sea FL140→FL280 2배 상승(701). 추가 업데이트: Mayon Day131(082), Everglades 80%(501), Pineland 90% 번밴해제(temp-001), Bezymianny VAAC#3(801), Great Sitkin SAR(203), Shishaldin SO2(204). 위성운영: Sentinel-2A Extension 2026말 연장(904). 미검증 지속 1건: Fuego GT.",
+      "source_ids": ["src-001~src-011"]
     }
   ]
 }

@@ -1,0 +1,25 @@
+{
+  "id": "src-002",
+  "title": "Bismarck Sea 해저화산 VAAC #15 — FL280 (8500m) 대폭 상승, 연속 VA 방출",
+  "url": "https://www.volcanodiscovery.com/centralbismarcksea/news/302445/vaac-advisory-2026-15.html",
+  "snippet": "VAAC Darwin advisory 2026/15: Continuous VA emission to FL280 (28,000ft / 8,500m) observed at 15/0950Z. Measured volcanic ash IR temperature -19°C. Ash cloud moving NE at 5 kts. Major escalation from FL140 (4300m) yesterday — altitude effectively doubled. Submarine eruption ongoing since May 8.",
+  "source_name": "VolcanoDiscovery / VAAC Darwin",
+  "language": "en",
+  "discovered_date": "2026-05-15",
+  "tag": "update",
+  "related_report": "2026-05-14/src-002",
+  "related_item": "ent-evt-701",
+  "tag_reason": "FL140→FL280 대폭 상승. 화산재 고도 2배 증가는 분출 강도 급격 증가를 의미. 항공 위험 확대.",
+  "entities": [
+    {"id": "ent-evt-701", "type": "Event", "name": "Bismarck Sea 해저화산 분출", "properties": {"phenomenon": "volcanic_eruption", "lat": -3.03, "lon": 147.78, "country": "PG"}},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "sat-viirs-jpss", "type": "Satellite", "name": "VIIRS (Suomi-NPP/JPSS)"},
+    {"id": "sensor-ahi", "type": "Sensor", "name": "AHI"},
+    {"id": "co-pg", "type": "Country", "name": "파푸아뉴기니"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-viirs-jpss"},
+    {"subject": "ent-evt-701", "predicate": "manifests", "object": "phen-volcano"}
+  ]
+}

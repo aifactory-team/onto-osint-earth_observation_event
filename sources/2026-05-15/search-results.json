@@ -1,0 +1,37 @@
+{
+  "date": "2026-05-15",
+  "collected_at": "2026-05-15T08:00:00+09:00",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 20,
+  "total_results": 78,
+  "expanded_keywords": [
+    "Kilauea Episode 47", "Bismarck Sea submarine volcano", "Bezymianny Kamchatka",
+    "Mayon PHIVOLCS", "Everglades Max Road Fire", "Pineland Road Fire Georgia",
+    "Great Sitkin SAR", "Shishaldin SO2 TROPOMI", "Bellingcat Lebanon PlanetScope",
+    "Pemex Cantarell Sentinel-1", "Sentinel-2A extension", "NASA EO Aniak",
+    "KOMPSAT CAS500", "CSIS Beyond Parallel", "Antelope Reef AMTI",
+    "UNOSAT humanitarian", "GFW deforestation alert", "MethaneSAT methane"
+  ],
+  "searches": [
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery wildfire flood volcano eruption May 2026", "language": "en", "timestamp": "2026-05-15T08:01:00+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Kilauea volcano eruption update May 15 2026", "language": "en", "timestamp": "2026-05-15T08:01:30+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "NASA Earth Observatory image of the day May 2026", "language": "en", "timestamp": "2026-05-15T08:02:00+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Copernicus EMS activation Sentinel satellite May 2026", "language": "en", "timestamp": "2026-05-15T08:02:30+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Mayon volcano eruption Bismarck Sea volcano update May 15 2026", "language": "en", "timestamp": "2026-05-15T08:03:00+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery deforestation mining oil spill May 2026", "language": "en", "timestamp": "2026-05-15T08:03:30+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "methane plume satellite glacier retreat Arctic ice May 2026", "language": "en", "timestamp": "2026-05-15T08:04:00+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "위성영상 산불 홍수 화산 한반도 2026년 5월", "language": "ko", "timestamp": "2026-05-15T08:04:30+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Bezymianny volcano Kamchatka Great Sitkin Shishaldin update May 2026", "language": "en", "timestamp": "2026-05-15T08:05:00+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery military buildup naval activity defense May 2026", "language": "en", "timestamp": "2026-05-15T08:05:30+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Sri Lanka flooding satellite imagery May 2026 disaster", "language": "en", "timestamp": "2026-05-15T08:06:00+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Everglades wildfire Florida Georgia Pineland fire update May 15 2026", "language": "en", "timestamp": "2026-05-15T08:06:30+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Bellingcat satellite imagery Lebanon PlanetScope demolitions May 2026", "language": "en", "timestamp": "2026-05-15T08:07:00+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "KOMPSAT 한국 위성 CAS500 KARI May 2026", "language": "ko", "timestamp": "2026-05-15T08:07:30+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Pemex oil spill Cantarell satellite SAR update May 2026", "language": "en", "timestamp": "2026-05-15T08:08:00+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Sentinel-2A extension campaign 2026 Copernicus announcement May 15", "language": "en", "timestamp": "2026-05-15T08:08:30+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "NASA Earth Observatory Aniak ice Alaska Kuskokwim River May 15 2026", "language": "en", "timestamp": "2026-05-15T08:09:00+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Antelope Reef South China Sea satellite CSIS Beyond Parallel North Korea May 2026", "language": "en", "timestamp": "2026-05-15T08:09:30+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Ibu volcano Indonesia Fuego Guatemala Krasheninnikov eruption May 2026", "language": "en", "timestamp": "2026-05-15T08:10:00+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Bismarck Sea submarine volcano FL280 VAAC advisory May 15 2026", "language": "en", "timestamp": "2026-05-15T08:10:30+09:00", "result_count": 10}
+  ]
+}

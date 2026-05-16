@@ -1264,3 +1264,53 @@ config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5)
 - Bellingcat 남레바논 PlanetScope before/after 공개 — 인도주의 도메인 신규 이벤트
 - Harvard TROPOMI+GOSAT 융합 글로벌 메탄 분석 — 기후 도메인 중요 연구
 - 한반도 GeoFocus: 금일 해당 없음
+
+---
+
+## 2026-05-15 추론 결과
+
+### multi_satellite_confirmation (다중 위성 교차검증) — 6건 (+1)
+
+- **추론 #1 (유지):** ent-evt-202 (Kilauea Ep47) — Sentinel-2A (ESA) + Landsat 9 (USGS/NASA) → multiSatBoost +0.20 [0.95, 확정]
+- **추론 #2 (유지):** ent-evt-082 (Mayon) — Himawari-9 (JMA) + Sentinel-2A (ESA) → multiSatBoost +0.20 [0.92, 확정]
+- **추론 #3 (유지):** ent-evt-501 (Everglades) — GOES-18 (NOAA) + S-NPP VIIRS (NOAA/NASA) → multiSatBoost +0.20 [0.90, 확정]
+- **추론 #4 (유지):** temp-evt-001 (Pineland) — S-NPP VIIRS + Landsat 8 + Landsat 9 → multiSatBoost +0.20 [0.85, 확정]
+- **추론 #5 (유지):** ent-evt-801 (Bezymianny) — Himawari-9 (JMA) + S-NPP VIIRS (NOAA/NASA) → multiSatBoost +0.20 [0.85, 확정]
+- **추론 #6 (신규):** ent-evt-701 (Bismarck Sea) — Himawari-9 (JMA) + S-NPP VIIRS (NOAA/NASA) → multiSatBoost +0.20 [0.90, 확정] ★금일 추가
+
+### official_source_trust — 5건
+
+- **추론 #1:** ent-evt-202 (Kilauea) — analyzedBy USGS HVO (space_agency) → officialBoost +0.15 [0.95, 확정]
+- **추론 #2:** ent-evt-701 (Bismarck Sea) — VAAC Darwin 공식 advisory → officialBoost +0.15 [0.90, 확정]
+- **추론 #3:** ent-evt-903 (Aniak 홍수) — analyzedBy NASA (space_agency) → officialBoost +0.15 [0.90, 확정]
+- **추론 #4:** ent-evt-203/204 (Great Sitkin/Shishaldin) — analyzedBy USGS AVO → officialBoost +0.15 [0.85, 확정]
+- **추론 #5:** ent-evt-082 (Mayon) — analyzedBy PHIVOLCS (space_agency equiv) → officialBoost +0.15 [0.92, 확정]
+
+### before_after_credibility — 2건 ★금일 신규
+
+- **추론 #1 (신규):** ent-evt-903 (Aniak) — before_after_available: true (Landsat 9 OLI, 2026-04-21 vs 2026-05-07) → baCredibilityBoost +0.10 [0.90, 확정]
+- **추론 #2 (신규):** ent-evt-905 (남레바논 Bellingcat) — before_after_available: true (PlanetScope, 2026-03-02 vs 2026-05-08) → baCredibilityBoost +0.10 [0.90, 확정]
+
+### sensor_capability_match — 3건
+
+- **추론 #1:** ent-evt-202 (Kilauea) — usesSensor TIRS (thermal_infrared) + phenomenon volcanic_eruption → thermalBoost +0.10 [0.95, 확정]
+- **추론 #2:** ent-evt-203 (Great Sitkin) — usesSensor C-SAR (SAR) + cloudy_region true → sarBoost +0.10 [0.85, 확정]
+- **추론 #3:** ent-evt-204 (Shishaldin) — usesSensor TROPOMI (trace_gas) + phenomenon volcanic SO2 → tracegasBoost +0.15 [0.78, 확정]
+
+### analyst_trust — 1건
+
+- **추론 #1:** ent-evt-905 (남레바논) — analyzedBy Bellingcat (ngo) → analystBoost +0.10 [0.90, 확정]
+
+### temporal_progression — 3건
+
+- **추론 #1:** ent-evt-202 Kilauea — Ep47 전조(5/14) → 분수분출 9h(5/14~15) → 종료(5/15 00:27 HST) → ADVISORY 하향. partOfSeries(Ep46→Ep47). Ep48 잠정 예측.
+- **추론 #2:** ent-evt-701 Bismarck Sea — FL130(5/13) → FL140(5/14) → FL280(5/15). 분출 강도 급격 상승 추세. 1주 지속.
+- **추론 #3:** ent-evt-501 Everglades — 70%(5/14) → 80%(5/15). 진화율 개선 추세.
+
+### 특이사항
+- **Kilauea Ep47 분수분출 완결**: 9시간 연속 분출 후 갑작스러운 종료. WATCH→ADVISORY 2단계 하향. 향후 Ep48 가능성 모니터링.
+- **Bismarck Sea FL280**: 하루 만에 고도 2배 상승(FL140→FL280). 해저화산으로서는 이례적. 1972년 이후 54년 만의 재활동에서 분출 강도 급격 증가.
+- **NASA EO before/after (Aniak)**: 얼음 해빙·아이스잼·홍수 시퀀스를 Landsat 9로 선명하게 기록. 기후변화 지표.
+- **Bellingcat 인터랙티브 맵**: 남레바논 파괴 규모를 PlanetScope 시계열로 체계적 문서화. 인도주의 OSINT 모범 사례.
+- **Sentinel-2A Extension**: 2026년 말까지 운영 연장 — Sentinel-2 콘스텔레이션 3기(A/B/C) 체제 유지.
+- 한반도 GeoFocus: 금일 해당 없음
