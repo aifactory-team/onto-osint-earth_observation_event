@@ -1,0 +1,27 @@
+{
+  "id": "src-003",
+  "title": "Planet Pelican 첫 번째 빛(First Light) 공개 — 스웨덴 최초 주권 군사위성 포함, 9기 운용 개시",
+  "url": "https://www.businesswire.com/news/home/20260514665846/en/Planet-Releases-First-Light-from-Latest-Pelican-Launch-Including-Imagery-from-Swedens-First-Sovereign-Satellite",
+  "snippet": "Planet Labs PBC released first light images from latest Pelican launch (May 3, 2026 on CAS500-2 rideshare SpaceX Vandenberg). 3 Pelicans launched including Sweden's first sovereign military satellite. First light from Gotland May 7 at 515km altitude. 9 AI-enabled Pelicans now on orbit. 50cm class resolution, 6 multispectral bands.",
+  "source_name": "BusinessWire / Planet Labs",
+  "language": "en",
+  "discovered_date": "2026-05-16",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 14일 소스에 Pelican first light 관련 항목 없음. CAS500-2 rideshare는 기존 추적(src-025)되었으나 Pelican first light은 5월 14일 신규 발표.",
+  "entities": [
+    {"id": "evt-pelican-firstlight-2026-05", "type": "Event", "name": "Planet Pelican First Light 2026-05", "properties": {"phenomenon": "satellite_commissioning", "lat": 57.63, "lon": 18.30, "country": "SE", "observation_date": "2026-05-07"}},
+    {"id": "sat-pelican", "type": "Satellite", "name": "Pelican (Planet)", "properties": {"operator": "Planet", "orbit_type": "SSO", "resolution_m": 0.5, "sensor_types": ["optical_multispectral"], "mission_status": "operational"}},
+    {"id": "org-planet", "type": "Organization", "name": "Planet Labs", "properties": {"org_type": "commercial_imagery", "country": "US"}},
+    {"id": "org-swaf", "type": "Organization", "name": "Swedish Armed Forces (SwAF)", "properties": {"org_type": "defense_intel", "country": "SE"}},
+    {"id": "co-se", "type": "Country", "name": "스웨덴", "properties": {"iso_code": "SE", "region": "북유럽"}},
+    {"id": "sat-cas500-2", "type": "Satellite", "name": "CAS500-2 (차세대중형위성 2호)", "properties": {"operator": "KARI", "country": "KR"}}
+  ],
+  "relations": [
+    {"subject": "evt-pelican-firstlight-2026-05", "predicate": "observedBy", "object": "sat-pelican"},
+    {"subject": "evt-pelican-firstlight-2026-05", "predicate": "analyzedBy", "object": "org-planet"},
+    {"subject": "evt-pelican-firstlight-2026-05", "predicate": "inCountry", "object": "co-se"},
+    {"subject": "sat-pelican", "predicate": "operatedBy", "object": "org-planet"}
+  ]
+}

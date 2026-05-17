@@ -1,15 +1,15 @@
 {
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "위성영상 관측 이벤트 누적 지식그래프 — 첫 실행(2026-04-30) 이후 매일 신규/추론 트리플 병합",
-  "last_updated": "2026-05-15",
-  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15"],
-  "triples": "ontology/kg/2026-04-30.json + ontology/kg/2026-05-01.json + ontology/kg/2026-05-02.json + ontology/kg/2026-05-03.json + ontology/kg/2026-05-04.json + ontology/kg/2026-05-05.json + ontology/kg/2026-05-06.json + ontology/kg/2026-05-07.json + ontology/kg/2026-05-08.json + ontology/kg/2026-05-09.json + ontology/kg/2026-05-10.json + ontology/kg/2026-05-11.json + ontology/kg/2026-05-12.json + ontology/kg/2026-05-13.json (new_triples + updated_triples + inferred_triples)",
+  "last_updated": "2026-05-16",
+  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16"],
+  "triples": "ontology/kg/2026-04-30.json ~ ontology/kg/2026-05-16.json (new_triples + updated_triples + inferred_triples)",
   "stats": {
-    "total_explicit_triples": 833,
-    "total_inferred_triples": 328,
-    "total_unique_subjects": 187,
+    "total_explicit_triples": 860,
+    "total_inferred_triples": 338,
+    "total_unique_subjects": 197,
     "total_unique_predicates": 18,
-    "total_unique_objects": 228
+    "total_unique_objects": 239
   },
-  "note": "2026-05-15 병합 완료 — 신규 이벤트 2건(evt-903 Aniak 얼음해빙·홍수 Landsat 9 before/after, evt-905 Bellingcat 남레바논 PlanetScope 인터랙티브 맵). 핵심 업데이트: Kilauea Ep47 9h 분수분출→종료 WATCH→ADVISORY, Bismarck Sea FL140→FL280 2배 상승. 신규 Location 1건(ent-loc-067 Aniak AK). multiSatBoost 6건(+Bismarck Sea Himawari-9/VIIRS 추가). officialBoost 5건(+NASA EO/VAAC Darwin). baCredibilityBoost 2건(Aniak/Lebanon before-after). 한반도 GeoFocus 0건. 누적 KG 1161 트리플."
+  "note": "2026-05-16 병합 완료 — 신규 이벤트 5건(Planet Pelican First Light, UNEP MARS 메탄 석탄/폐기물 확대, 베트남 스프래틀리 216ha 확장, 필리핀 Thitu/Nanshan 건설, VIIRS 야간조명 Nature). 핵심 업데이트: Bismarck Sea FL280→FL140 하강 추세, Kilauea Ep47 종료·휴지, Pemex 3개월+ SAR 관측 지속. 신규 엔티티 11건(Pelican위성, CAS500-2, SwAF, UNEP IMEO, AMTI, Darwin VAAC, 4국가, light_pollution 현상). multiSatBoost 4건(UNEP/Vietnam/Bismarck/Pemex). tracegasBoost 1건. officialBoost 2건. sarBoost 1건. partOfSeries 2건(SCS 건설). 한반도 GeoFocus 0건(direct). 누적 KG 1198 트리플."
 }

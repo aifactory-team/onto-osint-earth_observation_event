@@ -1,0 +1,51 @@
+{
+  "date": "2026-05-16",
+  "new_triples": [
+    {"subject": "evt-pelican-firstlight-2026-05", "predicate": "observedBy", "object": "sat-pelican", "source_id": "src-003", "date": "2026-05-16", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-pelican-firstlight-2026-05", "predicate": "analyzedBy", "object": "org-planet", "source_id": "src-003", "date": "2026-05-16", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-pelican-firstlight-2026-05", "predicate": "inCountry", "object": "co-se", "source_id": "src-003", "date": "2026-05-16", "confidence": 0.90, "type": "explicit"},
+    {"subject": "sat-pelican", "predicate": "operatedBy", "object": "org-planet", "source_id": "src-003", "date": "2026-05-16", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-unep-mars-coal-2026-05", "predicate": "observedBy", "object": "sat-sentinel5p", "source_id": "src-004", "date": "2026-05-16", "confidence": 0.92, "type": "explicit"},
+    {"subject": "evt-unep-mars-coal-2026-05", "predicate": "observedBy", "object": "sat-methanesat", "source_id": "src-004", "date": "2026-05-16", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-unep-mars-coal-2026-05", "predicate": "usesSensor", "object": "sensor-tropomi", "source_id": "src-004", "date": "2026-05-16", "confidence": 0.92, "type": "explicit"},
+    {"subject": "evt-unep-mars-coal-2026-05", "predicate": "analyzedBy", "object": "org-unep-imeo", "source_id": "src-004", "date": "2026-05-16", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-unep-mars-coal-2026-05", "predicate": "manifests", "object": "phen-methane", "source_id": "src-004", "date": "2026-05-16", "confidence": 0.92, "type": "explicit"},
+    {"subject": "evt-unep-mars-coal-2026-05", "predicate": "inDomain", "object": "dom-climate", "source_id": "src-004", "date": "2026-05-16", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-vietnam-spratly-2026-05", "predicate": "observedBy", "object": "sat-planetscope", "source_id": "src-005", "date": "2026-05-16", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-vietnam-spratly-2026-05", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-005", "date": "2026-05-16", "confidence": 0.88, "type": "explicit"},
+    {"subject": "evt-vietnam-spratly-2026-05", "predicate": "analyzedBy", "object": "org-amti", "source_id": "src-005", "date": "2026-05-16", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-vietnam-spratly-2026-05", "predicate": "manifests", "object": "phen-construction", "source_id": "src-005", "date": "2026-05-16", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-vietnam-spratly-2026-05", "predicate": "inCountry", "object": "co-vn", "source_id": "src-005", "date": "2026-05-16", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-vietnam-spratly-2026-05", "predicate": "inDomain", "object": "dom-defense", "source_id": "src-005", "date": "2026-05-16", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-ph-thitu-2026-05", "predicate": "observedBy", "object": "sat-planetscope", "source_id": "src-006", "date": "2026-05-16", "confidence": 0.88, "type": "explicit"},
+    {"subject": "evt-ph-thitu-2026-05", "predicate": "inCountry", "object": "co-ph", "source_id": "src-006", "date": "2026-05-16", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-ph-thitu-2026-05", "predicate": "manifests", "object": "phen-construction", "source_id": "src-006", "date": "2026-05-16", "confidence": 0.88, "type": "explicit"},
+    {"subject": "evt-ph-thitu-2026-05", "predicate": "inDomain", "object": "dom-defense", "source_id": "src-006", "date": "2026-05-16", "confidence": 0.88, "type": "explicit"},
+    {"subject": "evt-viirs-nightlight-2026", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_id": "src-010", "date": "2026-05-16", "confidence": 0.88, "type": "explicit"},
+    {"subject": "evt-viirs-nightlight-2026", "predicate": "analyzedBy", "object": "org-nasa", "source_id": "src-010", "date": "2026-05-16", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-viirs-nightlight-2026", "predicate": "manifests", "object": "phen-light-pollution", "source_id": "src-010", "date": "2026-05-16", "confidence": 0.88, "type": "explicit"},
+    {"subject": "evt-viirs-nightlight-2026", "predicate": "inDomain", "object": "dom-climate", "source_id": "src-010", "date": "2026-05-16", "confidence": 0.88, "type": "explicit"}
+  ],
+  "updated_triples": [
+    {"subject": "evt-bismarck-2026-05", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-001", "date": "2026-05-16", "confidence": 0.92, "type": "explicit", "note": "VAAC #17 confirmed continued observation"},
+    {"subject": "evt-bismarck-2026-05", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_id": "src-001", "date": "2026-05-16", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-pemex-cantarell", "predicate": "observedBy", "object": "sat-sentinel1a", "source_id": "src-008", "date": "2026-05-16", "confidence": 0.92, "type": "explicit", "note": "May 7 TPR report: SAR still shows dark patches"}
+  ],
+  "inferred_triples": [
+    {"subject": "evt-unep-mars-coal-2026-05", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.90, "type": "inferred", "basis": "Sentinel-5P(ESA) + MethaneSAT(EDF) — 2 independent operators"},
+    {"subject": "evt-unep-mars-coal-2026-05", "predicate": "tracegasBoost", "object": "+0.15", "rule": "sensor_capability_match_tracegas", "confidence": 0.92, "type": "inferred", "basis": "TROPOMI trace_gas sensor observing methane_plume phenomenon"},
+    {"subject": "evt-unep-mars-coal-2026-05", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred", "basis": "UNEP IMEO is un_body"},
+    {"subject": "evt-vietnam-spratly-2026-05", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.88, "type": "inferred", "basis": "PlanetScope(Planet) + Sentinel-2A(ESA) — 2 independent operators"},
+    {"subject": "evt-vietnam-spratly-2026-05", "predicate": "partOfSeries", "object": "evt-antelope-reef-update", "rule": "temporal_progression", "confidence": 0.70, "type": "inferred", "basis": "Same region (SCS), same phenomenon (construction), ongoing series"},
+    {"subject": "evt-ph-thitu-2026-05", "predicate": "partOfSeries", "object": "evt-antelope-reef-update", "rule": "temporal_progression", "confidence": 0.70, "type": "inferred", "basis": "Same region (SCS), same phenomenon (construction), competitive dynamic"},
+    {"subject": "evt-bismarck-2026-05", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.92, "type": "inferred", "basis": "Himawari-9(JMA) + VIIRS(NOAA) — 2 independent operators"},
+    {"subject": "evt-pemex-cantarell", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.92, "type": "inferred", "basis": "Sentinel-1(ESA SAR) + Sentinel-2(ESA optical) — same agency but different sensor types"},
+    {"subject": "evt-pemex-cantarell", "predicate": "sarBoost", "object": "+0.10", "rule": "sensor_capability_match_sar", "confidence": 0.90, "type": "inferred", "basis": "SAR C-band oil spill detection capability"},
+    {"subject": "evt-viirs-nightlight-2026", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred", "basis": "NASA space_agency"}
+  ],
+  "stats": {
+    "new_nodes": 10,
+    "new_edges": 24,
+    "inferred_edges": 10
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "date": "2026-05-16",
+  "collected_at": "2026-05-16T08:00:00Z",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 21,
+  "total_results": 78,
+  "expanded_keywords": ["Kilauea satellite", "Bismarck Sea volcano", "Pelican Planet", "KOMPSAT-7", "UNEP MARS methane", "Antelope Reef", "Vietnam Spratly", "Philippines Thitu", "Pemex Cantarell SAR"],
+  "searches": [
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery wildfire May 2026",
+      "language": "en",
+      "timestamp": "2026-05-16T08:01:00Z",
+      "result_count": 5,
+      "results": [
+        {"title": "Fast-Spreading Florida Wildfire Seen in Satellite Imagery", "url": "https://www.yahoo.com/news/videos/fast-spreading-florida-wildfire-seen-105914497.html", "snippet": "Florida Everglades Max Road fire grew to 4,800 acres in less than 24 hours, satellite imagery from CIRA documented fire", "source_name": "Yahoo News/CIRA"},
+        {"title": "NOAA Satellites Capture Florida's Wildfire Expand from 5,000 to 25,000 Acres in Everglades", "url": "https://www.greenmatters.com/pn/noaa-satellites-capture-floridas-wildfire-expand-from-5-000-to-25-000-acres-in-everglades", "snippet": "NOAA GOES-East and VIIRS tracked Everglades fire expansion", "source_name": "Green Matters"},
+        {"title": "Max Road Miramar Fire — CIMSS Satellite Blog", "url": "https://cimss.ssec.wisc.edu/satellite-blog/archives/70367", "snippet": "GOES-16/18 ABI and VIIRS imagery of Max Road fire plume and thermal hotspots", "source_name": "CIMSS/SSEC"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery flood May 2026",
+      "language": "en",
+      "timestamp": "2026-05-16T08:02:00Z",
+      "result_count": 3,
+      "results": [
+        {"title": "NASA Enhances Global Flood Products: Smarter Detection of Flooding", "url": "https://www.earthdata.nasa.gov/news/blog/nasa-enhances-global-flood-products-smarter-detection-flooding-release-23-year-archive", "snippet": "April 2026: NASA released 23-year MODIS flood archive, improved NRT flood detection from 2026", "source_name": "NASA Earthdata"},
+        {"title": "New flood-mapping tool has potential to save lives (ASU SMAGNet)", "url": "https://news.asu.edu/20260305-environment-and-sustainability-new-floodmapping-tool-has-potential-save-lives-during", "snippet": "AI-powered SMAGNet combines radar and optical satellite for flood mapping through clouds", "source_name": "ASU News"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery volcano eruption May 2026",
+      "language": "en",
+      "timestamp": "2026-05-16T08:03:00Z",
+      "result_count": 6,
+      "results": [
+        {"title": "Rare volcanic ash emission detected from submarine volcano in Central Bismarck Sea, PNG", "url": "https://watchers.news/2026/05/13/rare-volcanic-ash-emission-detected-submarine-volcano-central-bismarck-sea-papua-new-guinea-may-2026/", "snippet": "Submarine volcano eruption since May 8-11, Himawari-9 detected ash to 4km, water discoloration 9x11km", "source_name": "The Watchers"},
+        {"title": "Bismarck Sea VAAC #17 — VA EMISSION TO FL140 May 15", "url": "https://www.volcanodiscovery.com/centralbismarcksea/news/302505/vaac-advisory-2026-17.html", "snippet": "Continuous VA emission from submarine volcano, FL140 moving NW", "source_name": "VolcanoDiscovery"},
+        {"title": "Great Sitkin continuing eruption May 12 2026", "url": "https://www.volcanodiscovery.com/great-sitkin/news/302242/Great-Sitkin-United-States-Volcano-United-States-activity-update-May-12-2026-Continuing-eruptionCite.html", "snippet": "Slow lava dome growth observed in satellite radar imagery within summit crater", "source_name": "VolcanoDiscovery"},
+        {"title": "USGS Kilauea Volcano Updates", "url": "https://www.usgs.gov/volcanoes/kilauea/volcano-updates", "snippet": "Ep47 ended May 15, ADVISORY/YELLOW, 4.7 microradians inflation since pause", "source_name": "USGS HVO"},
+        {"title": "Bismarck Sea VAAC #15 — FL280 (8500m) May 15", "url": "https://www.volcanodiscovery.com/centralbismarcksea/news/302445/vaac-advisory-2026-15.html", "snippet": "Continuous VA emission to FL280 (8500m) observed May 15", "source_name": "VolcanoDiscovery"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Copernicus EMS activation May 2026",
+      "language": "en",
+      "timestamp": "2026-05-16T08:04:00Z",
+      "result_count": 2,
+      "results": [
+        {"title": "Copernicus EMS On Demand Mapping Portal", "url": "https://mapping.emergency.copernicus.eu/", "snippet": "Situational reporting from May 2026, no specific new activation identified today", "source_name": "Copernicus EMS"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "NASA Earth Observatory image May 2026",
+      "language": "en",
+      "timestamp": "2026-05-16T08:05:00Z",
+      "result_count": 4,
+      "results": [
+        {"title": "Ice Moves Out of Aniak — NASA Earth Observatory", "url": "https://science.nasa.gov/earth/earth-observatory/ice-moves-out-of-aniak/", "snippet": "Landsat 9 before/after of spring melt along Alaska Kuskokwim River, ice jams and flooding", "source_name": "NASA Earth Observatory"},
+        {"title": "America's Emerald Isle — Beaver Island, Lake Michigan", "url": "https://science.nasa.gov/earth/earth-observatory/image-of-the-day/", "snippet": "Scenic satellite imagery of Lake Michigan archipelago", "source_name": "NASA Earth Observatory"},
+        {"title": "Nature cover: Where artificial light intensified/diminished", "url": "https://science.nasa.gov/earth/earth-observatory/picturing-earth-in-a-new-light/", "snippet": "Satellite-based study of global nighttime light changes published in Nature", "source_name": "NASA Earth Observatory"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Sentinel-2 satellite observation May 2026",
+      "language": "en",
+      "timestamp": "2026-05-16T08:06:00Z",
+      "result_count": 3,
+      "results": [
+        {"title": "Sentinel-2A Extension Campaign prolonged until end 2026", "url": "https://dataspace.copernicus.eu/news/2026-5-15-sentinel-2a-extension-campaign-prolonged-until-end-2026", "snippet": "ESA formally extends Sentinel-2A operations through end of 2026 despite original May 2026 EOL", "source_name": "Copernicus Data Space"},
+        {"title": "Harmonized Landsat and Sentinel-2 2026 Workshop", "url": "https://www.earthdata.nasa.gov/events/harmonized-landsat-sentinel-2-2026-workshop", "snippet": "NASA workshop on HLS product integration", "source_name": "NASA Earthdata"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery deforestation oil spill May 2026",
+      "language": "en",
+      "timestamp": "2026-05-16T08:07:00Z",
+      "result_count": 3,
+      "results": [
+        {"title": "Faster Detection of Forest Loss — NISAR+Landsat", "url": "https://science.nasa.gov/earth/earth-observatory/faster-detection-of-forest-loss/", "snippet": "New multi-satellite system detects forest clearing 100 days earlier", "source_name": "NASA Earth Observatory"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite methane plume detection 2026",
+      "language": "en",
+      "timestamp": "2026-05-16T08:08:00Z",
+      "result_count": 5,
+      "results": [
+        {"title": "Satellite methane alerts expanded to coal and waste sectors — UNEP at G7", "url": "https://www.unep.org/news-and-stories/press-release/satellite-methane-alerts-expanded-coal-and-waste-sectors-unep", "snippet": "IMEO May 4 2026: MARS expanded to coal mines and waste, 23000+ satellite observations, 250 coal mines database", "source_name": "UNEP"},
+        {"title": "California methane satellite helps stop 10 large leaks", "url": "https://ww2.arb.ca.gov/news/californias-methane-satellite-helps-stop-10-large-leaks", "snippet": "California Satellite Methane Project resolved 10 large leaks at oil/gas facilities", "source_name": "CARB"},
+        {"title": "GHGSat expands fleet as methane monitoring interest grows", "url": "https://www.wastedive.com/news/ghgsat-methane-satellite-launch-cop30/806773/", "snippet": "GHGSat now 16 devices in orbit, targeting 9 more by end 2026", "source_name": "Waste Dive"},
+        {"title": "NOAA GOES provides quicker detection of large methane emissions", "url": "https://www.nesdis.noaa.gov/news/noaas-goes-satellites-can-provide-quicker-detection-of-large-methane-emissions", "snippet": "GOES geostationary satellites can detect large methane plumes in near real-time", "source_name": "NOAA NESDIS"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "위성영상 한반도 2026년 5월",
+      "language": "ko",
+      "timestamp": "2026-05-16T08:09:00Z",
+      "result_count": 2,
+      "results": [
+        {"title": "최신 위성영상 — 국가해양위성센터", "url": "https://www.nosc.go.kr/program/actionTodayRcvImg.do", "snippet": "한반도 해양위성 실시간 영상", "source_name": "NOSC"},
+        {"title": "기상위성 영상 — 기상청", "url": "https://nmsc.kma.go.kr/homepage/html/satellite/viewer/selectSatViewer.do?dataType=operSat", "snippet": "천리안 2A/2B 한반도 기상영상", "source_name": "KMA NMSC"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Maxar satellite imagery military May 2026",
+      "language": "en",
+      "timestamp": "2026-05-16T08:10:00Z",
+      "result_count": 5,
+      "results": [
+        {"title": "Hybrid constellations making it hard for militaries to hide", "url": "https://www.defenseone.com/technology/2026/04/hybrid-constellations-are-making-it-hard-militaries-hide/412728/", "snippet": "Commercial satellite constellation proliferation reduces military concealment options", "source_name": "Defense One"},
+        {"title": "Vantor (Maxar) first images from WorldView Legion next-gen", "url": "https://www.maxar.com/press-releases/maxar-intelligence-releases-first-images-from-its-next-generation-worldview-legion-satellites", "snippet": "Vantor expands fleet with 20cm Vantage + Pulse smallsats", "source_name": "Vantor/Maxar"},
+        {"title": "Satellite companies curb access to Mideast imagery", "url": "https://www.cbsnews.com/news/iran-war-satellite-companies-curb-access-mideast-imagery/", "snippet": "Commercial satellite firms restrict Middle East imagery access during conflict", "source_name": "CBS News"},
+        {"title": "Nowhere to hide: Iran war spotlights military challenges from space sensing", "url": "https://breakingdefense.com/2026/04/nowhere-to-hide-iran-war-spotlights-military-challenges-posed-by-space-based-remote-sensing/", "snippet": "US-Israel-Iran conflict highlights vulnerability to commercial satellite surveillance", "source_name": "Breaking Defense"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Planet satellite imagery analysis May 2026",
+      "language": "en",
+      "timestamp": "2026-05-16T08:11:00Z",
+      "result_count": 4,
+      "results": [
+        {"title": "Planet Releases First Light from Latest Pelican Launch — Sweden's First Sovereign Satellite", "url": "https://www.businesswire.com/news/home/20260514665846/en/Planet-Releases-First-Light-from-Latest-Pelican-Launch-Including-Imagery-from-Swedens-First-Sovereign-Satellite", "snippet": "May 14: 3 Pelican launched May 3 on CAS500-2 rideshare, first light from Gotland Sweden May 7, 9 Pelicans now on orbit, 50cm 6-band", "source_name": "BusinessWire/Planet"},
+        {"title": "Planet Labs Releases First Light Images From Pelican Satellites", "url": "https://orbitaltoday.com/2026/05/16/planet-labs-releases-first-light-images-from-pelican-satellites/", "snippet": "AI-enabled high-res satellites capture Gotland Sweden, Taiyuan China, Ambursu Nigeria", "source_name": "Orbital Today"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Bellingcat satellite imagery 2026",
+      "language": "en",
+      "timestamp": "2026-05-16T08:12:00Z",
+      "result_count": 5,
+      "results": [
+        {"title": "Satellite Imagery Shows Ongoing Demolitions Across Southern Lebanon", "url": "https://www.bellingcat.com/news/2026/05/14/satellite-imagery-shows-ongoing-demolitions-across-southern-lebanon/", "snippet": "PlanetScope before/after (Mar 2 vs May 8) showing IDF demolitions in Qantara, Aadshit, southern Lebanon", "source_name": "Bellingcat"},
+        {"title": "Bellingcat Lebanon interactive map", "url": "https://bellingcat.github.io/lebanon-may-2026/", "snippet": "Full PlanetScope coverage of south Lebanon destruction 2026", "source_name": "Bellingcat GitHub"},
+        {"title": "Satellite Imagery Reveals Strikes on Iranian Police Stations", "url": "https://www.bellingcat.com/news/middle-east/2026/03/04/satellite-imagery-reveals-strikes-on-iranian-police-stations/", "snippet": "PlanetScope identified 15+ police station strikes Mar 1-3", "source_name": "Bellingcat"},
+        {"title": "Bellingcat SAR War Damage Tool", "url": "https://migflug.com/jetflights/when-satellites-go-dark-radar-sees-through-bellingcats-war-damage-tool/", "snippet": "Sentinel-1 SAR-based open source tool for destruction detection in Iran/Gulf region", "source_name": "MiGFlug/Bellingcat"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "KOMPSAT satellite 위성 관측 2026",
+      "language": "ko",
+      "timestamp": "2026-05-16T08:13:00Z",
+      "result_count": 4,
+      "results": [
+        {"title": "Korea Unveils Ultra-High-Resolution Satellite Images — KOMPSAT-7", "url": "https://en.sedaily.com/technology/2026/03/18/korea-unveils-ultra-high-resolution-satellite-images", "snippet": "KOMPSAT-7 0.3m imagery of Jamsil/Lotte Tower, vehicle-type identification capable", "source_name": "Seoul Economic Daily"},
+        {"title": "L3Harris to Provide Imaging Payload for GEO-KOMPSAT-5", "url": "https://www.satellitetoday.com/imagery-and-sensing/2026/01/23/l3harris-to-provide-imaging-payload-for-south-koreas-geo-kompsat-5-weather-sat/", "snippet": "GEO-KOMPSAT-5 weather satellite payload development kicked off Feb 2026", "source_name": "Via Satellite"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "glacier retreat satellite imagery 2026",
+      "language": "en",
+      "timestamp": "2026-05-16T08:14:00Z",
+      "result_count": 3,
+      "results": [
+        {"title": "Record-Setting Retreat of Hektoria Glacier — NASA", "url": "https://science.nasa.gov/earth/earth-observatory/record-setting-retreat-of-hektoria-glacier/", "snippet": "8km collapse in 2 months, fastest modern Antarctic ice retreat, satellite + seismic data", "source_name": "NASA Earth Observatory"},
+        {"title": "Satellite images reveal hidden retreat of Arctic glaciers", "url": "https://www.earth.com/news/satellite-images-reveal-hidden-retreat-of-arctic-glaciers/", "snippet": "Sentinel-1 SAR monitoring of Svalbard coastal glaciers in Arctic", "source_name": "Earth.com"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Kilauea volcano eruption update May 16 2026",
+      "language": "en",
+      "timestamp": "2026-05-16T08:15:00Z",
+      "result_count": 4,
+      "results": [
+        {"title": "Kilauea Volcano Updates — USGS", "url": "https://www.usgs.gov/volcanoes/kilauea/volcano-updates", "snippet": "Ep47 ended May 15 12:27am HST, ADVISORY/YELLOW, 4.7 microradians inflation, lava still incandescent on crater floor", "source_name": "USGS HVO"},
+        {"title": "Exciting Kilauea Lava Update: Ep. 47 has ended; on pause", "url": "https://hawaiivolcanoexpeditions.com/blog/lava-update-the-latest-eruptions-on-the-big-island/", "snippet": "Episode 47 ended after 9 hours of continuous lava fountaining from north vent, peak 360-390 yd³/s", "source_name": "Hawaii Volcano Expeditions"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "CSIS Beyond Parallel North Korea satellite 2026",
+      "language": "en",
+      "timestamp": "2026-05-16T08:16:00Z",
+      "result_count": 4,
+      "results": [
+        {"title": "Engine Test Preparations and Modernization at Sohae — Beyond Parallel", "url": "https://beyondparallel.csis.org/engine-test-preparations-and-modernization-at-sohae-satellite-launching-station/", "snippet": "Satellite imagery Sep 27 2025: new engine test prep, horizontal processing building, L-shaped pier, railroad spur possible early 2026 completion", "source_name": "CSIS Beyond Parallel"},
+        {"title": "North Korea's first true ballistic missile submarine not yet operational", "url": "https://x.com/CSISKoreaChair/status/1947718638485569691", "snippet": "CSIS satellite imagery shows DPRK SLBM submarine still not fully operational after 2 years", "source_name": "CSIS Korea Chair"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "South China Sea island building satellite 2026",
+      "language": "en",
+      "timestamp": "2026-05-16T08:17:00Z",
+      "result_count": 6,
+      "results": [
+        {"title": "China building largest artificial island — Antelope Reef 1490 acres", "url": "https://amti.csis.org/antelope-reef-could-now-be-the-largest-island-in-the-south-china-sea/", "snippet": "AMTI: China reclaimed ~1490 acres at Antelope Reef, Paracels, since Oct 2025 — potentially largest in SCS", "source_name": "AMTI/CSIS"},
+        {"title": "Philippines construction on two islands in Spratlys — satellite imagery May 2026", "url": "https://www.rfa.org/english/southchinasea/2026/05/08/philippines-satellite-spratlys-infrastructure-upgrade/", "snippet": "Planet Labs confirms Thitu runway extension + Nanshan port expansion ongoing as of May 2026", "source_name": "Radio Free Asia"},
+        {"title": "Vietnam Expands Spratly Islands Outposts by 216 Hectares Over Past Year", "url": "https://thevietnamese.org/2026/05/viet-nam-expands-spratly-islands-outposts-by-216-hectares-over-past-year/", "snippet": "AMTI May 2026: Vietnam added 216ha since Mar 2025, total 1121ha, DVOR beacon installed", "source_name": "The Vietnamese Magazine"},
+        {"title": "China is Remaking the South China Sea With Return to Island-Building", "url": "https://www.lowyinstitute.org/the-interpreter/china-remaking-south-china-sea-return-island-building", "snippet": "After decade pause, China resumed large-scale island building", "source_name": "Lowy Institute"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Pemex oil spill satellite Cantarell 2026",
+      "language": "en",
+      "timestamp": "2026-05-16T08:18:00Z",
+      "result_count": 5,
+      "results": [
+        {"title": "Pemex-linked Gulf oil spill may still be spreading 3 months later — satellite images", "url": "https://www.tpr.org/environment/2026-05-07/pemex-linked-gulf-oil-spill-may-still-be-spreading-three-months-later-satellite-images-suggest", "snippet": "Radar imagery early May: elongated dark patches near Cantarell complex consistent with oil slicks, Feb 6 leak discovery", "source_name": "TPR"},
+        {"title": "Oil spill continues in Gulf of Mexico — Pemex admits fault", "url": "https://news.mongabay.com/2026/04/oil-spill-continues-in-gulf-of-mexico-vulnerable-habitats-while-pemex-admits-fault/", "snippet": "Pipeline leak in Abkatun-Cantarell area confirmed by Pemex, mechanical failures found", "source_name": "Mongabay"},
+        {"title": "Oil Spill Fuels Ecocide in the Gulf of Mexico", "url": "https://www.weavenews.org/stories/2026/5/1/oil-spill-fuels-ecocide-in-the-gulf-of-mexico", "snippet": "May 1 2026: continued SAR satellite monitoring of oil spill extent", "source_name": "Weave News"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "UNOSAT satellite analysis humanitarian May 2026",
+      "language": "en",
+      "timestamp": "2026-05-16T08:19:00Z",
+      "result_count": 3,
+      "results": [
+        {"title": "UNESCO-UNOSAT Collaboration for Heritage Protection", "url": "https://news.fundsforngos.org/2026/05/06/satellite-technology-for-heritage-protection-unesco-unosat-collaboration-explained/", "snippet": "May 6 2026: UNESCO+UNOSAT 800+ satellite analyses covering 4000+ heritage sites in 20+ countries over past 3 years", "source_name": "fundsforNGOs"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Vietnam Spratly island expansion 216 hectares satellite 2026",
+      "language": "en",
+      "timestamp": "2026-05-16T08:20:00Z",
+      "result_count": 5,
+      "results": [
+        {"title": "Vietnam Expands Spratly Islands Outposts by 216 Hectares — AMTI", "url": "https://thevietnamese.org/2026/05/viet-nam-expands-spratly-islands-outposts-by-216-hectares-over-past-year/", "snippet": "534 acres (216ha) added since Mar 2025, total 2771 acres, DVOR navigation beacon installed Aug 2025-Apr 2026", "source_name": "The Vietnamese/AMTI"},
+        {"title": "Vietnam's Spratly Island Overhaul Continues — AMTI", "url": "https://amti.csis.org/keeping-score-vietnams-spratly-island-overhaul-continues/", "snippet": "AMTI detailed satellite imagery analysis of Vietnamese construction activities", "source_name": "AMTI/CSIS"},
+        {"title": "Vietnam adds hundreds of acres in South China Sea — Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-05-09/vietnam-expands-south-china-sea-outposts-as-beijing-widens-lead", "snippet": "China still leads with 5460 acres (2210ha) total vs Vietnam 2771 acres", "source_name": "Bloomberg"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Planet Pelican satellite first light May 2026 Sweden",
+      "language": "en",
+      "timestamp": "2026-05-16T08:21:00Z",
+      "result_count": 4,
+      "results": [
+        {"title": "Planet Releases First Light from Latest Pelican Launch — Sweden's First Sovereign Satellite", "url": "https://www.businesswire.com/news/home/20260514665846/en/Planet-Releases-First-Light-from-Latest-Pelican-Launch-Including-Imagery-from-Swedens-First-Sovereign-Satellite", "snippet": "May 14 announcement: 3 Pelicans launched May 3 on CAS500-2 rideshare SpaceX Vandenberg, Sweden SwAF first sovereign sat, 9 Pelicans total, 50cm 6-band", "source_name": "BusinessWire/Planet"},
+        {"title": "Planet Labs releases first images from new Pelican satellites including Sweden's first military satellite", "url": "https://www.aviation24.be/military-aircraft/swedish-armed-forces/planet-labs-releases-first-images-from-new-pelican-satellites-including-swedens-first-military-satellite/amp/", "snippet": "Swedish Armed Forces first sovereign EO satellite, first light Gotland May 7", "source_name": "Aviation24"},
+        {"title": "Planet Labs Releases First Light Images From Pelican Satellites — Orbital Today May 16", "url": "https://orbitaltoday.com/2026/05/16/planet-labs-releases-first-light-images-from-pelican-satellites/", "snippet": "Published today: AI-enabled 50cm Pelicans operational", "source_name": "Orbital Today"}
+      ]
+    }
+  ]
+}

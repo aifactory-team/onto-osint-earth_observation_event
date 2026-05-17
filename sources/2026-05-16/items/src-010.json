@@ -1,0 +1,25 @@
+{
+  "id": "src-010",
+  "title": "NASA EO 'Picturing Earth in a New Light' — 위성 야간조명 변화 Nature 표지",
+  "url": "https://science.nasa.gov/earth/earth-observatory/picturing-earth-in-a-new-light/",
+  "snippet": "NASA Earth Observatory feature: analysis of where artificial light at night has intensified or diminished globally, published as Nature cover. Uses VIIRS Day/Night Band (DNB) data from Suomi-NPP/JPSS satellites.",
+  "source_name": "NASA Earth Observatory",
+  "language": "en",
+  "discovered_date": "2026-05-16",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 14일 소스에 Nature 야간조명 분석 관련 항목 없음. NASA EO 신규 특집.",
+  "entities": [
+    {"id": "evt-viirs-nightlight-2026", "type": "Event", "name": "VIIRS 야간조명 변화 Nature 분석 2026", "properties": {"phenomenon": "light_pollution", "lat": null, "lon": null, "country": null, "admin": "global"}},
+    {"id": "sat-viirs-jpss", "type": "Satellite", "name": "VIIRS (Suomi-NPP/JPSS)", "properties": {"operator": "NOAA/NASA"}},
+    {"id": "org-nasa", "type": "Organization", "name": "NASA", "properties": {"org_type": "space_agency", "country": "US"}},
+    {"id": "phen-light-pollution", "type": "Phenomenon", "name": "light_pollution", "properties": {"category": "ClimateEnvironment"}}
+  ],
+  "relations": [
+    {"subject": "evt-viirs-nightlight-2026", "predicate": "observedBy", "object": "sat-viirs-jpss"},
+    {"subject": "evt-viirs-nightlight-2026", "predicate": "analyzedBy", "object": "org-nasa"},
+    {"subject": "evt-viirs-nightlight-2026", "predicate": "manifests", "object": "phen-light-pollution"},
+    {"subject": "evt-viirs-nightlight-2026", "predicate": "inDomain", "object": "dom-climate"}
+  ]
+}

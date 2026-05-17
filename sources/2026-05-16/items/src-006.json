@@ -1,0 +1,27 @@
+{
+  "id": "src-006",
+  "title": "필리핀 Thitu 활주로 연장 + Nanshan 항만 확장 — Planet Labs 위성 확인",
+  "url": "https://www.rfa.org/english/southchinasea/2026/05/08/philippines-satellite-spratlys-infrastructure-upgrade/",
+  "snippet": "Radio Free Asia May 8: Philippines upgrading two Spratly islands. Thitu (Pag-asa) runway extension to 1.5km for F-16 variants. Nanshan (Lawak) sheltered port expansion. Planet Labs satellite imagery confirms construction ongoing as of May 2026. Budget: 1.65B pesos (Thitu) + 1B pesos (Nanshan).",
+  "source_name": "Radio Free Asia",
+  "language": "en",
+  "discovered_date": "2026-05-16",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 14일 소스에 필리핀 Thitu/Nanshan 건설 위성확인 관련 항목 없음. RFA 5월 8일 발표 최초 수집.",
+  "entities": [
+    {"id": "evt-ph-thitu-2026-05", "type": "Event", "name": "필리핀 Thitu 활주로 연장 2026", "properties": {"phenomenon": "construction", "lat": 11.05, "lon": 114.28, "country": "PH", "observation_date": "2026-05-01"}},
+    {"id": "sat-planetscope", "type": "Satellite", "name": "PlanetScope (Doves)", "properties": {"operator": "Planet"}},
+    {"id": "org-planet", "type": "Organization", "name": "Planet Labs", "properties": {"org_type": "commercial_imagery", "country": "US"}},
+    {"id": "co-ph", "type": "Country", "name": "필리핀", "properties": {"iso_code": "PH", "region": "동남아시아"}},
+    {"id": "phen-construction", "type": "Phenomenon", "name": "construction", "properties": {"category": "HumanActivity"}}
+  ],
+  "relations": [
+    {"subject": "evt-ph-thitu-2026-05", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "evt-ph-thitu-2026-05", "predicate": "analyzedBy", "object": "org-planet"},
+    {"subject": "evt-ph-thitu-2026-05", "predicate": "manifests", "object": "phen-construction"},
+    {"subject": "evt-ph-thitu-2026-05", "predicate": "inCountry", "object": "co-ph"},
+    {"subject": "evt-ph-thitu-2026-05", "predicate": "inDomain", "object": "dom-defense"}
+  ]
+}

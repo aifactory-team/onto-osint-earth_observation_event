@@ -1,0 +1,29 @@
+{
+  "id": "src-004",
+  "title": "UNEP MARS 메탄 위성경보 석탄·폐기물 부문 확대 — 23,000+ 관측, 250개 광산 DB 구축",
+  "url": "https://www.unep.org/news-and-stories/press-release/satellite-methane-alerts-expanded-coal-and-waste-sectors-unep",
+  "snippet": "UNEP IMEO announced May 4, 2026 at G7 Presidency event: Methane Alert and Response System (MARS) expanded to coal mines and waste facilities. Analysed 23,000+ satellite observations. Coal Methane Database covers 250 mines (>50% global metallurgical coal). Integrates TROPOMI, MethaneSAT, GHGSat data. New MARS Response Blueprint released with IEA.",
+  "source_name": "UNEP",
+  "language": "en",
+  "discovered_date": "2026-05-16",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 14일 소스에 UNEP MARS 석탄/폐기물 확대 관련 항목 없음. 5월 4일 발표이나 본 파이프라인에서 최초 수집.",
+  "entities": [
+    {"id": "evt-unep-mars-coal-2026-05", "type": "Event", "name": "UNEP MARS 메탄경보 석탄·폐기물 확대 2026-05", "properties": {"phenomenon": "methane_plume", "lat": null, "lon": null, "country": null, "admin": "global", "observation_date": "2026-05-04"}},
+    {"id": "org-unep-imeo", "type": "Organization", "name": "UNEP IMEO", "properties": {"org_type": "un_body", "country": "INTL"}},
+    {"id": "sat-sentinel5p", "type": "Satellite", "name": "Sentinel-5P", "properties": {"operator": "ESA"}},
+    {"id": "sat-methanesat", "type": "Satellite", "name": "MethaneSAT", "properties": {"operator": "EDF"}},
+    {"id": "sensor-tropomi", "type": "Sensor", "name": "TROPOMI", "properties": {"sensor_type": "trace_gas"}},
+    {"id": "phen-methane", "type": "Phenomenon", "name": "methane_plume", "properties": {"category": "ClimateEnvironment"}}
+  ],
+  "relations": [
+    {"subject": "evt-unep-mars-coal-2026-05", "predicate": "observedBy", "object": "sat-sentinel5p"},
+    {"subject": "evt-unep-mars-coal-2026-05", "predicate": "observedBy", "object": "sat-methanesat"},
+    {"subject": "evt-unep-mars-coal-2026-05", "predicate": "usesSensor", "object": "sensor-tropomi"},
+    {"subject": "evt-unep-mars-coal-2026-05", "predicate": "analyzedBy", "object": "org-unep-imeo"},
+    {"subject": "evt-unep-mars-coal-2026-05", "predicate": "manifests", "object": "phen-methane"},
+    {"subject": "evt-unep-mars-coal-2026-05", "predicate": "inDomain", "object": "dom-climate"}
+  ]
+}

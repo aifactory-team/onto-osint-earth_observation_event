@@ -1,0 +1,52 @@
+{
+  "date": "2026-05-16",
+  "entities": [
+    {"temp_id": "evt-bismarck-2026-05", "matched_id": null, "type": "Event", "name": "Bismarck Sea 해저화산 분출 2026-05", "properties": {"phenomenon": "volcanic_eruption", "country": "PG", "lat": -3.03, "lon": 147.78, "start_date": "2026-05-08", "severity": "moderate"}, "source_ids": ["src-001"], "mention_count": 2},
+    {"temp_id": "evt-kilauea-ep47-end", "matched_id": null, "type": "Event", "name": "Kilauea Ep47 종료·휴지 2026-05-15", "properties": {"phenomenon": "volcanic_eruption", "country": "US", "lat": 19.41, "lon": -155.28}, "source_ids": ["src-002"], "mention_count": 1},
+    {"temp_id": "evt-pelican-firstlight-2026-05", "matched_id": null, "type": "Event", "name": "Planet Pelican First Light 2026-05", "properties": {"phenomenon": "satellite_commissioning", "country": "SE", "lat": 57.63, "lon": 18.30}, "source_ids": ["src-003"], "mention_count": 2},
+    {"temp_id": "evt-unep-mars-coal-2026-05", "matched_id": null, "type": "Event", "name": "UNEP MARS 메탄경보 석탄·폐기물 확대 2026-05", "properties": {"phenomenon": "methane_plume", "country": null, "admin": "global"}, "source_ids": ["src-004"], "mention_count": 1},
+    {"temp_id": "evt-vietnam-spratly-2026-05", "matched_id": null, "type": "Event", "name": "베트남 스프래틀리 216ha 확장 2026", "properties": {"phenomenon": "construction", "country": "VN", "lat": 11.05, "lon": 114.08, "area_km2": 2.16}, "source_ids": ["src-005"], "mention_count": 3},
+    {"temp_id": "evt-ph-thitu-2026-05", "matched_id": null, "type": "Event", "name": "필리핀 Thitu 활주로 연장 2026", "properties": {"phenomenon": "construction", "country": "PH", "lat": 11.05, "lon": 114.28}, "source_ids": ["src-006"], "mention_count": 2},
+    {"temp_id": "evt-max-road-fire-update", "matched_id": null, "type": "Event", "name": "Florida Everglades Max Road Fire 2026-05", "properties": {"phenomenon": "wildfire", "country": "US", "lat": 26.0, "lon": -80.45, "area_km2": 101.2}, "source_ids": ["src-007"], "mention_count": 1},
+    {"temp_id": "evt-pemex-cantarell-update", "matched_id": null, "type": "Event", "name": "Pemex Cantarell 원유 유출 2026", "properties": {"phenomenon": "oil_spill", "country": "MX", "lat": 19.8, "lon": -92.4, "start_date": "2026-02-06"}, "source_ids": ["src-008"], "mention_count": 1},
+    {"temp_id": "evt-bellingcat-lebanon-update", "matched_id": null, "type": "Event", "name": "남레바논 IDF 파괴 PlanetScope 문서화 2026", "properties": {"phenomenon": "infrastructure_damage", "country": "LB", "lat": 33.12, "lon": 35.43}, "source_ids": ["src-009"], "mention_count": 1},
+    {"temp_id": "evt-viirs-nightlight-2026", "matched_id": null, "type": "Event", "name": "VIIRS 야간조명 변화 Nature 분석 2026", "properties": {"phenomenon": "light_pollution", "country": null, "admin": "global"}, "source_ids": ["src-010"], "mention_count": 1},
+    {"temp_id": "evt-great-sitkin-update", "matched_id": null, "type": "Event", "name": "Great Sitkin 화산 용암류 지속 2026-05", "properties": {"phenomenon": "volcanic_eruption", "country": "US", "lat": 52.08, "lon": -176.13}, "source_ids": ["src-011"], "mention_count": 1},
+    {"temp_id": "evt-antelope-reef-update", "matched_id": null, "type": "Event", "name": "Antelope Reef 중국 매립 1490ac 2025-2026", "properties": {"phenomenon": "construction", "country": "CN", "lat": 16.46, "lon": 112.55}, "source_ids": ["src-012"], "mention_count": 1},
+    {"temp_id": "sat-pelican", "matched_id": null, "type": "Satellite", "name": "Pelican (Planet)", "properties": {"operator": "Planet", "orbit_type": "SSO", "resolution_m": 0.5, "sensor_types": ["optical_multispectral"], "mission_status": "operational"}, "source_ids": ["src-003"], "mention_count": 2},
+    {"temp_id": "sat-cas500-2", "matched_id": null, "type": "Satellite", "name": "CAS500-2 (차세대중형위성 2호)", "properties": {"operator": "KARI", "country": "KR"}, "source_ids": ["src-003", "src-025"], "mention_count": 2},
+    {"temp_id": "org-swaf", "matched_id": null, "type": "Organization", "name": "Swedish Armed Forces (SwAF)", "properties": {"org_type": "defense_intel", "country": "SE"}, "source_ids": ["src-003"], "mention_count": 1},
+    {"temp_id": "org-unep-imeo", "matched_id": null, "type": "Organization", "name": "UNEP IMEO", "properties": {"org_type": "un_body", "country": "INTL"}, "source_ids": ["src-004"], "mention_count": 1},
+    {"temp_id": "org-amti", "matched_id": null, "type": "Organization", "name": "AMTI/CSIS", "properties": {"org_type": "research", "country": "US"}, "source_ids": ["src-005", "src-012"], "mention_count": 2},
+    {"temp_id": "org-darwin-vaac", "matched_id": null, "type": "Organization", "name": "Darwin VAAC", "properties": {"org_type": "weather_agency", "country": "AU"}, "source_ids": ["src-001"], "mention_count": 1},
+    {"temp_id": "co-pg", "matched_id": null, "type": "Country", "name": "파푸아뉴기니", "properties": {"iso_code": "PG", "region": "오세아니아"}, "source_ids": ["src-001"], "mention_count": 1},
+    {"temp_id": "co-se", "matched_id": null, "type": "Country", "name": "스웨덴", "properties": {"iso_code": "SE", "region": "북유럽"}, "source_ids": ["src-003"], "mention_count": 1},
+    {"temp_id": "co-vn", "matched_id": null, "type": "Country", "name": "베트남", "properties": {"iso_code": "VN", "region": "동남아시아"}, "source_ids": ["src-005"], "mention_count": 1},
+    {"temp_id": "co-ph", "matched_id": null, "type": "Country", "name": "필리핀", "properties": {"iso_code": "PH", "region": "동남아시아"}, "source_ids": ["src-006"], "mention_count": 1},
+    {"temp_id": "phen-light-pollution", "matched_id": null, "type": "Phenomenon", "name": "light_pollution", "properties": {"category": "ClimateEnvironment"}, "source_ids": ["src-010"], "mention_count": 1}
+  ],
+  "relations": [
+    {"subject": "evt-bismarck-2026-05", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-001"], "confidence": 0.92},
+    {"subject": "evt-bismarck-2026-05", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-001"], "confidence": 0.90},
+    {"subject": "evt-bismarck-2026-05", "predicate": "manifests", "object": "phen-volcano", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "evt-bismarck-2026-05", "predicate": "inCountry", "object": "co-pg", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "evt-bismarck-2026-05", "predicate": "analyzedBy", "object": "org-darwin-vaac", "source_ids": ["src-001"], "confidence": 0.92},
+    {"subject": "evt-pelican-firstlight-2026-05", "predicate": "observedBy", "object": "sat-pelican", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "evt-pelican-firstlight-2026-05", "predicate": "analyzedBy", "object": "org-planet", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "evt-unep-mars-coal-2026-05", "predicate": "observedBy", "object": "sat-sentinel5p", "source_ids": ["src-004"], "confidence": 0.92},
+    {"subject": "evt-unep-mars-coal-2026-05", "predicate": "observedBy", "object": "sat-methanesat", "source_ids": ["src-004"], "confidence": 0.90},
+    {"subject": "evt-unep-mars-coal-2026-05", "predicate": "usesSensor", "object": "sensor-tropomi", "source_ids": ["src-004"], "confidence": 0.92},
+    {"subject": "evt-unep-mars-coal-2026-05", "predicate": "analyzedBy", "object": "org-unep-imeo", "source_ids": ["src-004"], "confidence": 0.95},
+    {"subject": "evt-vietnam-spratly-2026-05", "predicate": "observedBy", "object": "sat-planetscope", "source_ids": ["src-005"], "confidence": 0.90},
+    {"subject": "evt-vietnam-spratly-2026-05", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-005"], "confidence": 0.88},
+    {"subject": "evt-vietnam-spratly-2026-05", "predicate": "analyzedBy", "object": "org-amti", "source_ids": ["src-005"], "confidence": 0.90},
+    {"subject": "evt-ph-thitu-2026-05", "predicate": "observedBy", "object": "sat-planetscope", "source_ids": ["src-006"], "confidence": 0.88},
+    {"subject": "sat-pelican", "predicate": "operatedBy", "object": "org-planet", "source_ids": ["src-003"], "confidence": 0.95}
+  ],
+  "stats": {
+    "total_entities": 23,
+    "new_entities": 12,
+    "matched_entities": 11,
+    "total_relations": 16
+  }
+}

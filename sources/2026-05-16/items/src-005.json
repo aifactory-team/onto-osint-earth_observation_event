@@ -1,0 +1,29 @@
+{
+  "id": "src-005",
+  "title": "베트남 스프래틀리 전초기지 216ha 확장 + DVOR 항법비콘 설치 — AMTI 위성분석 보고서",
+  "url": "https://amti.csis.org/keeping-score-vietnams-spratly-island-overhaul-continues/",
+  "snippet": "AMTI May 2026 report: Vietnam added 216.1 hectares (534 acres) to Spratly outposts since March 2025. Total reclaimed area now 2,771 acres (1,121 ha). New DVOR navigation beacon installed Aug 2025-Apr 2026. PlanetScope and Sentinel-2 imagery used for analysis. China still leads with 5,460 acres (2,210 ha) including Alison Reef expansion.",
+  "source_name": "AMTI / CSIS",
+  "language": "en",
+  "discovered_date": "2026-05-16",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 14일 소스에 베트남 스프래틀리 216ha 확장 관련 항목 없음. AMTI 신규 보고서 (2026년 5월 발표).",
+  "entities": [
+    {"id": "evt-vietnam-spratly-2026-05", "type": "Event", "name": "베트남 스프래틀리 216ha 확장 2026", "properties": {"phenomenon": "construction", "lat": 11.05, "lon": 114.08, "country": "VN", "area_km2": 2.16, "start_date": "2025-03-01", "observation_date": "2026-05-01"}},
+    {"id": "sat-planetscope", "type": "Satellite", "name": "PlanetScope (Doves)", "properties": {"operator": "Planet"}},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A", "properties": {"operator": "ESA"}},
+    {"id": "org-amti", "type": "Organization", "name": "AMTI/CSIS", "properties": {"org_type": "research", "country": "US"}},
+    {"id": "co-vn", "type": "Country", "name": "베트남", "properties": {"iso_code": "VN", "region": "동남아시아"}},
+    {"id": "phen-construction", "type": "Phenomenon", "name": "construction", "properties": {"category": "HumanActivity"}}
+  ],
+  "relations": [
+    {"subject": "evt-vietnam-spratly-2026-05", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "evt-vietnam-spratly-2026-05", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "evt-vietnam-spratly-2026-05", "predicate": "analyzedBy", "object": "org-amti"},
+    {"subject": "evt-vietnam-spratly-2026-05", "predicate": "manifests", "object": "phen-construction"},
+    {"subject": "evt-vietnam-spratly-2026-05", "predicate": "inCountry", "object": "co-vn"},
+    {"subject": "evt-vietnam-spratly-2026-05", "predicate": "inDomain", "object": "dom-defense"}
+  ]
+}

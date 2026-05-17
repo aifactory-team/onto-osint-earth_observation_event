@@ -1314,3 +1314,69 @@ config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5)
 - **Bellingcat 인터랙티브 맵**: 남레바논 파괴 규모를 PlanetScope 시계열로 체계적 문서화. 인도주의 OSINT 모범 사례.
 - **Sentinel-2A Extension**: 2026년 말까지 운영 연장 — Sentinel-2 콘스텔레이션 3기(A/B/C) 체제 유지.
 - 한반도 GeoFocus: 금일 해당 없음
+
+---
+
+## 2026-05-16 추론 결과
+
+### 추론 #1: multi_satellite_confirmation — UNEP MARS 메탄 석탄·폐기물
+- **입력:** (evt-unep-mars-coal-2026-05, observedBy, sat-sentinel5p), (evt-unep-mars-coal-2026-05, observedBy, sat-methanesat)
+- **추론:** (evt-unep-mars-coal-2026-05, multiSatBoost, +0.20)
+- **신뢰도:** 0.90
+- **상태:** 확정
+- **근거:** Sentinel-5P(ESA) + MethaneSAT(EDF) — 독립 운영 주체의 2개 trace_gas 센서
+
+### 추론 #2: sensor_capability_match_tracegas — UNEP MARS TROPOMI
+- **입력:** (evt-unep-mars-coal-2026-05, usesSensor, sensor-tropomi), (sensor-tropomi, sensor_type, trace_gas)
+- **추론:** (evt-unep-mars-coal-2026-05, tracegasBoost, +0.15)
+- **신뢰도:** 0.92
+- **상태:** 확정
+
+### 추론 #3: official_source_trust — UNEP IMEO
+- **입력:** (evt-unep-mars-coal-2026-05, analyzedBy, org-unep-imeo), (org-unep-imeo, org_type, un_body)
+- **추론:** (evt-unep-mars-coal-2026-05, officialBoost, +0.15)
+- **신뢰도:** 0.95
+- **상태:** 확정
+
+### 추론 #4: multi_satellite_confirmation — 베트남 스프래틀리
+- **입력:** (evt-vietnam-spratly-2026-05, observedBy, sat-planetscope), (evt-vietnam-spratly-2026-05, observedBy, sat-sentinel2a)
+- **추론:** (evt-vietnam-spratly-2026-05, multiSatBoost, +0.20)
+- **신뢰도:** 0.88
+- **상태:** 확정
+
+### 추론 #5: multi_satellite_confirmation — Bismarck Sea
+- **입력:** (evt-bismarck-2026-05, observedBy, sat-himawari9), (evt-bismarck-2026-05, observedBy, sat-viirs-jpss)
+- **추론:** (evt-bismarck-2026-05, multiSatBoost, +0.20)
+- **신뢰도:** 0.92
+- **상태:** 확정
+
+### 추론 #6: sensor_capability_match_sar — Pemex Cantarell
+- **입력:** (evt-pemex-cantarell, usesSensor, sensor-c-sar), (sensor-c-sar, sensor_type, SAR)
+- **추론:** (evt-pemex-cantarell, sarBoost, +0.10)
+- **신뢰도:** 0.90
+- **상태:** 확정
+
+### 추론 #7: multi_satellite_confirmation — Pemex Cantarell
+- **입력:** (evt-pemex-cantarell, observedBy, sat-sentinel1a), (evt-pemex-cantarell, observedBy, sat-sentinel2a)
+- **추론:** (evt-pemex-cantarell, multiSatBoost, +0.20)
+- **신뢰도:** 0.92
+- **상태:** 확정
+
+### 추론 #8: temporal_progression — SCS 건설 시리즈
+- **입력:** SCS 동일 지역 건설 시리즈 (VN/PH/CN)
+- **추론:** partOfSeries 관계 2건
+- **신뢰도:** 0.70
+- **상태:** 잠정
+
+### 추론 #9: official_source_trust — NASA 야간조명
+- **입력:** (evt-viirs-nightlight-2026, analyzedBy, org-nasa), (org-nasa, org_type, space_agency)
+- **추론:** (evt-viirs-nightlight-2026, officialBoost, +0.15)
+- **신뢰도:** 0.95
+- **상태:** 확정
+
+### 특이사항
+- **UNEP MARS 확대**: 3중 가산(multiSat + tracegas + official) — 오늘 최고 누적 신뢰도 이벤트.
+- **Bismarck Sea FL280→FL140**: 분출 고도 하강 추세. 약화 판단 보류.
+- **SCS 3자 경쟁**: 베트남(216ha) + 필리핀(Thitu/Nanshan) + 중국(Antelope Reef 1490ac).
+- **Planet Pelican 9기**: 50cm급 일간 커버리지 확대 신호.
+- 한반도 GeoFocus: 직접 이벤트 없음. CAS500-2 Pelican rideshare(간접).
