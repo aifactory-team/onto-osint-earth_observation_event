@@ -1,0 +1,29 @@
+{
+  "id": "src-001",
+  "title": "Stewart Trail Fire 미네소타 — GOES-19 위성 관측, 375ac 30% 진압, 34건물 파괴",
+  "url": "https://cimss.ssec.wisc.edu/satellite-blog/archives/70446",
+  "snippet": "May 15 오후 미네소타 Two Harbors 인근 Lake Superior 북안에서 발생한 산불. GOES-19 true color loop에서 연기 플룸 확인. 376ac 소실, 34건물(주택 8채 포함) 파괴. MN Hwy 61 폐쇄, Two Harbors~Castle Danger 대피명령. RH 21%, 돌풍 20mph+. 30% 진압.",
+  "source_name": "CIMSS Satellite Blog",
+  "language": "en",
+  "discovered_date": "2026-05-17",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 14일 소스에 동일/유사 항목 없음. 5/15 오후 발생한 신규 산불.",
+  "entities": [
+    {"id": "ent-evt-1001", "type": "Event", "name": "Stewart Trail Fire (Minnesota)", "properties": {"phenomenon": "wildfire", "lat": 47.0, "lon": -91.67, "country": "US", "region": "Minnesota, Lake County", "observation_date": "2026-05-15", "severity": "moderate", "area_km2": 1.52, "before_after_available": false, "confidence": 0.88}},
+    {"id": "sat-goes18", "type": "Satellite", "name": "GOES-19 (GOES West)", "properties": {"matched": true}},
+    {"id": "sensor-abi", "type": "Sensor", "name": "ABI (Advanced Baseline Imager)", "properties": {"sensor_type": "optical_multispectral", "matched": true}},
+    {"id": "ent-loc-068", "type": "Location", "name": "Two Harbors, Minnesota", "properties": {"country": "US", "region": "Minnesota", "lat": 47.0, "lon": -91.67}},
+    {"id": "co-us", "type": "Country", "name": "미국", "properties": {"iso_code": "US", "matched": true}},
+    {"id": "phen-wildfire", "type": "Phenomenon", "name": "wildfire", "properties": {"category": "Disaster", "matched": true}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-1001", "predicate": "observedBy", "object": "sat-goes18"},
+    {"subject": "ent-evt-1001", "predicate": "usesSensor", "object": "sensor-abi"},
+    {"subject": "ent-evt-1001", "predicate": "locatedIn", "object": "ent-loc-068"},
+    {"subject": "ent-evt-1001", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "ent-evt-1001", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "ent-evt-1001", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

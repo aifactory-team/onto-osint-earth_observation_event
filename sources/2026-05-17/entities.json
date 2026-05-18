@@ -1,0 +1,124 @@
+{
+  "date": "2026-05-17",
+  "entities": [
+    {
+      "temp_id": "ent-evt-1001",
+      "matched_id": null,
+      "type": "Event",
+      "name": "Stewart Trail Fire (Minnesota)",
+      "properties": {
+        "phenomenon": "wildfire",
+        "domain": "dom-disaster",
+        "country": "US",
+        "region": "Minnesota, Lake County",
+        "lat": 47.0,
+        "lon": -91.67,
+        "observation_date": "2026-05-15",
+        "start_date": "2026-05-15",
+        "area_km2": 1.52,
+        "severity": "moderate",
+        "before_after_available": false,
+        "confidence": 0.88,
+        "satellites_used": ["GOES-19"],
+        "sensors_used": ["ABI"],
+        "source_url": "https://cimss.ssec.wisc.edu/satellite-blog/archives/70446"
+      },
+      "source_ids": ["src-001"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "ent-loc-068",
+      "matched_id": null,
+      "type": "Location",
+      "name": "Two Harbors, Minnesota",
+      "properties": {
+        "country": "US",
+        "region": "Minnesota",
+        "admin_level": "city",
+        "lat": 47.0,
+        "lon": -91.67
+      },
+      "source_ids": ["src-001"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-202",
+      "type": "Event",
+      "name": "Kilauea Ep47/48 Summit Eruption",
+      "properties": {
+        "phenomenon": "volcanic_eruption",
+        "domain": "dom-disaster",
+        "country": "US",
+        "lat": 19.41,
+        "lon": -155.28,
+        "observation_date": "2026-05-17",
+        "severity": "moderate",
+        "confidence": 0.95,
+        "update_note": "Ep47 ended 5/15. Ep48 forecast 5/22-25."
+      },
+      "source_ids": ["src-002"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-701",
+      "type": "Event",
+      "name": "Central Bismarck Sea Submarine Eruption",
+      "properties": {
+        "phenomenon": "volcanic_eruption",
+        "domain": "dom-disaster",
+        "country": "PG",
+        "lat": -3.03,
+        "lon": 147.78,
+        "observation_date": "2026-05-17",
+        "severity": "moderate",
+        "confidence": 0.92,
+        "update_note": "VAAC #23 FL120 NW. Down from FL280 peak."
+      },
+      "source_ids": ["src-003"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-501",
+      "type": "Event",
+      "name": "Everglades Max Road Fire (Florida)",
+      "properties": {
+        "phenomenon": "wildfire",
+        "domain": "dom-disaster",
+        "country": "US",
+        "lat": 26.0,
+        "lon": -80.45,
+        "observation_date": "2026-05-17",
+        "area_km2": 45.9,
+        "severity": "high",
+        "confidence": 0.90,
+        "update_note": "80% contained (was 70%). Wind shift concerns."
+      },
+      "source_ids": ["src-004"],
+      "mention_count": 1
+    }
+  ],
+  "relations": [
+    {"subject": "ent-evt-1001", "predicate": "observedBy", "object": "sat-goes18", "source_ids": ["src-001"], "confidence": 0.88},
+    {"subject": "ent-evt-1001", "predicate": "usesSensor", "object": "sensor-abi", "source_ids": ["src-001"], "confidence": 0.88},
+    {"subject": "ent-evt-1001", "predicate": "locatedIn", "object": "ent-loc-068", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "ent-evt-1001", "predicate": "inCountry", "object": "co-us", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "ent-evt-1001", "predicate": "manifests", "object": "phen-wildfire", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "ent-evt-1001", "predicate": "inDomain", "object": "dom-disaster", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-002"], "confidence": 0.95},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-002"], "confidence": 0.95},
+    {"subject": "ent-evt-202", "predicate": "analyzedBy", "object": "ent-org-hvo", "source_ids": ["src-002"], "confidence": 0.95},
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-003"], "confidence": 0.92},
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-003"], "confidence": 0.92},
+    {"subject": "ent-evt-501", "predicate": "observedBy", "object": "sat-goes18", "source_ids": ["src-004"], "confidence": 0.90},
+    {"subject": "ent-evt-501", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-004"], "confidence": 0.90}
+  ],
+  "stats": {
+    "total_entities": 5,
+    "new_entities": 2,
+    "matched_entities": 3,
+    "total_relations": 13
+  }
+}

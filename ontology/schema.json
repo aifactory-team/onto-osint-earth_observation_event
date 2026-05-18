@@ -471,6 +471,27 @@
       "target": "ent-evt-903/905 + updates to evt-202, evt-701, evt-082, evt-501, temp-evt-001, evt-801, evt-203, evt-204",
       "reason": "신규 2건: Aniak 얼음해빙·홍수 Landsat 9 before/after(903), Bellingcat 남레바논 PlanetScope 인터랙티브 맵(905, before/after 2026.03~05). 핵심 업데이트: Kilauea Ep47 9h 분수분출→종료 WATCH→ADVISORY(202), Bismarck Sea FL140→FL280 2배 상승(701). 추가 업데이트: Mayon Day131(082), Everglades 80%(501), Pineland 90% 번밴해제(temp-001), Bezymianny VAAC#3(801), Great Sitkin SAR(203), Shishaldin SO2(204). 위성운영: Sentinel-2A Extension 2026말 연장(904). 미검증 지속 1건: Fuego GT.",
       "source_ids": ["src-001~src-011"]
+    },
+    {
+      "date": "2026-05-16",
+      "action": "add_event_batch",
+      "target": "evt: Planet Pelican First Light, UNEP MARS coal/waste, Vietnam Spratly 216ha, Philippines Thitu/Nanshan, NASA EO VIIRS nightlights + updates to evt-701, evt-202, evt-501, evt-082, evt-125, evt-203, evt-204, temp-evt-001",
+      "reason": "신규 5건 + 업데이트 8건. Pelican 9기 운용 First Light (Gotland/Taiyuan/Ambursu). UNEP MARS 메탄 석탄·폐기물 확대 G7. 베트남 스프래틀리 216ha 확장 DVOR. 필리핀 Thitu 활주로 + Nanshan 항만 Planet Labs. NASA EO VIIRS 야간조명 변화 Nature.",
+      "source_ids": ["src-001~src-030"]
+    },
+    {
+      "date": "2026-05-17",
+      "action": "add_location",
+      "target": "ent-loc-068",
+      "reason": "Two Harbors, Minnesota (US, 47.0°N, 91.67°W) — Stewart Trail Fire 산불 GOES-19 관측. Lake Superior 북안, MN Hwy 61 폐쇄, 34건물 파괴.",
+      "source_ids": ["src-001"]
+    },
+    {
+      "date": "2026-05-17",
+      "action": "add_event_batch",
+      "target": "ent-evt-1001 + updates to evt-202, evt-701, evt-501",
+      "reason": "신규 1건: Stewart Trail Fire MN 375ac GOES-19(1001). 업데이트 3건: Kilauea Ep47 종료 + Ep48 예보 5/22-25(202), Bismarck Sea VAAC#23 FL120 하강(701), Everglades 80% contained(501).",
+      "source_ids": ["src-001~src-004"]
     }
   ]
 }

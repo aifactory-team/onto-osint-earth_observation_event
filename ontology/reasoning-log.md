@@ -1380,3 +1380,55 @@ config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5)
 - **SCS 3자 경쟁**: 베트남(216ha) + 필리핀(Thitu/Nanshan) + 중국(Antelope Reef 1490ac).
 - **Planet Pelican 9기**: 50cm급 일간 커버리지 확대 신호.
 - 한반도 GeoFocus: 직접 이벤트 없음. CAS500-2 Pelican rideshare(간접).
+
+## 2026-05-17 추론 결과
+
+### multi_satellite_confirmation — 3건
+
+### 추론 #1: Kilauea Ep47/48 다중 위성
+- **입력:** (ent-evt-202, observedBy, sat-sentinel2a), (ent-evt-202, observedBy, sat-landsat9), (sat-sentinel2a, operatedBy, org-esa), (sat-landsat9, operatedBy, org-usgs)
+- **추론:** (ent-evt-202, multiSatBoost, +0.20)
+- **신뢰도:** 0.95
+- **상태:** 확정
+
+### 추론 #2: Bismarck Sea 다중 위성
+- **입력:** (ent-evt-701, observedBy, sat-himawari9), (ent-evt-701, observedBy, sat-viirs-jpss), (sat-himawari9, operatedBy, org-jaxa), (sat-viirs-jpss, operatedBy, org-noaa)
+- **추론:** (ent-evt-701, multiSatBoost, +0.20)
+- **신뢰도:** 0.92
+- **상태:** 확정
+
+### 추론 #3: Everglades 다중 위성
+- **입력:** (ent-evt-501, observedBy, sat-goes18), (ent-evt-501, observedBy, sat-viirs-jpss)
+- **추론:** (ent-evt-501, multiSatBoost, +0.20)
+- **신뢰도:** 0.90
+- **상태:** 확정 — GOES-18과 VIIRS는 동일 기관(NOAA)이나 독립 센서/플랫폼
+
+### official_source_trust — 1건
+
+### 추론 #4: Kilauea USGS HVO
+- **입력:** (ent-evt-202, analyzedBy, ent-org-hvo), (ent-org-hvo, org_type, space_agency)
+- **추론:** (ent-evt-202, officialBoost, +0.15)
+- **신뢰도:** 0.95
+- **상태:** 확정
+
+### temporal_progression (partOfSeries) — 2건
+
+### 추론 #5: Kilauea Ep series
+- **입력:** (ent-evt-202, locatedIn, Halemaʻumaʻu), (ent-evt-202, phenomenon, volcanic_eruption), (Ep46→Ep47→Ep48 동일 위치·동일 현상 시계열)
+- **추론:** (ent-evt-202 Ep47, partOfSeries, ent-evt-202 Ep46)
+- **신뢰도:** 0.95
+- **상태:** 확정
+
+### 추론 #6: Bismarck Sea 연속 분출
+- **입력:** (ent-evt-701, locatedIn, ent-loc-065), (ent-evt-701, phenomenon, volcanic_eruption), (5/8 onset → 5/17 지속)
+- **추론:** (ent-evt-701, partOfSeries, ent-evt-701)
+- **신뢰도:** 0.92
+- **상태:** 확정
+
+### 특이사항
+- **비교적 정온한 하루:** 신규 1건, 업데이트 3건만 포함. 금주 내 가장 낮은 활동 수준.
+- **Bismarck Sea FL280→FL120**: 분출 고도 하강 추세 뚜렷. 약화 판단 가능 수준이나 분출 지속.
+- **Kilauea Ep48 5/22-25 예보**: 차주 초 분수분출 가능. 추적 필요.
+- **Everglades 80% → 마무리 임박**: 1-2일 내 진압 예상. 풍향 전환 변수.
+- **Minnesota Stewart Trail Fire**: GOES-19 단일 출처. Sentinel-2/Landsat 후속 관측 시 multiSatBoost 가능.
+- 한반도 GeoFocus: 직접 이벤트 없음.

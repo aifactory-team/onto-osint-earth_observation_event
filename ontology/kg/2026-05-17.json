@@ -1,0 +1,30 @@
+{
+  "date": "2026-05-17",
+  "new_triples": [
+    {"subject": "ent-evt-1001", "predicate": "observedBy", "object": "sat-goes18", "source_id": "src-001", "date": "2026-05-17", "confidence": 0.88, "type": "explicit"},
+    {"subject": "ent-evt-1001", "predicate": "usesSensor", "object": "sensor-abi", "source_id": "src-001", "date": "2026-05-17", "confidence": 0.88, "type": "explicit"},
+    {"subject": "ent-evt-1001", "predicate": "locatedIn", "object": "ent-loc-068", "source_id": "src-001", "date": "2026-05-17", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-1001", "predicate": "inCountry", "object": "co-us", "source_id": "src-001", "date": "2026-05-17", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-1001", "predicate": "manifests", "object": "phen-wildfire", "source_id": "src-001", "date": "2026-05-17", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-1001", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-001", "date": "2026-05-17", "confidence": 0.95, "type": "explicit"}
+  ],
+  "updated_triples": [
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-002", "date": "2026-05-17", "confidence": 0.95, "type": "explicit", "update_note": "Ep47 ended 5/15. Ep48 forecast 5/22-25."},
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-003", "date": "2026-05-17", "confidence": 0.92, "type": "explicit", "update_note": "VAAC #23 FL120 — down from FL280."},
+    {"subject": "ent-evt-501", "predicate": "observedBy", "object": "sat-goes18", "source_id": "src-004", "date": "2026-05-17", "confidence": 0.90, "type": "explicit", "update_note": "80% contained (was 70%)."}
+  ],
+  "inferred_triples": [
+    {"subject": "ent-evt-202", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.95, "type": "inferred", "note": "Sentinel-2A (ESA) + Landsat 9 (USGS/NASA) 독립 운용 위성 교차검증"},
+    {"subject": "ent-evt-701", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.92, "type": "inferred", "note": "Himawari-9 (JMA) + VIIRS (NOAA) 독립 운용 위성 교차검증"},
+    {"subject": "ent-evt-501", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.90, "type": "inferred", "note": "GOES-18 (NOAA) + VIIRS (NOAA/NASA) 동일 기관이나 독립 센서"},
+    {"subject": "ent-evt-202", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred", "note": "USGS HVO (space_agency)"},
+    {"subject": "ent-evt-202", "predicate": "partOfSeries", "object": "ent-evt-202", "rule": "temporal_progression", "confidence": 0.95, "type": "inferred", "note": "Kilauea summit eruption series Ep46→Ep47→Ep48 forecast"},
+    {"subject": "ent-evt-701", "predicate": "partOfSeries", "object": "ent-evt-701", "rule": "temporal_progression", "confidence": 0.92, "type": "inferred", "note": "Bismarck Sea eruption series (5/8 onset → ongoing)"}
+  ],
+  "stats": {
+    "new_nodes": 2,
+    "new_edges": 6,
+    "updated_edges": 3,
+    "inferred_edges": 6
+  }
+}

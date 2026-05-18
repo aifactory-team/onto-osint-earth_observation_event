@@ -1,0 +1,309 @@
+{
+  "date": "2026-05-17",
+  "collected_at": "2026-05-17T00:00:00Z",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 20,
+  "total_results": 78,
+  "expanded_keywords": [
+    "satellite imagery wildfire May 2026",
+    "satellite imagery flood typhoon May 2026",
+    "satellite imagery volcano eruption May 2026",
+    "satellite imagery deforestation mining oil spill May 2026",
+    "satellite imagery glacier methane plume climate 2026",
+    "satellite imagery military buildup defense OSINT May 2026",
+    "NASA Earth Observatory image of the day May 2026",
+    "위성영상 한반도 관측 2026년 5월",
+    "Copernicus EMS activation May 2026",
+    "UNOSAT satellite analysis humanitarian May 2026",
+    "Sentinel-2 NDVI agriculture satellite crop May 2026",
+    "South China Sea satellite island building Spratly May 2026",
+    "Kilauea volcano update May 17 2026",
+    "Bismarck Sea submarine volcano eruption May 2026 Papua New Guinea",
+    "Minnesota wildfire Lake Superior Stewart Trail fire May 2026 satellite",
+    "Planet Pelican first light satellite imagery May 2026",
+    "Vietnam Spratly islands satellite AMTI expansion May 2026",
+    "Bellingcat satellite imagery Lebanon destruction May 2026",
+    "UNEP MARS methane alert satellite coal waste expansion 2026",
+    "위성영상 산불 홍수 재해 2026년 5월 최신",
+    "Mayon volcano eruption update May 17 2026 satellite PHIVOLCS",
+    "Global Forest Watch deforestation alert satellite May 2026",
+    "satellite imagery oil spill Pemex Cantarell Gulf Mexico 2026",
+    "NASA Earth Observatory May 16 17 2026",
+    "Everglades wildfire Florida May 17 2026 containment update",
+    "Great Sitkin Shishaldin Alaska volcano update May 16 17 2026"
+  ],
+  "searches": [
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery wildfire May 2026",
+      "language": "en",
+      "timestamp": "2026-05-17T00:01:00Z",
+      "result_count": 5,
+      "results": [
+        {"title": "Wildfire Near Lake Superior's North Shore — CIMSS Satellite Blog", "url": "https://cimss.ssec.wisc.edu/satellite-blog/archives/70446", "snippet": "Stewart Trail Fire near Two Harbors MN, 375 acres, GOES-19 true color. May 15-16 2026.", "source_name": "CIMSS"},
+        {"title": "Fast-Spreading Florida Wildfire Seen in Satellite Imagery", "url": "https://www.yahoo.com/news/videos/fast-spreading-florida-wildfire-seen-105914497.html", "snippet": "Florida Everglades Max Road Fire 11,339ac, 70% contained. GOES/VIIRS tracking.", "source_name": "Yahoo/AP"},
+        {"title": "NOAA Satellites Monitor Canadian Wildfires and Smoke", "url": "https://www.nesdis.noaa.gov/news/noaa-satellites-monitor-canadian-wildfires-and-smoke", "snippet": "NOAA satellite wildfire monitoring capabilities overview.", "source_name": "NESDIS"},
+        {"title": "Thousands of deaths per year caused by invisible wildfire pollutant, satellite data shows", "url": "https://www.space.com/science/climate-change/a-hidden-wildfire-pollutant-causes-thousands-of-excess-deaths-per-year-satellite-data-shows", "snippet": "Research on wildfire PM2.5 using satellite data.", "source_name": "Space.com"},
+        {"title": "NASA satellite images identify a destructive wildfire metric", "url": "https://www.usfa.fema.gov/blog/nasa-satellite-images-identify-a-destructive-wildfire-metric/", "snippet": "NASA FED metric for wildfire destructiveness.", "source_name": "FEMA"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery flood typhoon May 2026",
+      "language": "en",
+      "timestamp": "2026-05-17T00:02:00Z",
+      "result_count": 3,
+      "results": [
+        {"title": "2026 Pacific typhoon season - Wikipedia", "url": "https://en.wikipedia.org/wiki/2026_Pacific_typhoon_season", "snippet": "Hagupit (Caloy) formed May 6, entered PAR May 9, weakened to remnant low.", "source_name": "Wikipedia"},
+        {"title": "Zoom Earth | Weather Map & Hurricane Tracker", "url": "https://zoom.earth/", "snippet": "Real-time satellite weather map.", "source_name": "Zoom Earth"},
+        {"title": "NOAA Satellites Tracked Remnants of Typhoon Halong", "url": "https://www.nesdis.noaa.gov/news/tracked-noaas-satellites-remnants-from-typhoon-halong-caused-record-flooding-alaska", "snippet": "Historical reference — Halong remnants caused Alaska flooding.", "source_name": "NESDIS"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery volcano eruption May 2026",
+      "language": "en",
+      "timestamp": "2026-05-17T00:03:00Z",
+      "result_count": 6,
+      "results": [
+        {"title": "Kīlauea Volcano Updates — USGS", "url": "https://www.usgs.gov/volcanoes/kilauea/volcano-updates", "snippet": "Ep47 ended 5/15 after 9h fountaining. ADVISORY/YELLOW. Ep48 forecast 5/22-25.", "source_name": "USGS HVO"},
+        {"title": "Great Sitkin WATCH/ORANGE — May 16 2026", "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-AVO-2026-05-16T19:09:27+00:00", "snippet": "Slow lava effusion continues in summit crater. Clouds obscured satellite/webcam.", "source_name": "USGS AVO"},
+        {"title": "Shishaldin ADVISORY/YELLOW — May 12 2026", "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-AVO-2026-05-12T20:06:22+00:00", "snippet": "Unrest persists. SO2 and steam in satellite imagery.", "source_name": "USGS AVO"},
+        {"title": "Bismarck Sea VA to FL120 NW — VAAC #23, May 17", "url": "https://www.volcanodiscovery.com/centralbismarcksea/news/302674/vaac-advisory-2026-23.html", "snippet": "VA emission to FL120 (3,700m) extending NW. Obs 17/0500Z.", "source_name": "VAAC Darwin / VolcanoDiscovery"},
+        {"title": "Mayon VAAC advisory #594+ — eruption continuing", "url": "https://www.volcanodiscovery.com/mayon/news/302104/vaac-advisory-2026-594.html", "snippet": "Alert Level 3. Lava effusion Mi-isi Gully. Strombolian. Day 132+.", "source_name": "VAAC Tokyo / PHIVOLCS"},
+        {"title": "Satellite Photos Capture Volcanic Eruption From Space", "url": "https://www.newsweek.com/satellite-photos-capture-volcanic-eruption-11097930", "snippet": "Newsweek feature on satellite volcano monitoring.", "source_name": "Newsweek"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery deforestation mining oil spill May 2026",
+      "language": "en",
+      "timestamp": "2026-05-17T00:04:00Z",
+      "result_count": 4,
+      "results": [
+        {"title": "Pemex-linked Gulf oil spill may still be spreading — satellite images", "url": "https://www.tpr.org/environment/2026-05-07/pemex-linked-gulf-oil-spill-may-still-be-spreading-three-months-later-satellite-images-suggest", "snippet": "3+ months, radar imagery early May shows dark patches near Cantarell. 70+ satellite images document evolution.", "source_name": "TPR"},
+        {"title": "Faster Detection of Forest Loss — NASA", "url": "https://science.nasa.gov/earth/earth-observatory/faster-detection-of-forest-loss/", "snippet": "NISAR+Landsat fusion system. 100 days earlier detection.", "source_name": "NASA EO"},
+        {"title": "Venezuela: Oil, mining and the risks — Global Witness", "url": "https://globalwitness.org/en/campaigns/fossil-fuels/ecocide-in-venezuela-oil-mining-and-the-risks-of-foreign-investment/", "snippet": "Satellite data: large swathes deforested around mining areas.", "source_name": "Global Witness"},
+        {"title": "Deforestation and Forest Degradation Monitoring with SAR — ICEYE", "url": "https://www.iceye.com/blog/deforestation-and-forest-degradation-monitoring-with-sar-satellite-imagery", "snippet": "ICEYE SAR deforestation detection service.", "source_name": "ICEYE"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery glacier methane plume climate 2026",
+      "language": "en",
+      "timestamp": "2026-05-17T00:05:00Z",
+      "result_count": 4,
+      "results": [
+        {"title": "Global satellite survey reveals uncertainty in landfill methane — Nature", "url": "https://www.nature.com/articles/s41586-025-09683-8", "snippet": "Survey of 151 waste sites across 6 continents. >100 kg/h detection threshold.", "source_name": "Nature"},
+        {"title": "Carbon Mapper — Methane, CO2 Detection Satellite", "url": "https://carbonmapper.org/", "snippet": "Tanager-1 hyperspectral satellite for methane/CO2 plume mapping.", "source_name": "Carbon Mapper"},
+        {"title": "ESA — Mapping methane emissions on a global scale", "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P/Mapping_methane_emissions_on_a_global_scale", "snippet": "Sentinel-5P TROPOMI global methane mapping.", "source_name": "ESA"},
+        {"title": "WorldView-3 satellite maps methane plumes at very high spatial resolution", "url": "https://earth.esa.int/eogateway/news/worldview-3-satellite-maps-methane-plumes-at-very-high-spatial-resolution", "snippet": "WV-3 SWIR 3.7m methane plume detection.", "source_name": "ESA Earth Online"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery military buildup defense OSINT May 2026",
+      "language": "en",
+      "timestamp": "2026-05-17T00:06:00Z",
+      "result_count": 5,
+      "results": [
+        {"title": "Chinese AI Startup MizarVision Mapping Every US Military Asset in Middle East", "url": "https://breached.company/mizarvision-chinese-ai-satellite-us-military-tracking-2026/", "snippet": "MizarVision 200 employees, real-time mapping of US military assets. Iran using AI-enhanced imagery.", "source_name": "Breached.Company"},
+        {"title": "Satellite Imagery Reveals China's Nuclear Carrier", "url": "https://skyfi.com/en/blog/defense-satellite-imagery-china-nuclear-carrier", "snippet": "Vantor imagery: China Type 004 carrier at Dalian, nuclear-powered.", "source_name": "SkyFi"},
+        {"title": "Nowhere to hide: Iran war spotlights military challenges posed by space-based remote sensing", "url": "https://breakingdefense.com/2026/04/nowhere-to-hide-iran-war-spotlights-military-challenges-posed-by-space-based-remote-sensing/", "snippet": "Planet 14-day delay on Middle East imagery. Commercial satellite access challenges.", "source_name": "Breaking Defense"},
+        {"title": "What Satellite Imagery Can Tell Us About China's Military Build Up — 2026 Warfare Symposium", "url": "https://www.youtube.com/watch?v=j5NYNEneiOM", "snippet": "Conference presentation on China military satellite OSINT.", "source_name": "YouTube"},
+        {"title": "Iran Uses Chinese AI Satellite Imagery to Target U.S. Military Bases", "url": "https://www.armyrecognition.com/news/army-news/2026/iran-uses-chinese-ai-satellite-imagery-to-target-u-s-bases-in-middle-east", "snippet": "MizarVision imagery used for targeting. F-22 Raptors, Patriot at Ovda AFB.", "source_name": "Army Recognition"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "NASA Earth Observatory image of the day May 2026",
+      "language": "en",
+      "timestamp": "2026-05-17T00:07:00Z",
+      "result_count": 3,
+      "results": [
+        {"title": "Picturing Earth in a New Light — NASA EO", "url": "https://science.nasa.gov/earth/earth-observatory/picturing-earth-in-a-new-light/", "snippet": "VIIRS nighttime lights change analysis. Nature cover.", "source_name": "NASA EO"},
+        {"title": "Ice Moves Out of Aniak — NASA EO (May 15)", "url": "https://science.nasa.gov/earth/earth-observatory/ice-moves-out-of-aniak/", "snippet": "Landsat 9 before/after Kuskokwim River ice breakup, flooding.", "source_name": "NASA EO"},
+        {"title": "May 2026 Satellite Puzzler", "url": "https://science.nasa.gov/earth/earth-observatory/may-2026-satellite-puzzler/", "snippet": "Monthly satellite imagery quiz — excluded (not observation event).", "source_name": "NASA EO"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "위성영상 한반도 관측 2026년 5월",
+      "language": "ko",
+      "timestamp": "2026-05-17T00:08:00Z",
+      "result_count": 2,
+      "results": [
+        {"title": "차세대중형위성 2호, 한반도 첫 교신 성공", "url": "https://www.newspim.com/news/view/20260503000194", "snippet": "CAS500-2 5/3 발사, 한반도 첫 교신 성공. 0.5m 흑백, 2m 컬러 광학.", "source_name": "뉴스핌"},
+        {"title": "국토지리정보원 — 위성영상 촬영", "url": "https://www.ngii.go.kr/kor/content.do?sq=307", "snippet": "KOMPSAT 국토관측 영상 서비스.", "source_name": "국토지리정보원"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Copernicus EMS activation May 2026",
+      "language": "en",
+      "timestamp": "2026-05-17T00:09:00Z",
+      "result_count": 1,
+      "results": [
+        {"title": "Copernicus EMS On Demand Mapping — Activations", "url": "https://mapping.emergency.copernicus.eu/activations/", "snippet": "Active activations portal. No specific new May 17 activation identified.", "source_name": "Copernicus EMS"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "UNOSAT satellite analysis humanitarian May 2026",
+      "language": "en",
+      "timestamp": "2026-05-17T00:10:00Z",
+      "result_count": 2,
+      "results": [
+        {"title": "UNESCO-UNOSAT Collaboration — Heritage Protection", "url": "https://news.fundsforngos.org/2026/05/06/satellite-technology-for-heritage-protection-unesco-unosat-collaboration-explained/", "snippet": "800+ satellite analyses, 4,000+ heritage sites, 20+ countries in 3 years.", "source_name": "FundsForNGOs"},
+        {"title": "UNOSAT Humanitarian Data — HDX", "url": "https://data.humdata.org/organization/unosat", "snippet": "222 datasets available on HDX.", "source_name": "UNOSAT/HDX"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "South China Sea satellite island building Spratly May 2026",
+      "language": "en",
+      "timestamp": "2026-05-17T00:11:00Z",
+      "result_count": 4,
+      "results": [
+        {"title": "Keeping Score: Vietnam's Spratly Island Overhaul Continues — AMTI", "url": "https://amti.csis.org/keeping-score-vietnams-spratly-island-overhaul-continues/", "snippet": "Vietnam 534ac new land, total 2,771ac. DVOR beacon. 3 new harbors. 15 ports total.", "source_name": "CSIS AMTI"},
+        {"title": "Philippines Satellite-Spratlys Infrastructure Upgrade — RFA", "url": "https://www.rfa.org/english/southchinasea/2026/05/08/philippines-satellite-spratlys-infrastructure-upgrade/", "snippet": "Thitu runway 1.5km extension. Nanshan port expansion. Planet Labs imagery.", "source_name": "RFA"},
+        {"title": "Antelope Reef Could Now Be the Largest Island — AMTI", "url": "https://amti.csis.org/antelope-reef-could-now-be-the-largest-island-in-the-south-china-sea/", "snippet": "China 1,490ac. First significant island-building since 2017. Paracel.", "source_name": "CSIS AMTI"},
+        {"title": "Vietnam Expands Spratly Outposts by 216 Hectares — TheVietnamese", "url": "https://thevietnamese.org/2026/05/viet-nam-expands-spratly-islands-outposts-by-216-hectares-over-past-year/", "snippet": "216ha expansion over past year.", "source_name": "The Vietnamese Magazine"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Minnesota wildfire Lake Superior Stewart Trail fire May 2026 satellite",
+      "language": "en",
+      "timestamp": "2026-05-17T00:12:00Z",
+      "result_count": 5,
+      "results": [
+        {"title": "Wildfire Near Lake Superior's North Shore — CIMSS Satellite Blog", "url": "https://cimss.ssec.wisc.edu/satellite-blog/archives/70446", "snippet": "Stewart Trail Fire, Two Harbors MN, 375ac 30% contained. GOES-19 true color loop.", "source_name": "CIMSS"},
+        {"title": "Stewart Trail Update: 355 acres, 30% contained — WDIO", "url": "https://www.wdio.com/front-page/top-stories/portion-of-mn-61-closed-to-grass-fire/", "snippet": "355-376ac. 34 structures destroyed incl 8 homes. Hwy 61 closed.", "source_name": "WDIO"},
+        {"title": "Hwy 61 remains closed — wildfire grows — Star Tribune", "url": "https://www.startribune.com/north-shore-wildfire-continues-to-burn-hwy-61-remains-closed-for-several-miles/601844027", "snippet": "Evacuation orders Two Harbors to Castle Danger. 21% RH.", "source_name": "Star Tribune"},
+        {"title": "Fire crews responding — WTIP", "url": "https://wtip.org/fire-crews-responding-to-wildfire-near-two-harbors-leading-to-closure-of-highway-61/", "snippet": "May 15 afternoon ignition. Low RH, gusty winds.", "source_name": "WTIP"},
+        {"title": "UPDATE: Wildfire north of Two Harbors 0% contained — Northern News Now", "url": "https://www.northernnewsnow.com/2026/05/15/update-wildfire-north-two-harbors-0-contained-highway-61-still-impacted/", "snippet": "Initial report 0% contained 5/15. Rapidly spreading.", "source_name": "Northern News Now"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Planet Pelican first light satellite imagery May 2026",
+      "language": "en",
+      "timestamp": "2026-05-17T00:13:00Z",
+      "result_count": 4,
+      "results": [
+        {"title": "Planet Releases First Light from Latest Pelican Launch — BusinessWire", "url": "https://www.businesswire.com/news/home/20260514665846/en/Planet-Releases-First-Light-from-Latest-Pelican-Launch-Including-Imagery-from-Swedens-First-Sovereign-Satellite", "snippet": "3 Pelican launched 5/3. First light images: Gotland Sweden 5/7, Taiyuan China 5/5, Ambursu Nigeria 5/11. 9 total on orbit. 50cm, 6 bands.", "source_name": "BusinessWire"},
+        {"title": "Planet Labs Releases First Light Images From Pelican Satellites — Orbital Today", "url": "https://orbitaltoday.com/2026/05/16/planet-labs-releases-first-light-images-from-pelican-satellites/", "snippet": "Sweden's first sovereign military satellite included. SwAF partnership.", "source_name": "Orbital Today"},
+        {"title": "Sweden's First Military Satellite — Aviation24", "url": "https://www.aviation24.be/military-aircraft/swedish-armed-forces/planet-labs-releases-first-images-from-new-pelican-satellites-including-swedens-first-military-satellite/amp/", "snippet": "SwAF first sovereign satellite. AI-enabled, high-res.", "source_name": "Aviation24"},
+        {"title": "Planet Labs (PL) Unveils First Light Imagery — GuruFocus", "url": "https://www.gurufocus.com/news/8859329/planet-labs-pl-unveils-first-light-imagery-from-new-pelican-satellites", "snippet": "First light within days of 5/3 launch.", "source_name": "GuruFocus"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Vietnam Spratly islands satellite AMTI expansion May 2026",
+      "language": "en",
+      "timestamp": "2026-05-17T00:14:00Z",
+      "result_count": 3,
+      "results": [
+        {"title": "Keeping Score: Vietnam's Spratly Island Overhaul — AMTI", "url": "https://amti.csis.org/keeping-score-vietnams-spratly-island-overhaul-continues/", "snippet": "534ac new, 2,771ac total. DVOR. 3 new harbors. 15 ports.", "source_name": "CSIS AMTI"},
+        {"title": "Vietnam Expands Spratly Outposts by 216 Hectares", "url": "https://thevietnamese.org/2026/05/viet-nam-expands-spratly-islands-outposts-by-216-hectares-over-past-year/", "snippet": "216ha expansion. Satellite imagery confirmation.", "source_name": "The Vietnamese Magazine"},
+        {"title": "Could Vietnam's new South China Sea bases open a 'Pandora's box'? — Chatham House", "url": "https://www.chathamhouse.org/publications/the-world-today/2026-03/could-vietnams-new-south-china-sea-bases-open-pandoras-box", "snippet": "Analysis of competitive island building spiral.", "source_name": "Chatham House"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Bellingcat satellite imagery Lebanon destruction May 2026",
+      "language": "en",
+      "timestamp": "2026-05-17T00:15:00Z",
+      "result_count": 4,
+      "results": [
+        {"title": "Satellite Imagery Shows Ongoing Demolitions Across Southern Lebanon — Bellingcat", "url": "https://www.bellingcat.com/news/2026/05/14/satellite-imagery-shows-ongoing-demolitions-across-southern-lebanon/", "snippet": "46/54 towns damaged or flattened within IDF Yellow Line. PlanetScope May 8 imagery.", "source_name": "Bellingcat"},
+        {"title": "Interactive Map: Lebanon May 2026 — Bellingcat GitHub", "url": "https://bellingcat.github.io/lebanon-may-2026/", "snippet": "Interactive satellite map of destruction.", "source_name": "Bellingcat"},
+        {"title": "Amid ceasefire, Israeli forces ramp up destruction — NBC", "url": "https://www.nbcnews.com/world/lebanon/ceasefire-israeli-forces-ramp-destruction-homes-southern-lebanon-rcna342549", "snippet": "Controlled demolitions. Naqoura, Kfar Kila largely demolished.", "source_name": "NBC News"},
+        {"title": "Satellite imagery shows IDF activity around UN positions — Bellingcat FB", "url": "https://www.facebook.com/bellingcat/posts/satellite-imagery-shows-israel-defense-forces-idf-activity-around-the-united-nat/1117453863507926/", "snippet": "IDF activity near UNIFIL positions.", "source_name": "Bellingcat"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "UNEP MARS methane alert satellite coal waste expansion 2026",
+      "language": "en",
+      "timestamp": "2026-05-17T00:16:00Z",
+      "result_count": 4,
+      "results": [
+        {"title": "Satellite methane alerts expanded to coal and waste sectors — UNEP", "url": "https://www.unep.org/news-and-stories/press-release/satellite-methane-alerts-expanded-coal-and-waste-sectors-unep", "snippet": "G7 event 5/4. Top 50 emitters: 22 coal mines, 11 waste. 250 coal mines DB. 35 satellites.", "source_name": "UNEP"},
+        {"title": "UN methane alert system expanded — coal and waste — Down To Earth", "url": "https://www.downtoearth.org.in/climate-change/un-methane-alert-system-expanded-to-coal-and-waste-sectors-after-indian-landfill-named-among-worlds-top-emitters", "snippet": "Indian landfill among top emitters.", "source_name": "Down To Earth"},
+        {"title": "UNEP Expands Satellite Methane Monitoring — fundsforNGOs", "url": "https://news.fundsforngos.org/2026/05/06/unep-expands-satellite-methane-monitoring-to-coal-and-waste/", "snippet": "IMEO MARS system: 35 satellites, super-emitter detection.", "source_name": "FundsForNGOs"},
+        {"title": "MARS Response Blueprint — IEA", "url": "https://envirotecmagazine.com/2026/05/06/un-satellite-methane-monitoring-will-now-include-landfills-and-coal-mines/", "snippet": "IMEO+IEA playbook for mitigation response.", "source_name": "Envirotec"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Kilauea volcano update May 17 2026",
+      "language": "en",
+      "timestamp": "2026-05-17T00:17:00Z",
+      "result_count": 3,
+      "results": [
+        {"title": "Kīlauea Volcano Updates — USGS", "url": "https://www.usgs.gov/volcanoes/kilauea/volcano-updates", "snippet": "Ep47 ended 5/15 12:27am HST after 9h. ADVISORY/YELLOW. Vents glow, incandescence. Ep48 forecast 5/22-25.", "source_name": "USGS HVO"},
+        {"title": "Exciting Kilauea Lava Update: Ep. 48 expected by end of May", "url": "https://hawaiivolcanoexpeditions.com/blog/lava-update-the-latest-eruptions-on-the-big-island/", "snippet": "Ep48 forecasted 5/22-25 by HVO models.", "source_name": "Hawaii Volcano Expeditions"},
+        {"title": "Kilauea Volcano Eruption Update May 14 — BIVN", "url": "https://www.bigislandvideonews.com/2026/05/14/kilauea-volcano-eruption-update-for-thursday-may-14/", "snippet": "Day before Ep47 eruption, tilt 10.7μrad.", "source_name": "BIVN"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Bismarck Sea submarine volcano eruption May 2026",
+      "language": "en",
+      "timestamp": "2026-05-17T00:18:00Z",
+      "result_count": 4,
+      "results": [
+        {"title": "Bismarck Sea VA to FL120 — VAAC #23 May 17", "url": "https://www.volcanodiscovery.com/centralbismarcksea/news/302674/vaac-advisory-2026-23.html", "snippet": "VA emission to FL120 (3,700m) NW. Down from FL280 peak on 5/15.", "source_name": "VAAC Darwin"},
+        {"title": "Rare volcanic ash from submarine volcano — The Watchers", "url": "https://watchers.news/2026/05/13/rare-volcanic-ash-emission-detected-submarine-volcano-central-bismarck-sea-papua-new-guinea-may-2026/", "snippet": "Began 5/8. 1,300m depth. 1972 이후 54년 만. Satellite: large steam plume 3,000m.", "source_name": "The Watchers"},
+        {"title": "GVP Report — Central Bismarck Sea May 12", "url": "https://volcano.si.edu/showreport.cfm?gvpvar=GVP.DVAR20260512-250030", "snippet": "GVP official volcanic activity report.", "source_name": "Smithsonian GVP"},
+        {"title": "Continuous VA emission to FL280 — VAAC #15 May 15", "url": "https://www.volcanodiscovery.com/centralbismarcksea/news/302445/vaac-advisory-2026-15.html", "snippet": "Peak activity 5/15: FL280 (8,500m).", "source_name": "VAAC Darwin"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Mayon volcano eruption update May 17 2026",
+      "language": "en",
+      "timestamp": "2026-05-17T00:19:00Z",
+      "result_count": 3,
+      "results": [
+        {"title": "Mayon Volcano — PHIVOLCS Alert Level 3", "url": "https://www.pna.gov.ph/articles/1274187", "snippet": "Alert Level 3 sustained. Lava effusion: Basud 3.8km, Bonga 3.2km, Mi-isi 1.6km. Strombolian.", "source_name": "PNA/PHIVOLCS"},
+        {"title": "Philippines: Mayon Volcano — May 2026 GLIDE", "url": "https://reliefweb.int/disaster/vo-2026-000065-phl", "snippet": "GLIDE VO-2026-000065-PHL. ReliefWeb disaster page.", "source_name": "ReliefWeb/OCHA"},
+        {"title": "Eruption at Mayon — NASA EO", "url": "https://science.nasa.gov/earth/earth-observatory/eruption-at-mayon/", "snippet": "NASA EO feature article on Mayon eruption with satellite imagery.", "source_name": "NASA EO"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Everglades wildfire Florida May 17 2026",
+      "language": "en",
+      "timestamp": "2026-05-17T00:20:00Z",
+      "result_count": 3,
+      "results": [
+        {"title": "Everglades brush fire 80% contained — WSVN", "url": "https://wsvn.com/news/local/broward/crews-make-progress-on-massive-everglades-brush-fire-amid-wind-shift-concerns-blaze-80-contained/", "snippet": "Max Road Fire 11,339ac 80% contained. Mop-up phase. Wind shift concerns.", "source_name": "WSVN"},
+        {"title": "Broward wildfire rages — new blaze near Florida City — CBS Miami", "url": "https://www.cbsnews.com/miami/news/large-wildfire-in-western-broward-county-sends-smoke-toward-pembroke-pines-neighborhood/", "snippet": "172 Ave Fire near Florida City 300ac. Secondary blaze.", "source_name": "CBS Miami"},
+        {"title": "Everglades wildfire scorches 11,000+ acres — Fox Weather", "url": "https://www.foxweather.com/weather-news/everglades-wildfire-miami-metro-broward-county", "snippet": "4,800ac in first 24h. Near Miami metro. GOES satellite imagery.", "source_name": "Fox Weather"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "src-004",
+  "title": "Everglades Max Road Fire — 11,339ac 80% 진압, 풍향전환 우려",
+  "url": "https://wsvn.com/news/local/broward/crews-make-progress-on-massive-everglades-brush-fire-amid-wind-shift-concerns-blaze-80-contained/",
+  "snippet": "Everglades Max Road Fire 11,339ac 80% contained (전일 70% 대비 10%p 상승). 풍향 전환 우려. Florida Forest Service 1-2일 내 진압 자신. 172 Ave Fire (Florida City 인근 300ac 50% contained) 2차 화재 별도 진행. Pembroke Pines/Weston/Miramar 연기 영향.",
+  "source_name": "WSVN 7News",
+  "language": "en",
+  "discovered_date": "2026-05-17",
+  "tag": "update",
+  "related_report": "2026-05-16/src-007",
+  "related_item": "ent-evt-501",
+  "tag_reason": "진압률 70%→80% 상승. 2차 화재(172 Ave Fire 300ac) 신규 발생. 풍향 전환 우려.",
+  "entities": [
+    {"id": "ent-evt-501", "type": "Event", "name": "Everglades Max Road Fire (Florida)", "properties": {"phenomenon": "wildfire", "lat": 26.0, "lon": -80.45, "country": "US", "observation_date": "2026-05-17", "severity": "high", "area_km2": 45.9, "confidence": 0.90, "matched": true}},
+    {"id": "sat-goes18", "type": "Satellite", "name": "GOES-18", "properties": {"matched": true}},
+    {"id": "sat-viirs-jpss", "type": "Satellite", "name": "VIIRS (Suomi-NPP/JPSS)", "properties": {"matched": true}},
+    {"id": "co-us", "type": "Country", "name": "미국", "properties": {"matched": true}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-501", "predicate": "observedBy", "object": "sat-goes18"},
+    {"subject": "ent-evt-501", "predicate": "observedBy", "object": "sat-viirs-jpss"},
+    {"subject": "ent-evt-501", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "ent-evt-501", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "ent-evt-501", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

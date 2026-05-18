@@ -1,0 +1,28 @@
+{
+  "id": "src-003",
+  "title": "Bismarck Sea 해저화산 VAAC #23 — FL120 NW, 하강 추세",
+  "url": "https://www.volcanodiscovery.com/centralbismarcksea/news/302674/vaac-advisory-2026-23.html",
+  "snippet": "VAAC Darwin Advisory #23 (5/17 05:00Z): VA emission to FL120 (3,700m) extending NW. 5/15 FL280 (8,500m) 정점 대비 현저히 하강. 분출 지속이나 강도 약화. 1,300m 수심 해저 화산, 1972년 이후 54년 만.",
+  "source_name": "VAAC Darwin / VolcanoDiscovery",
+  "language": "en",
+  "discovered_date": "2026-05-17",
+  "tag": "update",
+  "related_report": "2026-05-16/src-001",
+  "related_item": "ent-evt-701",
+  "tag_reason": "VAAC #23 신규 발행. FL280→FL120 현저한 하강 추세 = 분출 강도 약화 신호. 유의미한 변동.",
+  "entities": [
+    {"id": "ent-evt-701", "type": "Event", "name": "Central Bismarck Sea Submarine Eruption", "properties": {"phenomenon": "volcanic_eruption", "lat": -3.03, "lon": 147.78, "country": "PG", "observation_date": "2026-05-17", "severity": "moderate", "confidence": 0.92, "matched": true}},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9", "properties": {"matched": true}},
+    {"id": "sat-viirs-jpss", "type": "Satellite", "name": "VIIRS (Suomi-NPP/JPSS)", "properties": {"matched": true}},
+    {"id": "co-pg", "type": "Country", "name": "파푸아뉴기니", "properties": {"iso_code": "PG", "matched": true}},
+    {"id": "ent-loc-065", "type": "Location", "name": "Central Bismarck Sea", "properties": {"matched": true}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-viirs-jpss"},
+    {"subject": "ent-evt-701", "predicate": "locatedIn", "object": "ent-loc-065"},
+    {"subject": "ent-evt-701", "predicate": "inCountry", "object": "co-pg"},
+    {"subject": "ent-evt-701", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-701", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}
