@@ -1,0 +1,34 @@
+{
+  "id": "src-002",
+  "title": "캐나다 Manitoba/Ontario 대형 산불 — 160+건, 33,000명 대피, pyrocumulonimbus, 연기 유럽 도달",
+  "url": "https://www.nesdis.noaa.gov/news/noaa-satellites-monitor-canadian-wildfires-and-smoke",
+  "snippet": "Since mid-May, NOAA satellites closely monitoring 160+ fires in Manitoba/Ontario/Saskatchewan. 33,000 evacuated. GOES-18 captured pyrocumulonimbus. CAMS/TROPOMI tracked smoke at 300hPa reaching Mediterranean by May 18. States of emergency declared.",
+  "source_name": "NOAA NESDIS / Copernicus CAMS / CBS News",
+  "language": "en",
+  "discovered_date": "2026-05-19",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 14일 소스에 캐나다 대형 산불 관련 항목 없음. 5월 중순 이후 급속 확대된 신규 대규모 재난.",
+  "entities": [
+    {"id": "evt-20260519-canada-fires", "type": "Event", "name": "Canadian Wildfires Manitoba/Ontario 2026", "properties": {"phenomenon": "wildfire", "domain": "dom-disaster", "observation_date": "2026-05-18", "start_date": "2026-05-14", "lat": 52.0, "lon": -97.0, "country": "CA", "region": "Manitoba/Ontario/Saskatchewan", "severity": "high", "before_after_available": false, "confidence": 0.92}},
+    {"id": "sat-goes18", "type": "Satellite", "name": "GOES-18", "properties": {"operator": "NOAA"}},
+    {"id": "sat-viirs-jpss", "type": "Satellite", "name": "VIIRS (Suomi-NPP/JPSS)", "properties": {"operator": "NOAA/NASA"}},
+    {"id": "sat-sentinel5p", "type": "Satellite", "name": "Sentinel-5P", "properties": {"operator": "ESA"}},
+    {"id": "org-noaa", "type": "Organization", "name": "NOAA", "properties": {"org_type": "weather_agency"}},
+    {"id": "org-esa", "type": "Organization", "name": "ESA", "properties": {"org_type": "space_agency"}},
+    {"id": "phen-wildfire", "type": "Phenomenon", "name": "wildfire", "properties": {"category": "Disaster"}},
+    {"id": "co-ca", "type": "Country", "name": "캐나다", "properties": {"iso_code": "CA"}}
+  ],
+  "relations": [
+    {"subject": "evt-20260519-canada-fires", "predicate": "observedBy", "object": "sat-goes18"},
+    {"subject": "evt-20260519-canada-fires", "predicate": "observedBy", "object": "sat-viirs-jpss"},
+    {"subject": "evt-20260519-canada-fires", "predicate": "observedBy", "object": "sat-sentinel5p"},
+    {"subject": "evt-20260519-canada-fires", "predicate": "usesSensor", "object": "sensor-tropomi"},
+    {"subject": "evt-20260519-canada-fires", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "evt-20260519-canada-fires", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "evt-20260519-canada-fires", "predicate": "inCountry", "object": "co-ca"},
+    {"subject": "evt-20260519-canada-fires", "predicate": "analyzedBy", "object": "org-noaa"},
+    {"subject": "evt-20260519-canada-fires", "predicate": "analyzedBy", "object": "org-esa"}
+  ]
+}

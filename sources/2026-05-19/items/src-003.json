@@ -1,0 +1,33 @@
+{
+  "id": "src-003",
+  "title": "이란 Kharg Island 원유 유출 — Sentinel-1/2/3 탐지, ~45,000km² 유막",
+  "url": "https://www.thenationalnews.com/business/energy/2026/05/13/oil-spill-near-irans-kharg-island-raises-questions-over-its-source/",
+  "snippet": "Copernicus Sentinel-1, -2, -3 detected oil slick west of Kharg Island May 6-8. ~45,000 sq km. 3+ large crude carriers observed loading. Iran denies domestic source, attributes to tanker ballast. Single-event spill, not continuous leak. Possible Abuzar pipeline rupture.",
+  "source_name": "The National / Al Jazeera / Jerusalem Post",
+  "language": "en",
+  "discovered_date": "2026-05-19",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 14일 소스에 Kharg Island 원유 유출 관련 항목 없음. 5/6-8 탐지 후 5/10-13 보도된 신규 이벤트.",
+  "entities": [
+    {"id": "evt-20260519-kharg-oil", "type": "Event", "name": "Kharg Island Oil Spill (Persian Gulf)", "properties": {"phenomenon": "oil_spill", "domain": "dom-human", "observation_date": "2026-05-06", "start_date": "2026-05-06", "end_date": "2026-05-08", "lat": 29.23, "lon": 50.32, "country": "IR", "region": "Kharg Island, Persian Gulf", "area_km2": 45000, "severity": "high", "before_after_available": true, "confidence": 0.88}},
+    {"id": "sat-sentinel1a", "type": "Satellite", "name": "Sentinel-1A", "properties": {"operator": "ESA", "sensor_types": ["SAR"]}},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A", "properties": {"operator": "ESA"}},
+    {"id": "sat-sentinel3", "type": "Satellite", "name": "Sentinel-3A/B", "properties": {"operator": "ESA"}},
+    {"id": "org-esa", "type": "Organization", "name": "ESA", "properties": {"org_type": "space_agency"}},
+    {"id": "phen-oilspill", "type": "Phenomenon", "name": "oil_spill", "properties": {"category": "HumanActivity"}},
+    {"id": "co-ir", "type": "Country", "name": "이란", "properties": {"iso_code": "IR"}}
+  ],
+  "relations": [
+    {"subject": "evt-20260519-kharg-oil", "predicate": "observedBy", "object": "sat-sentinel1a"},
+    {"subject": "evt-20260519-kharg-oil", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "evt-20260519-kharg-oil", "predicate": "observedBy", "object": "sat-sentinel3"},
+    {"subject": "evt-20260519-kharg-oil", "predicate": "usesSensor", "object": "sensor-c-sar"},
+    {"subject": "evt-20260519-kharg-oil", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "evt-20260519-kharg-oil", "predicate": "manifests", "object": "phen-oilspill"},
+    {"subject": "evt-20260519-kharg-oil", "predicate": "inDomain", "object": "dom-human"},
+    {"subject": "evt-20260519-kharg-oil", "predicate": "inCountry", "object": "co-ir"},
+    {"subject": "evt-20260519-kharg-oil", "predicate": "analyzedBy", "object": "org-esa"}
+  ]
+}

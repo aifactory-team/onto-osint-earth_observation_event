@@ -1,0 +1,105 @@
+{
+  "date": "2026-05-19",
+  "entities": [
+    {
+      "temp_id": "evt-20260519-flanders",
+      "matched_id": null,
+      "type": "Event",
+      "name": "Flanders Fire (Minnesota)",
+      "properties": {"phenomenon": "wildfire", "domain": "dom-disaster", "observation_date": "2026-05-18", "start_date": "2026-05-16", "lat": 46.67, "lon": -94.10, "country": "US", "region": "Crow Wing County, Minnesota", "area_km2": 6.88, "severity": "high", "confidence": 0.88},
+      "source_ids": ["src-001"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "evt-20260519-canada-fires",
+      "matched_id": null,
+      "type": "Event",
+      "name": "Canadian Wildfires Manitoba/Ontario 2026",
+      "properties": {"phenomenon": "wildfire", "domain": "dom-disaster", "observation_date": "2026-05-18", "start_date": "2026-05-14", "lat": 52.0, "lon": -97.0, "country": "CA", "region": "Manitoba/Ontario/Saskatchewan", "severity": "high", "confidence": 0.92},
+      "source_ids": ["src-002"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "evt-20260519-kharg-oil",
+      "matched_id": null,
+      "type": "Event",
+      "name": "Kharg Island Oil Spill (Persian Gulf)",
+      "properties": {"phenomenon": "oil_spill", "domain": "dom-human", "observation_date": "2026-05-06", "start_date": "2026-05-06", "end_date": "2026-05-08", "lat": 29.23, "lon": 50.32, "country": "IR", "region": "Kharg Island, Persian Gulf", "area_km2": 45000, "severity": "high", "confidence": 0.88},
+      "source_ids": ["src-003"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "evt-20260519-stewart-update",
+      "matched_id": "evt-20260517-stewart",
+      "type": "Event",
+      "name": "Stewart Trail Fire (Minnesota) — 62% contained",
+      "properties": {"phenomenon": "wildfire", "domain": "dom-disaster", "observation_date": "2026-05-18", "lat": 47.0, "lon": -91.67, "country": "US", "severity": "medium", "confidence": 0.88},
+      "source_ids": ["src-004"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "evt-20260519-kilauea",
+      "matched_id": "evt-20260517-kilauea",
+      "type": "Event",
+      "name": "Kilauea Ep47 ended / Ep48 forecast",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "dom-disaster", "observation_date": "2026-05-19", "lat": 19.41, "lon": -155.28, "country": "US", "severity": "medium", "confidence": 0.95},
+      "source_ids": ["src-005"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "evt-20260519-bismarck",
+      "matched_id": "evt-20260517-bismarck",
+      "type": "Event",
+      "name": "Bismarck Sea Submarine Volcano",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "dom-disaster", "observation_date": "2026-05-17", "lat": -3.03, "lon": 147.78, "country": "PG", "severity": "medium", "confidence": 0.90},
+      "source_ids": ["src-006"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "evt-20260519-everglades",
+      "matched_id": "evt-20260517-everglades",
+      "type": "Event",
+      "name": "Everglades Max Road Fire — contained",
+      "properties": {"phenomenon": "wildfire", "domain": "dom-disaster", "observation_date": "2026-05-18", "lat": 26.0, "lon": -80.45, "country": "US", "severity": "low", "confidence": 0.90},
+      "source_ids": ["src-007", "src-008"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "co-ca",
+      "matched_id": null,
+      "type": "Country",
+      "name": "캐나다",
+      "properties": {"iso_code": "CA", "region": "북미"},
+      "source_ids": ["src-002"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "co-ir",
+      "matched_id": null,
+      "type": "Country",
+      "name": "이란",
+      "properties": {"iso_code": "IR", "region": "중동"},
+      "source_ids": ["src-003"],
+      "mention_count": 1
+    }
+  ],
+  "relations": [
+    {"subject": "evt-20260519-flanders", "predicate": "observedBy", "object": "sat-goes18", "source_ids": ["src-001"], "confidence": 0.88},
+    {"subject": "evt-20260519-flanders", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-001"], "confidence": 0.88},
+    {"subject": "evt-20260519-canada-fires", "predicate": "observedBy", "object": "sat-goes18", "source_ids": ["src-002"], "confidence": 0.92},
+    {"subject": "evt-20260519-canada-fires", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-002"], "confidence": 0.92},
+    {"subject": "evt-20260519-canada-fires", "predicate": "observedBy", "object": "sat-sentinel5p", "source_ids": ["src-002"], "confidence": 0.92},
+    {"subject": "evt-20260519-kharg-oil", "predicate": "observedBy", "object": "sat-sentinel1a", "source_ids": ["src-003"], "confidence": 0.88},
+    {"subject": "evt-20260519-kharg-oil", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-003"], "confidence": 0.88},
+    {"subject": "evt-20260519-kharg-oil", "predicate": "observedBy", "object": "sat-sentinel3", "source_ids": ["src-003"], "confidence": 0.88},
+    {"subject": "evt-20260519-canada-fires", "predicate": "usesSensor", "object": "sensor-tropomi", "source_ids": ["src-002"], "confidence": 0.92},
+    {"subject": "evt-20260519-kharg-oil", "predicate": "usesSensor", "object": "sensor-c-sar", "source_ids": ["src-003"], "confidence": 0.90},
+    {"subject": "evt-20260519-kharg-oil", "predicate": "usesSensor", "object": "sensor-msi", "source_ids": ["src-003"], "confidence": 0.88}
+  ],
+  "stats": {
+    "total_entities": 9,
+    "new_entities": 5,
+    "matched_entities": 4,
+    "total_relations": 11
+  }
+}

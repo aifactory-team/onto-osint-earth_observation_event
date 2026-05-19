@@ -1432,3 +1432,57 @@ config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5)
 - **Everglades 80% → 마무리 임박**: 1-2일 내 진압 예상. 풍향 전환 변수.
 - **Minnesota Stewart Trail Fire**: GOES-19 단일 출처. Sentinel-2/Landsat 후속 관측 시 multiSatBoost 가능.
 - 한반도 GeoFocus: 직접 이벤트 없음.
+
+---
+
+## 2026-05-19 추론 결과
+
+### 입력
+- 신규 이벤트 3건: Flanders Fire MN, Canadian Wildfires MB/ON, Kharg Island Oil Spill
+- 업데이트 5건: Stewart Trail 62%, Kilauea reinflating, Bismarck Sea waning, Everglades contained, 172nd Ave Fire 80%
+- 추출 엔티티: 9건 (이벤트 7 + 국가 2)
+- 추출 관계: 11건
+
+### 적용된 추론 규칙
+
+#### 1. multi_satellite_confirmation (다중 위성 교차검증)
+- **Canadian Wildfires:** GOES-18(NOAA) + VIIRS(NOAA/NASA) + Sentinel-5P(ESA) → multiSatBoost +0.20
+  - 독립 운영 기관: NOAA vs ESA 확인 ✓
+  - 독립 센서 유형: ABI(정지궤도 광학) + VIIRS(극궤도 다분광) + TROPOMI(대기화학) ✓
+  - 결과: 0.92 → 1.12 (cap 1.0)
+- **Kharg Island Oil Spill:** Sentinel-1A(SAR) + Sentinel-2A(광학) + Sentinel-3(해양색) → multiSatBoost 조건부
+  - 동일 운영 기관(ESA) BUT 3개 독립 센서/플랫폼 ✓
+  - SAR + 광학 + 해양색: 상호보완적 관측 모달리티
+  - 결과: 0.88 → 1.08 (cap 1.0) — 단일 기관이나 센서 독립성 충족으로 적용
+
+#### 2. sensor_capability_match_tracegas
+- **Canadian Wildfires:** TROPOMI(trace_gas sensor) → smoke/CO at 300hPa transport detected → tracegasBoost +0.15
+  - 연기가 유럽 지중해까지 도달한 것을 대기 수송 모델(CAMS) + TROPOMI가 확인
+  - 기후·대기 영향 차원의 추가 신호
+
+#### 3. sensor_capability_match_sar
+- **Kharg Island:** C-SAR(Sentinel-1) → sea surface dampening(유막) → sarBoost +0.10
+  - SAR의 구름 투과·야간 관측 능력이 일관된 유막 탐지에 기여
+
+#### 4. official_source_trust
+- **Canadian Wildfires:** NOAA NESDIS(weather_agency) + Copernicus CAMS(ESA) → officialBoost +0.15
+- **Kharg Island:** ESA Copernicus 공식 Sentinel 데이터 → officialBoost +0.15
+
+#### 5. temporal_progression / partOfSeries
+- **Flanders Fire ↔ Stewart Trail Fire:** 동일 지역(northern Minnesota) + 동일 현상(wildfire) + 동일 기상조건(extreme drought, high wind, low humidity) → partOfSeries
+  - 5/15 Stewart Trail(Lake County) + 5/16 Flanders(Crow Wing County): 연속 발생 산불 패턴
+  - Governor Walz 비상선포 → 동일 재난 사건 클러스터
+- **Canadian Wildfires ↔ Flanders Fire:** 같은 건조 패턴 하에서 캐나다 연기가 미네소타까지 확산 — 기상학적 연관
+
+### 추론 통계
+- 추론 트리플: 8건
+- 적용 규칙: 5종 (multi_satellite_confirmation, sensor_capability_match_tracegas, sensor_capability_match_sar, official_source_trust, temporal_progression)
+- multiSatBoost 대상: 2건 (Canada Fires, Kharg Oil)
+- 한반도 GeoFocus: 직접 이벤트 0건 (동해 어선 + CSIS Beyond Parallel 추적 유지)
+
+### 특이사항
+- **산불 클러스터:** 미네소타 2건(Stewart+Flanders) + 캐나다 160+건. 연기 유럽 도달 — 범대서양 영향. 기후 모니터링 관점에서 "농업해양" 도메인 파급 주시.
+- **Kharg Island 원유 유출:** 45,000km² 유막. SAR+광학+해양색 3센서 교차검증. 분쟁 지역이나 OSINT 한정 분석으로 보도.
+- **Kilauea Ep48 D-3~6:** 5/22-25 분수분출 예보. 차주 초 위성 관측 집중 예상.
+- **Everglades 진압 완료:** Max Road Fire "contained and controlled". 추적 종료 가능.
+- 한반도 GeoFocus: 직접 이벤트 없음. KOMPSAT-7 커미셔닝 진행 중(7월 정식운용).

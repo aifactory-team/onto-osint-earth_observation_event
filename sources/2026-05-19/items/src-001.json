@@ -1,0 +1,29 @@
+{
+  "id": "src-001",
+  "title": "Flanders Fire 미네소타 — 1,700ac 20% 진압, National Guard 동원",
+  "url": "https://www.kare11.com/article/news/local/size-of-flanders-fire-now-estimated-at-nearly-1700-acres-20-contained-mn/89-4b3b1962-0b44-4e7e-8199-e5024a11464f",
+  "snippet": "Size of Flanders Fire now estimated at nearly 1,700 acres, 20% contained. National Guard mobilized. Multi-year drought has left trees tinder-dry. Governor Walz declares peacetime emergency.",
+  "source_name": "KARE 11 / MPR News",
+  "language": "en",
+  "discovered_date": "2026-05-19",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 14일 소스에 Flanders Fire 관련 항목 없음. 5/16 발생한 신규 대형 산불.",
+  "entities": [
+    {"id": "evt-20260519-flanders", "type": "Event", "name": "Flanders Fire (Minnesota)", "properties": {"phenomenon": "wildfire", "domain": "dom-disaster", "observation_date": "2026-05-18", "start_date": "2026-05-16", "lat": 46.67, "lon": -94.10, "country": "US", "region": "Crow Wing County, Minnesota", "area_km2": 6.88, "severity": "high", "before_after_available": false, "confidence": 0.88}},
+    {"id": "sat-goes18", "type": "Satellite", "name": "GOES-18", "properties": {"operator": "NOAA"}},
+    {"id": "sat-viirs-jpss", "type": "Satellite", "name": "VIIRS (Suomi-NPP/JPSS)", "properties": {"operator": "NOAA/NASA"}},
+    {"id": "org-noaa", "type": "Organization", "name": "NOAA", "properties": {"org_type": "weather_agency"}},
+    {"id": "phen-wildfire", "type": "Phenomenon", "name": "wildfire", "properties": {"category": "Disaster"}},
+    {"id": "co-us", "type": "Country", "name": "미국", "properties": {"iso_code": "US"}}
+  ],
+  "relations": [
+    {"subject": "evt-20260519-flanders", "predicate": "observedBy", "object": "sat-goes18"},
+    {"subject": "evt-20260519-flanders", "predicate": "observedBy", "object": "sat-viirs-jpss"},
+    {"subject": "evt-20260519-flanders", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "evt-20260519-flanders", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "evt-20260519-flanders", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "evt-20260519-flanders", "predicate": "analyzedBy", "object": "org-noaa"}
+  ]
+}

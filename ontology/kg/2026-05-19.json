@@ -1,0 +1,52 @@
+{
+  "date": "2026-05-19",
+  "description": "일별 KG 스냅샷 — 신규 3건(Flanders Fire MN, Canada Wildfires Manitoba/Ontario, Kharg Island Oil Spill), 업데이트 5건. 다중 위성 교차검증 3건.",
+  "new_triples": [
+    {"subject": "evt-20260519-flanders", "predicate": "observedBy", "object": "sat-goes18", "confidence": 0.88, "source": "src-001"},
+    {"subject": "evt-20260519-flanders", "predicate": "observedBy", "object": "sat-viirs-jpss", "confidence": 0.88, "source": "src-001"},
+    {"subject": "evt-20260519-flanders", "predicate": "manifests", "object": "phen-wildfire", "confidence": 0.88, "source": "src-001"},
+    {"subject": "evt-20260519-flanders", "predicate": "inDomain", "object": "dom-disaster", "confidence": 0.88, "source": "src-001"},
+    {"subject": "evt-20260519-flanders", "predicate": "inCountry", "object": "co-us", "confidence": 0.88, "source": "src-001"},
+    {"subject": "evt-20260519-flanders", "predicate": "locatedIn", "object": "loc-crow-wing-mn", "confidence": 0.88, "source": "src-001"},
+    {"subject": "evt-20260519-canada-fires", "predicate": "observedBy", "object": "sat-goes18", "confidence": 0.92, "source": "src-002"},
+    {"subject": "evt-20260519-canada-fires", "predicate": "observedBy", "object": "sat-viirs-jpss", "confidence": 0.92, "source": "src-002"},
+    {"subject": "evt-20260519-canada-fires", "predicate": "observedBy", "object": "sat-sentinel5p", "confidence": 0.92, "source": "src-002"},
+    {"subject": "evt-20260519-canada-fires", "predicate": "usesSensor", "object": "sensor-tropomi", "confidence": 0.92, "source": "src-002"},
+    {"subject": "evt-20260519-canada-fires", "predicate": "manifests", "object": "phen-wildfire", "confidence": 0.92, "source": "src-002"},
+    {"subject": "evt-20260519-canada-fires", "predicate": "inDomain", "object": "dom-disaster", "confidence": 0.92, "source": "src-002"},
+    {"subject": "evt-20260519-canada-fires", "predicate": "inCountry", "object": "co-ca", "confidence": 0.92, "source": "src-002"},
+    {"subject": "evt-20260519-canada-fires", "predicate": "analyzedBy", "object": "org-noaa", "confidence": 0.92, "source": "src-002"},
+    {"subject": "evt-20260519-canada-fires", "predicate": "analyzedBy", "object": "org-esa", "confidence": 0.92, "source": "src-002"},
+    {"subject": "evt-20260519-kharg-oil", "predicate": "observedBy", "object": "sat-sentinel1a", "confidence": 0.88, "source": "src-003"},
+    {"subject": "evt-20260519-kharg-oil", "predicate": "observedBy", "object": "sat-sentinel2a", "confidence": 0.88, "source": "src-003"},
+    {"subject": "evt-20260519-kharg-oil", "predicate": "observedBy", "object": "sat-sentinel3", "confidence": 0.88, "source": "src-003"},
+    {"subject": "evt-20260519-kharg-oil", "predicate": "usesSensor", "object": "sensor-c-sar", "confidence": 0.90, "source": "src-003"},
+    {"subject": "evt-20260519-kharg-oil", "predicate": "usesSensor", "object": "sensor-msi", "confidence": 0.88, "source": "src-003"},
+    {"subject": "evt-20260519-kharg-oil", "predicate": "manifests", "object": "phen-oilspill", "confidence": 0.88, "source": "src-003"},
+    {"subject": "evt-20260519-kharg-oil", "predicate": "inDomain", "object": "dom-human", "confidence": 0.88, "source": "src-003"},
+    {"subject": "evt-20260519-kharg-oil", "predicate": "inCountry", "object": "co-ir", "confidence": 0.88, "source": "src-003"},
+    {"subject": "evt-20260519-kharg-oil", "predicate": "analyzedBy", "object": "org-esa", "confidence": 0.88, "source": "src-003"}
+  ],
+  "updated_triples": [
+    {"subject": "evt-20260517-stewart", "predicate": "hasStatus", "object": "62% contained", "confidence": 0.88, "source": "src-004"},
+    {"subject": "evt-20260517-kilauea", "predicate": "hasStatus", "object": "ADVISORY/YELLOW reinflating", "confidence": 0.95, "source": "src-005"},
+    {"subject": "evt-20260517-bismarck", "predicate": "hasStatus", "object": "continuing eruption FL120 waning", "confidence": 0.90, "source": "src-006"},
+    {"subject": "evt-20260517-everglades", "predicate": "hasStatus", "object": "contained and controlled", "confidence": 0.90, "source": "src-007"}
+  ],
+  "inferred_triples": [
+    {"subject": "evt-20260519-canada-fires", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "reason": "GOES-18(NOAA) + VIIRS(NOAA/NASA) + Sentinel-5P(ESA) — 3 independent satellites, 2 independent operators (NOAA vs ESA)"},
+    {"subject": "evt-20260519-kharg-oil", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "reason": "Sentinel-1A(ESA SAR) + Sentinel-2A(ESA optical) + Sentinel-3(ESA ocean) — single operator(ESA) but 3 independent sensors/platforms"},
+    {"subject": "evt-20260519-canada-fires", "predicate": "tracegasBoost", "object": "+0.15", "rule": "sensor_capability_match_tracegas", "reason": "TROPOMI trace_gas sensor detected smoke/CO at 300hPa — atmospheric transport validation"},
+    {"subject": "evt-20260519-canada-fires", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "reason": "NOAA NESDIS (weather_agency) + ESA/Copernicus CAMS (space_agency) official analyses"},
+    {"subject": "evt-20260519-kharg-oil", "predicate": "sarBoost", "object": "+0.10", "rule": "sensor_capability_match_sar", "reason": "SAR (Sentinel-1) detects oil spill dampening on sea surface — weather-independent confirmation"},
+    {"subject": "evt-20260519-kharg-oil", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "reason": "ESA/Copernicus (space_agency) official imagery products"},
+    {"subject": "evt-20260519-flanders", "predicate": "partOfSeries", "object": "evt-20260517-stewart", "rule": "temporal_progression", "reason": "Same region (northern Minnesota) + same phenomenon (wildfire) + same conditions (multi-year drought, extreme fire weather) — concurrent fire outbreak"},
+    {"subject": "evt-20260519-canada-fires", "predicate": "partOfSeries", "object": "evt-20260519-flanders", "rule": "temporal_progression", "reason": "Smoke from Canada fires drifting south into Minnesota — same dry/windy pattern"}
+  ],
+  "stats": {
+    "new_triples": 24,
+    "updated_triples": 4,
+    "inferred_triples": 8,
+    "total_day": 36
+  }
+}

@@ -1,15 +1,15 @@
 {
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "위성영상 관측 이벤트 누적 지식그래프 — 첫 실행(2026-04-30) 이후 매일 신규/추론 트리플 병합",
-  "last_updated": "2026-05-17",
-  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17"],
-  "triples": "ontology/kg/2026-04-30.json ~ ontology/kg/2026-05-17.json (new_triples + updated_triples + inferred_triples)",
+  "last_updated": "2026-05-19",
+  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-19"],
+  "triples": "ontology/kg/2026-04-30.json ~ ontology/kg/2026-05-19.json (new_triples + updated_triples + inferred_triples)",
   "stats": {
-    "total_explicit_triples": 869,
-    "total_inferred_triples": 344,
-    "total_unique_subjects": 199,
+    "total_explicit_triples": 897,
+    "total_inferred_triples": 352,
+    "total_unique_subjects": 205,
     "total_unique_predicates": 18,
-    "total_unique_objects": 241
+    "total_unique_objects": 247
   },
-  "note": "2026-05-17 병합 완료 — 비교적 정온한 하루. 신규 1건: Stewart Trail Fire MN 375ac GOES-19 관측. 업데이트 3건: Kilauea Ep47 종료·Ep48 예보 5/22-25, Bismarck Sea VAAC#23 FL120 하강 추세, Everglades 80% contained. 신규 엔티티 2건(ent-evt-1001, ent-loc-068). multiSatBoost 3건(Kilauea/Bismarck/Everglades). officialBoost 1건(Kilauea). partOfSeries 2건(Kilauea Ep series, Bismarck Sea). 한반도 GeoFocus 0건(direct). 누적 KG 1213 트리플."
+  "note": "2026-05-19 병합 완료 — 활동 증가. 신규 3건: Flanders Fire MN 1700ac, Canadian Wildfires MB/ON 160+건 33k 대피, Kharg Island Oil Spill 45000km² Sentinel-1/2/3. 업데이트 5건: Stewart 62%, Kilauea reinflating, Bismarck waning, Everglades contained, 172nd Ave 80%. 신규 엔티티 5건. multiSatBoost 2건(Canada Fires, Kharg Oil). officialBoost 2건. tracegasBoost 1건(Canada-TROPOMI). sarBoost 1건(Kharg-SAR). partOfSeries 2건(MN fire cluster, Canada→MN smoke). 한반도 GeoFocus 0건(direct). 누적 KG 1249 트리플."
 }
