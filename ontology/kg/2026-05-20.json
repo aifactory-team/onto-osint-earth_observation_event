@@ -1,0 +1,33 @@
+{
+  "date": "2026-05-20",
+  "new_triples": [
+    {"subject": "ent-evt-1001", "predicate": "containment", "object": "100%", "source_id": "src-001", "date": "2026-05-20", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-1001", "predicate": "cause", "object": "power_line", "source_id": "src-001", "date": "2026-05-20", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-1101", "predicate": "evacuation_lifted", "object": "true", "source_id": "src-002", "date": "2026-05-20", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-1101", "predicate": "cause_suspected", "object": "campfire", "source_id": "src-002", "date": "2026-05-20", "confidence": 0.75, "type": "explicit"},
+    {"subject": "ent-evt-202", "predicate": "ep48_forecast", "object": "2026-05-22/2026-05-26", "source_id": "src-003", "date": "2026-05-20", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-202", "predicate": "tilt_urad", "object": "9.5", "source_id": "src-003", "date": "2026-05-20", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-701", "predicate": "pumice_raft_km2", "object": "70", "source_id": "src-004", "date": "2026-05-20", "confidence": 0.88, "type": "explicit"},
+    {"subject": "ent-evt-701", "predicate": "eruption_phase", "object": "hydrothermal_pumice", "source_id": "src-004", "date": "2026-05-20", "confidence": 0.85, "type": "explicit"},
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-004", "date": "2026-05-20", "confidence": 0.85, "type": "explicit"}
+  ],
+  "updated_triples": [
+    {"subject": "ent-evt-1001", "predicate": "containment", "old_object": "62%", "new_object": "100%", "source_id": "src-001", "date": "2026-05-20"},
+    {"subject": "ent-evt-1001", "predicate": "area_ac", "old_object": "355", "new_object": "356", "source_id": "src-001", "date": "2026-05-20"},
+    {"subject": "ent-evt-202", "predicate": "ep48_forecast", "old_object": "2026-05-22/2026-05-25", "new_object": "2026-05-22/2026-05-26", "source_id": "src-003", "date": "2026-05-20"},
+    {"subject": "ent-evt-701", "predicate": "eruption_phase", "old_object": "ash_waning_FL120", "new_object": "hydrothermal_pumice", "source_id": "src-004", "date": "2026-05-20"}
+  ],
+  "inferred_triples": [
+    {"subject": "ent-evt-701", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "inputs": ["(ent-evt-701, observedBy, sat-himawari9)", "(ent-evt-701, observedBy, sat-viirs-jpss)", "(ent-evt-701, observedBy, sat-sentinel2a)"], "confidence": 0.90, "status": "confirmed"},
+    {"subject": "ent-evt-202", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "inputs": ["(ent-evt-202, observedBy, sat-sentinel2a)", "(ent-evt-202, observedBy, sat-landsat9)"], "confidence": 0.95, "status": "confirmed"},
+    {"subject": "ent-evt-202", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "inputs": ["(ent-evt-202, analyzedBy, org-usgs)"], "confidence": 0.99, "status": "confirmed"},
+    {"subject": "ent-evt-202", "predicate": "thermalBoost", "object": "+0.10", "rule": "sensor_capability_match_tirs", "inputs": ["(ent-evt-202, usesSensor, sensor-tirs)", "(ent-evt-202, manifests, phen-volcano)"], "confidence": 0.95, "status": "confirmed"},
+    {"subject": "ent-evt-1101", "predicate": "partOfSeries", "object": "ent-evt-1001", "rule": "temporal_progression", "inputs": ["(ent-evt-1001, locatedIn, Minnesota)", "(ent-evt-1101, locatedIn, Minnesota)", "(ent-evt-1001.phenomenon == wildfire)", "(ent-evt-1101.phenomenon == wildfire)"], "confidence": 0.80, "status": "confirmed"}
+  ],
+  "stats": {
+    "new_nodes": 0,
+    "new_edges": 9,
+    "inferred_edges": 5,
+    "updated_edges": 4
+  }
+}

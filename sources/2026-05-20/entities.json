@@ -1,0 +1,60 @@
+{
+  "date": "2026-05-20",
+  "entities": [
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-1001",
+      "type": "Event",
+      "name": "Stewart Trail Fire (Two Harbors, MN)",
+      "properties": {"phenomenon": "wildfire", "domain": "Disaster", "country": "US", "lat": 47.0, "lon": -91.67, "containment_pct": 100, "area_ac": 356, "cause": "power line"},
+      "source_ids": ["src-001"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-1101",
+      "type": "Event",
+      "name": "Flanders Fire (Crosslake, MN)",
+      "properties": {"phenomenon": "wildfire", "domain": "Disaster", "country": "US", "lat": 46.67, "lon": -94.10, "area_ac": 1700, "evacuation_lifted": true},
+      "source_ids": ["src-002"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-202",
+      "type": "Event",
+      "name": "Kilauea Ep47/48 (Hawaii)",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "US", "lat": 19.41, "lon": -155.28, "ep48_forecast": "2026-05-22 to 2026-05-26"},
+      "source_ids": ["src-003"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-701",
+      "type": "Event",
+      "name": "Bismarck Sea 해저화산 분출 (PNG)",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "PG", "lat": -3.03, "lon": 147.78, "pumice_raft_km2": 70},
+      "source_ids": ["src-004", "src-027"],
+      "mention_count": 2
+    }
+  ],
+  "relations": [
+    {"subject": "ent-evt-1001", "predicate": "observedBy", "object": "sat-goes18", "source_ids": ["src-001"], "confidence": 0.88},
+    {"subject": "ent-evt-1001", "predicate": "manifests", "object": "phen-wildfire", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "ent-evt-1101", "predicate": "observedBy", "object": "sat-goes18", "source_ids": ["src-002"], "confidence": 0.88},
+    {"subject": "ent-evt-1101", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-002"], "confidence": 0.88},
+    {"subject": "ent-evt-1101", "predicate": "partOfSeries", "object": "ent-evt-1001", "source_ids": ["src-002"], "confidence": 0.80},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "ent-evt-202", "predicate": "analyzedBy", "object": "org-usgs", "source_ids": ["src-003"], "confidence": 0.99},
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-004"], "confidence": 0.92},
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-004"], "confidence": 0.88},
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-004"], "confidence": 0.85}
+  ],
+  "stats": {
+    "total_entities": 4,
+    "new_entities": 0,
+    "matched_entities": 4,
+    "total_relations": 11
+  }
+}

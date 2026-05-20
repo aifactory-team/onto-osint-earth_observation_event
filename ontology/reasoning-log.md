@@ -1486,3 +1486,33 @@ config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5)
 - **Kilauea Ep48 D-3~6:** 5/22-25 분수분출 예보. 차주 초 위성 관측 집중 예상.
 - **Everglades 진압 완료:** Max Road Fire "contained and controlled". 추적 종료 가능.
 - 한반도 GeoFocus: 직접 이벤트 없음. KOMPSAT-7 커미셔닝 진행 중(7월 정식운용).
+
+## 2026-05-20 추론 결과
+
+### multi_satellite_confirmation (다중 위성 교차검증) — 1건 신규
+
+- **추론 #1:** ent-evt-701 (Bismarck Sea 해저화산) — observedBy Himawari-9 (JMA/JAXA) + VIIRS (NOAA/NASA) + Sentinel-2A (ESA) → multiSatBoost +0.20 [confidence 0.90, 확정]. 3개 독립 기관의 위성·센서로 부석 뗏목 + 열수분출 확인.
+
+### multi_satellite_confirmation (기존 유지) — 1건
+
+- **유지:** ent-evt-202 (Kilauea Ep48) — Sentinel-2A (ESA) + Landsat 9 (USGS/NASA) → multiSatBoost +0.20 [0.95, 확정]
+
+### official_source_trust — 1건
+
+- **추론 #2:** ent-evt-202 (Kilauea) — analyzedBy USGS HVO (space_agency) → officialBoost +0.15 [0.99, 확정]
+
+### sensor_capability_match_tirs — 1건
+
+- **추론 #3:** ent-evt-202 (Kilauea) — usesSensor TIRS (thermal_infrared) + manifests volcanic_eruption → thermalBoost +0.10 [0.95, 확정]
+
+### temporal_progression (시계열 시리즈) — 1건
+
+- **추론 #4:** ent-evt-1101 (Flanders Fire) partOfSeries ent-evt-1001 (Stewart Trail Fire) — 동일 Minnesota 지역, 동일 wildfire 현상, 동일 기상 패턴(고온·저습·강풍). 시간차 1일(5/15→5/16). [0.80, 확정]
+
+### 종합 노트
+
+- **Bismarck Sea 신국면:** 기존 화산재 하강 추세(FL280→FL120)에서 열수분출(hydrothermal) + 대규모 부석 뗏목(70km²)으로 전환. 부석이 해면 도달 → 분출구가 해수면 근접 수심으로 상승했음을 시사. "10년래 최대 심해 해저화산 분출" 평가. 항해 위험 지속.
+- **Stewart Trail 추적 종료:** 100% 진압 완료(5/19). 원인 전력선 확정. 34건물 파괴. Hwy 61 재개통.
+- **Flanders Fire 호전:** 대피 해제. 냉각·습도 상승으로 소방인력 철수 시작. 후속 모니터링 필요하나 위험도 감소.
+- **Kilauea Ep48:** 예보 창 1일 연장(5/22-26). 재팽창 9.5μrad 누적, 감속 중. D-2~6.
+- 한반도 GeoFocus: 직접 이벤트 없음. KOMPSAT-7 커미셔닝 진행 중(7월 정식운용).

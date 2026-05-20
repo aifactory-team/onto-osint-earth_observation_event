@@ -1,0 +1,24 @@
+{
+  "id": "src-002",
+  "title": "Flanders Fire 대피 해제 — ~1,700ac, 냉각·습도 상승, 소방인력 철수 시작",
+  "url": "https://www.mprnews.org/story/2026/05/19/flanders-fire-crow-wing-county-firefighters-aided-by-cooler-damper-weather",
+  "snippet": "Evacuation order lifted May 19 for Flanders Fire. Cooler, damper weather aiding containment. ~1,700ac, crews being demobilized. Possible cause: campfire. $1.4M damage estimate. 20 structures threatened, no homes lost.",
+  "source_name": "MPR News",
+  "language": "en",
+  "discovered_date": "2026-05-20",
+  "tag": "update",
+  "related_report": "2026-05-19/src-001",
+  "related_item": "ent-evt-1101",
+  "tag_reason": "Flanders Fire 대피 해제. 20% contained에서 진전 — 냉각/습도 상승으로 소방인력 철수 시작. 캠프파이어 원인 추정. 면적 1,700ac 유지. 주택 파괴 없음 확인.",
+  "entities": [
+    {"id": "ent-evt-1101", "type": "Event", "name": "Flanders Fire (Crosslake, MN)", "properties": {"phenomenon": "wildfire", "domain": "Disaster", "lat": 46.67, "lon": -94.10, "country": "US", "observation_date": "2026-05-19", "severity": "medium", "area_ac": 1700, "cause": "campfire (suspected)", "damage_usd": 1400000, "evacuation_lifted": true}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-1101", "predicate": "observedBy", "object": "sat-goes18"},
+    {"subject": "ent-evt-1101", "predicate": "observedBy", "object": "sat-viirs-jpss"},
+    {"subject": "ent-evt-1101", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "ent-evt-1101", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "ent-evt-1101", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "ent-evt-1101", "predicate": "partOfSeries", "object": "ent-evt-1001"}
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "date": "2026-05-20",
+  "collected_at": "2026-05-20T08:00:00+09:00",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 20,
+  "total_results": 68,
+  "expanded_keywords": [
+    "Kilauea episode 48", "Bismarck Sea volcano pumice", "Canada wildfire Manitoba",
+    "Flanders fire Minnesota", "Stewart Trail fire containment", "Kharg Island oil spill Sentinel",
+    "KOMPSAT-7 commissioning", "Antelope Reef South China Sea", "Sentinel-5P TROPOMI methane",
+    "GOES-18 wildfire", "VIIRS active fire", "NASA Earth Observatory May 2026"
+  ],
+  "searches": [
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery wildfire May 2026",
+      "language": "en",
+      "timestamp": "2026-05-20T08:01:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "NOAA Satellites Monitor Canadian Wildfires and Smoke", "url": "https://www.nesdis.noaa.gov/news/noaa-satellites-monitor-canadian-wildfires-and-smoke", "snippet": "NOAA satellites monitoring heat signatures and thick plumes of smoke from wildfires burning across Canada since mid-May", "source_name": "NOAA NESDIS"},
+        {"title": "Wildfire Near Lake Superior's North Shore — CIMSS Satellite Blog", "url": "https://cimss.ssec.wisc.edu/satellite-blog/archives/70446", "snippet": "Stewart Trail fire near Two Harbors, Minnesota, May 15-16, 375 acres", "source_name": "CIMSS"},
+        {"title": "Fast-Spreading Florida Wildfire Seen in Satellite Imagery", "url": "https://www.yahoo.com/news/videos/fast-spreading-florida-wildfire-seen-105914497.html", "snippet": "Florida wildfire 4,800 acres near Miami, satellite imagery from CIRA", "source_name": "Yahoo News"},
+        {"title": "Thousands of deaths per year caused by invisible wildfire pollutant, satellite data shows", "url": "https://www.space.com/science/climate-change/a-hidden-wildfire-pollutant-causes-thousands-of-excess-deaths-per-year-satellite-data-shows", "snippet": "Wildfire smoke health impacts tracked via satellite data", "source_name": "Space.com"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery flood typhoon May 2026",
+      "language": "en",
+      "timestamp": "2026-05-20T08:02:00+09:00",
+      "result_count": 9,
+      "results": [
+        {"title": "2026 Pacific typhoon season - Wikipedia", "url": "https://en.wikipedia.org/wiki/2026_Pacific_typhoon_season", "snippet": "TS Hagupit formed May 6, entered PAR as Caloy May 9", "source_name": "Wikipedia"},
+        {"title": "Typhoon Crising weather update satellite image", "url": "https://www.facebook.com/theboholmonitor/posts/typhoon-crising-weather-update-based-sa-satellite-image-of-the-storm/1305139090974986/", "snippet": "Typhoon Crising satellite imagery updates", "source_name": "Facebook/Bohol Monitor"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery volcano eruption May 2026",
+      "language": "en",
+      "timestamp": "2026-05-20T08:03:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "Kilauea Volcano Updates", "url": "https://www.usgs.gov/volcanoes/kilauea/volcano-updates", "snippet": "ADVISORY/YELLOW, Ep48 forecast May 22-26", "source_name": "USGS HVO"},
+        {"title": "Great Sitkin continuing eruption", "url": "https://www.volcanodiscovery.com/great-sitkin/news/302242/Great-Sitkin-United-States-Volcano-United-States-activity-update-May-12-2026-Continuing-eruptionCite.html", "snippet": "SAR imagery confirms lava dome advance east", "source_name": "VolcanoDiscovery"},
+        {"title": "Satellite Photos Capture Volcanic Eruption From Space", "url": "https://www.newsweek.com/satellite-photos-capture-volcanic-eruption-11097930", "snippet": "Bezymianny explosive activity 30,000ft plume", "source_name": "Newsweek"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Kilauea volcano update May 2026 episode 48",
+      "language": "en",
+      "timestamp": "2026-05-20T08:04:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "USGS HVO Notice 2026-05-19", "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-HVO-2026-05-19T18:26:29+00:00", "snippet": "ADVISORY/YELLOW, Ep48 May 22-26, 9.5 microradians reinflation, slowing slightly", "source_name": "USGS HVO"},
+        {"title": "Exciting Kilauea Lava Update: Ep. 48 expected by end of May", "url": "https://hawaiivolcanoexpeditions.com/blog/lava-update-the-latest-eruptions-on-the-big-island/", "snippet": "Episode 48 anticipated May 22-26", "source_name": "Hawaii Volcano Expeditions"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Canada wildfire satellite Manitoba Ontario May 19 20 2026",
+      "language": "en",
+      "timestamp": "2026-05-20T08:05:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "NOAA Satellites Monitor Canadian Wildfires and Smoke", "url": "https://www.nesdis.noaa.gov/news/noaa-satellites-monitor-canadian-wildfires-and-smoke", "snippet": "160+ fires Manitoba/Ontario/Saskatchewan, GOES/VIIRS/TROPOMI monitoring", "source_name": "NOAA NESDIS"},
+        {"title": "Fires Erupt in North American Forests - NASA EO", "url": "https://science.nasa.gov/earth/earth-observatory/fires-erupt-in-north-american-forests-154296", "snippet": "MODIS/Aqua Manitoba/Ontario/Minnesota 107,600 hectares pyrocumulonimbus", "source_name": "NASA Earth Observatory"},
+        {"title": "Satellites detected early hints of wildfire season in Manitoba", "url": "https://www.cbc.ca/news/canada/manitoba/manitoba-wildfire-season-satellite-artificial-intelligence-1.7605986", "snippet": "Satellite AI early detection of Manitoba wildfire season", "source_name": "CBC News"},
+        {"title": "Canada Wildfire - ReliefWeb", "url": "https://reliefweb.int/report/canada/canada-wildfire-alberta-gov-alberta-wildfire-local-gov-media-jrc-gwis-echo-daily-flash-15-may-2026", "snippet": "Alberta wildfire Clearwater County 1,043ha evacuation alert", "source_name": "ReliefWeb/ECHO"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Flanders fire Minnesota wildfire May 2026 update",
+      "language": "en",
+      "timestamp": "2026-05-20T08:06:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "Evacuation order lifted as cool, damp weather aids efforts to contain Flanders Fire", "url": "https://www.mprnews.org/story/2026/05/19/flanders-fire-crow-wing-county-firefighters-aided-by-cooler-damper-weather", "snippet": "Evacuation order lifted May 19, cooler weather aiding containment, crews demobilizing", "source_name": "MPR News"},
+        {"title": "Evacuation orders lifted for wildfires in northern Minnesota", "url": "https://www.startribune.com/mn-wildfires-flanders-fire/601844956", "snippet": "Evacuation orders lifted, campfire possible cause, ~1,700ac", "source_name": "Star Tribune"},
+        {"title": "Crow Wing County Declares Local Emergency Due to Flanders Wildfire", "url": "https://lptv.org/crow-wing-county-declares-local-emergency-due-to-flanders-wildfire/", "snippet": "Local emergency declared, $1.4M damage, 20 structures threatened", "source_name": "LPTV"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Stewart Trail fire Minnesota update May 19 20 2026 containment",
+      "language": "en",
+      "timestamp": "2026-05-20T08:07:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "Authorities say Stewart Trail Fire near Two Harbors is fully contained; Highway 61 reopens", "url": "https://www.mprnews.org/story/2026/05/19/stewart-trail-fire-two-harbors-minnesota-north-shore", "snippet": "100% contained May 19, 356 acres, 34 structures destroyed, cause: power line, Hwy 61 reopened", "source_name": "MPR News"},
+        {"title": "Stewart Trail Fire Evacuation Zone lifted; US 61 re-opens", "url": "https://www.fox21online.com/news/local/stewart-trail-fire-evacuation-zone-lifted-us-61-re-opens/article_3c592479-c44e-4954-8da9-ecc96b6a5a22.html", "snippet": "Evacuation zone lifted, Highway 61 reopened", "source_name": "FOX 21"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Bismarck Sea submarine volcano eruption May 2026",
+      "language": "en",
+      "timestamp": "2026-05-20T08:08:00+09:00",
+      "result_count": 9,
+      "results": [
+        {"title": "Central Bismarck Sea volcano: new hydrothermal eruption, steam-laden plumes and large amount of floating pumice", "url": "https://www.volcanodiscovery.com/centralbismarcksea/news/302838/Central-Bismarck-Sea-volcano-Admiralty-Islands-Papua-New-Guinea-new-hydrothermal-eruption-steam-lade.html", "snippet": "New hydrothermal eruption phase, pumice raft 70km² by May 15, largest deep submarine eruption in decade", "source_name": "VolcanoDiscovery"},
+        {"title": "Rare volcanic ash emission detected from submarine volcano - The Watchers", "url": "https://watchers.news/2026/05/13/rare-volcanic-ash-emission-detected-submarine-volcano-central-bismarck-sea-papua-new-guinea-may-2026/", "snippet": "Darwin VAAC ash advisory, 4km altitude, water discoloration", "source_name": "The Watchers"},
+        {"title": "Undersea volcano erupts in Papua New Guinea's Bismarck Sea prompting tsunami concerns", "url": "https://www.rnz.co.nz/news/world/595694/undersea-volcano-erupts-in-papua-new-guinea-s-bismarck-sea-prompting-tsunami-concerns", "snippet": "Tsunami concerns, pumice reaching surface", "source_name": "RNZ"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Sentinel-1 SAR oil spill Kharg Island Iran 2026",
+      "language": "en",
+      "timestamp": "2026-05-20T08:09:00+09:00",
+      "result_count": 4,
+      "results": [
+        {"title": "Oil slick near Iran's Kharg Island sparks concerns", "url": "https://www.thenationalnews.com/business/energy/2026/05/13/oil-spill-near-irans-kharg-island-raises-questions-over-its-source/", "snippet": "Copernicus Sentinel-1/2/3 detected ~45,000km² slick May 6-8", "source_name": "The National"},
+        {"title": "Suspected oil spill seen on satellite images near Iran's Kharg Island", "url": "https://www.jpost.com/middle-east/iran-news/article-895580", "snippet": "Satellite imagery shows oil slick west of Kharg Island", "source_name": "Jerusalem Post"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery military buildup naval activity May 2026",
+      "language": "en",
+      "timestamp": "2026-05-20T08:10:00+09:00",
+      "result_count": 9,
+      "results": [
+        {"title": "MizarVision publishes satellite imagery of U.S. military assets", "url": "https://defence-industry.eu/mizarvision-publishes-ai-processed-satellite-imagery-of-u-s-military-assets-raising-intelligence-and-security-concerns/", "snippet": "Chinese firm AI-processed satellite imagery of US military assets", "source_name": "Defence Industry EU"},
+        {"title": "Satellite Photos Show China Turning Artificial Island Into Military Base", "url": "https://www.newsweek.com/satellite-photos-artificial-island-mischief-reef-south-china-sea-2120562", "snippet": "Mischief Reef military infrastructure expansion", "source_name": "Newsweek"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery glacier methane plume climate 2026",
+      "language": "en",
+      "timestamp": "2026-05-20T08:11:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "Carbon Mapper - Methane, CO2 Detection Satellite", "url": "https://carbonmapper.org/", "snippet": "Tanager-1 satellite methane/CO2 detection", "source_name": "Carbon Mapper"},
+        {"title": "ESA - Mapping methane emissions on a global scale", "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P/Mapping_methane_emissions_on_a_global_scale", "snippet": "Sentinel-5P TROPOMI methane mapping", "source_name": "ESA"},
+        {"title": "Global satellite survey reveals uncertainty in landfill methane emissions", "url": "https://www.nature.com/articles/s41586-025-09683-8", "snippet": "Nature paper on landfill methane satellite survey", "source_name": "Nature"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "South China Sea satellite imagery military island building 2026",
+      "language": "en",
+      "timestamp": "2026-05-20T08:12:00+09:00",
+      "result_count": 9,
+      "results": [
+        {"title": "Satellite Photos Show China's Massive Manmade Island — Antelope Reef", "url": "https://www.newsweek.com/satellite-photos-china-manmade-island-disputed-waters-antelope-reef-11733191", "snippet": "Antelope Reef 1,490 acres, close to Mischief Reef size", "source_name": "Newsweek"},
+        {"title": "Satellite imagery shows Philippine construction on two islands in disputed Spratlys", "url": "https://www.rfa.org/english/southchinasea/2026/05/08/philippines-satellite-spratlys-infrastructure-upgrade/", "snippet": "Philippine Thitu/Nanshan island construction", "source_name": "RFA"},
+        {"title": "Antelope Reef Could Now Be the Largest Island in the South China Sea", "url": "https://amti.csis.org/antelope-reef-could-now-be-the-largest-island-in-the-south-china-sea/", "snippet": "CSIS AMTI analysis Antelope Reef 1,490ac", "source_name": "CSIS AMTI"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "위성영상 산불 홍수 2026년 5월",
+      "language": "ko",
+      "timestamp": "2026-05-20T08:13:00+09:00",
+      "result_count": 9,
+      "results": [
+        {"title": "기상청 위성영상", "url": "https://www.weather.go.kr/w/hazard/dust/image/sat.do", "snippet": "기상청 위성영상 서비스", "source_name": "기상청"},
+        {"title": "국가산불위험예보시스템", "url": "https://forestfire.nifos.go.kr/", "snippet": "산불 위험 예보 정보", "source_name": "산림청"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "KOMPSAT 위성 한국 2026 관측",
+      "language": "ko",
+      "timestamp": "2026-05-20T08:14:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "KOMPSAT-7 지구관측 위성", "url": "https://www.youtube.com/watch?v=u1fGD0eh1do", "snippet": "KOMPSAT-7 0.3m resolution", "source_name": "YouTube"},
+        {"title": "아리랑 위성 - 나무위키", "url": "https://namu.wiki/w/%EC%95%84%EB%A6%AC%EB%9E%91%20%EC%9C%84%EC%84%B1", "snippet": "아리랑 5A호 2026년 11월 발사예정, 아리랑 6호 2026년 Vega-C 발사", "source_name": "나무위키"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Copernicus EMS activation May 2026",
+      "language": "en",
+      "timestamp": "2026-05-20T08:15:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "Copernicus EMS On Demand Mapping - Activations", "url": "https://mapping.emergency.copernicus.eu/activations/", "snippet": "Copernicus EMS activation portal", "source_name": "Copernicus EMS"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Sentinel-2 Landsat earth observation event May 2026",
+      "language": "en",
+      "timestamp": "2026-05-20T08:16:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "Harmonized Landsat and Sentinel-2 2026 Workshop", "url": "https://www.earthdata.nasa.gov/events/harmonized-landsat-sentinel-2-2026-workshop", "snippet": "HLS workshop May 12-13, 2026", "source_name": "NASA Earthdata"},
+        {"title": "Sentinel-2A EOL scheduled May 2026", "url": "https://en.wikipedia.org/wiki/Sentinel-2", "snippet": "Sentinel-2A end of life scheduled for May 2026", "source_name": "Wikipedia"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery deforestation mining oil spill May 2026",
+      "language": "en",
+      "timestamp": "2026-05-20T08:17:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "Faster Detection of Forest Loss - NASA", "url": "https://science.nasa.gov/earth/earth-observatory/faster-detection-of-forest-loss/", "snippet": "NISAR+Landsat deforestation detection 100 days earlier", "source_name": "NASA EO"},
+        {"title": "Venezuela: Oil, mining and the risks of foreign investment", "url": "https://globalwitness.org/en/campaigns/fossil-fuels/ecocide-in-venezuela-oil-mining-and-the-risks-of-foreign-investment/", "snippet": "504 oil slick detections Lake Maracaibo since Jan 2025", "source_name": "Global Witness"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "humanitarian crisis satellite imagery refugee 2026",
+      "language": "en",
+      "timestamp": "2026-05-20T08:18:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "Satellite imagery guides faster recovery in crisis zones", "url": "https://www.undp.org/news/satellite-imagery-guides-faster-recovery-crisis-zones", "snippet": "UNDP-UNITAR satellite framework, 30% faster damage reports", "source_name": "UNDP"},
+        {"title": "Humanitarian efficiency revolution", "url": "https://www.weforum.org/stories/2026/01/humanitarian-efficiency-revolution-irc/", "snippet": "IRC satellite imagery climate models AI risk mapping Somalia Nigeria", "source_name": "WEF"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Canada wildfire evacuation smoke May 20 2026",
+      "language": "en",
+      "timestamp": "2026-05-20T08:19:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "Alberta wildfire 1,043ha Clearwater County evacuation alert", "url": "https://reliefweb.int/report/canada/canada-wildfire-alberta-gov-alberta-wildfire-local-gov-media-jrc-gwis-echo-daily-flash-15-may-2026", "snippet": "Clearwater County Alberta 1,043ha wildfire out of control, 5km NE James-Wilson PRA", "source_name": "ReliefWeb/ECHO"},
+        {"title": "Alberta wildfires of note", "url": "https://www.alberta.ca/wildfires-of-note", "snippet": "Alberta wildfire status updates", "source_name": "Alberta.ca"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "NASA Earth Observatory image of the day May 2026",
+      "language": "en",
+      "timestamp": "2026-05-20T08:20:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "NASA EO Image of the Day", "url": "https://science.nasa.gov/earth/earth-observatory/image-of-the-day/", "snippet": "May 19: Farming in Ancient Lake Agassiz, May 18: Great Balls of Fire", "source_name": "NASA Earth Observatory"},
+        {"title": "May 2026 Satellite Puzzler", "url": "https://science.nasa.gov/earth/earth-observatory/may-2026-satellite-puzzler/", "snippet": "Monthly satellite puzzler", "source_name": "NASA Earth Observatory"}
+      ]
+    }
+  ]
+}

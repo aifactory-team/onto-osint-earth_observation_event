@@ -1,0 +1,23 @@
+{
+  "id": "src-001",
+  "title": "Stewart Trail Fire 100% contained — 356ac, Hwy 61 재개통, 34건물 파괴 확정",
+  "url": "https://www.mprnews.org/story/2026/05/19/stewart-trail-fire-two-harbors-minnesota-north-shore",
+  "snippet": "The Stewart Trail Fire near Two Harbors was brought to 100% containment on May 19. 356 acres burned, 34 structures destroyed (8 homes, 26 outbuildings). Cause: power line. Highway 61 reopened, evacuation zone lifted.",
+  "source_name": "MPR News",
+  "language": "en",
+  "discovered_date": "2026-05-20",
+  "tag": "update",
+  "related_report": "2026-05-19/src-004",
+  "related_item": "ent-evt-1001",
+  "tag_reason": "Stewart Trail Fire 62%→100% contained. 최종 소멸/진압 단계. 면적 355ac→356ac 확정, 건물 피해 34동(주택 8, 부속건물 26) 확정. 원인 전력선(power line) 확인 유지. Hwy 61 재개통.",
+  "entities": [
+    {"id": "ent-evt-1001", "type": "Event", "name": "Stewart Trail Fire (Two Harbors, MN)", "properties": {"phenomenon": "wildfire", "domain": "Disaster", "lat": 47.0, "lon": -91.67, "country": "US", "observation_date": "2026-05-19", "severity": "medium", "containment_pct": 100, "area_ac": 356, "structures_destroyed": 34, "cause": "power line"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-1001", "predicate": "observedBy", "object": "sat-goes18"},
+    {"subject": "ent-evt-1001", "predicate": "locatedIn", "object": "ent-loc-068"},
+    {"subject": "ent-evt-1001", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "ent-evt-1001", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "ent-evt-1001", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

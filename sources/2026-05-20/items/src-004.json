@@ -1,0 +1,25 @@
+{
+  "id": "src-004",
+  "title": "Bismarck Sea 해저화산 — 부석 뗏목 70km²+ 표면 도달, 신규 열수분출 단계",
+  "url": "https://www.volcanodiscovery.com/centralbismarcksea/news/302838/Central-Bismarck-Sea-volcano-Admiralty-Islands-Papua-New-Guinea-new-hydrothermal-eruption-steam-lade.html",
+  "snippet": "Central Bismarck Sea volcano: new hydrothermal eruption phase. Floating pumice raft covering 70km² by May 15, pumice reaching surface indicating vent at or very near surface. Largest deep submarine eruption in decade+. Steam-laden plumes. Water discoloration 9×11km. 1972 이후 54년 만의 분출 지속.",
+  "source_name": "VolcanoDiscovery",
+  "language": "en",
+  "discovered_date": "2026-05-20",
+  "tag": "update",
+  "related_report": "2026-05-19/src-006",
+  "related_item": "ent-evt-701",
+  "tag_reason": "주요 업데이트: (1) 부석 뗏목(pumice raft) 70km² 이상으로 확장 — 항해 위험 수준, (2) 열수분출(hydrothermal) 신규 단계 진입, (3) 부석이 해면에 도달 = 분출구가 해면 근접 수심으로 상승, (4) '10년래 최대 심해 해저화산 분출' 평가. 기존 FL120 화산재 하강 추세에서 새로운 국면.",
+  "entities": [
+    {"id": "ent-evt-701", "type": "Event", "name": "Bismarck Sea 해저화산 분출 (PNG)", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "lat": -3.03, "lon": 147.78, "country": "PG", "observation_date": "2026-05-19", "severity": "high", "pumice_raft_km2": 70, "eruption_phase": "hydrothermal + pumice", "largest_in_decade": true}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-viirs-jpss"},
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-701", "predicate": "locatedIn", "object": "ent-loc-065"},
+    {"subject": "ent-evt-701", "predicate": "inCountry", "object": "co-pg"},
+    {"subject": "ent-evt-701", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-701", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

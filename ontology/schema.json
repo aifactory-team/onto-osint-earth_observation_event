@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "description": "OSINT 온톨로지 스키마 — config/osint-config.json의 seed로부터 초기화되고, 매일 파이프라인 실행 시 자동 확장된다. 도메인: 위성영상으로 관측 가능한 지구상 이벤트 (Earth Observation Events).",
-  "last_updated": "2026-05-15",
+  "last_updated": "2026-05-20",
   "classes": [
     {
       "id": "Entity",
@@ -491,6 +491,20 @@
       "action": "add_event_batch",
       "target": "ent-evt-1001 + updates to evt-202, evt-701, evt-501",
       "reason": "신규 1건: Stewart Trail Fire MN 375ac GOES-19(1001). 업데이트 3건: Kilauea Ep47 종료 + Ep48 예보 5/22-25(202), Bismarck Sea VAAC#23 FL120 하강(701), Everglades 80% contained(501).",
+      "source_ids": ["src-001~src-004"]
+    },
+    {
+      "date": "2026-05-19",
+      "action": "add_event_batch",
+      "target": "ent-evt-1101 + updates to evt-1001, evt-202, evt-701, evt-501",
+      "reason": "신규 3건: Canada MB/ON 산불 160+건(GOES/VIIRS/TROPOMI), Flanders Fire MN 1700ac(1101), Kharg Island 유출 45000km²(Sentinel-1/2/3). 업데이트 5건: Stewart 62%, Kilauea reinflating, Bismarck waning, Everglades contained, 172nd Ave 80%. multiSatBoost 2건.",
+      "source_ids": ["src-001~src-008"]
+    },
+    {
+      "date": "2026-05-20",
+      "action": "update_event_batch",
+      "target": "evt-1001, evt-1101, evt-202, evt-701",
+      "reason": "업데이트 4건: Stewart Trail 100% 진압 완료(추적 종료), Flanders 대피 해제+소방 철수, Kilauea Ep48 예보 5/22-26 확대(재팽창 감속 9.5μrad), Bismarck Sea 부석 뗏목 70km²+ 열수분출 신국면(10년래 최대 심해 해저분출). 스키마 변경 없음.",
       "source_ids": ["src-001~src-004"]
     }
   ]
