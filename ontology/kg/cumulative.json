@@ -1,15 +1,15 @@
 {
   "version": "1.8.0",
   "description": "위성영상 관측 이벤트 누적 지식그래프 — 첫 실행(2026-04-30) 이후 매일 신규/추론 트리플 병합",
-  "last_updated": "2026-05-20",
-  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-19", "2026-05-20"],
-  "triples": "ontology/kg/2026-04-30.json ~ ontology/kg/2026-05-19.json (new_triples + updated_triples + inferred_triples)",
+  "last_updated": "2026-05-21",
+  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-19", "2026-05-20", "2026-05-21"],
+  "triples": "ontology/kg/2026-04-30.json ~ ontology/kg/2026-05-21.json (new_triples + updated_triples + inferred_triples)",
   "stats": {
-    "total_explicit_triples": 906,
-    "total_inferred_triples": 357,
-    "total_unique_subjects": 205,
-    "total_unique_predicates": 18,
-    "total_unique_objects": 248
+    "total_explicit_triples": 920,
+    "total_inferred_triples": 364,
+    "total_unique_subjects": 207,
+    "total_unique_predicates": 19,
+    "total_unique_objects": 252
   },
-  "note": "2026-05-20 병합 완료 — 업데이트 중심. 신규 0건. 업데이트 4건: Stewart Trail 100% 진압 완료(추적 종료), Flanders 대피 해제·소방 철수, Kilauea Ep48 예보 5/22-26 확대(재팽창 감속 9.5μrad), Bismarck Sea 부석 뗏목 70km²+ 열수분출 신국면(10년래 최대 심해 해저분출). multiSatBoost 1건(Bismarck Sea 3위성). officialBoost 1건(Kilauea USGS). thermalBoost 1건(Kilauea TIRS). partOfSeries 1건(MN fire cluster). 한반도 GeoFocus 0건(direct). 누적 KG 1263 트리플."
+  "note": "2026-05-21 병합 완료 — 신규 1건(ent-evt-1201 Santa Rosa Island Fire, Landsat 9 OLI), 업데이트 2건(evt-1101-series 캐나다 연기 대서양 횡단 TROPOMI+OMPS+EarthCare 다중위성 확인, evt-202 Kilauea 유지). 신규 위치 1건(ent-loc-070 Santa Rosa Island). multiSatBoost 1건(evt-1101-series 3위성 교차검증). officialBoost 2건(evt-1201 NASA EO, evt-1101-series CAMS). tracegasBoost 1건(evt-1101-series TROPOMI). baCredibilityBoost 1건(evt-1201 before/after). crossDomainLink 1건(evt-1101-series Disaster→Climate). 한반도 GeoFocus 0건(direct). 누적 KG 1284 트리플."
 }

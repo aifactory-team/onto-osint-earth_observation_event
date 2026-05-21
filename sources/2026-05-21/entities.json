@@ -1,0 +1,140 @@
+{
+  "date": "2026-05-21",
+  "entities": [
+    {
+      "temp_id": "temp-evt-1201",
+      "matched_id": null,
+      "type": "Event",
+      "name": "Santa Rosa Island Fire (Channel Islands, CA)",
+      "properties": {
+        "phenomenon": "wildfire",
+        "domain": "Disaster",
+        "country": "US",
+        "lat": 33.95,
+        "lon": -120.10,
+        "admin": "Santa Rosa Island, Channel Islands National Park, Ventura County, California",
+        "start_date": "2026-05-15",
+        "observation_date": "2026-05-16",
+        "area_ac": 16942,
+        "area_ha": 6857,
+        "containment_pct": 26,
+        "cause": "SOS flare (shipwrecked mariner)",
+        "structures_destroyed": 2,
+        "structures_destroyed_note": "uninhabited historic structures",
+        "before_after_available": true,
+        "satellites_used": ["Landsat 9"],
+        "sensors_used": ["OLI"],
+        "false_color_bands": "7-5-3 (SWIR-NIR-Green)"
+      },
+      "source_ids": ["src-001"],
+      "mention_count": 1,
+      "is_new": true
+    },
+    {
+      "temp_id": "temp-loc-070",
+      "matched_id": null,
+      "type": "Location",
+      "name": "Santa Rosa Island, Channel Islands National Park",
+      "properties": {
+        "country": "US",
+        "region": "California",
+        "admin_level": "island",
+        "lat": 33.95,
+        "lon": -120.10,
+        "notes": "Second largest Channel Island (84 sq mi). Uninhabited — managed by NPS."
+      },
+      "source_ids": ["src-001"],
+      "mention_count": 1,
+      "is_new": true
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-canada-wildfire-2026",
+      "type": "Event",
+      "name": "캐나다 MB/ON 산불 + 대서양 횡단 연기 (2026-05)",
+      "properties": {
+        "phenomenon": "wildfire",
+        "domain": "Disaster",
+        "cross_domain": "ClimateEnvironment/air_pollution",
+        "country": "CA",
+        "lat": 52.0,
+        "lon": -97.0,
+        "observation_date": "2026-05-19",
+        "total_fires": 160,
+        "emissions_mt_carbon": 56,
+        "smoke_transport": "transatlantic — reached Mediterranean/Greece May 18-19 at ~9,000m",
+        "pyrocumulonimbus": true
+      },
+      "source_ids": ["src-002"],
+      "mention_count": 1,
+      "is_new": false,
+      "update_type": "significant — transatlantic smoke transport confirmed by CAMS"
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-202",
+      "type": "Event",
+      "name": "Kilauea Ep47/48 (Hawaii)",
+      "properties": {
+        "phenomenon": "volcanic_eruption",
+        "domain": "Disaster",
+        "country": "US",
+        "lat": 19.41,
+        "lon": -155.28,
+        "ep48_forecast": "2026-05-22 to 2026-05-26",
+        "tilt_urad": 9.5,
+        "so2_tpd_range": "1000-5000"
+      },
+      "source_ids": ["src-003"],
+      "mention_count": 1,
+      "is_new": false,
+      "update_type": "no change — reported"
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-701",
+      "type": "Event",
+      "name": "Bismarck Sea 해저화산 분출 (PNG)",
+      "properties": {
+        "phenomenon": "volcanic_eruption",
+        "domain": "Disaster",
+        "country": "PG",
+        "lat": -3.03,
+        "lon": 147.78,
+        "pumice_raft_km2": 70,
+        "discolored_water_km2": 2700
+      },
+      "source_ids": ["src-004"],
+      "mention_count": 1,
+      "is_new": false,
+      "update_type": "no change — reported"
+    }
+  ],
+  "relations": [
+    {"subject": "temp-evt-1201", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "temp-evt-1201", "predicate": "analyzedBy", "object": "org-nasa", "source_ids": ["src-001"], "confidence": 0.99},
+    {"subject": "temp-evt-1201", "predicate": "locatedIn", "object": "ent-loc-070", "source_ids": ["src-001"], "confidence": 0.99},
+    {"subject": "temp-evt-1201", "predicate": "manifests", "object": "phen-wildfire", "source_ids": ["src-001"], "confidence": 0.99},
+    {"subject": "temp-evt-1201", "predicate": "inDomain", "object": "dom-disaster", "source_ids": ["src-001"], "confidence": 0.99},
+    {"subject": "temp-evt-1201", "predicate": "inCountry", "object": "co-us", "source_ids": ["src-001"], "confidence": 0.99},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "observedBy", "object": "sat-sentinel5p", "source_ids": ["src-002"], "confidence": 0.92},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-002"], "confidence": 0.90},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "analyzedBy", "object": "org-cams", "source_ids": ["src-002"], "confidence": 0.95},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "manifests", "object": "phen-wildfire", "source_ids": ["src-002"], "confidence": 0.95},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "manifests", "object": "phen-air-pol", "source_ids": ["src-002"], "confidence": 0.90},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "inDomain", "object": "dom-disaster", "source_ids": ["src-002"], "confidence": 0.95},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "inDomain", "object": "dom-climate", "source_ids": ["src-002"], "confidence": 0.88},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "ent-evt-202", "predicate": "analyzedBy", "object": "org-usgs", "source_ids": ["src-003"], "confidence": 0.99},
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-004"], "confidence": 0.92},
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-004"], "confidence": 0.88},
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-004"], "confidence": 0.85}
+  ],
+  "stats": {
+    "total_entities": 5,
+    "new_entities": 2,
+    "matched_entities": 3,
+    "total_relations": 19
+  }
+}

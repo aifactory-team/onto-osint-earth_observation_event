@@ -1,0 +1,78 @@
+{
+  "id": "src-001",
+  "title": "Santa Rosa Island Fire — Landsat 9 false-color 화상 관측, 16,942ac 26% 진압",
+  "url": "https://science.nasa.gov/earth/earth-observatory/fire-chars-santa-rosa-island/",
+  "additional_urls": [
+    "https://www.fire.ca.gov/incidents/2026/5/15/santa-rosa-island-fire"
+  ],
+  "snippet": "NASA Earth Observatory Image of the Day (May 20, 2026). Landsat 9 OLI captured false-color (bands 7-5-3) and natural-color images on May 16, 2026, when burned area was 5,690 acres on Santa Rosa Island, Channel Islands National Park. False-color view shows burn scar in bright red/orange (SWIR reflectance) with active fire front visible in near-IR. By May 19 fire had grown to 16,600 acres (6,700 ha); current extent 16,942 acres, 26% contained. Fire caused by shipwrecked mariner's SOS flare on May 15. Two uninhabited historic structures destroyed. Smoke plume visible over Pacific Ocean. No inhabited structures on island.",
+  "source_name": "NASA Earth Observatory / CAL FIRE",
+  "language": "en",
+  "discovered_date": "2026-05-21",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규 이벤트. NASA EO Image of the Day(May 20)로 발견. Landsat 9 OLI false-color + natural-color 전후비교 영상 확보. CAL FIRE 공식 사건 기록 확인. 위성 출처 검증 완료(Landsat 9). 채널 제도 국립공원 내 무인도 산불 — 독특한 발화 원인(난파 선원 구조 신호탄).",
+  "before_after": {
+    "available": true,
+    "description": "Landsat 9 OLI false-color (bands 7-5-3) on May 16: burn scar in bright red/orange, active fire front in near-IR. Natural-color view shows smoke plume over Pacific. Before image baseline available from Landsat archive.",
+    "satellite": "Landsat 9",
+    "sensor": "OLI",
+    "date": "2026-05-16"
+  },
+  "confidence_factors": {
+    "base": 0.80,
+    "officialBoost": 0.15,
+    "final": 0.95,
+    "notes": "NASA EO official + CAL FIRE official data = officialBoost. Landsat 9 multispectral confirmed. Single satellite source (no multiSatBoost)."
+  },
+  "entities": [
+    {
+      "id": "temp-evt-1201",
+      "type": "Event",
+      "name": "Santa Rosa Island Fire (Channel Islands, CA)",
+      "properties": {
+        "phenomenon": "wildfire",
+        "domain": "Disaster",
+        "lat": 33.95,
+        "lon": -120.10,
+        "country": "US",
+        "admin": "Santa Rosa Island, Channel Islands National Park, Ventura County, California",
+        "observation_date": "2026-05-16",
+        "start_date": "2026-05-15",
+        "severity": "high",
+        "area_ac": 16942,
+        "area_ha": 6857,
+        "containment_pct": 26,
+        "cause": "SOS flare (shipwrecked mariner)",
+        "structures_destroyed": 2,
+        "structures_destroyed_note": "uninhabited historic structures",
+        "before_after_available": true,
+        "satellites_used": ["Landsat 9"],
+        "sensors_used": ["OLI"],
+        "false_color_bands": "7-5-3 (SWIR-NIR-Green)"
+      }
+    },
+    {
+      "id": "ent-loc-070",
+      "type": "Location",
+      "name": "Santa Rosa Island, Channel Islands National Park",
+      "properties": {
+        "country": "US",
+        "region": "California",
+        "admin_level": "island",
+        "lat": 33.95,
+        "lon": -120.10,
+        "notes": "Second largest Channel Island (84 sq mi). Uninhabited — managed by NPS."
+      }
+    }
+  ],
+  "relations": [
+    {"subject": "temp-evt-1201", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "temp-evt-1201", "predicate": "locatedIn", "object": "ent-loc-070"},
+    {"subject": "temp-evt-1201", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "temp-evt-1201", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "temp-evt-1201", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "temp-evt-1201", "predicate": "analyzedBy", "object": "org-nasa"}
+  ]
+}

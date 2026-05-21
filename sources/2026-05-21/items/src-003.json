@@ -1,0 +1,43 @@
+{
+  "id": "src-003",
+  "title": "Kilauea ADVISORY/YELLOW — 9.5μrad 재팽창, Ep48 예보 5/22-26 유지",
+  "url": "https://www.usgs.gov/volcanoes/kilauea/volcano-updates",
+  "snippet": "Kilauea ADVISORY/YELLOW. Episode 47 ended May 15. Summit reinflation at 9.5 microradians since Ep47 end, rate slowing slightly. Episode 48 forecast window remains May 22-26. SO2 emissions 1,000-5,000 t/day. Both summit vents still glowing. Some monitoring instruments offline due to intermittent power outages. No significant change from May 20 update.",
+  "source_name": "USGS HVO",
+  "language": "en",
+  "discovered_date": "2026-05-21",
+  "tag": "reported",
+  "related_report": "2026-05-20/src-003",
+  "related_item": "ent-evt-202",
+  "tag_reason": "Kilauea Ep48 예보 5/22-26 유지. 9.5μrad 재팽창 — 변동 없음. SO2 범위 유지. 5/20 대비 새로운 정량적 변화 없음. reported 태그 유지.",
+  "entities": [
+    {
+      "id": "ent-evt-202",
+      "type": "Event",
+      "name": "Kilauea Ep47/48 (Hawaii)",
+      "properties": {
+        "phenomenon": "volcanic_eruption",
+        "domain": "Disaster",
+        "lat": 19.41,
+        "lon": -155.28,
+        "country": "US",
+        "observation_date": "2026-05-21",
+        "severity": "high",
+        "ep48_forecast": "2026-05-22 to 2026-05-26",
+        "tilt_urad": 9.5,
+        "so2_tpd_range": "1000-5000",
+        "alert_level": "ADVISORY",
+        "color_code": "YELLOW"
+      }
+    }
+  ],
+  "relations": [
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "ent-evt-202", "predicate": "analyzedBy", "object": "org-usgs"},
+    {"subject": "ent-evt-202", "predicate": "locatedIn", "object": "ent-loc-004"},
+    {"subject": "ent-evt-202", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "ent-evt-202", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-202", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

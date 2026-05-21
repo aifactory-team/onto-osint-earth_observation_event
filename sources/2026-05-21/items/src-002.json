@@ -1,0 +1,62 @@
+{
+  "id": "src-002",
+  "title": "캐나다 MB 산불 연기 대서양 횡단 유럽 도달 — CAMS/TROPOMI/OMPS/EarthCare 확인",
+  "url": "https://atmosphere.copernicus.eu/cams-tracks-smoke-intense-canadian-wildfires-reaching-europe",
+  "additional_urls": [
+    "https://www.nesdis.noaa.gov/news/noaa-satellites-monitor-canadian-wildfires-and-smoke",
+    "https://science.nasa.gov/earth/earth-observatory/fires-erupt-in-north-american-forests-154296"
+  ],
+  "snippet": "CAMS (Copernicus Atmosphere Monitoring Service) confirmed the first smoke plume from Manitoba wildfires crossing the Atlantic Ocean and reaching the Mediterranean/Greece on May 18-19, 2026, at approximately 9,000m altitude. Observations by TROPOMI (Sentinel-5P), OMPS (Suomi-NPP), and EarthCare (ESA/JAXA) confirm transatlantic smoke transport. Total Canadian fire emissions now 56 megatonnes carbon — 2nd highest on record for this date. Pyrocumulonimbus (pyroCb) events observed injecting smoke into upper troposphere/lower stratosphere. This is a significant update to the ongoing Canadian wildfire event — transatlantic aerosol transport represents a cross-domain impact (disaster/wildfire + climate/air_pollution).",
+  "source_name": "Copernicus CAMS",
+  "language": "en",
+  "discovered_date": "2026-05-21",
+  "tag": "update",
+  "related_report": "2026-05-20/src-005",
+  "related_item": "ent-evt-canada-wildfire-2026",
+  "tag_reason": "신규 업데이트: 캐나다 산불 연기 대서양 횡단 유럽(지중해/그리스) 도달 CAMS 공식 확인. 이전까지는 북미 대륙 내 연기 확산만 보도됨. 다중위성 확인(TROPOMI + OMPS + EarthCare). 56 메가톤 탄소 배출 — 역대 2위. PyrocumulonimbUS 관측. 기존 캐나다 산불 이벤트에 대기오염·기후 교차도메인 업데이트.",
+  "confidence_factors": {
+    "base": 0.70,
+    "officialBoost": 0.15,
+    "multiSatBoost": 0.20,
+    "final": 0.92,
+    "notes": "CAMS (Copernicus official) = officialBoost. 3 independent satellites (TROPOMI + OMPS + EarthCare) = multiSatBoost. Cap at 0.92 due to modeled transport (not direct optical imagery of smoke over Europe)."
+  },
+  "entities": [
+    {
+      "id": "ent-evt-canada-wildfire-2026",
+      "type": "Event",
+      "name": "캐나다 MB/ON 산불 + 대서양 횡단 연기 (2026-05)",
+      "properties": {
+        "phenomenon": "wildfire",
+        "domain": "Disaster",
+        "cross_domain": "ClimateEnvironment/air_pollution",
+        "lat": 52.0,
+        "lon": -97.0,
+        "country": "CA",
+        "admin": "Manitoba/Ontario/Saskatchewan",
+        "observation_date": "2026-05-19",
+        "start_date": "2026-05-10",
+        "severity": "high",
+        "total_fires": 160,
+        "emissions_mt_carbon": 56,
+        "emissions_rank": "2nd highest on record (date-matched)",
+        "smoke_transport": "transatlantic — reached Mediterranean/Greece May 18-19 at ~9,000m",
+        "pyrocumulonimbus": true,
+        "satellites_used": ["Sentinel-5P", "Suomi-NPP (OMPS)", "EarthCare (ESA/JAXA)", "GOES-18", "VIIRS"],
+        "sensors_used": ["TROPOMI", "OMPS", "ATLID/MSI (EarthCare)", "ABI", "VIIRS"]
+      }
+    }
+  ],
+  "relations": [
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "observedBy", "object": "sat-sentinel5p"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "observedBy", "object": "sat-viirs-jpss"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "observedBy", "object": "sat-goes18"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "analyzedBy", "object": "org-cams"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "analyzedBy", "object": "org-noaa"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "inCountry", "object": "co-ca"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "manifests", "object": "phen-air-pol"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "inDomain", "object": "dom-climate"}
+  ]
+}

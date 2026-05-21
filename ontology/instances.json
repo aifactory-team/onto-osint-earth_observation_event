@@ -1,7 +1,7 @@
 {
   "version": "1.2.0",
   "description": "알려진 엔티티 인스턴스 — 파이프라인 실행 시 자동으로 추가/업데이트된다. 도메인: 위성영상 관측 이벤트.",
-  "last_updated": "2026-05-20",
+  "last_updated": "2026-05-21",
   "entities": [
     { "id": "dom-disaster", "type": "Domain", "name": "Disaster", "properties": { "label": "자연재해" }, "first_seen": "2026-04-30", "last_seen": "2026-04-30", "mention_count": 12 },
     { "id": "dom-human", "type": "Domain", "name": "HumanActivity", "properties": { "label": "인간활동" }, "first_seen": "2026-04-30", "last_seen": "2026-04-30", "mention_count": 2 },
@@ -417,7 +417,10 @@
 
     { "id": "ent-loc-065", "type": "Location", "name": "Central Bismarck Sea", "properties": { "country": "PG", "region": "Bismarck Sea", "admin_level": "offshore", "lat": -3.03, "lon": 147.78 }, "first_seen": "2026-05-13", "last_seen": "2026-05-20", "mention_count": 8 },
     { "id": "ent-loc-068", "type": "Location", "name": "Two Harbors, Minnesota", "properties": { "country": "US", "region": "Minnesota", "admin_level": "city", "lat": 47.0, "lon": -91.67 }, "first_seen": "2026-05-17", "last_seen": "2026-05-20", "mention_count": 4 },
-    { "id": "ent-loc-069", "type": "Location", "name": "Crosslake, Crow Wing County, Minnesota", "properties": { "country": "US", "region": "Minnesota", "admin_level": "city", "lat": 46.67, "lon": -94.10 }, "first_seen": "2026-05-19", "last_seen": "2026-05-20", "mention_count": 3 }
+    { "id": "ent-loc-069", "type": "Location", "name": "Crosslake, Crow Wing County, Minnesota", "properties": { "country": "US", "region": "Minnesota", "admin_level": "city", "lat": 46.67, "lon": -94.10 }, "first_seen": "2026-05-19", "last_seen": "2026-05-20", "mention_count": 3 },
+
+    { "id": "ent-loc-070", "type": "Location", "name": "Santa Rosa Island, Channel Islands National Park, California", "properties": { "country": "US", "region": "California", "admin_level": "island", "lat": 33.95, "lon": -120.1, "notes": "Channel Islands NP. 16,942ac fire caused by shipwrecked mariner SOS flare." }, "first_seen": "2026-05-21", "last_seen": "2026-05-21", "mention_count": 1 },
+    { "id": "ent-evt-1201", "type": "Event", "name": "Santa Rosa Island Fire — 16,942ac 26% contained (Channel Islands NP, CA)", "properties": { "phenomenon": "wildfire", "domain": "Disaster", "country": "US", "lat": 33.95, "lon": -120.1, "start_date": "2026-05-06", "observation_date": "2026-05-20", "severity": "high", "area_ac": 16942, "containment_pct": 26, "cause": "shipwrecked_mariner_sos_flare", "before_after_available": true, "satellites_used": ["Landsat 9"], "sensors_used": ["OLI"], "data_products": ["false-color", "natural-color"], "analyst_org": "NASA", "confidence": 0.95, "notes": "NASA EO Image of the Day (May 20). Landsat 9 OLI false-color + natural-color. Channel Islands NP. officialBoost +0.15." }, "first_seen": "2026-05-21", "last_seen": "2026-05-21", "mention_count": 1 }
   ],
-  "total_count": 351
+  "total_count": 353
 }

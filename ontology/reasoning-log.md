@@ -1516,3 +1516,112 @@ config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5)
 - **Flanders Fire 호전:** 대피 해제. 냉각·습도 상승으로 소방인력 철수 시작. 후속 모니터링 필요하나 위험도 감소.
 - **Kilauea Ep48:** 예보 창 1일 연장(5/22-26). 재팽창 9.5μrad 누적, 감속 중. D-2~6.
 - 한반도 GeoFocus: 직접 이벤트 없음. KOMPSAT-7 커미셔닝 진행 중(7월 정식운용).
+
+## 2026-05-21 추론 결과
+
+입력: sources/2026-05-21 (신규 1건, 업데이트 다수). Santa Rosa Island Fire + Canadian smoke transatlantic confirmation.
+
+### 신규 이벤트: Santa Rosa Island Fire (ent-evt-1201)
+
+- **관측 위성/센서:** Landsat 9 OLI (false-color bands 7-5-3 + natural-color)
+- **출처:** NASA Earth Observatory Image of the Day (2026-05-20)
+- **위치:** Santa Rosa Island, Channel Islands National Park, CA (33.95N, 120.1W)
+- **규모:** 16,942 acres, 26% contained
+- **원인:** 조난 선원의 SOS 신호탄 (shipwrecked mariner)
+- **before/after:** 가용 (false-color burn scar extent)
+
+### 추론 적용 — ent-evt-1201
+
+#### 1. official_source_trust (+0.15)
+- NASA Earth Observatory Image of the Day 공식 발표 + CAL FIRE 공식 데이터 확인
+- analyzedBy org-nasa (space_agency) → officialBoost +0.15 [confidence 0.95, 확정]
+
+#### 2. before_after_credibility (+0.10)
+- Landsat 9 OLI false-color (bands 7-5-3): 화재 영향 범위 시각적 식별
+- natural-color 비교 가능 → baCredibilityBoost +0.10 [0.92, 확정]
+
+#### 3. disaster_severity_priority (+0.20)
+- 16,942 acres (68.6 km2) — Channel Islands National Park 내 대규모 산불
+- 26% contained (진행 중) → 고위험 지속
+- priorityBoost +0.20 [0.90, 확정]
+
+#### 4. sensor_capability_match
+- Landsat 9 OLI: 광학 다분광 센서. false-color (bands 7-5-3) 조합이 burn scar + 활성화재 구분에 적합
+- 열적외(TIRS) 활용 여부 명시적으로 언급되지 않아 thermalBoost 미적용
+
+#### 5. 종합 신뢰도: ent-evt-1201
+- 기본 신뢰도: 0.80
+- officialBoost +0.15 → 0.95
+- baCredibilityBoost +0.10 → cap 적용
+- priorityBoost +0.20 → cap 적용
+- **최종: 0.95** (NASA EO 공식 + CAL FIRE)
+
+### 업데이트: Canadian Wildfire Smoke Transatlantic (evt-1101 시리즈)
+
+- **핵심 업데이트:** CAMS 확인 — 캐나다 산불 연기가 대서양을 횡단하여 그리스/동지중해에 5/18-19 도달 (~9,000m 고도)
+- **탄소 배출:** 56Mt (역대 2위)
+- **다중위성 확인:** TROPOMI (Sentinel-5P) + OMPS (NOAA) + EarthCare (ESA/JAXA)
+
+#### 1. multi_satellite_confirmation (+0.20)
+- TROPOMI (ESA Sentinel-5P): 대기 미량가스/에어로졸 추적
+- OMPS (NOAA S-NPP/JPSS): 오존/에어로졸 프로파일링
+- EarthCare (ESA/JAXA): 대기 수직 프로파일
+- 3개 독립 기관(ESA, NOAA, ESA/JAXA 공동)의 독립 센서 → multiSatBoost +0.20 [0.92, 확정]
+
+#### 2. sensor_capability_match_tracegas (+0.15)
+- TROPOMI의 CO, aerosol index가 대기 수송 경로 추적에 최적
+- tracegasBoost +0.15 [0.90, 확정]
+
+#### 3. official_source_trust (+0.15)
+- CAMS (Copernicus Atmosphere Monitoring Service, ECMWF 운영) 공식 확인
+- officialBoost +0.15 [0.95, 확정]
+
+#### 4. cross_domain_inference (Disaster → Climate)
+- 입력: (evt-1101-series, inDomain, dom-disaster) — 산불은 Disaster 도메인
+- 추론: 연기의 대서양 횡단은 대기오염/기후 영향 → (evt-1101-series, crossDomainLink, dom-climate)
+- 56Mt 탄소 배출은 기후/환경 도메인 직접 영향
+- crossDomainLink [0.88, 확정]
+
+#### 5. 종합 신뢰도: evt-1101 시리즈 (transatlantic confirmation)
+- 기본 신뢰도: 0.85
+- multiSatBoost +0.20 → 1.05
+- tracegasBoost +0.15 → cap
+- officialBoost +0.15 → cap
+- **최종: 0.97 (cap)** — 3위성 교차검증 + CAMS 공식
+
+### 금일 미적용 규칙
+
+- **cascading_disaster:** 금일 신규 재해 사슬 없음. Santa Rosa Island Fire는 단독 이벤트(SOS 신호탄 원인). 캐나다 연기는 직접 재해 cascading이 아닌 대기 수송.
+- **korea_geo_focus:** 금일 한반도 관련 직접 이벤트 없음. 기존 추적 항목(동해 어선, CSIS Beyond Parallel NK 시설, KOMPSAT-7 커미셔닝) 유지.
+- **multi_satellite_confirmation (ent-evt-1201):** Landsat 9 단독 관측. 추가 위성 교차검증 미확인.
+
+### 추론 통계
+
+| 규칙 | 금일 발동 | 평균 신뢰도 |
+|------|----------|-----------|
+| multi_satellite_confirmation | 1 (evt-1101-series) | 0.92 |
+| official_source_trust | 2 (evt-1201, evt-1101-series) | 0.95 |
+| before_after_credibility | 1 (evt-1201) | 0.92 |
+| disaster_severity_priority | 1 (evt-1201) | 0.90 |
+| sensor_capability_match_tracegas | 1 (evt-1101-series) | 0.90 |
+| cross_domain_inference | 1 (evt-1101-series) | 0.88 |
+| **합계** | **7** | **0.91** |
+
+### 온톨로지 변경
+
+| 변경 유형 | 대상 | 근거 |
+|----------|------|------|
+| 새 Location | ent-loc-070 (Santa Rosa Island, Channel Islands) | NASA EO Image of the Day |
+| 새 Event | ent-evt-1201 (Santa Rosa Island Fire) | Landsat 9 OLI, 16,942ac 26% |
+| 이벤트 업데이트 | evt-1101-series (Canadian smoke transatlantic) | TROPOMI+OMPS+EarthCare 3위성, 56Mt |
+| 스키마 구조 변경 | 없음 | — |
+
+config 한도 내 — 새 클래스 0건, 새 관계 유형 0건.
+
+### 특이사항
+
+- **Santa Rosa Island Fire:** Channel Islands National Park 내 희귀 도서 생태계 위협. 원인이 조난 선원 SOS 신호탄이라는 점이 독특. Landsat 9 false-color (bands 7-5-3) 이미지가 burn scar extent를 선명하게 표시.
+- **Canadian smoke 범대서양:** 56Mt 탄소 배출(역대 2위)과 연기의 그리스/동지중해 도달은 Disaster→Climate 도메인 교차 이벤트. 3개 독립 위성 플랫폼(TROPOMI, OMPS, EarthCare)이 고도 ~9,000m에서 연기층 확인.
+- **Kilauea Ep48:** 5/22-26 예보 창 유지(D-1~5). 내일부터 분수분출 가능. 위성 관측 집중 예상.
+- **Bismarck Sea:** 부석 뗏목 70km2+ 열수분출 지속. 항해 위험 유지.
+- 한반도 GeoFocus: 직접 이벤트 없음. KOMPSAT-7 커미셔닝 진행 중(7월 정식운용).

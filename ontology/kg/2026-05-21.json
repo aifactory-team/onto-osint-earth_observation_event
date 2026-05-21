@@ -1,0 +1,38 @@
+{
+  "date": "2026-05-21",
+  "new_triples": [
+    {"subject": "ent-evt-1201", "predicate": "observedBy", "object": "sat-landsat9", "source_id": "src-001", "date": "2026-05-21", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-1201", "predicate": "usesSensor", "object": "sensor-oli", "source_id": "src-001", "date": "2026-05-21", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-1201", "predicate": "locatedIn", "object": "ent-loc-070", "source_id": "src-001", "date": "2026-05-21", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-1201", "predicate": "inCountry", "object": "co-us", "source_id": "src-001", "date": "2026-05-21", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-1201", "predicate": "analyzedBy", "object": "org-nasa", "source_id": "src-001", "date": "2026-05-21", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-1201", "predicate": "manifests", "object": "phen-wildfire", "source_id": "src-001", "date": "2026-05-21", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-1201", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-001", "date": "2026-05-21", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-1201", "predicate": "before_after_available", "object": "true", "source_id": "src-001", "date": "2026-05-21", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-1201", "predicate": "area_ac", "object": "16942", "source_id": "src-001", "date": "2026-05-21", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-1201", "predicate": "containment_pct", "object": "26", "source_id": "src-001", "date": "2026-05-21", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-1201", "predicate": "cause", "object": "shipwrecked_mariner_sos_flare", "source_id": "src-001", "date": "2026-05-21", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-1101-series", "predicate": "usesSensor", "object": "sensor-tropomi", "source_id": "src-002", "date": "2026-05-21", "confidence": 0.92, "type": "explicit", "notes": "TROPOMI transatlantic smoke tracking — Canadian wildfire smoke confirmed reaching Greece/Eastern Mediterranean at ~9000m altitude"},
+    {"subject": "ent-evt-1101-series", "predicate": "carbon_emission_mt", "object": "56", "source_id": "src-002", "date": "2026-05-21", "confidence": 0.90, "type": "explicit", "notes": "2nd highest on record — CAMS confirmed"},
+    {"subject": "ent-evt-1101-series", "predicate": "multiSatConfirmed", "object": "TROPOMI+OMPS+EarthCare", "source_id": "src-002", "date": "2026-05-21", "confidence": 0.92, "type": "explicit"}
+  ],
+  "updated_triples": [
+    {"subject": "ent-evt-202", "predicate": "status", "old_object": "ADVISORY/YELLOW", "new_object": "ADVISORY/YELLOW", "source_id": "src-003", "date": "2026-05-21", "notes": "Kilauea Ep48 — no significant change. 9.5urad, 5/22-26 window maintained."},
+    {"subject": "ent-evt-701", "predicate": "eruption_phase", "old_object": "hydrothermal_pumice", "new_object": "hydrothermal_pumice", "source_id": "src-004", "date": "2026-05-21", "notes": "Bismarck Sea — pumice raft 70km2+, hydrothermal phase continues. No significant change from 5/20."}
+  ],
+  "inferred_triples": [
+    {"subject": "ent-evt-1201", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "inputs": ["(ent-evt-1201, analyzedBy, org-nasa)"], "confidence": 0.95, "status": "confirmed"},
+    {"subject": "ent-evt-1201", "predicate": "baCredibilityBoost", "object": "+0.10", "rule": "before_after_credibility", "inputs": ["(ent-evt-1201, before_after_available, true)"], "confidence": 0.92, "status": "confirmed"},
+    {"subject": "ent-evt-1201", "predicate": "priorityBoost", "object": "+0.20", "rule": "disaster_severity_priority", "inputs": ["(ent-evt-1201, severity, high)", "(ent-evt-1201, manifests, phen-wildfire)"], "confidence": 0.90, "status": "confirmed"},
+    {"subject": "ent-evt-1101-series", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "inputs": ["(ent-evt-1101-series, usesSensor, sensor-tropomi)", "(ent-evt-1101-series, usesSensor, OMPS)", "(ent-evt-1101-series, usesSensor, EarthCare)"], "confidence": 0.92, "status": "confirmed"},
+    {"subject": "ent-evt-1101-series", "predicate": "tracegasBoost", "object": "+0.15", "rule": "sensor_capability_match_tracegas", "inputs": ["(ent-evt-1101-series, usesSensor, sensor-tropomi)", "(ent-evt-1101-series, manifests, smoke_transport)"], "confidence": 0.90, "status": "confirmed"},
+    {"subject": "ent-evt-1101-series", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "inputs": ["(ent-evt-1101-series, analyzedBy, CAMS/Copernicus)"], "confidence": 0.95, "status": "confirmed"},
+    {"subject": "ent-evt-1101-series", "predicate": "crossDomainLink", "object": "dom-disaster → dom-climate", "rule": "cross_domain_inference", "inputs": ["(ent-evt-1101-series, inDomain, dom-disaster)", "(smoke_transport, inDomain, dom-climate)"], "confidence": 0.88, "status": "confirmed", "notes": "Canadian wildfire (Disaster) smoke transatlantic reaching Eastern Med — atmospheric pollution / climate impact (ClimateEnvironment)"}
+  ],
+  "stats": {
+    "new_nodes": 2,
+    "new_edges": 14,
+    "inferred_edges": 7,
+    "updated_edges": 2
+  }
+}
