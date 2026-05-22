@@ -1,0 +1,23 @@
+{
+  "id": "src-005",
+  "title": "캐나다 산불 — 33,000+명 대피, 2차 연기 플룸 대서양 진입 중 ★업데이트",
+  "url": "https://www.cbsnews.com/news/canada-wildfires-smoke-deaths-evacuations-manitoba-saskatchewan-alberta/",
+  "snippet": "Canada wildfires spread, forcing more than 33,000 to evacuate as smoke impacts U.S. and reaches Europe. Manitoba declared provincewide state of emergency. Second larger smoke plume crossing Atlantic in late May. Total carbon emissions ~56Mt (second only to 2023).",
+  "source_name": "CBS News",
+  "language": "en",
+  "discovered_date": "2026-05-22",
+  "tag": "update",
+  "related_report": "2026-05-21/src-002",
+  "related_item": "ent-evt-1101",
+  "tag_reason": "대피 인원 33,000+명으로 확대 — 인도주의적 규모 증대. 2차 대규모 연기 플룸 대서양 진입. Manitoba 주 비상사태 선포.",
+  "entities": [
+    {"id": "ent-evt-1101", "type": "Event", "name": "Canada MB/ON wildfires + transatlantic smoke", "properties": {"phenomenon": "wildfire", "domain": "Disaster", "lat": 52.0, "lon": -97.0, "country": "CA", "observation_date": "2026-05-22", "severity": "high"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-1101", "predicate": "observedBy", "object": "sat-goes18"},
+    {"subject": "ent-evt-1101", "predicate": "observedBy", "object": "sat-viirs-jpss"},
+    {"subject": "ent-evt-1101", "predicate": "usesSensor", "object": "sensor-tropomi"},
+    {"subject": "ent-evt-1101", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "ent-evt-1101", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

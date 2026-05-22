@@ -1,0 +1,22 @@
+{
+  "id": "src-003",
+  "title": "Santa Rosa Island Fire — 17,554ac 44% 진압, 야간 활동 현저 감소 ★업데이트",
+  "url": "https://www.independent.com/2026/05/21/santa-rosa-island-fire-largest-ever-recorded-on-channel-islands-nears-50-percent-containment/",
+  "snippet": "As of May 21, 2026, the Santa Rosa Island Fire has burned 17,554 acres and is at 44% containment. Overnight fire activity significantly lower — mostly low-intensity ground fire and smoldering. No new heat detected. Humidity soared. Scoopers dropped 100,800 gallons of sea water in 2 days. Largest ever recorded fire on Channel Islands.",
+  "source_name": "Santa Barbara Independent",
+  "language": "en",
+  "discovered_date": "2026-05-22",
+  "tag": "update",
+  "related_report": "2026-05-21/src-001",
+  "related_item": "ent-evt-1201",
+  "tag_reason": "진압률 26%→44%로 유의미한 진전. 야간 활동 현저 감소 — 새로운 상태 정보.",
+  "entities": [
+    {"id": "ent-evt-1201", "type": "Event", "name": "Santa Rosa Island Fire", "properties": {"phenomenon": "wildfire", "domain": "Disaster", "lat": 33.95, "lon": -120.10, "country": "US", "observation_date": "2026-05-21", "severity": "high", "area_acres": 17554, "containment_pct": 44}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-1201", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "ent-evt-1201", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "ent-evt-1201", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "ent-evt-1201", "predicate": "inCountry", "object": "co-us"}
+  ]
+}

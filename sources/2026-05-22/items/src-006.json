@@ -1,0 +1,22 @@
+{
+  "id": "src-006",
+  "title": "Bismarck Sea VAAC #33 — FL190 화산재 방출 지속 (19/1540Z) ★업데이트",
+  "url": "https://www.volcanodiscovery.com/centralbismarcksea/news/302890/vaac-advisory-2026-33.html",
+  "snippet": "VAAC Darwin Advisory #33: Volcanic ash emission to FL190 observed at 19/1540Z. Continuing emission from Central Bismarck Sea submarine volcano.",
+  "source_name": "VolcanoDiscovery / VAAC Darwin",
+  "language": "en",
+  "discovered_date": "2026-05-22",
+  "tag": "update",
+  "related_report": "2026-05-21/src-004",
+  "related_item": "ent-evt-701",
+  "tag_reason": "VAAC advisory #33 신규 발행 — FL190 화산재 방출 지속 확인.",
+  "entities": [
+    {"id": "ent-evt-701", "type": "Event", "name": "Bismarck Sea 해저화산 분출", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "lat": -3.03, "lon": 147.78, "country": "PG"}}
+  ],
+  "relations": [
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-701", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-701", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "ent-evt-701", "predicate": "inCountry", "object": "co-pg"}
+  ]
+}

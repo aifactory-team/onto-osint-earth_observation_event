@@ -1,0 +1,33 @@
+{
+  "id": "src-001",
+  "title": "NASA EO: New Eruption in the Bismarck Sea — Landsat 9 + MODIS + VIIRS 다중위성 관측 (PNG) ★신규",
+  "url": "https://science.nasa.gov/earth/earth-observatory/new-eruption-in-the-bismarck-sea/",
+  "snippet": "Satellites detected signs of an unexpected submarine volcanic eruption in the Central Bismarck Sea on May 8, 2026. Landsat 9 OLI captured volcanic plumes (May 11), MODIS Terra captured floating pumice and discolored water extending southwest (May 15), VIIRS detected thermal anomalies spanning ~7km² (May 12). Titan Ridge, ~16km SE of 1972 eruption site. Pumice raft 70km² (52km length), discolored water 2,700km².",
+  "source_name": "NASA Earth Observatory",
+  "language": "en",
+  "discovered_date": "2026-05-22",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "NASA EO 전용 피처 기사가 신규 발행됨 — 기존 VolcanoDiscovery/RNZ 출처와 별개로 Landsat 9 + MODIS + VIIRS 3개 NASA/NOAA 위성 영상을 공식 분석·해설한 최초의 공식 기사. 이전 보고서(2026-05-21/src-004)는 VolcanoDiscovery 기반이었으나, 이번은 NASA 공식 EO 기사로 신뢰도 상승 + 새로운 위성 영상(Landsat 9, MODIS Terra) 포함.",
+  "entities": [
+    {"id": "ent-evt-701", "type": "Event", "name": "Bismarck Sea 해저화산 분출", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "lat": -3.03, "lon": 147.78, "country": "PG", "observation_date": "2026-05-11", "severity": "high", "before_after_available": true}},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9"},
+    {"id": "sat-modis-terra", "type": "Satellite", "name": "MODIS (Terra)"},
+    {"id": "sat-viirs-jpss", "type": "Satellite", "name": "VIIRS (Suomi-NPP)"},
+    {"id": "sensor-oli", "type": "Sensor", "name": "OLI"},
+    {"id": "sensor-modis", "type": "Sensor", "name": "MODIS"},
+    {"id": "org-nasa", "type": "Organization", "name": "NASA"}
+  ],
+  "relations": [
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-modis-terra"},
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-viirs-jpss"},
+    {"subject": "ent-evt-701", "predicate": "usesSensor", "object": "sensor-oli"},
+    {"subject": "ent-evt-701", "predicate": "usesSensor", "object": "sensor-modis"},
+    {"subject": "ent-evt-701", "predicate": "analyzedBy", "object": "org-nasa"},
+    {"subject": "ent-evt-701", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-701", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "ent-evt-701", "predicate": "inCountry", "object": "co-pg"}
+  ]
+}

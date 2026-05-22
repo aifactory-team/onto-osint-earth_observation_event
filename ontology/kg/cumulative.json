@@ -1,15 +1,15 @@
 {
   "version": "1.8.0",
   "description": "위성영상 관측 이벤트 누적 지식그래프 — 첫 실행(2026-04-30) 이후 매일 신규/추론 트리플 병합",
-  "last_updated": "2026-05-21",
-  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-19", "2026-05-20", "2026-05-21"],
+  "last_updated": "2026-05-22",
+  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-19", "2026-05-20", "2026-05-21", "2026-05-22"],
   "triples": "ontology/kg/2026-04-30.json ~ ontology/kg/2026-05-21.json (new_triples + updated_triples + inferred_triples)",
   "stats": {
-    "total_explicit_triples": 920,
-    "total_inferred_triples": 364,
-    "total_unique_subjects": 207,
-    "total_unique_predicates": 19,
-    "total_unique_objects": 252
+    "total_explicit_triples": 932,
+    "total_inferred_triples": 371,
+    "total_unique_subjects": 209,
+    "total_unique_predicates": 20,
+    "total_unique_objects": 256
   },
-  "note": "2026-05-21 병합 완료 — 신규 1건(ent-evt-1201 Santa Rosa Island Fire, Landsat 9 OLI), 업데이트 2건(evt-1101-series 캐나다 연기 대서양 횡단 TROPOMI+OMPS+EarthCare 다중위성 확인, evt-202 Kilauea 유지). 신규 위치 1건(ent-loc-070 Santa Rosa Island). multiSatBoost 1건(evt-1101-series 3위성 교차검증). officialBoost 2건(evt-1201 NASA EO, evt-1101-series CAMS). tracegasBoost 1건(evt-1101-series TROPOMI). baCredibilityBoost 1건(evt-1201 before/after). crossDomainLink 1건(evt-1101-series Disaster→Climate). 한반도 GeoFocus 0건(direct). 누적 KG 1284 트리플."
+  "note": "2026-05-22 병합 완료 — 신규 12 explicit + 7 inferred 트리플. NASA EO Bismarck Sea 기사(ent-evt-701에 Landsat9+MODIS+VIIRS 3위성 추가), Sentinel-1A 데이터 유실(temp-evt-1302), Santa Rosa 44% 격납, Kilauea 예보창 개방, 캐나다 33K 대피+인도주의 확대, Bismarck VAAC#33. multiSatBoost 2건(evt-701 4위성3기관, evt-1101 3위성). officialBoost 2건(evt-701 NASA EO, evt-202 USGS HVO). tracegasBoost 1건(evt-1101 TROPOMI CO). baCredibilityBoost 1건(evt-701). priorityBoost 1건(evt-1201 산불). 한반도 GeoFocus 0건. 누적 KG 1303 트리플."
 }

@@ -1625,3 +1625,54 @@ config 한도 내 — 새 클래스 0건, 새 관계 유형 0건.
 - **Kilauea Ep48:** 5/22-26 예보 창 유지(D-1~5). 내일부터 분수분출 가능. 위성 관측 집중 예상.
 - **Bismarck Sea:** 부석 뗏목 70km2+ 열수분출 지속. 항해 위험 유지.
 - 한반도 GeoFocus: 직접 이벤트 없음. KOMPSAT-7 커미셔닝 진행 중(7월 정식운용).
+
+## 2026-05-22 추론 결과
+
+### 추론 #1: multi_satellite_confirmation (ent-evt-701 Bismarck Sea)
+- **입력:** (ent-evt-701, observedBy, sat-landsat9), (ent-evt-701, observedBy, sat-modis-terra), (ent-evt-701, observedBy, sat-viirs-jpss), (ent-evt-701, observedBy, sat-himawari9)
+- **추론:** (ent-evt-701, multiSatBoost, +0.20)
+- **신뢰도:** 0.97
+- **상태:** 확정
+- **근거:** 4개 위성(Landsat 9 + MODIS + VIIRS + Himawari-9), 3개 독립 기관(USGS/NASA vs NOAA vs JMA). NASA EO 공식 기사 발행으로 최고 신뢰도 달성.
+
+### 추론 #2: official_source_trust (ent-evt-701)
+- **입력:** (ent-evt-701, analyzedBy, org-nasa)
+- **추론:** (ent-evt-701, officialBoost, +0.15)
+- **신뢰도:** 0.97
+- **상태:** 확정
+- **근거:** NASA Earth Observatory Image of the Day / 피처 기사.
+
+### 추론 #3: multi_satellite_confirmation (ent-evt-1101 Canadian wildfires)
+- **입력:** (ent-evt-1101, observedBy, sat-goes18), (ent-evt-1101, observedBy, sat-viirs-jpss), (ent-evt-1101, usesSensor, sensor-tropomi)
+- **추론:** (ent-evt-1101, multiSatBoost, +0.20)
+- **신뢰도:** 0.93
+- **상태:** 확정
+- **근거:** GOES-18 + VIIRS + TROPOMI — 2개 기관(NOAA vs ESA) 교차검증.
+
+### 추론 #4: sensor_capability_match_tracegas (ent-evt-1101)
+- **입력:** (ent-evt-1101, usesSensor, sensor-tropomi), (ent-evt-1101, phenomenon, air_pollution/wildfire)
+- **추론:** (ent-evt-1101, tracegasBoost, +0.15)
+- **신뢰도:** 0.93
+- **상태:** 확정
+- **근거:** TROPOMI CO 대기 추적 — 산불 연기 장거리 이동 정량화.
+
+### 추론 #5: crossDomainLink (ent-evt-1101 → dom-humanitarian)
+- **입력:** (ent-evt-1101, evacuees, 33000+)
+- **추론:** (ent-evt-1101, crossDomainLink, dom-humanitarian)
+- **신뢰도:** 0.88
+- **상태:** 확정
+- **근거:** 33,000+명 대피 — 자연재해에서 인도주의 위기로 전환 신호.
+
+### 추론 #6: before_after_credibility (ent-evt-701)
+- **입력:** (ent-evt-701, before_after_available, true)
+- **추론:** (ent-evt-701, baCredibilityBoost, +0.10)
+- **신뢰도:** 0.97
+- **상태:** 확정
+- **근거:** NASA EO에서 분출 전/후 Landsat 9 영상 제공.
+
+### 추론 #7: disaster_severity_priority (ent-evt-1201 Santa Rosa)
+- **입력:** (ent-evt-1201, severity, high), (ent-evt-1201, inDomain, dom-disaster)
+- **추론:** (ent-evt-1201, priorityBoost, +0.20)
+- **신뢰도:** 0.93
+- **상태:** 확정
+- **근거:** 17,554ac 대형 산불, 생태계 영향(섬 고유종 서식지).

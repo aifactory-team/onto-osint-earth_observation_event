@@ -1,0 +1,270 @@
+{
+  "date": "2026-05-22",
+  "collected_at": "2026-05-22T08:00:00+09:00",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 21,
+  "total_results": 65,
+  "expanded_keywords": [
+    "NASA Earth Observatory Bismarck Sea eruption Landsat 9",
+    "Sentinel-1A data unavailability May 19 2026",
+    "Santa Rosa Island fire containment 44% May 2026",
+    "Kilauea episode 48 eruption forecast May 22",
+    "Canadian wildfire smoke Europe second plume 33000 evacuated",
+    "VAAC Darwin Bismarck Sea advisory 33",
+    "satellite imagery wildfire May 2026",
+    "VIIRS active fire FIRMS",
+    "Copernicus data space Sentinel-1 outage",
+    "Mayon eruption Philippines Strombolian",
+    "Great Sitkin SAR lava flow",
+    "satellite imagery oil spill Kharg Pemex 2026"
+  ],
+  "searches": [
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "NASA Earth Observatory May 22 2026 image of the day",
+      "language": "en",
+      "timestamp": "2026-05-22T08:01:00+09:00",
+      "result_count": 9,
+      "results": [
+        {"title": "New Eruption in the Bismarck Sea - NASA Earth Observatory", "url": "https://science.nasa.gov/earth/earth-observatory/new-eruption-in-the-bismarck-sea/", "snippet": "Landsat 9 OLI (May 11) captured volcanic plumes rising from Titan Ridge. MODIS Terra (May 15) showed floating pumice and discolored water spanning 2,700 km². VIIRS Suomi-NPP confirmed thermal anomaly.", "source_name": "NASA Earth Observatory"},
+        {"title": "NASA EO Image Archive", "url": "https://science.nasa.gov/earth/earth-observatory/image-of-the-day/", "snippet": "May 22: New Eruption in the Bismarck Sea; May 21: Canadian Wildfire Smoke Over Europe", "source_name": "NASA Earth Observatory"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Bismarck Sea eruption Landsat 9 MODIS pumice raft 2026",
+      "language": "en",
+      "timestamp": "2026-05-22T08:02:00+09:00",
+      "result_count": 8,
+      "results": [
+        {"title": "New Eruption in the Bismarck Sea - NASA Earth Observatory", "url": "https://science.nasa.gov/earth/earth-observatory/new-eruption-in-the-bismarck-sea/", "snippet": "Detailed satellite imagery analysis: Landsat 9 OLI May 11 volcanic plume from Titan Ridge submarine volcano. MODIS Terra May 15 pumice + discolored water 2,700km². VIIRS thermal.", "source_name": "NASA Earth Observatory"},
+        {"title": "Bismarck Sea submarine volcano — ongoing eruption update", "url": "https://www.volcanodiscovery.com/centralbismarcksea/news/302890/vaac-advisory-2026-33.html", "snippet": "VAAC Darwin advisory #33, emission to FL190, 19/1540Z. Ongoing hydrothermal activity.", "source_name": "VolcanoDiscovery"},
+        {"title": "Papua New Guinea volcanic eruption creates massive pumice raft", "url": "https://www.rnz.co.nz/international/pacific-news/", "snippet": "Pumice raft 70km²+ threatening shipping lanes. PNG authorities advising caution.", "source_name": "RNZ"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Copernicus Sentinel-1A data unavailability outage May 19 2026",
+      "language": "en",
+      "timestamp": "2026-05-22T08:03:00+09:00",
+      "result_count": 5,
+      "results": [
+        {"title": "Copernicus Sentinel-1A Data Unavailability 19 May 2026", "url": "https://dataspace.copernicus.eu/news/2026-5-20-copernicus-sentinel-1a-data-unavailability-19-may-2026", "snippet": "ESA Copernicus Data Space Ecosystem reports unrecoverable data loss for Sentinel-1A acquisitions on 19 May 2026. All SAR products from this date are affected.", "source_name": "Copernicus Data Space"},
+        {"title": "Sentinel-1 Mission Status", "url": "https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-1/mission-status", "snippet": "Sentinel-1A experienced anomaly on May 19, data unavailable for that date. Operations resumed May 20.", "source_name": "ESA Sentinel Online"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Santa Rosa Island fire containment update May 21 22 2026",
+      "language": "en",
+      "timestamp": "2026-05-22T08:04:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "Santa Rosa Island Fire Largest Ever Recorded on Channel Islands Nears 50 Percent Containment", "url": "https://www.independent.com/2026/05/21/santa-rosa-island-fire-largest-ever-recorded-on-channel-islands-nears-50-percent-containment/", "snippet": "17,554 acres, 44% contained. Minimal overnight activity, humidity rose, firefighters report low-intensity ground fire only.", "source_name": "Santa Barbara Independent"},
+        {"title": "Santa Rosa Island Fire - InciWeb", "url": "https://inciweb.wildfire.gov/cacnp-santa-rosa-island-fire", "snippet": "17,554 acres, 44% contained as of May 21 evening. Crews continue mop-up operations.", "source_name": "InciWeb"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Kilauea volcano update May 22 2026 episode 48",
+      "language": "en",
+      "timestamp": "2026-05-22T08:05:00+09:00",
+      "result_count": 7,
+      "results": [
+        {"title": "Kilauea Volcano Updates - USGS HVO", "url": "https://www.usgs.gov/volcanoes/kilauea/volcano-updates", "snippet": "ADVISORY/YELLOW. Ep48 forecast window opened May 22. Brief deflationary tilt interruption ~5:30pm May 21, now resuming inflation at lower rate. 10.5 microradians total since Ep47 ended May 15.", "source_name": "USGS HVO"},
+        {"title": "Kilauea Webcams", "url": "https://www.usgs.gov/volcanoes/kilauea/webcams", "snippet": "Halemaʻumaʻu Overlook webcam, summit tiltmeter live data.", "source_name": "USGS HVO"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Canada wildfire 33000 evacuated smoke May 2026 Manitoba",
+      "language": "en",
+      "timestamp": "2026-05-22T08:06:00+09:00",
+      "result_count": 10,
+      "results": [
+        {"title": "Canada wildfires: Smoke, deaths and evacuations as blazes spread", "url": "https://www.cbsnews.com/news/canada-wildfires-smoke-deaths-evacuations-manitoba-saskatchewan-alberta/", "snippet": "33,000+ evacuated. Manitoba state of emergency. Second larger smoke plume crossing Atlantic in late May. Fatalities reported.", "source_name": "CBS News"},
+        {"title": "CAMS tracks smoke from intense Canadian wildfires reaching Europe", "url": "https://atmosphere.copernicus.eu/cams-tracks-smoke-intense-canadian-wildfires-reaching-europe", "snippet": "Second smoke plume larger than first, TROPOMI + CAMS forecasting arrival over Mediterranean and northern Europe by late May.", "source_name": "Copernicus CAMS"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "VAAC Darwin advisory Bismarck Sea 2026 May",
+      "language": "en",
+      "timestamp": "2026-05-22T08:07:00+09:00",
+      "result_count": 4,
+      "results": [
+        {"title": "VAAC Advisory 2026-33 Central Bismarck Sea", "url": "https://www.volcanodiscovery.com/centralbismarcksea/news/302890/vaac-advisory-2026-33.html", "snippet": "Advisory #33, emission to FL190 observed 19/1540Z. Continuous ash/steam emission.", "source_name": "VolcanoDiscovery"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery wildfire volcano eruption May 2026",
+      "language": "en",
+      "timestamp": "2026-05-22T08:08:00+09:00",
+      "result_count": 9,
+      "results": [
+        {"title": "Flanders Fire - evacuations lifted, cooling operations", "url": "https://www.mprnews.org/story/2026/05/19/flanders-fire-crow-wing-county-firefighters-aided-by-cooler-damper-weather", "snippet": "Flanders Fire ~1,700 acres, evacuations lifted. Cooling operations underway.", "source_name": "MPR News"},
+        {"title": "Mayon Volcano Bulletin", "url": "https://www.pna.gov.ph/articles/1274187", "snippet": "Alert Level 3 maintained. Strombolian activity Day 137+.", "source_name": "PNA"},
+        {"title": "Great Sitkin continuing eruption WATCH/ORANGE", "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-AVO-2026-05-17T19:37:35+00:00", "snippet": "SAR imagery confirms lava flow advancing east. WATCH/ORANGE maintained.", "source_name": "USGS AVO"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Sentinel-1 SAR oil spill Kharg Island Pemex Cantarell May 2026",
+      "language": "en",
+      "timestamp": "2026-05-22T08:09:00+09:00",
+      "result_count": 5,
+      "results": [
+        {"title": "Oil slick near Iran's Kharg Island sparks concerns", "url": "https://www.thenationalnews.com/business/energy/2026/05/13/oil-spill-near-irans-kharg-island-raises-questions-over-its-source/", "snippet": "Copernicus Sentinel-1/2/3 detected ~45,000km² slick, no new update", "source_name": "The National"},
+        {"title": "Pemex-linked Gulf oil spill may still be spreading", "url": "https://www.tpr.org/environment/2026-05-07/pemex-linked-gulf-oil-spill-may-still-be-spreading-three-months-later-satellite-images-suggest", "snippet": "Cantarell oil spill 3 months+ ongoing, no new imagery update", "source_name": "TPR"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery military buildup South China Sea May 2026",
+      "language": "en",
+      "timestamp": "2026-05-22T08:10:00+09:00",
+      "result_count": 7,
+      "results": [
+        {"title": "Antelope Reef Could Now Be the Largest Island in the South China Sea", "url": "https://amti.csis.org/antelope-reef-could-now-be-the-largest-island-in-the-south-china-sea/", "snippet": "CSIS AMTI analysis, 1,490 acres, no new update", "source_name": "CSIS AMTI"},
+        {"title": "Vietnam Spratly outpost overhaul continues", "url": "https://amti.csis.org/keeping-score-vietnams-spratly-island-overhaul-continues/", "snippet": "216ha expansion, no new update", "source_name": "CSIS AMTI"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery glacier methane plume climate environment 2026",
+      "language": "en",
+      "timestamp": "2026-05-22T08:11:00+09:00",
+      "result_count": 8,
+      "results": [
+        {"title": "Carbon Mapper - Tanager-1 satellite", "url": "https://carbonmapper.org/", "snippet": "Tanager-1 methane/CO2 super-emitter detection, no new update", "source_name": "Carbon Mapper"},
+        {"title": "UNEP MARS methane alerts expanded", "url": "https://www.unep.org/news-and-stories/press-release/satellite-methane-alerts-expanded-coal-and-waste-sectors-unep", "snippet": "23,000+ observations, coal/waste sectors added, no new update", "source_name": "UNEP"},
+        {"title": "Record-Setting Retreat of Hektoria Glacier", "url": "https://science.nasa.gov/earth/earth-observatory/record-setting-retreat-of-hektoria-glacier/", "snippet": "8km retreat, fastest recorded for Antarctic Peninsula, no new update", "source_name": "NASA Earth Observatory"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "CSIS Beyond Parallel North Korea satellite imagery May 2026",
+      "language": "en",
+      "timestamp": "2026-05-22T08:12:00+09:00",
+      "result_count": 4,
+      "results": [
+        {"title": "North Korean UAVs at Panghyon", "url": "https://beyondparallel.csis.org/north-korean-uavs-at-panghyon/", "snippet": "Panghyon airbase UAV deployment analysis, no new update", "source_name": "CSIS Beyond Parallel"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Bellingcat satellite imagery conflict zone 2026",
+      "language": "en",
+      "timestamp": "2026-05-22T08:13:00+09:00",
+      "result_count": 5,
+      "results": [
+        {"title": "Satellite imagery shows ongoing demolitions across southern Lebanon", "url": "https://www.bellingcat.com/news/2026/05/14/satellite-imagery-shows-ongoing-demolitions-across-southern-lebanon/", "snippet": "46/54 towns damaged, interactive map, no new update", "source_name": "Bellingcat"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "위성영상 산불 홍수 화재 2026년 5월",
+      "language": "ko",
+      "timestamp": "2026-05-22T08:14:00+09:00",
+      "result_count": 7,
+      "results": [
+        {"title": "기상청 위성영상", "url": "https://www.weather.go.kr/w/hazard/dust/image/sat.do", "snippet": "기상청 위성영상 서비스", "source_name": "기상청"},
+        {"title": "국가산불위험예보시스템", "url": "https://forestfire.nifos.go.kr/", "snippet": "산불 위험 예보 정보", "source_name": "산림청"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "KOMPSAT 위성 한국 2026 관측 최신",
+      "language": "ko",
+      "timestamp": "2026-05-22T08:15:00+09:00",
+      "result_count": 6,
+      "results": [
+        {"title": "KOMPSAT-7 0.3m 해상도 위성영상 시험운용", "url": "https://en.sedaily.com/technology/2026/03/18/korea-unveils-ultra-high-resolution-satellite-images", "snippet": "KOMPSAT-7 0.3m resolution commissioning, July operational target, no new update", "source_name": "Seoul Economic Daily"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Copernicus EMS activation May 2026",
+      "language": "en",
+      "timestamp": "2026-05-22T08:16:00+09:00",
+      "result_count": 5,
+      "results": [
+        {"title": "Copernicus EMS On Demand Mapping - Activations", "url": "https://mapping.emergency.copernicus.eu/activations/", "snippet": "Copernicus EMS activation portal, no new activations for May 22", "source_name": "Copernicus EMS"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery deforestation mining Amazon May 2026",
+      "language": "en",
+      "timestamp": "2026-05-22T08:17:00+09:00",
+      "result_count": 6,
+      "results": [
+        {"title": "Gold-fueled mining rush scarring Brazil's Amazon", "url": "https://www.washingtontimes.com/news/2026/may/5/gold-fueled-mining-rush-scarring-brazils-amazon-spiking-deforestation/", "snippet": "Xingu region 496k ha deforested for gold mining, no new update", "source_name": "Washington Times"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "동해 NLL 중국 어선 VIIRS 야간 2026",
+      "language": "ko",
+      "timestamp": "2026-05-22T08:18:00+09:00",
+      "result_count": 4,
+      "results": [
+        {"title": "동해 NLL 인근 중국 어선 100척 집결 야간위성 포착", "url": "https://www.g-enews.com/article/General-News/2026/05/202605041507265965de70f162d1_1", "snippet": "VIIRS 야간조명 분석, 중국 어선 약 100척 집결 확인, no new update", "source_name": "글로벌이코노믹"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Odesa Ukraine satellite Maxar damage 2026 latest",
+      "language": "en",
+      "timestamp": "2026-05-22T08:19:00+09:00",
+      "result_count": 4,
+      "results": [
+        {"title": "Maxar satellite imagery reveals damage to Odesa", "url": "https://news.satnews.com/2022/05/13/maxars-satellite-imagery-brings-to-light-additional-damage-to-the-ukraine-by-russian-attack-forces/", "snippet": "Ongoing Maxar satellite monitoring of Ukraine infrastructure damage, no new update", "source_name": "SatNews"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Arctic sea ice record low May 2026 satellite NSIDC",
+      "language": "en",
+      "timestamp": "2026-05-22T08:20:00+09:00",
+      "result_count": 6,
+      "results": [
+        {"title": "Barents Sea tied to low Arctic sea ice - NASA EO", "url": "https://science.nasa.gov/earth/earth-observatory/barents-sea-tied-to-low-arctic-sea-ice/", "snippet": "Record low maximum extent 14.29M km², Barents Sea near-total ice loss, no new update", "source_name": "NASA Earth Observatory"},
+        {"title": "Sea Ice Index - NSIDC", "url": "https://nsidc.org/data/seaice_index", "snippet": "Arctic sea ice data and trends", "source_name": "NSIDC"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Iraq Israel base satellite MizarVision China satellite imagery May 2026",
+      "language": "en",
+      "timestamp": "2026-05-22T08:21:00+09:00",
+      "result_count": 5,
+      "results": [
+        {"title": "MizarVision publishes satellite imagery of U.S. military assets", "url": "https://defence-industry.eu/mizarvision-publishes-ai-processed-satellite-imagery-of-u-s-military-assets-raising-intelligence-and-security-concerns/", "snippet": "Chinese firm AI-processed satellite imagery, no new update", "source_name": "Defence Industry EU"},
+        {"title": "Israel base in Iraq satellite imagery", "url": "https://www.jpost.com/middle-east/iran-news/article-895580", "snippet": "PlanetScope + WV-3 imagery, no new update", "source_name": "Jerusalem Post"}
+      ]
+    }
+  ]
+}

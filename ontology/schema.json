@@ -513,6 +513,13 @@
       "target": "ent-evt-1201, ent-loc-070",
       "reason": "신규 1건: Santa Rosa Island Fire (Channel Islands NP, CA) — Landsat 9 OLI false-color + natural-color, 16,942ac 26% contained, NASA EO Image of the Day (May 20). 조난 선원 SOS 신호탄 원인. before/after 가용. 캐나다 산불 연기 대서양 횡단 확인(evt-1101 시리즈 업데이트 — TROPOMI+OMPS+EarthCare 다중위성 교차검증, 56Mt 탄소). 스키마 구조적 변경 없음.",
       "source_ids": ["src-001", "src-002"]
+    },
+    {
+      "date": "2026-05-22",
+      "action": "add_event_and_update",
+      "target": "ent-evt-701 update + temp-evt-1301/1302",
+      "reason": "NASA EO Bismarck Sea 전용 기사 — Landsat 9(5/11) + MODIS Terra(5/15) + VIIRS(5/12) 3위성 관측 결과를 공식 분석. 기존 ent-evt-701에 NASA officialBoost 적용, multiSatBoost 재확인(3개 독립 기관: USGS/NASA vs NOAA vs JMA/JAXA). Sentinel-1A 5/19 데이터 유실(temp-evt-1302) — 전역 SAR 모니터링 1일 공백. Santa Rosa 44% 진압 개선. Kilauea Ep48 예보 창 D-day. Canada 33K+ 대피. 스키마 구조적 변경 없음.",
+      "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006"]
     }
   ]
 }

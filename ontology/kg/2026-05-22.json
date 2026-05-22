@@ -1,0 +1,32 @@
+{
+  "date": "2026-05-22",
+  "new_triples": [
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-landsat9", "source_id": "src-001", "date": "2026-05-22", "confidence": 0.97, "type": "explicit"},
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-modis-terra", "source_id": "src-001", "date": "2026-05-22", "confidence": 0.97, "type": "explicit"},
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_id": "src-001", "date": "2026-05-22", "confidence": 0.97, "type": "explicit"},
+    {"subject": "ent-evt-701", "predicate": "usesSensor", "object": "sensor-oli", "source_id": "src-001", "date": "2026-05-22", "confidence": 0.97, "type": "explicit"},
+    {"subject": "ent-evt-701", "predicate": "usesSensor", "object": "sensor-modis", "source_id": "src-001", "date": "2026-05-22", "confidence": 0.97, "type": "explicit"},
+    {"subject": "ent-evt-701", "predicate": "analyzedBy", "object": "org-nasa", "source_id": "src-001", "date": "2026-05-22", "confidence": 0.97, "type": "explicit"},
+    {"subject": "temp-evt-1302", "predicate": "affectsMonitoring", "object": "sat-sentinel1a", "source_id": "src-002", "date": "2026-05-22", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-1201", "predicate": "statusUpdate", "object": "44pct_contained", "source_id": "src-003", "date": "2026-05-22", "confidence": 0.93, "type": "explicit"},
+    {"subject": "ent-evt-202", "predicate": "statusUpdate", "object": "forecast_window_open", "source_id": "src-004", "date": "2026-05-22", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-1101", "predicate": "statusUpdate", "object": "33k_evacuated", "source_id": "src-005", "date": "2026-05-22", "confidence": 0.93, "type": "explicit"},
+    {"subject": "ent-evt-1101", "predicate": "crossDomainLink", "object": "dom-humanitarian", "source_id": "src-005", "date": "2026-05-22", "confidence": 0.88, "type": "explicit"},
+    {"subject": "ent-evt-701", "predicate": "statusUpdate", "object": "VAAC33_FL190", "source_id": "src-006", "date": "2026-05-22", "confidence": 0.88, "type": "explicit"}
+  ],
+  "updated_triples": [],
+  "inferred_triples": [
+    {"subject": "ent-evt-701", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.97, "type": "inferred", "reason": "Landsat 9 (USGS/NASA) + MODIS (NASA) + VIIRS (NOAA) + Himawari-9 (JMA) — 4위성 3기관 독립 교차검증"},
+    {"subject": "ent-evt-701", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.97, "type": "inferred", "reason": "NASA EO 공식 분석 기사"},
+    {"subject": "ent-evt-701", "predicate": "baCredibilityBoost", "object": "+0.10", "rule": "before_after_credibility", "confidence": 0.97, "type": "inferred", "reason": "Landsat 9 분출 전/후 영상 가용"},
+    {"subject": "ent-evt-202", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred", "reason": "USGS HVO 공식 예보"},
+    {"subject": "ent-evt-1101", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.93, "type": "inferred", "reason": "GOES-18 (NOAA) + VIIRS (NOAA) + TROPOMI (ESA) 3위성 교차검증"},
+    {"subject": "ent-evt-1101", "predicate": "tracegasBoost", "object": "+0.15", "rule": "sensor_capability_match_tracegas", "confidence": 0.93, "type": "inferred", "reason": "TROPOMI CO 대기 추적"},
+    {"subject": "ent-evt-1201", "predicate": "priorityBoost", "object": "+0.20", "rule": "disaster_severity_priority", "confidence": 0.93, "type": "inferred", "reason": "17,554ac 고위험 산불, 생태계 피해"}
+  ],
+  "stats": {
+    "new_nodes": 2,
+    "new_edges": 12,
+    "inferred_edges": 7
+  }
+}

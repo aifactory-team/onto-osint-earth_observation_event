@@ -1,0 +1,22 @@
+{
+  "id": "src-002",
+  "title": "Sentinel-1A 데이터 손실 (5/19) — 복구 불가 데이터 장애 발생 ★신규",
+  "url": "https://dataspace.copernicus.eu/news/2026-5-20-copernicus-sentinel-1a-data-unavailability-19-may-2026",
+  "snippet": "A satellite issue affected Sentinel-1A on 19 May 2026, inducing an unrecoverable loss of data. Impact reported in Sentinel Operations Dashboard. Sentinel-1 constellation (A/C/D) still operational — 1A data gap only.",
+  "source_name": "Copernicus Data Space Ecosystem",
+  "language": "en",
+  "discovered_date": "2026-05-22",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "Sentinel-1A 5/19 데이터 손실은 이전 보고서에 보고되지 않은 신규 위성 운영 이벤트. SAR 모니터링에 일시적 영향.",
+  "entities": [
+    {"id": "temp-evt-1301", "type": "Event", "name": "Sentinel-1A 5/19 데이터 손실", "properties": {"phenomenon": "satellite_operations", "domain": "satellite_operations", "lat": 0.0, "lon": 0.0, "country": null, "observation_date": "2026-05-19", "severity": "medium"}},
+    {"id": "sat-sentinel1a", "type": "Satellite", "name": "Sentinel-1A"},
+    {"id": "org-esa", "type": "Organization", "name": "ESA"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-1301", "predicate": "observedBy", "object": "sat-sentinel1a"},
+    {"subject": "sat-sentinel1a", "predicate": "operatedBy", "object": "org-esa"}
+  ]
+}
