@@ -1,0 +1,32 @@
+{
+  "date": "2026-05-23",
+  "new_triples": [
+    {"subject": "temp-evt-1401", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-004", "date": "2026-05-23", "confidence": 0.82, "type": "explicit"},
+    {"subject": "temp-evt-1401", "predicate": "usesSensor", "object": "sensor-ahi", "source_id": "src-004", "date": "2026-05-23", "confidence": 0.82, "type": "explicit"},
+    {"subject": "temp-evt-1401", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-004", "date": "2026-05-23", "confidence": 0.82, "type": "explicit"},
+    {"subject": "temp-evt-1401", "predicate": "inCountry", "object": "co-ph", "source_id": "src-004", "date": "2026-05-23", "confidence": 0.82, "type": "explicit"},
+    {"subject": "temp-evt-1401", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-004", "date": "2026-05-23", "confidence": 0.82, "type": "explicit"},
+    {"subject": "temp-evt-1401", "predicate": "analyzedBy", "object": "org-phivolcs", "source_id": "src-004", "date": "2026-05-23", "confidence": 0.82, "type": "explicit"},
+    {"subject": "sat-sentinel2a", "predicate": "operatedBy", "object": "org-esa", "source_id": "src-006", "date": "2026-05-23", "confidence": 0.95, "type": "explicit", "note": "Sentinel-2A extension to end-2026"}
+  ],
+  "updated_triples": [
+    {"subject": "evt-202", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-001", "date": "2026-05-23", "confidence": 0.95, "type": "explicit", "note": "Ep48 forecast updated 5/24-27, tilt 11.4μrad"},
+    {"subject": "evt-1201", "predicate": "observedBy", "object": "sat-landsat9", "source_id": "src-002", "date": "2026-05-23", "confidence": 0.93, "type": "explicit", "note": "Santa Rosa 59% contained"},
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-goes18", "source_id": "src-003", "date": "2026-05-23", "confidence": 0.93, "type": "explicit", "note": "Canada wildfire 2 fatalities, 33,400+ evacuated"},
+    {"subject": "evt-801", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-005", "date": "2026-05-23", "confidence": 0.85, "type": "explicit", "note": "Bezymianny VAAC #42, 23,000ft"}
+  ],
+  "inferred_triples": [
+    {"subject": "temp-evt-1401", "predicate": "partOfSeries", "object": "evt-128", "rule": "temporal_progression", "confidence": 0.65, "type": "inferred", "note": "Canlaon is part of 2024-2026 eruption sequence, same location as previous Kanlaon reports (evt-128 was Dukono, different volcano — NO MATCH). Canlaon has no prior series event tracked."},
+    {"subject": "evt-1101", "predicate": "triggeredBy", "object": "dom-disaster", "rule": "disaster_severity_priority", "confidence": 0.93, "type": "inferred", "note": "Canada wildfire with 2 fatalities → humanitarian crossover, priorityBoost +0.20"},
+    {"subject": "evt-202", "predicate": "partOfSeries", "object": "evt-004", "rule": "temporal_progression", "confidence": 0.95, "type": "inferred", "note": "Kilauea Ep48 is part of continuing Kilauea eruption series Ep44→45→46→47→48"},
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-sentinel5p", "rule": "multi_satellite_confirmation", "confidence": 0.93, "type": "inferred", "note": "Canada wildfire: GOES-18 + VIIRS + TROPOMI = 3 satellites, multiSatBoost +0.20"},
+    {"subject": "evt-1201", "predicate": "partOfSeries", "object": "evt-1201", "rule": "temporal_progression", "confidence": 0.93, "type": "inferred", "note": "Santa Rosa fire containment progression 26%→44%→59%"},
+    {"subject": "evt-801", "predicate": "partOfSeries", "object": "evt-801", "rule": "temporal_progression", "confidence": 0.85, "type": "inferred", "note": "Bezymianny continuous eruption series VAAC #27→#40→#42"}
+  ],
+  "stats": {
+    "new_nodes": 2,
+    "new_edges": 7,
+    "updated_edges": 4,
+    "inferred_edges": 6
+  }
+}

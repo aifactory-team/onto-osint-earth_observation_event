@@ -1,0 +1,44 @@
+{
+  "id": "src-004",
+  "title": "Canlaon(Kanlaon) 화산 분출 — VAAC Advisory #161, 5/22 08:01Z FL090",
+  "url": "https://www.volcanodiscovery.com/canlaon/news/303160/vaac-advisory-2026-161.html",
+  "snippet": "VAAC Tokyo Advisory: Eruption at Canlaon volcano 5/22 08:01Z. Volcanic ash extending SW at FL090. Alert Level 2. Part of continuing 2024-2026 eruption sequence. PHIVOLCS monitoring.",
+  "source_name": "VolcanoDiscovery / VAAC Tokyo",
+  "language": "en",
+  "discovered_date": "2026-05-23",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "Canlaon/Kanlaon 화산의 5/22 분출은 이전 14일 보고서에서 개별 VAAC 이벤트로 보고되지 않았음. ent-evt-128(Dukono)와 동일 지역 아님. 신규 태그.",
+  "entities": [
+    {
+      "id": "temp-evt-1401",
+      "type": "Event",
+      "name": "Canlaon 화산 분출 VAAC #161 (2026-05-22)",
+      "properties": {
+        "phenomenon": "volcanic_eruption",
+        "lat": 10.41,
+        "lon": 123.13,
+        "country": "PH",
+        "severity": "medium",
+        "observation_date": "2026-05-22",
+        "domain": "Disaster",
+        "vaac_advisory_number": 161,
+        "vaac_authority": "Tokyo",
+        "emission_fl": "FL090",
+        "ash_direction": "SW",
+        "eruption_time_utc": "2026-05-22T08:01Z",
+        "alert_level": 2,
+        "eruption_sequence": "2024-2026 continuing"
+      }
+    }
+  ],
+  "relations": [
+    {"subject": "temp-evt-1401", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "temp-evt-1401", "predicate": "usesSensor", "object": "sensor-ahi"},
+    {"subject": "temp-evt-1401", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "temp-evt-1401", "predicate": "inCountry", "object": "co-ph"},
+    {"subject": "temp-evt-1401", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "temp-evt-1401", "predicate": "analyzedBy", "object": "org-phivolcs"}
+  ]
+}

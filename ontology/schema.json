@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "description": "OSINT 온톨로지 스키마 — config/osint-config.json의 seed로부터 초기화되고, 매일 파이프라인 실행 시 자동 확장된다. 도메인: 위성영상으로 관측 가능한 지구상 이벤트 (Earth Observation Events).",
-  "last_updated": "2026-05-21",
+  "last_updated": "2026-05-23",
   "classes": [
     {
       "id": "Entity",
@@ -519,6 +519,13 @@
       "action": "add_event_and_update",
       "target": "ent-evt-701 update + temp-evt-1301/1302",
       "reason": "NASA EO Bismarck Sea 전용 기사 — Landsat 9(5/11) + MODIS Terra(5/15) + VIIRS(5/12) 3위성 관측 결과를 공식 분석. 기존 ent-evt-701에 NASA officialBoost 적용, multiSatBoost 재확인(3개 독립 기관: USGS/NASA vs NOAA vs JMA/JAXA). Sentinel-1A 5/19 데이터 유실(temp-evt-1302) — 전역 SAR 모니터링 1일 공백. Santa Rosa 44% 진압 개선. Kilauea Ep48 예보 창 D-day. Canada 33K+ 대피. 스키마 구조적 변경 없음.",
+      "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006"]
+    },
+    {
+      "date": "2026-05-23",
+      "action": "add_event_and_update",
+      "target": "temp-evt-1401 + updates to evt-202, evt-1201, evt-1101, evt-801, evt-082",
+      "reason": "신규 1건: Canlaon/Kanlaon 화산 VAAC #161(PH, FL090). Sentinel-2A 연장 2026말(satops). 업데이트 5건: Kilauea Ep48 5/24-27(tilt 11.4μrad), Santa Rosa 59%(18,379ac), Canada wildfire 2명 사망+33,400 대피+Garden Hill FN 군대, Bezymianny VAAC#42 23,000ft, Mayon Day138+. 스키마 구조적 변경 없음.",
       "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006"]
     }
   ]

@@ -1676,3 +1676,43 @@ config 한도 내 — 새 클래스 0건, 새 관계 유형 0건.
 - **신뢰도:** 0.93
 - **상태:** 확정
 - **근거:** 17,554ac 대형 산불, 생태계 영향(섬 고유종 서식지).
+
+---
+
+## 2026-05-23 추론 결과
+
+### 추론 #1: multi_satellite_confirmation — Canada wildfire (evt-1101)
+- **입력:** (evt-1101, observedBy, sat-goes18), (evt-1101, observedBy, sat-viirs-jpss), (evt-1101, observedBy, sat-sentinel5p)
+- **추론:** (evt-1101, multiSatBoost, +0.20)
+- **신뢰도:** 0.93
+- **상태:** 확정
+
+### 추론 #2: temporal_progression — Kilauea series (evt-202 → evt-004)
+- **입력:** (evt-202, locatedIn, Halemaʻumaʻu), (evt-004, locatedIn, Halemaʻumaʻu), (evt-202.phenomenon == volcanic_eruption == evt-004.phenomenon)
+- **추론:** (evt-202, partOfSeries, evt-004) — Ep44→45→46→47→48 시리즈
+- **신뢰도:** 0.95
+- **상태:** 확정
+
+### 추론 #3: disaster_severity_priority — Canada wildfire 인명피해
+- **입력:** (evt-1101, inDomain, dom-disaster), (evt-1101.severity, high), (evt-1101, fatalities, 2)
+- **추론:** (evt-1101, priorityBoost, +0.20), 인도주의 도메인 교차 진입
+- **신뢰도:** 0.93
+- **상태:** 확정
+
+### 추론 #4: temporal_progression — Santa Rosa fire containment
+- **입력:** (evt-1201, locatedIn, Santa Rosa Island), (evt-1201.phenomenon == wildfire), containment 26%→44%→59%
+- **추론:** (evt-1201, partOfSeries, evt-1201) — 진압 진행 시계열
+- **신뢰도:** 0.93
+- **상태:** 확정
+
+### 추론 #5: temporal_progression — Bezymianny VAAC series
+- **입력:** (evt-801, locatedIn, Bezymianny), VAAC #27→#40→#42 시계열
+- **추론:** (evt-801, partOfSeries, evt-801) — 지속 분출 시계열
+- **신뢰도:** 0.85
+- **상태:** 확정
+
+### 추론 #6: official_source_trust — Kilauea USGS HVO
+- **입력:** (evt-202, analyzedBy, org-usgs), (org-usgs.org_type == space_agency)
+- **추론:** (evt-202, officialBoost, +0.15)
+- **신뢰도:** 0.95
+- **상태:** 확정
