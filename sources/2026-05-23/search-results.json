@@ -1,46 +1,172 @@
 {
   "date": "2026-05-23",
-  "collected_at": "2026-05-23T00:00:00Z",
+  "collected_at": "2026-05-23T23:00:00Z",
   "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
-  "search_count": 28,
-  "total_results": 85,
+  "search_count": 20,
+  "total_results": 142,
   "expanded_keywords": [
-    "Kilauea Ep48", "Bismarck Sea submarine volcano", "Canada Manitoba wildfire evacuation",
-    "Santa Rosa Island fire containment", "Canlaon Kanlaon volcano VAAC", "Bezymianny Kamchatka ash",
-    "Mayon volcano Philippines", "Great Sitkin Alaska lava", "Sentinel-2A extension EOL",
-    "KOMPSAT 한반도", "Kharg Island oil spill", "Pemex Cantarell",
-    "South China Sea Antelope Reef Spratly", "North Korea DPRK satellite Yongbyon",
-    "methane plume satellite CO2", "glacier retreat Arctic Antarctic",
-    "UNOSAT humanitarian", "NDVI crop agriculture fishing"
+    "Kilauea Ep48", "Santa Rosa Island fire", "Canada wildfire Manitoba",
+    "Bismarck Sea submarine volcano", "Canlaon Kanlaon volcano",
+    "Bezymianny VAAC", "Sentinel-2A extension", "Mayon volcano",
+    "Antelope Reef South China Sea", "Arctic sea ice record low",
+    "Planet Pelican first light", "Copernicus EMS activation",
+    "satellite imagery deforestation", "MethaneSAT methane",
+    "KOMPSAT CAS500", "CSIS Beyond Parallel", "Bellingcat",
+    "NDVI crop monitoring", "VIIRS fishing vessel"
   ],
   "searches": [
-    {"method": "websearch", "engine": "built-in", "keyword": "Kilauea volcano eruption update May 23 2026", "language": "en", "timestamp": "2026-05-23T00:01:00Z", "result_count": 10},
-    {"method": "websearch", "engine": "built-in", "keyword": "NASA Earth Observatory image of the day May 2026", "language": "en", "timestamp": "2026-05-23T00:01:30Z", "result_count": 10},
-    {"method": "websearch", "engine": "built-in", "keyword": "Bismarck Sea submarine volcano eruption update May 2026", "language": "en", "timestamp": "2026-05-23T00:02:00Z", "result_count": 9},
-    {"method": "websearch", "engine": "built-in", "keyword": "Canada wildfire evacuation Manitoba May 2026", "language": "en", "timestamp": "2026-05-23T00:02:30Z", "result_count": 9},
-    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery wildfire flood earthquake May 2026", "language": "en", "timestamp": "2026-05-23T00:03:00Z", "result_count": 10},
-    {"method": "websearch", "engine": "built-in", "keyword": "Copernicus EMS activation May 2026", "language": "en", "timestamp": "2026-05-23T00:03:30Z", "result_count": 10},
-    {"method": "websearch", "engine": "built-in", "keyword": "Santa Rosa Island fire Channel Islands containment update May 2026", "language": "en", "timestamp": "2026-05-23T00:04:00Z", "result_count": 10},
-    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery deforestation oil spill mining May 2026", "language": "en", "timestamp": "2026-05-23T00:04:30Z", "result_count": 10},
-    {"method": "websearch", "engine": "built-in", "keyword": "Sentinel-2 Sentinel-1 satellite observation May 2026", "language": "en", "timestamp": "2026-05-23T00:05:00Z", "result_count": 10},
-    {"method": "websearch", "engine": "built-in", "keyword": "Mayon volcano Philippines eruption update May 2026", "language": "en", "timestamp": "2026-05-23T00:05:30Z", "result_count": 9},
-    {"method": "websearch", "engine": "built-in", "keyword": "Great Sitkin volcano Alaska eruption lava May 2026", "language": "en", "timestamp": "2026-05-23T00:06:00Z", "result_count": 10},
-    {"method": "websearch", "engine": "built-in", "keyword": "위성영상 산불 홍수 지진 2026년 5월", "language": "ko", "timestamp": "2026-05-23T00:06:30Z", "result_count": 10},
-    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery methane plume CO2 emissions climate May 2026", "language": "en", "timestamp": "2026-05-23T00:07:00Z", "result_count": 10},
-    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery military buildup naval activity defense May 2026", "language": "en", "timestamp": "2026-05-23T00:07:30Z", "result_count": 9},
-    {"method": "websearch", "engine": "built-in", "keyword": "KOMPSAT 한반도 위성 관측 2026년 5월", "language": "ko", "timestamp": "2026-05-23T00:08:00Z", "result_count": 9},
-    {"method": "websearch", "engine": "built-in", "keyword": "Maxar Planet satellite imagery analysis May 2026", "language": "en", "timestamp": "2026-05-23T00:08:30Z", "result_count": 9},
-    {"method": "websearch", "engine": "built-in", "keyword": "volcano eruption VAAC advisory May 22 23 2026", "language": "en", "timestamp": "2026-05-23T00:09:00Z", "result_count": 10},
-    {"method": "websearch", "engine": "built-in", "keyword": "Canada Manitoba wildfire fatalities Garden Hill evacuation May 23 2026", "language": "en", "timestamp": "2026-05-23T00:09:30Z", "result_count": 10},
-    {"method": "websearch", "engine": "built-in", "keyword": "Canlaon volcano eruption Philippines May 22 2026", "language": "en", "timestamp": "2026-05-23T00:10:00Z", "result_count": 10},
-    {"method": "websearch", "engine": "built-in", "keyword": "glacier retreat sea ice Arctic Antarctic satellite May 2026", "language": "en", "timestamp": "2026-05-23T00:10:30Z", "result_count": 10},
-    {"method": "websearch", "engine": "built-in", "keyword": "UNOSAT humanitarian crisis satellite analysis May 2026", "language": "en", "timestamp": "2026-05-23T00:11:00Z", "result_count": 10},
-    {"method": "websearch", "engine": "built-in", "keyword": "South China Sea island building satellite Spratly Paracel May 2026", "language": "en", "timestamp": "2026-05-23T00:11:30Z", "result_count": 9},
-    {"method": "websearch", "engine": "built-in", "keyword": "North Korea satellite imagery DPRK nuclear missile May 2026", "language": "en", "timestamp": "2026-05-23T00:12:00Z", "result_count": 9},
-    {"method": "websearch", "engine": "built-in", "keyword": "Sentinel-2A end of life decommission May 2026", "language": "en", "timestamp": "2026-05-23T00:12:30Z", "result_count": 8},
-    {"method": "websearch", "engine": "built-in", "keyword": "NASA Earth Observatory image of the day May 22 23 2026", "language": "en", "timestamp": "2026-05-23T00:13:00Z", "result_count": 10},
-    {"method": "websearch", "engine": "built-in", "keyword": "Bezymianny Kamchatka volcano ash plume 23000 feet May 22 2026", "language": "en", "timestamp": "2026-05-23T00:13:30Z", "result_count": 9},
-    {"method": "websearch", "engine": "built-in", "keyword": "ocean satellite NDVI crop agriculture fishing activity May 2026", "language": "en", "timestamp": "2026-05-23T00:14:00Z", "result_count": 6},
-    {"method": "websearch", "engine": "built-in", "keyword": "Kharg Island oil spill Cantarell Gulf Mexico satellite update May 2026", "language": "en", "timestamp": "2026-05-23T00:14:30Z", "result_count": 4}
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "satellite imagery wildfire May 2026", "language": "en",
+      "timestamp": "2026-05-23T23:00:01Z", "result_count": 10,
+      "results": [
+        {"title": "Wildfire Near Lake Superior's North Shore — CIMSS Satellite Blog", "url": "https://cimss.ssec.wisc.edu/satellite-blog/archives/70446", "snippet": "Stewart Trail fire Two Harbors MN 375ac GOES-19", "source_name": "CIMSS"},
+        {"title": "NOAA Satellites Monitor Canadian Wildfires and Smoke", "url": "https://www.nesdis.noaa.gov/news/noaa-satellites-monitor-canadian-wildfires-and-smoke", "snippet": "160+ fires Manitoba Ontario GOES/VIIRS/TROPOMI smoke plume transatlantic", "source_name": "NOAA NESDIS"},
+        {"title": "Fire Chars Santa Rosa Island | NASA Earthdata", "url": "https://www.earthdata.nasa.gov/news/worldview-image-archive/fire-chars-santa-rosa-island", "snippet": "Santa Rosa Island 18379ac 72% contained Landsat 9 OLI false-color", "source_name": "NASA Earthdata"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "satellite imagery volcano eruption May 2026", "language": "en",
+      "timestamp": "2026-05-23T23:00:30Z", "result_count": 10,
+      "results": [
+        {"title": "New Eruption in the Bismarck Sea - NASA Science", "url": "https://science.nasa.gov/earth/earth-observatory/new-eruption-in-the-bismarck-sea/", "snippet": "Landsat 9/MODIS/VIIRS 3-satellite observation pumice raft 250km²", "source_name": "NASA EO"},
+        {"title": "Volcanic activity worldwide 23 May 2026", "url": "https://www.volcanodiscovery.com/volcano-activity/news/303265/Volcanic-activity-worldwide-23-May-2026-Santiaguito-volcano-Fuego-Semeru-Shiveluch-Ibu-Mayon-.html", "snippet": "Santiaguito Fuego Semeru Shiveluch Ibu Mayon Canlaon Bezymianny active", "source_name": "VolcanoDiscovery"},
+        {"title": "Kilauea Ep48 forecast window 5/24-27", "url": "https://www.usgs.gov/volcanoes/kilauea/volcano-updates", "snippet": "ADVISORY/YELLOW tilt 11.4μrad both vents glowing", "source_name": "USGS HVO"},
+        {"title": "Satellite Photos Capture Volcanic Eruption From Space", "url": "https://www.newsweek.com/satellite-photos-capture-volcanic-eruption-11097930", "snippet": "Bismarck Sea eruption visible from space", "source_name": "Newsweek"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "위성영상 산불 홍수 2026년 5월", "language": "ko",
+      "timestamp": "2026-05-23T23:00:45Z", "result_count": 8,
+      "results": [
+        {"title": "국가산불위험예보시스템", "url": "https://forestfire.nifos.go.kr/", "snippet": "한국 산불 위험 예보 현황", "source_name": "산림청"},
+        {"title": "기상청 위성영상", "url": "https://www.weather.go.kr/w/hazard/dust/image/sat.do", "snippet": "기상위성 천리안2A 위성영상", "source_name": "기상청"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "satellite imagery deforestation mining oil spill May 2026", "language": "en",
+      "timestamp": "2026-05-23T23:01:15Z", "result_count": 10,
+      "results": [
+        {"title": "Venezuela ecocide oil mining Global Witness", "url": "https://globalwitness.org/en/campaigns/fossil-fuels/ecocide-in-venezuela-oil-mining-and-the-risks-of-foreign-investment/", "snippet": "504 oil slick detections Lake Maracaibo Sentinel-1", "source_name": "Global Witness"},
+        {"title": "Faster Detection of Forest Loss NASA EO", "url": "https://science.nasa.gov/earth/earth-observatory/faster-detection-of-forest-loss/", "snippet": "NISAR+Landsat fusion 100 days earlier deforestation detection", "source_name": "NASA EO"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "satellite imagery military buildup naval activity May 2026", "language": "en",
+      "timestamp": "2026-05-23T23:01:30Z", "result_count": 8,
+      "results": [
+        {"title": "MizarVision publishes satellite imagery of U.S. military assets", "url": "https://defence-industry.eu/mizarvision-publishes-ai-processed-satellite-imagery-of-u-s-military-assets-raising-intelligence-and-security-concerns/", "snippet": "Chinese AI company satellite imagery US bases", "source_name": "Defence Industry EU"},
+        {"title": "Antelope Reef largest island South China Sea AMTI CSIS", "url": "https://amti.csis.org/antelope-reef-could-now-be-the-largest-island-in-the-south-china-sea/", "snippet": "1490 acres reclaimed 9000ft runway possible", "source_name": "CSIS AMTI"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "Sentinel-5P methane plume MethaneSAT emissions May 2026", "language": "en",
+      "timestamp": "2026-05-23T23:01:45Z", "result_count": 10,
+      "results": [
+        {"title": "Scientists stunned volcano cloud destroys methane", "url": "https://www.sciencedaily.com/releases/2026/05/260509210640.htm", "snippet": "TROPOMI detects formaldehyde in volcanic plume methane breakdown", "source_name": "ScienceDaily"},
+        {"title": "Sentinel-5P methane detection system ESA", "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P/Sentinel-5P_data_used_in_new_methane_detection_system", "snippet": "MARS system daily methane monitoring S5P", "source_name": "ESA"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "Kilauea volcano eruption update May 23 2026", "language": "en",
+      "timestamp": "2026-05-23T23:02:30Z", "result_count": 10,
+      "results": [
+        {"title": "USGS HVO Notice May 23", "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-HVO-2026-05-23T18:34:28+00:00", "snippet": "Ep48 forecast 5/24-27 tilt 11.4μrad both vents glow", "source_name": "USGS HVO"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "Canada wildfire Manitoba evacuation May 23 2026", "language": "en",
+      "timestamp": "2026-05-23T23:02:45Z", "result_count": 9,
+      "results": [
+        {"title": "Canada wildfires 33000+ evacuations smoke deaths", "url": "https://www.cbsnews.com/news/canada-wildfires-smoke-deaths-evacuations-manitoba-saskatchewan-alberta/", "snippet": "2 deaths Lac du Bonnet 33400+ evacuees Garden Hill FN military", "source_name": "CBS News"},
+        {"title": "Garden Hill First Nation wildfire evacuation", "url": "https://www.cbc.ca/news/canada/manitoba/garden-hill-first-nation-wildfire-evacuation-manitoba-1.7581550", "snippet": "Military assists Garden Hill FN evacuation 33400 displaced", "source_name": "CBC News"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "Bismarck Sea submarine volcano eruption pumice raft May 2026", "language": "en",
+      "timestamp": "2026-05-23T23:03:00Z", "result_count": 10,
+      "results": [
+        {"title": "New Eruption in the Bismarck Sea NASA", "url": "https://science.nasa.gov/earth/earth-observatory/new-eruption-in-the-bismarck-sea/", "snippet": "Titan Ridge 3-satellite Landsat/MODIS/VIIRS pumice raft 250km²", "source_name": "NASA EO"},
+        {"title": "Possible Eruption GEOMAR", "url": "https://www.geomar.de/en/news/article/possible-eruption-of-an-underwater-volcano-in-the-bismarck-sea", "snippet": "Pumice 70km² 52km length hydrothermal activity", "source_name": "GEOMAR"},
+        {"title": "Bismarck Sea may cause new island", "url": "https://www.discovermagazine.com/an-underwater-volcanic-eruption-brewing-in-the-bismarck-sea-may-cause-a-new-island-to-rise-49148", "snippet": "Possible new island formation rare submarine eruption", "source_name": "Discover Magazine"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "Santa Rosa Island fire Channel Islands containment May 2026", "language": "en",
+      "timestamp": "2026-05-23T23:03:15Z", "result_count": 10,
+      "results": [
+        {"title": "Santa Rosa Island Fire mop-up phase day eight", "url": "https://www.independent.com/2026/05/22/santa-rosa-island-fire-enters-mop-up-phase-on-day-eight/", "snippet": "18379ac 72% contained mop-up phase low fire activity", "source_name": "Santa Barbara Independent"},
+        {"title": "Fire Chars Santa Rosa Island NASA EO", "url": "https://science.nasa.gov/earth/earth-observatory/fire-chars-santa-rosa-island/", "snippet": "Landsat 9 OLI false-color + natural-color NASA EO Image", "source_name": "NASA EO"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "glacier retreat Arctic sea ice 2026 satellite", "language": "en",
+      "timestamp": "2026-05-23T23:03:30Z", "result_count": 7,
+      "results": [
+        {"title": "Arctic Winter Sea Ice Ties Record Low NASA NSIDC", "url": "https://science.nasa.gov/earth/arctic-winter-sea-ice-2026/", "snippet": "14.29M km² March 15 lowest peak satellite record 1979", "source_name": "NASA"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "South China Sea satellite imagery Spratly Antelope Reef 2026", "language": "en",
+      "timestamp": "2026-05-23T23:03:45Z", "result_count": 9,
+      "results": [
+        {"title": "Antelope Reef largest island South China Sea AMTI CSIS", "url": "https://amti.csis.org/antelope-reef-could-now-be-the-largest-island-in-the-south-china-sea/", "snippet": "1490 acres reclaimed land 9000ft runway possible", "source_name": "CSIS AMTI"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "Canlaon Kanlaon volcano eruption Philippines May 2026", "language": "en",
+      "timestamp": "2026-05-23T23:04:00Z", "result_count": 10,
+      "results": [
+        {"title": "Kanlaon continuing eruption May 2026", "url": "https://www.volcanodiscovery.com/canlaon/news/303160/vaac-advisory-2026-161.html", "snippet": "VAAC Advisory #161 FL090 ash SW Himawari-9", "source_name": "VolcanoDiscovery"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "Planet Pelican satellite constellation first light 2026", "language": "en",
+      "timestamp": "2026-05-23T23:04:15Z", "result_count": 10,
+      "results": [
+        {"title": "Planet Releases First Light from Latest Pelican Launch", "url": "https://www.businesswire.com/news/home/20260514665846/en/Planet-Releases-First-Light-from-Latest-Pelican-Launch-Including-Imagery-from-Swedens-First-Sovereign-Satellite", "snippet": "Pelican 7/8/9 first light Gotland Taiyuan Ambursu 0.5m 9 sats on orbit", "source_name": "BusinessWire"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "Mayon volcano Philippines alert update eruption May 23 2026", "language": "en",
+      "timestamp": "2026-05-23T23:04:30Z", "result_count": 8,
+      "results": [
+        {"title": "Mayon Volcano Alert Level 3 IQAir", "url": "https://www.iqair.com/newsroom/volcanic-eruption-map-spotlight-mayon-volcano-philippines-5-2026", "snippet": "Alert Level 3 Day 138+ Strombolian 91225 affected", "source_name": "IQAir"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "Copernicus EMS activation May 2026", "language": "en",
+      "timestamp": "2026-05-23T23:01:00Z", "result_count": 10,
+      "results": [
+        {"title": "Copernicus EMS On Demand Mapping Activations", "url": "https://mapping.emergency.copernicus.eu/activations/", "snippet": "Active mapping requests May 2026", "source_name": "Copernicus EMS"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "KOMPSAT 위성 관측 CAS500 한반도 2026년 5월", "language": "ko",
+      "timestamp": "2026-05-23T23:02:15Z", "result_count": 10,
+      "results": [
+        {"title": "CAS500-2/4 launched May 3 2026 Falcon 9", "url": "https://en.wikipedia.org/wiki/CAS500", "snippet": "CAS500-2 0.5m optical + CAS500-4 5m wide-area launched successfully", "source_name": "Wikipedia"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "satellite imagery earthquake tsunami humanitarian crisis May 2026", "language": "en",
+      "timestamp": "2026-05-23T23:04:45Z", "result_count": 9,
+      "results": [
+        {"title": "UNDP satellite imagery crisis zones", "url": "https://www.undp.org/news/satellite-imagery-guides-faster-recovery-crisis-zones", "snippet": "Satellite imagery integrated damage reports 30% faster", "source_name": "UNDP"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "CSIS Beyond Parallel North Korea satellite analysis May 2026", "language": "en",
+      "timestamp": "2026-05-23T23:05:00Z", "result_count": 10,
+      "results": [
+        {"title": "Beyond Parallel satellite imagery archives", "url": "https://beyondparallel.csis.org/tag/satellite-imagery/", "snippet": "Yongbyon UEP Panghyon UAV Sohae engine facility", "source_name": "CSIS Beyond Parallel"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "위성 NDVI 작황 어선 활동 2026년 5월", "language": "ko",
+      "timestamp": "2026-05-23T23:05:15Z", "result_count": 8,
+      "results": [
+        {"title": "기상청 해양기후 전망 2026 6-8월", "url": "https://www.ocpc.kr/prediction", "snippet": "동아시아 해수면 온도 평년 대비 높음 5-7월", "source_name": "해양기상청"}
+      ]
+    }
   ]
 }

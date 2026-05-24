@@ -1,0 +1,61 @@
+{
+  "id": "src-005",
+  "title": "Bezymianny VAAC Advisory #42 — 화산재 23,000ft(7,000m), E 방향 25kts",
+  "url": "https://www.volcanodiscovery.com/bezymianny/news/303156/vaac-advisory-2026-42.html",
+  "snippet": "VAAC Tokyo Advisory #42 for Bezymianny volcano, Kamchatka. Volcanic ash observed at 23,000ft (FL230, ~7,000m) extending E at 25kts. Continuous satellite observation via Himawari-9 AHI and VIIRS. Ongoing eruption sequence.",
+  "source_name": "VolcanoDiscovery / VAAC Tokyo",
+  "language": "en",
+  "discovered_date": "2026-05-23",
+  "tag": "update",
+  "related_report": "2026-05-22/src-010",
+  "related_item": "ent-evt-801",
+  "tag_reason": "Bezymianny VAAC Advisory #42 — 화산재 23,000ft E 방향 관측. VIIRS 추가 교차검증. 지속 분출 확인 업데이트.",
+  "entities": [
+    {
+      "id": "ent-evt-801",
+      "type": "Event",
+      "name": "Bezymianny 화산 분출 (Kamchatka, Russia)",
+      "properties": {
+        "phenomenon": "volcanic_eruption",
+        "lat": 55.97,
+        "lon": 160.59,
+        "country": "RU",
+        "severity": "medium",
+        "observation_date": "2026-05-23",
+        "vaac_advisory_number": 42,
+        "ash_altitude_ft": 23000,
+        "ash_altitude_m": 7000,
+        "ash_direction": "E",
+        "ash_speed_kts": 25,
+        "continuous_satellite_observation": true
+      }
+    },
+    {
+      "id": "sat-himawari9",
+      "type": "Satellite",
+      "name": "Himawari-9",
+      "properties": {"operator": "JMA", "sensor": "AHI"}
+    },
+    {
+      "id": "sat-viirs-jpss",
+      "type": "Satellite",
+      "name": "VIIRS (JPSS)",
+      "properties": {"operator": "NASA/NOAA", "sensor": "VIIRS"}
+    },
+    {
+      "id": "co-ru",
+      "type": "Country",
+      "name": "Russia",
+      "properties": {"iso2": "RU"}
+    }
+  ],
+  "relations": [
+    {"subject": "ent-evt-801", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-801", "predicate": "observedBy", "object": "sat-viirs-jpss"},
+    {"subject": "ent-evt-801", "predicate": "usesSensor", "object": "sensor-ahi"},
+    {"subject": "ent-evt-801", "predicate": "usesSensor", "object": "sensor-viirs"},
+    {"subject": "ent-evt-801", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-801", "predicate": "inCountry", "object": "co-ru"},
+    {"subject": "ent-evt-801", "predicate": "analyzedBy", "object": "org-vaac-tokyo"}
+  ]
+}

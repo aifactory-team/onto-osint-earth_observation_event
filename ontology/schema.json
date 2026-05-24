@@ -524,9 +524,9 @@
     {
       "date": "2026-05-23",
       "action": "add_event_and_update",
-      "target": "temp-evt-1401 + updates to evt-202, evt-1201, evt-1101, evt-801, evt-082",
-      "reason": "신규 1건: Canlaon/Kanlaon 화산 VAAC #161(PH, FL090). Sentinel-2A 연장 2026말(satops). 업데이트 5건: Kilauea Ep48 5/24-27(tilt 11.4μrad), Santa Rosa 59%(18,379ac), Canada wildfire 2명 사망+33,400 대피+Garden Hill FN 군대, Bezymianny VAAC#42 23,000ft, Mayon Day138+. 스키마 구조적 변경 없음.",
-      "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006"]
+      "target": "temp-evt-1401, Sentinel-2A-ext + updates to evt-202, evt-1201, evt-1101, evt-801, evt-082",
+      "reason": "신규 2건: Canlaon/Kanlaon 화산 VAAC #161(PH, FL090, Himawari-9 AHI, PHIVOLCS AL2, Negros Island locatedIn 추가), Sentinel-2A 연장 2026말(ESA 공식 satops, 좌표 없음). 업데이트 5건: Kilauea Ep48 예보 5/24-27(tilt 10.5→11.4μrad 가속, both vents glowing, SO2 1-5k tpd), Santa Rosa 72% contained mop-up phase(59%→72%, Torrey Pines 보존), Canada wildfire 2명 사망(Lac du Bonnet)+33,400+ 대피 확대+Garden Hill FN 군(CAF) 투입(Disaster→Humanitarian crossDomainLink 확정), Bezymianny VAAC#42 23,000ft E(thermalBoost), Mayon Day138+ 91,225명 영향. 추론 12건: multiSat 2건, temporal 3건, severity 1건, crossDomain 1건, sensor 2건, official 3건. 신규 Location: ent-loc-negros-island. 한반도 GeoFocus 0건. 스키마 구조적 변경 없음.",
+      "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-008"]
     }
   ]
 }

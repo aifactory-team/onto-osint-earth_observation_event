@@ -1681,38 +1681,123 @@ config 한도 내 — 새 클래스 0건, 새 관계 유형 0건.
 
 ## 2026-05-23 추론 결과
 
-### 추론 #1: multi_satellite_confirmation — Canada wildfire (evt-1101)
-- **입력:** (evt-1101, observedBy, sat-goes18), (evt-1101, observedBy, sat-viirs-jpss), (evt-1101, observedBy, sat-sentinel5p)
-- **추론:** (evt-1101, multiSatBoost, +0.20)
-- **신뢰도:** 0.93
-- **상태:** 확정
+입력: sources/2026-05-23/entities.json — 30 sources (2 new, 5 update, 23 reported). 신규 이벤트 2건(temp-evt-1401 Canlaon, Sentinel-2A extension), 업데이트 5건(evt-202/1201/1101/801/082).
 
-### 추론 #2: temporal_progression — Kilauea series (evt-202 → evt-004)
-- **입력:** (evt-202, locatedIn, Halemaʻumaʻu), (evt-004, locatedIn, Halemaʻumaʻu), (evt-202.phenomenon == volcanic_eruption == evt-004.phenomenon)
-- **추론:** (evt-202, partOfSeries, evt-004) — Ep44→45→46→47→48 시리즈
-- **신뢰도:** 0.95
-- **상태:** 확정
+### multi_satellite_confirmation (다중 위성 교차검증) — 2건
 
-### 추론 #3: disaster_severity_priority — Canada wildfire 인명피해
-- **입력:** (evt-1101, inDomain, dom-disaster), (evt-1101.severity, high), (evt-1101, fatalities, 2)
-- **추론:** (evt-1101, priorityBoost, +0.20), 인도주의 도메인 교차 진입
-- **신뢰도:** 0.93
-- **상태:** 확정
+- **추론 #1:** evt-1101 (Canada wildfire) — observedBy GOES-18(NOAA) + VIIRS(NOAA/NASA) + Sentinel-5P TROPOMI(ESA) → multiSatBoost +0.20 [confidence 0.93, 확정]
+  - 3개 독립 위성, 2개 독립 기관(NOAA vs ESA)
+  - Cross-modal: GEO optical(ABI) + LEO multispectral(VIIRS) + LEO trace gas(TROPOMI)
+  - 2명 사망 + 33,400+ 대피 이후 지속 교차검증 유지
+- **추론 #2:** evt-082 (Mayon Day138+) — observedBy Himawari-9(JMA/JAXA GEO) + Sentinel-2A(ESA SSO) → multiSatBoost +0.20 [0.88, 확정]
+  - 독립 운영자/궤도: JMA GEO ≠ ESA SSO. 연속 확인.
 
-### 추론 #4: temporal_progression — Santa Rosa fire containment
-- **입력:** (evt-1201, locatedIn, Santa Rosa Island), (evt-1201.phenomenon == wildfire), containment 26%→44%→59%
-- **추론:** (evt-1201, partOfSeries, evt-1201) — 진압 진행 시계열
-- **신뢰도:** 0.93
-- **상태:** 확정
+### temporal_progression (시계열 진행) — 3건
 
-### 추론 #5: temporal_progression — Bezymianny VAAC series
-- **입력:** (evt-801, locatedIn, Bezymianny), VAAC #27→#40→#42 시계열
-- **추론:** (evt-801, partOfSeries, evt-801) — 지속 분출 시계열
-- **신뢰도:** 0.85
-- **상태:** 확정
+- **추론 #3:** evt-202 (Kilauea Ep48) :partOfSeries evt-004 (Kilauea Ep44→45→46→47→48)
+  - 동일 위치(Halemaʻumaʻu, 19.42N 155.29W), 동일 현상(volcanic_eruption)
+  - Ep47 종료(5/15) → Ep48 예보 5/24-27(기존 5/22-26에서 이동)
+  - tilt 10.5→11.4μrad 가속, both vents glowing, SO2 1000-5000 tpd
+  - [confidence 0.95, 확정]
+- **추론 #4:** evt-1201 (Santa Rosa) :partOfSeries evt-1201
+  - 동일 위치(Santa Rosa Island, 33.95N 120.1W), 동일 현상(wildfire)
+  - Containment 진행: 26%(5/21) → 44%(5/22) → 59%(기존) → **72%(금일)**
+  - Mop-up phase 진입. Torrey Pines 보존 확인.
+  - [confidence 0.93, 확정]
+- **추론 #5:** evt-801 (Bezymianny) :partOfSeries evt-801
+  - 동일 위치(Bezymianny, 55.97N 160.59E), 동일 현상(volcanic_eruption)
+  - VAAC advisory series: #27→#40→**#42**
+  - 화산재 23,000ft(7km) E 방향 지속
+  - [confidence 0.85, 확정]
 
-### 추론 #6: official_source_trust — Kilauea USGS HVO
-- **입력:** (evt-202, analyzedBy, org-usgs), (org-usgs.org_type == space_agency)
-- **추론:** (evt-202, officialBoost, +0.15)
-- **신뢰도:** 0.95
-- **상태:** 확정
+### disaster_severity_priority (재해 우선순위) — 1건
+
+- **추론 #6:** evt-1101 (Canada wildfire) — 2 civilian fatalities (Lac du Bonnet) + 33,400+ evacuees (expanded) + Garden Hill First Nation military deployment (CAF) → priorityBoost +0.20 [0.93, 확정]
+  - 첫 민간인 사망 확인 → 보고서 1순위 배치
+  - 인도주의 도메인 교차(dom-humanitarian) 확정: 원주민 커뮤니티 군 투입
+
+### crossDomainLink (도메인 교차) — 1건
+
+- **추론 #7:** evt-1101 (Canada wildfire) :crossDomainLink dom-humanitarian
+  - 2명 사망 + 33,400+ 대피 + Garden Hill FN 군 투입
+  - Disaster → Humanitarian 교차 확정
+  - [confidence 0.90, 확정]
+
+### sensor_capability_match (센서-현상 적합성) — 2건
+
+- **추론 #8:** evt-801 (Bezymianny VAAC#42) — Himawari-9 AHI thermal infrared (IR8.6/IR10.4) → thermalBoost +0.10 [0.85, 확정]
+  - 열적외 채널이 23,000ft 화산재 탐지에 최적
+- **추론 #9:** evt-1101 (Canada wildfire) — Sentinel-5P TROPOMI CO + aerosol index → tracegasBoost +0.15 [0.90, 확정]
+  - 연기 장거리 이동 추적에 trace gas 센서 활용
+  - 기존 transatlantic smoke 추적 연장
+
+### official_source_trust (공식 기관 신뢰도) — 3건
+
+- **추론 #10:** evt-202 (Kilauea) — analyzedBy USGS HVO (space_agency) → officialBoost +0.15 [0.95, 확정]
+  - 정량적 tilt 데이터(11.4μrad) + SO2 범위(1000-5000 tpd) 포함 공식 예보
+- **추론 #11:** evt-1101 (Canada wildfire) — NOAA NESDIS + Copernicus CAMS → officialBoost +0.15 [0.90, 확정]
+- **추론 #12:** evt-801 (Bezymianny) — KVERT + VAAC Tokyo → officialBoost +0.15 [0.85, 확정]
+  - VAAC advisory #42 공식 발행
+
+### 종합 신뢰도 산정 (최종 confidence cap 0.97)
+
+| 이벤트 ID | 이벤트명 | 기본 | 가산 | 최종 | 비고 |
+|-----------|---------|------|------|------|------|
+| temp-evt-1401 | Canlaon VAAC #161 | 0.82 | — | 0.82 | Himawari-9 단독, PHIVOLCS AL2 |
+| Sentinel-2A ext | S2A 연장 2026말 | 0.95 | — | 0.95 | ESA 공식, satops (좌표 없음) |
+| evt-202 update | Kilauea Ep48 5/24-27 | 0.80 | official+0.15, partOfSeries | 0.95 | USGS HVO 공식, tilt 가속 |
+| evt-1201 update | Santa Rosa 72% | 0.80 | official+0.15, ba+0.10, priority+0.20 | 0.95 | Mop-up phase, Landsat 9 |
+| evt-1101 update | Canada wildfire 2사망 | 0.85 | multiSat+0.20, tracegas+0.15, official+0.15, priority+0.20 | 0.97 (cap) | 3위성+인명피해+군투입 |
+| evt-801 update | Bezymianny VAAC#42 | 0.78 | thermal+0.10, official+0.15 | 0.93 | KVERT+VAAC 공식, FL230 |
+| evt-082 update | Mayon Day138+ | 0.85 | multiSat+0.20, partOfSeries | 0.95 | 91,225명 영향, 지속 분출 |
+
+### 추론 통계 요약
+
+| 규칙 | 금일 발동 | 누적 (~05-23) | 평균 신뢰도 |
+|------|----------|------|-----------|
+| multi_satellite_confirmation | 2 | — | 0.91 |
+| temporal_progression / partOfSeries | 3 | — | 0.91 |
+| disaster_severity_priority | 1 | — | 0.93 |
+| crossDomainLink | 1 | — | 0.90 |
+| sensor_capability_match | 2 | — | 0.88 |
+| official_source_trust | 3 | — | 0.90 |
+| **합계** | **12** | — | **0.90** |
+
+### 금일 한반도 GeoFocus — 0건
+
+금일 사이클에서 한반도/DMZ/동해/남해 관련 위성 관측 이벤트 없음. 기존 추적 항목 유지:
+- KOMPSAT-7 커미셔닝 진행 중(7월 정식운용)
+- NLL 어선 활동 추적 중
+- CSIS Beyond Parallel NK 시설 모니터링 유지
+보고서에 "금일 한반도 GeoFocus 신규 이벤트 특이사항 없음" 명시.
+
+### 금일 미적용/제외 추론
+
+- **korea_geo_focus:** 한반도 관련 이벤트 0건 — 미적용
+- **cascading_disaster:** 금일 신규 재해 사슬 없음. Canada wildfire + military deployment는 재해 → 인도주의 crossDomainLink로 처리(cascading이 아닌 severity 기반 도메인 교차).
+- **before_after_credibility:** 금일 신규 before/after 데이터 확인 없음. Santa Rosa 기존 ba 유지.
+- **analyst_org_trust:** 독립 분석기관 신규 분석 없음 (Bellingcat/CSIS/Skytruth 금일 미참조)
+- **supersedes:** 금일 supersede 관계 없음 (모두 partOfSeries 또는 update)
+- **satellite_unverified:** src-028 (MizarVision) — 기보고(reported) 유지, satellite_unverified 상태 지속
+- **commercial_imagery_trust:** 신규 상업 위성 분석 없음
+
+### 온톨로지 변경
+
+| 변경 유형 | 대상 | 근거 |
+|----------|------|------|
+| 새 Location | ent-loc-negros-island (Negros Island, PH, 10.41/123.13) (1건) | Canlaon 화산 위치 |
+| 새 Event | temp-evt-1401 (Canlaon VAAC #161), Sentinel-2A extension (2건) | 신규 이벤트 |
+| 이벤트 업데이트 | evt-202/1201/1101/801/082 (5건) | 예보 변경·진압률·인명피해·VAAC·분출 지속 반영 |
+| 스키마 구조 변경 | 없음 | — |
+
+config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5).
+
+### 특이사항
+
+- **Canada wildfire 인명피해 최우선:** 2명 사망(Lac du Bonnet) + 33,400+ 대피 확대 + Garden Hill First Nation 군대 투입. 재해 우선순위 규칙에 따라 보고서 1순위 배치. Disaster→Humanitarian 도메인 교차 확정.
+- **Kilauea Ep48 D-day 임박:** 예보 창 5/24-27로 이동. tilt 11.4μrad(전일 10.5에서 가속). Both vents glowing. 내일(5/24)부터 분수분출 가능.
+- **Santa Rosa mop-up phase:** 72% 진압으로 대폭 개선(전일 59%). 저강도 잔불 정리 단계. Torrey Pines 희귀 소나무 군락 보존 확인.
+- **Canlaon 신규 VAAC:** 필리핀 제2 활화산. FL090 저고도이나 2024-2026 분출 시퀀스 일부. 향후 에스컬레이션 모니터링 필요.
+- **Bezymianny VAAC#42:** 23,000ft(7km) E 방향. 지속 분출이나 항공 위험 범위 안정.
+- **Mayon Day138+:** 91,225명 영향 인원 지속. 스트롬볼리안 활동 유지.
+- **Sentinel-2A 연장:** 2026년 5월 EOL에서 12월까지 연장. MSI 관측 연속성 확보. 전 세계 EO 데이터 파이프라인 안정 기여.

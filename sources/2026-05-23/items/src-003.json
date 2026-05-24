@@ -1,0 +1,81 @@
+{
+  "id": "src-003",
+  "title": "캐나다 산불 — Lac du Bonnet 2명 사망, 33,400+ 대피, Garden Hill FN 군 지원 대피",
+  "url": "https://www.cbc.ca/news/canada/manitoba/garden-hill-first-nation-wildfire-evacuation-manitoba-1.7581550",
+  "snippet": "Canada wildfire crisis: 2 fatalities in Lac du Bonnet, Manitoba. 33,400+ evacuees across Manitoba, Saskatchewan, Alberta. Garden Hill First Nation military-assisted airlift evacuation. Manitoba declares 2nd state of emergency. 160+ active fires. GOES/VIIRS smoke plume tracking, Sentinel-5P TROPOMI aerosol and CO monitoring across transatlantic path.",
+  "source_name": "CBC News / CBS News / NOAA NESDIS",
+  "language": "en",
+  "discovered_date": "2026-05-23",
+  "tag": "update",
+  "related_report": "2026-05-22/src-005",
+  "related_item": "ent-evt-canada-wildfire-2026",
+  "tag_reason": "2명 사망(Lac du Bonnet), 대피자 33,000→33,400+ 증가, Garden Hill FN 군 대피 작전 신규, Manitoba 2차 비상사태 선포. 인명피해 발생으로 중요 업데이트.",
+  "entities": [
+    {
+      "id": "ent-evt-canada-wildfire-2026",
+      "type": "Event",
+      "name": "캐나다 MB/SK/AB 산불 (2026-05)",
+      "properties": {
+        "phenomenon": "wildfire",
+        "lat": 53.8,
+        "lon": -94.1,
+        "country": "CA",
+        "severity": "critical",
+        "observation_date": "2026-05-23",
+        "fatalities": 2,
+        "fatality_location": "Lac du Bonnet, Manitoba",
+        "evacuees": 33400,
+        "garden_hill_fn_military_airlift": true,
+        "manitoba_state_of_emergency": "2nd declaration",
+        "active_fires": 160
+      }
+    },
+    {
+      "id": "sat-goes18",
+      "type": "Satellite",
+      "name": "GOES-18",
+      "properties": {"operator": "NOAA", "sensor": "ABI"}
+    },
+    {
+      "id": "sat-viirs-jpss",
+      "type": "Satellite",
+      "name": "VIIRS (JPSS)",
+      "properties": {"operator": "NASA/NOAA", "sensor": "VIIRS"}
+    },
+    {
+      "id": "sat-sentinel5p",
+      "type": "Satellite",
+      "name": "Sentinel-5P",
+      "properties": {"operator": "ESA", "sensor": "TROPOMI"}
+    },
+    {
+      "id": "co-ca",
+      "type": "Country",
+      "name": "Canada",
+      "properties": {"iso2": "CA"}
+    },
+    {
+      "id": "ent-loc-gardenhillfn",
+      "type": "Location",
+      "name": "Garden Hill First Nation, Manitoba",
+      "properties": {"country": "CA", "region": "Manitoba", "lat": 53.8, "lon": -94.1}
+    },
+    {
+      "id": "ent-loc-lacdubonnet",
+      "type": "Location",
+      "name": "Lac du Bonnet, Manitoba",
+      "properties": {"country": "CA", "region": "Manitoba", "lat": 50.26, "lon": -96.06}
+    }
+  ],
+  "relations": [
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "observedBy", "object": "sat-goes18"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "observedBy", "object": "sat-viirs-jpss"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "observedBy", "object": "sat-sentinel5p"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "usesSensor", "object": "sensor-abi"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "usesSensor", "object": "sensor-viirs"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "usesSensor", "object": "sensor-tropomi"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "manifests", "object": "phen-air-pol"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "inCountry", "object": "co-ca"}
+  ]
+}

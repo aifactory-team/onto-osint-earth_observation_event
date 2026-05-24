@@ -1,0 +1,66 @@
+{
+  "id": "src-002",
+  "title": "Santa Rosa Island Fire — 18,379ac 72% 진압, 잔불정리(mop-up) 단계 진입",
+  "url": "https://inciweb.wildfire.gov/incident-information/cacnp-santa-rosa-island-fire",
+  "snippet": "Santa Rosa Island Fire on Day 8 enters mop-up phase. 18,379 acres burned, 72% contained (up from 59%). Low fire activity. Torrey Pines grove intact. Landsat 9 OLI false-color imagery confirms burn scar extent. NASA Earthdata Image of the Day coverage.",
+  "source_name": "InciWeb / Santa Barbara Independent / NASA Earthdata",
+  "language": "en",
+  "discovered_date": "2026-05-23",
+  "tag": "update",
+  "related_report": "2026-05-22/src-003",
+  "related_item": "ent-evt-1201",
+  "tag_reason": "진압률 59%→72%로 상승, mop-up 단계 진입. NASA Earthdata Landsat 9 OLI false-color 영상 공개. 중요 상태 변화이므로 update 태그.",
+  "entities": [
+    {
+      "id": "ent-evt-1201",
+      "type": "Event",
+      "name": "Santa Rosa Island Fire (Channel Islands, CA)",
+      "properties": {
+        "phenomenon": "wildfire",
+        "lat": 33.95,
+        "lon": -120.10,
+        "country": "US",
+        "severity": "high",
+        "observation_date": "2026-05-23",
+        "start_date": "2026-05-15",
+        "area_ac": 18379,
+        "containment_pct": 72,
+        "mop_up_phase": true,
+        "torrey_pines_status": "intact",
+        "before_after_available": true
+      }
+    },
+    {
+      "id": "sat-landsat9",
+      "type": "Satellite",
+      "name": "Landsat 9",
+      "properties": {"operator": "USGS/NASA", "sensor": ["OLI", "TIRS"], "resolution_m": 30}
+    },
+    {
+      "id": "org-nasa",
+      "type": "Organization",
+      "name": "NASA",
+      "properties": {"type": "space_agency", "country": "US"}
+    },
+    {
+      "id": "co-us",
+      "type": "Country",
+      "name": "United States",
+      "properties": {"iso2": "US"}
+    },
+    {
+      "id": "ent-loc-sri",
+      "type": "Location",
+      "name": "Santa Rosa Island, Channel Islands NP, California",
+      "properties": {"country": "US", "region": "California", "lat": 33.95, "lon": -120.10}
+    }
+  ],
+  "relations": [
+    {"subject": "ent-evt-1201", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "ent-evt-1201", "predicate": "usesSensor", "object": "sensor-oli"},
+    {"subject": "ent-evt-1201", "predicate": "usesSensor", "object": "sensor-tirs"},
+    {"subject": "ent-evt-1201", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "ent-evt-1201", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "ent-evt-1201", "predicate": "analyzedBy", "object": "org-nasa"}
+  ]
+}

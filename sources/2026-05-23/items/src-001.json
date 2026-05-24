@@ -1,6 +1,6 @@
 {
   "id": "src-001",
-  "title": "Kilauea Ep48 — 예보 창 5/24-27로 업데이트, 경사 11.4μrad",
+  "title": "Kilauea Ep48 — 예보 창 5/24-27로 업데이트, 경사 11.4μrad, 양 분출구 야간 백열",
   "url": "https://www.usgs.gov/volcanoes/kilauea/volcano-updates",
   "snippet": "USGS HVO: Summit reinflation underway since Ep47 ended 5/15. Uēkahuna tiltmeter 11.4μrad. Forecast models suggest Ep48 between 5/24-27. Both vents glowing overnight, south vent brighter. SO₂ 1,000-5,000 t/day. ADVISORY/YELLOW.",
   "source_name": "USGS Hawaiian Volcano Observatory",
@@ -8,11 +8,11 @@
   "discovered_date": "2026-05-23",
   "tag": "update",
   "related_report": "2026-05-22/src-004",
-  "related_item": "evt-202",
+  "related_item": "ent-evt-202",
   "tag_reason": "Kilauea Ep48 예보 창 5/22-26에서 5/24-27로 조정, tilt 10.5→11.4μrad 증가. 분출 시기 예측 변경이므로 update 태그.",
   "entities": [
     {
-      "id": "evt-202",
+      "id": "ent-evt-202",
       "type": "Event",
       "name": "Kilauea Ep48 분수분출 예보",
       "properties": {
@@ -28,13 +28,37 @@
         "so2_tpd": "1000-5000",
         "alert_level": "ADVISORY/YELLOW"
       }
+    },
+    {
+      "id": "sat-sentinel2a",
+      "type": "Satellite",
+      "name": "Sentinel-2A",
+      "properties": {"operator": "ESA", "sensor": "MSI", "resolution_m": 10}
+    },
+    {
+      "id": "sat-landsat9",
+      "type": "Satellite",
+      "name": "Landsat 9",
+      "properties": {"operator": "USGS/NASA", "sensor": ["OLI", "TIRS"], "resolution_m": 30}
+    },
+    {
+      "id": "org-usgs",
+      "type": "Organization",
+      "name": "USGS HVO",
+      "properties": {"type": "government_volcano_observatory", "country": "US"}
+    },
+    {
+      "id": "co-us",
+      "type": "Country",
+      "name": "United States",
+      "properties": {"iso2": "US"}
     }
   ],
   "relations": [
-    {"subject": "evt-202", "predicate": "observedBy", "object": "sat-sentinel2a"},
-    {"subject": "evt-202", "predicate": "observedBy", "object": "sat-landsat9"},
-    {"subject": "evt-202", "predicate": "manifests", "object": "phen-volcano"},
-    {"subject": "evt-202", "predicate": "inCountry", "object": "co-us"},
-    {"subject": "evt-202", "predicate": "analyzedBy", "object": "org-usgs"}
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "ent-evt-202", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-202", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "ent-evt-202", "predicate": "analyzedBy", "object": "org-usgs"}
   ]
 }

@@ -5,11 +5,11 @@
   "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-19", "2026-05-20", "2026-05-21", "2026-05-22", "2026-05-23"],
   "triples": "ontology/kg/2026-04-30.json ~ ontology/kg/2026-05-23.json (new_triples + updated_triples + inferred_triples)",
   "stats": {
-    "total_explicit_triples": 943,
-    "total_inferred_triples": 377,
-    "total_unique_subjects": 210,
-    "total_unique_predicates": 20,
-    "total_unique_objects": 257
+    "total_explicit_triples": 956,
+    "total_inferred_triples": 389,
+    "total_unique_subjects": 212,
+    "total_unique_predicates": 21,
+    "total_unique_objects": 259
   },
-  "note": "2026-05-23 병합 완료 — 신규 7 explicit + 4 updated + 6 inferred 트리플. Canlaon/Kanlaon 화산 VAAC #161(PH, FL090, temp-evt-1401 Himawari-9). Sentinel-2A 연장 2026말(ESA 공식). Kilauea Ep48 예보 5/24-27(tilt 11.4μrad). Santa Rosa 59% 진압. Canada wildfire 2명 사망+33,400+ 대피(인도주의 교차). Bezymianny VAAC#42 23,000ft. multi_satellite_confirmation 1건(evt-1101 GOES+VIIRS+TROPOMI). temporal_progression 4건(Kilauea Ep48, Santa Rosa, Bezymianny, Canlaon). disaster_severity 1건(evt-1101 인명피해). 한반도 GeoFocus 0건. 누적 KG 1320 트리플."
+  "note": "2026-05-23 재병합 완료 — 신규 8 explicit + 5 updated + 12 inferred 트리플. Canlaon/Kanlaon 화산 VAAC #161(PH, FL090, temp-evt-1401 Himawari-9 AHI, Negros Island locatedIn 추가). Sentinel-2A 연장 2026말(ESA 공식, satops). Kilauea Ep48 예보 5/24-27(tilt 11.4μrad, both vents glowing). Santa Rosa 72% 진압 mop-up phase(18,379ac). Canada wildfire 2명 사망+33,400+ 대피+Garden Hill FN 군대 투입(인도주의 교차 확정). Bezymianny VAAC#42 23,000ft E(열적외 thermalBoost). Mayon Day138+ 91,225명 영향. multi_satellite_confirmation 2건(evt-1101 GOES+VIIRS+TROPOMI, evt-082 Himawari-9+Sentinel-2A). temporal_progression 3건(Kilauea Ep48 시리즈, Santa Rosa 진압 시계열, Bezymianny VAAC 시리즈). disaster_severity 1건(evt-1101 인명피해+대규모 대피). sensor_capability 2건(Bezymianny thermalBoost, Canada tracegasBoost). official_source_trust 3건(USGS HVO, NOAA/CAMS, KVERT/VAAC). crossDomainLink 1건(Canada Disaster→Humanitarian). 한반도 GeoFocus 0건. 누적 KG 1345 트리플."
 }

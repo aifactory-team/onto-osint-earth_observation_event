@@ -1,0 +1,66 @@
+{
+  "id": "src-008",
+  "title": "Mayon Alert Level 3 — 스트롬볼리안 Day 138+, 91,225명 영향",
+  "url": "https://www.iqair.com/newsroom/volcanic-eruption-map-spotlight-mayon-volcano-philippines-5-2026",
+  "snippet": "Mayon volcano remains at Alert Level 3 (decreased tendency for hazardous eruption). Strombolian eruption ongoing for 138+ days. 91,225 people affected across Albay province. Himawari-9 AHI thermal monitoring and Sentinel-2A MSI multispectral observation confirm ongoing activity. PHIVOLCS maintains 6km permanent danger zone.",
+  "source_name": "IQAir / PHIVOLCS",
+  "language": "en",
+  "discovered_date": "2026-05-23",
+  "tag": "update",
+  "related_report": "2026-05-22/src-009",
+  "related_item": "ent-evt-082",
+  "tag_reason": "Mayon Alert Level 3 유지, Day 138+ 스트롬볼리안 분출 지속. 91,225명 영향 수치 업데이트. Himawari-9/Sentinel-2A 이중 위성 관측 확인(multiSatBoost). 기존 reported에서 update로 태그 변경 — 피해 규모 수치 갱신.",
+  "entities": [
+    {
+      "id": "ent-evt-082",
+      "type": "Event",
+      "name": "Mayon 화산 Alert Level 3 (Philippines)",
+      "properties": {
+        "phenomenon": "volcanic_eruption",
+        "lat": 13.26,
+        "lon": 123.69,
+        "country": "PH",
+        "severity": "high",
+        "observation_date": "2026-05-23",
+        "alert_level": 3,
+        "eruption_type": "Strombolian",
+        "day_count": 138,
+        "affected_persons": 91225,
+        "permanent_danger_zone_km": 6
+      }
+    },
+    {
+      "id": "sat-himawari9",
+      "type": "Satellite",
+      "name": "Himawari-9",
+      "properties": {"operator": "JMA", "sensor": "AHI"}
+    },
+    {
+      "id": "sat-sentinel2a",
+      "type": "Satellite",
+      "name": "Sentinel-2A",
+      "properties": {"operator": "ESA", "sensor": "MSI", "resolution_m": 10}
+    },
+    {
+      "id": "org-phivolcs",
+      "type": "Organization",
+      "name": "PHIVOLCS",
+      "properties": {"type": "government_volcano_observatory", "country": "PH"}
+    },
+    {
+      "id": "co-ph",
+      "type": "Country",
+      "name": "Philippines",
+      "properties": {"iso2": "PH"}
+    }
+  ],
+  "relations": [
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-082", "predicate": "usesSensor", "object": "sensor-ahi"},
+    {"subject": "ent-evt-082", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "ent-evt-082", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-082", "predicate": "inCountry", "object": "co-ph"},
+    {"subject": "ent-evt-082", "predicate": "analyzedBy", "object": "org-phivolcs"}
+  ]
+}

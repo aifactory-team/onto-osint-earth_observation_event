@@ -1,0 +1,51 @@
+{
+  "id": "src-006",
+  "title": "Sentinel-2A 연장 캠페인 — 2026년 말까지 운용 연장 확정 (ESA 공식)",
+  "url": "https://dataspace.copernicus.eu/news/2026-5-15-sentinel-2a-extension-campaign-prolonged-until-end-2026",
+  "snippet": "ESA confirms Sentinel-2A extension campaign prolonged until end of 2026. Originally scheduled for EOL in May 2026, the satellite will continue operational through December 2026. MSI multispectral instrument remains fully functional. Ensures continuity of 10m-resolution multispectral Earth observation alongside Sentinel-2B and upcoming Sentinel-2C.",
+  "source_name": "Copernicus Data Space / ESA",
+  "language": "en",
+  "discovered_date": "2026-05-23",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "Sentinel-2A 운용 연장은 위성영상 관측 커뮤니티에 영향을 미치는 중요 위성운용(satops) 이벤트. 이전 보고서에 없었으므로 신규.",
+  "entities": [
+    {
+      "id": "temp-evt-1302",
+      "type": "Event",
+      "name": "Sentinel-2A 연장 운용 결정 — 2026년 말까지",
+      "properties": {
+        "phenomenon": "satellite_operations",
+        "lat": null,
+        "lon": null,
+        "country": null,
+        "severity": "low",
+        "announcement_date": "2026-05-15",
+        "original_eol": "2026-05",
+        "extended_eol": "2026-12",
+        "affected_satellite": "Sentinel-2A",
+        "affected_sensor": "MSI",
+        "impact_scope": "global multispectral observation continuity"
+      }
+    },
+    {
+      "id": "sat-sentinel2a",
+      "type": "Satellite",
+      "name": "Sentinel-2A",
+      "properties": {"operator": "ESA", "sensor": "MSI", "resolution_m": 10, "extended_eol": "2026-12"}
+    },
+    {
+      "id": "org-esa",
+      "type": "Organization",
+      "name": "ESA (European Space Agency)",
+      "properties": {"type": "space_agency", "country": "EU"}
+    }
+  ],
+  "relations": [
+    {"subject": "temp-evt-1302", "predicate": "observedBy", "object": "sat-sentinel2a", "note": "Self-referencing: event about the satellite itself"},
+    {"subject": "temp-evt-1302", "predicate": "reportedBy", "object": "org-esa"},
+    {"subject": "temp-evt-1302", "predicate": "manifests", "object": "phen-satops"},
+    {"subject": "temp-evt-1302", "predicate": "inDomain", "object": "dom-satops"}
+  ]
+}

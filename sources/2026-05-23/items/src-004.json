@@ -2,14 +2,14 @@
   "id": "src-004",
   "title": "Canlaon(Kanlaon) 화산 분출 — VAAC Advisory #161, 5/22 08:01Z FL090",
   "url": "https://www.volcanodiscovery.com/canlaon/news/303160/vaac-advisory-2026-161.html",
-  "snippet": "VAAC Tokyo Advisory: Eruption at Canlaon volcano 5/22 08:01Z. Volcanic ash extending SW at FL090. Alert Level 2. Part of continuing 2024-2026 eruption sequence. PHIVOLCS monitoring.",
+  "snippet": "VAAC Tokyo Advisory: Eruption at Canlaon volcano 5/22 08:01Z. Volcanic ash extending SW at FL090. Alert Level 2. Part of continuing 2024-2026 eruption sequence. PHIVOLCS monitoring. Himawari-9 AHI satellite observation confirms ash cloud.",
   "source_name": "VolcanoDiscovery / VAAC Tokyo",
   "language": "en",
   "discovered_date": "2026-05-23",
   "tag": "new",
   "related_report": null,
   "related_item": null,
-  "tag_reason": "Canlaon/Kanlaon 화산의 5/22 분출은 이전 14일 보고서에서 개별 VAAC 이벤트로 보고되지 않았음. ent-evt-128(Dukono)와 동일 지역 아님. 신규 태그.",
+  "tag_reason": "Canlaon/Kanlaon 화산의 5/22 분출은 이전 14일 보고서에서 개별 VAAC 이벤트로 보고되지 않았음. 신규 태그.",
   "entities": [
     {
       "id": "temp-evt-1401",
@@ -31,6 +31,30 @@
         "alert_level": 2,
         "eruption_sequence": "2024-2026 continuing"
       }
+    },
+    {
+      "id": "sat-himawari9",
+      "type": "Satellite",
+      "name": "Himawari-9",
+      "properties": {"operator": "JMA", "sensor": "AHI"}
+    },
+    {
+      "id": "org-phivolcs",
+      "type": "Organization",
+      "name": "PHIVOLCS",
+      "properties": {"type": "government_volcano_observatory", "country": "PH"}
+    },
+    {
+      "id": "org-vaac-tokyo",
+      "type": "Organization",
+      "name": "VAAC Tokyo",
+      "properties": {"type": "international_volcanic_advisory", "country": "JP"}
+    },
+    {
+      "id": "co-ph",
+      "type": "Country",
+      "name": "Philippines",
+      "properties": {"iso2": "PH"}
     }
   ],
   "relations": [

@@ -42,7 +42,7 @@
         "lat": null,
         "lon": null,
         "admin": "global",
-        "announcement_date": "2026-05-23",
+        "announcement_date": "2026-05-15",
         "original_eol": "2026-05",
         "extended_eol": "2026-12",
         "affected_satellite": "Sentinel-2A",
@@ -100,8 +100,9 @@
         "observation_date": "2026-05-23",
         "area_ac": 18379,
         "area_ac_previous": 17554,
-        "containment_pct": 59,
-        "containment_pct_previous": 44,
+        "containment_pct": 72,
+        "containment_pct_previous": 59,
+        "mop_up_phase": true,
         "torrey_pines_status": "intact",
         "uas_imagery": true,
         "satellites_used": ["Landsat 9"],
@@ -111,7 +112,7 @@
       "source_ids": ["src-002"],
       "mention_count": 1,
       "is_new": false,
-      "update_type": "significant — containment 44%→59%, area 17,554→18,379ac, Torrey Pines intact confirmed, UAS imagery"
+      "update_type": "significant — containment 59%→72%, mop-up phase entered, Torrey Pines intact confirmed, Landsat 9 OLI false-color available via NASA Earthdata"
     },
     {
       "temp_id": null,
@@ -123,9 +124,9 @@
         "domain": "Disaster",
         "cross_domain": "ClimateEnvironment/air_pollution",
         "country": "CA",
-        "lat": 52.0,
-        "lon": -97.0,
-        "admin": "Manitoba/Saskatchewan/Alberta",
+        "lat": 53.8,
+        "lon": -94.1,
+        "admin": "Garden Hill FN / Lac du Bonnet, Manitoba",
         "observation_date": "2026-05-23",
         "fatalities": 2,
         "fatality_location": "Lac du Bonnet, Manitoba",
@@ -160,13 +161,39 @@
         "ash_direction": "E",
         "ash_speed_kts": 25,
         "continuous_satellite_observation": true,
-        "satellites_used": ["Himawari-9"],
-        "sensors_used": ["AHI"]
+        "satellites_used": ["Himawari-9", "VIIRS (JPSS)"],
+        "sensors_used": ["AHI", "VIIRS"]
       },
       "source_ids": ["src-005"],
       "mention_count": 1,
       "is_new": false,
-      "update_type": "minor — VAAC #42, ash 23,000ft E 25kts, continuous satellite observation confirmed"
+      "update_type": "minor — VAAC #42, ash 23,000ft E 25kts, continuous satellite observation confirmed, VIIRS 추가 검증"
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-082",
+      "type": "Event",
+      "name": "Mayon 화산 Alert Level 3 — 스트롬볼리안 Day 138+, 91,225명 영향 (Philippines)",
+      "properties": {
+        "phenomenon": "volcanic_eruption",
+        "domain": "Disaster",
+        "country": "PH",
+        "lat": 13.26,
+        "lon": 123.69,
+        "admin": "Albay, Bicol, Philippines",
+        "observation_date": "2026-05-23",
+        "alert_level": 3,
+        "eruption_type": "Strombolian",
+        "day_count": 138,
+        "affected_persons": 91225,
+        "satellites_used": ["Himawari-9", "Sentinel-2A"],
+        "sensors_used": ["AHI", "MSI"],
+        "notes": "Alert Level 3 유지. 138일 이상 스트롬볼리안 분출 지속. 91,225명 피해 범위. Himawari-9 열적외 + Sentinel-2A 다분광 교차 관측."
+      },
+      "source_ids": ["src-008"],
+      "mention_count": 1,
+      "is_new": false,
+      "update_type": "significant — Day 138+ Strombolian ongoing, 91,225 affected persons update, dual satellite observation (Himawari-9/Sentinel-2A)"
     },
     {
       "temp_id": null,
@@ -181,8 +208,8 @@
         "revisit_min": 10,
         "observation_capability": ["volcanic_ash", "cloud_top", "thermal", "visible"]
       },
-      "source_ids": ["src-004", "src-005"],
-      "mention_count": 2,
+      "source_ids": ["src-004", "src-005", "src-008"],
+      "mention_count": 3,
       "is_new": false
     },
     {
@@ -199,8 +226,8 @@
         "extended_eol": "2026-12",
         "observation_capability": ["NDVI", "NBR", "NDWI", "visible", "NIR", "SWIR"]
       },
-      "source_ids": ["src-001", "src-006"],
-      "mention_count": 2,
+      "source_ids": ["src-001", "src-006", "src-008"],
+      "mention_count": 3,
       "is_new": false
     },
     {
@@ -250,8 +277,8 @@
         "revisit_days": 1,
         "observation_capability": ["fire_detection", "thermal_anomaly", "smoke", "night_lights"]
       },
-      "source_ids": ["src-003"],
-      "mention_count": 1,
+      "source_ids": ["src-003", "src-005"],
+      "mention_count": 2,
       "is_new": false
     },
     {
@@ -281,8 +308,8 @@
         "country": "PH",
         "role": "Philippine volcanic hazard monitoring and alert"
       },
-      "source_ids": ["src-004"],
-      "mention_count": 1,
+      "source_ids": ["src-004", "src-008"],
+      "mention_count": 2,
       "is_new": false
     },
     {
@@ -323,9 +350,24 @@
         "country": "JP",
         "role": "Volcanic ash advisory for Western Pacific region"
       },
-      "source_ids": ["src-004"],
-      "mention_count": 1,
+      "source_ids": ["src-004", "src-005"],
+      "mention_count": 2,
       "is_new": false
+    },
+    {
+      "temp_id": null,
+      "matched_id": "org-nasa",
+      "type": "Organization",
+      "name": "NASA",
+      "properties": {
+        "type": "space_agency",
+        "country": "US",
+        "role": "Earth observation and satellite operations"
+      },
+      "source_ids": ["src-002"],
+      "mention_count": 1,
+      "is_new": false,
+      "note": "NASA Earthdata published Landsat 9 false-color imagery of Santa Rosa Island Fire"
     },
     {
       "temp_id": "temp-co-ca",
@@ -369,6 +411,7 @@
     {"subject": "ent-evt-1201", "predicate": "manifests", "object": "phen-wildfire", "source_ids": ["src-002"], "confidence": 0.99},
     {"subject": "ent-evt-1201", "predicate": "inDomain", "object": "dom-disaster", "source_ids": ["src-002"], "confidence": 0.99},
     {"subject": "ent-evt-1201", "predicate": "inCountry", "object": "co-us", "source_ids": ["src-002"], "confidence": 0.99},
+    {"subject": "ent-evt-1201", "predicate": "analyzedBy", "object": "org-nasa", "source_ids": ["src-002"], "confidence": 0.90, "note": "NASA Earthdata Landsat 9 OLI false-color imagery"},
     {"subject": "ent-evt-canada-wildfire-2026", "predicate": "observedBy", "object": "sat-goes18", "source_ids": ["src-003"], "confidence": 0.92},
     {"subject": "ent-evt-canada-wildfire-2026", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-003"], "confidence": 0.90},
     {"subject": "ent-evt-canada-wildfire-2026", "predicate": "observedBy", "object": "sat-sentinel5p", "source_ids": ["src-003"], "confidence": 0.90},
@@ -381,15 +424,26 @@
     {"subject": "ent-evt-canada-wildfire-2026", "predicate": "inDomain", "object": "dom-climate", "source_ids": ["src-003"], "confidence": 0.88},
     {"subject": "ent-evt-canada-wildfire-2026", "predicate": "inCountry", "object": "co-ca", "source_ids": ["src-003"], "confidence": 0.99},
     {"subject": "ent-evt-801", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-005"], "confidence": 0.88},
+    {"subject": "ent-evt-801", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-005"], "confidence": 0.85},
     {"subject": "ent-evt-801", "predicate": "usesSensor", "object": "sensor-ahi", "source_ids": ["src-005"], "confidence": 0.88},
+    {"subject": "ent-evt-801", "predicate": "usesSensor", "object": "sensor-viirs", "source_ids": ["src-005"], "confidence": 0.85},
     {"subject": "ent-evt-801", "predicate": "manifests", "object": "phen-volcano", "source_ids": ["src-005"], "confidence": 0.99},
     {"subject": "ent-evt-801", "predicate": "inDomain", "object": "dom-disaster", "source_ids": ["src-005"], "confidence": 0.99},
-    {"subject": "ent-evt-801", "predicate": "inCountry", "object": "co-ru", "source_ids": ["src-005"], "confidence": 0.99}
+    {"subject": "ent-evt-801", "predicate": "inCountry", "object": "co-ru", "source_ids": ["src-005"], "confidence": 0.99},
+    {"subject": "ent-evt-801", "predicate": "analyzedBy", "object": "org-vaac-tokyo", "source_ids": ["src-005"], "confidence": 0.90},
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-008"], "confidence": 0.90},
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-008"], "confidence": 0.88},
+    {"subject": "ent-evt-082", "predicate": "usesSensor", "object": "sensor-ahi", "source_ids": ["src-008"], "confidence": 0.90},
+    {"subject": "ent-evt-082", "predicate": "usesSensor", "object": "sensor-msi", "source_ids": ["src-008"], "confidence": 0.88},
+    {"subject": "ent-evt-082", "predicate": "manifests", "object": "phen-volcano", "source_ids": ["src-008"], "confidence": 0.99},
+    {"subject": "ent-evt-082", "predicate": "inDomain", "object": "dom-disaster", "source_ids": ["src-008"], "confidence": 0.99},
+    {"subject": "ent-evt-082", "predicate": "inCountry", "object": "co-ph", "source_ids": ["src-008"], "confidence": 0.99},
+    {"subject": "ent-evt-082", "predicate": "analyzedBy", "object": "org-phivolcs", "source_ids": ["src-008"], "confidence": 0.92}
   ],
   "stats": {
-    "total_entities": 17,
+    "total_entities": 19,
     "new_entities": 3,
-    "matched_entities": 14,
-    "total_relations": 41
+    "matched_entities": 16,
+    "total_relations": 53
   }
 }
