@@ -1,0 +1,187 @@
+{
+  "date": "2026-05-24",
+  "new_triples": [
+    {"subject": "evt-202", "predicate": "observedBy", "object": "sat-landsat9", "source_id": "src-001", "date": "2026-05-24", "confidence": 0.95, "type": "explicit", "note": "Kilauea Ep48 forecast narrowed to 5/25-26 (was 5/24-27). D-1 to eruption. Tilt continuing acceleration. Landsat TIRS thermal monitoring."},
+    {"subject": "evt-1201", "predicate": "observedBy", "object": "sat-landsat9", "source_id": "src-002", "date": "2026-05-24", "confidence": 0.93, "type": "explicit", "note": "Santa Rosa Island fire 87% contained (up from 72%). Mop-up phase. Landsat 9 burn scar mapping."},
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-sentinel5p", "source_id": "src-003", "date": "2026-05-24", "confidence": 0.95, "type": "explicit", "note": "Canada Manitoba wildfire smoke reaching Europe via Atlantic confirmed by CAMS. TROPOMI+OMPS+EarthCare multi-satellite. 33,000+ evacuated, 2 deaths."},
+    {"subject": "evt-128", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-004", "date": "2026-05-24", "confidence": 0.82, "type": "explicit", "note": "Dukono VAAC Darwin advisory #284, FL070. 190 explosions/day."},
+    {"subject": "evt-701", "predicate": "observedBy", "object": "sat-viirs", "source_id": "src-005", "date": "2026-05-24", "confidence": 0.95, "type": "explicit", "note": "Bismarck Sea submarine volcano NASA EO feature article. Pumice raft 200km+ drift, 70km² area. Potential island formation. VIIRS thermal anomaly 7km²."}
+  ],
+  "updated_triples": [
+    {"subject": "evt-203", "predicate": "observedBy", "object": "sat-sentinel1a", "source_id": "src-006", "date": "2026-05-24", "confidence": 0.90, "type": "explicit", "note": "Great Sitkin WATCH/ORANGE status maintained. Lava dome growth continuing. SAR monitoring through clouds."},
+    {"subject": "evt-204", "predicate": "observedBy", "object": "sat-sentinel5p", "source_id": "src-007", "date": "2026-05-24", "confidence": 0.85, "type": "explicit", "note": "Shishaldin ADVISORY/YELLOW. SO2 gas emissions detected via TROPOMI."},
+    {"subject": "evt-082", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-008", "date": "2026-05-24", "confidence": 0.88, "type": "explicit", "note": "Mayon AL3, Day 139+ Strombolian activity. PDC events reported."},
+    {"subject": "temp-evt-1401", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-009", "date": "2026-05-24", "confidence": 0.82, "type": "explicit", "note": "Kanlaon AL2, SO2 emissions 410-4081 t/d. PHIVOLCS monitoring."},
+    {"subject": "evt-801", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-010", "date": "2026-05-24", "confidence": 0.85, "type": "explicit", "note": "Bezymianny KVERT Orange code. Explosive eruption phase. Thermal anomaly detected via satellite."}
+  ],
+  "inferred_triples": [
+    {
+      "subject": "evt-1101",
+      "predicate": "multiSatBoost",
+      "object": "+0.20",
+      "rule": "multi_satellite_confirmation",
+      "confidence": 0.95,
+      "type": "inferred",
+      "note": "Canada wildfire: GOES-18 (NOAA) + VIIRS (NOAA/NASA) + TROPOMI (ESA Sentinel-5P) + OMPS (NASA Suomi NPP) + EarthCare (ESA/JAXA) = 5 satellites, 3 independent agencies (NOAA, ESA, JAXA). Cross-modal: GEO optical + LEO multispectral + LEO trace gas + LEO lidar."
+    },
+    {
+      "subject": "evt-701",
+      "predicate": "multiSatBoost",
+      "object": "+0.20",
+      "rule": "multi_satellite_confirmation",
+      "confidence": 0.95,
+      "type": "inferred",
+      "note": "Bismarck Sea: VIIRS (NOAA) + MODIS Terra (NASA) + Landsat 9 (USGS/NASA) + Himawari-9 (JMA/JAXA) + PACE (NASA) = 5 satellites, 3 independent agencies (NOAA, NASA/USGS, JMA/JAXA). NASA EO official feature article."
+    },
+    {
+      "subject": "evt-202",
+      "predicate": "partOfSeries",
+      "object": "evt-004",
+      "rule": "temporal_progression",
+      "confidence": 0.95,
+      "type": "inferred",
+      "note": "Kilauea Ep48 partOfSeries Ep44-45-46-47-48. Forecast narrowed to 5/25-26 (was 5/24-27). D-1 to eruption. Tilt continuing."
+    },
+    {
+      "subject": "evt-1201",
+      "predicate": "partOfSeries",
+      "object": "evt-1201",
+      "rule": "temporal_progression",
+      "confidence": 0.93,
+      "type": "inferred",
+      "note": "Santa Rosa fire containment progression 26%→44%→59%→72%→87%. Day 9 of firefighting. Same location, same phenomenon."
+    },
+    {
+      "subject": "evt-1101",
+      "predicate": "partOfSeries",
+      "object": "evt-1101",
+      "rule": "temporal_progression",
+      "confidence": 0.93,
+      "type": "inferred",
+      "note": "Canada wildfire smoke now reaching Europe. Transatlantic transport confirmed by CAMS multi-model. Ongoing multi-week event."
+    },
+    {
+      "subject": "evt-701",
+      "predicate": "officialBoost",
+      "object": "+0.15",
+      "rule": "official_source_trust",
+      "confidence": 0.97,
+      "type": "inferred",
+      "note": "Bismarck Sea — NASA Earth Observatory official feature article. NASA officialBoost applied. Formal scientific analysis of pumice raft, thermal anomaly, and potential island formation."
+    },
+    {
+      "subject": "evt-202",
+      "predicate": "officialBoost",
+      "object": "+0.15",
+      "rule": "official_source_trust",
+      "confidence": 0.95,
+      "type": "inferred",
+      "note": "Kilauea — analyzedBy USGS HVO (space_agency). Official forecast narrowing D-1 window."
+    },
+    {
+      "subject": "evt-203",
+      "predicate": "officialBoost",
+      "object": "+0.15",
+      "rule": "official_source_trust",
+      "confidence": 0.90,
+      "type": "inferred",
+      "note": "Great Sitkin — analyzedBy USGS AVO. WATCH/ORANGE official alert level."
+    },
+    {
+      "subject": "evt-204",
+      "predicate": "officialBoost",
+      "object": "+0.15",
+      "rule": "official_source_trust",
+      "confidence": 0.85,
+      "type": "inferred",
+      "note": "Shishaldin — analyzedBy USGS AVO. ADVISORY/YELLOW official alert level."
+    },
+    {
+      "subject": "evt-128",
+      "predicate": "officialBoost",
+      "object": "+0.15",
+      "rule": "official_source_trust",
+      "confidence": 0.85,
+      "type": "inferred",
+      "note": "Dukono — analyzedBy PVMBG (CVGHM) + VAAC Darwin official advisory #284."
+    },
+    {
+      "subject": "evt-082",
+      "predicate": "officialBoost",
+      "object": "+0.15",
+      "rule": "official_source_trust",
+      "confidence": 0.90,
+      "type": "inferred",
+      "note": "Mayon — analyzedBy PHIVOLCS. AL3 official alert level. Day 139+ PDC events."
+    },
+    {
+      "subject": "temp-evt-1401",
+      "predicate": "officialBoost",
+      "object": "+0.15",
+      "rule": "official_source_trust",
+      "confidence": 0.82,
+      "type": "inferred",
+      "note": "Kanlaon — analyzedBy PHIVOLCS. AL2 official alert level. SO2 410-4081 t/d."
+    },
+    {
+      "subject": "evt-202",
+      "predicate": "thermalBoost",
+      "object": "+0.10",
+      "rule": "sensor_capability_match_tirs",
+      "confidence": 0.93,
+      "type": "inferred",
+      "note": "Kilauea — Landsat TIRS thermal infrared monitoring for pre-eruption thermal signatures. D-1 eruption imminent."
+    },
+    {
+      "subject": "evt-701",
+      "predicate": "thermalBoost",
+      "object": "+0.10",
+      "rule": "sensor_capability_match_tirs",
+      "confidence": 0.95,
+      "type": "inferred",
+      "note": "Bismarck Sea — VIIRS thermal anomaly 7km² detection. Submarine volcanic thermal signature."
+    },
+    {
+      "subject": "evt-203",
+      "predicate": "sarBoost",
+      "object": "+0.10",
+      "rule": "sensor_capability_match_sar",
+      "confidence": 0.90,
+      "type": "inferred",
+      "note": "Great Sitkin — Sentinel-1 SAR through clouds. Lava dome growth monitoring via C-band SAR in persistently cloudy Aleutian conditions."
+    },
+    {
+      "subject": "evt-1101",
+      "predicate": "priorityBoost",
+      "object": "+0.20",
+      "rule": "disaster_severity_priority",
+      "confidence": 0.95,
+      "type": "inferred",
+      "note": "Canada wildfire: 2 fatalities + 33,000+ evacuees + smoke reaching Europe = HIGH severity. Infrastructure impact. Report priority 1."
+    },
+    {
+      "subject": "evt-202",
+      "predicate": "priorityBoost",
+      "object": "+0.20",
+      "rule": "disaster_severity_priority",
+      "confidence": 0.93,
+      "type": "inferred",
+      "note": "Kilauea Ep48: D-1 imminent eruption forecast. Tilt continuing. Potential for lava fountaining within 24-48 hours."
+    },
+    {
+      "subject": "evt-1201",
+      "predicate": "baCredibilityBoost",
+      "object": "+0.10",
+      "rule": "before_after_credibility",
+      "confidence": 0.90,
+      "type": "inferred",
+      "note": "Santa Rosa — Landsat 9 burn scar mapping with before/after comparison available. Containment progression 26%→87%."
+    }
+  ],
+  "stats": {
+    "new_nodes": 0,
+    "new_edges": 5,
+    "updated_edges": 5,
+    "inferred_edges": 18
+  }
+}

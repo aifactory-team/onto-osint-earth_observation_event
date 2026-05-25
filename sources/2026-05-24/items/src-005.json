@@ -1,0 +1,90 @@
+{
+  "id": "src-005",
+  "title": "Bismarck Sea 해저화산 — NASA EO 공식 기사, 부석 200km+ 70km², VIIRS 열이상 7km², 신규 섬 가능성",
+  "url": "https://science.nasa.gov/earth/earth-observatory/new-eruption-in-the-bismarck-sea/",
+  "additional_urls": [
+    "https://www.discovermagazine.com/an-underwater-volcanic-eruption-brewing-in-the-bismarck-sea-may-cause-a-new-island-to-rise-49148"
+  ],
+  "snippet": "NASA Earth Observatory formal article on Bismarck Sea submarine eruption. Pumice rafts spanning 70km², extending 200km WSW. VIIRS thermal anomalies ~7km². Aqua/Terra MODIS optical, PACE ocean color, Copernicus imagery all confirm. Potential new island formation from Titan Ridge volcanic complex.",
+  "source_name": "NASA Earth Observatory / Discover Magazine",
+  "language": "en",
+  "discovered_date": "2026-05-24",
+  "tag": "update",
+  "related_report": "2026-05-23/src-007",
+  "related_item": "ent-evt-701",
+  "tag_reason": "NASA EO 공식 기사 발행 — officialBoost +0.15 적용. 부석 범위 200km+ WSW 확산 확인. PACE 해양색 + VIIRS 열이상 7km² 새 데이터. 5개 독립 위성/센서 교차검증으로 multiSatBoost +0.2.",
+  "entities": [
+    {
+      "id": "ent-evt-701",
+      "type": "Event",
+      "name": "Bismarck Sea 해저화산 분출 — 부석 200km+, 신규 섬 가능성 (PNG)",
+      "properties": {
+        "phenomenon": "volcanic_eruption",
+        "lat": -3.03,
+        "lon": 147.78,
+        "country": "PG",
+        "severity": "high",
+        "observation_date": "2026-05-24",
+        "pumice_raft_area_km2": 70,
+        "pumice_extent_km": 200,
+        "pumice_direction": "WSW",
+        "viirs_thermal_km2": 7,
+        "potential_new_island": true,
+        "volcanic_complex": "Titan Ridge",
+        "nasa_eo_featured": true,
+        "multi_satellite_count": 5
+      }
+    },
+    {
+      "id": "sat-viirs-jpss",
+      "type": "Satellite",
+      "name": "VIIRS (Suomi-NPP/JPSS)",
+      "properties": {"operator": "NOAA/NASA", "sensor": "VIIRS", "resolution_m": 375}
+    },
+    {
+      "id": "sat-modis-terra",
+      "type": "Satellite",
+      "name": "MODIS (Terra/Aqua)",
+      "properties": {"operator": "NASA", "sensor": "MODIS", "resolution_m": 250}
+    },
+    {
+      "id": "sat-landsat9",
+      "type": "Satellite",
+      "name": "Landsat 9",
+      "properties": {"operator": "USGS/NASA", "sensor": ["OLI", "TIRS"], "resolution_m": 30}
+    },
+    {
+      "id": "sat-himawari9",
+      "type": "Satellite",
+      "name": "Himawari-9",
+      "properties": {"operator": "JMA/JAXA", "sensor": "AHI"}
+    },
+    {
+      "id": "sat-pace",
+      "type": "Satellite",
+      "name": "PACE",
+      "properties": {"operator": "NASA", "sensor": "OCI", "resolution_m": 1000, "mission_status": "operational", "launch_date": "2024-02-08"}
+    },
+    {
+      "id": "co-pg",
+      "type": "Country",
+      "name": "Papua New Guinea",
+      "properties": {"iso2": "PG"}
+    }
+  ],
+  "relations": [
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-viirs-jpss"},
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-modis-terra"},
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-701", "predicate": "observedBy", "object": "sat-pace"},
+    {"subject": "ent-evt-701", "predicate": "usesSensor", "object": "sensor-viirs"},
+    {"subject": "ent-evt-701", "predicate": "usesSensor", "object": "sensor-modis"},
+    {"subject": "ent-evt-701", "predicate": "usesSensor", "object": "sensor-oli"},
+    {"subject": "ent-evt-701", "predicate": "usesSensor", "object": "sensor-ahi"},
+    {"subject": "ent-evt-701", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-701", "predicate": "inCountry", "object": "co-pg"},
+    {"subject": "ent-evt-701", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "ent-evt-701", "predicate": "analyzedBy", "object": "org-nasa"}
+  ]
+}

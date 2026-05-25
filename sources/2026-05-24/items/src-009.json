@@ -1,0 +1,65 @@
+{
+  "id": "src-009",
+  "title": "Kanlaon — Alert Level 2, SO₂ 410-4,081 t/d, 배출 200-700m",
+  "url": "https://gulfnews.com/world/asia/philippines/philippines-back-to-back-eruptions-mayon-unleashes-fast-moving-avalanche-of-hot-rocks-kanlaon-shoots-ash-plumes-1.500457181",
+  "snippet": "Kanlaon volcano Philippines at Alert Level 2. 2 to 18 daily volcanic earthquakes. SO₂ emissions 410 to 4,081 tonnes/day. Emissions reaching 200-700m above summit. Himawari-9 AHI volcanic ash monitoring.",
+  "source_name": "Gulf News / PHIVOLCS",
+  "language": "en",
+  "discovered_date": "2026-05-24",
+  "tag": "update",
+  "related_report": "2026-05-23/src-004",
+  "related_item": "temp-evt-1401",
+  "tag_reason": "Kanlaon AL2 유지. SO₂ 410-4,081 t/d 범위 제시(이전 미상). 2-18 VQ/일 정량 데이터 추가. 배출 200-700m 상세화.",
+  "entities": [
+    {
+      "id": "temp-evt-1401",
+      "type": "Event",
+      "name": "Kanlaon 화산 분출 Alert Level 2 (Philippines)",
+      "properties": {
+        "phenomenon": "volcanic_eruption",
+        "lat": 10.41,
+        "lon": 123.13,
+        "country": "PH",
+        "severity": "medium",
+        "observation_date": "2026-05-24",
+        "alert_level": 2,
+        "daily_volcanic_earthquakes": "2-18",
+        "so2_tpd_range": "410-4081",
+        "emission_height_m": "200-700",
+        "eruption_status": "continuing"
+      }
+    },
+    {
+      "id": "sat-himawari9",
+      "type": "Satellite",
+      "name": "Himawari-9",
+      "properties": {"operator": "JMA/JAXA", "sensor": "AHI"}
+    },
+    {
+      "id": "org-phivolcs",
+      "type": "Organization",
+      "name": "PHIVOLCS",
+      "properties": {"type": "government_volcano_observatory", "country": "PH"}
+    },
+    {
+      "id": "co-ph",
+      "type": "Country",
+      "name": "Philippines",
+      "properties": {"iso2": "PH"}
+    },
+    {
+      "id": "ent-loc-kanlaon",
+      "type": "Location",
+      "name": "Kanlaon Volcano, Negros Island",
+      "properties": {"country": "PH", "region": "Negros", "lat": 10.41, "lon": 123.13}
+    }
+  ],
+  "relations": [
+    {"subject": "temp-evt-1401", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "temp-evt-1401", "predicate": "usesSensor", "object": "sensor-ahi"},
+    {"subject": "temp-evt-1401", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "temp-evt-1401", "predicate": "inCountry", "object": "co-ph"},
+    {"subject": "temp-evt-1401", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "temp-evt-1401", "predicate": "analyzedBy", "object": "org-phivolcs"}
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "src-008",
+  "title": "Mayon — Alert Level 3, 스트롬볼리안 131일+ 지속, PDC 발생",
+  "url": "https://gulfnews.com/world/asia/philippines/philippines-back-to-back-eruptions-mayon-unleashes-fast-moving-avalanche-of-hot-rocks-kanlaon-shoots-ash-plumes-1.500457181",
+  "snippet": "Mayon volcano Philippines remains at Alert Level 3. Over 131 days of continuous Strombolian eruption. Pyroclastic density current (PDC) events observed. PHIVOLCS monitoring continues. Himawari-9 AHI thermal and Sentinel-2A MSI multispectral dual observation.",
+  "source_name": "Gulf News / PHIVOLCS",
+  "language": "en",
+  "discovered_date": "2026-05-24",
+  "tag": "update",
+  "related_report": "2026-05-23/src-008",
+  "related_item": "ent-evt-082",
+  "tag_reason": "Mayon PDC (화쇄류) 발생 신규 보고. Day 131+ 스트롬볼리안 지속. PDC 이벤트는 위험도 상승 징후.",
+  "entities": [
+    {
+      "id": "ent-evt-082",
+      "type": "Event",
+      "name": "Mayon 화산 Alert Level 3 — 스트롬볼리안 + PDC (Philippines)",
+      "properties": {
+        "phenomenon": "volcanic_eruption",
+        "lat": 13.26,
+        "lon": 123.69,
+        "country": "PH",
+        "severity": "high",
+        "observation_date": "2026-05-24",
+        "alert_level": 3,
+        "eruption_type": "Strombolian",
+        "day_count": 131,
+        "pdc_events": true,
+        "pdc_description": "fast-moving avalanche of hot rocks"
+      }
+    },
+    {
+      "id": "sat-himawari9",
+      "type": "Satellite",
+      "name": "Himawari-9",
+      "properties": {"operator": "JMA/JAXA", "sensor": "AHI"}
+    },
+    {
+      "id": "sat-sentinel2a",
+      "type": "Satellite",
+      "name": "Sentinel-2A",
+      "properties": {"operator": "ESA", "sensor": "MSI", "resolution_m": 10}
+    },
+    {
+      "id": "org-phivolcs",
+      "type": "Organization",
+      "name": "PHIVOLCS",
+      "properties": {"type": "government_volcano_observatory", "country": "PH"}
+    },
+    {
+      "id": "co-ph",
+      "type": "Country",
+      "name": "Philippines",
+      "properties": {"iso2": "PH"}
+    }
+  ],
+  "relations": [
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-082", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-082", "predicate": "usesSensor", "object": "sensor-ahi"},
+    {"subject": "ent-evt-082", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "ent-evt-082", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-082", "predicate": "inCountry", "object": "co-ph"},
+    {"subject": "ent-evt-082", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "ent-evt-082", "predicate": "analyzedBy", "object": "org-phivolcs"}
+  ]
+}

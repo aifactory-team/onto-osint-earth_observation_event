@@ -1,0 +1,70 @@
+{
+  "id": "src-002",
+  "title": "Santa Rosa Island Fire — 18,379ac 87% 진압, 잔불정리 지속, 채널제도 역대 최대 화재",
+  "url": "https://inciweb.wildfire.gov/incident-information/cacnp-santa-rosa-island-fire",
+  "additional_urls": [
+    "https://www.noozhawk.com/59-containment-reported-for-santa-rosa-island-fire-park-closure-extended/"
+  ],
+  "snippet": "Santa Rosa Island fire in Channel Islands National Park now at 87% containment (up from 72%). 18,379 acres burned — largest fire in Channel Islands history. Mop-up phase continues. Landsat 9 OLI false-color and VIIRS NOAA-21 monitoring ongoing.",
+  "source_name": "InciWeb / Noozhawk",
+  "language": "en",
+  "discovered_date": "2026-05-24",
+  "tag": "update",
+  "related_report": "2026-05-23/src-002",
+  "related_item": "ent-evt-1201",
+  "tag_reason": "진압률 72%→87% 15%p 상승. 잔불정리 지속 중. VIIRS NOAA-21 false-color 추가 관측 확인.",
+  "entities": [
+    {
+      "id": "ent-evt-1201",
+      "type": "Event",
+      "name": "Santa Rosa Island Fire (Channel Islands, CA)",
+      "properties": {
+        "phenomenon": "wildfire",
+        "lat": 33.95,
+        "lon": -120.10,
+        "country": "US",
+        "severity": "high",
+        "observation_date": "2026-05-24",
+        "start_date": "2026-05-15",
+        "area_ac": 18379,
+        "containment_pct": 87,
+        "containment_pct_previous": 72,
+        "mop_up_phase": true,
+        "largest_channel_islands_fire": true
+      }
+    },
+    {
+      "id": "sat-landsat9",
+      "type": "Satellite",
+      "name": "Landsat 9",
+      "properties": {"operator": "USGS/NASA", "sensor": ["OLI", "TIRS"], "resolution_m": 30}
+    },
+    {
+      "id": "sat-viirs-jpss",
+      "type": "Satellite",
+      "name": "VIIRS (NOAA-21)",
+      "properties": {"operator": "NOAA", "sensor": "VIIRS", "resolution_m": 375}
+    },
+    {
+      "id": "org-nps",
+      "type": "Organization",
+      "name": "National Park Service / InciWeb",
+      "properties": {"type": "government_land_management", "country": "US"}
+    },
+    {
+      "id": "co-us",
+      "type": "Country",
+      "name": "United States",
+      "properties": {"iso2": "US"}
+    }
+  ],
+  "relations": [
+    {"subject": "ent-evt-1201", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "ent-evt-1201", "predicate": "observedBy", "object": "sat-viirs-jpss"},
+    {"subject": "ent-evt-1201", "predicate": "usesSensor", "object": "sensor-oli"},
+    {"subject": "ent-evt-1201", "predicate": "usesSensor", "object": "sensor-viirs"},
+    {"subject": "ent-evt-1201", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "ent-evt-1201", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "ent-evt-1201", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

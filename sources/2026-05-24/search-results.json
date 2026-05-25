@@ -1,0 +1,161 @@
+{
+  "date": "2026-05-24",
+  "collected_at": "2026-05-24T23:00:00Z",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 18,
+  "total_results": 55,
+  "expanded_keywords": [
+    "Kilauea Ep48", "Santa Rosa Island fire", "Canada wildfire Manitoba",
+    "Dukono VAAC", "Bismarck Sea volcano", "Mayon PHIVOLCS",
+    "Kanlaon Alert Level 2", "Bezymianny KVERT", "Great Sitkin lava dome",
+    "Shishaldin SO2"
+  ],
+  "searches": [
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "satellite imagery wildfire containment May 2026", "language": "en",
+      "timestamp": "2026-05-24T23:00:01Z", "result_count": 10,
+      "results": [
+        {"title": "Santa Rosa Island Fire 87% Contained — Mop-Up Continues", "url": "https://inciweb.wildfire.gov/incident-information/cacnp-santa-rosa-island-fire", "snippet": "18,379ac 87% contained mop-up phase Channel Islands NP", "source_name": "InciWeb"},
+        {"title": "NOAA Satellites Monitor Canadian Wildfires and Smoke", "url": "https://www.nesdis.noaa.gov/news/noaa-satellites-monitor-canadian-wildfires-and-smoke", "snippet": "CAMS tracks second smoke plume crossing Atlantic TROPOMI OMPS EarthCare", "source_name": "NOAA NESDIS"},
+        {"title": "59% Containment Reported for Santa Rosa Island Fire", "url": "https://www.noozhawk.com/59-containment-reported-for-santa-rosa-island-fire-park-closure-extended/", "snippet": "Largest Channel Islands fire ever Torrey Pines monitoring continues", "source_name": "Noozhawk"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "satellite imagery volcano eruption May 24 2026", "language": "en",
+      "timestamp": "2026-05-24T23:00:30Z", "result_count": 10,
+      "results": [
+        {"title": "New Eruption in the Bismarck Sea - NASA Science", "url": "https://science.nasa.gov/earth/earth-observatory/new-eruption-in-the-bismarck-sea/", "snippet": "Pumice rafts 200km+ WSW 70km² VIIRS thermal PACE ocean color potential new island", "source_name": "NASA EO"},
+        {"title": "Volcanic activity worldwide 24 May 2026", "url": "https://www.volcanodiscovery.com/volcano-activity/news/303300/Volcanic-activity-worldwide-24-May-2026.html", "snippet": "Dukono VAAC #284 FL070 E Mayon Strombolian Kanlaon AL2 Bezymianny Orange", "source_name": "VolcanoDiscovery"},
+        {"title": "Kilauea Volcano Eruption Window Opens May 25-26", "url": "https://www.bigislandvideonews.com/2026/05/24/kilauea-volcano-eruption-window-opens-2/", "snippet": "HVO Ep48 forecast narrowed May 25-26 glow both vents SO2", "source_name": "Big Island Video News"},
+        {"title": "Underwater Volcanic Eruption May Cause New Island — Bismarck Sea", "url": "https://www.discovermagazine.com/an-underwater-volcanic-eruption-brewing-in-the-bismarck-sea-may-cause-a-new-island-to-rise-49148", "snippet": "Pumice raft 70km² potential island birth multi-satellite confirmation", "source_name": "Discover Magazine"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "위성영상 화산 분출 산불 2026년 5월", "language": "ko",
+      "timestamp": "2026-05-24T23:00:45Z", "result_count": 6,
+      "results": [
+        {"title": "USGS 하와이 킬라우에아 화산 48차 분출 예보", "url": "https://www.usgs.gov/volcanoes/kilauea/volcano-updates", "snippet": "HVO 48차 에피소드 5/25-26 분출 예상 경사 증가", "source_name": "USGS"},
+        {"title": "캐나다 대형 산불 연기 유럽까지 확산 — 위성 추적", "url": "https://atmosphere.copernicus.eu/cams-tracks-smoke-intense-canadian-wildfires-reaching-europe", "snippet": "CAMS AOD 대서양 횡단 연기 추적 TROPOMI OMPS", "source_name": "CAMS"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "Canada wildfire Manitoba smoke transatlantic CAMS May 24 2026", "language": "en",
+      "timestamp": "2026-05-24T23:01:00Z", "result_count": 8,
+      "results": [
+        {"title": "CAMS Tracks Smoke from Intense Canadian Wildfires Reaching Europe", "url": "https://atmosphere.copernicus.eu/cams-tracks-smoke-intense-canadian-wildfires-reaching-europe", "snippet": "Second large smoke plume Atlantic crossing CAMS AOD monitoring EarthCare validation", "source_name": "CAMS/Copernicus"},
+        {"title": "Canada Wildfires: Smoke Deaths Evacuations Manitoba Saskatchewan Alberta", "url": "https://www.cbsnews.com/news/canada-wildfires-smoke-deaths-evacuations-manitoba-saskatchewan-alberta/", "snippet": "33,000+ evacuations 2 deaths Lac du Bonnet Garden Hill FN CAF", "source_name": "CBS News"},
+        {"title": "NOAA Satellites Monitor Canadian Wildfires and Smoke", "url": "https://www.nesdis.noaa.gov/news/noaa-satellites-monitor-canadian-wildfires-and-smoke", "snippet": "GOES-18 VIIRS smoke tracking multi-satellite monitoring", "source_name": "NOAA NESDIS"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "satellite imagery deforestation oil spill mining May 2026", "language": "en",
+      "timestamp": "2026-05-24T23:01:15Z", "result_count": 8,
+      "results": [
+        {"title": "Pemex Cantarell Oil Spill Still Spreading — Satellite Images", "url": "https://www.tpr.org/environment/2026-05-07/pemex-linked-gulf-oil-spill-may-still-be-spreading-three-months-later-satellite-images-suggest", "snippet": "3+ months SAR slick detection Sentinel-1 Gulf of Mexico", "source_name": "TPR"},
+        {"title": "Gold Mining Scarring Brazil Amazon Xingu", "url": "https://www.washingtontimes.com/news/2026/may/5/gold-fueled-mining-rush-scarring-brazils-amazon-spiking-deforestation/", "snippet": "496k ha deforestation PlanetScope Sentinel-2", "source_name": "Washington Times"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "satellite imagery military buildup naval activity May 2026", "language": "en",
+      "timestamp": "2026-05-24T23:01:30Z", "result_count": 7,
+      "results": [
+        {"title": "CSIS Beyond Parallel Satellite Imagery Archives", "url": "https://beyondparallel.csis.org/tag/satellite-imagery/", "snippet": "Yongbyon UEP Panghyon UAV Sohae Sinpung-dong ICBM base", "source_name": "CSIS Beyond Parallel"},
+        {"title": "MizarVision AI Satellite Imagery US Military Assets", "url": "https://defence-industry.eu/mizarvision-publishes-ai-processed-satellite-imagery-of-u-s-military-assets-raising-intelligence-and-security-concerns/", "snippet": "Chinese company GaoFen AI processed US bases", "source_name": "Defence Industry EU"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "Sentinel-5P methane MethaneSAT emissions plume May 2026", "language": "en",
+      "timestamp": "2026-05-24T23:01:45Z", "result_count": 8,
+      "results": [
+        {"title": "Carbon Mapper Tanager-1 Methane Super-Emitters", "url": "https://www.planet.com/pulse/carbon-mapper-data-from-the-tanager-1-satellite-reveals-methane-and-carbon-dioxide-super-emitter-activity-around-the-world/", "snippet": "Tanager-1 CH4 CO2 point source global survey", "source_name": "Planet Pulse"},
+        {"title": "MethaneSAT Peer-Reviewed Oil Basin Paper ACP", "url": "https://amt.copernicus.org/articles/19/3913/2026/", "snippet": "MethaneSAT XCH4 retrievals Permian Basin validation", "source_name": "ACP"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "Kilauea volcano eruption update HVO May 24 2026", "language": "en",
+      "timestamp": "2026-05-24T23:02:30Z", "result_count": 10,
+      "results": [
+        {"title": "USGS HVO Notice — Kilauea May 24 2026", "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-HVO-2026-05-24T18:47:16+00:00", "snippet": "Ep48 forecast window narrowed May 25-26 summit reinflation continuing SO2 1000-5000 t/d", "source_name": "USGS HVO"},
+        {"title": "Kilauea Volcano Eruption Window Opens", "url": "https://www.bigislandvideonews.com/2026/05/24/kilauea-volcano-eruption-window-opens-2/", "snippet": "Both vents glowing low-level tremor ADVISORY/YELLOW", "source_name": "Big Island Video News"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "Bismarck Sea submarine volcano pumice raft NASA May 2026", "language": "en",
+      "timestamp": "2026-05-24T23:03:00Z", "result_count": 10,
+      "results": [
+        {"title": "New Eruption in the Bismarck Sea — NASA Earth Observatory", "url": "https://science.nasa.gov/earth/earth-observatory/new-eruption-in-the-bismarck-sea/", "snippet": "NASA EO formal article pumice rafts 70km² 200km WSW VIIRS thermal 7km² PACE ocean color", "source_name": "NASA EO"},
+        {"title": "Possible Eruption Underwater Volcano Bismarck Sea — GEOMAR", "url": "https://www.geomar.de/en/news/article/possible-eruption-of-an-underwater-volcano-in-the-bismarck-sea", "snippet": "Pumice 70km² hydrothermal activity confirmed", "source_name": "GEOMAR"},
+        {"title": "Bismarck Sea May Cause New Island", "url": "https://www.discovermagazine.com/an-underwater-volcanic-eruption-brewing-in-the-bismarck-sea-may-cause-a-new-island-to-rise-49148", "snippet": "Rare submarine eruption potential island birth multi-satellite", "source_name": "Discover Magazine"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "Dukono volcano VAAC Darwin eruption May 2026", "language": "en",
+      "timestamp": "2026-05-24T23:03:15Z", "result_count": 6,
+      "results": [
+        {"title": "Dukono VAAC Advisory #284 May 24 2026", "url": "https://www.volcanodiscovery.com/dukono/news/303300/vaac-advisory-2026-284.html", "snippet": "VA reported FL070 E direction 190 explosions May 19 continuing", "source_name": "VolcanoDiscovery"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "Great Sitkin Shishaldin volcano Alaska update May 2026", "language": "en",
+      "timestamp": "2026-05-24T23:03:30Z", "result_count": 7,
+      "results": [
+        {"title": "USGS Volcano Hazards Program — Volcano Updates", "url": "https://www.usgs.gov/programs/VHP/volcano-updates", "snippet": "Great Sitkin WATCH/ORANGE slow lava dome 2021+ Shishaldin ADVISORY/YELLOW seismic gas", "source_name": "USGS VHP"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "Mayon Kanlaon Philippines eruption PHIVOLCS May 24 2026", "language": "en",
+      "timestamp": "2026-05-24T23:03:45Z", "result_count": 8,
+      "results": [
+        {"title": "Philippines Back-to-Back Eruptions: Mayon PDC, Kanlaon Ash Plumes", "url": "https://gulfnews.com/world/asia/philippines/philippines-back-to-back-eruptions-mayon-unleashes-fast-moving-avalanche-of-hot-rocks-kanlaon-shoots-ash-plumes-1.500457181", "snippet": "Mayon AL3 131+ days Strombolian PDC events Kanlaon AL2 SO2 410-4081 t/d", "source_name": "Gulf News"},
+        {"title": "Mayon Volcano Alert Level 3 Eruption Update", "url": "https://www.iqair.com/newsroom/volcanic-eruption-map-spotlight-mayon-volcano-philippines-5-2026", "snippet": "Alert Level 3 Strombolian 131+ days pyroclastic density currents", "source_name": "IQAir"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "Bezymianny KVERT volcanic eruption Kamchatka May 2026", "language": "en",
+      "timestamp": "2026-05-24T23:04:00Z", "result_count": 5,
+      "results": [
+        {"title": "Bezymianny Volcano Activity News", "url": "https://www.volcanodiscovery.com/bezymianny/news.html", "snippet": "Explosive eruption May 13-20 hot avalanches thermal anomaly KVERT Orange FL23000+", "source_name": "VolcanoDiscovery"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "위성영상 군사 안보 북한 남중국해 2026", "language": "ko",
+      "timestamp": "2026-05-24T23:04:15Z", "result_count": 7,
+      "results": [
+        {"title": "CSIS 북한 신풍동 미공개 ICBM 기지 위성영상 분석", "url": "https://beyondparallel.csis.org/undeclared-north-korea-sinpung-dong-missile-operating-base/", "snippet": "WorldView-3 영변 소해 판교 UAV 신풍동 ICBM 기지 최신 분석", "source_name": "CSIS Beyond Parallel"},
+        {"title": "중국 안텔로프 리프 남중국해 최대 인공섬 확장", "url": "https://amti.csis.org/antelope-reef-could-now-be-the-largest-island-in-the-south-china-sea/", "snippet": "1490에이커 매립 9000피트 활주로 가능", "source_name": "CSIS AMTI"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "위성 빙하 후퇴 해빙 메탄 기후변화 2026", "language": "ko",
+      "timestamp": "2026-05-24T23:04:30Z", "result_count": 6,
+      "results": [
+        {"title": "헥토리아 빙하 역대 최고속도 붕괴 관측", "url": "https://www.sciencedaily.com/releases/2026/05/260518041417.htm", "snippet": "Sentinel-1/2 SAR 25km/15개월 후퇴 남극 반도", "source_name": "ScienceDaily"},
+        {"title": "북극 해빙 최대면적 역대 최저 기록", "url": "https://science.nasa.gov/earth/earth-observatory/barents-sea-tied-to-low-arctic-sea-ice/", "snippet": "14.29M km² ICESat-2 관측", "source_name": "NASA"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "satellite South China Sea Spratly construction Philippines 2026", "language": "en",
+      "timestamp": "2026-05-24T23:04:45Z", "result_count": 7,
+      "results": [
+        {"title": "Philippines Satellite Spratlys Infrastructure Upgrade", "url": "https://www.rfa.org/english/southchinasea/2026/05/08/philippines-satellite-spratlys-infrastructure-upgrade/", "snippet": "Thitu Island runway 1.5km PlanetScope Sentinel-2 construction expansion", "source_name": "RFA"},
+        {"title": "Antelope Reef Largest Island South China Sea", "url": "https://amti.csis.org/antelope-reef-could-now-be-the-largest-island-in-the-south-china-sea/", "snippet": "1490 acres reclaimed 9000ft runway China", "source_name": "CSIS AMTI"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "Bellingcat Lebanon satellite Odesa Ukraine damage May 2026", "language": "en",
+      "timestamp": "2026-05-24T23:05:00Z", "result_count": 6,
+      "results": [
+        {"title": "Bellingcat Satellite Imagery Southern Lebanon Demolitions", "url": "https://www.bellingcat.com/news/2026/05/14/satellite-imagery-shows-ongoing-demolitions-across-southern-lebanon/", "snippet": "46/54 towns interactive map PlanetScope damage assessment", "source_name": "Bellingcat"},
+        {"title": "Odesa Infrastructure Damage — Maxar Satellite Imagery", "url": "https://news.satnews.com/2022/05/13/maxars-satellite-imagery-brings-to-light-additional-damage-to-the-ukraine-by-russian-attack-forces/", "snippet": "Odesa port infrastructure satellite damage documentation", "source_name": "SatNews"}
+      ]
+    },
+    {
+      "method": "websearch", "engine": "built-in", "keyword": "KOMPSAT 위성 NDVI 어선 동해 해양 2026년 5월", "language": "ko",
+      "timestamp": "2026-05-24T23:05:15Z", "result_count": 5,
+      "results": [
+        {"title": "동해 NLL 중국어선 100척 VIIRS 야간 관측", "url": "https://www.g-enews.com/article/General-News/2026/05/202605041507265965de70f162d1_1", "snippet": "VIIRS 야간조명 SAR 어선 식별 동해 NLL 해역", "source_name": "글로벌이코노믹"},
+        {"title": "KOMPSAT-7 커미셔닝 0.3m 정밀 관측 시작", "url": "https://en.sedaily.com/technology/2026/03/18/korea-unveils-ultra-high-resolution-satellite-images", "snippet": "아리랑7호 0.3m 해상도 7월 정식운용", "source_name": "서울경제"}
+      ]
+    }
+  ]
+}

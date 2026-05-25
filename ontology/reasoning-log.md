@@ -1801,3 +1801,141 @@ config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5)
 - **Bezymianny VAAC#42:** 23,000ft(7km) E 방향. 지속 분출이나 항공 위험 범위 안정.
 - **Mayon Day138+:** 91,225명 영향 인원 지속. 스트롬볼리안 활동 유지.
 - **Sentinel-2A 연장:** 2026년 5월 EOL에서 12월까지 연장. MSI 관측 연속성 확보. 전 세계 EO 데이터 파이프라인 안정 기여.
+
+---
+
+## 2026-05-24 추론 결과
+
+입력: sources/2026-05-24 (업데이트 10건, 신규 이벤트 0건). 모든 항목이 기추적 이벤트의 상태 갱신.
+
+### multi_satellite_confirmation (다중 위성 교차검증) — 2건
+
+- **추론 #1:** evt-1101 (Canada Manitoba wildfire) — GOES-18 (NOAA) + VIIRS (NOAA/NASA) + TROPOMI Sentinel-5P (ESA) + OMPS Suomi NPP (NASA) + EarthCare (ESA/JAXA) = 5개 독립 위성, 3개 독립 기관(NOAA, ESA, JAXA) → multiSatBoost +0.20 [confidence 0.95, 확정]
+  - CAMS multi-model 확인: 연기 대서양 횡단하여 유럽 도달
+  - 교차검증 강도: GEO 광학 + LEO 다분광 + LEO trace gas + LEO 산란계 + LEO 라이다/레이다 = 5가지 관측 모달리티
+- **추론 #2:** evt-701 (Bismarck Sea submarine volcano) — VIIRS (NOAA) + MODIS Terra (NASA) + Landsat 9 (USGS/NASA) + Himawari-9 (JMA/JAXA) + PACE (NASA) = 5개 위성, 3개 독립 기관(NOAA, NASA/USGS, JMA/JAXA) → multiSatBoost +0.20 [confidence 0.95, 확정]
+  - NASA EO 공식 기사 발행으로 교차검증 최고 수준 달성
+  - VIIRS thermal 7km² + Landsat 9 OLI 부석 매핑 + Himawari-9 화산재 + PACE 해색 변화
+
+### temporal_progression (시계열 진행) — 3건
+
+- **추론 #3:** evt-202 (Kilauea Ep48) :partOfSeries evt-004
+  - 동일 위치(Halemaʻumaʻu), 동일 현상(volcanic_eruption)
+  - Ep44→Ep45→Ep46→Ep47→Ep48 시리즈
+  - 예보 창 5/24-27 → **5/25-26으로 축소** (D-1 임박)
+  - Tilt 지속 가속. 분수분출 24-48시간 내 가능
+  - [confidence 0.95, 확정]
+- **추론 #4:** evt-1201 (Santa Rosa) :partOfSeries evt-1201
+  - 동일 위치(Santa Rosa Island, 33.95N 120.1W), 동일 현상(wildfire)
+  - Containment 진행: 26%(5/21) → 44%(5/22) → 59% → 72% → **87%(금일)**
+  - Day 9. Mop-up phase 심화.
+  - [confidence 0.93, 확정]
+- **추론 #5:** evt-1101 (Canada wildfire) :partOfSeries evt-1101
+  - 다주 진행 이벤트. 연기 대서양 횡단하여 유럽 도달 (CAMS 확인)
+  - 33,000+ 대피, 2명 사망 지속
+  - [confidence 0.93, 확정]
+
+### official_source_trust (공식 기관 신뢰도) — 7건
+
+- **추론 #6:** evt-202 (Kilauea) — analyzedBy USGS HVO (space_agency) → officialBoost +0.15 [0.95, 확정]
+  - 공식 예보 창 축소(5/25-26). D-1 임박.
+- **추론 #7:** evt-701 (Bismarck Sea) — NASA Earth Observatory 공식 기사 → officialBoost +0.15 [0.97, 확정]
+  - NASA EO "Image of the Day / Feature" 수준 공식 분석. 부석 200km+ 이동, 7km² thermal. 잠재적 신규 섬 형성 가능성 언급.
+- **추론 #8:** evt-203 (Great Sitkin) — analyzedBy USGS AVO → officialBoost +0.15 [0.90, 확정]
+  - WATCH/ORANGE 공식 경보 수준 유지. 용암돔 성장 지속.
+- **추론 #9:** evt-204 (Shishaldin) — analyzedBy USGS AVO → officialBoost +0.15 [0.85, 확정]
+  - ADVISORY/YELLOW 공식 경보. SO2 가스 배출 탐지.
+- **추론 #10:** evt-128 (Dukono) — analyzedBy PVMBG (CVGHM) + VAAC Darwin → officialBoost +0.15 [0.85, 확정]
+  - VAAC advisory #284. 190 explosions/day. FL070.
+- **추론 #11:** evt-082 (Mayon) — analyzedBy PHIVOLCS → officialBoost +0.15 [0.90, 확정]
+  - AL3 공식 경보. Day 139+. PDC 이벤트 발생.
+- **추론 #12:** temp-evt-1401 (Kanlaon) — analyzedBy PHIVOLCS → officialBoost +0.15 [0.82, 확정]
+  - AL2 공식 경보. SO2 410-4081 t/d.
+
+### sensor_capability_match (센서-현상 적합성) — 3건
+
+- **추론 #13:** evt-202 (Kilauea) — Landsat TIRS thermal infrared → thermalBoost +0.10 [0.93, 확정]
+  - 분출 임박 열적외 시그니처 모니터링. D-1 window.
+- **추론 #14:** evt-701 (Bismarck Sea) — VIIRS thermal anomaly 7km² → thermalBoost +0.10 [0.95, 확정]
+  - 해저 화산 열 시그니처. NASA EO 공식 분석에서 thermal extent 정량화.
+- **추론 #15:** evt-203 (Great Sitkin) — Sentinel-1 C-band SAR → sarBoost +0.10 [0.90, 확정]
+  - 알류샨 열도 지속적 구름 환경에서 SAR 관통 관측. 용암돔 형태 변화 추적.
+
+### disaster_severity_priority (재해 우선순위) — 2건
+
+- **추론 #16:** evt-1101 (Canada wildfire) — 2 fatalities + 33,000+ evacuees + smoke reaching Europe → priorityBoost +0.20 [0.95, 확정]
+  - 인명피해 + 대규모 대피 + 대륙간 환경 영향 → 보고서 1순위
+- **추론 #17:** evt-202 (Kilauea Ep48) — D-1 imminent eruption forecast → priorityBoost +0.20 [0.93, 확정]
+  - 분수분출 24-48시간 내 예상. 인프라 영향 가능.
+
+### before_after_credibility (전후 비교 신뢰도) — 1건
+
+- **추론 #18:** evt-1201 (Santa Rosa) — Landsat 9 burn scar mapping → baCredibilityBoost +0.10 [0.90, 확정]
+  - Before/after 비교 가용. 진압률 26%→87% 진행 시계열.
+
+### 종합 신뢰도 산정 (최종 confidence cap 0.97)
+
+| 이벤트 ID | 이벤트명 | 기본 | 가산 | 최종 | 비고 |
+|-----------|---------|------|------|------|------|
+| evt-202 update | Kilauea Ep48 D-1 | 0.80 | official+0.15, thermal+0.10, priority+0.20, partOfSeries | 0.97 (cap) | USGS HVO 공식, D-1 임박 |
+| evt-1201 update | Santa Rosa 87% | 0.80 | ba+0.10, partOfSeries | 0.90 | Mop-up phase, Landsat 9 |
+| evt-1101 update | Canada wildfire smoke Europe | 0.85 | multiSat+0.20, priority+0.20, partOfSeries | 0.97 (cap) | 5위성 3기관 + 인명피해 |
+| evt-128 update | Dukono VAAC#284 | 0.78 | official+0.15 | 0.88 | PVMBG+VAAC Darwin, 190폭발/일 |
+| evt-701 update | Bismarck Sea NASA EO | 0.88 | multiSat+0.20, official+0.15, thermal+0.10 | 0.97 (cap) | NASA EO 공식 + 5위성 |
+| evt-203 update | Great Sitkin WATCH | 0.82 | official+0.15, sar+0.10 | 0.95 | USGS AVO + SAR lava dome |
+| evt-204 update | Shishaldin ADVISORY | 0.78 | official+0.15 | 0.88 | USGS AVO + SO2 |
+| evt-082 update | Mayon AL3 Day139+ | 0.85 | official+0.15 | 0.93 | PHIVOLCS + PDC |
+| temp-evt-1401 update | Kanlaon AL2 SO2 | 0.78 | official+0.15 | 0.88 | PHIVOLCS + 4081t/d |
+| evt-801 update | Bezymianny KVERT Orange | 0.78 | official+0.15 | 0.88 | KVERT + explosive |
+
+### 추론 통계 요약
+
+| 규칙 | 금일 발동 | 평균 신뢰도 |
+|------|----------|-----------|
+| multi_satellite_confirmation | 2 | 0.95 |
+| temporal_progression / partOfSeries | 3 | 0.94 |
+| official_source_trust | 7 | 0.89 |
+| sensor_capability_match | 3 | 0.93 |
+| disaster_severity_priority | 2 | 0.94 |
+| before_after_credibility | 1 | 0.90 |
+| **합계** | **18** | **0.92** |
+
+### 금일 한반도 GeoFocus — 0건
+
+금일 사이클에서 한반도/DMZ/동해/남해 관련 위성 관측 이벤트 없음. 기존 추적 항목 유지:
+- KOMPSAT-7 커미셔닝 진행 중(7월 정식운용)
+- NLL 어선 활동 추적 중
+- CSIS Beyond Parallel NK 시설 모니터링 유지
+보고서에 "금일 한반도 GeoFocus 신규 이벤트 특이사항 없음" 명시.
+
+### 금일 미적용/제외 추론
+
+- **korea_geo_focus:** 한반도 관련 이벤트 0건 — 미적용
+- **cascading_disaster:** 금일 신규 재해 사슬 없음
+- **supersedes:** 금일 supersede 관계 없음 (모두 partOfSeries 또는 update)
+- **analyst_org_trust:** 독립 분석기관 신규 분석 없음
+- **commercial_imagery_trust:** 신규 상업 위성 분석 없음
+- **crossDomainLink:** 신규 도메인 교차 없음 (evt-1101 기존 Disaster→Humanitarian 유지)
+
+### 온톨로지 변경
+
+| 변경 유형 | 대상 | 근거 |
+|----------|------|------|
+| 새 Location | 없음 (0건) | 신규 이벤트 없음 |
+| 새 Event | 없음 (0건) | 모두 기존 이벤트 업데이트 |
+| 이벤트 업데이트 | evt-202/1201/1101/701/128/203/204/082/temp-evt-1401/801 (10건) | 예보 변경·진압률·연기 도달·NASA EO·VAAC·lava dome·SO2·PDC·SO2 배출·explosive |
+| 스키마 구조 변경 | 없음 | — |
+
+config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5).
+
+### 특이사항
+
+- **Kilauea Ep48 D-1 임박:** 예보 창 5/25-26으로 축소. 분수분출 24-48시간 내 예상. 내일(5/25) 또는 모레(5/26) 분출 가능성 매우 높음. 다음 사이클에서 WARNING/RED 등급 상향 가능.
+- **Canada wildfire 연기 유럽 도달:** CAMS 확인. TROPOMI+OMPS+EarthCare 3종 trace gas/aerosol 관측 교차검증. 대륙간 환경 영향으로 글로벌 관심도 상승. 33,000+ 대피 + 2명 사망 지속.
+- **Bismarck Sea NASA EO 공식 기사:** pumice 200km+ 이동, 70km² 면적, 7km² thermal anomaly. 잠재적 신규 섬 형성 가능성. NASA officialBoost 적용으로 신뢰도 최고 수준.
+- **Santa Rosa 87% mop-up:** 진압 거의 완료. 다음 사이클에서 100% 도달 시 추적 종료 가능.
+- **Dukono 190 explosions/day:** 높은 폭발 빈도이나 FL070 저고도. VAAC#284 시리즈 지속.
+- **Mayon Day139+ PDC:** PDC(화쇄류) 발생은 위험도 상승 신호. AL3 유지.
+- **Kanlaon SO2 4081t/d:** 전일 대비 SO2 최고치. AL2→AL3 상향 가능성 모니터링.
+- **Great Sitkin + Shishaldin:** 알래스카 화산 2기 동시 불안. SAR 관통 관측 유효.
+- **Bezymianny KVERT Orange:** 지속적 폭발적 분출. 항공 위험 지속.

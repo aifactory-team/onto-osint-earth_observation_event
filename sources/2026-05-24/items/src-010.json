@@ -1,0 +1,62 @@
+{
+  "id": "src-010",
+  "title": "Bezymianny — KVERT Orange, FL23,000+, 화산재 열이상 위성 관측, 열사태",
+  "url": "https://www.volcanodiscovery.com/bezymianny/news.html",
+  "snippet": "Bezymianny volcano Kamchatka continues explosive eruption. KVERT maintains Orange code. Explosive activity May 13-20 with hot avalanches. Thermal anomaly clearly visible in satellite imagery. Ash plume to FL23,000+ (7,000m). Himawari-9 AHI and VIIRS continuous monitoring.",
+  "source_name": "VolcanoDiscovery / KVERT",
+  "language": "en",
+  "discovered_date": "2026-05-24",
+  "tag": "update",
+  "related_report": "2026-05-23/src-005",
+  "related_item": "ent-evt-801",
+  "tag_reason": "Bezymianny KVERT Orange 유지. 5/13-20 폭발 활동 + 열사태 확인. 위성 열이상 확인. FL23,000+ 지속.",
+  "entities": [
+    {
+      "id": "ent-evt-801",
+      "type": "Event",
+      "name": "Bezymianny 화산 폭발 분출 — KVERT Orange (Kamchatka)",
+      "properties": {
+        "phenomenon": "volcanic_eruption",
+        "lat": 55.97,
+        "lon": 160.59,
+        "country": "RU",
+        "severity": "high",
+        "observation_date": "2026-05-24",
+        "kvert_code": "Orange",
+        "explosive_activity": "May 13-20",
+        "hot_avalanches": true,
+        "thermal_anomaly_satellite": true,
+        "ash_altitude_ft": 23000,
+        "ash_altitude_m": 7000
+      }
+    },
+    {
+      "id": "sat-himawari9",
+      "type": "Satellite",
+      "name": "Himawari-9",
+      "properties": {"operator": "JMA/JAXA", "sensor": "AHI"}
+    },
+    {
+      "id": "sat-viirs-jpss",
+      "type": "Satellite",
+      "name": "VIIRS (JPSS)",
+      "properties": {"operator": "NASA/NOAA", "sensor": "VIIRS"}
+    },
+    {
+      "id": "co-ru",
+      "type": "Country",
+      "name": "Russia",
+      "properties": {"iso2": "RU"}
+    }
+  ],
+  "relations": [
+    {"subject": "ent-evt-801", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "ent-evt-801", "predicate": "observedBy", "object": "sat-viirs-jpss"},
+    {"subject": "ent-evt-801", "predicate": "usesSensor", "object": "sensor-ahi"},
+    {"subject": "ent-evt-801", "predicate": "usesSensor", "object": "sensor-viirs"},
+    {"subject": "ent-evt-801", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-801", "predicate": "inCountry", "object": "co-ru"},
+    {"subject": "ent-evt-801", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "ent-evt-801", "predicate": "analyzedBy", "object": "org-kvert"}
+  ]
+}

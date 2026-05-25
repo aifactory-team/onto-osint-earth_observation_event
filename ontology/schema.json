@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "description": "OSINT 온톨로지 스키마 — config/osint-config.json의 seed로부터 초기화되고, 매일 파이프라인 실행 시 자동 확장된다. 도메인: 위성영상으로 관측 가능한 지구상 이벤트 (Earth Observation Events).",
-  "last_updated": "2026-05-23",
+  "last_updated": "2026-05-24",
   "classes": [
     {
       "id": "Entity",
@@ -527,6 +527,13 @@
       "target": "temp-evt-1401, Sentinel-2A-ext + updates to evt-202, evt-1201, evt-1101, evt-801, evt-082",
       "reason": "신규 2건: Canlaon/Kanlaon 화산 VAAC #161(PH, FL090, Himawari-9 AHI, PHIVOLCS AL2, Negros Island locatedIn 추가), Sentinel-2A 연장 2026말(ESA 공식 satops, 좌표 없음). 업데이트 5건: Kilauea Ep48 예보 5/24-27(tilt 10.5→11.4μrad 가속, both vents glowing, SO2 1-5k tpd), Santa Rosa 72% contained mop-up phase(59%→72%, Torrey Pines 보존), Canada wildfire 2명 사망(Lac du Bonnet)+33,400+ 대피 확대+Garden Hill FN 군(CAF) 투입(Disaster→Humanitarian crossDomainLink 확정), Bezymianny VAAC#42 23,000ft E(thermalBoost), Mayon Day138+ 91,225명 영향. 추론 12건: multiSat 2건, temporal 3건, severity 1건, crossDomain 1건, sensor 2건, official 3건. 신규 Location: ent-loc-negros-island. 한반도 GeoFocus 0건. 스키마 구조적 변경 없음.",
       "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-008"]
+    },
+    {
+      "date": "2026-05-24",
+      "action": "update_event_batch",
+      "target": "evt-202, evt-1201, evt-1101, evt-701, evt-082, evt-801, temp-evt-1401, evt-128, evt-203, evt-204",
+      "reason": "업데이트 10건: Kilauea Ep48 예보 5/25-26(D-1), Santa Rosa 87%(72%→87% mop-up), Canada 산불 연기 유럽 도달 CAMS(33,000+대피 2사망), Dukono VAAC#284 FL070(190폭발/일), Bismarck Sea NASA EO 공식 기사(pumice 200km+ 7km² thermal), Great Sitkin WATCH(lava dome), Shishaldin ADVISORY(SO2), Mayon AL3 Day139+(PDC), Kanlaon AL2(SO2 4081t/d), Bezymianny KVERT Orange(explosive). 스키마 구조적 변경 없음.",
+      "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009", "src-010"]
     }
   ]
 }

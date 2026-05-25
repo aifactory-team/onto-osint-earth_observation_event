@@ -1,0 +1,60 @@
+{
+  "id": "src-006",
+  "title": "Great Sitkin — WATCH/ORANGE, 용암 돔 성장 지속, SAR 관측",
+  "url": "https://www.usgs.gov/programs/VHP/volcano-updates",
+  "snippet": "Great Sitkin volcano in the Aleutian Islands remains at WATCH/ORANGE. Slow lava eruption within summit crater continuing since July 2021. Small earthquakes detected. Clouds frequently obscure satellite and webcam views, but Sentinel-1A SAR penetrates cloud cover for continuous monitoring.",
+  "source_name": "USGS Volcano Hazards Program",
+  "language": "en",
+  "discovered_date": "2026-05-24",
+  "tag": "update",
+  "related_report": "2026-05-23/src-009",
+  "related_item": "ent-evt-203",
+  "tag_reason": "Great Sitkin May 24 업데이트: 용암 돔 성장 지속 확인, 소규모 지진 감지. Sentinel-1A SAR 구름 투과 관측으로 sarBoost +0.1 적용.",
+  "entities": [
+    {
+      "id": "ent-evt-203",
+      "type": "Event",
+      "name": "Great Sitkin 용암 돔 분출 (Alaska, 2021~)",
+      "properties": {
+        "phenomenon": "volcanic_eruption",
+        "lat": 52.08,
+        "lon": -176.13,
+        "country": "US",
+        "severity": "medium",
+        "observation_date": "2026-05-24",
+        "start_date": "2021-07",
+        "eruption_type": "slow_lava_dome",
+        "alert_level": "WATCH/ORANGE",
+        "small_earthquakes": true,
+        "cloud_obscured_optical": true,
+        "sar_monitoring": true
+      }
+    },
+    {
+      "id": "sat-sentinel1a",
+      "type": "Satellite",
+      "name": "Sentinel-1A",
+      "properties": {"operator": "ESA", "sensor": "C-band SAR", "resolution_m": 5}
+    },
+    {
+      "id": "org-usgs",
+      "type": "Organization",
+      "name": "USGS AVO (Alaska Volcano Observatory)",
+      "properties": {"type": "government_volcano_observatory", "country": "US"}
+    },
+    {
+      "id": "co-us",
+      "type": "Country",
+      "name": "United States",
+      "properties": {"iso2": "US"}
+    }
+  ],
+  "relations": [
+    {"subject": "ent-evt-203", "predicate": "observedBy", "object": "sat-sentinel1a"},
+    {"subject": "ent-evt-203", "predicate": "usesSensor", "object": "sensor-c-sar"},
+    {"subject": "ent-evt-203", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-203", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "ent-evt-203", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "ent-evt-203", "predicate": "analyzedBy", "object": "org-usgs"}
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "src-007",
+  "title": "Shishaldin — ADVISORY/YELLOW, 지진+가스 방출 지속",
+  "url": "https://www.usgs.gov/programs/VHP/volcano-updates",
+  "snippet": "Shishaldin volcano in the Aleutian Islands continues unrest at ADVISORY/YELLOW. Seismic events and infrasound detected. Ongoing gas emissions monitored by Sentinel-5P TROPOMI SO2 retrieval.",
+  "source_name": "USGS Volcano Hazards Program",
+  "language": "en",
+  "discovered_date": "2026-05-24",
+  "tag": "update",
+  "related_report": "2026-05-23/src-010",
+  "related_item": "ent-evt-204",
+  "tag_reason": "Shishaldin May 24 업데이트: 지진 + 인프라사운드 + 가스 방출 지속 확인. Sentinel-5P TROPOMI SO₂ 연속 관측.",
+  "entities": [
+    {
+      "id": "ent-evt-204",
+      "type": "Event",
+      "name": "Shishaldin 화산 불안 (Alaska)",
+      "properties": {
+        "phenomenon": "volcanic_eruption",
+        "lat": 54.76,
+        "lon": -163.97,
+        "country": "US",
+        "severity": "low",
+        "observation_date": "2026-05-24",
+        "alert_level": "ADVISORY/YELLOW",
+        "seismic_events": true,
+        "infrasound_events": true,
+        "gas_emissions": true,
+        "so2_monitoring": "TROPOMI"
+      }
+    },
+    {
+      "id": "sat-sentinel5p",
+      "type": "Satellite",
+      "name": "Sentinel-5P",
+      "properties": {"operator": "ESA", "sensor": "TROPOMI"}
+    },
+    {
+      "id": "org-usgs",
+      "type": "Organization",
+      "name": "USGS AVO",
+      "properties": {"type": "government_volcano_observatory", "country": "US"}
+    },
+    {
+      "id": "co-us",
+      "type": "Country",
+      "name": "United States",
+      "properties": {"iso2": "US"}
+    }
+  ],
+  "relations": [
+    {"subject": "ent-evt-204", "predicate": "observedBy", "object": "sat-sentinel5p"},
+    {"subject": "ent-evt-204", "predicate": "usesSensor", "object": "sensor-tropomi"},
+    {"subject": "ent-evt-204", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-204", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "ent-evt-204", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "ent-evt-204", "predicate": "analyzedBy", "object": "org-usgs"}
+  ]
+}

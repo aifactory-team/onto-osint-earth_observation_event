@@ -1,0 +1,96 @@
+{
+  "id": "src-003",
+  "title": "캐나다 MB/SK/AB 산불 — CAMS 연기 유럽 도달 확인, 33,000+ 대피, TROPOMI+OMPS+EarthCare 다중위성",
+  "url": "https://atmosphere.copernicus.eu/cams-tracks-smoke-intense-canadian-wildfires-reaching-europe",
+  "additional_urls": [
+    "https://www.cbsnews.com/news/canada-wildfires-smoke-deaths-evacuations-manitoba-saskatchewan-alberta/",
+    "https://www.nesdis.noaa.gov/news/noaa-satellites-monitor-canadian-wildfires-and-smoke"
+  ],
+  "snippet": "CAMS confirms second large smoke plume from Canadian wildfires crossing the Atlantic and reaching Europe. AOD tracking via TROPOMI, OMPS, and EarthCare multi-satellite. 33,000+ evacuations in Manitoba/Saskatchewan/Alberta. 2 deaths at Lac du Bonnet. Garden Hill FN CAF-assisted evacuation continues.",
+  "source_name": "CAMS/Copernicus / CBS News / NOAA NESDIS",
+  "language": "en",
+  "discovered_date": "2026-05-24",
+  "tag": "update",
+  "related_report": "2026-05-23/src-003",
+  "related_item": "ent-evt-canada-wildfire-2026",
+  "tag_reason": "CAMS 공식 확인: 2차 연기 기둥 대서양 횡단 유럽 도달. TROPOMI+OMPS+EarthCare 다중위성 교차검증 신규. multiSatBoost 적용 대상.",
+  "entities": [
+    {
+      "id": "ent-evt-canada-wildfire-2026",
+      "type": "Event",
+      "name": "캐나다 MB/SK/AB 산불 — 연기 유럽 도달 (2026-05)",
+      "properties": {
+        "phenomenon": "wildfire",
+        "cross_domain": "ClimateEnvironment/air_pollution",
+        "lat": 53.8,
+        "lon": -94.1,
+        "country": "CA",
+        "severity": "critical",
+        "observation_date": "2026-05-24",
+        "fatalities": 2,
+        "evacuees": 33000,
+        "smoke_transatlantic": true,
+        "cams_aod_tracking": true,
+        "earthcare_validation": true
+      }
+    },
+    {
+      "id": "sat-goes18",
+      "type": "Satellite",
+      "name": "GOES-18",
+      "properties": {"operator": "NOAA", "sensor": "ABI"}
+    },
+    {
+      "id": "sat-viirs-jpss",
+      "type": "Satellite",
+      "name": "VIIRS (JPSS)",
+      "properties": {"operator": "NASA/NOAA", "sensor": "VIIRS"}
+    },
+    {
+      "id": "sat-sentinel5p",
+      "type": "Satellite",
+      "name": "Sentinel-5P",
+      "properties": {"operator": "ESA", "sensor": "TROPOMI"}
+    },
+    {
+      "id": "sat-omps",
+      "type": "Satellite",
+      "name": "OMPS (Suomi-NPP/JPSS)",
+      "properties": {"operator": "NASA/NOAA", "sensor": "OMPS"}
+    },
+    {
+      "id": "sat-earthcare",
+      "type": "Satellite",
+      "name": "EarthCare (ESA/JAXA)",
+      "properties": {"operator": "ESA/JAXA", "sensor": ["ATLID", "MSI", "BBR", "CPR"]}
+    },
+    {
+      "id": "co-ca",
+      "type": "Country",
+      "name": "Canada",
+      "properties": {"iso2": "CA"}
+    },
+    {
+      "id": "org-cams",
+      "type": "Organization",
+      "name": "CAMS (Copernicus Atmosphere Monitoring Service)",
+      "properties": {"type": "international_atmospheric_monitoring", "country": "EU"}
+    }
+  ],
+  "relations": [
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "observedBy", "object": "sat-goes18"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "observedBy", "object": "sat-viirs-jpss"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "observedBy", "object": "sat-sentinel5p"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "observedBy", "object": "sat-omps"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "observedBy", "object": "sat-earthcare"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "usesSensor", "object": "sensor-abi"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "usesSensor", "object": "sensor-viirs"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "usesSensor", "object": "sensor-tropomi"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "manifests", "object": "phen-air-pol"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "inDomain", "object": "dom-climate"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "inCountry", "object": "co-ca"},
+    {"subject": "ent-evt-canada-wildfire-2026", "predicate": "analyzedBy", "object": "org-cams"}
+  ]
+}

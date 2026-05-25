@@ -1,0 +1,70 @@
+{
+  "id": "src-001",
+  "title": "Kilauea Ep48 — 예보 창 5/25-26으로 축소, 양 분출구 야간 백열 지속, SO₂ 1,000-5,000 t/d",
+  "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-HVO-2026-05-24T18:47:16+00:00",
+  "additional_urls": [
+    "https://www.bigislandvideonews.com/2026/05/24/kilauea-volcano-eruption-window-opens-2/"
+  ],
+  "snippet": "USGS HVO: Summit reinflation continues since Ep47 ended May 15. Forecast models narrow Ep48 window to May 25-26. Both vents glowing overnight. Low-level seismic tremor detected. SO₂ 1,000-5,000 t/day. ADVISORY/YELLOW maintained. InSAR ground deformation monitoring via Sentinel-2A and Landsat 9.",
+  "source_name": "USGS Hawaiian Volcano Observatory",
+  "language": "en",
+  "discovered_date": "2026-05-24",
+  "tag": "update",
+  "related_report": "2026-05-23/src-001",
+  "related_item": "ent-evt-202",
+  "tag_reason": "Kilauea Ep48 예보 창 5/24-27에서 5/25-26으로 축소. 분출 임박 징후 강화. 양 분출구 백열 + 저주파 진동 추가 확인.",
+  "entities": [
+    {
+      "id": "ent-evt-202",
+      "type": "Event",
+      "name": "Kilauea Ep48 분수분출 예보",
+      "properties": {
+        "phenomenon": "volcanic_eruption",
+        "lat": 19.42,
+        "lon": -155.29,
+        "country": "US",
+        "severity": "high",
+        "observation_date": "2026-05-24",
+        "ep48_forecast": "2026-05-25 to 2026-05-26",
+        "ep48_forecast_previous": "2026-05-24 to 2026-05-27",
+        "glow_status": "both vents glowing",
+        "so2_tpd": "1000-5000",
+        "alert_level": "ADVISORY/YELLOW",
+        "seismic_tremor": "low-level",
+        "ep47_end_date": "2026-05-15"
+      }
+    },
+    {
+      "id": "sat-sentinel2a",
+      "type": "Satellite",
+      "name": "Sentinel-2A",
+      "properties": {"operator": "ESA", "sensor": "MSI", "resolution_m": 10}
+    },
+    {
+      "id": "sat-landsat9",
+      "type": "Satellite",
+      "name": "Landsat 9",
+      "properties": {"operator": "USGS/NASA", "sensor": ["OLI", "TIRS"], "resolution_m": 30}
+    },
+    {
+      "id": "org-usgs",
+      "type": "Organization",
+      "name": "USGS HVO",
+      "properties": {"type": "government_volcano_observatory", "country": "US"}
+    },
+    {
+      "id": "co-us",
+      "type": "Country",
+      "name": "United States",
+      "properties": {"iso2": "US"}
+    }
+  ],
+  "relations": [
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "ent-evt-202", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "ent-evt-202", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "ent-evt-202", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "ent-evt-202", "predicate": "analyzedBy", "object": "org-usgs"},
+    {"subject": "ent-evt-202", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}
