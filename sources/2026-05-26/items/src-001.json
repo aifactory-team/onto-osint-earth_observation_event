@@ -1,0 +1,33 @@
+{
+  "id": "src-001",
+  "title": "캐나다 MB/SK/AB 산불 — Swan Hills 12,000 대피, MB 27건 활성/9건 통제불능, 33,000+ 대피·2사망",
+  "url": "https://www.cbc.ca/news/canada/manitoba/garden-hill-first-nation-wildfire-evacuation-manitoba-1.7581550",
+  "snippet": "Manitoba 27 active fires, 9 out of control. Swan Hills AB: 12,000 ordered to evacuate for fire SWF076 (~2,000ha). 33,000+ total evacuated. 2 deaths Lac du Bonnet. CAMS confirms transatlantic smoke reaching Europe. GOES-18/VIIRS/TROPOMI/OMPS/EarthCare multi-satellite tracking.",
+  "source_name": "CBC News",
+  "language": "en",
+  "discovered_date": "2026-05-26",
+  "tag": "update",
+  "related_report": "2026-05-24/src-003",
+  "related_item": "evt-1101",
+  "tag_reason": "기존 evt-1101 캐나다 산불 시리즈의 에스컬레이션 후속보도. Swan Hills AB 12,000명 신규 대피 명령(5/26), 기존 33,000+명 대피 유지, 사망자 2명 유지. 화재 규모 확대(SWF076 ~2,000ha 통제불능).",
+  "entities": [
+    {"id": "evt-1101", "type": "Event", "name": "캐나다 Manitoba/SK/AB 산불 2026-05", "properties": {"phenomenon": "wildfire", "lat": 54.67, "lon": -115.4, "country": "CA", "severity": "extreme", "evacuated": 33000, "deaths": 2}},
+    {"id": "sat-goes18", "type": "Satellite", "name": "GOES-18", "properties": {}},
+    {"id": "sat-viirs-jpss", "type": "Satellite", "name": "VIIRS (Suomi-NPP/JPSS)", "properties": {}},
+    {"id": "sat-sentinel5p", "type": "Satellite", "name": "Sentinel-5P", "properties": {}},
+    {"id": "org-noaa", "type": "Organization", "name": "NOAA", "properties": {"org_type": "space_agency"}},
+    {"id": "org-esa", "type": "Organization", "name": "ESA/CAMS", "properties": {"org_type": "space_agency"}},
+    {"id": "co-ca", "type": "Country", "name": "캐나다", "properties": {"iso_code": "CA"}},
+    {"id": "phen-wildfire", "type": "Phenomenon", "name": "wildfire", "properties": {"category": "Disaster"}}
+  ],
+  "relations": [
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-goes18"},
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-viirs-jpss"},
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-sentinel5p"},
+    {"subject": "evt-1101", "predicate": "analyzedBy", "object": "org-noaa"},
+    {"subject": "evt-1101", "predicate": "analyzedBy", "object": "org-esa"},
+    {"subject": "evt-1101", "predicate": "inCountry", "object": "co-ca"},
+    {"subject": "evt-1101", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "evt-1101", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

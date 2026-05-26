@@ -1,0 +1,212 @@
+{
+  "date": "2026-05-26",
+  "search_count": 18,
+  "total_results": 19,
+  "queries": [
+    {"category": "dom-disaster", "query": "satellite wildfire Canada Manitoba Saskatchewan Alberta 2026 May", "results": 3},
+    {"category": "dom-disaster", "query": "satellite volcano eruption Kilauea Bismarck Mayon Kanlaon 2026 May", "results": 5},
+    {"category": "dom-disaster", "query": "satellite VAAC volcano ash advisory Bezymianny Dukono Great Sitkin Shishaldin 2026", "results": 4},
+    {"category": "dom-disaster", "query": "satellite Santa Rosa Island fire contained 2026 May", "results": 1},
+    {"category": "dom-human", "query": "satellite oil spill Kharg Island Iran Persian Gulf Sentinel 2026", "results": 1},
+    {"category": "dom-human", "query": "satellite South China Sea construction island building 2026", "results": 1},
+    {"category": "dom-defense", "query": "satellite military China AI MizarVision tracking 2026", "results": 1},
+    {"category": "dom-defense", "query": "satellite North Korea Yongbyon Sohae nuclear military 2026", "results": 1},
+    {"category": "dom-climate", "query": "satellite wildfire smoke Canada transatlantic Europe TROPOMI CAMS 2026", "results": 1},
+    {"category": "dom-climate", "query": "Sentinel-1D operational constellation complete 2026", "results": 1},
+    {"category": "dom-agri-marine", "query": "satellite Amazon deforestation GFW INPE 2026 lowest record", "results": 1},
+    {"category": "dom-agri-marine", "query": "El Nino 2026 forecast satellite observation Korean Peninsula", "results": 1},
+    {"category": "dom-satops", "query": "KOMPSAT-7 0.3m resolution images released Korea 2026", "results": 1}
+  ],
+  "results": [
+    {
+      "id": "sr-001",
+      "title": "Canada Manitoba/Saskatchewan/Alberta wildfires escalation — 12,000 Swan Hills evacuated, 27 active fires MB",
+      "url": "https://www.cbc.ca/news/canada/manitoba/garden-hill-first-nation-wildfire-evacuation-manitoba-1.7581550",
+      "source": "CBC News",
+      "date": "2026-05-26",
+      "snippet": "Manitoba has 27 active wildfires with 9 out of control. Over 33,000 evacuated across provinces. Swan Hills AB ordered 12,000 to evacuate for fire SWF076 (~2,000ha). 2 fatalities at Lac du Bonnet confirmed.",
+      "category": "dom-disaster",
+      "satellites_mentioned": ["GOES-18", "VIIRS", "Sentinel-5P TROPOMI", "OMPS", "EarthCare"]
+    },
+    {
+      "id": "sr-002",
+      "title": "NOAA satellites monitor Canadian wildfires and smoke",
+      "url": "https://www.nesdis.noaa.gov/news/noaa-satellites-monitor-canadian-wildfires-and-smoke",
+      "source": "NOAA NESDIS",
+      "date": "2026-05-26",
+      "snippet": "NOAA GOES and VIIRS tracking massive Canadian wildfire smoke plumes. Multi-satellite observation confirms transatlantic smoke transport.",
+      "category": "dom-disaster",
+      "satellites_mentioned": ["GOES-18", "VIIRS", "Suomi-NPP", "JPSS"]
+    },
+    {
+      "id": "sr-003",
+      "title": "CAMS tracks smoke from intense Canadian wildfires reaching Europe",
+      "url": "https://atmosphere.copernicus.eu/cams-tracks-smoke-intense-canadian-wildfires-reaching-europe",
+      "source": "CAMS/Copernicus",
+      "date": "2026-05-26",
+      "snippet": "CAMS confirms Canadian wildfire smoke reaching northern Europe. 56Mt carbon release estimated. TROPOMI + OMPS + EarthCare aerosol tracking.",
+      "category": "dom-climate",
+      "satellites_mentioned": ["Sentinel-5P", "OMPS", "EarthCare"]
+    },
+    {
+      "id": "sr-004",
+      "title": "Canada wildfires: deaths, evacuations in Manitoba, Saskatchewan, Alberta",
+      "url": "https://www.cbsnews.com/news/canada-wildfires-smoke-deaths-evacuations-manitoba-saskatchewan-alberta/",
+      "source": "CBS News",
+      "date": "2026-05-26",
+      "snippet": "Two fatalities confirmed. 33,000+ evacuated. Swan Hills AB fire SWF076 out of control, 12,000 ordered to evacuate May 26.",
+      "category": "dom-disaster",
+      "satellites_mentioned": []
+    },
+    {
+      "id": "sr-005",
+      "title": "Santa Rosa Island Fire — 87% containment, mop-up continues",
+      "url": "https://inciweb.wildfire.gov/incident-information/cacnp-santa-rosa-island-fire",
+      "source": "InciWeb/NPS",
+      "date": "2026-05-25",
+      "snippet": "18,379 acres, 87% contained. Mop-up operations continue. Largest fire in Channel Islands NP history.",
+      "category": "dom-disaster",
+      "satellites_mentioned": ["Landsat 9", "VIIRS"]
+    },
+    {
+      "id": "sr-006",
+      "title": "Kilauea Ep48 eruption window opens May 25",
+      "url": "https://www.usgs.gov/volcanoes/kilauea/volcano-updates",
+      "source": "USGS HVO",
+      "date": "2026-05-26",
+      "snippet": "Episode 48 forecast window 5/25-26. Inflation continuing but rate slowing. Both vents glowing. SO2 1,000-5,000 t/d. ADVISORY/YELLOW.",
+      "category": "dom-disaster",
+      "satellites_mentioned": ["Sentinel-2A", "Landsat 9"]
+    },
+    {
+      "id": "sr-007",
+      "title": "New Eruption in the Bismarck Sea — NASA Earth Observatory",
+      "url": "https://science.nasa.gov/earth/earth-observatory/new-eruption-in-the-bismarck-sea/",
+      "source": "NASA Earth Observatory",
+      "date": "2026-05-26",
+      "snippet": "Continuing eruption, thermal anomaly ~7 km², pumice raft 70km² extending 200km+ WSW. Potential new island formation.",
+      "category": "dom-disaster",
+      "satellites_mentioned": ["VIIRS", "MODIS Terra", "Landsat 9", "Himawari-9", "PACE"]
+    },
+    {
+      "id": "sr-008",
+      "title": "Philippines: back-to-back eruptions — Mayon PDC, Kanlaon explosive eruption",
+      "url": "https://gulfnews.com/world/asia/philippines/philippines-back-to-back-eruptions-mayon-unleashes-fast-moving-avalanche-of-hot-rocks-kanlaon-shoots-ash-plumes-1.500457181",
+      "source": "Gulf News",
+      "date": "2026-05-26",
+      "snippet": "Mayon Alert Level 3, Day 140+, PDC event. Kanlaon Alert Level 2, moderately explosive eruption May 26, ash 2,500m above crater, PDC down eastern slopes.",
+      "category": "dom-disaster",
+      "satellites_mentioned": ["Himawari-9", "Sentinel-2A"]
+    },
+    {
+      "id": "sr-009",
+      "title": "Kanlaon Volcano makes explosive eruption, shoots ash plume 2500m",
+      "url": "https://gulfnews.com/world/asia/philippines/philippines-kanlaon-volcano-makes-explosive-eruption-shoots-ash-plume-2500-metres-above-the-crater-1.500456510",
+      "source": "Gulf News / PHIVOLCS",
+      "date": "2026-05-26",
+      "snippet": "Kanlaon moderately explosive eruption 5/26. Ash plume 2,500m above crater. PDC down eastern slopes. Alert Level 2.",
+      "category": "dom-disaster",
+      "satellites_mentioned": ["Himawari-9"]
+    },
+    {
+      "id": "sr-010",
+      "title": "Bezymianny VAAC advisory #45 — FL100 continuing",
+      "url": "https://www.volcanodiscovery.com/bezymianny/news/303342/vaac-advisory-2026-45.html",
+      "source": "VAAC Tokyo / VolcanoDiscovery",
+      "date": "2026-05-25",
+      "snippet": "Ash plume FL100 (3000m) moving south. Lava dome growing, glowing lava-block avalanches. Previously FL300 (9,100m) on May 20.",
+      "category": "dom-disaster",
+      "satellites_mentioned": ["Himawari-9", "VIIRS"]
+    },
+    {
+      "id": "sr-011",
+      "title": "Great Sitkin WATCH/ORANGE — lava dome continuing",
+      "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-AVO-2026-05-17T19:37:35+00:00",
+      "source": "USGS AVO",
+      "date": "2026-05-26",
+      "snippet": "Slow lava eruption in summit crater. Small earthquakes. SAR imagery monitoring lava flow advance.",
+      "category": "dom-disaster",
+      "satellites_mentioned": ["Sentinel-1"]
+    },
+    {
+      "id": "sr-012",
+      "title": "Shishaldin ADVISORY/YELLOW — SO2 + seismicity",
+      "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-AVO-2026-05-12T20:06:22+00:00",
+      "source": "USGS AVO",
+      "date": "2026-05-26",
+      "snippet": "Elevated seismic/infrasound; SO2 emissions; steam plume.",
+      "category": "dom-disaster",
+      "satellites_mentioned": ["Sentinel-5P"]
+    },
+    {
+      "id": "sr-013",
+      "title": "Dukono VAAC advisory #284+ — FL070 ~190 explosions/day continuing",
+      "url": "https://www.volcanodiscovery.com/dukono/news/303300/vaac-advisory-2026-284.html",
+      "source": "VAAC Darwin / CVGHM",
+      "date": "2026-05-26",
+      "snippet": "Alert Level 2. Continuous explosive activity. ~190 explosions per day.",
+      "category": "dom-disaster",
+      "satellites_mentioned": ["Himawari-9"]
+    },
+    {
+      "id": "sr-014",
+      "title": "Satellite images show Persian Gulf oil slicks growing during war — Kharg Island",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-21/satellite-images-show-persian-gulf-oil-slicks-growing-during-war",
+      "source": "Bloomberg",
+      "date": "2026-05-26",
+      "snippet": "Oil slick from Kharg Island estimated 3,000+ barrels. 60-70 km² initial slick. Growing during Iran conflict. Sentinel-1 SAR + Sentinel-2 optical + Sentinel-3 ocean color.",
+      "category": "dom-human",
+      "satellites_mentioned": ["Sentinel-1", "Sentinel-2", "Sentinel-3"]
+    },
+    {
+      "id": "sr-015",
+      "title": "Antelope Reef could now be the largest island in the South China Sea — CSIS AMTI",
+      "url": "https://amti.csis.org/antelope-reef-could-now-be-the-largest-island-in-the-south-china-sea/",
+      "source": "CSIS AMTI",
+      "date": "2026-05-26",
+      "snippet": "China: Antelope Reef now 1,490 acres. Philippines: Thitu runway + Nanshan port upgrades (Planet Labs). WorldView/Vantor imagery.",
+      "category": "dom-defense",
+      "satellites_mentioned": ["WorldView", "Planet Labs"]
+    },
+    {
+      "id": "sr-016",
+      "title": "Iran uses Chinese AI satellite imagery to target US bases in Middle East",
+      "url": "https://www.armyrecognition.com/news/army-news/2026/iran-uses-chinese-ai-satellite-imagery-to-target-u-s-bases-in-middle-east",
+      "source": "Army Recognition / ABC News",
+      "date": "2026-05-26",
+      "snippet": "Chinese AI startup MizarVision mapping every US military asset in real-time. Iran using for targeting.",
+      "category": "dom-defense",
+      "satellites_mentioned": ["commercial optical"]
+    },
+    {
+      "id": "sr-017",
+      "title": "North Korea Yongbyon UEP active — 7th fuel cycle, Sohae expansion, new military factory",
+      "url": "https://www.rfa.org/english/korea/2026/04/28/north-korea-satellite-yongbyon-nuclear/",
+      "source": "38 North / RFA / Newsweek",
+      "date": "2026-05-26",
+      "snippet": "7th fuel irradiation/reprocessing cycle. Consistent water discharge. Sohae solid-fuel test March 2026. New largest military production facility under construction. WorldView-3 imagery.",
+      "category": "dom-defense",
+      "satellites_mentioned": ["WorldView-3"]
+    },
+    {
+      "id": "sr-018",
+      "title": "Amazon deforestation on pace to be lowest on record — GFW/INPE",
+      "url": "https://news.mongabay.com/2026/02/amazon-deforestation-on-pace-to-be-the-lowest-on-record-says-brazil/",
+      "source": "Mongabay / GFW",
+      "date": "2026-05-26",
+      "snippet": "Brazil near-real-time alerts show continued decline. GFW DIST-ALERT: Landsat + Sentinel-2 integrated.",
+      "category": "dom-agri-marine",
+      "satellites_mentioned": ["Landsat", "Sentinel-2"]
+    },
+    {
+      "id": "sr-019",
+      "title": "Sentinel-1D fully operational — 4-sat constellation complete",
+      "url": "https://www.exterrajsc.com/p/europes-copernicus-radar-constellation",
+      "source": "ExterraJSC / ESA",
+      "date": "2026-05-26",
+      "snippet": "Sentinel-1D declared fully operational May 1. Sentinel-1A/1C/1D all active (1A through June 2026). Revisit period shortened to 4 days.",
+      "category": "dom-satops",
+      "satellites_mentioned": ["Sentinel-1D", "Sentinel-1A", "Sentinel-1C"]
+    }
+  ]
+}

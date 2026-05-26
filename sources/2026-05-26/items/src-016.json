@@ -1,0 +1,25 @@
+{
+  "id": "src-016",
+  "title": "Sentinel-1D 4위성 콘스텔레이션 완성 — ESA 공식 선언",
+  "url": "https://www.exterrajsc.com/p/europes-copernicus-radar-constellation",
+  "snippet": "Sentinel-1D declared fully operational May 1, 2026. Sentinel-1A/1C/1D all active (1A extended through June 2026). Four-satellite C-band SAR constellation complete. Revisit period shortened to 4 days for global coverage.",
+  "source_name": "ExterraJSC / ESA",
+  "language": "en",
+  "discovered_date": "2026-05-26",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "Sentinel-1D 완전 운용 선언은 기존 2026-05-07 commissioning 완료(evt-117) 이후 첫 공식 '4위성 콘스텔레이션 완성' 보도. 4일 재방문 주기 달성은 SAR 모니터링 역량의 구조적 변화. 좌표 없음(글로벌 satops 이벤트).",
+  "entities": [
+    {"id": "temp-evt-1502", "type": "Event", "name": "Sentinel-1 4위성 콘스텔레이션 완성 2026-05", "properties": {"phenomenon": "satellite_operations", "lat": null, "lon": null, "country": null}},
+    {"id": "sat-sentinel1d", "type": "Satellite", "name": "Sentinel-1D", "properties": {"mission_status": "operational"}},
+    {"id": "sat-sentinel1a", "type": "Satellite", "name": "Sentinel-1A", "properties": {"mission_status": "operational"}},
+    {"id": "sat-sentinel1c", "type": "Satellite", "name": "Sentinel-1C", "properties": {"mission_status": "operational"}},
+    {"id": "org-esa", "type": "Organization", "name": "ESA", "properties": {"org_type": "space_agency"}}
+  ],
+  "relations": [
+    {"subject": "sat-sentinel1d", "predicate": "operatedBy", "object": "org-esa"},
+    {"subject": "sat-sentinel1a", "predicate": "operatedBy", "object": "org-esa"},
+    {"subject": "sat-sentinel1c", "predicate": "operatedBy", "object": "org-esa"}
+  ]
+}

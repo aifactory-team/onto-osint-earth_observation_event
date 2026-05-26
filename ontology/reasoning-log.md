@@ -1939,3 +1939,91 @@ config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5)
 - **Kanlaon SO2 4081t/d:** 전일 대비 SO2 최고치. AL2→AL3 상향 가능성 모니터링.
 - **Great Sitkin + Shishaldin:** 알래스카 화산 2기 동시 불안. SAR 관통 관측 유효.
 - **Bezymianny KVERT Orange:** 지속적 폭발적 분출. 항공 위험 지속.
+
+## 2026-05-26 추론 결과
+
+### 추론 요약
+
+| 규칙 | 적용 건수 | 평균 신뢰도 |
+|------|----------|------------|
+| multi_satellite_confirmation | 3 | 0.94 |
+| temporal_progression | 4 | 0.94 |
+| official_source_trust | 6 | 0.89 |
+| sensor_capability_match | 3 | 0.90 |
+| disaster_severity | 1 | 0.95 |
+| crossDomainLink | 2 | 0.91 |
+| before_after_credibility | 0 | — |
+| **합계** | **19** | **0.92** |
+
+### multi_satellite_confirmation (다중 위성 교차검증) — 3건
+
+- **추론 #1:** evt-1101 (캐나다 산불) — GOES-18 (NOAA) + VIIRS (NOAA/NASA) + Sentinel-5P TROPOMI (ESA) + OMPS (NASA Suomi-NPP) + EarthCare (ESA/JAXA) → **5위성, 3기관** 독립 교차검증. multiSatBoost +0.20 [confidence 0.95, 확정]
+- **추론 #2:** evt-701 (Bismarck Sea) — VIIRS + MODIS Terra + Landsat 9 + Himawari-9 + PACE → **5위성, 3기관** (NASA/NOAA/JMA) 교차검증 유지. multiSatBoost +0.20 [confidence 0.97, 확정]
+- **추론 #3:** ent-evt-kharg (Kharg Island 유출) — Sentinel-1 (SAR) + Sentinel-2 (optical) + Sentinel-3 (ocean color) → **3위성, 3센서** 교차검증 (동일 콘스텔레이션이나 독립 센서 유형). multiSatBoost +0.20 [confidence 0.90, 확정]
+
+### temporal_progression (시계열 연속) — 4건
+
+- **추론 #4:** evt-1101 (캐나다 산불) — 5월 초 이후 30일+ 지속 확대. Swan Hills AB 에스컬레이션(12,000 대피 명령 5/26). 시리즈 연속. [confidence 0.95, 확정]
+- **추론 #5:** evt-202 (Kilauea) — Ep44→45→46→47→48 시리즈. 예보 창 5/25-26 활성화. 분출 임박(D-day). [confidence 0.95, 확정]
+- **추론 #6:** evt-701 (Bismarck Sea) — 5/9 이후 day18+ 지속 분출. 부석 뗏목 70km² 200km+ WSW 확산 중. [confidence 0.97, 확정]
+- **추론 #7:** temp-evt-1501 → temp-evt-1401 (Kanlaon) — 2024-2026 분출 시퀀스 내 신규 폭발적 에피소드. 기존 VAAC/SO₂에서 PDC+화산재 2500m로 격상. partOfSeries. [confidence 0.90, 확정]
+
+### official_source_trust (공식기관 신뢰도) — 6건
+
+- **추론 #8:** evt-202 (Kilauea) — USGS HVO 공식 예보 +0.15 [0.95, 확정]
+- **추론 #9:** evt-701 (Bismarck Sea) — NASA EO 공식 기사 지속 +0.15 [0.97, 확정]
+- **추론 #10:** evt-082 (Mayon) — PHIVOLCS 공식 AL3 +0.15 [0.90, 확정]
+- **추론 #11:** temp-evt-1501 (Kanlaon 5/26) — PHIVOLCS 공식 분출 보고 +0.15 [0.88, 확정]
+- **추론 #12:** evt-203 (Great Sitkin) — USGS AVO 공식 WATCH +0.15 [0.85, 확정]
+- **추론 #13:** evt-204 (Shishaldin) — USGS AVO 공식 ADVISORY +0.15 [0.78, 확정]
+
+### sensor_capability_match (센서-현상 적합성) — 3건
+
+- **추론 #14:** evt-203 (Great Sitkin) — Sentinel-1 C-band SAR 구름 투과 용암돔 관측 → sarBoost +0.10 [0.85, 확정]
+- **추론 #15:** ent-evt-kharg (Kharg Island) — Sentinel-1 SAR 원유 슬릭 해면 감쇠 탐지 → sarBoost +0.10 [0.90, 확정]
+- **추론 #16:** evt-202 (Kilauea) — Landsat 9 TIRS 열적외 전조 열 시그니처 → thermalBoost +0.10 [0.95, 확정]
+
+### disaster_severity (재해 심각도) — 1건
+
+- **추론 #17:** evt-1101 (캐나다 산불) — 인명피해 2명 + 기존 33,000+ 대피 + Swan Hills 12,000 신규 대피 명령 = extreme_escalation. 재해 우선순위 1순위 배치 규칙 적용. [confidence 0.95, 확정]
+
+### crossDomainLink (도메인 교차) — 2건
+
+- **추론 #18:** evt-1101 (캐나다 산불) → dom-humanitarian — 33,000+ 대피, 원주민 커뮤니티(Garden Hill FN) 군 지원 대피, 2명 사망. Disaster→Humanitarian 교차. [confidence 0.92, 확정]
+- **추론 #19:** evt-1101 (캐나다 산불) → dom-climate — 56Mt 탄소 방출 추정, CAMS 확인 연기 대서양 횡단 유럽 도달. Disaster→Climate 교차. [confidence 0.90, 확정]
+
+### 금일 한반도 GeoFocus — 0건
+
+금일 한반도/DMZ/동해/남해 직접 위성 관측 이벤트 없음. 기존 추적 항목 유지:
+- KOMPSAT-7 0.3m 영상 공개(커미셔닝 중, 7월 정식운용)
+- NLL 어선 활동 추적 중
+- CSIS Beyond Parallel NK 시설 모니터링 유지
+- 영변 UEP 7차 연료, 소해 확장 (변동 없음)
+
+### 금일 미적용/제외 추론
+
+- **korea_geo_focus:** 한반도 관련 직접 이벤트 0건 — 미적용
+- **cascading_disaster:** 금일 신규 재해 사슬 없음
+- **supersedes:** 금일 supersede 관계 없음 (Kanlaon은 partOfSeries로 처리)
+- **analyst_org_trust:** CSIS AMTI(src-012) 기존 적용 유지, 신규 적용 없음
+- **before_after_credibility:** 금일 신규 before/after 영상 없음
+
+### 온톨로지 변경
+
+| 변경 유형 | 대상 | 근거 |
+|----------|------|------|
+| 새 Event | temp-evt-1501 (Kanlaon 폭발적 분출 5/26) | PDC + 화산재 2500m = 기존 temp-evt-1401 수준 초과 |
+| 새 Event | temp-evt-1502 (Sentinel-1D 4위성 완성) | satops, 좌표 없음, ESA 공식 |
+| 이벤트 업데이트 | evt-1101/202/701/082/801/203/204/128/1201/kharg/092 (11건) | Swan Hills/예보창/부석/PDC/VAAC/SAR/SO₂/190일/87%/유출/건설 |
+| 스키마 구조 변경 | 없음 | — |
+
+config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5).
+
+### 특이사항
+
+- **캐나다 산불 에스컬레이션:** Swan Hills AB 12,000명 대피 명령(5/26). SWF076 ~2,000ha 통제불능. 총 대피 45,000+명으로 사실상 확대. MB 27건 화재/9건 통제불능. 56Mt 탄소 방출. CAMS 연기 유럽 도달 확인. 5위성 3기관 교차검증 최고 수준. Disaster→Humanitarian + Disaster→Climate 이중 교차.
+- **Kilauea Ep48 예보 창 활성화 D-day:** 5/25-26 윈도우 내. 양 분출구(남·북) 야간 백열. SO₂ 1,000-5,000 t/d. 팽창율 감속이나 누적 변형 지속. 분수분출 가능성 높음. 다음 사이클에서 WARNING/RED 가능.
+- **Bismarck Sea 지속:** 부석 70km², 200km+ WSW 확산, 열이상 7km². 잠재적 신규 섬 형성 가능성 유지. 항해 위험 지속(해상 경보).
+- **Kanlaon 폭발적 분출:** 기존 AL2 유지이나 5/26 폭발은 유의미한 위험도 상승(PDC + 2500m 화산재). Mayon(AL3)과 동시 분출 — 필리핀 2기 화산 비상.
+- **Kharg Island:** Sentinel-1/2/3 3위성 교차검증으로 multiSatBoost 적용. 이란 분쟁 중 환경 피해 모니터링 사례.
+- **Sentinel-1D:** ESA C-band SAR 4위성(1A/1C/1D + 예비 1B 퇴역) 콘스텔레이션 완성. 4일 재방문 글로벌 커버리지. 향후 모든 SAR 기반 모니터링(홍수, 유출, 산사태, 건설, 빙하)의 기본 역량 강화.

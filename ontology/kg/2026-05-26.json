@@ -1,0 +1,57 @@
+{
+  "date": "2026-05-26",
+  "new_triples": [
+    {"subject": "temp-evt-1501", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-006", "date": "2026-05-26", "confidence": 0.88, "type": "explicit"},
+    {"subject": "temp-evt-1501", "predicate": "usesSensor", "object": "sensor-ahi", "source_id": "src-006", "date": "2026-05-26", "confidence": 0.88, "type": "explicit"},
+    {"subject": "temp-evt-1501", "predicate": "analyzedBy", "object": "org-phivolcs", "source_id": "src-006", "date": "2026-05-26", "confidence": 0.90, "type": "explicit"},
+    {"subject": "temp-evt-1501", "predicate": "inCountry", "object": "co-ph", "source_id": "src-006", "date": "2026-05-26", "confidence": 0.95, "type": "explicit"},
+    {"subject": "temp-evt-1501", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-006", "date": "2026-05-26", "confidence": 0.95, "type": "explicit"},
+    {"subject": "temp-evt-1501", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-006", "date": "2026-05-26", "confidence": 0.95, "type": "explicit"},
+    {"subject": "temp-evt-1501", "predicate": "partOfSeries", "object": "temp-evt-1401", "source_id": "src-006", "date": "2026-05-26", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-kharg", "predicate": "observedBy", "object": "sat-sentinel1a", "source_id": "src-011", "date": "2026-05-26", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-kharg", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-011", "date": "2026-05-26", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-kharg", "predicate": "observedBy", "object": "sat-sentinel3", "source_id": "src-011", "date": "2026-05-26", "confidence": 0.90, "type": "explicit"},
+    {"subject": "ent-evt-kharg", "predicate": "inCountry", "object": "co-ir", "source_id": "src-011", "date": "2026-05-26", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-kharg", "predicate": "manifests", "object": "phen-oilspill", "source_id": "src-011", "date": "2026-05-26", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-evt-kharg", "predicate": "inDomain", "object": "dom-human", "source_id": "src-011", "date": "2026-05-26", "confidence": 0.95, "type": "explicit"}
+  ],
+  "updated_triples": [
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-goes18", "source_id": "src-001", "date": "2026-05-26", "confidence": 0.95, "type": "explicit", "note": "Swan Hills AB 12,000 대피 에스컬레이션"},
+    {"subject": "evt-202", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-003", "date": "2026-05-26", "confidence": 0.95, "type": "explicit", "note": "Ep48 예보 창 5/25-26 개시, 인플레이션 감속"},
+    {"subject": "evt-701", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_id": "src-004", "date": "2026-05-26", "confidence": 0.97, "type": "explicit", "note": "pumice 70km² 200km+ WSW, thermal 7km²"},
+    {"subject": "evt-082", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-005", "date": "2026-05-26", "confidence": 0.90, "type": "explicit", "note": "Day 140+ PDC 발생"},
+    {"subject": "evt-801", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-007", "date": "2026-05-26", "confidence": 0.82, "type": "explicit", "note": "VAAC#45 FL100, 이전 FL300에서 감소"},
+    {"subject": "evt-203", "predicate": "usesSensor", "object": "sensor-c-sar", "source_id": "src-008", "date": "2026-05-26", "confidence": 0.85, "type": "explicit", "note": "SAR 용암돔 모니터링 지속"},
+    {"subject": "evt-204", "predicate": "usesSensor", "object": "sensor-tropomi", "source_id": "src-009", "date": "2026-05-26", "confidence": 0.78, "type": "explicit", "note": "SO₂ 배출 지속"},
+    {"subject": "evt-128", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-010", "date": "2026-05-26", "confidence": 0.82, "type": "explicit", "note": "190회/일 폭발 지속"},
+    {"subject": "evt-092", "predicate": "observedBy", "object": "sat-worldview3", "source_id": "src-012", "date": "2026-05-26", "confidence": 0.92, "type": "explicit", "note": "Antelope 1490ac + Spratly Thitu/Nanshan"},
+    {"subject": "evt-1201", "predicate": "observedBy", "object": "sat-landsat9", "source_id": "src-002", "date": "2026-05-26", "confidence": 0.88, "type": "explicit", "note": "87% 진압 유지, mop-up"}
+  ],
+  "inferred_triples": [
+    {"subject": "evt-1101", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.95, "type": "inferred", "note": "GOES-18 + VIIRS + TROPOMI + OMPS + EarthCare 5위성 3기관(NOAA/ESA/JAXA) 교차검증 유지"},
+    {"subject": "evt-701", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.97, "type": "inferred", "note": "VIIRS + MODIS + Landsat 9 + Himawari-9 + PACE 5위성 3기관(NASA/NOAA/JMA) 교차검증 유지"},
+    {"subject": "ent-evt-kharg", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.90, "type": "inferred", "note": "Sentinel-1 + Sentinel-2 + Sentinel-3 3위성/3센서(SAR+optical+ocean color) 교차검증"},
+    {"subject": "evt-1101", "predicate": "temporal_progression", "object": "series_day_30+", "rule": "temporal_progression", "confidence": 0.95, "type": "inferred", "note": "5월 초 이후 지속 확대, Swan Hills 에스컬레이션"},
+    {"subject": "evt-202", "predicate": "temporal_progression", "object": "Ep48_window_active", "rule": "temporal_progression", "confidence": 0.95, "type": "inferred", "note": "Ep44→45→46→47→48 시리즈, 예보 창 개시"},
+    {"subject": "evt-701", "predicate": "temporal_progression", "object": "day_18+_continuing", "rule": "temporal_progression", "confidence": 0.97, "type": "inferred", "note": "5/9 이후 지속 분출, 부석 뗏목 확산 중"},
+    {"subject": "temp-evt-1501", "predicate": "partOfSeries", "object": "temp-evt-1401", "rule": "temporal_progression", "confidence": 0.90, "type": "inferred", "note": "Kanlaon 2024-2026 분출 시퀀스 내 신규 폭발적 에피소드"},
+    {"subject": "evt-701", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.97, "type": "inferred", "note": "NASA EO 공식 기사 지속"},
+    {"subject": "evt-202", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred", "note": "USGS HVO 공식 예보"},
+    {"subject": "evt-082", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.90, "type": "inferred", "note": "PHIVOLCS 공식 AL3"},
+    {"subject": "temp-evt-1501", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.88, "type": "inferred", "note": "PHIVOLCS 공식 분출 보고"},
+    {"subject": "evt-203", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.85, "type": "inferred", "note": "USGS AVO 공식 WATCH"},
+    {"subject": "evt-204", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.78, "type": "inferred", "note": "USGS AVO 공식 ADVISORY"},
+    {"subject": "evt-203", "predicate": "sarBoost", "object": "+0.10", "rule": "sensor_capability_match_sar", "confidence": 0.85, "type": "inferred", "note": "Sentinel-1 SAR 구름 투과 용암돔 관측"},
+    {"subject": "ent-evt-kharg", "predicate": "sarBoost", "object": "+0.10", "rule": "sensor_capability_match_sar", "confidence": 0.90, "type": "inferred", "note": "Sentinel-1 SAR 원유 슬릭 해면 감쇠 탐지"},
+    {"subject": "evt-202", "predicate": "thermalBoost", "object": "+0.10", "rule": "sensor_capability_match_tirs", "confidence": 0.95, "type": "inferred", "note": "Landsat 9 TIRS 열적외 전조 열 시그니처"},
+    {"subject": "evt-1101", "predicate": "disaster_severity", "object": "extreme_escalation", "rule": "disaster_severity", "confidence": 0.95, "type": "inferred", "note": "인명피해 2명 + 대피 33,000+ + Swan Hills 12,000 신규 대피 = 에스컬레이션"},
+    {"subject": "evt-1101", "predicate": "crossDomainLink", "object": "dom-humanitarian", "rule": "crossDomainLink", "confidence": 0.92, "type": "inferred", "note": "Disaster→Humanitarian: 33,000+ 대피, 2명 사망, 원주민 커뮤니티 피해"},
+    {"subject": "evt-1101", "predicate": "crossDomainLink", "object": "dom-climate", "rule": "crossDomainLink", "confidence": 0.90, "type": "inferred", "note": "Disaster→Climate: 56Mt 탄소 방출, 연기 대서양 횡단 유럽 도달"}
+  ],
+  "stats": {
+    "new_nodes": 2,
+    "new_edges": 13,
+    "updated_edges": 10,
+    "inferred_edges": 19
+  }
+}

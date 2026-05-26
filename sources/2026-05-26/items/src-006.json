@@ -1,0 +1,29 @@
+{
+  "id": "src-006",
+  "title": "Kanlaon — Alert Level 2, 폭발적 분출 5/26, 화산재 2,500m, PDC 동사면",
+  "url": "https://gulfnews.com/world/asia/philippines/philippines-kanlaon-volcano-makes-explosive-eruption-shoots-ash-plume-2500-metres-above-the-crater-1.500456510",
+  "snippet": "Kanlaon volcano makes moderately explosive eruption on May 26. Ash plume reached 2,500 meters above crater. Pyroclastic density currents (PDC) flowed down eastern slopes. PHIVOLCS maintains Alert Level 2. Himawari-9 AHI observing volcanic ash.",
+  "source_name": "Gulf News / PHIVOLCS",
+  "language": "en",
+  "discovered_date": "2026-05-26",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "기존 temp-evt-1401 Kanlaon은 소규모 SO₂ 배출 및 VAAC advisory 수준이었으나, 5/26 폭발적 분출은 유의미한 활동 레벨 변화(moderately explosive + PDC). 이전 VAAC#161 FL090과 달리 화산재 2,500m + 동사면 PDC는 신규 위험도 상승 이벤트로 판단.",
+  "entities": [
+    {"id": "temp-evt-1501", "type": "Event", "name": "Kanlaon 폭발적 분출 2026-05-26", "properties": {"phenomenon": "volcanic_eruption", "lat": 10.41, "lon": 123.13, "country": "PH", "severity": "moderate", "ash_height_m": 2500, "pdc": true}},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9", "properties": {}},
+    {"id": "sensor-ahi", "type": "Sensor", "name": "AHI", "properties": {"sensor_type": "optical_multispectral"}},
+    {"id": "org-phivolcs", "type": "Organization", "name": "PHIVOLCS", "properties": {"org_type": "government"}},
+    {"id": "co-ph", "type": "Country", "name": "필리핀", "properties": {"iso_code": "PH"}}
+  ],
+  "relations": [
+    {"subject": "temp-evt-1501", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "temp-evt-1501", "predicate": "usesSensor", "object": "sensor-ahi"},
+    {"subject": "temp-evt-1501", "predicate": "analyzedBy", "object": "org-phivolcs"},
+    {"subject": "temp-evt-1501", "predicate": "inCountry", "object": "co-ph"},
+    {"subject": "temp-evt-1501", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "temp-evt-1501", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "temp-evt-1501", "predicate": "partOfSeries", "object": "temp-evt-1401"}
+  ]
+}

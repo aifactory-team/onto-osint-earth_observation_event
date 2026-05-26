@@ -1,15 +1,15 @@
 {
-  "version": "1.8.0",
+  "version": "1.9.0",
   "description": "위성영상 관측 이벤트 누적 지식그래프 — 첫 실행(2026-04-30) 이후 매일 신규/추론 트리플 병합",
-  "last_updated": "2026-05-24",
-  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-19", "2026-05-20", "2026-05-21", "2026-05-22", "2026-05-23", "2026-05-24"],
-  "triples": "ontology/kg/2026-04-30.json ~ ontology/kg/2026-05-24.json (new_triples + updated_triples + inferred_triples)",
+  "last_updated": "2026-05-26",
+  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-19", "2026-05-20", "2026-05-21", "2026-05-22", "2026-05-23", "2026-05-24", "2026-05-26"],
+  "triples": "ontology/kg/2026-04-30.json ~ ontology/kg/2026-05-26.json (new_triples + updated_triples + inferred_triples)",
   "stats": {
-    "total_explicit_triples": 966,
-    "total_inferred_triples": 407,
-    "total_unique_subjects": 212,
+    "total_explicit_triples": 989,
+    "total_inferred_triples": 426,
+    "total_unique_subjects": 215,
     "total_unique_predicates": 21,
-    "total_unique_objects": 259
+    "total_unique_objects": 262
   },
-  "note": "2026-05-24 재병합 완료 — 신규 5 explicit + 5 updated + 18 inferred 트리플. 모든 10건 기존 이벤트 업데이트(신규 이벤트/엔티티 0건). Kilauea Ep48 예보 5/25-26 축소(D-1 분수분출 임박). Santa Rosa 87% 진압(72%→87% mop-up). Canada 산불 연기 유럽 도달 CAMS 확인(TROPOMI+OMPS+EarthCare 5위성 3기관). Bismarck Sea NASA EO 공식 기사(pumice 200km+ 7km² thermal, officialBoost). Dukono VAAC#284 FL070(190폭발/일). Great Sitkin WATCH(S1 SAR lava dome). Shishaldin ADVISORY(SO2). Mayon AL3 Day139+(PDC). Kanlaon AL2(SO2 4081t/d). Bezymianny KVERT Orange(explosive). multi_satellite_confirmation 2건(evt-1101 5위성/3기관, evt-701 5위성/3기관). temporal_progression 3건(Kilauea Ep48, Santa Rosa Day9, Canada smoke). official_source_trust 7건(USGS HVO, NASA EO, USGS AVO x2, PVMBG/VAAC Darwin, PHIVOLCS x2). sensor_capability 3건(Kilauea thermalBoost, Bismarck thermalBoost, Great Sitkin sarBoost). disaster_severity 2건(Canada인명+대피, Kilauea D-1). before_after 1건(Santa Rosa burn scar). 한반도 GeoFocus 0건. 누적 KG 1373 트리플."
+  "note": "2026-05-26 병합 완료 — 신규 13 explicit + 10 updated + 19 inferred 트리플. 신규 이벤트 2건: (1) Kanlaon 폭발적 분출 5/26(화산재 2500m + PDC 동사면, PHIVOLCS AL2), (2) Sentinel-1D 4위성 콘스텔레이션 완성(ESA 공식, satops). 업데이트 12건: 캐나다 산불 Swan Hills 12,000 대피 에스컬레이션(SWF076 ~2,000ha 통제불능, 5위성 3기관), Kilauea Ep48 예보 창 개시(5/25-26, 양 분출구 백열), Bismarck Sea 부석 70km² 200km+ WSW(NASA EO 지속), Mayon AL3 Day140+ PDC, Bezymianny VAAC#45 FL100(FL300에서 감소), Great Sitkin SAR lava dome, Shishaldin SO₂, Dukono 190/일, Santa Rosa 87%, Kharg Island 유출 확산(Sentinel-1/2/3), Antelope Reef+Spratly. multi_satellite_confirmation 3건(evt-1101 5위성/3기관, evt-701 5��성/3기관, ent-evt-kharg 3위성). temporal_progression 4건(Canada 30일+, Kilauea Ep48 창, Bismarck day18+, Kanlaon series). official_source_trust 6건(USGS HVO, NASA EO, PHIVOLCS x2, USGS AVO x2). sensor_capability 3건(Great Sitkin sarBoost, Kharg sarBoost, Kilauea thermalBoost). disaster_severity 1건(Canada 에스컬레이션). crossDomainLink 2건(Canada→Humanitarian, Canada→Climate). 한반도 GeoFocus 0건 직접이벤트. 누적 KG 1415 트리플."
 }

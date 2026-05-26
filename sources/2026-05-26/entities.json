@@ -1,0 +1,150 @@
+{
+  "date": "2026-05-26",
+  "entities": [
+    {
+      "temp_id": "temp-evt-1501",
+      "matched_id": null,
+      "type": "Event",
+      "name": "Kanlaon 폭발적 분출 2026-05-26",
+      "properties": {"phenomenon": "volcanic_eruption", "country": "PH", "lat": 10.41, "lon": 123.13, "severity": "moderate", "ash_height_m": 2500, "pdc": true, "alert_level": 2},
+      "source_ids": ["src-006"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-evt-1502",
+      "matched_id": null,
+      "type": "Event",
+      "name": "Sentinel-1 4위성 콘스텔레이션 완성",
+      "properties": {"phenomenon": "satellite_operations", "country": null, "lat": null, "lon": null},
+      "source_ids": ["src-016"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-1101",
+      "type": "Event",
+      "name": "캐나다 Manitoba/SK/AB 산불 2026-05",
+      "properties": {"phenomenon": "wildfire", "country": "CA", "lat": 54.67, "lon": -115.4, "severity": "extreme", "evacuated": 33000, "deaths": 2, "swan_hills_evacuated": 12000, "active_fires_mb": 27, "out_of_control_mb": 9},
+      "source_ids": ["src-001"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-1201",
+      "type": "Event",
+      "name": "Santa Rosa Island Fire",
+      "properties": {"phenomenon": "wildfire", "country": "US", "lat": 33.95, "lon": -120.10, "containment_pct": 87, "acres": 18379},
+      "source_ids": ["src-002"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-202",
+      "type": "Event",
+      "name": "Kilauea Ep48 예보",
+      "properties": {"phenomenon": "volcanic_eruption", "country": "US", "lat": 19.42, "lon": -155.29, "alert": "ADVISORY/YELLOW", "forecast_window": "2026-05-25/26"},
+      "source_ids": ["src-003"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-701",
+      "type": "Event",
+      "name": "Bismarck Sea 해저 화산 분출",
+      "properties": {"phenomenon": "volcanic_eruption", "country": "PG", "lat": -3.03, "lon": 147.78, "pumice_raft_km2": 70, "thermal_anomaly_km2": 7},
+      "source_ids": ["src-004"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-082",
+      "type": "Event",
+      "name": "Mayon Alert Level 3 Day 140+",
+      "properties": {"phenomenon": "volcanic_eruption", "country": "PH", "lat": 13.26, "lon": 123.69, "alert_level": 3, "pdc": true, "days": 140},
+      "source_ids": ["src-005"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-801",
+      "type": "Event",
+      "name": "Bezymianny VAAC#45",
+      "properties": {"phenomenon": "volcanic_eruption", "country": "RU", "lat": 55.97, "lon": 160.59, "ash_fl": "FL100"},
+      "source_ids": ["src-007"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-203",
+      "type": "Event",
+      "name": "Great Sitkin WATCH/ORANGE",
+      "properties": {"phenomenon": "volcanic_eruption", "country": "US", "lat": 52.08, "lon": -176.13, "alert": "WATCH/ORANGE"},
+      "source_ids": ["src-008"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-204",
+      "type": "Event",
+      "name": "Shishaldin ADVISORY/YELLOW",
+      "properties": {"phenomenon": "volcanic_eruption", "country": "US", "lat": 54.76, "lon": -163.97, "alert": "ADVISORY/YELLOW"},
+      "source_ids": ["src-009"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-128",
+      "type": "Event",
+      "name": "Dukono VAAC#284+",
+      "properties": {"phenomenon": "volcanic_eruption", "country": "ID", "lat": 1.69, "lon": 127.88, "explosions_per_day": 190},
+      "source_ids": ["src-010"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-kharg",
+      "type": "Event",
+      "name": "Kharg Island 원유 유출",
+      "properties": {"phenomenon": "oil_spill", "country": "IR", "lat": 29.23, "lon": 50.32, "slick_km2": 70},
+      "source_ids": ["src-011"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-092",
+      "type": "Event",
+      "name": "Antelope Reef 매립 + Spratly 건설",
+      "properties": {"phenomenon": "construction", "country": "CN", "lat": 16.46, "lon": 112.55, "acres": 1490},
+      "source_ids": ["src-012"],
+      "mention_count": 1
+    }
+  ],
+  "relations": [
+    {"subject": "temp-evt-1501", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-006"], "confidence": 0.88},
+    {"subject": "temp-evt-1501", "predicate": "analyzedBy", "object": "org-phivolcs", "source_ids": ["src-006"], "confidence": 0.90},
+    {"subject": "temp-evt-1501", "predicate": "inCountry", "object": "co-ph", "source_ids": ["src-006"], "confidence": 0.95},
+    {"subject": "temp-evt-1501", "predicate": "manifests", "object": "phen-volcano", "source_ids": ["src-006"], "confidence": 0.95},
+    {"subject": "temp-evt-1501", "predicate": "partOfSeries", "object": "temp-evt-1401", "source_ids": ["src-006"], "confidence": 0.90},
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-goes18", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-sentinel5p", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "evt-701", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-004"], "confidence": 0.97},
+    {"subject": "evt-701", "predicate": "observedBy", "object": "sat-modis-terra", "source_ids": ["src-004"], "confidence": 0.97},
+    {"subject": "evt-701", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-004"], "confidence": 0.97},
+    {"subject": "evt-701", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-004"], "confidence": 0.97},
+    {"subject": "evt-701", "predicate": "analyzedBy", "object": "org-nasa", "source_ids": ["src-004"], "confidence": 0.97},
+    {"subject": "evt-203", "predicate": "usesSensor", "object": "sensor-c-sar", "source_ids": ["src-008"], "confidence": 0.85},
+    {"subject": "evt-204", "predicate": "usesSensor", "object": "sensor-tropomi", "source_ids": ["src-009"], "confidence": 0.78},
+    {"subject": "ent-evt-kharg", "predicate": "observedBy", "object": "sat-sentinel1a", "source_ids": ["src-011"], "confidence": 0.90},
+    {"subject": "ent-evt-kharg", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-011"], "confidence": 0.90},
+    {"subject": "ent-evt-kharg", "predicate": "observedBy", "object": "sat-sentinel3", "source_ids": ["src-011"], "confidence": 0.90},
+    {"subject": "evt-092", "predicate": "observedBy", "object": "sat-worldview3", "source_ids": ["src-012"], "confidence": 0.92},
+    {"subject": "evt-092", "predicate": "observedBy", "object": "sat-planetscope", "source_ids": ["src-012"], "confidence": 0.92}
+  ],
+  "stats": {
+    "total_entities": 13,
+    "new_entities": 2,
+    "matched_entities": 11,
+    "total_relations": 20
+  }
+}
