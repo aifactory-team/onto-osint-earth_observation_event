@@ -1,0 +1,68 @@
+{
+  "date": "2026-05-27",
+  "new_triples": [
+    {"subject": "temp-evt-1601", "predicate": "observedBy", "object": "sat-worldview3", "source_id": "src-013", "date": "2026-05-27", "confidence": 0.90, "type": "explicit"},
+    {"subject": "temp-evt-1601", "predicate": "usesSensor", "object": "sensor-optical-pan", "source_id": "src-013", "date": "2026-05-27", "confidence": 0.90, "type": "explicit"},
+    {"subject": "temp-evt-1601", "predicate": "analyzedBy", "object": "org-38north", "source_id": "src-013", "date": "2026-05-27", "confidence": 0.92, "type": "explicit"},
+    {"subject": "temp-evt-1601", "predicate": "inCountry", "object": "co-kp", "source_id": "src-013", "date": "2026-05-27", "confidence": 0.99, "type": "explicit"},
+    {"subject": "temp-evt-1601", "predicate": "locatedIn", "object": "ent-loc-069", "source_id": "src-013", "date": "2026-05-27", "confidence": 0.95, "type": "explicit"},
+    {"subject": "temp-evt-1601", "predicate": "manifests", "object": "phen-construction", "source_id": "src-013", "date": "2026-05-27", "confidence": 0.95, "type": "explicit"},
+    {"subject": "temp-evt-1601", "predicate": "inDomain", "object": "dom-human", "source_id": "src-013", "date": "2026-05-27", "confidence": 0.95, "type": "explicit"},
+
+    {"subject": "temp-evt-1602", "predicate": "observedBy", "object": "sat-planetscope", "source_id": "src-014", "date": "2026-05-27", "confidence": 0.88, "type": "explicit"},
+    {"subject": "temp-evt-1602", "predicate": "analyzedBy", "object": "org-38north", "source_id": "src-014", "date": "2026-05-27", "confidence": 0.90, "type": "explicit"},
+    {"subject": "temp-evt-1602", "predicate": "reportedBy", "object": "org-rfa", "source_id": "src-014", "date": "2026-05-27", "confidence": 0.85, "type": "explicit"},
+    {"subject": "temp-evt-1602", "predicate": "inCountry", "object": "co-kp", "source_id": "src-014", "date": "2026-05-27", "confidence": 0.99, "type": "explicit"},
+    {"subject": "temp-evt-1602", "predicate": "locatedIn", "object": "ent-loc-071", "source_id": "src-014", "date": "2026-05-27", "confidence": 0.95, "type": "explicit"},
+    {"subject": "temp-evt-1602", "predicate": "manifests", "object": "phen-construction", "source_id": "src-014", "date": "2026-05-27", "confidence": 0.95, "type": "explicit"},
+    {"subject": "temp-evt-1602", "predicate": "inDomain", "object": "dom-human", "source_id": "src-014", "date": "2026-05-27", "confidence": 0.95, "type": "explicit"},
+
+    {"subject": "temp-evt-1603", "predicate": "observedBy", "object": "sat-sentinel5p", "source_id": "src-015", "date": "2026-05-27", "confidence": 0.95, "type": "explicit"},
+    {"subject": "temp-evt-1603", "predicate": "usesSensor", "object": "sensor-tropomi", "source_id": "src-015", "date": "2026-05-27", "confidence": 0.95, "type": "explicit"},
+    {"subject": "temp-evt-1603", "predicate": "inCountry", "object": "co-to", "source_id": "src-015", "date": "2026-05-27", "confidence": 0.90, "type": "explicit"},
+    {"subject": "temp-evt-1603", "predicate": "manifests", "object": "phen-methane", "source_id": "src-015", "date": "2026-05-27", "confidence": 0.95, "type": "explicit"},
+    {"subject": "temp-evt-1603", "predicate": "inDomain", "object": "dom-climate", "source_id": "src-015", "date": "2026-05-27", "confidence": 0.95, "type": "explicit"}
+  ],
+  "updated_triples": [
+    {"subject": "evt-202", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-001", "date": "2026-05-27", "confidence": 0.95, "type": "explicit", "note": "Ep48 예보 창 5/27-29 확대, 팽창 지속, 분출 가능성 고조"},
+    {"subject": "evt-1201", "predicate": "observedBy", "object": "sat-landsat9", "source_id": "src-002", "date": "2026-05-27", "confidence": 0.90, "type": "explicit", "note": "97% 진압(87→97%), mop-up 거의 완료"},
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-goes18", "source_id": "src-003", "date": "2026-05-27", "confidence": 0.95, "type": "explicit", "note": "캐나다 산불 지속, 대피 확대"},
+    {"subject": "evt-701", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_id": "src-004", "date": "2026-05-27", "confidence": 0.97, "type": "explicit", "note": "Bismarck Sea day 19+, 부석 확산 지속"},
+    {"subject": "evt-082", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-005", "date": "2026-05-27", "confidence": 0.90, "type": "explicit", "note": "Mayon Day 141+ 스트롬볼리안 지속"},
+    {"subject": "temp-evt-1401", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-006", "date": "2026-05-27", "confidence": 0.88, "type": "explicit", "note": "Kanlaon post-explosion 모니터링, PHIVOLCS AL2 유지"},
+    {"subject": "evt-801", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-007", "date": "2026-05-27", "confidence": 0.82, "type": "explicit", "note": "Bezymianny VAAC FL100 유지, KVERT Orange"},
+    {"subject": "evt-203", "predicate": "usesSensor", "object": "sensor-c-sar", "source_id": "src-008", "date": "2026-05-27", "confidence": 0.85, "type": "explicit", "note": "Great Sitkin SAR 용암돔 모니터링 지속"},
+    {"subject": "evt-204", "predicate": "usesSensor", "object": "sensor-tropomi", "source_id": "src-009", "date": "2026-05-27", "confidence": 0.78, "type": "explicit", "note": "Shishaldin SO2 배출 지속"},
+    {"subject": "evt-128", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-010", "date": "2026-05-27", "confidence": 0.82, "type": "explicit", "note": "Dukono 190+/일 폭발 지속"},
+    {"subject": "ent-evt-kharg", "predicate": "observedBy", "object": "sat-sentinel1a", "source_id": "src-011", "date": "2026-05-27", "confidence": 0.90, "type": "explicit", "note": "Kharg Island 유출 확산 지속"},
+    {"subject": "evt-092", "predicate": "observedBy", "object": "sat-worldview3", "source_id": "src-012", "date": "2026-05-27", "confidence": 0.92, "type": "explicit", "note": "Antelope Reef 건설 지속"},
+    {"subject": "evt-802", "predicate": "observedBy", "object": "sat-planetscope", "source_id": "src-016", "date": "2026-05-27", "confidence": 0.88, "type": "explicit", "note": "Bellingcat 남레바논 PlanetScope 업데이트"}
+  ],
+  "inferred_triples": [
+    {"subject": "temp-evt-1601", "predicate": "koreaBoost", "object": "+0.10", "rule": "korea_geo_focus", "confidence": 0.99, "type": "inferred", "note": "KP country -> 한반도 GeoFocus 적용 (압록강 신교량)"},
+    {"subject": "temp-evt-1602", "predicate": "koreaBoost", "object": "+0.10", "rule": "korea_geo_focus", "confidence": 0.99, "type": "inferred", "note": "KP country -> 한반도 GeoFocus 적용 (두만강 교량)"},
+    {"subject": "temp-evt-1601", "predicate": "hiResBoost", "object": "+0.15", "rule": "sensor_capability_match_hires", "confidence": 0.92, "type": "inferred", "note": "WorldView-3 0.31m hi-res x construction -> 세관 건물 구조 식별 가능"},
+    {"subject": "temp-evt-1601", "predicate": "analystBoost", "object": "+0.10", "rule": "analyst_org_trust", "confidence": 0.92, "type": "inferred", "note": "38 North (research) 독립 분석기관"},
+    {"subject": "temp-evt-1602", "predicate": "analystBoost", "object": "+0.10", "rule": "analyst_org_trust", "confidence": 0.90, "type": "inferred", "note": "38 North (research) + RFA 교차 보도"},
+    {"subject": "temp-evt-1603", "predicate": "tracegasBoost", "object": "+0.15", "rule": "sensor_capability_match_tracegas", "confidence": 0.95, "type": "inferred", "note": "Sentinel-5P TROPOMI trace_gas sensor x methane_plume phenomenon"},
+    {"subject": "temp-evt-1603", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.93, "type": "inferred", "note": "Nature Communications peer-reviewed + ESA Sentinel-5P 공식 데이터"},
+    {"subject": "evt-202", "predicate": "temporal_progression", "object": "Ep48_window_5/27-29", "rule": "temporal_progression", "confidence": 0.95, "type": "inferred", "note": "Ep44->45->46->47->48 시리즈, 예보 창 확대 5/27-29"},
+    {"subject": "evt-202", "predicate": "partOfSeries", "object": "ent-evt-021", "rule": "temporal_progression", "confidence": 0.97, "type": "inferred", "note": "동일 위치(Halemaumau), 동일 현상(volcanic_eruption), 에피소드 시리즈"},
+    {"subject": "evt-1101", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.95, "type": "inferred", "note": "GOES-18 + VIIRS + TROPOMI + OMPS + EarthCare 5위성 3기관 교차검증 유지"},
+    {"subject": "evt-701", "predicate": "temporal_progression", "object": "day_19+_continuing", "rule": "temporal_progression", "confidence": 0.97, "type": "inferred", "note": "Bismarck Sea 5/9 이후 지속 분출, 부석 확산"},
+    {"subject": "evt-1101", "predicate": "temporal_progression", "object": "series_day_31+", "rule": "temporal_progression", "confidence": 0.95, "type": "inferred", "note": "캐나다 산불 5월 초 이후 지속 확대"},
+    {"subject": "evt-202", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred", "note": "USGS HVO 공식 예보"},
+    {"subject": "evt-082", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.90, "type": "inferred", "note": "PHIVOLCS 공식 AL3"},
+    {"subject": "evt-203", "predicate": "sarBoost", "object": "+0.10", "rule": "sensor_capability_match_sar", "confidence": 0.85, "type": "inferred", "note": "Sentinel-1 SAR 구름 투과 용암돔 관측"},
+    {"subject": "ent-evt-kharg", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.90, "type": "inferred", "note": "Sentinel-1 + Sentinel-2 + Sentinel-3 3위성 교차검증 유지"},
+    {"subject": "evt-1201", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.90, "type": "inferred", "note": "NASA EO 공식, 97% 진압"},
+    {"subject": "temp-evt-1601", "predicate": "baCredibilityBoost", "object": "+0.10", "rule": "before_after_credibility", "confidence": 0.90, "type": "inferred", "note": "WorldView-3 before/after 시계열 건설 진전 비교"},
+    {"subject": "temp-evt-1602", "predicate": "baCredibilityBoost", "object": "+0.10", "rule": "before_after_credibility", "confidence": 0.88, "type": "inferred", "note": "PlanetScope 시계열 교량 건설 진전 비교"}
+  ],
+  "stats": {
+    "new_nodes": 5,
+    "new_edges": 18,
+    "updated_edges": 13,
+    "inferred_edges": 19
+  }
+}

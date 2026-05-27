@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "description": "OSINT 온톨로지 스키마 — config/osint-config.json의 seed로부터 초기화되고, 매일 파이프라인 실행 시 자동 확장된다. 도메인: 위성영상으로 관측 가능한 지구상 이벤트 (Earth Observation Events).",
-  "last_updated": "2026-05-26",
+  "last_updated": "2026-05-27",
   "classes": [
     {
       "id": "Entity",
@@ -541,6 +541,13 @@
       "target": "temp-evt-1501, temp-evt-1502 + updates to evt-1101, evt-202, evt-701, evt-082, evt-801, evt-203, evt-204, evt-128, evt-1201, ent-evt-kharg, evt-092",
       "reason": "신규 2건: Kanlaon 폭발적 분출 5/26(화산재 2500m + PDC 동사면, PHIVOLCS AL2, Himawari-9 AHI), Sentinel-1D 4위성 콘스텔레이션 완성(ESA 공식, 재방문 4일 달성). 업데이트 12건: 캐나다 산불 Swan Hills 12,000 대피 에스컬레이션(SWF076 ~2,000ha 통제불능, 5위성 3기관), Kilauea Ep48 예보 창 5/25-26 개시(양 분출구 백열 SO₂ 1-5k), Bismarck Sea 부석 70km² 200km+ WSW(NASA EO 지속), Mayon AL3 Day140+ PDC, Bezymianny VAAC#45 FL100(감소), Great Sitkin SAR lava dome, Shishaldin SO₂, Dukono 190/일, Santa Rosa 87%, Kharg Island Sentinel-1/2/3 유출 확산, Antelope Reef+Spratly. 스키마 구조적 변경 없음.",
       "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009", "src-010", "src-011", "src-012", "src-016"]
+    },
+    {
+      "date": "2026-05-27",
+      "action": "add_event_and_location",
+      "target": "temp-evt-1601, temp-evt-1602, temp-evt-1603, ent-loc-069, ent-loc-071 + updates to evt-202, evt-1201, evt-1101, evt-701, evt-082, temp-evt-1401, evt-801, evt-203, evt-204, evt-128, ent-evt-kharg, evt-092, evt-802",
+      "reason": "신규 3건: (1) 압록강 신교량 세관시설 건설(temp-evt-1601, 40.1N/124.4E, WorldView-3, 38 North, KP dom-human construction), (2) 두만강 교량 완공 임박(temp-evt-1602, 42.4N/130.6E, PlanetScope, 38 North+RFA, KP/RU border), (3) TROPOMI 훙가통가 화산 플룸 메탄 파괴 검출(temp-evt-1603, -20.5/-175.4, Sentinel-5P, Nature Communications, dom-climate methane_plume). 업데이트 13건: Kilauea Ep48 5/27-29 window, Santa Rosa 97%, Canada wildfire, Bismarck Sea day19+, Mayon Day141+, Kanlaon post-explosion, Bezymianny FL100, Great Sitkin, Shishaldin, Dukono, Kharg Island, Antelope Reef, Bellingcat Lebanon. 신규 Location 2건: ent-loc-069(Yalu River Bridge Customs Site, Sinuiju, KP, 40.1/124.4), ent-loc-071(Tumen River Bridge Crossing, KP/RU, 42.4/130.6). 스키마 구조적 변경 없음.",
+      "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009", "src-010", "src-011", "src-012", "src-013", "src-014", "src-015"]
     }
   ]
 }

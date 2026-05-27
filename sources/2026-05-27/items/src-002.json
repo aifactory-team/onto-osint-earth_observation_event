@@ -1,0 +1,32 @@
+{
+  "id": "src-002",
+  "title": "북한-러시아 두만강 교량 완공 임박 — 위성영상 확인, 6/19 개통 목표",
+  "url": "https://www.rfa.org/english/korea/2026/05/21/tumen-river-bridge-russia-north-korea-putin/",
+  "snippet": "Satellite imagery shows DPRK-Russia Tumen River bridge construction from opposite banks meeting in the middle. Russian Embassy announced completion target June 19, 2026 — 6 months ahead of schedule. Designed capacity: 300 vehicles and 2,850 people per day. 38 North March 2026 analysis confirmed bridge halves meeting.",
+  "source_name": "Radio Free Asia",
+  "language": "en",
+  "discovered_date": "2026-05-27",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규 이벤트. 위성영상에서 북한-러시아 두만강 교량 양쪽에서 건설된 교각이 중앙부에서 만나는 것 확인. 러시아 대사관 6/19 개통 발표(예정보다 6개월 조기). 일 300대 차량, 2,850명 통행 용량. 38 North 2026년 3월 분석에서 최초 확인 → RFA 5/21 보도로 업데이트. 국방+인간활동 도메인 교차.",
+  "entities": [
+    {"id": "temp-evt-1602", "type": "Event", "name": "북한-러시아 두만강 교량 완공 임박 (Tumen River Bridge)", "properties": {"phenomenon": "construction", "domain": "HumanActivity", "lat": 42.4, "lon": 130.6, "country": "KP", "severity": "medium", "observation_date": "2026-05", "before_after_available": true, "capacity": "300 vehicles/day, 2850 people/day", "completion_target": "2026-06-19"}},
+    {"id": "sat-planetscope", "type": "Satellite", "name": "PlanetScope (Planet Labs)", "properties": {"operator": "Planet Labs", "resolution_m": 3.0, "type": "optical", "constellation": true}},
+    {"id": "org-38north", "type": "Organization", "name": "38 North (Stimson Center)", "properties": {"org_type": "think_tank", "focus": "North Korea analysis"}},
+    {"id": "org-rfa", "type": "Organization", "name": "Radio Free Asia", "properties": {"org_type": "media"}},
+    {"id": "co-kp", "type": "Country", "name": "조선민주주의인민공화국", "properties": {"iso_code": "KP"}},
+    {"id": "co-ru", "type": "Country", "name": "러시아", "properties": {"iso_code": "RU"}},
+    {"id": "phen-construction", "type": "Phenomenon", "name": "construction", "properties": {"category": "HumanActivity", "subcategory": "large_construction"}}
+  ],
+  "relations": [
+    {"subject": "temp-evt-1602", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "temp-evt-1602", "predicate": "analyzedBy", "object": "org-38north"},
+    {"subject": "temp-evt-1602", "predicate": "reportedBy", "object": "org-rfa"},
+    {"subject": "temp-evt-1602", "predicate": "inCountry", "object": "co-kp"},
+    {"subject": "temp-evt-1602", "predicate": "inCountry", "object": "co-ru"},
+    {"subject": "temp-evt-1602", "predicate": "manifests", "object": "phen-construction"},
+    {"subject": "temp-evt-1602", "predicate": "inDomain", "object": "dom-human"},
+    {"subject": "temp-evt-1602", "predicate": "inDomain", "object": "dom-defense"}
+  ]
+}

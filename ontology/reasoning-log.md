@@ -2027,3 +2027,121 @@ config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5)
 - **Kanlaon 폭발적 분출:** 기존 AL2 유지이나 5/26 폭발은 유의미한 위험도 상승(PDC + 2500m 화산재). Mayon(AL3)과 동시 분출 — 필리핀 2기 화산 비상.
 - **Kharg Island:** Sentinel-1/2/3 3위성 교차검증으로 multiSatBoost 적용. 이란 분쟁 중 환경 피해 모니터링 사례.
 - **Sentinel-1D:** ESA C-band SAR 4위성(1A/1C/1D + 예비 1B 퇴역) 콘스텔레이션 완성. 4일 재방문 글로벌 커버리지. 향후 모든 SAR 기반 모니터링(홍수, 유출, 산사태, 건설, 빙하)의 기본 역량 강화.
+
+---
+
+## 2026-05-27 추론 결과
+
+입력: sources/2026-05-27 (신규 3건, 업데이트 13건). 이벤트 16건(신규 3 + 업데이트 13).
+
+### korea_geo_focus (한반도 가산, +0.10) — 2건
+
+- **추론 #1:** temp-evt-1601 (압록강 신교량 세관시설 건설) — inCountry KP → koreaBoost +0.10 [confidence 0.99, 확정]
+  - 신의주 압록강변 40.1N/124.4E — 한반도 GeoFocus 규칙 적용
+- **추론 #2:** temp-evt-1602 (두만강 교량 완공 임박) — inCountry KP → koreaBoost +0.10 [confidence 0.99, 확정]
+  - KP/RU 국경 42.4N/130.6E — 한반도 GeoFocus 규칙 적용
+
+### sensor_capability_match (센서-현상 적합성) — 3건
+
+- **추론 #3:** temp-evt-1601 (압록강 세관 WorldView-3 0.31m) — hi-res optical x construction → hiResBoost +0.15 [confidence 0.92, 확정]
+  - WorldView-3 0.31m 해상도로 세관 건물 구조, 차량, 진입로 식별 가능
+- **추론 #4:** temp-evt-1603 (훙가통가 메탄 파괴) — usesSensor TROPOMI (trace_gas) + phenomenon methane_plume → tracegasBoost +0.15 [confidence 0.95, 확정]
+  - Sentinel-5P TROPOMI 2.3um SWIR CH4 흡수밴드 — 성층권 메탄 파괴 시그널 검출
+- **추론 #5:** evt-203 (Great Sitkin) — usesSensor C-SAR + volcanic_eruption → sarBoost +0.10 [confidence 0.85, 확정]
+  - Sentinel-1 SAR 구름 투과 용암돔 관측 지속
+
+### official_source_trust (공식 기관 신뢰도, +0.15) — 4건
+
+- **추론 #6:** temp-evt-1603 (Nature Communications peer-reviewed + ESA Sentinel-5P) → officialBoost +0.15 [confidence 0.93, 확정]
+  - Nature Communications 동료 심사 저널 + ESA 공식 Sentinel-5P 데이터 = 이중 공식 출처
+- **추론 #7:** evt-202 (Kilauea Ep48) — analyzedBy USGS HVO → officialBoost +0.15 [confidence 0.95, 확정]
+- **추론 #8:** evt-082 (Mayon Day141+) — analyzedBy PHIVOLCS → officialBoost +0.15 [confidence 0.90, 확정]
+- **추론 #9:** evt-1201 (Santa Rosa 97%) — analyzedBy NASA EO → officialBoost +0.15 [confidence 0.90, 확정]
+
+### analyst_org_trust (독립 분석기관 신뢰도, +0.10) — 2건
+
+- **추론 #10:** temp-evt-1601 (38 North 분석) → analystBoost +0.10 [confidence 0.92, 확정]
+  - 38 North: SAIS/Johns Hopkins 산하 대북 OSINT 전문 연구기관
+- **추론 #11:** temp-evt-1602 (38 North + RFA) → analystBoost +0.10 [confidence 0.90, 확정]
+  - 38 North 위성영상 분석 + RFA 현지 보도 교차 확인
+
+### temporal_progression (시계열 연속 관측) — 4건
+
+- **추론 #12:** evt-202 (Kilauea Ep48) partOfSeries ent-evt-021 — 동일 위치(Halemaumau 19.421/-155.287), 동일 현상(volcanic_eruption), Ep44→45→46→47→48 시리즈. 예보 창 5/27-29 확대 [confidence 0.97, 확정]
+- **추론 #13:** evt-1101 (캐나다 산불) temporal_progression series_day_31+ — 5월 초 이후 지속 31일+ 확대 [confidence 0.95, 확정]
+- **추론 #14:** evt-701 (Bismarck Sea) temporal_progression day_19+_continuing — 5/9 이후 19일+ 지속 분출, 부석 확산 [confidence 0.97, 확정]
+- **추론 #15:** evt-082 (Mayon) partOfSeries ent-evt-029 — 2026-01 이후 141일+ 연속 분출 시리즈 [confidence 0.95, 확정]
+
+### multi_satellite_confirmation (다중 위성 교차검증 유지, +0.20) — 2건
+
+- **추론 #16:** evt-1101 (캐나다 산불) — GOES-18 + VIIRS + TROPOMI + OMPS + EarthCare 5위성 3기관(NOAA/ESA/JAXA) 교차검증 유지 [confidence 0.95, 확정]
+- **추론 #17:** ent-evt-kharg (Kharg Island) — Sentinel-1 + Sentinel-2 + Sentinel-3 3위성/3센서 교차검증 유지 [confidence 0.90, 확정]
+
+### before_after_credibility (전후 비교 신뢰도, +0.10) — 2건
+
+- **추론 #18:** temp-evt-1601 (압록강 세관) — WorldView-3 before/after 시계열 건설 진전 비교 → baCredibilityBoost +0.10 [confidence 0.90, 확정]
+- **추론 #19:** temp-evt-1602 (두만강 교량) — PlanetScope 시계열 교량 건설 진전 비교 → baCredibilityBoost +0.10 [confidence 0.88, 확정]
+
+### 종합 신뢰도 산정
+
+| 이벤트 ID | 이벤트명 | 기본 | 가산 | 최종 | 비고 |
+|-----------|---------|------|------|------|------|
+| temp-evt-1601 | 압록강 신교량 세관 | 0.78 | hiRes+0.15, analyst+0.10, korea+0.10, ba+0.10 | 0.95 (cap) | 38 North WV-3 |
+| temp-evt-1602 | 두만강 교량 완공 임박 | 0.75 | analyst+0.10, korea+0.10, ba+0.10 | 0.92 | 38 North+RFA PlanetScope |
+| temp-evt-1603 | 훙가통가 메탄 파괴 | 0.82 | tracegas+0.15, official+0.15 | 0.97 (cap) | Nature Comms+ESA TROPOMI |
+| evt-202 | Kilauea Ep48 5/27-29 | 0.85 | official+0.15, temporal | 0.97 (cap) | USGS HVO 공식 |
+| evt-1201 | Santa Rosa 97% | 0.85 | official+0.15 | 0.95 | NASA EO, 진압 거의 완료 |
+| evt-1101 | 캐나다 산불 지속 | 0.90 | multiSat+0.20, temporal | 0.97 (cap) | 5위성 3기관 유지 |
+| evt-701 | Bismarck Sea day19+ | 0.88 | temporal | 0.97 (cap) | 부석 확산 지속 |
+| evt-082 | Mayon Day141+ | 0.85 | official+0.15 | 0.95 | PHIVOLCS AL3 |
+| evt-801 | Bezymianny FL100 | 0.78 | — | 0.78 | 완화 추세 유지 |
+| evt-203 | Great Sitkin SAR | 0.82 | sar+0.10 | 0.92 | AVO WATCH |
+| evt-204 | Shishaldin SO2 | 0.75 | — | 0.75 | AVO ADVISORY |
+| evt-128 | Dukono 190/일 | 0.75 | — | 0.75 | VAAC Darwin |
+| ent-evt-kharg | Kharg Island 유출 | 0.85 | multiSat+0.20, sar+0.10 | 0.97 (cap) | 3위성 교차검증 |
+| evt-092 | Antelope Reef | 0.85 | — | 0.85 | AMTI 지속 |
+| evt-802 | Bellingcat 남레바논 | 0.85 | — | 0.85 | PlanetScope 업데이트 |
+
+### 추론 통계 요약
+
+| 규칙 | 금일 발동 | 누적 | 평균 신뢰도 |
+|------|----------|------|-----------|
+| korea_geo_focus | 2 | ~32 | 0.99 |
+| sensor_capability_match | 3 | ~43 | 0.91 |
+| official_source_trust | 4 | ~39 | 0.92 |
+| analyst_org_trust | 2 | ~11 | 0.91 |
+| temporal_progression | 4 | ~24 | 0.96 |
+| multi_satellite_confirmation (유지) | 2 | ~30 | 0.93 |
+| before_after_credibility | 2 | ~30 | 0.89 |
+| **합계** | **19** | **~209** | **0.93** |
+
+### 금일 미적용/제외 추론
+
+- **cascading_disaster:** 금일 신규 재해 사슬 없음
+- **supersedes:** 금일 supersede 관계 없음
+- **crossDomainLink:** 신규 교차 도메인 없음 (기존 Canada wildfire Disaster→Humanitarian/Climate 유지)
+- **disaster_severity_priority:** 신규 고위험 재해 없음 (기존 추적 항목 업데이트만)
+- **commercial_imagery_provider:** 금일 상업 위성 직접 발표 없음
+
+### 온톨로지 변경
+
+| 변경 유형 | 대상 | 근거 |
+|----------|------|------|
+| 새 Event | temp-evt-1601 (압록강 세관 건설) | 38 North WV-3 분석, KP dom-human construction |
+| 새 Event | temp-evt-1602 (두만강 교량 완공 임박) | 38 North+RFA PlanetScope, KP/RU border |
+| 새 Event | temp-evt-1603 (훙가통가 메탄 파괴) | Nature Communications, Sentinel-5P TROPOMI |
+| 새 Location | ent-loc-069 (Yalu River Bridge Customs Site) | 신의주 압록강변, 40.1/124.4 |
+| 새 Location | ent-loc-071 (Tumen River Bridge Crossing) | KP/RU 국경, 42.4/130.6 |
+| 이벤트 업데이트 | evt-202/1201/1101/701/082/1401/801/203/204/128/kharg/092/802 (13건) | 후속 관측 반영 |
+| 스키마 구조 변경 | 없음 | — |
+
+config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5).
+
+### 특이사항
+
+- **한반도 GeoFocus 2건 신규 복귀:** 5/26 0건 이후 5/27 2건 북한 인프라 건설(압록강+두만강) 관측. 38 North 위성영상 분석 기반. 북한-중국/북한-러시아 국경 교통 인프라 확장의 전략적 함의(대북 제재 회피 우려).
+- **Kilauea Ep48 분출 임박:** 예보 창 5/27-29로 확대. 양 분출구(남/북) 백열 지속. SO2 1,000-5,000 t/d. 다음 사이클에서 WARNING/RED 또는 분수분출 개시 가능.
+- **Santa Rosa 97% 진압:** 87%→97%, mop-up 단계 종료 임박. 다음 사이클에서 추적 종료 가능.
+- **훙가통가 메탄 파괴:** 2022년 분출 후 성층권 수증기 주입 → OH 라디칼 증가 → 메탄 파괴 촉진이라는 새로운 메커니즘. 화산 분출이 온실가스에 미치는 반직관적(메탄 감소) 영향. 기후 모델 재보정 필요성 시사.
+- **캐나다 산불 지속:** 31일+ 경과, 대피 확대 지속. 5위성 3기관 교차검증 최고 수준 유지.
+- **Bismarck Sea day19+:** 부석 뗏목 확산 지속, 항해 위험 유지. NASA EO 지속 보도.

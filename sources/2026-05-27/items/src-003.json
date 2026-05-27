@@ -1,0 +1,27 @@
+{
+  "id": "src-003",
+  "title": "TROPOMI 훙가통가 화산 플룸 메탄 파괴 검출 — Nature Communications 2026",
+  "url": "https://www.sciencedaily.com/releases/2026/05/260509210640.htm",
+  "snippet": "Nature Communications 2026 study using ESA Sentinel-5P TROPOMI instrument detected record-high formaldehyde (HCHO) concentrations inside the Hunga Tonga volcanic plume, demonstrating that the 2022 eruption destroyed atmospheric methane continuously for 10+ days. First satellite-based evidence of volcanic methane destruction at this scale. TROPOMI hyperspectral UV-Vis measurements provided the key detection capability.",
+  "source_name": "ScienceDaily / Nature Communications",
+  "language": "en",
+  "discovered_date": "2026-05-27",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규 이벤트. Nature Communications 2026년 5월 발표 논문: Sentinel-5P TROPOMI가 훙가통가 화산(2022) 플룸 내 포름알데히드(HCHO) 기록적 농도 검출 → 화산 분출이 메탄(CH4)을 10일 이상 연속 파괴했음을 증명. 위성 초분광 센서의 대기화학 분석 능력 입증 사례. dom-climate 카테고리, 초분광/온실가스 센서 의무 사용 규칙 적용.",
+  "entities": [
+    {"id": "temp-evt-1603", "type": "Event", "name": "TROPOMI 훙가통가 화산 플룸 메탄 파괴 검출 (Hunga Tonga CH4 destruction)", "properties": {"phenomenon": "methane_plume", "domain": "ClimateEnvironment", "lat": -20.5, "lon": -175.4, "country": "TO", "severity": "medium", "observation_date": "2022-01", "analysis_published": "2026-05", "duration_days": 10, "key_finding": "Record HCHO in volcanic plume proves continuous CH4 destruction"}},
+    {"id": "sat-sentinel5p", "type": "Satellite", "name": "Sentinel-5P (Precursor)", "properties": {"operator": "ESA/Copernicus", "instrument": "TROPOMI", "type": "hyperspectral", "spectral_range": "UV-Vis-NIR-SWIR"}},
+    {"id": "sensor-tropomi", "type": "Sensor", "name": "TROPOMI (TROPOspheric Monitoring Instrument)", "properties": {"satellite": "Sentinel-5P", "type": "hyperspectral", "products": ["NO2", "SO2", "CO", "CH4", "HCHO", "O3", "aerosol"]}},
+    {"id": "co-to", "type": "Country", "name": "통가 (Tonga)", "properties": {"iso_code": "TO"}},
+    {"id": "phen-methane", "type": "Phenomenon", "name": "methane_plume / atmospheric chemistry", "properties": {"category": "ClimateEnvironment", "subcategory": "greenhouse_gas"}}
+  ],
+  "relations": [
+    {"subject": "temp-evt-1603", "predicate": "observedBy", "object": "sat-sentinel5p"},
+    {"subject": "temp-evt-1603", "predicate": "usesSensor", "object": "sensor-tropomi"},
+    {"subject": "temp-evt-1603", "predicate": "inCountry", "object": "co-to"},
+    {"subject": "temp-evt-1603", "predicate": "manifests", "object": "phen-methane"},
+    {"subject": "temp-evt-1603", "predicate": "inDomain", "object": "dom-climate"}
+  ]
+}

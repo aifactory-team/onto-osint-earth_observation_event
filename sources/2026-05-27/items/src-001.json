@@ -1,0 +1,27 @@
+{
+  "id": "src-001",
+  "title": "38 North: 신의주 압록강 신교량 세관시설 건설 진행 (Yalu River Bridge Customs)",
+  "url": "https://www.38north.org/2026/05/quick-take-progress-continues-at-new-yalu-river-bridge-crossing/",
+  "snippet": "Commercial satellite imagery shows North Korea building customs/immigration center at New Yalu River Bridge (Sinuiju). Multiple buildings under construction: 4 warehouses (50x100m and 50x320m) on west side, ~20 buildings on east side. Suggests bridge may finally open after 12 years of dormancy since original construction.",
+  "source_name": "38 North",
+  "language": "en",
+  "discovered_date": "2026-05-27",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규 이벤트. 38 North 위성영상 분석에서 신의주 압록강 신교량(2014 완공 후 12년간 미개통) 북측 세관·출입국 시설 건설 진행 확인. 서측 창고 4동(50x100m, 50x320m), 동측 건물 ~20동. 교량 개통 가능성 시사. 기존 보고서에서 영변/소해 등 KP 시설은 추적하였으나, 압록강 교량 세관시설은 첫 보고.",
+  "entities": [
+    {"id": "temp-evt-1601", "type": "Event", "name": "압록강 신교량 세관시설 건설 (Yalu River Bridge Customs)", "properties": {"phenomenon": "construction", "domain": "HumanActivity", "lat": 40.1, "lon": 124.4, "country": "KP", "severity": "medium", "observation_date": "2026-05", "before_after_available": true, "structure_details": "4 warehouses (50x100m, 50x320m) west side; ~20 buildings east side"}},
+    {"id": "sat-worldview3", "type": "Satellite", "name": "WorldView-3 (commercial hi-res)", "properties": {"operator": "Maxar", "resolution_m": 0.31, "type": "optical"}},
+    {"id": "org-38north", "type": "Organization", "name": "38 North (Stimson Center)", "properties": {"org_type": "think_tank", "focus": "North Korea analysis"}},
+    {"id": "co-kp", "type": "Country", "name": "조선민주주의인민공화국", "properties": {"iso_code": "KP"}},
+    {"id": "phen-construction", "type": "Phenomenon", "name": "construction", "properties": {"category": "HumanActivity", "subcategory": "large_construction"}}
+  ],
+  "relations": [
+    {"subject": "temp-evt-1601", "predicate": "observedBy", "object": "sat-worldview3"},
+    {"subject": "temp-evt-1601", "predicate": "analyzedBy", "object": "org-38north"},
+    {"subject": "temp-evt-1601", "predicate": "inCountry", "object": "co-kp"},
+    {"subject": "temp-evt-1601", "predicate": "manifests", "object": "phen-construction"},
+    {"subject": "temp-evt-1601", "predicate": "inDomain", "object": "dom-human"}
+  ]
+}

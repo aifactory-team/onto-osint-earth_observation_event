@@ -1,0 +1,56 @@
+{
+  "date": "2026-05-27",
+  "entities": [
+    {
+      "temp_id": "temp-evt-1601",
+      "matched_id": null,
+      "type": "Event",
+      "name": "압록강 신교량 세관시설 건설 (Yalu River Bridge Customs)",
+      "properties": {"phenomenon": "construction", "domain": "HumanActivity", "country": "KP", "lat": 40.1, "lon": 124.4, "observation_date": "2026-05", "severity": "medium", "before_after_available": true},
+      "source_ids": ["src-001"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-evt-1602",
+      "matched_id": null,
+      "type": "Event",
+      "name": "북한-러시아 두만강 교량 완공 임박 (Tumen River Bridge)",
+      "properties": {"phenomenon": "construction", "domain": "HumanActivity", "country": "KP", "lat": 42.4, "lon": 130.6, "observation_date": "2026-05", "severity": "medium", "before_after_available": true},
+      "source_ids": ["src-002"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-evt-1603",
+      "matched_id": null,
+      "type": "Event",
+      "name": "TROPOMI 훙가통가 화산 플룸 메탄 파괴 검출 (Hunga Tonga CH4 destruction)",
+      "properties": {"phenomenon": "methane_plume", "domain": "ClimateEnvironment", "country": "TO", "lat": -20.5, "lon": -175.4, "observation_date": "2026-05-09", "severity": "medium"},
+      "source_ids": ["src-003"],
+      "mention_count": 1
+    }
+  ],
+  "relations": [
+    {"subject": "temp-evt-1601", "predicate": "observedBy", "object": "sat-worldview3", "source_ids": ["src-001"], "confidence": 0.80},
+    {"subject": "temp-evt-1601", "predicate": "analyzedBy", "object": "org-38north", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "temp-evt-1601", "predicate": "inCountry", "object": "co-kp", "source_ids": ["src-001"], "confidence": 0.99},
+    {"subject": "temp-evt-1601", "predicate": "manifests", "object": "phen-construction", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "temp-evt-1601", "predicate": "inDomain", "object": "dom-human", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "temp-evt-1602", "predicate": "observedBy", "object": "sat-planetscope", "source_ids": ["src-002"], "confidence": 0.75},
+    {"subject": "temp-evt-1602", "predicate": "analyzedBy", "object": "org-38north", "source_ids": ["src-002"], "confidence": 0.90},
+    {"subject": "temp-evt-1602", "predicate": "reportedBy", "object": "org-rfa", "source_ids": ["src-002"], "confidence": 0.95},
+    {"subject": "temp-evt-1602", "predicate": "inCountry", "object": "co-kp", "source_ids": ["src-002"], "confidence": 0.99},
+    {"subject": "temp-evt-1602", "predicate": "manifests", "object": "phen-construction", "source_ids": ["src-002"], "confidence": 0.95},
+    {"subject": "temp-evt-1602", "predicate": "inDomain", "object": "dom-human", "source_ids": ["src-002"], "confidence": 0.90},
+    {"subject": "temp-evt-1603", "predicate": "observedBy", "object": "sat-sentinel5p", "source_ids": ["src-003"], "confidence": 0.99},
+    {"subject": "temp-evt-1603", "predicate": "usesSensor", "object": "sensor-tropomi", "source_ids": ["src-003"], "confidence": 0.99},
+    {"subject": "temp-evt-1603", "predicate": "inCountry", "object": "co-to", "source_ids": ["src-003"], "confidence": 0.90},
+    {"subject": "temp-evt-1603", "predicate": "manifests", "object": "phen-methane", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "temp-evt-1603", "predicate": "inDomain", "object": "dom-climate", "source_ids": ["src-003"], "confidence": 0.99}
+  ],
+  "stats": {
+    "total_entities": 3,
+    "new_entities": 3,
+    "matched_entities": 0,
+    "total_relations": 16
+  }
+}
