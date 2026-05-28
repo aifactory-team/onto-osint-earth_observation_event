@@ -1,7 +1,7 @@
 {
   "version": "1.2.0",
   "description": "알려진 엔티티 인스턴스 — 파이프라인 실행 시 자동으로 추가/업데이트된다. 도메인: 위성영상 관측 이벤트.",
-  "last_updated": "2026-05-27",
+  "last_updated": "2026-05-28",
   "entities": [
     { "id": "dom-disaster", "type": "Domain", "name": "Disaster", "properties": { "label": "자연재해" }, "first_seen": "2026-04-30", "last_seen": "2026-04-30", "mention_count": 12 },
     { "id": "dom-human", "type": "Domain", "name": "HumanActivity", "properties": { "label": "인간활동" }, "first_seen": "2026-04-30", "last_seen": "2026-04-30", "mention_count": 2 },
@@ -427,7 +427,16 @@
 
     { "id": "temp-evt-1601", "type": "Event", "name": "압록강 신교량 세관시설 건설 (Yalu River Bridge Customs)", "properties": { "phenomenon": "construction", "domain": "HumanActivity", "country": "KP", "lat": 40.1, "lon": 124.4, "observation_date": "2026-05-27", "severity": "medium", "before_after_available": true, "satellites_used": ["WorldView-3"], "sensors_used": ["optical_pan"], "analyst_org": "38 North", "confidence": 0.90, "notes": "38 North 위성영상 분석. 신의주 세관 인프라 건설 진행. koreaBoost +0.10." }, "first_seen": "2026-05-27", "last_seen": "2026-05-27", "mention_count": 1 },
     { "id": "temp-evt-1602", "type": "Event", "name": "북한-러시아 두만강 교량 완공 임박 (Tumen River Bridge)", "properties": { "phenomenon": "construction", "domain": "HumanActivity", "country": "KP", "lat": 42.4, "lon": 130.6, "observation_date": "2026-05-27", "severity": "medium", "before_after_available": true, "satellites_used": ["PlanetScope (Doves)"], "sensors_used": ["optical_multispectral"], "analyst_org": "38 North", "reported_by": "RFA", "confidence": 0.88, "notes": "38 North + RFA 보도. PlanetScope 시계열 분석. 교량 구조물 완성 단계. koreaBoost +0.10." }, "first_seen": "2026-05-27", "last_seen": "2026-05-27", "mention_count": 1 },
-    { "id": "temp-evt-1603", "type": "Event", "name": "TROPOMI 훙가통가 화산 플룸 메탄 파괴 검출 (Hunga Tonga methane destruction)", "properties": { "phenomenon": "methane_plume", "domain": "ClimateEnvironment", "country": "TO", "lat": -20.5, "lon": -175.4, "observation_date": "2026-05-27", "severity": "medium", "satellites_used": ["Sentinel-5P"], "sensors_used": ["TROPOMI"], "analyst_org": "Nature Communications", "confidence": 0.92, "notes": "2022 훙가통가 분출 후 성층권 수증기 주입이 메탄 OH 파괴를 촉진한 메커니즘 검출. tracegasBoost +0.15, officialBoost +0.15 (peer-reviewed + ESA)." }, "first_seen": "2026-05-27", "last_seen": "2026-05-27", "mention_count": 1 }
+    { "id": "temp-evt-1603", "type": "Event", "name": "TROPOMI 훙가통가 화산 플룸 메탄 파괴 검출 (Hunga Tonga methane destruction)", "properties": { "phenomenon": "methane_plume", "domain": "ClimateEnvironment", "country": "TO", "lat": -20.5, "lon": -175.4, "observation_date": "2026-05-27", "severity": "medium", "satellites_used": ["Sentinel-5P"], "sensors_used": ["TROPOMI"], "analyst_org": "Nature Communications", "confidence": 0.92, "notes": "2022 훙가통가 분출 후 성층권 수증기 주입이 메탄 OH 파괴를 촉진한 메커니즘 검출. tracegasBoost +0.15, officialBoost +0.15 (peer-reviewed + ESA)." }, "first_seen": "2026-05-27", "last_seen": "2026-05-27", "mention_count": 1 },
+
+    { "id": "temp-evt-1701", "type": "Event", "name": "Dukono 화산 Landsat 9 OLI — NASA EO 공식 관측 (52회/일 폭발, 화산재 4300m)", "properties": { "phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "ID", "lat": 1.70, "lon": 127.88, "observation_date": "2026-05-27", "severity": "high", "satellites_used": ["Landsat 9"], "sensors_used": ["OLI"], "analyst_org": "NASA EO", "confidence": 0.95, "notes": "NASA EO Image of the Day. 인도네시아 9개 화산 동시 분출 중 Dukono 특집. officialBoost +0.15. evt-128과 연계." }, "first_seen": "2026-05-28", "last_seen": "2026-05-28", "mention_count": 1 },
+    { "id": "temp-evt-1702", "type": "Event", "name": "북한 서해 미상 발사체 발사 (2026-05-26, 올해 8번째)", "properties": { "phenomenon": "military_buildup", "domain": "Defense", "country": "KP", "lat": 38.5, "lon": 124.5, "observation_date": "2026-05-26", "severity": "medium", "satellite_unverified": true, "satellites_used": [], "sensors_used": [], "confidence": 0.60, "notes": "합참 발표. 37일 만 재개, 올해 8번째. 위성영상 미확인(satellite_unverified). koreaBoost +0.10." }, "first_seen": "2026-05-28", "last_seen": "2026-05-28", "mention_count": 1 },
+
+    { "id": "ent-loc-072", "type": "Location", "name": "서해상 (Yellow Sea, DPRK launch area)", "properties": { "country": "KP", "region": "서해", "admin_level": "offshore", "lat": 38.5, "lon": 124.5, "notes": "2026-05-26 북한 미상 발사체 발사 해역" }, "first_seen": "2026-05-28", "last_seen": "2026-05-28", "mention_count": 1 },
+    { "id": "ent-loc-073", "type": "Location", "name": "Swan Hills, Alberta, Canada", "properties": { "country": "CA", "region": "Alberta", "admin_level": "district", "lat": 54.67, "lon": -115.4, "notes": "2026-05 대규모 산불 — 33,000+ 대피, 연기 대서양 횡단" }, "first_seen": "2026-05-28", "last_seen": "2026-05-28", "mention_count": 1 },
+    { "id": "ent-loc-074", "type": "Location", "name": "Kharg Island, Persian Gulf, Iran", "properties": { "country": "IR", "region": "Persian Gulf", "admin_level": "island", "lat": 29.23, "lon": 50.32, "notes": "원유 유출 45km² 지속 — Sentinel-1/2/3 다중위성 관측" }, "first_seen": "2026-05-28", "last_seen": "2026-05-28", "mention_count": 1 },
+
+    { "id": "co-ca", "type": "Country", "name": "캐나다", "properties": { "iso_code": "CA", "region": "북미" }, "first_seen": "2026-05-28", "last_seen": "2026-05-28", "mention_count": 1 }
   ],
-  "total_count": 360
+  "total_count": 367
 }

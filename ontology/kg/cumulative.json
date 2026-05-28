@@ -1,15 +1,15 @@
 {
-  "version": "1.10.0",
+  "version": "1.11.0",
   "description": "위성영상 관측 이벤트 누적 지식그래프 — 첫 실행(2026-04-30) 이후 매일 신규/추론 트리플 병합",
-  "last_updated": "2026-05-27",
-  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-19", "2026-05-20", "2026-05-21", "2026-05-22", "2026-05-23", "2026-05-24", "2026-05-26", "2026-05-27"],
-  "triples": "ontology/kg/2026-04-30.json ~ ontology/kg/2026-05-27.json (new_triples + updated_triples + inferred_triples)",
+  "last_updated": "2026-05-28",
+  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-19", "2026-05-20", "2026-05-21", "2026-05-22", "2026-05-23", "2026-05-24", "2026-05-26", "2026-05-27", "2026-05-28"],
+  "triples": "ontology/kg/2026-04-30.json ~ ontology/kg/2026-05-28.json (new_triples + updated_triples + inferred_triples)",
   "stats": {
-    "total_explicit_triples": 1020,
-    "total_inferred_triples": 445,
-    "total_unique_subjects": 220,
+    "total_explicit_triples": 1043,
+    "total_inferred_triples": 461,
+    "total_unique_subjects": 222,
     "total_unique_predicates": 21,
-    "total_unique_objects": 267
+    "total_unique_objects": 269
   },
-  "note": "2026-05-27 병합 완료 — 신규 18 explicit + 13 updated + 19 inferred 트리플. 신규 이벤트 3건: (1) 압록강 신교량 세관시설 건설(temp-evt-1601, KP 40.1/124.4, WorldView-3, 38 North, dom-human construction), (2) 두만강 교량 완공 임박(temp-evt-1602, KP/RU 42.4/130.6, PlanetScope, 38 North+RFA), (3) TROPOMI 훙가통가 화산 플룸 메탄 파괴 검출(temp-evt-1603, TO -20.5/-175.4, Sentinel-5P TROPOMI, Nature Communications, dom-climate methane_plume). 신규 Location 2건: ent-loc-069(Yalu River Bridge Customs Site, Sinuiju), ent-loc-071(Tumen River Bridge Crossing, KP/RU). 업데이트 13건: Kilauea Ep48 5/27-29 window 확대, Santa Rosa 97%, Canada wildfire 지속, Bismarck Sea day19+, Mayon Day141+, Kanlaon post-explosion, Bezymianny FL100, Great Sitkin SAR, Shishaldin SO2, Dukono 190+/일, Kharg Island 유출, Antelope Reef, Bellingcat Lebanon. korea_geo_focus 2건(temp-evt-1601+1602 koreaBoost). sensor_capability 3건(WV-3 hiResBoost, TROPOMI tracegasBoost, S1 sarBoost). official_source_trust 4건(USGS HVO, PHIVOLCS, Nature Comms+ESA, NASA EO). temporal_progression 4건(Kilauea Ep48, Canada 31일+, Bismarck day19+, evt-202 partOfSeries). multi_satellite_confirmation 2건 유지(evt-1101, ent-evt-kharg). analyst_org_trust 2건(38 North x2). before_after_credibility 2건(temp-evt-1601, temp-evt-1602). 한반도 GeoFocus 2건 신규(KP 압록강+두만강). 누적 KG 1465 트리플."
+  "note": "2026-05-28 병합 완료 — 신규 10 explicit + 13 updated + 16 inferred 트리플. 신규 이벤트 1건 + NASA EO 업그레이드 1건: (1) NASA EO Dukono 화산 Landsat 9 OLI(evt-128 officialBoost 적용, 52회/일 평균 폭발, 화산재 4300m, 인도네시아 9개 동시), (2) DPRK 서해 미상 발사체 5/26(temp-evt-1702, satellite_unverified, koreaBoost). 핵심 업데이트: Kilauea Ep48 D-day 5/28-30(14.1μrad, 분출 임박), Mayon 287K 이재민 급증(102K→287K, priorityBoost), Canada 산불 33K+ 지속(5위성3기관 multiSatBoost), Bismarck Sea day20+(4위성3기관 multiSatBoost). 다중 위성 교차검증 3건: evt-1101(GOES+VIIRS+TROPOMI), ent-evt-kharg(S1+S2+S3), evt-701(VIIRS+MODIS+L9+Himawari). sensor_capability 4건(TIRS, SAR x2, tracegasBoost). official_source_trust 2건(NASA EO, USGS HVO). temporal_progression 3건(Kilauea Ep48, Mayon Day142, Dukono 1933~). disaster_severity 2건(Mayon 287K, Canada 33K+). hiRes 1건(Antelope WV-3). korea_geo_focus 1건(DPRK 발사체). 누적 KG 1504 트리플."
 }

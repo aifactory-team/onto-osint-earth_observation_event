@@ -1,0 +1,42 @@
+{
+  "date": "2026-05-28",
+  "collected_at": "2026-05-28T08:00:00+09:00",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 20,
+  "total_results": 68,
+  "expanded_keywords": [
+    "Kilauea Ep48 eruption forecast",
+    "Dukono Landsat NASA EO",
+    "Canada wildfire GOES VIIRS TROPOMI",
+    "Bismarck Sea pumice volcano",
+    "Mayon pyroclastic flow PDC",
+    "Kanlaon eruption Himawari",
+    "DPRK missile launch Yellow Sea",
+    "Kharg Island oil spill Sentinel",
+    "Antelope Reef satellite construction",
+    "Bellingcat Lebanon satellite PlanetScope",
+    "Santa Rosa Island fire containment"
+  ],
+  "searches": [
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery wildfire flood 2026 May 28", "language": "en", "timestamp": "2026-05-28T08:01:00+09:00", "result_count": 5},
+    {"method": "websearch", "engine": "built-in", "keyword": "Kilauea eruption update May 2026", "language": "en", "timestamp": "2026-05-28T08:02:00+09:00", "result_count": 6},
+    {"method": "websearch", "engine": "built-in", "keyword": "Bismarck Sea volcano eruption pumice 2026", "language": "en", "timestamp": "2026-05-28T08:03:00+09:00", "result_count": 5},
+    {"method": "websearch", "engine": "built-in", "keyword": "Canada wildfire evacuation May 2026", "language": "en", "timestamp": "2026-05-28T08:04:00+09:00", "result_count": 5},
+    {"method": "websearch", "engine": "built-in", "keyword": "Mayon Kanlaon volcano eruption update May 27 28 2026", "language": "en", "timestamp": "2026-05-28T08:05:00+09:00", "result_count": 5},
+    {"method": "websearch", "engine": "built-in", "keyword": "NASA Earth Observatory image of the day May 2026", "language": "en", "timestamp": "2026-05-28T08:06:00+09:00", "result_count": 4},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery military buildup defense 2026 May", "language": "en", "timestamp": "2026-05-28T08:07:00+09:00", "result_count": 5},
+    {"method": "websearch", "engine": "built-in", "keyword": "Sentinel satellite methane CO2 climate environment May 2026", "language": "en", "timestamp": "2026-05-28T08:08:00+09:00", "result_count": 4},
+    {"method": "websearch", "engine": "built-in", "keyword": "위성영상 한반도 북한 2026년 5월", "language": "ko", "timestamp": "2026-05-28T08:09:00+09:00", "result_count": 3},
+    {"method": "websearch", "engine": "built-in", "keyword": "Copernicus EMS activation UNOSAT satellite disaster May 2026", "language": "en", "timestamp": "2026-05-28T08:10:00+09:00", "result_count": 3},
+    {"method": "websearch", "engine": "built-in", "keyword": "oil spill satellite imagery Kharg Island Persian Gulf 2026", "language": "en", "timestamp": "2026-05-28T08:11:00+09:00", "result_count": 4},
+    {"method": "websearch", "engine": "built-in", "keyword": "South China Sea Antelope Reef Spratly satellite 2026", "language": "en", "timestamp": "2026-05-28T08:12:00+09:00", "result_count": 5},
+    {"method": "websearch", "engine": "built-in", "keyword": "북한 서해 미상 발사체 2026년 5월 26일 위성", "language": "ko", "timestamp": "2026-05-28T08:13:00+09:00", "result_count": 4},
+    {"method": "websearch", "engine": "built-in", "keyword": "Santa Rosa Island fire California containment May 2026", "language": "en", "timestamp": "2026-05-28T08:14:00+09:00", "result_count": 4},
+    {"method": "websearch", "engine": "built-in", "keyword": "Bellingcat satellite imagery Lebanon destruction 2026", "language": "en", "timestamp": "2026-05-28T08:15:00+09:00", "result_count": 4},
+    {"method": "websearch", "engine": "built-in", "keyword": "deforestation satellite NDVI agriculture maritime satellite May 2026", "language": "en", "timestamp": "2026-05-28T08:16:00+09:00", "result_count": 3},
+    {"method": "websearch", "engine": "built-in", "keyword": "DPRK North Korea missile launch satellite imagery analysis May 26 2026", "language": "en", "timestamp": "2026-05-28T08:17:00+09:00", "result_count": 3},
+    {"method": "websearch", "engine": "built-in", "keyword": "Great Sitkin Shishaldin Bezymianny Dukono Ibu volcano update May 28 2026", "language": "en", "timestamp": "2026-05-28T08:18:00+09:00", "result_count": 4},
+    {"method": "websearch", "engine": "built-in", "keyword": "Mayon volcano pyroclastic flow May 28 2026 Philippines eruption update", "language": "en", "timestamp": "2026-05-28T08:19:00+09:00", "result_count": 4},
+    {"method": "websearch", "engine": "built-in", "keyword": "Canada Alberta Manitoba wildfire satellite GOES VIIRS smoke May 28 2026", "language": "en", "timestamp": "2026-05-28T08:20:00+09:00", "result_count": 4}
+  ]
+}

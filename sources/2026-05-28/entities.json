@@ -1,0 +1,111 @@
+{
+  "date": "2026-05-28",
+  "entities": [
+    {
+      "temp_id": "temp-evt-1701",
+      "matched_id": "evt-128",
+      "type": "Event",
+      "name": "NASA EO Dukono 화산 — Landsat 9 OLI, 52회/일, 화산재 4300m, 인도네시아 9개 화산",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "ID", "lat": 1.70, "lon": 127.88, "observation_date": "2026-05-13", "severity": "high", "before_after_available": false, "satellites_used": ["sat-landsat9"], "sensors_used": ["sensor-oli"], "analyst_org": "org-nasa"},
+      "source_ids": ["src-001"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-evt-1702",
+      "matched_id": null,
+      "type": "Event",
+      "name": "DPRK 서해 미상 발사체 (2026-05-26) — 올해 8번째, 37일만 재개",
+      "properties": {"phenomenon": "military_buildup", "domain": "Defense", "country": "KP", "lat": 38.5, "lon": 124.5, "observation_date": "2026-05-26", "severity": "medium", "satellite_unverified": true},
+      "source_ids": ["src-002"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-evt-202-upd",
+      "matched_id": "evt-202",
+      "type": "Event",
+      "name": "Kilauea Ep48 — 분출 예보 5/28-30, 14.1μrad, D-day",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "US", "lat": 19.42, "lon": -155.29, "observation_date": "2026-05-27", "severity": "high", "satellites_used": ["sat-sentinel2a", "sat-landsat9"], "sensors_used": ["sensor-msi", "sensor-oli", "sensor-tirs"], "analyst_org": "org-usgs"},
+      "source_ids": ["src-003"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-evt-1101-upd",
+      "matched_id": "evt-1101",
+      "type": "Event",
+      "name": "캐나다 산불 — Swan Hills/MB/SK 33,000+ 대피, 5위성 3기관",
+      "properties": {"phenomenon": "wildfire", "domain": "Disaster", "country": "CA", "lat": 54.67, "lon": -115.4, "observation_date": "2026-05-28", "severity": "high", "satellites_used": ["sat-goes18", "sat-viirs-jpss", "sat-sentinel5p"], "sensors_used": ["sensor-viirs", "sensor-tropomi"], "analyst_org": "org-noaa"},
+      "source_ids": ["src-004"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-evt-701-upd",
+      "matched_id": "evt-701",
+      "type": "Event",
+      "name": "Bismarck Sea 해저화산 — day 20+, 부석 70km², 신규 섬 형성 가능",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "PG", "lat": -3.03, "lon": 147.78, "observation_date": "2026-05-28", "severity": "high", "satellites_used": ["sat-viirs-jpss", "sat-modis-terra", "sat-landsat9", "sat-himawari9"], "sensors_used": ["sensor-viirs", "sensor-modis", "sensor-oli"], "analyst_org": "org-nasa"},
+      "source_ids": ["src-005"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-evt-082-upd",
+      "matched_id": "evt-082",
+      "type": "Event",
+      "name": "Mayon — AL3, Day 142+, 287,000+ 이재민, PDC 3.8km",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "PH", "lat": 13.26, "lon": 123.69, "observation_date": "2026-05-28", "severity": "high", "satellites_used": ["sat-himawari9", "sat-sentinel2a"], "sensors_used": ["sensor-ahi", "sensor-msi"], "analyst_org": "org-phivolcs"},
+      "source_ids": ["src-006"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-evt-1401-upd",
+      "matched_id": "temp-evt-1401",
+      "type": "Event",
+      "name": "Kanlaon — AL2, 5/26 폭발 후 모니터링",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "PH", "lat": 10.41, "lon": 123.13, "observation_date": "2026-05-28", "severity": "medium", "satellites_used": ["sat-himawari9"], "sensors_used": ["sensor-ahi"]},
+      "source_ids": ["src-007"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-evt-kharg-upd",
+      "matched_id": "ent-evt-kharg",
+      "type": "Event",
+      "name": "Kharg Island 원유 유출 — Sentinel-1/2/3 45km²",
+      "properties": {"phenomenon": "oil_spill", "domain": "HumanActivity", "country": "IR", "lat": 29.23, "lon": 50.32, "observation_date": "2026-05-28", "severity": "high", "satellites_used": ["sat-sentinel1a", "sat-sentinel2a", "sat-sentinel3"], "sensors_used": ["sensor-c-sar", "sensor-msi"]},
+      "source_ids": ["src-012"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-evt-092-upd",
+      "matched_id": "evt-092",
+      "type": "Event",
+      "name": "Antelope Reef 1490ac — 활주로 기초, 50동 건물",
+      "properties": {"phenomenon": "construction", "domain": "Defense", "country": "CN", "lat": 16.46, "lon": 112.55, "observation_date": "2026-05-28", "severity": "high", "satellites_used": ["sat-worldview3", "sat-planetscope"], "sensors_used": []},
+      "source_ids": ["src-013"],
+      "mention_count": 1
+    }
+  ],
+  "relations": [
+    {"subject": "temp-evt-1701", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "temp-evt-1701", "predicate": "usesSensor", "object": "sensor-oli", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "temp-evt-1701", "predicate": "analyzedBy", "object": "org-nasa", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "temp-evt-1701", "predicate": "manifests", "object": "phen-volcano", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "temp-evt-1701", "predicate": "inDomain", "object": "dom-disaster", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "temp-evt-1701", "predicate": "inCountry", "object": "co-id", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "temp-evt-1702", "predicate": "inCountry", "object": "co-kp", "source_ids": ["src-002"], "confidence": 0.60},
+    {"subject": "temp-evt-1702", "predicate": "inDomain", "object": "dom-defense", "source_ids": ["src-002"], "confidence": 0.60},
+    {"subject": "temp-evt-202-upd", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "temp-evt-202-upd", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "temp-evt-202-upd", "predicate": "analyzedBy", "object": "org-usgs", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "temp-evt-1101-upd", "predicate": "observedBy", "object": "sat-goes18", "source_ids": ["src-004"], "confidence": 0.95},
+    {"subject": "temp-evt-1101-upd", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-004"], "confidence": 0.95},
+    {"subject": "temp-evt-1101-upd", "predicate": "observedBy", "object": "sat-sentinel5p", "source_ids": ["src-004"], "confidence": 0.95},
+    {"subject": "temp-evt-kharg-upd", "predicate": "observedBy", "object": "sat-sentinel1a", "source_ids": ["src-012"], "confidence": 0.90},
+    {"subject": "temp-evt-kharg-upd", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-012"], "confidence": 0.90},
+    {"subject": "temp-evt-kharg-upd", "predicate": "observedBy", "object": "sat-sentinel3", "source_ids": ["src-012"], "confidence": 0.90}
+  ],
+  "stats": {
+    "total_entities": 9,
+    "new_entities": 1,
+    "matched_entities": 8,
+    "total_relations": 17
+  }
+}

@@ -2145,3 +2145,52 @@ config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5)
 - **훙가통가 메탄 파괴:** 2022년 분출 후 성층권 수증기 주입 → OH 라디칼 증가 → 메탄 파괴 촉진이라는 새로운 메커니즘. 화산 분출이 온실가스에 미치는 반직관적(메탄 감소) 영향. 기후 모델 재보정 필요성 시사.
 - **캐나다 산불 지속:** 31일+ 경과, 대피 확대 지속. 5위성 3기관 교차검증 최고 수준 유지.
 - **Bismarck Sea day19+:** 부석 뗏목 확산 지속, 항해 위험 유지. NASA EO 지속 보도.
+
+## 2026-05-28 추론 결과
+
+### multi_satellite_confirmation (다중 위성 교차검증) — 3건 유지
+
+- **추론 #1:** evt-1101 (캐나다 산불) — GOES-18(NOAA) + VIIRS(NOAA/NASA) + TROPOMI(ESA). 5위성 3기관 교차검증 유지. multiSatBoost +0.20 [confidence 0.95, 확정]
+- **추론 #2:** ent-evt-kharg (Kharg Island 원유 유출) — Sentinel-1(SAR) + Sentinel-2(MSI) + Sentinel-3(OLCI). 3위성 3센서유형 교차검증 유지. multiSatBoost +0.20 [0.90, 확정]
+- **추론 #3:** evt-701 (Bismarck Sea 해저화산) — VIIRS + MODIS(Terra) + Landsat 9 + Himawari-9. 4위성 3기관(NOAA/NASA, NASA, JMA/JAXA) 교차검증 유지. multiSatBoost +0.20 [0.97, 확정]
+
+### official_source_trust (공식 기관 신뢰도 가산) — 2건
+
+- **추론 #4:** evt-128 (Dukono) — NASA EO Image of the Day 공식 기사 → officialBoost +0.15 [0.95, 확정]
+- **추론 #5:** evt-202 (Kilauea Ep48) — USGS HVO 공식 업데이트, 분출 예보 5/28-30 → officialBoost +0.15 [0.95, 확정]
+
+### sensor_capability_match (센서-현상 적합성) — 4건
+
+- **TIRS x volcano:** evt-202 (Kilauea) Landsat 9 TIRS → thermalBoost +0.10 [0.95]
+- **SAR x volcano:** evt-203 (Great Sitkin) Sentinel-1 SAR lava dome → sarBoost +0.10 [0.85]
+- **trace_gas x SO2:** evt-204 (Shishaldin) TROPOMI SO₂ → tracegasBoost +0.15 [0.78]
+- **SAR x oil_spill:** ent-evt-kharg (Kharg Island) Sentinel-1 SAR sea surface dampening → sarBoost +0.10 [0.90]
+
+### temporal_progression (시계열 추적) — 3건
+
+- **추론 #10:** evt-202 (Kilauea) — Ep44→45→46→47→48 시퀀스, 에피소드 간격 1-2주 [0.95, 확정]
+- **추론 #11:** evt-082 (Mayon) — Day 1→142+, 1월 이후 연속 분출 [0.92, 확정]
+- **추론 #12:** evt-128 (Dukono) — 1933년 이후 근연속 분출 [0.95, 확정]
+
+### disaster_severity_priority (재해 우선순위) — 2건
+
+- **추론 #14:** evt-082 (Mayon) — 287,000+ 이재민 → priorityBoost +0.20 [0.92, 확정]
+- **추론 #15:** evt-1101 (Canada 산불) — 33,000+ 대피, 2명 사망 → priorityBoost +0.20 [0.95, 확정]
+
+### sensor_capability_match_hires (고해상도 식별) — 1건
+
+- **추론 #16:** evt-092 (Antelope Reef) — WorldView-3 0.31m 건설 식별 → hiResBoost +0.15 [0.92, 확정]
+
+### korea_geo_focus (한반도 가산) — 1건
+
+- **추론 #13:** temp-evt-1702 (DPRK 서해 발사체) — KP iso_code → koreaBoost +0.10 [0.60, 잠정 — satellite_unverified]
+
+### 특이사항
+
+- **Kilauea Ep48 D-day 도래:** 예보 창 5/28-30 — 오늘 분출 개시 가능. USGS HVO "fountains are most likely between Thursday and Saturday (May 28-30)". 14.1μrad 누적 팽창. 수축→재팽창 전환. 다음 사이클에서 WARNING/RED 또는 분수분출 보고 예상.
+- **Mayon 이재민 급증:** 102,000+→287,000+ (2.8배). PDC 빈도 증가, 용암류 3.8km 도달. 필리핀 Mayon(AL3)+Kanlaon(AL2) 이중 화산 비상 지속. 인도주의 도메인 교차 확대.
+- **NASA EO Dukono 공식 보도:** 인도네시아 5월 9개 화산 동시 분출 확인. Dukono는 1933년 이후 근연속 분출하는 "restless" 화산으로, Landsat 9 OLI로 52회/일 평균 폭발 기록. NASA officialBoost 적용으로 신뢰도 상승.
+- **DPRK 서해 발사체:** 5/26 올해 8번째 도발. 37일 만에 재개. 서해상 150-200km 비행 추정. 위성영상 분석 미공개 → satellite_unverified. 추후 38 North/CSIS Beyond Parallel 분석 대기.
+- **Bismarck Sea day 20+:** 신규 섬 형성 가능성 과학적 관심 유지. 부석 뗏목 70km² 면적, 200km+ 확산. 1972년 이후 최대.
+- **Santa Rosa 97%:** 다음 사이클에서 100% 진압·추적 종료 가능.
+- **농업·해양 0건:** dom-agri-marine 금일 신규 이벤트 없음. 보고서에 명시.

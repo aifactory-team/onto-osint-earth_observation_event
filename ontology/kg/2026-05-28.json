@@ -1,0 +1,54 @@
+{
+  "date": "2026-05-28",
+  "new_triples": [
+    {"subject": "temp-evt-1701", "predicate": "observedBy", "object": "sat-landsat9", "confidence": 0.95, "source": "src-001"},
+    {"subject": "temp-evt-1701", "predicate": "usesSensor", "object": "sensor-oli", "confidence": 0.95, "source": "src-001"},
+    {"subject": "temp-evt-1701", "predicate": "analyzedBy", "object": "org-nasa", "confidence": 0.95, "source": "src-001"},
+    {"subject": "temp-evt-1701", "predicate": "manifests", "object": "phen-volcano", "confidence": 0.95, "source": "src-001"},
+    {"subject": "temp-evt-1701", "predicate": "inDomain", "object": "dom-disaster", "confidence": 0.95, "source": "src-001"},
+    {"subject": "temp-evt-1701", "predicate": "inCountry", "object": "co-id", "confidence": 0.95, "source": "src-001"},
+    {"subject": "temp-evt-1701", "predicate": "locatedIn", "object": "ent-loc-047", "confidence": 0.95, "source": "src-001"},
+    {"subject": "temp-evt-1702", "predicate": "inCountry", "object": "co-kp", "confidence": 0.60, "source": "src-002"},
+    {"subject": "temp-evt-1702", "predicate": "manifests", "object": "phen-military", "confidence": 0.60, "source": "src-002"},
+    {"subject": "temp-evt-1702", "predicate": "inDomain", "object": "dom-defense", "confidence": 0.60, "source": "src-002"}
+  ],
+  "updated_triples": [
+    {"subject": "evt-202", "predicate": "partOfSeries", "object": "evt-202", "note": "Ep48 forecast 5/28-30, 14.1μrad, summit inflation resumed", "confidence": 0.95, "source": "src-003"},
+    {"subject": "evt-1101", "predicate": "partOfSeries", "object": "evt-1101", "note": "Swan Hills/MB/SK ongoing, 33K+ evacuated, smoke transatlantic", "confidence": 0.95, "source": "src-004"},
+    {"subject": "evt-701", "predicate": "partOfSeries", "object": "evt-701", "note": "day 20+, pumice 70km², new island possible", "confidence": 0.97, "source": "src-005"},
+    {"subject": "evt-082", "predicate": "partOfSeries", "object": "evt-082", "note": "Day 142+, 287K displaced (102K→287K surge), PDC 3.8km", "confidence": 0.92, "source": "src-006"},
+    {"subject": "temp-evt-1401", "predicate": "partOfSeries", "object": "temp-evt-1401", "note": "AL2, post-5/26 explosive eruption monitoring", "confidence": 0.88, "source": "src-007"},
+    {"subject": "evt-801", "predicate": "partOfSeries", "object": "evt-801", "note": "KVERT Orange, lava dome growth, explosive activity declining", "confidence": 0.82, "source": "src-008"},
+    {"subject": "evt-203", "predicate": "partOfSeries", "object": "evt-203", "note": "WATCH/ORANGE, lava dome expansion, SAR monitoring", "confidence": 0.85, "source": "src-009"},
+    {"subject": "evt-204", "predicate": "partOfSeries", "object": "evt-204", "note": "ADVISORY/YELLOW, seismicity + SO2 continuing", "confidence": 0.78, "source": "src-010"},
+    {"subject": "evt-1201", "predicate": "partOfSeries", "object": "evt-1201", "note": "97% contained, mop-up operations", "confidence": 0.90, "source": "src-011"},
+    {"subject": "ent-evt-kharg", "predicate": "partOfSeries", "object": "ent-evt-kharg", "note": "S1/S2/S3 45km² oil slick persistent", "confidence": 0.90, "source": "src-012"},
+    {"subject": "evt-092", "predicate": "partOfSeries", "object": "evt-092", "note": "1490ac, runway foundations, 50+ structures", "confidence": 0.92, "source": "src-013"},
+    {"subject": "evt-128", "predicate": "analyzedBy", "object": "org-nasa", "note": "NASA EO official Landsat 9 article May 27", "confidence": 0.95, "source": "src-001"},
+    {"subject": "evt-802", "predicate": "partOfSeries", "object": "evt-802", "note": "46+ villages PlanetScope before/after maintained", "confidence": 0.90, "source": "src-014"}
+  ],
+  "inferred_triples": [
+    {"subject": "evt-1101", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.95, "note": "GOES-18(NOAA) + VIIRS(NOAA/NASA) + TROPOMI(ESA) 3기관"},
+    {"subject": "ent-evt-kharg", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.90, "note": "Sentinel-1/2/3 SAR+optical+ocean 3센서"},
+    {"subject": "evt-701", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.97, "note": "VIIRS+MODIS+Landsat9+Himawari-9 4위성"},
+    {"subject": "evt-128", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "note": "NASA EO Image of the Day"},
+    {"subject": "evt-202", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "note": "USGS HVO official update"},
+    {"subject": "evt-202", "predicate": "thermalBoost", "object": "+0.10", "rule": "sensor_capability_match_tirs", "confidence": 0.95, "note": "Landsat 9 TIRS"},
+    {"subject": "evt-203", "predicate": "sarBoost", "object": "+0.10", "rule": "sensor_capability_match_sar", "confidence": 0.85, "note": "Sentinel-1 SAR lava dome"},
+    {"subject": "evt-204", "predicate": "tracegasBoost", "object": "+0.15", "rule": "sensor_capability_match_tracegas", "confidence": 0.78, "note": "TROPOMI SO2"},
+    {"subject": "ent-evt-kharg", "predicate": "sarBoost", "object": "+0.10", "rule": "sensor_capability_match_sar", "confidence": 0.90, "note": "S1 SAR oil dampening"},
+    {"subject": "evt-202", "predicate": "partOfSeries", "object": "evt-202", "rule": "temporal_progression", "confidence": 0.95, "note": "Ep44→45→46→47→48"},
+    {"subject": "evt-082", "predicate": "partOfSeries", "object": "evt-082", "rule": "temporal_progression", "confidence": 0.92, "note": "Day 1→142+"},
+    {"subject": "evt-128", "predicate": "partOfSeries", "object": "evt-128", "rule": "temporal_progression", "confidence": 0.95, "note": "1933→2026 near-continuous"},
+    {"subject": "temp-evt-1702", "predicate": "koreaBoost", "object": "+0.10", "rule": "korea_geo_focus", "confidence": 0.60, "note": "KP iso_code"},
+    {"subject": "evt-082", "predicate": "priorityBoost", "object": "+0.20", "rule": "disaster_severity_priority", "confidence": 0.92, "note": "287K displaced"},
+    {"subject": "evt-1101", "predicate": "priorityBoost", "object": "+0.20", "rule": "disaster_severity_priority", "confidence": 0.95, "note": "33K+ evacuated, 2 deaths"},
+    {"subject": "evt-092", "predicate": "hiResBoost", "object": "+0.15", "rule": "sensor_capability_match_hires", "confidence": 0.92, "note": "WV-3 0.31m construction"}
+  ],
+  "stats": {
+    "new_explicit": 10,
+    "updated": 13,
+    "inferred": 16,
+    "total_today": 39
+  }
+}
