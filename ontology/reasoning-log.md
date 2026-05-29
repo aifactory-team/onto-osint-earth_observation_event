@@ -2194,3 +2194,43 @@ config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5)
 - **Bismarck Sea day 20+:** 신규 섬 형성 가능성 과학적 관심 유지. 부석 뗏목 70km² 면적, 200km+ 확산. 1972년 이후 최대.
 - **Santa Rosa 97%:** 다음 사이클에서 100% 진압·추적 종료 가능.
 - **농업·해양 0건:** dom-agri-marine 금일 신규 이벤트 없음. 보고서에 명시.
+
+## 2026-05-29 추론 결과
+
+### multi_satellite_confirmation (다중 위성 교차검증) — 3건 유지
+
+- **추론 #1:** evt-1101 (캐나다 산불) — GOES-18 (NOAA) + VIIRS (NOAA/NASA) + Sentinel-5P (ESA) + OMPS (NASA) + EarthCare (ESA/JAXA) = 5위성 3기관 → multiSatBoost +0.20 [0.95, 확정, 유지]
+- **추론 #2:** ent-evt-kharg (Kharg Island 유출) — Sentinel-1 (SAR) + Sentinel-2 (MSI) + Sentinel-3 (OLCI) = 3위성 3센서 → multiSatBoost +0.20 [0.90, 확정, 유지]
+- **추론 #3:** evt-701 (Bismarck Sea) — VIIRS (NOAA) + MODIS (NASA) + Landsat 9 (USGS/NASA) + Himawari-9 (JMA/JAXA) = 4위성 3기관 → multiSatBoost +0.20 [0.97, 확정, 유지]
+
+### official_source_trust (공식 기관 신뢰도 가산) — 3건
+
+- **추론 #4:** evt-202 (Kilauea) — USGS HVO space_agency → officialBoost +0.15 [0.95, 확정]
+- **추론 #5:** temp-evt-1801 (Landsat 35년 분석) — NASA EO space_agency → officialBoost +0.15 [0.92, 확정]
+- **추론 #6:** evt-701 (Bismarck Sea) — NASA EO 공식 기사 → officialBoost +0.15 [0.97, 확정, 유지]
+
+### temporal_progression (시계열 추적) — 3건
+
+- **추론 #7:** evt-202 (Kilauea Ep48) → partOfSeries Ep47→Ep46→Ep45→Ep44 [0.95, 확정]
+- **추론 #8:** evt-082 (Mayon Day 143+) → partOfSeries Day 142+ [0.92, 확정]
+- **추론 #9:** evt-701 (Bismarck Sea day 21+) → partOfSeries day 20+ [0.97, 확정]
+
+### disaster_severity_priority (재해 심각도 우선) — 2건
+
+- **추론 #10:** evt-1101 (캐나다 산불) — 33,000+ 대피 + 2명 사망 → priorityBoost +0.20 [0.95, 확정]
+- **추론 #11:** evt-082 (Mayon) — 287,000+ 이재민 → priorityBoost +0.20 [0.92, 확정]
+
+### sensor_capability_match_sar (SAR 가산) — 1건
+
+- **추론 #12:** ent-evt-kharg (Kharg Island) — Sentinel-1 SAR 해상 유출 탐지 → sarBoost +0.10 [0.90, 확정]
+
+### 특이사항
+
+- **Kilauea Ep48 예보 창 유지:** 5/28-30 분출 가능 — 단, 5/26 sharp deflation 이벤트로 예보 창 지연 가능성 존재. USGS "deflation may push window further". 재팽창 재개 여부가 핵심. 다음 사이클에서 분수분출 또는 예보 창 연장 보고 예상.
+- **캐나다 산불 Manitoba 역대급 대피:** 주총리 "largest evacuation in living memory". Flin Flon 17,000명 추가. 총 33,000+ 유지. 2명 사망(Lac du Bonnet). 연기 TROPOMI 유럽 도달 확인 지속.
+- **Bismarck Sea 신규 섬 형성 가능:** The Watchers 5/28 기사 — "opens new island possibility". Jim Garvin NASA "rarely observed with satellites as it happens". 부석 70km² 유지. 분출구 깊이 기존 해저 지형보다 훨씬 얕은 것으로 추정.
+- **Mayon 287K+ 이재민 유지:** Day 143+ 연속 분출. 우기 접근으로 라하르 위험 증가. WCK 구호 활동.
+- **Bezymianny 에스컬레이션:** 5/18 화산재 6km, 5/19 pyroclastic flow. GVP 주간 보고에서 "explosive eruption" 확인.
+- **NASA EO 신규 — Landsat 35년 분석:** Nature Geoscience 논문. 미국 야생 교란(산불·허리케인) 증가 vs 인간 교란(벌목·농업확장) 감소 추세. 40년 데이터 + ML 알고리즘. 기후·환경 도메인 장기 추세.
+- **Sentinel-2 CDSE 5시간 장애:** 5/28 05:45-10:45 CEST. 이전 5/8 NorthC datacenter fire(evt-201)와 별개 인시던트. 비교적 빠른 복구.
+- **농업·해양 0건:** dom-agri-marine 금일 신규 이벤트 없음. 보고서에 명시.

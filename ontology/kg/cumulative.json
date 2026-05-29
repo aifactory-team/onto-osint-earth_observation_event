@@ -1,15 +1,15 @@
 {
-  "version": "1.11.0",
+  "version": "1.12.0",
   "description": "위성영상 관측 이벤트 누적 지식그래프 — 첫 실행(2026-04-30) 이후 매일 신규/추론 트리플 병합",
-  "last_updated": "2026-05-28",
-  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-19", "2026-05-20", "2026-05-21", "2026-05-22", "2026-05-23", "2026-05-24", "2026-05-26", "2026-05-27", "2026-05-28"],
-  "triples": "ontology/kg/2026-04-30.json ~ ontology/kg/2026-05-28.json (new_triples + updated_triples + inferred_triples)",
+  "last_updated": "2026-05-29",
+  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-19", "2026-05-20", "2026-05-21", "2026-05-22", "2026-05-23", "2026-05-24", "2026-05-26", "2026-05-27", "2026-05-28", "2026-05-29"],
+  "triples": "ontology/kg/2026-04-30.json ~ ontology/kg/2026-05-29.json (new_triples + updated_triples + inferred_triples)",
   "stats": {
-    "total_explicit_triples": 1043,
-    "total_inferred_triples": 461,
-    "total_unique_subjects": 222,
+    "total_explicit_triples": 1061,
+    "total_inferred_triples": 468,
+    "total_unique_subjects": 224,
     "total_unique_predicates": 21,
-    "total_unique_objects": 269
+    "total_unique_objects": 271
   },
-  "note": "2026-05-28 병합 완료 — 신규 10 explicit + 13 updated + 16 inferred 트리플. 신규 이벤트 1건 + NASA EO 업그레이드 1건: (1) NASA EO Dukono 화산 Landsat 9 OLI(evt-128 officialBoost 적용, 52회/일 평균 폭발, 화산재 4300m, 인도네시아 9개 동시), (2) DPRK 서해 미상 발사체 5/26(temp-evt-1702, satellite_unverified, koreaBoost). 핵심 업데이트: Kilauea Ep48 D-day 5/28-30(14.1μrad, 분출 임박), Mayon 287K 이재민 급증(102K→287K, priorityBoost), Canada 산불 33K+ 지속(5위성3기관 multiSatBoost), Bismarck Sea day20+(4위성3기관 multiSatBoost). 다중 위성 교차검증 3건: evt-1101(GOES+VIIRS+TROPOMI), ent-evt-kharg(S1+S2+S3), evt-701(VIIRS+MODIS+L9+Himawari). sensor_capability 4건(TIRS, SAR x2, tracegasBoost). official_source_trust 2건(NASA EO, USGS HVO). temporal_progression 3건(Kilauea Ep48, Mayon Day142, Dukono 1933~). disaster_severity 2건(Mayon 287K, Canada 33K+). hiRes 1건(Antelope WV-3). korea_geo_focus 1건(DPRK 발사체). 누적 KG 1504 트리플."
+  "note": "2026-05-29 병합 완료 — 신규 6 explicit + 12 updated + 7 inferred 트리플(일별 KG: 30 nodes, 25 triples). 신규 이벤트 2건: (1) NASA EO Landsat 35년 토지교란 분석(temp-evt-1801, Nature Geoscience 논문, Landsat 8+9, officialBoost), (2) Sentinel-2 CDSE 카탈로그 5시간 장애 5/28(temp-evt-1802, SatOps). 핵심 업데이트: Kilauea Ep48 D-day 5/28-30(분출 임박, officialBoost 0.95), Mayon 287K+ 이재민(priorityBoost 0.92), Canada 산불 33K+ 대피 지속(5위성3기관 multiSatBoost+priorityBoost 0.95), Bismarck Sea day21+ 신규 섬 형성 가능(4위성3기관 multiSatBoost 0.97). 다중 위성 교차검증 3건: evt-1101(GOES+VIIRS+S5P), ent-evt-kharg(S1A+S2A), evt-701(VIIRS+MODIS+L9+Himawari). official_source_trust 3건(NASA EO x2, USGS HVO). temporal_progression 3건. disaster_severity 2건(Mayon 287K, Canada 33K+). 누적 KG 1529 트리플."
 }

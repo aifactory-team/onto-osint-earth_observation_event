@@ -1,0 +1,36 @@
+{
+  "date": "2026-05-29",
+  "collected_at": "2026-05-29T08:00:00+09:00",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 19,
+  "total_results": 87,
+  "expanded_keywords": [
+    "Kilauea episode 48", "Mayon volcano 287000", "Canada wildfire Swan Hills",
+    "Bismarck Sea new island", "Sentinel-2 publication issue", "Kanlaon eruption",
+    "Bezymianny KVERT", "Great Sitkin lava dome", "Shishaldin SO2",
+    "Kharg Island oil spill Sentinel", "Antelope Reef 1490 acres",
+    "Bellingcat Lebanon PlanetScope", "38 North DPRK", "KOMPSAT-7",
+    "NASA Earth Observatory landscape disturbance Landsat"
+  ],
+  "searches": [
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery wildfire flood volcano eruption May 2026", "language": "en", "timestamp": "2026-05-29T08:01:00+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "NASA Earth Observatory image of the day May 2026", "language": "en", "timestamp": "2026-05-29T08:02:00+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Kilauea eruption episode 48 May 29 2026", "language": "en", "timestamp": "2026-05-29T08:03:00+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Copernicus EMS activation Sentinel satellite May 2026", "language": "en", "timestamp": "2026-05-29T08:04:00+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Mayon volcano eruption update May 29 2026 Philippines", "language": "en", "timestamp": "2026-05-29T08:05:00+09:00", "result_count": 9},
+    {"method": "websearch", "engine": "built-in", "keyword": "Canada wildfire Alberta Manitoba evacuation May 29 2026", "language": "en", "timestamp": "2026-05-29T08:06:00+09:00", "result_count": 8},
+    {"method": "websearch", "engine": "built-in", "keyword": "Bismarck Sea underwater volcano eruption new island 2026", "language": "en", "timestamp": "2026-05-29T08:07:00+09:00", "result_count": 9},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery deforestation oil spill mining May 2026", "language": "en", "timestamp": "2026-05-29T08:08:00+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "위성영상 산불 홍수 화산 한반도 2026년 5월", "language": "ko", "timestamp": "2026-05-29T08:09:00+09:00", "result_count": 9},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery military buildup DPRK North Korea South China Sea May 2026", "language": "en", "timestamp": "2026-05-29T08:10:00+09:00", "result_count": 9},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite methane plume CO2 emission glacier retreat climate May 2026", "language": "en", "timestamp": "2026-05-29T08:11:00+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "NDVI crop satellite agriculture maritime fishing May 2026", "language": "en", "timestamp": "2026-05-29T08:12:00+09:00", "result_count": 6},
+    {"method": "websearch", "engine": "built-in", "keyword": "Kharg Island oil spill Iran satellite Sentinel May 2026", "language": "en", "timestamp": "2026-05-29T08:13:00+09:00", "result_count": 5},
+    {"method": "websearch", "engine": "built-in", "keyword": "Antelope Reef South China Sea satellite construction Spratly 2026", "language": "en", "timestamp": "2026-05-29T08:14:00+09:00", "result_count": 8},
+    {"method": "websearch", "engine": "built-in", "keyword": "NASA Earth Observatory A Shift in What's Shaping U.S. Landscapes 2026", "language": "en", "timestamp": "2026-05-29T08:15:00+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Sentinel-2 product publication issue May 28 2026 Copernicus", "language": "en", "timestamp": "2026-05-29T08:16:00+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "volcano eruption update Great Sitkin Shishaldin Kanlaon Bezymianny May 29 2026", "language": "en", "timestamp": "2026-05-29T08:17:00+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "위성영상 북한 KOMPSAT 한반도 2026 5월 최신", "language": "ko", "timestamp": "2026-05-29T08:18:00+09:00", "result_count": 7},
+    {"method": "websearch", "engine": "built-in", "keyword": "Kanlaon volcano eruption ash May 28 29 2026 Philippines PHIVOLCS", "language": "en", "timestamp": "2026-05-29T08:19:00+09:00", "result_count": 10}
+  ]
+}

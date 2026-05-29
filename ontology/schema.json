@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "description": "OSINT 온톨로지 스키마 — config/osint-config.json의 seed로부터 초기화되고, 매일 파이프라인 실행 시 자동 확장된다. 도메인: 위성영상으로 관측 가능한 지구상 이벤트 (Earth Observation Events).",
-  "last_updated": "2026-05-28",
+  "last_updated": "2026-05-29",
   "classes": [
     {
       "id": "Entity",
@@ -555,6 +555,13 @@
       "target": "evt-128 (NASA EO Dukono), temp-evt-1702 (DPRK 발사체) + updates to evt-202, evt-1101, evt-701, evt-082, temp-evt-1401, evt-801, evt-203, evt-204, evt-1201, ent-evt-kharg, evt-092, evt-128, evt-802",
       "reason": "신규 2건: (1) NASA EO Dukono 화산 Landsat 9 OLI(5/13 촬영, 5/27 발행) — 52회/일 평균 폭발(5/9-16), 화산재 400-4300m, AL2, 인도네시아 9개 화산 동시 분출. evt-128에 NASA officialBoost 적용. (2) DPRK 서해 미상 발사체 5/26(temp-evt-1702, 38.5N/124.5E, satellite_unverified, 올해 8번째). 업데이트 13건: Kilauea Ep48 D-day 5/28-30(14.1μrad, 수축→재팽창), Canada 산불 33K+ 지속, Bismarck Sea day20+, Mayon 287K 이재민 급증(102K→287K), Kanlaon AL2, Bezymianny 감소, Great Sitkin SAR, Shishaldin SO₂, Santa Rosa 97%, Kharg Island 45km², Antelope Reef 1490ac, Bellingcat 남레바논. 다중 위성 교차검증 3건 유지(evt-1101 5위성, ent-evt-kharg 3위성, evt-701 4위성). 스키마 구조적 변경 없음.",
       "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009", "src-010", "src-011", "src-012", "src-013", "src-014"]
+    },
+    {
+      "date": "2026-05-29",
+      "action": "add_event_and_update",
+      "target": "temp-evt-1801, temp-evt-1802 + updates to evt-202, evt-1101, evt-701, evt-082, temp-evt-1401, evt-801, evt-203, evt-204, evt-1201, ent-evt-kharg, evt-092, evt-802, temp-evt-1702",
+      "reason": "신규 2건: (1) NASA EO 'A Shift in What's Shaping U.S. Landscapes' — Landsat 35년 시계열 토지교란 분석, Nature Geoscience, 야생 교란(산불·허리케인) 증가 vs 인간 교란 감소(temp-evt-1801, 39.0N/98.0W, Landsat 8/9, NASA officialBoost). (2) Sentinel-2 CDSE 카탈로그 5시간 장애(temp-evt-1802, 5/28 05:45-10:45 CEST, 복구 완료). 업데이트 13건: Kilauea Ep48 5/28-30 예보 유지(편향 지연 가능), Canada 산불 Manitoba 'largest evacuation in living memory' Flin Flon 17K(총 33K+/2사망), Bismarck Sea day21+ pumice 70km² 신규 섬 가능(The Watchers), Mayon 287K+ 이재민 Day143+, Kanlaon AL2 화산재 800m, Bezymianny 5/18 화산재 6km + 5/19 pyroclastic flow, Great Sitkin WATCH 용암돔, Shishaldin ADVISORY SO₂, Santa Rosa 97%, Kharg Island 45km², Antelope Reef 1490ac. 다중 위성 교차검증 3건 유지. 스키마 구조적 변경 없음.",
+      "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009", "src-010", "src-011", "src-012", "src-013"]
     }
   ]
 }

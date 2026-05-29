@@ -1,0 +1,29 @@
+{
+  "id": "src-001",
+  "title": "NASA EO: A Shift in What's Shaping U.S. Landscapes — Landsat 35년 분석, Nature Geoscience",
+  "url": "https://science.nasa.gov/earth/earth-observatory/a-shift-in-whats-shaping-u-s-landscapes/",
+  "snippet": "NASA-funded study published in Nature Geoscience analyzed nearly 35 years of Landsat satellite data. Wild disturbances (wildfires, hurricanes) are increasing while human-directed disturbances (logging, agricultural expansion, construction) have declined. Machine-learning algorithm trained on 40 years of land-change data at 50,000 locations achieves 75%+ accuracy across most disturbance types.",
+  "source_name": "NASA Earth Observatory",
+  "language": "en",
+  "discovered_date": "2026-05-29",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "5/28 발행 NASA EO Image of the Day. 전일 보고서에 포함되지 않은 신규 연구 결과. Landsat 35년 시계열 분석으로 미국 토지교란 유형 변화를 추적한 Nature Geoscience 논문.",
+  "entities": [
+    {"id": "temp-evt-1801", "type": "Event", "name": "미국 토지교란 유형 변화 — Landsat 35년 분석 (Nature Geoscience)", "properties": {"phenomenon": "ndvi_change", "domain": "ClimateEnvironment", "country": "US", "lat": 39.0, "lon": -98.0, "observation_date": "2026-05-28", "severity": "medium", "before_after_available": true}},
+    {"id": "sat-landsat8", "type": "Satellite", "name": "Landsat 8"},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9"},
+    {"id": "org-nasa", "type": "Organization", "name": "NASA"},
+    {"id": "org-usgs", "type": "Organization", "name": "USGS"},
+    {"id": "phen-ndvi", "type": "Phenomenon", "name": "ndvi_change"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-1801", "predicate": "observedBy", "object": "sat-landsat8"},
+    {"subject": "temp-evt-1801", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "temp-evt-1801", "predicate": "analyzedBy", "object": "org-nasa"},
+    {"subject": "temp-evt-1801", "predicate": "manifests", "object": "phen-ndvi"},
+    {"subject": "temp-evt-1801", "predicate": "inDomain", "object": "dom-climate"},
+    {"subject": "temp-evt-1801", "predicate": "inCountry", "object": "co-us"}
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "date": "2026-05-29",
+  "entities": [
+    {
+      "temp_id": "temp-evt-1801",
+      "matched_id": null,
+      "type": "Event",
+      "name": "미국 토지교란 유형 변화 — Landsat 35년 분석 (Nature Geoscience)",
+      "properties": {"phenomenon": "ndvi_change", "domain": "ClimateEnvironment", "country": "US", "lat": 39.0, "lon": -98.0, "observation_date": "2026-05-28", "severity": "medium", "before_after_available": true},
+      "source_ids": ["src-001"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-evt-1802",
+      "matched_id": null,
+      "type": "Event",
+      "name": "Sentinel-2 CDSE 카탈로그 발행 장애 (5/28)",
+      "properties": {"phenomenon": "satellite_operations", "domain": "SatOps", "country": null, "lat": null, "lon": null, "observation_date": "2026-05-28", "severity": "low"},
+      "source_ids": ["src-002"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-202",
+      "type": "Event",
+      "name": "Kilauea Ep48 분출 예보",
+      "properties": {"phenomenon": "volcanic_eruption", "country": "US", "lat": 19.42, "lon": -155.29},
+      "source_ids": ["src-003"],
+      "mention_count": 30
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-1101",
+      "type": "Event",
+      "name": "캐나다 Manitoba/Alberta 산불",
+      "properties": {"phenomenon": "wildfire", "country": "CA", "lat": 54.77, "lon": -101.88},
+      "source_ids": ["src-004"],
+      "mention_count": 15
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-701",
+      "type": "Event",
+      "name": "Bismarck Sea 해저 화산 분출",
+      "properties": {"phenomenon": "volcanic_eruption", "country": "PG", "lat": -3.03, "lon": 147.78},
+      "source_ids": ["src-005"],
+      "mention_count": 20
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-082",
+      "type": "Event",
+      "name": "Mayon 화산 분출",
+      "properties": {"phenomenon": "volcanic_eruption", "country": "PH", "lat": 13.26, "lon": 123.69},
+      "source_ids": ["src-006"],
+      "mention_count": 25
+    },
+    {
+      "temp_id": null,
+      "matched_id": "temp-evt-1401",
+      "type": "Event",
+      "name": "Kanlaon 화산",
+      "properties": {"phenomenon": "volcanic_eruption", "country": "PH", "lat": 10.41, "lon": 123.13},
+      "source_ids": ["src-007"],
+      "mention_count": 10
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-801",
+      "type": "Event",
+      "name": "Bezymianny 화산",
+      "properties": {"phenomenon": "volcanic_eruption", "country": "RU", "lat": 55.97, "lon": 160.59},
+      "source_ids": ["src-008"],
+      "mention_count": 8
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-203",
+      "type": "Event",
+      "name": "Great Sitkin 용암돔",
+      "properties": {"phenomenon": "volcanic_eruption", "country": "US", "lat": 52.08, "lon": -176.13},
+      "source_ids": ["src-009"],
+      "mention_count": 12
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-204",
+      "type": "Event",
+      "name": "Shishaldin 화산 불안",
+      "properties": {"phenomenon": "volcanic_eruption", "country": "US", "lat": 54.76, "lon": -163.97},
+      "source_ids": ["src-010"],
+      "mention_count": 10
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-1201",
+      "type": "Event",
+      "name": "Santa Rosa Island 산불",
+      "properties": {"phenomenon": "wildfire", "country": "US", "lat": 33.95, "lon": -120.10},
+      "source_ids": ["src-011"],
+      "mention_count": 8
+    },
+    {
+      "temp_id": null,
+      "matched_id": "ent-evt-kharg",
+      "type": "Event",
+      "name": "Kharg Island 원유 유출",
+      "properties": {"phenomenon": "oil_spill", "country": "IR", "lat": 29.23, "lon": 50.32},
+      "source_ids": ["src-012"],
+      "mention_count": 6
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-092",
+      "type": "Event",
+      "name": "Antelope Reef 인공섬 확장",
+      "properties": {"phenomenon": "military_buildup", "country": "CN", "lat": 16.46, "lon": 112.55},
+      "source_ids": ["src-013"],
+      "mention_count": 10
+    }
+  ],
+  "relations": [
+    {"subject": "temp-evt-1801", "predicate": "observedBy", "object": "sat-landsat8", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "temp-evt-1801", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "temp-evt-1801", "predicate": "analyzedBy", "object": "org-nasa", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "temp-evt-1801", "predicate": "manifests", "object": "phen-ndvi", "source_ids": ["src-001"], "confidence": 0.90},
+    {"subject": "temp-evt-1801", "predicate": "inDomain", "object": "dom-climate", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "temp-evt-1802", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-002"], "confidence": 0.90},
+    {"subject": "temp-evt-1802", "predicate": "analyzedBy", "object": "org-esa", "source_ids": ["src-002"], "confidence": 0.90},
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-goes18", "source_ids": ["src-004"], "confidence": 0.95},
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-004"], "confidence": 0.95},
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-sentinel5p", "source_ids": ["src-004"], "confidence": 0.95},
+    {"subject": "evt-701", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-005"], "confidence": 0.97},
+    {"subject": "evt-701", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-005"], "confidence": 0.97},
+    {"subject": "ent-evt-kharg", "predicate": "observedBy", "object": "sat-sentinel1a", "source_ids": ["src-012"], "confidence": 0.90},
+    {"subject": "ent-evt-kharg", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-012"], "confidence": 0.90},
+    {"subject": "ent-evt-kharg", "predicate": "observedBy", "object": "sat-sentinel3", "source_ids": ["src-012"], "confidence": 0.90}
+  ],
+  "stats": {
+    "total_entities": 13,
+    "new_entities": 2,
+    "matched_entities": 11,
+    "total_relations": 15
+  }
+}
