@@ -1,56 +1,87 @@
-# 2026-05-30 보고서 작성 근거
+# 2026-05-30 보고서 기반
 
 ## 포함 결정
 
-### 신규 (3건) — 본문 포함
-| ID | 제목 | 도메인 | 신뢰도 | 결정 | 근거 |
-|----|------|--------|--------|------|------|
-| src-001 | Sentinel-3 L1/L2 프로덕션 지연 | satops | 0.85 | 포함 (SatOps 섹션) | ESA 공식 공지, 위성 운영 이슈 |
-| src-002 | El Niño 2026 WMO 60% | dom-agri-marine | 0.80 | 포함 (농업·해양 섹션) | WMO 공식 발표, SST 위성관측 기반, 아시아 작물 영향 |
-| src-003 | Sentinel-1A 데이터 유실 5/24 | satops | 0.85 | 포함 (SatOps 섹션) | 5/19에 이어 반복 장애, SAR 연속성 영향 |
+### 본문 포함 (16건)
 
-### 업데이트 (13건) — 본문 포함
-| ID | 제목 | 도메인 | 신뢰도 | 결정 | 근거 |
-|----|------|--------|--------|------|------|
-| src-004 | Kilauea Ep48 5/29-31 | dom-disaster | 0.95 | 포함 | 예보 창 갱신, 15.8μrad |
-| src-005 | Mayon Day 144+ | dom-disaster | 0.92 | 포함 | 287K+ 이재민, priorityBoost |
-| src-006 | 캐나다 산불 33K+ | dom-disaster | 0.95 | 포함 | 5위성 multiSatBoost, 인명피해 |
-| src-007 | Bismarck Sea day 22+ | dom-disaster | 0.97 | 포함 | 4위성 최고신뢰, 과학적 가치 |
-| src-008 | Kanlaon AL2 | dom-disaster | 0.88 | 포함 | 화산재 800m, SO₂ 상승 |
-| src-009 | Bezymianny Orange | dom-disaster | 0.85 | 포함 | 폭발적 분출, KVERT |
-| src-010 | Great Sitkin WATCH | dom-disaster | 0.85 | 포함 | SAR 용암돔 동측 확장 확인 |
-| src-011 | Shishaldin ADVISORY | dom-disaster | 0.78 | 포함 | SO₂ 지속, TROPOMI |
-| src-012 | Dukono NASA EO | dom-disaster | 0.95 | 포함 | 52/일, Landsat 9 공식 |
-| src-013 | Santa Rosa 97% | dom-disaster | 0.90 | 포함 | NASA Earthdata, 6/6 폐쇄 |
-| src-014 | Kharg Island 45km² | dom-human | 0.90 | 포함 | 3위성 multiSatBoost |
-| src-015 | Antelope Reef 1490ac | dom-defense | 0.92 | 포함 | CSIS AMTI, 군사 인프라 |
-| src-016 | Bellingcat Lebanon | dom-humanitarian | 0.90 | 포함 (추적/reported) | before/after, 인도주의 |
+| 소스 | 이벤트 | 도메인 | 판정 |
+|------|--------|--------|------|
+| src-001 | Sentinel-3 L1/L2 프로덕션 지연 | SatOps | **신규** — SatOps 섹션 |
+| src-002 | El Nino 2026 WMO 예보 | AgriMarine+Climate | **신규** — 본문 포함, dom-agri-marine 커버 |
+| src-003 | Sentinel-1A 데이터 유실 5/24 | SatOps | **신규** — SatOps 섹션, 5/19 시리즈 |
+| src-004 | Kilauea Ep48 5/29-31 | Disaster | **업데이트** — Top 5 |
+| src-005 | Mayon 287K+ AL3 Day144+ | Disaster | **업데이트** — Top 5 |
+| src-006 | 캐나다 산불 33K+ 대피 | Disaster→Humanitarian | **업데이트** — Top 5 |
+| src-007 | Bismarck Sea day22+ | Disaster | **업데이트** — Top 5 |
+| src-008 | Kanlaon AL2 ash 800m | Disaster | **업데이트** |
+| src-009 | Bezymianny Orange | Disaster | **업데이트** |
+| src-010 | Great Sitkin WATCH SAR | Disaster | **업데이트** |
+| src-011 | Shishaldin ADVISORY SO₂ | Disaster | **업데이트** |
+| src-012 | Dukono 52/day Landsat 9 | Disaster | **업데이트** |
+| src-013 | Santa Rosa 97% closed 6/6 | Disaster | **업데이트** |
+| src-014 | Kharg Island 45km² | HumanActivity | **업데이트** |
+| src-015 | Antelope Reef 1490ac | Defense | **업데이트** |
+| src-016 | Bellingcat Lebanon 46+ | Humanitarian | **업데이트** — before/after |
 
-### 보고됨 (7건) — 본문 제외, 추적 목록에 기재
-| ID | 제목 | 결정 | 근거 |
-|----|------|------|------|
-| src-017 | 38 North DPRK | 추적 목록 | 변동 없음 |
-| src-018 | KOMPSAT-7 | 추적 목록 | 변동 없음 |
-| src-019 | CAS500-2 | 추적 목록 | 변동 없음 |
-| src-020 | DPRK 발사체 | 미검증 의혹 섹션 | satellite_unverified |
-| src-021 | Sentinel-1D | 추적 목록 | 보고됨 |
-| src-022 | Hunga Tonga TROPOMI | 추적 목록 | 보고됨 |
-| src-023 | NASA EO Dukono | 추적 목록 | 전일 신규 보고 |
+### 미검증 의혹 섹션 (0건)
+- 금일 새로운 미검증 이벤트 없음.
+- 기존 DPRK 발사체 5/26(temp-evt-1702)은 전일 보고 완료.
 
-## 배치 순서
+### SatOps 섹션 (4건)
+| 소스 | 이벤트 | 판정 |
+|------|--------|------|
+| src-001 | Sentinel-3 L1/L2 지연 | **신규** |
+| src-003 | Sentinel-1A 유실 5/24 | **신규** |
+| — | Sentinel-1D 4위성 | **보고됨** (이전) |
+| — | KOMPSAT-7 0.3m | **보고됨** (이전) |
 
-1. 오늘의 핵심 (Top 5): Kilauea > 캐나다 산불 > Bismarck Sea > Mayon > El Niño
-2. 다중 위성 교차검증: 3건 유지
-3. 한반도 GeoFocus: 추적 4건, 신규 0건
-4. 자연재해: 10건 (화산 8 + 산불 2)
-5. 인간활동: 1건 (Kharg + 교량 추적)
-6. 기후·환경: 0건 신규 (전일 보고)
-7. 농업·해양: 1건 신규 (El Niño)
-8. 국방: 1건 (Antelope Reef)
-9. 인도주의: 1건 (Bellingcat Lebanon 추적)
-10. 센서·플랫폼별 묶음
-11. 전후 비교
-12. 미검증 의혹: 1건 (DPRK 발사체)
-13. SatOps: 2건 신규 + 추적
-14. KG 시각화
-15. 추론·분석·출처
+### 본문 제외 (0건)
+- 금일 중복 제외 대상 없음.
+
+## Top 5 선정 (신뢰도 + 영향규모 기준)
+
+1. **Kilauea Ep48** — 0.95 + officialBoost. 5/29-31 예보 창 도래, 15.8μrad, spatter.
+2. **Mayon 287K+** — 0.92 + priorityBoost. Day 144+ AL3, 이재민 최고치.
+3. **캐나다 산불** — 0.95 + multiSatBoost + priorityBoost + cascading. 33K+ 대피, 2사망.
+4. **Bismarck Sea** — 0.97 + multiSatBoost. day 22+, pumice 70km².
+5. **El Nino 2026 WMO** — 0.82 + officialBoost. 60% 여름 발생, Super El Nino 가능.
+
+## 도메인별 커버리지
+
+- 자연재해: 9건 (Kilauea, Mayon, Canada, Bismarck, Kanlaon, Bezymianny, Great Sitkin, Shishaldin, Dukono, Santa Rosa)
+- 인간활동: 2건 (Kharg Island, Antelope Reef)
+- 기후·환경: 1건 (El Nino WMO 예보)
+- 농업·해양: 1건 (El Nino WMO 예보 — 작황 영향)
+- 국방·안보: 1건 (Antelope Reef 군사시설)
+- 인도주의: 2건 (캐나다 산불 교차, 남레바논)
+- SatOps: 2건 (Sentinel-3 지연, Sentinel-1A 유실)
+
+4대 카테고리 의무 커버 충족:
+- (a) 자연재해: 9건
+- (b) 인간활동(개발/군사/산업): 2건
+- (c) 기후·환경: 1건
+- (d) 농업·해양: 1건
+
+## 한반도 GeoFocus
+- 금일 한반도 신규 이벤트 0건.
+- 기존 추적: 압록강 교량(보고됨), 두만강 교량(보고됨), KOMPSAT-7(보고됨), DPRK 발사체(보고됨)
+- 보고서에 "한반도 금일 신규 없음" 명시.
+
+## 다중 위성 교차검증 현황
+
+| 이벤트 | 위성 수 | 기관 수 | 위성 목록 |
+|--------|---------|---------|----------|
+| evt-1101 캐나다 산불 | 5 | 3 | GOES-18, VIIRS, Sentinel-5P, OMPS, EarthCare |
+| evt-701 Bismarck Sea | 4 | 3 | VIIRS, MODIS, Landsat 9, Himawari-9 |
+| ent-evt-kharg Kharg | 3 | 1(ESA) | Sentinel-1, Sentinel-2, Sentinel-3 (3센서) |
+
+## 보고서 구성 권고
+
+1. **재해 섹션 (1순위):** Kilauea → Mayon → 캐나다 산불 → Bismarck Sea → 화산 일람 (Kanlaon, Bezymianny, Great Sitkin, Shishaldin, Dukono) → Santa Rosa
+2. **인간활동 섹션:** Kharg Island 유출 → Antelope Reef 군사 매립
+3. **기후·환경 섹션:** El Nino 2026 WMO 예보
+4. **인도주의 섹션:** 캐나다 산불 교차 → 남레바논 Bellingcat
+5. **SatOps 섹션:** Sentinel-3 지연 → Sentinel-1A 유실
+6. **미검증 의혹:** 해당 없음 (전일 보고 완료)
+7. **한반도 GeoFocus 노트:** 금일 신규 없음
+8. **농업·해양 노트:** El Nino 예보로 커버
