@@ -2234,3 +2234,104 @@ config 한도 내 — 새 클래스 0건 (max=3), 새 관계 유형 0건 (max=5)
 - **NASA EO 신규 — Landsat 35년 분석:** Nature Geoscience 논문. 미국 야생 교란(산불·허리케인) 증가 vs 인간 교란(벌목·농업확장) 감소 추세. 40년 데이터 + ML 알고리즘. 기후·환경 도메인 장기 추세.
 - **Sentinel-2 CDSE 5시간 장애:** 5/28 05:45-10:45 CEST. 이전 5/8 NorthC datacenter fire(evt-201)와 별개 인시던트. 비교적 빠른 복구.
 - **농업·해양 0건:** dom-agri-marine 금일 신규 이벤트 없음. 보고서에 명시.
+
+## 2026-05-30 추론 결과
+
+### multi_satellite_confirmation (다중 위성 교차검증) — 3건 유지
+
+- **추론 #1:** evt-1101 (캐나다 산불) — GOES-18 (NOAA) + VIIRS (NOAA/NASA) + Sentinel-5P (ESA) + OMPS (NASA) + EarthCare (ESA/JAXA) = 5위성 3기관 → multiSatBoost +0.20 [0.95, 확정, 유지]
+- **추론 #2:** ent-evt-kharg (Kharg Island 유출) — Sentinel-1 (SAR) + Sentinel-2 (MSI) + Sentinel-3 (OLCI) = 3위성 3센서 → multiSatBoost +0.20 [0.90, 확정, 유지]
+- **추론 #3:** evt-701 (Bismarck Sea) — VIIRS (NOAA) + MODIS (NASA) + Landsat 9 (USGS/NASA) + Himawari-9 (JMA/JAXA) = 4위성 3기관 → multiSatBoost +0.20 [0.97, 확정, 유지]
+
+### official_source_trust (공식 기관 신뢰도 가산) — 4건
+
+- **추론 #4:** evt-202 (Kilauea Ep48) — USGS HVO space_agency → officialBoost +0.15 [0.95, 확정]
+- **추론 #5:** evt-128 (Dukono) — NASA EO Landsat 9 OLI 공식 기사 → officialBoost +0.15 [0.92, 확정]
+- **추론 #6:** temp-evt-1901 (Sentinel-3 지연) — ESA Copernicus 공식 공지 → officialBoost +0.15 [0.95, 확정]
+- **추론 #7:** temp-evt-1903 (Sentinel-1A 유실) — ESA Copernicus 공식 공지 → officialBoost +0.15 [0.95, 확정]
+
+### temporal_progression (시계열 추적) — 3건
+
+- **추론 #8:** evt-202 (Kilauea Ep48) → partOfSeries Ep48→Ep47→Ep46→Ep45→Ep44 [0.95, 확정] — 5/29-31 예보 창, 15.8μrad 팽창, spatter 활동
+- **추론 #9:** evt-082 (Mayon Day 144+) → partOfSeries Day 143+ [0.92, 확정] — 287K+ 이재민 유지, AL3 지속
+- **추론 #10:** evt-701 (Bismarck Sea day 22+) → partOfSeries day 21+ [0.97, 확정] — pumice 70km² 유지
+
+### disaster_severity_priority (재해 심각도 우선) — 2건
+
+- **추론 #11:** evt-1101 (캐나다 산불) — 33,000+ 대피 + 2명 사망, Manitoba → priorityBoost +0.20 [0.95, 확정]
+- **추론 #12:** evt-082 (Mayon) — 287,000+ 이재민, AL3 → priorityBoost +0.20 [0.92, 확정]
+
+### sensor_capability_match_sar (SAR 가산) — 1건
+
+- **추론 #13:** evt-203 (Great Sitkin) — SAR lava dome 동측 확장 관측 → sarBoost +0.10 [0.90, 확정]
+
+### cascading_disaster (재해 사슬) — 1건
+
+- **추론 #14:** evt-1101 (캐나다 산불) → crossDomainLink dom-disaster→dom-humanitarian — 33K+ 대피, 2명 사망, Lac du Bonnet, CAF 군 투입, First Nations 커뮤니티 고립 → cascadingBoost [0.88, 확정]
+
+### before_after_credibility (전후 비교 신뢰도) — 1건
+
+- **추론 #15:** evt-802 (남레바논 파괴) — Bellingcat PlanetScope 46+ towns before/after 인터랙티브 맵 → baCredibilityBoost +0.10 [0.92, 확정]
+
+### 금일 미적용 규칙
+
+- **korea_geo_focus:** 한반도 관련 신규 이벤트 0건. 기존 추적 이벤트(압록강 교량, 두만강 교량, KOMPSAT-7, DPRK 발사체)는 전일 보고 완료.
+- **commercial_imagery_provider:** 금일 상업 위성 사업자 직접 발표 없음.
+- **analyst_org_trust:** Bellingcat(evt-802)은 기존 before/after로 처리, 별도 analyst boost는 이미 이전 사이클에서 적용됨.
+
+### El Nino WMO 예보 특별 추론 (temp-evt-1902)
+
+- **officialBoost 적용:** WMO(UN 전문기구) 발표 기반 → officialBoost +0.15 [0.88, 확정]
+- **도메인 교차:** dom-agri-marine(인도 몬순 92%, 동남아 쌀·설탕·팜유 영향) + dom-climate(SST anomaly, Super El Nino)
+- **좌표:** 0.0°N, 170.0°W (적도 태평양 Nino 3.4 지역)
+- **위성 출처:** 위성 SST anomaly 기반이나 특정 위성 명시 없음 → 일반 위성 데이터 참조로 처리
+- **신뢰도:** 0.82 (WMO officialBoost + 확률적 예보 특성 감안)
+- **비고:** 직접 위성영상 이벤트라기보다 위성 SST 데이터 기반 예보. 농업·해양 도메인 0건 방지를 위해 포함.
+
+### Sentinel 운영 이슈 종합 추론 (temp-evt-1901 + temp-evt-1903)
+
+- **Sentinel-1A:** 5/19 + 5/24 월 2회 unrecoverable 데이터 유실. Sentinel-1 콘스텔레이션 4기(A/C/D + 1B 퇴역) 중 A 위성 노후화 패턴 관찰. 전 사이클 temp-evt-1302(5/19 유실)와 시리즈.
+- **Sentinel-3:** S3A/S3B NRT/STC L1/L2 프로덕션 지연 5/21~ 진행 중. 지상 세그먼트 이슈. 해양 모니터링(OLCI/SLSTR) 및 대기 관측에 영향.
+- **운영 신뢰도 영향:** SAR 모니터링 주기적 공백 → 유출 탐지(ent-evt-kharg), 군사 활동 감시 등에 영향 가능. 보고서 SatOps 섹션에서 별도 경고.
+
+### 종합 신뢰도 산정 (신규 3건)
+
+| 이벤트 ID | 이벤트명 | 기본 | 가산 | 최종 | 비고 |
+|-----------|---------|------|------|------|------|
+| temp-evt-1901 | Sentinel-3 L1/L2 지연 | 0.85 | officialBoost +0.15 | 0.95 | ESA 공식 공지 |
+| temp-evt-1902 | El Nino 2026 WMO 예보 | 0.70 | officialBoost +0.15 | 0.82 | WMO 공식, 확률적 예보 |
+| temp-evt-1903 | Sentinel-1A 유실 5/24 | 0.85 | officialBoost +0.15 | 0.95 | ESA 공식 공지, 월 2회째 |
+
+### 추론 통계 요약
+
+| 규칙 | 금일 발동 | 평균 신뢰도 |
+|------|----------|-----------|
+| multi_satellite_confirmation | 3 (유지) | 0.94 |
+| official_source_trust | 4 | 0.94 |
+| temporal_progression | 3 | 0.95 |
+| disaster_severity_priority | 2 | 0.94 |
+| sensor_capability_match_sar | 1 | 0.90 |
+| cascading_disaster | 1 | 0.88 |
+| before_after_credibility | 1 | 0.92 |
+| **합계** | **15** | **0.93** |
+
+### 온톨로지 변경
+
+| 변경 유형 | 대상 | 근거 |
+|----------|------|------|
+| 없음 | — | 기존 클래스·관계·Phenomenon으로 모든 이벤트 분류 가능. 신규 국가/위성/기관 추가 불필요. |
+
+config 한도 내 — 새 클래스 0건 (max_new_classes_per_day=3), 새 관계 유형 0건 (max_new_relations_per_day=5).
+
+### 특이사항
+
+- **Kilauea Ep48 예보 창 계속:** 5/29-31 예보. 15.8μrad 팽창 + spatter 활동. 분출 임박 상태 지속. 다음 사이클에서 분수분출 또는 예보 창 재연장 보고 예상.
+- **Mayon 287K+ 이재민 유지:** Day 144+ 연속 분출. AL3 유지. 우기 진입으로 라하르 위험 증가 지속.
+- **캐나다 산불 지속:** Manitoba 33K+ 대피 유지, 2명 사망. 5위성 3기관 multiSatBoost 지속.
+- **Bismarck Sea day 22+:** pumice 70km² 유지. 분출 감쇠 추세이나 해저 열수 활동 지속.
+- **Santa Rosa 97% → 100% 임박:** 6/6 공식 폐쇄 예정. 다음 사이클에서 추적 종료 가능.
+- **Sentinel 운영 연속 이슈:** S1A 월 2회 유실 + S3 L1/L2 지연. ESA 인프라 노후화 우려. SAR 모니터링 공백 누적.
+- **El Nino 2026:** WMO 60% 예보. 농업·해양 도메인 커버리지 확보. Super El Nino 가능성은 인도 몬순·동남아 작황에 영향.
+- **Dukono Landsat 9:** 52회/일 폭발. NASA officialBoost 유지.
+- **농업·해양 커버:** El Nino 예보(temp-evt-1902)로 dom-agri-marine 1건 확보. 전일 0건에서 개선.
+- **한반도 GeoFocus:** 금일 한반도 관련 신규 0건. 기존 추적만 지속.

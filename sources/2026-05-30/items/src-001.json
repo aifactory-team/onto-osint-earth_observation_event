@@ -1,0 +1,24 @@
+{
+  "id": "src-001",
+  "title": "Sentinel-3 L1/L2 프로덕션 지연 — 지상 세그먼트 장애, S3A/S3B NRT/STC 5/21 이후 지속",
+  "url": "https://dataspace.copernicus.eu/news/2026-5-26-sentinel-3-l1l2-production-delay",
+  "snippet": "Copernicus Data Space Ecosystem(CDSE) 발표: Sentinel-3A 및 Sentinel-3B의 L1/L2 NRT(Near Real-Time) 및 STC(Short Time Critical) 제품 생산이 지상 세그먼트 장애로 인해 2026년 5월 21일부터 지연되고 있다. OLCI, SLSTR, SRAL, MWR 전 센서에 영향. 복구 시점 미정.",
+  "source_name": "Copernicus Data Space Ecosystem",
+  "language": "en",
+  "discovered_date": "2026-05-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "5/26 발표, 5/21부터 지속 중인 Sentinel-3 L1/L2 프로덕션 지연. 전일까지 보고되지 않은 신규 위성 운영 이슈. Sentinel-2 5/28 장애(temp-evt-1802)와는 별도 인시던트.",
+  "entities": [
+    {"id": "temp-evt-1901", "type": "Event", "name": "Sentinel-3 L1/L2 프로덕션 지연 (5/21~)", "properties": {"phenomenon": "satellite_operations", "domain": "SatOps", "country": null, "lat": null, "lon": null, "observation_date": "2026-05-21", "severity": "medium"}},
+    {"id": "sat-sentinel3", "type": "Satellite", "name": "Sentinel-3A/B"},
+    {"id": "org-esa", "type": "Organization", "name": "ESA"},
+    {"id": "org-eumetsat", "type": "Organization", "name": "EUMETSAT"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-1901", "predicate": "affects", "object": "sat-sentinel3"},
+    {"subject": "temp-evt-1901", "predicate": "analyzedBy", "object": "org-esa"},
+    {"subject": "temp-evt-1901", "predicate": "inDomain", "object": "dom-satops"}
+  ]
+}

@@ -1,15 +1,15 @@
 {
-  "version": "1.12.0",
+  "version": "1.13.0",
   "description": "위성영상 관측 이벤트 누적 지식그래프 — 첫 실행(2026-04-30) 이후 매일 신규/추론 트리플 병합",
-  "last_updated": "2026-05-29",
-  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-19", "2026-05-20", "2026-05-21", "2026-05-22", "2026-05-23", "2026-05-24", "2026-05-26", "2026-05-27", "2026-05-28", "2026-05-29"],
-  "triples": "ontology/kg/2026-04-30.json ~ ontology/kg/2026-05-29.json (new_triples + updated_triples + inferred_triples)",
+  "last_updated": "2026-05-30",
+  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-19", "2026-05-20", "2026-05-21", "2026-05-22", "2026-05-23", "2026-05-24", "2026-05-26", "2026-05-27", "2026-05-28", "2026-05-29", "2026-05-30"],
+  "triples": "ontology/kg/2026-04-30.json ~ ontology/kg/2026-05-30.json (new_triples + updated_triples + inferred_triples)",
   "stats": {
-    "total_explicit_triples": 1061,
-    "total_inferred_triples": 468,
-    "total_unique_subjects": 224,
+    "total_explicit_triples": 1071,
+    "total_inferred_triples": 480,
+    "total_unique_subjects": 227,
     "total_unique_predicates": 21,
-    "total_unique_objects": 271
+    "total_unique_objects": 274
   },
-  "note": "2026-05-29 병합 완료 — 신규 6 explicit + 12 updated + 7 inferred 트리플(일별 KG: 30 nodes, 25 triples). 신규 이벤트 2건: (1) NASA EO Landsat 35년 토지교란 분석(temp-evt-1801, Nature Geoscience 논문, Landsat 8+9, officialBoost), (2) Sentinel-2 CDSE 카탈로그 5시간 장애 5/28(temp-evt-1802, SatOps). 핵심 업데이트: Kilauea Ep48 D-day 5/28-30(분출 임박, officialBoost 0.95), Mayon 287K+ 이재민(priorityBoost 0.92), Canada 산불 33K+ 대피 지속(5위성3기관 multiSatBoost+priorityBoost 0.95), Bismarck Sea day21+ 신규 섬 형성 가능(4위성3기관 multiSatBoost 0.97). 다중 위성 교차검증 3건: evt-1101(GOES+VIIRS+S5P), ent-evt-kharg(S1A+S2A), evt-701(VIIRS+MODIS+L9+Himawari). official_source_trust 3건(NASA EO x2, USGS HVO). temporal_progression 3건. disaster_severity 2건(Mayon 287K, Canada 33K+). 누적 KG 1529 트리플."
+  "note": "2026-05-30 병합 완료 — 신규 10 explicit + 14 updated + 12 inferred 트리플(일별 KG: 37 nodes, 35 triples). 신규 이벤트 3건: (1) Sentinel-3 L1/L2 프로덕션 지연(temp-evt-1901, S3A/S3B NRT/STC 5/21~ 지연, ESA 공식, SatOps), (2) El Nino 2026 WMO 예보(temp-evt-1902, 60% risk 여름, SST anomaly, dom-agri-marine+dom-climate), (3) Sentinel-1A 데이터 유실 5/24(temp-evt-1903, 월 2회째 unrecoverable, ESA 공식, SatOps). 핵심 업데이트 13건: Kilauea Ep48 5/29-31 예보(15.8μrad spatter), Mayon 287K+ AL3 Day144+, Canada 33K+ 2사망 Manitoba, Bismarck Sea day22+ pumice 70km², Kanlaon AL2 ash 800m, Bezymianny Orange explosive, Great Sitkin WATCH SAR lava east, Shishaldin ADVISORY SO₂, Dukono 52/day Landsat 9, Santa Rosa 97% closed June 6, Kharg Island 45km² S1/S2/S3, Antelope Reef 1490ac military, Bellingcat Lebanon 46+ towns. 다중 위성 교차검증 3건 유지: evt-1101(5위성), ent-evt-kharg(3위성), evt-701(4위성). official_source_trust 4건(USGS HVO, NASA EO Dukono, ESA x2). temporal_progression 3건. disaster_severity 2건(Mayon 287K, Canada 33K+). cascading_disaster 1건(Canada wildfire→humanitarian). before_after_credibility 1건(Bellingcat Lebanon). 누적 KG 1551 트리플."
 }

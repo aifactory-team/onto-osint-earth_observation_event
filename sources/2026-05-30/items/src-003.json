@@ -1,0 +1,23 @@
+{
+  "id": "src-003",
+  "title": "Sentinel-1A 2차 데이터 손실 5/24 — 5/19 이후 두 번째 비복구 데이터 유실",
+  "url": "https://dataspace.copernicus.eu/news/2026-5-26-copernicus-sentinel-1a-data-unavailability-24-may-2026",
+  "snippet": "Copernicus Data Space Ecosystem(CDSE) 발표: Sentinel-1A에서 2026년 5월 24일 비복구 데이터 손실 발생. 이는 5월 19일 데이터 유실에 이은 두 번째 인시던트. C-band SAR 데이터 가용성에 영향. Sentinel-1C/1D가 일부 커버리지를 대체하나, 특정 궤도의 SAR 데이터 갭 발생.",
+  "source_name": "Copernicus Data Space Ecosystem",
+  "language": "en",
+  "discovered_date": "2026-05-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "5/26 발표, 5/24 발생 Sentinel-1A 2차 데이터 손실. 5/19 첫 번째 손실에 이은 반복 인시던트로 SAR 운영 연속성 우려. 전일 보고서에 포함되지 않은 신규 위성 운영 이벤트.",
+  "entities": [
+    {"id": "temp-evt-1903", "type": "Event", "name": "Sentinel-1A 2차 데이터 손실 (5/24)", "properties": {"phenomenon": "satellite_operations", "domain": "SatOps", "country": null, "lat": null, "lon": null, "observation_date": "2026-05-24", "severity": "medium"}},
+    {"id": "sat-sentinel1a", "type": "Satellite", "name": "Sentinel-1A"},
+    {"id": "org-esa", "type": "Organization", "name": "ESA"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-1903", "predicate": "affects", "object": "sat-sentinel1a"},
+    {"subject": "temp-evt-1903", "predicate": "analyzedBy", "object": "org-esa"},
+    {"subject": "temp-evt-1903", "predicate": "inDomain", "object": "dom-satops"}
+  ]
+}

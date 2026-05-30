@@ -1,0 +1,28 @@
+{
+  "id": "src-002",
+  "title": "El Nino 2026 WMO 예보 — 60% 확률 여름 도래, SST 이상 ECMWF 위성관측, 아시아 농업 타격 전망",
+  "url": "https://www.rappler.com/environment/explainer-el-nino-potential-impact-world-weather-2026-2027/",
+  "snippet": "WMO 5월 발표: 2026년 여름까지 El Nino 발생 확률 60%. ECMWF 위성관측 기반 SST 이상 감지. Super El Nino 가능성 대두. 아시아 영향: 인도 몬순 강수 평년 92% 예측, 동남아 쌀·설탕·팜유 생산 감소 우려. Manitoba Cooperator는 2026-27 농업 피해를 경고.",
+  "source_name": "Rappler / Manitoba Cooperator",
+  "language": "en",
+  "discovered_date": "2026-05-30",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "WMO El Nino 2026 공식 예보. ECMWF 위성관측(SST)에 기반한 기후 이벤트 경보. 농업·해양 카테고리에 해당하는 신규 이벤트. Sentinel-3 SST·MODIS·VIIRS 해수면온도 데이터를 활용한 예보 근거.",
+  "entities": [
+    {"id": "temp-evt-1902", "type": "Event", "name": "El Nino 2026 WMO 예보 — SST 이상, 아시아 농업 타격 전망", "properties": {"phenomenon": "sst_anomaly", "domain": "AgricultureMaritime", "country": "INTL", "lat": 0.0, "lon": -170.0, "observation_date": "2026-05-30", "severity": "high"}},
+    {"id": "sat-sentinel3", "type": "Satellite", "name": "Sentinel-3A/B"},
+    {"id": "sat-modis-terra", "type": "Satellite", "name": "MODIS (Terra)"},
+    {"id": "org-wmo", "type": "Organization", "name": "WMO"},
+    {"id": "org-ecmwf", "type": "Organization", "name": "ECMWF"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-1902", "predicate": "observedBy", "object": "sat-sentinel3"},
+    {"subject": "temp-evt-1902", "predicate": "analyzedBy", "object": "org-wmo"},
+    {"subject": "temp-evt-1902", "predicate": "analyzedBy", "object": "org-ecmwf"},
+    {"subject": "temp-evt-1902", "predicate": "inDomain", "object": "dom-agri-marine"},
+    {"subject": "temp-evt-1902", "predicate": "manifests", "object": "phen-crop"},
+    {"subject": "temp-evt-1902", "predicate": "inCountry", "object": "co-intl"}
+  ]
+}
