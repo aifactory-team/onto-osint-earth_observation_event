@@ -1,0 +1,32 @@
+{
+  "date": "2026-05-31",
+  "total": 23,
+  "new": 4,
+  "reported": 6,
+  "update": 13,
+  "items": [
+    {"id":"src-001","title":"Kilauea Ep48 forecast window 5/29-31 — spatter at north vent, glow strong both vents","url":"https://www.usgs.gov/volcanoes/kilauea/volcano-updates","tag":"update","related_item":"evt-202","entity_count":5},
+    {"id":"src-002","title":"Canada wildfires 33,400+ evacuated — Norway House Cree Nation state of emergency, military evacuations","url":"https://www.cbc.ca/news/canada/manitoba/norway-house-wildfire-state-of-emergency-9.7217779","tag":"update","related_item":"evt-1101","entity_count":6},
+    {"id":"src-003","title":"Bismarck Sea submarine volcano day 23+ — Sentinel-2 shows growing underwater platform, pumice 70km²","url":"https://science.nasa.gov/earth/earth-observatory/new-eruption-in-the-bismarck-sea/","tag":"update","related_item":"evt-701","entity_count":5},
+    {"id":"src-004","title":"Mayon Day 145+, 287,000+ displaced, AL3 — lahar risk rising with approaching rainy season","url":"https://reliefweb.int/disaster/vo-2026-000065-phl","tag":"update","related_item":"evt-082","entity_count":4},
+    {"id":"src-005","title":"Typhoon Domeng (Jangmi) upgraded to typhoon 120 kph — Himawari-9 tracked, exit PAR June 1","url":"https://www.philstar.com/headlines/weather/2026/05/30/2531652/domeng-now-typhoon","tag":"new","related_item":null,"entity_count":5},
+    {"id":"src-006","title":"China Hami ICBM silo 80+ launch pads — NBC/Reuters satellite imagery reveals unprecedented nuclear defense network","url":"https://www.nbcnews.com/world/asia/china-building-launch-pads-nuclear-missile-silos-satellite-images-show-rcna347503","tag":"new","related_item":null,"entity_count":6},
+    {"id":"src-007","title":"Kanlaon AL2 continuing — 6-31 daily VQs, SO₂ 410-4,081 t/d, 4km PDZ","url":"https://volcano.si.edu/volcano.cfm?vn=272020","tag":"update","related_item":"temp-evt-1401","entity_count":3},
+    {"id":"src-008","title":"Bezymianny Orange explosive — KVERT, Kamchatka, hot avalanches","url":"https://www.volcanodiscovery.com/volcanoes/satellite-images/recent.html","tag":"update","related_item":"evt-801","entity_count":3},
+    {"id":"src-009","title":"Great Sitkin WATCH/ORANGE — SAR lava dome east expansion","url":"https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-AVO-2026-05-30T18:41:36+00:00","tag":"update","related_item":"evt-203","entity_count":3},
+    {"id":"src-010","title":"Shishaldin ADVISORY/YELLOW — SO₂ elevated, seismicity","url":"https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-AVO-2026-05-28T19:49:52+00:00","tag":"update","related_item":"evt-204","entity_count":3},
+    {"id":"src-011","title":"Dukono AL2 52/day — NASA EO Landsat 9 analysis continuing","url":"https://science.nasa.gov/earth/earth-observatory/ever-restless-mount-dukono-erupts/","tag":"reported","related_item":"evt-128","entity_count":3},
+    {"id":"src-012","title":"Santa Rosa Island 97% contained — 18,379ac, closed until June 6","url":"https://www.earthdata.nasa.gov/news/worldview-image-archive/fire-chars-santa-rosa-island","tag":"reported","related_item":"evt-1201","entity_count":3},
+    {"id":"src-013","title":"Kharg Island oil spill 45km² — Sentinel-1/2/3 three-sensor crosscheck","url":"https://www.nbcnews.com/world/iran/oil-spill-gulf-likely-caused-tanker-dump-iran-says-rcna344878","tag":"update","related_item":"ent-evt-kharg","entity_count":5},
+    {"id":"src-014","title":"Antelope Reef 1,490ac — approaching Mischief Reef size, 2700m runway design","url":"https://amti.csis.org/antelope-reef-could-now-be-the-largest-island-in-the-south-china-sea/","tag":"update","related_item":"evt-092","entity_count":4},
+    {"id":"src-015","title":"Bellingcat Lebanon 46+ towns — interactive map PlanetScope before/after","url":"https://www.bellingcat.com/news/2026/05/14/satellite-imagery-shows-ongoing-demolitions-across-southern-lebanon/","tag":"reported","related_item":"evt-802","entity_count":4},
+    {"id":"src-016","title":"El Niño 2026 probability surges 82-98% — WMO/IRI/ECMWF near-unanimous, SST +0.9°C Niño 3.4","url":"https://wmo.int/media/news/wmo-likelihood-increases-of-el-nino","tag":"update","related_item":"temp-evt-1902","entity_count":4},
+    {"id":"src-017","title":"DPRK destroyer sailing west coast — NK Pro satellite May 31, third Choe Hyon-class at Nampo","url":"https://www.nknews.org/pro/satellite-images-capture-north-korean-destroyer-sailing-on-west-coast-tuesday/","tag":"new","related_item":null,"entity_count":5},
+    {"id":"src-018","title":"China Hami silo field defensive network TechTimes — 80 launch pads, bunkers, rail links","url":"https://www.techtimes.com/articles/317398/20260529/china-builds-80-pad-nuclear-defense-network-satellite-images-reveal-second-strike-hardening.htm","tag":"reported","related_item":"src-006","entity_count":4},
+    {"id":"src-019","title":"Japan military space buildup — 880 personnel, $1B budget, hypersonic tracking constellation","url":"https://defence-blog.com/japan-reveals-sweeping-military-space-buildup/","tag":"new","related_item":null,"entity_count":5},
+    {"id":"src-020","title":"Canada wildfire smoke US/Europe — GOES-18, VIIRS, TROPOMI crosscheck","url":"https://www.nesdis.noaa.gov/news/noaa-satellites-monitor-canadian-wildfires-and-smoke","tag":"reported","related_item":"evt-1101","entity_count":4},
+    {"id":"src-021","title":"Sentinel-2 product publication issue 28 May — CDSE catalogue delay","url":"https://dataspace.copernicus.eu/news/2026-5-28-sentinel-2-product-publication-issue-2805","tag":"reported","related_item":"temp-evt-1802","entity_count":2},
+    {"id":"src-022","title":"Sentinel-3A unavailability manoeuvre 28 May — IP manoeuvre #156","url":"https://dataspace.copernicus.eu/news/2026-5-28-copernicus-sentinel-3a-unavailability-notice-ip-manoeuvre-156-planned-28-may-2026","tag":"update","related_item":"temp-evt-1901","entity_count":2},
+    {"id":"src-023","title":"Yalu River bridge + Tumen River bridge — 38 North tracked, construction continuing","url":"https://www.38north.org/","tag":"reported","related_item":"temp-evt-1601","entity_count":3}
+  ]
+}

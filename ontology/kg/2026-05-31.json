@@ -1,0 +1,46 @@
+{
+  "date": "2026-05-31",
+  "triples": [
+    {"subject":"temp-evt-2001","predicate":"observedBy","object":"sat-himawari9","confidence":0.85,"source":"src-005"},
+    {"subject":"temp-evt-2001","predicate":"manifests","object":"phen-typhoon","confidence":0.90,"source":"src-005"},
+    {"subject":"temp-evt-2001","predicate":"inDomain","object":"dom-disaster","confidence":0.95,"source":"src-005"},
+    {"subject":"temp-evt-2001","predicate":"inCountry","object":"co-ph","confidence":0.90,"source":"src-005"},
+    {"subject":"temp-evt-2001","predicate":"analyzedBy","object":"org-pagasa","confidence":0.90,"source":"src-005"},
+
+    {"subject":"temp-evt-2002","predicate":"observedBy","object":"sat-worldview3","confidence":0.90,"source":"src-006"},
+    {"subject":"temp-evt-2002","predicate":"observedBy","object":"sat-planetscope","confidence":0.85,"source":"src-006"},
+    {"subject":"temp-evt-2002","predicate":"manifests","object":"phen-military","confidence":0.90,"source":"src-006"},
+    {"subject":"temp-evt-2002","predicate":"inDomain","object":"dom-defense","confidence":0.95,"source":"src-006"},
+    {"subject":"temp-evt-2002","predicate":"inCountry","object":"co-cn","confidence":0.95,"source":"src-006"},
+    {"subject":"temp-evt-2002","predicate":"locatedIn","object":"temp-loc-hami","confidence":0.90,"source":"src-006"},
+
+    {"subject":"temp-evt-2003","predicate":"observedBy","object":"sat-worldview3","confidence":0.85,"source":"src-017"},
+    {"subject":"temp-evt-2003","predicate":"analyzedBy","object":"org-vantor","confidence":0.90,"source":"src-017"},
+    {"subject":"temp-evt-2003","predicate":"manifests","object":"phen-naval","confidence":0.90,"source":"src-017"},
+    {"subject":"temp-evt-2003","predicate":"inDomain","object":"dom-defense","confidence":0.95,"source":"src-017"},
+    {"subject":"temp-evt-2003","predicate":"inCountry","object":"co-kp","confidence":0.95,"source":"src-017"},
+    {"subject":"temp-evt-2003","predicate":"partOfSeries","object":"ent-evt-022","confidence":0.75,"source":"inferred"},
+
+    {"subject":"evt-701","predicate":"observedBy","object":"sat-sentinel2a","confidence":0.95,"source":"src-003","note":"Sentinel-2 May 22 imagery added"},
+    {"subject":"temp-evt-1902","predicate":"analyzedBy","object":"org-noaa","confidence":0.90,"source":"src-016","note":"El Niño probability 82-98%"}
+  ],
+  "inferred_triples": [
+    {"subject":"temp-evt-2002","predicate":"multiSatBoost","value":"+0.20","rule":"multi_satellite_confirmation","reason":"WorldView-3 (Maxar) + PlanetScope (Planet) 2기관 독립 확인"},
+    {"subject":"temp-evt-2002","predicate":"hiResBoost","value":"+0.15","rule":"sensor_capability_match_hires","reason":"WorldView-3 0.31m 고해상도"},
+    {"subject":"temp-evt-2003","predicate":"hiResBoost","value":"+0.15","rule":"sensor_capability_match_hires","reason":"WorldView-3/Vantor 고해상도 구축함 식별"},
+    {"subject":"temp-evt-2003","predicate":"koreaBoost","value":"+0.10","rule":"korea_geo_focus","reason":"KP 한반도 이벤트"},
+    {"subject":"temp-evt-2001","predicate":"officialBoost","value":"+0.15","rule":"official_source_trust","reason":"PAGASA weather_agency + JMA 공동 예보"},
+    {"subject":"evt-202","predicate":"officialBoost","value":"+0.15","rule":"official_source_trust","reason":"USGS HVO space_agency"},
+    {"subject":"evt-801","predicate":"thermalBoost","value":"+0.10","rule":"sensor_capability_match_tirs","reason":"VIIRS 열적외 화산 관측"},
+    {"subject":"evt-204","predicate":"tracegasBoost","value":"+0.15","rule":"sensor_capability_match_tracegas","reason":"TROPOMI SO₂ 탐지"},
+    {"subject":"evt-1101","predicate":"priorityBoost","value":"+0.20","rule":"disaster_severity_priority","reason":"2명 사망 33,400+ 대피"},
+    {"subject":"evt-082","predicate":"priorityBoost","value":"+0.20","rule":"disaster_severity_priority","reason":"287,000+ 이재민"}
+  ],
+  "stats": {
+    "new_triples": 5,
+    "updated_triples": 2,
+    "inferred_triples": 10,
+    "total_nodes": 28,
+    "total_edges": 19
+  }
+}

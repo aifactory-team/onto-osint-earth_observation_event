@@ -1,0 +1,22 @@
+{
+  "id": "src-019",
+  "title": "Japan military space buildup — 880 personnel, $1B budget, hypersonic tracking constellation",
+  "url": "https://defence-blog.com/japan-reveals-sweeping-military-space-buildup/",
+  "snippet": "Japan MoD briefing: Space Operations Group 880 personnel, FY2026 space budget ~$1B (540B yen). Constellation for IGS/hypersonic tracking (QPS Research, Synspective, NTT Data). JSDF SDA satellite launch planned FY2026.",
+  "source_name": "Defence Blog",
+  "language": "en",
+  "discovered_date": "2026-05-31",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "일본 군사 우주 확장 브리핑은 기존 보고서에 없었던 신규 이벤트. 위성 정찰 콘스텔레이션 FY2026 운용 개시.",
+  "entities": [
+    {"id":"temp-evt-2004","type":"Event","name":"일본 군사 우주 확장 — 880인 SOG, $1B 예산, 정찰 콘스텔레이션","properties":{"phenomenon":"military_buildup","domain":"Defense","country":"JP","lat":35.7,"lon":139.7,"observation_date":"2026-05-29","severity":"medium","satellites_used":[],"before_after_available":false,"satellite_unverified":true}},
+    {"id":"co-jp","type":"Country","name":"일본","properties":{"matched":true}},
+    {"id":"org-synspective","type":"Organization","name":"Synspective","properties":{"org_type":"commercial_imagery","country":"JP"}}
+  ],
+  "relations": [
+    {"subject":"temp-evt-2004","predicate":"inDomain","object":"dom-defense"},
+    {"subject":"temp-evt-2004","predicate":"inCountry","object":"co-jp"}
+  ]
+}

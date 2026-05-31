@@ -1,0 +1,27 @@
+{
+  "id": "src-006",
+  "title": "China Hami ICBM silo 80+ launch pads — NBC/Reuters satellite imagery reveals unprecedented nuclear defense network",
+  "url": "https://www.nbcnews.com/world/asia/china-building-launch-pads-nuclear-missile-silos-satellite-images-show-rcna347503",
+  "snippet": "More than 80 launch pads, armored bunkers, and communications nodes across thousands of square km of Xinjiang desert near Hami ICBM silo fields. Two octagon-shaped installations. Military exercises documented April-May 11 2026. Mobile missile launchers, air-defense batteries, EW systems.",
+  "source_name": "NBC News / Reuters",
+  "language": "en",
+  "discovered_date": "2026-05-31",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "중국 Hami ICBM 사일로 방어 네트워크 80+ 패드는 기존 보고서에 없었던 신규 이벤트. Reuters 위성영상 분석 기반.",
+  "entities": [
+    {"id":"temp-evt-2002","type":"Event","name":"중국 Hami ICBM 사일로 방어 네트워크 80+ 패드","properties":{"phenomenon":"military_buildup","domain":"Defense","country":"CN","lat":42.8,"lon":93.5,"observation_date":"2026-05-29","severity":"high","satellites_used":["WorldView-3","PlanetScope"],"before_after_available":true}},
+    {"id":"sat-worldview3","type":"Satellite","name":"WorldView-3","properties":{"matched":true}},
+    {"id":"sat-planetscope","type":"Satellite","name":"PlanetScope (Doves)","properties":{"matched":true}},
+    {"id":"co-cn","type":"Country","name":"중국","properties":{"matched":true}},
+    {"id":"org-maxar","type":"Organization","name":"Maxar Technologies","properties":{"matched":true}}
+  ],
+  "relations": [
+    {"subject":"temp-evt-2002","predicate":"observedBy","object":"sat-worldview3"},
+    {"subject":"temp-evt-2002","predicate":"observedBy","object":"sat-planetscope"},
+    {"subject":"temp-evt-2002","predicate":"manifests","object":"phen-military"},
+    {"subject":"temp-evt-2002","predicate":"inDomain","object":"dom-defense"},
+    {"subject":"temp-evt-2002","predicate":"inCountry","object":"co-cn"}
+  ]
+}

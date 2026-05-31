@@ -1,0 +1,42 @@
+{
+  "date": "2026-05-31",
+  "entities": [
+    {"temp_id":"temp-evt-2001","matched_id":null,"type":"Event","name":"태풍 장미(Domeng) 120 kph 태풍 격상","properties":{"phenomenon":"typhoon","domain":"Disaster","country":"PH","lat":16.5,"lon":130.0,"observation_date":"2026-05-30","severity":"medium"},"source_ids":["src-005"],"mention_count":1},
+    {"temp_id":"temp-evt-2002","matched_id":null,"type":"Event","name":"중국 Hami ICBM 사일로 방어 네트워크 80+ 패드","properties":{"phenomenon":"military_buildup","domain":"Defense","country":"CN","lat":42.8,"lon":93.5,"observation_date":"2026-05-29","severity":"high"},"source_ids":["src-006","src-018"],"mention_count":2},
+    {"temp_id":"temp-evt-2003","matched_id":null,"type":"Event","name":"DPRK 최현급 구축함 서해 항해 + 남포 3번째 건조","properties":{"phenomenon":"naval_movement","domain":"Defense","country":"KP","lat":38.7,"lon":125.0,"observation_date":"2026-05-31","severity":"medium"},"source_ids":["src-017"],"mention_count":1},
+    {"temp_id":"temp-evt-2004","matched_id":null,"type":"Event","name":"일본 군사 우주 확장 — SOG 880인, $1B","properties":{"phenomenon":"military_buildup","domain":"Defense","country":"JP","lat":35.7,"lon":139.7,"observation_date":"2026-05-29","severity":"medium","satellite_unverified":true},"source_ids":["src-019"],"mention_count":1},
+    {"temp_id":null,"matched_id":"evt-202","type":"Event","name":"Kilauea Ep48 forecast 5/29-31 spatter","properties":{"phenomenon":"volcanic_eruption","update":true},"source_ids":["src-001"],"mention_count":1},
+    {"temp_id":null,"matched_id":"evt-1101","type":"Event","name":"Canada wildfire 33,400+ evacuated Norway House SOE","properties":{"phenomenon":"wildfire","update":true},"source_ids":["src-002","src-020"],"mention_count":2},
+    {"temp_id":null,"matched_id":"evt-701","type":"Event","name":"Bismarck Sea day 23+ S2 platform","properties":{"phenomenon":"volcanic_eruption","update":true},"source_ids":["src-003"],"mention_count":1},
+    {"temp_id":null,"matched_id":"evt-082","type":"Event","name":"Mayon Day 145+ 287K+ AL3","properties":{"phenomenon":"volcanic_eruption","update":true},"source_ids":["src-004"],"mention_count":1},
+    {"temp_id":null,"matched_id":"temp-evt-1401","type":"Event","name":"Kanlaon AL2 continuing","properties":{"phenomenon":"volcanic_eruption","update":true},"source_ids":["src-007"],"mention_count":1},
+    {"temp_id":null,"matched_id":"evt-801","type":"Event","name":"Bezymianny Orange","properties":{"phenomenon":"volcanic_eruption","update":true},"source_ids":["src-008"],"mention_count":1},
+    {"temp_id":null,"matched_id":"evt-203","type":"Event","name":"Great Sitkin WATCH SAR","properties":{"phenomenon":"volcanic_eruption","update":true},"source_ids":["src-009"],"mention_count":1},
+    {"temp_id":null,"matched_id":"evt-204","type":"Event","name":"Shishaldin ADVISORY SO₂","properties":{"phenomenon":"volcanic_eruption","update":true},"source_ids":["src-010"],"mention_count":1},
+    {"temp_id":null,"matched_id":"evt-128","type":"Event","name":"Dukono AL2","properties":{"phenomenon":"volcanic_eruption","reported":true},"source_ids":["src-011"],"mention_count":1},
+    {"temp_id":null,"matched_id":"evt-1201","type":"Event","name":"Santa Rosa 97%","properties":{"phenomenon":"wildfire","reported":true},"source_ids":["src-012"],"mention_count":1},
+    {"temp_id":null,"matched_id":"ent-evt-kharg","type":"Event","name":"Kharg Island 45km²","properties":{"phenomenon":"oil_spill","update":true},"source_ids":["src-013"],"mention_count":1},
+    {"temp_id":null,"matched_id":"evt-092","type":"Event","name":"Antelope Reef 1490ac","properties":{"phenomenon":"military_buildup","update":true},"source_ids":["src-014"],"mention_count":1},
+    {"temp_id":null,"matched_id":"evt-802","type":"Event","name":"Bellingcat Lebanon 46+ towns","properties":{"phenomenon":"infrastructure_damage","reported":true},"source_ids":["src-015"],"mention_count":1},
+    {"temp_id":null,"matched_id":"temp-evt-1902","type":"Event","name":"El Niño 82-98% WMO/IRI","properties":{"phenomenon":"sea_level_change","update":true},"source_ids":["src-016"],"mention_count":1},
+    {"temp_id":"temp-org-synspective","matched_id":null,"type":"Organization","name":"Synspective","properties":{"org_type":"commercial_imagery","country":"JP"},"source_ids":["src-019"],"mention_count":1},
+    {"temp_id":"temp-loc-hami","matched_id":null,"type":"Location","name":"Hami ICBM Silo Fields, Xinjiang","properties":{"country":"CN","region":"Xinjiang","lat":42.8,"lon":93.5},"source_ids":["src-006","src-018"],"mention_count":2},
+    {"temp_id":"temp-loc-norwayhouse","matched_id":null,"type":"Location","name":"Norway House Cree Nation, Manitoba","properties":{"country":"CA","region":"Manitoba","lat":53.97,"lon":-97.84},"source_ids":["src-002"],"mention_count":1}
+  ],
+  "relations": [
+    {"subject":"temp-evt-2001","predicate":"observedBy","object":"sat-himawari9","source_ids":["src-005"],"confidence":0.85},
+    {"subject":"temp-evt-2002","predicate":"observedBy","object":"sat-worldview3","source_ids":["src-006"],"confidence":0.90},
+    {"subject":"temp-evt-2002","predicate":"observedBy","object":"sat-planetscope","source_ids":["src-006"],"confidence":0.85},
+    {"subject":"temp-evt-2003","predicate":"observedBy","object":"sat-worldview3","source_ids":["src-017"],"confidence":0.85},
+    {"subject":"temp-evt-2003","predicate":"analyzedBy","object":"org-vantor","source_ids":["src-017"],"confidence":0.90},
+    {"subject":"evt-1101","predicate":"observedBy","object":"sat-goes18","source_ids":["src-020"],"confidence":0.95},
+    {"subject":"evt-701","predicate":"observedBy","object":"sat-sentinel2a","source_ids":["src-003"],"confidence":0.95},
+    {"subject":"temp-evt-1902","predicate":"analyzedBy","object":"org-noaa","source_ids":["src-016"],"confidence":0.90}
+  ],
+  "stats": {
+    "total_entities": 21,
+    "new_entities": 6,
+    "matched_entities": 15,
+    "total_relations": 8
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "src-005",
+  "title": "Typhoon Domeng (Jangmi) upgraded to typhoon 120 kph — Himawari-9 tracked, exit PAR June 1",
+  "url": "https://www.philstar.com/headlines/weather/2026/05/30/2531652/domeng-now-typhoon",
+  "snippet": "Jangmi intensified into typhoon with 120 kph sustained winds and gusts to 150 kph. Entered PAR on May 29 as Domeng. Less likely wind signals for Luzon. Exit PAR expected June 1. Fourth tropical cyclone of 2026.",
+  "source_name": "Philstar",
+  "language": "en",
+  "discovered_date": "2026-05-31",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "Jangmi/Domeng 태풍 등급 승격은 기존 보고서에 없었던 신규 이벤트. 5/30 태풍으로 격상.",
+  "entities": [
+    {"id":"temp-evt-2001","type":"Event","name":"태풍 장미(Domeng) 120 kph 태풍 격상","properties":{"phenomenon":"typhoon","domain":"Disaster","country":"PH","lat":16.5,"lon":130.0,"observation_date":"2026-05-30","severity":"medium","satellites_used":["Himawari-9"],"before_after_available":false}},
+    {"id":"sat-himawari9","type":"Satellite","name":"Himawari-9","properties":{"matched":true}},
+    {"id":"org-pagasa","type":"Organization","name":"PAGASA","properties":{"org_type":"weather_agency","country":"PH"}},
+    {"id":"co-ph","type":"Country","name":"필리핀","properties":{"matched":true}}
+  ],
+  "relations": [
+    {"subject":"temp-evt-2001","predicate":"observedBy","object":"sat-himawari9"},
+    {"subject":"temp-evt-2001","predicate":"analyzedBy","object":"org-pagasa"},
+    {"subject":"temp-evt-2001","predicate":"manifests","object":"phen-typhoon"},
+    {"subject":"temp-evt-2001","predicate":"inDomain","object":"dom-disaster"},
+    {"subject":"temp-evt-2001","predicate":"inCountry","object":"co-ph"}
+  ]
+}

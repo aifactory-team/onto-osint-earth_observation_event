@@ -2335,3 +2335,58 @@ config 한도 내 — 새 클래스 0건 (max_new_classes_per_day=3), 새 관계
 - **Dukono Landsat 9:** 52회/일 폭발. NASA officialBoost 유지.
 - **농업·해양 커버:** El Nino 예보(temp-evt-1902)로 dom-agri-marine 1건 확보. 전일 0건에서 개선.
 - **한반도 GeoFocus:** 금일 한반도 관련 신규 0건. 기존 추적만 지속.
+
+## 2026-05-31 추론 결과
+
+### multi_satellite_confirmation (다중 위성 교차검증) — 4건
+
+- **추론 #1 (신규):** temp-evt-2002 (China Hami ICBM 80+ pads) — observedBy WorldView-3 (Maxar/Vantor) AND PlanetScope (Planet) → multiSatBoost +0.20 [confidence 0.90, 확정]. Reuters 위성영상 분석, 2기관 독립 확인.
+- **추론 #2 (유지):** evt-1101 (Canada wildfire) — GOES-18 + VIIRS + TROPOMI + OMPS + EarthCare → multiSatBoost +0.20 [0.95, 확정]. 5위성 3기관.
+- **추론 #3 (유지):** ent-evt-kharg (Kharg Island) — Sentinel-1 + Sentinel-2 + Sentinel-3 → multiSatBoost +0.20 [0.90, 확정]. 3위성 3센서 유형.
+- **추론 #4 (유지 + 확장):** evt-701 (Bismarck Sea) — VIIRS + MODIS + Landsat 9 + Himawari-9 + **Sentinel-2A (5/22 추가)** → multiSatBoost +0.20 [0.97, 확정]. 5위성 3기관으로 확장.
+
+### sensor_capability_match_hires — 2건
+
+- **추론 #5:** temp-evt-2002 (China Hami) — WorldView-3 0.31m 고해상도로 발사 패드·벙커·차량 식별 → hiResBoost +0.15 [0.90, 확정].
+- **추론 #6:** temp-evt-2003 (DPRK destroyer) — WorldView-3/Vantor 고해상도로 구축함 상부구조 식별 → hiResBoost +0.15 [0.85, 확정].
+
+### korea_geo_focus — 1건
+
+- **추론 #7:** temp-evt-2003 (DPRK destroyer) — inCountry KP → koreaBoost +0.10 [0.95, 확정].
+
+### official_source_trust — 3건
+
+- **추론 #8:** evt-202 (Kilauea Ep48) — analyzedBy USGS HVO (space_agency) → officialBoost +0.15 [0.95, 확정].
+- **추론 #9:** evt-701 (Bismarck Sea) — analyzedBy NASA EO (space_agency) → officialBoost +0.15 [0.97, 확정].
+- **추론 #10:** temp-evt-2001 (Typhoon Domeng) — analyzedBy PAGASA (weather_agency) + JMA → officialBoost +0.15 [0.85, 확정].
+
+### sensor_capability_match_tirs — 1건
+
+- **추론 #11:** evt-801 (Bezymianny) — VIIRS thermal_infrared + volcanic_eruption → thermalBoost +0.10 [0.80, 확정].
+
+### sensor_capability_match_tracegas — 1건
+
+- **추론 #12:** evt-204 (Shishaldin) — TROPOMI trace_gas + SO₂ → tracegasBoost +0.15 [0.80, 확정].
+
+### disaster_severity_priority — 2건
+
+- **추론 #13:** evt-1101 (Canada wildfire) — severity high (2 deaths, 33,400+ evacuated) → priorityBoost +0.20 [0.95, 확정].
+- **추론 #14:** evt-082 (Mayon) — severity high (287,000+ displaced) → priorityBoost +0.20 [0.92, 확정].
+
+### temporal_progression — 1건
+
+- **추론 #15:** temp-evt-2003 (DPRK destroyer west coast sailing) → partOfSeries ent-evt-022 (Choe Hyon-class 최초 건조 관측 2026-04) [confidence 0.75, 잠정].
+
+### cascading_disaster (잠정) — 1건
+
+- **추론 #16:** evt-082 (Mayon eruption) + 우기 접근 → potential triggeredBy lahar events (미래). 아직 라하르 발생 보고 없음. [0.60, 잠정].
+
+---
+
+### 일일 요약
+
+- **신규 4건:** 태풍 Domeng 태풍 격상(PH), China Hami ICBM 80+ 패드(CN), DPRK 구축함 서해 항해(KP), 일본 군사 우주 확장(JP, 미검증).
+- **업데이트 13건:** Kilauea Ep48 D-day(US), Canada 33.4K+(CA), Bismarck Sea day23+(PG), Mayon 287K+(PH), Kanlaon AL2(PH), Bezymianny Orange(RU), Great Sitkin WATCH(US), Shishaldin ADVISORY(US), Kharg Island 45km²(IR), Antelope Reef 1490ac(CN), El Niño 82-98%(INTL), S3A 기동(ESA), S2 CDSE 지연(ESA).
+- **다중 위성 교차검증:** 4건 (신규 1건: Hami). Bismarck Sea가 Sentinel-2 추가로 5위성으로 확장.
+- **한반도 GeoFocus 5건:** DPRK 구축함 ★신규 + 4건 추적 지속.
+- **카테고리 커버리지:** 자연재해 11건 ✓, 인간활동 1건 ✓, 기후·환경 0건(전일 보고 유지), 농업·해양 1건 ✓(El Niño 업데이트), 국방 3건 ✓, 인도주의 1건 ✓. 기후·환경 금일 신규 없음 명시.

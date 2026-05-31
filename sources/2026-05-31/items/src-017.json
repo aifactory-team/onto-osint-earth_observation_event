@@ -1,0 +1,26 @@
+{
+  "id": "src-017",
+  "title": "DPRK destroyer sailing west coast — NK Pro satellite May 31, third Choe Hyon-class at Nampo",
+  "url": "https://www.nknews.org/pro/satellite-images-capture-north-korean-destroyer-sailing-on-west-coast-tuesday/",
+  "snippet": "NK Pro satellite imagery captured North Korea's largest modern destroyer sailing on west coast May 31. Third Choe Hyon-class hull under construction at Nampo Shipyard. Vantor imagery shows cranes and hoisting equipment.",
+  "source_name": "NK Pro / NK News",
+  "language": "en",
+  "discovered_date": "2026-05-31",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "NK 구축함 서해안 항해 위성영상 포착은 기존 보고서에 없었던 신규 이벤트. 3번째 최현급 건조 확인.",
+  "entities": [
+    {"id":"temp-evt-2003","type":"Event","name":"DPRK 최현급 구축함 서해 항해 위성 포착 + 남포 3번째 건조","properties":{"phenomenon":"naval_movement","domain":"Defense","country":"KP","lat":38.7,"lon":125.0,"observation_date":"2026-05-31","severity":"medium","satellites_used":["WorldView-3"],"before_after_available":false}},
+    {"id":"sat-worldview3","type":"Satellite","name":"WorldView-3","properties":{"matched":true}},
+    {"id":"org-vantor","type":"Organization","name":"Vantor (formerly Maxar Intelligence)","properties":{"matched":true}},
+    {"id":"co-kp","type":"Country","name":"조선민주주의인민공화국","properties":{"matched":true}}
+  ],
+  "relations": [
+    {"subject":"temp-evt-2003","predicate":"observedBy","object":"sat-worldview3"},
+    {"subject":"temp-evt-2003","predicate":"analyzedBy","object":"org-vantor"},
+    {"subject":"temp-evt-2003","predicate":"manifests","object":"phen-naval"},
+    {"subject":"temp-evt-2003","predicate":"inDomain","object":"dom-defense"},
+    {"subject":"temp-evt-2003","predicate":"inCountry","object":"co-kp"}
+  ]
+}

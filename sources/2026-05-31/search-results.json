@@ -1,0 +1,37 @@
+{
+  "date": "2026-05-31",
+  "collected_at": "2026-05-31T08:00:00Z",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 22,
+  "total_results": 168,
+  "expanded_keywords": [
+    "Kilauea Ep48", "Bismarck Sea volcano", "Canada wildfire Manitoba", "Mayon volcano",
+    "Typhoon Jangmi Domeng", "Antelope Reef", "Kharg Island oil spill", "Sentinel-1D",
+    "Bellingcat Lebanon", "DPRK destroyer", "China Hami ICBM", "El Nino 2026 WMO",
+    "Kanlaon volcano", "Bezymianny", "Great Sitkin", "Shishaldin", "Norway House"
+  ],
+  "searches": [
+    {"method":"websearch","engine":"built-in","keyword":"satellite imagery wildfire May 2026","language":"en","timestamp":"2026-05-31T08:00:10Z","result_count":9},
+    {"method":"websearch","engine":"built-in","keyword":"satellite imagery flood typhoon May 2026","language":"en","timestamp":"2026-05-31T08:00:11Z","result_count":10},
+    {"method":"websearch","engine":"built-in","keyword":"satellite imagery volcano eruption May 2026","language":"en","timestamp":"2026-05-31T08:00:12Z","result_count":10},
+    {"method":"websearch","engine":"built-in","keyword":"NASA Earth Observatory image of the day May 2026","language":"en","timestamp":"2026-05-31T08:00:13Z","result_count":10},
+    {"method":"websearch","engine":"built-in","keyword":"Copernicus EMS activation Sentinel May 2026","language":"en","timestamp":"2026-05-31T08:00:14Z","result_count":10},
+    {"method":"websearch","engine":"built-in","keyword":"satellite imagery deforestation mining oil spill May 2026","language":"en","timestamp":"2026-05-31T08:00:15Z","result_count":10},
+    {"method":"websearch","engine":"built-in","keyword":"satellite imagery military buildup defense May 2026","language":"en","timestamp":"2026-05-31T08:00:16Z","result_count":9},
+    {"method":"websearch","engine":"built-in","keyword":"Sentinel-5P TROPOMI methane CO2 plume May 2026","language":"en","timestamp":"2026-05-31T08:00:17Z","result_count":10},
+    {"method":"websearch","engine":"built-in","keyword":"위성영상 산불 홍수 태풍 2026년 5월","language":"ko","timestamp":"2026-05-31T08:00:18Z","result_count":10},
+    {"method":"websearch","engine":"built-in","keyword":"위성영상 북한 군사 한반도 KOMPSAT 2026","language":"ko","timestamp":"2026-05-31T08:00:19Z","result_count":9},
+    {"method":"websearch","engine":"built-in","keyword":"Kilauea volcano eruption update May 31 2026","language":"en","timestamp":"2026-05-31T08:01:01Z","result_count":10},
+    {"method":"websearch","engine":"built-in","keyword":"Bismarck Sea underwater volcano eruption update pumice island May 2026","language":"en","timestamp":"2026-05-31T08:01:02Z","result_count":9},
+    {"method":"websearch","engine":"built-in","keyword":"Canada wildfire Manitoba evacuations smoke May 31 2026","language":"en","timestamp":"2026-05-31T08:01:03Z","result_count":8},
+    {"method":"websearch","engine":"built-in","keyword":"Mayon volcano eruption Philippines update May 2026","language":"en","timestamp":"2026-05-31T08:01:04Z","result_count":9},
+    {"method":"websearch","engine":"built-in","keyword":"China Hami ICBM silo satellite images 80 launch pads 2026","language":"en","timestamp":"2026-05-31T08:01:05Z","result_count":5},
+    {"method":"websearch","engine":"built-in","keyword":"Tropical Storm Jangmi Domeng Philippines May 2026","language":"en","timestamp":"2026-05-31T08:01:06Z","result_count":10},
+    {"method":"websearch","engine":"built-in","keyword":"Japan military space buildup satellite constellation 2026","language":"en","timestamp":"2026-05-31T08:01:07Z","result_count":10},
+    {"method":"websearch","engine":"built-in","keyword":"Antelope Reef South China Sea military island construction satellite 2026","language":"en","timestamp":"2026-05-31T08:01:08Z","result_count":9},
+    {"method":"websearch","engine":"built-in","keyword":"North Korea destroyer satellite imagery west coast May 31 2026","language":"en","timestamp":"2026-05-31T08:02:01Z","result_count":9},
+    {"method":"websearch","engine":"built-in","keyword":"Kanlaon volcano eruption update Philippines May 30 31 2026","language":"en","timestamp":"2026-05-31T08:02:02Z","result_count":10},
+    {"method":"websearch","engine":"built-in","keyword":"Bellingcat satellite imagery Lebanon destruction May 2026","language":"en","timestamp":"2026-05-31T08:02:04Z","result_count":9},
+    {"method":"websearch","engine":"built-in","keyword":"El Nino 2026 WMO forecast satellite SST update May 2026","language":"en","timestamp":"2026-05-31T08:02:06Z","result_count":9}
+  ]
+}
