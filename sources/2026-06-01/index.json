@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-01",
+  "total": 20,
+  "new": 2,
+  "reported": 7,
+  "update": 11,
+  "items": [
+    {"id":"src-001","title":"Kilauea Ep48 precursory overflows began — ADVISORY→WATCH/ORANGE, record episode imminent","url":"https://www.usgs.gov/volcanoes/kilauea/volcano-updates","tag":"update","related_item":"evt-202","entity_count":5},
+    {"id":"src-002","title":"Canada wildfires 65 active, 18,935 ha burned — 33,400+ evacuated, smoke unhealthy AQI in ND/MT/MN/SD","url":"https://www.nesdis.noaa.gov/news/noaa-satellites-monitor-canadian-wildfires-and-smoke","tag":"update","related_item":"evt-1101","entity_count":6},
+    {"id":"src-003","title":"Bismarck Sea submarine volcano day 24+ — pumice 70km², growing platform, possible new island","url":"https://science.nasa.gov/earth/earth-observatory/new-eruption-in-the-bismarck-sea/","tag":"update","related_item":"evt-701","entity_count":5},
+    {"id":"src-004","title":"Typhoon Domeng (Jangmi) exiting PAR June 1 — 120kph, enhancing habagat, 832,986 affected","url":"https://www.rappler.com/philippines/weather/typhoon-domeng-southwest-monsoon-update-pagasa-forecast-june-1-2026-5am/","tag":"update","related_item":"temp-evt-2001","entity_count":5},
+    {"id":"src-005","title":"Mayon Day 146+ AL3 — 287,000+ displaced, 286-351 rockfalls/day, lava 3.8km Basud Gully, rainy season lahar","url":"https://volcano.si.edu/volcano.cfm?vn=273030","tag":"update","related_item":"evt-082","entity_count":4},
+    {"id":"src-006","title":"El Niño 82-98% — NOAA CPC 96% through winter 2026-27, 1-in-3 Super El Niño chance","url":"https://wmo.int/media/news/wmo-likelihood-increases-of-el-nino","tag":"update","related_item":"temp-evt-1902","entity_count":4},
+    {"id":"src-007","title":"Bezymianny Aviation Color Code lowered to Yellow on May 21 — lava effusion continuing","url":"https://volcano.si.edu/volcano.cfm?vn=300250","tag":"update","related_item":"evt-801","entity_count":3},
+    {"id":"src-008","title":"Kanlaon AL2 — 6-31 daily VQs, SO2 410-4,081 t/d, ash 200-700m, 4km PDZ","url":"https://volcano.si.edu/volcano.cfm?vn=272020","tag":"update","related_item":"temp-evt-1401","entity_count":3},
+    {"id":"src-009","title":"Great Sitkin WATCH/ORANGE — slow lava dome eruption continues, elevated surface temps","url":"https://avo.alaska.edu/volcano/great-sitkin","tag":"update","related_item":"evt-203","entity_count":3},
+    {"id":"src-010","title":"Shishaldin ADVISORY/YELLOW — ongoing unrest, seismicity, SO2 NW","url":"https://avo.alaska.edu/volcano/shishaldin","tag":"update","related_item":"evt-204","entity_count":3},
+    {"id":"src-011","title":"FireSat first operational deployment mid-2026 — Earth Fire Alliance/Muon Space, twice-daily global wildfire observation","url":"https://www.earthfirealliance.org/press-release/firesat-first-wildfire-images","tag":"new","related_item":null,"entity_count":4},
+    {"id":"src-012","title":"DPRK 최현함 서해 기동 — 6월 중순 공식 배치 예정, 시험 운항","url":"https://www.newsis.com/view/NISX20260529_0003648376","tag":"update","related_item":"temp-evt-2003","entity_count":4},
+    {"id":"src-013","title":"Antelope Reef 1,490ac — CSIS AMTI, approaching Mischief Reef, 2700m runway design","url":"https://amti.csis.org/antelope-reef-could-now-be-the-largest-island-in-the-south-china-sea/","tag":"reported","related_item":"evt-092","entity_count":4},
+    {"id":"src-014","title":"Kharg Island oil spill 45km² — Sentinel-1/2/3, tanker discharge vs pipeline rupture","url":"https://www.thenationalnews.com/business/energy/2026/05/13/oil-spill-near-irans-kharg-island-raises-questions-over-its-source/","tag":"reported","related_item":"ent-evt-kharg","entity_count":5},
+    {"id":"src-015","title":"Bellingcat Lebanon 46+ towns — PlanetScope interactive map before/after","url":"https://www.bellingcat.com/news/2026/05/14/satellite-imagery-shows-ongoing-demolitions-across-southern-lebanon/","tag":"reported","related_item":"evt-802","entity_count":4},
+    {"id":"src-016","title":"Hami ICBM silo 80+ pads — WorldView-3+PlanetScope, Reuters/NBC","url":"https://www.techtimes.com/articles/317398/20260529/china-builds-80-pad-nuclear-defense-network-satellite-images-reveal-second-strike-hardening.htm","tag":"reported","related_item":"temp-evt-2002","entity_count":4},
+    {"id":"src-017","title":"DPRK destroyer fleet analysis — 5,000t class, 3rd at Nampo, combat readiness questions","url":"https://www.dailynk.com/english/satellite-analysis-north-koreas-5000-ton-destroyer-fleet-in-construction-but-short-on-combat-readiness/","tag":"new","related_item":null,"entity_count":5},
+    {"id":"src-018","title":"Dukono AL2 — 52/day eruptions continuing, 3 killed, 4km exclusion","url":"https://www.cnn.com/2026/05/08/asia/indonesia-mount-dukono-eruption-intl-hnk","tag":"reported","related_item":"evt-128","entity_count":3},
+    {"id":"src-019","title":"Canada wildfire season outlook — above-normal temps June-August, BC highest risk","url":"https://www.canada.ca/en/public-safety-canada/news/2026/05/the-government-of-canada-updates-on-the-2026-wildfire-season-preparedness-and-outlook.html","tag":"reported","related_item":"evt-1101","entity_count":3},
+    {"id":"src-020","title":"Super El Niño 2026 trending toward record-breaking intensity","url":"https://www.severe-weather.eu/long-range-2/super-el-nino-2026-record-breaking-intensity-forecast-weather-impacts-united-states-canada-europe-fa/","tag":"reported","related_item":"temp-evt-1902","entity_count":3}
+  ]
+}

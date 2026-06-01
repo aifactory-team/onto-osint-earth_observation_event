@@ -1,0 +1,149 @@
+{
+  "date": "2026-06-01",
+  "entities": [
+    {
+      "temp_id": null,
+      "matched_id": "evt-202",
+      "type": "Event",
+      "name": "Kilauea Ep48 분출 예보 — 전조 오버플로우 시작, WATCH/ORANGE",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "US", "lat": 19.421, "lon": -155.287, "severity": "high", "observation_date": "2026-06-01", "before_after_available": true},
+      "source_ids": ["src-001"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-1101",
+      "type": "Event",
+      "name": "캐나다 산불 65건 — 33,400+ 대피, 연기 미국 AQI 악화",
+      "properties": {"phenomenon": "wildfire", "domain": "Disaster", "country": "CA", "lat": 53.97, "lon": -97.84, "severity": "high", "observation_date": "2026-06-01"},
+      "source_ids": ["src-002", "src-019"],
+      "mention_count": 3
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-701",
+      "type": "Event",
+      "name": "Bismarck Sea 해저 화산 day 24+",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "PG", "lat": -3.03, "lon": 147.78, "severity": "high", "observation_date": "2026-06-01"},
+      "source_ids": ["src-003"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": null,
+      "matched_id": "temp-evt-2001",
+      "type": "Event",
+      "name": "태풍 Domeng(Jangmi) PAR 이탈 — 832,986명 피해",
+      "properties": {"phenomenon": "typhoon", "domain": "Disaster", "country": "PH", "lat": 16.5, "lon": 130.0, "severity": "high", "observation_date": "2026-06-01"},
+      "source_ids": ["src-004"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-082",
+      "type": "Event",
+      "name": "Mayon Day 146+ AL3 — 287,000+ 이재민",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "PH", "lat": 13.257, "lon": 123.685, "severity": "high", "observation_date": "2026-06-01"},
+      "source_ids": ["src-005"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": null,
+      "matched_id": "temp-evt-1902",
+      "type": "Event",
+      "name": "El Niño 2026 — 96% 확률, Super El Niño 1/3",
+      "properties": {"phenomenon": "current_anomaly", "domain": "AgricultureMaritime", "country": "INTL", "lat": 0.0, "lon": -170.0, "severity": "high", "observation_date": "2026-06-01"},
+      "source_ids": ["src-006", "src-020"],
+      "mention_count": 3
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-801",
+      "type": "Event",
+      "name": "Bezymianny — Yellow 하향, 활동 감소",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "RU", "lat": 55.97, "lon": 160.59, "severity": "medium", "observation_date": "2026-06-01"},
+      "source_ids": ["src-007"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "temp-evt-1401",
+      "type": "Event",
+      "name": "Kanlaon AL2 — SO2 410-4,081 t/d",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "PH", "lat": 10.41, "lon": 123.13, "severity": "medium", "observation_date": "2026-06-01"},
+      "source_ids": ["src-008"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-203",
+      "type": "Event",
+      "name": "Great Sitkin WATCH — 용암 돔 지속",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "US", "lat": 52.08, "lon": -176.13, "severity": "medium", "observation_date": "2026-06-01"},
+      "source_ids": ["src-009"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-204",
+      "type": "Event",
+      "name": "Shishaldin ADVISORY — SO2 지속",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "US", "lat": 54.76, "lon": -163.97, "severity": "low", "observation_date": "2026-06-01"},
+      "source_ids": ["src-010"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-evt-2101",
+      "matched_id": null,
+      "type": "Event",
+      "name": "FireSat 첫 운용 위성 배치 — Earth Fire Alliance/Muon Space",
+      "properties": {"phenomenon": "satellite_operations", "domain": "Disaster", "country": "US", "lat": 34.0, "lon": -118.0, "severity": "low", "observation_date": "2026-06-01"},
+      "source_ids": ["src-011"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "temp-evt-2003",
+      "type": "Event",
+      "name": "DPRK 최현급 구축함 서해 기동 — 6월 중순 배치",
+      "properties": {"phenomenon": "naval_movement", "domain": "Defense", "country": "KP", "lat": 38.7, "lon": 125.0, "severity": "medium", "observation_date": "2026-06-01"},
+      "source_ids": ["src-012"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-evt-2102",
+      "matched_id": null,
+      "type": "Event",
+      "name": "DPRK 구축함 프로그램 종합 분석 — 2번함 건조 사고",
+      "properties": {"phenomenon": "naval_movement", "domain": "Defense", "country": "KP", "lat": 41.78, "lon": 129.78, "severity": "medium", "observation_date": "2026-06-01", "before_after_available": true},
+      "source_ids": ["src-017"],
+      "mention_count": 1
+    }
+  ],
+  "relations": [
+    {"subject": "evt-202", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-001"], "confidence": 0.90},
+    {"subject": "evt-202", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-001"], "confidence": 0.90},
+    {"subject": "evt-202", "predicate": "analyzedBy", "object": "org-usgs", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-goes18", "source_ids": ["src-002"], "confidence": 0.95},
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-002"], "confidence": 0.95},
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-sentinel5p", "source_ids": ["src-002"], "confidence": 0.90},
+    {"subject": "evt-1101", "predicate": "analyzedBy", "object": "org-noaa", "source_ids": ["src-002"], "confidence": 0.95},
+    {"subject": "evt-701", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "evt-701", "predicate": "observedBy", "object": "sat-modis-terra", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "evt-701", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "evt-701", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "evt-701", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-003"], "confidence": 0.90},
+    {"subject": "evt-701", "predicate": "analyzedBy", "object": "org-nasa", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "temp-evt-2001", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-004"], "confidence": 0.95},
+    {"subject": "evt-082", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-005"], "confidence": 0.90},
+    {"subject": "evt-082", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-005"], "confidence": 0.85},
+    {"subject": "evt-082", "predicate": "analyzedBy", "object": "org-phivolcs", "source_ids": ["src-005"], "confidence": 0.95},
+    {"subject": "temp-evt-2102", "predicate": "observedBy", "object": "sat-worldview3", "source_ids": ["src-017"], "confidence": 0.85},
+    {"subject": "temp-evt-2102", "predicate": "inCountry", "object": "co-kp", "source_ids": ["src-017"], "confidence": 0.95}
+  ],
+  "stats": {
+    "total_entities": 13,
+    "new_entities": 2,
+    "matched_entities": 11,
+    "total_relations": 19
+  }
+}

@@ -2390,3 +2390,52 @@ config 한도 내 — 새 클래스 0건 (max_new_classes_per_day=3), 새 관계
 - **다중 위성 교차검증:** 4건 (신규 1건: Hami). Bismarck Sea가 Sentinel-2 추가로 5위성으로 확장.
 - **한반도 GeoFocus 5건:** DPRK 구축함 ★신규 + 4건 추적 지속.
 - **카테고리 커버리지:** 자연재해 11건 ✓, 인간활동 1건 ✓, 기후·환경 0건(전일 보고 유지), 농업·해양 1건 ✓(El Niño 업데이트), 국방 3건 ✓, 인도주의 1건 ✓. 기후·환경 금일 신규 없음 명시.
+
+---
+
+## 2026-06-01 추론 결과
+
+### multi_satellite_confirmation — 2건 (유지)
+
+- **추론 #1:** evt-701 (Bismarck Sea) — VIIRS + MODIS + Landsat 9 + Himawari-9 + Sentinel-2A (5위성 3기관) → multiSatBoost +0.20 [0.97, 확정].
+- **추론 #2:** evt-1101 (Canada wildfire) — GOES-18 + VIIRS + TROPOMI + OMPS + EarthCare (5위성 3기관) → multiSatBoost +0.20 [0.95, 확정].
+
+### official_source_trust — 4건
+
+- **추론 #3:** evt-202 (Kilauea) — USGS HVO WATCH/ORANGE → officialBoost +0.15 [0.95, 확정].
+- **추론 #4:** evt-701 (Bismarck Sea) — NASA EO 공식 기사 → officialBoost +0.15 [0.95, 확정].
+- **추론 #5:** evt-082 (Mayon) — PHIVOLCS AL3 공식 → officialBoost +0.15 [0.92, 확정].
+- **추론 #6:** evt-801 (Bezymianny) — KVERT 공식 Yellow 하향 → officialBoost +0.15 [0.85, 확정].
+
+### disaster_severity_priority — 3건
+
+- **추론 #7:** evt-1101 (Canada wildfire) — severity high (2 deaths, 33,400+ evacuated, 65 fires) → priorityBoost +0.20 [0.95, 확정].
+- **추론 #8:** evt-082 (Mayon) — severity high (287,000+ displaced, 146일+ 연속) → priorityBoost +0.20 [0.92, 확정].
+- **추론 #9:** temp-evt-2001 (Domeng) — severity high (832,986 affected) → priorityBoost +0.20 [0.88, 확정].
+
+### korea_geo_focus — 2건
+
+- **추론 #10:** temp-evt-2003 (DPRK 구축함 서해) — KP iso_code → koreaBoost +0.10 [0.90, 확정].
+- **추론 #11:** temp-evt-2102 (DPRK 구축함 종합) — KP iso_code → koreaBoost +0.10 [0.90, 확정].
+
+### sensor_capability_match_hires — 1건
+
+- **추론 #12:** temp-evt-2003 (DPRK 구축함) — WorldView-3 0.31m + naval_movement → hiResBoost +0.15 [0.85, 확정].
+
+### temporal_progression — 1건
+
+- **추론 #13:** temp-evt-2102 (DPRK 구축함 2번함 사고) → partOfSeries temp-evt-2003 (같은 구축함 프로그램) [confidence 0.75, 잠정].
+
+### cascading_disaster (잠정) — 1건
+
+- **추론 #14:** temp-evt-2001 (Domeng habagat) + evt-082 (Mayon ashfall) → Mayon ashfall 지역에 habagat 증강 강우 → 산사태/홍수 잠정 triggeredBy. Catanduanes/Albay/Camarines Sur 832,986명 피해. [0.65, 잠정].
+
+---
+
+### 일일 요약
+
+- **신규 2건:** FireSat 첫 운용 배치(US, SatOps), DPRK 구축함 종합 분석(KP, 2번함 사고).
+- **업데이트 11건:** Kilauea Ep48 WATCH/ORANGE(US), Canada 65건 AQI 악화(CA), Bismarck Sea day24+(PG), Domeng PAR 이탈 832K(PH), Mayon Day146+ 287K+(PH), El Niño 96% Super 1/3(INTL), Bezymianny Yellow(RU), Kanlaon AL2(PH), Great Sitkin WATCH(US), Shishaldin ADVISORY(US), DPRK 구축함 6월 배치(KP).
+- **다중 위성 교차검증:** 4건 유지 (Bismarck Sea 5위성, Canada 5위성, Kharg Island 3위성, Hami 2위성).
+- **한반도 GeoFocus 5건:** DPRK 구축함 6월 배치 확인 + 2번함 사고 + 3건 추적 지속.
+- **카테고리 커버리지:** 자연재해 10건 ✓, 인간활동 0건(추적 지속), 기후·환경 0건(전일 보고 유지), 농업·해양 1건 ✓(El Niño), 국방 2건 ✓, 인도주의 0건(교차 도메인으로 커버). 인간활동·기후·환경 금일 신규 없음 명시.

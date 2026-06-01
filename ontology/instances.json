@@ -1,7 +1,7 @@
 {
   "version": "1.2.0",
   "description": "알려진 엔티티 인스턴스 — 파이프라인 실행 시 자동으로 추가/업데이트된다. 도메인: 위성영상 관측 이벤트.",
-  "last_updated": "2026-05-30",
+  "last_updated": "2026-06-01",
   "entities": [
     { "id": "dom-disaster", "type": "Domain", "name": "Disaster", "properties": { "label": "자연재해" }, "first_seen": "2026-04-30", "last_seen": "2026-04-30", "mention_count": 12 },
     { "id": "dom-human", "type": "Domain", "name": "HumanActivity", "properties": { "label": "인간활동" }, "first_seen": "2026-04-30", "last_seen": "2026-04-30", "mention_count": 2 },
@@ -436,7 +436,10 @@
     { "id": "ent-loc-073", "type": "Location", "name": "Swan Hills, Alberta, Canada", "properties": { "country": "CA", "region": "Alberta", "admin_level": "district", "lat": 54.67, "lon": -115.4, "notes": "2026-05 대규모 산불 — 33,000+ 대피, 연기 대서양 횡단" }, "first_seen": "2026-05-28", "last_seen": "2026-05-28", "mention_count": 1 },
     { "id": "ent-loc-074", "type": "Location", "name": "Kharg Island, Persian Gulf, Iran", "properties": { "country": "IR", "region": "Persian Gulf", "admin_level": "island", "lat": 29.23, "lon": 50.32, "notes": "원유 유출 45km² 지속 — Sentinel-1/2/3 다중위성 관측" }, "first_seen": "2026-05-28", "last_seen": "2026-05-28", "mention_count": 1 },
 
-    { "id": "co-ca", "type": "Country", "name": "캐나다", "properties": { "iso_code": "CA", "region": "북미" }, "first_seen": "2026-05-28", "last_seen": "2026-05-28", "mention_count": 1 }
+    { "id": "co-ca", "type": "Country", "name": "캐나다", "properties": { "iso_code": "CA", "region": "북미" }, "first_seen": "2026-05-28", "last_seen": "2026-05-28", "mention_count": 1 },
+
+    { "id": "temp-evt-2101", "type": "Event", "name": "FireSat 첫 운용 위성 배치 (Earth Fire Alliance / Muon Space)", "properties": { "phenomenon": "satellite_launch", "domain": "SatOps", "country": "US", "lat": 34.6, "lon": -120.6, "observation_date": "2026-06-01", "severity": "medium", "satellites_used": [], "sensors_used": [], "analyst_org": "Earth Fire Alliance", "confidence": 0.80, "notes": "FireSat 산불 관측 위성 배치. 초기 운용 mid-2026 예정. Muon Space 제작." }, "first_seen": "2026-06-01", "last_seen": "2026-06-01", "mention_count": 1 },
+    { "id": "temp-evt-2102", "type": "Event", "name": "DPRK 구축함 2번함 건조 사고 종합 분석 (Chongjin)", "properties": { "phenomenon": "military_buildup", "domain": "Defense", "country": "KP", "lat": 41.8, "lon": 129.8, "observation_date": "2026-06-01", "severity": "medium", "satellites_used": ["WorldView-3"], "sensors_used": ["optical_pan"], "analyst_org": "Daily NK", "confidence": 0.75, "notes": "2번함 건조 사고 보도. Chongjin 조선소. koreaBoost +0.10. temporal_progression → temp-evt-2003." }, "first_seen": "2026-06-01", "last_seen": "2026-06-01", "mention_count": 1 }
   ],
-  "total_count": 367
+  "total_count": 369
 }

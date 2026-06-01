@@ -1,0 +1,37 @@
+{
+  "date": "2026-06-01",
+  "new_triples": [
+    {"subject": "temp-evt-2101", "predicate": "manifests", "object": "phen-satops", "source_id": "src-011", "date": "2026-06-01", "confidence": 0.80, "type": "explicit"},
+    {"subject": "temp-evt-2101", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-011", "date": "2026-06-01", "confidence": 0.80, "type": "explicit"},
+    {"subject": "temp-evt-2102", "predicate": "observedBy", "object": "sat-worldview3", "source_id": "src-017", "date": "2026-06-01", "confidence": 0.85, "type": "explicit"},
+    {"subject": "temp-evt-2102", "predicate": "manifests", "object": "phen-naval", "source_id": "src-017", "date": "2026-06-01", "confidence": 0.85, "type": "explicit"},
+    {"subject": "temp-evt-2102", "predicate": "inCountry", "object": "co-kp", "source_id": "src-017", "date": "2026-06-01", "confidence": 0.95, "type": "explicit"}
+  ],
+  "updated_triples": [
+    {"subject": "evt-202", "predicate": "analyzedBy", "object": "org-usgs", "source_id": "src-001", "date": "2026-06-01", "confidence": 0.95, "type": "explicit", "note": "Alert ADVISORY→WATCH/ORANGE, precursory overflows"},
+    {"subject": "evt-1101", "predicate": "analyzedBy", "object": "org-noaa", "source_id": "src-002", "date": "2026-06-01", "confidence": 0.95, "type": "explicit", "note": "65 active fires, AQI unhealthy US states"},
+    {"subject": "evt-701", "predicate": "analyzedBy", "object": "org-nasa", "source_id": "src-003", "date": "2026-06-01", "confidence": 0.95, "type": "explicit", "note": "Day 24+, pumice 70km²"},
+    {"subject": "temp-evt-2001", "predicate": "observedBy", "object": "sat-himawari9", "source_id": "src-004", "date": "2026-06-01", "confidence": 0.95, "type": "explicit", "note": "Exit PAR June 1, 832,986 affected"},
+    {"subject": "evt-082", "predicate": "analyzedBy", "object": "org-phivolcs", "source_id": "src-005", "date": "2026-06-01", "confidence": 0.95, "type": "explicit", "note": "Day 146+, 287K+, lava 3.8km"},
+    {"subject": "temp-evt-1902", "predicate": "inDomain", "object": "dom-agri-marine", "source_id": "src-006", "date": "2026-06-01", "confidence": 0.90, "type": "explicit", "note": "96% through winter, Super El Niño 1/3"},
+    {"subject": "evt-801", "predicate": "analyzedBy", "object": "org-kvert", "source_id": "src-007", "date": "2026-06-01", "confidence": 0.85, "type": "explicit", "note": "Aviation Code Orange→Yellow"},
+    {"subject": "temp-evt-2003", "predicate": "observedBy", "object": "sat-worldview3", "source_id": "src-012", "date": "2026-06-01", "confidence": 0.85, "type": "explicit", "note": "6월 중순 공식 배치"}
+  ],
+  "inferred_triples": [
+    {"subject": "evt-701", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.97, "type": "inferred", "note": "5위성 3기관 유지"},
+    {"subject": "evt-1101", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.95, "type": "inferred", "note": "5위성 3기관 유지"},
+    {"subject": "evt-202", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred", "note": "USGS HVO official"},
+    {"subject": "evt-1101", "predicate": "priorityBoost", "object": "+0.20", "rule": "disaster_severity_priority", "confidence": 0.95, "type": "inferred", "note": "2 deaths, 33,400+ evacuated"},
+    {"subject": "evt-082", "predicate": "priorityBoost", "object": "+0.20", "rule": "disaster_severity_priority", "confidence": 0.92, "type": "inferred", "note": "287,000+ displaced"},
+    {"subject": "temp-evt-2001", "predicate": "priorityBoost", "object": "+0.20", "rule": "disaster_severity_priority", "confidence": 0.88, "type": "inferred", "note": "832,986 affected"},
+    {"subject": "temp-evt-2003", "predicate": "koreaBoost", "object": "+0.10", "rule": "korea_geo_focus", "confidence": 0.90, "type": "inferred", "note": "KP country code"},
+    {"subject": "temp-evt-2003", "predicate": "hiResBoost", "object": "+0.15", "rule": "sensor_capability_match_hires", "confidence": 0.85, "type": "inferred", "note": "WorldView-3 0.31m"},
+    {"subject": "temp-evt-2102", "predicate": "partOfSeries", "object": "temp-evt-2003", "rule": "temporal_progression", "confidence": 0.75, "type": "inferred", "note": "Same program, different ships"},
+    {"subject": "temp-evt-2102", "predicate": "koreaBoost", "object": "+0.10", "rule": "korea_geo_focus", "confidence": 0.90, "type": "inferred", "note": "KP country code"}
+  ],
+  "stats": {
+    "new_nodes": 2,
+    "new_edges": 5,
+    "inferred_edges": 10
+  }
+}
