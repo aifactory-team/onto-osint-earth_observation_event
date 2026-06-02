@@ -1,15 +1,15 @@
 {
-  "version": "1.14.0",
+  "version": "1.15.0",
   "description": "위성영상 관측 이벤트 누적 지식그래프 — 첫 실행(2026-04-30) 이후 매일 신규/추론 트리플 병합",
-  "last_updated": "2026-06-01",
-  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-19", "2026-05-20", "2026-05-21", "2026-05-22", "2026-05-23", "2026-05-24", "2026-05-26", "2026-05-27", "2026-05-28", "2026-05-29", "2026-05-30", "2026-05-31", "2026-06-01"],
-  "triples": "ontology/kg/2026-04-30.json ~ ontology/kg/2026-06-01.json (new_triples + updated_triples + inferred_triples)",
+  "last_updated": "2026-06-02",
+  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-19", "2026-05-20", "2026-05-21", "2026-05-22", "2026-05-23", "2026-05-24", "2026-05-26", "2026-05-27", "2026-05-28", "2026-05-29", "2026-05-30", "2026-05-31", "2026-06-01", "2026-06-02"],
+  "triples": "ontology/kg/2026-04-30.json ~ ontology/kg/2026-06-02.json (new_triples + updated_triples + inferred_triples)",
   "stats": {
-    "total_explicit_triples": 1084,
-    "total_inferred_triples": 500,
-    "total_unique_subjects": 231,
+    "total_explicit_triples": 1097,
+    "total_inferred_triples": 510,
+    "total_unique_subjects": 236,
     "total_unique_predicates": 21,
-    "total_unique_objects": 278
+    "total_unique_objects": 283
   },
-  "note": "2026-06-01 병합 완료 — 신규 5 explicit + 8 updated + 10 inferred 트리플(일별 KG: 20 nodes, 23 triples). 신규 이벤트 2건: (1) FireSat 첫 운용 위성 배치(temp-evt-2101, Earth Fire Alliance/Muon Space, mid-2026, 산불 관측 역량 확대), (2) DPRK 구축함 종합 분석(temp-evt-2102, 2번함 건조 사고, Chongjin, Daily NK). 핵심 업데이트 11건: Kilauea Ep48 전조 오버플로우 시작 WATCH/ORANGE(evt-202), Canada 65건 활성 18,935ha AQI 미국 악화(evt-1101), Bismarck Sea day24+ 신규 섬 가능(evt-701), 태풍 Domeng PAR 이탈 832,986명(temp-evt-2001), Mayon Day146+ 287K+ 라하르 위험(evt-082), El Niño 96% Super 1/3(temp-evt-1902), Bezymianny Yellow 하향(evt-801), Kanlaon AL2 SO2(temp-evt-1401), Great Sitkin WATCH(evt-203), Shishaldin ADVISORY(evt-204), DPRK 구축함 6월 배치(temp-evt-2003). 다중 위성 교차검증 4건 유지: evt-701(5위성), evt-1101(5위성), ent-evt-kharg(3위성), temp-evt-2002(2위성). official_source_trust 4건. priorityBoost 3건(Canada 33K+, Mayon 287K+, Domeng 832K). koreaBoost 2건(DPRK 구축함). temporal_progression 1건(DPRK 구축함 프로그램). 누적 KG 1584 트리플."
+  "note": "2026-06-02 병합 완료 — 신규 10 explicit + 3 updated + 10 inferred 트리플(일별 KG: 25 nodes, 23 triples). 신규 이벤트 3건: (1) Gaza UNOSAT Sentinel-1 피해 평가 197,000건 80%(temp-evt-2201, Sentinel-1A SAR, UNOSAT, PS, dom-humanitarian, sarBoost+officialBoost+baCredibility), (2) First El Niño 대기 응답(temp-evt-2202, 미국/캐나다, satellite_unverified), (3) Ecuador Sangay/Reventador 화산(temp-evt-2203, GOES-19, EC 신규국). 핵심 업데이트 11건: Kilauea Ep48 분수분출 4:40am HST 200m record(evt-202), 태풍 Jangmi 오키나와 400+ 항공편(temp-evt-2001, JP 추가), El Niño CPC Super '가장 유력' ECMWF 100% Kelvin +8°C(temp-evt-1902), 캐나다 65건 33,400+(evt-1101), Bismarck Sea day25+(evt-701), Mayon Day147+ 287K+(evt-082), Great Sitkin WATCH valley(evt-203), Shishaldin ADVISORY SO2 SW(evt-204), Kanlaon AL2(temp-evt-1401). 다중 위성 교차검증 4건 유지. official_source_trust 3건(USGS HVO, NOAA CPC, UNOSAT). temporal_progression 1건(Kilauea Ep48 partOfSeries Ep47). priorityBoost 2건(Kilauea, Jangmi). 신규 국가 1건(EC). 신규 Location 1건(오키나와 JP). 누적 KG 1607 트리플."
 }

@@ -2439,3 +2439,49 @@ config 한도 내 — 새 클래스 0건 (max_new_classes_per_day=3), 새 관계
 - **다중 위성 교차검증:** 4건 유지 (Bismarck Sea 5위성, Canada 5위성, Kharg Island 3위성, Hami 2위성).
 - **한반도 GeoFocus 5건:** DPRK 구축함 6월 배치 확인 + 2번함 사고 + 3건 추적 지속.
 - **카테고리 커버리지:** 자연재해 10건 ✓, 인간활동 0건(추적 지속), 기후·환경 0건(전일 보고 유지), 농업·해양 1건 ✓(El Niño), 국방 2건 ✓, 인도주의 0건(교차 도메인으로 커버). 인간활동·기후·환경 금일 신규 없음 명시.
+
+## 2026-06-02 추론 결과
+
+### multi_satellite_confirmation (다중 위성 교차검증) — 4건 유지
+
+- **기존 #1:** evt-701 (Bismarck Sea) — VIIRS + MODIS + Landsat 9 + Himawari-9 + Sentinel-2A → multiSatBoost +0.20 [0.97, 확정]. Day 25+ 지속.
+- **기존 #2:** evt-1101 (Canada wildfire) — GOES-18 + VIIRS + TROPOMI + OMPS + EarthCare → multiSatBoost +0.20 [0.95, 확정]. 65건 지속.
+- **기존 #3:** ent-evt-kharg (Kharg Island) — Sentinel-1 + Sentinel-2 + Sentinel-3 → multiSatBoost +0.20 [0.90, 확정]. 슬릭 축소 추세.
+- **기존 #4:** temp-evt-2002 (Hami ICBM) — WorldView-3 + PlanetScope → multiSatBoost +0.20 [0.90, 확정]. 변동 없음.
+
+### temporal_progression — 1건
+
+- **추론 #1:** evt-202 (Kilauea Ep48 분수분출) partOfSeries Ep47 — 같은 Halemaʻumaʻu 위치, 같은 volcanic_eruption 현상. Ep48 4:40am HST June 1 개시, Ep47 5/15 9h 분출→종료. [0.95, 확정].
+
+### official_source_trust — 3건
+
+- **추론 #2:** evt-202 (Kilauea) — analyzedBy USGS HVO (space_agency) → officialBoost +0.15. [0.98, 확정].
+- **추론 #3:** temp-evt-1902 (El Niño) — analyzedBy NOAA CPC (weather_agency) → officialBoost +0.15. CPC Super El Niño '단일 가장 유력'. [0.95, 확정].
+- **추론 #4:** temp-evt-2201 (Gaza) — analyzedBy UNOSAT (un_body) → officialBoost +0.15. Sentinel-1 SAR 197,000건. [0.90, 확정].
+
+### sensor_capability_match_sar — 1건
+
+- **추론 #5:** temp-evt-2201 (Gaza UNOSAT) — usesSensor C-band SAR (Sentinel-1) + SAR 변화탐지 → sarBoost +0.10. 구름/야간 무관 SAR 피해 평가. [0.92, 확정].
+
+### before_after_credibility — 1건
+
+- **추론 #6:** temp-evt-2201 (Gaza) — before_after_available true → baCredibilityBoost +0.10. Google 5/22 위성 업데이트 + Al Jazeera 2/25 영상. [0.90, 확정].
+
+### disaster_severity_priority — 2건
+
+- **추론 #7:** evt-202 (Kilauea Ep48) — inDomain dom-disaster + severity high → priorityBoost +0.20. 200m 분수, tephra 낙하, Hwy 11 영향. [0.95, 확정].
+- **추론 #8:** temp-evt-2001 (Jangmi 오키나와) — inDomain dom-disaster + severity high → priorityBoost +0.20. 162km/h, 400+ 항공편, 대피 권고. [0.88, 확정].
+
+### cascading_disaster — 1건 잠정
+
+- **추론 #9:** temp-evt-2001 (Jangmi 오키나와) → 산사태/홍수 잠정 triggeredBy. 300mm 강우 예상, JMA 산사태 경보. [0.60, 잠정].
+
+---
+
+### 일일 요약
+
+- **신규 3건:** Gaza UNOSAT 197,000건 위성 피해(PS, Humanitarian), First El Niño 대기 응답(INTL, Climate), Ecuador Sangay/Reventador 화산(EC, Disaster).
+- **업데이트 11건:** Kilauea Ep48 분수분출 개시 200m record(US), 태풍 Jangmi 오키나와 400+ 항공편(JP), El Niño CPC Super '가장 유력' ECMWF 100%(INTL), Canada 65건 33,400+(CA), Bismarck Sea day25+(PG), Mayon Day147+ 287K+(PH), Great Sitkin WATCH valley(US), Shishaldin ADVISORY SO2(US), Kanlaon AL2(PH).
+- **다중 위성 교차검증:** 4건 유지 (Bismarck Sea 5위성, Canada 5위성, Kharg Island 3위성, Hami 2위성).
+- **한반도 GeoFocus 5건:** 변동 없음 (DPRK 구축함 6월 배치, 2번함 사고, 압록강 교량, 두만강 교량, KOMPSAT-7).
+- **카테고리 커버리지:** 자연재해 11건 ✓, 인간활동 0건(추적 지속), 기후·환경 2건 ✓(El Niño 에스컬레이션 + 대기 응답), 농업·해양 0건(El Niño 교차), 국방 0건(추적 지속), 인도주의 1건 ✓(Gaza UNOSAT). 인간활동·농업·해양·국방 금일 신규 없음 명시.

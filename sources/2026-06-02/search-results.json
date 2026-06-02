@@ -1,0 +1,43 @@
+{
+  "date": "2026-06-02",
+  "collected_at": "2026-06-02T00:00:00Z",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 22,
+  "total_results": 198,
+  "expanded_keywords": [
+    "Kilauea episode 48", "Bismarck Sea pumice", "Mayon volcano", "Canada wildfire smoke",
+    "Typhoon Domeng Jangmi Okinawa", "El Nino Super El Nino 2026",
+    "Great Sitkin Shishaldin", "Kanlaon Dukono", "FireSat constellation",
+    "satellite imagery wildfire flood", "volcano eruption satellite",
+    "NASA Earth Observatory", "Copernicus EMS activation",
+    "satellite military buildup defense", "DPRK North Korea satellite",
+    "Sentinel deforestation methane", "Bellingcat Lebanon satellite",
+    "Kharg Island oil spill", "South China Sea Spratly",
+    "KOMPSAT 한반도", "Gaza satellite destruction",
+    "Sangay Reventador volcano ash"
+  ],
+  "searches": [
+    {"method":"websearch","engine":"built-in","keyword":"satellite imagery wildfire flood June 2026","language":"en","timestamp":"2026-06-02T00:01:00Z","result_count":10},
+    {"method":"websearch","engine":"built-in","keyword":"satellite imagery volcano eruption June 2026","language":"en","timestamp":"2026-06-02T00:01:00Z","result_count":10},
+    {"method":"websearch","engine":"built-in","keyword":"Kilauea eruption episode 48 June 2026","language":"en","timestamp":"2026-06-02T00:01:00Z","result_count":10},
+    {"method":"websearch","engine":"built-in","keyword":"Canada wildfire smoke June 2026","language":"en","timestamp":"2026-06-02T00:01:00Z","result_count":9},
+    {"method":"websearch","engine":"built-in","keyword":"Bismarck Sea submarine volcano pumice June 2026","language":"en","timestamp":"2026-06-02T00:01:00Z","result_count":9},
+    {"method":"websearch","engine":"built-in","keyword":"Mayon volcano Philippines June 2026","language":"en","timestamp":"2026-06-02T00:01:00Z","result_count":9},
+    {"method":"websearch","engine":"built-in","keyword":"NASA Earth Observatory image June 2026","language":"en","timestamp":"2026-06-02T00:02:00Z","result_count":10},
+    {"method":"websearch","engine":"built-in","keyword":"Copernicus EMS activation June 2026","language":"en","timestamp":"2026-06-02T00:02:00Z","result_count":10},
+    {"method":"websearch","engine":"built-in","keyword":"satellite imagery military buildup defense June 2026","language":"en","timestamp":"2026-06-02T00:02:00Z","result_count":9},
+    {"method":"websearch","engine":"built-in","keyword":"El Nino 2026 Super El Nino forecast update","language":"en","timestamp":"2026-06-02T00:02:00Z","result_count":10},
+    {"method":"websearch","engine":"built-in","keyword":"North Korea satellite imagery DPRK June 2026","language":"en","timestamp":"2026-06-02T00:02:00Z","result_count":9},
+    {"method":"websearch","engine":"built-in","keyword":"Sentinel satellite deforestation methane June 2026","language":"en","timestamp":"2026-06-02T00:02:00Z","result_count":10},
+    {"method":"websearch","engine":"built-in","keyword":"Great Sitkin Shishaldin volcano Alaska June 2026","language":"en","timestamp":"2026-06-02T00:03:00Z","result_count":10},
+    {"method":"websearch","engine":"built-in","keyword":"Kanlaon Dukono volcano eruption June 2026","language":"en","timestamp":"2026-06-02T00:03:00Z","result_count":5},
+    {"method":"websearch","engine":"built-in","keyword":"위성영상 한반도 KOMPSAT 2026년 6월","language":"ko","timestamp":"2026-06-02T00:03:00Z","result_count":10},
+    {"method":"websearch","engine":"built-in","keyword":"South China Sea Spratly Islands satellite imagery 2026","language":"en","timestamp":"2026-06-02T00:03:00Z","result_count":10},
+    {"method":"websearch","engine":"built-in","keyword":"oil spill satellite Kharg Island 2026","language":"en","timestamp":"2026-06-02T00:03:00Z","result_count":5},
+    {"method":"websearch","engine":"built-in","keyword":"Bellingcat satellite imagery Lebanon 2026","language":"en","timestamp":"2026-06-02T00:03:00Z","result_count":10},
+    {"method":"websearch","engine":"built-in","keyword":"typhoon Jangmi Okinawa Japan June 2 2026","language":"en","timestamp":"2026-06-02T00:04:00Z","result_count":6},
+    {"method":"websearch","engine":"built-in","keyword":"Kilauea episode 48 fountaining height lava June 1 2 2026","language":"en","timestamp":"2026-06-02T00:04:00Z","result_count":10},
+    {"method":"websearch","engine":"built-in","keyword":"Gaza satellite imagery destruction June 2026","language":"en","timestamp":"2026-06-02T00:04:00Z","result_count":9},
+    {"method":"websearch","engine":"built-in","keyword":"Sangay Reventador volcano satellite ash 2026","language":"en","timestamp":"2026-06-02T00:04:00Z","result_count":10}
+  ]
+}

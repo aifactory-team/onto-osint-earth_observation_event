@@ -1,0 +1,22 @@
+{
+  "id": "src-005",
+  "title": "El Niño Super El Niño — CPC single most likely outcome, ECMWF 100%, Kelvin wave +8°C",
+  "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
+  "snippet": "CPC now calls Super El Niño the 'single most likely outcome' for late 2026. ECMWF reached 100% probability. Subsurface Kelvin wave +8°C (50-250m depth) propagating east — warmer than 1997-98 event at same stage. SST anomalies may reach +3°C, rivaling strongest El Niño in recorded history (1877-78). IRI 97-98% probability through forecast period.",
+  "source_name": "NOAA CPC",
+  "language": "en",
+  "discovered_date": "2026-06-02",
+  "tag": "update",
+  "related_report": "2026-06-01",
+  "related_item": "temp-evt-1902",
+  "tag_reason": "기존 temp-evt-1902(El Niño 96%)의 후속: CPC가 Super El Niño를 '단일 가장 유력 결과'로 상향. ECMWF 100% 달성. Kelvin wave +8°C가 1997-98 동기를 초과하는 역사적 수치. 유의미한 에스컬레이션.",
+  "entities": [
+    {"id":"temp-evt-1902","type":"Event","name":"El Niño 2026 Super El Niño","properties":{"phenomenon":"sea_level_change","lat":0.0,"lon":-170.0,"country":"INTL","severity":"high"}},
+    {"id":"org-noaa","type":"Organization","name":"NOAA"},
+    {"id":"phen-sealevel","type":"Phenomenon","name":"sea_level_change"}
+  ],
+  "relations": [
+    {"subject":"temp-evt-1902","predicate":"analyzedBy","object":"org-noaa"},
+    {"subject":"temp-evt-1902","predicate":"manifests","object":"phen-sealevel"}
+  ]
+}

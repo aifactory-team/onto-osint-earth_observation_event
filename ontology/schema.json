@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "description": "OSINT 온톨로지 스키마 — config/osint-config.json의 seed로부터 초기화되고, 매일 파이프라인 실행 시 자동 확장된다. 도메인: 위성영상으로 관측 가능한 지구상 이벤트 (Earth Observation Events).",
-  "last_updated": "2026-06-01",
+  "last_updated": "2026-06-02",
   "classes": [
     {
       "id": "Entity",
@@ -583,6 +583,27 @@
       "target": "temp-evt-2101(신규), temp-evt-2102(신규) + updates to evt-202, evt-1101, evt-701, temp-evt-2001, evt-082, temp-evt-1902, evt-801, temp-evt-1401, evt-203, evt-204, temp-evt-2003",
       "reason": "신규 2건: (1) FireSat 첫 운용 위성 배치(temp-evt-2101, Earth Fire Alliance/Muon Space, mid-2026, 산불 관측 역량 확대, SatOps). (2) DPRK 구축함 프로그램 종합 분석(temp-evt-2102, 2번함 Chongjin 건조 사고, 전투준비태세 분석, Daily NK/Vantor). 업데이트 11건: Kilauea Ep48 전조 오버플로우 시작 WATCH/ORANGE(evt-202, 5/30 17:41 HST 남측 분출구), Canada 65건 활성 AQI 미국 악화(evt-1101, 33.4K+, 2사망), Bismarck Sea day24+ 신규 섬 가능(evt-701, pumice 70km²), 태풍 Domeng PAR 이탈 June 1(temp-evt-2001, 832,986명, habagat 증강), Mayon Day146+ 라하르 위험(evt-082, 287K+, AL3), El Niño 96% Super 1/3(temp-evt-1902, CPC/WMO/IRI), Bezymianny Yellow 하향 5/21(evt-801, Orange→Yellow), Kanlaon AL2 SO2 410-4081 t/d(temp-evt-1401), Great Sitkin WATCH(evt-203), Shishaldin ADVISORY(evt-204), DPRK 구축함 6월 중순 배치(temp-evt-2003, 뉴시스). 다중 위성 교차검증 4건 유지. 한반도 GeoFocus 5건 유지. 스키마 구조적 변경 없음.",
       "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009", "src-010", "src-011", "src-012", "src-017"]
+    },
+    {
+      "date": "2026-06-02",
+      "action": "add_country",
+      "target": "co-ec",
+      "reason": "에콰도르(EC) — Sangay 356 explosions + Reventador 64-84 daily eruptions 위성 ash 모니터링(temp-evt-2203, GOES-19/Smithsonian GVP). 기존 국가 인스턴스에 없던 신규 국가 추가.",
+      "source_ids": ["src-021"]
+    },
+    {
+      "date": "2026-06-02",
+      "action": "add_location",
+      "target": "ent-loc-072",
+      "reason": "Okinawa Main Island (JP, 26.5°N/127.8°E) — 태풍 Jangmi 접근, JMA 긴급경보, 400+ 항공편 취소. temp-evt-2001 영향 지역으로 일본 국가 링크 추가.",
+      "source_ids": ["src-003", "src-013"]
+    },
+    {
+      "date": "2026-06-02",
+      "action": "add_event_and_update",
+      "target": "temp-evt-2201(신규), temp-evt-2202(신규), temp-evt-2203(신규) + updates to evt-202, temp-evt-2001, temp-evt-1902, evt-1101, evt-701, evt-082, evt-203, evt-204, temp-evt-1401",
+      "reason": "신규 3건: (1) Gaza UNOSAT Sentinel-1 포괄적 피해 평가 — 197,000건 건물 파괴/손상 80%(temp-evt-2201, Sentinel-1 SAR, UNOSAT, PS, dom-humanitarian infrastructure_damage, sarBoost+officialBoost+baCredibility). (2) First El Niño impacts detected in June weather(temp-evt-2202, 미국/캐나다 대기 응답 첫 감지, dom-climate, satellite_unverified). (3) Ecuador Sangay/Reventador 화산 356+64-84 daily(temp-evt-2203, GOES-19, EC 신규국, dom-disaster volcanic_eruption). 업데이트 11건: Kilauea Ep48 분수분출 4:40am HST June 1 — 200m 분수 record(evt-202, USGS HVO, Sentinel-2A+Landsat 9), 태풍 Jangmi 오키나와 접근 400+ 항공편(temp-evt-2001, Himawari-9, JP co-jp 추가), El Niño CPC 'Super 가장 유력' ECMWF 100% Kelvin +8°C(temp-evt-1902), 캐나다 산불 65건 33,400+(evt-1101), Bismarck Sea day25+(evt-701), Mayon Day147+ 287K+(evt-082), Great Sitkin WATCH valley(evt-203), Shishaldin ADVISORY SO2 SW(evt-204), Kanlaon AL2(temp-evt-1401). 다중 위성 교차검증 4건 유지. 한반도 GeoFocus 5건 유지(변동 없음). 스키마 구조적 변경 없음 — 기존 클래스·관계·Phenomenon으로 충분.",
+      "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009", "src-010", "src-011", "src-012", "src-013", "src-021", "src-022"]
     }
   ]
 }

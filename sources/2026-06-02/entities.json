@@ -1,0 +1,155 @@
+{
+  "date": "2026-06-02",
+  "entities": [
+    {
+      "temp_id": "temp-evt-2201",
+      "matched_id": null,
+      "type": "Event",
+      "name": "Gaza 위성영상 — 197,000 건물 파괴/손상 (80%), UNOSAT Sentinel-1 분석",
+      "properties": {
+        "phenomenon": "infrastructure_damage",
+        "domain": "dom-humanitarian",
+        "country": "PS",
+        "lat": 31.35,
+        "lon": 34.31,
+        "region": "Gaza Strip",
+        "severity": "high",
+        "satellites_used": ["Sentinel-1"],
+        "sensors_used": ["C-band SAR"],
+        "data_products": ["Copernicus Sentinel-1 SAR"],
+        "before_after_available": true,
+        "confidence": 0.92,
+        "source_url": "https://www.aljazeera.com/news/2026/5/31/satellite-imagery-shows-erasure-of-southern-gaza-as-israel-expands-control"
+      },
+      "source_ids": ["src-012"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-evt-2202",
+      "matched_id": null,
+      "type": "Event",
+      "name": "First El Niño impacts detected in June weather — US/Canada atmospheric response",
+      "properties": {
+        "phenomenon": "sea_level_change",
+        "domain": "dom-climate",
+        "country": "INTL",
+        "lat": 0.0,
+        "lon": -170.0,
+        "region": "Equatorial Pacific / US / Canada",
+        "severity": "medium",
+        "satellites_used": [],
+        "confidence": 0.78,
+        "source_url": "https://www.severe-weather.eu/global-weather/first-el-nino-impacts-detected-forecast-atmosphere-summer-united-states-canada-fa/"
+      },
+      "source_ids": ["src-006"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-evt-2203",
+      "matched_id": null,
+      "type": "Event",
+      "name": "Ecuador Sangay/Reventador 화산 — 356+64-84 daily explosions, satellite ash monitoring",
+      "properties": {
+        "phenomenon": "volcanic_eruption",
+        "domain": "dom-disaster",
+        "country": "EC",
+        "lat": -2.0,
+        "lon": -78.3,
+        "region": "Ecuador",
+        "severity": "medium",
+        "satellites_used": ["GOES-19"],
+        "sensors_used": ["ABI"],
+        "confidence": 0.75,
+        "source_url": "https://volcano.si.edu/reports_weekly.cfm"
+      },
+      "source_ids": ["src-021"],
+      "mention_count": 1
+    }
+  ],
+  "updated_entities": [
+    {
+      "id": "evt-202",
+      "type": "Event",
+      "name": "Kilauea Ep48 — 분수분출 시작, 200m 용암 분수, WATCH/ORANGE",
+      "update_summary": "Ep48 4:40am HST June 1 개시. 북측 분출구 200m(650ft) 분수. 화산재 plume 24,000ft. 남측 분출구 90+ overflow 선행. 기록적 48번째 에피소드.",
+      "source_ids": ["src-001", "src-002"]
+    },
+    {
+      "id": "temp-evt-2001",
+      "type": "Event",
+      "name": "태풍 Jangmi(장미) — 오키나와 접근, 400+ 항공편 취소",
+      "update_summary": "PAR 이탈 후 오키나와·아마미 방향 북상. JMA 긴급경보. 162km/h 돌풍, 300mm 강우 예상. 400+ 항공편 취소. 이후 6/3 큐슈·시코쿠 방면.",
+      "source_ids": ["src-003", "src-004", "src-013"]
+    },
+    {
+      "id": "temp-evt-1902",
+      "type": "Event",
+      "name": "El Niño — Super El Niño 가장 유력, ECMWF 100%, Kelvin wave +8°C",
+      "update_summary": "CPC Super El Niño '단일 가장 유력 결과'로 상향. ECMWF 100% 확률. 적도태평양 Kelvin wave +8°C (1997-98 동기 초과). SST +3°C 전망. 6월 미국/캐나다 대기 응답 첫 감지.",
+      "source_ids": ["src-005", "src-006"]
+    },
+    {
+      "id": "evt-1101",
+      "type": "Event",
+      "name": "캐나다 산불 65건 — 33,400+ 대피, 미국 AQI 영향 지속",
+      "update_summary": "65건 활성 지속, 6건 통제불능. 33,400+ 대피. 연기 미국 중서부. 6-8월 above-normal temps 예보. BC 최고 위험.",
+      "source_ids": ["src-007"]
+    },
+    {
+      "id": "evt-701",
+      "type": "Event",
+      "name": "Bismarck Sea 해저 화산 — day 25+, 부석 70km², 신규 섬 가능",
+      "update_summary": "분출 day 25+ 지속. 부석 뗏목 70km², 52km 길이. NASA PACE 해수 변색 확인. 신규 섬 가능성 과학자 주시.",
+      "source_ids": ["src-008"]
+    },
+    {
+      "id": "evt-082",
+      "type": "Event",
+      "name": "Mayon Day 147+ AL3 — 287,000+ 이재민, 라하르 위험",
+      "update_summary": "Day 147+ 지속. PHIVOLCS AL3. 287,000+ 이재민. 우기 접근 라하르 위험 증가.",
+      "source_ids": ["src-009"]
+    },
+    {
+      "id": "evt-203",
+      "type": "Event",
+      "name": "Great Sitkin — WATCH/ORANGE, 용암 돔 valley 진입",
+      "update_summary": "2021년 7월 이후 지속. 용암 돔 summit crater 대부분 채우고 valley로 진출. SAR 관측 지속.",
+      "source_ids": ["src-010"]
+    },
+    {
+      "id": "evt-204",
+      "type": "Event",
+      "name": "Shishaldin — ADVISORY/YELLOW, SO2 SW 확산",
+      "update_summary": "지진·인프라사운드 지속. SO2 SW 방향 확산 위성 확인. 증기 플룸.",
+      "source_ids": ["src-011"]
+    },
+    {
+      "id": "temp-evt-1401",
+      "type": "Event",
+      "name": "Kanlaon — AL2, 분출 활동 지속",
+      "update_summary": "PHIVOLCS AL2. 6-31 daily VQs. SO2 배출 지속.",
+      "source_ids": ["src-022"]
+    }
+  ],
+  "relations": [
+    {"subject":"evt-202","predicate":"observedBy","object":"sat-sentinel2a","source_ids":["src-001"],"confidence":0.95},
+    {"subject":"evt-202","predicate":"observedBy","object":"sat-landsat9","source_ids":["src-001"],"confidence":0.95},
+    {"subject":"evt-202","predicate":"manifests","object":"phen-volcano","source_ids":["src-001"],"confidence":0.98},
+    {"subject":"evt-202","predicate":"analyzedBy","object":"ent-org-hvo","source_ids":["src-001"],"confidence":0.98},
+    {"subject":"temp-evt-2001","predicate":"observedBy","object":"sat-himawari9","source_ids":["src-003"],"confidence":0.90},
+    {"subject":"temp-evt-2001","predicate":"manifests","object":"phen-typhoon","source_ids":["src-003"],"confidence":0.95},
+    {"subject":"temp-evt-2001","predicate":"inCountry","object":"co-jp","source_ids":["src-003"],"confidence":0.90},
+    {"subject":"temp-evt-1902","predicate":"manifests","object":"phen-sealevel","source_ids":["src-005"],"confidence":0.85},
+    {"subject":"temp-evt-2201","predicate":"observedBy","object":"sat-sentinel1a","source_ids":["src-012"],"confidence":0.92},
+    {"subject":"temp-evt-2201","predicate":"usesSensor","object":"sensor-c-sar","source_ids":["src-012"],"confidence":0.92},
+    {"subject":"temp-evt-2201","predicate":"analyzedBy","object":"org-unosat","source_ids":["src-012"],"confidence":0.90},
+    {"subject":"temp-evt-2201","predicate":"manifests","object":"phen-infra-damage","source_ids":["src-012"],"confidence":0.92},
+    {"subject":"temp-evt-2201","predicate":"inCountry","object":"co-ps","source_ids":["src-012"],"confidence":0.95}
+  ],
+  "stats": {
+    "total_entities": 15,
+    "new_entities": 3,
+    "matched_entities": 12,
+    "total_relations": 13
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "src-003",
+  "title": "Typhoon Jangmi heading to Okinawa — 400+ flights cancelled, gusts 162km/h, JMA urgent warnings",
+  "url": "https://www.euronews.com/2026/06/01/japans-southernmost-region-of-okinawa-braces-for-typhoon-jangmi",
+  "snippet": "Typhoon Jangmi projected to approach Okinawa/Amami June 1-2 before shifting northeast toward western Japan by June 3. JMA issued urgent warnings: extreme rainfall, violent winds, storm surges, landslides. 400+ ANA flights cancelled. Gusts up to 162km/h. Rainfall reaching 300mm by noon June 2. Evacuations urged for elderly.",
+  "source_name": "Euronews / JMA",
+  "language": "en",
+  "discovered_date": "2026-06-02",
+  "tag": "update",
+  "related_report": "2026-06-01",
+  "related_item": "temp-evt-2001",
+  "tag_reason": "기존 temp-evt-2001(태풍 Domeng PAR 이탈)의 후속: 필리핀 PAR 이탈 후 일본 오키나와 방면 북상. 새로운 영향 지역(일본), 400+ 항공편 취소, JMA 긴급경보 — 진행 방향 변경으로 유의미한 신규 정보.",
+  "entities": [
+    {"id":"temp-evt-2001","type":"Event","name":"태풍 Jangmi 오키나와 접근","properties":{"phenomenon":"typhoon","lat":26.5,"lon":127.8,"country":"JP","severity":"high"}},
+    {"id":"sat-himawari9","type":"Satellite","name":"Himawari-9"},
+    {"id":"co-jp","type":"Country","name":"일본"},
+    {"id":"phen-typhoon","type":"Phenomenon","name":"typhoon"},
+    {"id":"org-jma","type":"Organization","name":"JMA"}
+  ],
+  "relations": [
+    {"subject":"temp-evt-2001","predicate":"observedBy","object":"sat-himawari9"},
+    {"subject":"temp-evt-2001","predicate":"inCountry","object":"co-jp"},
+    {"subject":"temp-evt-2001","predicate":"manifests","object":"phen-typhoon"}
+  ]
+}

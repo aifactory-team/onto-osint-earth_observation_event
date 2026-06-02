@@ -1,0 +1,28 @@
+{
+  "id": "src-001",
+  "title": "Kilauea Episode 48 fountaining begins — record-breaking 48th episode, 200m lava fountains, WATCH/ORANGE",
+  "url": "https://www.usgs.gov/volcanoes/kilauea/volcano-updates",
+  "snippet": "Lava fountaining episode 48 in Halemaʻumaʻu at the summit of Kīlauea began at 4:40 a.m. HST on June 1, 2026, after more than 90 overflow events from the south vent. Fountaining focused at north vent, reaching 500-650ft (150-200m). Plume to 24,000ft. Tephra on Hwy 11. Record-breaking 48th episode, surpassing Pu'u'o'o 1983-86 record of 47.",
+  "source_name": "USGS HVO",
+  "language": "en",
+  "discovered_date": "2026-06-02",
+  "tag": "update",
+  "related_report": "2026-06-01",
+  "related_item": "evt-202",
+  "tag_reason": "기존 evt-202(Kilauea Ep48 전조 오버플로우)의 후속: 실제 분수분출 시작 (4:40am HST June 1), 200m 분수 높이, 24,000ft 화산재 plume, tephra 낙하 — 전일 '전조' 단계에서 본격 분출로 전환.",
+  "entities": [
+    {"id":"evt-202","type":"Event","name":"Kilauea Ep48 분수분출","properties":{"phenomenon":"volcanic_eruption","lat":19.42,"lon":-155.29,"country":"US","severity":"high"}},
+    {"id":"sat-sentinel2a","type":"Satellite","name":"Sentinel-2A"},
+    {"id":"sat-landsat9","type":"Satellite","name":"Landsat 9"},
+    {"id":"ent-org-hvo","type":"Organization","name":"USGS HVO"},
+    {"id":"phen-volcano","type":"Phenomenon","name":"volcanic_eruption"},
+    {"id":"co-us","type":"Country","name":"미국"}
+  ],
+  "relations": [
+    {"subject":"evt-202","predicate":"observedBy","object":"sat-sentinel2a"},
+    {"subject":"evt-202","predicate":"observedBy","object":"sat-landsat9"},
+    {"subject":"evt-202","predicate":"analyzedBy","object":"ent-org-hvo"},
+    {"subject":"evt-202","predicate":"manifests","object":"phen-volcano"},
+    {"subject":"evt-202","predicate":"inCountry","object":"co-us"}
+  ]
+}

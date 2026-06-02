@@ -1,0 +1,31 @@
+{
+  "date": "2026-06-02",
+  "total": 22,
+  "new": 3,
+  "reported": 7,
+  "update": 12,
+  "items": [
+    {"id":"src-001","title":"Kilauea Episode 48 fountaining begins — record-breaking 48th episode, 200m lava fountains, WATCH/ORANGE","url":"https://www.usgs.gov/volcanoes/kilauea/volcano-updates","tag":"update","related_item":"evt-202","entity_count":6},
+    {"id":"src-002","title":"Kilauea Ep48 4:40am HST June 1 — north vent 500-650ft fountains, plume 24,000ft, tephra on Hwy 11","url":"https://www.hawaiinewsnow.com/2026/06/01/episode-48-kilauea-fountaining-begins/","tag":"update","related_item":"evt-202","entity_count":5},
+    {"id":"src-003","title":"Typhoon Jangmi heading to Okinawa — 400+ flights cancelled, gusts 162km/h, JMA urgent warnings","url":"https://www.euronews.com/2026/06/01/japans-southernmost-region-of-okinawa-braces-for-typhoon-jangmi","tag":"update","related_item":"temp-evt-2001","entity_count":5},
+    {"id":"src-004","title":"Typhoon Domeng exits PAR — habagat enhanced rain Luzon/Visayas June 2-3","url":"https://www.rappler.com/philippines/weather/typhoon-domeng-southwest-monsoon-update-pagasa-forecast-june-1-2026-5pm/","tag":"update","related_item":"temp-evt-2001","entity_count":4},
+    {"id":"src-005","title":"El Niño Super El Niño — CPC single most likely outcome, ECMWF 100%, Kelvin wave +8°C","url":"https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml","tag":"update","related_item":"temp-evt-1902","entity_count":5},
+    {"id":"src-006","title":"First El Niño impacts detected in June weather forecast for US and Canada","url":"https://www.severe-weather.eu/global-weather/first-el-nino-impacts-detected-forecast-atmosphere-summer-united-states-canada-fa/","tag":"new","related_item":null,"entity_count":4},
+    {"id":"src-007","title":"Canada wildfires 65 active — 33,400+ evacuated, smoke impacts US, above-normal temps June-August","url":"https://www.cbsnews.com/news/canada-wildfires-smoke-deaths-evacuations-manitoba-saskatchewan-alberta/","tag":"update","related_item":"evt-1101","entity_count":5},
+    {"id":"src-008","title":"Bismarck Sea submarine volcano — pumice 70km², possible new island, multiple satellites monitoring","url":"https://www.discovermagazine.com/an-underwater-volcanic-eruption-brewing-in-the-bismarck-sea-may-cause-a-new-island-to-rise-49148","tag":"update","related_item":"evt-701","entity_count":5},
+    {"id":"src-009","title":"Mayon Day 147+ AL3 — 287,000+ displaced, rainy season lahar risk, PHIVOLCS monitoring","url":"https://reliefweb.int/disaster/vo-2026-000065-phl","tag":"update","related_item":"evt-082","entity_count":4},
+    {"id":"src-010","title":"Great Sitkin WATCH/ORANGE — lava dome filled summit crater, advancing into valleys, ongoing since 2021","url":"https://avo.alaska.edu/volcano/great-sitkin","tag":"update","related_item":"evt-203","entity_count":3},
+    {"id":"src-011","title":"Shishaldin ADVISORY/YELLOW — SO2 drifting SW, steam plume, seismic/infrasound","url":"https://avo.alaska.edu/volcano/shishaldin","tag":"update","related_item":"evt-204","entity_count":3},
+    {"id":"src-012","title":"Gaza satellite imagery — 197,000 buildings damaged/destroyed (80%), UNOSAT Sentinel-1 damage analysis","url":"https://www.aljazeera.com/news/2026/5/31/satellite-imagery-shows-erasure-of-southern-gaza-as-israel-expands-control","tag":"new","related_item":null,"entity_count":6},
+    {"id":"src-013","title":"Typhoon Jangmi Okinawa impacts — 400+ flights cancelled, 162km/h gusts, 300mm rainfall, landslide risk","url":"https://www.travelandtourworld.com/news/article/0tle4smpouo4/","tag":"update","related_item":"temp-evt-2001","entity_count":5},
+    {"id":"src-014","title":"DPRK 최현급 구축함 — continued tracking, 6월 중순 공식 배치","url":"https://www.newsis.com/view/NISX20260529_0003648376","tag":"reported","related_item":"temp-evt-2003","entity_count":4},
+    {"id":"src-015","title":"Antelope Reef 1,490ac — China military infrastructure, CSIS AMTI","url":"https://amti.csis.org/antelope-reef-could-now-be-the-largest-island-in-the-south-china-sea/","tag":"reported","related_item":"evt-092","entity_count":4},
+    {"id":"src-016","title":"Kharg Island oil spill — slick shrinking, single-event spill, Sentinel-1/2/3","url":"https://www.thenationalnews.com/business/energy/2026/05/13/oil-spill-near-irans-kharg-island-raises-questions-over-its-source/","tag":"reported","related_item":"ent-evt-kharg","entity_count":5},
+    {"id":"src-017","title":"Bellingcat Lebanon 46+ towns — PlanetScope interactive map, ongoing demolitions","url":"https://www.bellingcat.com/news/2026/05/14/satellite-imagery-shows-ongoing-demolitions-across-southern-lebanon/","tag":"reported","related_item":"evt-802","entity_count":4},
+    {"id":"src-018","title":"Hami ICBM silo defense network — 80+ pads, WorldView-3+PlanetScope","url":"https://pjmedia.com/vodkapundit/2026/06/01/satellite-photos-reveal-chinas-active-defense-web-for-nuclear-war-n4953444","tag":"reported","related_item":"temp-evt-2002","entity_count":4},
+    {"id":"src-019","title":"FireSat first block of 3 additional satellites on track mid-2026","url":"https://www.earthfirealliance.org/press-release/firesat-first-wildfire-images","tag":"reported","related_item":"temp-evt-2101","entity_count":4},
+    {"id":"src-020","title":"Philippines Spratly construction — Thitu runway + Nanshan port, Planet Labs imagery","url":"https://www.rfa.org/english/southchinasea/2026/05/08/philippines-satellite-spratlys-infrastructure-upgrade/","tag":"reported","related_item":"evt-305","entity_count":4},
+    {"id":"src-021","title":"Sangay 356 explosions + Reventador 64-84 daily — Ecuador volcanoes satellite ash monitoring","url":"https://volcano.si.edu/reports_weekly.cfm","tag":"new","related_item":null,"entity_count":4},
+    {"id":"src-022","title":"Kanlaon AL2 — continuing eruptive activity, 6-31 daily VQs, SO2 emissions","url":"https://volcano.si.edu/volcano.cfm?vn=272020","tag":"update","related_item":"temp-evt-1401","entity_count":3}
+  ]
+}

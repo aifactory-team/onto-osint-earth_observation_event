@@ -1,0 +1,37 @@
+{
+  "date": "2026-06-02",
+  "new_triples": [
+    {"subject":"temp-evt-2201","predicate":"observedBy","object":"sat-sentinel1a","source_id":"src-012","date":"2026-06-02","confidence":0.92,"type":"explicit"},
+    {"subject":"temp-evt-2201","predicate":"usesSensor","object":"sensor-c-sar","source_id":"src-012","date":"2026-06-02","confidence":0.92,"type":"explicit"},
+    {"subject":"temp-evt-2201","predicate":"analyzedBy","object":"org-unosat","source_id":"src-012","date":"2026-06-02","confidence":0.90,"type":"explicit"},
+    {"subject":"temp-evt-2201","predicate":"manifests","object":"phen-infra-damage","source_id":"src-012","date":"2026-06-02","confidence":0.92,"type":"explicit"},
+    {"subject":"temp-evt-2201","predicate":"inCountry","object":"co-ps","source_id":"src-012","date":"2026-06-02","confidence":0.95,"type":"explicit"},
+    {"subject":"temp-evt-2201","predicate":"inDomain","object":"dom-humanitarian","source_id":"src-012","date":"2026-06-02","confidence":0.95,"type":"explicit"},
+    {"subject":"temp-evt-2202","predicate":"inDomain","object":"dom-climate","source_id":"src-006","date":"2026-06-02","confidence":0.78,"type":"explicit"},
+    {"subject":"temp-evt-2203","predicate":"manifests","object":"phen-volcano","source_id":"src-021","date":"2026-06-02","confidence":0.75,"type":"explicit"},
+    {"subject":"temp-evt-2203","predicate":"inCountry","object":"co-ec","source_id":"src-021","date":"2026-06-02","confidence":0.90,"type":"explicit"},
+    {"subject":"temp-evt-2001","predicate":"inCountry","object":"co-jp","source_id":"src-003","date":"2026-06-02","confidence":0.90,"type":"explicit"}
+  ],
+  "updated_triples": [
+    {"subject":"evt-202","predicate":"manifests","object":"phen-volcano","source_id":"src-001","date":"2026-06-02","confidence":0.98,"type":"explicit","update_note":"Ep48 분수분출 시작 — 200m, record"},
+    {"subject":"temp-evt-1902","predicate":"analyzedBy","object":"org-noaa","source_id":"src-005","date":"2026-06-02","confidence":0.95,"type":"explicit","update_note":"CPC Super El Niño '가장 유력' 상향"},
+    {"subject":"evt-1101","predicate":"manifests","object":"phen-wildfire","source_id":"src-007","date":"2026-06-02","confidence":0.95,"type":"explicit","update_note":"65건 지속"}
+  ],
+  "inferred_triples": [
+    {"subject":"evt-202","predicate":"partOfSeries","object":"evt-202-ep47","rule":"temporal_progression","confidence":0.95,"type":"inferred"},
+    {"subject":"evt-202","predicate":"officialBoost","object":"+0.15","rule":"official_source_trust","confidence":0.98,"type":"inferred"},
+    {"subject":"temp-evt-1902","predicate":"officialBoost","object":"+0.15","rule":"official_source_trust","confidence":0.95,"type":"inferred"},
+    {"subject":"temp-evt-2201","predicate":"officialBoost","object":"+0.15","rule":"official_source_trust","confidence":0.90,"type":"inferred"},
+    {"subject":"temp-evt-2201","predicate":"sarBoost","object":"+0.10","rule":"sensor_capability_match_sar","confidence":0.92,"type":"inferred"},
+    {"subject":"temp-evt-2201","predicate":"baCredibilityBoost","object":"+0.10","rule":"before_after_credibility","confidence":0.90,"type":"inferred"},
+    {"subject":"temp-evt-2001","predicate":"priorityBoost","object":"+0.20","rule":"disaster_severity_priority","confidence":0.88,"type":"inferred"},
+    {"subject":"evt-202","predicate":"priorityBoost","object":"+0.20","rule":"disaster_severity_priority","confidence":0.95,"type":"inferred"},
+    {"subject":"evt-1101","predicate":"multiSatBoost","object":"+0.20","rule":"multi_satellite_confirmation","confidence":0.95,"type":"inferred"},
+    {"subject":"evt-701","predicate":"multiSatBoost","object":"+0.20","rule":"multi_satellite_confirmation","confidence":0.97,"type":"inferred"}
+  ],
+  "stats": {
+    "new_nodes": 5,
+    "new_edges": 10,
+    "inferred_edges": 10
+  }
+}

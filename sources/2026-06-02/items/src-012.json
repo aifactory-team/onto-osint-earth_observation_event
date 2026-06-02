@@ -1,0 +1,28 @@
+{
+  "id": "src-012",
+  "title": "Gaza satellite imagery — 197,000 buildings damaged/destroyed (80%), UNOSAT Sentinel-1 damage analysis",
+  "url": "https://www.aljazeera.com/news/2026/5/31/satellite-imagery-shows-erasure-of-southern-gaza-as-israel-expands-control",
+  "snippet": "High-resolution satellite pictures captured Feb 25, 2026 expose landscape where entire neighbourhoods reduced to ash. Google's May 22, 2026 satellite update documents Khan Younis/Rafah aftermath in unprecedented detail. UNOSAT Copernicus Sentinel-1 analysis estimates 197,000 buildings damaged/destroyed — approximately 80% of Gaza structures. 94% of cemeteries destroyed.",
+  "source_name": "Al Jazeera",
+  "language": "en",
+  "discovered_date": "2026-06-02",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 소스에 동일 항목 없음. UNOSAT Sentinel-1 SAR 데이터 기반 포괄적 피해 평가(197,000건 건물)는 신규 수치 제공. 위성 출처(Copernicus Sentinel-1) 명시. 인도주의 도메인 신규 이벤트.",
+  "entities": [
+    {"id":"temp-evt-2201","type":"Event","name":"Gaza 197,000 건물 파괴","properties":{"phenomenon":"infrastructure_damage","lat":31.35,"lon":34.31,"country":"PS","severity":"high","before_after_available":true}},
+    {"id":"sat-sentinel1a","type":"Satellite","name":"Sentinel-1A"},
+    {"id":"sensor-c-sar","type":"Sensor","name":"C-band SAR"},
+    {"id":"org-unosat","type":"Organization","name":"UNOSAT"},
+    {"id":"phen-infra-damage","type":"Phenomenon","name":"infrastructure_damage"},
+    {"id":"co-ps","type":"Country","name":"팔레스타인"}
+  ],
+  "relations": [
+    {"subject":"temp-evt-2201","predicate":"observedBy","object":"sat-sentinel1a"},
+    {"subject":"temp-evt-2201","predicate":"usesSensor","object":"sensor-c-sar"},
+    {"subject":"temp-evt-2201","predicate":"analyzedBy","object":"org-unosat"},
+    {"subject":"temp-evt-2201","predicate":"manifests","object":"phen-infra-damage"},
+    {"subject":"temp-evt-2201","predicate":"inCountry","object":"co-ps"}
+  ]
+}
