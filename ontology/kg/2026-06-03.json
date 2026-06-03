@@ -1,0 +1,39 @@
+{
+  "date": "2026-06-03",
+  "version": "1.16.0",
+  "nodes": 25,
+  "triples": 21,
+  "new_triples": [
+    {"subject":"temp-evt-2301","predicate":"manifests","object":"phen-glacier","confidence":0.88,"source":"src-017"},
+    {"subject":"temp-evt-2301","predicate":"analyzedBy","object":"org-nasa","confidence":0.92,"source":"src-017"},
+    {"subject":"temp-evt-2301","predicate":"inDomain","object":"dom-climate","confidence":0.92,"source":"src-017"},
+    {"subject":"temp-evt-2301","predicate":"observedBy","object":"sat-icesat2","confidence":0.90,"source":"src-017"},
+    {"subject":"temp-evt-2301","predicate":"inCountry","object":"co-intl","confidence":0.85,"source":"src-017"}
+  ],
+  "updated_triples": [
+    {"subject":"evt-202","predicate":"manifests","object":"phen-volcano","update":"Ep48 종료/일시정지 → Ep49 1-3주 예보","source":"src-001"},
+    {"subject":"temp-evt-2001","predicate":"inCountry","object":"co-jp","update":"본토 상륙 확대: Okinawa → Kyushu → Kanto","source":"src-002"},
+    {"subject":"temp-evt-1902","predicate":"manifests","object":"phen-sealevel","update":"SST NINO3.4 +0.9C 정량 확인","source":"src-004"},
+    {"subject":"evt-701","predicate":"analyzedBy","object":"org-nasa","update":"NASA PACE 해수변색 공식 확인 추가","source":"src-006"},
+    {"subject":"evt-1101","predicate":"analyzedBy","object":"org-noaa","update":"NOAA NESDIS 공식 보고서 발행","source":"src-009"}
+  ],
+  "inferred_triples": [
+    {"subject":"evt-202","predicate":"partOfSeries","object":"evt-202-ep47","rule":"temporal_progression","confidence":0.95,"note":"Ep48→Ep49 시리즈 지속"},
+    {"subject":"temp-evt-2001","predicate":"triggeredBy_potential","object":"cascading_flood_landslide_jp","rule":"cascading_disaster","confidence":0.70,"note":"일본 본토 200-300mm → 홍수/산사태 잠정"},
+    {"subject":"evt-202","predicate":"officialBoost","object":"+0.15","rule":"official_source_trust","confidence":0.95,"note":"USGS HVO"},
+    {"subject":"temp-evt-1902","predicate":"officialBoost","object":"+0.15","rule":"official_source_trust","confidence":0.92,"note":"CPC/NOAA"},
+    {"subject":"evt-701","predicate":"officialBoost","object":"+0.15","rule":"official_source_trust","confidence":0.95,"note":"NASA EO/PACE"},
+    {"subject":"evt-1101","predicate":"officialBoost","object":"+0.15","rule":"official_source_trust","confidence":0.92,"note":"NOAA NESDIS"},
+    {"subject":"evt-701","predicate":"multiSatBoost","object":"+0.20","rule":"multi_satellite_confirmation","confidence":0.97,"note":"5위성 3기관 유지"},
+    {"subject":"evt-1101","predicate":"multiSatBoost","object":"+0.20","rule":"multi_satellite_confirmation","confidence":0.95,"note":"5위성 3기관 유지"},
+    {"subject":"evt-202","predicate":"thermalBoost","object":"+0.10","rule":"sensor_capability_match_tirs","confidence":0.93,"note":"TIRS thermal volcano"},
+    {"subject":"evt-701","predicate":"thermalBoost","object":"+0.10","rule":"sensor_capability_match_tirs","confidence":0.92,"note":"VIIRS+MODIS thermal volcano"},
+    {"subject":"temp-evt-2301","predicate":"officialBoost","object":"+0.15","rule":"official_source_trust","confidence":0.92,"note":"NASA"}
+  ],
+  "stats": {
+    "new_explicit": 5,
+    "updated_explicit": 5,
+    "inferred": 11,
+    "total_today": 21
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "date": "2026-06-03",
+  "entities": [
+    {
+      "temp_id": "temp-evt-2301",
+      "matched_id": null,
+      "type": "Event",
+      "name": "북극 해빙 최대면적 역대 최저 타이 — 5.52M sq miles, 1979년 위성 관측 이래",
+      "properties": {
+        "phenomenon": "sea_level_change",
+        "domain": "dom-climate",
+        "country": "INTL",
+        "lat": 76.0,
+        "lon": 40.0,
+        "region": "Arctic Ocean",
+        "severity": "high",
+        "satellites_used": ["ICESat-2", "AMSR-2", "Sentinel-3"],
+        "sensors_used": ["ATLAS lidar", "AMSR-2"],
+        "data_products": ["NSIDC Sea Ice Index"],
+        "before_after_available": false,
+        "confidence": 0.92,
+        "source_url": "https://science.nasa.gov/earth/arctic-winter-sea-ice-2026/"
+      },
+      "source_ids": ["src-017"],
+      "mention_count": 1
+    }
+  ],
+  "updated_entities": [
+    {
+      "id": "evt-202",
+      "type": "Event",
+      "name": "Kilauea Ep48 — 종료/일시정지, Ep49 1-3주 예보",
+      "update_summary": "Ep48 6/1 13:37 HST 갑작 종료 — 9시간 분출. 최대 200m 분수(북측). tephra Uēkahuna·Hwy 11·Volcano village. 남측 분출구 spatter만. 분출 일시정지(paused). 다음 Ep49 1-3주 내 예보. WATCH/ORANGE 유지.",
+      "source_ids": ["src-001"]
+    },
+    {
+      "id": "temp-evt-2001",
+      "type": "Event",
+      "name": "TS Jangmi — 열대폭풍 약화, 일본 본토 상륙 6/3",
+      "update_summary": "태풍에서 열대폭풍으로 약화. 6/2 오키나와·가고시마 16+ 부상, 48,000가구 정전. Kadena AB 74mph. 6/3 큐슈-시코쿠-간사이-간토(도쿄 포함) 접근. ANA/JAL 300+ 항공편 취소. 200-300mm 강우, 홍수·산사태 위험. 1951 이후 3번째 이른 영향 태풍.",
+      "source_ids": ["src-002", "src-003"]
+    },
+    {
+      "id": "temp-evt-1902",
+      "type": "Event",
+      "name": "El Niño Super — SST NINO3.4 +0.9°C, +3°C 전망",
+      "update_summary": "ECMWF 100%. CPC 'Super El Niño 단일 가장 유력'. SST NINO3.4 +0.9°C(5/13주). 모델 +3°C 2026 하반기 전망. 6월 대기 영향 첫 감지 확인. 차기 ENSO Discussion 6/11.",
+      "source_ids": ["src-004", "src-005"]
+    },
+    {
+      "id": "evt-701",
+      "type": "Event",
+      "name": "Bismarck Sea 해저 화산 day 26+ — 부석 70km², NASA PACE 확인",
+      "update_summary": "분출 day 26+ 지속. 부석 뗏목 70km², 52km 길이, 200km+ WSW 확산. NASA PACE 해수변색 확인. Jim Garvin(NASA): '신규 섬 탄생 관찰 대기 중'. VAAC Darwin 항공 경보 지속. 5위성 3기관 교차검증 유지.",
+      "source_ids": ["src-006", "src-007", "src-008"]
+    },
+    {
+      "id": "evt-1101",
+      "type": "Event",
+      "name": "캐나다 산불 65+ — NOAA NESDIS 위성 모니터링 공식 보고",
+      "update_summary": "65+ 활성 화재 지속. 33,400+ 대피, 2 사망, 18,935+ ha 소실. NOAA NESDIS 공식 위성 모니터링 보고서 발행. 연기 미국 중서부·유럽 확산. 6-8월 above-normal temps — BC 최고 위험.",
+      "source_ids": ["src-009", "src-010"]
+    },
+    {
+      "id": "evt-082",
+      "type": "Event",
+      "name": "Mayon Day 148+ AL3 — 287,000+ 이재민, 라하르 위험",
+      "update_summary": "Day 148+ 지속. PHIVOLCS AL3. 287,000+ 이재민. 우기 + Jangmi habagat → 라하르 위험 증가. continuous Strombolian + PDC.",
+      "source_ids": ["src-011"]
+    },
+    {
+      "id": "evt-203",
+      "type": "Event",
+      "name": "Great Sitkin — WATCH/ORANGE, 용암 돔 valley 진입 지속",
+      "update_summary": "2021년 이후 지속. 용암 돔 summit crater 충전, valley 진출 중. SAR 관측 지속.",
+      "source_ids": ["src-012"]
+    },
+    {
+      "id": "evt-204",
+      "type": "Event",
+      "name": "Shishaldin — ADVISORY/YELLOW, SO2 SW 확산 지속",
+      "update_summary": "지진·인프라사운드 지속. SO2 SW 방향 확산. 증기 플룸.",
+      "source_ids": ["src-013"]
+    },
+    {
+      "id": "temp-evt-1401",
+      "type": "Event",
+      "name": "Kanlaon — AL2, 분출 지속",
+      "update_summary": "PHIVOLCS AL2. 6-31 daily VQs. SO2 배출 지속.",
+      "source_ids": ["src-014"]
+    },
+    {
+      "id": "temp-evt-2203",
+      "type": "Event",
+      "name": "Ecuador Sangay/Reventador — 분출 지속, GOES-19 ash",
+      "update_summary": "Sangay 356 explosions/day, Reventador 64-84/day 지속. GOES-19 ash 모니터링.",
+      "source_ids": ["src-015"]
+    },
+    {
+      "id": "evt-1201",
+      "type": "Event",
+      "name": "Santa Rosa Island fire — 97% 진압, 6/6 종결 예정",
+      "update_summary": "97% contained. 18,379ac (7,438ha). Channel Islands 역대 최대. 6/6 종결 예정.",
+      "source_ids": ["src-016"]
+    }
+  ],
+  "relations": [
+    {"subject":"evt-202","predicate":"observedBy","object":"sat-sentinel2a","source_ids":["src-001"],"confidence":0.95},
+    {"subject":"evt-202","predicate":"observedBy","object":"sat-landsat9","source_ids":["src-001"],"confidence":0.95},
+    {"subject":"evt-202","predicate":"manifests","object":"phen-volcano","source_ids":["src-001"],"confidence":0.98},
+    {"subject":"evt-202","predicate":"analyzedBy","object":"ent-org-hvo","source_ids":["src-001"],"confidence":0.98},
+    {"subject":"temp-evt-2001","predicate":"observedBy","object":"sat-himawari9","source_ids":["src-002"],"confidence":0.90},
+    {"subject":"temp-evt-2001","predicate":"manifests","object":"phen-typhoon","source_ids":["src-002"],"confidence":0.95},
+    {"subject":"temp-evt-2001","predicate":"inCountry","object":"co-jp","source_ids":["src-002"],"confidence":0.95},
+    {"subject":"temp-evt-1902","predicate":"manifests","object":"phen-sealevel","source_ids":["src-004"],"confidence":0.85},
+    {"subject":"temp-evt-1902","predicate":"analyzedBy","object":"org-noaa","source_ids":["src-004"],"confidence":0.92},
+    {"subject":"evt-701","predicate":"observedBy","object":"sat-viirs-jpss","source_ids":["src-006"],"confidence":0.92},
+    {"subject":"evt-701","predicate":"observedBy","object":"sat-modis-terra","source_ids":["src-006"],"confidence":0.92},
+    {"subject":"evt-701","predicate":"observedBy","object":"sat-landsat9","source_ids":["src-006"],"confidence":0.92},
+    {"subject":"evt-701","predicate":"observedBy","object":"sat-himawari9","source_ids":["src-006"],"confidence":0.92},
+    {"subject":"evt-701","predicate":"observedBy","object":"sat-sentinel2a","source_ids":["src-006"],"confidence":0.92},
+    {"subject":"evt-701","predicate":"analyzedBy","object":"org-nasa","source_ids":["src-006"],"confidence":0.95},
+    {"subject":"evt-1101","predicate":"analyzedBy","object":"org-noaa","source_ids":["src-009"],"confidence":0.92},
+    {"subject":"evt-1101","predicate":"observedBy","object":"sat-goes18","source_ids":["src-009"],"confidence":0.90},
+    {"subject":"evt-1101","predicate":"observedBy","object":"sat-viirs-jpss","source_ids":["src-009"],"confidence":0.90},
+    {"subject":"evt-082","predicate":"manifests","object":"phen-volcano","source_ids":["src-011"],"confidence":0.95},
+    {"subject":"temp-evt-2301","predicate":"analyzedBy","object":"org-nasa","source_ids":["src-017"],"confidence":0.92},
+    {"subject":"temp-evt-2301","predicate":"manifests","object":"phen-glacier","source_ids":["src-017"],"confidence":0.88}
+  ],
+  "stats": {
+    "total_entities": 12,
+    "new_entities": 1,
+    "matched_entities": 11,
+    "total_relations": 21
+  }
+}

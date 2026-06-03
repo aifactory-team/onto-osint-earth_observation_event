@@ -1,0 +1,18 @@
+{
+  "id": "src-017",
+  "date": "2026-06-03",
+  "title": "북극 해빙 최대면적 역대 최저 타이 — 5.52M sq miles, 1979년 이래 위성 관측",
+  "url": "https://science.nasa.gov/earth/arctic-winter-sea-ice-2026/",
+  "source_org": "NASA",
+  "tag": "new",
+  "related_item": null,
+  "domain": "ClimateEnvironment",
+  "phenomenon": "sea_level_change",
+  "country": "INTL",
+  "location": {"name": "Arctic Ocean", "lat": 76.0, "lon": 40.0},
+  "satellites": ["ICESat-2", "AMSR-2"],
+  "sensors": ["ATLAS lidar", "AMSR-2"],
+  "confidence": 0.92,
+  "summary": "2026년 3/15 겨울 최대면적 5.52M sq miles — 1979년 위성 관측 이래 역대 최저 타이. NASA 공식 발표. 기후변화 장기 추세 확인.",
+  "boosts": ["officialBoost +0.15"]
+}

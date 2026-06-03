@@ -1,0 +1,33 @@
+{
+  "date": "2026-06-03",
+  "total": 24,
+  "new": 1,
+  "reported": 7,
+  "update": 16,
+  "items": [
+    {"id":"src-001","title":"Kilauea Ep48 종료 — 9시간 후 1:37pm HST 중단, WATCH/ORANGE 유지, Ep49 1-3주 예보","url":"https://www.usgs.gov/volcanoes/kilauea/volcano-updates","tag":"update","related_item":"evt-202","entity_count":5},
+    {"id":"src-002","title":"TS Jangmi 일본 본토 상륙 — 16+ 부상, 48,000가구 정전, 큐슈·시코쿠·간토 6/3 접근","url":"https://www.japantimes.co.jp/news/2026/06/02/japan/storm-typhoon-jangmi/","tag":"update","related_item":"temp-evt-2001","entity_count":5},
+    {"id":"src-003","title":"TS Jangmi 300+ 항공편 취소 — 6/3 본토 200-300mm 강우, 홍수·산사태 위험","url":"https://www.travelandtourworld.com/news/article/0tle4smpouo4/","tag":"update","related_item":"temp-evt-2001","entity_count":4},
+    {"id":"src-004","title":"El Niño Super — CPC '가장 유력', ECMWF 100%, SST NINO3.4 +0.9°C, +3°C 전망","url":"https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml","tag":"update","related_item":"temp-evt-1902","entity_count":5},
+    {"id":"src-005","title":"Super El Niño 기록적 강도 예보 — 미국/캐나다/유럽 기상 영향","url":"https://www.severe-weather.eu/long-range-2/super-el-nino-2026-record-breaking-intensity-forecast-weather-impacts-united-states-canada-europe-fa/","tag":"update","related_item":"temp-evt-1902","entity_count":3},
+    {"id":"src-006","title":"Bismarck Sea 해저 화산 day 26+ — NASA PACE 해수변색, 부석 70km², 신규 섬 가능","url":"https://science.nasa.gov/earth/earth-observatory/new-eruption-in-the-bismarck-sea/","tag":"update","related_item":"evt-701","entity_count":6},
+    {"id":"src-007","title":"Bismarck Sea 신규 섬 탄생 가능 — Discover Magazine","url":"https://www.discovermagazine.com/an-underwater-volcanic-eruption-brewing-in-the-bismarck-sea-may-cause-a-new-island-to-rise-49148","tag":"update","related_item":"evt-701","entity_count":4},
+    {"id":"src-008","title":"Bismarck Sea 해저 화산 — EarthSky 종합","url":"https://earthsky.org/earth/undersea-volcano-erupting-papua-new-guinea-may-2026/","tag":"update","related_item":"evt-701","entity_count":3},
+    {"id":"src-009","title":"NOAA NESDIS 캐나다 산불 위성 모니터링 — 열 시그니처·연기 추적","url":"https://www.nesdis.noaa.gov/news/noaa-satellites-monitor-canadian-wildfires-and-smoke","tag":"update","related_item":"evt-1101","entity_count":5},
+    {"id":"src-010","title":"캐나다 산불 65+ — 33,400+ 대피, 2 사망, BC 최고 위험","url":"https://www.cbsnews.com/news/canada-wildfires-smoke-deaths-evacuations-manitoba-saskatchewan-alberta/","tag":"update","related_item":"evt-1101","entity_count":4},
+    {"id":"src-011","title":"Mayon Day 148+ AL3 — 287,000+ 이재민, 라하르 위험 증가","url":"https://reliefweb.int/disaster/vo-2026-000065-phl","tag":"update","related_item":"evt-082","entity_count":4},
+    {"id":"src-012","title":"Great Sitkin WATCH/ORANGE — 용암 돔 valley 진입 지속","url":"https://avo.alaska.edu/volcano/great-sitkin","tag":"update","related_item":"evt-203","entity_count":3},
+    {"id":"src-013","title":"Shishaldin ADVISORY/YELLOW — SO2 SW 확산 지속","url":"https://avo.alaska.edu/volcano/shishaldin","tag":"update","related_item":"evt-204","entity_count":3},
+    {"id":"src-014","title":"Kanlaon AL2 — 분출 지속, 6-31 daily VQs","url":"https://volcano.si.edu/volcano.cfm?vn=272020","tag":"update","related_item":"temp-evt-1401","entity_count":3},
+    {"id":"src-015","title":"Ecuador Sangay/Reventador — 화산 분출 지속, GOES-19 ash","url":"https://volcano.si.edu/reports_weekly.cfm","tag":"update","related_item":"temp-evt-2203","entity_count":3},
+    {"id":"src-016","title":"Santa Rosa Island fire 97% 진압 — 18,379ac, 6/6 종결","url":"https://inciweb.wildfire.gov/incident-information/cacnp-santa-rosa-island-fire","tag":"update","related_item":"evt-1201","entity_count":3},
+    {"id":"src-017","title":"북극 해빙 최대면적 역대 최저 타이 — NASA 위성 모니터링","url":"https://science.nasa.gov/earth/arctic-winter-sea-ice-2026/","tag":"new","related_item":null,"entity_count":4},
+    {"id":"src-018","title":"ESA Sentinel 트리오 메탄 슈퍼에미터 — 2974 플룸 글로벌 매핑","url":"https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Trio_of_Sentinel_satellites_map_methane_super-emitters","tag":"reported","related_item":"temp-evt-2204","entity_count":5},
+    {"id":"src-019","title":"필리핀 Thitu 활주로 + Nanshan 항만 — Planet Labs","url":"https://www.rfa.org/english/southchinasea/2026/05/08/philippines-satellite-spratlys-infrastructure-upgrade/","tag":"reported","related_item":"evt-305","entity_count":4},
+    {"id":"src-020","title":"Antelope Reef 15km² 매립 — CSIS AMTI 분석","url":"https://amti.csis.org/antelope-reef-could-now-be-the-largest-island-in-the-south-china-sea/","tag":"reported","related_item":"evt-092","entity_count":4},
+    {"id":"src-021","title":"Gaza UNOSAT Sentinel-1 피해 평가 — 197,000건 80%","url":"https://unosat.org/products/4130","tag":"reported","related_item":"temp-evt-2201","entity_count":5},
+    {"id":"src-022","title":"Bellingcat 남레바논 46+ 마을 PlanetScope — 인터랙티브 맵","url":"https://www.bellingcat.com/news/2026/05/14/satellite-imagery-shows-ongoing-demolitions-across-southern-lebanon/","tag":"reported","related_item":"evt-802","entity_count":4},
+    {"id":"src-023","title":"DPRK 5,000t 구축함 3번함 건조 — 10월 목표, 연 2척 지시","url":"https://www.dailynk.com/english/satellite-analysis-north-koreas-5000-ton-destroyer-fleet-in-construction-but-short-on-combat-readiness/","tag":"reported","related_item":"temp-evt-2003","entity_count":4},
+    {"id":"src-024","title":"영변 핵단지 활동 증가 — 5MW 원자로 냉각수 방류 위성 관측","url":"https://www.rfa.org/english/korea/2026/04/28/north-korea-satellite-yongbyon-nuclear/","tag":"reported","related_item":"ent-evt-001","entity_count":4}
+  ]
+}

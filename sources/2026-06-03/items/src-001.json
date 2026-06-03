@@ -1,0 +1,18 @@
+{
+  "id": "src-001",
+  "date": "2026-06-03",
+  "title": "Kilauea Ep48 종료 — 9시간 후 1:37pm HST 중단, WATCH/ORANGE 유지, Ep49 1-3주 예보",
+  "url": "https://www.usgs.gov/volcanoes/kilauea/volcano-updates",
+  "source_org": "USGS HVO",
+  "tag": "update",
+  "related_item": "evt-202",
+  "domain": "Disaster",
+  "phenomenon": "volcanic_eruption",
+  "country": "US",
+  "location": {"name": "Halemaʻumaʻu, Kilauea, Hawaii", "lat": 19.421, "lon": -155.287},
+  "satellites": ["Sentinel-2A", "Landsat 9"],
+  "sensors": ["MSI", "OLI", "TIRS"],
+  "confidence": 0.95,
+  "summary": "Ep48 6/1 04:40 HST 시작, 13:37 HST 갑작 종료 — 9시간 분출. 최대 200m(650ft) 분수 북측 분출구. 화산재 plume 24,000ft ASL. tephra Uēkahuna·Hwy 11·Volcano Village·Mauna Loa Estates. 남측 분출구 spatter만. 기록적 48번째 에피소드(Pu'u'o'o 47회 경신). 분출 일시정지(paused). 다음 Ep49 1-3주 예보. WATCH/ORANGE 유지.",
+  "boosts": ["officialBoost +0.15", "thermalBoost +0.10", "priorityBoost +0.20"]
+}

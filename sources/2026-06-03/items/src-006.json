@@ -1,0 +1,18 @@
+{
+  "id": "src-006",
+  "date": "2026-06-03",
+  "title": "Bismarck Sea 해저 화산 day 26+ — NASA PACE 해수변색, 부석 70km², 신규 섬 가능",
+  "url": "https://science.nasa.gov/earth/earth-observatory/new-eruption-in-the-bismarck-sea/",
+  "source_org": "NASA Earth Observatory",
+  "tag": "update",
+  "related_item": "evt-701",
+  "domain": "Disaster",
+  "phenomenon": "volcanic_eruption",
+  "country": "PG",
+  "location": {"name": "Central Bismarck Sea", "lat": -3.03, "lon": 147.78},
+  "satellites": ["VIIRS", "MODIS Terra", "Landsat 9", "Himawari-9", "Sentinel-2A"],
+  "sensors": ["VIIRS", "MODIS", "OLI", "AHI", "MSI"],
+  "confidence": 0.97,
+  "summary": "분출 day 26+ 지속. 부석 뗏목 70km², 52km 길이, 200km+ WSW 확산. NASA PACE 해수변색 확인. Jim Garvin(NASA Goddard): '신규 섬 탄생 관찰 대기'. VAAC Darwin 항공경보 지속. 5위성 3기관 교차검증 유지.",
+  "boosts": ["officialBoost +0.15", "multiSatBoost +0.20", "thermalBoost +0.10"]
+}

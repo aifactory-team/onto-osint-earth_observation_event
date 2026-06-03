@@ -2485,3 +2485,48 @@ config 한도 내 — 새 클래스 0건 (max_new_classes_per_day=3), 새 관계
 - **다중 위성 교차검증:** 4건 유지 (Bismarck Sea 5위성, Canada 5위성, Kharg Island 3위성, Hami 2위성).
 - **한반도 GeoFocus 5건:** 변동 없음 (DPRK 구축함 6월 배치, 2번함 사고, 압록강 교량, 두만강 교량, KOMPSAT-7).
 - **카테고리 커버리지:** 자연재해 11건 ✓, 인간활동 0건(추적 지속), 기후·환경 2건 ✓(El Niño 에스컬레이션 + 대기 응답), 농업·해양 0건(El Niño 교차), 국방 0건(추적 지속), 인도주의 1건 ✓(Gaza UNOSAT). 인간활동·농업·해양·국방 금일 신규 없음 명시.
+
+## 2026-06-03 추론 결과
+
+### official_source_trust -- 4건
+
+- **evt-202** (Kilauea Ep48 종료) -- USGS HVO officialBoost +0.15 [confidence 0.95, 확정]
+- **temp-evt-1902** (El Nino Super SST +0.9C) -- CPC/NOAA officialBoost +0.15 [0.92, 확정]
+- **evt-701** (Bismarck Sea day26+) -- NASA EO/PACE officialBoost +0.15 [0.95, 확정]
+- **evt-1101** (Canada wildfire NOAA) -- NOAA NESDIS officialBoost +0.15 [0.92, 확정]
+
+### multi_satellite_confirmation -- 2건 유지
+
+- **evt-701** (Bismarck Sea) -- VIIRS + MODIS Terra + Landsat 9 + Himawari-9 + Sentinel-2A. 5위성 3기관 유지. multiSatBoost +0.20 [0.97, 확정]
+- **evt-1101** (Canada wildfire) -- GOES-18 + VIIRS + TROPOMI + OMPS + EarthCare. 5위성 3기관 유지. multiSatBoost +0.20 [0.95, 확정]
+
+### temporal_progression -- 2건
+
+- **evt-202** (Kilauea) -- Ep48 종료 -> Ep49 1-3주 예보. partOfSeries 시리즈 지속 [0.95, 확정]
+- **temp-evt-2001** (TS Jangmi) -- Okinawa -> mainland Japan 경로 진행 [0.85, 확정]
+
+### cascading_disaster -- 1건 잠정
+
+- **temp-evt-2001** (TS Jangmi) -> 일본 본토 200-300mm 강우 -> 홍수/산사태 잠정 triggeredBy_potential [0.70, 잠정]
+
+### sensor_capability_match -- 2건
+
+- **evt-202** (Kilauea) -- TIRS thermal_infrared x volcanic_eruption thermalBoost +0.10 [0.93]
+- **evt-701** (Bismarck Sea) -- VIIRS+MODIS thermal_infrared x volcanic_eruption thermalBoost +0.10 [0.92]
+
+### priorityBoost -- 2건
+
+- **temp-evt-2001** (TS Jangmi) -- 16+ 부상, 48K 정전, 인명피해 priorityBoost +0.20 [0.88]
+- **evt-1101** (Canada wildfire) -- 33,400+ 대피, 2 사망 priorityBoost +0.20 [0.95]
+
+### korea_geo_focus -- 0건 신규
+
+- 한반도 GeoFocus 기존 5건 유지(변동 없음): DPRK 구축함, 2번함, 압록강 교량, 두만강 교량, 5/26 발사체(미검증).
+
+### 일일 요약
+
+- **신규 1건:** 북극 해빙 최대면적 역대 최저 타이 5.52M sq miles(INTL, Climate, NASA ICESat-2).
+- **업데이트 11건:** Kilauea Ep48 종료/일시정지 Ep49 예보(US), TS Jangmi 본토 상륙 16+ 부상 48K 정전(JP), El Nino SST +0.9C +3C 전망(INTL), Bismarck Sea day26+ NASA PACE(PG), Canada 65+ NOAA 공식(CA), Mayon Day148+ 라하르(PH), Great Sitkin WATCH(US), Shishaldin ADVISORY(US), Kanlaon AL2(PH), Sangay/Reventador 지속(EC), Santa Rosa 97% 6/6 종결(US).
+- **다중 위성 교차검증:** 4건 유지 (Bismarck Sea 5위성, Canada 5위성, Kharg Island 3위성, Hami 2위성).
+- **한반도 GeoFocus 5건:** 변동 없음.
+- **카테고리 커버리지:** 자연재해 12건, 인간활동 2건(reported), 기후환경 3건(신규 1), 농업해양 0건(금일 신규 없음), 국방 2건(reported), 인도주의 2건(reported).

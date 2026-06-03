@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "description": "OSINT 온톨로지 스키마 — config/osint-config.json의 seed로부터 초기화되고, 매일 파이프라인 실행 시 자동 확장된다. 도메인: 위성영상으로 관측 가능한 지구상 이벤트 (Earth Observation Events).",
-  "last_updated": "2026-06-02",
+  "last_updated": "2026-06-03",
   "classes": [
     {
       "id": "Entity",
@@ -604,6 +604,13 @@
       "target": "temp-evt-2201(신규), temp-evt-2202(신규), temp-evt-2203(신규) + updates to evt-202, temp-evt-2001, temp-evt-1902, evt-1101, evt-701, evt-082, evt-203, evt-204, temp-evt-1401",
       "reason": "신규 3건: (1) Gaza UNOSAT Sentinel-1 포괄적 피해 평가 — 197,000건 건물 파괴/손상 80%(temp-evt-2201, Sentinel-1 SAR, UNOSAT, PS, dom-humanitarian infrastructure_damage, sarBoost+officialBoost+baCredibility). (2) First El Niño impacts detected in June weather(temp-evt-2202, 미국/캐나다 대기 응답 첫 감지, dom-climate, satellite_unverified). (3) Ecuador Sangay/Reventador 화산 356+64-84 daily(temp-evt-2203, GOES-19, EC 신규국, dom-disaster volcanic_eruption). 업데이트 11건: Kilauea Ep48 분수분출 4:40am HST June 1 — 200m 분수 record(evt-202, USGS HVO, Sentinel-2A+Landsat 9), 태풍 Jangmi 오키나와 접근 400+ 항공편(temp-evt-2001, Himawari-9, JP co-jp 추가), El Niño CPC 'Super 가장 유력' ECMWF 100% Kelvin +8°C(temp-evt-1902), 캐나다 산불 65건 33,400+(evt-1101), Bismarck Sea day25+(evt-701), Mayon Day147+ 287K+(evt-082), Great Sitkin WATCH valley(evt-203), Shishaldin ADVISORY SO2 SW(evt-204), Kanlaon AL2(temp-evt-1401). 다중 위성 교차검증 4건 유지. 한반도 GeoFocus 5건 유지(변동 없음). 스키마 구조적 변경 없음 — 기존 클래스·관계·Phenomenon으로 충분.",
       "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009", "src-010", "src-011", "src-012", "src-013", "src-021", "src-022"]
+    },
+    {
+      "date": "2026-06-03",
+      "action": "add_event_and_update",
+      "target": "temp-evt-2301(신규) + updates to evt-202, temp-evt-2001, temp-evt-1902, evt-701, evt-1101, evt-082, evt-203, evt-204, temp-evt-1401, temp-evt-2203, evt-1201",
+      "reason": "신규 1건: 북극 해빙 최대면적 역대 최저 타이 5.52M sq miles(temp-evt-2301, ICESat-2/AMSR-2, NASA, dom-climate, officialBoost). 업데이트 11건: Kilauea Ep48 종료/일시정지 9시간 분출 후 Ep49 1-3주 예보(evt-202), TS Jangmi 일본 본토 상륙 16+ 부상 48K 정전 300+ 항공편(temp-evt-2001, Himawari-9), El Nino SST NINO3.4 +0.9C 모델 +3C 전망(temp-evt-1902, CPC/NOAA), Bismarck Sea day26+ NASA PACE 해수변색 신규섬 가능(evt-701, 5위성 유지), 캐나다 산불 NOAA NESDIS 공식 보고(evt-1101, 5위성 유지), Mayon Day148+ 라하르 위험 증가(evt-082), Great Sitkin WATCH(evt-203), Shishaldin ADVISORY(evt-204), Kanlaon AL2(temp-evt-1401), Sangay/Reventador 지속(temp-evt-2203), Santa Rosa 97% 6/6 종결(evt-1201). 다중 위성 교차검증 4건 유지. 한반도 GeoFocus 5건 유지. 스키마 구조적 변경 없음.",
+      "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009", "src-010", "src-011", "src-012", "src-013", "src-014", "src-015", "src-016", "src-017"]
     }
   ]
 }

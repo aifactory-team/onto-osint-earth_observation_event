@@ -1,0 +1,273 @@
+{
+  "date": "2026-06-03",
+  "pipeline_phase": 1,
+  "search_count": 20,
+  "engines_used": ["google", "naver", "duckduckgo"],
+  "languages": ["ko", "en"],
+  "queries": [
+    {"q": "satellite imagery wildfire June 2026", "engine": "google", "lang": "en", "results": 8},
+    {"q": "satellite imagery volcano eruption June 2026", "engine": "google", "lang": "en", "results": 12},
+    {"q": "satellite imagery typhoon Jangmi Japan 2026", "engine": "google", "lang": "en", "results": 9},
+    {"q": "satellite imagery flood June 2026", "engine": "google", "lang": "en", "results": 5},
+    {"q": "Sentinel-1 SAR change detection June 2026", "engine": "google", "lang": "en", "results": 4},
+    {"q": "Sentinel-5P methane super-emitter 2026", "engine": "google", "lang": "en", "results": 6},
+    {"q": "NASA Earth Observatory June 2026", "engine": "google", "lang": "en", "results": 7},
+    {"q": "Copernicus EMS activation June 2026", "engine": "google", "lang": "en", "results": 3},
+    {"q": "CSIS Beyond Parallel North Korea satellite 2026", "engine": "google", "lang": "en", "results": 5},
+    {"q": "Bellingcat satellite imagery 2026", "engine": "google", "lang": "en", "results": 4},
+    {"q": "El Nino 2026 Super forecast CPC ECMWF", "engine": "google", "lang": "en", "results": 7},
+    {"q": "Canada wildfire 2026 satellite NOAA VIIRS", "engine": "google", "lang": "en", "results": 6},
+    {"q": "Bismarck Sea volcano pumice new island 2026", "engine": "google", "lang": "en", "results": 8},
+    {"q": "Maxar imagery defense military June 2026", "engine": "google", "lang": "en", "results": 3},
+    {"q": "Arctic sea ice record 2026 satellite", "engine": "google", "lang": "en", "results": 5},
+    {"q": "위성영상 산불 화산 2026년 6월", "engine": "naver", "lang": "ko", "results": 4},
+    {"q": "위성영상 북한 군사 2026", "engine": "naver", "lang": "ko", "results": 5},
+    {"q": "Sentinel satellite methane plume mapping 2026", "engine": "duckduckgo", "lang": "en", "results": 4},
+    {"q": "UNOSAT Gaza satellite damage assessment 2026", "engine": "duckduckgo", "lang": "en", "results": 5},
+    {"q": "South China Sea satellite imagery construction 2026", "engine": "duckduckgo", "lang": "en", "results": 4}
+  ],
+  "total_raw_results": 122,
+  "deduplicated_results": 24,
+  "results": [
+    {
+      "id": "sr-001",
+      "title": "Kilauea Episode 48 paused after 9 hours — WATCH/ORANGE maintained, Ep49 forecast 1-3 weeks",
+      "url": "https://www.usgs.gov/volcanoes/kilauea/volcano-updates",
+      "source": "USGS HVO",
+      "date": "2026-06-03",
+      "snippet": "Ep48 ended abruptly 1:37pm HST June 1 after 9 hours. Record 48th episode. Max 200m fountains from north vent. Tephra at Uekahuna, Hwy 11, Volcano village. Eruption paused. Next episode Ep49 likely within 1-3 weeks.",
+      "domain": "Disaster",
+      "relevance_score": 0.95
+    },
+    {
+      "id": "sr-002",
+      "title": "Tropical Storm Jangmi hitting mainland Japan June 2-3, 16+ injured, 48K homes without power",
+      "url": "https://www.japantimes.co.jp/news/2026/06/02/japan/storm-typhoon-jangmi/",
+      "source": "Japan Times",
+      "date": "2026-06-03",
+      "snippet": "Downgraded from Typhoon to Tropical Storm. Moving NE along Japan Pacific coast. June 2: 16+ injured, 48,000 homes without power in Okinawa/Kagoshima. Kadena AB 74mph gust. Approaching Kyushu-Shikoku-Kansai-Kanto June 3.",
+      "domain": "Disaster",
+      "relevance_score": 0.92
+    },
+    {
+      "id": "sr-003",
+      "title": "Tropical Storm Jangmi — ANA/JAL 300+ flights cancelled for June 3 mainland impact",
+      "url": "https://www.travelandtourworld.com/news/article/0tle4smpouo4/",
+      "source": "Travel and Tour World",
+      "date": "2026-06-03",
+      "snippet": "ANA/JAL 300+ flight cancellations for June 3. 200-300mm rainfall, flooding/landslide risk for Kyushu, Shikoku, Kansai, Kanto including Tokyo.",
+      "domain": "Disaster",
+      "relevance_score": 0.88
+    },
+    {
+      "id": "sr-004",
+      "title": "El Nino Super El Nino — CPC most likely, ECMWF 100%, Kelvin +8C, SST +0.9C",
+      "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
+      "source": "CPC/NOAA",
+      "date": "2026-06-03",
+      "snippet": "ECMWF 100% probability. CPC: Super El Nino single most likely outcome. Kelvin wave +8C. SST anomaly NINO3.4 reached +0.9C week of May 13. Models project +3C by late 2026. Next discussion June 11.",
+      "domain": "Climate",
+      "relevance_score": 0.90
+    },
+    {
+      "id": "sr-005",
+      "title": "Super El Nino 2026 record-breaking intensity forecast weather impacts",
+      "url": "https://www.severe-weather.eu/long-range-2/super-el-nino-2026-record-breaking-intensity-forecast-weather-impacts-united-states-canada-europe-fa/",
+      "source": "Severe Weather Europe",
+      "date": "2026-06-03",
+      "snippet": "First atmospheric impacts detected in June US/Canada weather. Models project +3C by late 2026.",
+      "domain": "Climate",
+      "relevance_score": 0.85
+    },
+    {
+      "id": "sr-006",
+      "title": "Bismarck Sea submarine volcano — pumice 70km2, possible new island, NASA PACE confirmed",
+      "url": "https://science.nasa.gov/earth/earth-observatory/new-eruption-in-the-bismarck-sea/",
+      "source": "NASA Earth Observatory",
+      "date": "2026-06-03",
+      "snippet": "Continuing eruption. Pumice 70km2 (52km length), 200km+ WSW spread. NASA PACE ocean discoloration confirmed. Jim Garvin: waiting to see if a new island is about to be born.",
+      "domain": "Disaster",
+      "relevance_score": 0.95
+    },
+    {
+      "id": "sr-007",
+      "title": "Bismarck Sea eruption may cause new island — Discover Magazine",
+      "url": "https://www.discovermagazine.com/an-underwater-volcanic-eruption-brewing-in-the-bismarck-sea-may-cause-a-new-island-to-rise-49148",
+      "source": "Discover Magazine",
+      "date": "2026-06-03",
+      "snippet": "Possible new island formation. Day 26+ eruption continuing. Multiple satellite monitoring.",
+      "domain": "Disaster",
+      "relevance_score": 0.88
+    },
+    {
+      "id": "sr-008",
+      "title": "Bismarck Sea undersea volcano erupting Papua New Guinea — EarthSky",
+      "url": "https://earthsky.org/earth/undersea-volcano-erupting-papua-new-guinea-may-2026/",
+      "source": "EarthSky",
+      "date": "2026-06-03",
+      "snippet": "Eruption continues with pumice rafts and aviation warnings from VAAC Darwin.",
+      "domain": "Disaster",
+      "relevance_score": 0.85
+    },
+    {
+      "id": "sr-009",
+      "title": "NOAA satellites monitor Canadian wildfires and smoke — NESDIS",
+      "url": "https://www.nesdis.noaa.gov/news/noaa-satellites-monitor-canadian-wildfires-and-smoke",
+      "source": "NOAA NESDIS",
+      "date": "2026-06-03",
+      "snippet": "65+ active fires, 33,400+ evacuated, 2 deaths, 18,935+ ha burned. Smoke drifting to US midwest/Europe. NOAA NESDIS heat signature and smoke monitoring from mid-May.",
+      "domain": "Disaster",
+      "relevance_score": 0.92
+    },
+    {
+      "id": "sr-010",
+      "title": "Canada wildfires smoke deaths evacuations Manitoba Saskatchewan Alberta — CBS",
+      "url": "https://www.cbsnews.com/news/canada-wildfires-smoke-deaths-evacuations-manitoba-saskatchewan-alberta/",
+      "source": "CBS News",
+      "date": "2026-06-03",
+      "snippet": "June-August above-normal temps forecast for nearly all Canadian regions — BC highest risk.",
+      "domain": "Disaster",
+      "relevance_score": 0.88
+    },
+    {
+      "id": "sr-011",
+      "title": "Mayon volcano AL3 Day 148+ — 287,000+ displaced, lahar risk from rainy season",
+      "url": "https://reliefweb.int/disaster/vo-2026-000065-phl",
+      "source": "ReliefWeb / UN OCHA",
+      "date": "2026-06-03",
+      "snippet": "AL3, 287,000+ displaced, continuous Strombolian + PDC for 148+ days. Rainy season + Jangmi habagat → lahar risk increasing.",
+      "domain": "Disaster",
+      "relevance_score": 0.85
+    },
+    {
+      "id": "sr-012",
+      "title": "Great Sitkin volcano WATCH/ORANGE — lava dome advancing into valleys",
+      "url": "https://avo.alaska.edu/volcano/great-sitkin",
+      "source": "USGS AVO",
+      "date": "2026-06-03",
+      "snippet": "Lava dome filled summit crater, advancing into valleys, ongoing since 2021.",
+      "domain": "Disaster",
+      "relevance_score": 0.78
+    },
+    {
+      "id": "sr-013",
+      "title": "Shishaldin volcano ADVISORY/YELLOW — SO2 drifting SW",
+      "url": "https://avo.alaska.edu/volcano/shishaldin",
+      "source": "USGS AVO",
+      "date": "2026-06-03",
+      "snippet": "SO2 drifting SW, steam plume, seismic/infrasound.",
+      "domain": "Disaster",
+      "relevance_score": 0.72
+    },
+    {
+      "id": "sr-014",
+      "title": "Kanlaon volcano AL2 — continuing eruptive activity",
+      "url": "https://volcano.si.edu/volcano.cfm?vn=272020",
+      "source": "Smithsonian GVP",
+      "date": "2026-06-03",
+      "snippet": "6-31 daily VQs, SO2 emissions continuing.",
+      "domain": "Disaster",
+      "relevance_score": 0.72
+    },
+    {
+      "id": "sr-015",
+      "title": "Ecuador Sangay 356 explosions + Reventador 64-84 daily — GOES-19 ash monitoring",
+      "url": "https://volcano.si.edu/reports_weekly.cfm",
+      "source": "Smithsonian GVP",
+      "date": "2026-06-03",
+      "snippet": "Sangay 356 explosions, Reventador 64-84 daily. GOES-19 ash monitoring.",
+      "domain": "Disaster",
+      "relevance_score": 0.72
+    },
+    {
+      "id": "sr-016",
+      "title": "Santa Rosa Island fire 97% contained, 18,379 acres",
+      "url": "https://inciweb.wildfire.gov/incident-information/cacnp-santa-rosa-island-fire",
+      "source": "InciWeb",
+      "date": "2026-06-03",
+      "snippet": "97% contained, closing June 6. 18,379 acres (7,438 ha), largest on record for Channel Islands.",
+      "domain": "Disaster",
+      "relevance_score": 0.75
+    },
+    {
+      "id": "sr-017",
+      "title": "Arctic winter sea ice 2026 tied record lowest",
+      "url": "https://science.nasa.gov/earth/arctic-winter-sea-ice-2026/",
+      "source": "NASA",
+      "date": "2026-06-03",
+      "snippet": "Winter max 5.52M sq miles on March 15, 2026 — tied record lowest since 1979 satellite monitoring.",
+      "domain": "Climate",
+      "relevance_score": 0.88
+    },
+    {
+      "id": "sr-018",
+      "title": "ESA Sentinel trio maps methane super-emitters — 2974 plumes",
+      "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Trio_of_Sentinel_satellites_map_methane_super-emitters",
+      "source": "ESA",
+      "date": "2026-06-03",
+      "snippet": "ML algorithm maps 2974 plumes globally from oil/gas (45%), urban/landfill (35%), coal (20%). Sentinel-5P TROPOMI daily global methane map + Sentinel-2 + Sentinel-3.",
+      "domain": "Climate",
+      "relevance_score": 0.92
+    },
+    {
+      "id": "sr-019",
+      "title": "Philippines Thitu runway extension + Nanshan port — Planet Labs satellite",
+      "url": "https://www.rfa.org/english/southchinasea/2026/05/08/philippines-satellite-spratlys-infrastructure-upgrade/",
+      "source": "RFA",
+      "date": "2026-06-03",
+      "snippet": "1.5km runway F-16 capable + port construction on Nanshan. Planet Labs imagery.",
+      "domain": "HumanActivity",
+      "relevance_score": 0.82
+    },
+    {
+      "id": "sr-020",
+      "title": "China Antelope Reef 15 sq km reclamation — CSIS AMTI analysis",
+      "url": "https://amti.csis.org/antelope-reef-could-now-be-the-largest-island-in-the-south-china-sea/",
+      "source": "CSIS AMTI",
+      "date": "2026-06-03",
+      "snippet": "15 sq km reclamation. Accelerating dredging/landfill since Nov 2025. Cuarteron Reef HF radar system construction.",
+      "domain": "HumanActivity",
+      "relevance_score": 0.82
+    },
+    {
+      "id": "sr-021",
+      "title": "Gaza UNOSAT satellite damage assessment — 197,000+ buildings",
+      "url": "https://unosat.org/products/4130",
+      "source": "UNOSAT",
+      "date": "2026-06-03",
+      "snippet": "197,000+ buildings damaged/destroyed (80%), Sentinel-1 SAR. Active InSAR monitoring ongoing.",
+      "domain": "Humanitarian",
+      "relevance_score": 0.90
+    },
+    {
+      "id": "sr-022",
+      "title": "Bellingcat Lebanon 46+ towns satellite imagery ongoing demolitions",
+      "url": "https://www.bellingcat.com/news/2026/05/14/satellite-imagery-shows-ongoing-demolitions-across-southern-lebanon/",
+      "source": "Bellingcat",
+      "date": "2026-06-03",
+      "snippet": "PlanetScope imagery March-May 2026, interactive map. 46+ towns/villages in IDF Yellow Line heavily damaged/flattened.",
+      "domain": "Humanitarian",
+      "relevance_score": 0.85
+    },
+    {
+      "id": "sr-023",
+      "title": "DPRK 5,000-ton destroyer fleet — satellite analysis construction status",
+      "url": "https://www.dailynk.com/english/satellite-analysis-north-koreas-5000-ton-destroyer-fleet-in-construction-but-short-on-combat-readiness/",
+      "source": "Daily NK",
+      "date": "2026-06-03",
+      "snippet": "3rd hull Oct 2026 target, Kim Jong Un ordered 2+/year. Combat readiness analysis.",
+      "domain": "Defense",
+      "relevance_score": 0.80
+    },
+    {
+      "id": "sr-024",
+      "title": "Yongbyon nuclear complex heightened activity — satellite images",
+      "url": "https://www.rfa.org/english/korea/2026/04/28/north-korea-satellite-yongbyon-nuclear/",
+      "source": "RFA",
+      "date": "2026-06-03",
+      "snippet": "Heightened activity, water discharge from 5MW reactor. Satellite images.",
+      "domain": "Defense",
+      "relevance_score": 0.78
+    }
+  ]
+}
