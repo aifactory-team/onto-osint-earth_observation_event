@@ -1,0 +1,18 @@
+{
+  "id": "src-021",
+  "date": "2026-06-04",
+  "title": "Thitu/Nanshan 건설 — Planet Labs 기보고",
+  "url": "https://www.rfa.org/english/southchinasea/2026/05/08/philippines-satellite-spratlys-infrastructure-upgrade/",
+  "source_org": "RFA",
+  "tag": "reported",
+  "related_item": "evt-305",
+  "domain": "HumanActivity",
+  "phenomenon": "construction",
+  "country": "PH",
+  "location": {"name": "Thitu/Nanshan, Spratly Islands", "lat": 11.05, "lon": 114.28},
+  "satellites": ["PlanetScope (Doves)"],
+  "sensors": ["optical_multispectral"],
+  "confidence": 0.82,
+  "summary": "기보고 항목. 필리핀 Thitu 활주로 1.5km + Nanshan 항만 건설 Planet Labs 영상.",
+  "boosts": []
+}

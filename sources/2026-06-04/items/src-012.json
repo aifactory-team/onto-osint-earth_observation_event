@@ -1,0 +1,19 @@
+{
+  "id": "src-012",
+  "date": "2026-06-04",
+  "title": "중국 Hami ICBM 80+ 발사 패드 — Reuters/NBC 위성영상, 옥타곤 설비, C3 인프라",
+  "url": "https://www.nbcnews.com/world/asia/china-building-launch-pads-nuclear-missile-silos-satellite-images-show-rcna347503",
+  "source_org": "NBC News / Reuters",
+  "tag": "update",
+  "related_item": "temp-evt-2002",
+  "domain": "Defense",
+  "phenomenon": "military_buildup",
+  "country": "CN",
+  "location": {"name": "Hami, Xinjiang", "lat": 42.8, "lon": 93.5},
+  "satellites": ["WorldView-3", "PlanetScope (Doves)"],
+  "sensors": ["optical_pan", "optical_multispectral"],
+  "confidence": 0.88,
+  "summary": "Reuters/NBC 공동 보도. Hami 사일로 필드 인근 80+ 발사 패드 건설 확인. 대형 팔각형(octagonal) 설비 2기. C3(지휘통제통신) 인프라. 광섬유 연결. 전례 없는 규모의 ICBM 인프라 확장. WorldView-3 + PlanetScope 교차 확인.",
+  "boosts": ["hiResBoost +0.15", "multiSatBoost +0.20"],
+  "before_after_available": true
+}

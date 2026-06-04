@@ -1,0 +1,18 @@
+{
+  "id": "src-026",
+  "date": "2026-06-04",
+  "title": "ESA Sentinel 트리오 메탄 — 기보고",
+  "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Trio_of_Sentinel_satellites_map_methane_super-emitters",
+  "source_org": "ESA",
+  "tag": "reported",
+  "related_item": "temp-evt-2204",
+  "domain": "ClimateEnvironment",
+  "phenomenon": "methane_plume",
+  "country": "INTL",
+  "location": {"name": "Global", "lat": 0.0, "lon": 0.0},
+  "satellites": ["Sentinel-5P", "Sentinel-2A", "Sentinel-3"],
+  "sensors": ["TROPOMI", "MSI"],
+  "confidence": 0.92,
+  "summary": "기보고 항목. ESA Sentinel-5P + Sentinel-2 + Sentinel-3 ML 기반 2974 플룸 글로벌 매핑.",
+  "boosts": []
+}

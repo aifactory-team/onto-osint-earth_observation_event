@@ -1,0 +1,18 @@
+{
+  "id": "src-008",
+  "date": "2026-06-04",
+  "title": "캐나다 산불 연기 미국 전역 확산 — NOAA NESDIS 위성 영상",
+  "url": "https://www.nesdis.noaa.gov/news/smoke-canadian-wildfires-blankets-us",
+  "source_org": "NOAA NESDIS",
+  "tag": "update",
+  "related_item": "evt-1101",
+  "domain": "Disaster",
+  "phenomenon": "wildfire",
+  "country": "CA",
+  "location": {"name": "US Midwest (smoke impact)", "lat": 45.0, "lon": -93.0},
+  "satellites": ["VIIRS (Suomi-NPP/JPSS)", "GOES-18"],
+  "sensors": ["VIIRS", "ABI"],
+  "confidence": 0.90,
+  "summary": "NOAA 위성영상으로 캐나다 산불 연기가 미국 중서부 전역 뒤덮은 상황 확인. VIIRS aerosol optical depth 유의미 상승.",
+  "boosts": ["officialBoost +0.15"]
+}

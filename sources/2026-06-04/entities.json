@@ -1,0 +1,169 @@
+{
+  "date": "2026-06-04",
+  "entities": [
+    {
+      "temp_id": "temp-evt-2401",
+      "matched_id": null,
+      "type": "Event",
+      "name": "이스라엘 가자 40+ 군사 초소 건설 — Al Jazeera Open Source Unit PlanetScope/WorldView 위성 분석",
+      "properties": {
+        "phenomenon": "military_buildup",
+        "domain": "dom-defense",
+        "country": "PS",
+        "lat": 31.5,
+        "lon": 34.45,
+        "region": "Gaza Strip",
+        "severity": "high",
+        "satellites_used": ["PlanetScope (Doves)", "WorldView-3"],
+        "sensors_used": ["optical_multispectral", "optical_pan"],
+        "data_products": [],
+        "before_after_available": true,
+        "confidence": 0.90,
+        "source_url": "https://www.aljazeera.com/news/2026/6/3/israel-is-building-more-military-posts-in-gaza-satellite-imagery-shows",
+        "analyst_org": "Al Jazeera Open Source Unit",
+        "details": "40개 이상 군사 초소 식별. 8개 휴전(Oct 2025) 후 신규 건설. Khan Younis 동쪽 묘지 위 1개. 가자시 동쪽 초소 70% 확장. 군사 인프라 고착화 진행."
+      },
+      "source_ids": ["src-001"],
+      "mention_count": 1
+    }
+  ],
+  "updated_entities": [
+    {
+      "id": "temp-evt-2001",
+      "type": "Event",
+      "name": "TS Jangmi — 일본 와카야마 상륙, 23 부상, 900 항공편 취소, 도쿄 Level 4",
+      "update_summary": "6/3 04:30 와카야마 상륙. 23명 부상, 57가옥 파손, 900 항공편 취소. 도쿄 사상 첫 Level 4 위험 경보. 미에현 한달치 강우 1일 집중. 가와사키 30cm 침수. NASA EO VIIRS 야간 영상 Image of the Day 선정. 6/4 태평양으로 이동, 교통 복구 중.",
+      "source_ids": ["src-002", "src-003", "src-004", "src-005"]
+    },
+    {
+      "id": "evt-1101",
+      "type": "Event",
+      "name": "캐나다 산불 400+ — 연기 미국 중서부 'very unhealthy', 27,000+ 대피",
+      "update_summary": "400+ 화재 캐나다 전역. AQ 'very unhealthy' 미네소타, 'unhealthy' 미시간(6/3-4). 27,000+ 3개 주 대피(Flin Flon 5,000, La Ronge 2,500). NOAA NESDIS 위성 모니터링 공식 보고 지속. 연기 유럽까지 도달. VIIRS/MODIS 열 시그니처 + GOES 연기 확산 + TROPOMI 대기질. 5위성 3기관 교차검증 유지.",
+      "source_ids": ["src-006", "src-007", "src-008"]
+    },
+    {
+      "id": "evt-202",
+      "type": "Event",
+      "name": "Kilauea Ep48 종료 — Ep49 10-15일 내(6/13-18) 예보, ADVISORY/YELLOW",
+      "update_summary": "Ep48 6/1 종료 후 일시정지. WATCH/ORANGE → ADVISORY/YELLOW 하향. 재팽창(reinflation) 진행 중. Ep49 10-15일 내(6/13-18경) 예보.",
+      "source_ids": ["src-009"]
+    },
+    {
+      "id": "evt-701",
+      "type": "Event",
+      "name": "Bismarck Sea 해저 화산 day 27+ — 분출 감소, 수중음향 지속",
+      "update_summary": "Day 27+ 지속. Rabaul Volcano Observatory: 5/21-28 분출 활동 감소. 수중음향 모니터링으로 활동 지속 확인. GEOMAR 심해 화산 분석. 부석 뗏목·해수변색 지속.",
+      "source_ids": ["src-010"]
+    },
+    {
+      "id": "temp-evt-1902",
+      "type": "Event",
+      "name": "El Nino — WMO 80% Jun-Aug, 90%+ Nov, 허리케인 억제",
+      "update_summary": "WMO 공식 성명 발표. El Nino 80% 확률 6-8월, 90%+ 11월. 2026 대서양 허리케인 시즌 6/1 개시 후 zero activity — El Nino 억제 효과. 건조 공기 지배.",
+      "source_ids": ["src-011"]
+    },
+    {
+      "id": "temp-evt-2002",
+      "type": "Event",
+      "name": "중국 Hami ICBM 80+ 발사 패드 — Reuters/NBC 상세 위성 분석",
+      "update_summary": "Reuters/NBC 공동 보도로 상세 정보 추가. 80+ 발사 패드, 대형 팔각형 설비 2기, C3 인프라, 광섬유 연결. 전례 없는 규모. WorldView-3 + PlanetScope 2위성 교차 확인. multiSatBoost + hiResBoost 유지.",
+      "source_ids": ["src-012"]
+    },
+    {
+      "id": "evt-082",
+      "type": "Event",
+      "name": "Mayon Day 149+ AL3 — 287,000+ 이재민",
+      "update_summary": "Day 149+ 지속. AL3. 287,000+ 이재민. continuous Strombolian 분출.",
+      "source_ids": ["src-013"]
+    },
+    {
+      "id": "evt-203",
+      "type": "Event",
+      "name": "Great Sitkin — WATCH/ORANGE, 용암 돔 지속",
+      "update_summary": "WATCH/ORANGE 유지. 용암 돔 valley 진출 지속. SAR 관측 지속.",
+      "source_ids": ["src-014"]
+    },
+    {
+      "id": "evt-204",
+      "type": "Event",
+      "name": "Shishaldin — ADVISORY/YELLOW, SO2 지속",
+      "update_summary": "ADVISORY/YELLOW 유지. SO2 배출 지속. 지진·인프라사운드 지속.",
+      "source_ids": ["src-015"]
+    },
+    {
+      "id": "temp-evt-1401",
+      "type": "Event",
+      "name": "Kanlaon — AL2, SO2 491-1788 t/d",
+      "update_summary": "AL2 유지. 일일 VQ 6-33회. SO2 491-1788 t/d.",
+      "source_ids": ["src-016"]
+    },
+    {
+      "id": "evt-128",
+      "type": "Event",
+      "name": "Dukono — 화산재 300-1600m 지속",
+      "update_summary": "화산재 300-1600m 분출 지속. AL2.",
+      "source_ids": ["src-017"]
+    },
+    {
+      "id": "temp-evt-2203",
+      "type": "Event",
+      "name": "Sangay/Reventador — 분출 지속",
+      "update_summary": "Sangay·Reventador 일일 분출 활동 지속.",
+      "source_ids": ["src-018"]
+    },
+    {
+      "id": "evt-1201",
+      "type": "Event",
+      "name": "Santa Rosa — 97% 진압, 6/6 종결 예정",
+      "update_summary": "97% 진압 유지. 18,379ac. 6/6 최종 종결 예정.",
+      "source_ids": ["src-019"]
+    }
+  ],
+  "relations": [
+    {"subject": "temp-evt-2401", "predicate": "observedBy", "object": "sat-planetscope", "source_ids": ["src-001"], "confidence": 0.92},
+    {"subject": "temp-evt-2401", "predicate": "observedBy", "object": "sat-worldview3", "source_ids": ["src-001"], "confidence": 0.92},
+    {"subject": "temp-evt-2401", "predicate": "manifests", "object": "phen-military", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "temp-evt-2401", "predicate": "inDomain", "object": "dom-defense", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "temp-evt-2401", "predicate": "inCountry", "object": "co-ps", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "temp-evt-2401", "predicate": "analyzedBy", "object": "org-aljazeera", "source_ids": ["src-001"], "confidence": 0.90},
+    {"subject": "temp-evt-2001", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-002"], "confidence": 0.93},
+    {"subject": "temp-evt-2001", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-003"], "confidence": 0.90},
+    {"subject": "temp-evt-2001", "predicate": "manifests", "object": "phen-typhoon", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "temp-evt-2001", "predicate": "inCountry", "object": "co-jp", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "temp-evt-2001", "predicate": "analyzedBy", "object": "org-nasa", "source_ids": ["src-002"], "confidence": 0.93},
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-007"], "confidence": 0.92},
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-goes18", "source_ids": ["src-007"], "confidence": 0.90},
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-modis-terra", "source_ids": ["src-007"], "confidence": 0.88},
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-sentinel5p", "source_ids": ["src-006"], "confidence": 0.85},
+    {"subject": "evt-1101", "predicate": "analyzedBy", "object": "org-noaa", "source_ids": ["src-007", "src-008"], "confidence": 0.95},
+    {"subject": "evt-1101", "predicate": "manifests", "object": "phen-wildfire", "source_ids": ["src-006"], "confidence": 0.95},
+    {"subject": "evt-1101", "predicate": "manifests", "object": "phen-air-pol", "source_ids": ["src-006"], "confidence": 0.90},
+    {"subject": "evt-202", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-009"], "confidence": 0.92},
+    {"subject": "evt-202", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-009"], "confidence": 0.92},
+    {"subject": "evt-202", "predicate": "manifests", "object": "phen-volcano", "source_ids": ["src-009"], "confidence": 0.98},
+    {"subject": "evt-202", "predicate": "analyzedBy", "object": "ent-org-hvo", "source_ids": ["src-009"], "confidence": 0.98},
+    {"subject": "evt-701", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-010"], "confidence": 0.90},
+    {"subject": "evt-701", "predicate": "manifests", "object": "phen-volcano", "source_ids": ["src-010"], "confidence": 0.95},
+    {"subject": "temp-evt-1902", "predicate": "manifests", "object": "phen-sealevel", "source_ids": ["src-011"], "confidence": 0.85},
+    {"subject": "temp-evt-2002", "predicate": "observedBy", "object": "sat-worldview3", "source_ids": ["src-012"], "confidence": 0.90},
+    {"subject": "temp-evt-2002", "predicate": "observedBy", "object": "sat-planetscope", "source_ids": ["src-012"], "confidence": 0.88},
+    {"subject": "temp-evt-2002", "predicate": "manifests", "object": "phen-military", "source_ids": ["src-012"], "confidence": 0.95},
+    {"subject": "temp-evt-2002", "predicate": "inCountry", "object": "co-cn", "source_ids": ["src-012"], "confidence": 0.95},
+    {"subject": "temp-evt-2002", "predicate": "inDomain", "object": "dom-defense", "source_ids": ["src-012"], "confidence": 0.95},
+    {"subject": "evt-082", "predicate": "manifests", "object": "phen-volcano", "source_ids": ["src-013"], "confidence": 0.95},
+    {"subject": "evt-203", "predicate": "manifests", "object": "phen-volcano", "source_ids": ["src-014"], "confidence": 0.90},
+    {"subject": "evt-204", "predicate": "manifests", "object": "phen-volcano", "source_ids": ["src-015"], "confidence": 0.85},
+    {"subject": "evt-204", "predicate": "observedBy", "object": "sat-sentinel5p", "source_ids": ["src-015"], "confidence": 0.80},
+    {"subject": "temp-evt-1401", "predicate": "manifests", "object": "phen-volcano", "source_ids": ["src-016"], "confidence": 0.85},
+    {"subject": "evt-128", "predicate": "manifests", "object": "phen-volcano", "source_ids": ["src-017"], "confidence": 0.82},
+    {"subject": "temp-evt-2203", "predicate": "manifests", "object": "phen-volcano", "source_ids": ["src-018"], "confidence": 0.80},
+    {"subject": "evt-1201", "predicate": "manifests", "object": "phen-wildfire", "source_ids": ["src-019"], "confidence": 0.78}
+  ],
+  "stats": {
+    "total_entities": 14,
+    "new_entities": 1,
+    "matched_entities": 13,
+    "total_relations": 38
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "src-001",
+  "date": "2026-06-04",
+  "title": "이스라엘 가자 40+ 군사 초소 건설 — Al Jazeera Open Source Unit PlanetScope/WorldView 위성분석",
+  "url": "https://www.aljazeera.com/news/2026/6/3/israel-is-building-more-military-posts-in-gaza-satellite-imagery-shows",
+  "source_org": "Al Jazeera",
+  "tag": "new",
+  "related_item": null,
+  "domain": "Defense",
+  "phenomenon": "military_buildup",
+  "country": "PS",
+  "location": {"name": "Gaza Strip", "lat": 31.5, "lon": 34.45},
+  "satellites": ["PlanetScope (Doves)", "WorldView-3"],
+  "sensors": ["optical_multispectral", "optical_pan"],
+  "confidence": 0.90,
+  "summary": "Al Jazeera Open Source Unit이 PlanetScope + WorldView 위성영상을 분석하여 가자 지구 내 40개 이상의 이스라엘 군사 초소를 식별. 이 중 8개는 2025년 10월 휴전 이후 완전 신규 건설. Khan Younis 동쪽 묘지 위에 1개 초소 건설. 가자시 동쪽 초소는 70% 확장. 위성영상 before/after 비교를 통한 군사 인프라 확장 확인.",
+  "boosts": ["analystBoost +0.10", "hiResBoost +0.15", "multiSatBoost +0.20", "baCredibilityBoost +0.10"],
+  "before_after_available": true,
+  "entities_extracted": [
+    {"type": "Event", "name": "이스라엘 가자 40+ 군사 초소 위성 관측", "phenomenon": "military_buildup", "domain": "dom-defense"},
+    {"type": "Satellite", "ref_id": "sat-planetscope"},
+    {"type": "Satellite", "ref_id": "sat-worldview3"},
+    {"type": "Organization", "ref_id": "org-aljazeera"},
+    {"type": "Organization", "ref_id": "org-planet"},
+    {"type": "Organization", "ref_id": "org-maxar"},
+    {"type": "Country", "ref_id": "co-ps"},
+    {"type": "Location", "name": "Gaza Strip", "lat": 31.5, "lon": 34.45}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "src-004",
+  "date": "2026-06-04",
+  "title": "Jangmi 일본 상륙 — IBTimes 23 부상, Mie 한달치 강우 하루만에",
+  "url": "https://www.ibtimes.sg/typhoon-jangmi-injures-23-after-making-landfall-japan-triggering-flood-landslide-warnings-87368",
+  "source_org": "International Business Times",
+  "tag": "update",
+  "related_item": "temp-evt-2001",
+  "domain": "Disaster",
+  "phenomenon": "typhoon",
+  "country": "JP",
+  "location": {"name": "Japan Pacific coast", "lat": 34.0, "lon": 135.0},
+  "satellites": [],
+  "sensors": [],
+  "confidence": 0.85,
+  "summary": "Jangmi 상륙 피해 종합 보도. 23명 부상, 57가옥 파손. 도쿄 Level 4 위험 경보. 미에현 한달치 강우. 900 항공편 취소. 홍수·산사태 경보.",
+  "boosts": []
+}

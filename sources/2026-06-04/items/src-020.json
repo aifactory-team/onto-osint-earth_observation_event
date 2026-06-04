@@ -1,0 +1,18 @@
+{
+  "id": "src-020",
+  "date": "2026-06-04",
+  "title": "Antelope Reef 매립 — CSIS AMTI 기보고",
+  "url": "https://amti.csis.org/antelope-reef-could-now-be-the-largest-island-in-the-south-china-sea/",
+  "source_org": "CSIS AMTI",
+  "tag": "reported",
+  "related_item": "evt-092",
+  "domain": "HumanActivity",
+  "phenomenon": "construction",
+  "country": "CN",
+  "location": {"name": "Antelope Reef, Paracel Islands", "lat": 16.4, "lon": 111.6},
+  "satellites": ["PlanetScope (Doves)"],
+  "sensors": ["optical_multispectral"],
+  "confidence": 0.85,
+  "summary": "기보고 항목. Antelope Reef 매립 15km² 지속 — CSIS AMTI 추적.",
+  "boosts": []
+}

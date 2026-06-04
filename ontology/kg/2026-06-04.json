@@ -1,0 +1,50 @@
+{
+  "date": "2026-06-04",
+  "version": "1.17.0",
+  "nodes": 28,
+  "triples": 32,
+  "new_triples": [
+    {"subject":"temp-evt-2401","predicate":"manifests","object":"phen-military","confidence":0.95,"source":"src-001"},
+    {"subject":"temp-evt-2401","predicate":"manifests","object":"phen-infra-damage","confidence":0.85,"source":"src-001","note":"cross-domain humanitarian"},
+    {"subject":"temp-evt-2401","predicate":"observedBy","object":"sat-planetscope","confidence":0.95,"source":"src-001"},
+    {"subject":"temp-evt-2401","predicate":"observedBy","object":"sat-worldview3","confidence":0.95,"source":"src-001"},
+    {"subject":"temp-evt-2401","predicate":"locatedIn","object":"ent-loc-006","confidence":0.92,"source":"src-001","note":"Gaza Strip reuse"},
+    {"subject":"temp-evt-2401","predicate":"inCountry","object":"co-ps","confidence":0.95,"source":"src-001"},
+    {"subject":"temp-evt-2401","predicate":"inDomain","object":"dom-defense","confidence":0.90,"source":"src-001"},
+    {"subject":"temp-evt-2401","predicate":"inDomain","object":"dom-humanitarian","confidence":0.85,"source":"src-001","note":"cross-domain"},
+    {"subject":"temp-evt-2401","predicate":"analyzedBy","object":"org-aljazeera","confidence":0.88,"source":"src-001"}
+  ],
+  "updated_triples": [
+    {"subject":"temp-evt-2001","predicate":"manifests","object":"phen-typhoon","update":"Jangmi 본토 상륙 Wakayama 6/3 -> 23명 부상 57가옥 파괴 900편 취소. Tokyo Level 4 alert 최초 발령. cascading_disaster 확정(홍수/산사태)","source":"src-002"},
+    {"subject":"evt-1101","predicate":"manifests","object":"phen-wildfire","update":"400+ fires active. AQ 'very unhealthy' Minnesota. 27,000+ evacuated 3 provinces. NOAA NESDIS + GOES-18 + VIIRS + TROPOMI","source":"src-003"},
+    {"subject":"evt-202","predicate":"manifests","object":"phen-volcano","update":"ADVISORY/YELLOW 하향(WATCH에서 하향). Ep49 10-15일 예보. 재팽창(reinflation) 지속","source":"src-004"},
+    {"subject":"evt-701","predicate":"manifests","object":"phen-volcano","update":"Day 27+. 분출 감소 추세이나 지속. Rabaul Volcano Observatory 보고","source":"src-005"},
+    {"subject":"temp-evt-1902","predicate":"manifests","object":"phen-sealevel","update":"WMO 80% Jun-Aug El Nino. 허리케인 시즌 개막했으나 활동 0 -- 억제 신호","source":"src-006"},
+    {"subject":"temp-evt-2002","predicate":"manifests","object":"phen-military","update":"Reuters/NBC 상세: 80+ pads, 2 octagonal installations, C3 인프라, 광섬유 연결. WorldView-3 + PlanetScope","source":"src-007"}
+  ],
+  "inferred_triples": [
+    {"subject":"temp-evt-2401","predicate":"multiSatBoost","object":"+0.20","rule":"multi_satellite_confirmation","confidence":0.95,"note":"PlanetScope(Planet) + WorldView-3(Maxar/Vantor) 독립 운영자 교차검증"},
+    {"subject":"temp-evt-2401","predicate":"hiResBoost","object":"+0.15","rule":"sensor_capability_match_hires","confidence":0.95,"note":"WorldView-3 0.31m resolution military_buildup"},
+    {"subject":"temp-evt-2401","predicate":"analystBoost","object":"+0.10","rule":"analyst_org_trust","confidence":0.88,"note":"Al Jazeera Open Source Unit OSINT 분석"},
+    {"subject":"temp-evt-2401","predicate":"baCredibilityBoost","object":"+0.10","rule":"before_after_credibility","confidence":0.92,"note":"before/after imagery available"},
+    {"subject":"temp-evt-2001","predicate":"triggeredBy_confirmed","object":"cascading_flood_landslide_jp","rule":"cascading_disaster","confidence":0.85,"note":"확정: 23 injuries, 57 houses damaged, flooding/landslides in Wakayama/Kanto confirmed"},
+    {"subject":"temp-evt-2001","predicate":"priorityBoost","object":"+0.20","rule":"disaster_severity_priority","confidence":0.90,"note":"23명 부상, 57가옥 파괴, 900편 취소, Tokyo Level 4 최초"},
+    {"subject":"temp-evt-2001","predicate":"officialBoost","object":"+0.15","rule":"official_source_trust","confidence":0.90,"note":"JMA 공식 경보"},
+    {"subject":"temp-evt-2001","predicate":"thermalBoost","object":"+0.10","rule":"sensor_capability_match_thermal","confidence":0.88,"note":"Himawari-9 AHI thermal infrared typhoon tracking"},
+    {"subject":"evt-1101","predicate":"multiSatBoost","object":"+0.20","rule":"multi_satellite_confirmation","confidence":0.95,"note":"5위성 3기관 유지: GOES-18+VIIRS+TROPOMI+OMPS+EarthCare"},
+    {"subject":"evt-1101","predicate":"officialBoost","object":"+0.15","rule":"official_source_trust","confidence":0.92,"note":"NOAA NESDIS"},
+    {"subject":"evt-1101","predicate":"priorityBoost","object":"+0.20","rule":"disaster_severity_priority","confidence":0.95,"note":"27,000+ evacuated, 400+ fires, AQ very unhealthy Minnesota"},
+    {"subject":"evt-202","predicate":"officialBoost","object":"+0.15","rule":"official_source_trust","confidence":0.95,"note":"USGS HVO ADVISORY/YELLOW"},
+    {"subject":"evt-202","predicate":"partOfSeries","object":"evt-202-ep48","rule":"temporal_progression","confidence":0.95,"note":"Ep48 종료 -> Ep49 10-15일 예보 시리즈 지속"},
+    {"subject":"evt-701","predicate":"multiSatBoost","object":"+0.20","rule":"multi_satellite_confirmation","confidence":0.97,"note":"5위성 유지: VIIRS+MODIS+Landsat9+Himawari-9+Sentinel-2A"},
+    {"subject":"evt-701","predicate":"partOfSeries","object":"evt-701-day27","rule":"temporal_progression","confidence":0.90,"note":"day 27+ 분출 감소 추세"},
+    {"subject":"temp-evt-2002","predicate":"multiSatBoost","object":"+0.20","rule":"multi_satellite_confirmation","confidence":0.90,"note":"WorldView-3+PlanetScope 유지"},
+    {"subject":"temp-evt-2002","predicate":"hiResBoost","object":"+0.15","rule":"sensor_capability_match_hires","confidence":0.92,"note":"WorldView-3 0.31m ICBM silo identification"}
+  ],
+  "stats": {
+    "new_explicit": 9,
+    "updated_explicit": 6,
+    "inferred": 17,
+    "total_today": 32
+  }
+}

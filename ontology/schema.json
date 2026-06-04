@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "description": "OSINT 온톨로지 스키마 — config/osint-config.json의 seed로부터 초기화되고, 매일 파이프라인 실행 시 자동 확장된다. 도메인: 위성영상으로 관측 가능한 지구상 이벤트 (Earth Observation Events).",
-  "last_updated": "2026-06-03",
+  "last_updated": "2026-06-04",
   "classes": [
     {
       "id": "Entity",
@@ -611,6 +611,13 @@
       "target": "temp-evt-2301(신규) + updates to evt-202, temp-evt-2001, temp-evt-1902, evt-701, evt-1101, evt-082, evt-203, evt-204, temp-evt-1401, temp-evt-2203, evt-1201",
       "reason": "신규 1건: 북극 해빙 최대면적 역대 최저 타이 5.52M sq miles(temp-evt-2301, ICESat-2/AMSR-2, NASA, dom-climate, officialBoost). 업데이트 11건: Kilauea Ep48 종료/일시정지 9시간 분출 후 Ep49 1-3주 예보(evt-202), TS Jangmi 일본 본토 상륙 16+ 부상 48K 정전 300+ 항공편(temp-evt-2001, Himawari-9), El Nino SST NINO3.4 +0.9C 모델 +3C 전망(temp-evt-1902, CPC/NOAA), Bismarck Sea day26+ NASA PACE 해수변색 신규섬 가능(evt-701, 5위성 유지), 캐나다 산불 NOAA NESDIS 공식 보고(evt-1101, 5위성 유지), Mayon Day148+ 라하르 위험 증가(evt-082), Great Sitkin WATCH(evt-203), Shishaldin ADVISORY(evt-204), Kanlaon AL2(temp-evt-1401), Sangay/Reventador 지속(temp-evt-2203), Santa Rosa 97% 6/6 종결(evt-1201). 다중 위성 교차검증 4건 유지. 한반도 GeoFocus 5건 유지. 스키마 구조적 변경 없음.",
       "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009", "src-010", "src-011", "src-012", "src-013", "src-014", "src-015", "src-016", "src-017"]
+    },
+    {
+      "date": "2026-06-04",
+      "action": "add_event_and_update",
+      "target": "temp-evt-2401(신규) + updates to temp-evt-2001, evt-1101, evt-202, evt-701, temp-evt-1902, temp-evt-2002, evt-082, evt-203, evt-204, temp-evt-1401, evt-801, temp-evt-2203, evt-1201",
+      "reason": "신규 1건: Israel Gaza 40+ military posts Al Jazeera 위성영상 OSINT(temp-evt-2401, PlanetScope+WorldView-3, PS, dom-defense+dom-humanitarian, multiSatBoost+hiResBoost+baCredibility+analystBoost, 0.95 cap). 업데이트 13건: TS Jangmi 본토 상륙 완료 23명 부상 57가옥 900편 Tokyo Level 4 최초 cascading 확정(temp-evt-2001), 캐나다 산불 400+ fires AQ very unhealthy Minnesota 27K+ 대피(evt-1101, 5위성 유지), Kilauea ADVISORY/YELLOW 하향 Ep49 10-15일 예보(evt-202), Bismarck Sea Day27+ 분출 감소(evt-701, 5위성 유지), El Nino WMO 80% Jun-Aug 허리케인 억제(temp-evt-1902), Hami ICBM Reuters/NBC 80+ pads C3 인프라(temp-evt-2002), Mayon 지속(evt-082), Great Sitkin WATCH(evt-203), Shishaldin ADVISORY(evt-204), Kanlaon AL2(temp-evt-1401), Bezymianny 추적(evt-801), Sangay/Reventador 지속(temp-evt-2203), Santa Rosa 추적(evt-1201). 다중 위성 교차검증 5건(신규 1건: Gaza 2위성 2기관). cascading_disaster 1건 확정(Jangmi 홍수/산사태). 한반도 GeoFocus 5건 유지. 스키마 구조적 변경 없음.",
+      "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007"]
     }
   ]
 }

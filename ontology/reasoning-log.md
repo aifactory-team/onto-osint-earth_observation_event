@@ -2530,3 +2530,82 @@ config 한도 내 — 새 클래스 0건 (max_new_classes_per_day=3), 새 관계
 - **다중 위성 교차검증:** 4건 유지 (Bismarck Sea 5위성, Canada 5위성, Kharg Island 3위성, Hami 2위성).
 - **한반도 GeoFocus 5건:** 변동 없음.
 - **카테고리 커버리지:** 자연재해 12건, 인간활동 2건(reported), 기후환경 3건(신규 1), 농업해양 0건(금일 신규 없음), 국방 2건(reported), 인도주의 2건(reported).
+
+## 2026-06-04 추론 결과
+
+### multi_satellite_confirmation (다중 위성 교차검증) -- 5건 (신규 1 + 유지 4)
+
+- **추론 #1 (신규):** temp-evt-2401 (Israel Gaza 40+ military posts) -- observedBy PlanetScope (Planet Labs, 3m) AND WorldView-3 (Maxar/Vantor, 0.31m) -> multiSatBoost +0.20 [confidence 0.95, 확정].
+  - 운영자 독립: Planet Labs != Maxar/Vantor -> 교차검증 성립.
+  - PlanetScope 광역 분포, WorldView-3 개별 구조물 식별 상보적.
+- **유지 #2:** evt-701 (Bismarck Sea) -- VIIRS + MODIS + Landsat 9 + Himawari-9 + Sentinel-2A. 5위성 3기관 유지. multiSatBoost +0.20 [0.97, 확정].
+- **유지 #3:** evt-1101 (Canada wildfire) -- GOES-18 + VIIRS + TROPOMI + OMPS + EarthCare. 5위성 3기관 유지. multiSatBoost +0.20 [0.95, 확정].
+- **유지 #4:** ent-evt-kharg (Kharg Island) -- Sentinel-1 + Sentinel-2 + Sentinel-3. 3위성 3센서 유지. multiSatBoost +0.20 [0.90, 확정].
+- **유지 #5:** temp-evt-2002 (Hami ICBM) -- WorldView-3 + PlanetScope. 2위성 2기관 유지. multiSatBoost +0.20 [0.90, 확정].
+
+### cascading_disaster -- 1건 확정
+
+- **추론 #2:** temp-evt-2001 (TS Jangmi 일본 본토 상륙) -> flooding/landslides **확정** [0.85, 확정].
+  - 이전 사이클 잠정(0.70) -> 금일 확정(0.85).
+  - 근거: 23명 부상, 57가옥 파괴, Wakayama/Kanto 홍수/산사태 실제 발생 확인.
+  - Tokyo Level 4 대피경보 최초 발령 -- 극한기상 cascading 확증.
+
+### official_source_trust -- 4건
+
+- **추론 #3:** evt-202 (Kilauea ADVISORY/YELLOW) -- USGS HVO officialBoost +0.15 [0.95, 확정].
+- **추론 #4:** temp-evt-2001 (TS Jangmi) -- JMA 공식 경보 officialBoost +0.15 [0.90, 확정].
+- **추론 #5:** evt-1101 (Canada wildfire) -- NOAA NESDIS officialBoost +0.15 [0.92, 확정].
+- **추론 #6:** evt-701 (Bismarck Sea) -- Rabaul Volcano Observatory officialBoost +0.15 [0.85, 확정].
+
+### temporal_progression -- 3건
+
+- **추론 #7:** evt-202 (Kilauea) -- Ep48 종료/일시정지 -> Ep49 10-15일 예보. partOfSeries 시리즈 지속 [0.95, 확정].
+- **추론 #8:** evt-701 (Bismarck Sea) -- Day 27+ 분출 감소 추세이나 지속. partOfSeries 시리즈 지속 [0.90, 확정].
+- **추론 #9:** temp-evt-2001 (TS Jangmi) -- 경로 완료 (Okinawa -> Wakayama -> Kanto). 열대저기압 약화 후 소멸 예상 [0.85, 확정].
+
+### sensor_capability_match -- 4건
+
+- **추론 #10:** temp-evt-2401 (Israel Gaza) -- WorldView-3 0.31m + military_buildup -> hiResBoost +0.15 [0.95, 확정]. 군사 거점/구조물/차량 식별 최적 해상도.
+- **추론 #11:** temp-evt-2001 (TS Jangmi) -- Himawari-9 AHI thermal_infrared + typhoon -> thermalBoost +0.10 [0.88, 확정]. 정지궤도 열적외 태풍 추적.
+- **추론 #12:** temp-evt-2002 (Hami ICBM) -- WorldView-3 0.31m + military_buildup -> hiResBoost +0.15 [0.92, 확정]. ICBM silo/pad 식별.
+- **추론 #13:** evt-202 (Kilauea) -- TIRS thermal_infrared + volcanic_eruption -> thermalBoost +0.10 [0.93, 확정].
+
+### disaster_severity_priority -- 2건
+
+- **추론 #14:** temp-evt-2001 (TS Jangmi) -- 23명 부상, 57가옥 파괴, 900편 항공편 취소, Tokyo Level 4 최초 -> priorityBoost +0.20 [0.90, 확정]. 보고서 1순위 배치.
+- **추론 #15:** evt-1101 (Canada wildfire) -- 400+ fires, 27,000+ 대피, AQ very unhealthy Minnesota -> priorityBoost +0.20 [0.95, 확정]. 보고서 1순위 배치.
+
+### before_after_credibility -- 1건 신규
+
+- **추론 #16:** temp-evt-2401 (Israel Gaza 40+ posts) -- before/after 위성영상 가용(ceasefire 전후 비교) -> baCredibilityBoost +0.10 [0.92, 확정].
+
+### analyst_org_trust -- 1건 신규
+
+- **추론 #17:** temp-evt-2401 (Israel Gaza) -- Al Jazeera Open Source Unit OSINT 분석 -> analystBoost +0.10 [0.88, 확정]. Al Jazeera 위성영상 OSINT는 독립 분석 기관 수준. 단, 정치적 결론에 대한 교차검증 필요(도메인 규칙).
+
+### korea_geo_focus -- 0건 신규
+
+- 한반도 GeoFocus 기존 5건 유지(변동 없음): DPRK 최현급 구축함, 2번함 Chongjin 건조 사고, 압록강 신교량 세관시설, 두만강 북-러 교량, DPRK 서해 발사체 5/26(미검증).
+
+### 종합 신뢰도 산정
+
+| 이벤트 ID | 이벤트명 | 기본 | 가산 | 최종 | 비고 |
+|-----------|---------|------|------|------|------|
+| temp-evt-2401 | Israel Gaza 40+ military posts | 0.80 | multiSat+0.20, hiRes+0.15, ba+0.10, analyst+0.10 | 0.95 (cap) | 신규, PlanetScope+WV-3 |
+| temp-evt-2001 | TS Jangmi 본토 상륙 | 0.75 | official+0.15, thermal+0.10, priority+0.20, cascading confirmed | 0.90 | 인명피해 1순위 |
+| evt-1101 | 캐나다 산불 400+ | 0.80 | multiSat+0.20, official+0.15, priority+0.20 | 0.95 | 5위성 3기관 |
+| evt-202 | Kilauea ADVISORY/YELLOW | 0.80 | official+0.15, thermal+0.10 | 0.90 | 하향 조정 |
+| evt-701 | Bismarck Sea Day 27+ | 0.80 | multiSat+0.20, official+0.15 | 0.95 | 5위성, 감소 추세 |
+| temp-evt-1902 | El Nino WMO 80% | 0.80 | official+0.15 | 0.90 | WMO/CPC |
+| temp-evt-2002 | Hami ICBM 80+ pads | 0.80 | multiSat+0.20, hiRes+0.15 | 0.95 | Reuters/NBC 상세 |
+
+---
+
+### 일일 요약
+
+- **신규 1건:** Israel Gaza 40+ military posts Al Jazeera 위성영상 OSINT(PS, Defense+Humanitarian, PlanetScope+WV-3).
+- **업데이트 13건:** TS Jangmi 본토 상륙 완료 23명 부상 cascading 확정(JP), 캐나다 산불 400+ fires AQ Minnesota(CA), Kilauea ADVISORY/YELLOW Ep49 10-15일(US), Bismarck Sea Day27+ 감소(PG), El Nino WMO 80% 허리케인 억제(INTL), Hami ICBM Reuters 80+ pads(CN), Mayon 지속(PH), Great Sitkin(US), Shishaldin(US), Kanlaon(PH), Bezymianny(RU), Sangay/Reventador(EC), Santa Rosa(US).
+- **다중 위성 교차검증:** 5건 (신규 1건: Gaza 2위성 2기관). Bismarck Sea 5위성, Canada 5위성, Kharg Island 3위성, Hami 2위성, Gaza 2위성.
+- **한반도 GeoFocus 5건:** 변동 없음.
+- **cascading_disaster:** 1건 확정 (Jangmi -> flooding/landslides JP, 잠정->확정 승격).
+- **카테고리 커버리지:** 자연재해 10건+, 인간활동 1건(Gaza cross-domain), 기후환경 1건(El Nino), 농업해양 0건(금일 신규 없음), 국방안보 2건(Gaza+Hami), 인도주의 1건(Gaza cross-domain).

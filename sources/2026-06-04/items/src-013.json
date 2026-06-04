@@ -1,0 +1,18 @@
+{
+  "id": "src-013",
+  "date": "2026-06-04",
+  "title": "Mayon AL3 Day 149+ — 287,000+ 이재민 지속",
+  "url": "https://reliefweb.int/disaster/vo-2026-000065-phl",
+  "source_org": "ReliefWeb / UN OCHA",
+  "tag": "update",
+  "related_item": "evt-082",
+  "domain": "Disaster",
+  "phenomenon": "volcanic_eruption",
+  "country": "PH",
+  "location": {"name": "Mayon Volcano, Albay Province", "lat": 13.257, "lon": 123.685},
+  "satellites": [],
+  "sensors": [],
+  "confidence": 0.85,
+  "summary": "Day 149+ 지속. PHIVOLCS AL3. 287,000+ 이재민. continuous Strombolian 분출.",
+  "boosts": ["priorityBoost +0.20"]
+}

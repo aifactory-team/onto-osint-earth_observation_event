@@ -1,0 +1,18 @@
+{
+  "id": "src-015",
+  "date": "2026-06-04",
+  "title": "Shishaldin ADVISORY — SO2 지속",
+  "url": "https://avo.alaska.edu/volcano/shishaldin",
+  "source_org": "USGS AVO",
+  "tag": "update",
+  "related_item": "evt-204",
+  "domain": "Disaster",
+  "phenomenon": "volcanic_eruption",
+  "country": "US",
+  "location": {"name": "Shishaldin, Alaska", "lat": 54.76, "lon": -163.97},
+  "satellites": ["Sentinel-5P"],
+  "sensors": ["TROPOMI"],
+  "confidence": 0.72,
+  "summary": "ADVISORY/YELLOW 유지. SO2 배출 지속. 지진·인프라사운드 지속.",
+  "boosts": ["officialBoost +0.15"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "src-024",
+  "date": "2026-06-04",
+  "title": "Gaza UNOSAT Sentinel-1 피해 평가 — 기보고",
+  "url": "https://unosat.org/products/4130",
+  "source_org": "UNOSAT",
+  "tag": "reported",
+  "related_item": "temp-evt-2201",
+  "domain": "Humanitarian",
+  "phenomenon": "infrastructure_damage",
+  "country": "PS",
+  "location": {"name": "Gaza Strip", "lat": 31.5, "lon": 34.45},
+  "satellites": ["Sentinel-1A", "Sentinel-1C"],
+  "sensors": ["C-band SAR"],
+  "confidence": 0.90,
+  "summary": "기보고 항목. UNOSAT Sentinel-1 SAR 197,000+ 건물 피해 80% 평가.",
+  "boosts": []
+}

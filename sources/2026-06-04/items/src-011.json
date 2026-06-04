@@ -1,0 +1,18 @@
+{
+  "id": "src-011",
+  "date": "2026-06-04",
+  "title": "WMO El Nino 공식 예보 — 80% Jun-Aug, 90%+ Nov, 허리케인 억제",
+  "url": "https://wmo.int/news/media-centre/wmo-prepare-el-nino",
+  "source_org": "WMO",
+  "tag": "update",
+  "related_item": "temp-evt-1902",
+  "domain": "ClimateEnvironment",
+  "phenomenon": "sea_level_change",
+  "country": "INTL",
+  "location": {"name": "Equatorial Pacific (NINO3.4)", "lat": 0.0, "lon": -170.0},
+  "satellites": [],
+  "sensors": [],
+  "confidence": 0.90,
+  "summary": "WMO 공식 성명: El Nino 조건 80% 확률 6-8월, 90%+ 11월. 2026 대서양 허리케인 시즌 6/1 개시에도 zero activity — El Nino 억제 효과. 건조 공기 지배.",
+  "boosts": ["officialBoost +0.15"]
+}

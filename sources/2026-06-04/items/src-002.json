@@ -1,0 +1,18 @@
+{
+  "id": "src-002",
+  "date": "2026-06-04",
+  "title": "NASA EO Image of the Day: Typhoon Jangmi VIIRS 야간 위성영상",
+  "url": "https://science.nasa.gov/earth/earth-observatory/typhoon-jangmi/",
+  "source_org": "NASA Earth Observatory",
+  "tag": "update",
+  "related_item": "temp-evt-2001",
+  "domain": "Disaster",
+  "phenomenon": "typhoon",
+  "country": "JP",
+  "location": {"name": "Japan, Pacific coast", "lat": 34.0, "lon": 135.0},
+  "satellites": ["VIIRS (Suomi-NPP/JPSS)"],
+  "sensors": ["VIIRS"],
+  "confidence": 0.93,
+  "summary": "NASA Earth Observatory Image of the Day로 선정된 Typhoon Jangmi VIIRS 야간(day-night band) 위성영상. 태풍의 구름 구조를 야간 조명으로 시각화. 일본 상륙 전후 궤적 확인.",
+  "boosts": ["officialBoost +0.15"]
+}

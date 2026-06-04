@@ -1,0 +1,18 @@
+{
+  "id": "src-007",
+  "date": "2026-06-04",
+  "title": "NOAA 위성 캐나다 산불·연기 모니터링 지속",
+  "url": "https://www.nesdis.noaa.gov/news/noaa-satellites-monitor-canadian-wildfires-and-smoke",
+  "source_org": "NOAA NESDIS",
+  "tag": "update",
+  "related_item": "evt-1101",
+  "domain": "Disaster",
+  "phenomenon": "wildfire",
+  "country": "CA",
+  "location": {"name": "Canada wildfire zones", "lat": 54.0, "lon": -105.0},
+  "satellites": ["VIIRS (Suomi-NPP/JPSS)", "GOES-18", "MODIS (Terra)"],
+  "sensors": ["VIIRS", "ABI", "MODIS"],
+  "confidence": 0.92,
+  "summary": "NOAA NESDIS 공식 위성 모니터링 지속. VIIRS/MODIS 열 시그니처 추적. GOES 연기 확산 실시간 모니터링. TROPOMI 대기질 분석.",
+  "boosts": ["officialBoost +0.15"]
+}

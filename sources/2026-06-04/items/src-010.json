@@ -1,0 +1,18 @@
+{
+  "id": "src-010",
+  "date": "2026-06-04",
+  "title": "Bismarck Sea 해저 화산 day 27+ — 분출 감소, 수중음향 지속, GEOMAR 분석",
+  "url": "https://www.geomar.de/en/news/article/possible-eruption-of-an-underwater-volcano-in-the-bismarck-sea",
+  "source_org": "GEOMAR",
+  "tag": "update",
+  "related_item": "evt-701",
+  "domain": "Disaster",
+  "phenomenon": "volcanic_eruption",
+  "country": "PG",
+  "location": {"name": "Central Bismarck Sea", "lat": -3.03, "lon": 147.78},
+  "satellites": ["Himawari-9", "VIIRS (Suomi-NPP/JPSS)", "Sentinel-2A", "Landsat 9", "MODIS (Terra)"],
+  "sensors": ["AHI", "VIIRS", "MSI", "OLI", "MODIS"],
+  "confidence": 0.90,
+  "summary": "Day 27+ 분출 지속. Rabaul Volcano Observatory 관측 결과 5/21-28 분출 활동 감소. 그러나 수중음향(hydroacoustic) 모니터링에서 여전히 활동 지속 확인. GEOMAR 심해 화산 과정 분석. 부석 뗏목·해수변색 지속.",
+  "boosts": ["officialBoost +0.15"]
+}

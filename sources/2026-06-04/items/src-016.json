@@ -1,0 +1,18 @@
+{
+  "id": "src-016",
+  "date": "2026-06-04",
+  "title": "Kanlaon AL2 — SO2 491-1788 t/d, 6-33 daily VQs",
+  "url": "https://volcano.si.edu/volcano.cfm?vn=272020",
+  "source_org": "Smithsonian GVP / PHIVOLCS",
+  "tag": "update",
+  "related_item": "temp-evt-1401",
+  "domain": "Disaster",
+  "phenomenon": "volcanic_eruption",
+  "country": "PH",
+  "location": {"name": "Kanlaon Volcano, Negros Island", "lat": 10.41, "lon": 123.13},
+  "satellites": ["Himawari-9"],
+  "sensors": ["AHI"],
+  "confidence": 0.72,
+  "summary": "PHIVOLCS AL2. 일일 화산 지진(VQ) 6-33회. SO2 배출량 491-1788 t/d 범위. 분출 지속.",
+  "boosts": []
+}

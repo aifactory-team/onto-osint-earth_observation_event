@@ -1,0 +1,247 @@
+{
+  "date": "2026-06-04",
+  "pipeline_phase": 1,
+  "search_count": 24,
+  "engines_used": ["google", "naver", "duckduckgo"],
+  "languages": ["ko", "en"],
+  "queries": [
+    {"q": "satellite imagery military posts Gaza June 2026", "engine": "google", "lang": "en", "results": 7},
+    {"q": "satellite imagery Israel Gaza military outposts ceasefire 2026", "engine": "google", "lang": "en", "results": 6},
+    {"q": "NASA Earth Observatory Image of the Day June 2026", "engine": "google", "lang": "en", "results": 8},
+    {"q": "Typhoon Jangmi landfall Japan damage June 2026", "engine": "google", "lang": "en", "results": 9},
+    {"q": "tropical storm Jangmi Japan flooding Wakayama Tokyo June 3 2026", "engine": "google", "lang": "en", "results": 7},
+    {"q": "Canada wildfire smoke air quality US midwest June 2026", "engine": "google", "lang": "en", "results": 8},
+    {"q": "Canadian wildfires satellite NOAA VIIRS smoke June 2026", "engine": "google", "lang": "en", "results": 6},
+    {"q": "Kilauea volcano update June 2026 episode 49", "engine": "google", "lang": "en", "results": 5},
+    {"q": "Bismarck Sea submarine volcano eruption decreased May 2026", "engine": "google", "lang": "en", "results": 6},
+    {"q": "El Nino 2026 WMO forecast 80% probability", "engine": "google", "lang": "en", "results": 7},
+    {"q": "China Hami ICBM silo satellite imagery 80 pads 2026", "engine": "google", "lang": "en", "results": 8},
+    {"q": "Maxar satellite imagery ICBM silos China Reuters NBC 2026", "engine": "google", "lang": "en", "results": 5},
+    {"q": "Mayon volcano eruption Philippines June 2026 displaced", "engine": "google", "lang": "en", "results": 4},
+    {"q": "Great Sitkin Shishaldin volcano Alaska June 2026", "engine": "google", "lang": "en", "results": 5},
+    {"q": "Kanlaon volcano Philippines AL2 SO2 June 2026", "engine": "google", "lang": "en", "results": 4},
+    {"q": "Dukono volcano Indonesia eruption June 2026", "engine": "google", "lang": "en", "results": 3},
+    {"q": "Santa Rosa Island fire contained closure June 2026", "engine": "google", "lang": "en", "results": 4},
+    {"q": "위성영상 가자 이스라엘 군사 기지 2026", "engine": "naver", "lang": "ko", "results": 3},
+    {"q": "태풍 장미 일본 상륙 피해 2026년 6월", "engine": "naver", "lang": "ko", "results": 5},
+    {"q": "위성영상 중국 ICBM 미사일 사일로 하미 2026", "engine": "naver", "lang": "ko", "results": 4},
+    {"q": "캐나다 산불 연기 미국 대기질 위성 2026", "engine": "naver", "lang": "ko", "results": 3},
+    {"q": "Sangay Reventador Ecuador volcano eruption 2026", "engine": "duckduckgo", "lang": "en", "results": 4},
+    {"q": "UNOSAT Gaza satellite damage Bellingcat Lebanon 2026", "engine": "duckduckgo", "lang": "en", "results": 5},
+    {"q": "Antelope Reef Thitu Nanshan satellite construction 2026", "engine": "duckduckgo", "lang": "en", "results": 4}
+  ],
+  "total_raw_results": 133,
+  "deduplicated_results": 21,
+  "results": [
+    {
+      "id": "sr-001",
+      "title": "Israel is building more military posts in Gaza, satellite imagery shows — Al Jazeera Open Source Unit",
+      "url": "https://www.aljazeera.com/news/2026/6/3/israel-is-building-more-military-posts-in-gaza-satellite-imagery-shows",
+      "source": "Al Jazeera",
+      "date": "2026-06-03",
+      "snippet": "Al Jazeera Open Source Unit analysis of PlanetScope and WorldView satellite imagery identifies 40 distinct military outposts in Gaza. 8 built from scratch after Oct 2025 ceasefire. One outpost built atop Eastern Cemetery in Khan Younis. 70% expansion of outpost east of Gaza City. Military infrastructure consolidation ongoing.",
+      "domain": "Defense",
+      "relevance_score": 0.94
+    },
+    {
+      "id": "sr-002",
+      "title": "NASA Earth Observatory Image of the Day: Typhoon Jangmi nighttime VIIRS",
+      "url": "https://science.nasa.gov/earth/earth-observatory/typhoon-jangmi/",
+      "source": "NASA Earth Observatory",
+      "date": "2026-06-03",
+      "snippet": "VIIRS nighttime satellite image of Typhoon Jangmi approaching Japan. Day-night band cloud structure visualization.",
+      "domain": "Disaster",
+      "relevance_score": 0.90
+    },
+    {
+      "id": "sr-003",
+      "title": "Tropical Storm Jangmi makes landfall in Japan at Wakayama, 23 injured, 57 houses damaged",
+      "url": "https://www.japantimes.co.jp/news/2026/06/03/japan/tropical-storm-jangmi-landfall/",
+      "source": "Japan Times",
+      "date": "2026-06-03",
+      "snippet": "Jangmi made landfall near Wakayama at 4:30am local June 3. 23 injured, 57 houses damaged, 900 flights canceled. Tokyo issued first-ever Level 4 danger alert. Mie Prefecture received month's worth of rain in 1 day. Kawasaki flooding 30cm.",
+      "domain": "Disaster",
+      "relevance_score": 0.92
+    },
+    {
+      "id": "sr-004",
+      "title": "Typhoon Jangmi injures 23 after making landfall in Japan, triggering flood and landslide warnings",
+      "url": "https://www.ibtimes.sg/typhoon-jangmi-injures-23-after-making-landfall-japan-triggering-flood-landslide-warnings-87368",
+      "source": "International Business Times",
+      "date": "2026-06-03",
+      "snippet": "23 injured, 57 houses damaged. 900 flights cancelled. Tokyo Level 4 danger alert. Mie Prefecture month's rain in 1 day. Storm moving across Pacific coast.",
+      "domain": "Disaster",
+      "relevance_score": 0.88
+    },
+    {
+      "id": "sr-005",
+      "title": "Jangmi moves out to Pacific, Japan transport recovering — June 4 morning",
+      "url": "https://newsonjapan.com/article/149481.php",
+      "source": "News On Japan",
+      "date": "2026-06-04",
+      "snippet": "By June 4, Jangmi moved out to Pacific Ocean. Transport systems recovering. Damage assessments underway.",
+      "domain": "Disaster",
+      "relevance_score": 0.85
+    },
+    {
+      "id": "sr-006",
+      "title": "Canadian wildfire smoke causes 'very unhealthy' conditions in U.S. Midwest, even reaches Europe",
+      "url": "https://www.pbs.org/newshour/health/canadian-wildfire-smoke-causes-very-unhealthy-conditions-in-u-s-midwest-even-reaches-europe",
+      "source": "PBS NewsHour",
+      "date": "2026-06-04",
+      "snippet": "400+ fires burning across Canada. AQ 'very unhealthy' in Minnesota, 'unhealthy' in Michigan on June 3-4. 27,000+ evacuated in 3 provinces. 5,000 from Flin Flon, 2,500 from La Ronge.",
+      "domain": "Disaster",
+      "relevance_score": 0.93
+    },
+    {
+      "id": "sr-007",
+      "title": "NOAA satellites monitor Canadian wildfires and smoke — continued monitoring June 2026",
+      "url": "https://www.nesdis.noaa.gov/news/noaa-satellites-monitor-canadian-wildfires-and-smoke",
+      "source": "NOAA NESDIS",
+      "date": "2026-06-04",
+      "snippet": "NOAA satellite monitoring continues. Heat signatures from VIIRS/MODIS. Smoke transport tracking via TROPOMI and GOES.",
+      "domain": "Disaster",
+      "relevance_score": 0.90
+    },
+    {
+      "id": "sr-008",
+      "title": "Smoke from Canadian wildfires blankets US — NOAA NESDIS",
+      "url": "https://www.nesdis.noaa.gov/news/smoke-canadian-wildfires-blankets-us",
+      "source": "NOAA NESDIS",
+      "date": "2026-06-04",
+      "snippet": "NOAA satellite imagery shows smoke blanket across US Midwest. VIIRS aerosol optical depth significantly elevated.",
+      "domain": "Disaster",
+      "relevance_score": 0.88
+    },
+    {
+      "id": "sr-009",
+      "title": "Kilauea volcano updates — Ep48 ended June 1, Ep49 forecast 10-15 days",
+      "url": "https://www.usgs.gov/volcanoes/kilauea/volcano-updates",
+      "source": "USGS HVO",
+      "date": "2026-06-04",
+      "snippet": "Ep48 ended June 1. Reinflation ongoing. Ep49 forecast within 10-15 days (June 13-18 window). ADVISORY/YELLOW status. Tiltmeter showing reinflation.",
+      "domain": "Disaster",
+      "relevance_score": 0.90
+    },
+    {
+      "id": "sr-010",
+      "title": "Bismarck Sea submarine volcano eruption decreased — Rabaul Observatory report",
+      "url": "https://www.geomar.de/en/news/article/possible-eruption-of-an-underwater-volcano-in-the-bismarck-sea",
+      "source": "GEOMAR",
+      "date": "2026-06-04",
+      "snippet": "Eruption activity decreased May 21-28 per Rabaul Volcano Observatory. Day 27+. Still ongoing per hydroacoustic monitoring. GEOMAR analysis of submarine volcanic processes.",
+      "domain": "Disaster",
+      "relevance_score": 0.88
+    },
+    {
+      "id": "sr-011",
+      "title": "WMO: Prepare for El Nino — 80% probability June-August, 90%+ November 2026",
+      "url": "https://wmo.int/news/media-centre/wmo-prepare-el-nino",
+      "source": "WMO",
+      "date": "2026-06-04",
+      "snippet": "WMO official statement: 80% probability of El Nino conditions June-August 2026. 90%+ by November. 2026 Atlantic hurricane season opened June 1 with zero activity — El Nino suppression effect. Dry air dominating.",
+      "domain": "Climate",
+      "relevance_score": 0.90
+    },
+    {
+      "id": "sr-012",
+      "title": "China building massive nuclear launch pads near missile silos, satellite images show — NBC/Reuters",
+      "url": "https://www.nbcnews.com/world/asia/china-building-launch-pads-nuclear-missile-silos-satellite-images-show-rcna347503",
+      "source": "NBC News / Reuters",
+      "date": "2026-06-01",
+      "snippet": "80+ launch pads near Hami silo field. Two large octagonal installations. C3 (command/control/communication) infrastructure. Fiber-optic links connecting silos. Unprecedented scale of ICBM infrastructure expansion.",
+      "domain": "Defense",
+      "relevance_score": 0.92
+    },
+    {
+      "id": "sr-013",
+      "title": "Mayon volcano AL3 continuing — 287,000+ displaced, Strombolian eruptions",
+      "url": "https://reliefweb.int/disaster/vo-2026-000065-phl",
+      "source": "ReliefWeb / UN OCHA",
+      "date": "2026-06-04",
+      "snippet": "AL3 continuing, 287,000+ displaced. Day 149+. Continuous Strombolian activity.",
+      "domain": "Disaster",
+      "relevance_score": 0.82
+    },
+    {
+      "id": "sr-014",
+      "title": "Great Sitkin volcano — WATCH/ORANGE, lava dome continuing",
+      "url": "https://avo.alaska.edu/volcano/great-sitkin",
+      "source": "USGS AVO",
+      "date": "2026-06-04",
+      "snippet": "Lava dome advancing. SAR observation continuing. WATCH/ORANGE status.",
+      "domain": "Disaster",
+      "relevance_score": 0.75
+    },
+    {
+      "id": "sr-015",
+      "title": "Shishaldin volcano — ADVISORY/YELLOW, SO2 emissions",
+      "url": "https://avo.alaska.edu/volcano/shishaldin",
+      "source": "USGS AVO",
+      "date": "2026-06-04",
+      "snippet": "ADVISORY/YELLOW. SO2 emissions continuing. Seismic and infrasound.",
+      "domain": "Disaster",
+      "relevance_score": 0.72
+    },
+    {
+      "id": "sr-016",
+      "title": "Kanlaon volcano AL2 — 6-33 daily VQs, SO2 491-1788 t/d",
+      "url": "https://volcano.si.edu/volcano.cfm?vn=272020",
+      "source": "Smithsonian GVP / PHIVOLCS",
+      "date": "2026-06-04",
+      "snippet": "AL2. 6-33 daily volcanic quakes. SO2 491-1788 t/d range.",
+      "domain": "Disaster",
+      "relevance_score": 0.72
+    },
+    {
+      "id": "sr-017",
+      "title": "Dukono volcano — ash emissions 300-1600m continuing",
+      "url": "https://magma.esdm.go.id/v1/gunung-api/informasi-aktivitas/206",
+      "source": "PVMBG/CVGHM",
+      "date": "2026-06-04",
+      "snippet": "Continuous ash emissions 300-1600m above summit. AL2.",
+      "domain": "Disaster",
+      "relevance_score": 0.70
+    },
+    {
+      "id": "sr-018",
+      "title": "Ecuador Sangay/Reventador volcanoes — continuing eruptions",
+      "url": "https://volcano.si.edu/reports_weekly.cfm",
+      "source": "Smithsonian GVP",
+      "date": "2026-06-04",
+      "snippet": "Sangay and Reventador continuing daily eruptive activity. GOES-19 ash monitoring.",
+      "domain": "Disaster",
+      "relevance_score": 0.70
+    },
+    {
+      "id": "sr-019",
+      "title": "Santa Rosa Island fire — 97% contained, closure June 6",
+      "url": "https://inciweb.wildfire.gov/incident-information/cacnp-santa-rosa-island-fire",
+      "source": "InciWeb",
+      "date": "2026-06-04",
+      "snippet": "97% contained. 18,379 acres. Final closure June 6.",
+      "domain": "Disaster",
+      "relevance_score": 0.72
+    },
+    {
+      "id": "sr-020",
+      "title": "Antelope Reef — CSIS AMTI Island Tracker continuing",
+      "url": "https://amti.csis.org/antelope-reef-could-now-be-the-largest-island-in-the-south-china-sea/",
+      "source": "CSIS AMTI",
+      "date": "2026-06-04",
+      "snippet": "Continuing dredging/landfill operations. Already reported in previous cycle.",
+      "domain": "HumanActivity",
+      "relevance_score": 0.75
+    },
+    {
+      "id": "sr-021",
+      "title": "Philippines Thitu/Nanshan construction — satellite monitoring",
+      "url": "https://www.rfa.org/english/southchinasea/2026/05/08/philippines-satellite-spratlys-infrastructure-upgrade/",
+      "source": "RFA",
+      "date": "2026-06-04",
+      "snippet": "Thitu runway and Nanshan port construction continuing. Already reported.",
+      "domain": "HumanActivity",
+      "relevance_score": 0.72
+    }
+  ]
+}

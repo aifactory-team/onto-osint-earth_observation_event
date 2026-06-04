@@ -1,0 +1,18 @@
+{
+  "id": "src-025",
+  "date": "2026-06-04",
+  "title": "Bellingcat 남레바논 위성 — 기보고",
+  "url": "https://www.bellingcat.com/news/2026/05/14/satellite-imagery-shows-ongoing-demolitions-across-southern-lebanon/",
+  "source_org": "Bellingcat",
+  "tag": "reported",
+  "related_item": "evt-802",
+  "domain": "Humanitarian",
+  "phenomenon": "infrastructure_damage",
+  "country": "LB",
+  "location": {"name": "Southern Lebanon", "lat": 33.3, "lon": 35.4},
+  "satellites": ["PlanetScope (Doves)"],
+  "sensors": ["optical_multispectral"],
+  "confidence": 0.85,
+  "summary": "기보고 항목. Bellingcat 남레바논 PlanetScope 46+ 마을 파괴 인터랙티브 맵.",
+  "boosts": []
+}

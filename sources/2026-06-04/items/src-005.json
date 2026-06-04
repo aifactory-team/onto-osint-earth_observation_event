@@ -1,0 +1,18 @@
+{
+  "id": "src-005",
+  "date": "2026-06-04",
+  "title": "Jangmi 6/4 태평양 이동, 일본 교통 복구 중",
+  "url": "https://newsonjapan.com/article/149481.php",
+  "source_org": "News On Japan",
+  "tag": "update",
+  "related_item": "temp-evt-2001",
+  "domain": "Disaster",
+  "phenomenon": "typhoon",
+  "country": "JP",
+  "location": {"name": "Pacific Ocean east of Japan", "lat": 35.0, "lon": 140.0},
+  "satellites": [],
+  "sensors": [],
+  "confidence": 0.82,
+  "summary": "6/4 기준 Jangmi 태평양으로 이동 완료. 일본 교통 시스템 복구 중. 피해 평가 진행 중.",
+  "boosts": []
+}

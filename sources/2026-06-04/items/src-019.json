@@ -1,0 +1,18 @@
+{
+  "id": "src-019",
+  "date": "2026-06-04",
+  "title": "Santa Rosa 97% 진압, 6/6 종결",
+  "url": "https://inciweb.wildfire.gov/incident-information/cacnp-santa-rosa-island-fire",
+  "source_org": "InciWeb",
+  "tag": "update",
+  "related_item": "evt-1201",
+  "domain": "Disaster",
+  "phenomenon": "wildfire",
+  "country": "US",
+  "location": {"name": "Santa Rosa Island, Channel Islands NP, CA", "lat": 33.96, "lon": -120.1},
+  "satellites": ["Landsat 9"],
+  "sensors": ["OLI"],
+  "confidence": 0.75,
+  "summary": "97% 진압 유지. 18,379ac. 6/6 최종 종결 예정.",
+  "boosts": []
+}

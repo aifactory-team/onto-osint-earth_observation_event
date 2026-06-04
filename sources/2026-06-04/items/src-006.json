@@ -1,0 +1,18 @@
+{
+  "id": "src-006",
+  "date": "2026-06-04",
+  "title": "캐나다 산불 연기 미국 중서부 'very unhealthy' — 400+ 화재, 27,000+ 대피",
+  "url": "https://www.pbs.org/newshour/health/canadian-wildfire-smoke-causes-very-unhealthy-conditions-in-u-s-midwest-even-reaches-europe",
+  "source_org": "PBS NewsHour",
+  "tag": "update",
+  "related_item": "evt-1101",
+  "domain": "Disaster",
+  "phenomenon": "wildfire",
+  "country": "CA",
+  "location": {"name": "Canada (Manitoba/Saskatchewan/Alberta)", "lat": 54.0, "lon": -105.0},
+  "satellites": ["VIIRS (Suomi-NPP/JPSS)", "GOES-18", "Sentinel-5P", "MODIS (Terra)"],
+  "sensors": ["VIIRS", "ABI", "TROPOMI", "MODIS"],
+  "confidence": 0.93,
+  "summary": "400+ 화재 캐나다 전역. AQ '매우 건강에 해로움(very unhealthy)' 미네소타, '건강에 해로움(unhealthy)' 미시간 6/3-4. 27,000+ 3개 주에서 대피. Flin Flon 5,000명, La Ronge 2,500명 대피. 연기 유럽까지 도달.",
+  "boosts": ["priorityBoost +0.20"]
+}

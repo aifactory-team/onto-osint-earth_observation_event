@@ -1,0 +1,18 @@
+{
+  "id": "src-022",
+  "date": "2026-06-04",
+  "title": "DPRK 구축함 건조 — 기보고",
+  "url": "https://www.dailynk.com/english/satellite-analysis-north-koreas-5000-ton-destroyer-fleet-in-construction-but-short-on-combat-readiness/",
+  "source_org": "Daily NK",
+  "tag": "reported",
+  "related_item": "temp-evt-2003",
+  "domain": "Defense",
+  "phenomenon": "naval_movement",
+  "country": "KP",
+  "location": {"name": "Nampo Shipyard", "lat": 38.7, "lon": 125.0},
+  "satellites": ["WorldView-3"],
+  "sensors": ["optical_pan"],
+  "confidence": 0.80,
+  "summary": "기보고 항목. DPRK 5,000t 구축함 3번함 건조 상황.",
+  "boosts": []
+}

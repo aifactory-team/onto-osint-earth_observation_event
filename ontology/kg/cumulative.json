@@ -1,15 +1,15 @@
 {
-  "version": "1.16.0",
+  "version": "1.17.0",
   "description": "위성영상 관측 이벤트 누적 지식그래프 — 첫 실행(2026-04-30) 이후 매일 신규/추론 트리플 병합",
-  "last_updated": "2026-06-03",
-  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-19", "2026-05-20", "2026-05-21", "2026-05-22", "2026-05-23", "2026-05-24", "2026-05-26", "2026-05-27", "2026-05-28", "2026-05-29", "2026-05-30", "2026-05-31", "2026-06-01", "2026-06-02", "2026-06-03"],
-  "triples": "ontology/kg/2026-04-30.json ~ ontology/kg/2026-06-03.json (new_triples + updated_triples + inferred_triples)",
+  "last_updated": "2026-06-04",
+  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-19", "2026-05-20", "2026-05-21", "2026-05-22", "2026-05-23", "2026-05-24", "2026-05-26", "2026-05-27", "2026-05-28", "2026-05-29", "2026-05-30", "2026-05-31", "2026-06-01", "2026-06-02", "2026-06-03", "2026-06-04"],
+  "triples": "ontology/kg/2026-04-30.json ~ ontology/kg/2026-06-04.json (new_triples + updated_triples + inferred_triples)",
   "stats": {
-    "total_explicit_triples": 1107,
-    "total_inferred_triples": 521,
-    "total_unique_subjects": 237,
+    "total_explicit_triples": 1122,
+    "total_inferred_triples": 538,
+    "total_unique_subjects": 238,
     "total_unique_predicates": 21,
-    "total_unique_objects": 284
+    "total_unique_objects": 285
   },
-  "note": "2026-06-03 병합 완료 — 신규 5 explicit + 5 updated + 11 inferred 트리플(일별 KG: 25 nodes, 21 triples). 신규 이벤트 1건: 북극 해빙 최대면적 역대 최저 타이(temp-evt-2301, ICESat-2/AMSR-2, NASA, dom-climate, officialBoost). 핵심 업데이트 11건: Kilauea Ep48 종료/일시정지 Ep49 1-3주 예보(evt-202), TS Jangmi 일본 본토 상륙 16+ 부상 48K 정전 300+ 항공편(temp-evt-2001), El Nino SST NINO3.4 +0.9C +3C 전망(temp-evt-1902), Bismarck Sea day26+ NASA PACE 신규섬 가능(evt-701), 캐나다 산불 NOAA NESDIS 공식 보고(evt-1101), Mayon Day148+ 라하르(evt-082), Great Sitkin(evt-203), Shishaldin(evt-204), Kanlaon(temp-evt-1401), Sangay/Reventador(temp-evt-2203), Santa Rosa 97% 6/6 종결(evt-1201). 다중 위성 교차검증 4건 유지(Bismarck 5위성, Canada 5위성, Kharg 3위성, Hami 2위성). official_source_trust 4건(USGS HVO, CPC/NOAA, NASA EO, NOAA NESDIS). temporal_progression 2건. cascading_disaster 1건 잠정(Jangmi 본토 홍수). 한반도 GeoFocus 5건 유지. 누적 KG 1628 트리플."
+  "note": "2026-06-04 병합 완료 — 신규 9 explicit + 6 updated + 17 inferred 트리플(일별 KG: 28 nodes, 32 triples). 신규 이벤트 1건: Israel Gaza 40+ military posts Al Jazeera 위성분석(temp-evt-2401, PlanetScope+WorldView-3, dom-defense+dom-humanitarian, multiSatBoost+hiResBoost+baCredibility+analystBoost, 0.95 cap). 핵심 업데이트 6건: TS Jangmi 본토 상륙 완료 23명 부상 57가옥 파괴 900편 취소 Tokyo Level 4 최초(temp-evt-2001, cascading_disaster 확정 0.85), 캐나다 산불 400+ fires AQ very unhealthy Minnesota 27K+ 대피(evt-1101, 5위성 유지), Kilauea ADVISORY/YELLOW 하향 Ep49 10-15일 예보(evt-202), Bismarck Sea Day27+ 분출 감소(evt-701), El Nino WMO 80% Jun-Aug 허리케인 억제(temp-evt-1902), Hami ICBM Reuters/NBC 80+ pads C3 인프라(temp-evt-2002). 다중 위성 교차검증 5건(신규 1건: temp-evt-2401 Gaza 2위성 2기관). cascading_disaster 1건 확정(Jangmi 홍수/산사태 확정). 한반도 GeoFocus 5건 유지. 누적 KG 1660 트리플."
 }

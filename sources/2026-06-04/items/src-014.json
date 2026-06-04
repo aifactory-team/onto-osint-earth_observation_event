@@ -1,0 +1,18 @@
+{
+  "id": "src-014",
+  "date": "2026-06-04",
+  "title": "Great Sitkin WATCH — 용암 돔 지속",
+  "url": "https://avo.alaska.edu/volcano/great-sitkin",
+  "source_org": "USGS AVO",
+  "tag": "update",
+  "related_item": "evt-203",
+  "domain": "Disaster",
+  "phenomenon": "volcanic_eruption",
+  "country": "US",
+  "location": {"name": "Great Sitkin, Alaska", "lat": 52.08, "lon": -176.13},
+  "satellites": [],
+  "sensors": [],
+  "confidence": 0.78,
+  "summary": "WATCH/ORANGE 유지. 용암 돔 summit crater 충전, valley 진출 지속. SAR 관측 지속.",
+  "boosts": ["officialBoost +0.15"]
+}

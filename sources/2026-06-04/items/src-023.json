@@ -1,0 +1,18 @@
+{
+  "id": "src-023",
+  "date": "2026-06-04",
+  "title": "영변 핵단지 활동 — 기보고",
+  "url": "https://www.rfa.org/english/korea/2026/04/28/north-korea-satellite-yongbyon-nuclear/",
+  "source_org": "RFA",
+  "tag": "reported",
+  "related_item": "ent-evt-001",
+  "domain": "Defense",
+  "phenomenon": "military_buildup",
+  "country": "KP",
+  "location": {"name": "Yongbyon Nuclear Complex", "lat": 39.8, "lon": 125.7},
+  "satellites": ["WorldView-3"],
+  "sensors": ["optical_pan"],
+  "confidence": 0.78,
+  "summary": "기보고 항목. 영변 핵단지 5MW 원자로 냉각수 방류 등 활동 증가 위성 관측.",
+  "boosts": []
+}
