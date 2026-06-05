@@ -1,0 +1,487 @@
+{
+  "date": "2026-06-05",
+  "extraction_version": "2.0",
+  "entity_count": 78,
+  "relation_count": 62,
+  "entities": {
+    "events": [
+      {
+        "id": "evt-2501",
+        "type": "Event",
+        "label": "Xi Jinping DPRK Visit Preparation (Kim Il Sung Square & Sunan Airport)",
+        "domain": "Human Activity",
+        "phenomenon": "군사 시설/배치",
+        "sub_category": "외교·정상회담 준비",
+        "status": "new",
+        "first_seen": "2026-06-04",
+        "confidence": 0.85,
+        "confidence_boosts": ["hiResBoost +0.15", "koreaBoost +0.1", "multiSatBoost +0.2", "analystBoost +0.1"],
+        "locations": [
+          {"name": "Kim Il Sung Square, Pyongyang", "lat": 39.018, "lon": 125.751},
+          {"name": "Sunan International Airport", "lat": 39.224, "lon": 125.670}
+        ],
+        "sources": ["src-001", "src-002", "src-003", "src-004"],
+        "summary": "Vantor/WorldView-3 위성영상에서 김일성광장 관람대 신규 건설 구조물(5/30) 및 순안공항 고려항공 항공기 8기 재배치(5/28-29) 확인. 시진핑 방북(6/11 전망, 조중우호조약 65주년) 준비 활동으로 분석.",
+        "temporal": {
+          "imagery_dates": ["2026-05-28", "2026-05-29", "2026-05-30"],
+          "projected_visit": "2026-06-11"
+        },
+        "sensitivity": "defense — 좌표 정밀도 소수점 1자리 적용"
+      },
+      {
+        "id": "evt-2502",
+        "type": "Event",
+        "label": "NISAR L-band SAR South Africa Maize Triangle Vegetation Monitoring",
+        "domain": "Agriculture",
+        "phenomenon": "농경지 변화",
+        "sub_category": "식생 변화 탐지 (NISAR L-band SAR)",
+        "status": "new",
+        "first_seen": "2026-06-04",
+        "confidence": 0.95,
+        "confidence_boosts": ["officialBoost +0.15", "sarBoost +0.1"],
+        "locations": [
+          {"name": "Maize Triangle, Free State Province, South Africa", "lat": -28.75, "lon": 26.50}
+        ],
+        "sources": ["src-005", "src-006"],
+        "summary": "NASA-ISRO NISAR 위성 L밴드 SAR로 남아프리카 옥수수 삼각지대(Vet River/Bloemfontein) 생육기(2025.11-2026.3) 식생 변화 시계열 RGB 합성 영상. NASA EO Image of the Day.",
+        "temporal": {
+          "observation_start": "2025-11-01",
+          "observation_end": "2026-03-31",
+          "type": "time_series_before_after"
+        }
+      },
+      {
+        "id": "evt-2503",
+        "type": "Event",
+        "label": "Sentinel-1D SAR Data Quality Degradation (Internal Clock Corruption)",
+        "domain": "SatOps",
+        "phenomenon": "위성 운용 이상",
+        "sub_category": "SAR 데이터 품질 저하",
+        "status": "new",
+        "first_seen": "2026-06-04",
+        "confidence": 0.95,
+        "confidence_boosts": ["officialBoost +0.15"],
+        "locations": [
+          {"name": "Global (Sentinel-1D orbit)", "lat": null, "lon": null}
+        ],
+        "sources": ["src-007"],
+        "summary": "Sentinel-1D 내부 클럭 오류로 5/29 16:03~6/1 18:00 UTC SAR 데이터 품질 저하. ESA 공식 공지.",
+        "temporal": {
+          "anomaly_start": "2026-05-29T16:03:00Z",
+          "anomaly_end": "2026-06-01T18:00:00Z"
+        }
+      },
+      {
+        "id": "evt-2504",
+        "type": "Event",
+        "label": "Sentinel-1 Constellation Reconfiguration (S-1C Maneuvering, S-1A Phaseout)",
+        "domain": "SatOps",
+        "phenomenon": "위성 운용 변경",
+        "sub_category": "별자리 재구성",
+        "status": "new",
+        "first_seen": "2026-06-04",
+        "confidence": 0.95,
+        "confidence_boosts": ["officialBoost +0.15"],
+        "locations": [
+          {"name": "Global (Sentinel-1 orbit)", "lat": null, "lon": null}
+        ],
+        "sources": ["src-008"],
+        "summary": "6월 하순 S-1C 2주 궤도 기동(비취득), S-1A 퇴역. 7월부터 S-1C+S-1D 신규 별자리 운용.",
+        "temporal": {
+          "maneuvering_start": "2026-06-20",
+          "new_constellation_start": "2026-07-01"
+        }
+      },
+      {
+        "id": "evt-2505",
+        "type": "Event",
+        "label": "NOAA Below-Normal 2026 Atlantic Hurricane Season Outlook",
+        "domain": "Climate & Environment",
+        "phenomenon": "태풍·허리케인",
+        "sub_category": "계절 전망",
+        "status": "new",
+        "first_seen": "2026-05-21",
+        "confidence": 0.90,
+        "confidence_boosts": ["officialBoost +0.15"],
+        "locations": [
+          {"name": "Atlantic Basin", "lat": 25.0, "lon": -60.0}
+        ],
+        "sources": ["src-009"],
+        "summary": "NOAA 2026 대서양 허리케인 시즌 전망: 8-14개 명명 폭풍, 3-6개 허리케인, 1-3개 주요. 55% 평년 이하. 엘니뇨 억제.",
+        "metrics": {
+          "named_storms": "8-14",
+          "hurricanes": "3-6",
+          "major_hurricanes": "1-3",
+          "below_normal_probability": 0.55
+        }
+      },
+      {
+        "id": "evt-202",
+        "type": "Event",
+        "label": "Kilauea Volcano ADVISORY/YELLOW — Ep49",
+        "domain": "Disaster",
+        "phenomenon": "화산 분출",
+        "status": "update",
+        "sources": ["src-010"],
+        "change": "no_change"
+      },
+      {
+        "id": "evt-1101",
+        "type": "Event",
+        "label": "Canada Wildfires — 65 Active, 18,935 ha",
+        "domain": "Disaster",
+        "phenomenon": "산불",
+        "status": "update",
+        "sources": ["src-011", "src-012", "src-013"],
+        "metrics": {"active_fires": 65, "out_of_control": 6, "area_burned_ha": 18935}
+      },
+      {
+        "id": "evt-701",
+        "type": "Event",
+        "label": "Bismarck Sea Titan Ridge Eruption — Day 28+",
+        "domain": "Disaster",
+        "phenomenon": "화산 분출",
+        "status": "update",
+        "sources": ["src-014"],
+        "change": "declining_activity"
+      },
+      {
+        "id": "evt-082",
+        "type": "Event",
+        "label": "Mayon Volcano AL3 — Day 150+, 287K Displaced",
+        "domain": "Disaster",
+        "phenomenon": "화산 분출",
+        "status": "update",
+        "sources": ["src-015"],
+        "metrics": {"alert_level": 3, "displaced": 287000, "so2_tons_per_day": 2466}
+      },
+      {
+        "id": "temp-evt-1902",
+        "type": "Event",
+        "label": "El Nino — 82% May-Jul Probability",
+        "domain": "Climate & Environment",
+        "phenomenon": "해수면 변화",
+        "status": "update",
+        "sources": ["src-016"],
+        "metrics": {"probability": 0.82}
+      },
+      {
+        "id": "evt-203",
+        "type": "Event",
+        "label": "Great Sitkin WATCH/ORANGE Lava Dome",
+        "domain": "Disaster",
+        "phenomenon": "화산 분출",
+        "status": "update",
+        "sources": ["src-017"],
+        "change": "no_change"
+      },
+      {
+        "id": "evt-204",
+        "type": "Event",
+        "label": "Shishaldin ADVISORY/YELLOW SO2",
+        "domain": "Disaster",
+        "phenomenon": "화산 분출",
+        "status": "update",
+        "sources": ["src-018"],
+        "change": "no_change"
+      },
+      {
+        "id": "temp-evt-1401",
+        "type": "Event",
+        "label": "Kanlaon AL2 — 7 Eruptions, SO2 2,382 t/d",
+        "domain": "Disaster",
+        "phenomenon": "화산 분출",
+        "status": "update",
+        "sources": ["src-019"],
+        "metrics": {"alert_level": 2, "eruptions_2026": 7, "so2_tons_per_day": 2382}
+      },
+      {
+        "id": "evt-128",
+        "type": "Event",
+        "label": "Dukono AL2 — 3 Killed",
+        "domain": "Disaster",
+        "phenomenon": "화산 분출",
+        "status": "update",
+        "sources": ["src-020"],
+        "change": "casualties_confirmed"
+      },
+      {
+        "id": "temp-evt-2203",
+        "type": "Event",
+        "label": "Sangay / Reventador Continuing Eruption",
+        "domain": "Disaster",
+        "phenomenon": "화산 분출",
+        "status": "update",
+        "sources": ["src-021"],
+        "change": "continuing"
+      },
+      {
+        "id": "evt-1201",
+        "type": "Event",
+        "label": "Santa Rosa Fire — 97% Contained, BAER Arriving",
+        "domain": "Disaster",
+        "phenomenon": "산불",
+        "status": "update",
+        "sources": ["src-022"],
+        "metrics": {"containment_pct": 97}
+      },
+      {
+        "id": "temp-evt-2001",
+        "type": "Event",
+        "label": "Typhoon Jangmi — Dissipated",
+        "domain": "Disaster",
+        "phenomenon": "태풍·허리케인",
+        "status": "update",
+        "sources": ["src-023"],
+        "change": "dissipated"
+      },
+      {
+        "id": "evt-092",
+        "type": "Event",
+        "label": "Antelope Reef 15 km² Artificial Island",
+        "domain": "Human Activity",
+        "phenomenon": "대형 건설",
+        "status": "reported",
+        "sources": ["src-024"]
+      },
+      {
+        "id": "temp-evt-2401",
+        "type": "Event",
+        "label": "Gaza 40+ Military Posts / 197K Buildings Damaged",
+        "domain": "Human Activity",
+        "phenomenon": "군사 시설/배치",
+        "status": "reported",
+        "sources": ["src-025", "src-028"]
+      },
+      {
+        "id": "temp-evt-2002",
+        "type": "Event",
+        "label": "Hami ICBM Silo Field — 80+ Pads",
+        "domain": "Human Activity",
+        "phenomenon": "군사 시설/배치",
+        "status": "reported",
+        "sources": ["src-026"]
+      },
+      {
+        "id": "temp-evt-2003",
+        "type": "Event",
+        "label": "DPRK Destroyer Fleet Expansion",
+        "domain": "Human Activity",
+        "phenomenon": "해상 선박 활동",
+        "status": "reported",
+        "sources": ["src-027"]
+      },
+      {
+        "id": "temp-evt-2901",
+        "type": "Event",
+        "label": "Bellingcat Lebanon 46+ Towns Damage",
+        "domain": "Human Activity",
+        "phenomenon": "군사 시설/배치",
+        "status": "reported",
+        "sources": ["src-029"]
+      },
+      {
+        "id": "temp-evt-2301",
+        "type": "Event",
+        "label": "Arctic Sea Ice Record Low",
+        "domain": "Climate & Environment",
+        "phenomenon": "빙하 후퇴",
+        "status": "reported",
+        "sources": ["src-030"]
+      }
+    ],
+    "satellites": [
+      {"id": "sat-wv3", "type": "Satellite", "label": "WorldView-3", "operator": "Maxar Technologies", "sensor_type": "optical_hires", "resolution": "0.31m"},
+      {"id": "sat-vantor", "type": "Satellite", "label": "Vantor", "operator": "Vantor", "sensor_type": "optical_hires", "resolution": "<1m"},
+      {"id": "sat-nisar", "type": "Satellite", "label": "NISAR", "operator": "NASA / ISRO", "sensor_type": "SAR", "band": "L-band + S-band"},
+      {"id": "sat-s1a", "type": "Satellite", "label": "Sentinel-1A", "operator": "ESA / Copernicus", "sensor_type": "SAR", "band": "C-band", "status": "phaseout_planned"},
+      {"id": "sat-s1c", "type": "Satellite", "label": "Sentinel-1C", "operator": "ESA / Copernicus", "sensor_type": "SAR", "band": "C-band", "status": "maneuvering_june"},
+      {"id": "sat-s1d", "type": "Satellite", "label": "Sentinel-1D", "operator": "ESA / Copernicus", "sensor_type": "SAR", "band": "C-band", "status": "clock_anomaly_resolved"},
+      {"id": "sat-s2", "type": "Satellite", "label": "Sentinel-2", "operator": "ESA / Copernicus", "sensor_type": "multispectral", "resolution": "10m"},
+      {"id": "sat-s3", "type": "Satellite", "label": "Sentinel-3", "operator": "ESA / Copernicus", "sensor_type": "multispectral_ocean"},
+      {"id": "sat-s5p", "type": "Satellite", "label": "Sentinel-5P", "operator": "ESA / Copernicus", "sensor_type": "atmospheric", "sensor": "TROPOMI"},
+      {"id": "sat-l9", "type": "Satellite", "label": "Landsat-9", "operator": "USGS / NASA", "sensor_type": "multispectral+thermal", "sensor": ["OLI-2", "TIRS-2"]},
+      {"id": "sat-goes16", "type": "Satellite", "label": "GOES-16", "operator": "NOAA", "sensor_type": "geostationary"},
+      {"id": "sat-goes18", "type": "Satellite", "label": "GOES-18", "operator": "NOAA", "sensor_type": "geostationary"},
+      {"id": "sat-himawari9", "type": "Satellite", "label": "Himawari-9", "operator": "JMA", "sensor_type": "geostationary"},
+      {"id": "sat-terra", "type": "Satellite", "label": "Terra", "operator": "NASA", "sensor_type": "multispectral", "sensor": "MODIS"},
+      {"id": "sat-aqua", "type": "Satellite", "label": "Aqua", "operator": "NASA", "sensor_type": "multispectral", "sensor": "MODIS"},
+      {"id": "sat-snpp", "type": "Satellite", "label": "Suomi NPP", "operator": "NASA / NOAA", "sensor_type": "multispectral", "sensor": "VIIRS"},
+      {"id": "sat-noaa21", "type": "Satellite", "label": "NOAA-21 (JPSS-2)", "operator": "NOAA", "sensor_type": "multispectral", "sensor": "VIIRS"},
+      {"id": "sat-jason3", "type": "Satellite", "label": "Jason-3", "operator": "NOAA / EUMETSAT", "sensor_type": "altimetry"},
+      {"id": "sat-s6", "type": "Satellite", "label": "Sentinel-6 Michael Freilich", "operator": "ESA / EUMETSAT / NASA", "sensor_type": "altimetry"},
+      {"id": "sat-icesat2", "type": "Satellite", "label": "ICESat-2", "operator": "NASA", "sensor_type": "lidar_altimetry"},
+      {"id": "sat-cryosat2", "type": "Satellite", "label": "CryoSat-2", "operator": "ESA", "sensor_type": "radar_altimetry"},
+      {"id": "sat-meteosat", "type": "Satellite", "label": "Meteosat", "operator": "EUMETSAT", "sensor_type": "geostationary"},
+      {"id": "sat-pleiades-neo", "type": "Satellite", "label": "Pleiades Neo", "operator": "Airbus", "sensor_type": "optical_hires", "resolution": "0.3m"},
+      {"id": "sat-planet-skysat", "type": "Satellite", "label": "Planet SkySat", "operator": "Planet Labs", "sensor_type": "optical_hires", "resolution": "0.5m"}
+    ],
+    "organizations": [
+      {"id": "org-nasa", "type": "Organization", "label": "NASA", "org_type": "space_agency", "country": "USA"},
+      {"id": "org-esa", "type": "Organization", "label": "ESA", "org_type": "space_agency", "country": "EU"},
+      {"id": "org-noaa", "type": "Organization", "label": "NOAA", "org_type": "government_agency", "country": "USA"},
+      {"id": "org-usgs", "type": "Organization", "label": "USGS", "org_type": "government_agency", "country": "USA"},
+      {"id": "org-isro", "type": "Organization", "label": "ISRO", "org_type": "space_agency", "country": "India"},
+      {"id": "org-jma", "type": "Organization", "label": "JMA", "org_type": "government_agency", "country": "Japan"},
+      {"id": "org-phivolcs", "type": "Organization", "label": "PHIVOLCS", "org_type": "government_agency", "country": "Philippines"},
+      {"id": "org-smithsonian", "type": "Organization", "label": "Smithsonian GVP", "org_type": "research", "country": "USA"},
+      {"id": "org-cwfis", "type": "Organization", "label": "CWFIS (NRCan)", "org_type": "government_agency", "country": "Canada"},
+      {"id": "org-nesdis", "type": "Organization", "label": "NOAA NESDIS", "org_type": "government_agency", "country": "USA"},
+      {"id": "org-cpc", "type": "Organization", "label": "NOAA CPC", "org_type": "government_agency", "country": "USA"},
+      {"id": "org-unosat", "type": "Organization", "label": "UNOSAT", "org_type": "international_org", "country": "International"},
+      {"id": "org-csis", "type": "Organization", "label": "CSIS AMTI", "org_type": "think_tank", "country": "USA"},
+      {"id": "org-bellingcat", "type": "Organization", "label": "Bellingcat", "org_type": "osint_analyst", "country": "Netherlands"},
+      {"id": "org-nkpro", "type": "Organization", "label": "NK Pro", "org_type": "osint_analyst", "country": "South Korea"},
+      {"id": "org-maxar", "type": "Organization", "label": "Maxar Technologies", "org_type": "commercial_satellite", "country": "USA"},
+      {"id": "org-planet", "type": "Organization", "label": "Planet Labs", "org_type": "commercial_satellite", "country": "USA"},
+      {"id": "org-copernicus", "type": "Organization", "label": "Copernicus Data Space Ecosystem", "org_type": "data_platform", "country": "EU"},
+      {"id": "org-avo", "type": "Organization", "label": "Alaska Volcano Observatory", "org_type": "government_agency", "country": "USA"},
+      {"id": "org-hvo", "type": "Organization", "label": "Hawaiian Volcano Observatory", "org_type": "government_agency", "country": "USA"}
+    ],
+    "locations": [
+      {"id": "loc-pyongyang", "type": "Location", "label": "Pyongyang, DPRK", "lat": 39.019, "lon": 125.738, "admin": "Pyongyang"},
+      {"id": "loc-sunan", "type": "Location", "label": "Sunan International Airport", "lat": 39.224, "lon": 125.670, "parent": "loc-pyongyang"},
+      {"id": "loc-kimilsung-sq", "type": "Location", "label": "Kim Il Sung Square", "lat": 39.018, "lon": 125.751, "parent": "loc-pyongyang"},
+      {"id": "loc-maize-triangle", "type": "Location", "label": "Maize Triangle, Free State, South Africa", "lat": -28.75, "lon": 26.50},
+      {"id": "loc-kilauea", "type": "Location", "label": "Kilauea, Hawaii, USA", "lat": 19.421, "lon": -155.287},
+      {"id": "loc-canada-fires", "type": "Location", "label": "Canada (multiple provinces)", "lat": 55.0, "lon": -105.0},
+      {"id": "loc-bismarck", "type": "Location", "label": "Titan Ridge, Bismarck Sea, PNG", "lat": -3.75, "lon": 148.90},
+      {"id": "loc-mayon", "type": "Location", "label": "Mayon Volcano, Albay, Philippines", "lat": 13.257, "lon": 123.685},
+      {"id": "loc-great-sitkin", "type": "Location", "label": "Great Sitkin, Aleutian Islands, USA", "lat": 52.076, "lon": -176.130},
+      {"id": "loc-shishaldin", "type": "Location", "label": "Shishaldin, Aleutian Islands, USA", "lat": 54.756, "lon": -163.970},
+      {"id": "loc-kanlaon", "type": "Location", "label": "Kanlaon, Negros Occidental, Philippines", "lat": 10.412, "lon": 123.132},
+      {"id": "loc-dukono", "type": "Location", "label": "Dukono, Halmahera, Indonesia", "lat": 1.693, "lon": 127.894},
+      {"id": "loc-sangay", "type": "Location", "label": "Sangay / Reventador, Ecuador", "lat": -2.002, "lon": -78.341},
+      {"id": "loc-santa-rosa", "type": "Location", "label": "Santa Rosa, California, USA", "lat": 34.52, "lon": -119.97},
+      {"id": "loc-pacific-jangmi", "type": "Location", "label": "Western Pacific / Japan", "lat": 33.0, "lon": 140.0},
+      {"id": "loc-atlantic", "type": "Location", "label": "Atlantic Basin", "lat": 25.0, "lon": -60.0},
+      {"id": "loc-nino34", "type": "Location", "label": "Equatorial Pacific (Nino 3.4)", "lat": 0.0, "lon": -170.0},
+      {"id": "loc-antelope", "type": "Location", "label": "Antelope Reef, South China Sea", "lat": 10.85, "lon": 115.55},
+      {"id": "loc-gaza", "type": "Location", "label": "Gaza Strip", "lat": 31.5, "lon": 34.47},
+      {"id": "loc-hami", "type": "Location", "label": "Hami, Xinjiang, China", "lat": 42.8, "lon": 93.5},
+      {"id": "loc-dprk-naval", "type": "Location", "label": "DPRK Naval Shipyards", "lat": 39.0, "lon": 125.8},
+      {"id": "loc-lebanon", "type": "Location", "label": "Southern Lebanon", "lat": 33.3, "lon": 35.5},
+      {"id": "loc-arctic", "type": "Location", "label": "Arctic Ocean", "lat": 85.0, "lon": 0.0}
+    ],
+    "phenomena": [
+      {"id": "phen-volcano", "type": "Phenomenon", "label": "화산 분출", "domain": "Disaster"},
+      {"id": "phen-wildfire", "type": "Phenomenon", "label": "산불", "domain": "Disaster"},
+      {"id": "phen-typhoon", "type": "Phenomenon", "label": "태풍·허리케인", "domain": "Disaster"},
+      {"id": "phen-military", "type": "Phenomenon", "label": "군사 시설/배치", "domain": "Human Activity"},
+      {"id": "phen-construction", "type": "Phenomenon", "label": "대형 건설", "domain": "Human Activity"},
+      {"id": "phen-naval", "type": "Phenomenon", "label": "해상 선박 활동", "domain": "Human Activity"},
+      {"id": "phen-agriculture", "type": "Phenomenon", "label": "농경지 변화", "domain": "Agriculture"},
+      {"id": "phen-sea-ice", "type": "Phenomenon", "label": "빙하 후퇴", "domain": "Climate & Environment"},
+      {"id": "phen-enso", "type": "Phenomenon", "label": "해수면 변화", "domain": "Climate & Environment"},
+      {"id": "phen-satops-anomaly", "type": "Phenomenon", "label": "위성 운용 이상", "domain": "SatOps"},
+      {"id": "phen-satops-reconfig", "type": "Phenomenon", "label": "위성 운용 변경", "domain": "SatOps"}
+    ]
+  },
+  "relations": [
+    {"type": "OBSERVED_BY", "from": "evt-2501", "to": "sat-wv3", "detail": "Kim Il Sung Square & Sunan Airport high-res optical"},
+    {"type": "OBSERVED_BY", "from": "evt-2501", "to": "sat-vantor", "detail": "Kim Il Sung Square reviewing stand construction 5/30"},
+    {"type": "LOCATED_AT", "from": "evt-2501", "to": "loc-kimilsung-sq"},
+    {"type": "LOCATED_AT", "from": "evt-2501", "to": "loc-sunan"},
+    {"type": "ANALYZED_BY", "from": "evt-2501", "to": "org-nkpro"},
+    {"type": "REPORTED_BY", "from": "evt-2501", "to": "org-maxar", "detail": "WorldView-3 imagery provider"},
+    {"type": "HAS_PHENOMENON", "from": "evt-2501", "to": "phen-military"},
+
+    {"type": "OBSERVED_BY", "from": "evt-2502", "to": "sat-nisar", "detail": "L-band SAR vegetation change detection"},
+    {"type": "LOCATED_AT", "from": "evt-2502", "to": "loc-maize-triangle"},
+    {"type": "ANALYZED_BY", "from": "evt-2502", "to": "org-nasa"},
+    {"type": "ANALYZED_BY", "from": "evt-2502", "to": "org-isro"},
+    {"type": "HAS_PHENOMENON", "from": "evt-2502", "to": "phen-agriculture"},
+
+    {"type": "AFFECTS", "from": "evt-2503", "to": "sat-s1d", "detail": "Internal clock corruption"},
+    {"type": "REPORTED_BY", "from": "evt-2503", "to": "org-esa"},
+    {"type": "REPORTED_BY", "from": "evt-2503", "to": "org-copernicus"},
+    {"type": "HAS_PHENOMENON", "from": "evt-2503", "to": "phen-satops-anomaly"},
+
+    {"type": "AFFECTS", "from": "evt-2504", "to": "sat-s1c", "detail": "2-week maneuvering non-acquiring"},
+    {"type": "AFFECTS", "from": "evt-2504", "to": "sat-s1a", "detail": "Phaseout planned"},
+    {"type": "AFFECTS", "from": "evt-2504", "to": "sat-s1d", "detail": "Part of new constellation"},
+    {"type": "REPORTED_BY", "from": "evt-2504", "to": "org-esa"},
+    {"type": "HAS_PHENOMENON", "from": "evt-2504", "to": "phen-satops-reconfig"},
+
+    {"type": "OBSERVED_BY", "from": "evt-2505", "to": "sat-goes16"},
+    {"type": "OBSERVED_BY", "from": "evt-2505", "to": "sat-goes18"},
+    {"type": "OBSERVED_BY", "from": "evt-2505", "to": "sat-meteosat"},
+    {"type": "LOCATED_AT", "from": "evt-2505", "to": "loc-atlantic"},
+    {"type": "REPORTED_BY", "from": "evt-2505", "to": "org-noaa"},
+    {"type": "HAS_PHENOMENON", "from": "evt-2505", "to": "phen-typhoon"},
+    {"type": "RELATED_TO", "from": "evt-2505", "to": "temp-evt-1902", "detail": "El Nino suppression drives below-normal forecast"},
+
+    {"type": "OBSERVED_BY", "from": "evt-202", "to": "sat-l9"},
+    {"type": "OBSERVED_BY", "from": "evt-202", "to": "sat-s2"},
+    {"type": "LOCATED_AT", "from": "evt-202", "to": "loc-kilauea"},
+    {"type": "ANALYZED_BY", "from": "evt-202", "to": "org-hvo"},
+    {"type": "HAS_PHENOMENON", "from": "evt-202", "to": "phen-volcano"},
+
+    {"type": "OBSERVED_BY", "from": "evt-1101", "to": "sat-snpp"},
+    {"type": "OBSERVED_BY", "from": "evt-1101", "to": "sat-noaa21"},
+    {"type": "OBSERVED_BY", "from": "evt-1101", "to": "sat-s2"},
+    {"type": "LOCATED_AT", "from": "evt-1101", "to": "loc-canada-fires"},
+    {"type": "ANALYZED_BY", "from": "evt-1101", "to": "org-cwfis"},
+    {"type": "ANALYZED_BY", "from": "evt-1101", "to": "org-nesdis"},
+    {"type": "ANALYZED_BY", "from": "evt-1101", "to": "org-nasa"},
+    {"type": "HAS_PHENOMENON", "from": "evt-1101", "to": "phen-wildfire"},
+
+    {"type": "OBSERVED_BY", "from": "evt-701", "to": "sat-s2"},
+    {"type": "OBSERVED_BY", "from": "evt-701", "to": "sat-l9"},
+    {"type": "LOCATED_AT", "from": "evt-701", "to": "loc-bismarck"},
+    {"type": "ANALYZED_BY", "from": "evt-701", "to": "org-smithsonian"},
+    {"type": "HAS_PHENOMENON", "from": "evt-701", "to": "phen-volcano"},
+
+    {"type": "OBSERVED_BY", "from": "evt-082", "to": "sat-s5p"},
+    {"type": "OBSERVED_BY", "from": "evt-082", "to": "sat-s2"},
+    {"type": "LOCATED_AT", "from": "evt-082", "to": "loc-mayon"},
+    {"type": "ANALYZED_BY", "from": "evt-082", "to": "org-phivolcs"},
+    {"type": "HAS_PHENOMENON", "from": "evt-082", "to": "phen-volcano"},
+
+    {"type": "OBSERVED_BY", "from": "temp-evt-1902", "to": "sat-jason3"},
+    {"type": "OBSERVED_BY", "from": "temp-evt-1902", "to": "sat-s6"},
+    {"type": "LOCATED_AT", "from": "temp-evt-1902", "to": "loc-nino34"},
+    {"type": "ANALYZED_BY", "from": "temp-evt-1902", "to": "org-cpc"},
+    {"type": "HAS_PHENOMENON", "from": "temp-evt-1902", "to": "phen-enso"},
+
+    {"type": "OBSERVED_BY", "from": "evt-092", "to": "sat-wv3"},
+    {"type": "OBSERVED_BY", "from": "evt-092", "to": "sat-planet-skysat"},
+    {"type": "LOCATED_AT", "from": "evt-092", "to": "loc-antelope"},
+    {"type": "ANALYZED_BY", "from": "evt-092", "to": "org-csis"},
+    {"type": "HAS_PHENOMENON", "from": "evt-092", "to": "phen-construction"},
+
+    {"type": "OBSERVED_BY", "from": "temp-evt-2401", "to": "sat-wv3"},
+    {"type": "OBSERVED_BY", "from": "temp-evt-2401", "to": "sat-pleiades-neo"},
+    {"type": "LOCATED_AT", "from": "temp-evt-2401", "to": "loc-gaza"},
+    {"type": "ANALYZED_BY", "from": "temp-evt-2401", "to": "org-unosat"},
+    {"type": "HAS_PHENOMENON", "from": "temp-evt-2401", "to": "phen-military"},
+
+    {"type": "LOCATED_AT", "from": "temp-evt-2002", "to": "loc-hami"},
+    {"type": "HAS_PHENOMENON", "from": "temp-evt-2002", "to": "phen-military"},
+
+    {"type": "LOCATED_AT", "from": "temp-evt-2003", "to": "loc-dprk-naval"},
+    {"type": "HAS_PHENOMENON", "from": "temp-evt-2003", "to": "phen-naval"},
+
+    {"type": "LOCATED_AT", "from": "temp-evt-2901", "to": "loc-lebanon"},
+    {"type": "ANALYZED_BY", "from": "temp-evt-2901", "to": "org-bellingcat"},
+    {"type": "HAS_PHENOMENON", "from": "temp-evt-2901", "to": "phen-military"},
+
+    {"type": "OBSERVED_BY", "from": "temp-evt-2301", "to": "sat-s3"},
+    {"type": "OBSERVED_BY", "from": "temp-evt-2301", "to": "sat-icesat2"},
+    {"type": "OBSERVED_BY", "from": "temp-evt-2301", "to": "sat-cryosat2"},
+    {"type": "LOCATED_AT", "from": "temp-evt-2301", "to": "loc-arctic"},
+    {"type": "ANALYZED_BY", "from": "temp-evt-2301", "to": "org-nasa"},
+    {"type": "HAS_PHENOMENON", "from": "temp-evt-2301", "to": "phen-sea-ice"},
+
+    {"type": "OPERATES", "from": "org-esa", "to": "sat-s1a"},
+    {"type": "OPERATES", "from": "org-esa", "to": "sat-s1c"},
+    {"type": "OPERATES", "from": "org-esa", "to": "sat-s1d"},
+    {"type": "OPERATES", "from": "org-esa", "to": "sat-s2"},
+    {"type": "OPERATES", "from": "org-esa", "to": "sat-s5p"},
+    {"type": "OPERATES", "from": "org-nasa", "to": "sat-nisar"},
+    {"type": "OPERATES", "from": "org-isro", "to": "sat-nisar"},
+    {"type": "OPERATES", "from": "org-maxar", "to": "sat-wv3"},
+    {"type": "OPERATES", "from": "org-noaa", "to": "sat-goes16"},
+    {"type": "OPERATES", "from": "org-noaa", "to": "sat-goes18"}
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "date": "2026-06-05",
+  "collected_at": "2026-06-05T08:00:00Z",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 18,
+  "total_results": 30,
+  "expanded_keywords": [
+    "satellite imagery event",
+    "earth observation disaster",
+    "위성영상 재해",
+    "Sentinel SAR wildfire flood",
+    "NISAR vegetation agriculture",
+    "volcano eruption satellite",
+    "FIRMS active fire",
+    "Copernicus EMS activation",
+    "NOAA hurricane season forecast",
+    "DPRK satellite imagery construction",
+    "military buildup satellite",
+    "deforestation satellite monitoring",
+    "Arctic sea ice extent",
+    "El Nino satellite observation",
+    "Gaza damage assessment satellite",
+    "UNOSAT building damage",
+    "KOMPSAT observation Korea",
+    "Maxar WorldView imagery",
+    "Sentinel-1 constellation status",
+    "NASA Earth Observatory image of the day"
+  ],
+  "searches": [
+    {
+      "id": "s-01",
+      "query": "NASA Earth Observatory image of the day June 2026",
+      "source": "NASA EO",
+      "results": 3,
+      "hits": ["src-005", "src-013", "src-014"]
+    },
+    {
+      "id": "s-02",
+      "query": "ESA Copernicus Sentinel data quality notice June 2026",
+      "source": "ESA Copernicus",
+      "results": 2,
+      "hits": ["src-007", "src-008"]
+    },
+    {
+      "id": "s-03",
+      "query": "NOAA 2026 Atlantic hurricane season outlook",
+      "source": "NOAA",
+      "results": 1,
+      "hits": ["src-009"]
+    },
+    {
+      "id": "s-04",
+      "query": "DPRK satellite imagery military diplomatic June 2026",
+      "source": "Bloomberg / NK Pro",
+      "results": 4,
+      "hits": ["src-001", "src-002", "src-003", "src-004"]
+    },
+    {
+      "id": "s-05",
+      "query": "NISAR SAR agriculture vegetation 2026",
+      "source": "Space.com / NASA",
+      "results": 2,
+      "hits": ["src-005", "src-006"]
+    },
+    {
+      "id": "s-06",
+      "query": "USGS volcano observatory update June 2026",
+      "source": "USGS HVO / AVO",
+      "results": 3,
+      "hits": ["src-010", "src-017", "src-018"]
+    },
+    {
+      "id": "s-07",
+      "query": "Canada wildfire satellite monitoring June 2026",
+      "source": "CWFIS / NOAA NESDIS",
+      "results": 3,
+      "hits": ["src-011", "src-012", "src-013"]
+    },
+    {
+      "id": "s-08",
+      "query": "Philippines volcano Mayon Kanlaon eruption update",
+      "source": "ReliefWeb / Smithsonian GVP",
+      "results": 2,
+      "hits": ["src-015", "src-019"]
+    },
+    {
+      "id": "s-09",
+      "query": "Indonesia volcano Dukono eruption satellite 2026",
+      "source": "Smithsonian GVP",
+      "results": 1,
+      "hits": ["src-020"]
+    },
+    {
+      "id": "s-10",
+      "query": "Ecuador volcano Sangay Reventador activity satellite",
+      "source": "Smithsonian GVP",
+      "results": 1,
+      "hits": ["src-021"]
+    },
+    {
+      "id": "s-11",
+      "query": "Santa Rosa wildfire California containment BAER 2026",
+      "source": "InciWeb",
+      "results": 1,
+      "hits": ["src-022"]
+    },
+    {
+      "id": "s-12",
+      "query": "El Nino ENSO forecast June 2026 satellite SST",
+      "source": "NOAA CPC",
+      "results": 1,
+      "hits": ["src-016"]
+    },
+    {
+      "id": "s-13",
+      "query": "Bismarck Sea undersea eruption satellite 2026",
+      "source": "Smithsonian / NASA",
+      "results": 1,
+      "hits": ["src-014"]
+    },
+    {
+      "id": "s-14",
+      "query": "Typhoon Jangmi Pacific dissipation satellite imagery",
+      "source": "NOAA / JMA",
+      "results": 1,
+      "hits": ["src-023"]
+    },
+    {
+      "id": "s-15",
+      "query": "South China Sea artificial island satellite 2026",
+      "source": "CSIS AMTI",
+      "results": 1,
+      "hits": ["src-024"]
+    },
+    {
+      "id": "s-16",
+      "query": "Gaza satellite damage assessment military posts UNOSAT 2026",
+      "source": "UNOSAT / Al Jazeera",
+      "results": 2,
+      "hits": ["src-025", "src-028"]
+    },
+    {
+      "id": "s-17",
+      "query": "China ICBM silo Hami satellite imagery 2026",
+      "source": "NBC / Reuters",
+      "results": 2,
+      "hits": ["src-026", "src-027"]
+    },
+    {
+      "id": "s-18",
+      "query": "Arctic sea ice record low satellite extent June 2026 Bellingcat Lebanon damage",
+      "source": "NASA / Bellingcat",
+      "results": 2,
+      "hits": ["src-029", "src-030"]
+    }
+  ]
+}

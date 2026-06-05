@@ -2609,3 +2609,95 @@ config 한도 내 — 새 클래스 0건 (max_new_classes_per_day=3), 새 관계
 - **한반도 GeoFocus 5건:** 변동 없음.
 - **cascading_disaster:** 1건 확정 (Jangmi -> flooding/landslides JP, 잠정->확정 승격).
 - **카테고리 커버리지:** 자연재해 10건+, 인간활동 1건(Gaza cross-domain), 기후환경 1건(El Nino), 농업해양 0건(금일 신규 없음), 국방안보 2건(Gaza+Hami), 인도주의 1건(Gaza cross-domain).
+
+---
+
+## 2026-06-05 추론 결과
+
+입력: sources/2026-06-05 (신규 5건 + 업데이트 14건). Phase 3-4.
+
+### sensor_capability_match (센서-현상 적합성) -- 2건
+
+- **추론 #1:** temp-evt-2501 (시진핑 방북 준비 Kim Il Sung Square + Sunan Airport) -- observedBy WorldView-3 (0.31m) + phenomenon construction/military_buildup -> hiResBoost +0.15 [confidence 0.95, 확정]. 리뷰스탠드 건설 + 항공기 개별 식별 가능 해상도.
+- **추론 #2:** temp-evt-2502 (NISAR 남아프리카 Maize Triangle) -- usesSensor L-band SAR + phenomenon ndvi_change -> sarBoost +0.10 [0.90, 확정]. L-band SAR은 작물 구조(canopy penetration) 관측에 광학 대비 우위.
+
+### official_source_trust (공식 기관 신뢰도) -- 2건
+
+- **추론 #3:** temp-evt-2502 (NISAR 남아프리카) -- analyzedBy NASA (space_agency, EO Image of the Day) -> officialBoost +0.15 [0.95, 확정].
+- **추론 #4:** temp-evt-2505 (NOAA 허리케인 시즌 전망) -- analyzedBy NOAA CPC (weather_agency) -> officialBoost +0.15 [0.92, 확정]. 공식 계절 전망.
+
+### korea_geo_focus (한반도 가산) -- 1건 신규
+
+- **추론 #5:** temp-evt-2501 (시진핑 방북 준비, KP Pyongyang) -- inCountry KP -> koreaBoost +0.10 [0.99, 확정]. 한반도 GeoFocus 5건 -> 6건(신규 1건 추가).
+
+### before_after_credibility (전후 비교 신뢰도) -- 1건 신규
+
+- **추론 #6:** temp-evt-2501 (시진핑 방북 준비) -- Vantor 5/30 before/after 위성영상 가용 -> baCredibilityBoost +0.10 [0.92, 확정]. Kim Il Sung Square 건설 전후 비교.
+
+### temporal_progression (시계열 연속 관측) -- 4건
+
+- **추론 #7:** evt-202 (Kilauea) -- Ep49 10-15일 예보. ADVISORY/YELLOW 유지. partOfSeries 시리즈 지속 [0.95, 확정].
+- **추론 #8:** evt-701 (Bismarck Sea) -- Day 28+. 분출 감소 추세 지속. partOfSeries 시리즈 지속 [0.88, 확정].
+- **추론 #9:** evt-1101 (Canada wildfire) -- 65 active, 18,935 ha, 6 OOC. 이전 400+ fires에서 감소. partOfSeries [0.90, 확정].
+- **추론 #10:** evt-082 (Mayon) -- Day 150+. AL3. 287K+ 이재민. 장기 시계열 지속 [0.92, 확정].
+
+### multi_satellite_confirmation (다중 위성 교차검증) -- 5건 유지 (변동 없음)
+
+- **유지 #1:** evt-701 (Bismarck Sea) -- VIIRS + MODIS + Landsat 9 + Himawari-9 + Sentinel-2A. 5위성 3기관 유지. multiSatBoost +0.20 [0.97, 확정].
+- **유지 #2:** evt-1101 (Canada wildfire) -- GOES-18 + VIIRS + TROPOMI + OMPS + EarthCare. 5위성 3기관 유지. multiSatBoost +0.20 [0.95, 확정].
+- **유지 #3:** ent-evt-kharg (Kharg Island) -- Sentinel-1 + Sentinel-2 + Sentinel-3. 3위성 3센서 유지. multiSatBoost +0.20 [0.90, 확정].
+- **유지 #4:** temp-evt-2002 (Hami ICBM) -- WorldView-3 + PlanetScope. 2위성 2기관 유지. multiSatBoost +0.20 [0.90, 확정].
+- **유지 #5:** temp-evt-2401 (Gaza 40+ posts) -- PlanetScope + WorldView-3. 2위성 2기관 유지. multiSatBoost +0.20 [0.95, 확정].
+
+### 금일 미적용 규칙
+
+- **cascading_disaster:** 금일 신규 재해 사슬 없음. Jangmi 소멸(dissipated)로 이전 cascading 종결.
+- **disaster_severity_priority:** 신규 고위험 재해 이벤트 없음 (기존 이벤트 업데이트만).
+- **analyst_org_trust:** 금일 신규 독립 분석기관 출처 없음.
+- **supersedes:** 금일 대체 관계 없음.
+
+### 종합 신뢰도 산정
+
+| 이벤트 ID | 이벤트명 | 기본 | 가산 | 최종 | 비고 |
+|-----------|---------|------|------|------|------|
+| temp-evt-2501 | 시진핑 방북 준비 위성 관측 | 0.80 | hiRes+0.15, korea+0.10, ba+0.10 | 0.95 (cap) | 신규, WorldView-3/Vantor |
+| temp-evt-2502 | NISAR 남아프리카 Maize Triangle | 0.75 | official+0.15, sar+0.10 | 0.90 | 신규, NASA EO |
+| temp-evt-2503 | Sentinel-1D clock corruption | 0.90 | -- | 0.90 | SatOps, ESA 공식 |
+| temp-evt-2504 | Sentinel-1 콘스텔레이션 재구성 | 0.85 | -- | 0.85 | SatOps, ESA 공식 |
+| temp-evt-2505 | NOAA 허리케인 below-normal | 0.78 | official+0.15 | 0.90 | NOAA CPC 공식 |
+| evt-202 | Kilauea ADVISORY/YELLOW | 0.90 | official+0.15 | 0.90 | Ep49 10-15d 예보 |
+| evt-1101 | 캐나다 산불 65 active | 0.80 | multiSat+0.20, official+0.15 | 0.95 | 5위성 3기관 |
+| evt-701 | Bismarck Sea Day 28+ | 0.80 | multiSat+0.20 | 0.95 | 감소 추세 |
+| evt-082 | Mayon Day 150+ AL3 | 0.80 | official+0.15 | 0.90 | 287K+ 이재민 |
+| temp-evt-1902 | El Nino 82% May-Jul | 0.80 | official+0.15 | 0.90 | strong 2/3 확률 |
+
+### 추론 통계 요약
+
+| 규칙 | 금일 발동 | 누적 | 평균 신뢰도 |
+|------|----------|------|-----------|
+| sensor_capability_match | 2 | -- | 0.93 |
+| official_source_trust | 2 | -- | 0.94 |
+| korea_geo_focus | 1 | 6건(총) | 0.99 |
+| before_after_credibility | 1 | -- | 0.92 |
+| temporal_progression | 4 | -- | 0.91 |
+| multi_satellite_confirmation | 0 (유지 5) | 5건(유지) | 0.93 |
+| **합계** | **10** (+ 5 유지) | -- | **0.93** |
+
+### 온톨로지 변경
+
+| 변경 유형 | 대상 | 근거 |
+|----------|------|------|
+| 새 Country | co-za (남아프리카공화국) (1건) | NISAR Maize Triangle 식생 분석 |
+| 새 Location | ent-loc-075 (Kim Il Sung Square), ent-loc-076 (Sunan Airport), ent-loc-077 (Maize Triangle ZA) (3건) | 신규 이벤트 발생 지역 |
+| 새 Event | temp-evt-2501 ~ temp-evt-2505 (5건) | 신규 이벤트 |
+| 이벤트 업데이트 | evt-202, evt-1101, evt-701, evt-082, temp-evt-1902, evt-203, evt-204, temp-evt-1401, evt-128, temp-evt-2203, evt-1201, temp-evt-2001, temp-evt-2401, temp-evt-2002 (14건) | 후속 보도 반영 |
+
+config 한도 내 -- 새 클래스 0건 (max_new_classes_per_day=3), 새 관계 유형 0건 (max_new_relations_per_day=5).
+
+### 일일 요약
+
+- **신규 5건:** 시진핑 방북 준비 위성 관측(KP, WorldView-3, dom-defense, hiRes+korea+ba), NISAR 남아프리카 옥수수 식생(ZA, NISAR, dom-agri-marine, official+sar), Sentinel-1D clock corruption(SatOps), Sentinel-1 콘스텔레이션 재구성(SatOps), NOAA 허리케인 below-normal(dom-climate, official).
+- **업데이트 14건:** Kilauea Ep49(US), Canada wildfire 65 active(CA), Bismarck Sea day28+(PG), Mayon Day150+(PH), El Nino 82%(INTL), Great Sitkin(US), Shishaldin(US), Kanlaon(PH), Dukono(ID), Sangay/Reventador(EC), Santa Rosa 97% BAER(US), Jangmi dissipated(JP), Gaza 40+ posts(PS), Hami ICBM(CN).
+- **다중 위성 교차검증:** 5건 유지 (변동 없음). Bismarck Sea 5위성, Canada 5위성, Kharg Island 3위성, Hami 2위성, Gaza 2위성.
+- **한반도 GeoFocus 6건:** 신규 1건(시진핑 방북 준비 temp-evt-2501 추가). 기존 5건 유지.
+- **카테고리 커버리지:** 자연재해 10건+(화산 7, 산불 2, 태풍 1 소멸), 인간활동 1건(시진핑 방북 건설), 기후환경 2건(El Nino+허리케인 전망), 농업해양 1건(NISAR Maize Triangle), 국방안보 2건(시진핑 방북+Hami+Gaza 지속), 인도주의 1건(Gaza 지속). 4대 카테고리 모두 커버.

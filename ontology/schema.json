@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "description": "OSINT 온톨로지 스키마 — config/osint-config.json의 seed로부터 초기화되고, 매일 파이프라인 실행 시 자동 확장된다. 도메인: 위성영상으로 관측 가능한 지구상 이벤트 (Earth Observation Events).",
-  "last_updated": "2026-06-04",
+  "last_updated": "2026-06-05",
   "classes": [
     {
       "id": "Entity",
@@ -618,6 +618,13 @@
       "target": "temp-evt-2401(신규) + updates to temp-evt-2001, evt-1101, evt-202, evt-701, temp-evt-1902, temp-evt-2002, evt-082, evt-203, evt-204, temp-evt-1401, evt-801, temp-evt-2203, evt-1201",
       "reason": "신규 1건: Israel Gaza 40+ military posts Al Jazeera 위성영상 OSINT(temp-evt-2401, PlanetScope+WorldView-3, PS, dom-defense+dom-humanitarian, multiSatBoost+hiResBoost+baCredibility+analystBoost, 0.95 cap). 업데이트 13건: TS Jangmi 본토 상륙 완료 23명 부상 57가옥 900편 Tokyo Level 4 최초 cascading 확정(temp-evt-2001), 캐나다 산불 400+ fires AQ very unhealthy Minnesota 27K+ 대피(evt-1101, 5위성 유지), Kilauea ADVISORY/YELLOW 하향 Ep49 10-15일 예보(evt-202), Bismarck Sea Day27+ 분출 감소(evt-701, 5위성 유지), El Nino WMO 80% Jun-Aug 허리케인 억제(temp-evt-1902), Hami ICBM Reuters/NBC 80+ pads C3 인프라(temp-evt-2002), Mayon 지속(evt-082), Great Sitkin WATCH(evt-203), Shishaldin ADVISORY(evt-204), Kanlaon AL2(temp-evt-1401), Bezymianny 추적(evt-801), Sangay/Reventador 지속(temp-evt-2203), Santa Rosa 추적(evt-1201). 다중 위성 교차검증 5건(신규 1건: Gaza 2위성 2기관). cascading_disaster 1건 확정(Jangmi 홍수/산사태). 한반도 GeoFocus 5건 유지. 스키마 구조적 변경 없음.",
       "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007"]
+    },
+    {
+      "date": "2026-06-05",
+      "action": "add_event_and_update",
+      "target": "temp-evt-2501(신규), temp-evt-2502(신규), temp-evt-2503(신규), temp-evt-2504(신규), temp-evt-2505(신규) + updates to evt-202, evt-1101, evt-701, evt-082, temp-evt-1902, evt-203, evt-204, temp-evt-1401, evt-128, temp-evt-2203, evt-1201, temp-evt-2001, temp-evt-2401, temp-evt-2002",
+      "reason": "신규 5건: (1) 시진핑 방북 준비 위성 관측(temp-evt-2501, 39.02N/125.75E, WorldView-3/Vantor, Kim Il Sung Square 리뷰스탠드 건설 + Sunan Airport 8대 항공기 재배치, Bloomberg/Seoul Economic Daily/Japan Times/NK Pro, KP, dom-defense construction+military_buildup, hiResBoost+koreaBoost+baCredibility, 6/11 방문 추정). (2) NASA EO NISAR 남아프리카 옥수수 삼각지대 식생 변화(temp-evt-2502, -28.5/26.5, NISAR L-band SAR, NASA EO Image of the Day, ZA 신규국, dom-agri-marine ndvi_change, officialBoost). (3) Sentinel-1D SAR 데이터 품질 저하(temp-evt-2503, 5/29-6/1 internal clock corruption, SatOps). (4) Sentinel-1 콘스텔레이션 재구성(temp-evt-2504, 6월 말 S-1C 기동/S-1A 퇴역, S-1C+S-1D 신규 체제 7월, SatOps). (5) NOAA 2026 대서양 허리케인 시즌 below-normal(temp-evt-2505, 8-14 명명 폭풍, El Nino 억제, NOAA 공식, dom-climate). 업데이트 14건. 다중 위성 교차검증 5건 유지. 한반도 GeoFocus 6건(신규 1건: 시진핑 방북 준비). 스키마 구조적 변경 없음 — 기존 클래스·관계로 충분.",
+      "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009", "src-010", "src-011", "src-012", "src-013", "src-014", "src-015", "src-016", "src-017", "src-018", "src-019", "src-020", "src-021", "src-022", "src-023"]
     }
   ]
 }
