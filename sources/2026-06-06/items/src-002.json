@@ -1,0 +1,35 @@
+{
+  "id": "src-002",
+  "date": "2026-06-06",
+  "title": "북한 모내기 68.2% 완료 — Landsat 8/9 위성 분석 (DailyNK 6/5)",
+  "url": "https://www.dailynk.com/20260605-3/",
+  "source_org": "Daily NK",
+  "tag": "new",
+  "related_item": null,
+  "domain": "Agriculture",
+  "phenomenon": "ndvi_change",
+  "sub_category": "crop_yield_rice_planting",
+  "country": "KP",
+  "location": {"name": "DPRK nationwide (8 sample sites)", "lat": 39.0, "lon": 126.0},
+  "satellites": ["Landsat-8", "Landsat-9"],
+  "sensors": ["OLI", "OLI-2", "TIRS", "TIRS-2"],
+  "confidence": 0.80,
+  "summary": "DailyNK 2026년 6월 5일 보도: Landsat 8/9 위성영상 NDVI 분석 기반 북한 전역 모내기 진척률 68.2% 추정. 8개 표본 지역(평안남도, 황해남도, 함경남도 등 주요 곡창지대) NDVI 시계열 비교. 전년 동기(71.3%) 대비 3.1%p 지연. 5월 강수 부족과 비료 공급 제한이 원인으로 분석. 위성 기반 식생지수 추적으로 북한 식량 안보 상황 간접 평가.",
+  "boosts": ["koreaBoost +0.10", "analystBoost +0.10"],
+  "before_after_available": true,
+  "temporal": {
+    "observation_period": "2026-05-01 to 2026-06-03",
+    "comparison_year": "2025",
+    "type": "time_series_ndvi"
+  },
+  "entities_extracted": [
+    {"type": "Event", "name": "DPRK 2026 Rice Planting Progress 68.2%", "phenomenon": "ndvi_change", "domain": "dom-agri-marine"},
+    {"type": "Satellite", "ref_id": "sat-l8"},
+    {"type": "Satellite", "ref_id": "sat-l9"},
+    {"type": "Sensor", "name": "OLI"},
+    {"type": "Sensor", "name": "OLI-2"},
+    {"type": "Organization", "ref_id": "org-dailynk"},
+    {"type": "Country", "ref_id": "co-kp"},
+    {"type": "Location", "name": "DPRK nationwide", "lat": 39.0, "lon": 126.0}
+  ]
+}

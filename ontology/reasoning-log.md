@@ -2701,3 +2701,55 @@ config 한도 내 -- 새 클래스 0건 (max_new_classes_per_day=3), 새 관계 
 - **다중 위성 교차검증:** 5건 유지 (변동 없음). Bismarck Sea 5위성, Canada 5위성, Kharg Island 3위성, Hami 2위성, Gaza 2위성.
 - **한반도 GeoFocus 6건:** 신규 1건(시진핑 방북 준비 temp-evt-2501 추가). 기존 5건 유지.
 - **카테고리 커버리지:** 자연재해 10건+(화산 7, 산불 2, 태풍 1 소멸), 인간활동 1건(시진핑 방북 건설), 기후환경 2건(El Nino+허리케인 전망), 농업해양 1건(NISAR Maize Triangle), 국방안보 2건(시진핑 방북+Hami+Gaza 지속), 인도주의 1건(Gaza 지속). 4대 카테고리 모두 커버.
+
+---
+
+## 2026-06-06 추론 결과
+
+### 추론 #1: multi_satellite_confirmation (evt-1101 캐나다 산불)
+- **입력:** (evt-1101, observedBy, sat-viirs-jpss), (evt-1101, observedBy, sat-modis-terra), (evt-1101, observedBy, sat-goes18), (evt-1101, observedBy, sat-sentinel2a), (evt-1101, observedBy, sensor-tropomi)
+- **추론:** (evt-1101, multiSatBoost, +0.20) — 5개 독립 위성/센서 교차검증 유지
+- **신뢰도:** 0.95
+- **상태:** 확정 (지속)
+
+### 추론 #2: official_source_trust (temp-evt-2601 호주 처방 화입)
+- **입력:** (temp-evt-2601, analyzedBy, org-nasa)
+- **추론:** (temp-evt-2601, officialBoost, +0.15) — NASA EO Image of the Day 공식 기사
+- **신뢰도:** 0.90
+- **상태:** 확정
+
+### 추론 #3: korea_geo_focus (temp-evt-2602 북한 모내기)
+- **입력:** (temp-evt-2602, inCountry, co-kp)
+- **추론:** (temp-evt-2602, koreaBoost, +0.10) — 북한 전역 8개 표본지 Landsat 분석
+- **신뢰도:** 0.85
+- **상태:** 확정
+
+### 추론 #4: temporal_progression (evt-1101 캐나다 산불 에스컬레이션)
+- **입력:** (evt-1101 prev: 65건 → 134건 활성 화재, 18935 ha → 113300 ha)
+- **추론:** (evt-1101, severity, high) — 급격한 에스컬레이션, 6배 면적 증가
+- **신뢰도:** 0.95
+- **상태:** 확정
+
+### 추론 #5: temporal_progression (temp-evt-2501 시진핑 방북 확정)
+- **입력:** (temp-evt-2501 prev: 위성영상 추측 → 신화통신 공식 확인 6/8-9)
+- **추론:** (temp-evt-2501, confidence, 0.95) — 공식 확인으로 신뢰도 최대
+- **신뢰도:** 0.95
+- **상태:** 확정
+
+### 추론 #6: sensor_capability_match_sar (temp-evt-2504 Sentinel-1 재구성)
+- **입력:** (temp-evt-2504, involves, sat-sentinel1c), (temp-evt-2504, involves, sat-sentinel1a), (temp-evt-2504, involves, sat-sentinel1d)
+- **추론:** S-1C 6/9-23 운용 중단 → 전역 SAR 커버리지 일시 감소, S-1A 6/29 퇴역 → S-1C+S-1D 신체제 7월
+- **신뢰도:** 0.95
+- **상태:** 확정
+
+### 추론 #7: disaster_severity_priority (evt-082 Mayon)
+- **입력:** (evt-082, inDomain, dom-disaster), (evt-082, severity, high), Day 152+ 지속
+- **추론:** (evt-082, priorityBoost, +0.20) — 인명/인프라 피해 동반, 3975명 대피소
+- **신뢰도:** 0.90
+- **상태:** 확정 (지속)
+
+### 추론 #8: before_after_credibility (temp-evt-2602 북한 모내기)
+- **입력:** (temp-evt-2602, before_after_available, true) — 5/15 vs 5/22 시계열 비교
+- **추론:** (temp-evt-2602, baCredibilityBoost, +0.10)
+- **신뢰도:** 0.85
+- **상태:** 확정

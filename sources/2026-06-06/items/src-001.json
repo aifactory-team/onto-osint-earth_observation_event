@@ -1,0 +1,35 @@
+{
+  "id": "src-001",
+  "date": "2026-06-06",
+  "title": "NASA EO 'Fighting Fire With Fire' — Australia Northern Territory Prescribed Burns (MODIS Aqua 5/28)",
+  "url": "https://science.nasa.gov/earth/earth-observatory/fighting-fire-with-fire/",
+  "source_org": "NASA Earth Observatory",
+  "tag": "new",
+  "related_item": null,
+  "domain": "Disaster",
+  "phenomenon": "wildfire_management",
+  "sub_category": "prescribed_burn",
+  "country": "AU",
+  "location": {"name": "Northern Territory, Australia", "lat": -13.0, "lon": 132.0},
+  "satellites": ["MODIS (Aqua)", "MODIS (Terra)", "VIIRS"],
+  "sensors": ["MODIS", "VIIRS"],
+  "confidence": 0.90,
+  "summary": "NASA Earth Observatory 'Fighting Fire With Fire' 기사. 호주 노던 테리토리에서 시행되는 대규모 계획 소각(prescribed burn) 활동을 MODIS Aqua 위성이 2026년 5월 28일 촬영. 원주민(Indigenous) 전통 화재 관리 기법과 현대 위성 모니터링의 결합 사례. MODIS와 VIIRS 열적외 센서로 화점(hotspot) 및 연소 면적 탐지. 건기(dry season) 초기 계획 소각으로 후기 대형 산불 위험을 사전 차감하는 '선제적 화재 관리(early dry season burning)' 전략.",
+  "boosts": ["officialBoost +0.15"],
+  "before_after_available": false,
+  "temporal": {
+    "observation_date": "2026-05-28",
+    "season": "early_dry_season",
+    "type": "single_acquisition"
+  },
+  "entities_extracted": [
+    {"type": "Event", "name": "Australia NT Prescribed Burns 2026", "phenomenon": "wildfire_management", "domain": "dom-disaster"},
+    {"type": "Satellite", "ref_id": "sat-aqua"},
+    {"type": "Satellite", "ref_id": "sat-terra"},
+    {"type": "Sensor", "name": "MODIS"},
+    {"type": "Sensor", "name": "VIIRS"},
+    {"type": "Organization", "ref_id": "org-nasa"},
+    {"type": "Country", "ref_id": "co-au"},
+    {"type": "Location", "name": "Northern Territory, Australia", "lat": -13.0, "lon": 132.0}
+  ]
+}
