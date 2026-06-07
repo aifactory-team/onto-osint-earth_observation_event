@@ -2753,3 +2753,59 @@ config 한도 내 -- 새 클래스 0건 (max_new_classes_per_day=3), 새 관계 
 - **추론:** (temp-evt-2602, baCredibilityBoost, +0.10)
 - **신뢰도:** 0.85
 - **상태:** 확정
+
+## 2026-06-07 추론 결과
+
+### 추론 #1: temporal_progression (evt-2701 Santa Rosa Fire 종결)
+- **입력:** (evt-1201, containment, 97%) → (evt-2701, containment, 100%)
+- **추론:** (evt-2701, partOfSeries, evt-1201) — 97% → 100% 진화 완료. 시리즈 종결.
+- **신뢰도:** 0.90
+- **상태:** 확정
+
+### 추론 #2: cascading_disaster (evt-2702 Super El Niño → 글로벌 영향)
+- **입력:** (evt-2702, manifests, phenom-sst-anomaly), (evt-2702, intensity, record-breaking)
+- **추론:** Super El Niño → cascading: 글로벌 가뭄·폭염·허리케인 억제·식량 위기. 1877-78 기록 경신 시 역사적 수준.
+- **신뢰도:** 0.85
+- **상태:** 확정
+
+### 추론 #3: multi_satellite_confirmation (evt-1101 캐나다 산불)
+- **입력:** (evt-1101, observedBy, sat-viirs-jpss), (evt-1101, observedBy, sat-modis-terra), (evt-1101, observedBy, sat-goes18), (evt-1101, observedBy, sat-sentinel2a), (evt-1101, observedBy, sensor-tropomi)
+- **추론:** (evt-1101, multiSatBoost, +0.20) — 5개 독립 위성/센서 교차검증 유지
+- **신뢰도:** 0.95
+- **상태:** 확정 (지속)
+
+### 추론 #4: multi_satellite_confirmation (evt-701 Bismarck Sea)
+- **입력:** (evt-701, observedBy, sat-sentinel2a), (evt-701, observedBy, sat-landsat9), (evt-701, observedBy, sat-modis-terra), (evt-701, observedBy, sat-viirs-jpss), (evt-701, observedBy, sat-himawari9)
+- **추론:** (evt-701, multiSatBoost, +0.20) — 5개 독립 위성 교차검증 유지
+- **신뢰도:** 0.90
+- **상태:** 확정 (지속)
+
+### 추론 #5: temporal_progression (evt-202 Kilauea Ep49 임박)
+- **입력:** (evt-202, ep49_forecast, 10-15일) → (evt-202, ep49_forecast, 9-14일)
+- **추론:** 예보 단축. Ep49 ~6/10-21 범위. 정상부 재팽창 지속으로 임박성 증가.
+- **신뢰도:** 0.90
+- **상태:** 확정
+
+### 추론 #6: korea_geo_focus (temp-evt-2501 시진핑 방북 D-1)
+- **입력:** (temp-evt-2501, inCountry, co-kp)
+- **추론:** (temp-evt-2501, koreaBoost, +0.10) — D-1 내일 도착, 최고 시급성
+- **신뢰도:** 0.95
+- **상태:** 확정
+
+### 추론 #7: sensor_capability_match_sar (temp-evt-2504 Sentinel-1 재구성 D-2)
+- **입력:** (temp-evt-2504, involves, sat-sentinel1c), 6/9 기동 시작 D-2
+- **추론:** SAR 데이터 공급 6/9-23 일시적 감소. 전역 SAR 의존 모니터링(홍수, 빙하, InSAR 변형) 대안 필요 시점.
+- **신뢰도:** 0.95
+- **상태:** 확정
+
+### 추론 #8: disaster_severity_priority (evt-082 Mayon Day 153+)
+- **입력:** (evt-082, severity, high), SO2 2747 t/d, 3975명 대피
+- **추론:** (evt-082, priorityBoost, +0.20) — 인명/인프라 지속 위협
+- **신뢰도:** 0.90
+- **상태:** 확정 (지속)
+
+### 추론 #9: official_source_trust (temp-evt-1902 WMO El Niño)
+- **입력:** (temp-evt-1902, analyzedBy, org-wmo)
+- **추론:** (temp-evt-1902, officialBoost, +0.15) — WMO 공식 80% Jun-Aug 확인
+- **신뢰도:** 0.92
+- **상태:** 확정

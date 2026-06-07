@@ -1,0 +1,225 @@
+{
+  "date": "2026-06-07",
+  "collected_at": "2026-06-07T00:00:00Z",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 18,
+  "total_results": 68,
+  "expanded_keywords": ["Kilauea Episode 49", "Canada wildfire 2026", "Xi Jinping DPRK satellite", "Mayon volcano SO2", "El Nino super 2026", "Sentinel-1 reconfiguration", "Bismarck Sea volcano", "Santa Rosa fire containment", "KOMPSAT CAS500", "Gaza UNOSAT", "NASA Earth Observatory June 2026", "Copernicus EMS activation"],
+  "searches": [
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery wildfire flood disaster June 2026",
+      "language": "en",
+      "timestamp": "2026-06-07T00:01:00Z",
+      "result_count": 10,
+      "results": [
+        { "title": "NOAA Satellites Monitor Canadian Wildfires and Smoke", "url": "https://www.nesdis.noaa.gov/news/noaa-satellites-monitor-canadian-wildfires-and-smoke", "snippet": "NOAA satellite monitoring of 134 active Canadian wildfires, 113,300 ha burned", "source_name": "NOAA NESDIS" },
+        { "title": "NASA FIRMS Active Fire Map", "url": "https://firms.modaps.eosdis.nasa.gov/map/", "snippet": "Real-time MODIS/VIIRS fire detection global coverage", "source_name": "NASA FIRMS" }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery deforestation military buildup construction June 2026",
+      "language": "en",
+      "timestamp": "2026-06-07T00:02:00Z",
+      "result_count": 9,
+      "results": [
+        { "title": "What Satellite Imagery Can Tell Us About China's Military Build Up", "url": "https://www.youtube.com/watch?v=j5NYNEneiOM", "snippet": "Hami ICBM silo field 80+ launch pads satellite analysis", "source_name": "YouTube / 2026 Warfare Symposium" },
+        { "title": "Faster Detection of Forest Loss", "url": "https://science.nasa.gov/earth/earth-observatory/faster-detection-of-forest-loss/", "snippet": "NISAR+Landsat fusion for 100-day early deforestation detection", "source_name": "NASA EO" }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery glacier methane climate environment June 2026",
+      "language": "en",
+      "timestamp": "2026-06-07T00:03:00Z",
+      "result_count": 10,
+      "results": [
+        { "title": "MethaneSAT Releases First Global Assessment of Oil and Gas Climate Pollution", "url": "https://insideclimatenews.org/news/06022026/methanesat-climate-pollution-global-assessment/", "snippet": "MethaneSAT global methane assessment, contact lost after 1 year", "source_name": "Inside Climate News" },
+        { "title": "Climate Science Digest: June 2, 2026", "url": "https://www.muser.press/2026/06/02/climate-science-digest-june-2-2026/", "snippet": "Weekly climate science roundup", "source_name": "Muser Press" }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery NDVI agriculture ocean fishing June 2026",
+      "language": "en",
+      "timestamp": "2026-06-07T00:04:00Z",
+      "result_count": 10,
+      "results": [
+        { "title": "NASA Earthdata NDVI", "url": "https://www.earthdata.nasa.gov/topics/land-surface/normalized-difference-vegetation-index-ndvi", "snippet": "VIIRS daily NDVI assessments", "source_name": "NASA Earthdata" }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "NASA Earth Observatory image of the day June 2026",
+      "language": "en",
+      "timestamp": "2026-06-07T00:05:00Z",
+      "result_count": 10,
+      "results": [
+        { "title": "Fighting Fire With Fire", "url": "https://science.nasa.gov/earth/earth-observatory/fighting-fire-with-fire/", "snippet": "Australia NT prescribed burns MODIS Aqua 5/28", "source_name": "NASA EO" },
+        { "title": "A Moonlit Earth as Seen From Artemis II", "url": "https://science.nasa.gov/earth/earth-observatory/a-moonlit-earth-as-seen-from-artemis-ii/", "snippet": "Artemis II astronaut photo June 4", "source_name": "NASA EO" },
+        { "title": "Typhoon Jangmi", "url": "https://science.nasa.gov/earth/earth-observatory/typhoon-jangmi/", "snippet": "Typhoon Jangmi VIIRS nighttime imagery Japan June 3", "source_name": "NASA EO" }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Copernicus EMS activation Sentinel satellite June 2026",
+      "language": "en",
+      "timestamp": "2026-06-07T00:06:00Z",
+      "result_count": 10,
+      "results": [
+        { "title": "Sentinel-1 orbital reconfiguration dates", "url": "https://dataspace.copernicus.eu/news/2026-5-28-sentinel-1-orbital-reconfiguration-dates", "snippet": "S-1C maneuvering June 9-23, S-1A termination June 29", "source_name": "ESA Copernicus" }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Kilauea volcano update June 7 2026",
+      "language": "en",
+      "timestamp": "2026-06-07T00:07:00Z",
+      "result_count": 10,
+      "results": [
+        { "title": "Kīlauea Volcano Updates", "url": "https://www.usgs.gov/volcanoes/kilauea/volcano-updates", "snippet": "ADVISORY/YELLOW, Ep49 likely 9-14 days, Ep48 record 48 fountaining episodes", "source_name": "USGS HVO" },
+        { "title": "Exciting Kilauea Lava Update: Will there be an Episode 49?", "url": "https://hawaiivolcanoexpeditions.com/blog/lava-update-the-latest-eruptions-on-the-big-island/", "snippet": "Ep48 200m fountains, 40% crater floor covered, Ep49 forecast 9-14 days", "source_name": "Hawaii Volcano Expeditions" }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Canada wildfire June 7 2026 satellite",
+      "language": "en",
+      "timestamp": "2026-06-07T00:08:00Z",
+      "result_count": 10,
+      "results": [
+        { "title": "Canada updates 2026 wildfire season", "url": "https://spaceq.ca/canada-updates-2026-wildfire-season-wildfiresat-constellation-to-help-when-online/", "snippet": "134 active fires, 113,300 ha, BC highest risk", "source_name": "SpaceQ" },
+        { "title": "NOAA Satellites Monitor Canadian Wildfires and Smoke", "url": "https://www.nesdis.noaa.gov/news/noaa-satellites-monitor-canadian-wildfires-and-smoke", "snippet": "NOAA satellite monitoring", "source_name": "NOAA NESDIS" },
+        { "title": "Smoke From Canadian Wildfires Blankets U.S.", "url": "https://www.nesdis.noaa.gov/news/smoke-canadian-wildfires-blankets-us", "snippet": "US AQI very unhealthy", "source_name": "NOAA NESDIS" }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "위성영상 한반도 북한 2026년 6월",
+      "language": "ko",
+      "timestamp": "2026-06-07T00:09:00Z",
+      "result_count": 9,
+      "results": [
+        { "title": "[위성+] 2026년 북한 모내기, 예년보다 소폭 빠르게 진행", "url": "https://www.dailynk.com/20260605-3/", "snippet": "Landsat-8/9 8개 표본지 분석 모내기 68.2% 진행", "source_name": "DailyNK" }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Mayon volcano Philippines June 2026 update",
+      "language": "en",
+      "timestamp": "2026-06-07T00:10:00Z",
+      "result_count": 8,
+      "results": [
+        { "title": "GVP Mayon", "url": "https://volcano.si.edu/volcano.cfm?vn=273030", "snippet": "AL3, SO2 1083-2747 t/d, Day 152+, 3975 evacuees", "source_name": "Smithsonian GVP" },
+        { "title": "Eruption at Mayon", "url": "https://science.nasa.gov/earth/earth-observatory/eruption-at-mayon/", "snippet": "Massive ashfall disrupts Philippines", "source_name": "NASA EO" }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "El Nino super 2026 June update forecast",
+      "language": "en",
+      "timestamp": "2026-06-07T00:11:00Z",
+      "result_count": 9,
+      "results": [
+        { "title": "WMO: Prepare for El Niño", "url": "https://wmo.int/news/media-centre/wmo-prepare-el-nino", "snippet": "80% Jun-Aug, 90%+ Nov, possibly strongest in modern history", "source_name": "WMO" },
+        { "title": "Atmospheric Code Red: 2026 Super El Niño Now Trending Toward Record-Breaking Intensity", "url": "https://www.severe-weather.eu/long-range-2/super-el-nino-2026-record-breaking-intensity-forecast-weather-impacts-united-states-canada-europe-fa/", "snippet": "Super El Niño could surpass 1877-1878 record", "source_name": "Severe Weather Europe" },
+        { "title": "Super El Niño forecast raises stakes for U.S. growing season", "url": "https://www.wisfarmer.com/story/news/2026/06/03/super-el-nio-forecast-raises-stakes-for-u-s-growing-season/90364017007/", "snippet": "Agricultural impact forecast for US growing season", "source_name": "Wisconsin Farmer" }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Sentinel-1 constellation reconfiguration June 2026",
+      "language": "en",
+      "timestamp": "2026-06-07T00:12:00Z",
+      "result_count": 10,
+      "results": [
+        { "title": "Sentinel-1 orbital reconfiguration dates", "url": "https://dataspace.copernicus.eu/news/2026-5-28-sentinel-1-orbital-reconfiguration-dates", "snippet": "S-1C maneuvering June 9-23, S-1A termination June 29", "source_name": "ESA Copernicus" }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Xi Jinping North Korea visit June 8 2026 satellite",
+      "language": "en",
+      "timestamp": "2026-06-07T00:13:00Z",
+      "result_count": 10,
+      "results": [
+        { "title": "Xi to Visit North Korea June 8-9, for First Time Since 2019", "url": "https://www.bloomberg.com/news/articles/2026-06-05/xi-to-visit-north-korea-june-8-9-for-first-time-since-2019-mq0a77tt", "snippet": "Official confirmation via Xinhua, Vantor satellite imagery validated", "source_name": "Bloomberg" },
+        { "title": "Xi Jinping will travel to North Korea next week", "url": "https://www.npr.org/2026/06/05/g-s1-126481/xi-jinping-will-travel-to-north-korea-next-week-in-first-visit-since-2019", "snippet": "State visit June 8-9", "source_name": "NPR" },
+        { "title": "Satellite images fuel speculation of Xi visit to North Korea", "url": "https://www.japantimes.co.jp/news/2026/06/04/asia-pacific/nk-xi-visit-speculation/", "snippet": "Vantor 5/30 imagery Kim Il Sung Square construction", "source_name": "Japan Times" }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Bismarck Sea submarine volcano eruption June 2026",
+      "language": "en",
+      "timestamp": "2026-06-07T00:14:00Z",
+      "result_count": 10,
+      "results": [
+        { "title": "New Eruption in the Bismarck Sea", "url": "https://science.nasa.gov/earth/earth-observatory/new-eruption-in-the-bismarck-sea/", "snippet": "NASA EO article, Landsat 9 + MODIS + VIIRS multi-satellite", "source_name": "NASA EO" },
+        { "title": "Titan Ridge, Papua New Guinea (June 6, 2026, 0314 UTC)", "url": "https://flighttowonder.com/2026/05/20/titan-ridge-bismarck-sea/", "snippet": "VAAC Darwin advisory continuing", "source_name": "Flight To Wonder" }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "USGS volcano update Alaska Great Sitkin Shishaldin June 2026",
+      "language": "en",
+      "timestamp": "2026-06-07T00:15:00Z",
+      "result_count": 10,
+      "results": [
+        { "title": "USGS Volcano Notice DOI-USGS-AVO-2026-06-06", "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-AVO-2026-06-06T18:45:42+00:00", "snippet": "Great Sitkin WATCH/ORANGE, Shishaldin ADVISORY/YELLOW", "source_name": "USGS AVO" }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Kanlaon Dukono volcano eruption June 2026",
+      "language": "en",
+      "timestamp": "2026-06-07T00:16:00Z",
+      "result_count": 7,
+      "results": [
+        { "title": "Kanlaon Volcano: 7 Eruptions in 2026", "url": "https://volcanodb.com/kanlaon-volcano", "snippet": "AL2, SO2 2382 t/d", "source_name": "VolcanoDB" },
+        { "title": "GVP Dukono", "url": "https://volcano.si.edu/volcano.cfm?vn=268010", "snippet": "AL2, plumes 200-1300m, 3 killed May 8", "source_name": "Smithsonian GVP" }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Santa Rosa fire California containment June 2026",
+      "language": "en",
+      "timestamp": "2026-06-07T00:17:00Z",
+      "result_count": 9,
+      "results": [
+        { "title": "Santa Rosa Island Fire Reaches Full Containment", "url": "https://www.independent.com/2026/06/04/santa-rosa-island-fire-reaches-full-containment/", "snippet": "100% contained June 4, 18,379 acres, largest Channel Islands fire ever", "source_name": "Santa Barbara Independent" },
+        { "title": "Santa Rosa Island Fire", "url": "https://inciweb.wildfire.gov/cacnp-santa-rosa-island-fire", "snippet": "InciWeb tracking, BAER team assessment from June 5", "source_name": "InciWeb" }
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery South China Sea Spratly Islands June 2026",
+      "language": "en",
+      "timestamp": "2026-06-07T00:18:00Z",
+      "result_count": 10,
+      "results": [
+        { "title": "Satellite Imagery Shows Philippine Construction On Two Islands In Disputed Spratlys", "url": "https://www.eurasiareview.com/11052026-satellite-imagery-shows-philippine-construction-on-two-islands-in-disputed-spratlys-analysis/", "snippet": "Thitu runway extension, Nanshan port expansion, Planet Labs", "source_name": "Eurasia Review" },
+        { "title": "Satellite Photos Show China's Massive Manmade Island in Disputed Waters", "url": "https://www.newsweek.com/satellite-photos-china-manmade-island-disputed-waters-antelope-reef-11733191", "snippet": "Antelope Reef 15 km² artificial island", "source_name": "Newsweek" }
+      ]
+    }
+  ]
+}

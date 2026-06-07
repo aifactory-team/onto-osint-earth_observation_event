@@ -1,0 +1,38 @@
+{
+  "id": "src-001",
+  "tag": "new",
+  "event_id": "evt-2701",
+  "title": "Santa Rosa Island Fire 100% 진화 완료 — 18,379 acres, Channel Islands 역대 최대 산불 종결",
+  "url": "https://www.independent.com/2026/06/04/santa-rosa-island-fire-reaches-full-containment/",
+  "source_name": "Santa Barbara Independent",
+  "source_type": "media",
+  "date_published": "2026-06-04",
+  "domain": "Disaster",
+  "phenomenon": "산불",
+  "sub_category": "산불 진화 완료",
+  "location": { "name": "Santa Rosa Island, Channel Islands NP, California", "country": "USA", "lat": 33.95, "lon": -120.10 },
+  "satellites": ["Landsat-9", "Sentinel-2"],
+  "sensors": ["OLI", "MSI"],
+  "organizations": ["NPS", "USFS", "BAER"],
+  "confidence": 0.90,
+  "confidence_boosts": ["officialBoost +0.15", "baCredibilityBoost +0.10"],
+  "summary": "산타로사 섬 산불이 2026-06-04 100% 진화 달성. 총 18,379 에이커(7,437 ha) 소실로 Channel Islands National Park 역대 최대 산불로 기록됨. BAER(Burned Area Emergency Response) 팀이 6/5 현장 도착하여 토양·수계·식생 피해 평가 착수. 섬 전체 6/30까지 일반인 출입 폐쇄 유지. 이전 추적 evt-1201(97% 진압)에서 최종 종결로 전환.",
+  "before_after": "97% containment (6/3) → 100% containment (6/4). BAER 팀 현장 투입.",
+  "entities_extracted": [
+    { "type": "Event", "id": "evt-2701", "name": "Santa Rosa Island Fire 100% Containment" },
+    { "type": "Satellite", "id": "sat-landsat9", "name": "Landsat-9" },
+    { "type": "Satellite", "id": "sat-sentinel2", "name": "Sentinel-2" },
+    { "type": "Location", "id": "loc-santa-rosa-island", "name": "Santa Rosa Island" },
+    { "type": "Organization", "id": "org-nps", "name": "National Park Service" }
+  ],
+  "relations_extracted": [
+    { "from": "evt-2701", "relation": "observedBy", "to": "sat-landsat9" },
+    { "from": "evt-2701", "relation": "observedBy", "to": "sat-sentinel2" },
+    { "from": "evt-2701", "relation": "locatedIn", "to": "loc-santa-rosa-island" },
+    { "from": "evt-2701", "relation": "inCountry", "to": "country-usa" },
+    { "from": "evt-2701", "relation": "analyzedBy", "to": "org-nps" },
+    { "from": "evt-2701", "relation": "manifests", "to": "phenom-wildfire" },
+    { "from": "evt-2701", "relation": "inDomain", "to": "domain-disaster" },
+    { "from": "evt-2701", "relation": "partOfSeries", "to": "evt-1201" }
+  ]
+}

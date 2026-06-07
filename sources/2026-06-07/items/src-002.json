@@ -1,0 +1,36 @@
+{
+  "id": "src-002",
+  "tag": "new",
+  "event_id": "evt-2702",
+  "title": "Super El Niño 역대 최강 가능성 — Severe Weather Europe '기록 경신 강도' 전망",
+  "url": "https://www.severe-weather.eu/long-range-2/super-el-nino-2026-record-breaking-intensity-forecast-weather-impacts-united-states-canada-europe-fa/",
+  "source_name": "Severe Weather Europe",
+  "source_type": "analyst",
+  "date_published": "2026-06-06",
+  "domain": "Climate & Environment",
+  "phenomenon": "해수면 변화",
+  "sub_category": "ENSO 강도 전망 격상",
+  "location": { "name": "Equatorial Pacific (Nino 3.4 region)", "country": "Global", "lat": 0.0, "lon": -170.0 },
+  "satellites": ["Jason-3", "Sentinel-6", "GOES-16"],
+  "sensors": ["Poseidon-4", "ABI"],
+  "organizations": ["ECMWF", "NOAA CPC", "WMO"],
+  "confidence": 0.85,
+  "confidence_boosts": ["analystBoost +0.1"],
+  "summary": "Severe Weather Europe 분석에 따르면 2026 Super El Niño가 1877-1878 역대 기록을 경신할 가능성 제기. ECMWF 100% 엘니뇨 예측, NOAA CPC 82% May-Jul. 글로벌 가뭄·폭염·허리케인 억제 영향 전망. 기존 temp-evt-1902(El Niño 추적)에서 강도 격상.",
+  "entities_extracted": [
+    { "type": "Event", "id": "evt-2702", "name": "Super El Niño Record-Breaking Forecast" },
+    { "type": "Satellite", "id": "sat-jason3", "name": "Jason-3" },
+    { "type": "Satellite", "id": "sat-sentinel6", "name": "Sentinel-6" },
+    { "type": "Organization", "id": "org-ecmwf", "name": "ECMWF" },
+    { "type": "Organization", "id": "org-noaa", "name": "NOAA" }
+  ],
+  "relations_extracted": [
+    { "from": "evt-2702", "relation": "observedBy", "to": "sat-jason3" },
+    { "from": "evt-2702", "relation": "observedBy", "to": "sat-sentinel6" },
+    { "from": "evt-2702", "relation": "analyzedBy", "to": "org-ecmwf" },
+    { "from": "evt-2702", "relation": "analyzedBy", "to": "org-noaa" },
+    { "from": "evt-2702", "relation": "manifests", "to": "phenom-sst-anomaly" },
+    { "from": "evt-2702", "relation": "inDomain", "to": "domain-climate" },
+    { "from": "evt-2702", "relation": "partOfSeries", "to": "temp-evt-1902" }
+  ]
+}
