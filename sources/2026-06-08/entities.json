@@ -1,0 +1,93 @@
+{
+  "date": "2026-06-08",
+  "new_entities": [
+    {
+      "id": "evt-2801",
+      "type": "Event",
+      "name": "북한 미림비행장 퍼레이드 준비 수송트럭 집결",
+      "properties": {
+        "phenomenon": "military_buildup",
+        "domain": "Defense",
+        "country": "KP",
+        "lat": 39.0,
+        "lon": 125.85,
+        "observation_date": "2026-06-07",
+        "severity": "medium",
+        "satellites_used": ["PlanetScope"],
+        "confidence": 0.80,
+        "source_url": "https://www.newsweek.com/what-new-satellite-photos-reveal-about-north-korea-11040689"
+      }
+    },
+    {
+      "id": "evt-2802",
+      "type": "Event",
+      "name": "NASA EO Typhoon Jangmi 공식 분석 (Himawari-9+GPM)",
+      "properties": {
+        "phenomenon": "typhoon",
+        "domain": "Disaster",
+        "country": "JP",
+        "lat": 26.5,
+        "lon": 130.0,
+        "observation_date": "2026-06-03",
+        "severity": "high",
+        "satellites_used": ["Himawari-9", "GPM"],
+        "sensors_used": ["AHI", "DPR"],
+        "confidence": 0.90,
+        "before_after_available": false,
+        "source_url": "https://science.nasa.gov/earth/earth-observatory/typhoon-jangmi/"
+      }
+    },
+    {
+      "id": "ent-loc-mirim",
+      "type": "Location",
+      "name": "Mirim Training Ground, Pyongyang",
+      "properties": {
+        "country": "KP",
+        "region": "평양",
+        "lat": 39.0,
+        "lon": 125.85
+      }
+    }
+  ],
+  "updated_entities": [
+    { "id": "evt-202", "changes": { "ep49_forecast": "7-13 days (June 13-19)", "tilt_continuing": true } },
+    { "id": "evt-1101", "changes": { "fires": 134, "hectares": 113300, "bc_highest_risk": true } },
+    { "id": "temp-evt-2501", "changes": { "status": "D-day arrival today", "confirmed": "Xinhua official" } },
+    { "id": "temp-evt-1902", "changes": { "cpc_single_most_likely": "super", "ecmwf_probability": "100%", "peak_sst": "+3C" } },
+    { "id": "temp-evt-2504", "changes": { "s1c_suspension": "tomorrow 6/9", "s1a_retirement": "6/29" } },
+    { "id": "evt-082", "changes": { "day": "154+", "lava_basud_km": 3.8, "evacuees": 3975 } },
+    { "id": "evt-701", "changes": { "eruption_declining": true, "pumice_sqkm": 69, "drift_km": 200 } },
+    { "id": "temp-evt-1401", "changes": { "so2_range": "1201-2428 t/d", "earthquakes_daily": "7-24" } },
+    { "id": "evt-128", "changes": { "plume_m": "200-1300", "al2_continued": true } },
+    { "id": "evt-203", "changes": { "watch_orange": true, "lava_dome_expansion": true } },
+    { "id": "evt-204", "changes": { "advisory_yellow": true, "steam_plume_nm": 75 } },
+    { "id": "ent-evt-kharg", "changes": { "slick_sqkm": 45, "tracking_continued": true } },
+    { "id": "temp-evt-2003", "changes": { "mid_june_deployment": true } },
+    { "id": "temp-evt-2602", "changes": { "completion_pct": 68.2, "ha_completed": 152244 } }
+  ],
+  "new_triples": [
+    { "subject": "evt-2801", "predicate": "observedBy", "object": "sat-planetscope" },
+    { "subject": "evt-2801", "predicate": "locatedIn", "object": "ent-loc-mirim" },
+    { "subject": "evt-2801", "predicate": "inCountry", "object": "co-kp" },
+    { "subject": "evt-2801", "predicate": "manifests", "object": "phen-military" },
+    { "subject": "evt-2801", "predicate": "inDomain", "object": "dom-defense" },
+    { "subject": "evt-2801", "predicate": "reportedBy", "object": "org-nknews" },
+    { "subject": "evt-2802", "predicate": "observedBy", "object": "sat-himawari9" },
+    { "subject": "evt-2802", "predicate": "inCountry", "object": "co-jp" },
+    { "subject": "evt-2802", "predicate": "manifests", "object": "phen-typhoon" },
+    { "subject": "evt-2802", "predicate": "inDomain", "object": "dom-disaster" },
+    { "subject": "evt-2802", "predicate": "analyzedBy", "object": "org-nasa" },
+    { "subject": "evt-2802", "predicate": "partOfSeries", "object": "temp-evt-2001" }
+  ],
+  "inferred_triples": [
+    { "subject": "evt-2802", "predicate": "multiSatBoost", "value": "+0.20", "rule": "multi_satellite_confirmation", "reason": "Himawari-9 (JMA/JAXA) + GPM (NASA) 독립 2기관 관측" },
+    { "subject": "evt-2802", "predicate": "officialBoost", "value": "+0.15", "rule": "official_source_trust", "reason": "NASA Earth Observatory 공식 분석" },
+    { "subject": "evt-2801", "predicate": "koreaBoost", "value": "+0.10", "rule": "korea_geo_focus", "reason": "KP 국가 코드 매칭" },
+    { "subject": "temp-evt-2501", "predicate": "koreaBoost", "value": "+0.10", "rule": "korea_geo_focus", "reason": "KP 국가 코드 매칭" },
+    { "subject": "temp-evt-2501", "predicate": "hiResBoost", "value": "+0.15", "rule": "sensor_capability_match_hires", "reason": "WorldView-3 0.31m 고해상도 광학" },
+    { "subject": "temp-evt-2501", "predicate": "multiSatBoost", "value": "+0.20", "rule": "multi_satellite_confirmation", "reason": "WorldView-3 (Vantor) + PlanetScope (Planet) 2기관" },
+    { "subject": "evt-1101", "predicate": "multiSatBoost", "value": "+0.20", "rule": "multi_satellite_confirmation", "reason": "VIIRS+MODIS+GOES-18+S2+TROPOMI 5위성 3기관" },
+    { "subject": "evt-701", "predicate": "multiSatBoost", "value": "+0.20", "rule": "multi_satellite_confirmation", "reason": "Landsat-9+MODIS+VIIRS+S2+Himawari-9 5위성 4기관" },
+    { "subject": "ent-evt-kharg", "predicate": "multiSatBoost", "value": "+0.20", "rule": "multi_satellite_confirmation", "reason": "Sentinel-1+2+3 SAR+광학+해색 3위성" }
+  ]
+}

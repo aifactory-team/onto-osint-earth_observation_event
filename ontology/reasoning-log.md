@@ -2809,3 +2809,61 @@ config 한도 내 -- 새 클래스 0건 (max_new_classes_per_day=3), 새 관계 
 - **추론:** (temp-evt-1902, officialBoost, +0.15) — WMO 공식 80% Jun-Aug 확인
 - **신뢰도:** 0.92
 - **상태:** 확정
+
+---
+
+## 2026-06-08 추론 사이클
+
+### 추론 #1: multi_satellite_confirmation (evt-2802 Typhoon Jangmi NASA EO)
+- **입력:** (evt-2802, observedBy, sat-himawari9) AND (evt-2802, observedBy, sat-gpm) AND (sat-himawari9, operatedBy, org-jaxa) AND (sat-gpm, operatedBy, org-nasa)
+- **추론:** (evt-2802, multiSatBoost, +0.20) — Himawari-9 (JMA/JAXA) + GPM (NASA) 독립 2기관 관측
+- **신뢰도:** 0.90
+- **상태:** 확정
+
+### 추론 #2: korea_geo_focus (evt-2801 미림 퍼레이드 준비)
+- **입력:** (evt-2801, inCountry, co-kp) AND (co-kp.iso_code == KP)
+- **추론:** (evt-2801, koreaBoost, +0.10) — 한반도 GeoFocus 가산
+- **신뢰도:** 0.80
+- **상태:** 확정
+
+### 추론 #3: sensor_capability_match_hires (temp-evt-2501 시진핑 방북)
+- **입력:** (temp-evt-2501, usesSensor, WorldView-3) AND (WorldView-3.resolution_m == 0.31)
+- **추론:** (temp-evt-2501, hiResBoost, +0.15) — 고해상도 광학으로 인공구조물 식별
+- **신뢰도:** 0.95
+- **상태:** 확정
+
+### 추론 #4: multi_satellite_confirmation (temp-evt-2501 시진핑 방북)
+- **입력:** (temp-evt-2501, observedBy, sat-worldview3) AND (temp-evt-2501, observedBy, sat-planetscope) AND (sat-worldview3, operatedBy, org-vantor) AND (sat-planetscope, operatedBy, org-planet)
+- **추론:** (temp-evt-2501, multiSatBoost, +0.20) — WorldView-3 (Vantor) + PlanetScope (Planet) 2기관
+- **신뢰도:** 0.95
+- **상태:** 확정
+
+### 추론 #5: temporal_progression (evt-2802 → temp-evt-2001)
+- **입력:** (evt-2802, locatedIn, Philippine Sea→Japan) AND (temp-evt-2001, locatedIn, Philippine Sea→Japan) AND (evt-2802.phenomenon == typhoon) AND (temp-evt-2001.phenomenon == typhoon)
+- **추론:** (evt-2802, partOfSeries, temp-evt-2001) — NASA 공식 분석으로 태풍 시리즈 종결
+- **신뢰도:** 0.90
+- **상태:** 확정
+
+### 추론 #6: official_source_trust (evt-2802 NASA EO)
+- **입력:** (evt-2802, analyzedBy, org-nasa) AND (org-nasa.org_type == space_agency)
+- **추론:** (evt-2802, officialBoost, +0.15) — NASA Earth Observatory 공식 분석
+- **신뢰도:** 0.90
+- **상태:** 확정
+
+### 추론 #7: sensor_capability_match_tracegas (evt-204 Shishaldin)
+- **입력:** (evt-204, usesSensor, sensor-tropomi) AND (sensor-tropomi.sensor_type == trace_gas) AND (evt-204.phenomenon == volcanic_eruption)
+- **추론:** (evt-204, tracegasBoost, +0.15) — TROPOMI SO₂ 탐지로 화산 모니터링
+- **신뢰도:** 0.80
+- **상태:** 확정
+
+### 추론 #8: multi_satellite_confirmation (evt-1101 캐나다 산불 — 지속)
+- **입력:** 5위성 (VIIRS, MODIS, GOES-18, Sentinel-2, TROPOMI) × 3기관 (NOAA, NASA, ESA)
+- **추론:** (evt-1101, multiSatBoost, +0.20) — 지속 확정
+- **신뢰도:** 0.95
+- **상태:** 확정 (지속)
+
+### 추론 #9: multi_satellite_confirmation (evt-701 비스마르크해 — 지속)
+- **입력:** 5위성 (Landsat-9, MODIS, VIIRS, Sentinel-2, Himawari-9) × 4기관
+- **추론:** (evt-701, multiSatBoost, +0.20) — 지속 확정
+- **신뢰도:** 0.90
+- **상태:** 확정 (지속)
