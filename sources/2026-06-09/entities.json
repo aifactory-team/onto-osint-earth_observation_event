@@ -1,0 +1,82 @@
+{
+  "date": "2026-06-09",
+  "entities": [
+    {
+      "temp_id": "evt-2901",
+      "matched_id": null,
+      "type": "Event",
+      "name": "베트남 스프래틀리 27사이트 18암초 대규모 건설",
+      "properties": {"phenomenon": "construction", "domain": "Defense", "country": "VN", "lat": 10.0, "lon": 114.0, "observation_date": "2026-06-08", "severity": "high", "before_after_available": true, "satellites_used": ["PlanetScope", "WorldView-3"], "confidence": 0.85},
+      "source_ids": ["src-001"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "evt-2902",
+      "matched_id": "temp-evt-2501",
+      "type": "Event",
+      "name": "시진핑 방북 종결 — 전략적 협력 심화 합의 (6/9 이탈)",
+      "properties": {"phenomenon": "construction", "domain": "HumanActivity", "country": "KP", "lat": 39.02, "lon": 125.75, "observation_date": "2026-06-09", "severity": "high", "before_after_available": true, "satellites_used": ["WorldView-3", "PlanetScope"], "confidence": 0.95},
+      "source_ids": ["src-002", "src-010"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "evt-2903",
+      "matched_id": "evt-701",
+      "type": "Event",
+      "name": "비스마르크해 부석 뗏목 마누스섬 해안 도달",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "PG", "lat": -2.09, "lon": 147.0, "observation_date": "2026-06-08", "severity": "high", "satellites_used": ["Sentinel-2", "Landsat-9", "MODIS", "VIIRS", "Himawari-9"], "confidence": 0.90},
+      "source_ids": ["src-003"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "co-vn",
+      "matched_id": null,
+      "type": "Country",
+      "name": "베트남",
+      "properties": {"iso_code": "VN", "region": "동남아시아"},
+      "source_ids": ["src-001"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "ent-loc-spratly-vn",
+      "matched_id": null,
+      "type": "Location",
+      "name": "Spratly Islands (Vietnamese-controlled, 27 sites)",
+      "properties": {"country": "VN", "region": "South China Sea", "lat": 10.0, "lon": 114.0},
+      "source_ids": ["src-001"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "ent-loc-manus",
+      "matched_id": null,
+      "type": "Location",
+      "name": "Manus Island, Papua New Guinea",
+      "properties": {"country": "PG", "region": "Manus Province", "lat": -2.09, "lon": 147.0},
+      "source_ids": ["src-003"],
+      "mention_count": 1
+    }
+  ],
+  "relations": [
+    {"subject": "evt-2901", "predicate": "observedBy", "object": "sat-planetscope", "source_ids": ["src-001"], "confidence": 0.90},
+    {"subject": "evt-2901", "predicate": "observedBy", "object": "sat-worldview3", "source_ids": ["src-001"], "confidence": 0.85},
+    {"subject": "evt-2901", "predicate": "inCountry", "object": "co-vn", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "evt-2901", "predicate": "inDomain", "object": "dom-defense", "source_ids": ["src-001"], "confidence": 0.90},
+    {"subject": "evt-2901", "predicate": "manifests", "object": "phen-construction", "source_ids": ["src-001"], "confidence": 0.90},
+    {"subject": "evt-2901", "predicate": "analyzedBy", "object": "org-rfa", "source_ids": ["src-001"], "confidence": 0.85},
+    {"subject": "evt-2901", "predicate": "locatedIn", "object": "ent-loc-spratly-vn", "source_ids": ["src-001"], "confidence": 0.90},
+    {"subject": "evt-2902", "predicate": "observedBy", "object": "sat-worldview3", "source_ids": ["src-002"], "confidence": 0.95},
+    {"subject": "evt-2902", "predicate": "inCountry", "object": "co-kp", "source_ids": ["src-002"], "confidence": 0.95},
+    {"subject": "evt-2902", "predicate": "partOfSeries", "object": "temp-evt-2501", "source_ids": ["src-002"], "confidence": 0.95},
+    {"subject": "evt-2903", "predicate": "observedBy", "object": "sat-sentinel2a", "source_ids": ["src-003"], "confidence": 0.90},
+    {"subject": "evt-2903", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-003"], "confidence": 0.90},
+    {"subject": "evt-2903", "predicate": "partOfSeries", "object": "evt-701", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "evt-2903", "predicate": "locatedIn", "object": "ent-loc-manus", "source_ids": ["src-003"], "confidence": 0.90},
+    {"subject": "evt-2903", "predicate": "inDomain", "object": "dom-disaster", "source_ids": ["src-003"], "confidence": 0.95}
+  ],
+  "stats": {
+    "total_entities": 6,
+    "new_entities": 3,
+    "matched_entities": 3,
+    "total_relations": 15
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "date": "2026-06-09",
+  "collected_at": "2026-06-09T08:00:00+09:00",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 20,
+  "total_results": 78,
+  "expanded_keywords": [
+    "Kilauea Ep49", "Sentinel-1C reconfiguration", "Xi Jinping North Korea departure",
+    "Mayon volcano AL3", "Bismarck Sea pumice Manus", "Canada wildfire VIIRS",
+    "Super El Niño CPC", "Antelope Reef Paracel", "Vietnam Spratly construction",
+    "KOMPSAT 한반도", "Kharg Island oil spill", "Great Sitkin lava dome",
+    "Shishaldin SO2 TROPOMI", "Kanlaon eruption", "Dukono Halmahera",
+    "NASA Earth Observatory June 2026", "MethaneSAT TROPOMI methane",
+    "NDVI crop monitoring satellite", "DMZ 위성영상", "북한 모내기 Landsat"
+  ],
+  "searches": [
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery wildfire flood volcano earthquake June 2026", "language": "en", "timestamp": "2026-06-09T08:01:00+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "NASA Earth Observatory image of the day June 2026", "language": "en", "timestamp": "2026-06-09T08:01:30+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Copernicus EMS activation Sentinel satellite June 2026", "language": "en", "timestamp": "2026-06-09T08:02:00+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Kilauea volcano eruption update June 9 2026", "language": "en", "timestamp": "2026-06-09T08:02:30+09:00", "result_count": 9},
+    {"method": "websearch", "engine": "built-in", "keyword": "Canada wildfire 2026 June satellite VIIRS MODIS update", "language": "en", "timestamp": "2026-06-09T08:03:00+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "North Korea satellite imagery June 2026 Xi Jinping visit", "language": "en", "timestamp": "2026-06-09T08:03:30+09:00", "result_count": 7},
+    {"method": "websearch", "engine": "built-in", "keyword": "Sentinel-1C orbital reconfiguration suspension June 9 2026", "language": "en", "timestamp": "2026-06-09T08:04:00+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "El Nino 2026 super forecast NOAA update June", "language": "en", "timestamp": "2026-06-09T08:04:30+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Mayon volcano eruption update June 2026 Sentinel Landsat", "language": "en", "timestamp": "2026-06-09T08:05:00+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery deforestation mining oil spill June 2026", "language": "en", "timestamp": "2026-06-09T08:05:30+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "위성영상 한반도 2026년 6월 KOMPSAT 관측", "language": "ko", "timestamp": "2026-06-09T08:06:00+09:00", "result_count": 8},
+    {"method": "websearch", "engine": "built-in", "keyword": "satellite imagery military defense OSINT June 2026", "language": "en", "timestamp": "2026-06-09T08:06:30+09:00", "result_count": 9},
+    {"method": "websearch", "engine": "built-in", "keyword": "Bismarck Sea submarine volcano pumice raft update June 2026", "language": "en", "timestamp": "2026-06-09T08:07:00+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "methane plume satellite TROPOMI MethaneSAT emissions 2026", "language": "en", "timestamp": "2026-06-09T08:07:30+09:00", "result_count": 8},
+    {"method": "websearch", "engine": "built-in", "keyword": "위성영상 북한 시진핑 방북 2026년 6월 열병식", "language": "ko", "timestamp": "2026-06-09T08:08:00+09:00", "result_count": 4},
+    {"method": "websearch", "engine": "built-in", "keyword": "Great Sitkin Shishaldin volcano Alaska eruption update June 2026", "language": "en", "timestamp": "2026-06-09T08:08:30+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Vietnam Spratly Islands satellite imagery construction June 2026", "language": "en", "timestamp": "2026-06-09T08:09:00+09:00", "result_count": 10},
+    {"method": "websearch", "engine": "built-in", "keyword": "Kanlaon Dukono volcano eruption update June 2026", "language": "en", "timestamp": "2026-06-09T08:09:30+09:00", "result_count": 8},
+    {"method": "websearch", "engine": "built-in", "keyword": "Xi Jinping leaves North Korea June 9 2026 summit results", "language": "en", "timestamp": "2026-06-09T08:10:00+09:00", "result_count": 6},
+    {"method": "websearch", "engine": "built-in", "keyword": "Antelope Reef China artificial island satellite June 2026", "language": "en", "timestamp": "2026-06-09T08:10:30+09:00", "result_count": 7}
+  ]
+}

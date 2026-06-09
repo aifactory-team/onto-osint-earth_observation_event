@@ -1,0 +1,39 @@
+{
+  "date": "2026-06-09",
+  "new_triples": [
+    {"subject": "evt-2901", "predicate": "observedBy", "object": "sat-planetscope", "source_id": "src-001", "date": "2026-06-09", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-2901", "predicate": "observedBy", "object": "sat-worldview3", "source_id": "src-001", "date": "2026-06-09", "confidence": 0.85, "type": "explicit"},
+    {"subject": "evt-2901", "predicate": "inCountry", "object": "co-vn", "source_id": "src-001", "date": "2026-06-09", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-2901", "predicate": "inDomain", "object": "dom-defense", "source_id": "src-001", "date": "2026-06-09", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-2901", "predicate": "manifests", "object": "phen-construction", "source_id": "src-001", "date": "2026-06-09", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-2901", "predicate": "analyzedBy", "object": "org-rfa", "source_id": "src-001", "date": "2026-06-09", "confidence": 0.85, "type": "explicit"},
+    {"subject": "evt-2901", "predicate": "locatedIn", "object": "ent-loc-spratly-vn", "source_id": "src-001", "date": "2026-06-09", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-2902", "predicate": "observedBy", "object": "sat-worldview3", "source_id": "src-002", "date": "2026-06-09", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-2902", "predicate": "inCountry", "object": "co-kp", "source_id": "src-002", "date": "2026-06-09", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-2903", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-003", "date": "2026-06-09", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-2903", "predicate": "observedBy", "object": "sat-landsat9", "source_id": "src-003", "date": "2026-06-09", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-2903", "predicate": "locatedIn", "object": "ent-loc-manus", "source_id": "src-003", "date": "2026-06-09", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-2903", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-003", "date": "2026-06-09", "confidence": 0.95, "type": "explicit"}
+  ],
+  "updated_triples": [
+    {"subject": "evt-202", "predicate": "forecast_window", "object": "2026-06-12/2026-06-15", "source_id": "src-004", "date": "2026-06-09", "confidence": 0.90, "type": "explicit"},
+    {"subject": "temp-evt-2504", "predicate": "status", "object": "suspension_started", "source_id": "src-005", "date": "2026-06-09", "confidence": 0.95, "type": "explicit"},
+    {"subject": "temp-evt-1902", "predicate": "nino34_index", "object": "+0.9C", "source_id": "src-009", "date": "2026-06-09", "confidence": 0.85, "type": "explicit"}
+  ],
+  "inferred_triples": [
+    {"subject": "evt-2901", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.90, "type": "inferred", "reason": "PlanetScope(Planet) + WorldView-3(Maxar/Vantor) 독립 2위성 확인"},
+    {"subject": "evt-2903", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.90, "type": "inferred", "reason": "Sentinel-2(ESA) + Landsat-9(USGS/NASA) + MODIS(NASA) + VIIRS(NOAA) + Himawari-9(JMA) 5위성 확인"},
+    {"subject": "evt-2903", "predicate": "triggeredBy", "object": "evt-701", "rule": "cascading_disaster", "confidence": 0.95, "type": "inferred", "reason": "비스마르크해 해저 분출 → 부석 뗏목 → 마누스섬 해안 피해"},
+    {"subject": "evt-2902", "predicate": "partOfSeries", "object": "temp-evt-2501", "rule": "temporal_progression", "confidence": 0.95, "type": "inferred", "reason": "시진핑 도착(6/8) → 이탈(6/9) 동일 시리즈"},
+    {"subject": "evt-2902", "predicate": "koreaBoost", "object": "+0.10", "rule": "korea_geo_focus", "confidence": 0.95, "type": "inferred", "reason": "KP 국가 코드"},
+    {"subject": "evt-2901", "predicate": "hiResBoost", "object": "+0.15", "rule": "sensor_capability_match_hires", "confidence": 0.85, "type": "inferred", "reason": "WorldView-3(0.31m) + PlanetScope(3m) 고해상도 광학으로 인공구조물 식별"},
+    {"subject": "evt-202", "predicate": "partOfSeries", "object": "evt-202", "rule": "temporal_progression", "confidence": 0.90, "type": "inferred", "reason": "Ep47→Ep48→Ep49 동일 화구 시계열"},
+    {"subject": "evt-082", "predicate": "thermalBoost", "object": "+0.10", "rule": "sensor_capability_match_tirs", "confidence": 0.85, "type": "inferred", "reason": "Landsat-9 TIRS 열적외 관측"},
+    {"subject": "evt-204", "predicate": "tracegasBoost", "object": "+0.15", "rule": "sensor_capability_match_tracegas", "confidence": 0.85, "type": "inferred", "reason": "TROPOMI SO₂ 검출"}
+  ],
+  "stats": {
+    "new_nodes": 3,
+    "new_edges": 13,
+    "inferred_edges": 9
+  }
+}

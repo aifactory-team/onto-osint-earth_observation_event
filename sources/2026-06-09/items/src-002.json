@@ -1,0 +1,26 @@
+{
+  "id": "src-002",
+  "title": "시진핑 방북 종료(6/9) — 전략적 협력 심화 합의",
+  "url": "https://www.npr.org/2026/06/08/g-s1-126863/xi-and-kim-express-hopes-for-greater-ties-between-china-and-north-korea",
+  "snippet": "Xi Jinping visited North Korea June 8-9, 2026, first trip since 2019. Called for deepening strategic coordination and cooperation. Ready to expand cooperation in economics, trade, agriculture, health, construction, science and technology. 21-gun salute, honor guard review, talks and banquet at Mokran House.",
+  "source_name": "NPR",
+  "language": "en",
+  "discovered_date": "2026-06-09",
+  "tag": "new",
+  "related_report": "2026-06-08",
+  "related_item": "src-005",
+  "tag_reason": "어제 D-Day 도착이었으나, 오늘(6/9) 이탈 + 회담 결과(전략적 협력 심화 합의)가 새 정보. 김일성광장 사열대 공식 사용 검증 완료.",
+  "entities": [
+    {"id": "evt-2902", "type": "Event", "name": "시진핑 방북 종결", "properties": {"phenomenon": "construction", "country": "KP", "lat": 39.02, "lon": 125.75}},
+    {"id": "co-kp", "type": "Country", "name": "조선"},
+    {"id": "sat-worldview3", "type": "Satellite", "name": "WorldView-3"},
+    {"id": "sat-planetscope", "type": "Satellite", "name": "PlanetScope"},
+    {"id": "org-vantor", "type": "Organization", "name": "Vantor"},
+    {"id": "org-planet", "type": "Organization", "name": "Planet Labs"}
+  ],
+  "relations": [
+    {"subject": "evt-2902", "predicate": "observedBy", "object": "sat-worldview3"},
+    {"subject": "evt-2902", "predicate": "inCountry", "object": "co-kp"},
+    {"subject": "evt-2902", "predicate": "partOfSeries", "object": "temp-evt-2501"}
+  ]
+}

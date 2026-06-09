@@ -1,15 +1,15 @@
 {
   "version": "1.18.0",
   "description": "위성영상 관측 이벤트 누적 지식그래프 — 첫 실행(2026-04-30) 이후 매일 신규/추론 트리플 병합",
-  "last_updated": "2026-06-06",
-  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-19", "2026-05-20", "2026-05-21", "2026-05-22", "2026-05-23", "2026-05-24", "2026-05-26", "2026-05-27", "2026-05-28", "2026-05-29", "2026-05-30", "2026-05-31", "2026-06-01", "2026-06-02", "2026-06-03", "2026-06-04", "2026-06-05", "2026-06-06"],
-  "triples": "ontology/kg/2026-04-30.json ~ ontology/kg/2026-06-06.json (new_triples + updated_triples + inferred_triples)",
+  "last_updated": "2026-06-09",
+  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-19", "2026-05-20", "2026-05-21", "2026-05-22", "2026-05-23", "2026-05-24", "2026-05-26", "2026-05-27", "2026-05-28", "2026-05-29", "2026-05-30", "2026-05-31", "2026-06-01", "2026-06-02", "2026-06-03", "2026-06-04", "2026-06-05", "2026-06-06", "2026-06-07", "2026-06-08", "2026-06-09"],
+  "triples": "ontology/kg/2026-04-30.json ~ ontology/kg/2026-06-09.json (new_triples + updated_triples + inferred_triples)",
   "stats": {
-    "total_explicit_triples": 1184,
-    "total_inferred_triples": 554,
-    "total_unique_subjects": 247,
+    "total_explicit_triples": 1215,
+    "total_inferred_triples": 577,
+    "total_unique_subjects": 253,
     "total_unique_predicates": 21,
-    "total_unique_objects": 295
+    "total_unique_objects": 301
   },
-  "note": "2026-06-06 병합 완료 — 신규 22 explicit + 14 updated + 8 inferred 트리플(일별 KG: 30 nodes, 44 triples). 신규 이벤트 2건: (1) NASA EO 'Fighting Fire With Fire' 호주 NT 처방 화입 MODIS Aqua 5/28(temp-evt-2601, -13.0/132.0, AU, dom-disaster wildfire, officialBoost). (2) 북한 모내기 68.2% Landsat-8/9 8개 표본지 분석(temp-evt-2602, 39.0/126.0, KP, dom-agri-marine ndvi_change+crop_yield, koreaBoost+baCredibility). 업데이트 14건: 캐나다 산불 134건 113,300ha 급증(evt-1101, 5위성 유지), Kilauea ADVISORY Ep49 10-15일(evt-202), Bismarck Sea Day29+ 감소(evt-701), Mayon Day152+ AL3 SO2 2747(evt-082), El Niño Super 확정(temp-evt-1902), Great Sitkin WATCH(evt-203), Shishaldin ADVISORY(evt-204), Kanlaon AL2 SO2 2382(temp-evt-1401), Dukono AL2 3사망(evt-128), Sangay/Reventador 지속(temp-evt-2203), Santa Rosa 97% BAER(evt-1201), Jangmi 소멸 복구(temp-evt-2001), 시진핑 방북 6/8-9 확정(temp-evt-2501, Xinhua), Sentinel-1 재구성 S-1C 6/9-23 중단 S-1A 6/29 퇴역(temp-evt-2504). 다중 위성 교차검증 5건 유지(evt-1101 5위성, evt-701 5위성, temp-evt-2002 2위성, temp-evt-2401 2위성, ent-evt-kharg 3위성). 한반도 GeoFocus 7건(신규 1건: 북한 모내기). 누적 KG 1738 트리플."
+  "note": "2026-06-09 병합 완료 — 신규 13 explicit + 3 updated + 9 inferred 트리플(일별 KG: 3 new nodes, 25 triples). 신규 이벤트 3건: (1) 베트남 스프래틀리 27사이트 대규모 건설(evt-2901, 10.0N/114.0E, VN, dom-defense, PlanetScope+WV-3, multiSatBoost+hiResBoost). (2) 시진핑 방북 종결(evt-2902, 39.0N/125.8E, KP, dom-human, WV-3+PlanetScope, koreaBoost+multiSatBoost). (3) 비스마르크해 부석 마누스섬 도달(evt-2903, 2.1S/147.0E, PG, dom-disaster, 5위성, multiSatBoost+officialBoost, evt-701 cascading). 업데이트 14건: Kilauea Ep49 예보 6/12-15(evt-202), S-1C 오늘 중단(temp-evt-2504), 캐나다 산불 지속(evt-1101, 5위성), Mayon Day155+(evt-082), Bismarck Sea 부석 표류(evt-701), Super El Niño +0.9°C(temp-evt-1902), 시진핑 방북 CNN(temp-evt-2501), Great Sitkin(evt-203), Shishaldin SO₂(evt-204), 카르그 유출(ent-evt-kharg), Antelope Reef CSIS(evt-092), 미림 퍼레이드(evt-2801), Kanlaon 7회(temp-evt-1401), Dukono AL2(evt-128). 다중 위성 교차검증 5건(evt-2901, evt-2903, evt-1101, evt-701, ent-evt-kharg). 한반도 GeoFocus 4건. 누적 KG 1792 트리플."
 }

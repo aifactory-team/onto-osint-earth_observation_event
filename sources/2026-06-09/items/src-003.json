@@ -1,0 +1,28 @@
+{
+  "id": "src-003",
+  "title": "비스마르크해 부석 뗏목 마누스섬 해안 도달 — '재난 수준' 피해",
+  "url": "https://www.rnz.co.nz/news/pacific/597531/this-is-a-disaster-huge-pumice-rafts-from-volcano-hit-manus-island-coast",
+  "snippet": "The south coastline of Papua New Guinea's Manus Island has been buffeted by huge rafts of pumice created by the erupting submarine volcano. Located ~125km SE of Manus. Pumice pushed by tides and currents into south coastal areas. Complicated boat access, impacting shoreline. 'This is a disaster' — residents.",
+  "source_name": "RNZ (Radio New Zealand)",
+  "language": "en",
+  "discovered_date": "2026-06-09",
+  "tag": "new",
+  "related_report": "2026-06-08",
+  "related_item": "evt-701",
+  "tag_reason": "기존 비스마르크해 해저 화산(evt-701)의 후속이나, 부석 뗏목의 마누스섬 해안 실제 도달과 주민 피해는 신규 정보. 재난 수준 피해 규모 보고.",
+  "entities": [
+    {"id": "evt-2903", "type": "Event", "name": "비스마르크해 부석 마누스섬 도달", "properties": {"phenomenon": "volcanic_eruption", "country": "PG", "lat": -2.09, "lon": 147.0}},
+    {"id": "ent-loc-manus", "type": "Location", "name": "Manus Island", "properties": {"country": "PG", "lat": -2.09, "lon": 147.0}},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9"},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "sat-viirs-jpss", "type": "Satellite", "name": "VIIRS"},
+    {"id": "sat-modis-terra", "type": "Satellite", "name": "MODIS"}
+  ],
+  "relations": [
+    {"subject": "evt-2903", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "evt-2903", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "evt-2903", "predicate": "locatedIn", "object": "ent-loc-manus"},
+    {"subject": "evt-2903", "predicate": "partOfSeries", "object": "evt-701"}
+  ]
+}

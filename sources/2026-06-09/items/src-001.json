@@ -1,0 +1,30 @@
+{
+  "id": "src-001",
+  "title": "베트남 스프래틀리 27개 사이트·18개 암초 대규모 건설 — 위성영상 확인",
+  "url": "https://www.rfa.org/english/southchinasea/2026/06/08/vietnam-south-china-sea-spratly-island-construction/",
+  "snippet": "Vietnam is building military and maritime infrastructure at 27 sites across at least 18 reefs in the disputed Spratly Islands. Improvements include ports, runways, military facilities and communications arrays. Barque Canada Reef runway ~4,000m. 534 acres (216ha) added in past year, total 2,771 acres. DVOR navigation beacon installed.",
+  "source_name": "Radio Free Asia",
+  "language": "en",
+  "discovered_date": "2026-06-09",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "베트남의 스프래틀리 군도 건설 활동은 이전 필리핀 Thitu/Nanshan 건설(5/16)과 별개의 신규 RFA 분석. 베트남 측 27사이트 18암초 규모는 이전 보고 범위 밖.",
+  "entities": [
+    {"id": "evt-2901", "type": "Event", "name": "베트남 스프래틀리 27사이트 건설", "properties": {"phenomenon": "construction", "domain": "Defense", "country": "VN", "lat": 10.0, "lon": 114.0}},
+    {"id": "co-vn", "type": "Country", "name": "베트남", "properties": {"iso_code": "VN"}},
+    {"id": "ent-loc-spratly-vn", "type": "Location", "name": "Spratly Islands (Vietnamese)", "properties": {"lat": 10.0, "lon": 114.0}},
+    {"id": "sat-planetscope", "type": "Satellite", "name": "PlanetScope"},
+    {"id": "sat-worldview3", "type": "Satellite", "name": "WorldView-3"},
+    {"id": "org-rfa", "type": "Organization", "name": "Radio Free Asia"},
+    {"id": "org-csis-bp", "type": "Organization", "name": "CSIS AMTI"},
+    {"id": "phen-construction", "type": "Phenomenon", "name": "construction"}
+  ],
+  "relations": [
+    {"subject": "evt-2901", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "evt-2901", "predicate": "observedBy", "object": "sat-worldview3"},
+    {"subject": "evt-2901", "predicate": "inCountry", "object": "co-vn"},
+    {"subject": "evt-2901", "predicate": "manifests", "object": "phen-construction"},
+    {"subject": "evt-2901", "predicate": "locatedIn", "object": "ent-loc-spratly-vn"}
+  ]
+}

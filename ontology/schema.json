@@ -646,6 +646,25 @@
       "target": "evt-2801(신규), evt-2802(신규) + updates to evt-202, evt-1101, temp-evt-2501, temp-evt-1902, temp-evt-2504, evt-082, evt-701, temp-evt-1401, evt-128, evt-203, evt-204, ent-evt-kharg, temp-evt-2003, temp-evt-2602",
       "reason": "신규 2건: (1) 북한 미림비행장 퍼레이드 준비 수백 대 수송트럭 집결(evt-2801, 39.0N/125.85E, PlanetScope, Newsweek/NK News, KP, dom-defense military_buildup, koreaBoost). (2) NASA EO Typhoon Jangmi 공식 분석(evt-2802, 26.5N/130.0E, Himawari-9+GPM, NASA EO, JP, dom-disaster typhoon, multiSatBoost+officialBoost, temp-evt-2001 시리즈 종결). 업데이트 14건: Kilauea Ep49 7-13일로 추가 단축(evt-202), 캐나다 산불 134건 113,300ha BC 최고 위험(evt-1101, 5위성), 시진핑 방북 D-Day 오늘 도착(temp-evt-2501, WorldView-3+PlanetScope, multiSatBoost+hiResBoost+koreaBoost), Super El Niño CPC 'single most likely' ECMWF +3°C(temp-evt-1902), Sentinel-1 재구성 내일 S-1C 중단(temp-evt-2504), Mayon AL3 Day154+ 3975 대피(evt-082), Bismarck Sea 분출 감소 69km² pumice(evt-701, 5위성), Kanlaon AL2 SO2 1201-2428(temp-evt-1401), Dukono AL2 plume 200-1300m(evt-128), Great Sitkin WATCH lava dome(evt-203), Shishaldin ADVISORY SO2 75nm(evt-204), Kharg 45km²(ent-evt-kharg, 3위성), DPRK 구축함 6월 중순(temp-evt-2003), 북한 모내기 68.2%(temp-evt-2602). 다중 위성 교차검증 5건 유지(evt-1101, evt-701, temp-evt-2501, ent-evt-kharg, evt-2802 신규). 한반도 GeoFocus 8건(신규 1건: 미림 퍼레이드). ent-loc-mirim 신규 Location. 스키마 구조적 변경 없음.",
       "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009", "src-010", "src-011", "src-012", "src-013", "src-014", "src-015", "src-016", "src-017", "src-018", "src-019", "src-020"]
+    },
+    {
+      "date": "2026-06-09",
+      "action": "add_country",
+      "target": "co-vn (베트남, VN)",
+      "reason": "베트남 스프래틀리 27사이트 건설(evt-2901) — 남중국해 군비 경쟁 가속. PlanetScope/WV-3 다중위성 확인."
+    },
+    {
+      "date": "2026-06-09",
+      "action": "add_location",
+      "target": "ent-loc-spratly-vn (Spratly Islands, VN claim), ent-loc-manus (Manus Island, PG)",
+      "reason": "신규 Location 2건: (1) 스프래틀리 군도 베트남 실효지배 해역(evt-2901, 10.0N/114.0E). (2) 마누스섬 파푸아뉴기니(evt-2903, 2.09S/147.0E, 부석 해안 도달)."
+    },
+    {
+      "date": "2026-06-09",
+      "action": "add_event_and_update",
+      "target": "evt-2901(신규), evt-2902(신규), evt-2903(신규) + updates to evt-202, temp-evt-2504, evt-1101, evt-082, evt-701, temp-evt-1902, temp-evt-2501, evt-203, evt-204, ent-evt-kharg, evt-092, evt-2801, temp-evt-1401, evt-128",
+      "reason": "신규 3건: (1) 베트남 스프래틀리 27사이트 18암초 건설(evt-2901, 10.0N/114.0E, PlanetScope+WV-3, RFA, VN, dom-defense, multiSatBoost+hiResBoost). (2) 시진핑 방북 종결 6/9 이탈(evt-2902, 39.0N/125.8E, WV-3+PlanetScope, NPR, KP, dom-human, koreaBoost+multiSatBoost+hiResBoost, temp-evt-2501 시리즈). (3) 비스마르크해 부석 마누스섬 도달(evt-2903, 2.1S/147.0E, 5위성, RNZ, PG, dom-disaster, multiSatBoost+officialBoost, evt-701 cascading). 업데이트 14건. 다중 위성 5건. 한반도 GeoFocus 4건. 스키마 구조 변경 없음.",
+      "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009", "src-010", "src-011", "src-012", "src-013", "src-014", "src-015", "src-016", "src-017", "src-018", "src-019", "src-020"]
     }
   ]
 }

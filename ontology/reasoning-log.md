@@ -2867,3 +2867,67 @@ config 한도 내 -- 새 클래스 0건 (max_new_classes_per_day=3), 새 관계 
 - **추론:** (evt-701, multiSatBoost, +0.20) — 지속 확정
 - **신뢰도:** 0.90
 - **상태:** 확정 (지속)
+
+---
+
+## 2026-06-09 추론 결과
+
+입력: sources/2026-06-09/entities.json (6 entities, 15 relations, 3 신규 + 3 매칭). 이벤트 20건(신규 3, 업데이트 14, 기보도 3).
+
+### multi_satellite_confirmation (다중 위성 교차검증) — 2건 신규
+
+- **추론 #1:** evt-2901 (베트남 스프래틀리) — observedBy PlanetScope (Planet) AND WorldView-3 (Maxar/Vantor) → multiSatBoost +0.20 [confidence 0.90, 확정]
+  - 운영자 독립: Planet Labs ≠ Vantor → 교차검증 성립
+- **추론 #2:** evt-2903 (비스마르크해 부석 마누스 도달) — observedBy Sentinel-2(ESA) + Landsat-9(USGS/NASA) + MODIS(NASA) + VIIRS(NOAA) + Himawari-9(JMA) → multiSatBoost +0.20 [0.90, 확정]
+  - 5위성 × 4기관. evt-701 시리즈 유지.
+
+### cascading_disaster (연쇄 재해) — 1건
+
+- **추론 #3:** evt-2903 (부석 마누스 도달) triggeredBy evt-701 (비스마르크해 해저 분출)
+  - **입력:** (evt-701, locatedIn, Titan Ridge, PG) AND (evt-2903, locatedIn, Manus Island, PG) AND (evt-701.phenomenon == volcanic_eruption) AND (evt-2903.phenomenon == volcanic_eruption/pumice_raft)
+  - **추론:** (evt-2903, triggeredBy, evt-701) — 해저 분출 → 부석 뗏목 → 마누스섬 해안 피해
+  - **신뢰도:** 0.95
+  - **상태:** 확정
+
+### temporal_progression (시계열 연속) — 2건
+
+- **추론 #4:** evt-2902 (시진핑 이탈) partOfSeries temp-evt-2501 (시진핑 도착) — 6/8 도착 → 6/9 이탈 동일 시리즈 [0.95, 확정]
+- **추론 #5:** evt-202 (Kilauea Ep49) Ep47→Ep48→Ep49 동일 화구 시계열 [0.90, 확정]
+
+### sensor_capability_match — 3건
+
+- **추론 #6:** evt-2901 (스프래틀리) — WorldView-3(0.31m) + PlanetScope(3m) 고해상도 광학으로 인공구조물 식별 → hiResBoost +0.15 [0.85, 확정]
+- **추론 #7:** evt-082 (Mayon) — Landsat-9 TIRS 열적외 관측 → thermalBoost +0.10 [0.85, 확정]
+- **추론 #8:** evt-204 (Shishaldin) — TROPOMI SO₂ 검출 → tracegasBoost +0.15 [0.85, 확정]
+
+### korea_geo_focus (한반도 가산) — 1건 신규
+
+- **추론 #9:** evt-2902 (시진핑 방북 종결) — inCountry KP → koreaBoost +0.10 [0.95, 확정]
+
+### 금일 미적용 규칙
+
+- `disaster_severity_priority`: 신규 고위험 재해는 evt-2903이나 기존 evt-701 시리즈 내 cascading으로 처리.
+- `before_after_credibility`: 시진핑 사열대 전후 비교는 전일 이미 적용. 금일 신규 ba 없음.
+- `official_source_trust`: 금일 신규 이벤트 중 공식 우주기관 직접 발표 해당 없음 (RFA/NPR/RNZ 미디어).
+
+### 추론 통계 (2026-06-09)
+
+| 규칙 | 금일 발동 | 평균 신뢰도 |
+|------|----------|-----------|
+| multi_satellite_confirmation | 2 | 0.90 |
+| cascading_disaster | 1 | 0.95 |
+| temporal_progression | 2 | 0.93 |
+| sensor_capability_match | 3 | 0.85 |
+| korea_geo_focus | 1 | 0.95 |
+| **합계** | **9** | **0.90** |
+
+### 온톨로지 변경
+
+| 변경 유형 | 대상 | 근거 |
+|----------|------|------|
+| 새 Country | co-vn (베트남) (1건) | 스프래틀리 건설 |
+| 새 Location | ent-loc-spratly-vn, ent-loc-manus (2건) | 스프래틀리 VN 실효지배 해역, 마누스섬 |
+| 새 Event | evt-2901, evt-2902, evt-2903 (3건) | 신규 이벤트 |
+| 이벤트 업데이트 | evt-202, temp-evt-2504, evt-1101, evt-082, evt-701, temp-evt-1902, temp-evt-2501, evt-203, evt-204, ent-evt-kharg, evt-092, evt-2801, temp-evt-1401, evt-128 (14건) | 후속 보도 반영 |
+
+config 한도 내 — 새 클래스 0건, 새 관계 유형 0건.
