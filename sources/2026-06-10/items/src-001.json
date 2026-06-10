@@ -1,0 +1,25 @@
+{
+  "id": "src-001",
+  "title": "Kilauea ADVISORY/YELLOW — Ep49 예보 6/12-15, 최유력 6/13-14",
+  "url": "https://www.usgs.gov/volcanoes/kilauea/volcano-updates",
+  "snippet": "USGS HVO as of 6/9: ADVISORY/YELLOW for Kilauea. Episode 49 fountain eruption forecast window 6/12-15, most likely 6/13-14. Episode 48 on 6/1 lasted 9 hours with 200m fountains, filling 40% of crater with lava. Currently paused as of 6/10. Summit inflation rate accelerating.",
+  "source_name": "USGS HVO",
+  "language": "en",
+  "discovered_date": "2026-06-10",
+  "tag": "update",
+  "related_report": "2026-06-09",
+  "related_item": "evt-202",
+  "tag_reason": "Ep49 예보 창이 6/12-15로 유지되나 '가장 유력한 시기 6/13-14' 세부 정보 추가. 전일(6/9) 대비 시간창 변동은 미미하나 probability peak 신규.",
+  "entities": [
+    {"id": "evt-202", "type": "Event", "name": "Kilauea Ep49 분수분출 예보", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "US", "lat": 19.421, "lon": -155.287, "alert_level": "ADVISORY", "aviation_color": "YELLOW"}},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat-9"},
+    {"id": "sat-sentinel2", "type": "Satellite", "name": "Sentinel-2"},
+    {"id": "org-usgs-hvo", "type": "Organization", "name": "USGS Hawaiian Volcano Observatory"}
+  ],
+  "relations": [
+    {"subject": "evt-202", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "evt-202", "predicate": "observedBy", "object": "sat-sentinel2"},
+    {"subject": "evt-202", "predicate": "monitoredBy", "object": "org-usgs-hvo"},
+    {"subject": "evt-202", "predicate": "inCountry", "object": "co-us"}
+  ]
+}

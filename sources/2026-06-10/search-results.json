@@ -1,0 +1,39 @@
+{
+  "date": "2026-06-10",
+  "collected_at": "2026-06-10T08:00:00+09:00",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 18,
+  "total_results": 68,
+  "expanded_keywords": [
+    "Kilauea Ep49 forecast June 2026", "Bismarck Sea pumice Manus Island new island",
+    "Canada wildfire VIIRS MODIS FIRMS June 2026", "Mayon volcano VAAC advisory FL090",
+    "volcanic activity worldwide Fuego Semeru Shiveluch Ibu Dukono Reventador",
+    "Great Sitkin lava dome WATCH", "Shishaldin ADVISORY SO2 TROPOMI",
+    "Vietnam Spratly construction satellite 2026", "Xi Jinping North Korea departure June 9",
+    "Mirim parade trucks satellite imagery", "Antelope Reef CSIS AMTI satellite",
+    "Super El Niño NOAA CPC ECMWF 2026", "Amazon deforestation INPE lowest 2026",
+    "Amazon degradation forest policy satellite", "Sentinel-1C suspension orbital reconfiguration",
+    "GFM Sentinel-1D integration v4.1.1", "Vantor satellite fleet expansion Vantage Pulse",
+    "GFW global vegetation disturbance alerts"
+  ],
+  "searches": [
+    {"method": "websearch", "engine": "built-in", "keyword": "Kilauea volcano eruption Ep49 forecast update June 10 2026", "language": "en", "timestamp": "2026-06-10T08:01:00+09:00", "result_count": 8},
+    {"method": "websearch", "engine": "built-in", "keyword": "Bismarck Sea pumice raft Manus Island new island formation June 2026", "language": "en", "timestamp": "2026-06-10T08:01:30+09:00", "result_count": 6},
+    {"method": "websearch", "engine": "built-in", "keyword": "Canada wildfire 2026 June VIIRS MODIS FIRMS satellite active fire", "language": "en", "timestamp": "2026-06-10T08:02:00+09:00", "result_count": 7},
+    {"method": "websearch", "engine": "built-in", "keyword": "Mayon volcano eruption VAAC advisory ash FL090 June 2026", "language": "en", "timestamp": "2026-06-10T08:02:30+09:00", "result_count": 5},
+    {"method": "websearch", "engine": "built-in", "keyword": "volcanic activity worldwide June 8-10 2026 Fuego Semeru Shiveluch Ibu Dukono", "language": "en", "timestamp": "2026-06-10T08:03:00+09:00", "result_count": 4},
+    {"method": "websearch", "engine": "built-in", "keyword": "Great Sitkin Shishaldin volcano Alaska eruption update June 2026", "language": "en", "timestamp": "2026-06-10T08:03:30+09:00", "result_count": 5},
+    {"method": "websearch", "engine": "built-in", "keyword": "Vietnam Spratly Islands construction satellite imagery 2026 update", "language": "en", "timestamp": "2026-06-10T08:04:00+09:00", "result_count": 4},
+    {"method": "websearch", "engine": "built-in", "keyword": "Xi Jinping North Korea visit concluded June 9 2026 results", "language": "en", "timestamp": "2026-06-10T08:04:30+09:00", "result_count": 3},
+    {"method": "websearch", "engine": "built-in", "keyword": "North Korea Mirim parade preparation satellite June 2026", "language": "en", "timestamp": "2026-06-10T08:05:00+09:00", "result_count": 3},
+    {"method": "websearch", "engine": "built-in", "keyword": "Super El Nino 2026 NOAA CPC ECMWF forecast update June", "language": "en", "timestamp": "2026-06-10T08:05:30+09:00", "result_count": 6},
+    {"method": "websearch", "engine": "built-in", "keyword": "Amazon deforestation 2026 INPE lowest record satellite Landsat", "language": "en", "timestamp": "2026-06-10T08:06:00+09:00", "result_count": 4},
+    {"method": "websearch", "engine": "built-in", "keyword": "Amazon forest degradation policy satellite study 2026", "language": "en", "timestamp": "2026-06-10T08:06:30+09:00", "result_count": 3},
+    {"method": "websearch", "engine": "built-in", "keyword": "Sentinel-1C orbital reconfiguration suspension Day 2 June 10 2026", "language": "en", "timestamp": "2026-06-10T08:07:00+09:00", "result_count": 3},
+    {"method": "websearch", "engine": "built-in", "keyword": "Copernicus GFM Global Flood Monitoring Sentinel-1D integration v4.1.1 June 2026", "language": "en", "timestamp": "2026-06-10T08:07:30+09:00", "result_count": 2},
+    {"method": "websearch", "engine": "built-in", "keyword": "Vantor satellite fleet expansion Vantage Pulse smallsat imaging 2026", "language": "en", "timestamp": "2026-06-10T08:08:00+09:00", "result_count": 2},
+    {"method": "websearch", "engine": "built-in", "keyword": "Global Forest Watch vegetation disturbance alerts GLAD 2026", "language": "en", "timestamp": "2026-06-10T08:08:30+09:00", "result_count": 2},
+    {"method": "websearch", "engine": "built-in", "keyword": "위성영상 한반도 KOMPSAT 북한 모내기 2026년 6월", "language": "ko", "timestamp": "2026-06-10T08:09:00+09:00", "result_count": 3},
+    {"method": "websearch", "engine": "built-in", "keyword": "Kharg Island oil spill satellite tracking Sentinel June 2026", "language": "en", "timestamp": "2026-06-10T08:09:30+09:00", "result_count": 2}
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "date": "2026-06-10",
+  "new_triples": [
+    {"subject": "evt-3001", "predicate": "observedBy", "object": "sat-sentinel1d", "source_id": "src-011", "date": "2026-06-10", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-3001", "predicate": "usesSensor", "object": "sensor-c-sar", "source_id": "src-011", "date": "2026-06-10", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-3001", "predicate": "analyzedBy", "object": "org-cems", "source_id": "src-011", "date": "2026-06-10", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-3001", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-011", "date": "2026-06-10", "confidence": 0.85, "type": "explicit"},
+    {"subject": "evt-3001", "predicate": "manifests", "object": "phen-satops", "source_id": "src-011", "date": "2026-06-10", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-3002", "predicate": "analyzedBy", "object": "org-vantor", "source_id": "src-012", "date": "2026-06-10", "confidence": 0.80, "type": "explicit"},
+    {"subject": "evt-3002", "predicate": "manifests", "object": "phen-satops", "source_id": "src-012", "date": "2026-06-10", "confidence": 0.85, "type": "explicit"},
+    {"subject": "evt-3003", "predicate": "observedBy", "object": "sat-landsat8", "source_id": "src-013", "date": "2026-06-10", "confidence": 0.85, "type": "explicit"},
+    {"subject": "evt-3003", "predicate": "observedBy", "object": "sat-landsat9", "source_id": "src-013", "date": "2026-06-10", "confidence": 0.85, "type": "explicit"},
+    {"subject": "evt-3003", "predicate": "inDomain", "object": "dom-climate", "source_id": "src-013", "date": "2026-06-10", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-3003", "predicate": "manifests", "object": "phen-defor", "source_id": "src-013", "date": "2026-06-10", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-3003", "predicate": "inCountry", "object": "co-br", "source_id": "src-013", "date": "2026-06-10", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-3003", "predicate": "analyzedBy", "object": "org-inpe", "source_id": "src-013", "date": "2026-06-10", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-3004", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-014", "date": "2026-06-10", "confidence": 0.85, "type": "explicit"},
+    {"subject": "evt-3004", "predicate": "observedBy", "object": "sat-landsat9", "source_id": "src-014", "date": "2026-06-10", "confidence": 0.85, "type": "explicit"},
+    {"subject": "evt-3004", "predicate": "inDomain", "object": "dom-climate", "source_id": "src-014", "date": "2026-06-10", "confidence": 0.85, "type": "explicit"},
+    {"subject": "evt-3004", "predicate": "manifests", "object": "phen-ndvi", "source_id": "src-014", "date": "2026-06-10", "confidence": 0.85, "type": "explicit"},
+    {"subject": "evt-3004", "predicate": "analyzedBy", "object": "org-gfw", "source_id": "src-014", "date": "2026-06-10", "confidence": 0.85, "type": "explicit"}
+  ],
+  "updated_triples": [
+    {"subject": "evt-202", "predicate": "forecast_window", "object": "2026-06-12/2026-06-15_most_likely_jun13-14", "source_id": "src-001", "date": "2026-06-10", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-202", "predicate": "tilt_microrad", "object": "15.2", "source_id": "src-001", "date": "2026-06-10", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-082", "predicate": "vaac_advisory", "object": "FL090_jun9", "source_id": "src-004", "date": "2026-06-10", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-701", "predicate": "pumice_impact", "object": "manus_island_expanded_3x5km_5m_deep", "source_id": "src-002", "date": "2026-06-10", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-701", "predicate": "new_island_possible", "object": "true", "source_id": "src-002", "date": "2026-06-10", "confidence": 0.75, "type": "explicit"},
+    {"subject": "evt-1101", "predicate": "active_fires", "object": "142_bc_highest_risk", "source_id": "src-003", "date": "2026-06-10", "confidence": 0.95, "type": "explicit"},
+    {"subject": "temp-evt-1902", "predicate": "nino34_index", "object": "+0.9C_threshold_crossed", "source_id": "src-015", "date": "2026-06-10", "confidence": 0.90, "type": "explicit"},
+    {"subject": "temp-evt-2504", "predicate": "status", "object": "day2_s1c_suspended_s1a_s1d_only", "source_id": "src-010", "date": "2026-06-10", "confidence": 0.95, "type": "explicit"}
+  ],
+  "inferred_triples": [
+    {"subject": "evt-3001", "predicate": "partOfSeries", "object": "temp-evt-2504", "rule": "temporal_progression", "confidence": 0.90, "type": "inferred", "reason": "GFM v4.1.1 S-1D 통합은 Sentinel-1 재구성(temp-evt-2504)에 대한 기능적 대응 — 동일 콘스텔레이션 운영 시리즈"},
+    {"subject": "evt-1101", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.95, "type": "inferred", "reason": "GOES-18(NOAA) + VIIRS(NOAA/NASA) + MODIS(NASA) + Sentinel-2(ESA) + Landsat-9(USGS/NASA) 5위성 4기관 교차검증"},
+    {"subject": "evt-701", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.90, "type": "inferred", "reason": "Sentinel-2(ESA) + Landsat-9(USGS) + MODIS(NASA) + VIIRS(NOAA) + Himawari-9(JMA) 5위성 확인 유지"},
+    {"subject": "evt-701", "predicate": "cascading_impact_expanded", "object": "manus_3x5km_5m_pumice", "rule": "cascading_disaster", "confidence": 0.85, "type": "inferred", "reason": "evt-701 해저분출 → evt-2903 부석 도달 → 해안 피해 확대(3km x 5km, 5m 깊이) cascading 지속"},
+    {"subject": "evt-202", "predicate": "partOfSeries", "object": "evt-202", "rule": "temporal_progression", "confidence": 0.95, "type": "inferred", "reason": "Ep47→Ep48→Ep49 동일 화구 시계열, 예보 창 단축(6/12-15, 가장 유력 6/13-14)"},
+    {"subject": "evt-082", "predicate": "thermalBoost", "object": "+0.10", "rule": "sensor_capability_match_tirs", "confidence": 0.90, "type": "inferred", "reason": "Himawari-9 AHI 열적외 화산재 감지"},
+    {"subject": "evt-204", "predicate": "tracegasBoost", "object": "+0.15", "rule": "sensor_capability_match_tracegas", "confidence": 0.85, "type": "inferred", "reason": "Sentinel-5P TROPOMI SO₂ 검출"},
+    {"subject": "evt-203", "predicate": "sarBoost", "object": "+0.10", "rule": "sensor_capability_match_sar", "confidence": 0.85, "type": "inferred", "reason": "Sentinel-1A C-band SAR 용암돔 성장 모니터링"},
+    {"subject": "evt-2801", "predicate": "koreaBoost", "object": "+0.10", "rule": "korea_geo_focus", "confidence": 0.95, "type": "inferred", "reason": "KP 국가 코드 — 미림비행장 퍼레이드 준비"},
+    {"subject": "evt-3003", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.85, "type": "inferred", "reason": "Landsat-8(USGS) + Landsat-9(USGS) + INPE DETER(독립 분석) — 동일 사업자이나 cross-platform 시계열"},
+    {"subject": "evt-3004", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.85, "type": "inferred", "reason": "Sentinel-2(ESA) + Landsat-9(USGS) + Planet NICFI(Planet) 3기관 교차검증"},
+    {"subject": "evt-3003", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.90, "type": "inferred", "reason": "INPE 공식 데이터 기반 (정부 우주기관)"},
+    {"subject": "evt-3002", "predicate": "commercialBoost", "object": "+0.10", "rule": "commercial_imagery_trust", "confidence": 0.70, "type": "inferred", "reason": "Vantor 직접 발표 — PR cap 0.70 적용"}
+  ],
+  "stats": {
+    "new_nodes": 4,
+    "new_edges": 17,
+    "updated_edges": 8,
+    "inferred_edges": 13
+  }
+}

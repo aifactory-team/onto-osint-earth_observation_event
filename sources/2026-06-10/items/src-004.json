@@ -1,0 +1,28 @@
+{
+  "id": "src-004",
+  "title": "마욘 화산 — AL3 Day155+, VAAC FL090 화산재 분출 6/9",
+  "url": "https://volcano.si.edu/showreport.cfm?gvpvar=GVP.DVAR20260604-273030",
+  "alt_urls": ["https://www.volcanodiscovery.com/mayon/news/305021/vaac-advisory-2026-688.html"],
+  "snippet": "Smithsonian GVP weekly: Mayon AL3 Day155+, lava flows Basud 3.8km, Bonga 3.2km, Mi-isi 1.8km. 223-364 rockfall events/day, 0-3 PDCs. SO2 emissions persist. 3,975 evacuees. VolcanoDiscovery: Tokyo VAAC issued eruption advisory 6/9 for ash to FL090 (9,000ft). Rainy season onset raises lahar risk significantly.",
+  "source_name": "Smithsonian GVP / PHIVOLCS / Tokyo VAAC",
+  "language": "en",
+  "discovered_date": "2026-06-10",
+  "tag": "update",
+  "related_report": "2026-06-09",
+  "related_item": "evt-082",
+  "tag_reason": "6/9 Tokyo VAAC FL090 화산재 분출 통보는 신규 정보. 전일 대비 VAAC 경보 레벨 상향 의미. 우기 진입 라하르 위험은 이미 보고되었으나 VAAC advisory는 항공 안전 관련 신규.",
+  "entities": [
+    {"id": "evt-082", "type": "Event", "name": "Mayon 화산 AL3 분출", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "PH", "lat": 13.257, "lon": 123.685, "alert_level": "AL3", "lava_flow_km": 3.8}},
+    {"id": "sat-sentinel2", "type": "Satellite", "name": "Sentinel-2"},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat-9"},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "org-phivolcs", "type": "Organization", "name": "PHIVOLCS"}
+  ],
+  "relations": [
+    {"subject": "evt-082", "predicate": "observedBy", "object": "sat-sentinel2"},
+    {"subject": "evt-082", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "evt-082", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "evt-082", "predicate": "monitoredBy", "object": "org-phivolcs"},
+    {"subject": "evt-082", "predicate": "inCountry", "object": "co-ph"}
+  ]
+}

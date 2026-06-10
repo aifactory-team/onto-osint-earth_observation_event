@@ -1,0 +1,152 @@
+{
+  "date": "2026-06-10",
+  "entities": [
+    {
+      "temp_id": "evt-3001",
+      "matched_id": null,
+      "type": "Event",
+      "name": "Copernicus GFM v4.1.1 Sentinel-1D 통합 — 6/11 롤아웃",
+      "properties": {"phenomenon": "satellite_data_product", "domain": "SatOps", "country": "Global", "lat": null, "lon": null, "observation_date": "2026-06-11", "severity": "medium", "satellites_used": ["Sentinel-1D", "Sentinel-1A"], "confidence": 0.85},
+      "source_ids": ["src-011"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "evt-3002",
+      "matched_id": null,
+      "type": "Event",
+      "name": "Vantor 위성 함대 확장 — Vantage 20cm + Pulse 40cm 소형위성",
+      "properties": {"phenomenon": "satellite_infrastructure", "domain": "SatOps", "country": "US", "lat": null, "lon": null, "observation_date": "2026-06-09", "severity": "low", "satellites_used": ["Vantor Vantage", "Vantor Pulse"], "confidence": 0.75, "is_press_release": true, "confidence_cap": 0.70},
+      "source_ids": ["src-012"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "evt-3003",
+      "matched_id": null,
+      "type": "Event",
+      "name": "아마존 삼림벌채 역대 최저 — INPE 위성 데이터 1,325km²",
+      "properties": {"phenomenon": "deforestation", "domain": "ClimateEnvironment", "country": "BR", "lat": -3.0, "lon": -60.0, "observation_date": "2026-02-15", "severity": "medium", "before_after_available": true, "satellites_used": ["Landsat-8", "Landsat-9"], "confidence": 0.85},
+      "source_ids": ["src-013"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "evt-3004",
+      "matched_id": null,
+      "type": "Event",
+      "name": "GFW 글로벌 식생 교란 경보 서비스 개시",
+      "properties": {"phenomenon": "vegetation_monitoring", "domain": "ClimateEnvironment", "country": "Global", "lat": null, "lon": null, "observation_date": "2026-06-09", "severity": "low", "satellites_used": ["Sentinel-2", "Landsat-8", "Landsat-9"], "confidence": 0.80},
+      "source_ids": ["src-014"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "sat-vantor-vantage",
+      "matched_id": null,
+      "type": "Satellite",
+      "name": "Vantor Vantage",
+      "properties": {"operator": "Vantor", "resolution_cm": 20, "sensor_type": "optical_pan", "status": "operational"},
+      "source_ids": ["src-012"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "sat-vantor-pulse",
+      "matched_id": null,
+      "type": "Satellite",
+      "name": "Vantor Pulse",
+      "properties": {"operator": "Vantor", "resolution_cm": 40, "sensor_type": "optical_smallsat", "status": "planned"},
+      "source_ids": ["src-012"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "org-vantor",
+      "matched_id": null,
+      "type": "Organization",
+      "name": "Vantor",
+      "properties": {"type": "commercial_satellite_operator", "country": "US"},
+      "source_ids": ["src-012"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "org-cems",
+      "matched_id": null,
+      "type": "Organization",
+      "name": "Copernicus Emergency Management Service (CEMS)",
+      "properties": {"type": "official_agency", "country": "EU"},
+      "source_ids": ["src-011"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "org-inpe",
+      "matched_id": null,
+      "type": "Organization",
+      "name": "INPE (Brazil National Institute for Space Research)",
+      "properties": {"type": "official_agency", "country": "BR"},
+      "source_ids": ["src-013"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "org-gfw",
+      "matched_id": null,
+      "type": "Organization",
+      "name": "Global Forest Watch",
+      "properties": {"type": "analyst", "country": "US"},
+      "source_ids": ["src-014"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "dp-deter-prodes",
+      "matched_id": null,
+      "type": "DataProduct",
+      "name": "DETER/PRODES",
+      "properties": {"provider": "INPE", "type": "deforestation_alert", "satellites": ["Landsat-8", "Landsat-9"]},
+      "source_ids": ["src-013"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "co-br",
+      "matched_id": null,
+      "type": "Country",
+      "name": "브라질",
+      "properties": {"iso_code": "BR", "region": "남아메리카"},
+      "source_ids": ["src-013"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "ent-loc-amazon",
+      "matched_id": null,
+      "type": "Location",
+      "name": "Brazilian Amazon",
+      "properties": {"country": "BR", "region": "Amazonia", "lat": -3.0, "lon": -60.0},
+      "source_ids": ["src-013"],
+      "mention_count": 1
+    }
+  ],
+  "relations": [
+    {"subject": "evt-3001", "predicate": "uses", "object": "sat-sentinel1d", "source_ids": ["src-011"], "confidence": 0.90},
+    {"subject": "evt-3001", "predicate": "uses", "object": "sat-sentinel1a", "source_ids": ["src-011"], "confidence": 0.90},
+    {"subject": "evt-3001", "predicate": "managedBy", "object": "org-cems", "source_ids": ["src-011"], "confidence": 0.95},
+    {"subject": "evt-3001", "predicate": "relatedTo", "object": "temp-evt-2504", "source_ids": ["src-011"], "confidence": 0.95},
+    {"subject": "evt-3002", "predicate": "involves", "object": "sat-vantor-vantage", "source_ids": ["src-012"], "confidence": 0.85},
+    {"subject": "evt-3002", "predicate": "involves", "object": "sat-vantor-pulse", "source_ids": ["src-012"], "confidence": 0.85},
+    {"subject": "evt-3002", "predicate": "managedBy", "object": "org-vantor", "source_ids": ["src-012"], "confidence": 0.90},
+    {"subject": "sat-vantor-vantage", "predicate": "operatedBy", "object": "org-vantor", "source_ids": ["src-012"], "confidence": 0.95},
+    {"subject": "sat-vantor-pulse", "predicate": "operatedBy", "object": "org-vantor", "source_ids": ["src-012"], "confidence": 0.95},
+    {"subject": "evt-3003", "predicate": "observedBy", "object": "sat-landsat8", "source_ids": ["src-013"], "confidence": 0.90},
+    {"subject": "evt-3003", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-013"], "confidence": 0.90},
+    {"subject": "evt-3003", "predicate": "monitoredBy", "object": "org-inpe", "source_ids": ["src-013"], "confidence": 0.90},
+    {"subject": "evt-3003", "predicate": "usesDataProduct", "object": "dp-deter-prodes", "source_ids": ["src-013"], "confidence": 0.85},
+    {"subject": "evt-3003", "predicate": "inCountry", "object": "co-br", "source_ids": ["src-013"], "confidence": 0.95},
+    {"subject": "evt-3003", "predicate": "locatedIn", "object": "ent-loc-amazon", "source_ids": ["src-013"], "confidence": 0.90},
+    {"subject": "evt-3003", "predicate": "inDomain", "object": "dom-climate-env", "source_ids": ["src-013"], "confidence": 0.95},
+    {"subject": "evt-3003", "predicate": "manifests", "object": "phen-deforestation", "source_ids": ["src-013"], "confidence": 0.90},
+    {"subject": "evt-3004", "predicate": "uses", "object": "sat-sentinel2", "source_ids": ["src-014"], "confidence": 0.85},
+    {"subject": "evt-3004", "predicate": "uses", "object": "sat-landsat8", "source_ids": ["src-014"], "confidence": 0.85},
+    {"subject": "evt-3004", "predicate": "uses", "object": "sat-landsat9", "source_ids": ["src-014"], "confidence": 0.85},
+    {"subject": "evt-3004", "predicate": "managedBy", "object": "org-gfw", "source_ids": ["src-014"], "confidence": 0.90},
+    {"subject": "evt-3004", "predicate": "inDomain", "object": "dom-climate-env", "source_ids": ["src-014"], "confidence": 0.90}
+  ],
+  "stats": {
+    "total_entities": 13,
+    "new_entities": 13,
+    "matched_entities": 0,
+    "total_relations": 22
+  }
+}

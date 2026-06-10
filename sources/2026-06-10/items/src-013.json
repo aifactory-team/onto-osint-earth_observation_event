@@ -1,0 +1,29 @@
+{
+  "id": "src-013",
+  "title": "아마존 삼림벌채 역대 최저 수준 — 브라질 INPE 위성 데이터",
+  "url": "https://news.mongabay.com/2026/02/amazon-deforestation-on-pace-to-be-the-lowest-on-record-says-brazil/",
+  "alt_urls": ["https://phys.org/news/2026-04-amazon-safeguards-deforestation-forest-degradation.html"],
+  "snippet": "Brazil's INPE reports Amazon deforestation at 1,325 km² for Aug 2025 - Jan 2026, on pace for the lowest on record since at least 2014. However, a separate study (Phys.org/Apr 2026) finds that while deforestation policies successfully reduced clearing, they failed to stop forest degradation — areas experiencing selective logging, fire damage, and fragmentation continue to expand. NDVI time-series from Landsat-8/9 confirm divergent trends between deforestation and degradation.",
+  "source_name": "Mongabay / Phys.org",
+  "language": "en",
+  "discovered_date": "2026-06-10",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "아마존 삼림벌채 최저 기록은 이전 미보고 신규 이벤트. INPE 공식 위성 데이터(DETER/PRODES) 기반. 산림 황폐화(degradation) 연구와 결합하여 이중 서사 구성.",
+  "entities": [
+    {"id": "evt-3003", "type": "Event", "name": "아마존 삼림벌채 역대 최저", "properties": {"phenomenon": "deforestation", "domain": "ClimateEnvironment", "country": "BR", "lat": -3.0, "lon": -60.0, "area_km2": 1325, "period": "Aug2025-Jan2026"}},
+    {"id": "sat-landsat8", "type": "Satellite", "name": "Landsat-8"},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat-9"},
+    {"id": "org-inpe", "type": "Organization", "name": "INPE (Brazil National Institute for Space Research)"},
+    {"id": "dp-deter-prodes", "type": "DataProduct", "name": "DETER/PRODES", "properties": {"provider": "INPE", "type": "deforestation_alert"}}
+  ],
+  "relations": [
+    {"subject": "evt-3003", "predicate": "observedBy", "object": "sat-landsat8"},
+    {"subject": "evt-3003", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "evt-3003", "predicate": "monitoredBy", "object": "org-inpe"},
+    {"subject": "evt-3003", "predicate": "usesDataProduct", "object": "dp-deter-prodes"},
+    {"subject": "evt-3003", "predicate": "inCountry", "object": "co-br"},
+    {"subject": "evt-3003", "predicate": "inDomain", "object": "dom-climate-env"}
+  ]
+}

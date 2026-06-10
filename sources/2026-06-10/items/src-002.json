@@ -1,0 +1,32 @@
+{
+  "id": "src-002",
+  "title": "비스마르크해 부석 뗏목 마누스섬 타격 + 신규 섬 형성 가능성",
+  "url": "https://www.rnz.co.nz/news/pacific/597531/this-is-a-disaster-huge-pumice-rafts-from-volcano-hit-manus-island-coast",
+  "alt_urls": ["https://www.discovermagazine.com/an-underwater-volcanic-eruption-brewing-in-the-bismarck-sea-may-cause-a-new-island-to-rise-49148"],
+  "snippet": "RNZ 6/8: Huge pumice rafts from Titan Ridge submarine volcano hit Manus Island coast. 'This is a disaster' — pumice raft 3km x 5km, up to 5m deep. Blocking harbors, destroying fishing. Discover Magazine: Scientists analyzing whether continued eruption could cause a new island to rise from the seafloor, similar to Hunga Tonga 2014 precursor events.",
+  "source_name": "RNZ / Discover Magazine",
+  "language": "en",
+  "discovered_date": "2026-06-10",
+  "tag": "update",
+  "related_report": "2026-06-09",
+  "related_item": "evt-2903",
+  "tag_reason": "RNZ 보도는 6/9 기보고(evt-2903)와 동일하나 Discover Magazine의 신규 섬 형성 가능성 분석은 과학적 새로운 각도. 부석 뗏목 규격(3x5km, 5m 깊이) 정량 데이터 추가.",
+  "entities": [
+    {"id": "evt-2903", "type": "Event", "name": "비스마르크해 부석 뗏목 마누스섬 도달", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "PG", "lat": -2.09, "lon": 147.0, "severity": "high"}},
+    {"id": "evt-701", "type": "Event", "name": "비스마르크해 Titan Ridge 해저 화산 분출", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "lat": -3.03, "lon": 147.78}},
+    {"id": "sat-sentinel2", "type": "Satellite", "name": "Sentinel-2"},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat-9"},
+    {"id": "sat-modis", "type": "Satellite", "name": "MODIS (Terra/Aqua)"},
+    {"id": "sat-viirs", "type": "Satellite", "name": "VIIRS (Suomi NPP/NOAA-21)"},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"}
+  ],
+  "relations": [
+    {"subject": "evt-2903", "predicate": "partOfSeries", "object": "evt-701"},
+    {"subject": "evt-2903", "predicate": "observedBy", "object": "sat-sentinel2"},
+    {"subject": "evt-2903", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "evt-2903", "predicate": "observedBy", "object": "sat-modis"},
+    {"subject": "evt-2903", "predicate": "observedBy", "object": "sat-viirs"},
+    {"subject": "evt-2903", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "evt-2903", "predicate": "inCountry", "object": "co-pg"}
+  ]
+}

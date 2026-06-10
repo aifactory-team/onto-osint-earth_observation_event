@@ -2931,3 +2931,67 @@ config 한도 내 -- 새 클래스 0건 (max_new_classes_per_day=3), 새 관계 
 | 이벤트 업데이트 | evt-202, temp-evt-2504, evt-1101, evt-082, evt-701, temp-evt-1902, temp-evt-2501, evt-203, evt-204, ent-evt-kharg, evt-092, evt-2801, temp-evt-1401, evt-128 (14건) | 후속 보도 반영 |
 
 config 한도 내 — 새 클래스 0건, 새 관계 유형 0건.
+
+---
+
+## 2026-06-10 추론 결과
+
+입력: sources/2026-06-10/entities.json (72 entities, 96 relations, 4 신규 + 68 매칭). index.json (22 items: 4 new, 14 update, 4 reported).
+
+### multi_satellite_confirmation (다중 위성 교차검증) — 4건 유지/추가
+
+- **추론 #1:** evt-1101 (캐나다 산불 142건) — GOES-18(NOAA) + VIIRS(NOAA/NASA) + MODIS(NASA) + Sentinel-2(ESA) + Landsat-9(USGS/NASA) → multiSatBoost +0.20 [0.95, 확정] — 5위성 4기관 교차검증 유지
+- **추론 #2:** evt-701 (비스마르크해 부석) — Sentinel-2(ESA) + Landsat-9(USGS) + MODIS(NASA) + VIIRS(NOAA) + Himawari-9(JMA) → multiSatBoost +0.20 [0.90, 확정] — 5위성 유지
+- **추론 #3:** evt-3003 (아마존 삼림벌채 역대 최저) — Landsat-8 + Landsat-9 (USGS/NASA) + INPE DETER → multiSatBoost +0.20 [0.85, 약가산]
+- **추론 #4:** evt-3004 (GFW 식생 교란 경보) — Sentinel-2(ESA) + Landsat-9(USGS) + Planet NICFI(Planet) → multiSatBoost +0.20 [0.85, 확정]
+
+### temporal_progression (시계열 연속 관측) — 2건
+
+- **추론 #5:** evt-3001 (GFM v4.1.1 S-1D 통합) partOfSeries temp-evt-2504 (Sentinel-1 재구성) → 기능적 대응 시리즈 [0.90, 확정]
+- **추론 #6:** evt-202 (Kilauea Ep49 6/12-15) partOfSeries 시리즈 → 예보 창 단축 (가장 유력 6/13-14, tilt 15.2μrad) [0.95, 확정]
+
+### cascading_disaster (연쇄 재해) — 1건 지속
+
+- **추론 #7:** evt-701 → evt-2903 → 마누스섬 해안 3km x 5km 5m 부석 + 신규 섬 가능 [0.85, 확정]
+  - 33일간 cascading chain — 이 파이프라인 최장 기간 연쇄 재해
+
+### sensor_capability_match — 4건
+
+- **추론 #8:** evt-082 Himawari-9 AHI 열적외 → thermalBoost +0.10 [0.90]
+- **추론 #9:** evt-204 TROPOMI SO₂ → tracegasBoost +0.15 [0.85]
+- **추론 #10:** evt-203 Sentinel-1A SAR 용암돔 → sarBoost +0.10 [0.85]
+- **추론 #11:** ent-evt-kharg Sentinel-1A SAR 유막 → sarBoost +0.10 [0.85]
+
+### official_source_trust — 3건
+
+- evt-202 (USGS HVO) +0.15 [0.95], evt-3001 (CEMS) +0.15 [0.90], evt-3003 (INPE) +0.15 [0.90]
+
+### commercial_imagery_trust — 1건
+
+- evt-3002 (Vantor PR) → commercialBoost +0.10 [0.70, PR cap]
+
+### korea_geo_focus — 1건
+
+- evt-2801 (미림 퍼레이드, KP) → koreaBoost +0.10 [0.95]
+
+### 추론 통계 (2026-06-10)
+
+| 규칙 | 금일 발동 | 평균 신뢰도 |
+|------|----------|-----------|
+| multi_satellite_confirmation | 4 | 0.89 |
+| temporal_progression | 2 | 0.93 |
+| cascading_disaster | 1 | 0.85 |
+| sensor_capability_match | 4 | 0.87 |
+| official_source_trust | 3 | 0.92 |
+| commercial_imagery_trust | 1 | 0.70 |
+| korea_geo_focus | 1 | 0.95 |
+| **합계** | **16** | **0.88** |
+
+### 온톨로지 변경
+
+| 변경 유형 | 대상 | 근거 |
+|----------|------|------|
+| 새 Event | evt-3001, evt-3002, evt-3003, evt-3004 (4건) | GFM S-1D 통합, Vantor Pulse 확장, 아마존 삼림벌채 최저, GFW 식생 교란 |
+| 이벤트 업데이트 | 14건 | 후속 보도 반영 |
+
+config 한도 내 — 새 클래스 0건 (max 3), 새 관계 유형 0건 (max 5). 새 Country/Location/Satellite/Organization 0건.

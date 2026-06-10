@@ -1,0 +1,25 @@
+{
+  "id": "src-011",
+  "title": "Copernicus GFM v4.1.1 Sentinel-1D 통합 — 6/11 롤아웃",
+  "url": "https://global-flood.emergency.copernicus.eu/",
+  "snippet": "Copernicus Global Flood Monitoring (GFM) service version 4.1.1 will integrate Sentinel-1D SAR data starting June 11, 2026. This ensures continuity of SAR-based flood monitoring during the Sentinel-1C orbital reconfiguration period (Jun 9-23). The system will process S-1A and S-1D data in parallel to maintain 6-day revisit cycle for global flood detection.",
+  "source_name": "Copernicus Emergency Management Service (CEMS)",
+  "language": "en",
+  "discovered_date": "2026-06-10",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "GFM v4.1.1의 Sentinel-1D 통합은 이전 미보고 신규 이벤트. S-1C 궤도 재구성(temp-evt-2504)과 연관되나 별도의 데이터 제품 업데이트로 독립 이벤트 생성.",
+  "entities": [
+    {"id": "evt-3001", "type": "Event", "name": "GFM v4.1.1 Sentinel-1D 통합", "properties": {"phenomenon": "satellite_data_product", "domain": "SatOps", "country": "Global", "rollout_date": "2026-06-11"}},
+    {"id": "sat-sentinel1d", "type": "Satellite", "name": "Sentinel-1D"},
+    {"id": "sat-sentinel1a", "type": "Satellite", "name": "Sentinel-1A"},
+    {"id": "org-cems", "type": "Organization", "name": "Copernicus Emergency Management Service"}
+  ],
+  "relations": [
+    {"subject": "evt-3001", "predicate": "uses", "object": "sat-sentinel1d"},
+    {"subject": "evt-3001", "predicate": "uses", "object": "sat-sentinel1a"},
+    {"subject": "evt-3001", "predicate": "managedBy", "object": "org-cems"},
+    {"subject": "evt-3001", "predicate": "relatedTo", "object": "temp-evt-2504"}
+  ]
+}

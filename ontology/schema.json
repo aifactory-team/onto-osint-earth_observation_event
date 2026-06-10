@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "description": "OSINT 온톨로지 스키마 — config/osint-config.json의 seed로부터 초기화되고, 매일 파이프라인 실행 시 자동 확장된다. 도메인: 위성영상으로 관측 가능한 지구상 이벤트 (Earth Observation Events).",
-  "last_updated": "2026-06-08",
+  "last_updated": "2026-06-10",
   "classes": [
     {
       "id": "Entity",
@@ -665,6 +665,13 @@
       "target": "evt-2901(신규), evt-2902(신규), evt-2903(신규) + updates to evt-202, temp-evt-2504, evt-1101, evt-082, evt-701, temp-evt-1902, temp-evt-2501, evt-203, evt-204, ent-evt-kharg, evt-092, evt-2801, temp-evt-1401, evt-128",
       "reason": "신규 3건: (1) 베트남 스프래틀리 27사이트 18암초 건설(evt-2901, 10.0N/114.0E, PlanetScope+WV-3, RFA, VN, dom-defense, multiSatBoost+hiResBoost). (2) 시진핑 방북 종결 6/9 이탈(evt-2902, 39.0N/125.8E, WV-3+PlanetScope, NPR, KP, dom-human, koreaBoost+multiSatBoost+hiResBoost, temp-evt-2501 시리즈). (3) 비스마르크해 부석 마누스섬 도달(evt-2903, 2.1S/147.0E, 5위성, RNZ, PG, dom-disaster, multiSatBoost+officialBoost, evt-701 cascading). 업데이트 14건. 다중 위성 5건. 한반도 GeoFocus 4건. 스키마 구조 변경 없음.",
       "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009", "src-010", "src-011", "src-012", "src-013", "src-014", "src-015", "src-016", "src-017", "src-018", "src-019", "src-020"]
+    },
+    {
+      "date": "2026-06-10",
+      "action": "add_event_and_update",
+      "target": "evt-3001(신규), evt-3002(신규), evt-3003(신규), evt-3004(신규) + updates to evt-202, evt-701, evt-1101, evt-082, temp-evt-1902, temp-evt-2504, evt-203, evt-204, ent-evt-kharg, evt-092, evt-2801, temp-evt-1401, evt-128, evt-2901",
+      "reason": "신규 4건: (1) GFM v4.1.1 Sentinel-1D 통합(evt-3001, SatOps, CEMS 공식, S-1D SAR 데이터 글로벌 홍수 모니터링 통합, temp-evt-2504 S-1 재구성 시리즈). (2) Vantor Vantage Pulse 소형위성 확장(evt-3002, SatOps, PR cap 0.70, 16기 추가 계약). (3) 아마존 삼림벌채 역대 최저(evt-3003, BR, dom-climate, INPE 공식 Landsat 시계열, 1325km² 2014 이래 최저, 단 산림 황폐화는 증가). (4) GFW 글로벌 식생 교란 경보 개시(evt-3004, INTL, dom-climate, Sentinel-2+Landsat+Planet NICFI, 비산림 식생 교란 포함 확대). 업데이트 14건: Kilauea Ep49 예보 6/12-15 단축 가장 유력 6/13-14(evt-202, tilt 15.2μrad 가속), Bismarck Sea 마누스 3kmx5km 5m깊이 부석 + 신규 섬 가능(evt-701, 5위성 유지), 캐나다 산불 142건 BC 최고위험(evt-1101, 5위성), Mayon Day156+ VAAC FL090(evt-082), Super El Niño +0.9°C threshold CPC/ECMWF/IRI(temp-evt-1902), S-1C Day2 중단(temp-evt-2504), Great Sitkin WATCH(evt-203), Shishaldin ADVISORY(evt-204), Kharg 45km²(ent-evt-kharg), Antelope Reef 1490ac(evt-092), 미림 퍼레이드(evt-2801), Kanlaon AL2(temp-evt-1401), Dukono AL2(evt-128), Vietnam Spratly 지속(evt-2901). 다중 위성 교차검증 5건 유지. cascading_disaster 1건 지속(evt-701→manus 확대). 한반도 GeoFocus 1건(evt-2801 미림). 스키마 구조적 변경 없음 — 기존 클래스·관계로 충분.",
+      "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009", "src-010", "src-011", "src-012", "src-013", "src-014", "src-015", "src-016", "src-017", "src-018", "src-019", "src-020", "src-021", "src-022"]
     }
   ]
 }

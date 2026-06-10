@@ -1,0 +1,27 @@
+{
+  "id": "src-014",
+  "title": "GFW 글로벌 식생 교란 경보 서비스 개시",
+  "url": "https://www.globalforestwatch.org/blog/data-and-tools/global-vegetation-disturbance-deforestation-alerts/",
+  "snippet": "Global Forest Watch launches expanded global vegetation disturbance alerts, going beyond forest loss to cover cropland, grassland, and wetland disturbance. The service uses Sentinel-2 and Landsat multispectral NDVI change detection to identify vegetation loss events globally. Builds on GLAD deforestation alerts but with broader scope covering all vegetation types.",
+  "source_name": "Global Forest Watch",
+  "language": "en",
+  "discovered_date": "2026-06-10",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "GFW 식생 교란 경보 확장은 이전 미보고 신규 이벤트. 위성 기반 환경 모니터링 인프라 확장으로 SatOps/ClimateEnvironment 교차 이벤트.",
+  "entities": [
+    {"id": "evt-3004", "type": "Event", "name": "GFW 글로벌 식생 교란 경보 개시", "properties": {"phenomenon": "vegetation_monitoring", "domain": "ClimateEnvironment", "country": "Global"}},
+    {"id": "sat-sentinel2", "type": "Satellite", "name": "Sentinel-2"},
+    {"id": "sat-landsat8", "type": "Satellite", "name": "Landsat-8"},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat-9"},
+    {"id": "org-gfw", "type": "Organization", "name": "Global Forest Watch"}
+  ],
+  "relations": [
+    {"subject": "evt-3004", "predicate": "uses", "object": "sat-sentinel2"},
+    {"subject": "evt-3004", "predicate": "uses", "object": "sat-landsat8"},
+    {"subject": "evt-3004", "predicate": "uses", "object": "sat-landsat9"},
+    {"subject": "evt-3004", "predicate": "managedBy", "object": "org-gfw"},
+    {"subject": "evt-3004", "predicate": "inDomain", "object": "dom-climate-env"}
+  ]
+}

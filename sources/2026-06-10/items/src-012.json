@@ -1,0 +1,26 @@
+{
+  "id": "src-012",
+  "title": "Vantor 위성 함대 확장 — Vantage 20cm + Pulse 40cm 소형위성 추가",
+  "url": "https://spacenews.com/vantor-to-expand-imaging-satellite-fleet-adding-smallsats-to-increase-revisit-rates/",
+  "snippet": "Vantor (formerly spun off from Maxar Technologies) is expanding its imaging satellite fleet by adding Pulse-class smallsats with 40cm resolution alongside its flagship Vantage satellites capable of 20cm ground sample distance. The expansion aims to increase revisit rates for defense and intelligence customers. Vantor imagery was used in recent Reuters/satellite analysis of China's Hami nuclear silo network.",
+  "source_name": "SpaceNews",
+  "language": "en",
+  "discovered_date": "2026-06-10",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "Vantor 함대 확장은 이전 미보고. Vantor 위성은 중국 핵 사일로(temp-evt-1301) 분석에 활용되었으나, 함대 확장 자체는 별도의 SatOps 이벤트.",
+  "entities": [
+    {"id": "evt-3002", "type": "Event", "name": "Vantor 위성 함대 확장", "properties": {"phenomenon": "satellite_infrastructure", "domain": "SatOps", "country": "Global"}},
+    {"id": "sat-vantor-vantage", "type": "Satellite", "name": "Vantor Vantage", "properties": {"resolution_cm": 20, "type": "EO_optical"}},
+    {"id": "sat-vantor-pulse", "type": "Satellite", "name": "Vantor Pulse", "properties": {"resolution_cm": 40, "type": "EO_optical_smallsat"}},
+    {"id": "org-vantor", "type": "Organization", "name": "Vantor"}
+  ],
+  "relations": [
+    {"subject": "evt-3002", "predicate": "involves", "object": "sat-vantor-vantage"},
+    {"subject": "evt-3002", "predicate": "involves", "object": "sat-vantor-pulse"},
+    {"subject": "evt-3002", "predicate": "managedBy", "object": "org-vantor"},
+    {"subject": "sat-vantor-vantage", "predicate": "operatedBy", "object": "org-vantor"},
+    {"subject": "sat-vantor-pulse", "predicate": "operatedBy", "object": "org-vantor"}
+  ]
+}
