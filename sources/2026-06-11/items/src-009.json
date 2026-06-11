@@ -1,0 +1,26 @@
+{
+  "id": "src-009",
+  "title": "Shishaldin ADVISORY/YELLOW — 6/6 조종사 75nm 증기 기둥 목격, TROPOMI SO₂ 지속",
+  "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-AVO-2026-06-10T17:00:00+00:00",
+  "snippet": "USGS AVO maintains ADVISORY/YELLOW for Shishaldin. June 6 pilot report: 75 nautical mile (139 km) steam plume observed. Sentinel-5P TROPOMI SO2 emissions consistent with typical volcanic degassing pattern. Seismic and infrasound activity continues. No explosive eruption imminent but elevated unrest.",
+  "source_name": "USGS AVO",
+  "language": "en",
+  "discovered_date": "2026-06-11",
+  "tag": "update",
+  "related_report": "2026-06-10",
+  "related_item": "evt-204",
+  "tag_reason": "6/6 조종사 보고의 75nm 증기 기둥은 전일 미보고 구체 정보. TROPOMI SO₂ 패턴 유지 확인.",
+  "entities": [
+    {"id": "evt-204", "type": "Event", "name": "Shishaldin 화산 활동", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "US", "lat": 54.76, "lon": -163.97, "alert_level": "ADVISORY", "aviation_color": "YELLOW", "steam_plume_nm": 75}},
+    {"id": "sat-sentinel5p", "type": "Satellite", "name": "Sentinel-5P"},
+    {"id": "org-usgs-avo", "type": "Organization", "name": "USGS Alaska Volcano Observatory"}
+  ],
+  "relations": [
+    {"subject": "evt-204", "predicate": "observedBy", "object": "sat-sentinel5p"},
+    {"subject": "evt-204", "predicate": "usesSensor", "object": "sensor-tropomi"},
+    {"subject": "evt-204", "predicate": "monitoredBy", "object": "org-usgs-avo"},
+    {"subject": "evt-204", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "evt-204", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "evt-204", "predicate": "manifests", "object": "phen-volcanic-eruption"}
+  ]
+}

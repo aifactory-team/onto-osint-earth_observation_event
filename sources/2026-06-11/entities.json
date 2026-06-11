@@ -1,0 +1,589 @@
+{
+  "date": "2026-06-11",
+  "entities": [
+    {
+      "temp_id": "evt-3101",
+      "matched_id": null,
+      "type": "Event",
+      "name": "러시아 전차 비축량 OSINT 위성분석",
+      "properties": {"phenomenon": "military_buildup", "domain": "Defense", "country": "RU", "lat": 55.0, "lon": 73.4, "observation_date": "2026-06-09", "severity": "high", "tank_count_total": 2088, "tank_count_usable": 851, "pre_war_total": 7342, "used": 4799, "confidence": 0.80},
+      "source_ids": ["src-001"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "evt-3102",
+      "matched_id": null,
+      "type": "Event",
+      "name": "브라질 DETER 위성도구 사용금지 법안 통과",
+      "properties": {"phenomenon": "deforestation", "domain": "HumanActivity", "country": "BR", "lat": -3.0, "lon": -60.0, "observation_date": "2026-05-28", "severity": "high", "confidence": 0.80},
+      "source_ids": ["src-002"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "evt-3001",
+      "matched_id": "evt-3001",
+      "type": "Event",
+      "name": "GFM v4.1.1 Sentinel-1D 통합 롤아웃",
+      "properties": {"phenomenon": "satellite_data_product", "domain": "SatOps", "country": "Global", "rollout_date": "2026-06-11", "status": "completed", "confidence": 0.90},
+      "source_ids": ["src-003"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "evt-202",
+      "matched_id": "evt-202",
+      "type": "Event",
+      "name": "Kilauea Ep49 분수분출 예보",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "US", "lat": 19.421, "lon": -155.287, "alert_level": "ADVISORY", "aviation_color": "YELLOW", "forecast_window": "2026-06-12/15", "confidence": 0.90},
+      "source_ids": ["src-004"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "evt-2903",
+      "matched_id": "evt-2903",
+      "type": "Event",
+      "name": "비스마르크해 부석 뗏목 마누스섬 타격",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "PG", "lat": -2.09, "lon": 147.0, "severity": "high", "pumice_area_km2": 69, "eruption_duration_days": 34, "confidence": 0.95},
+      "source_ids": ["src-005"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "evt-1101",
+      "matched_id": "evt-1101",
+      "type": "Event",
+      "name": "캐나다 2026 산불 시즌",
+      "properties": {"phenomenon": "wildfire", "domain": "Disaster", "country": "CA", "lat": 53.7, "lon": -127.6, "active_fires": 65, "out_of_control": 6, "area_burned_ha": 18935, "confidence": 0.90},
+      "source_ids": ["src-006"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "evt-082",
+      "matched_id": "evt-082",
+      "type": "Event",
+      "name": "Mayon 화산 AL3 분출",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "PH", "lat": 13.257, "lon": 123.685, "alert_level": "AL3", "displaced": 287000, "pdz_km": 6, "confidence": 0.90},
+      "source_ids": ["src-007"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "evt-203",
+      "matched_id": "evt-203",
+      "type": "Event",
+      "name": "Great Sitkin 용암돔 분출",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "US", "lat": 52.08, "lon": -176.13, "alert_level": "WATCH", "aviation_color": "ORANGE", "confidence": 0.85},
+      "source_ids": ["src-008"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "evt-204",
+      "matched_id": "evt-204",
+      "type": "Event",
+      "name": "Shishaldin 화산 활동",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "US", "lat": 54.76, "lon": -163.97, "alert_level": "ADVISORY", "aviation_color": "YELLOW", "confidence": 0.80},
+      "source_ids": ["src-009"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-evt-1902",
+      "matched_id": "temp-evt-1902",
+      "type": "Event",
+      "name": "2026 El Niño (Super El Niño 가능)",
+      "properties": {"phenomenon": "enso", "domain": "ClimateEnvironment", "country": "Global", "lat": 0.0, "lon": -170.0, "nino34_anomaly": 0.9, "iri_probability": 0.98, "wmo_probability": 0.80, "confidence": 0.90},
+      "source_ids": ["src-010"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-evt-2301",
+      "matched_id": "temp-evt-2301",
+      "type": "Event",
+      "name": "북극 해빙 역대 최저 면적",
+      "properties": {"phenomenon": "glacier_retreat", "domain": "ClimateEnvironment", "country": "Global", "lat": 90.0, "lon": 0.0, "may_extent_million_km2": 11.439, "trend": "near_record_low", "confidence": 0.90},
+      "source_ids": ["src-011"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "evt-3003",
+      "matched_id": "evt-3003",
+      "type": "Event",
+      "name": "아마존 삼림벌채 역대 최저",
+      "properties": {"phenomenon": "deforestation", "domain": "ClimateEnvironment", "country": "BR", "lat": -3.0, "lon": -60.0, "area_km2": 1325, "deter_12mo_km2": 3770, "confidence": 0.85},
+      "source_ids": ["src-012"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "evt-092",
+      "matched_id": "evt-092",
+      "type": "Event",
+      "name": "Antelope Reef 인공섬 건설",
+      "properties": {"phenomenon": "construction", "domain": "Defense", "country": "CN", "lat": 16.5, "lon": 111.6, "area_acres": 1490, "structures": 50, "confidence": 0.90},
+      "source_ids": ["src-013"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "org-jompy",
+      "matched_id": null,
+      "type": "Organization",
+      "name": "Jompy (OSINT analyst)",
+      "properties": {"type": "analyst", "specialty": "military_satellite_analysis"},
+      "source_ids": ["src-001"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "org-ibama",
+      "matched_id": null,
+      "type": "Organization",
+      "name": "IBAMA",
+      "properties": {"type": "government_agency", "country": "BR"},
+      "source_ids": ["src-002"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "org-cems",
+      "matched_id": "org-cems",
+      "type": "Organization",
+      "name": "Copernicus Emergency Management Service (CEMS)",
+      "properties": {"type": "official_agency", "country": "EU"},
+      "source_ids": ["src-003"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "org-usgs-hvo",
+      "matched_id": null,
+      "type": "Organization",
+      "name": "USGS Hawaiian Volcano Observatory",
+      "properties": {"type": "official_agency", "country": "US"},
+      "source_ids": ["src-004"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "org-nasa-eo",
+      "matched_id": null,
+      "type": "Organization",
+      "name": "NASA Earth Observatory",
+      "properties": {"type": "official_agency", "country": "US"},
+      "source_ids": ["src-005"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "org-ciffc",
+      "matched_id": null,
+      "type": "Organization",
+      "name": "CIFFC (Canadian Interagency Forest Fire Centre)",
+      "properties": {"type": "official_agency", "country": "CA"},
+      "source_ids": ["src-006"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "org-phivolcs",
+      "matched_id": null,
+      "type": "Organization",
+      "name": "PHIVOLCS",
+      "properties": {"type": "official_agency", "country": "PH"},
+      "source_ids": ["src-007"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "org-usgs-avo",
+      "matched_id": null,
+      "type": "Organization",
+      "name": "USGS Alaska Volcano Observatory",
+      "properties": {"type": "official_agency", "country": "US"},
+      "source_ids": ["src-008", "src-009"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "org-iri",
+      "matched_id": null,
+      "type": "Organization",
+      "name": "IRI Columbia (International Research Institute for Climate and Society)",
+      "properties": {"type": "research", "country": "US"},
+      "source_ids": ["src-010"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "org-noaa-cpc",
+      "matched_id": null,
+      "type": "Organization",
+      "name": "NOAA Climate Prediction Center",
+      "properties": {"type": "official_agency", "country": "US"},
+      "source_ids": ["src-010"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "org-nsidc",
+      "matched_id": null,
+      "type": "Organization",
+      "name": "NSIDC (National Snow and Ice Data Center)",
+      "properties": {"type": "official_agency", "country": "US"},
+      "source_ids": ["src-011"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "org-inpe",
+      "matched_id": "org-inpe",
+      "type": "Organization",
+      "name": "INPE (Brazil National Institute for Space Research)",
+      "properties": {"type": "official_agency", "country": "BR"},
+      "source_ids": ["src-002", "src-012"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "org-csis-amti",
+      "matched_id": null,
+      "type": "Organization",
+      "name": "CSIS Asia Maritime Transparency Initiative",
+      "properties": {"type": "analyst", "country": "US"},
+      "source_ids": ["src-013"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "sat-worldview3",
+      "matched_id": "sat-worldview3",
+      "type": "Satellite",
+      "name": "WorldView-3",
+      "properties": {"operator": "Maxar/Vantor", "resolution_cm": 31, "sensor_type": "optical_pan"},
+      "source_ids": ["src-001", "src-013"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "sat-planetscope",
+      "matched_id": "sat-planetscope",
+      "type": "Satellite",
+      "name": "PlanetScope",
+      "properties": {"operator": "Planet", "resolution_m": 3, "sensor_type": "optical_multispectral"},
+      "source_ids": ["src-001", "src-013"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "sat-sentinel1a",
+      "matched_id": "sat-sentinel1a",
+      "type": "Satellite",
+      "name": "Sentinel-1A",
+      "properties": {"operator": "ESA", "sensor_type": "C-SAR"},
+      "source_ids": ["src-003"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "sat-sentinel1c",
+      "matched_id": "sat-sentinel1c",
+      "type": "Satellite",
+      "name": "Sentinel-1C",
+      "properties": {"operator": "ESA", "sensor_type": "C-SAR"},
+      "source_ids": ["src-003"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "sat-sentinel1d",
+      "matched_id": "sat-sentinel1d",
+      "type": "Satellite",
+      "name": "Sentinel-1D",
+      "properties": {"operator": "ESA", "sensor_type": "C-SAR"},
+      "source_ids": ["src-003"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "sat-sentinel1",
+      "matched_id": "sat-sentinel1",
+      "type": "Satellite",
+      "name": "Sentinel-1",
+      "properties": {"operator": "ESA", "sensor_type": "C-SAR"},
+      "source_ids": ["src-008", "src-011"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "sat-sentinel2",
+      "matched_id": "sat-sentinel2",
+      "type": "Satellite",
+      "name": "Sentinel-2",
+      "properties": {"operator": "ESA", "sensor_type": "MSI"},
+      "source_ids": ["src-004", "src-005", "src-006", "src-007"],
+      "mention_count": 4
+    },
+    {
+      "temp_id": "sat-sentinel5p",
+      "matched_id": "sat-sentinel5p",
+      "type": "Satellite",
+      "name": "Sentinel-5P",
+      "properties": {"operator": "ESA", "sensor_type": "TROPOMI"},
+      "source_ids": ["src-009"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "sat-landsat8",
+      "matched_id": "sat-landsat8",
+      "type": "Satellite",
+      "name": "Landsat-8",
+      "properties": {"operator": "USGS/NASA", "sensor_type": "OLI"},
+      "source_ids": ["src-002", "src-012"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "sat-landsat9",
+      "matched_id": "sat-landsat9",
+      "type": "Satellite",
+      "name": "Landsat-9",
+      "properties": {"operator": "USGS/NASA", "sensor_type": "OLI-2"},
+      "source_ids": ["src-004", "src-005", "src-007", "src-008", "src-012"],
+      "mention_count": 5
+    },
+    {
+      "temp_id": "sat-modis",
+      "matched_id": "sat-modis",
+      "type": "Satellite",
+      "name": "MODIS (Terra/Aqua)",
+      "properties": {"operator": "NASA", "sensor_type": "MODIS"},
+      "source_ids": ["src-002", "src-005", "src-006", "src-012"],
+      "mention_count": 4
+    },
+    {
+      "temp_id": "sat-viirs",
+      "matched_id": "sat-viirs",
+      "type": "Satellite",
+      "name": "VIIRS (Suomi NPP/NOAA-21)",
+      "properties": {"operator": "NOAA/NASA", "sensor_type": "VIIRS"},
+      "source_ids": ["src-005", "src-006"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "sat-himawari9",
+      "matched_id": "sat-himawari9",
+      "type": "Satellite",
+      "name": "Himawari-9",
+      "properties": {"operator": "JMA", "sensor_type": "AHI"},
+      "source_ids": ["src-005", "src-007", "src-010"],
+      "mention_count": 3
+    },
+    {
+      "temp_id": "sat-goes18",
+      "matched_id": "sat-goes18",
+      "type": "Satellite",
+      "name": "GOES-18",
+      "properties": {"operator": "NOAA", "sensor_type": "ABI"},
+      "source_ids": ["src-006"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "sat-goes16",
+      "matched_id": "sat-goes16",
+      "type": "Satellite",
+      "name": "GOES-16",
+      "properties": {"operator": "NOAA", "sensor_type": "ABI"},
+      "source_ids": ["src-010"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "sat-jason3",
+      "matched_id": "sat-jason3",
+      "type": "Satellite",
+      "name": "Jason-3",
+      "properties": {"operator": "NOAA/EUMETSAT", "sensor_type": "altimeter"},
+      "source_ids": ["src-010"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "sat-sentinel6",
+      "matched_id": "sat-sentinel6",
+      "type": "Satellite",
+      "name": "Sentinel-6 Michael Freilich",
+      "properties": {"operator": "ESA/EUMETSAT", "sensor_type": "altimeter"},
+      "source_ids": ["src-010"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "sat-icesat2",
+      "matched_id": "sat-icesat2",
+      "type": "Satellite",
+      "name": "ICESat-2",
+      "properties": {"operator": "NASA", "sensor_type": "ATLAS_laser_altimeter"},
+      "source_ids": ["src-011"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "sat-amsr2",
+      "matched_id": "sat-amsr2",
+      "type": "Satellite",
+      "name": "AMSR-2 (GCOM-W)",
+      "properties": {"operator": "JAXA", "sensor_type": "passive_microwave"},
+      "source_ids": ["src-011"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "dp-deter",
+      "matched_id": null,
+      "type": "DataProduct",
+      "name": "DETER (Real-Time Deforestation Detection System)",
+      "properties": {"provider": "INPE", "type": "deforestation_alert", "satellites": ["Landsat-8", "Landsat-9", "MODIS"]},
+      "source_ids": ["src-002"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "dp-deter-prodes",
+      "matched_id": "dp-deter-prodes",
+      "type": "DataProduct",
+      "name": "DETER/PRODES",
+      "properties": {"provider": "INPE", "type": "deforestation_alert"},
+      "source_ids": ["src-012"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "loc-omsktransmash",
+      "matched_id": null,
+      "type": "Location",
+      "name": "Omsktransmash Storage Base, Omsk",
+      "properties": {"country": "RU", "lat": 54.97, "lon": 73.37},
+      "source_ids": ["src-001"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "loc-antelope-reef",
+      "matched_id": null,
+      "type": "Location",
+      "name": "Antelope Reef, Paracel Islands",
+      "properties": {"country": "CN", "lat": 16.5, "lon": 111.6, "sea": "South China Sea"},
+      "source_ids": ["src-013"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "co-ru",
+      "matched_id": null,
+      "type": "Country",
+      "name": "러시아",
+      "properties": {"iso_code": "RU"},
+      "source_ids": ["src-001"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "co-br",
+      "matched_id": "co-br",
+      "type": "Country",
+      "name": "브라질",
+      "properties": {"iso_code": "BR"},
+      "source_ids": ["src-002", "src-012"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "co-cn",
+      "matched_id": null,
+      "type": "Country",
+      "name": "중국",
+      "properties": {"iso_code": "CN"},
+      "source_ids": ["src-013"],
+      "mention_count": 1
+    }
+  ],
+  "relations": [
+    {"subject": "evt-3101", "predicate": "observedBy", "object": "sat-worldview3", "source_ids": ["src-001"], "confidence": 0.75},
+    {"subject": "evt-3101", "predicate": "observedBy", "object": "sat-planetscope", "source_ids": ["src-001"], "confidence": 0.75},
+    {"subject": "evt-3101", "predicate": "analyzedBy", "object": "org-jompy", "source_ids": ["src-001"], "confidence": 0.90},
+    {"subject": "evt-3101", "predicate": "locatedIn", "object": "loc-omsktransmash", "source_ids": ["src-001"], "confidence": 0.85},
+    {"subject": "evt-3101", "predicate": "inCountry", "object": "co-ru", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "evt-3101", "predicate": "inDomain", "object": "dom-defense", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "evt-3101", "predicate": "manifests", "object": "phen-military-buildup", "source_ids": ["src-001"], "confidence": 0.90},
+
+    {"subject": "evt-3102", "predicate": "affects", "object": "dp-deter", "source_ids": ["src-002"], "confidence": 0.95},
+    {"subject": "evt-3102", "predicate": "affects", "object": "org-ibama", "source_ids": ["src-002"], "confidence": 0.90},
+    {"subject": "dp-deter", "predicate": "providedBy", "object": "org-inpe", "source_ids": ["src-002"], "confidence": 0.95},
+    {"subject": "dp-deter", "predicate": "uses", "object": "sat-landsat8", "source_ids": ["src-002"], "confidence": 0.90},
+    {"subject": "dp-deter", "predicate": "uses", "object": "sat-modis", "source_ids": ["src-002"], "confidence": 0.90},
+    {"subject": "evt-3102", "predicate": "inCountry", "object": "co-br", "source_ids": ["src-002"], "confidence": 0.95},
+    {"subject": "evt-3102", "predicate": "relatedTo", "object": "evt-3003", "source_ids": ["src-002", "src-012"], "confidence": 0.90},
+    {"subject": "evt-3102", "predicate": "inDomain", "object": "dom-human-activity", "source_ids": ["src-002"], "confidence": 0.95},
+    {"subject": "evt-3102", "predicate": "manifests", "object": "phen-deforestation", "source_ids": ["src-002"], "confidence": 0.85},
+
+    {"subject": "evt-3001", "predicate": "uses", "object": "sat-sentinel1a", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "evt-3001", "predicate": "uses", "object": "sat-sentinel1c", "source_ids": ["src-003"], "confidence": 0.90},
+    {"subject": "evt-3001", "predicate": "uses", "object": "sat-sentinel1d", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "evt-3001", "predicate": "managedBy", "object": "org-cems", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "evt-3001", "predicate": "relatedTo", "object": "temp-evt-2504", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "evt-3001", "predicate": "inDomain", "object": "dom-satops", "source_ids": ["src-003"], "confidence": 0.95},
+
+    {"subject": "evt-202", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-004"], "confidence": 0.90},
+    {"subject": "evt-202", "predicate": "observedBy", "object": "sat-sentinel2", "source_ids": ["src-004"], "confidence": 0.90},
+    {"subject": "evt-202", "predicate": "monitoredBy", "object": "org-usgs-hvo", "source_ids": ["src-004"], "confidence": 0.95},
+    {"subject": "evt-202", "predicate": "inCountry", "object": "co-us", "source_ids": ["src-004"], "confidence": 0.95},
+    {"subject": "evt-202", "predicate": "inDomain", "object": "dom-disaster", "source_ids": ["src-004"], "confidence": 0.95},
+    {"subject": "evt-202", "predicate": "manifests", "object": "phen-volcanic-eruption", "source_ids": ["src-004"], "confidence": 0.95},
+
+    {"subject": "evt-2903", "predicate": "partOfSeries", "object": "evt-701", "source_ids": ["src-005"], "confidence": 0.95},
+    {"subject": "evt-2903", "predicate": "observedBy", "object": "sat-sentinel2", "source_ids": ["src-005"], "confidence": 0.95},
+    {"subject": "evt-2903", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-005"], "confidence": 0.90},
+    {"subject": "evt-2903", "predicate": "observedBy", "object": "sat-modis", "source_ids": ["src-005"], "confidence": 0.85},
+    {"subject": "evt-2903", "predicate": "observedBy", "object": "sat-viirs", "source_ids": ["src-005"], "confidence": 0.85},
+    {"subject": "evt-2903", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-005"], "confidence": 0.85},
+    {"subject": "evt-2903", "predicate": "analyzedBy", "object": "org-nasa-eo", "source_ids": ["src-005"], "confidence": 0.95},
+    {"subject": "evt-2903", "predicate": "inCountry", "object": "co-pg", "source_ids": ["src-005"], "confidence": 0.95},
+    {"subject": "evt-2903", "predicate": "inDomain", "object": "dom-disaster", "source_ids": ["src-005"], "confidence": 0.95},
+    {"subject": "evt-2903", "predicate": "manifests", "object": "phen-volcanic-eruption", "source_ids": ["src-005"], "confidence": 0.95},
+
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-viirs", "source_ids": ["src-006"], "confidence": 0.95},
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-modis", "source_ids": ["src-006"], "confidence": 0.95},
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-goes18", "source_ids": ["src-006"], "confidence": 0.90},
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-sentinel2", "source_ids": ["src-006"], "confidence": 0.85},
+    {"subject": "evt-1101", "predicate": "monitoredBy", "object": "org-ciffc", "source_ids": ["src-006"], "confidence": 0.90},
+    {"subject": "evt-1101", "predicate": "inCountry", "object": "co-ca", "source_ids": ["src-006"], "confidence": 0.95},
+    {"subject": "evt-1101", "predicate": "inDomain", "object": "dom-disaster", "source_ids": ["src-006"], "confidence": 0.95},
+    {"subject": "evt-1101", "predicate": "manifests", "object": "phen-wildfire", "source_ids": ["src-006"], "confidence": 0.95},
+
+    {"subject": "evt-082", "predicate": "observedBy", "object": "sat-sentinel2", "source_ids": ["src-007"], "confidence": 0.90},
+    {"subject": "evt-082", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-007"], "confidence": 0.90},
+    {"subject": "evt-082", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-007"], "confidence": 0.85},
+    {"subject": "evt-082", "predicate": "monitoredBy", "object": "org-phivolcs", "source_ids": ["src-007"], "confidence": 0.95},
+    {"subject": "evt-082", "predicate": "inCountry", "object": "co-ph", "source_ids": ["src-007"], "confidence": 0.95},
+    {"subject": "evt-082", "predicate": "inDomain", "object": "dom-disaster", "source_ids": ["src-007"], "confidence": 0.95},
+    {"subject": "evt-082", "predicate": "manifests", "object": "phen-volcanic-eruption", "source_ids": ["src-007"], "confidence": 0.95},
+
+    {"subject": "evt-203", "predicate": "observedBy", "object": "sat-sentinel1", "source_ids": ["src-008"], "confidence": 0.90},
+    {"subject": "evt-203", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-008"], "confidence": 0.90},
+    {"subject": "evt-203", "predicate": "monitoredBy", "object": "org-usgs-avo", "source_ids": ["src-008"], "confidence": 0.95},
+    {"subject": "evt-203", "predicate": "inCountry", "object": "co-us", "source_ids": ["src-008"], "confidence": 0.95},
+    {"subject": "evt-203", "predicate": "inDomain", "object": "dom-disaster", "source_ids": ["src-008"], "confidence": 0.95},
+    {"subject": "evt-203", "predicate": "manifests", "object": "phen-volcanic-eruption", "source_ids": ["src-008"], "confidence": 0.95},
+
+    {"subject": "evt-204", "predicate": "observedBy", "object": "sat-sentinel5p", "source_ids": ["src-009"], "confidence": 0.90},
+    {"subject": "evt-204", "predicate": "usesSensor", "object": "sensor-tropomi", "source_ids": ["src-009"], "confidence": 0.90},
+    {"subject": "evt-204", "predicate": "monitoredBy", "object": "org-usgs-avo", "source_ids": ["src-009"], "confidence": 0.95},
+    {"subject": "evt-204", "predicate": "inCountry", "object": "co-us", "source_ids": ["src-009"], "confidence": 0.95},
+    {"subject": "evt-204", "predicate": "inDomain", "object": "dom-disaster", "source_ids": ["src-009"], "confidence": 0.95},
+    {"subject": "evt-204", "predicate": "manifests", "object": "phen-volcanic-eruption", "source_ids": ["src-009"], "confidence": 0.90},
+
+    {"subject": "temp-evt-1902", "predicate": "observedBy", "object": "sat-jason3", "source_ids": ["src-010"], "confidence": 0.90},
+    {"subject": "temp-evt-1902", "predicate": "observedBy", "object": "sat-sentinel6", "source_ids": ["src-010"], "confidence": 0.90},
+    {"subject": "temp-evt-1902", "predicate": "observedBy", "object": "sat-goes16", "source_ids": ["src-010"], "confidence": 0.85},
+    {"subject": "temp-evt-1902", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-010"], "confidence": 0.85},
+    {"subject": "temp-evt-1902", "predicate": "analyzedBy", "object": "org-iri", "source_ids": ["src-010"], "confidence": 0.90},
+    {"subject": "temp-evt-1902", "predicate": "analyzedBy", "object": "org-noaa-cpc", "source_ids": ["src-010"], "confidence": 0.95},
+    {"subject": "temp-evt-1902", "predicate": "inDomain", "object": "dom-climate-env", "source_ids": ["src-010"], "confidence": 0.95},
+    {"subject": "temp-evt-1902", "predicate": "manifests", "object": "phen-enso", "source_ids": ["src-010"], "confidence": 0.95},
+
+    {"subject": "temp-evt-2301", "predicate": "observedBy", "object": "sat-icesat2", "source_ids": ["src-011"], "confidence": 0.95},
+    {"subject": "temp-evt-2301", "predicate": "observedBy", "object": "sat-amsr2", "source_ids": ["src-011"], "confidence": 0.90},
+    {"subject": "temp-evt-2301", "predicate": "observedBy", "object": "sat-sentinel1", "source_ids": ["src-011"], "confidence": 0.85},
+    {"subject": "temp-evt-2301", "predicate": "analyzedBy", "object": "org-nsidc", "source_ids": ["src-011"], "confidence": 0.95},
+    {"subject": "temp-evt-2301", "predicate": "analyzedBy", "object": "org-nasa", "source_ids": ["src-011"], "confidence": 0.90},
+    {"subject": "temp-evt-2301", "predicate": "inDomain", "object": "dom-climate-env", "source_ids": ["src-011"], "confidence": 0.95},
+    {"subject": "temp-evt-2301", "predicate": "manifests", "object": "phen-glacier-retreat", "source_ids": ["src-011"], "confidence": 0.95},
+
+    {"subject": "evt-3003", "predicate": "observedBy", "object": "sat-landsat8", "source_ids": ["src-012"], "confidence": 0.90},
+    {"subject": "evt-3003", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-012"], "confidence": 0.90},
+    {"subject": "evt-3003", "predicate": "observedBy", "object": "sat-modis", "source_ids": ["src-012"], "confidence": 0.85},
+    {"subject": "evt-3003", "predicate": "monitoredBy", "object": "org-inpe", "source_ids": ["src-012"], "confidence": 0.95},
+    {"subject": "evt-3003", "predicate": "usesDataProduct", "object": "dp-deter-prodes", "source_ids": ["src-012"], "confidence": 0.90},
+    {"subject": "evt-3003", "predicate": "relatedTo", "object": "evt-3102", "source_ids": ["src-012"], "confidence": 0.90},
+    {"subject": "evt-3003", "predicate": "inCountry", "object": "co-br", "source_ids": ["src-012"], "confidence": 0.95},
+    {"subject": "evt-3003", "predicate": "inDomain", "object": "dom-climate-env", "source_ids": ["src-012"], "confidence": 0.95},
+    {"subject": "evt-3003", "predicate": "manifests", "object": "phen-deforestation", "source_ids": ["src-012"], "confidence": 0.90},
+
+    {"subject": "evt-092", "predicate": "observedBy", "object": "sat-planetscope", "source_ids": ["src-013"], "confidence": 0.90},
+    {"subject": "evt-092", "predicate": "observedBy", "object": "sat-worldview3", "source_ids": ["src-013"], "confidence": 0.90},
+    {"subject": "evt-092", "predicate": "analyzedBy", "object": "org-csis-amti", "source_ids": ["src-013"], "confidence": 0.95},
+    {"subject": "evt-092", "predicate": "locatedIn", "object": "loc-antelope-reef", "source_ids": ["src-013"], "confidence": 0.95},
+    {"subject": "evt-092", "predicate": "inCountry", "object": "co-cn", "source_ids": ["src-013"], "confidence": 0.90},
+    {"subject": "evt-092", "predicate": "inDomain", "object": "dom-defense", "source_ids": ["src-013"], "confidence": 0.95},
+    {"subject": "evt-092", "predicate": "manifests", "object": "phen-construction", "source_ids": ["src-013"], "confidence": 0.90}
+  ],
+  "stats": {
+    "total_entities": 51,
+    "new_entities": 12,
+    "matched_entities": 39,
+    "total_relations": 91
+  }
+}

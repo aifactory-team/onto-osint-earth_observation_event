@@ -1,0 +1,33 @@
+{
+  "id": "src-010",
+  "title": "El Niño +0.9°C — IRI 98% May-Jul, WMO 80% Jun-Aug, Moderate-Strong 전망",
+  "url": "https://iri.columbia.edu/our-expertise/climate/forecasts/enso/current/",
+  "alt_urls": ["https://weather.com/2026/06/10/news/climate/el-nino-formation-latest", "https://www.washingtonpost.com/weather/2026/06/10/el-nino-2026-forecast/", "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml"],
+  "snippet": "NINO3.4 region weekly SST anomaly at +0.9°C. IRI Columbia forecasts 98% probability of El Niño during May-July 2026. WMO maintains 80% probability for June-August. NOAA CPC outlook: moderate to strong El Niño expected. Satellite sea surface height (Jason-3/Sentinel-6) and SST observations (GOES-16/Himawari-9) support warming trend. Four independent sources cross-verified.",
+  "source_name": "IRI Columbia / Weather.com / Washington Post / NOAA CPC",
+  "language": "en",
+  "discovered_date": "2026-06-11",
+  "tag": "update",
+  "related_report": "2026-06-10",
+  "related_item": "temp-evt-1902",
+  "tag_reason": "IRI 98% 확률 수치 + NOAA CPC moderate-strong 전망은 전일 대비 강화된 다기관 합의. 4개 독립 출처 교차 확인으로 신뢰도 향상.",
+  "entities": [
+    {"id": "temp-evt-1902", "type": "Event", "name": "2026 El Niño (Super El Niño 가능)", "properties": {"phenomenon": "enso", "domain": "ClimateEnvironment", "country": "Global", "lat": 0.0, "lon": -170.0, "nino34_anomaly": 0.9, "iri_probability": 0.98, "wmo_probability": 0.80}},
+    {"id": "sat-jason3", "type": "Satellite", "name": "Jason-3"},
+    {"id": "sat-sentinel6", "type": "Satellite", "name": "Sentinel-6 Michael Freilich"},
+    {"id": "sat-goes16", "type": "Satellite", "name": "GOES-16"},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "org-iri", "type": "Organization", "name": "IRI Columbia (International Research Institute for Climate and Society)"},
+    {"id": "org-noaa-cpc", "type": "Organization", "name": "NOAA Climate Prediction Center"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-1902", "predicate": "observedBy", "object": "sat-jason3"},
+    {"subject": "temp-evt-1902", "predicate": "observedBy", "object": "sat-sentinel6"},
+    {"subject": "temp-evt-1902", "predicate": "observedBy", "object": "sat-goes16"},
+    {"subject": "temp-evt-1902", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "temp-evt-1902", "predicate": "analyzedBy", "object": "org-iri"},
+    {"subject": "temp-evt-1902", "predicate": "analyzedBy", "object": "org-noaa-cpc"},
+    {"subject": "temp-evt-1902", "predicate": "inDomain", "object": "dom-climate-env"},
+    {"subject": "temp-evt-1902", "predicate": "manifests", "object": "phen-enso"}
+  ]
+}

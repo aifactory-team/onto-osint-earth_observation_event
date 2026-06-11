@@ -2995,3 +2995,87 @@ config 한도 내 — 새 클래스 0건, 새 관계 유형 0건.
 | 이벤트 업데이트 | 14건 | 후속 보도 반영 |
 
 config 한도 내 — 새 클래스 0건 (max 3), 새 관계 유형 0건 (max 5). 새 Country/Location/Satellite/Organization 0건.
+
+---
+
+## 2026-06-11 추론 결과
+
+입력: sources/2026-06-11 (3 신규 + 11 업데이트). 신규 Organization 2건(Jompy, Mongabay), Location 1건(러시아 전차 기지).
+
+### multi_satellite_confirmation (다중 위성 교차검증) — 3건
+
+- **추론 #1:** evt-1101 (캐나다 산불 65건 CIFFC L2) — GOES-18(NOAA) + VIIRS(NOAA/NASA) + MODIS(NASA) + Sentinel-2(ESA) + Landsat-9(USGS/NASA) → multiSatBoost +0.20 [0.95, 확정] — 5위성 4기관 교차검증 유지
+- **추론 #2:** evt-701 (비스마르크해 부석 69km2) — Sentinel-2(ESA) + Landsat-9(USGS) + MODIS(NASA) + VIIRS(NOAA) + Himawari-9(JMA) → multiSatBoost +0.20 [0.90, 확정] — 5위성 유지, 역대 최대 부석 뗏목 정량화
+- **추론 #3:** temp-evt-3101 (러시아 전차 OSINT) — WorldView-3(Maxar) + PlanetScope(Planet) + SkySat(Planet) → multiSatBoost +0.20 [0.75, 약가산] — 위성 ID가 추정(assumed)이므로 confidence 0.75. 단일 분석가 출처.
+
+### temporal_progression (시계열 연속 관측) — 4건
+
+- **추론 #4:** evt-202 (Kilauea Ep49 D-1) partOfSeries evt-202 시리즈 → **내일(6/12)부터 분출 예보 창 진입. 가장 유력 6/13-14.** USGS HVO tilt 15.2μrad 가속 지속 [0.95, 확정]
+- **추론 #5:** evt-082 (Mayon Day157+) partOfSeries evt-082 시리즈 → AL3 장기 분출 위기. 287,000명 이재민(역대). VAAC FL090 지속 [0.90, 확정]
+- **추론 #6:** evt-701 (Bismarck Sea 34일째) partOfSeries evt-701 시리즈 → 69km2 부석 뗏목 정량화. 역대 최대 기록 확인. 34일째 cascading chain [0.90, 확정]
+- **추론 #7:** temp-evt-3103 (GFM v4.1.1 TODAY) partOfSeries temp-evt-2504 (Sentinel-1 재구성) → S-1D 금일 통합 롤아웃. Sentinel-1 A/C/D 풀 콘스텔레이션 GFM 가용. 운영 마일스톤 [0.92, 확정]
+
+### cascading_disaster (연쇄 재해) — 1건 지속
+
+- **추론 #8:** evt-701 → evt-2903 → 69km2 역대 최대 부석 뗏목 [0.88, 확정]
+  - 34일째 cascading chain — 이 파이프라인 최장 기간 연쇄 재해 갱신
+  - 정량적 규모 확인: 69km2 = 서울 면적의 약 11%
+
+### sensor_capability_match (센서-현상 적합성) — 4건
+
+- **추론 #9:** temp-evt-3101 (러시아 전차) — WorldView-3/SkySat (<1m) hi-res optical → hiResBoost +0.15 [0.80, 확정] — 군사 차량/장비 식별 가능 해상도
+- **추론 #10:** evt-082 (Mayon) — Himawari-9 AHI 열적외 → thermalBoost +0.10 [0.90, 확정]
+- **추론 #11:** evt-204 (Shishaldin) — TROPOMI SO₂ 검출 → tracegasBoost +0.15 [0.85, 확정]
+- **추론 #12:** evt-203 (Great Sitkin) — Sentinel-1 SAR 용암류 전진 관측(6/6 확인) → sarBoost +0.10 [0.85, 확정]
+
+### official_source_trust (공식 기관 신뢰도) — 2건
+
+- **추론 #13:** temp-evt-3103 (GFM v4.1.1) — Copernicus EMS 공식 → officialBoost +0.15 [0.95, 확정]
+- **추론 #14:** evt-202 (Kilauea) — USGS HVO 공식 예보 → officialBoost +0.15 [0.95, 확정]
+
+### analyst_org_trust (분석가 신뢰도) — 1건
+
+- **추론 #15:** temp-evt-3101 (러시아 전차) — Jompy 독립 OSINT 분석가 → analystBoost +0.10 [0.75, 잠정] — 단일 분석가. 교차검증 대상 없음. 위성 ID 미확인.
+
+### domain_specific (도메인 특수 추론) — 1건
+
+- **추론 #16:** temp-evt-3102 (DETER 금지 법안) → policy_impact_on_eo [0.90, 확정]
+  - 브라질 의회가 INPE DETER 위성 영상의 삼림벌채 규제 활용을 금지하는 법안 통과
+  - evt-3003(아마존 삼림벌채 역대 최저, INPE Landsat 데이터)과 **직접 모순** — 위성 모니터링 성과가 정치적으로 무력화
+  - 1,250명 환경감독관으로 아마존 전역 현장 점검은 물리적 불가능
+  - EO 메타-이벤트: 위성 관측 자체를 대상으로 하는 정책 변화
+
+### korea_geo_focus (한반도 가산) — 0건
+
+- 금일 한반도 신규 이벤트 없음. 기보도 미림 퍼레이드(evt-2801) 및 시진핑 방북(evt-2902)만 — 이미 이전 보고서에서 처리 완료.
+
+### 금일 미적용 규칙
+
+- `disaster_severity_priority`: 신규 고위험 재해 없음 (기존 추적 이벤트만 업데이트).
+- `before_after_credibility`: 금일 신규 before/after 영상 보유 이벤트 없음 (러시아 전차는 시계열 있으나 구체적 전후 비교 미확인).
+- `commercial_imagery_trust`: 금일 상업 위성 직접 발표 없음.
+
+### 추론 통계 (2026-06-11)
+
+| 규칙 | 금일 발동 | 평균 신뢰도 |
+|------|----------|-----------|
+| multi_satellite_confirmation | 3 | 0.87 |
+| temporal_progression | 4 | 0.92 |
+| cascading_disaster | 1 | 0.88 |
+| sensor_capability_match | 4 | 0.85 |
+| official_source_trust | 2 | 0.95 |
+| analyst_org_trust | 1 | 0.75 |
+| domain_specific | 1 | 0.90 |
+| korea_geo_focus | 0 | — |
+| **합계** | **16** | **0.88** |
+
+### 온톨로지 변경
+
+| 변경 유형 | 대상 | 근거 |
+|----------|------|------|
+| 새 Organization | org-jompy (Jompy OSINT), org-mongabay (Mongabay) (2건) | 러시아 전차 분석 + DETER 법안 보도 |
+| 새 Location | ent-loc-ru-tank-bases (러시아 전차 기지 9개소) (1건) | Jompy 분석 대상. 민감 정보 처리(defensive scope) — 개별 기지 좌표 미기재. |
+| 새 Event | temp-evt-3101, temp-evt-3102, temp-evt-3103 (3건) | 러시아 전차 OSINT, DETER 법안, GFM v4.1.1 TODAY |
+| 이벤트 업데이트 | evt-202, evt-701, evt-1101, evt-082, evt-203, evt-204, temp-evt-1902, evt-503, evt-3003, evt-092, evt-3001 (11건) | 후속 정보 반영 |
+
+config 한도 내 — 새 클래스 0건 (max 3), 새 관계 유형 0건 (max 5). 새 Country 0건, 새 Satellite 0건.

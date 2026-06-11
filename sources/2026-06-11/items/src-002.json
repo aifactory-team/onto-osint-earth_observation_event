@@ -1,0 +1,32 @@
+{
+  "id": "src-002",
+  "title": "브라질 의회 DETER 위성도구 사용금지 법안 통과 — 삼림벌채 감시 약화 우려",
+  "url": "https://news.mongabay.com/2026/05/brazil-congress-bill-bar-deter-satellite-deforestation-enforcement/",
+  "snippet": "Brazil's Congress passed a bill prohibiting environmental agencies (IBAMA/ICMBio) from using satellite images via the DETER system to restrict commercial use of illegally deforested lands. The bill would require in-person inspection instead of satellite-based enforcement. With only 1,250 environmental agents for a forest the size of Western Europe, ground-based enforcement is widely considered impractical. DETER uses Landsat and MODIS satellite data processed by Brazil's INPE.",
+  "source_name": "Mongabay",
+  "language": "en",
+  "discovered_date": "2026-06-11",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "브라질 의회의 DETER 위성도구 사용금지 법안은 이전 14일간 미보고 신규 이벤트. 위성 기반 환경 감시 정책의 역행으로 삼림벌채 추적 도메인에 직접적 영향. 기존 아마존 삼림벌채 추적(evt-3003)과 연관되나 정책·법적 이벤트로 독립 생성.",
+  "entities": [
+    {"id": "evt-3102", "type": "Event", "name": "브라질 DETER 위성도구 사용금지 법안 통과", "properties": {"phenomenon": "deforestation", "domain": "HumanActivity", "country": "BR", "lat": -3.0, "lon": -60.0, "observation_date": "2026-05-28", "severity": "high"}},
+    {"id": "dp-deter", "type": "DataProduct", "name": "DETER (Real-Time Deforestation Detection System)", "properties": {"provider": "INPE", "type": "deforestation_alert", "satellites": ["Landsat-8", "Landsat-9", "MODIS"]}},
+    {"id": "org-inpe", "type": "Organization", "name": "INPE (Brazil National Institute for Space Research)", "properties": {"type": "official_agency", "country": "BR"}},
+    {"id": "org-ibama", "type": "Organization", "name": "IBAMA", "properties": {"type": "government_agency", "country": "BR"}},
+    {"id": "sat-landsat8", "type": "Satellite", "name": "Landsat-8"},
+    {"id": "sat-modis", "type": "Satellite", "name": "MODIS (Terra/Aqua)"}
+  ],
+  "relations": [
+    {"subject": "evt-3102", "predicate": "affects", "object": "dp-deter"},
+    {"subject": "evt-3102", "predicate": "affects", "object": "org-ibama"},
+    {"subject": "dp-deter", "predicate": "providedBy", "object": "org-inpe"},
+    {"subject": "dp-deter", "predicate": "uses", "object": "sat-landsat8"},
+    {"subject": "dp-deter", "predicate": "uses", "object": "sat-modis"},
+    {"subject": "evt-3102", "predicate": "inCountry", "object": "co-br"},
+    {"subject": "evt-3102", "predicate": "relatedTo", "object": "evt-3003"},
+    {"subject": "evt-3102", "predicate": "inDomain", "object": "dom-human-activity"},
+    {"subject": "evt-3102", "predicate": "manifests", "object": "phen-deforestation"}
+  ]
+}

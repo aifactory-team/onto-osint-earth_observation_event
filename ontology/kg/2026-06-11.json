@@ -1,0 +1,63 @@
+{
+  "date": "2026-06-11",
+  "new_triples": [
+    {"subject": "temp-evt-3101", "predicate": "manifests", "object": "phen-military", "source_id": "src-001", "date": "2026-06-11", "confidence": 0.80, "type": "explicit"},
+    {"subject": "temp-evt-3101", "predicate": "inDomain", "object": "dom-defense", "source_id": "src-001", "date": "2026-06-11", "confidence": 0.85, "type": "explicit"},
+    {"subject": "temp-evt-3101", "predicate": "inCountry", "object": "co-ru", "source_id": "src-001", "date": "2026-06-11", "confidence": 0.95, "type": "explicit"},
+    {"subject": "temp-evt-3101", "predicate": "observedBy", "object": "sat-worldview3", "source_id": "src-001", "date": "2026-06-11", "confidence": 0.75, "type": "explicit"},
+    {"subject": "temp-evt-3101", "predicate": "observedBy", "object": "sat-planetscope", "source_id": "src-001", "date": "2026-06-11", "confidence": 0.75, "type": "explicit"},
+    {"subject": "temp-evt-3101", "predicate": "analyzedBy", "object": "org-jompy", "source_id": "src-001", "date": "2026-06-11", "confidence": 0.80, "type": "explicit"},
+    {"subject": "temp-evt-3102", "predicate": "manifests", "object": "phen-defor", "source_id": "src-002", "date": "2026-06-11", "confidence": 0.90, "type": "explicit"},
+    {"subject": "temp-evt-3102", "predicate": "inDomain", "object": "dom-human", "source_id": "src-002", "date": "2026-06-11", "confidence": 0.90, "type": "explicit"},
+    {"subject": "temp-evt-3102", "predicate": "inCountry", "object": "co-br", "source_id": "src-002", "date": "2026-06-11", "confidence": 0.95, "type": "explicit"},
+    {"subject": "temp-evt-3102", "predicate": "observedBy", "object": "sat-landsat8", "source_id": "src-002", "date": "2026-06-11", "confidence": 0.85, "type": "explicit"},
+    {"subject": "temp-evt-3102", "predicate": "observedBy", "object": "sat-modis-terra", "source_id": "src-002", "date": "2026-06-11", "confidence": 0.85, "type": "explicit"},
+    {"subject": "temp-evt-3102", "predicate": "reportedBy", "object": "org-mongabay", "source_id": "src-002", "date": "2026-06-11", "confidence": 0.90, "type": "explicit"},
+    {"subject": "temp-evt-3103", "predicate": "manifests", "object": "phen-satops", "source_id": "src-003", "date": "2026-06-11", "confidence": 0.90, "type": "explicit"},
+    {"subject": "temp-evt-3103", "predicate": "observedBy", "object": "sat-sentinel1d", "source_id": "src-003", "date": "2026-06-11", "confidence": 0.95, "type": "explicit"},
+    {"subject": "temp-evt-3103", "predicate": "observedBy", "object": "sat-sentinel1a", "source_id": "src-003", "date": "2026-06-11", "confidence": 0.90, "type": "explicit"},
+    {"subject": "temp-evt-3103", "predicate": "observedBy", "object": "sat-sentinel1c", "source_id": "src-003", "date": "2026-06-11", "confidence": 0.85, "type": "explicit"},
+    {"subject": "temp-evt-3103", "predicate": "usesSensor", "object": "sensor-c-sar", "source_id": "src-003", "date": "2026-06-11", "confidence": 0.95, "type": "explicit"},
+    {"subject": "temp-evt-3103", "predicate": "analyzedBy", "object": "org-cems", "source_id": "src-003", "date": "2026-06-11", "confidence": 0.95, "type": "explicit"},
+    {"subject": "temp-evt-3103", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-003", "date": "2026-06-11", "confidence": 0.85, "type": "explicit"}
+  ],
+  "updated_triples": [
+    {"subject": "evt-202", "predicate": "forecast_window", "object": "2026-06-12/2026-06-15_most_likely_jun13-14_D1", "source_id": "src-004", "date": "2026-06-11", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-701", "predicate": "pumice_area_km2", "object": "69", "source_id": "src-005", "date": "2026-06-11", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-701", "predicate": "status", "object": "largest_ever_pumice_raft", "source_id": "src-005", "date": "2026-06-11", "confidence": 0.85, "type": "explicit"},
+    {"subject": "evt-1101", "predicate": "active_fires", "object": "65_active_18935ha_bc_highest", "source_id": "src-006", "date": "2026-06-11", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-1101", "predicate": "ciffc_level", "object": "level_2", "source_id": "src-006", "date": "2026-06-11", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-082", "predicate": "status", "object": "AL3_Day157+_287K_displaced", "source_id": "src-007", "date": "2026-06-11", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-203", "predicate": "status", "object": "WATCH_ORANGE_6/6_lava_flow_advance", "source_id": "src-008", "date": "2026-06-11", "confidence": 0.85, "type": "explicit"},
+    {"subject": "evt-204", "predicate": "status", "object": "ADVISORY_YELLOW_75nm_steam_plume", "source_id": "src-009", "date": "2026-06-11", "confidence": 0.85, "type": "explicit"},
+    {"subject": "temp-evt-1902", "predicate": "nino34_index", "object": "+0.9C_98pct_probability", "source_id": "src-010", "date": "2026-06-11", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-503", "predicate": "status", "object": "record_low_11.439M_km2", "source_id": "src-011", "date": "2026-06-11", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-3003", "predicate": "status", "object": "lowest_since_2014_tracking_continues", "source_id": "src-012", "date": "2026-06-11", "confidence": 0.85, "type": "explicit"},
+    {"subject": "evt-092", "predicate": "status", "object": "1490_acres_potential_largest_SCS_island", "source_id": "src-013", "date": "2026-06-11", "confidence": 0.85, "type": "explicit"},
+    {"subject": "evt-3001", "predicate": "status", "object": "v4.1.1_rolled_out_today_6/11", "source_id": "src-003", "date": "2026-06-11", "confidence": 0.95, "type": "explicit"}
+  ],
+  "inferred_triples": [
+    {"subject": "evt-1101", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.95, "type": "inferred", "reason": "GOES-18(NOAA) + VIIRS(NOAA/NASA) + MODIS(NASA) + Sentinel-2(ESA) + Landsat-9(USGS/NASA) 5 satellites across 4 agencies maintained"},
+    {"subject": "evt-701", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.90, "type": "inferred", "reason": "Sentinel-2(ESA) + Landsat-9(USGS) + MODIS(NASA) + VIIRS(NOAA) + Himawari-9(JMA) 5 satellites confirmed, 69km2 pumice raft — largest ever"},
+    {"subject": "temp-evt-3101", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.75, "type": "inferred", "reason": "WorldView-3(Maxar) + PlanetScope(Planet) + SkySat(Planet) assumed — commercial hi-res OSINT. Confidence lower because satellite IDs are inferred rather than stated."},
+    {"subject": "evt-202", "predicate": "partOfSeries", "object": "evt-202", "rule": "temporal_progression", "confidence": 0.95, "type": "inferred", "reason": "Ep47-Ep48-Ep49 Kilauea series. D-1 to forecast window (6/12-15, most likely 6/13-14). Tomorrow is earliest possible eruption."},
+    {"subject": "evt-082", "predicate": "partOfSeries", "object": "evt-082", "rule": "temporal_progression", "confidence": 0.90, "type": "inferred", "reason": "Mayon series Day157+, AL3 since Jan 2026. 287K displaced — long-duration volcanic crisis. VAAC FL090 continues."},
+    {"subject": "evt-701", "predicate": "partOfSeries", "object": "evt-701", "rule": "temporal_progression", "confidence": 0.90, "type": "inferred", "reason": "Bismarck Sea pumice raft series day34+. 69km2 quantification — largest ever pumice raft in modern record."},
+    {"subject": "temp-evt-3103", "predicate": "partOfSeries", "object": "temp-evt-2504", "rule": "temporal_progression", "confidence": 0.92, "type": "inferred", "reason": "GFM v4.1.1 S-1D TODAY rollout is continuation of Sentinel-1 constellation reconfiguration (temp-evt-2504). Operational milestone — full A/C/D integration."},
+    {"subject": "evt-701", "predicate": "cascading_impact_expanded", "object": "69km2_largest_pumice_raft_ever", "rule": "cascading_disaster", "confidence": 0.88, "type": "inferred", "reason": "evt-701 submarine eruption -> evt-2903 pumice reaching Manus Island -> now quantified at 69km2, largest ever pumice raft. 34-day cascading chain."},
+    {"subject": "temp-evt-3103", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred", "reason": "Copernicus EMS official rollout of GFM v4.1.1 — EU/ESA operational service"},
+    {"subject": "evt-202", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred", "reason": "USGS HVO continues as primary source for Kilauea forecast"},
+    {"subject": "temp-evt-3101", "predicate": "hiResBoost", "object": "+0.15", "rule": "sensor_capability_match", "confidence": 0.80, "type": "inferred", "reason": "WorldView-3/SkySat (<1m resolution) used for military vehicle/tank counting at storage bases — hi-res optical military OSINT"},
+    {"subject": "temp-evt-3101", "predicate": "analystBoost", "object": "+0.10", "rule": "analyst_org_trust", "confidence": 0.75, "type": "inferred", "reason": "Jompy is independent OSINT analyst — analystBoost applies. Cross-verification with open source imagery. Confidence moderate due to single analyst."},
+    {"subject": "temp-evt-3102", "predicate": "policy_impact_on_eo", "object": "DETER_satellite_monitoring_ban", "rule": "domain_specific", "confidence": 0.90, "type": "inferred", "reason": "Brazil DETER ban directly undermines satellite-based deforestation monitoring — meta-event impacting Earth observation domain itself. Connects evt-3003 (Amazon deforestation lowest) with policy reversal risk."},
+    {"subject": "evt-082", "predicate": "thermalBoost", "object": "+0.10", "rule": "sensor_capability_match_tirs", "confidence": 0.90, "type": "inferred", "reason": "Himawari-9 AHI thermal infrared volcanic ash detection continues"},
+    {"subject": "evt-204", "predicate": "tracegasBoost", "object": "+0.15", "rule": "sensor_capability_match_tracegas", "confidence": 0.85, "type": "inferred", "reason": "Sentinel-5P TROPOMI SO2 detection for Shishaldin 75nm steam plume"},
+    {"subject": "evt-203", "predicate": "sarBoost", "object": "+0.10", "rule": "sensor_capability_match_sar", "confidence": 0.85, "type": "inferred", "reason": "Sentinel-1 SAR lava flow advance monitoring at Great Sitkin (6/6 confirmed)"}
+  ],
+  "stats": {
+    "new_nodes": 4,
+    "new_edges": 19,
+    "updated_edges": 13,
+    "inferred_edges": 16
+  }
+}

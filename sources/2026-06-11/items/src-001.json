@@ -1,0 +1,31 @@
+{
+  "id": "src-001",
+  "title": "러시아 전차 비축량 OSINT 위성분석 — 9개 기지 2,088대, 가용 ~851대, T-80 12개월 내 소진",
+  "url": "https://defence-blog.com/jompy-satellite-imagery-russia-tank-reserves-2026/",
+  "alt_urls": ["https://united24media.com/war/russia-tank-storage-satellite-analysis-osint-june-2026"],
+  "snippet": "OSINT analyst Jompy published satellite imagery analysis on June 9 counting 2,088 tanks across 9 Russian storage bases. Accounting for degradation, usable reserves estimated at ~851. T-80 stocks at Omsktransmash approximately 12 months from exhaustion. 4,799 of 7,342 pre-war tanks have been used. Analysis based on high-resolution commercial satellite imagery (WorldView/PlanetScope methodology).",
+  "source_name": "Defence Blog / United24 Media",
+  "language": "en",
+  "discovered_date": "2026-06-11",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "러시아 전차 비축량 위성 계수 분석은 이전 14일간 미보고 신규 이벤트. OSINT 분석가 Jompy의 6/9 발표로 위성영상 기반 군사 자산 추적. 고해상도 상업위성 활용.",
+  "entities": [
+    {"id": "evt-3101", "type": "Event", "name": "러시아 전차 비축량 OSINT 위성분석", "properties": {"phenomenon": "military_buildup", "domain": "Defense", "country": "RU", "lat": 55.0, "lon": 73.4, "observation_date": "2026-06-09", "severity": "high", "tank_count_total": 2088, "tank_count_usable": 851, "pre_war_total": 7342, "used": 4799}},
+    {"id": "sat-worldview3", "type": "Satellite", "name": "WorldView-3"},
+    {"id": "sat-planetscope", "type": "Satellite", "name": "PlanetScope"},
+    {"id": "org-jompy", "type": "Organization", "name": "Jompy (OSINT analyst)", "properties": {"type": "analyst"}},
+    {"id": "loc-omsktransmash", "type": "Location", "name": "Omsktransmash Storage Base, Omsk", "properties": {"country": "RU", "lat": 54.97, "lon": 73.37}},
+    {"id": "co-ru", "type": "Country", "name": "러시아", "properties": {"iso_code": "RU"}}
+  ],
+  "relations": [
+    {"subject": "evt-3101", "predicate": "observedBy", "object": "sat-worldview3"},
+    {"subject": "evt-3101", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "evt-3101", "predicate": "analyzedBy", "object": "org-jompy"},
+    {"subject": "evt-3101", "predicate": "locatedIn", "object": "loc-omsktransmash"},
+    {"subject": "evt-3101", "predicate": "inCountry", "object": "co-ru"},
+    {"subject": "evt-3101", "predicate": "inDomain", "object": "dom-defense"},
+    {"subject": "evt-3101", "predicate": "manifests", "object": "phen-military-buildup"}
+  ]
+}

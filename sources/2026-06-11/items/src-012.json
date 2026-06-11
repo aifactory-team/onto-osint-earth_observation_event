@@ -1,0 +1,32 @@
+{
+  "id": "src-012",
+  "title": "아마존 삼림벌채 역대 최저 지속 — DETER 12개월 3,770km², 정책 효과 vs 법안 역행",
+  "url": "https://news.mongabay.com/2026/02/amazon-deforestation-on-pace-to-be-the-lowest-on-record-says-brazil/",
+  "snippet": "INPE reports Amazon deforestation at 1,325 km² for Aug 2025-Jan 2026, lowest since 2014. DETER trailing 12-month total: 3,770 km². Deforestation reduction trend sustained but now complicated by Brazil Congress DETER usage ban bill (src-002). Satellite monitoring via Landsat-8/9 and MODIS continues to track deforestation and forest degradation divergent trends.",
+  "source_name": "Mongabay",
+  "language": "en",
+  "discovered_date": "2026-06-11",
+  "tag": "update",
+  "related_report": "2026-06-10",
+  "related_item": "evt-3003",
+  "tag_reason": "DETER trailing 12개월 3,770km² 수치와 DETER 사용금지 법안(src-002)과의 정책적 연계는 전일 대비 새로운 맥락. 데이터 자체는 기존과 동일하나 법안 통과와의 정책 역학이 신규 분석.",
+  "entities": [
+    {"id": "evt-3003", "type": "Event", "name": "아마존 삼림벌채 역대 최저", "properties": {"phenomenon": "deforestation", "domain": "ClimateEnvironment", "country": "BR", "lat": -3.0, "lon": -60.0, "area_km2": 1325, "deter_12mo_km2": 3770, "period": "Aug2025-Jan2026"}},
+    {"id": "sat-landsat8", "type": "Satellite", "name": "Landsat-8"},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat-9"},
+    {"id": "sat-modis", "type": "Satellite", "name": "MODIS (Terra/Aqua)"},
+    {"id": "org-inpe", "type": "Organization", "name": "INPE (Brazil National Institute for Space Research)"},
+    {"id": "dp-deter-prodes", "type": "DataProduct", "name": "DETER/PRODES"}
+  ],
+  "relations": [
+    {"subject": "evt-3003", "predicate": "observedBy", "object": "sat-landsat8"},
+    {"subject": "evt-3003", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "evt-3003", "predicate": "observedBy", "object": "sat-modis"},
+    {"subject": "evt-3003", "predicate": "monitoredBy", "object": "org-inpe"},
+    {"subject": "evt-3003", "predicate": "usesDataProduct", "object": "dp-deter-prodes"},
+    {"subject": "evt-3003", "predicate": "relatedTo", "object": "evt-3102"},
+    {"subject": "evt-3003", "predicate": "inCountry", "object": "co-br"},
+    {"subject": "evt-3003", "predicate": "inDomain", "object": "dom-climate-env"},
+    {"subject": "evt-3003", "predicate": "manifests", "object": "phen-deforestation"}
+  ]
+}

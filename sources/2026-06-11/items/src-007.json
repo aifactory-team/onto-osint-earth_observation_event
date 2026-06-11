@@ -1,0 +1,29 @@
+{
+  "id": "src-007",
+  "title": "마욘 화산 AL3 Day157+ — 287,000+ 대피, 6km PDZ 유지",
+  "url": "https://volcano.si.edu/showreport.cfm?gvpvar=GVP.DVAR20260604-273030",
+  "snippet": "Mayon volcano remains at Alert Level 3 (Day 157+ of continuous eruption). Over 287,000 persons displaced. 6km Permanent Danger Zone maintained. SO2 emissions, rockfalls (223-364/day), and pyroclastic density currents (0-3/day) continue. Basud lava flow at 3.8km. Rainy season onset raises lahar risk significantly. Satellite thermal monitoring via Sentinel-2/Landsat-9/Himawari-9.",
+  "source_name": "Smithsonian GVP / PHIVOLCS",
+  "language": "en",
+  "discovered_date": "2026-06-11",
+  "tag": "update",
+  "related_report": "2026-06-10",
+  "related_item": "evt-082",
+  "tag_reason": "Day157+ 지속 분출 상태 업데이트. 287,000+ 이재민 수치는 전일 3,975명 보고와 큰 차이(PHIVOLCS 누적 대피인원 vs 현재 대피소 인원 구분). PDZ 6km 유지 확인.",
+  "entities": [
+    {"id": "evt-082", "type": "Event", "name": "Mayon 화산 AL3 분출", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "PH", "lat": 13.257, "lon": 123.685, "alert_level": "AL3", "displaced": 287000, "pdz_km": 6, "lava_flow_km": 3.8}},
+    {"id": "sat-sentinel2", "type": "Satellite", "name": "Sentinel-2"},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat-9"},
+    {"id": "sat-himawari9", "type": "Satellite", "name": "Himawari-9"},
+    {"id": "org-phivolcs", "type": "Organization", "name": "PHIVOLCS"}
+  ],
+  "relations": [
+    {"subject": "evt-082", "predicate": "observedBy", "object": "sat-sentinel2"},
+    {"subject": "evt-082", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "evt-082", "predicate": "observedBy", "object": "sat-himawari9"},
+    {"subject": "evt-082", "predicate": "monitoredBy", "object": "org-phivolcs"},
+    {"subject": "evt-082", "predicate": "inCountry", "object": "co-ph"},
+    {"subject": "evt-082", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "evt-082", "predicate": "manifests", "object": "phen-volcanic-eruption"}
+  ]
+}

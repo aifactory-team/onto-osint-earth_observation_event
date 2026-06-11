@@ -1,0 +1,28 @@
+{
+  "id": "src-003",
+  "title": "GFM v4.1.1 Sentinel-1D 공식 통합 — 6/11 롤아웃 완료",
+  "url": "https://global-flood.emergency.copernicus.eu/",
+  "snippet": "Copernicus Emergency Management Service (CEMS) Global Flood Monitoring (GFM) v4.1.1 officially rolled out on June 11, 2026, integrating Sentinel-1D SAR data into the operational workflow. The Sentinel-1 constellation (A, C, D) is now fully feeding GFM for global flood monitoring. This ensures SAR-based flood detection continuity during Sentinel-1C orbital reconfiguration (Jun 9-23).",
+  "source_name": "Copernicus Emergency Management Service (CEMS)",
+  "language": "en",
+  "discovered_date": "2026-06-11",
+  "tag": "new",
+  "related_report": "2026-06-10",
+  "related_item": "evt-3001",
+  "tag_reason": "6/10 보고서에서 예고(evt-3001)로 포함되었으나, 6/11 당일 공식 롤아웃 확인은 신규 정보. 실행 완료 상태 업데이트이므로 기존 evt-3001 ID 유지하되 tag는 new(당일 실행).",
+  "entities": [
+    {"id": "evt-3001", "type": "Event", "name": "GFM v4.1.1 Sentinel-1D 통합 롤아웃", "properties": {"phenomenon": "satellite_data_product", "domain": "SatOps", "country": "Global", "rollout_date": "2026-06-11", "status": "completed"}},
+    {"id": "sat-sentinel1a", "type": "Satellite", "name": "Sentinel-1A"},
+    {"id": "sat-sentinel1c", "type": "Satellite", "name": "Sentinel-1C"},
+    {"id": "sat-sentinel1d", "type": "Satellite", "name": "Sentinel-1D"},
+    {"id": "org-cems", "type": "Organization", "name": "Copernicus Emergency Management Service (CEMS)", "properties": {"type": "official_agency", "country": "EU"}}
+  ],
+  "relations": [
+    {"subject": "evt-3001", "predicate": "uses", "object": "sat-sentinel1a"},
+    {"subject": "evt-3001", "predicate": "uses", "object": "sat-sentinel1c"},
+    {"subject": "evt-3001", "predicate": "uses", "object": "sat-sentinel1d"},
+    {"subject": "evt-3001", "predicate": "managedBy", "object": "org-cems"},
+    {"subject": "evt-3001", "predicate": "relatedTo", "object": "temp-evt-2504"},
+    {"subject": "evt-3001", "predicate": "inDomain", "object": "dom-satops"}
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "src-006",
+  "title": "캐나다 산불 65건 활성 — 6건 통제불능, BC 최고위험 지속",
+  "url": "https://cwfis.cfs.nrcan.gc.ca/interactive-map",
+  "alt_urls": ["https://globalnews.ca/canada-wildfire-season-2026-june/", "https://cbc.ca/news/canada/british-columbia/wildfire-june-2026"],
+  "snippet": "Canadian Wildland Fire Information System (CWFIS) reports 65 active fires, 6 out of control, 18,935 hectares burned in 2026 season. British Columbia at highest fire danger rating. Canadian Interagency Forest Fire Centre (CIFFC) elevated to National Preparedness Level 2 on June 2. VIIRS, MODIS, GOES-18 satellite hotspot monitoring active.",
+  "source_name": "CWFIS / Global News / CBC",
+  "language": "en",
+  "discovered_date": "2026-06-11",
+  "tag": "update",
+  "related_report": "2026-06-10",
+  "related_item": "evt-1101",
+  "tag_reason": "구체적 수치 업데이트: 65건 활성, 6건 통제불능, 18,935ha 누적. CIFFC NPL2 격상(6/2)은 전일 미보고 정보. 정량적 상황 변동 확인.",
+  "entities": [
+    {"id": "evt-1101", "type": "Event", "name": "캐나다 2026 산불 시즌", "properties": {"phenomenon": "wildfire", "domain": "Disaster", "country": "CA", "lat": 53.7, "lon": -127.6, "active_fires": 65, "out_of_control": 6, "area_burned_ha": 18935}},
+    {"id": "sat-viirs", "type": "Satellite", "name": "VIIRS (Suomi NPP/NOAA-21)"},
+    {"id": "sat-modis", "type": "Satellite", "name": "MODIS (Terra/Aqua)"},
+    {"id": "sat-goes18", "type": "Satellite", "name": "GOES-18"},
+    {"id": "sat-sentinel2", "type": "Satellite", "name": "Sentinel-2"},
+    {"id": "org-ciffc", "type": "Organization", "name": "CIFFC (Canadian Interagency Forest Fire Centre)"}
+  ],
+  "relations": [
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-viirs"},
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-modis"},
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-goes18"},
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-sentinel2"},
+    {"subject": "evt-1101", "predicate": "monitoredBy", "object": "org-ciffc"},
+    {"subject": "evt-1101", "predicate": "inCountry", "object": "co-ca"},
+    {"subject": "evt-1101", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "evt-1101", "predicate": "manifests", "object": "phen-wildfire"}
+  ]
+}

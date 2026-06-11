@@ -1,0 +1,27 @@
+{
+  "id": "src-008",
+  "title": "Great Sitkin WATCH/ORANGE — 6/6 위성영상 동부 용암류 진행 + 돔 성장 확인",
+  "url": "https://volcanoes.usgs.gov/hans-public/volcano/ak111",
+  "snippet": "USGS AVO maintains WATCH/ORANGE for Great Sitkin. Slow lava eruption ongoing since July 2021. June 6 satellite imagery showed eastern lava flow advance and dome growth within summit crater. No explosive eruptions since May 2021. Thermal anomalies detected via SAR and optical satellite monitoring.",
+  "source_name": "USGS AVO",
+  "language": "en",
+  "discovered_date": "2026-06-11",
+  "tag": "update",
+  "related_report": "2026-06-10",
+  "related_item": "evt-203",
+  "tag_reason": "6/6 위성영상에서 동부 용암류 전진 + 돔 성장 확인은 전일 대비 구체적 변동 정보. SAR 기반 관측으로 sarBoost 적용.",
+  "entities": [
+    {"id": "evt-203", "type": "Event", "name": "Great Sitkin 용암돔 분출", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "US", "lat": 52.08, "lon": -176.13, "alert_level": "WATCH", "aviation_color": "ORANGE"}},
+    {"id": "sat-sentinel1", "type": "Satellite", "name": "Sentinel-1"},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat-9"},
+    {"id": "org-usgs-avo", "type": "Organization", "name": "USGS Alaska Volcano Observatory"}
+  ],
+  "relations": [
+    {"subject": "evt-203", "predicate": "observedBy", "object": "sat-sentinel1"},
+    {"subject": "evt-203", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "evt-203", "predicate": "monitoredBy", "object": "org-usgs-avo"},
+    {"subject": "evt-203", "predicate": "inCountry", "object": "co-us"},
+    {"subject": "evt-203", "predicate": "inDomain", "object": "dom-disaster"},
+    {"subject": "evt-203", "predicate": "manifests", "object": "phen-volcanic-eruption"}
+  ]
+}

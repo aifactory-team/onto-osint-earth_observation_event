@@ -1,0 +1,30 @@
+{
+  "id": "src-013",
+  "title": "Antelope Reef 1,490에이커 — Newsweek + AMTI 추가 분석, 50+ 구조물, 9,000ft 활주로 가능",
+  "url": "https://www.newsweek.com/antelope-reef-china-largest-island-south-china-sea-satellite-2026/",
+  "alt_urls": ["https://amti.csis.org/antelope-reef-could-now-be-the-largest-island-in-the-south-china-sea/"],
+  "snippet": "Newsweek and CSIS AMTI satellite photo analysis: Antelope Reef now 1,490 acres, potentially the largest island in the South China Sea. Over 50 structures identified. Land area sufficient for a 9,000ft (2,743m) runway. PlanetScope and WorldView-3/Legion imagery used for cross-verification.",
+  "source_name": "Newsweek / CSIS AMTI",
+  "language": "en",
+  "discovered_date": "2026-06-11",
+  "tag": "update",
+  "related_report": "2026-06-10",
+  "related_item": "evt-092",
+  "tag_reason": "Newsweek 보도 추가로 대중 가시성 확대. 50+ 구조물 수 + 9,000ft 활주로 가능 규모 평가는 전일 대비 구체화된 분석. CSIS AMTI 기존 분석에 Newsweek 교차 보도 추가.",
+  "entities": [
+    {"id": "evt-092", "type": "Event", "name": "Antelope Reef 인공섬 건설", "properties": {"phenomenon": "construction", "domain": "Defense", "country": "CN", "lat": 16.5, "lon": 111.6, "area_acres": 1490, "structures": 50, "runway_potential_ft": 9000}},
+    {"id": "sat-planetscope", "type": "Satellite", "name": "PlanetScope"},
+    {"id": "sat-worldview3", "type": "Satellite", "name": "WorldView-3"},
+    {"id": "org-csis-amti", "type": "Organization", "name": "CSIS Asia Maritime Transparency Initiative"},
+    {"id": "loc-antelope-reef", "type": "Location", "name": "Antelope Reef, Paracel Islands", "properties": {"country": "CN", "lat": 16.5, "lon": 111.6, "sea": "South China Sea"}}
+  ],
+  "relations": [
+    {"subject": "evt-092", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "evt-092", "predicate": "observedBy", "object": "sat-worldview3"},
+    {"subject": "evt-092", "predicate": "analyzedBy", "object": "org-csis-amti"},
+    {"subject": "evt-092", "predicate": "locatedIn", "object": "loc-antelope-reef"},
+    {"subject": "evt-092", "predicate": "inCountry", "object": "co-cn"},
+    {"subject": "evt-092", "predicate": "inDomain", "object": "dom-defense"},
+    {"subject": "evt-092", "predicate": "manifests", "object": "phen-construction"}
+  ]
+}

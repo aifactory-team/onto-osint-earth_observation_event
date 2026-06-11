@@ -1,0 +1,31 @@
+{
+  "id": "src-011",
+  "title": "북극 해빙 5월 면적 역대 최저 근접 — 11.439M km², 바렌츠해 박빙",
+  "url": "https://nsidc.org/arcticseaicenews/",
+  "alt_urls": ["https://science.nasa.gov/earth/arctic-sea-ice-may-2026/", "https://akclimate.org/arctic-sea-ice-update-june-2026/"],
+  "snippet": "Arctic sea ice extent dropped from 12.841 to 11.439 million km² in May 2026, approaching record low territory. ICESat-2 laser altimetry confirmed thin ice conditions in the Barents Sea region. AMSR-2 passive microwave and Sentinel-1 SAR data cross-verified the extent measurements. NSIDC and NASA published official assessments.",
+  "source_name": "NSIDC / NASA / Alaska Climate Research Center",
+  "language": "en",
+  "discovered_date": "2026-06-11",
+  "tag": "update",
+  "related_report": "2026-06-07",
+  "related_item": "temp-evt-2301",
+  "tag_reason": "5월 면적 12.841→11.439M km² 정량 수치 업데이트. ICESat-2 바렌츠해 박빙 확인은 신규 관측 데이터. 3개 독립 출처(NSIDC/NASA/ACRC) 교차 확인.",
+  "entities": [
+    {"id": "temp-evt-2301", "type": "Event", "name": "북극 해빙 역대 최저 면적", "properties": {"phenomenon": "glacier_retreat", "domain": "ClimateEnvironment", "country": "Global", "lat": 90.0, "lon": 0.0, "may_extent_million_km2": 11.439, "trend": "near_record_low"}},
+    {"id": "sat-icesat2", "type": "Satellite", "name": "ICESat-2"},
+    {"id": "sat-amsr2", "type": "Satellite", "name": "AMSR-2 (GCOM-W)"},
+    {"id": "sat-sentinel1", "type": "Satellite", "name": "Sentinel-1"},
+    {"id": "org-nsidc", "type": "Organization", "name": "NSIDC (National Snow and Ice Data Center)"},
+    {"id": "org-nasa", "type": "Organization", "name": "NASA"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-2301", "predicate": "observedBy", "object": "sat-icesat2"},
+    {"subject": "temp-evt-2301", "predicate": "observedBy", "object": "sat-amsr2"},
+    {"subject": "temp-evt-2301", "predicate": "observedBy", "object": "sat-sentinel1"},
+    {"subject": "temp-evt-2301", "predicate": "analyzedBy", "object": "org-nsidc"},
+    {"subject": "temp-evt-2301", "predicate": "analyzedBy", "object": "org-nasa"},
+    {"subject": "temp-evt-2301", "predicate": "inDomain", "object": "dom-climate-env"},
+    {"subject": "temp-evt-2301", "predicate": "manifests", "object": "phen-glacier-retreat"}
+  ]
+}

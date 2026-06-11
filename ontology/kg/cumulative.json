@@ -1,15 +1,15 @@
 {
-  "version": "1.18.0",
+  "version": "1.19.0",
   "description": "위성영상 관측 이벤트 누적 지식그래프 — 첫 실행(2026-04-30) 이후 매일 신규/추론 트리플 병합",
-  "last_updated": "2026-06-10",
-  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-19", "2026-05-20", "2026-05-21", "2026-05-22", "2026-05-23", "2026-05-24", "2026-05-26", "2026-05-27", "2026-05-28", "2026-05-29", "2026-05-30", "2026-05-31", "2026-06-01", "2026-06-02", "2026-06-03", "2026-06-04", "2026-06-05", "2026-06-06", "2026-06-07", "2026-06-08", "2026-06-09", "2026-06-10"],
-  "triples": "ontology/kg/2026-04-30.json ~ ontology/kg/2026-06-10.json (new_triples + updated_triples + inferred_triples)",
+  "last_updated": "2026-06-11",
+  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-19", "2026-05-20", "2026-05-21", "2026-05-22", "2026-05-23", "2026-05-24", "2026-05-26", "2026-05-27", "2026-05-28", "2026-05-29", "2026-05-30", "2026-05-31", "2026-06-01", "2026-06-02", "2026-06-03", "2026-06-04", "2026-06-05", "2026-06-06", "2026-06-07", "2026-06-08", "2026-06-09", "2026-06-10", "2026-06-11"],
+  "triples": "ontology/kg/2026-04-30.json ~ ontology/kg/2026-06-11.json (new_triples + updated_triples + inferred_triples)",
   "stats": {
-    "total_explicit_triples": 1240,
-    "total_inferred_triples": 590,
-    "total_unique_subjects": 257,
-    "total_unique_predicates": 22,
-    "total_unique_objects": 306
+    "total_explicit_triples": 1272,
+    "total_inferred_triples": 606,
+    "total_unique_subjects": 261,
+    "total_unique_predicates": 23,
+    "total_unique_objects": 313
   },
-  "note": "2026-06-10 병합 완료 — 신규 17 explicit + 8 updated + 13 inferred 트리플(일별 KG: 4 new nodes, 38 triples). 신규 이벤트 4건: (1) GFM v4.1.1 Sentinel-1D 통합(evt-3001, SatOps, CEMS 공식, temp-evt-2504 시리즈). (2) Vantor Vantage Pulse 소형위성 확장(evt-3002, SatOps, PR cap 0.70). (3) 아마존 삼림벌채 역대 최저(evt-3003, BR, dom-climate, INPE 공식, Landsat 시계열, officialBoost+multiSatBoost). (4) GFW 글로벌 식생 교란 경보(evt-3004, INTL, dom-climate, Sentinel-2+Landsat+Planet, multiSatBoost). 업데이트 14건: Kilauea Ep49 예보 6/12-15 단축(evt-202, 가장 유력 6/13-14, tilt 15.2μrad), Bismarck Sea 부석 마누스섬 3km x 5km 확대 + 신규 섬 형성 가능(evt-701, 5위성), 캐나다 산불 142건 BC 최고 위험(evt-1101, 5위성), Mayon Day156+ VAAC FL090(evt-082), Super El Niño +0.9°C threshold(temp-evt-1902, CPC/ECMWF/IRI 3출처), S-1C Day2 중단(temp-evt-2504), Great Sitkin WATCH(evt-203), Shishaldin ADVISORY SO₂(evt-204), Kharg 45km²(ent-evt-kharg), Antelope Reef 1490ac(evt-092), 미림 퍼레이드(evt-2801), Kanlaon AL2(temp-evt-1401), Dukono AL2(evt-128), Vietnam Spratly 지속(evt-2901). 다중 위성 교차검증 5건 유지(evt-1101 5위성, evt-701 5위성, ent-evt-kharg 3위성, evt-3003 Landsat+INPE, evt-3004 3기관). cascading_disaster 1건 지속(evt-701→evt-2903 부석 피해 확대). 한반도 GeoFocus 1건(evt-2801 미림). 누적 KG 1830 트리플."
+  "note": "2026-06-11 병합 완료 — 신규 19 explicit + 13 updated + 16 inferred 트리플(일별 KG: 4 new nodes, 48 triples). 신규 이벤트 3건: (1) 러시아 전차 예비 고갈 OSINT(temp-evt-3101, RU, dom-defense, Jompy 독립 분석, WorldView-3+PlanetScope+SkySat 추정, 2088 tanks/851 usable, T-80 12mo exhaustion, hiResBoost+analystBoost). (2) 브라질 DETER 위성 금지 법안(temp-evt-3102, BR, dom-human, Mongabay, Landsat/MODIS 기반 DETER 시스템 무력화 법안 통과, evt-3003과 직접 모순 — EO 메타-이벤트). (3) GFM v4.1.1 S-1D 통합 TODAY 롤아웃(temp-evt-3103, CEMS 공식, Sentinel-1 A/C/D 풀 콘스텔레이션 GFM 가용, temp-evt-2504 시리즈). 신규 기관 2건(org-jompy, org-mongabay). 신규 Location 1건(ent-loc-ru-tank-bases). 업데이트 11건: Kilauea D-1 내일 분출 창(evt-202, 6/12-15 최유력 6/13-14), Bismarck Sea 69km2 역대 최대 부석(evt-701, 5위성, 34일째 cascading), 캐나다 산불 65건 18935ha CIFFC L2(evt-1101), Mayon Day157+ 287K 이재민(evt-082), Great Sitkin WATCH 용암류(evt-203), Shishaldin ADVISORY 75nm(evt-204), El Nino 98%(temp-evt-1902), Arctic 최저 11.439M(evt-503), Amazon 추적(evt-3003), Antelope Reef 추적(evt-092), GFM v4.1.1 금일 확정(evt-3001). 다중 위성 교차검증 3건(evt-1101 5위성, evt-701 5위성, temp-evt-3101 추정 약가산). cascading_disaster 1건(evt-701→69km2 34일째). temporal_progression 4건(Kilauea D-1, Mayon Day157+, Bismarck 34일, GFM→S-1 시리즈). 한반도 GeoFocus 금일 신규 없음. 누적 KG 1878 트리플."
 }
