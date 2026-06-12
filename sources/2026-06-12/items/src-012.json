@@ -1,0 +1,29 @@
+{
+  "id": "src-012",
+  "event_id": "evt-3001",
+  "status": "reported",
+  "title": "GFM v4.1.1 Global Flood Monitoring Update",
+  "description": "Copernicus Global Flood Monitoring v4.1.1 system update. Already reported in 2026-06-11 daily report.",
+  "category": "disaster",
+  "subcategory": "flood_monitoring",
+  "domain": "dom-disaster",
+  "phenomenon": "phen-flood",
+  "location": {
+    "name": "Global",
+    "country": "Global",
+    "country_id": "co-global",
+    "lat": 0.0,
+    "lon": 0.0,
+    "admin_level": "global"
+  },
+  "event_date": "2026-06-11",
+  "collected_date": "2026-06-12",
+  "reported_date": "2026-06-11",
+  "satellites": [],
+  "sensors": [],
+  "satellite_unverified": true,
+  "organizations": [],
+  "confidence": 0.85,
+  "sources": [],
+  "tags": ["flood", "monitoring", "copernicus", "gfm"]
+}

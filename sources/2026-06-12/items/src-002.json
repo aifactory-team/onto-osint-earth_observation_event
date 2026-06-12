@@ -1,0 +1,53 @@
+{
+  "id": "src-002",
+  "event_id": "evt-202",
+  "status": "update",
+  "title": "Kilauea Ep49 Forecast Window Opens June 12-15",
+  "description": "USGS HVO forecasts Episode 49 fountain event between June 12-15, most likely June 13-14. Tiltmeter inflation has been accelerating since Episode 48 ended on June 1. Kilauea has already produced a record 48 fountain episodes in the current eruptive sequence.",
+  "category": "disaster",
+  "subcategory": "volcanic_eruption",
+  "domain": "dom-disaster",
+  "phenomenon": "phen-volcanic-eruption",
+  "location": {
+    "name": "Kilauea, Hawaii",
+    "country": "United States",
+    "country_id": "co-us",
+    "lat": 19.421,
+    "lon": -155.287,
+    "admin_level": "volcano"
+  },
+  "event_date": "2026-06-12",
+  "collected_date": "2026-06-12",
+  "update_type": "forecast",
+  "update_details": "Ep49 forecast window 6/12-15; tiltmeter inflation accelerating since Ep48 ended June 1",
+  "satellites": [],
+  "sensors": [],
+  "satellite_unverified": true,
+  "organizations": [
+    {
+      "id": "org-usgs",
+      "name": "USGS",
+      "role": "monitoring"
+    },
+    {
+      "id": "org-hvo",
+      "name": "Hawaiian Volcano Observatory",
+      "role": "monitoring"
+    }
+  ],
+  "confidence": 0.90,
+  "confidence_factors": {
+    "base": 0.65,
+    "officialBoost": 0.15,
+    "notes": "USGS HVO official forecast; satellite imagery expected during/after eruption"
+  },
+  "sources": [
+    {
+      "url": "https://www.usgs.gov/volcanoes/kilauea/volcano-updates",
+      "title": "USGS HVO: Kilauea Volcano Updates",
+      "type": "official_agency",
+      "primary": true
+    }
+  ],
+  "tags": ["kilauea", "volcanic_eruption", "fountain_episode", "ep49", "forecast", "hawaii"]
+}

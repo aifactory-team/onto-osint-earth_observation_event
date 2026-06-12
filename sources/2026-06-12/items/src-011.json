@@ -1,0 +1,29 @@
+{
+  "id": "src-011",
+  "event_id": "evt-3102",
+  "status": "reported",
+  "title": "Brazil DETER Deforestation Monitoring",
+  "description": "Brazil DETER deforestation monitoring system updates. Already reported in 2026-06-11 daily report.",
+  "category": "human_activity",
+  "subcategory": "deforestation",
+  "domain": "dom-human-activity",
+  "phenomenon": "phen-deforestation",
+  "location": {
+    "name": "Amazon Basin, Brazil",
+    "country": "Brazil",
+    "country_id": "co-br",
+    "lat": -3.0,
+    "lon": -60.0,
+    "admin_level": "region"
+  },
+  "event_date": "2026-06-11",
+  "collected_date": "2026-06-12",
+  "reported_date": "2026-06-11",
+  "satellites": [],
+  "sensors": [],
+  "satellite_unverified": true,
+  "organizations": [],
+  "confidence": 0.85,
+  "sources": [],
+  "tags": ["deforestation", "brazil", "amazon", "deter"]
+}

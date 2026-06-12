@@ -1,0 +1,108 @@
+{
+  "id": "src-001",
+  "event_id": "evt-3201",
+  "status": "new",
+  "title": "Mindanao M7.8 Earthquake Satellite Damage Assessment",
+  "description": "PhilSA VIIRS nighttime light analysis reveals significant power loss across General Santos, Sarangani, and Polomolok following M7.8 earthquake on June 8, 2026. Sentinel Asia activation EQ-2026-000083-PHL triggered by Manila Observatory. Epicenter located 32km west of Maasim, Sarangani at depth 33km. Casualties: 47+ dead, 688 injured, 33 missing. Over 12,600 houses damaged. Expected Sentinel-1 SAR follow-up for structural damage assessment.",
+  "category": "disaster",
+  "subcategory": "earthquake_damage",
+  "domain": "dom-disaster",
+  "phenomenon": "phen-earthquake",
+  "location": {
+    "name": "Maasim, Sarangani, Mindanao",
+    "country": "Philippines",
+    "country_id": "co-ph",
+    "lat": 6.08,
+    "lon": 125.27,
+    "admin_level": "province",
+    "affected_areas": ["General Santos", "Sarangani", "Polomolok"]
+  },
+  "event_date": "2026-06-08",
+  "collected_date": "2026-06-12",
+  "satellites": [
+    {
+      "id": "sat-viirs-snpp",
+      "name": "VIIRS (Suomi-NPP)",
+      "type": "nighttime_light",
+      "product": "Day-Night Band (DNB)"
+    },
+    {
+      "id": "sat-viirs-jpss",
+      "name": "VIIRS (JPSS)",
+      "type": "nighttime_light",
+      "product": "Day-Night Band (DNB)"
+    }
+  ],
+  "sensors": [
+    {
+      "id": "sen-viirs",
+      "name": "VIIRS",
+      "type": "multispectral_nighttime"
+    }
+  ],
+  "expected_followup_satellites": [
+    {
+      "id": "sat-sentinel-1",
+      "name": "Sentinel-1",
+      "type": "SAR",
+      "purpose": "structural_damage_assessment"
+    }
+  ],
+  "satellite_unverified": false,
+  "organizations": [
+    {
+      "id": "org-philsa",
+      "name": "Philippine Space Agency (PhilSA)",
+      "role": "analysis"
+    },
+    {
+      "id": "org-phivolcs",
+      "name": "PHIVOLCS",
+      "role": "seismological_monitoring"
+    },
+    {
+      "id": "org-sentinel-asia",
+      "name": "Sentinel Asia",
+      "role": "emergency_activation"
+    },
+    {
+      "id": "org-manila-obs",
+      "name": "Manila Observatory",
+      "role": "activation_requester"
+    }
+  ],
+  "activation_id": "EQ-2026-000083-PHL",
+  "impact": {
+    "deaths": 47,
+    "injured": 688,
+    "missing": 33,
+    "houses_damaged": 12600,
+    "description": "Severe structural damage, widespread power loss in southern Mindanao"
+  },
+  "confidence": 0.95,
+  "confidence_factors": {
+    "base": 0.60,
+    "officialBoost": 0.15,
+    "multiSatBoost": 0.20,
+    "notes": "PhilSA official analysis + Sentinel Asia activation + PHIVOLCS seismological data = high confidence multi-source verification"
+  },
+  "sources": [
+    {
+      "url": "https://philsa.gov.ph/news/nighttime-satellite-data-shows-overview-of-earthquake-damaged-areas/",
+      "title": "PhilSA: Nighttime Satellite Data Shows Overview of Earthquake-Damaged Areas",
+      "type": "official_agency",
+      "primary": true
+    },
+    {
+      "url": "https://www.phivolcs.dost.gov.ph/primer-on-the-08-june-2026-magnitude-mw-7-8-offshore-sarangani-earthquake/",
+      "title": "PHIVOLCS: Primer on the 08 June 2026 Magnitude Mw 7.8 Offshore Sarangani Earthquake",
+      "type": "official_agency"
+    },
+    {
+      "url": "https://sentinel-asia.org/EO/2026/article20260608PH.html",
+      "title": "Sentinel Asia: Emergency Observation for Earthquake in Philippines",
+      "type": "international_mechanism"
+    }
+  ],
+  "tags": ["earthquake", "nighttime_lights", "power_outage", "damage_assessment", "sentinel_asia_activation", "mindanao", "philippines"]
+}

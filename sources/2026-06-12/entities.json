@@ -1,0 +1,983 @@
+{
+  "date": "2026-06-12",
+  "extraction_summary": {
+    "total_entities": 58,
+    "new_entities": 5,
+    "updated_entities": 15,
+    "total_relations": 67
+  },
+  "entities": {
+    "events": [
+      {
+        "id": "evt-3201",
+        "type": "Event",
+        "status": "new",
+        "label": "Mindanao M7.8 Earthquake Satellite Damage Assessment",
+        "domain": "dom-disaster",
+        "phenomenon": "phen-earthquake",
+        "event_date": "2026-06-08",
+        "lat": 6.08,
+        "lon": 125.27,
+        "country_id": "co-ph",
+        "satellite_unverified": false,
+        "confidence": 0.95,
+        "activation_id": "EQ-2026-000083-PHL",
+        "impact": {
+          "deaths": 47,
+          "injured": 688,
+          "missing": 33,
+          "houses_damaged": 12600
+        }
+      },
+      {
+        "id": "evt-202",
+        "type": "Event",
+        "status": "update",
+        "label": "Kilauea Ep49 Forecast Window June 12-15",
+        "domain": "dom-disaster",
+        "phenomenon": "phen-volcanic-eruption",
+        "lat": 19.421,
+        "lon": -155.287,
+        "country_id": "co-us",
+        "satellite_unverified": true,
+        "confidence": 0.90
+      },
+      {
+        "id": "evt-701",
+        "type": "Event",
+        "status": "update",
+        "label": "Bismarck Sea Pumice Blocks Manus Province Sea Access",
+        "domain": "dom-disaster",
+        "phenomenon": "phen-volcanic-pumice",
+        "lat": -2.05,
+        "lon": 147.0,
+        "country_id": "co-pg",
+        "satellite_unverified": true,
+        "confidence": 0.85,
+        "related_events": ["evt-2903"]
+      },
+      {
+        "id": "evt-082",
+        "type": "Event",
+        "status": "update",
+        "label": "Mayon Volcano Day158+ 4km Pyroclastic Flow",
+        "domain": "dom-disaster",
+        "phenomenon": "phen-volcanic-eruption",
+        "lat": 13.257,
+        "lon": 123.685,
+        "country_id": "co-ph",
+        "satellite_unverified": true,
+        "confidence": 0.90
+      },
+      {
+        "id": "evt-2802",
+        "type": "Event",
+        "status": "update",
+        "label": "Typhoon Jangmi Damage Assessment",
+        "domain": "dom-disaster",
+        "phenomenon": "phen-typhoon",
+        "lat": 26.5,
+        "lon": 127.8,
+        "country_id": "co-jp",
+        "satellite_unverified": true,
+        "confidence": 0.90
+      },
+      {
+        "id": "evt-1101",
+        "type": "Event",
+        "status": "update",
+        "label": "Canada Wildfire 65 Active Fires CIFFC Level 2",
+        "domain": "dom-disaster",
+        "phenomenon": "phen-wildfire",
+        "lat": 53.0,
+        "lon": -122.0,
+        "country_id": "co-ca",
+        "satellite_unverified": true,
+        "confidence": 0.85
+      },
+      {
+        "id": "evt-203",
+        "type": "Event",
+        "status": "update",
+        "label": "Great Sitkin WATCH/ORANGE Lava Dome Growth",
+        "domain": "dom-disaster",
+        "phenomenon": "phen-volcanic-eruption",
+        "lat": 52.076,
+        "lon": -176.13,
+        "country_id": "co-us",
+        "satellite_unverified": true,
+        "confidence": 0.85
+      },
+      {
+        "id": "evt-204",
+        "type": "Event",
+        "status": "update",
+        "label": "Shishaldin ADVISORY/YELLOW 75nm Steam Plume",
+        "domain": "dom-disaster",
+        "phenomenon": "phen-volcanic-eruption",
+        "lat": 54.756,
+        "lon": -163.97,
+        "country_id": "co-us",
+        "satellite_unverified": true,
+        "confidence": 0.80
+      },
+      {
+        "id": "temp-evt-1902",
+        "type": "Event",
+        "status": "update",
+        "label": "El Nino +0.9C 98% Probability Strengthening",
+        "domain": "dom-climate-env",
+        "phenomenon": "phen-el-nino",
+        "lat": 0.0,
+        "lon": -170.0,
+        "country_id": "co-global",
+        "satellite_unverified": false,
+        "confidence": 0.95
+      },
+      {
+        "id": "evt-3101",
+        "type": "Event",
+        "status": "reported",
+        "label": "Russia Tank Reserves OSINT",
+        "domain": "dom-human-activity",
+        "phenomenon": "phen-military-activity",
+        "lat": 55.0,
+        "lon": 37.0,
+        "country_id": "co-ru",
+        "satellite_unverified": true,
+        "confidence": 0.75
+      },
+      {
+        "id": "evt-3102",
+        "type": "Event",
+        "status": "reported",
+        "label": "Brazil DETER Deforestation",
+        "domain": "dom-human-activity",
+        "phenomenon": "phen-deforestation",
+        "lat": -3.0,
+        "lon": -60.0,
+        "country_id": "co-br",
+        "satellite_unverified": true,
+        "confidence": 0.85
+      },
+      {
+        "id": "evt-3001",
+        "type": "Event",
+        "status": "reported",
+        "label": "GFM v4.1.1 Global Flood Monitoring",
+        "domain": "dom-disaster",
+        "phenomenon": "phen-flood",
+        "lat": 0.0,
+        "lon": 0.0,
+        "country_id": "co-global",
+        "satellite_unverified": true,
+        "confidence": 0.85
+      }
+    ],
+    "satellites": [
+      {
+        "id": "sat-viirs-snpp",
+        "type": "Satellite",
+        "status": "existing",
+        "label": "Suomi-NPP (VIIRS)",
+        "operator_id": "org-nasa",
+        "sensor_ids": ["sen-viirs"]
+      },
+      {
+        "id": "sat-viirs-jpss",
+        "type": "Satellite",
+        "status": "existing",
+        "label": "JPSS (VIIRS)",
+        "operator_id": "org-noaa",
+        "sensor_ids": ["sen-viirs"]
+      },
+      {
+        "id": "sat-sentinel-1",
+        "type": "Satellite",
+        "status": "existing",
+        "label": "Sentinel-1",
+        "operator_id": "org-esa",
+        "sensor_ids": ["sen-csar"]
+      },
+      {
+        "id": "sat-sentinel-6",
+        "type": "Satellite",
+        "status": "existing",
+        "label": "Sentinel-6 Michael Freilich",
+        "operator_id": "org-esa",
+        "sensor_ids": ["sen-poseidon-4"]
+      }
+    ],
+    "sensors": [
+      {
+        "id": "sen-viirs",
+        "type": "Sensor",
+        "status": "existing",
+        "label": "VIIRS (Visible Infrared Imaging Radiometer Suite)",
+        "sensor_type": "multispectral_nighttime",
+        "capabilities": ["nighttime_light", "thermal_infrared", "multispectral"]
+      },
+      {
+        "id": "sen-csar",
+        "type": "Sensor",
+        "status": "existing",
+        "label": "C-SAR (C-band Synthetic Aperture Radar)",
+        "sensor_type": "SAR",
+        "capabilities": ["all_weather", "day_night", "interferometry", "damage_mapping"]
+      },
+      {
+        "id": "sen-poseidon-4",
+        "type": "Sensor",
+        "status": "existing",
+        "label": "Poseidon-4 SAR Altimeter",
+        "sensor_type": "radar_altimeter",
+        "capabilities": ["sea_surface_height", "ocean_topography"]
+      }
+    ],
+    "organizations": [
+      {
+        "id": "org-philsa",
+        "type": "Organization",
+        "status": "new",
+        "label": "Philippine Space Agency (PhilSA)",
+        "country_id": "co-ph",
+        "org_type": "government_space_agency"
+      },
+      {
+        "id": "org-phivolcs",
+        "type": "Organization",
+        "status": "existing",
+        "label": "PHIVOLCS (Philippine Institute of Volcanology and Seismology)",
+        "country_id": "co-ph",
+        "org_type": "government_agency"
+      },
+      {
+        "id": "org-sentinel-asia",
+        "type": "Organization",
+        "status": "existing",
+        "label": "Sentinel Asia",
+        "org_type": "international_mechanism"
+      },
+      {
+        "id": "org-manila-obs",
+        "type": "Organization",
+        "status": "new",
+        "label": "Manila Observatory",
+        "country_id": "co-ph",
+        "org_type": "research_institution"
+      },
+      {
+        "id": "org-usgs",
+        "type": "Organization",
+        "status": "existing",
+        "label": "USGS (United States Geological Survey)",
+        "country_id": "co-us",
+        "org_type": "government_agency"
+      },
+      {
+        "id": "org-hvo",
+        "type": "Organization",
+        "status": "existing",
+        "label": "Hawaiian Volcano Observatory (HVO)",
+        "country_id": "co-us",
+        "org_type": "government_observatory"
+      },
+      {
+        "id": "org-avo",
+        "type": "Organization",
+        "status": "existing",
+        "label": "Alaska Volcano Observatory (AVO)",
+        "country_id": "co-us",
+        "org_type": "government_observatory"
+      },
+      {
+        "id": "org-nasa",
+        "type": "Organization",
+        "status": "existing",
+        "label": "NASA",
+        "country_id": "co-us",
+        "org_type": "government_space_agency"
+      },
+      {
+        "id": "org-nasa-eo",
+        "type": "Organization",
+        "status": "existing",
+        "label": "NASA Earth Observatory",
+        "country_id": "co-us",
+        "org_type": "government_program"
+      },
+      {
+        "id": "org-noaa",
+        "type": "Organization",
+        "status": "existing",
+        "label": "NOAA (National Oceanic and Atmospheric Administration)",
+        "country_id": "co-us",
+        "org_type": "government_agency"
+      },
+      {
+        "id": "org-esa",
+        "type": "Organization",
+        "status": "existing",
+        "label": "ESA (European Space Agency)",
+        "org_type": "international_space_agency"
+      },
+      {
+        "id": "org-ciffc",
+        "type": "Organization",
+        "status": "existing",
+        "label": "CIFFC (Canadian Interagency Forest Fire Centre)",
+        "country_id": "co-ca",
+        "org_type": "government_agency"
+      },
+      {
+        "id": "org-nrcan",
+        "type": "Organization",
+        "status": "existing",
+        "label": "Natural Resources Canada",
+        "country_id": "co-ca",
+        "org_type": "government_agency"
+      },
+      {
+        "id": "org-watchers",
+        "type": "Organization",
+        "status": "existing",
+        "label": "The Watchers",
+        "org_type": "media_analyst"
+      }
+    ],
+    "locations": [
+      {
+        "id": "loc-maasim-sarangani",
+        "type": "Location",
+        "status": "new",
+        "label": "Maasim, Sarangani, Mindanao",
+        "lat": 6.08,
+        "lon": 125.27,
+        "country_id": "co-ph",
+        "admin_level": "municipality"
+      },
+      {
+        "id": "loc-general-santos",
+        "type": "Location",
+        "status": "new",
+        "label": "General Santos City",
+        "lat": 6.112,
+        "lon": 125.172,
+        "country_id": "co-ph",
+        "admin_level": "city"
+      },
+      {
+        "id": "loc-kilauea",
+        "type": "Location",
+        "status": "existing",
+        "label": "Kilauea, Hawaii",
+        "lat": 19.421,
+        "lon": -155.287,
+        "country_id": "co-us"
+      },
+      {
+        "id": "loc-admiralty-islands",
+        "type": "Location",
+        "status": "existing",
+        "label": "Admiralty Islands, Manus Province",
+        "lat": -2.05,
+        "lon": 147.0,
+        "country_id": "co-pg"
+      },
+      {
+        "id": "loc-mayon",
+        "type": "Location",
+        "status": "existing",
+        "label": "Mayon Volcano, Albay",
+        "lat": 13.257,
+        "lon": 123.685,
+        "country_id": "co-ph"
+      },
+      {
+        "id": "loc-okinawa",
+        "type": "Location",
+        "status": "existing",
+        "label": "Okinawa, Japan",
+        "lat": 26.5,
+        "lon": 127.8,
+        "country_id": "co-jp"
+      },
+      {
+        "id": "loc-great-sitkin",
+        "type": "Location",
+        "status": "existing",
+        "label": "Great Sitkin, Aleutian Islands",
+        "lat": 52.076,
+        "lon": -176.13,
+        "country_id": "co-us"
+      },
+      {
+        "id": "loc-shishaldin",
+        "type": "Location",
+        "status": "existing",
+        "label": "Shishaldin, Unimak Island",
+        "lat": 54.756,
+        "lon": -163.97,
+        "country_id": "co-us"
+      },
+      {
+        "id": "loc-nino34",
+        "type": "Location",
+        "status": "existing",
+        "label": "Nino 3.4 Region, Equatorial Pacific",
+        "lat": 0.0,
+        "lon": -170.0,
+        "country_id": "co-global"
+      }
+    ],
+    "countries": [
+      {
+        "id": "co-ph",
+        "type": "Country",
+        "status": "existing",
+        "label": "Philippines"
+      },
+      {
+        "id": "co-us",
+        "type": "Country",
+        "status": "existing",
+        "label": "United States"
+      },
+      {
+        "id": "co-pg",
+        "type": "Country",
+        "status": "existing",
+        "label": "Papua New Guinea"
+      },
+      {
+        "id": "co-jp",
+        "type": "Country",
+        "status": "existing",
+        "label": "Japan"
+      },
+      {
+        "id": "co-ca",
+        "type": "Country",
+        "status": "existing",
+        "label": "Canada"
+      },
+      {
+        "id": "co-ru",
+        "type": "Country",
+        "status": "existing",
+        "label": "Russia"
+      },
+      {
+        "id": "co-br",
+        "type": "Country",
+        "status": "existing",
+        "label": "Brazil"
+      },
+      {
+        "id": "co-global",
+        "type": "Country",
+        "status": "existing",
+        "label": "Global"
+      }
+    ],
+    "phenomena": [
+      {
+        "id": "phen-earthquake",
+        "type": "Phenomenon",
+        "status": "existing",
+        "label": "Earthquake Damage",
+        "domain_id": "dom-disaster"
+      },
+      {
+        "id": "phen-volcanic-eruption",
+        "type": "Phenomenon",
+        "status": "existing",
+        "label": "Volcanic Eruption",
+        "domain_id": "dom-disaster"
+      },
+      {
+        "id": "phen-volcanic-pumice",
+        "type": "Phenomenon",
+        "status": "existing",
+        "label": "Volcanic Pumice",
+        "domain_id": "dom-disaster"
+      },
+      {
+        "id": "phen-typhoon",
+        "type": "Phenomenon",
+        "status": "existing",
+        "label": "Typhoon / Hurricane",
+        "domain_id": "dom-disaster"
+      },
+      {
+        "id": "phen-wildfire",
+        "type": "Phenomenon",
+        "status": "existing",
+        "label": "Wildfire",
+        "domain_id": "dom-disaster"
+      },
+      {
+        "id": "phen-el-nino",
+        "type": "Phenomenon",
+        "status": "existing",
+        "label": "El Nino",
+        "domain_id": "dom-climate-env"
+      },
+      {
+        "id": "phen-military-activity",
+        "type": "Phenomenon",
+        "status": "existing",
+        "label": "Military Activity",
+        "domain_id": "dom-human-activity"
+      },
+      {
+        "id": "phen-deforestation",
+        "type": "Phenomenon",
+        "status": "existing",
+        "label": "Deforestation",
+        "domain_id": "dom-human-activity"
+      },
+      {
+        "id": "phen-flood",
+        "type": "Phenomenon",
+        "status": "existing",
+        "label": "Flood",
+        "domain_id": "dom-disaster"
+      }
+    ],
+    "domains": [
+      {
+        "id": "dom-disaster",
+        "type": "Domain",
+        "status": "existing",
+        "label": "Disaster"
+      },
+      {
+        "id": "dom-human-activity",
+        "type": "Domain",
+        "status": "existing",
+        "label": "Human Activity"
+      },
+      {
+        "id": "dom-climate-env",
+        "type": "Domain",
+        "status": "existing",
+        "label": "Climate & Environment"
+      }
+    ]
+  },
+  "relations": [
+    {
+      "id": "rel-001",
+      "type": "observedBy",
+      "source": "evt-3201",
+      "target": "sat-viirs-snpp",
+      "confidence": 0.95,
+      "note": "PhilSA VIIRS nighttime light analysis confirmed"
+    },
+    {
+      "id": "rel-002",
+      "type": "observedBy",
+      "source": "evt-3201",
+      "target": "sat-viirs-jpss",
+      "confidence": 0.95,
+      "note": "PhilSA VIIRS nighttime light analysis confirmed"
+    },
+    {
+      "id": "rel-003",
+      "type": "usesSensor",
+      "source": "sat-viirs-snpp",
+      "target": "sen-viirs"
+    },
+    {
+      "id": "rel-004",
+      "type": "usesSensor",
+      "source": "sat-viirs-jpss",
+      "target": "sen-viirs"
+    },
+    {
+      "id": "rel-005",
+      "type": "locatedIn",
+      "source": "evt-3201",
+      "target": "loc-maasim-sarangani"
+    },
+    {
+      "id": "rel-006",
+      "type": "inCountry",
+      "source": "evt-3201",
+      "target": "co-ph"
+    },
+    {
+      "id": "rel-007",
+      "type": "analyzedBy",
+      "source": "evt-3201",
+      "target": "org-philsa"
+    },
+    {
+      "id": "rel-008",
+      "type": "analyzedBy",
+      "source": "evt-3201",
+      "target": "org-phivolcs"
+    },
+    {
+      "id": "rel-009",
+      "type": "activatedBy",
+      "source": "evt-3201",
+      "target": "org-sentinel-asia",
+      "note": "EQ-2026-000083-PHL"
+    },
+    {
+      "id": "rel-010",
+      "type": "requestedBy",
+      "source": "evt-3201",
+      "target": "org-manila-obs",
+      "note": "Sentinel Asia activation requester"
+    },
+    {
+      "id": "rel-011",
+      "type": "manifests",
+      "source": "evt-3201",
+      "target": "phen-earthquake"
+    },
+    {
+      "id": "rel-012",
+      "type": "inDomain",
+      "source": "evt-3201",
+      "target": "dom-disaster"
+    },
+    {
+      "id": "rel-013",
+      "type": "expectedObservation",
+      "source": "evt-3201",
+      "target": "sat-sentinel-1",
+      "note": "Expected SAR follow-up for structural damage assessment"
+    },
+    {
+      "id": "rel-014",
+      "type": "locatedIn",
+      "source": "evt-202",
+      "target": "loc-kilauea"
+    },
+    {
+      "id": "rel-015",
+      "type": "inCountry",
+      "source": "evt-202",
+      "target": "co-us"
+    },
+    {
+      "id": "rel-016",
+      "type": "analyzedBy",
+      "source": "evt-202",
+      "target": "org-usgs"
+    },
+    {
+      "id": "rel-017",
+      "type": "analyzedBy",
+      "source": "evt-202",
+      "target": "org-hvo"
+    },
+    {
+      "id": "rel-018",
+      "type": "manifests",
+      "source": "evt-202",
+      "target": "phen-volcanic-eruption"
+    },
+    {
+      "id": "rel-019",
+      "type": "inDomain",
+      "source": "evt-202",
+      "target": "dom-disaster"
+    },
+    {
+      "id": "rel-020",
+      "type": "locatedIn",
+      "source": "evt-701",
+      "target": "loc-admiralty-islands"
+    },
+    {
+      "id": "rel-021",
+      "type": "inCountry",
+      "source": "evt-701",
+      "target": "co-pg"
+    },
+    {
+      "id": "rel-022",
+      "type": "manifests",
+      "source": "evt-701",
+      "target": "phen-volcanic-pumice"
+    },
+    {
+      "id": "rel-023",
+      "type": "inDomain",
+      "source": "evt-701",
+      "target": "dom-disaster"
+    },
+    {
+      "id": "rel-024",
+      "type": "relatedTo",
+      "source": "evt-701",
+      "target": "evt-2903",
+      "note": "Same Titan Ridge eruption event"
+    },
+    {
+      "id": "rel-025",
+      "type": "locatedIn",
+      "source": "evt-082",
+      "target": "loc-mayon"
+    },
+    {
+      "id": "rel-026",
+      "type": "inCountry",
+      "source": "evt-082",
+      "target": "co-ph"
+    },
+    {
+      "id": "rel-027",
+      "type": "analyzedBy",
+      "source": "evt-082",
+      "target": "org-phivolcs"
+    },
+    {
+      "id": "rel-028",
+      "type": "manifests",
+      "source": "evt-082",
+      "target": "phen-volcanic-eruption"
+    },
+    {
+      "id": "rel-029",
+      "type": "inDomain",
+      "source": "evt-082",
+      "target": "dom-disaster"
+    },
+    {
+      "id": "rel-030",
+      "type": "locatedIn",
+      "source": "evt-2802",
+      "target": "loc-okinawa"
+    },
+    {
+      "id": "rel-031",
+      "type": "inCountry",
+      "source": "evt-2802",
+      "target": "co-jp"
+    },
+    {
+      "id": "rel-032",
+      "type": "analyzedBy",
+      "source": "evt-2802",
+      "target": "org-nasa-eo"
+    },
+    {
+      "id": "rel-033",
+      "type": "manifests",
+      "source": "evt-2802",
+      "target": "phen-typhoon"
+    },
+    {
+      "id": "rel-034",
+      "type": "inDomain",
+      "source": "evt-2802",
+      "target": "dom-disaster"
+    },
+    {
+      "id": "rel-035",
+      "type": "inCountry",
+      "source": "evt-1101",
+      "target": "co-ca"
+    },
+    {
+      "id": "rel-036",
+      "type": "analyzedBy",
+      "source": "evt-1101",
+      "target": "org-ciffc"
+    },
+    {
+      "id": "rel-037",
+      "type": "analyzedBy",
+      "source": "evt-1101",
+      "target": "org-nrcan"
+    },
+    {
+      "id": "rel-038",
+      "type": "manifests",
+      "source": "evt-1101",
+      "target": "phen-wildfire"
+    },
+    {
+      "id": "rel-039",
+      "type": "inDomain",
+      "source": "evt-1101",
+      "target": "dom-disaster"
+    },
+    {
+      "id": "rel-040",
+      "type": "locatedIn",
+      "source": "evt-203",
+      "target": "loc-great-sitkin"
+    },
+    {
+      "id": "rel-041",
+      "type": "inCountry",
+      "source": "evt-203",
+      "target": "co-us"
+    },
+    {
+      "id": "rel-042",
+      "type": "analyzedBy",
+      "source": "evt-203",
+      "target": "org-usgs"
+    },
+    {
+      "id": "rel-043",
+      "type": "analyzedBy",
+      "source": "evt-203",
+      "target": "org-avo"
+    },
+    {
+      "id": "rel-044",
+      "type": "manifests",
+      "source": "evt-203",
+      "target": "phen-volcanic-eruption"
+    },
+    {
+      "id": "rel-045",
+      "type": "inDomain",
+      "source": "evt-203",
+      "target": "dom-disaster"
+    },
+    {
+      "id": "rel-046",
+      "type": "locatedIn",
+      "source": "evt-204",
+      "target": "loc-shishaldin"
+    },
+    {
+      "id": "rel-047",
+      "type": "inCountry",
+      "source": "evt-204",
+      "target": "co-us"
+    },
+    {
+      "id": "rel-048",
+      "type": "analyzedBy",
+      "source": "evt-204",
+      "target": "org-usgs"
+    },
+    {
+      "id": "rel-049",
+      "type": "analyzedBy",
+      "source": "evt-204",
+      "target": "org-avo"
+    },
+    {
+      "id": "rel-050",
+      "type": "manifests",
+      "source": "evt-204",
+      "target": "phen-volcanic-eruption"
+    },
+    {
+      "id": "rel-051",
+      "type": "inDomain",
+      "source": "evt-204",
+      "target": "dom-disaster"
+    },
+    {
+      "id": "rel-052",
+      "type": "observedBy",
+      "source": "temp-evt-1902",
+      "target": "sat-sentinel-6",
+      "confidence": 0.95,
+      "note": "Sentinel-6 altimetry shows 15cm higher seas off Peru"
+    },
+    {
+      "id": "rel-053",
+      "type": "usesSensor",
+      "source": "sat-sentinel-6",
+      "target": "sen-poseidon-4"
+    },
+    {
+      "id": "rel-054",
+      "type": "locatedIn",
+      "source": "temp-evt-1902",
+      "target": "loc-nino34"
+    },
+    {
+      "id": "rel-055",
+      "type": "analyzedBy",
+      "source": "temp-evt-1902",
+      "target": "org-noaa"
+    },
+    {
+      "id": "rel-056",
+      "type": "manifests",
+      "source": "temp-evt-1902",
+      "target": "phen-el-nino"
+    },
+    {
+      "id": "rel-057",
+      "type": "inDomain",
+      "source": "temp-evt-1902",
+      "target": "dom-climate-env"
+    },
+    {
+      "id": "rel-058",
+      "type": "inCountry",
+      "source": "evt-3101",
+      "target": "co-ru"
+    },
+    {
+      "id": "rel-059",
+      "type": "manifests",
+      "source": "evt-3101",
+      "target": "phen-military-activity"
+    },
+    {
+      "id": "rel-060",
+      "type": "inDomain",
+      "source": "evt-3101",
+      "target": "dom-human-activity"
+    },
+    {
+      "id": "rel-061",
+      "type": "inCountry",
+      "source": "evt-3102",
+      "target": "co-br"
+    },
+    {
+      "id": "rel-062",
+      "type": "manifests",
+      "source": "evt-3102",
+      "target": "phen-deforestation"
+    },
+    {
+      "id": "rel-063",
+      "type": "inDomain",
+      "source": "evt-3102",
+      "target": "dom-human-activity"
+    },
+    {
+      "id": "rel-064",
+      "type": "manifests",
+      "source": "evt-3001",
+      "target": "phen-flood"
+    },
+    {
+      "id": "rel-065",
+      "type": "inDomain",
+      "source": "evt-3001",
+      "target": "dom-disaster"
+    },
+    {
+      "id": "rel-066",
+      "type": "operatedBy",
+      "source": "sat-viirs-snpp",
+      "target": "org-nasa"
+    },
+    {
+      "id": "rel-067",
+      "type": "operatedBy",
+      "source": "sat-viirs-jpss",
+      "target": "org-noaa"
+    }
+  ]
+}

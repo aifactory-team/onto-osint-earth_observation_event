@@ -1,0 +1,124 @@
+{
+  "date": "2026-06-12",
+  "total": 12,
+  "new": 1,
+  "update": 8,
+  "reported": 3,
+  "skipped": 0,
+  "categories_covered": {
+    "disaster": true,
+    "human_activity": true,
+    "climate_env": true,
+    "agriculture_ocean": true
+  },
+  "items": [
+    {
+      "id": "src-001",
+      "event_id": "evt-3201",
+      "status": "new",
+      "title": "Mindanao M7.8 Earthquake Satellite Damage Assessment",
+      "category": "disaster",
+      "phenomenon": "earthquake_damage",
+      "confidence": 0.95
+    },
+    {
+      "id": "src-002",
+      "event_id": "evt-202",
+      "status": "update",
+      "title": "Kilauea Ep49 Forecast Window Opens June 12-15",
+      "category": "disaster",
+      "phenomenon": "volcanic_eruption",
+      "confidence": 0.90
+    },
+    {
+      "id": "src-003",
+      "event_id": "evt-701",
+      "status": "update",
+      "title": "Bismarck Sea Pumice Blocks Sea Access Manus Province",
+      "category": "disaster",
+      "phenomenon": "volcanic_pumice",
+      "confidence": 0.85
+    },
+    {
+      "id": "src-004",
+      "event_id": "evt-082",
+      "status": "update",
+      "title": "Mayon Volcano Day158+ Pyroclastic Flow 4km",
+      "category": "disaster",
+      "phenomenon": "volcanic_eruption",
+      "confidence": 0.90
+    },
+    {
+      "id": "src-005",
+      "event_id": "evt-2802",
+      "status": "update",
+      "title": "Typhoon Jangmi Damage Assessment Complete",
+      "category": "disaster",
+      "phenomenon": "typhoon",
+      "confidence": 0.90
+    },
+    {
+      "id": "src-006",
+      "event_id": "evt-1101",
+      "status": "update",
+      "title": "Canada Wildfire 65 Active Fires CIFFC Level 2",
+      "category": "disaster",
+      "phenomenon": "wildfire",
+      "confidence": 0.85
+    },
+    {
+      "id": "src-007",
+      "event_id": "evt-203",
+      "status": "update",
+      "title": "Great Sitkin WATCH/ORANGE Lava Dome Growth",
+      "category": "disaster",
+      "phenomenon": "volcanic_eruption",
+      "confidence": 0.85
+    },
+    {
+      "id": "src-008",
+      "event_id": "evt-204",
+      "status": "update",
+      "title": "Shishaldin ADVISORY/YELLOW 75nm Steam Plume",
+      "category": "disaster",
+      "phenomenon": "volcanic_eruption",
+      "confidence": 0.80
+    },
+    {
+      "id": "src-009",
+      "event_id": "temp-evt-1902",
+      "status": "update",
+      "title": "El Nino +0.9C 98% Probability Expected to Strengthen",
+      "category": "climate_env",
+      "phenomenon": "el_nino",
+      "confidence": 0.95
+    },
+    {
+      "id": "src-010",
+      "event_id": "evt-3101",
+      "status": "reported",
+      "title": "Russia Tank Reserves OSINT Analysis",
+      "category": "human_activity",
+      "phenomenon": "military_activity",
+      "confidence": 0.75
+    },
+    {
+      "id": "src-011",
+      "event_id": "evt-3102",
+      "status": "reported",
+      "title": "Brazil DETER Deforestation Monitoring",
+      "category": "human_activity",
+      "phenomenon": "deforestation",
+      "confidence": 0.85
+    },
+    {
+      "id": "src-012",
+      "event_id": "evt-3001",
+      "status": "reported",
+      "title": "GFM v4.1.1 Global Flood Monitoring Update",
+      "category": "disaster",
+      "phenomenon": "flood_monitoring",
+      "confidence": 0.85
+    }
+  ]
+}

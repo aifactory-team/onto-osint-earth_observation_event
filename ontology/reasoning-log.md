@@ -3079,3 +3079,103 @@ config 한도 내 — 새 클래스 0건 (max 3), 새 관계 유형 0건 (max 5)
 | 이벤트 업데이트 | evt-202, evt-701, evt-1101, evt-082, evt-203, evt-204, temp-evt-1902, evt-503, evt-3003, evt-092, evt-3001 (11건) | 후속 정보 반영 |
 
 config 한도 내 — 새 클래스 0건 (max 3), 새 관계 유형 0건 (max 5). 새 Country 0건, 새 Satellite 0건.
+
+---
+
+## 2026-06-12 추론 결과
+
+입력: sources/2026-06-12 (1 신규 + 8 업데이트 + 3 기보도). 신규 Organization 1건(PhilSA), Location 1건(Sarangani). **파이프라인 마일스톤: phen-earthquake 첫 실제 이벤트 매핑.**
+
+### first_event_reference (첫 이벤트 참조) — 1건 [마일스톤]
+
+- **추론 #1:** phen-earthquake (earthquake_damage) — 스키마 초기화(2026-04-30) 이후 44일간 mention_count=0이었던 Phenomenon이 evt-3201(민다나오 M7.8 지진)에서 최초 실제 이벤트 매핑 발생. mention_count 0→1. [confidence 0.99, 확정]
+  - PhilSA VIIRS 야간 조명 before/after 피해 평가 — 위성 검증 완료
+  - Sentinel Asia 발동 (EQ-2026-000083-PHL) — 국제 재해 대응 체계 발동
+  - 기존 phen-earthquake 정의: "InSAR coseismic deformation, building damage" — VIIRS 야간 조명은 새로운 관측 시그니처(전력 차단 패턴) 추가
+  - 파이프라인 내 유사 마일스톤: phen-naval 첫 매핑(2026-04-30), phen-landslide 첫 매핑(2026-05-02), phen-mining 첫 매핑(2026-05-03)
+
+### official_source_trust (공식 기관 신뢰도) — 2건
+
+- **추론 #2:** evt-3201 (민다나오 M7.8) — analyzedBy PhilSA (space_agency) → officialBoost +0.15 [0.95, 확정]
+  - PhilSA는 필리핀 국가 우주기관 (Republic Act 11363, 2019년 설립)
+  - VIIRS 야간 조명 데이터를 활용한 피해 평가 주체
+- **추론 #3:** evt-202 (Kilauea Ep49) — analyzedBy USGS HVO (space_agency) → officialBoost +0.15 [0.95, 확정]
+  - D-Day: 예보 창 금일 개시. 6/12-15 분출 가능, 최유력 6/13-14.
+
+### disaster_severity_priority (재해 우선순위) — 1건
+
+- **추론 #4:** evt-3201 (민다나오 M7.8) — 47+ 사망, 12,600+ 가옥 손상/파괴 → priorityBoost +0.20 [0.95, 확정]
+  - 인명피해 동반 자연재해 → 보고서 1순위 배치 규칙 적용
+  - 이 파이프라인 내 최대 인명피해 단일 이벤트(47+ 사망)
+
+### before_after_credibility (전후 비교 신뢰도) — 1건
+
+- **추론 #5:** evt-3201 (민다나오 M7.8) — PhilSA VIIRS 야간 조명 before/after → baCredibilityBoost +0.10 [0.90, 확정]
+  - 지진 전 야간 조명 → 지진 후 전력 차단 패턴 비교
+  - 통상 VIIRS는 산불/선박 탐지 용도이나, 야간 전력 차단을 통한 지진 피해 범위 추정은 이 파이프라인에서 새로운 센서 활용 패턴
+  - NASA Black Marble 계열 분석 기법
+
+### sensor_capability_match (센서-현상 적합성) — 3건
+
+- **추론 #6:** evt-3201 (민다나오 M7.8) — expected Sentinel-1 SAR InSAR 후속 관측 → sarBoost 예정 [0.85, 잠정]
+  - M7.8 규모 지진은 InSAR coseismic deformation 분석의 표준 대상
+  - Sentinel-1 A/C/D 풀 콘스텔레이션 (6/11 GFM v4.1.1 통합 완료) — 6-12일 재방문 내 데이터 수집 예상
+  - 현재는 VIIRS 야간 조명만 확인. InSAR 데이터 도래 시 sarBoost +0.10 확정 예정
+- **추론 #7:** evt-082 (Mayon Day158+) — Himawari-9 AHI 열적외 PDC 4km 탐지 → thermalBoost +0.10 [0.90, 확정]
+- **추론 #8:** evt-204 (Shishaldin) — TROPOMI SO₂ 검출 → tracegasBoost +0.15 [0.85, 확정]
+
+### multi_satellite_confirmation (다중 위성 교차검증) — 2건 유지
+
+- **추론 #9:** evt-1101 (캐나다 산불 65건) — GOES-18(NOAA) + VIIRS(NOAA/NASA) + MODIS(NASA) + Sentinel-2(ESA) + Landsat-9(USGS/NASA) → multiSatBoost +0.20 [0.95, 확정] — 5위성 4기관 유지
+- **추론 #10:** evt-701 (비스마르크해 부석 Day35+) — Sentinel-2(ESA) + Landsat-9(USGS) + MODIS(NASA) + VIIRS(NOAA) + Himawari-9(JMA) → multiSatBoost +0.20 [0.90, 확정] — 5위성 5기관 유지, 해상 접근 차단 인도주의 격상
+
+### temporal_progression (시계열 연속 관측) — 2건
+
+- **추론 #11:** evt-202 (Kilauea Ep49 D-Day) partOfSeries evt-202 시리즈 → 예보 창 금일 개시 (6/12-15, 최유력 6/13-14) [0.95, 확정]
+  - Ep44→Ep45→Ep46→Ep47→Ep48→Ep49 — 파이프라인 최장 시리즈
+- **추론 #12:** evt-082 (Mayon Day158+) partOfSeries evt-082 시리즈 → PDC 4km 도달 위험 격상 [0.90, 확정]
+  - AL3 장기 분출 위기 Day158+. 287K 이재민 유지. 4km PDC 신규 보고.
+
+### cascading_disaster (연쇄 재해) — 2건
+
+- **추론 #13:** evt-701 → evt-2903 → 해상 접근 차단 [0.88, 확정]
+  - Day35+ cascading chain — 파이프라인 최장 기간 연쇄 재해 갱신
+  - 마누스주 해상 접근 봉쇄, 어업 중단, 인도주의 영향
+- **추론 #14:** evt-2802 (태풍 Jangmi) → Tokyo 홍수 (동일 기상 시스템) [0.85, 확정]
+  - 태풍 → 동일 기상 시스템으로 인한 도쿄 수도권 홍수 cascading
+
+### korea_geo_focus (한반도 가산) — 0건
+
+- 금일 한반도 신규 이벤트 없음.
+
+### 금일 미적용 규칙
+
+- `commercial_imagery_trust`: 금일 상업 위성 직접 발표 없음.
+- `analyst_org_trust`: 금일 독립 분석기관 신규 분석 없음. Sentinel Asia는 intl_body로 official 분류.
+
+### 추론 통계 (2026-06-12)
+
+| 규칙 | 금일 발동 | 평균 신뢰도 |
+|------|----------|-----------|
+| first_event_reference | 1 | 0.99 |
+| official_source_trust | 2 | 0.95 |
+| disaster_severity_priority | 1 | 0.95 |
+| before_after_credibility | 1 | 0.90 |
+| sensor_capability_match | 3 | 0.87 |
+| multi_satellite_confirmation | 2 | 0.93 |
+| temporal_progression | 2 | 0.93 |
+| cascading_disaster | 2 | 0.87 |
+| korea_geo_focus | 0 | — |
+| **합계** | **14** | **0.92** |
+
+### 온톨로지 변경
+
+| 변경 유형 | 대상 | 근거 |
+|----------|------|------|
+| first_event_reference | phen-earthquake mention_count 0→1 (마일스톤) | evt-3201 민다나오 M7.8 — 파이프라인 최초 위성 검증 지진 피해 |
+| Organization 업데이트 | org-philsa (PhilSA) last_seen 2026-06-12, mention_count 2→3 | 기존 기관. VIIRS 야간 조명 피해 평가 + Sentinel Asia 활성화 주체. |
+| 새 Location | ent-loc-sarangani (Sarangani, Mindanao, PH) (1건) | M7.8 지진 진앙 근처. 5.9N, 125.3E. |
+| 새 Event | evt-3201 (1건) | 민다나오 M7.8 지진 위성 피해 평가 |
+| 이벤트 업데이트 | evt-202, evt-701, evt-082, evt-2802, evt-1101, evt-203, evt-204, temp-evt-1902 (8건) | 후속 정보 반영 |
+
+config 한도 내 — 새 클래스 0건 (max 3), 새 관계 유형 0건 (max 5). 새 Country 0건, 새 Satellite 0건.

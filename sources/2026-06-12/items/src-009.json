@@ -1,0 +1,63 @@
+{
+  "id": "src-009",
+  "event_id": "temp-evt-1902",
+  "status": "update",
+  "title": "El Nino +0.9C 98% Probability Expected to Strengthen",
+  "description": "NOAA confirms El Nino has formed with +0.9C anomaly and 98% probability of continuation. 63% chance of exceeding +2.0C threshold for 'very strong' classification. Sentinel-6 satellite altimetry data shows sea surface 15cm higher than normal off Peru coast.",
+  "category": "climate_env",
+  "subcategory": "el_nino",
+  "domain": "dom-climate-env",
+  "phenomenon": "phen-el-nino",
+  "location": {
+    "name": "Equatorial Pacific (Nino 3.4 region)",
+    "country": "Global",
+    "country_id": "co-global",
+    "lat": 0.0,
+    "lon": -170.0,
+    "admin_level": "ocean_region",
+    "affected_areas": ["Peru coast", "Equatorial Pacific"]
+  },
+  "event_date": "2026-06-12",
+  "collected_date": "2026-06-12",
+  "update_type": "intensification",
+  "update_details": "+0.9C anomaly; 98% probability; 63% chance >2.0C very strong; Sentinel-6 shows 15cm higher seas off Peru",
+  "satellites": [
+    {
+      "id": "sat-sentinel-6",
+      "name": "Sentinel-6 Michael Freilich",
+      "type": "altimetry",
+      "product": "Sea surface height anomaly"
+    }
+  ],
+  "sensors": [
+    {
+      "id": "sen-poseidon-4",
+      "name": "Poseidon-4 SAR Altimeter",
+      "type": "radar_altimeter"
+    }
+  ],
+  "satellite_unverified": false,
+  "organizations": [
+    {
+      "id": "org-noaa",
+      "name": "NOAA",
+      "role": "forecast"
+    }
+  ],
+  "confidence": 0.95,
+  "confidence_factors": {
+    "base": 0.60,
+    "officialBoost": 0.15,
+    "multiSatBoost": 0.20,
+    "notes": "NOAA official forecast + Sentinel-6 satellite altimetry data"
+  },
+  "sources": [
+    {
+      "url": "https://www.noaa.gov/news-release/el-nino-forms-expected-to-strengthen-say-noaa-forecasters",
+      "title": "NOAA: El Nino Forms, Expected to Strengthen",
+      "type": "official_agency",
+      "primary": true
+    }
+  ],
+  "tags": ["el_nino", "climate", "sea_surface_temperature", "noaa", "sentinel-6", "pacific_ocean", "peru"]
+}

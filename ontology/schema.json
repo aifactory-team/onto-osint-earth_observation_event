@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "description": "OSINT 온톨로지 스키마 — config/osint-config.json의 seed로부터 초기화되고, 매일 파이프라인 실행 시 자동 확장된다. 도메인: 위성영상으로 관측 가능한 지구상 이벤트 (Earth Observation Events).",
-  "last_updated": "2026-06-11",
+  "last_updated": "2026-06-12",
   "classes": [
     {
       "id": "Entity",
@@ -691,6 +691,34 @@
       "target": "temp-evt-3101(신규), temp-evt-3102(신규), temp-evt-3103(신규) + updates to evt-202, evt-701, evt-1101, evt-082, evt-203, evt-204, temp-evt-1902, evt-503, evt-3003, evt-092, evt-3001",
       "reason": "신규 3건: (1) 러시아 전차 예비 고갈 OSINT(temp-evt-3101, 55.0N/73.0E, WorldView-3+PlanetScope+SkySat 추정, Jompy, RU, dom-defense military_buildup, 2088 tanks/851 usable, T-80 12mo exhaustion, hiResBoost+analystBoost+multiSatBoost 약가산). (2) 브라질 DETER 위성 금지 법안(temp-evt-3102, -3.0/-60.0, Landsat/MODIS 참조, Mongabay, BR, dom-human deforestation, EO 메타-이벤트 — 위성 모니터링 정책적 무력화, evt-3003과 직접 모순). (3) GFM v4.1.1 S-1D 통합 TODAY 롤아웃(temp-evt-3103, CEMS 공식, S-1 A/C/D 풀 콘스텔레이션 GFM, officialBoost, partOfSeries temp-evt-2504+evt-3001). 업데이트 11건: Kilauea D-1 내일 분출 창(evt-202, 6/12-15 최유력 6/13-14), Bismarck Sea 69km2 역대 최대 부석(evt-701, 5위성), 캐나다 산불 65건 18935ha CIFFC L2(evt-1101), Mayon Day157+ 287K 이재민(evt-082), Great Sitkin WATCH 용암류 전진(evt-203), Shishaldin ADVISORY 75nm(evt-204), El Nino 98%(temp-evt-1902), Arctic 최저 11.439M(evt-503), Amazon 추적(evt-3003), Antelope Reef 추적(evt-092), GFM v4.1.1 금일 확정(evt-3001). 다중 위성 교차검증 3건(evt-1101 5위성, evt-701 5위성, temp-evt-3101 추정). cascading 1건(evt-701→69km2 34일). 한반도 GeoFocus 금일 신규 없음. 스키마 구조적 변경 없음 — 기존 클래스·관계로 충분.",
       "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009", "src-010", "src-011", "src-012", "src-013"]
+    },
+    {
+      "date": "2026-06-12",
+      "action": "first_event_reference",
+      "target": "phen-earthquake",
+      "reason": "phen-earthquake (earthquake_damage)는 스키마 초기화(2026-04-30) 시 정의되었으나 mention_count=0으로 실제 이벤트 매핑이 없었음. evt-3201 (민다나오 M7.8 지진)에서 최초 위성 검증 지진 피해 이벤트 매핑 발생. mention_count 0→1. PhilSA VIIRS 야간 조명 before/after 피해 평가 + Sentinel Asia 발동(EQ-2026-000083-PHL). 이 파이프라인 44일 운영 이래 첫 지진 이벤트 — 마일스톤.",
+      "source_ids": ["src-001"]
+    },
+    {
+      "date": "2026-06-12",
+      "action": "update_organization",
+      "target": "org-philsa (PhilSA - Philippine Space Agency)",
+      "reason": "기존 org-philsa(2026-05-06 추가, Mayon ashfall mapping) 업데이트. evt-3201 민다나오 M7.8 지진 VIIRS 야간 조명 피해 평가 + Sentinel Asia 활성화 요청 주체. last_seen 2026-06-12, mention_count 2→3.",
+      "source_ids": ["src-001"]
+    },
+    {
+      "date": "2026-06-12",
+      "action": "add_location",
+      "target": "ent-loc-sarangani (Sarangani, Mindanao, PH)",
+      "reason": "민다나오 사랑가니 — M7.8 지진 진앙 근처. 5.9N, 125.3E. evt-3201 발생 지역.",
+      "source_ids": ["src-001"]
+    },
+    {
+      "date": "2026-06-12",
+      "action": "add_event_and_update",
+      "target": "evt-3201(신규) + updates to evt-202, evt-701, evt-082, evt-2802, evt-1101, evt-203, evt-204, temp-evt-1902",
+      "reason": "신규 1건: 민다나오 M7.8 지진 위성 피해 평가(evt-3201, 5.9N/125.3E, VIIRS, PhilSA, PH, dom-disaster earthquake_damage, 47+ 사망 12600+ 가옥, Sentinel Asia EQ-2026-000083-PHL, phen-earthquake 첫 매핑, officialBoost+priorityBoost+baCredibility, 0.97 cap). 업데이트 8건: Kilauea Ep49 D-Day 예보 창 금일 개시(evt-202, 6/12-15), Bismarck Sea 해상 접근 차단(evt-701, Day35+), Mayon Day158+ PDC 4km(evt-082), Jangmi 피해 평가(evt-2802), 캐나다 산불 65건(evt-1101), Great Sitkin WATCH(evt-203), Shishaldin ADVISORY(evt-204), El Nino +0.9C(temp-evt-1902). 다중 위성 교차검증 2건 유지(evt-1101, evt-701). cascading 2건(evt-701 해상 차단, evt-2802 Tokyo 홍수). 한반도 GeoFocus 금일 신규 없음. 스키마 구조적 변경 없음 — 기존 클래스·관계로 충분.",
+      "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009"]
     }
   ]
 }

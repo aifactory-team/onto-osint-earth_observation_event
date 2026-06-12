@@ -1,0 +1,53 @@
+{
+  "id": "src-004",
+  "event_id": "evt-082",
+  "status": "update",
+  "title": "Mayon Volcano Day158+ Pyroclastic Flow 4km",
+  "description": "Mayon volcano produced its longest pyroclastic density current (PDC) since the magmatic eruption began, extending 4km on June 9. Over 287,000 people remain displaced. Alert Level 3 maintained with 6km Permanent Danger Zone. Rainy season lahar risk increasing significantly.",
+  "category": "disaster",
+  "subcategory": "volcanic_eruption",
+  "domain": "dom-disaster",
+  "phenomenon": "phen-volcanic-eruption",
+  "location": {
+    "name": "Mayon Volcano, Albay",
+    "country": "Philippines",
+    "country_id": "co-ph",
+    "lat": 13.257,
+    "lon": 123.685,
+    "admin_level": "volcano"
+  },
+  "event_date": "2026-06-09",
+  "collected_date": "2026-06-12",
+  "update_type": "activity_escalation",
+  "update_details": "Longest PDC since magmatic eruption began (4km); 287,000+ displaced; AL3 maintained; 6km PDZ; rainy season lahar risk increasing",
+  "satellites": [],
+  "sensors": [],
+  "satellite_unverified": true,
+  "organizations": [
+    {
+      "id": "org-phivolcs",
+      "name": "PHIVOLCS",
+      "role": "monitoring"
+    }
+  ],
+  "impact": {
+    "displaced": 287000,
+    "alert_level": "3",
+    "danger_zone_km": 6
+  },
+  "confidence": 0.90,
+  "confidence_factors": {
+    "base": 0.65,
+    "officialBoost": 0.15,
+    "notes": "PHIVOLCS official monitoring; PNA official news agency report"
+  },
+  "sources": [
+    {
+      "url": "https://www.pna.gov.ph/articles/1267101",
+      "title": "PNA: Mayon Volcano 4km Pyroclastic Flow",
+      "type": "official_news",
+      "primary": true
+    }
+  ],
+  "tags": ["mayon", "volcanic_eruption", "pyroclastic_flow", "philippines", "lahar_risk", "displacement"]
+}

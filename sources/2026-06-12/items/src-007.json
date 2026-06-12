@@ -1,0 +1,53 @@
+{
+  "id": "src-007",
+  "event_id": "evt-203",
+  "status": "update",
+  "title": "Great Sitkin WATCH/ORANGE Lava Dome Growth",
+  "description": "Great Sitkin volcano in Alaska remains at WATCH/ORANGE alert level with continued lava dome growth. AVO continues monitoring.",
+  "category": "disaster",
+  "subcategory": "volcanic_eruption",
+  "domain": "dom-disaster",
+  "phenomenon": "phen-volcanic-eruption",
+  "location": {
+    "name": "Great Sitkin, Aleutian Islands, Alaska",
+    "country": "United States",
+    "country_id": "co-us",
+    "lat": 52.076,
+    "lon": -176.13,
+    "admin_level": "volcano"
+  },
+  "event_date": "2026-06-12",
+  "collected_date": "2026-06-12",
+  "update_type": "status_update",
+  "update_details": "WATCH/ORANGE alert level maintained; lava dome growth continues",
+  "satellites": [],
+  "sensors": [],
+  "satellite_unverified": true,
+  "organizations": [
+    {
+      "id": "org-usgs",
+      "name": "USGS",
+      "role": "monitoring"
+    },
+    {
+      "id": "org-avo",
+      "name": "Alaska Volcano Observatory",
+      "role": "monitoring"
+    }
+  ],
+  "confidence": 0.85,
+  "confidence_factors": {
+    "base": 0.60,
+    "officialBoost": 0.15,
+    "notes": "USGS/AVO official alert"
+  },
+  "sources": [
+    {
+      "url": "https://volcanoes.usgs.gov/hans-public/volcano/ak111",
+      "title": "USGS AVO: Great Sitkin Volcano Alert",
+      "type": "official_agency",
+      "primary": true
+    }
+  ],
+  "tags": ["great_sitkin", "volcanic_eruption", "lava_dome", "alaska", "aleutian_islands"]
+}

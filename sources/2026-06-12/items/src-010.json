@@ -1,0 +1,29 @@
+{
+  "id": "src-010",
+  "event_id": "evt-3101",
+  "status": "reported",
+  "title": "Russia Tank Reserves OSINT Analysis",
+  "description": "OSINT analysis of Russian tank reserve storage facilities. Already reported in 2026-06-11 daily report.",
+  "category": "human_activity",
+  "subcategory": "military_activity",
+  "domain": "dom-human-activity",
+  "phenomenon": "phen-military-activity",
+  "location": {
+    "name": "Russia",
+    "country": "Russia",
+    "country_id": "co-ru",
+    "lat": 55.0,
+    "lon": 37.0,
+    "admin_level": "country"
+  },
+  "event_date": "2026-06-11",
+  "collected_date": "2026-06-12",
+  "reported_date": "2026-06-11",
+  "satellites": [],
+  "sensors": [],
+  "satellite_unverified": true,
+  "organizations": [],
+  "confidence": 0.75,
+  "sources": [],
+  "tags": ["military", "osint", "russia", "tank_reserves"]
+}

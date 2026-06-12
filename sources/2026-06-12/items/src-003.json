@@ -1,0 +1,44 @@
+{
+  "id": "src-003",
+  "event_id": "evt-701",
+  "status": "update",
+  "title": "Bismarck Sea Pumice Blocks Sea Access Manus Province",
+  "description": "Pumice from Titan Ridge submarine eruption has washed ashore on Admiralty Islands, blocking sea access in Manus Province, Papua New Guinea. Boan village on Lou Island is particularly affected, with trade, fishing, and medical access severely disrupted. Reported by The Watchers on June 11, 2026.",
+  "category": "disaster",
+  "subcategory": "volcanic_pumice",
+  "domain": "dom-disaster",
+  "phenomenon": "phen-volcanic-pumice",
+  "location": {
+    "name": "Admiralty Islands, Manus Province",
+    "country": "Papua New Guinea",
+    "country_id": "co-pg",
+    "lat": -2.05,
+    "lon": 147.0,
+    "admin_level": "province",
+    "affected_areas": ["Boan village", "Lou Island", "Admiralty Islands"]
+  },
+  "event_date": "2026-06-11",
+  "collected_date": "2026-06-12",
+  "update_type": "impact_escalation",
+  "update_details": "Pumice washed ashore blocking sea access; trade/fishing/medical access disrupted at Boan village, Lou Island",
+  "related_event_ids": ["evt-2903"],
+  "satellites": [],
+  "sensors": [],
+  "satellite_unverified": true,
+  "organizations": [],
+  "confidence": 0.85,
+  "confidence_factors": {
+    "base": 0.65,
+    "analystBoost": 0.10,
+    "notes": "The Watchers report with ground-level detail; satellite confirmation of pumice raft expected"
+  },
+  "sources": [
+    {
+      "url": "https://watchers.news/2026/06/11/pumice-from-titan-ridge-eruption-blocks-sea-access-in-manus-province-papua-new-guinea/",
+      "title": "The Watchers: Pumice from Titan Ridge eruption blocks sea access in Manus Province",
+      "type": "analyst_report",
+      "primary": true
+    }
+  ],
+  "tags": ["pumice", "volcanic", "titan_ridge", "bismarck_sea", "papua_new_guinea", "maritime_disruption"]
+}

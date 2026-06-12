@@ -1,0 +1,54 @@
+{
+  "date": "2026-06-12",
+  "new_triples": [
+    {"subject": "evt-3201", "predicate": "manifests", "object": "phen-earthquake", "source_id": "src-001", "date": "2026-06-12", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-3201", "predicate": "inDomain", "object": "dom-disaster", "source_id": "src-001", "date": "2026-06-12", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-3201", "predicate": "inCountry", "object": "co-ph", "source_id": "src-001", "date": "2026-06-12", "confidence": 0.99, "type": "explicit"},
+    {"subject": "evt-3201", "predicate": "locatedIn", "object": "ent-loc-sarangani", "source_id": "src-001", "date": "2026-06-12", "confidence": 0.99, "type": "explicit"},
+    {"subject": "evt-3201", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_id": "src-001", "date": "2026-06-12", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-3201", "predicate": "usesSensor", "object": "sensor-viirs", "source_id": "src-001", "date": "2026-06-12", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-3201", "predicate": "analyzedBy", "object": "org-philsa", "source_id": "src-001", "date": "2026-06-12", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-3201", "predicate": "analyzedBy", "object": "org-sentinel-asia", "source_id": "src-001", "date": "2026-06-12", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-3201", "predicate": "severity", "object": "high_47dead_12600houses", "source_id": "src-001", "date": "2026-06-12", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-3201", "predicate": "sentinel_asia_id", "object": "EQ-2026-000083-PHL", "source_id": "src-001", "date": "2026-06-12", "confidence": 0.95, "type": "explicit"},
+    {"subject": "org-philsa", "predicate": "org_type", "object": "space_agency", "source_id": "src-001", "date": "2026-06-12", "confidence": 0.95, "type": "explicit"},
+    {"subject": "ent-loc-sarangani", "predicate": "inCountry", "object": "co-ph", "source_id": "src-001", "date": "2026-06-12", "confidence": 0.99, "type": "explicit"}
+  ],
+  "updated_triples": [
+    {"subject": "evt-202", "predicate": "forecast_window", "object": "2026-06-12/2026-06-15_D-Day_window_open_today", "source_id": "src-002", "date": "2026-06-12", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-701", "predicate": "status", "object": "pumice_blocks_sea_access_manus_province_day35+", "source_id": "src-003", "date": "2026-06-12", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-701", "predicate": "humanitarian_impact", "object": "sea_access_blocked_fishing_disrupted", "source_id": "src-003", "date": "2026-06-12", "confidence": 0.85, "type": "explicit"},
+    {"subject": "evt-082", "predicate": "status", "object": "AL3_Day158+_PDC_4km_287K_displaced", "source_id": "src-004", "date": "2026-06-12", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-2802", "predicate": "status", "object": "damage_assessment_complete_jangmi", "source_id": "src-005", "date": "2026-06-12", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-1101", "predicate": "status", "object": "65_active_fires_CIFFC_L2_continues", "source_id": "src-006", "date": "2026-06-12", "confidence": 0.85, "type": "explicit"},
+    {"subject": "evt-203", "predicate": "status", "object": "WATCH_ORANGE_lava_dome_growth", "source_id": "src-007", "date": "2026-06-12", "confidence": 0.85, "type": "explicit"},
+    {"subject": "evt-204", "predicate": "status", "object": "ADVISORY_YELLOW_75nm_steam_plume", "source_id": "src-008", "date": "2026-06-12", "confidence": 0.80, "type": "explicit"},
+    {"subject": "temp-evt-1902", "predicate": "nino34_index", "object": "+0.9C_strengthening_98pct", "source_id": "src-009", "date": "2026-06-12", "confidence": 0.90, "type": "explicit"},
+    {"subject": "phen-earthquake", "predicate": "mention_count", "object": "1", "source_id": "src-001", "date": "2026-06-12", "confidence": 0.99, "type": "explicit"},
+    {"subject": "co-ph", "predicate": "last_seen", "object": "2026-06-12", "source_id": "src-001", "date": "2026-06-12", "confidence": 0.99, "type": "explicit"}
+  ],
+  "inferred_triples": [
+    {"subject": "evt-3201", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred", "reason": "PhilSA is national space agency of the Philippines. Sentinel Asia is JAXA-coordinated international disaster charter body. Both are official sources."},
+    {"subject": "evt-3201", "predicate": "priorityBoost", "object": "+0.20", "rule": "disaster_severity_priority", "confidence": 0.95, "type": "inferred", "reason": "47+ dead, 12,600+ houses damaged. M7.8 earthquake with significant casualties and infrastructure destruction. Highest priority disaster."},
+    {"subject": "evt-3201", "predicate": "baCredibilityBoost", "object": "+0.10", "rule": "before_after_credibility", "confidence": 0.90, "type": "inferred", "reason": "PhilSA VIIRS nighttime light data before/after comparison showing power outage patterns and structural damage indicators."},
+    {"subject": "evt-3201", "predicate": "expected_sar_followup", "object": "sentinel-1_insar_coseismic_deformation", "rule": "sensor_capability_match_sar", "confidence": 0.85, "type": "inferred", "reason": "M7.8 earthquake expects InSAR coseismic deformation analysis from Sentinel-1 SAR. Standard procedure for major earthquakes — likely within 6-12 day revisit cycle."},
+    {"subject": "phen-earthquake", "predicate": "first_event_reference", "object": "evt-3201", "rule": "first_event_reference", "confidence": 0.99, "type": "inferred", "reason": "phen-earthquake (earthquake_damage) was defined at schema initialization but had mention_count=0 until now. evt-3201 is the first actual satellite-verified earthquake damage event in this pipeline's history. Milestone."},
+    {"subject": "evt-701", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.90, "type": "inferred", "reason": "Sentinel-2(ESA) + Landsat-9(USGS) + MODIS(NASA) + VIIRS(NOAA) + Himawari-9(JMA) — 5 satellites across 5 agencies maintained for day35+ pumice tracking."},
+    {"subject": "evt-1101", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.95, "type": "inferred", "reason": "GOES-18(NOAA) + VIIRS(NOAA/NASA) + MODIS(NASA) + Sentinel-2(ESA) + Landsat-9(USGS/NASA) — 5 satellites across 4 agencies for Canada wildfire monitoring."},
+    {"subject": "evt-202", "predicate": "partOfSeries", "object": "evt-202", "rule": "temporal_progression", "confidence": 0.95, "type": "inferred", "reason": "Kilauea Ep49 D-Day — forecast window opens today 6/12. Most likely 6/13-14 eruption. Continuous Halema'uma'u volcanic series."},
+    {"subject": "evt-082", "predicate": "partOfSeries", "object": "evt-082", "rule": "temporal_progression", "confidence": 0.90, "type": "inferred", "reason": "Mayon series Day158+, AL3 since Jan 2026. 4km PDC reported today — escalation. 287K displaced continues."},
+    {"subject": "evt-701", "predicate": "cascading_impact_expanded", "object": "sea_access_blocked_humanitarian", "rule": "cascading_disaster", "confidence": 0.88, "type": "inferred", "reason": "evt-701 submarine eruption -> evt-2903 pumice reaching Manus Island -> now blocking sea access. Fishing disrupted, humanitarian impact. Day35+ cascading chain — pipeline longest."},
+    {"subject": "evt-2802", "predicate": "cascading_damage_assessment", "object": "tokyo_flooding_same_weather_system", "rule": "cascading_disaster", "confidence": 0.85, "type": "inferred", "reason": "Typhoon Jangmi (evt-2802) damage assessment includes downstream flooding in Tokyo metropolitan area from the same weather system. Multi-region cascading impact."},
+    {"subject": "evt-082", "predicate": "thermalBoost", "object": "+0.10", "rule": "sensor_capability_match_tirs", "confidence": 0.90, "type": "inferred", "reason": "Himawari-9 AHI thermal infrared for volcanic ash and PDC detection. 4km PDC today."},
+    {"subject": "evt-204", "predicate": "tracegasBoost", "object": "+0.15", "rule": "sensor_capability_match_tracegas", "confidence": 0.85, "type": "inferred", "reason": "TROPOMI SO2 detection for Shishaldin continuing. 75nm steam plume."},
+    {"subject": "evt-203", "predicate": "sarBoost", "object": "+0.10", "rule": "sensor_capability_match_sar", "confidence": 0.85, "type": "inferred", "reason": "Sentinel-1 SAR lava dome growth monitoring at Great Sitkin — WATCH/ORANGE level."},
+    {"subject": "evt-202", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred", "reason": "USGS HVO official forecast — Ep49 window opens today."},
+    {"subject": "evt-3201", "predicate": "nightlight_damage_detection", "object": "viirs_nighttime_before_after", "rule": "before_after_credibility", "confidence": 0.90, "type": "inferred", "reason": "PhilSA used VIIRS nighttime light data to assess earthquake damage — power outage pattern indicates structural damage extent. Novel sensor application for earthquake."}
+  ],
+  "stats": {
+    "new_nodes": 4,
+    "new_edges": 12,
+    "updated_edges": 11,
+    "inferred_edges": 16
+  }
+}

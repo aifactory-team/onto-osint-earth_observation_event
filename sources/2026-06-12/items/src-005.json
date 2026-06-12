@@ -1,0 +1,60 @@
+{
+  "id": "src-005",
+  "event_id": "evt-2802",
+  "status": "update",
+  "title": "Typhoon Jangmi Damage Assessment Complete",
+  "description": "Damage assessment for Typhoon Jangmi completed. 48,000 homes lost power in Okinawa and Kagoshima prefectures. 900 flights cancelled, 57 houses damaged, 23 injuries reported. Tokyo experienced flooding at intersections. NASA Earth Observatory published satellite imagery.",
+  "category": "disaster",
+  "subcategory": "typhoon",
+  "domain": "dom-disaster",
+  "phenomenon": "phen-typhoon",
+  "location": {
+    "name": "Okinawa, Kagoshima, Tokyo",
+    "country": "Japan",
+    "country_id": "co-jp",
+    "lat": 26.5,
+    "lon": 127.8,
+    "admin_level": "prefecture",
+    "affected_areas": ["Okinawa", "Kagoshima", "Tokyo"]
+  },
+  "event_date": "2026-06-12",
+  "collected_date": "2026-06-12",
+  "update_type": "damage_assessment",
+  "update_details": "48,000 homes without power Okinawa/Kagoshima; 900 flights cancelled; 57 houses damaged; 23 injuries; Tokyo flooding",
+  "satellites": [],
+  "sensors": [],
+  "satellite_unverified": true,
+  "organizations": [
+    {
+      "id": "org-nasa",
+      "name": "NASA",
+      "role": "imagery_provider"
+    },
+    {
+      "id": "org-nasa-eo",
+      "name": "NASA Earth Observatory",
+      "role": "analysis"
+    }
+  ],
+  "impact": {
+    "homes_without_power": 48000,
+    "flights_cancelled": 900,
+    "houses_damaged": 57,
+    "injuries": 23
+  },
+  "confidence": 0.90,
+  "confidence_factors": {
+    "base": 0.60,
+    "officialBoost": 0.15,
+    "notes": "NASA Earth Observatory official publication"
+  },
+  "sources": [
+    {
+      "url": "https://science.nasa.gov/earth/earth-observatory/typhoon-jangmi/",
+      "title": "NASA Earth Observatory: Typhoon Jangmi",
+      "type": "official_agency",
+      "primary": true
+    }
+  ],
+  "tags": ["typhoon", "jangmi", "japan", "okinawa", "kagoshima", "tokyo", "flooding", "power_outage"]
+}

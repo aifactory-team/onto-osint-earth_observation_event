@@ -1,0 +1,59 @@
+{
+  "id": "src-006",
+  "event_id": "evt-1101",
+  "status": "update",
+  "title": "Canada Wildfire 65 Active Fires CIFFC Level 2",
+  "description": "Canadian Wildland Fire Information System reports 65 active fires with 6 out of control. CIFFC national preparedness at Level 2. Year-to-date area burned: 18,935 hectares. British Columbia has highest risk.",
+  "category": "disaster",
+  "subcategory": "wildfire",
+  "domain": "dom-disaster",
+  "phenomenon": "phen-wildfire",
+  "location": {
+    "name": "Canada (nationwide, BC highest risk)",
+    "country": "Canada",
+    "country_id": "co-ca",
+    "lat": 53.0,
+    "lon": -122.0,
+    "admin_level": "country"
+  },
+  "event_date": "2026-06-12",
+  "collected_date": "2026-06-12",
+  "update_type": "status_update",
+  "update_details": "65 active fires, 6 out of control; CIFFC Level 2; 18,935ha YTD; BC highest risk",
+  "satellites": [],
+  "sensors": [],
+  "satellite_unverified": true,
+  "organizations": [
+    {
+      "id": "org-ciffc",
+      "name": "Canadian Interagency Forest Fire Centre (CIFFC)",
+      "role": "coordination"
+    },
+    {
+      "id": "org-nrcan",
+      "name": "Natural Resources Canada",
+      "role": "monitoring"
+    }
+  ],
+  "impact": {
+    "active_fires": 65,
+    "out_of_control": 6,
+    "area_burned_ha_ytd": 18935,
+    "preparedness_level": 2
+  },
+  "confidence": 0.85,
+  "confidence_factors": {
+    "base": 0.60,
+    "officialBoost": 0.15,
+    "notes": "CWFIS official government data source"
+  },
+  "sources": [
+    {
+      "url": "https://cwfis.cfs.nrcan.gc.ca/report",
+      "title": "CWFIS: Canadian Wildland Fire Information System Report",
+      "type": "official_agency",
+      "primary": true
+    }
+  ],
+  "tags": ["wildfire", "canada", "british_columbia", "ciffc", "forest_fire"]
+}
