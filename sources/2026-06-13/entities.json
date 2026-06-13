@@ -1,0 +1,154 @@
+{
+  "date": "2026-06-13",
+  "entities": [
+    {
+      "temp_id": "evt-3301",
+      "matched_id": null,
+      "type": "Event",
+      "name": "베트남 스프래틀리 27개 사이트 군사·해양 인프라 건설",
+      "properties": {"phenomenon": "construction", "domain": "Defense", "country": "VN", "lat": 8.65, "lon": 111.92, "observation_date": "2026-06-08", "severity": "high", "before_after_available": true},
+      "source_ids": ["src-009"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "evt-3302",
+      "matched_id": null,
+      "type": "Event",
+      "name": "Sentinel-1 콘스텔레이션 궤도 재구성 (S1C 기동 6/9-23, S1A 퇴역 6/29)",
+      "properties": {"phenomenon": "satellite_operations", "domain": "HumanActivity", "country": "INTL", "lat": 0.0, "lon": 0.0, "observation_date": "2026-06-09", "severity": "medium"},
+      "source_ids": ["src-010"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "evt-3303",
+      "matched_id": null,
+      "type": "Event",
+      "name": "북한 2026 모내기 위성 관측 — 예년 대비 2.7% 빠르게 진행",
+      "properties": {"phenomenon": "agricultural_change", "domain": "AgricultureMaritime", "country": "KP", "lat": 38.5, "lon": 126.0, "observation_date": "2026-06-05", "severity": "low"},
+      "source_ids": ["src-011"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-202",
+      "type": "Event",
+      "name": "Kilauea Ep49 분수분출 예보 — D-Day 6/13",
+      "properties": {"phenomenon": "volcanic_eruption", "observation_date": "2026-06-13"},
+      "source_ids": ["src-001"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-082",
+      "type": "Event",
+      "name": "Mayon Volcano Day159+ AL3",
+      "properties": {"phenomenon": "volcanic_eruption", "observation_date": "2026-06-13"},
+      "source_ids": ["src-002"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-701",
+      "type": "Event",
+      "name": "Bismarck Sea Titan Ridge Day36+ Pumice",
+      "properties": {"phenomenon": "volcanic_eruption", "observation_date": "2026-06-13"},
+      "source_ids": ["src-003"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-3201",
+      "type": "Event",
+      "name": "Mindanao M7.8 Earthquake — 45,556 homes damaged",
+      "properties": {"phenomenon": "earthquake_damage", "observation_date": "2026-06-12"},
+      "source_ids": ["src-004", "src-012"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-1101",
+      "type": "Event",
+      "name": "Canada Wildfire 65+ Active Fires",
+      "properties": {"phenomenon": "wildfire", "observation_date": "2026-06-13"},
+      "source_ids": ["src-005"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-203",
+      "type": "Event",
+      "name": "Great Sitkin WATCH/ORANGE",
+      "properties": {"phenomenon": "volcanic_eruption", "observation_date": "2026-06-13"},
+      "source_ids": ["src-006"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "evt-204",
+      "type": "Event",
+      "name": "Shishaldin ADVISORY/YELLOW",
+      "properties": {"phenomenon": "volcanic_eruption", "observation_date": "2026-06-13"},
+      "source_ids": ["src-007"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": null,
+      "matched_id": "temp-evt-1902",
+      "type": "Event",
+      "name": "El Niño +0.9°C 98% Probability",
+      "properties": {"phenomenon": "sea_level_change", "observation_date": "2026-06-13"},
+      "source_ids": ["src-008"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "co-vn",
+      "matched_id": null,
+      "type": "Country",
+      "name": "베트남",
+      "properties": {"iso_code": "VN", "region": "동남아시아"},
+      "source_ids": ["src-009"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "ent-loc-069",
+      "matched_id": null,
+      "type": "Location",
+      "name": "Barque Canada Reef, Spratly Islands",
+      "properties": {"country": "VN", "region": "남중국해", "lat": 8.1, "lon": 113.3},
+      "source_ids": ["src-009"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "org-dailynk",
+      "matched_id": null,
+      "type": "Organization",
+      "name": "DailyNK",
+      "properties": {"org_type": "media", "country": "KR"},
+      "source_ids": ["src-011"],
+      "mention_count": 1
+    }
+  ],
+  "relations": [
+    {"subject": "evt-3301", "predicate": "observedBy", "object": "sat-planetscope", "source_ids": ["src-009"], "confidence": 0.90},
+    {"subject": "evt-3301", "predicate": "analyzedBy", "object": "org-rfa", "source_ids": ["src-009"], "confidence": 0.90},
+    {"subject": "evt-3301", "predicate": "analyzedBy", "object": "org-csis-bp", "source_ids": ["src-009"], "confidence": 0.85},
+    {"subject": "evt-3301", "predicate": "manifests", "object": "phen-construction", "source_ids": ["src-009"], "confidence": 0.95},
+    {"subject": "evt-3301", "predicate": "inDomain", "object": "dom-defense", "source_ids": ["src-009"], "confidence": 0.90},
+    {"subject": "evt-3302", "predicate": "analyzedBy", "object": "org-esa", "source_ids": ["src-010"], "confidence": 0.95},
+    {"subject": "evt-3302", "predicate": "manifests", "object": "phen-satops", "source_ids": ["src-010"], "confidence": 0.95},
+    {"subject": "evt-3303", "predicate": "observedBy", "object": "sat-landsat8", "source_ids": ["src-011"], "confidence": 0.90},
+    {"subject": "evt-3303", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-011"], "confidence": 0.90},
+    {"subject": "evt-3303", "predicate": "analyzedBy", "object": "org-dailynk", "source_ids": ["src-011"], "confidence": 0.85},
+    {"subject": "evt-3303", "predicate": "manifests", "object": "phen-ndvi", "source_ids": ["src-011"], "confidence": 0.85},
+    {"subject": "evt-3303", "predicate": "inDomain", "object": "dom-agri-marine", "source_ids": ["src-011"], "confidence": 0.90},
+    {"subject": "evt-3303", "predicate": "inCountry", "object": "co-kp", "source_ids": ["src-011"], "confidence": 0.95},
+    {"subject": "evt-202", "predicate": "observedBy", "object": "sat-landsat9", "source_ids": ["src-001"], "confidence": 0.90},
+    {"subject": "evt-202", "predicate": "analyzedBy", "object": "org-usgs", "source_ids": ["src-001"], "confidence": 0.95}
+  ],
+  "stats": {
+    "total_entities": 14,
+    "new_entities": 4,
+    "matched_entities": 10,
+    "total_relations": 15
+  }
+}

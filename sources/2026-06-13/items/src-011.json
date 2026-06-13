@@ -1,0 +1,26 @@
+{
+  "id": "src-011",
+  "title": "North Korea Rice Planting 2.7% Ahead of Normal Landsat NDWI Analysis",
+  "url": "https://www.dailynk.com/20260605-3/",
+  "snippet": "DailyNK 위성+ 분석: 랜샛-8·9호 위성영상 NDWI(정규화 수체지수)로 북한 8개 표본지 모내기 진행 분석. 2026년 모내기 예년 대비 2.7% 빠르게 진행 확인.",
+  "source_name": "DailyNK",
+  "language": "ko",
+  "discovered_date": "2026-06-13",
+  "tag": "new",
+  "related_item": null,
+  "tag_reason": "DailyNK 위성+ 분석 북한 모내기 Landsat NDWI — 이전 파이프라인에서 미보고. 농업 카테고리 + 한반도 GeoFocus 해당.",
+  "entities": [
+    {"id": "evt-3303", "type": "Event", "name": "북한 2026 모내기 위성 관측 — 예년 대비 2.7% 빠르게 진행", "properties": {"phenomenon": "agricultural_change", "domain": "AgricultureMaritime", "country": "KP", "lat": 38.5, "lon": 126.0, "observation_date": "2026-06-05", "severity": "low"}},
+    {"id": "sat-landsat8", "type": "Satellite", "name": "Landsat 8"},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9"},
+    {"id": "org-dailynk", "type": "Organization", "name": "DailyNK"}
+  ],
+  "relations": [
+    {"subject": "evt-3303", "predicate": "observedBy", "object": "sat-landsat8"},
+    {"subject": "evt-3303", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "evt-3303", "predicate": "analyzedBy", "object": "org-dailynk"},
+    {"subject": "evt-3303", "predicate": "manifests", "object": "phen-ndvi"},
+    {"subject": "evt-3303", "predicate": "inDomain", "object": "dom-agri-marine"},
+    {"subject": "evt-3303", "predicate": "inCountry", "object": "co-kp"}
+  ]
+}

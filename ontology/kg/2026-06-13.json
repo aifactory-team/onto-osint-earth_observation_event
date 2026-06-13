@@ -1,0 +1,47 @@
+{
+  "date": "2026-06-13",
+  "new_triples": [
+    {"subject": "evt-3301", "predicate": "observedBy", "object": "sat-planetscope", "source_id": "src-009", "date": "2026-06-13", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-3301", "predicate": "analyzedBy", "object": "org-rfa", "source_id": "src-009", "date": "2026-06-13", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-3301", "predicate": "analyzedBy", "object": "org-csis-bp", "source_id": "src-009", "date": "2026-06-13", "confidence": 0.85, "type": "explicit"},
+    {"subject": "evt-3301", "predicate": "manifests", "object": "phen-construction", "source_id": "src-009", "date": "2026-06-13", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-3301", "predicate": "inDomain", "object": "dom-defense", "source_id": "src-009", "date": "2026-06-13", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-3301", "predicate": "inCountry", "object": "co-vn", "source_id": "src-009", "date": "2026-06-13", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-3301", "predicate": "locatedIn", "object": "ent-loc-barque-canada", "source_id": "src-009", "date": "2026-06-13", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-3302", "predicate": "analyzedBy", "object": "org-esa", "source_id": "src-010", "date": "2026-06-13", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-3302", "predicate": "manifests", "object": "phen-satops", "source_id": "src-010", "date": "2026-06-13", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-3303", "predicate": "observedBy", "object": "sat-landsat8", "source_id": "src-011", "date": "2026-06-13", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-3303", "predicate": "observedBy", "object": "sat-landsat9", "source_id": "src-011", "date": "2026-06-13", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-3303", "predicate": "analyzedBy", "object": "org-dailynk", "source_id": "src-011", "date": "2026-06-13", "confidence": 0.85, "type": "explicit"},
+    {"subject": "evt-3303", "predicate": "manifests", "object": "phen-ndvi", "source_id": "src-011", "date": "2026-06-13", "confidence": 0.85, "type": "explicit"},
+    {"subject": "evt-3303", "predicate": "inDomain", "object": "dom-agri-marine", "source_id": "src-011", "date": "2026-06-13", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-3303", "predicate": "inCountry", "object": "co-kp", "source_id": "src-011", "date": "2026-06-13", "confidence": 0.95, "type": "explicit"}
+  ],
+  "updated_triples": [
+    {"subject": "evt-202", "predicate": "observedBy", "object": "sat-landsat9", "source_id": "src-001", "date": "2026-06-13", "confidence": 0.90, "type": "explicit", "note": "Ep49 D-Day update"},
+    {"subject": "evt-082", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-002", "date": "2026-06-13", "confidence": 0.90, "type": "explicit", "note": "Day159+ update"},
+    {"subject": "evt-701", "predicate": "manifests", "object": "phen-volcano", "source_id": "src-003", "date": "2026-06-13", "confidence": 0.90, "type": "explicit", "note": "Day36+ pumice update"},
+    {"subject": "evt-3201", "predicate": "manifests", "object": "phen-earthquake", "source_id": "src-004", "date": "2026-06-13", "confidence": 0.95, "type": "explicit", "note": "45556 homes update"}
+  ],
+  "inferred_triples": [
+    {"subject": "evt-3303", "predicate": "koreaBoost", "object": "+0.10", "rule": "korea_geo_focus", "confidence": 0.95, "type": "inferred"},
+    {"subject": "evt-3303", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.90, "type": "inferred", "note": "Landsat-8 (USGS/NASA) + Landsat-9 (USGS/NASA) — 동일 운영기관이므로 독립 위성 교차검증 미적용, 잠정"},
+    {"subject": "evt-3301", "predicate": "analystBoost", "object": "+0.10", "rule": "analyst_org_trust", "confidence": 0.85, "type": "inferred", "note": "CSIS AMTI 독립 분석기관"},
+    {"subject": "evt-202", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred"},
+    {"subject": "evt-082", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.90, "type": "inferred"},
+    {"subject": "evt-701", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.90, "type": "inferred"},
+    {"subject": "evt-3201", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred"},
+    {"subject": "evt-3201", "predicate": "priorityBoost", "object": "+0.20", "rule": "disaster_severity_priority", "confidence": 0.95, "type": "inferred"},
+    {"subject": "evt-202", "predicate": "temporal_progression", "object": "evt-202 partOfSeries", "rule": "temporal_progression", "confidence": 0.95, "type": "inferred"},
+    {"subject": "evt-082", "predicate": "temporal_progression", "object": "evt-082 partOfSeries", "rule": "temporal_progression", "confidence": 0.93, "type": "inferred"},
+    {"subject": "evt-701", "predicate": "temporal_progression", "object": "evt-701 partOfSeries", "rule": "temporal_progression", "confidence": 0.90, "type": "inferred"},
+    {"subject": "evt-1101", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.93, "type": "inferred"},
+    {"subject": "evt-701", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.93, "type": "inferred"},
+    {"subject": "evt-3302", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred"}
+  ],
+  "stats": {
+    "new_nodes": 4,
+    "new_edges": 15,
+    "inferred_edges": 14
+  }
+}

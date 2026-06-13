@@ -1,0 +1,124 @@
+{
+  "date": "2026-06-13",
+  "total": 12,
+  "new": 3,
+  "update": 9,
+  "reported": 0,
+  "skipped": 0,
+  "categories_covered": {
+    "disaster": true,
+    "human_activity": true,
+    "climate_env": true,
+    "agriculture_ocean": true
+  },
+  "items": [
+    {
+      "id": "src-001",
+      "event_id": "evt-202",
+      "status": "update",
+      "title": "Kilauea Ep49 Forecast D-Day June 13-15 Most Likely Today",
+      "category": "disaster",
+      "phenomenon": "volcanic_eruption",
+      "confidence": 0.95
+    },
+    {
+      "id": "src-002",
+      "event_id": "evt-082",
+      "status": "update",
+      "title": "Mayon Volcano Day159+ AL3 Continuing Lava Effusion PDCs",
+      "category": "disaster",
+      "phenomenon": "volcanic_eruption",
+      "confidence": 0.90
+    },
+    {
+      "id": "src-003",
+      "event_id": "evt-701",
+      "status": "update",
+      "title": "Bismarck Sea Titan Ridge Day36+ Pumice Blocks Manus Province",
+      "category": "disaster",
+      "phenomenon": "volcanic_eruption",
+      "confidence": 0.90
+    },
+    {
+      "id": "src-004",
+      "event_id": "evt-3201",
+      "status": "update",
+      "title": "Mindanao M7.8 Satellite Damage Assessment 45556 Homes Damaged",
+      "category": "disaster",
+      "phenomenon": "earthquake_damage",
+      "confidence": 0.95
+    },
+    {
+      "id": "src-005",
+      "event_id": "evt-1101",
+      "status": "update",
+      "title": "Canada Wildfire Season 65+ Active Fires CIFFC Level 2",
+      "category": "disaster",
+      "phenomenon": "wildfire",
+      "confidence": 0.85
+    },
+    {
+      "id": "src-006",
+      "event_id": "evt-203",
+      "status": "update",
+      "title": "Great Sitkin WATCH/ORANGE Lava Dome Growth Continues",
+      "category": "disaster",
+      "phenomenon": "volcanic_eruption",
+      "confidence": 0.85
+    },
+    {
+      "id": "src-007",
+      "event_id": "evt-204",
+      "status": "update",
+      "title": "Shishaldin ADVISORY/YELLOW Elevated Seismic Infrasound",
+      "category": "disaster",
+      "phenomenon": "volcanic_eruption",
+      "confidence": 0.80
+    },
+    {
+      "id": "src-008",
+      "event_id": "temp-evt-1902",
+      "status": "update",
+      "title": "El Nino +0.9C 98% Probability Moderate-Strong Strengthening",
+      "category": "climate_env",
+      "phenomenon": "sea_level_change",
+      "confidence": 0.95
+    },
+    {
+      "id": "src-009",
+      "event_id": "evt-3301",
+      "status": "new",
+      "title": "Vietnam Spratly Construction 27 Sites 18 Reefs Satellite RFA/AMTI",
+      "category": "human_activity",
+      "phenomenon": "construction",
+      "confidence": 0.90
+    },
+    {
+      "id": "src-010",
+      "event_id": "evt-3302",
+      "status": "new",
+      "title": "Sentinel-1C Maneuvering Phase June 9-23 S1A Retirement June 29",
+      "category": "human_activity",
+      "phenomenon": "satellite_operations",
+      "confidence": 0.95
+    },
+    {
+      "id": "src-011",
+      "event_id": "evt-3303",
+      "status": "new",
+      "title": "North Korea Rice Planting 2.7% Ahead Landsat NDWI Analysis",
+      "category": "agriculture_ocean",
+      "phenomenon": "agricultural_change",
+      "confidence": 0.85
+    },
+    {
+      "id": "src-012",
+      "event_id": "evt-3201",
+      "status": "update",
+      "title": "Scarborough Shoal Suspected Structure Appeared Disappeared Vantor",
+      "category": "human_activity",
+      "phenomenon": "military_buildup",
+      "confidence": 0.70
+    }
+  ]
+}

@@ -3178,4 +3178,66 @@ config 한도 내 — 새 클래스 0건 (max 3), 새 관계 유형 0건 (max 5)
 | 새 Event | evt-3201 (1건) | 민다나오 M7.8 지진 위성 피해 평가 |
 | 이벤트 업데이트 | evt-202, evt-701, evt-082, evt-2802, evt-1101, evt-203, evt-204, temp-evt-1902 (8건) | 후속 정보 반영 |
 
-config 한도 내 — 새 클래스 0건 (max 3), 새 관계 유형 0건 (max 5). 새 Country 0건, 새 Satellite 0건.
+config 한도 내 — 새 클래스 0건 (max 3), 새 관계 유형 0건 (max 5). 새 Country 0건(6/12), 새 Satellite 0건(6/12).
+
+## 2026-06-13 추론 결과
+
+### korea_geo_focus — 1건
+
+- **추론 #1:** evt-3303 (북한 모내기 위성 분석) — inCountry co-kp (KP) → koreaBoost +0.10 [confidence 0.95, 확정]
+
+### official_source_trust — 4건
+
+- **추론 #1:** evt-202 (Kilauea Ep49) — analyzedBy org-usgs (space_agency) → officialBoost +0.15 [0.95, 확정]
+- **추론 #2:** evt-082 (Mayon Day159+) — analyzedBy PHIVOLCS (space_agency) → officialBoost +0.15 [0.90, 확정]
+- **추론 #3:** evt-701 (Bismarck Sea) — analyzedBy NASA EO (space_agency) → officialBoost +0.15 [0.90, 확정]
+- **추론 #4:** evt-3302 (Sentinel-1 재구성) — analyzedBy org-esa (space_agency) → officialBoost +0.15 [0.95, 확정]
+
+### disaster_severity_priority — 1건
+
+- **추론 #1:** evt-3201 (민다나오 M7.8) — inDomain dom-disaster AND severity high → priorityBoost +0.20 [0.95, 확정]
+
+### multi_satellite_confirmation — 2건 (유지)
+
+- **추론 #1:** evt-701 (Bismarck Sea) — 5위성 교차검증 유지 → multiSatBoost +0.20 [0.93, 확정]
+- **추론 #2:** evt-1101 (캐나다 산불) — 5위성 교차검증 유지 → multiSatBoost +0.20 [0.93, 확정]
+
+### temporal_progression — 3건
+
+- **추론 #1:** evt-202 (Kilauea) — partOfSeries 지속 [0.95, 확정]
+- **추론 #2:** evt-082 (Mayon) — partOfSeries 지속 [0.93, 확정]
+- **추론 #3:** evt-701 (Bismarck Sea) — partOfSeries 지속 [0.90, 확정]
+
+### sensor_capability_match — 2건
+
+- **추론 #1:** evt-3303 (북한 모내기) — usesSensor OLI + NDWI → 농업 적합 [0.85, 확정]
+- **추론 #2:** evt-3201 (민다나오 지진) — usesSensor VIIRS (야간조명) → 전력 피해 추정 적합 [0.90, 확정]
+
+### analyst_org_trust — 1건
+
+- **추론 #1:** evt-3301 (베트남 스프래틀리) — analyzedBy CSIS AMTI (research) → analystBoost +0.10 [0.85, 확정]
+
+### 추론 통계 (2026-06-13)
+
+| 규칙 | 금일 발동 | 평균 신뢰도 |
+|------|----------|-----------|
+| korea_geo_focus | 1 | 0.95 |
+| official_source_trust | 4 | 0.93 |
+| disaster_severity_priority | 1 | 0.95 |
+| multi_satellite_confirmation | 2 (유지) | 0.93 |
+| temporal_progression | 3 | 0.93 |
+| sensor_capability_match | 2 | 0.88 |
+| analyst_org_trust | 1 | 0.85 |
+| **합계** | **14** | **0.92** |
+
+### 온톨로지 변경
+
+| 변경 유형 | 대상 | 근거 |
+|----------|------|------|
+| 새 Country | co-vn (베트남) | evt-3301 스프래틀리 건설 |
+| 새 Organization | org-dailynk (DailyNK) | evt-3303 북한 모내기 위성 분석 |
+| 새 Location | ent-loc-barque-canada (Barque Canada Reef) | evt-3301 4000m 활주로 |
+| 새 Event | 3건 (evt-3301, evt-3302, evt-3303) | 스프래틀리, Sentinel-1 재구성, 북한 모내기 |
+| 이벤트 업데이트 | 9건 | 후속 정보 반영 |
+
+config 한도 내 — 새 클래스 0건 (max 3), 새 관계 유형 0건 (max 5). 새 Country 1건, 새 Satellite 0건.

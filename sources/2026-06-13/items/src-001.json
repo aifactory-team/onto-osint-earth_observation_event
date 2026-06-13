@@ -1,0 +1,25 @@
+{
+  "id": "src-001",
+  "title": "Kilauea Ep49 Forecast D-Day June 13-15 Most Likely Today",
+  "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-HVO-2026-06-12T16:41:14+00:00",
+  "snippet": "Forecast models indicate episode 49 of lava fountaining is likely to occur between June 13-15. Summit inflation continuing. ADVISORY/YELLOW.",
+  "source_name": "USGS HVO",
+  "language": "en",
+  "discovered_date": "2026-06-13",
+  "tag": "update",
+  "related_item": "evt-202",
+  "tag_reason": "기존 Kilauea Ep49 예보(evt-202)의 후속 — 금일(6/13)이 예보 창 D-Day 진입, 가장 유력 시간대",
+  "entities": [
+    {"id": "evt-202", "type": "Event", "name": "Kilauea Ep49 분수분출 예보", "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "US", "lat": 19.421, "lon": -155.287, "observation_date": "2026-06-13", "severity": "high"}},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9"},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "org-usgs", "type": "Organization", "name": "USGS HVO"}
+  ],
+  "relations": [
+    {"subject": "evt-202", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "evt-202", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "evt-202", "predicate": "analyzedBy", "object": "org-usgs"},
+    {"subject": "evt-202", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "evt-202", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

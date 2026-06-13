@@ -1,0 +1,24 @@
+{
+  "id": "src-010",
+  "title": "Sentinel-1C Maneuvering Phase June 9-23 S1A Retirement June 29",
+  "url": "https://dataspace.copernicus.eu/news/2026-5-28-sentinel-1-orbital-reconfiguration-dates",
+  "snippet": "Sentinel-1C maneuvering to 6-day revisit orbit June 9-23. S1C operations suspended during maneuver. S1A+S1D provide coverage. S1A retirement June 29. Final constellation: S1C+S1D.",
+  "source_name": "Copernicus Data Space Ecosystem",
+  "language": "en",
+  "discovered_date": "2026-06-13",
+  "tag": "new",
+  "related_item": null,
+  "tag_reason": "Sentinel-1C 궤도 재구성 진행 중(6/9-23) — 전역 SAR 커버리지에 영향. S1A 퇴역 6/29 예정. 위성운영(phen-satops) 메타이벤트로 파이프라인 신규 기록.",
+  "entities": [
+    {"id": "evt-3302", "type": "Event", "name": "Sentinel-1 콘스텔레이션 궤도 재구성 (S1C 기동, S1A 퇴역)", "properties": {"phenomenon": "satellite_operations", "domain": "HumanActivity", "country": "INTL", "lat": 0.0, "lon": 0.0, "observation_date": "2026-06-09", "severity": "medium"}},
+    {"id": "sat-sentinel1c", "type": "Satellite", "name": "Sentinel-1C"},
+    {"id": "sat-sentinel1a", "type": "Satellite", "name": "Sentinel-1A"},
+    {"id": "sat-sentinel1d", "type": "Satellite", "name": "Sentinel-1D"},
+    {"id": "org-esa", "type": "Organization", "name": "ESA"}
+  ],
+  "relations": [
+    {"subject": "evt-3302", "predicate": "analyzedBy", "object": "org-esa"},
+    {"subject": "evt-3302", "predicate": "manifests", "object": "phen-satops"},
+    {"subject": "evt-3302", "predicate": "inDomain", "object": "dom-human"}
+  ]
+}

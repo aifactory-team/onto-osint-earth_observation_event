@@ -1,0 +1,25 @@
+{
+  "id": "src-009",
+  "title": "Vietnam Spratly Construction 27 Sites 18 Reefs Satellite RFA/AMTI",
+  "url": "https://www.rfa.org/english/southchinasea/2026/06/08/vietnam-south-china-sea-spratly-island-construction/",
+  "snippet": "Vietnam building military and maritime infrastructure at 27 sites across 18 reefs. New 4000m runway at Barque Canada Reef, DVOR beacon, 15 harbors total. Satellite imagery analyzed by RFA and CSIS AMTI.",
+  "source_name": "Radio Free Asia / CSIS AMTI",
+  "language": "en",
+  "discovered_date": "2026-06-13",
+  "tag": "new",
+  "related_item": null,
+  "tag_reason": "베트남 스프래틀리 27개 사이트 건설 활동 — 이전 파이프라인에서 미보고된 신규 위성 관측 이벤트. 필리핀 Thitu/Nanshan 건설은 기보고(evt-305)이나 베트남 27개 사이트 규모는 신규.",
+  "entities": [
+    {"id": "evt-3301", "type": "Event", "name": "베트남 스프래틀리 27개 사이트 군사·해양 인프라 건설", "properties": {"phenomenon": "construction", "domain": "Defense", "country": "VN", "lat": 8.65, "lon": 111.92, "observation_date": "2026-06-08", "severity": "high", "before_after_available": true}},
+    {"id": "sat-planetscope", "type": "Satellite", "name": "PlanetScope"},
+    {"id": "org-rfa", "type": "Organization", "name": "Radio Free Asia"},
+    {"id": "org-csis-bp", "type": "Organization", "name": "CSIS AMTI"}
+  ],
+  "relations": [
+    {"subject": "evt-3301", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "evt-3301", "predicate": "analyzedBy", "object": "org-rfa"},
+    {"subject": "evt-3301", "predicate": "analyzedBy", "object": "org-csis-bp"},
+    {"subject": "evt-3301", "predicate": "manifests", "object": "phen-construction"},
+    {"subject": "evt-3301", "predicate": "inDomain", "object": "dom-defense"}
+  ]
+}

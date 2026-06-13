@@ -1,15 +1,15 @@
 {
-  "version": "1.20.0",
+  "version": "1.21.0",
   "description": "위성영상 관측 이벤트 누적 지식그래프 — 첫 실행(2026-04-30) 이후 매일 신규/추론 트리플 병합",
-  "last_updated": "2026-06-12",
-  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-19", "2026-05-20", "2026-05-21", "2026-05-22", "2026-05-23", "2026-05-24", "2026-05-26", "2026-05-27", "2026-05-28", "2026-05-29", "2026-05-30", "2026-05-31", "2026-06-01", "2026-06-02", "2026-06-03", "2026-06-04", "2026-06-05", "2026-06-06", "2026-06-07", "2026-06-08", "2026-06-09", "2026-06-10", "2026-06-11", "2026-06-12"],
-  "triples": "ontology/kg/2026-04-30.json ~ ontology/kg/2026-06-12.json (new_triples + updated_triples + inferred_triples)",
+  "last_updated": "2026-06-13",
+  "snapshots_merged": ["2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-19", "2026-05-20", "2026-05-21", "2026-05-22", "2026-05-23", "2026-05-24", "2026-05-26", "2026-05-27", "2026-05-28", "2026-05-29", "2026-05-30", "2026-05-31", "2026-06-01", "2026-06-02", "2026-06-03", "2026-06-04", "2026-06-05", "2026-06-06", "2026-06-07", "2026-06-08", "2026-06-09", "2026-06-10", "2026-06-11", "2026-06-12", "2026-06-13"],
+  "triples": "ontology/kg/2026-04-30.json ~ ontology/kg/2026-06-13.json (new_triples + updated_triples + inferred_triples)",
   "stats": {
-    "total_explicit_triples": 1295,
-    "total_inferred_triples": 622,
-    "total_unique_subjects": 265,
+    "total_explicit_triples": 1314,
+    "total_inferred_triples": 636,
+    "total_unique_subjects": 269,
     "total_unique_predicates": 24,
-    "total_unique_objects": 318
+    "total_unique_objects": 324
   },
-  "note": "2026-06-12 병합 완료 — 신규 12 explicit + 11 updated + 16 inferred 트리플(일별 KG: 4 new nodes, 39 triples). 핵심 이벤트: evt-3201 민다나오 M7.8 지진 위성 피해 평가 — **파이프라인 최초 위성 검증 지진 피해 이벤트** (phen-earthquake mention_count 0→1, 44일간 정의만 존재하던 earthquake_damage Phenomenon 첫 실제 매핑). PhilSA VIIRS 야간 조명 before/after 피해 평가, Sentinel Asia 발동(EQ-2026-000083-PHL), 47+ 사망 12,600+ 가옥. 기관 업데이트 1건(org-philsa, PhilSA last_seen 갱신). 신규 Location 1건(ent-loc-sarangani, Sarangani Mindanao). 업데이트 8건: Kilauea Ep49 D-Day 예보 창 금일 개시(evt-202, 6/12-15 최유력 6/13-14), Bismarck Sea 해상 접근 차단 Day35+(evt-701, 5위성, cascading 파이프라인 최장), Mayon Day158+ PDC 4km(evt-082, 287K 이재민), Jangmi 피해 평가(evt-2802, Tokyo cascading), 캐나다 산불 65건(evt-1101, 5위성), Great Sitkin WATCH(evt-203), Shishaldin ADVISORY(evt-204), El Nino +0.9C 98%(temp-evt-1902). 추론 14건: first_event_reference 1, official_source_trust 2, disaster_severity_priority 1, before_after_credibility 1, sensor_capability_match 3, multi_satellite_confirmation 2, temporal_progression 2, cascading_disaster 2. 한반도 GeoFocus 금일 신규 없음. 누적 KG 1917 트리플."
+  "note": "2026-06-13 병합 완료 — 신규 15 explicit + 4 updated + 14 inferred 트리플(일별 KG: 4 new nodes, 15 new edges, 14 inferred edges). 신규 이벤트 3건: evt-3301 베트남 스프래틀리 27개 사이트 건설(PlanetScope, RFA/CSIS AMTI, dom-defense), evt-3302 Sentinel-1 궤도 재구성(S1C 기동 6/9-23, S1A 퇴역 6/29), evt-3303 북한 모내기 NDWI(Landsat-8+9, DailyNK, koreaBoost +0.10). 신규 엔티티: co-vn(베트남), org-dailynk, ent-loc-barque-canada. 업데이트 9건: Kilauea Ep49 D-Day(evt-202), Mayon Day159+(evt-082), Bismarck Sea Day36+(evt-701), 민다나오 M7.8 45,556가옥(evt-3201), 캐나다 산불 65건(evt-1101), Great Sitkin(evt-203), Shishaldin(evt-204), El Niño +0.9°C(temp-evt-1902), Scarborough Shoal(src-012). 추론 14건: korea_geo_focus 1, official_source_trust 4, disaster_severity_priority 1, multi_satellite_confirmation 2(유지), temporal_progression 3, analyst_org_trust 1. 다중위성 교차검증 2건 유지(evt-701 5위성, evt-1101 5위성). 한반도 GeoFocus 1건 신규(evt-3303). 누적 KG 1950 트리플."
 }

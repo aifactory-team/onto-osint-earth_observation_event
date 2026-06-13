@@ -719,6 +719,34 @@
       "target": "evt-3201(신규) + updates to evt-202, evt-701, evt-082, evt-2802, evt-1101, evt-203, evt-204, temp-evt-1902",
       "reason": "신규 1건: 민다나오 M7.8 지진 위성 피해 평가(evt-3201, 5.9N/125.3E, VIIRS, PhilSA, PH, dom-disaster earthquake_damage, 47+ 사망 12600+ 가옥, Sentinel Asia EQ-2026-000083-PHL, phen-earthquake 첫 매핑, officialBoost+priorityBoost+baCredibility, 0.97 cap). 업데이트 8건: Kilauea Ep49 D-Day 예보 창 금일 개시(evt-202, 6/12-15), Bismarck Sea 해상 접근 차단(evt-701, Day35+), Mayon Day158+ PDC 4km(evt-082), Jangmi 피해 평가(evt-2802), 캐나다 산불 65건(evt-1101), Great Sitkin WATCH(evt-203), Shishaldin ADVISORY(evt-204), El Nino +0.9C(temp-evt-1902). 다중 위성 교차검증 2건 유지(evt-1101, evt-701). cascading 2건(evt-701 해상 차단, evt-2802 Tokyo 홍수). 한반도 GeoFocus 금일 신규 없음. 스키마 구조적 변경 없음 — 기존 클래스·관계로 충분.",
       "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009"]
+    },
+    {
+      "date": "2026-06-13",
+      "action": "add_country",
+      "target": "co-vn",
+      "reason": "베트남(VN) — 스프래틀리 27개 사이트 군사·해양 인프라 건설 위성 관측(evt-3301, RFA/AMTI PlanetScope). 기존 국가 인스턴스에 없던 신규 국가 추가.",
+      "source_ids": ["src-009"]
+    },
+    {
+      "date": "2026-06-13",
+      "action": "add_organization",
+      "target": "org-dailynk",
+      "reason": "DailyNK — 한국 미디어, 위성+ 시리즈 Landsat NDWI 기반 북한 농업 분석. evt-3303(북한 모내기 위성 분석)에서 첫 참조.",
+      "source_ids": ["src-011"]
+    },
+    {
+      "date": "2026-06-13",
+      "action": "add_location",
+      "target": "ent-loc-barque-canada",
+      "reason": "Barque Canada Reef, Spratly Islands (VN, 8.1N/113.3E) — 베트남 4000m 활주로 건설 진행 중. evt-3301 핵심 건설 지점.",
+      "source_ids": ["src-009"]
+    },
+    {
+      "date": "2026-06-13",
+      "action": "add_event_batch",
+      "target": "evt-3301, evt-3302, evt-3303 + updates to evt-202, evt-082, evt-701, evt-3201, evt-1101, evt-203, evt-204, temp-evt-1902",
+      "reason": "신규 3건: 베트남 스프래틀리 27개 사이트 건설(evt-3301, PlanetScope, RFA/AMTI, VN, dom-defense/construction, 0.90), Sentinel-1 궤도 재구성(evt-3302, S1C 기동 6/9-23 + S1A 퇴역 6/29, ESA, phen-satops, 0.95), 북한 모내기 위성 분석(evt-3303, Landsat 8/9 NDWI, DailyNK, KP, dom-agri-marine, koreaBoost+0.10, 0.85). 업데이트 9건: Kilauea Ep49 D-Day 금일(evt-202), Mayon Day159+ AL3(evt-082), Bismarck Day36+(evt-701), 민다나오 45556가옥(evt-3201), 캐나다 산불 65건(evt-1101), Great Sitkin WATCH(evt-203), Shishaldin ADVISORY(evt-204), El Nino +0.9C(temp-evt-1902), Scarborough Shoal(evt-3201 관련). 다중 위성 교차검증 2건 유지. 한반도 GeoFocus 1건(evt-3303 북한 모내기). 4개 필수 카테고리 커버.",
+      "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009", "src-010", "src-011", "src-012"]
     }
   ]
 }
