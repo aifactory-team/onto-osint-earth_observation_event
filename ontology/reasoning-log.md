@@ -3240,4 +3240,62 @@ config 한도 내 — 새 클래스 0건 (max 3), 새 관계 유형 0건 (max 5)
 | 새 Event | 3건 (evt-3301, evt-3302, evt-3303) | 스프래틀리, Sentinel-1 재구성, 북한 모내기 |
 | 이벤트 업데이트 | 9건 | 후속 정보 반영 |
 
+## 2026-06-14 추론 결과
+
+### multi_satellite_confirmation (다중 위성 교차검증) — 4건
+
+- **추론 #1:** evt-3401 (ESA AI4CH4 메탄) — observedBy Sentinel-5P (ESA) AND observedBy Sentinel-2A (ESA) → multiSatBoost +0.20 [confidence 0.85, 확정] ※ 동일 기관(ESA) 소속이나 독립 센서(TROPOMI vs MSI) 기반
+- **추론 #2:** evt-3402 (평산 우라늄) — observedBy WorldView-3 (Maxar) AND observedBy PlanetScope (Planet) → multiSatBoost +0.20 [confidence 0.80, 확정]
+- **추론 #3:** evt-701 (Bismarck Sea) — 5위성 교차검증 유지 [0.90, 확정]
+- **추론 #4:** evt-1101 (Canada 산불) — 5위성 교차검증 유지 [0.85, 확정]
+
+### sensor_capability_match (센서-현상 적합성) — 2건
+
+- **tracegasBoost x methane:** evt-3401 (AI4CH4) — TROPOMI trace_gas 센서로 methane_plume 관측 → tracegasBoost +0.15 [0.90, 확정]
+- **hiResBoost x military:** evt-3402 (평산 우라늄) — WorldView-3 ≤0.31m 고해상도 광학으로 military_buildup 관측 → hiResBoost +0.15 [0.85, 확정]
+
+### korea_geo_focus — 1건
+
+- evt-3402 (평산 우라늄 정련소) — inCountry co-kp (KP) → koreaBoost +0.10 [0.95, 확정]
+
+### official_source_trust — 2건
+
+- evt-3401 (AI4CH4) — analyzedBy ESA (space_agency) → officialBoost +0.15 [0.90, 확정]
+- evt-202 (Kilauea Ep49) — analyzedBy USGS (space_agency) → officialBoost +0.15 [0.95, 확정]
+
+### disaster_severity_priority — 2건
+
+- evt-202 (Kilauea) — inDomain dom-disaster, severity high → priorityBoost +0.20 [0.95, 확정]
+- evt-3201 (Mindanao M7.8) — inDomain dom-disaster, severity high → priorityBoost +0.20 [0.95, 확정]
+
+### analyst_org_trust — 1건
+
+- evt-3402 (평산 우라늄) — analyzedBy CSIS Beyond Parallel (research) → analystBoost +0.10 [0.85, 확정]
+
+### before_after_credibility — 1건
+
+- evt-3402 (평산 우라늄) — before_after_available true → baCredibilityBoost +0.10 [0.85, 확정]
+
+### 추론 요약
+
+| 규칙 | 적용 건수 | 대표 이벤트 |
+|------|----------|------------|
+| multi_satellite_confirmation | 4 | evt-3401, evt-3402, evt-701, evt-1101 |
+| sensor_capability_match | 2 | evt-3401(tracegasBoost), evt-3402(hiResBoost) |
+| korea_geo_focus | 1 | evt-3402 |
+| official_source_trust | 2 | evt-3401, evt-202 |
+| disaster_severity_priority | 2 | evt-202, evt-3201 |
+| analyst_org_trust | 1 | evt-3402 |
+| before_after_credibility | 1 | evt-3402 |
+| **총 추론** | **13건** | |
+
+### 온톨로지 변경
+
+| 변경 유형 | 대상 | 근거 |
+|----------|------|------|
+| 새 Location | ent-loc-pyongsan (평산 우라늄 정련소) | evt-3402 DailyNK/CSIS 위성 분석 |
+| 새 Organization | org-ai4ch4 (AI4CH4 Consortium) | evt-3401 ESA EO4Society 발표 |
+| 새 Event | 2건 (evt-3401, evt-3402) | AI4CH4 메탄, 평산 우라늄 |
+| 이벤트 업데이트 | 10건 | 후속 정보 반영 |
+
 config 한도 내 — 새 클래스 0건 (max 3), 새 관계 유형 0건 (max 5). 새 Country 1건, 새 Satellite 0건.

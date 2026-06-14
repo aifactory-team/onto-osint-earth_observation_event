@@ -747,6 +747,13 @@
       "target": "evt-3301, evt-3302, evt-3303 + updates to evt-202, evt-082, evt-701, evt-3201, evt-1101, evt-203, evt-204, temp-evt-1902",
       "reason": "신규 3건: 베트남 스프래틀리 27개 사이트 건설(evt-3301, PlanetScope, RFA/AMTI, VN, dom-defense/construction, 0.90), Sentinel-1 궤도 재구성(evt-3302, S1C 기동 6/9-23 + S1A 퇴역 6/29, ESA, phen-satops, 0.95), 북한 모내기 위성 분석(evt-3303, Landsat 8/9 NDWI, DailyNK, KP, dom-agri-marine, koreaBoost+0.10, 0.85). 업데이트 9건: Kilauea Ep49 D-Day 금일(evt-202), Mayon Day159+ AL3(evt-082), Bismarck Day36+(evt-701), 민다나오 45556가옥(evt-3201), 캐나다 산불 65건(evt-1101), Great Sitkin WATCH(evt-203), Shishaldin ADVISORY(evt-204), El Nino +0.9C(temp-evt-1902), Scarborough Shoal(evt-3201 관련). 다중 위성 교차검증 2건 유지. 한반도 GeoFocus 1건(evt-3303 북한 모내기). 4개 필수 카테고리 커버.",
       "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009", "src-010", "src-011", "src-012"]
+    },
+    {
+      "date": "2026-06-14",
+      "action": "add_event_batch",
+      "target": "evt-3401, evt-3402 + updates to evt-202, evt-082, evt-701, evt-3201, evt-1101, evt-203, evt-204, temp-evt-1902, evt-3301, evt-3302",
+      "reason": "신규 2건: ESA AI4CH4 메탄 탐지 프레임워크(evt-3401, Sentinel-5P TROPOMI + Sentinel-2 MSI + AI, dom-climate, tracegasBoost +0.15, multiSatBoost +0.20, officialBoost +0.15, 0.85), 북한 평산 우라늄 정련소 위성 관측(evt-3402, WorldView-3 + PlanetScope, dom-defense, koreaBoost +0.10, hiResBoost +0.15, multiSatBoost +0.20, before/after, 0.85). 업데이트 10건: Kilauea Ep49 D-Day 6/14-15 최유력(evt-202), Mayon Day160+ 우기 라하르(evt-082), Bismarck Sea Day37+(evt-701), 민다나오 M7.8 47+ 사망(evt-3201), 캐나다 산불 65+(evt-1101), Great Sitkin WATCH(evt-203), Shishaldin ADVISORY(evt-204), El Niño NOAA 공식 선언 63% very strong(temp-evt-1902), Vietnam Spratly(evt-3301), Sentinel-1 S1C Day6(evt-3302). 다중위성 교차검증 4건(evt-701·evt-1101 유지, evt-3401·evt-3402 신규). 한반도 GeoFocus 2건(evt-3303 유지, evt-3402 신규). 4개 필수 카테고리 커버.",
+      "source_ids": ["src-001", "src-002", "src-003", "src-004", "src-005", "src-006", "src-007", "src-008", "src-009", "src-010", "src-011", "src-012"]
     }
   ]
 }

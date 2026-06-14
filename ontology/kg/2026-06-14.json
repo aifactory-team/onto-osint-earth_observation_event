@@ -1,0 +1,48 @@
+{
+  "date": "2026-06-14",
+  "new_triples": [
+    {"subject": "evt-3401", "predicate": "observedBy", "object": "sat-sentinel5p", "source_id": "src-011", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-3401", "predicate": "observedBy", "object": "sat-sentinel2a", "source_id": "src-011", "confidence": 0.85, "type": "explicit"},
+    {"subject": "evt-3401", "predicate": "usesSensor", "object": "sensor-tropomi", "source_id": "src-011", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-3401", "predicate": "usesSensor", "object": "sensor-msi", "source_id": "src-011", "confidence": 0.85, "type": "explicit"},
+    {"subject": "evt-3401", "predicate": "manifests", "object": "phen-methane", "source_id": "src-011", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-3401", "predicate": "inDomain", "object": "dom-climate", "source_id": "src-011", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-3401", "predicate": "analyzedBy", "object": "org-esa", "source_id": "src-011", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-3402", "predicate": "observedBy", "object": "sat-worldview3", "source_id": "src-012", "confidence": 0.80, "type": "explicit"},
+    {"subject": "evt-3402", "predicate": "observedBy", "object": "sat-planetscope", "source_id": "src-012", "confidence": 0.80, "type": "explicit"},
+    {"subject": "evt-3402", "predicate": "locatedIn", "object": "ent-loc-pyongsan", "source_id": "src-012", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-3402", "predicate": "inCountry", "object": "co-kp", "source_id": "src-012", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-3402", "predicate": "manifests", "object": "phen-military", "source_id": "src-012", "confidence": 0.85, "type": "explicit"},
+    {"subject": "evt-3402", "predicate": "inDomain", "object": "dom-defense", "source_id": "src-012", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-3402", "predicate": "analyzedBy", "object": "org-csis-bp", "source_id": "src-012", "confidence": 0.85, "type": "explicit"},
+    {"subject": "evt-3402", "predicate": "reportedBy", "object": "org-rfa", "source_id": "src-012", "confidence": 0.85, "type": "explicit"}
+  ],
+  "updated_triples": [
+    {"subject": "evt-202", "predicate": "status", "object": "ep49_dday_jun14-15_most_likely", "source_id": "src-001", "confidence": 0.95, "type": "explicit"},
+    {"subject": "evt-082", "predicate": "status", "object": "day160_al3_lahar_monsoon", "source_id": "src-002", "confidence": 0.90, "type": "explicit"},
+    {"subject": "evt-701", "predicate": "status", "object": "day37_pumice_70km2_humanitarian", "source_id": "src-003", "confidence": 0.90, "type": "explicit"},
+    {"subject": "temp-evt-1902", "predicate": "status", "object": "el_nino_official_63pct_very_strong", "source_id": "src-008", "confidence": 0.95, "type": "explicit"}
+  ],
+  "inferred_triples": [
+    {"subject": "evt-3402", "predicate": "koreaBoost", "object": "+0.10", "rule": "korea_geo_focus", "confidence": 0.95, "type": "inferred"},
+    {"subject": "evt-3402", "predicate": "hiResBoost", "object": "+0.15", "rule": "sensor_capability_match_hires", "confidence": 0.85, "type": "inferred"},
+    {"subject": "evt-3402", "predicate": "analystBoost", "object": "+0.10", "rule": "analyst_org_trust", "confidence": 0.85, "type": "inferred"},
+    {"subject": "evt-3402", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.80, "type": "inferred"},
+    {"subject": "evt-3402", "predicate": "baCredibilityBoost", "object": "+0.10", "rule": "before_after_credibility", "confidence": 0.85, "type": "inferred"},
+    {"subject": "evt-3401", "predicate": "tracegasBoost", "object": "+0.15", "rule": "sensor_capability_match_tracegas", "confidence": 0.90, "type": "inferred"},
+    {"subject": "evt-3401", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.90, "type": "inferred"},
+    {"subject": "evt-3401", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.85, "type": "inferred"},
+    {"subject": "evt-202", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred"},
+    {"subject": "evt-202", "predicate": "disaster_severity", "object": "priorityBoost +0.20", "rule": "disaster_severity_priority", "confidence": 0.95, "type": "inferred"},
+    {"subject": "evt-701", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.90, "type": "inferred"},
+    {"subject": "evt-1101", "predicate": "multiSatBoost", "object": "+0.20", "rule": "multi_satellite_confirmation", "confidence": 0.85, "type": "inferred"},
+    {"subject": "evt-3201", "predicate": "officialBoost", "object": "+0.15", "rule": "official_source_trust", "confidence": 0.95, "type": "inferred"},
+    {"subject": "evt-3201", "predicate": "disaster_severity", "object": "priorityBoost +0.20", "rule": "disaster_severity_priority", "confidence": 0.95, "type": "inferred"}
+  ],
+  "stats": {
+    "new_nodes": 4,
+    "new_edges": 15,
+    "updated_edges": 4,
+    "inferred_edges": 14
+  }
+}

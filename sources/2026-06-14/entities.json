@@ -1,0 +1,187 @@
+{
+  "date": "2026-06-14",
+  "entities": [
+    {
+      "temp_id": "temp-evt-3401",
+      "matched_id": null,
+      "type": "Event",
+      "name": "ESA AI4CH4 종합 메탄 탐지 프레임워크 (Sentinel-5P + Sentinel-2 + AI)",
+      "properties": {
+        "phenomenon": "methane_plume",
+        "domain": "ClimateEnvironment",
+        "country": "INTL",
+        "lat": 0.0,
+        "lon": 0.0,
+        "observation_date": "2026-06-09",
+        "severity": "medium",
+        "satellites_used": ["Sentinel-5P", "Sentinel-2A", "Sentinel-2B"],
+        "sensors_used": ["TROPOMI", "MSI"],
+        "confidence": 0.85,
+        "before_after_available": false
+      },
+      "source_ids": ["src-011"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-evt-3402",
+      "matched_id": null,
+      "type": "Event",
+      "name": "북한 평산 우라늄 정련소 위성 관측 — 시설 보수·화물 활동·폐기물 확대",
+      "properties": {
+        "phenomenon": "military_buildup",
+        "domain": "Defense",
+        "country": "KP",
+        "lat": 38.35,
+        "lon": 126.39,
+        "observation_date": "2026-04-07",
+        "severity": "high",
+        "satellites_used": ["WorldView-3", "PlanetScope"],
+        "sensors_used": ["optical_pan", "optical_multispectral"],
+        "confidence": 0.85,
+        "before_after_available": true
+      },
+      "source_ids": ["src-012"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-loc-pyongsan",
+      "matched_id": null,
+      "type": "Location",
+      "name": "평산 우라늄 정련소 (Pyongsan Uranium Concentrate Plant)",
+      "properties": {
+        "country": "KP",
+        "region": "황해북도 평산군",
+        "admin_level": "county",
+        "lat": 38.35,
+        "lon": 126.39
+      },
+      "source_ids": ["src-012"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-org-ai4ch4",
+      "matched_id": null,
+      "type": "Organization",
+      "name": "AI4CH4 Consortium (ESA/SRON)",
+      "properties": {
+        "org_type": "research",
+        "country": "EU"
+      },
+      "source_ids": ["src-011"],
+      "mention_count": 1
+    }
+  ],
+  "relations": [
+    {
+      "subject": "temp-evt-3401",
+      "predicate": "observedBy",
+      "object": "sat-sentinel5p",
+      "source_ids": ["src-011"],
+      "confidence": 0.90
+    },
+    {
+      "subject": "temp-evt-3401",
+      "predicate": "observedBy",
+      "object": "sat-sentinel2a",
+      "source_ids": ["src-011"],
+      "confidence": 0.85
+    },
+    {
+      "subject": "temp-evt-3401",
+      "predicate": "usesSensor",
+      "object": "sensor-tropomi",
+      "source_ids": ["src-011"],
+      "confidence": 0.90
+    },
+    {
+      "subject": "temp-evt-3401",
+      "predicate": "usesSensor",
+      "object": "sensor-msi",
+      "source_ids": ["src-011"],
+      "confidence": 0.85
+    },
+    {
+      "subject": "temp-evt-3401",
+      "predicate": "manifests",
+      "object": "phen-methane",
+      "source_ids": ["src-011"],
+      "confidence": 0.90
+    },
+    {
+      "subject": "temp-evt-3401",
+      "predicate": "inDomain",
+      "object": "dom-climate",
+      "source_ids": ["src-011"],
+      "confidence": 0.90
+    },
+    {
+      "subject": "temp-evt-3401",
+      "predicate": "analyzedBy",
+      "object": "org-esa",
+      "source_ids": ["src-011"],
+      "confidence": 0.90
+    },
+    {
+      "subject": "temp-evt-3402",
+      "predicate": "observedBy",
+      "object": "sat-worldview3",
+      "source_ids": ["src-012"],
+      "confidence": 0.80
+    },
+    {
+      "subject": "temp-evt-3402",
+      "predicate": "observedBy",
+      "object": "sat-planetscope",
+      "source_ids": ["src-012"],
+      "confidence": 0.80
+    },
+    {
+      "subject": "temp-evt-3402",
+      "predicate": "locatedIn",
+      "object": "temp-loc-pyongsan",
+      "source_ids": ["src-012"],
+      "confidence": 0.90
+    },
+    {
+      "subject": "temp-evt-3402",
+      "predicate": "inCountry",
+      "object": "co-kp",
+      "source_ids": ["src-012"],
+      "confidence": 0.95
+    },
+    {
+      "subject": "temp-evt-3402",
+      "predicate": "manifests",
+      "object": "phen-military",
+      "source_ids": ["src-012"],
+      "confidence": 0.85
+    },
+    {
+      "subject": "temp-evt-3402",
+      "predicate": "inDomain",
+      "object": "dom-defense",
+      "source_ids": ["src-012"],
+      "confidence": 0.90
+    },
+    {
+      "subject": "temp-evt-3402",
+      "predicate": "analyzedBy",
+      "object": "org-csis-bp",
+      "source_ids": ["src-012"],
+      "confidence": 0.85
+    },
+    {
+      "subject": "temp-evt-3402",
+      "predicate": "reportedBy",
+      "object": "org-rfa",
+      "source_ids": ["src-012"],
+      "confidence": 0.85
+    }
+  ],
+  "stats": {
+    "total_entities": 4,
+    "new_entities": 4,
+    "matched_entities": 0,
+    "total_relations": 15
+  }
+}

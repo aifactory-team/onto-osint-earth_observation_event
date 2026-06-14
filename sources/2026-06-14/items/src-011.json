@@ -1,0 +1,34 @@
+{
+  "id": "src-011",
+  "title": "ESA AI4CH4 End-to-End Methane Detection Framework — Sentinel-5P + Sentinel-2 + AI Foundation Models",
+  "url": "https://eo4society.esa.int/2026/06/09/tracking-methane-emissions-an-end-to-end-framework-using-eo-data-and-ai-foundation-models/",
+  "alt_urls": [
+    "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P/Sentinel-5P_data_used_in_new_methane_detection_system"
+  ],
+  "snippet": "ESA EO4Society가 2026-06-09 발표한 AI4CH4 프로젝트. Sentinel-5P TROPOMI 글로벌 일일 커버리지(3.5km 해상도)로 대규모 메탄 배출원을 탐지하고, Sentinel-2 MSI(10m)로 국소 플룸을 상세 특성화. AI 파운데이션 모델로 대기 변동성·배경 노이즈 속에서 실제 배출원을 자동 식별하는 end-to-end 프레임워크.",
+  "source_name": "ESA EO4Society",
+  "source_type": "official_agency",
+  "language": "en",
+  "discovered_date": "2026-06-14",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 14일 소스에 AI4CH4 프레임워크 관련 항목 없음. ESA 6/9 발표, 금일 첫 수집.",
+  "entities": [
+    {"id": "temp-evt-3401", "type": "Event", "name": "ESA AI4CH4 종합 메탄 탐지 프레임워크", "properties": {"phenomenon": "methane_plume", "domain": "ClimateEnvironment", "country": "INTL", "lat": 0.0, "lon": 0.0}},
+    {"id": "sat-sentinel5p", "type": "Satellite", "name": "Sentinel-5P"},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sensor-tropomi", "type": "Sensor", "name": "TROPOMI"},
+    {"id": "sensor-msi", "type": "Sensor", "name": "MSI"},
+    {"id": "org-esa", "type": "Organization", "name": "ESA"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-3401", "predicate": "observedBy", "object": "sat-sentinel5p"},
+    {"subject": "temp-evt-3401", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "temp-evt-3401", "predicate": "usesSensor", "object": "sensor-tropomi"},
+    {"subject": "temp-evt-3401", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "temp-evt-3401", "predicate": "manifests", "object": "phen-methane"},
+    {"subject": "temp-evt-3401", "predicate": "inDomain", "object": "dom-climate"},
+    {"subject": "temp-evt-3401", "predicate": "analyzedBy", "object": "org-esa"}
+  ]
+}

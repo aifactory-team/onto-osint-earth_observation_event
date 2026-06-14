@@ -1,0 +1,290 @@
+{
+  "date": "2026-06-14",
+  "collected_at": "2026-06-14T00:00:00Z",
+  "config_topic": "위성영상 관측 가능 지구 이벤트 일일 모니터링",
+  "search_count": 22,
+  "total_results": 142,
+  "expanded_keywords": [
+    "Kilauea Ep49", "Mindanao M7.8", "Mayon volcano", "Bismarck Sea pumice",
+    "Canada wildfire VIIRS", "Great Sitkin lava dome", "Shishaldin SO2",
+    "Vietnam Spratly construction", "Philippines Thitu", "Brazil DETER ban",
+    "El Niño 2026 NOAA", "Sentinel-1 reconfiguration S1A retirement",
+    "ESA AI4CH4 TROPOMI methane", "North Korea Pyongsan uranium",
+    "Russia tank reserves OSINT", "North Korea rice planting NDWI",
+    "KOMPSAT-7 한반도", "Copernicus EMS", "Disaster Charter",
+    "Tuapse oil spill", "위성영상 산불 홍수 지진"
+  ],
+  "searches": [
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery wildfire flood earthquake volcano June 2026",
+      "language": "en",
+      "timestamp": "2026-06-14T00:01:00Z",
+      "result_count": 8,
+      "results": [
+        {"title": "World Earthquake Report for June 2026", "url": "https://www.volcanodiscovery.com/view_news/303981/World-Earthquake-Report-for-June-2026.html", "snippet": "Mindanao M7.8, Ring of Fire activity", "source_name": "VolcanoDiscovery"},
+        {"title": "Hawaiian Volcano Observatory", "url": "https://www.usgs.gov/observatories/hvo", "snippet": "USGS HVO Kilauea updates", "source_name": "USGS"},
+        {"title": "Volcano Updates", "url": "https://www.usgs.gov/programs/VHP/volcano-updates", "snippet": "Great Sitkin, Shishaldin, Kilauea updates", "source_name": "USGS"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Kilauea eruption episode 49 June 14 2026",
+      "language": "en",
+      "timestamp": "2026-06-14T00:02:00Z",
+      "result_count": 10,
+      "results": [
+        {"title": "Kilauea Eruption 2026: Episode 49 Forecast June 13-14", "url": "https://volcanodb.com/kilauea-eruption", "snippet": "Ep49 most likely June 14-15, record-breaking 48 episodes", "source_name": "VolcanoDB"},
+        {"title": "Kilauea Volcano Eruption Episode 49 Window Opens", "url": "https://www.bigislandvideonews.com/2026/06/13/kilauea-volcano-eruption-episode-49-window-opens/", "snippet": "Ep49 window opens June 13-16, tiltmeter inflation accelerating", "source_name": "Big Island Video News"},
+        {"title": "USGS Volcano Notice June 9", "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-HVO-2026-06-09T17:23:20+00:00", "snippet": "Summit inflation continues, Ep49 forecast", "source_name": "USGS HVO"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Sentinel-2 satellite imagery disaster June 2026",
+      "language": "en",
+      "timestamp": "2026-06-14T00:03:00Z",
+      "result_count": 8,
+      "results": [
+        {"title": "Satellite images show destruction of the US-Israel war on Iran", "url": "https://www.aljazeera.com/features/2026/6/8/satellite-images-show-destruction-of-the-us-israel-war-on-iran", "snippet": "Sentinel-2 Siri Island oil fire, April 2026", "source_name": "Al Jazeera"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Mindanao earthquake satellite damage assessment June 2026",
+      "language": "en",
+      "timestamp": "2026-06-14T00:04:00Z",
+      "result_count": 8,
+      "results": [
+        {"title": "Nighttime satellite data shows overview of earthquake damaged areas", "url": "https://philsa.gov.ph/news/nighttime-satellite-data-shows-overview-of-earthquake-damaged-areas/", "snippet": "PhilSA VIIRS nighttime light before/after, Sarangani/GenSan", "source_name": "PhilSA"},
+        {"title": "Satellite imagery points to power outages in quake-hit Mindanao", "url": "https://newsbytes.ph/2026/06/12/satellite-imagery-points-to-power-outages-damage-in-quake-hit-mindanao-areas/", "snippet": "VIIRS nighttime brightness declined, 45556 homes damaged", "source_name": "NewsBytesPhilippines"},
+        {"title": "2026 Mindanao earthquake ADRC report", "url": "https://www.adrc.asia/publications/disaster_report/pdf/2026/ADRC_EQ_PHL_Sarangani_20260608_en.pdf", "snippet": "M7.8 offshore Sarangani, comprehensive damage assessment", "source_name": "ADRC"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "위성영상 산불 홍수 지진 2026년 6월",
+      "language": "ko",
+      "timestamp": "2026-06-14T00:05:00Z",
+      "result_count": 10,
+      "results": [
+        {"title": "필리핀 다음은 일본 — 초대형 지진 비상, 불의 고리 요동", "url": "https://www.youtube.com/watch?v=uIkcXowbcY4", "snippet": "필리핀 M7.8 지진 후 환태평양 우려", "source_name": "KBS"},
+        {"title": "국토위성 영상으로 대형 산불 피해지역 신속 복구 지원", "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148941842", "snippet": "한국 국토위성 0.5m 해상도 산불 복구 지원", "source_name": "대한민국 정책브리핑"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "NASA Earth Observatory image of the day June 2026",
+      "language": "en",
+      "timestamp": "2026-06-14T00:06:00Z",
+      "result_count": 10,
+      "results": [
+        {"title": "A Moonlit Earth as Seen From Artemis II", "url": "https://science.nasa.gov/earth/earth-observatory/a-moonlit-earth-as-seen-from-artemis-ii/", "snippet": "NASA EO latest features", "source_name": "NASA EO"},
+        {"title": "Earth Observatory", "url": "https://science.nasa.gov/earth/earth-observatory/", "snippet": "Daily satellite imagery and stories", "source_name": "NASA EO"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery deforestation mining oil spill June 2026",
+      "language": "en",
+      "timestamp": "2026-06-14T00:07:00Z",
+      "result_count": 9,
+      "results": [
+        {"title": "Faster Detection of Forest Loss", "url": "https://science.nasa.gov/earth/earth-observatory/faster-detection-of-forest-loss/", "snippet": "NISAR+Landsat fusion for deforestation alerts 100 days faster", "source_name": "NASA EO"},
+        {"title": "2026 Tuapse oil terminal disaster", "url": "https://en.wikipedia.org/wiki/2026_Tuapse_oil_terminal_disaster", "snippet": "April 2026, oil spill Black Sea, satellite monitoring", "source_name": "Wikipedia"},
+        {"title": "2026 Tuapse environmental disaster", "url": "https://en.wikipedia.org/wiki/2026_Tuapse_environmental_disaster", "snippet": "Black rain, oil slick formation confirmed by satellite", "source_name": "Wikipedia"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery glacier methane plume climate change June 2026",
+      "language": "en",
+      "timestamp": "2026-06-14T00:08:00Z",
+      "result_count": 8,
+      "results": [
+        {"title": "Tracking methane emissions: end-to-end framework using EO data and AI", "url": "https://eo4society.esa.int/2026/06/09/tracking-methane-emissions-an-end-to-end-framework-using-eo-data-and-ai-foundation-models/", "snippet": "ESA AI4CH4 project, June 2026", "source_name": "ESA EO4Society"},
+        {"title": "Global satellite survey reveals uncertainty in landfill methane emissions", "url": "https://www.nature.com/articles/s41586-025-09683-8", "snippet": "Nature study, landfill methane satellite survey", "source_name": "Nature"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "satellite imagery military buildup naval activity OSINT June 2026",
+      "language": "en",
+      "timestamp": "2026-06-14T00:09:00Z",
+      "result_count": 8,
+      "results": [
+        {"title": "MizarVision: How China Mapped US Military Bases", "url": "https://sparksolidarity.ca/2026/03/02/mizarvision-how-china-mapped-us-military-bases-in-the-middle-east/", "snippet": "China AI satellite OSINT of US bases", "source_name": "Spark Solidarity"},
+        {"title": "2026 United States military buildup in the Middle East", "url": "https://en.wikipedia.org/wiki/2026_United_States_military_buildup_in_the_Middle_East", "snippet": "Largest since 2003, tracked by commercial satellites", "source_name": "Wikipedia"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "KOMPSAT 한반도 위성 관측 북한 2026년 6월",
+      "language": "ko",
+      "timestamp": "2026-06-14T00:10:00Z",
+      "result_count": 7,
+      "results": [
+        {"title": "KOMPSAT-7 지구관측 위성, 한국 우주 기술의 혁신", "url": "https://www.youtube.com/watch?v=u1fGD0eh1do", "snippet": "KOMPSAT-7 0.3m 최고해상도 운용 개시", "source_name": "YouTube"},
+        {"title": "KOMPSAT 위성영상 - 컨텍", "url": "https://kr.contec.kr/gwbbs/gw_page3.php?ti=cate2&me_co=5060", "snippet": "KOMPSAT 시리즈 영상 서비스", "source_name": "CONTEC"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Copernicus EMS activation Disaster Charter June 2026",
+      "language": "en",
+      "timestamp": "2026-06-14T00:11:00Z",
+      "result_count": 10,
+      "results": [
+        {"title": "Copernicus Emergency Management Service", "url": "https://emergency.copernicus.eu/", "snippet": "EMS rapid mapping, global support", "source_name": "Copernicus EMS"},
+        {"title": "Activations | Copernicus EMS On Demand Mapping", "url": "https://mapping.emergency.copernicus.eu/activations/", "snippet": "Active activations list", "source_name": "Copernicus EMS"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Mayon volcano Bismarck Sea eruption pumice satellite June 14 2026",
+      "language": "en",
+      "timestamp": "2026-06-14T00:12:00Z",
+      "result_count": 8,
+      "results": [
+        {"title": "New Eruption in the Bismarck Sea", "url": "https://science.nasa.gov/earth/earth-observatory/new-eruption-in-the-bismarck-sea/", "snippet": "NASA EO, Landsat 9 + MODIS Terra + VIIRS multi-satellite analysis", "source_name": "NASA EO"},
+        {"title": "Eruption at Mayon", "url": "https://science.nasa.gov/earth/earth-observatory/eruption-at-mayon", "snippet": "NASA EO Mayon eruption satellite analysis", "source_name": "NASA EO"},
+        {"title": "Pumice Clogs Island Shores PNG", "url": "https://www.usnews.com/news/world/articles/2026-06-10/pumice-clogs-island-shores-after-papua-new-guinea-eruption-stoking-fears-of-food-shortage", "snippet": "Pumice blocks sea access Manus Province, food shortage fears", "source_name": "US News/AP"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "NDVI crop satellite agriculture ocean fishing June 2026",
+      "language": "en",
+      "timestamp": "2026-06-14T00:13:00Z",
+      "result_count": 8,
+      "results": [
+        {"title": "NDVI, Drone NDVI Mapping: 7 Powerful Advances For 2026", "url": "https://farmonaut.com/remote-sensing/ndvi-drone-ndvi-mapping-7-powerful-advances-for-2026", "snippet": "NDVI agriculture advances 2026", "source_name": "Farmonaut"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "El Niño 2026 satellite sea surface temperature forecast",
+      "language": "en",
+      "timestamp": "2026-06-14T00:14:00Z",
+      "result_count": 8,
+      "results": [
+        {"title": "El Niño is here, and could become one of strongest, NOAA says", "url": "https://weather.com/2026/06/11/news/climate/el-nino-is-here-and-it-could-become-one-of-strongest-on-record-noaa-says", "snippet": "El Niño declared, 63% very strong chance", "source_name": "Weather.com"},
+        {"title": "El Nino forms, expected to strengthen, say NOAA forecasters", "url": "https://www.noaa.gov/news-release/el-nino-forms-expected-to-strengthen-say-noaa-forecasters", "snippet": "NOAA official El Niño declaration June 2026", "source_name": "NOAA"},
+        {"title": "Rising odds of strong-to-historic El Niño event in 2026", "url": "https://weatherwest.com/archives/43880", "snippet": "ECMWF: possible record-breaking El Niño by autumn 2026", "source_name": "Weather West"},
+        {"title": "WMO: Likelihood increases of El Niño", "url": "https://wmo.int/media/news/wmo-likelihood-increases-of-el-nino", "snippet": "WMO official statement", "source_name": "WMO"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Canada wildfire VIIRS MODIS satellite imagery June 2026",
+      "language": "en",
+      "timestamp": "2026-06-14T00:15:00Z",
+      "result_count": 10,
+      "results": [
+        {"title": "FIRMS US/Canada Active Fire", "url": "https://firms.modaps.eosdis.nasa.gov/usfs/active_fire/", "snippet": "VIIRS/MODIS real-time fire data", "source_name": "NASA FIRMS"},
+        {"title": "Canadian Wildland Fire Information System", "url": "https://cwfis.cfs.nrcan.gc.ca/maps/fm3?type=tri", "snippet": "Canada fire hotspots map", "source_name": "CWFIS"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Sentinel-1 constellation orbit reconfiguration retirement June 2026",
+      "language": "en",
+      "timestamp": "2026-06-14T00:16:00Z",
+      "result_count": 8,
+      "results": [
+        {"title": "Sentinel-1 orbital reconfiguration dates", "url": "https://dataspace.copernicus.eu/news/2026-5-28-sentinel-1-orbital-reconfiguration-dates", "snippet": "S1C maneuver June 9-23, S1A terminates June 29, S1C+S1D final config", "source_name": "Copernicus Data Space"},
+        {"title": "Sentinel-1D Data Are Available for Download at ASF DAAC", "url": "https://www.earthdata.nasa.gov/data/alerts-outages/sentinel-1d-data-available-download-asf-daac", "snippet": "Sentinel-1D data availability", "source_name": "NASA Earthdata"},
+        {"title": "Sentinel-1D user data opening and future plans", "url": "https://dataspace.copernicus.eu/news/2026-4-2-sentinel-1d-user-data-opening-and-future-plans", "snippet": "S1D full data access, constellation plans", "source_name": "Copernicus Data Space"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "South China Sea Spratly Islands satellite construction Vietnam Philippines 2026",
+      "language": "en",
+      "timestamp": "2026-06-14T00:17:00Z",
+      "result_count": 9,
+      "results": [
+        {"title": "Satellite pics reveal Vietnamese construction boom in disputed Spratly chain", "url": "https://www.rfa.org/english/southchinasea/2026/06/08/vietnam-south-china-sea-spratly-island-construction/", "snippet": "27 sites, 18 reefs, 216ha reclamation, PlanetScope imagery", "source_name": "Radio Free Asia"},
+        {"title": "Philippines satellite Spratlys infrastructure upgrade", "url": "https://www.rfa.org/english/southchinasea/2026/05/08/philippines-satellite-spratlys-infrastructure-upgrade/", "snippet": "Thitu runway 1.5km, Nanshan port construction", "source_name": "Radio Free Asia"},
+        {"title": "Vietnam taking leaf from China's playbook to build fortified islands", "url": "https://www.yahoo.com/news/articles/vietnam-taking-leaf-china-playbook-021455112.html", "snippet": "534 acres new reclamation in past year", "source_name": "Yahoo News"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "North Korea satellite imagery DPRK analysis June 2026",
+      "language": "en",
+      "timestamp": "2026-06-14T00:18:00Z",
+      "result_count": 9,
+      "results": [
+        {"title": "New satellite images reveal upgrades at North Korea's Pyongsan uranium plant", "url": "https://www.dailynk.com/english/north-korea-pyongsan-uranium-refinery-satellite-imagery-2026/", "snippet": "Building repairs, freight trains, new construction", "source_name": "DailyNK"},
+        {"title": "Pyongsan Uranium Concentrate Plant status", "url": "https://beyondparallel.csis.org/current-status-of-the-pyongsan-uranium-concentrate-plant-nam-chon-chemical-complex-and-january-industrial-mine/", "snippet": "CSIS Beyond Parallel analysis, yellowcake production", "source_name": "CSIS Beyond Parallel"},
+        {"title": "Satellite imagery reveals increased activity at North Korean nuclear complex", "url": "https://www.rfa.org/english/korea/2026/04/28/north-korea-satellite-yongbyon-nuclear/", "snippet": "Yongbyon 7th fuel cycle, 5MW reactor discharge", "source_name": "Radio Free Asia"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Kilauea eruption June 14 2026 USGS HVO update",
+      "language": "en",
+      "timestamp": "2026-06-14T00:19:00Z",
+      "result_count": 10,
+      "results": [
+        {"title": "Kilauea Volcano Updates", "url": "https://www.usgs.gov/volcanoes/kilauea/volcano-updates", "snippet": "Ep49 most likely June 14-15, inflation continues, flames and minor spatter", "source_name": "USGS HVO"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Pyongsan uranium North Korea satellite imagery 2026",
+      "language": "en",
+      "timestamp": "2026-06-14T00:20:00Z",
+      "result_count": 9,
+      "results": [
+        {"title": "New satellite images reveal upgrades, freight activity at Pyongsan", "url": "https://www.dailynk.com/english/north-korea-pyongsan-uranium-refinery-satellite-imagery-2026/", "snippet": "April 2026 imagery, building repairs, freight logistics, waste deposits", "source_name": "DailyNK"},
+        {"title": "Recent Imagery Suggests Increased Uranium Production", "url": "https://carnegieendowment.org/programs/nuclear-policy/proliferation-news/recent-imagery-suggests-increased-uranium-production-in-north-korea?lang=en", "snippet": "Carnegie analysis of NK uranium", "source_name": "Carnegie Endowment"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "ESA AI methane tracking satellite Sentinel-5P TROPOMI 2026",
+      "language": "en",
+      "timestamp": "2026-06-14T00:21:00Z",
+      "result_count": 9,
+      "results": [
+        {"title": "Tracking methane emissions: end-to-end framework using EO data and AI foundation models", "url": "https://eo4society.esa.int/2026/06/09/tracking-methane-emissions-an-end-to-end-framework-using-eo-data-and-ai-foundation-models/", "snippet": "AI4CH4 project — Sentinel-5P + Sentinel-2 + AI, global methane super-emitter detection", "source_name": "ESA EO4Society"},
+        {"title": "Sentinel-5P data used in new methane detection system", "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P/Sentinel-5P_data_used_in_new_methane_detection_system", "snippet": "SRON ML algorithm auto-discovers methane super-emitters", "source_name": "ESA"}
+      ]
+    },
+    {
+      "method": "websearch",
+      "engine": "built-in",
+      "keyword": "Great Sitkin Shishaldin volcano Alaska satellite update June 2026",
+      "language": "en",
+      "timestamp": "2026-06-14T00:22:00Z",
+      "result_count": 10,
+      "results": [
+        {"title": "AVO Great Sitkin update June 8", "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-AVO-2026-06-08T18:40:45+00:00", "snippet": "WATCH/ORANGE, eastern lava flow + dome growth confirmed by satellite", "source_name": "USGS AVO"},
+        {"title": "AVO Shishaldin update June 9", "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-AVO-2026-06-09T17:57:42+00:00", "snippet": "ADVISORY/YELLOW, elevated seismicity, small explosions", "source_name": "USGS AVO"}
+      ]
+    }
+  ]
+}

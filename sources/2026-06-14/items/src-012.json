@@ -1,0 +1,35 @@
+{
+  "id": "src-012",
+  "title": "북한 평산 우라늄 정련소 위성영상 분석 — 시설 보수·화물열차·폐기물 확대",
+  "url": "https://www.dailynk.com/english/north-korea-pyongsan-uranium-refinery-satellite-imagery-2026/",
+  "alt_urls": [
+    "https://beyondparallel.csis.org/current-status-of-the-pyongsan-uranium-concentrate-plant-nam-chon-chemical-complex-and-january-industrial-mine/",
+    "https://carnegieendowment.org/programs/nuclear-policy/proliferation-news/recent-imagery-suggests-increased-uranium-production-in-north-korea?lang=en"
+  ],
+  "snippet": "DailyNK English + CSIS Beyond Parallel. 2026-04-07 위성영상(WorldView-3/PlanetScope 추정): 평산 우라늄 정련소(남천화학연합기업소)에서 건물 보수, 화물열차 입출, 폐기물 퇴적지 확대 확인. 북한 유일 옐로케이크 생산 시설. 하절기 우기 시 예성강 수계 오염 우려.",
+  "source_name": "DailyNK / CSIS Beyond Parallel",
+  "source_type": "analyst",
+  "language": "en",
+  "discovered_date": "2026-06-14",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 14일 소스에 평산(Pyongsan) 우라늄 정련소 위성 분석 항목 없음. 영변(Yongbyon, evt-001)과는 별개 시설. 금일 첫 수집.",
+  "entities": [
+    {"id": "temp-evt-3402", "type": "Event", "name": "북한 평산 우라늄 정련소 위성 관측", "properties": {"phenomenon": "military_buildup", "domain": "Defense", "country": "KP", "lat": 38.35, "lon": 126.39}},
+    {"id": "temp-loc-pyongsan", "type": "Location", "name": "평산 우라늄 정련소", "properties": {"country": "KP", "lat": 38.35, "lon": 126.39}},
+    {"id": "sat-worldview3", "type": "Satellite", "name": "WorldView-3"},
+    {"id": "sat-planetscope", "type": "Satellite", "name": "PlanetScope"},
+    {"id": "org-csis-bp", "type": "Organization", "name": "CSIS Beyond Parallel"}
+  ],
+  "relations": [
+    {"subject": "temp-evt-3402", "predicate": "observedBy", "object": "sat-worldview3"},
+    {"subject": "temp-evt-3402", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "temp-evt-3402", "predicate": "locatedIn", "object": "temp-loc-pyongsan"},
+    {"subject": "temp-evt-3402", "predicate": "inCountry", "object": "co-kp"},
+    {"subject": "temp-evt-3402", "predicate": "manifests", "object": "phen-military"},
+    {"subject": "temp-evt-3402", "predicate": "inDomain", "object": "dom-defense"},
+    {"subject": "temp-evt-3402", "predicate": "analyzedBy", "object": "org-csis-bp"},
+    {"subject": "temp-evt-3402", "predicate": "reportedBy", "object": "org-rfa"}
+  ]
+}
