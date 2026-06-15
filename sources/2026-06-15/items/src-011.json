@@ -1,0 +1,29 @@
+{
+  "id": "src-011",
+  "title": "Amazon Deforestation Alerts Fall to Lowest 12-Month Level Since 2014 — DETER Satellite System",
+  "url": "https://news.mongabay.com/2026/06/amazon-deforestation-alerts-fall-to-lowest-12-month-level-since-2014-show-brazilian-data/",
+  "snippet": "DETER satellite alerts show deforestation in Brazilian Amazon falling: Aug 2025-Jan 2026 totalled 1,325 km2, down from 2,050 km2 year-earlier — lowest 6-month reading since 2014. Decline under Lula administration continues into 2026. DETER uses satellite imagery for rapid-response enforcement. Caveats: forest degradation (logging, fire, drought) not captured by clear-cut metrics alone.",
+  "source_name": "Mongabay",
+  "language": "en",
+  "discovered_date": "2026-06-15",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 14일 소스에 동일/유사 항목 없음. 2026-06 발표 DETER 최신 데이터. 아마존 삼림벌채 감소 추세 정량 확인.",
+  "entities": [
+    {"id": "evt-3502", "type": "Event", "name": "아마존 삼림벌채 경보 12개월 최저 2014년 이후", "properties": {"phenomenon": "deforestation", "domain": "AgricultureMaritime", "lat": -3.0, "lon": -60.0, "country": "BR", "severity": "medium", "area_km2": 1325}},
+    {"id": "sat-landsat8", "type": "Satellite", "name": "Landsat 8"},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "co-br", "type": "Country", "name": "브라질"},
+    {"id": "org-inpe", "type": "Organization", "name": "INPE"},
+    {"id": "phen-defor", "type": "Phenomenon", "name": "deforestation"}
+  ],
+  "relations": [
+    {"subject": "evt-3502", "predicate": "observedBy", "object": "sat-landsat8"},
+    {"subject": "evt-3502", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "evt-3502", "predicate": "inCountry", "object": "co-br"},
+    {"subject": "evt-3502", "predicate": "analyzedBy", "object": "org-inpe"},
+    {"subject": "evt-3502", "predicate": "manifests", "object": "phen-defor"},
+    {"subject": "evt-3502", "predicate": "inDomain", "object": "dom-agri-marine"}
+  ]
+}

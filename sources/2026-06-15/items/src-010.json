@@ -1,0 +1,30 @@
+{
+  "id": "src-010",
+  "title": "China Hami Nuclear Silo Field — 80+ Launch Pads, Octagonal Installations, Armored Bunkers (Reuters Satellite Imagery)",
+  "url": "https://www.nbcnews.com/world/asia/china-building-launch-pads-nuclear-missile-silos-satellite-images-show-rcna347503",
+  "snippet": "Commercial satellite imagery reviewed by Reuters and assessed by 3 independent security analysts shows China building 80+ concrete launch pads, 2 octagonal installations, armored bunkers, and fiber-optic command nodes across thousands of km2 of Xinjiang desert near Hami ICBM silo fields. Infrastructure supports mobile missile launchers, air defense, EW, satcom. Scale described as unprecedented among nuclear-armed states.",
+  "source_name": "NBC News / Reuters",
+  "language": "en",
+  "discovered_date": "2026-06-15",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "이전 14일 소스에 동일/유사 항목 없음. 2026-05-29 Reuters 최초 보도. 상업 위성영상 기반 독립 분석.",
+  "entities": [
+    {"id": "evt-3501", "type": "Event", "name": "중국 하미 ICBM 사일로 핵방어 네트워크 80+ 발사대", "properties": {"phenomenon": "military_buildup", "domain": "Defense", "lat": 42.8, "lon": 93.5, "country": "CN", "severity": "high", "before_after_available": true}},
+    {"id": "sat-worldview3", "type": "Satellite", "name": "WorldView-3"},
+    {"id": "sat-planetscope", "type": "Satellite", "name": "PlanetScope"},
+    {"id": "co-cn", "type": "Country", "name": "중국"},
+    {"id": "org-maxar", "type": "Organization", "name": "Maxar/Vantor"},
+    {"id": "temp-loc-hami", "type": "Location", "name": "Hami ICBM Silo Field, Xinjiang", "properties": {"country": "CN", "lat": 42.8, "lon": 93.5}},
+    {"id": "phen-military", "type": "Phenomenon", "name": "military_buildup"}
+  ],
+  "relations": [
+    {"subject": "evt-3501", "predicate": "observedBy", "object": "sat-worldview3"},
+    {"subject": "evt-3501", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "evt-3501", "predicate": "locatedIn", "object": "temp-loc-hami"},
+    {"subject": "evt-3501", "predicate": "inCountry", "object": "co-cn"},
+    {"subject": "evt-3501", "predicate": "manifests", "object": "phen-military"},
+    {"subject": "evt-3501", "predicate": "inDomain", "object": "dom-defense"}
+  ]
+}

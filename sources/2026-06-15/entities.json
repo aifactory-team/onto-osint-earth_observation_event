@@ -1,0 +1,143 @@
+{
+  "date": "2026-06-15",
+  "entities": [
+    {
+      "temp_id": "temp-001",
+      "matched_id": "evt-202",
+      "type": "Event",
+      "name": "Kilauea Episode 49 분수분출 예보 (June 14-15)",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "US", "lat": 19.421, "lon": -155.287, "observation_date": "2026-06-15", "severity": "high", "before_after_available": true},
+      "source_ids": ["src-001"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-002",
+      "matched_id": "evt-701",
+      "type": "Event",
+      "name": "Bismarck Sea 부석 뗏목 Manus Island 해상교통 차단",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "PG", "lat": -2.0, "lon": 147.0, "observation_date": "2026-06-11", "severity": "high", "before_after_available": true},
+      "source_ids": ["src-002"],
+      "mention_count": 3
+    },
+    {
+      "temp_id": "temp-003",
+      "matched_id": "evt-3201",
+      "type": "Event",
+      "name": "Mindanao M7.8 지진 위성 피해평가 — PhilSA 야간위성 분석",
+      "properties": {"phenomenon": "earthquake_damage", "domain": "Disaster", "country": "PH", "lat": 5.5, "lon": 126.2, "observation_date": "2026-06-11", "severity": "high", "before_after_available": true},
+      "source_ids": ["src-003"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-004",
+      "matched_id": "evt-082",
+      "type": "Event",
+      "name": "Mayon 화산 Day161 지속 분출",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "PH", "lat": 13.257, "lon": 123.685, "observation_date": "2026-06-15", "severity": "high"},
+      "source_ids": ["src-004"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-005",
+      "matched_id": "evt-1101",
+      "type": "Event",
+      "name": "캐나다 산불 시즌 2026 — 65+ 활성 화재 BC/AB",
+      "properties": {"phenomenon": "wildfire", "domain": "Disaster", "country": "CA", "lat": 54.0, "lon": -122.0, "observation_date": "2026-06-14", "severity": "medium"},
+      "source_ids": ["src-005"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-006",
+      "matched_id": "evt-203",
+      "type": "Event",
+      "name": "Great Sitkin 화산 WATCH/ORANGE 용암돔 성장",
+      "properties": {"phenomenon": "volcanic_eruption", "domain": "Disaster", "country": "US", "lat": 52.08, "lon": -176.13, "observation_date": "2026-06-12", "severity": "medium"},
+      "source_ids": ["src-006"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-007",
+      "matched_id": "temp-evt-1902",
+      "type": "Event",
+      "name": "엘니뇨 공식 선언 — NOAA June 11, 63% 매우 강한 수준",
+      "properties": {"phenomenon": "sea_level_change", "domain": "ClimateEnvironment", "country": "INTL", "lat": 0.0, "lon": -170.0, "observation_date": "2026-06-11", "severity": "high"},
+      "source_ids": ["src-007"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-008",
+      "matched_id": "evt-3301",
+      "type": "Event",
+      "name": "베트남 스프래틀리 27개 지점 216ha 건설 — 3.2km 활주로",
+      "properties": {"phenomenon": "construction", "domain": "HumanActivity", "country": "VN", "lat": 8.9, "lon": 114.3, "observation_date": "2026-06-08", "severity": "high", "before_after_available": true},
+      "source_ids": ["src-008"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-009",
+      "matched_id": "evt-3302",
+      "type": "Event",
+      "name": "Sentinel-1 콘스텔레이션 전환 — S1A 6/29 퇴역, S1C/D 탠덤 운영",
+      "properties": {"phenomenon": "satellite_operations", "domain": "HumanActivity", "country": "INTL", "lat": 0.0, "lon": 0.0, "observation_date": "2026-06-15", "severity": "medium"},
+      "source_ids": ["src-009"],
+      "mention_count": 2
+    },
+    {
+      "temp_id": "temp-010",
+      "matched_id": null,
+      "type": "Event",
+      "name": "중국 하미 ICBM 사일로 핵방어 네트워크 — 80+ 발사대·옥타곤 시설",
+      "properties": {"phenomenon": "military_buildup", "domain": "Defense", "country": "CN", "lat": 42.8, "lon": 93.5, "observation_date": "2026-05-29", "severity": "high", "before_after_available": true},
+      "source_ids": ["src-010"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-011",
+      "matched_id": null,
+      "type": "Event",
+      "name": "아마존 삼림벌채 경보 12개월 최저치 — 2014년 이후 최저 DETER",
+      "properties": {"phenomenon": "deforestation", "domain": "AgricultureMaritime", "country": "BR", "lat": -3.0, "lon": -60.0, "observation_date": "2026-06-10", "severity": "medium"},
+      "source_ids": ["src-011"],
+      "mention_count": 1
+    },
+    {
+      "temp_id": "temp-012",
+      "matched_id": "evt-3402",
+      "type": "Event",
+      "name": "북한 평산 우라늄 정련공장 가동 지속 — 화물·폐기물 증가",
+      "properties": {"phenomenon": "military_buildup", "domain": "Defense", "country": "KP", "lat": 38.3, "lon": 126.4, "observation_date": "2026-06-14", "severity": "high", "before_after_available": true},
+      "source_ids": ["src-012"],
+      "mention_count": 2
+    }
+  ],
+  "relations": [
+    {"subject": "temp-001", "predicate": "observedBy", "object": "sat-goes18", "source_ids": ["src-001"], "confidence": 0.85},
+    {"subject": "temp-001", "predicate": "locatedIn", "object": "ent-loc-004", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "temp-001", "predicate": "analyzedBy", "object": "org-usgs", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "temp-001", "predicate": "manifests", "object": "phen-volcano", "source_ids": ["src-001"], "confidence": 0.95},
+    {"subject": "temp-002", "predicate": "observedBy", "object": "sat-himawari9", "source_ids": ["src-002"], "confidence": 0.90},
+    {"subject": "temp-002", "predicate": "inDomain", "object": "dom-disaster", "source_ids": ["src-002"], "confidence": 0.95},
+    {"subject": "temp-003", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-003"], "confidence": 0.90},
+    {"subject": "temp-003", "predicate": "analyzedBy", "object": "org-philsa", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "temp-003", "predicate": "manifests", "object": "phen-earthquake", "source_ids": ["src-003"], "confidence": 0.95},
+    {"subject": "temp-005", "predicate": "observedBy", "object": "sat-viirs-jpss", "source_ids": ["src-005"], "confidence": 0.90},
+    {"subject": "temp-005", "predicate": "observedBy", "object": "sat-modis-terra", "source_ids": ["src-005"], "confidence": 0.85},
+    {"subject": "temp-005", "predicate": "manifests", "object": "phen-wildfire", "source_ids": ["src-005"], "confidence": 0.95},
+    {"subject": "temp-007", "predicate": "observedBy", "object": "sat-sentinel6", "source_ids": ["src-007"], "confidence": 0.90},
+    {"subject": "temp-007", "predicate": "analyzedBy", "object": "org-noaa", "source_ids": ["src-007"], "confidence": 0.95},
+    {"subject": "temp-008", "predicate": "observedBy", "object": "sat-planetscope", "source_ids": ["src-008"], "confidence": 0.90},
+    {"subject": "temp-010", "predicate": "observedBy", "object": "sat-worldview3", "source_ids": ["src-010"], "confidence": 0.85},
+    {"subject": "temp-010", "predicate": "inDomain", "object": "dom-defense", "source_ids": ["src-010"], "confidence": 0.95},
+    {"subject": "temp-011", "predicate": "observedBy", "object": "sat-landsat8", "source_ids": ["src-011"], "confidence": 0.80},
+    {"subject": "temp-011", "predicate": "analyzedBy", "object": "org-inpe", "source_ids": ["src-011"], "confidence": 0.90},
+    {"subject": "temp-011", "predicate": "manifests", "object": "phen-defor", "source_ids": ["src-011"], "confidence": 0.95},
+    {"subject": "temp-012", "predicate": "observedBy", "object": "sat-worldview3", "source_ids": ["src-012"], "confidence": 0.80},
+    {"subject": "temp-012", "predicate": "inDomain", "object": "dom-defense", "source_ids": ["src-012"], "confidence": 0.95}
+  ],
+  "stats": {
+    "total_entities": 12,
+    "new_entities": 2,
+    "matched_entities": 10,
+    "total_relations": 22
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "src-001",
+  "title": "Kilauea Ep49 Forecast June 14-15 Most Likely — Summit Reinflation Accelerating",
+  "url": "https://www.usgs.gov/volcanoes/kilauea/volcano-updates",
+  "snippet": "Kilauea volcano not erupting; Ep48 ended June 1 after record 9h 650ft fountaining. Summit reinflation accelerating. Models forecast Ep49 June 13-16, most likely June 14-15. ADVISORY/YELLOW maintained. Most episodic-fountaining eruption ever recorded at Kilauea (48 episodes, surpassing Pu'u'O'o 1983-86 record of 47).",
+  "source_name": "USGS HVO",
+  "language": "en",
+  "discovered_date": "2026-06-15",
+  "tag": "update",
+  "related_report": "2026-06-14",
+  "related_item": "src-001 (2026-06-14)",
+  "tag_reason": "evt-202 Kilauea series tracked since 2026-05-10. New information: Ep49 forecast window narrowed to June 14-15 (today), reinflation rate data.",
+  "entities": [
+    {"id": "evt-202", "type": "Event", "name": "Kilauea Episode 49 forecast", "properties": {"phenomenon": "volcanic_eruption", "lat": 19.421, "lon": -155.287, "country": "US", "severity": "high"}},
+    {"id": "sat-goes18", "type": "Satellite", "name": "GOES-18"},
+    {"id": "org-usgs", "type": "Organization", "name": "USGS HVO"},
+    {"id": "ent-loc-004", "type": "Location", "name": "Kilauea summit, Halemaʻumaʻu"}
+  ],
+  "relations": [
+    {"subject": "evt-202", "predicate": "observedBy", "object": "sat-goes18"},
+    {"subject": "evt-202", "predicate": "analyzedBy", "object": "org-usgs"},
+    {"subject": "evt-202", "predicate": "locatedIn", "object": "ent-loc-004"},
+    {"subject": "evt-202", "predicate": "manifests", "object": "phen-volcano"}
+  ]
+}

@@ -3299,3 +3299,63 @@ config 한도 내 — 새 클래스 0건 (max 3), 새 관계 유형 0건 (max 5)
 | 이벤트 업데이트 | 10건 | 후속 정보 반영 |
 
 config 한도 내 — 새 클래스 0건 (max 3), 새 관계 유형 0건 (max 5). 새 Country 1건, 새 Satellite 0건.
+
+## 2026-06-15 추론 결과
+
+### multi_satellite_confirmation (다중 위성 교차검증) — 3건
+
+- **추론 #1:** evt-3201 (Mindanao M7.8) — VIIRS 야간광 + Sentinel Asia 다중 수집 + Disasters Charter Act.1034 (17 acquisitions) → multiSatBoost +0.20 [confidence 0.95, 확정]
+- **추론 #2:** evt-3501 (China Hami silo) — WorldView-3 (Maxar/Vantor) + PlanetScope (Planet Labs) 독립 확인, 3명 보안 분석가 교차검증 → multiSatBoost +0.20 [0.92, 확정]
+- **추론 #3:** evt-3502 (Amazon DETER) — Landsat 8 + Sentinel-2A (DETER 시스템 다중위성 융합) → multiSatBoost +0.20 [0.88, 확정]
+
+### sensor_capability_match (센서-현상 적합성) — 2건
+
+- **hiRes x military_buildup:** evt-3501 (Hami) — WorldView-3 0.31m 해상도로 발사대·차량·시설 식별 → hiResBoost +0.15 [0.92]
+- **hiRes x military_buildup:** evt-3402 (Pyongsan) — 고해상도 광학으로 화물열차·시설 확장 식별 → hiResBoost +0.15 [0.85]
+
+### official_source_trust (공식 기관 신뢰도) — 3건
+
+- **evt-202 (Kilauea):** USGS HVO 공식 예보 → officialBoost +0.15 [0.95]
+- **temp-evt-1902 (El Niño):** NOAA CPC 공식 선언 → officialBoost +0.15 [0.95]
+- **evt-3201 (Mindanao):** PhilSA 정부기관 야간위성 분석 → officialBoost +0.15 [0.95]
+
+### korea_geo_focus (한반도 가산) — 1건
+
+- **evt-3402 (Pyongsan KP):** 북한 iso_code KP → koreaBoost +0.10 [0.85]
+
+### disaster_severity_priority (재해 우선순위) — 2건
+
+- **evt-3201 (Mindanao M7.8):** 47명 사망, 45556가옥 → priorityBoost +0.20 [0.95]
+- **evt-701 (Bismarck Sea):** Manus Island 해상교통 차단, 식량 위기 우려 → priorityBoost +0.15 [0.90]
+
+### temporal_progression (시계열 연속) — 2건
+
+- **evt-202:** Ep48→Ep49 예보 partOfSeries [0.95]
+- **evt-701:** 5/8 분출 → 6/11 Manus 차단 partOfSeries [0.90]
+
+### cascading_disaster (연쇄 재해) — 1건
+
+- **evt-701 → humanitarian:** volcanic_eruption → pumice raft → sea access blocked → food shortage triggeredBy [0.85]
+
+### 일일 요약
+
+| 규칙 | 적용 건수 | 대표 이벤트 |
+|------|----------|------------|
+| multi_satellite_confirmation | 3 | evt-3201, evt-3501, evt-3502 |
+| sensor_capability_match | 2 | evt-3501(hiResBoost), evt-3402(hiResBoost) |
+| official_source_trust | 3 | evt-202, temp-evt-1902, evt-3201 |
+| korea_geo_focus | 1 | evt-3402 |
+| disaster_severity_priority | 2 | evt-3201, evt-701 |
+| temporal_progression | 2 | evt-202, evt-701 |
+| cascading_disaster | 1 | evt-701 |
+| **총 추론** | **14건** | |
+
+### 온톨로지 변경
+
+| 변경 유형 | 대상 | 근거 |
+|----------|------|------|
+| 새 Location | temp-loc-hami (Hami ICBM Silo Field, Xinjiang) | evt-3501 Reuters/NBC 위성 분석 |
+| 새 Event | 2건 (evt-3501, evt-3502) | Hami 핵방어 네트워크, Amazon DETER 최저치 |
+| 이벤트 업데이트 | 10건 | Kilauea, Bismarck Sea, Mindanao, Mayon, Canada, Great Sitkin, El Niño, Vietnam Spratly, S1 constellation, Pyongsan |
+
+config 한도 내 — 새 클래스 0건 (max 3), 새 관계 유형 0건 (max 5). 새 Location 1건, 새 Satellite 0건.
