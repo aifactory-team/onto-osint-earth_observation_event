@@ -1,0 +1,27 @@
+{
+  "id": "src-012",
+  "title": "China Hami Nuclear Silo Field — Continued Monitoring (Reuters Satellite Imagery Update)",
+  "url": "https://www.nbcnews.com/world/asia/china-building-launch-pads-nuclear-missile-silos-satellite-images-show-rcna347503",
+  "snippet": "Continued satellite monitoring of China's Hami ICBM silo field in Xinjiang desert. 80+ concrete launch pads, octagonal installations, and armored bunkers. WorldView-3 and PlanetScope imagery confirmed by 3 independent security analysts. Scale described as unprecedented.",
+  "source_name": "NBC News / Reuters",
+  "language": "en",
+  "discovered_date": "2026-06-16",
+  "tag": "update",
+  "related_report": "2026-06-15",
+  "related_item": "src-010 (2026-06-15)",
+  "tag_reason": "evt-3501 China Hami tracked since 2026-06-15. Continuing monitoring of unprecedented nuclear infrastructure buildup.",
+  "entities": [
+    {"id": "evt-3501", "type": "Event", "name": "중국 하미 ICBM 사일로 지속 모니터링", "properties": {"phenomenon": "military_buildup", "lat": 42.8, "lon": 93.5, "country": "CN", "severity": "high", "before_after_available": true}},
+    {"id": "sat-worldview3", "type": "Satellite", "name": "WorldView-3"},
+    {"id": "sat-planetscope", "type": "Satellite", "name": "PlanetScope"},
+    {"id": "org-maxar", "type": "Organization", "name": "Maxar/Vantor"},
+    {"id": "co-cn", "type": "Country", "name": "China"}
+  ],
+  "relations": [
+    {"subject": "evt-3501", "predicate": "observedBy", "object": "sat-worldview3"},
+    {"subject": "evt-3501", "predicate": "observedBy", "object": "sat-planetscope"},
+    {"subject": "evt-3501", "predicate": "inCountry", "object": "co-cn"},
+    {"subject": "evt-3501", "predicate": "manifests", "object": "phen-military"},
+    {"subject": "evt-3501", "predicate": "inDomain", "object": "dom-defense"}
+  ]
+}

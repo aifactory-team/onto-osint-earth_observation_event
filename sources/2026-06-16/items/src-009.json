@@ -1,0 +1,28 @@
+{
+  "id": "src-009",
+  "title": "Mayon Volcano Day162+ AL3 Continuing — SO2 1088-3096 t/d",
+  "url": "https://www.phivolcs.dost.gov.ph/index.php/volcano-hazard/volcano-bulletin2/mayon-volcano",
+  "snippet": "Mayon volcano continues Alert Level 3 eruption. Day 162+ of ongoing effusion. SO2 emissions measured at 1088-3096 tonnes/day. Lava dome growth and pyroclastic density currents continue. 287K+ evacuees. Monsoon season lahar risk elevated.",
+  "source_name": "PHIVOLCS",
+  "language": "en",
+  "discovered_date": "2026-06-16",
+  "tag": "update",
+  "related_report": "2026-06-15",
+  "related_item": "src-004 (2026-06-15)",
+  "tag_reason": "evt-082 Mayon tracked since 2026-05-01. Continuing update: Day162+, SO2 data range 1088-3096 t/d, AL3 maintained.",
+  "entities": [
+    {"id": "evt-082", "type": "Event", "name": "Mayon 화산 Day162+ AL3 지속", "properties": {"phenomenon": "volcanic_eruption", "lat": 13.257, "lon": 123.685, "country": "PH", "severity": "high"}},
+    {"id": "sat-sentinel5p", "type": "Satellite", "name": "Sentinel-5P"},
+    {"id": "sensor-tropomi", "type": "Sensor", "name": "TROPOMI"},
+    {"id": "org-phivolcs", "type": "Organization", "name": "PHIVOLCS"},
+    {"id": "ent-loc-014", "type": "Location", "name": "Mayon Volcano, Albay Province"}
+  ],
+  "relations": [
+    {"subject": "evt-082", "predicate": "observedBy", "object": "sat-sentinel5p"},
+    {"subject": "evt-082", "predicate": "usesSensor", "object": "sensor-tropomi"},
+    {"subject": "evt-082", "predicate": "analyzedBy", "object": "org-phivolcs"},
+    {"subject": "evt-082", "predicate": "locatedIn", "object": "ent-loc-014"},
+    {"subject": "evt-082", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "evt-082", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

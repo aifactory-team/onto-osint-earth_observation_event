@@ -1,0 +1,29 @@
+{
+  "id": "src-003",
+  "title": "NASA EO Pumice Rafts Encroach on Admiralty Islands — Titan Ridge Ecological Impact",
+  "url": "https://science.nasa.gov/earth/earth-observatory/pumice-rafts-encroach-on-admiralty-islands/",
+  "snippet": "NASA Earth Observatory Image of the Day feature. Titan Ridge submarine eruption pumice rafts reaching Admiralty Islands coastlines. Ecological damage documented: seagrass beds and coral reefs photosynthesis blocked, filter-feeding fish die-off observed. Manus Province food shortage concerns escalating.",
+  "source_name": "NASA Earth Observatory",
+  "language": "en",
+  "discovered_date": "2026-06-16",
+  "tag": "update",
+  "related_report": "2026-06-15",
+  "related_item": "src-002 (2026-06-15)",
+  "tag_reason": "evt-701 Bismarck Sea pumice tracked since 2026-05-08. Major update: NASA EO official feature, ecological damage confirmed, Admiralty Islands encroachment.",
+  "entities": [
+    {"id": "evt-701", "type": "Event", "name": "Bismarck Sea 부석 Admiralty Islands 침입", "properties": {"phenomenon": "volcanic_eruption", "lat": -2.0, "lon": 147.0, "country": "PG", "severity": "high", "before_after_available": true}},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9"},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "org-nasa", "type": "Organization", "name": "NASA Earth Observatory"},
+    {"id": "ent-loc-admiralty", "type": "Location", "name": "Admiralty Islands, Manus Province", "properties": {"country": "PG", "lat": -2.1, "lon": 147.4}}
+  ],
+  "relations": [
+    {"subject": "evt-701", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "evt-701", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "evt-701", "predicate": "analyzedBy", "object": "org-nasa"},
+    {"subject": "evt-701", "predicate": "locatedIn", "object": "ent-loc-admiralty"},
+    {"subject": "evt-701", "predicate": "inCountry", "object": "co-pg"},
+    {"subject": "evt-701", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "evt-701", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "src-004",
+  "title": "Copernicus GFM v4.1.1 — Sentinel-1D Operational Integration for Global Flood Monitoring",
+  "url": "https://global-flood.emergency.copernicus.eu/news/107-global-flood-monitoring-product-launch/",
+  "snippet": "June 11, 2026: Copernicus Emergency Management Service (CEMS) Global Flood Monitoring (GFM) v4.1.1 operational launch. Sentinel-1D fully integrated into SAR-based automatic flood mapping. Near real-time flood maps within 5 hours of SAR acquisition. Enhanced coverage with Sentinel-1C/1D tandem constellation.",
+  "source_name": "Copernicus EMS",
+  "language": "en",
+  "discovered_date": "2026-06-16",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규 이벤트. Copernicus GFM v4.1.1 출시로 Sentinel-1D SAR 기반 홍수 모니터링 통합. 기존 evt-018 GFM 시리즈의 중대 업그레이드.",
+  "entities": [
+    {"id": "evt-3303", "type": "Event", "name": "Copernicus GFM v4.1.1 Sentinel-1D 통합", "properties": {"phenomenon": "flood", "lat": 0.0, "lon": 0.0, "country": "INTL", "severity": "medium"}},
+    {"id": "sat-sentinel1d", "type": "Satellite", "name": "Sentinel-1D"},
+    {"id": "sat-sentinel1c", "type": "Satellite", "name": "Sentinel-1C"},
+    {"id": "org-cems", "type": "Organization", "name": "Copernicus Emergency Management Service"},
+    {"id": "sensor-c-sar", "type": "Sensor", "name": "C-band SAR"}
+  ],
+  "relations": [
+    {"subject": "evt-3303", "predicate": "observedBy", "object": "sat-sentinel1d"},
+    {"subject": "evt-3303", "predicate": "observedBy", "object": "sat-sentinel1c"},
+    {"subject": "evt-3303", "predicate": "usesSensor", "object": "sensor-c-sar"},
+    {"subject": "evt-3303", "predicate": "analyzedBy", "object": "org-cems"},
+    {"subject": "evt-3303", "predicate": "manifests", "object": "phen-flood"},
+    {"subject": "evt-3303", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

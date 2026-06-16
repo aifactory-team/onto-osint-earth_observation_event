@@ -1,0 +1,25 @@
+{
+  "id": "src-002",
+  "title": "Kilauea Ep49 Ends After 7.5 Hours of Lava Fountaining — The Watchers Report",
+  "url": "https://watchers.news/2026/06/15/kilauea-episode-49-ends-after-7-5-hours-of-lava-fountaining-hawaii/",
+  "snippet": "Episode 49 erupted June 14, 2026 at 09:36 HST and ended at approximately 17:05 HST. Fountains 213m (700ft), plume 5500m (18,000ft). Alert lowered from WATCH to ADVISORY. Surpassed Pu'u'O'o 1983-86 record of 47 episodes, now at 49 episodes — the most episodic-fountaining eruption ever recorded at Kilauea.",
+  "source_name": "The Watchers",
+  "language": "en",
+  "discovered_date": "2026-06-16",
+  "tag": "update",
+  "related_report": "2026-06-15",
+  "related_item": "src-001 (2026-06-16)",
+  "tag_reason": "Cross-source for evt-202 Kilauea Ep49. Confirms USGS HVO data with additional historical context.",
+  "entities": [
+    {"id": "evt-202", "type": "Event", "name": "Kilauea Episode 49 분출·종료", "properties": {"phenomenon": "volcanic_eruption", "lat": 19.42, "lon": -155.29, "country": "US", "severity": "high"}},
+    {"id": "sat-goes18", "type": "Satellite", "name": "GOES-18"},
+    {"id": "org-usgs", "type": "Organization", "name": "USGS HVO"},
+    {"id": "ent-loc-004", "type": "Location", "name": "Kilauea summit, Halema'uma'u"}
+  ],
+  "relations": [
+    {"subject": "evt-202", "predicate": "observedBy", "object": "sat-goes18"},
+    {"subject": "evt-202", "predicate": "analyzedBy", "object": "org-usgs"},
+    {"subject": "evt-202", "predicate": "locatedIn", "object": "ent-loc-004"},
+    {"subject": "evt-202", "predicate": "manifests", "object": "phen-volcano"}
+  ]
+}

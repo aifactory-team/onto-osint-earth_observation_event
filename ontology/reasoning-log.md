@@ -3359,3 +3359,88 @@ config 한도 내 — 새 클래스 0건 (max 3), 새 관계 유형 0건 (max 5)
 | 이벤트 업데이트 | 10건 | Kilauea, Bismarck Sea, Mindanao, Mayon, Canada, Great Sitkin, El Niño, Vietnam Spratly, S1 constellation, Pyongsan |
 
 config 한도 내 — 새 클래스 0건 (max 3), 새 관계 유형 0건 (max 5). 새 Location 1건, 새 Satellite 0건.
+
+## 2026-06-16 추론 결과
+
+### multi_satellite_confirmation (다중 위성 교차검증) — 4건
+
+- **추론 #1:** evt-701 (Bismarck Sea) — Landsat 9 (USGS/NASA) + Sentinel-2A (ESA) + Himawari-9 (JMA/JAXA) + VIIRS (NOAA) = 4위성 3기관 → multiSatBoost +0.20 [confidence 0.95, 확정, 유지]
+- **추론 #2:** evt-1101 (캐나다 산불) — MODIS Terra (NASA) + VIIRS JPSS (NOAA/NASA) = 2위성 2기관 → multiSatBoost +0.20 [0.92, 확정, 유지]
+- **추론 #3:** evt-3501 (China Hami silo) — WorldView-3 (Maxar/Vantor) + PlanetScope (Planet Labs) 독립 확인 → multiSatBoost +0.20 [0.92, 확정, 유지]
+- **추론 #4:** evt-3601 (DPRK 조림) — Sentinel-2A (ESA) + Landsat 9 (USGS/NASA) = 2위성 2기관 NDVI 교차검증 → multiSatBoost +0.20 [0.75, 잠정 — DailyNK 단독 보도, 위성 명시 불확실]
+
+### official_source_trust (공식 기관 신뢰도 가산) — 3건
+
+- **추론 #5:** evt-202 (Kilauea Ep49) — analyzedBy USGS HVO (space_agency) 공식 화산 정보 통지 → officialBoost +0.15 [0.95, 확정]
+- **추론 #6:** evt-701 (Bismarck Sea) — analyzedBy NASA Earth Observatory (space_agency) Image of Day 공식 기사 → officialBoost +0.15 [0.95, 확정]
+- **추론 #7:** evt-3303 (GFM v4.1.1) — analyzedBy Copernicus EMS (un_body) 공식 제품 출시 → officialBoost +0.15 [0.90, 확정]
+
+### temporal_progression (시계열 추적) — 3건
+
+- **추론 #8:** evt-202 (Kilauea Ep49) → partOfSeries Ep49→Ep48→...→Ep44 [0.95, 확정] — Ep49 분출 6/14 09:36 HST, 종료 17:05 HST. 역대 최다 49회 기록 달성 (Pu'u'O'o 1983-86 47회 초과).
+- **추론 #9:** evt-701 (Bismarck Sea day 39+) → partOfSeries day 38+ [0.95, 확정] — 5/8 분출 → 6/11 Manus 차단 → 6/16 Admiralty Islands 침입. NASA EO 공식 기사. 생태 피해 확대.
+- **추론 #10:** evt-082 (Mayon Day162+) → partOfSeries Day161+ [0.90, 확정] — AL3 유지, SO2 1088-3096 t/d, 287K+ 이재민.
+
+### cascading_disaster (연쇄 재해) — 1건
+
+- **추론 #11:** evt-701 (Bismarck Sea) → crossDomainLink dom-disaster→dom-agri-marine→dom-humanitarian — 화산 분출 → 부석 뗏목 → Admiralty Islands 침입 → 해초/산호 광합성 차단 → 어류 폐사 → 어업 마비 → Manus Province 식량 위기 → cascadingBoost [0.90, 확정]
+
+### sensor_capability_match (센서-현상 적합성) — 3건
+
+- **SAR x flood:** evt-3303 (GFM v4.1.1) — Sentinel-1C/1D C-band SAR 자동 홍수 매핑 → sarBoost +0.10 [0.90, 확정]
+- **hiRes x military:** evt-3501 (Hami) — WorldView-3 0.31m 해상도 발사대·시설 식별 → hiResBoost +0.15 [0.92, 유지]
+- **trace_gas x SO2:** evt-082 (Mayon) — Sentinel-5P TROPOMI SO2 1088-3096 t/d → tracegasBoost +0.15 [0.90, 확정]
+
+### korea_geo_focus (한반도 가산) — 1건
+
+- **추론 #12:** evt-3601 (DPRK 조림 KP) — inCountry co-kp (iso_code KP) → koreaBoost +0.10 [0.75, 잠정]
+
+### before_after_credibility (전후 비교 신뢰도) — 2건
+
+- **추론 #13:** evt-3201 (Mindanao M7.8) — Sentinel-2 June 8(지진 전) vs June 14(산사태 후) 전후 비교 영상 → baCredibilityBoost +0.10 [0.95, 확정]
+- **추론 #14:** evt-3601 (DPRK 조림) — 다년간 NDVI 시계열 비교 → baCredibilityBoost +0.10 [0.75, 잠정]
+
+### disaster_severity_priority (재해 심각도 우선) — 2건
+
+- **추론 #15:** evt-082 (Mayon) — 287K+ 이재민, AL3 Day162+, 우기 라하르 위험 → priorityBoost +0.20 [0.90, 확정]
+- **추론 #16:** evt-1101 (캐나다 산불) — 1,747 fires, 95 active, 44 OOC, 166,400 ha (전일 78,800 ha 대비 2배+) → priorityBoost +0.20 [0.90, 확정]
+
+### 금일 미적용 규칙
+
+- **analyst_org_trust:** 금일 독립 분석기관(Bellingcat, CSIS BP 등) 신규 발표 없음. DailyNK는 media 유형으로 analystBoost 미적용.
+- **commercial_imagery_provider:** Maxar/Planet 직접 발표 없음 (Reuters 경유 간접 인용만).
+
+### 일일 요약
+
+| 규칙 | 적용 건수 | 대표 이벤트 |
+|------|----------|------------|
+| multi_satellite_confirmation | 4 | evt-701, evt-1101, evt-3501, evt-3601 |
+| official_source_trust | 3 | evt-202, evt-701, evt-3303 |
+| temporal_progression | 3 | evt-202, evt-701, evt-082 |
+| cascading_disaster | 1 | evt-701 |
+| sensor_capability_match | 3 | evt-3303(sarBoost), evt-3501(hiResBoost), evt-082(tracegasBoost) |
+| korea_geo_focus | 1 | evt-3601 |
+| before_after_credibility | 2 | evt-3201, evt-3601 |
+| disaster_severity_priority | 2 | evt-082, evt-1101 |
+| **총 추론** | **19건** | |
+
+### 온톨로지 변경
+
+| 변경 유형 | 대상 | 근거 |
+|----------|------|------|
+| 새 Location | ent-loc-admiralty (Admiralty Islands, Manus Province, PG) | evt-701 NASA EO 부석 침입 보도 |
+| 새 Organization | org-dailynk (DailyNK, media, KR) | evt-3601 DPRK 조림 위성 분석 보도 |
+| 새 Event | 2건 (evt-3303, evt-3601) | GFM v4.1.1 Sentinel-1D 통합, DPRK 조림 NDVI |
+| 이벤트 업데이트 | 8건 | evt-202(Ep49 분출·종료), evt-701(Admiralty 생태), evt-3201(Sentinel-2 산사태), evt-1101(1747fires), evt-082(Day162+), evt-203(동측 용암), evt-204(SO2), evt-3501(지속) |
+
+config 한도 내 — 새 클래스 0건 (max 3), 새 관계 유형 0건 (max 5). 새 Country 0건, 새 Satellite 0건.
+
+### 특이사항
+
+- **Kilauea 역사적 이정표:** 49회 에피소딕 분수분출로 Pu'u'O'o 1983-86 기록(47회) 공식 초과. 다음 Ep50 예보 시 추가 기록 갱신.
+- **Bismarck Sea 연쇄 확대:** 부석이 Admiralty Islands 해안 도달 — 생태계(해초·산호·어류) + 인도주의(식량 위기) 교차 도메인 영향. 가장 복잡한 연쇄 재해 체인.
+- **Canada 산불 급증:** 면적 78,800→166,400 ha (2배+). 44건 통제 불능. 시즌 심화 추세.
+- **Mindanao Sentinel-2 확인:** 광학 위성 영상으로 66건 산사태 확인. 대형(>500m) 다수. 지진 피해의 2차 재해.
+- **DPRK 조림 GeoFocus:** 북한 iso_code KP → koreaBoost. 단, DailyNK 단독 보도로 잠정 처리. 위성 구체명 불확실.
+- **GFM v4.1.1:** Sentinel-1D SAR 정식 투입. 홍수 모니터링 역량 제고. 우기 시즌 도래와 맞물림.
+- **농업·해양 커버:** evt-701 Bismarck Sea 어업 피해(cross-domain)로 dom-agri-marine 1건 확보.

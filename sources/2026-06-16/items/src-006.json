@@ -1,0 +1,30 @@
+{
+  "id": "src-006",
+  "title": "Canada 2026 Wildfire Season June Update — 1,747 Fires YTD, 95 Active, 166,400 ha Burned",
+  "url": "https://www.canada.ca/en/public-safety-canada/news/2026/06/the-government-of-canada-provides-an-update-regarding-the-2026-wildfire-season--june-update.html",
+  "snippet": "Government of Canada official wildfire season update as of June 10, 2026. 1,747 fires year-to-date. 95 active fires, 44 out of control. 166,400 hectares burned. MODIS and VIIRS satellite monitoring continues. Elevated risk in British Columbia and Alberta due to dry conditions.",
+  "source_name": "Government of Canada",
+  "language": "en",
+  "discovered_date": "2026-06-16",
+  "tag": "update",
+  "related_report": "2026-06-15",
+  "related_item": "src-005 (2026-06-15)",
+  "tag_reason": "evt-1101 Canada wildfire tracked since 2026-05-20. Update: fires escalated to 1,747 total (up from 1,495), 95 active (up from 65+), 166,400 ha (up from 78,800 ha).",
+  "entities": [
+    {"id": "evt-1101", "type": "Event", "name": "캐나다 2026 산불 시즌 6월 업데이트", "properties": {"phenomenon": "wildfire", "lat": 54.0, "lon": -122.0, "country": "CA", "severity": "high"}},
+    {"id": "sat-modis-terra", "type": "Satellite", "name": "MODIS (Terra)"},
+    {"id": "sat-viirs-jpss", "type": "Satellite", "name": "VIIRS (JPSS)"},
+    {"id": "sensor-modis", "type": "Sensor", "name": "MODIS"},
+    {"id": "sensor-viirs", "type": "Sensor", "name": "VIIRS"},
+    {"id": "co-ca", "type": "Country", "name": "캐나다"}
+  ],
+  "relations": [
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-modis-terra"},
+    {"subject": "evt-1101", "predicate": "observedBy", "object": "sat-viirs-jpss"},
+    {"subject": "evt-1101", "predicate": "usesSensor", "object": "sensor-modis"},
+    {"subject": "evt-1101", "predicate": "usesSensor", "object": "sensor-viirs"},
+    {"subject": "evt-1101", "predicate": "inCountry", "object": "co-ca"},
+    {"subject": "evt-1101", "predicate": "manifests", "object": "phen-wildfire"},
+    {"subject": "evt-1101", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "src-007",
+  "title": "Mindanao M7.8 Sentinel-2 Landslide Imagery — 66 Landslides, Multiple >500m Length",
+  "url": "https://eos.org/thelandslideblog/an-update-on-landslides-from-the-8-june-2026-m7-8-earthquake-offshore-mindanao-in-the-philippines",
+  "snippet": "June 14, 2026 Sentinel-2 imagery confirms multiple large landslides exceeding 500m in length triggered by the June 8 M7.8 earthquake offshore Mindanao. NDRRMC reports 66 total landslides across affected areas. EOS Landslide Blog analysis with before/after satellite comparison.",
+  "source_name": "EOS Landslide Blog",
+  "language": "en",
+  "discovered_date": "2026-06-16",
+  "tag": "update",
+  "related_report": "2026-06-15",
+  "related_item": "src-003 (2026-06-15)",
+  "tag_reason": "evt-3201 Mindanao M7.8 tracked since 2026-06-09. Major update: Sentinel-2 optical imagery now available confirming 66 landslides, before/after comparison.",
+  "entities": [
+    {"id": "evt-3201", "type": "Event", "name": "Mindanao M7.8 지진 Sentinel-2 산사태 영상", "properties": {"phenomenon": "landslide", "lat": 5.5, "lon": 126.2, "country": "PH", "severity": "high", "before_after_available": true}},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sensor-msi", "type": "Sensor", "name": "MSI"},
+    {"id": "co-ph", "type": "Country", "name": "Philippines"}
+  ],
+  "relations": [
+    {"subject": "evt-3201", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "evt-3201", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "evt-3201", "predicate": "inCountry", "object": "co-ph"},
+    {"subject": "evt-3201", "predicate": "manifests", "object": "phen-landslide"},
+    {"subject": "evt-3201", "predicate": "manifests", "object": "phen-earthquake"},
+    {"subject": "evt-3201", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

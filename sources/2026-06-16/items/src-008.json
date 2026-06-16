@@ -1,0 +1,29 @@
+{
+  "id": "src-008",
+  "title": "North Korea Second 10-Year Reforestation Drive — Satellite Imagery Confirms Greening",
+  "url": "https://www.dailynk.com/english/north-korea-second-reforestation-campaign-satellite-analysis/",
+  "snippet": "DailyNK satellite analysis confirms progress in DPRK second 10-year reforestation campaign. Satellite imagery shows greening and NDVI improvement in targeted areas. Long-term land use change monitoring via multi-temporal satellite data.",
+  "source_name": "DailyNK",
+  "language": "en",
+  "discovered_date": "2026-06-16",
+  "tag": "new",
+  "related_report": null,
+  "related_item": null,
+  "tag_reason": "신규 이벤트. 북한 제2차 조림 10개년 계획의 위성 관측 확인. NDVI 기반 식생 변화 분석. 한반도 GeoFocus.",
+  "entities": [
+    {"id": "evt-3601", "type": "Event", "name": "북한 제2차 조림 10개년 계획 위성 관측", "properties": {"phenomenon": "ndvi_change", "lat": 39.0, "lon": 126.0, "country": "KP", "severity": "medium", "before_after_available": true}},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sat-landsat9", "type": "Satellite", "name": "Landsat 9"},
+    {"id": "org-dailynk", "type": "Organization", "name": "DailyNK"},
+    {"id": "co-kp", "type": "Country", "name": "North Korea"},
+    {"id": "phen-ndvi", "type": "Phenomenon", "name": "ndvi_change"}
+  ],
+  "relations": [
+    {"subject": "evt-3601", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "evt-3601", "predicate": "observedBy", "object": "sat-landsat9"},
+    {"subject": "evt-3601", "predicate": "reportedBy", "object": "org-dailynk"},
+    {"subject": "evt-3601", "predicate": "inCountry", "object": "co-kp"},
+    {"subject": "evt-3601", "predicate": "manifests", "object": "phen-ndvi"},
+    {"subject": "evt-3601", "predicate": "inDomain", "object": "dom-human"}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "src-011",
+  "title": "Shishaldin Volcano ADVISORY/YELLOW — SO2 Emissions Continuing",
+  "url": "https://www.usgs.gov/volcanoes/shishaldin/volcano-updates",
+  "snippet": "Shishaldin volcano remains at ADVISORY/YELLOW alert level. Continued SO2 emissions detected by satellite sensors. No significant eruption but elevated unrest continues. USGS AVO monitoring.",
+  "source_name": "USGS AVO",
+  "language": "en",
+  "discovered_date": "2026-06-16",
+  "tag": "update",
+  "related_report": "2026-06-15",
+  "related_item": null,
+  "tag_reason": "evt-204 Shishaldin tracked. Continuing: ADVISORY/YELLOW, SO2 emissions.",
+  "entities": [
+    {"id": "evt-204", "type": "Event", "name": "Shishaldin ADVISORY/YELLOW SO2 지속", "properties": {"phenomenon": "volcanic_eruption", "lat": 54.756, "lon": -163.97, "country": "US", "severity": "low"}},
+    {"id": "sat-sentinel5p", "type": "Satellite", "name": "Sentinel-5P"},
+    {"id": "sensor-tropomi", "type": "Sensor", "name": "TROPOMI"},
+    {"id": "org-usgs", "type": "Organization", "name": "USGS AVO"}
+  ],
+  "relations": [
+    {"subject": "evt-204", "predicate": "observedBy", "object": "sat-sentinel5p"},
+    {"subject": "evt-204", "predicate": "usesSensor", "object": "sensor-tropomi"},
+    {"subject": "evt-204", "predicate": "analyzedBy", "object": "org-usgs"},
+    {"subject": "evt-204", "predicate": "manifests", "object": "phen-volcano"},
+    {"subject": "evt-204", "predicate": "inDomain", "object": "dom-disaster"}
+  ]
+}

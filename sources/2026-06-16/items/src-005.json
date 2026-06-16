@@ -1,0 +1,31 @@
+{
+  "id": "src-005",
+  "title": "ESA AI4CH4 — End-to-End AI Framework for Methane Plume Detection from Multi-Mission EO Data",
+  "url": "https://eo4society.esa.int/2026/06/09/tracking-methane-emissions-an-end-to-end-framework-using-eo-data-and-ai-foundation-models/",
+  "snippet": "June 9, 2026 ESA announcement. AI4CH4: end-to-end AI framework for automatic methane plume detection from multi-mission Earth observation satellite data. Uses AI foundation models applied to Sentinel-5P TROPOMI, Sentinel-2 MSI, and additional EO satellite sources. Enables systematic global methane monitoring.",
+  "source_name": "ESA EO4Society",
+  "language": "en",
+  "discovered_date": "2026-06-16",
+  "tag": "update",
+  "related_report": "2026-06-14",
+  "related_item": "evt-3401 (2026-06-14 first reported)",
+  "tag_reason": "evt-3401 AI4CH4 tracked since 2026-06-14. Update with expanded detail on framework capabilities and multi-mission integration.",
+  "entities": [
+    {"id": "evt-3401", "type": "Event", "name": "ESA AI4CH4 메탄 탐지 프레임워크", "properties": {"phenomenon": "methane_plume", "lat": 0.0, "lon": 0.0, "country": "INTL", "severity": "medium"}},
+    {"id": "sat-sentinel5p", "type": "Satellite", "name": "Sentinel-5P"},
+    {"id": "sat-sentinel2a", "type": "Satellite", "name": "Sentinel-2A"},
+    {"id": "sensor-tropomi", "type": "Sensor", "name": "TROPOMI"},
+    {"id": "sensor-msi", "type": "Sensor", "name": "MSI"},
+    {"id": "org-esa", "type": "Organization", "name": "ESA"},
+    {"id": "org-ai4ch4", "type": "Organization", "name": "AI4CH4 Consortium"}
+  ],
+  "relations": [
+    {"subject": "evt-3401", "predicate": "observedBy", "object": "sat-sentinel5p"},
+    {"subject": "evt-3401", "predicate": "observedBy", "object": "sat-sentinel2a"},
+    {"subject": "evt-3401", "predicate": "usesSensor", "object": "sensor-tropomi"},
+    {"subject": "evt-3401", "predicate": "usesSensor", "object": "sensor-msi"},
+    {"subject": "evt-3401", "predicate": "analyzedBy", "object": "org-esa"},
+    {"subject": "evt-3401", "predicate": "manifests", "object": "phen-methane"},
+    {"subject": "evt-3401", "predicate": "inDomain", "object": "dom-climate"}
+  ]
+}
